@@ -5,13 +5,19 @@ from __future__ import annotations
 import duckdb
 
 from loom.constructs import gender_expr
-from loom.constructs.emit import coappearance_edges, make_manifest, rows_to_stages
+from loom.constructs.emit import coappearance_edges, finalize_payload, rows_to_stages
+from loom.filters import adult_exclusion_sql, genre_contains_sql, title_type_sql, vote_floor_sql
 
 
 def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     ge = gender_expr("p")
+    adult = adult_exclusion_sql("t")
+    types = title_type_sql(
+        "t", types=("movie", "tvSeries", "tvMovie", "tvMiniSeries", "short", "video")
+    )
+    votes = vote_floor_sql("r", min_votes=50)
+    anim = genre_contains_sql("t", "Animation")
 
-    # Prefer voice_enrich flag; also accept characters containing (voice)
     person_sql = f"""
         SELECT
           p.nconst,
@@ -22,11 +28,14 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         FROM title_principals p
         JOIN title_basics t ON t.tconst = p.tconst
         JOIN name_basics n ON n.nconst = p.nconst
+        LEFT JOIN title_ratings r ON r.tconst = p.tconst
         LEFT JOIN gender_enrich ge ON ge.nconst = p.nconst
         LEFT JOIN voice_enrich ve ON ve.nconst = p.nconst
         WHERE p.category IN ('actor', 'actress')
-          AND list_contains(string_split(COALESCE(t.genres, ''), ','), 'Animation')
-          AND t.titleType IN ('movie', 'tvSeries', 'tvMovie', 'tvMiniSeries', 'short', 'video')
+          AND {anim}
+          AND {types}
+          AND {adult}
+          AND {votes}
           AND (
             COALESCE(ve.is_voice_actor, FALSE) = TRUE
             OR p.characters ILIKE '%(voice)%'
@@ -39,11 +48,10 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         LIMIT {int(top_n * 3)}
     """
 
-    nodes, edges = coappearance_edges(
+    nodes, edges, stats = coappearance_edges(
         con, person_sql, construct="voice_cartoons", top_n=top_n, min_shared=2
     )
 
-    # Alluvial stages: gender → era → prominence band
     stage_rows = con.execute(
         f"""
         WITH base AS (
@@ -62,11 +70,14 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             END AS prominence
           FROM title_principals p
           JOIN title_basics t ON t.tconst = p.tconst
+          LEFT JOIN title_ratings r ON r.tconst = p.tconst
           LEFT JOIN gender_enrich ge ON ge.nconst = p.nconst
           LEFT JOIN voice_enrich ve ON ve.nconst = p.nconst
           WHERE p.category IN ('actor', 'actress')
-            AND list_contains(string_split(COALESCE(t.genres, ''), ','), 'Animation')
-            AND t.titleType IN ('movie', 'tvSeries', 'tvMovie', 'tvMiniSeries', 'short', 'video')
+            AND {anim}
+            AND {types}
+            AND {adult}
+            AND {votes}
             AND t.startYear IS NOT NULL
             AND (
               COALESCE(ve.is_voice_actor, FALSE) = TRUE
@@ -88,10 +99,10 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     method = (
         "Population: cast credited on Animation titles with a voice signal "
         "(Wikidata occupation 'voice actor', IMDb characters containing '(voice)', "
-        "or voice job string). Edges = shared Animation titles (≥2). "
-        "Gender via TMDB when enriched, else IMDb actor/actress category."
+        "or voice job string). Adult excluded, numVotes ≥50. "
+        "Edges = shared Animation titles (≥2)."
     )
-    manifest = make_manifest(
+    return finalize_payload(
         con,
         construct_id="voice_cartoons",
         title="Voice Actors in Cartoons",
@@ -101,6 +112,6 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         nodes=nodes,
         edges=edges,
         stages=stages,
+        build_stats=stats,
         extra={"min_shared_titles": 2, "top_n": top_n},
     )
-    return {"nodes": nodes, "edges": edges, "stages": stages, "manifest": manifest}

@@ -1,16 +1,65 @@
 {
-  "id": "voice_cartoons",
-  "title": "Voice Actors in Cartoons",
-  "subtitle": "actor → show → character reuse",
-  "key_variable": "degree",
-  "built_at": "2026-07-22T04:49:24.696362+00:00",
-  "node_count": 160,
-  "edge_count": 6907,
-  "stage_row_count": 20,
-  "method_note": "Population: cast credited on Animation titles with a voice signal (Wikidata occupation 'voice actor', IMDb characters containing '(voice)', or voice job string). Edges = shared Animation titles (≥2). Gender via TMDB when enriched, else IMDb actor/actress category.",
-  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-  "tmdb_gender_rows": 0,
+  "avg_path_length": 1.957,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 18875,
+    "era_slices": 7,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:17:04.229585+00:00",
+  "clustering_coefficient": 0.4626,
+  "community_count": 11,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 2052,
+  "featured_path": [
+    {
+      "id": "nm0849028",
+      "label": "Mayumi Tanaka"
+    },
+    {
+      "id": "nm0637586",
+      "label": "Masako Nozawa"
+    }
+  ],
   "gender_method": "imdb_actor_actress_proxy",
+  "id": "voice_cartoons",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "degree",
+  "method_note": "Population: cast credited on Animation titles with a voice signal (Wikidata occupation 'voice actor', IMDb characters containing '(voice)', or voice job string). Adult excluded, numVotes ≥50. Edges = shared Animation titles (≥2).",
   "min_shared_titles": 2,
+  "node_count": 160,
+  "stage_row_count": 20,
+  "subtitle": "actor → show → character reuse",
+  "summary": {
+    "degree_max": 2477,
+    "degree_median": 513,
+    "era_histogram": {
+      "1970s": 7,
+      "1980s": 8,
+      "1990s": 17,
+      "2000s": 31,
+      "2010s": 81,
+      "2020s": 16
+    },
+    "gender_mix": {
+      "female": 93,
+      "male": 67
+    },
+    "top_name": "Mayumi Tanaka"
+  },
+  "title": "Voice Actors in Cartoons",
+  "tmdb_gender_rows": 0,
   "top_n": 160
 }

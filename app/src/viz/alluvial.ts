@@ -21,6 +21,8 @@ export interface AlluvialLink {
   value: number;
   title: string;
   width: number;
+  sourceName: string;
+  targetName: string;
 }
 
 export interface AlluvialLayout {
@@ -129,6 +131,8 @@ export function layoutAlluvial(
       value: l.value,
       title: `${src.name} → ${tgt.name}: ${l.value}`,
       width: Math.max(1, l.width ?? 1),
+      sourceName: src.name,
+      targetName: tgt.name,
     };
   });
 

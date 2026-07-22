@@ -1,0 +1,72 @@
+{
+  "avg_path_length": 2.575,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 36445,
+    "era_slices": 6,
+    "family_source": "coappearance_fallback",
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 640
+  },
+  "built_at": "2026-07-22T21:38:19.174007+00:00",
+  "clustering_coefficient": 0.2883,
+  "community_count": 22,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 815,
+  "featured_path": [
+    {
+      "id": "nm0000158",
+      "label": "Tom Hanks"
+    },
+    {
+      "id": "nm0000610",
+      "label": "Giovanni Ribisi"
+    },
+    {
+      "id": "nm0000949",
+      "label": "Cate Blanchett"
+    },
+    {
+      "id": "nm0000093",
+      "label": "Brad Pitt"
+    }
+  ],
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "acting_dynasties",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "family",
+  "method_note": "Population: people with Wikidata family links (spouse/child/sibling) when cache is present; otherwise high-volume multi-name careers as a weak surname proxy. Edges = co-appearance plus typed family links when available.",
+  "node_count": 160,
+  "stage_row_count": 11,
+  "subtitle": "family trees woven with co-appearance",
+  "summary": {
+    "degree_max": 1323,
+    "degree_median": 302,
+    "era_histogram": {
+      "1970s": 1,
+      "1990s": 21,
+      "2000s": 84,
+      "2010s": 54
+    },
+    "gender_mix": {
+      "female": 31,
+      "male": 129
+    },
+    "top_name": "Tom Hanks"
+  },
+  "title": "Acting Dynasties",
+  "tmdb_gender_rows": 0,
+  "top_n": 160,
+  "stages_source": "default_from_nodes"
+}

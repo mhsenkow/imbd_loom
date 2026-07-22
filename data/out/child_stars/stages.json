@@ -1,0 +1,72 @@
+[
+  {
+    "stageFrom": "gender",
+    "stageTo": "worked_past_25",
+    "categoryFrom": "female",
+    "categoryTo": "stopped by 25",
+    "value": 72
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "worked_past_25",
+    "categoryFrom": "male",
+    "categoryTo": "stopped by 25",
+    "value": 96
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "worked_past_25",
+    "categoryFrom": "female",
+    "categoryTo": "worked past 25",
+    "value": 133
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "worked_past_25",
+    "categoryFrom": "male",
+    "categoryTo": "worked past 25",
+    "value": 179
+  },
+  {
+    "stageFrom": "worked_past_25",
+    "stageTo": "debut_band",
+    "categoryFrom": "worked past 25",
+    "categoryTo": "infant–5",
+    "value": 41
+  },
+  {
+    "stageFrom": "worked_past_25",
+    "stageTo": "debut_band",
+    "categoryFrom": "worked past 25",
+    "categoryTo": "9–11",
+    "value": 175
+  },
+  {
+    "stageFrom": "worked_past_25",
+    "stageTo": "debut_band",
+    "categoryFrom": "worked past 25",
+    "categoryTo": "6–8",
+    "value": 96
+  },
+  {
+    "stageFrom": "worked_past_25",
+    "stageTo": "debut_band",
+    "categoryFrom": "stopped by 25",
+    "categoryTo": "9–11",
+    "value": 92
+  },
+  {
+    "stageFrom": "worked_past_25",
+    "stageTo": "debut_band",
+    "categoryFrom": "stopped by 25",
+    "categoryTo": "6–8",
+    "value": 64
+  },
+  {
+    "stageFrom": "worked_past_25",
+    "stageTo": "debut_band",
+    "categoryFrom": "stopped by 25",
+    "categoryTo": "infant–5",
+    "value": 12
+  }
+]

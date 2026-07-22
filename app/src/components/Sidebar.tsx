@@ -17,8 +17,13 @@ interface Props {
   status: string;
   open: boolean;
   onToggle: () => void;
+  onOpenHome?: () => void;
   searchMatch?: SearchMatch | null;
   filteredCounts?: { people: number; links: number };
+  /** People remaining after connect filters, before Top-N */
+  poolSize?: number;
+  /** Adaptive max for min-edge-weight slider */
+  weightMax?: number;
 }
 
 type Section = "find" | "construct" | "form" | "connect" | "density" | "page";
@@ -85,16 +90,32 @@ export function Sidebar({
   status,
   open,
   onToggle,
+  onOpenHome,
   searchMatch = null,
   filteredCounts,
+  poolSize,
+  weightMax = 10,
 }: Props) {
   const [section, setSection] = useState<Section | null>("find");
   const openSec = (k: Section) => setSection((s) => (s === k ? null : k));
   const isTimeline = spec.heroForm === "timeline";
+  const clampedWeight = Math.min(spec.minWeight, weightMax);
 
   if (!open) {
     return (
       <aside className="panel-rail left">
+        {onOpenHome && (
+          <button
+            type="button"
+            className="rail-btn"
+            onClick={onOpenHome}
+            aria-label="Back to gallery"
+            title="Gallery"
+          >
+            <span className="rail-icon">◈</span>
+            <span className="rail-label">Gallery</span>
+          </button>
+        )}
         <button
           type="button"
           className="rail-btn"
@@ -125,6 +146,14 @@ export function Sidebar({
           ✕
         </button>
       </div>
+
+      {onOpenHome && (
+        <div className="sidebar-home">
+          <button type="button" className="ghost home-link" onClick={onOpenHome}>
+            ← Story gallery
+          </button>
+        </div>
+      )}
 
       <div className="sidebar-scroll">
         <Accordion title="Find" open={section === "find"} onToggle={() => openSec("find")}>
@@ -291,14 +320,10 @@ export function Sidebar({
           </div>
 
           <div className="field">
-            <label>
-              Sort people by
-              {isTimeline ? <span className="field-note"> · chord/bundle</span> : null}
-            </label>
+            <label>Sort people by</label>
             <ChipRow
               value={spec.sortBy}
               onChange={(sortBy) => onChange({ sortBy })}
-              disabled={isTimeline}
               options={[
                 { id: "degree", label: "Degree" },
                 { id: "prominence", label: "Votes" },
@@ -307,7 +332,9 @@ export function Sidebar({
               ]}
             />
             {isTimeline ? (
-              <p className="control-footnote">Timeline lanes order by peak year.</p>
+              <p className="control-footnote">
+                Chooses who makes the Top-N cut; timeline lanes still order by peak year.
+              </p>
             ) : null}
           </div>
 
@@ -369,31 +396,47 @@ export function Sidebar({
         >
           {filteredCounts ? (
             <p className="density-live mono">
-              After filters: {filteredCounts.people} people · {filteredCounts.links} links
+              Showing {filteredCounts.people}
+              {poolSize != null && poolSize > 0 && poolSize < spec.topN
+                ? ` of ${poolSize} in pool`
+                : poolSize != null && poolSize > 0
+                  ? ` (pool ${poolSize})`
+                  : ""}
+              {" · "}
+              {filteredCounts.links} links
             </p>
           ) : null}
+          <p className="control-footnote">
+            Applies to hero, construct strip, and warps.
+          </p>
           <div className="field">
             <label>
               Top N people <span>{spec.topN}</span>
             </label>
             <input
               type="range"
-              min={40}
+              min={10}
               max={300}
-              step={10}
+              step={5}
               value={spec.topN}
               onChange={(e) => onChange({ topN: Number(e.target.value) })}
             />
+            {poolSize != null && poolSize > 0 && poolSize < spec.topN ? (
+              <p className="control-footnote">
+                This construct only has {poolSize} people after Connect filters —
+                Top N can’t add more.
+              </p>
+            ) : null}
           </div>
           <div className="field">
             <label>
-              Min edge weight <span>{spec.minWeight}</span>
+              Min edge weight <span>{clampedWeight}</span>
             </label>
             <input
               type="range"
               min={1}
-              max={10}
-              value={spec.minWeight}
+              max={weightMax}
+              value={clampedWeight}
               onChange={(e) => onChange({ minWeight: Number(e.target.value) })}
             />
           </div>
@@ -404,9 +447,60 @@ export function Sidebar({
             <input
               type="range"
               min={1}
-              max={20}
+              max={40}
               value={spec.minTitles}
               onChange={(e) => onChange({ minTitles: Number(e.target.value) })}
+            />
+          </div>
+          <div className="field">
+            <label>
+              Min degree <span>{spec.minDegree}</span>
+            </label>
+            <input
+              type="range"
+              min={0}
+              max={30}
+              value={spec.minDegree}
+              onChange={(e) => onChange({ minDegree: Number(e.target.value) })}
+            />
+          </div>
+          <label className="check touch">
+            <input
+              type="checkbox"
+              checked={spec.hideIsolates}
+              onChange={(e) => onChange({ hideIsolates: e.target.checked })}
+            />
+            <span>Hide people with no remaining links</span>
+          </label>
+          <label className="check touch">
+            <input
+              type="checkbox"
+              checked={spec.showStrip}
+              onChange={(e) => onChange({ showStrip: e.target.checked })}
+            />
+            <span>Show construct strip</span>
+          </label>
+          <label className="check touch">
+            <input
+              type="checkbox"
+              checked={spec.showWarps}
+              disabled={!spec.showStrip}
+              onChange={(e) => onChange({ showWarps: e.target.checked })}
+            />
+            <span>Show warp threads</span>
+          </label>
+          <div className="field">
+            <label>
+              Max warps <span>{spec.maxWarps}</span>
+            </label>
+            <input
+              type="range"
+              min={0}
+              max={48}
+              step={2}
+              value={spec.maxWarps}
+              disabled={!spec.showStrip || !spec.showWarps}
+              onChange={(e) => onChange({ maxWarps: Number(e.target.value) })}
             />
           </div>
         </Accordion>

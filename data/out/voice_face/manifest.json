@@ -1,0 +1,78 @@
+{
+  "avg_path_length": 3.184,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 23590,
+    "era_slices": 7,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:32:36.704243+00:00",
+  "clustering_coefficient": 0.3099,
+  "community_count": 20,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 609,
+  "featured_path": [
+    {
+      "id": "nm0000158",
+      "label": "Tom Hanks"
+    },
+    {
+      "id": "nm0202966",
+      "label": "Keith David"
+    },
+    {
+      "id": "nm0740535",
+      "label": "Stephen Root"
+    },
+    {
+      "id": "nm0000547",
+      "label": "Alfred Molina"
+    },
+    {
+      "id": "nm0000136",
+      "label": "Johnny Depp"
+    }
+  ],
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "voice_face",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "voice_ratio",
+  "method_note": "Population: people with ≥3 Animation credits and ≥3 non-Animation movie credits (Adult excluded, numVotes ≥50). Node.voice_ratio colors voice vs face balance. Hero = co-appearance.",
+  "min_each": 3,
+  "min_shared": 2,
+  "node_count": 160,
+  "stage_row_count": 13,
+  "subtitle": "animation voice + live-action movie careers",
+  "summary": {
+    "degree_max": 717,
+    "degree_median": 214,
+    "era_histogram": {
+      "1960s": 1,
+      "1970s": 4,
+      "1980s": 8,
+      "1990s": 21,
+      "2000s": 54,
+      "2010s": 72
+    },
+    "gender_mix": {
+      "female": 28,
+      "male": 132
+    },
+    "top_name": "Tom Hanks"
+  },
+  "title": "Voice ↔ Face",
+  "tmdb_gender_rows": 0,
+  "top_n": 160
+}

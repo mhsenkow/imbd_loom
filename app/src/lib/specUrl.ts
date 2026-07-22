@@ -9,6 +9,7 @@ const KEYS = [
   "topN",
   "minWeight",
   "minTitles",
+  "minDegree",
   "gender",
   "yearFrom",
   "yearTo",
@@ -21,6 +22,10 @@ const KEYS = [
   "sortBy",
   "neighborhood",
   "edgeYear",
+  "hideIsolates",
+  "strip",
+  "warps",
+  "maxWarps",
 ] as const;
 
 export function specFromSearchParams(
@@ -39,6 +44,11 @@ export function specFromSearchParams(
     if (allowed && !allowed.includes(v)) return fallback;
     return v;
   };
+  const flag = (k: string, fallback: boolean) => {
+    if (!params.has(k)) return fallback;
+    const v = params.get(k);
+    return v === "1" || v === "true";
+  };
 
   return {
     ...base,
@@ -48,6 +58,7 @@ export function specFromSearchParams(
     topN: num("topN", base.topN),
     minWeight: num("minWeight", base.minWeight),
     minTitles: num("minTitles", base.minTitles),
+    minDegree: num("minDegree", base.minDegree),
     genderFilter: str(
       "gender",
       base.genderFilter,
@@ -68,10 +79,11 @@ export function specFromSearchParams(
     ),
     neighborhoodOnly:
       params.get("neighborhood") === "1" || params.get("neighborhood") === "true",
-    edgeYearFilter:
-      params.has("edgeYear")
-        ? params.get("edgeYear") === "1" || params.get("edgeYear") === "true"
-        : base.edgeYearFilter,
+    edgeYearFilter: flag("edgeYear", base.edgeYearFilter),
+    hideIsolates: flag("hideIsolates", base.hideIsolates),
+    showStrip: flag("strip", base.showStrip),
+    showWarps: flag("warps", base.showWarps),
+    maxWarps: num("maxWarps", base.maxWarps),
   };
 }
 
@@ -83,6 +95,7 @@ export function specToQuery(spec: PosterSpec): Record<string, string> {
     topN: String(spec.topN),
     minWeight: String(spec.minWeight),
     minTitles: String(spec.minTitles),
+    minDegree: String(spec.minDegree),
     gender: spec.genderFilter,
     yearFrom: String(spec.yearFrom),
     yearTo: String(spec.yearTo),
@@ -91,6 +104,10 @@ export function specToQuery(spec: PosterSpec): Record<string, string> {
     labelMode: spec.labelMode,
     colorMode: spec.colorMode,
     sortBy: spec.sortBy,
+    maxWarps: String(spec.maxWarps),
+    hideIsolates: spec.hideIsolates ? "1" : "0",
+    strip: spec.showStrip ? "1" : "0",
+    warps: spec.showWarps ? "1" : "0",
   };
   if (spec.searchQuery.trim()) q.search = spec.searchQuery.trim();
   if (spec.timelineFlip) q.flip = "1";

@@ -5,11 +5,15 @@ from __future__ import annotations
 import duckdb
 
 from loom.constructs import gender_expr
-from loom.constructs.emit import coappearance_edges, make_manifest, rows_to_stages
+from loom.constructs.emit import coappearance_edges, finalize_payload, rows_to_stages
+from loom.filters import adult_exclusion_sql, title_type_sql, vote_floor_sql
 
 
 def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     ge = gender_expr("p")
+    adult = adult_exclusion_sql("t")
+    types = title_type_sql("t")
+    votes = vote_floor_sql("r", min_votes=50)
 
     person_sql = f"""
         SELECT
@@ -23,9 +27,12 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         FROM title_principals p
         JOIN title_basics t ON t.tconst = p.tconst
         JOIN name_basics n ON n.nconst = p.nconst
+        LEFT JOIN title_ratings r ON r.tconst = p.tconst
         LEFT JOIN gender_enrich ge ON ge.nconst = p.nconst
         WHERE p.category IN ('actor', 'actress')
-          AND t.titleType IN ('movie', 'tvSeries', 'tvMovie', 'tvMiniSeries')
+          AND {types}
+          AND {adult}
+          AND {votes}
           AND t.startYear IS NOT NULL
           AND t.startYear BETWEEN 1920 AND 2030
         GROUP BY p.nconst, n.primaryName, ge.tmdb_gender, p.category
@@ -35,7 +42,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         LIMIT {int(top_n * 3)}
     """
 
-    nodes, edges = coappearance_edges(
+    nodes, edges, stats = coappearance_edges(
         con, person_sql, construct="long_careers", top_n=top_n, min_shared=2
     )
 
@@ -57,9 +64,12 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             END AS cohort
           FROM title_principals p
           JOIN title_basics t ON t.tconst = p.tconst
+          LEFT JOIN title_ratings r ON r.tconst = p.tconst
           LEFT JOIN gender_enrich ge ON ge.nconst = p.nconst
           WHERE p.category IN ('actor', 'actress')
-            AND t.titleType IN ('movie', 'tvSeries', 'tvMovie', 'tvMiniSeries')
+            AND {types}
+            AND {adult}
+            AND {votes}
             AND t.startYear IS NOT NULL
             AND t.startYear BETWEEN 1920 AND 2030
             AND p.nconst IN (SELECT nconst FROM _people)
@@ -76,10 +86,10 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
 
     method = (
         "Population: actors/actresses with ≥15 credits whose earliest and latest "
-        "title years span ≥35 years (IMDb startYear). "
+        "title years span ≥35 years (Adult excluded, numVotes ≥50). "
         "Hero = co-appearance among long-career peers."
     )
-    manifest = make_manifest(
+    return finalize_payload(
         con,
         construct_id="long_careers",
         title="Long Careers",
@@ -89,6 +99,6 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         nodes=nodes,
         edges=edges,
         stages=stages,
+        build_stats=stats,
         extra={"min_span_years": 35, "min_titles": 15, "top_n": top_n, "min_shared": 2},
     )
-    return {"nodes": nodes, "edges": edges, "stages": stages, "manifest": manifest}

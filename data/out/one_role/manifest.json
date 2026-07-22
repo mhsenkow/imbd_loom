@@ -1,17 +1,65 @@
 {
-  "id": "one_role",
-  "title": "One-Role Wonders",
-  "subtitle": "person → genre concentration (≥90%)",
-  "key_variable": "dominant_genre",
-  "built_at": "2026-07-22T04:50:49.087498+00:00",
-  "node_count": 160,
-  "edge_count": 183,
-  "stage_row_count": 58,
-  "method_note": "Population: actors/actresses with ≥8 title-genre credits whose single largest genre accounts for ≥90% of those credits. Hero links people within the same dominant genre.",
-  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-  "tmdb_gender_rows": 0,
-  "gender_method": "imdb_actor_actress_proxy",
+  "avg_path_length": 2.25,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 32,
+    "min_votes": 50,
+    "per_genre_cap": 16,
+    "population_sql": 32
+  },
+  "built_at": "2026-07-22T21:41:48.794163+00:00",
+  "clustering_coefficient": 0.6917,
+  "community_count": 4,
   "concentration_threshold": 0.9,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 84,
+  "edge_kind": "genre_comembership",
+  "featured_path": [
+    {
+      "id": "nm0654741",
+      "label": "Selim Nasit Özcan"
+    },
+    {
+      "id": "nm0776856",
+      "label": "Leon Schuster"
+    }
+  ],
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "one_role",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "dominant_genre",
+  "method_note": "Population: actors/actresses with ≥8 title-genre credits (Adult excluded, numVotes ≥50) whose single largest genre accounts for ≥90% of those credits. Stratified: top N/8 people per dominant genre (genres with enough people), ranked by prominence (Σ votes/billing) rather than raw title count. Hero links connect people who share the same dominant genre; edge weight = min(prominence).",
   "min_credits": 8,
+  "node_count": 32,
+  "per_genre_cap": 16,
+  "stage_row_count": 9,
+  "subtitle": "person → genre concentration (≥90%)",
+  "summary": {
+    "degree_max": 53101,
+    "degree_median": 9509,
+    "era_histogram": {
+      "1970s": 1,
+      "1980s": 4,
+      "1990s": 2,
+      "2000s": 7,
+      "2010s": 5,
+      "2020s": 13
+    },
+    "gender_mix": {
+      "female": 15,
+      "male": 17
+    },
+    "top_name": "Selim Nasit Özcan"
+  },
+  "title": "One-Role Wonders",
+  "tmdb_gender_rows": 0,
   "top_n": 160
 }

@@ -1,0 +1,73 @@
+{
+  "avg_path_length": 2.029,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 17682,
+    "era_slices": 5,
+    "min_shared": 2,
+    "min_votes": 20,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:36:43.446067+00:00",
+  "clustering_coefficient": 0.3364,
+  "community_count": 14,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 1361,
+  "featured_path": [
+    {
+      "id": "nm0000472",
+      "label": "Boris Karloff"
+    },
+    {
+      "id": "nm0875983",
+      "label": "Richard Tucker"
+    },
+    {
+      "id": "nm0587534",
+      "label": "John Miljan"
+    },
+    {
+      "id": "nm0000859",
+      "label": "Lionel Barrymore"
+    }
+  ],
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "silent_sound",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "sound_count",
+  "method_note": "Population: actors with ≥1 credit in ≤1927 and ≥1 credit in ≥1929 (Adult excluded; vote floor relaxed to ≥20 or missing for silent-era coverage). Hero = co-appearance among transition survivors.",
+  "min_shared": 2,
+  "node_count": 160,
+  "silent_cutoff": 1927,
+  "sound_start": 1929,
+  "stage_row_count": 5,
+  "subtitle": "careers spanning the 1927–1929 transition",
+  "summary": {
+    "degree_max": 948,
+    "degree_median": 190,
+    "era_histogram": {
+      "1920s": 14,
+      "1930s": 129,
+      "1940s": 16,
+      "1950s": 1
+    },
+    "gender_mix": {
+      "female": 22,
+      "male": 138
+    },
+    "top_name": "Boris Karloff"
+  },
+  "title": "Silent → Sound Survivors",
+  "tmdb_gender_rows": 0,
+  "top_n": 160
+}

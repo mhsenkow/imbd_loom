@@ -1,0 +1,78 @@
+{
+  "avg_path_length": 3.553,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 25254,
+    "era_slices": 10,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:35:55.414657+00:00",
+  "clustering_coefficient": 0.7474,
+  "community_count": 38,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 865,
+  "featured_path": [
+    {
+      "id": "nm0048389",
+      "label": "Dee Bradley Baker"
+    },
+    {
+      "id": "nm1312566",
+      "label": "Kari Wahlgren"
+    },
+    {
+      "id": "nm1328076",
+      "label": "Miyuki Sawashiro"
+    },
+    {
+      "id": "nm2171329",
+      "label": "Jessie James Grelle"
+    }
+  ],
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "typecast",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "typecast_character",
+  "method_note": "Population: actors whose most common normalized character name appears \u22654 times (Adult excluded, numVotes \u226550). Edges = co-appearance plus shared typecast archetype links.",
+  "min_character_repeats": 4,
+  "min_shared": 2,
+  "node_count": 160,
+  "stage_row_count": 12,
+  "subtitle": "careers defined by a repeated character name",
+  "summary": {
+    "degree_max": 3033,
+    "degree_median": 657,
+    "era_histogram": {
+      "1930s": 3,
+      "1940s": 14,
+      "1950s": 2,
+      "1960s": 4,
+      "1970s": 19,
+      "1980s": 20,
+      "1990s": 18,
+      "2000s": 42,
+      "2010s": 38
+    },
+    "gender_mix": {
+      "female": 71,
+      "male": 89
+    },
+    "top_name": "Dee Bradley Baker"
+  },
+  "title": "The Typecast Index",
+  "tmdb_gender_rows": 0,
+  "top_n": 160,
+  "stages_source": "default_from_nodes"
+}

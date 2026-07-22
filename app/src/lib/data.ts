@@ -15,6 +15,18 @@ export async function loadIndex(): Promise<Manifest[]> {
   return r.json();
 }
 
+export async function loadPeopleIndex(): Promise<
+  Array<{ id: string; label: string; constructs: string[] }>
+> {
+  try {
+    const r = await fetch(dataUrl("people.json"));
+    if (!r.ok) return [];
+    return r.json();
+  } catch {
+    return [];
+  }
+}
+
 export async function loadConstruct(id: string): Promise<ConstructData> {
   const [nodes, edges, stages, manifest] = await Promise.all([
     fetch(dataUrl(`${id}/nodes.json`)).then((r) => {

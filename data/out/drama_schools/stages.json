@@ -1,0 +1,72 @@
+[
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "male",
+    "categoryTo": "2000\u20132014",
+    "value": 104
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "male",
+    "categoryTo": "1980\u20131999",
+    "value": 21
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "female",
+    "categoryTo": "2000\u20132014",
+    "value": 28
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "female",
+    "categoryTo": "2015+",
+    "value": 3
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "female",
+    "categoryTo": "1980\u20131999",
+    "value": 2
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "male",
+    "categoryTo": "2015+",
+    "value": 2
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "degree",
+    "categoryFrom": "2000\u20132014",
+    "categoryTo": "hub",
+    "value": 131
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "degree",
+    "categoryFrom": "1980\u20131999",
+    "categoryTo": "hub",
+    "value": 23
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "degree",
+    "categoryFrom": "2015+",
+    "categoryTo": "hub",
+    "value": 5
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "degree",
+    "categoryFrom": "2000\u20132014",
+    "categoryTo": "connected",
+    "value": 1
+  }
+]

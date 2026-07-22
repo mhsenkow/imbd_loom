@@ -1,15 +1,71 @@
 {
-  "id": "comedy_horror",
-  "title": "Comedy × Horror",
-  "subtitle": "crossover careers between laughs and screams",
-  "key_variable": "crossover_weight",
-  "built_at": "2026-07-22T04:50:30.355542+00:00",
-  "node_count": 160,
-  "edge_count": 1541,
-  "stage_row_count": 15,
-  "method_note": "Population: people with ≥2 Horror and ≥2 Comedy title credits. Hero = co-appearance among crossover performers. Alluvial: gender → horror/comedy/horror-comedy lane → billing band.",
-  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-  "tmdb_gender_rows": 0,
+  "avg_path_length": 1.783,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 48172,
+    "era_slices": 7,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:21:02.431509+00:00",
+  "clustering_coefficient": 0.7355,
+  "community_count": 19,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 1502,
+  "featured_path": [
+    {
+      "id": "nm0000114",
+      "label": "Steve Buscemi"
+    },
+    {
+      "id": "nm0001803",
+      "label": "Danny Trejo"
+    },
+    {
+      "id": "nm0000579",
+      "label": "Ron Perlman"
+    }
+  ],
   "gender_method": "imdb_actor_actress_proxy",
+  "id": "comedy_horror",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "crossover_weight",
+  "method_note": "Population: people with ≥2 Horror and ≥2 Comedy title credits (Adult excluded, numVotes ≥50). Hero = co-appearance among crossover performers. Alluvial: gender → horror/comedy/horror-comedy lane → billing band.",
+  "min_shared": 2,
+  "node_count": 160,
+  "stage_row_count": 15,
+  "subtitle": "crossover careers between laughs and screams",
+  "summary": {
+    "degree_max": 4942,
+    "degree_median": 784,
+    "era_histogram": {
+      "1940s": 6,
+      "1950s": 2,
+      "1970s": 1,
+      "1980s": 5,
+      "1990s": 28,
+      "2000s": 49,
+      "2010s": 65,
+      "2020s": 4
+    },
+    "gender_mix": {
+      "female": 29,
+      "male": 131
+    },
+    "top_name": "Steve Buscemi"
+  },
+  "title": "Comedy × Horror",
+  "tmdb_gender_rows": 0,
   "top_n": 160
 }

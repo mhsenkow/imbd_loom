@@ -113,6 +113,16 @@ export interface PosterSpec {
   searchMode: SearchMode;
   /** Timeline: swap axes (years vertical, people across) */
   timelineFlip: boolean;
+  /** Drop people with no surviving links after edge filters */
+  hideIsolates: boolean;
+  /** Minimum collaboration degree (pre top-N) */
+  minDegree: number;
+  /** Show construct-thread strip under the hero */
+  showStrip: boolean;
+  /** Draw warp threads across strip panels */
+  showWarps: boolean;
+  /** Cap how many warp threads render */
+  maxWarps: number;
 }
 
 export const DEFAULT_SPEC: PosterSpec = {
@@ -137,6 +147,11 @@ export const DEFAULT_SPEC: PosterSpec = {
   searchQuery: "",
   searchMode: "highlight",
   timelineFlip: false,
+  hideIsolates: true,
+  minDegree: 0,
+  showStrip: true,
+  showWarps: true,
+  maxWarps: 24,
 };
 
 /** ≤6 categorical hues — print-safe, not fully saturated */

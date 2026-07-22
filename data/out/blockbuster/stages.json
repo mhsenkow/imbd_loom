@@ -1,0 +1,72 @@
+[
+  {
+    "stageFrom": "gender",
+    "stageTo": "share_band",
+    "categoryFrom": "female",
+    "categoryTo": "≥80% blockbuster",
+    "value": 159
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "share_band",
+    "categoryFrom": "male",
+    "categoryTo": "≥80% blockbuster",
+    "value": 249
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "share_band",
+    "categoryFrom": "male",
+    "categoryTo": "65–79%",
+    "value": 43
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "share_band",
+    "categoryFrom": "female",
+    "categoryTo": "65–79%",
+    "value": 29
+  },
+  {
+    "stageFrom": "share_band",
+    "stageTo": "volume",
+    "categoryFrom": "≥80% blockbuster",
+    "categoryTo": "30+ titles",
+    "value": 164
+  },
+  {
+    "stageFrom": "share_band",
+    "stageTo": "volume",
+    "categoryFrom": "≥80% blockbuster",
+    "categoryTo": "8–14",
+    "value": 119
+  },
+  {
+    "stageFrom": "share_band",
+    "stageTo": "volume",
+    "categoryFrom": "65–79%",
+    "categoryTo": "15–29",
+    "value": 27
+  },
+  {
+    "stageFrom": "share_band",
+    "stageTo": "volume",
+    "categoryFrom": "≥80% blockbuster",
+    "categoryTo": "15–29",
+    "value": 125
+  },
+  {
+    "stageFrom": "share_band",
+    "stageTo": "volume",
+    "categoryFrom": "65–79%",
+    "categoryTo": "8–14",
+    "value": 13
+  },
+  {
+    "stageFrom": "share_band",
+    "stageTo": "volume",
+    "categoryFrom": "65–79%",
+    "categoryTo": "30+ titles",
+    "value": 32
+  }
+]

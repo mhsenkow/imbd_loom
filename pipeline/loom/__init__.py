@@ -16,8 +16,14 @@ IMDB_FILES = [
     "title.basics.tsv.gz",
     "title.principals.tsv.gz",
     "title.ratings.tsv.gz",
+    "title.crew.tsv.gz",
+    "title.episode.tsv.gz",
+    "title.akas.tsv.gz",
 ]
 
 # Density budget for hero visualizations
 DEFAULT_TOP_N = 200
 MAX_HERO_NODES = 300
+
+# Deterministic build seed (stable JSON ordering)
+BUILD_SEED = 42

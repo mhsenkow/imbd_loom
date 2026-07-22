@@ -1,15 +1,121 @@
 {
-  "id": "women_horror",
-  "title": "Women in Horror",
-  "subtitle": "gender → role prominence → title profile",
-  "key_variable": "gender",
-  "built_at": "2026-07-22T04:49:50.611432+00:00",
-  "node_count": 160,
-  "edge_count": 429,
-  "stage_row_count": 15,
-  "method_note": "Population: female-coded cast (TMDB gender=female, else IMDb category=actress) with ≥3 Horror credits. Hero = co-appearance on shared Horror titles (≥2). Alluvial includes all genders to show imbalance. Note: gender proxy is imperfect without TMDB enrichment.",
-  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-  "tmdb_gender_rows": 0,
+  "avg_path_length": 8.787,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 14705,
+    "era_slices": 6,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:18:38.963106+00:00",
+  "clustering_coefficient": 0.3156,
+  "community_count": 43,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 155,
+  "featured_path": [
+    {
+      "id": "nm0000244",
+      "label": "Sigourney Weaver"
+    },
+    {
+      "id": "nm0735442",
+      "label": "Michelle Rodriguez"
+    },
+    {
+      "id": "nm0000170",
+      "label": "Milla Jovovich"
+    },
+    {
+      "id": "nm1682400",
+      "label": "Spencer Locke"
+    },
+    {
+      "id": "nm0005417",
+      "label": "Lin Shaye"
+    },
+    {
+      "id": "nm0126284",
+      "label": "Rose Byrne"
+    },
+    {
+      "id": "nm1631269",
+      "label": "Chloë Grace Moretz"
+    },
+    {
+      "id": "nm0000201",
+      "label": "Michelle Pfeiffer"
+    },
+    {
+      "id": "nm0266824",
+      "label": "Dakota Fanning"
+    },
+    {
+      "id": "nm0000223",
+      "label": "Elisabeth Shue"
+    },
+    {
+      "id": "nm0502425",
+      "label": "Melissa Leo"
+    },
+    {
+      "id": "nm2832695",
+      "label": "Deborah Ann Woll"
+    },
+    {
+      "id": "nm5347988",
+      "label": "Taylor Russell"
+    },
+    {
+      "id": "nm0662504",
+      "label": "Molly Parker"
+    },
+    {
+      "id": "nm0000205",
+      "label": "Parker Posey"
+    },
+    {
+      "id": "nm0000173",
+      "label": "Nicole Kidman"
+    }
+  ],
   "gender_method": "imdb_actor_actress_proxy",
+  "id": "women_horror",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "gender",
+  "method_note": "Population: female-coded cast (TMDB gender=female, else IMDb category=actress) with ≥3 Horror credits (Adult excluded, numVotes ≥50). Hero = co-appearance on shared Horror titles (≥2). Alluvial includes all genders to show imbalance.",
+  "min_shared": 2,
+  "node_count": 160,
+  "stage_row_count": 15,
+  "subtitle": "gender → role prominence → title profile",
+  "summary": {
+    "degree_max": 213,
+    "degree_median": 35,
+    "era_histogram": {
+      "1960s": 1,
+      "1970s": 3,
+      "1980s": 5,
+      "1990s": 13,
+      "2000s": 52,
+      "2010s": 72,
+      "2020s": 14
+    },
+    "gender_mix": {
+      "female": 160
+    },
+    "top_name": "Sigourney Weaver"
+  },
+  "title": "Women in Horror",
+  "tmdb_gender_rows": 0,
   "top_n": 160
 }

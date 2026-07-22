@@ -1,0 +1,61 @@
+{
+  "avg_path_length": 1.412,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 6989,
+    "era_slices": 7,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:29:22.303420+00:00",
+  "clustering_coefficient": 0.6053,
+  "community_count": 134,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 37,
+  "featured_path": null,
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "comeback",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "max_gap",
+  "method_note": "Population: careers with a ≥8-year gap between consecutive credit years, then ≥5 distinct credit-years after the return (Adult excluded, numVotes ≥50). Hero = co-appearance among comeback peers.",
+  "min_after": 5,
+  "min_gap": 8,
+  "min_shared": 2,
+  "node_count": 160,
+  "stage_row_count": 5,
+  "subtitle": "≥8-year hiatus then ≥5 credits after",
+  "summary": {
+    "degree_max": 83,
+    "degree_median": 0,
+    "era_histogram": {
+      "1940s": 3,
+      "1950s": 5,
+      "1960s": 10,
+      "1970s": 8,
+      "1980s": 14,
+      "1990s": 33,
+      "2000s": 43,
+      "2010s": 43,
+      "2020s": 1
+    },
+    "gender_mix": {
+      "female": 70,
+      "male": 90
+    },
+    "top_name": "David Attenborough"
+  },
+  "title": "The Comeback Trail",
+  "tmdb_gender_rows": 0,
+  "top_n": 160
+}

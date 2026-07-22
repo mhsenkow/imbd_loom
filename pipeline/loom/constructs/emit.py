@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import math
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -10,8 +11,19 @@ from typing import Any
 import duckdb
 from rich.console import Console
 
-from loom import OUT
+from loom import BUILD_SEED, OUT
+from loom.analytics import attach_analytics, decade_edge_slices, simple_layout_2d
 from loom.constructs import gender_source_flags
+from loom.db import dataset_snapshot_meta
+from loom.facets import attach_known_for_titles, attach_person_facets
+from loom.filters import (
+    DEFAULT_MIN_VOTES,
+    adult_exclusion_sql,
+    title_type_sql,
+    vote_floor_sql,
+)
+from loom.stages_default import stages_from_nodes
+from loom.textnorm import ascii_fold, display_character
 
 console = Console()
 
@@ -19,10 +31,45 @@ console = Console()
 def write_construct(construct_id: str, payload: dict[str, Any]) -> Path:
     dest = OUT / construct_id
     dest.mkdir(parents=True, exist_ok=True)
-    for name in ("nodes", "edges", "stages", "manifest"):
+
+    def _json_default(o: Any) -> Any:
+        from decimal import Decimal
+
+        if isinstance(o, Decimal):
+            return float(o)
+        if hasattr(o, "item"):
+            try:
+                return o.item()
+            except Exception:
+                pass
+        raise TypeError(f"Object of type {o.__class__.__name__} is not JSON serializable")
+
+    # Deterministic key order for stable diffs
+    for name in ("nodes", "edges", "stages", "manifest", "summary", "quality", "era_slices"):
+        if name not in payload:
+            continue
         path = dest / f"{name}.json"
+        data = payload[name]
+        if name == "nodes":
+            data = sorted(data, key=lambda n: (-(n.get("degree") or 0), n.get("id") or ""))
+        elif name == "edges":
+            data = sorted(
+                data,
+                key=lambda e: (
+                    e.get("source") or "",
+                    e.get("target") or "",
+                    -(e.get("weight") or 0),
+                ),
+            )
         with open(path, "w", encoding="utf-8") as f:
-            json.dump(payload[name], f, indent=2, ensure_ascii=False)
+            json.dump(
+                data,
+                f,
+                indent=2,
+                ensure_ascii=False,
+                sort_keys=name == "manifest",
+                default=_json_default,
+            )
         console.print(f"  wrote {path.relative_to(OUT.parent.parent)} ({_size(path)})")
     return dest
 
@@ -34,6 +81,45 @@ def _size(path: Path) -> str:
     if n < 1e6:
         return f"{n / 1024:.1f} KB"
     return f"{n / 1e6:.1f} MB"
+
+
+def validate_construct(nodes: list[dict], edges: list[dict]) -> list[str]:
+    """Schema / integrity checks. Returns list of warnings (empty = ok)."""
+    warnings: list[str] = []
+    ids = {n.get("id") for n in nodes}
+    for n in nodes:
+        if not n.get("id") or not n.get("label"):
+            warnings.append("node missing id/label")
+            break
+        if n.get("degree") is not None and (
+            isinstance(n["degree"], float) and math.isnan(n["degree"])
+        ):
+            warnings.append(f"NaN degree on {n.get('id')}")
+    for e in edges:
+        if e.get("source") not in ids or e.get("target") not in ids:
+            warnings.append(f"edge endpoint missing: {e.get('source')}–{e.get('target')}")
+            break
+        w = e.get("weight")
+        if w is None or (isinstance(w, (int, float)) and w < 1):
+            warnings.append(f"edge weight < 1: {e.get('source')}–{e.get('target')}")
+            break
+    return warnings
+
+
+def quality_report(nodes: list[dict], edges: list[dict]) -> dict:
+    n = max(len(nodes), 1)
+    missing_birth = sum(1 for x in nodes if not x.get("birth_year"))
+    unknown_gender = sum(1 for x in nodes if (x.get("gender") or "unknown") == "unknown")
+    with_votes = sum(1 for x in nodes if (x.get("prominence") or 0) > 0)
+    edges_with_year = sum(1 for e in edges if e.get("year") is not None)
+    return {
+        "node_count": len(nodes),
+        "edge_count": len(edges),
+        "missing_birth_year_pct": round(100 * missing_birth / n, 1),
+        "gender_unknown_pct": round(100 * unknown_gender / n, 1),
+        "prominence_coverage_pct": round(100 * with_votes / n, 1),
+        "edges_with_year_pct": round(100 * edges_with_year / max(len(edges), 1), 1),
+    }
 
 
 def make_manifest(
@@ -48,6 +134,8 @@ def make_manifest(
     edges: list,
     stages: list,
     extra: dict | None = None,
+    build_stats: dict | None = None,
+    analytics: dict | None = None,
 ) -> dict:
     flags = gender_source_flags(con)
     m = {
@@ -60,12 +148,39 @@ def make_manifest(
         "edge_count": len(edges),
         "stage_row_count": len(stages),
         "method_note": method_note,
-        "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
+        "data_credit": (
+            "IMDb Non-Commercial Datasets (datasets.imdbws.com); "
+            "gender enrichment via TMDB where available; "
+            "voice flags via Wikidata + IMDb character heuristics; "
+            "Bechdel ratings where matched."
+        ),
+        "build_seed": BUILD_SEED,
+        **dataset_snapshot_meta(),
         **flags,
     }
+    if build_stats:
+        m["build_stats"] = build_stats
+    if analytics:
+        for k in (
+            "clustering_coefficient",
+            "avg_path_length",
+            "community_count",
+            "featured_path",
+            "summary",
+        ):
+            if k in analytics:
+                m[k] = analytics[k]
     if extra:
         m.update(extra)
     return m
+
+
+def _has_table(con: duckdb.DuckDBPyConnection, name: str) -> bool:
+    try:
+        con.execute(f"SELECT 1 FROM {name} LIMIT 1")
+        return True
+    except Exception:
+        return False
 
 
 def coappearance_edges(
@@ -75,66 +190,118 @@ def coappearance_edges(
     construct: str,
     top_n: int = 200,
     min_shared: int = 2,
-) -> tuple[list[dict], list[dict]]:
+    min_votes: int = DEFAULT_MIN_VOTES,
+    prominence_weight: bool = True,
+    attach_facets: bool = True,
+    attach_graph_analytics: bool = True,
+    collapse_episodes: bool = True,
+) -> tuple[list[dict], list[dict], dict]:
     """
     Build undirected co-appearance edges among people matching person_filter_sql.
 
-    person_filter_sql must be a SELECT returning (nconst, label, gender, ...extra cols)
-    already limited / ranked — we further cap to top_n by degree after edge build.
+    Returns (nodes, edges, build_stats).
     """
-    con.execute(
-        f"""
-        CREATE OR REPLACE TEMP TABLE _people AS
-        {person_filter_sql}
+    build_stats: dict[str, Any] = {"min_votes": min_votes, "min_shared": min_shared}
+
+    con.execute(f"CREATE OR REPLACE TEMP TABLE _people AS {person_filter_sql}")
+    pop0 = con.execute("SELECT COUNT(*) FROM _people").fetchone()[0]
+    build_stats["population_sql"] = int(pop0)
+
+    adult = adult_exclusion_sql("t")
+    types = title_type_sql("t")
+    votes = vote_floor_sql("r", min_votes=min_votes)
+
+    # Credit grain: collapse episodes → parent series when episode table exists
+    has_ep = collapse_episodes and _has_table(con, "title_episode")
+    if has_ep:
+        credit_sql = f"""
+        CREATE OR REPLACE TEMP TABLE _credits AS
+        SELECT DISTINCT
+          p.nconst,
+          COALESCE(ep.parentTconst, p.tconst) AS title_key,
+          p.tconst AS raw_tconst,
+          t.startYear,
+          t.genres,
+          COALESCE(r.numVotes, 0) AS votes,
+          LN(COALESCE(r.numVotes, 0) + 1) AS vote_w
+        FROM title_principals p
+        JOIN _people pe ON pe.nconst = p.nconst
+        JOIN title_basics t ON t.tconst = p.tconst
+        LEFT JOIN title_episode ep ON ep.tconst = p.tconst
+        LEFT JOIN title_ratings r ON r.tconst = COALESCE(ep.parentTconst, p.tconst)
+        WHERE p.category IN ('actor', 'actress')
+          AND {types}
+          AND {adult}
+          AND {votes}
+          AND t.startYear IS NOT NULL
         """
-    )
-    # Career year spans per person (from titles they appear in with anyone in set)
+    else:
+        credit_sql = f"""
+        CREATE OR REPLACE TEMP TABLE _credits AS
+        SELECT DISTINCT
+          p.nconst,
+          p.tconst AS title_key,
+          p.tconst AS raw_tconst,
+          t.startYear,
+          t.genres,
+          COALESCE(r.numVotes, 0) AS votes,
+          LN(COALESCE(r.numVotes, 0) + 1) AS vote_w
+        FROM title_principals p
+        JOIN _people pe ON pe.nconst = p.nconst
+        JOIN title_basics t ON t.tconst = p.tconst
+        LEFT JOIN title_ratings r ON r.tconst = p.tconst
+        WHERE p.category IN ('actor', 'actress')
+          AND {types}
+          AND {adult}
+          AND {votes}
+          AND t.startYear IS NOT NULL
+        """
+    con.execute(credit_sql)
+    build_stats["credit_rows"] = int(con.execute("SELECT COUNT(*) FROM _credits").fetchone()[0])
+
     con.execute(
         """
         CREATE OR REPLACE TEMP TABLE _years AS
         SELECT
-          p.nconst,
-          MIN(t.startYear) AS year_min,
-          MAX(t.startYear) AS year_max,
-          CAST(ROUND(AVG(t.startYear)) AS INTEGER) AS year_peak
-        FROM title_principals p
-        JOIN _people pe ON pe.nconst = p.nconst
-        JOIN title_basics t ON t.tconst = p.tconst
-        WHERE p.category IN ('actor', 'actress')
-          AND t.startYear IS NOT NULL
-          AND t.startYear BETWEEN 1920 AND 2030
+          nconst,
+          MIN(startYear) AS year_min,
+          MAX(startYear) AS year_max,
+          CAST(ROUND(AVG(startYear)) AS INTEGER) AS year_peak
+        FROM _credits
+        WHERE startYear BETWEEN 1920 AND 2030
         GROUP BY 1
         """
     )
-    # Shared titles between pairs + average collaboration year
+
+    weight_expr = (
+        "CAST(ROUND(SUM(LN(a.votes + 1))) AS INTEGER)"
+        if prominence_weight
+        else "COUNT(DISTINCT a.title_key)"
+    )
     con.execute(
-        """
+        f"""
         CREATE OR REPLACE TEMP TABLE _edges AS
         SELECT
           LEAST(a.nconst, b.nconst) AS source,
           GREATEST(a.nconst, b.nconst) AS target,
-          COUNT(DISTINCT a.tconst) AS weight,
-          CAST(ROUND(AVG(a.startYear)) AS INTEGER) AS year
+          COUNT(DISTINCT a.title_key) AS shared_count,
+          {weight_expr} AS weight,
+          CAST(ROUND(AVG(a.startYear)) AS INTEGER) AS year,
+          MIN(a.startYear) AS first_worked_together,
+          MAX(a.startYear) AS last_worked_together,
+          STRING_AGG(DISTINCT a.genres, '|') AS genre_blob
         FROM (
-          SELECT p.tconst, p.nconst, t.startYear
-          FROM title_principals p
-          JOIN _people pe ON pe.nconst = p.nconst
-          JOIN title_basics t ON t.tconst = p.tconst
-          WHERE p.category IN ('actor', 'actress')
-            AND t.startYear IS NOT NULL
+          SELECT DISTINCT nconst, title_key, startYear, votes, genres FROM _credits
         ) a
         JOIN (
-          SELECT p.tconst, p.nconst
-          FROM title_principals p
-          JOIN _people pe ON pe.nconst = p.nconst
-          WHERE p.category IN ('actor', 'actress')
-        ) b ON a.tconst = b.tconst AND a.nconst < b.nconst
+          SELECT DISTINCT nconst, title_key FROM _credits
+        ) b ON a.title_key = b.title_key AND a.nconst < b.nconst
         GROUP BY 1, 2
-        HAVING COUNT(DISTINCT a.tconst) >= ?
+        HAVING COUNT(DISTINCT a.title_key) >= ?
         """,
         [min_shared],
     )
-    # Degree for ranking
+
     con.execute(
         """
         CREATE OR REPLACE TEMP TABLE _deg AS
@@ -152,31 +319,56 @@ def coappearance_edges(
         FROM _people pe
         LEFT JOIN _deg d ON d.nconst = pe.nconst
         LEFT JOIN _years y ON y.nconst = pe.nconst
-        ORDER BY COALESCE(d.degree, 0) DESC
+        ORDER BY COALESCE(d.degree, 0) DESC, pe.nconst
         LIMIT {int(top_n)}
         """
     ).fetchall()
     top_cols = [d[0] for d in con.description]
-
     keep = {r[top_cols.index("nconst")] for r in top_rows}
+    build_stats["after_degree_cap"] = len(keep)
+
     edge_rows = con.execute(
-        "SELECT source, target, weight, year FROM _edges"
+        """
+        SELECT source, target, weight, shared_count, year,
+               first_worked_together, last_worked_together, genre_blob
+        FROM _edges
+        """
     ).fetchall()
-    edges = [
-        {
+
+    edges: list[dict] = []
+    for s, t, w, shared, yr, first, last, genre_blob in edge_rows:
+        if s not in keep or t not in keep:
+            continue
+        genres: list[str] = []
+        if genre_blob:
+            seen = set()
+            for part in str(genre_blob).replace("|", ",").split(","):
+                g = part.strip()
+                if g and g not in seen:
+                    seen.add(g)
+                    genres.append(g)
+        edge = {
             "source": s,
             "target": t,
-            "weight": int(w),
+            "weight": max(int(w or 1), 1),
+            "shared_count": int(shared or 0),
             "construct": construct,
-            **({"year": int(yr)} if yr is not None else {}),
         }
-        for s, t, w, yr in edge_rows
-        if s in keep and t in keep
-    ]
+        if yr is not None:
+            edge["year"] = int(yr)
+        if first is not None:
+            edge["first_worked_together"] = int(first)
+        if last is not None:
+            edge["last_worked_together"] = int(last)
+        if first is not None and last is not None and int(last) - int(first) >= 20:
+            edge["reunion"] = True
+            edge["reunion_gap"] = int(last) - int(first)
+        if genres:
+            edge["genres"] = genres[:8]
+        edges.append(edge)
 
     attach_shared_titles(con, edges, limit=3)
 
-    # Recompute degree within kept set
     deg: dict[str, int] = {n: 0 for n in keep}
     for e in edges:
         deg[e["source"]] += e["weight"]
@@ -191,6 +383,7 @@ def coappearance_edges(
         node = {
             "id": nconst,
             "label": rec["label"],
+            "label_ascii": ascii_fold(rec["label"]),
             "type": "person",
             "gender": rec.get("gender") or "unknown",
             "degree": deg.get(nconst, 0),
@@ -202,28 +395,87 @@ def coappearance_edges(
                 continue
             if isinstance(val, float):
                 node[col] = round(val, 3)
+            elif col.startswith("year"):
+                node[col] = int(val)
             else:
-                node[col] = int(val) if col.startswith("year") else val
+                node[col] = val
         nodes.append(node)
 
     attach_prominent_roles(con, nodes, limit=6)
-    return nodes, edges
+
+    analytics: dict = {}
+    if attach_facets:
+        facet_stats = attach_person_facets(con, nodes, min_votes=min_votes)
+        attach_known_for_titles(con, nodes)
+        build_stats.update(facet_stats)
+    if attach_graph_analytics and nodes and edges:
+        analytics = attach_analytics(nodes, edges)
+        simple_layout_2d(nodes, edges, seed=BUILD_SEED)
+        build_stats["era_slices"] = len(decade_edge_slices(edges))
+
+    warnings = validate_construct(nodes, edges)
+    if warnings:
+        build_stats["validation_warnings"] = warnings
+        for w in warnings[:3]:
+            console.print(f"  [yellow]validate[/yellow] {w}")
+
+    build_stats["analytics"] = analytics
+    return nodes, edges, build_stats
+
+
+def finalize_payload(
+    con: duckdb.DuckDBPyConnection,
+    *,
+    construct_id: str,
+    title: str,
+    subtitle: str,
+    key_variable: str,
+    method_note: str,
+    nodes: list[dict],
+    edges: list[dict],
+    stages: list[dict],
+    build_stats: dict | None = None,
+    extra: dict | None = None,
+) -> dict:
+    """Package construct with analytics / quality / era slices."""
+    if not stages and nodes:
+        stages = stages_from_nodes(nodes)
+        if build_stats is not None:
+            build_stats["stages_source"] = "default_from_nodes"
+
+    analytics = (build_stats or {}).pop("analytics", None) or {}
+    if not analytics and nodes and edges:
+        analytics = attach_analytics(nodes, edges)
+        simple_layout_2d(nodes, edges, seed=BUILD_SEED)
+
+    manifest = make_manifest(
+        con,
+        construct_id=construct_id,
+        title=title,
+        subtitle=subtitle,
+        key_variable=key_variable,
+        method_note=method_note,
+        nodes=nodes,
+        edges=edges,
+        stages=stages,
+        extra=extra,
+        build_stats={k: v for k, v in (build_stats or {}).items() if k != "analytics"},
+        analytics=analytics,
+    )
+    payload = {
+        "nodes": nodes,
+        "edges": edges,
+        "stages": stages,
+        "manifest": manifest,
+        "summary": analytics.get("summary") or {},
+        "quality": quality_report(nodes, edges),
+        "era_slices": decade_edge_slices(edges),
+    }
+    return payload
 
 
 def _parse_character(raw: str | None) -> str | None:
-    """IMDb characters look like [\"Name\"] or [\"Name (voice)\"]."""
-    if not raw:
-        return None
-    import re
-
-    m = re.findall(r'"([^"]+)"', raw)
-    if not m:
-        # bare string fallback
-        s = raw.strip().strip("[]")
-        return s or None
-    name = m[0]
-    name = re.sub(r"\s*\(voice\)\s*", "", name, flags=re.I).strip()
-    return name or None
+    return display_character(raw)
 
 
 def attach_shared_titles(
@@ -232,7 +484,6 @@ def attach_shared_titles(
     *,
     limit: int = 3,
 ) -> None:
-    """Attach example shared titles to each edge so charts can explain the link."""
     if not edges:
         return
     pairs = [(e["source"], e["target"]) for e in edges]
@@ -293,7 +544,6 @@ def attach_prominent_roles(
     *,
     limit: int = 6,
 ) -> None:
-    """Attach top billed roles (character + title + year) to each node in-place."""
     if not nodes:
         return
     ids = [n["id"] for n in nodes]
@@ -304,8 +554,6 @@ def attach_prominent_roles(
         """,
         [ids],
     )
-    # Rank by billing order (lower = more prominent), prefer named characters,
-    # then by title votes as a soft prominence signal.
     rows = con.execute(
         f"""
         WITH ranked AS (
@@ -330,6 +578,7 @@ def attach_prominent_roles(
           LEFT JOIN title_ratings r ON r.tconst = p.tconst
           WHERE p.category IN ('actor', 'actress')
             AND t.titleType IN ('movie', 'tvSeries', 'tvMovie', 'tvMiniSeries', 'short', 'video')
+            AND COALESCE(t.isAdult, 0) = 0
         )
         SELECT nconst, title, year, ordering, characters, votes, tconst
         FROM ranked
@@ -341,9 +590,16 @@ def attach_prominent_roles(
     by_person: dict[str, list[dict]] = {}
     for nconst, title, year, ordering, characters, votes, tconst in rows:
         char = _parse_character(characters)
+        # Parse ALL characters from the JSON-ish array
+        chars_all = []
+        if characters:
+            import re
+
+            chars_all = re.findall(r'"([^"]+)"', characters)
         role = {
             "title": title,
             "character": char,
+            "characters": chars_all or ([char] if char else []),
             "year": int(year) if year is not None else None,
             "billing": int(ordering) if ordering is not None else None,
             "tconst": tconst,

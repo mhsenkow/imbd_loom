@@ -1,8 +1,9 @@
 /** Apply connecting filters from PosterSpec to nodes/edges. */
 
-import type { Edge, Node, PosterSpec } from "./types";
+import type { ConstructData, Edge, Node, PosterSpec, StageRow } from "./types";
 import { neighborIds } from "./selection";
 import { edgeKey, type SearchMatch } from "./search";
+import { synthesizeStages } from "./stages";
 
 function num(v: unknown): number | undefined {
   if (v == null) return undefined;
@@ -23,18 +24,16 @@ function sortValue(n: Node, sortBy: PosterSpec["sortBy"]): number {
   }
 }
 
-export function filterNodes(
-  nodes: Node[],
-  spec: PosterSpec,
-  _focusId: string | null,
-  search?: SearchMatch | null,
-): Node[] {
+/** Connect + density gates before Top-N (and before search isolate). */
+export function filterNodesPool(nodes: Node[], spec: PosterSpec): Node[] {
   let list = nodes.filter((n) => {
     if (spec.genderFilter !== "all" && (n.gender || "unknown") !== spec.genderFilter) {
       return false;
     }
     const titles = num(n.title_count) ?? num(n.titleCount) ?? 0;
     if (titles < spec.minTitles) return false;
+    const deg = num(n.degree) ?? 0;
+    if (deg < spec.minDegree) return false;
     const yMin = num(n.year_min) ?? num(n.yearMin);
     const yMax = num(n.year_max) ?? num(n.yearMax);
     if (yMin != null && yMax != null) {
@@ -49,6 +48,17 @@ export function filterNodes(
     const bv = sortValue(b, spec.sortBy);
     return desc ? bv - av : av - bv;
   });
+
+  return list;
+}
+
+export function filterNodes(
+  nodes: Node[],
+  spec: PosterSpec,
+  _focusId: string | null,
+  search?: SearchMatch | null,
+): Node[] {
+  let list = filterNodesPool(nodes, spec);
 
   if (search && spec.searchMode === "isolate") {
     // Keep the matched web even if those people sit outside top-N by degree
@@ -87,6 +97,75 @@ export function filterEdges(
   }
 
   return list;
+}
+
+export function dropIsolates(
+  nodes: Node[],
+  edges: Edge[],
+  keepIds?: Set<string>,
+): Node[] {
+  if (!nodes.length) return nodes;
+  const linked = new Set<string>();
+  for (const e of edges) {
+    linked.add(e.source);
+    linked.add(e.target);
+  }
+  return nodes.filter((n) => linked.has(n.id) || keepIds?.has(n.id));
+}
+
+/** Suggest a useful max for the min-weight slider from this construct's edges. */
+export function weightSliderMax(edges: Edge[]): number {
+  if (!edges.length) return 10;
+  const weights = edges.map((e) => e.weight).sort((a, b) => a - b);
+  const p95 = weights[Math.min(weights.length - 1, Math.floor(weights.length * 0.95))] ?? 10;
+  return Math.max(10, Math.min(80, Math.ceil(p95)));
+}
+
+export interface MaterializedView {
+  nodes: Node[];
+  edges: Edge[];
+  stages: StageRow[];
+}
+
+/**
+ * Apply the active PosterSpec to a construct for hero or strip.
+ * Strip panels ignore search/neighborhood so companions stay comparable.
+ */
+export function materializeConstruct(
+  data: Pick<ConstructData, "nodes" | "edges">,
+  spec: PosterSpec,
+  opts?: {
+    focusId?: string | null;
+    search?: SearchMatch | null;
+    /** Companion strip: density/connect only */
+    forStrip?: boolean;
+  },
+): MaterializedView {
+  const focusId = opts?.forStrip ? null : (opts?.focusId ?? null);
+  const search = opts?.forStrip ? null : (opts?.search ?? null);
+  const stripSpec: PosterSpec = opts?.forStrip
+    ? { ...spec, neighborhoodOnly: false, searchQuery: "", searchMode: "highlight" }
+    : spec;
+
+  let nodes = filterNodes(data.nodes, stripSpec, focusId, search);
+  let edges = filterEdges(
+    data.edges,
+    new Set(nodes.map((n) => n.id)),
+    stripSpec,
+    focusId,
+    search,
+  );
+
+  if (stripSpec.hideIsolates) {
+    const keep = focusId ? new Set([focusId]) : undefined;
+    nodes = dropIsolates(nodes, edges, keep);
+    const ids = new Set(nodes.map((n) => n.id));
+    edges = edges.filter((e) => ids.has(e.source) && ids.has(e.target));
+  }
+
+  // Rebuild stages from survivors so density/connect reshape the alluvials
+  const stages = synthesizeStages(nodes);
+  return { nodes, edges, stages };
 }
 
 export function resolveColorBy(

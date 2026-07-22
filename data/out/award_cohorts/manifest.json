@@ -1,0 +1,72 @@
+{
+  "avg_path_length": 2.695,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 28711,
+    "era_slices": 6,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:41:44.182345+00:00",
+  "clustering_coefficient": 0.3161,
+  "community_count": 17,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 774,
+  "featured_path": [
+    {
+      "id": "nm0000138",
+      "label": "Leonardo DiCaprio"
+    },
+    {
+      "id": "nm0000134",
+      "label": "Robert De Niro"
+    },
+    {
+      "id": "nm0000151",
+      "label": "Morgan Freeman"
+    },
+    {
+      "id": "nm0000158",
+      "label": "Tom Hanks"
+    }
+  ],
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "award_cohorts",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "award_wins",
+  "method_note": "Population: Wikidata P166 award recipients when cache exists; otherwise actors with median title rating \u22657.5 as a soft quality cohort. Edges = shared titles (\u22652).",
+  "node_count": 160,
+  "stage_row_count": 11,
+  "subtitle": "award-linked careers woven by shared titles",
+  "summary": {
+    "degree_max": 1494,
+    "degree_median": 285,
+    "era_histogram": {
+      "1970s": 1,
+      "1980s": 2,
+      "1990s": 19,
+      "2000s": 79,
+      "2010s": 59
+    },
+    "gender_mix": {
+      "female": 28,
+      "male": 132
+    },
+    "top_name": "Leonardo DiCaprio"
+  },
+  "title": "Award Season Cohorts",
+  "tmdb_gender_rows": 0,
+  "top_n": 160,
+  "stages_source": "default_from_nodes"
+}

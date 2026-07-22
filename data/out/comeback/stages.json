@@ -1,0 +1,37 @@
+[
+  {
+    "stageFrom": "gender",
+    "stageTo": "gap_band",
+    "categoryFrom": "male",
+    "categoryTo": "20+ years",
+    "value": 259
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "gap_band",
+    "categoryFrom": "female",
+    "categoryTo": "20+ years",
+    "value": 221
+  },
+  {
+    "stageFrom": "gap_band",
+    "stageTo": "return",
+    "categoryFrom": "20+ years",
+    "categoryTo": "modest return (5–7)",
+    "value": 291
+  },
+  {
+    "stageFrom": "gap_band",
+    "stageTo": "return",
+    "categoryFrom": "20+ years",
+    "categoryTo": "strong return (15+)",
+    "value": 44
+  },
+  {
+    "stageFrom": "gap_band",
+    "stageTo": "return",
+    "categoryFrom": "20+ years",
+    "categoryTo": "solid return",
+    "value": 145
+  }
+]

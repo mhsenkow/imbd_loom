@@ -1,0 +1,71 @@
+{
+  "avg_path_length": 2.524,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 27498,
+    "era_slices": 7,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:40:57.876861+00:00",
+  "clustering_coefficient": 0.1542,
+  "community_count": 16,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 791,
+  "featured_path": [
+    {
+      "id": "nm0000138",
+      "label": "Leonardo DiCaprio"
+    },
+    {
+      "id": "nm1706767",
+      "label": "Jonah Hill"
+    },
+    {
+      "id": "nm0000151",
+      "label": "Morgan Freeman"
+    },
+    {
+      "id": "nm0000158",
+      "label": "Tom Hanks"
+    }
+  ],
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "drama_schools",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "drama_school",
+  "method_note": "Population: Wikidata educated-at matching known drama schools when cache exists; otherwise prolific Drama-genre careers as a weak proxy. Edges = shared titles (\u22652).",
+  "node_count": 160,
+  "stage_row_count": 10,
+  "subtitle": "RADA, Juilliard, and stage-school clusters",
+  "summary": {
+    "degree_max": 755,
+    "degree_median": 241,
+    "era_histogram": {
+      "1980s": 2,
+      "1990s": 21,
+      "2000s": 95,
+      "2010s": 42
+    },
+    "gender_mix": {
+      "female": 33,
+      "male": 127
+    },
+    "top_name": "Leonardo DiCaprio"
+  },
+  "title": "The Drama School Webs",
+  "tmdb_gender_rows": 0,
+  "top_n": 160,
+  "stages_source": "default_from_nodes"
+}

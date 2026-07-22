@@ -4,11 +4,25 @@ import { Poster } from "./components/Poster";
 import { DetailPanel } from "./components/DetailPanel";
 import { TimelineHero } from "./components/TimelineHero";
 import { ChartLegend } from "./components/ChartLegend";
-import { loadConstruct, loadIndex } from "./lib/data";
-import { filterEdges, filterNodes, resolveColorBy } from "./lib/filter";
+import { HomeGallery } from "./components/HomeGallery";
+import { loadConstruct, loadIndex, loadPeopleIndex } from "./lib/data";
+import {
+  dropIsolates,
+  filterEdges,
+  filterNodes,
+  filterNodesPool,
+  resolveColorBy,
+  weightSliderMax,
+} from "./lib/filter";
 import { matchSearch } from "./lib/search";
 import { deriveInsights } from "./lib/insights";
-import { specFromSearchParams, specToQuery } from "./lib/specUrl";
+import { specFromSearchParams, specToQuery, specToSearchParams } from "./lib/specUrl";
+import {
+  homeHref,
+  resolveStorySpec,
+  viewFromSearchParams,
+  type StoryPreset,
+} from "./lib/gallery";
 import {
   DEFAULT_SPEC,
   type ConstructData,
@@ -17,6 +31,7 @@ import {
   type Node,
   type PosterSpec,
 } from "./lib/types";
+import type { PersonIndexEntry } from "./lib/bridges";
 import {
   EMPTY_SELECTION,
   activeEdge,
@@ -36,14 +51,39 @@ function usePrintMode(): boolean {
   return print;
 }
 
+function readParams(): URLSearchParams {
+  return new URLSearchParams(window.location.search);
+}
+
+function writeUrl(
+  spec: PosterSpec,
+  view: "home" | "atelier",
+  mode: "push" | "replace" = "push",
+) {
+  const base = import.meta.env.BASE_URL;
+  const go = mode === "replace" ? window.history.replaceState.bind(window.history) : window.history.pushState.bind(window.history);
+  if (view === "home") {
+    go({ view: "home" }, "", homeHref(base));
+    return;
+  }
+  const qs = specToSearchParams(spec);
+  qs.set("view", "atelier");
+  const root = base.endsWith("/") ? base : `${base}/`;
+  go({ view: "atelier" }, "", `${root}?${qs.toString()}`);
+}
+
 export default function App() {
   const isPrint = usePrintMode();
-  const params = new URLSearchParams(window.location.search);
+  const params = readParams();
 
+  const [view, setView] = useState<"home" | "atelier">(() =>
+    viewFromSearchParams(params),
+  );
   const [spec, setSpec] = useState<PosterSpec>(() =>
     specFromSearchParams(params, DEFAULT_SPEC),
   );
   const [index, setIndex] = useState<Manifest[]>([]);
+  const [peopleIndex, setPeopleIndex] = useState<PersonIndexEntry[]>([]);
   const [cache, setCache] = useState<Record<string, ConstructData>>({});
   const cacheRef = useRef(cache);
   cacheRef.current = cache;
@@ -74,7 +114,41 @@ export default function App() {
     if (p.activeConstruct || p.heroForm) setSelection(EMPTY_SELECTION);
   }, []);
 
+  const openStory = useCallback((story: StoryPreset) => {
+    const next = resolveStorySpec(story);
+    setSpec(next);
+    setSelection(EMPTY_SELECTION);
+    setView("atelier");
+    writeUrl(next, "atelier");
+  }, []);
+
+  const openAtelier = useCallback(() => {
+    const next = { ...DEFAULT_SPEC };
+    setSpec(next);
+    setSelection(EMPTY_SELECTION);
+    setView("atelier");
+    writeUrl(next, "atelier");
+  }, []);
+
+  const openHome = useCallback(() => {
+    setView("home");
+    setSelection(EMPTY_SELECTION);
+    writeUrl(spec, "home");
+  }, [spec]);
+
   useEffect(() => {
+    const onPop = () => {
+      const p = readParams();
+      setView(viewFromSearchParams(p));
+      setSpec(specFromSearchParams(p, DEFAULT_SPEC));
+      setSelection(EMPTY_SELECTION);
+    };
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  }, []);
+
+  useEffect(() => {
+    if (view !== "atelier") return;
     loadIndex()
       .then((idx) => {
         setIndex(idx);
@@ -89,10 +163,12 @@ export default function App() {
         }
       })
       .catch(() => setError("Could not load construct index"));
+    loadPeopleIndex().then(setPeopleIndex).catch(() => setPeopleIndex([]));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [view]);
 
   useEffect(() => {
+    if (view !== "atelier") return;
     const activeId_ = spec.activeConstruct;
     if (!activeId_) return;
     let cancelled = false;
@@ -144,7 +220,7 @@ export default function App() {
     return () => {
       cancelled = true;
     };
-  }, [index, spec.activeConstruct]);
+  }, [view, index, spec.activeConstruct]);
 
   const active = cache[spec.activeConstruct];
   const focusId = activeId(selection);
@@ -155,8 +231,24 @@ export default function App() {
     return matchSearch(active.nodes, active.edges, spec.searchQuery);
   }, [active, spec.searchQuery]);
 
-  const nodes = useMemo(() => {
-    if (!active) return [] as Node[];
+  const poolSize = useMemo(() => {
+    if (!active) return 0;
+    return filterNodesPool(active.nodes, spec).length;
+  }, [active, spec]);
+
+  const weightMax = useMemo(() => {
+    if (!active) return 10;
+    return weightSliderMax(active.edges);
+  }, [active]);
+
+  // Keep min-weight inside this construct's useful range when switching lenses
+  useEffect(() => {
+    if (!active) return;
+    if (spec.minWeight > weightMax) patch({ minWeight: weightMax });
+  }, [active, weightMax, spec.minWeight, patch]);
+
+  const { nodes, edges } = useMemo(() => {
+    if (!active) return { nodes: [] as Node[], edges: [] as Edge[] };
     let list = filterNodes(active.nodes, spec, pinnedId, searchMatch);
     if (spec.neighborhoodOnly && pinnedId) {
       const ids = neighborIds(
@@ -169,14 +261,28 @@ export default function App() {
         if (f) list = [f, ...list];
       }
     }
-    return list;
+    let nextEdges = filterEdges(
+      active.edges,
+      new Set(list.map((n) => n.id)),
+      spec,
+      pinnedId,
+      searchMatch,
+    );
+    if (spec.hideIsolates) {
+      const keep = pinnedId ? new Set([pinnedId]) : undefined;
+      list = dropIsolates(list, nextEdges, keep);
+      const ids = new Set(list.map((n) => n.id));
+      nextEdges = nextEdges.filter((e) => ids.has(e.source) && ids.has(e.target));
+    }
+    return { nodes: list, edges: nextEdges };
   }, [active, spec, pinnedId, searchMatch]);
 
-  const nodeIds = useMemo(() => new Set(nodes.map((n) => n.id)), [nodes]);
-  const edges = useMemo(() => {
-    if (!active) return [];
-    return filterEdges(active.edges, nodeIds, spec, pinnedId, searchMatch);
-  }, [active, nodeIds, spec, pinnedId, searchMatch]);
+  // Keep shareable atelier URLs in sync as density/connect knobs move
+  useEffect(() => {
+    if (view !== "atelier" || isPrint) return;
+    const t = window.setTimeout(() => writeUrl(spec, "atelier", "replace"), 180);
+    return () => window.clearTimeout(t);
+  }, [spec, view, isPrint]);
 
   const focusNode = useMemo(() => {
     return focusId ? nodes.find((n) => n.id === focusId) ?? null : null;
@@ -286,6 +392,10 @@ export default function App() {
     .filter(Boolean)
     .join(" ");
 
+  if (!isPrint && view === "home") {
+    return <HomeGallery onOpenStory={openStory} onOpenAtelier={openAtelier} />;
+  }
+
   return (
     <div className={layoutClass}>
       {!isPrint && (
@@ -299,8 +409,11 @@ export default function App() {
           status={status}
           open={controlsOpen}
           onToggle={() => setControlsOpen((o) => !o)}
+          onOpenHome={openHome}
           searchMatch={searchMatch}
           filteredCounts={{ people: nodes.length, links: edges.length }}
+          poolSize={poolSize}
+          weightMax={weightMax}
         />
       )}
       <main className="stage">
@@ -353,6 +466,7 @@ export default function App() {
               active={active}
               all={cache}
               index={index}
+              peopleIndex={peopleIndex}
               selection={selection}
               onHover={onHover}
               onHoverEdge={onHoverEdge}

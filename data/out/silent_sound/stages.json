@@ -1,0 +1,37 @@
+[
+  {
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "male",
+    "categoryTo": "deep both sides",
+    "value": 377
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "female",
+    "categoryTo": "deep both sides",
+    "value": 103
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "span",
+    "categoryFrom": "deep both sides",
+    "categoryTo": "30+ year span",
+    "value": 261
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "span",
+    "categoryFrom": "deep both sides",
+    "categoryTo": "15–29",
+    "value": 186
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "span",
+    "categoryFrom": "deep both sides",
+    "categoryTo": "under 15",
+    "value": 33
+  }
+]

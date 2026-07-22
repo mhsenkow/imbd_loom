@@ -4,27 +4,27 @@
     "stageTo": "span_band",
     "categoryFrom": "male",
     "categoryTo": "50+ years",
-    "value": 263
+    "value": 248
   },
   {
     "stageFrom": "gender",
     "stageTo": "span_band",
     "categoryFrom": "female",
     "categoryTo": "50+ years",
-    "value": 217
-  },
-  {
-    "stageFrom": "span_band",
-    "stageTo": "cohort",
-    "categoryFrom": "50+ years",
-    "categoryTo": "started 1960–79",
-    "value": 1
+    "value": 232
   },
   {
     "stageFrom": "span_band",
     "stageTo": "cohort",
     "categoryFrom": "50+ years",
     "categoryTo": "started pre-1960",
-    "value": 479
+    "value": 363
+  },
+  {
+    "stageFrom": "span_band",
+    "stageTo": "cohort",
+    "categoryFrom": "50+ years",
+    "categoryTo": "started 1960–79",
+    "value": 117
   }
 ]

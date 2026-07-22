@@ -3,6 +3,13 @@
     "stageFrom": "gender",
     "stageTo": "bechdel_band",
     "categoryFrom": "male",
+    "categoryTo": "pass (3)",
+    "value": 27192
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bechdel_band",
+    "categoryFrom": "male",
     "categoryTo": "fail (0)",
     "value": 6150
   },
@@ -10,8 +17,36 @@
     "stageFrom": "gender",
     "stageTo": "bechdel_band",
     "categoryFrom": "male",
+    "categoryTo": "no talk (1)",
+    "value": 14092
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bechdel_band",
+    "categoryFrom": "male",
+    "categoryTo": "talk about men (2)",
+    "value": 5928
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bechdel_band",
+    "categoryFrom": "female",
+    "categoryTo": "no talk (1)",
+    "value": 5234
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bechdel_band",
+    "categoryFrom": "female",
+    "categoryTo": "talk about men (2)",
+    "value": 2890
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bechdel_band",
+    "categoryFrom": "female",
     "categoryTo": "pass (3)",
-    "value": 27282
+    "value": 21908
   },
   {
     "stageFrom": "gender",
@@ -19,41 +54,6 @@
     "categoryFrom": "female",
     "categoryTo": "fail (0)",
     "value": 1281
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bechdel_band",
-    "categoryFrom": "female",
-    "categoryTo": "pass (3)",
-    "value": 21975
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bechdel_band",
-    "categoryFrom": "female",
-    "categoryTo": "no talk (1)",
-    "value": 5246
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bechdel_band",
-    "categoryFrom": "female",
-    "categoryTo": "talk about men (2)",
-    "value": 2897
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bechdel_band",
-    "categoryFrom": "male",
-    "categoryTo": "no talk (1)",
-    "value": 14118
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bechdel_band",
-    "categoryFrom": "male",
-    "categoryTo": "talk about men (2)",
-    "value": 5941
   },
   {
     "stageFrom": "bechdel_band",
@@ -67,7 +67,7 @@
     "stageTo": "era",
     "categoryFrom": "pass (3)",
     "categoryTo": "2015+",
-    "value": 9245
+    "value": 9198
   },
   {
     "stageFrom": "bechdel_band",
@@ -81,7 +81,7 @@
     "stageTo": "era",
     "categoryFrom": "no talk (1)",
     "categoryTo": "2015+",
-    "value": 2648
+    "value": 2633
   },
   {
     "stageFrom": "bechdel_band",
@@ -100,30 +100,51 @@
   {
     "stageFrom": "bechdel_band",
     "stageTo": "era",
+    "categoryFrom": "no talk (1)",
+    "categoryTo": "1980–1999",
+    "value": 4179
+  },
+  {
+    "stageFrom": "bechdel_band",
+    "stageTo": "era",
+    "categoryFrom": "talk about men (2)",
+    "categoryTo": "1980–1999",
+    "value": 1802
+  },
+  {
+    "stageFrom": "bechdel_band",
+    "stageTo": "era",
+    "categoryFrom": "pass (3)",
+    "categoryTo": "2000–2014",
+    "value": 23535
+  },
+  {
+    "stageFrom": "bechdel_band",
+    "stageTo": "era",
+    "categoryFrom": "pass (3)",
+    "categoryTo": "pre-1980",
+    "value": 7128
+  },
+  {
+    "stageFrom": "bechdel_band",
+    "stageTo": "era",
     "categoryFrom": "pass (3)",
     "categoryTo": "1980–1999",
-    "value": 9249
+    "value": 9239
   },
   {
     "stageFrom": "bechdel_band",
     "stageTo": "era",
     "categoryFrom": "no talk (1)",
     "categoryTo": "2000–2014",
-    "value": 8812
+    "value": 8799
   },
   {
     "stageFrom": "bechdel_band",
     "stageTo": "era",
     "categoryFrom": "talk about men (2)",
     "categoryTo": "2000–2014",
-    "value": 3501
-  },
-  {
-    "stageFrom": "bechdel_band",
-    "stageTo": "era",
-    "categoryFrom": "no talk (1)",
-    "categoryTo": "pre-1980",
-    "value": 3715
+    "value": 3481
   },
   {
     "stageFrom": "bechdel_band",
@@ -142,29 +163,8 @@
   {
     "stageFrom": "bechdel_band",
     "stageTo": "era",
-    "categoryFrom": "talk about men (2)",
-    "categoryTo": "1980–1999",
-    "value": 1802
-  },
-  {
-    "stageFrom": "bechdel_band",
-    "stageTo": "era",
     "categoryFrom": "no talk (1)",
-    "categoryTo": "1980–1999",
-    "value": 4189
-  },
-  {
-    "stageFrom": "bechdel_band",
-    "stageTo": "era",
-    "categoryFrom": "pass (3)",
-    "categoryTo": "2000–2014",
-    "value": 23625
-  },
-  {
-    "stageFrom": "bechdel_band",
-    "stageTo": "era",
-    "categoryFrom": "pass (3)",
     "categoryTo": "pre-1980",
-    "value": 7138
+    "value": 3715
   }
 ]

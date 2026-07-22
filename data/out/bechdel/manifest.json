@@ -1,16 +1,72 @@
 {
-  "id": "bechdel",
-  "title": "The Bechdel Web",
-  "subtitle": "cast across films that pass the Bechdel test",
-  "key_variable": "gender",
-  "built_at": "2026-07-22T04:50:15.950674+00:00",
-  "node_count": 160,
-  "edge_count": 1217,
-  "stage_row_count": 24,
-  "method_note": "Population: cast credited on movies that fully pass the Bechdel test (rating=3 on bechdeltest.com; 5,105 titles in cache). Hero = co-appearance among people with ≥3 pass-film credits. Alluvial: gender → Bechdel band (0–3) → era across all rated titles. Bechdel ratings are community-contributed and incomplete — not every film is scored.",
-  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-  "tmdb_gender_rows": 0,
+  "avg_path_length": 2.699,
+  "bechdel_pass_titles": 5105,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 29803,
+    "era_slices": 7,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:20:12.692631+00:00",
+  "clustering_coefficient": 0.2088,
+  "community_count": 16,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 746,
+  "featured_path": [
+    {
+      "id": "nm0000158",
+      "label": "Tom Hanks"
+    },
+    {
+      "id": "nm0000151",
+      "label": "Morgan Freeman"
+    },
+    {
+      "id": "nm0000225",
+      "label": "Christian Slater"
+    },
+    {
+      "id": "nm0000093",
+      "label": "Brad Pitt"
+    }
+  ],
   "gender_method": "imdb_actor_actress_proxy",
-  "top_n": 160,
-  "bechdel_pass_titles": 5105
+  "id": "bechdel",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "gender",
+  "method_note": "Population: cast credited on movies that fully pass the Bechdel test (rating=3 on bechdeltest.com; 5,105 titles in cache). Adult excluded, numVotes ≥50. Hero = co-appearance among people with ≥3 pass-film credits. Alluvial: gender → Bechdel band (0–3) → era across all rated titles.",
+  "min_shared": 2,
+  "node_count": 160,
+  "stage_row_count": 24,
+  "subtitle": "cast across films that pass the Bechdel test",
+  "summary": {
+    "degree_max": 771,
+    "degree_median": 246,
+    "era_histogram": {
+      "1980s": 1,
+      "1990s": 16,
+      "2000s": 88,
+      "2010s": 55
+    },
+    "gender_mix": {
+      "female": 49,
+      "male": 111
+    },
+    "top_name": "Tom Hanks"
+  },
+  "title": "The Bechdel Web",
+  "tmdb_gender_rows": 0,
+  "top_n": 160
 }

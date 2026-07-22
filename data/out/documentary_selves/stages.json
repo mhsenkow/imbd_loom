@@ -1,0 +1,58 @@
+[
+  {
+    "stageFrom": "gender",
+    "stageTo": "lane",
+    "categoryFrom": "unknown",
+    "categoryTo": "documentary",
+    "value": 2
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "lane",
+    "categoryFrom": "unknown",
+    "categoryTo": "self",
+    "value": 66
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "lane",
+    "categoryFrom": "unknown",
+    "categoryTo": "self + doc",
+    "value": 412
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "volume",
+    "categoryFrom": "self + doc",
+    "categoryTo": "20–39",
+    "value": 114
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "volume",
+    "categoryFrom": "self",
+    "categoryTo": "40+ credits",
+    "value": 40
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "volume",
+    "categoryFrom": "documentary",
+    "categoryTo": "40+ credits",
+    "value": 2
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "volume",
+    "categoryFrom": "self + doc",
+    "categoryTo": "40+ credits",
+    "value": 298
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "volume",
+    "categoryFrom": "self",
+    "categoryTo": "20–39",
+    "value": 26
+  }
+]

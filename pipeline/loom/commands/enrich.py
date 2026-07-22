@@ -26,6 +26,7 @@ def enrich_all(
     skip_tmdb: bool = False,
     skip_wikidata: bool = False,
     skip_bechdel: bool = False,
+    skip_extra: bool = False,
     limit: int | None = None,
 ) -> None:
     ensure_dirs()
@@ -72,6 +73,21 @@ def enrich_all(
     else:
         console.print("[dim]Skipping Bechdel[/dim]")
 
+    if not skip_extra:
+        try:
+            from loom.commands.enrich_extra import (
+                enrich_movielens_tags,
+                enrich_pageviews_stub,
+                enrich_wikidata_people,
+            )
+
+            enrich_wikidata_people(limit=5000)
+            enrich_movielens_tags()
+            top_names = [name for _, name in candidates[:80] if name]
+            enrich_pageviews_stub(top_names, limit=40)
+        except Exception as exc:  # noqa: BLE001
+            console.print(f"[yellow]Extra enrichment skipped:[/yellow] {exc}")
+
     console.print("[green]✓[/green] Enrichment complete")
 
 
@@ -81,33 +97,9 @@ def _load_existing_gender() -> dict[str, dict[str, Any]]:
         return {}
     con = connect()
     rows = con.execute(f"SELECT * FROM read_parquet('{path}')").fetchall()
-    cols = ["nconst", "tmdb_gender", "tmdb_id", "source", "primaryName"]
+    cols = [d[0] for d in con.description]
     return {r[0]: dict(zip(cols, r)) for r in rows}
 
-
-def _save_gender(rows: list[dict[str, Any]]) -> None:
-    path = parquet_path("gender_cache")
-    CACHE.mkdir(parents=True, exist_ok=True)
-    con = connect()
-    con.execute(
-        "CREATE TEMP TABLE g (nconst VARCHAR, tmdb_gender INTEGER, tmdb_id INTEGER, source VARCHAR, primaryName VARCHAR)"
-    )
-    if rows:
-        con.executemany(
-            "INSERT INTO g VALUES (?, ?, ?, ?, ?)",
-            [
-                (
-                    r["nconst"],
-                    r.get("tmdb_gender"),
-                    r.get("tmdb_id"),
-                    r.get("source", "tmdb"),
-                    r.get("primaryName"),
-                )
-                for r in rows
-            ],
-        )
-    con.execute(f"COPY g TO '{path}' (FORMAT PARQUET, COMPRESSION ZSTD)")
-    console.print(f"  cached {len(rows):,} gender rows → {path.name}")
 
 def _enrich_tmdb(con, candidates: list[tuple]) -> None:
     api_key = os.getenv("TMDB_API_KEY", "").strip()
@@ -173,35 +165,105 @@ def _tmdb_find_person(client: httpx.Client, nconst: str, name: str) -> dict[str,
     r.raise_for_status()
     data = r.json()
     people = data.get("person_results") or []
-    if people:
-        p = people[0]
+    p = people[0] if people else None
+    source = "tmdb_find"
+    if not p:
+        r = client.get("/search/person", params={"query": name})
+        r.raise_for_status()
+        results = r.json().get("results") or []
+        p = results[0] if results else None
+        source = "tmdb_search"
+    if not p:
         return {
             "nconst": nconst,
-            "tmdb_gender": p.get("gender"),
-            "tmdb_id": p.get("id"),
-            "source": "tmdb_find",
+            "tmdb_gender": None,
+            "tmdb_id": None,
+            "source": "tmdb_miss",
             "primaryName": name,
+            "place_of_birth": None,
+            "birth_country": None,
+            "popularity": None,
+            "biography_len": None,
+            "also_known_as": None,
         }
-    # Fallback: search by name
-    r = client.get("/search/person", params={"query": name})
-    r.raise_for_status()
-    results = r.json().get("results") or []
-    if results:
-        p = results[0]
-        return {
-            "nconst": nconst,
-            "tmdb_gender": p.get("gender"),
-            "tmdb_id": p.get("id"),
-            "source": "tmdb_search",
-            "primaryName": name,
-        }
-    return {
+
+    row: dict[str, Any] = {
         "nconst": nconst,
-        "tmdb_gender": None,
-        "tmdb_id": None,
-        "source": "tmdb_miss",
+        "tmdb_gender": p.get("gender"),
+        "tmdb_id": p.get("id"),
+        "source": source,
         "primaryName": name,
+        "place_of_birth": None,
+        "birth_country": None,
+        "popularity": p.get("popularity"),
+        "biography_len": None,
+        "also_known_as": None,
     }
+    # Detail fetch for birthplace / aka / bio
+    tid = p.get("id")
+    if tid:
+        try:
+            d = client.get(f"/person/{tid}")
+            d.raise_for_status()
+            det = d.json()
+            row["place_of_birth"] = det.get("place_of_birth")
+            if det.get("place_of_birth") and "," in det["place_of_birth"]:
+                row["birth_country"] = det["place_of_birth"].split(",")[-1].strip()
+            bio = det.get("biography") or ""
+            row["biography_len"] = len(bio)
+            aka = det.get("also_known_as") or []
+            row["also_known_as"] = "|".join(aka[:8]) if aka else None
+            if det.get("popularity") is not None:
+                row["popularity"] = det.get("popularity")
+            if det.get("gender") is not None:
+                row["tmdb_gender"] = det.get("gender")
+            row["source"] = source + "+detail"
+        except Exception:
+            pass
+    return row
+
+
+def _save_gender(rows: list[dict[str, Any]]) -> None:
+    path = parquet_path("gender_cache")
+    CACHE.mkdir(parents=True, exist_ok=True)
+    con = connect()
+    con.execute(
+        """
+        CREATE TEMP TABLE g (
+          nconst VARCHAR,
+          tmdb_gender INTEGER,
+          tmdb_id INTEGER,
+          source VARCHAR,
+          primaryName VARCHAR,
+          place_of_birth VARCHAR,
+          birth_country VARCHAR,
+          popularity DOUBLE,
+          biography_len INTEGER,
+          also_known_as VARCHAR
+        )
+        """
+    )
+    if rows:
+        con.executemany(
+            "INSERT INTO g VALUES (?,?,?,?,?,?,?,?,?,?)",
+            [
+                (
+                    r["nconst"],
+                    r.get("tmdb_gender"),
+                    r.get("tmdb_id"),
+                    r.get("source", "tmdb"),
+                    r.get("primaryName"),
+                    r.get("place_of_birth"),
+                    r.get("birth_country"),
+                    r.get("popularity"),
+                    r.get("biography_len"),
+                    r.get("also_known_as"),
+                )
+                for r in rows
+            ],
+        )
+    con.execute(f"COPY g TO '{path}' (FORMAT PARQUET, COMPRESSION ZSTD)")
+    console.print(f"  cached {len(rows):,} gender rows → {path.name}")
 
 
 def _load_existing_voice() -> dict[str, dict[str, Any]]:

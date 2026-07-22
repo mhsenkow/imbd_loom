@@ -7,14 +7,20 @@ import { GENDER_COLORS } from "../lib/types";
 import { HeroViz } from "./HeroViz";
 import { TimelineStatic } from "./TimelineStatic";
 import { AlluvialPanel } from "./AlluvialPanel";
+import { ConstructBridges } from "./ConstructBridges";
 import type { SelectionState } from "../lib/selection";
+import { activeId } from "../lib/selection";
 import type { SearchMatch } from "../lib/search";
+import { pickStripIds, type PersonIndexEntry } from "../lib/bridges";
+import { materializeConstruct } from "../lib/filter";
+import { personFacetLabels, synthesizeStages } from "../lib/stages";
 
 interface Props {
   spec: PosterSpec;
   active: ConstructData;
   all: Record<string, ConstructData>;
   index: Manifest[];
+  peopleIndex?: PersonIndexEntry[];
   selection?: SelectionState;
   onHover?: (id: string | null) => void;
   onHoverEdge?: (edge: Edge | null) => void;
@@ -32,6 +38,7 @@ export function Poster({
   active,
   all,
   index,
+  peopleIndex = [],
   selection,
   onHover,
   onHoverEdge,
@@ -65,19 +72,129 @@ export function Poster({
     );
   }, [active.edges, nodeIds, spec.minWeight, filteredEdges]);
 
-  // Sub-view strip: up to 4 other constructs (or including active)
+  // Sub-view strip: active + companions that share people AND have usable stages
   const stripIds = useMemo(() => {
-    const ids = index.map((m) => m.id);
-    const others = ids.filter((id) => id !== active.manifest.id && all[id]);
-    const pick = others.slice(0, 4);
-    if (pick.length < 4 && all[active.manifest.id]) {
-      return [active.manifest.id, ...pick].slice(0, 4);
+    if (!spec.showStrip) return [] as string[];
+    const ids = index.map((m) => m.id).filter((id) => all[id]);
+    const stageCounts: Record<string, number> = {};
+    for (const id of ids) {
+      const data = all[id];
+      // Prefer constructs that still have people after the same density gates
+      const view = data
+        ? materializeConstruct(data, spec, { forStrip: true })
+        : { nodes: [] as Node[], stages: [] };
+      const stages =
+        view.stages.length > 0
+          ? view.stages
+          : synthesizeStages(data?.nodes || []);
+      stageCounts[id] = stages.length;
     }
-    return pick.length ? pick : ids.filter((id) => all[id]).slice(0, 4);
-  }, [index, active.manifest.id, all]);
+    return pickStripIds(ids, active.manifest.id, peopleIndex, stageCounts, 4);
+  }, [index, active.manifest.id, all, peopleIndex, spec]);
 
-  const panelW = (layout.strip.w - 6 * (stripIds.length - 1)) / Math.max(1, stripIds.length);
+  /** Per-panel people after the same density/connect filters as the hero */
+  const stripViews = useMemo(() => {
+    const out: Record<string, ReturnType<typeof materializeConstruct>> = {};
+    for (const id of stripIds) {
+      const data = all[id];
+      if (!data) continue;
+      out[id] = materializeConstruct(data, spec, { forStrip: true });
+    }
+    return out;
+  }, [stripIds, all, spec]);
+
+  /**
+   * Warps only for people who survive filters in each panel they claim —
+   * so Top-N / min weight / gender / years thin the thread set too.
+   */
+  const bridgePeople = useMemo((): PersonIndexEntry[] => {
+    if (!spec.showWarps || stripIds.length < 2) return [];
+    const labelById = new Map(peopleIndex.map((p) => [p.id, p.label]));
+    const membership = new Map<string, Set<string>>();
+    for (const cid of stripIds) {
+      const view = stripViews[cid];
+      if (!view) continue;
+      for (const n of view.nodes) {
+        let set = membership.get(n.id);
+        if (!set) {
+          set = new Set();
+          membership.set(n.id, set);
+        }
+        set.add(cid);
+      }
+    }
+    const activeId = stripIds[0];
+    const list: PersonIndexEntry[] = [];
+    for (const [pid, cids] of membership) {
+      if (!cids.has(activeId) || cids.size < 2) continue;
+      list.push({
+        id: pid,
+        label: labelById.get(pid) || pid,
+        constructs: [...cids],
+      });
+    }
+    return list;
+  }, [stripIds, stripViews, peopleIndex, spec.showWarps]);
+
+  const panelGap = 6;
+  const panelW =
+    (layout.strip.w - panelGap * Math.max(0, stripIds.length - 1)) /
+    Math.max(1, stripIds.length);
   const panelH = layout.strip.h;
+
+  const stripTitles = stripIds.map((id) => all[id]?.manifest.title || id);
+  const bridgeStats = useMemo(() => {
+    const activeId0 = stripIds[0];
+    if (!activeId0) return { multi: 0, full: 0 };
+    let multi = 0;
+    let full = 0;
+    for (const p of bridgePeople) {
+      const hit = stripIds.filter((id) => p.constructs.includes(id));
+      if (!hit.includes(activeId0) || hit.length < 2) continue;
+      multi += 1;
+      if (hit.length === stripIds.length) full += 1;
+    }
+    return { multi, full };
+  }, [bridgePeople, stripIds]);
+
+  const focusPersonId = selection ? activeId(selection) : null;
+
+  /** Per-panel facets for the focused person (degree/era can differ by construct). */
+  const focusByPanel = useMemo(() => {
+    const out: Record<
+      string,
+      { member: boolean; keys: Set<string>; label: string | null }
+    > = {};
+    for (const id of stripIds) {
+      const view = stripViews[id];
+      const n = view?.nodes.find((x) => x.id === focusPersonId);
+      if (n) {
+        const facets = personFacetLabels(n);
+        out[id] = { member: true, keys: facets.keys, label: n.label };
+      } else {
+        out[id] = { member: false, keys: new Set(), label: null };
+      }
+    }
+    return out;
+  }, [stripIds, stripViews, focusPersonId]);
+
+  const focusLabel = useMemo(() => {
+    if (!focusPersonId) return null;
+    const fromBridge = bridgePeople.find((p) => p.id === focusPersonId);
+    if (fromBridge) return fromBridge.label;
+    const fromHero = nodes.find((n) => n.id === focusPersonId);
+    if (fromHero) return fromHero.label;
+    for (const id of stripIds) {
+      const n = stripViews[id]?.nodes.find((x) => x.id === focusPersonId);
+      if (n) return n.label;
+    }
+    return focusPersonId;
+  }, [focusPersonId, bridgePeople, nodes, stripIds, stripViews]);
+
+  const focusPanelCount = useMemo(
+    () => stripIds.filter((id) => focusByPanel[id]?.member).length,
+    [stripIds, focusByPanel],
+  );
 
   return (
     <svg
@@ -189,37 +306,71 @@ export function Poster({
         )}
       </g>
 
-      {/* Sub-view strip label */}
-      <text
-        x={layout.strip.x}
-        y={layout.strip.y - 2}
-        fontFamily="IBM Plex Mono, monospace"
-        fontSize={4.5}
-        fill="#6e6a62"
-        letterSpacing={1}
-      >
-        CONSTRUCT THREADS
-      </text>
+      {spec.showStrip && stripIds.length > 0 ? (
+        <>
+          {/* Sub-view strip label */}
+          <text
+            x={layout.strip.x}
+            y={layout.strip.y - 2}
+            fontFamily="IBM Plex Mono, monospace"
+            fontSize={4.5}
+            fill="#6e6a62"
+            letterSpacing={1}
+          >
+            CONSTRUCT THREADS
+            <tspan fill="#8a857c">
+              {focusLabel
+                ? `  ·  ${focusLabel} in ${focusPanelCount}/${stripIds.length} panels`
+                : `  ·  ${bridgeStats.multi} people warp from this construct`}
+              {!focusLabel && interactive
+                ? "  ·  hover hero or a thread"
+                : !focusLabel
+                  ? "  ·  same filters as hero"
+                  : ""}
+            </tspan>
+          </text>
 
-      {/* Alluvial strip */}
-      <g transform={`translate(${layout.strip.x}, ${layout.strip.y})`}>
-        {stripIds.map((id, i) => {
-          const data = all[id];
-          if (!data) return null;
-          return (
-            <AlluvialPanel
-              key={id}
-              x={i * (panelW + 6)}
-              y={0}
-              width={panelW}
-              height={panelH}
-              stages={data.stages}
-              title={data.manifest.title}
-              palette={spec.palette}
-            />
-          );
-        })}
-      </g>
+          {/* Alluvial strip — stages rebuilt from filtered people */}
+          <g transform={`translate(${layout.strip.x}, ${layout.strip.y})`}>
+            {stripIds.map((id, i) => {
+              const data = all[id];
+              const view = stripViews[id];
+              if (!data || !view) return null;
+              const focus = focusByPanel[id];
+              return (
+                <AlluvialPanel
+                  key={id}
+                  x={i * (panelW + panelGap)}
+                  y={0}
+                  width={panelW}
+                  height={panelH}
+                  stages={view.stages}
+                  title={data.manifest.title}
+                  palette={spec.palette}
+                  focusActive={!!focusPersonId}
+                  focusMember={!!focus?.member}
+                  focusKeys={focus?.member ? focus.keys : null}
+                />
+              );
+            })}
+            {spec.showWarps ? (
+              <ConstructBridges
+                people={bridgePeople}
+                stripIds={stripIds}
+                stripTitles={stripTitles}
+                panelW={panelW}
+                gap={panelGap}
+                height={panelH}
+                maxWarps={spec.maxWarps}
+                focusId={focusPersonId}
+                interactive={interactive}
+                onHover={onHover}
+                onPin={onPin}
+              />
+            ) : null}
+          </g>
+        </>
+      ) : null}
 
       {/* Footer: legend + method + credit */}
       <g transform={`translate(${layout.footer.x}, ${layout.footer.y + 4})`}>

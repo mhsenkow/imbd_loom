@@ -1,15 +1,84 @@
 {
-  "id": "dubbing",
-  "title": "The Dubbing Multiverse",
-  "subtitle": "voice actor → character fan-out",
-  "key_variable": "character_count",
-  "built_at": "2026-07-22T04:51:24.997830+00:00",
-  "node_count": 160,
-  "edge_count": 1130,
-  "stage_row_count": 147,
-  "method_note": "Population: people with a voice signal and ≥5 distinct character credits. Hero = co-appearance among prolific voice performers. Alluvial: top actors → medium → role-count band.",
-  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-  "tmdb_gender_rows": 0,
+  "avg_path_length": 3.568,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 7629,
+    "era_slices": 7,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 317
+  },
+  "built_at": "2026-07-22T21:23:28.093604+00:00",
+  "clustering_coefficient": 0.5388,
+  "community_count": 54,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 306,
+  "featured_path": [
+    {
+      "id": "nm0000434",
+      "label": "Mark Hamill"
+    },
+    {
+      "id": "nm0012121",
+      "label": "Charlie Adler"
+    },
+    {
+      "id": "nm0164682",
+      "label": "Cam Clarke"
+    },
+    {
+      "id": "nm1920556",
+      "label": "Todd Haberkorn"
+    },
+    {
+      "id": "nm0754526",
+      "label": "Christopher Sabat"
+    },
+    {
+      "id": "nm0637586",
+      "label": "Masako Nozawa"
+    }
+  ],
   "gender_method": "imdb_actor_actress_proxy",
+  "id": "dubbing",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "character_count",
+  "method_note": "Population: people with a voice signal and ≥5 distinct character credits (Adult excluded, numVotes ≥50). Hero = co-appearance among prolific voice performers. Alluvial: top actors → medium → role-count band.",
+  "min_shared": 2,
+  "node_count": 160,
+  "stage_row_count": 105,
+  "subtitle": "voice actor → character fan-out",
+  "summary": {
+    "degree_max": 668,
+    "degree_median": 50,
+    "era_histogram": {
+      "1940s": 3,
+      "1950s": 1,
+      "1960s": 4,
+      "1970s": 3,
+      "1980s": 4,
+      "1990s": 17,
+      "2000s": 49,
+      "2010s": 67,
+      "2020s": 12
+    },
+    "gender_mix": {
+      "female": 39,
+      "male": 121
+    },
+    "top_name": "Ryan Reynolds"
+  },
+  "title": "The Dubbing Multiverse",
+  "tmdb_gender_rows": 0,
   "top_n": 160
 }

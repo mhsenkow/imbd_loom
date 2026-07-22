@@ -4,155 +4,1314 @@
     "title": "Voice Actors in Cartoons",
     "subtitle": "actor \u2192 show \u2192 character reuse",
     "key_variable": "degree",
-    "built_at": "2026-07-22T04:49:24.696362+00:00",
     "node_count": 160,
-    "edge_count": 6907,
-    "stage_row_count": 20,
-    "method_note": "Population: cast credited on Animation titles with a voice signal (Wikidata occupation 'voice actor', IMDb characters containing '(voice)', or voice job string). Edges = shared Animation titles (\u22652). Gender via TMDB when enriched, else IMDb actor/actress category.",
-    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-    "tmdb_gender_rows": 0,
-    "gender_method": "imdb_actor_actress_proxy",
-    "min_shared_titles": 2,
-    "top_n": 160
+    "edge_count": 2052,
+    "built_at": "2026-07-22T21:17:04.229585+00:00",
+    "method_note": "Population: cast credited on Animation titles with a voice signal (Wikidata occupation 'voice actor', IMDb characters containing '(voice)', or voice job string). Adult excluded, numVotes \u226550. Edges = shared Animation titles (\u22652).",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.4626,
+    "avg_path_length": 1.957,
+    "community_count": 11,
+    "top_name": "Mayumi Tanaka",
+    "era_histogram": {
+      "1970s": 7,
+      "1980s": 8,
+      "1990s": 17,
+      "2000s": 31,
+      "2010s": 81,
+      "2020s": 16
+    },
+    "gender_mix": {
+      "female": 93,
+      "male": 67
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 2052,
+      "missing_birth_year_pct": 4.4,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1970s\u20132020s",
+    "featured_path_labels": [
+      "Mayumi Tanaka",
+      "Masako Nozawa"
+    ]
   },
   {
     "id": "men_horror",
     "title": "Men in Horror",
     "subtitle": "gender \u2192 role prominence \u2192 title profile",
     "key_variable": "gender",
-    "built_at": "2026-07-22T04:49:37.704005+00:00",
     "node_count": 160,
-    "edge_count": 582,
-    "stage_row_count": 15,
-    "method_note": "Population: male-coded cast (TMDB gender=male, else IMDb category=actor) credited on Horror movies/series with \u22653 horror titles. Alluvial includes all genders to reveal imbalance. Edges = shared Horror titles (\u22652).",
-    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-    "tmdb_gender_rows": 0,
-    "gender_method": "imdb_actor_actress_proxy",
-    "top_n": 160
+    "edge_count": 385,
+    "built_at": "2026-07-22T21:17:51.941506+00:00",
+    "method_note": "Population: male-coded cast (TMDB gender=male, else IMDb category=actor) credited on Horror movies/series with \u22653 horror titles (Adult excluded, numVotes \u226550). Alluvial includes all genders to reveal imbalance. Edges = shared Horror titles (\u22652).",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.224,
+    "avg_path_length": 3.468,
+    "community_count": 23,
+    "top_name": "Brad Pitt",
+    "era_histogram": {
+      "1930s": 1,
+      "1940s": 1,
+      "1960s": 2,
+      "1970s": 4,
+      "1980s": 8,
+      "1990s": 21,
+      "2000s": 76,
+      "2010s": 46,
+      "2020s": 1
+    },
+    "gender_mix": {
+      "male": 160
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 385,
+      "missing_birth_year_pct": 3.8,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1930s\u20132020s",
+    "featured_path_labels": [
+      "Brad Pitt",
+      "Anthony Hopkins",
+      "Gary Oldman",
+      "Christian Bale"
+    ]
   },
   {
     "id": "women_horror",
     "title": "Women in Horror",
     "subtitle": "gender \u2192 role prominence \u2192 title profile",
     "key_variable": "gender",
-    "built_at": "2026-07-22T04:49:50.611432+00:00",
     "node_count": 160,
-    "edge_count": 429,
-    "stage_row_count": 15,
-    "method_note": "Population: female-coded cast (TMDB gender=female, else IMDb category=actress) with \u22653 Horror credits. Hero = co-appearance on shared Horror titles (\u22652). Alluvial includes all genders to show imbalance. Note: gender proxy is imperfect without TMDB enrichment.",
-    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-    "tmdb_gender_rows": 0,
-    "gender_method": "imdb_actor_actress_proxy",
-    "top_n": 160
+    "edge_count": 155,
+    "built_at": "2026-07-22T21:18:38.963106+00:00",
+    "method_note": "Population: female-coded cast (TMDB gender=female, else IMDb category=actress) with \u22653 Horror credits (Adult excluded, numVotes \u226550). Hero = co-appearance on shared Horror titles (\u22652). Alluvial includes all genders to show imbalance.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.3156,
+    "avg_path_length": 8.787,
+    "community_count": 43,
+    "top_name": "Sigourney Weaver",
+    "era_histogram": {
+      "1960s": 1,
+      "1970s": 3,
+      "1980s": 5,
+      "1990s": 13,
+      "2000s": 52,
+      "2010s": 72,
+      "2020s": 14
+    },
+    "gender_mix": {
+      "female": 160
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 155,
+      "missing_birth_year_pct": 9.4,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1960s\u20132020s",
+    "featured_path_labels": [
+      "Sigourney Weaver",
+      "Michelle Rodriguez",
+      "Milla Jovovich",
+      "Spencer Locke",
+      "Lin Shaye",
+      "Rose Byrne",
+      "Chlo\u00eb Grace Moretz",
+      "Michelle Pfeiffer",
+      "Dakota Fanning",
+      "Elisabeth Shue",
+      "Melissa Leo",
+      "Deborah Ann Woll",
+      "Taylor Russell",
+      "Molly Parker",
+      "Parker Posey",
+      "Nicole Kidman"
+    ]
   },
   {
     "id": "scream_queen",
     "title": "The Scream-Queen Web",
     "subtitle": "actress \u2194 actress co-appearance in horror",
     "key_variable": "coappearance",
-    "built_at": "2026-07-22T04:50:03.770708+00:00",
     "node_count": 160,
-    "edge_count": 429,
-    "stage_row_count": 125,
-    "method_note": "Population: female-coded cast with \u22653 Horror credits. Hero = co-appearance web (shared horror titles \u22652). Alluvial: top actresses \u2192 era \u2192 role band.",
-    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-    "tmdb_gender_rows": 0,
-    "gender_method": "imdb_actor_actress_proxy",
-    "top_n": 160
+    "edge_count": 155,
+    "built_at": "2026-07-22T21:19:25.775504+00:00",
+    "method_note": "Population: female-coded cast with \u22653 Horror credits (Adult excluded, numVotes \u226550). Hero = co-appearance web (shared horror titles \u22652). Alluvial: top actresses \u2192 era \u2192 role band.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.3156,
+    "avg_path_length": 8.787,
+    "community_count": 43,
+    "top_name": "Sigourney Weaver",
+    "era_histogram": {
+      "1960s": 1,
+      "1970s": 3,
+      "1980s": 5,
+      "1990s": 13,
+      "2000s": 52,
+      "2010s": 72,
+      "2020s": 14
+    },
+    "gender_mix": {
+      "female": 160
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 155,
+      "missing_birth_year_pct": 9.4,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1960s\u20132020s",
+    "featured_path_labels": [
+      "Sigourney Weaver",
+      "Michelle Rodriguez",
+      "Milla Jovovich",
+      "Spencer Locke",
+      "Lin Shaye",
+      "Rose Byrne",
+      "Chlo\u00eb Grace Moretz",
+      "Michelle Pfeiffer",
+      "Dakota Fanning",
+      "Elisabeth Shue",
+      "Melissa Leo",
+      "Deborah Ann Woll",
+      "Taylor Russell",
+      "Molly Parker",
+      "Parker Posey",
+      "Nicole Kidman"
+    ]
   },
   {
     "id": "bechdel",
     "title": "The Bechdel Web",
     "subtitle": "cast across films that pass the Bechdel test",
     "key_variable": "gender",
-    "built_at": "2026-07-22T04:50:15.950674+00:00",
     "node_count": 160,
-    "edge_count": 1217,
-    "stage_row_count": 24,
-    "method_note": "Population: cast credited on movies that fully pass the Bechdel test (rating=3 on bechdeltest.com; 5,105 titles in cache). Hero = co-appearance among people with \u22653 pass-film credits. Alluvial: gender \u2192 Bechdel band (0\u20133) \u2192 era across all rated titles. Bechdel ratings are community-contributed and incomplete \u2014 not every film is scored.",
-    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-    "tmdb_gender_rows": 0,
-    "gender_method": "imdb_actor_actress_proxy",
-    "top_n": 160,
-    "bechdel_pass_titles": 5105
+    "edge_count": 746,
+    "built_at": "2026-07-22T21:20:12.692631+00:00",
+    "method_note": "Population: cast credited on movies that fully pass the Bechdel test (rating=3 on bechdeltest.com; 5,105 titles in cache). Adult excluded, numVotes \u226550. Hero = co-appearance among people with \u22653 pass-film credits. Alluvial: gender \u2192 Bechdel band (0\u20133) \u2192 era across all rated titles.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.2088,
+    "avg_path_length": 2.699,
+    "community_count": 16,
+    "top_name": "Tom Hanks",
+    "era_histogram": {
+      "1980s": 1,
+      "1990s": 16,
+      "2000s": 88,
+      "2010s": 55
+    },
+    "gender_mix": {
+      "female": 49,
+      "male": 111
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 746,
+      "missing_birth_year_pct": 0.6,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1980s\u20132010s",
+    "featured_path_labels": [
+      "Tom Hanks",
+      "Morgan Freeman",
+      "Christian Slater",
+      "Brad Pitt"
+    ]
   },
   {
     "id": "comedy_horror",
     "title": "Comedy \u00d7 Horror",
     "subtitle": "crossover careers between laughs and screams",
     "key_variable": "crossover_weight",
-    "built_at": "2026-07-22T04:50:30.355542+00:00",
     "node_count": 160,
-    "edge_count": 1541,
-    "stage_row_count": 15,
-    "method_note": "Population: people with \u22652 Horror and \u22652 Comedy title credits. Hero = co-appearance among crossover performers. Alluvial: gender \u2192 horror/comedy/horror-comedy lane \u2192 billing band.",
-    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-    "tmdb_gender_rows": 0,
-    "gender_method": "imdb_actor_actress_proxy",
-    "top_n": 160
+    "edge_count": 1502,
+    "built_at": "2026-07-22T21:21:02.431509+00:00",
+    "method_note": "Population: people with \u22652 Horror and \u22652 Comedy title credits (Adult excluded, numVotes \u226550). Hero = co-appearance among crossover performers. Alluvial: gender \u2192 horror/comedy/horror-comedy lane \u2192 billing band.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.7355,
+    "avg_path_length": 1.783,
+    "community_count": 19,
+    "top_name": "Steve Buscemi",
+    "era_histogram": {
+      "1940s": 6,
+      "1950s": 2,
+      "1970s": 1,
+      "1980s": 5,
+      "1990s": 28,
+      "2000s": 49,
+      "2010s": 65,
+      "2020s": 4
+    },
+    "gender_mix": {
+      "female": 29,
+      "male": 131
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 1502,
+      "missing_birth_year_pct": 5.6,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1940s\u20132020s",
+    "featured_path_labels": [
+      "Steve Buscemi",
+      "Danny Trejo",
+      "Ron Perlman"
+    ]
   },
   {
     "id": "genre_bridge",
     "title": "Genre Bridges",
     "subtitle": "careers spanning two (or more) genres",
     "key_variable": "bridge",
-    "built_at": "2026-07-22T04:50:43.532375+00:00",
     "node_count": 160,
-    "edge_count": 1764,
-    "stage_row_count": 67,
-    "method_note": "Population: actors/actresses with \u226512 title-genre credits whose largest genre is <70% and second genre is \u226520% \u2014 careers that meaningfully span genres. Hero = co-appearance; node.bridge shows top two genres.",
-    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-    "tmdb_gender_rows": 0,
-    "gender_method": "imdb_actor_actress_proxy",
-    "top_n": 160
+    "edge_count": 2210,
+    "built_at": "2026-07-22T21:21:50.571592+00:00",
+    "method_note": "Population: actors/actresses with \u226512 title-genre credits (Adult excluded, numVotes \u226550) whose largest genre is <70% and second genre is \u226520% \u2014 careers that meaningfully span genres. Hero = co-appearance; node.bridge shows top two genres.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.7507,
+    "avg_path_length": 1.884,
+    "community_count": 11,
+    "top_name": "Akshay Kumar",
+    "era_histogram": {
+      "1930s": 1,
+      "1940s": 2,
+      "1960s": 1,
+      "1970s": 8,
+      "1980s": 16,
+      "1990s": 38,
+      "2000s": 58,
+      "2010s": 35,
+      "2020s": 1
+    },
+    "gender_mix": {
+      "female": 29,
+      "male": 131
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 2210,
+      "missing_birth_year_pct": 4.4,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1930s\u20132020s",
+    "featured_path_labels": [
+      "Akshay Kumar",
+      "Ajay Devgn"
+    ]
   },
   {
     "id": "one_role",
     "title": "One-Role Wonders",
     "subtitle": "person \u2192 genre concentration (\u226590%)",
     "key_variable": "dominant_genre",
-    "built_at": "2026-07-22T04:50:49.087498+00:00",
-    "node_count": 160,
-    "edge_count": 183,
-    "stage_row_count": 58,
-    "method_note": "Population: actors/actresses with \u22658 title-genre credits whose single largest genre accounts for \u226590% of those credits. Hero links people within the same dominant genre.",
-    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-    "tmdb_gender_rows": 0,
-    "gender_method": "imdb_actor_actress_proxy",
-    "concentration_threshold": 0.9,
-    "min_credits": 8,
-    "top_n": 160
+    "node_count": 32,
+    "edge_count": 84,
+    "built_at": "2026-07-22T21:41:48.794163+00:00",
+    "method_note": "Population: actors/actresses with \u22658 title-genre credits (Adult excluded, numVotes \u226550) whose single largest genre accounts for \u226590% of those credits. Stratified: top N/8 people per dominant genre (genres with enough people), ranked by prominence (\u03a3 votes/billing) rather than raw title count. Hero links connect people who share the same dominant genre; edge weight = min(prominence).",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.6917,
+    "avg_path_length": 2.25,
+    "community_count": 4,
+    "top_name": "Selim Nasit \u00d6zcan",
+    "era_histogram": {
+      "1970s": 1,
+      "1980s": 4,
+      "1990s": 2,
+      "2000s": 7,
+      "2010s": 5,
+      "2020s": 13
+    },
+    "gender_mix": {
+      "female": 15,
+      "male": 17
+    },
+    "quality": {
+      "node_count": 32,
+      "edge_count": 84,
+      "missing_birth_year_pct": 100.0,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1970s\u20132020s",
+    "featured_path_labels": [
+      "Selim Nasit \u00d6zcan",
+      "Leon Schuster"
+    ]
   },
   {
     "id": "long_careers",
     "title": "Long Careers",
     "subtitle": "35+ year credited spans",
     "key_variable": "career_span",
-    "built_at": "2026-07-22T04:51:01.721707+00:00",
     "node_count": 160,
-    "edge_count": 482,
-    "stage_row_count": 4,
-    "method_note": "Population: actors/actresses with \u226515 credits whose earliest and latest title years span \u226535 years (IMDb startYear). Hero = co-appearance among long-career peers.",
-    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-    "tmdb_gender_rows": 0,
-    "gender_method": "imdb_actor_actress_proxy",
-    "min_span_years": 35,
-    "min_titles": 15,
-    "top_n": 160
+    "edge_count": 376,
+    "built_at": "2026-07-22T21:22:40.095334+00:00",
+    "method_note": "Population: actors/actresses with \u226515 credits whose earliest and latest title years span \u226535 years (Adult excluded, numVotes \u226550). Hero = co-appearance among long-career peers.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.2876,
+    "avg_path_length": 4.27,
+    "community_count": 18,
+    "top_name": "Jack Nicholson",
+    "era_histogram": {
+      "1930s": 1,
+      "1940s": 5,
+      "1950s": 9,
+      "1960s": 23,
+      "1970s": 28,
+      "1980s": 39,
+      "1990s": 48,
+      "2000s": 7
+    },
+    "gender_mix": {
+      "female": 58,
+      "male": 102
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 376,
+      "missing_birth_year_pct": 0.0,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1930s\u20132000s",
+    "featured_path_labels": [
+      "Jack Nicholson",
+      "Bruce Dern",
+      "Jane Fonda",
+      "Michael Caine"
+    ]
   },
   {
     "id": "dubbing",
     "title": "The Dubbing Multiverse",
     "subtitle": "voice actor \u2192 character fan-out",
     "key_variable": "character_count",
-    "built_at": "2026-07-22T04:51:24.997830+00:00",
     "node_count": 160,
-    "edge_count": 1130,
-    "stage_row_count": 147,
-    "method_note": "Population: people with a voice signal and \u22655 distinct character credits. Hero = co-appearance among prolific voice performers. Alluvial: top actors \u2192 medium \u2192 role-count band.",
-    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-    "tmdb_gender_rows": 0,
-    "gender_method": "imdb_actor_actress_proxy",
-    "top_n": 160
+    "edge_count": 306,
+    "built_at": "2026-07-22T21:23:28.093604+00:00",
+    "method_note": "Population: people with a voice signal and \u22655 distinct character credits (Adult excluded, numVotes \u226550). Hero = co-appearance among prolific voice performers. Alluvial: top actors \u2192 medium \u2192 role-count band.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.5388,
+    "avg_path_length": 3.568,
+    "community_count": 54,
+    "top_name": "Ryan Reynolds",
+    "era_histogram": {
+      "1940s": 3,
+      "1950s": 1,
+      "1960s": 4,
+      "1970s": 3,
+      "1980s": 4,
+      "1990s": 17,
+      "2000s": 49,
+      "2010s": 67,
+      "2020s": 12
+    },
+    "gender_mix": {
+      "female": 39,
+      "male": 121
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 306,
+      "missing_birth_year_pct": 12.5,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1940s\u20132020s",
+    "featured_path_labels": [
+      "Mark Hamill",
+      "Charlie Adler",
+      "Cam Clarke",
+      "Todd Haberkorn",
+      "Christopher Sabat",
+      "Masako Nozawa"
+    ]
+  },
+  {
+    "id": "repertory",
+    "title": "The Repertory Companies",
+    "subtitle": "tight multi-person troupes (\u22653 shared titles)",
+    "key_variable": "troupe_partners",
+    "node_count": 160,
+    "edge_count": 2682,
+    "built_at": "2026-07-22T21:24:17.988896+00:00",
+    "method_note": "Population: actors with \u22653 co-appearance partners who each share \u22653 titles (Adult excluded, numVotes \u226550) \u2014 repertory / troupe careers. Edges require \u22653 shared titles.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.8086,
+    "avg_path_length": 2.02,
+    "community_count": 10,
+    "top_name": "Akshay Kumar",
+    "era_histogram": {
+      "1970s": 5,
+      "1980s": 19,
+      "1990s": 35,
+      "2000s": 50,
+      "2010s": 51
+    },
+    "gender_mix": {
+      "female": 29,
+      "male": 131
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 2682,
+      "missing_birth_year_pct": 5.0,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1970s\u20132010s",
+    "featured_path_labels": [
+      "Akshay Kumar",
+      "Raveena Tandon",
+      "Salman Khan"
+    ]
+  },
+  {
+    "id": "child_stars",
+    "title": "Child Stars",
+    "subtitle": "debut before age 12 \u2192 what happened next",
+    "key_variable": "worked_past_25",
+    "node_count": 160,
+    "edge_count": 141,
+    "built_at": "2026-07-22T21:25:02.718130+00:00",
+    "method_note": "Population: actors with known birthYear whose first credited title year minus birthYear is <12 (Adult excluded, numVotes \u226550, \u22653 titles). Node color key: worked_past_25 (career continues to age \u226525).",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.4501,
+    "avg_path_length": 3.658,
+    "community_count": 55,
+    "top_name": "Scarlett Johansson",
+    "era_histogram": {
+      "1930s": 1,
+      "1940s": 1,
+      "1960s": 2,
+      "1970s": 2,
+      "1980s": 3,
+      "1990s": 12,
+      "2000s": 50,
+      "2010s": 84,
+      "2020s": 5
+    },
+    "gender_mix": {
+      "female": 59,
+      "male": 101
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 141,
+      "missing_birth_year_pct": 0.0,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1930s\u20132020s",
+    "featured_path_labels": [
+      "Scarlett Johansson",
+      "Sam Rockwell"
+    ]
+  },
+  {
+    "id": "same_character",
+    "title": "The Same Character Club",
+    "subtitle": "Batmans, Bonds, Draculas \u2014 roles with 3+ faces",
+    "key_variable": "top_shared_character",
+    "node_count": 160,
+    "edge_count": 684,
+    "built_at": "2026-07-22T21:25:07.960848+00:00",
+    "method_note": "Population: actors who share a normalized primary character name played by 3\u201380 distinct people on titles with \u2265500 votes (Adult excluded). Edges link people who share such characters.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.3684,
+    "avg_path_length": 3.069,
+    "community_count": 15,
+    "top_name": "Michael Caine",
+    "era_histogram": {},
+    "gender_mix": {
+      "female": 68,
+      "male": 92
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 684,
+      "missing_birth_year_pct": 100.0,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 0.0
+    },
+    "featured_path_labels": [
+      "Michael Caine",
+      "Alec Baldwin",
+      "Harry Dean Stanton",
+      "Rob Schneider",
+      "Ian McShane"
+    ]
+  },
+  {
+    "id": "director_muses",
+    "title": "Director's Muses",
+    "subtitle": "actors with \u22654 titles under the same director",
+    "key_variable": "top_director",
+    "node_count": 160,
+    "edge_count": 718,
+    "built_at": "2026-07-22T21:25:55.383436+00:00",
+    "method_note": "Population: actors with \u22654 titles under the same director (via title_crew; Adult excluded, numVotes \u226550). Node.top_director is their most-repeated director. Hero = co-appearance among muse actors.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.8687,
+    "avg_path_length": 2.011,
+    "community_count": 34,
+    "top_name": "Toshir\u014d Mifune",
+    "era_histogram": {
+      "1930s": 3,
+      "1940s": 29,
+      "1950s": 5,
+      "1960s": 14,
+      "1970s": 25,
+      "1980s": 30,
+      "1990s": 26,
+      "2000s": 14,
+      "2010s": 6,
+      "2020s": 8
+    },
+    "gender_mix": {
+      "female": 29,
+      "male": 131
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 718,
+      "missing_birth_year_pct": 9.4,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1930s\u20132020s",
+    "featured_path_labels": [
+      "Toshir\u014d Mifune",
+      "Chish\u016b Ry\u016b",
+      "Chieko Baish\u014d"
+    ]
+  },
+  {
+    "id": "reunions",
+    "title": "The Reunion Map",
+    "subtitle": "pairs who reunited after \u226520 years apart",
+    "key_variable": "max_reunion_gap",
+    "node_count": 160,
+    "edge_count": 158,
+    "built_at": "2026-07-22T21:26:44.960950+00:00",
+    "method_note": "Population: actors with \u22658 credits spanning \u226520 years (Adult excluded, numVotes \u226550). Edges kept only when first/last co-appearance gap \u226520 years (reunions).",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.2001,
+    "avg_path_length": 2.774,
+    "community_count": 30,
+    "top_name": "Leonardo DiCaprio",
+    "era_histogram": {
+      "1970s": 3,
+      "1980s": 8,
+      "1990s": 59,
+      "2000s": 248,
+      "2010s": 162
+    },
+    "gender_mix": {
+      "female": 119,
+      "male": 361
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 158,
+      "missing_birth_year_pct": 1.2,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1970s\u20132010s",
+    "featured_path_labels": [
+      "Leonardo DiCaprio",
+      "Alec Baldwin",
+      "Joan Cusack",
+      "Tom Hanks"
+    ]
+  },
+  {
+    "id": "genre_drift",
+    "title": "Genre Drift",
+    "subtitle": "early vs late career genre change",
+    "key_variable": "drift",
+    "node_count": 160,
+    "edge_count": 408,
+    "built_at": "2026-07-22T21:28:36.928673+00:00",
+    "method_note": "Population: actors with \u226515 credits (Adult excluded, numVotes \u226550) whose dominant early-career genre (first third of years) differs from late-career genre (last third). Hero = co-appearance among drifters.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.3607,
+    "avg_path_length": 3.621,
+    "community_count": 24,
+    "top_name": "Tom Hanks",
+    "era_histogram": {
+      "1950s": 1,
+      "1960s": 1,
+      "1970s": 2,
+      "1980s": 3,
+      "1990s": 16,
+      "2000s": 66,
+      "2010s": 68,
+      "2020s": 3
+    },
+    "gender_mix": {
+      "female": 38,
+      "male": 122
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 408,
+      "missing_birth_year_pct": 1.2,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1950s\u20132020s",
+    "featured_path_labels": [
+      "Tom Hanks",
+      "Amy Adams",
+      "Jeremy Renner",
+      "Robert Downey Jr."
+    ]
+  },
+  {
+    "id": "comeback",
+    "title": "The Comeback Trail",
+    "subtitle": "\u22658-year hiatus then \u22655 credits after",
+    "key_variable": "max_gap",
+    "node_count": 160,
+    "edge_count": 37,
+    "built_at": "2026-07-22T21:29:22.303420+00:00",
+    "method_note": "Population: careers with a \u22658-year gap between consecutive credit years, then \u22655 distinct credit-years after the return (Adult excluded, numVotes \u226550). Hero = co-appearance among comeback peers.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.6053,
+    "avg_path_length": 1.412,
+    "community_count": 134,
+    "top_name": "David Attenborough",
+    "era_histogram": {
+      "1940s": 3,
+      "1950s": 5,
+      "1960s": 10,
+      "1970s": 8,
+      "1980s": 14,
+      "1990s": 33,
+      "2000s": 43,
+      "2010s": 43,
+      "2020s": 1
+    },
+    "gender_mix": {
+      "female": 70,
+      "male": 90
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 37,
+      "missing_birth_year_pct": 13.8,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1940s\u20132020s"
+  },
+  {
+    "id": "blockbuster",
+    "title": "The Blockbuster Ensemble",
+    "subtitle": "careers \u226550% in top-decile-votes titles",
+    "key_variable": "blockbuster_share",
+    "node_count": 160,
+    "edge_count": 498,
+    "built_at": "2026-07-22T21:30:09.197755+00:00",
+    "method_note": "Population: actors with \u22658 credits where \u226550% of titles are in the global top decile of numVotes (Adult excluded, vote floor \u226550). Hero = co-appearance among blockbuster-heavy careers.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.2421,
+    "avg_path_length": 3.146,
+    "community_count": 18,
+    "top_name": "Leonardo DiCaprio",
+    "era_histogram": {
+      "1990s": 4,
+      "2000s": 57,
+      "2010s": 97,
+      "2020s": 2
+    },
+    "gender_mix": {
+      "female": 50,
+      "male": 110
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 498,
+      "missing_birth_year_pct": 0.0,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1990s\u20132020s",
+    "featured_path_labels": [
+      "Leonardo DiCaprio",
+      "Mark Wahlberg",
+      "Joaquin Phoenix",
+      "Amy Adams",
+      "Tom Hanks"
+    ]
+  },
+  {
+    "id": "b_movie",
+    "title": "The B-Movie Loyalists",
+    "subtitle": "careers \u226570% below-median-votes titles",
+    "key_variable": "b_movie_share",
+    "node_count": 160,
+    "edge_count": 733,
+    "built_at": "2026-07-22T21:30:56.646537+00:00",
+    "method_note": "Population: actors with \u226510 credits where \u226570% of titles are below the global median of numVotes (Adult excluded, vote floor \u226550). Hero = co-appearance among B-movie-loyal careers.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.5642,
+    "avg_path_length": 1.773,
+    "community_count": 29,
+    "top_name": "Hoot Gibson",
+    "era_histogram": {
+      "1930s": 20,
+      "1940s": 57,
+      "1950s": 28,
+      "1960s": 3,
+      "1970s": 5,
+      "1980s": 5,
+      "2000s": 10,
+      "2010s": 11,
+      "2020s": 21
+    },
+    "gender_mix": {
+      "female": 47,
+      "male": 113
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 733,
+      "missing_birth_year_pct": 20.0,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1930s\u20132020s",
+    "featured_path_labels": [
+      "Hoot Gibson",
+      "Ken Maynard"
+    ]
+  },
+  {
+    "id": "national_bridges",
+    "title": "National Cinema Bridges",
+    "subtitle": "actors credited across \u22652 production regions",
+    "key_variable": "region_count",
+    "node_count": 160,
+    "edge_count": 819,
+    "built_at": "2026-07-22T21:31:47.288757+00:00",
+    "method_note": "Population: actors with credits on titles appearing in \u22652 distinct title_akas regions (Adult excluded, numVotes \u226550). Hero = co-appearance among cross-regional careers.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.359,
+    "avg_path_length": 2.89,
+    "community_count": 18,
+    "top_name": "Leonardo DiCaprio",
+    "era_histogram": {
+      "1970s": 2,
+      "1980s": 1,
+      "1990s": 23,
+      "2000s": 75,
+      "2010s": 59
+    },
+    "gender_mix": {
+      "female": 45,
+      "male": 115
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 819,
+      "missing_birth_year_pct": 2.5,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1970s\u20132010s",
+    "featured_path_labels": [
+      "Leonardo DiCaprio",
+      "Jonah Hill",
+      "Morgan Freeman",
+      "Tom Hanks"
+    ]
+  },
+  {
+    "id": "voice_face",
+    "title": "Voice \u2194 Face",
+    "subtitle": "animation voice + live-action movie careers",
+    "key_variable": "voice_ratio",
+    "node_count": 160,
+    "edge_count": 609,
+    "built_at": "2026-07-22T21:32:36.704243+00:00",
+    "method_note": "Population: people with \u22653 Animation credits and \u22653 non-Animation movie credits (Adult excluded, numVotes \u226550). Node.voice_ratio colors voice vs face balance. Hero = co-appearance.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.3099,
+    "avg_path_length": 3.184,
+    "community_count": 20,
+    "top_name": "Tom Hanks",
+    "era_histogram": {
+      "1960s": 1,
+      "1970s": 4,
+      "1980s": 8,
+      "1990s": 21,
+      "2000s": 54,
+      "2010s": 72
+    },
+    "gender_mix": {
+      "female": 28,
+      "male": 132
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 609,
+      "missing_birth_year_pct": 1.2,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1960s\u20132010s",
+    "featured_path_labels": [
+      "Tom Hanks",
+      "Keith David",
+      "Stephen Root",
+      "Alfred Molina",
+      "Johnny Depp"
+    ]
+  },
+  {
+    "id": "hyphenates",
+    "title": "The Hyphenates",
+    "subtitle": "actor-directors and actor-writers",
+    "key_variable": "hyphenate_kind",
+    "node_count": 160,
+    "edge_count": 749,
+    "built_at": "2026-07-22T21:33:26.122065+00:00",
+    "method_note": "Population: people whose primaryProfession includes actor/actress and director or writer (Adult excluded, numVotes \u226550, \u22655 acting credits). Edges = co-appearance plus director\u2192actor links among hyphenates when title_crew is available.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.2425,
+    "avg_path_length": 2.796,
+    "community_count": 23,
+    "top_name": "Leonardo DiCaprio",
+    "era_histogram": {
+      "1970s": 1,
+      "1980s": 1,
+      "1990s": 21,
+      "2000s": 83,
+      "2010s": 54
+    },
+    "gender_mix": {
+      "female": 29,
+      "male": 131
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 749,
+      "missing_birth_year_pct": 1.2,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1970s\u20132010s",
+    "featured_path_labels": [
+      "Leonardo DiCaprio",
+      "Robert De Niro",
+      "Morgan Freeman",
+      "Tom Hanks"
+    ]
+  },
+  {
+    "id": "franchise_nomads",
+    "title": "Franchise Nomads",
+    "subtitle": "people in \u22653 distinct series / IP groups",
+    "key_variable": "franchise_count",
+    "node_count": 160,
+    "edge_count": 2788,
+    "built_at": "2026-07-22T21:34:19.116314+00:00",
+    "method_note": "Population: actors in \u22653 distinct franchises \u2014 parent series via title_episode and/or shared title-name prefixes (Adult excluded, numVotes \u226550). Hero = co-appearance among franchise hoppers.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.8297,
+    "avg_path_length": 1.801,
+    "community_count": 10,
+    "top_name": "Akshay Kumar",
+    "era_histogram": {
+      "1970s": 3,
+      "1980s": 10,
+      "1990s": 28,
+      "2000s": 56,
+      "2010s": 63
+    },
+    "gender_mix": {
+      "female": 31,
+      "male": 129
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 2788,
+      "missing_birth_year_pct": 4.4,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1970s\u20132010s",
+    "featured_path_labels": [
+      "Akshay Kumar",
+      "Salman Khan"
+    ]
+  },
+  {
+    "id": "documentary_selves",
+    "title": "Documentary Selves",
+    "subtitle": "Self / Documentary credit ecosystems",
+    "key_variable": "self_count",
+    "node_count": 160,
+    "edge_count": 353,
+    "built_at": "2026-07-22T21:35:06.064644+00:00",
+    "method_note": "Population: people with \u22658 category=self credits OR \u22658 Documentary-genre credits (Adult excluded, numVotes \u226550). Hero = co-appearance among the documentary / talk-show ecosystem (min_shared=2).",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.3021,
+    "avg_path_length": 3.474,
+    "community_count": 23,
+    "top_name": "Leonardo DiCaprio",
+    "era_histogram": {
+      "1950s": 1,
+      "1960s": 1,
+      "1970s": 5,
+      "1980s": 5,
+      "1990s": 39,
+      "2000s": 69,
+      "2010s": 34,
+      "2020s": 6
+    },
+    "gender_mix": {
+      "unknown": 160
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 353,
+      "missing_birth_year_pct": 0.6,
+      "gender_unknown_pct": 100.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1950s\u20132020s",
+    "featured_path_labels": [
+      "Leonardo DiCaprio",
+      "Robert De Niro",
+      "Morgan Freeman",
+      "Tom Hanks"
+    ]
+  },
+  {
+    "id": "typecast",
+    "title": "The Typecast Index",
+    "subtitle": "careers defined by a repeated character name",
+    "key_variable": "typecast_character",
+    "node_count": 160,
+    "edge_count": 865,
+    "built_at": "2026-07-22T21:35:55.414657+00:00",
+    "method_note": "Population: actors whose most common normalized character name appears \u22654 times (Adult excluded, numVotes \u226550). Edges = co-appearance plus shared typecast archetype links.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.7474,
+    "avg_path_length": 3.553,
+    "community_count": 38,
+    "top_name": "Dee Bradley Baker",
+    "era_histogram": {
+      "1930s": 3,
+      "1940s": 14,
+      "1950s": 2,
+      "1960s": 4,
+      "1970s": 19,
+      "1980s": 20,
+      "1990s": 18,
+      "2000s": 42,
+      "2010s": 38
+    },
+    "gender_mix": {
+      "female": 71,
+      "male": 89
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 865,
+      "missing_birth_year_pct": 8.1,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 95.1
+    },
+    "era_span": "1930s\u20132010s",
+    "featured_path_labels": [
+      "Dee Bradley Baker",
+      "Kari Wahlgren",
+      "Miyuki Sawashiro",
+      "Jessie James Grelle"
+    ]
+  },
+  {
+    "id": "silent_sound",
+    "title": "Silent \u2192 Sound Survivors",
+    "subtitle": "careers spanning the 1927\u20131929 transition",
+    "key_variable": "sound_count",
+    "node_count": 160,
+    "edge_count": 1361,
+    "built_at": "2026-07-22T21:36:43.446067+00:00",
+    "method_note": "Population: actors with \u22651 credit in \u22641927 and \u22651 credit in \u22651929 (Adult excluded; vote floor relaxed to \u226520 or missing for silent-era coverage). Hero = co-appearance among transition survivors.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.3364,
+    "avg_path_length": 2.029,
+    "community_count": 14,
+    "top_name": "Boris Karloff",
+    "era_histogram": {
+      "1920s": 14,
+      "1930s": 129,
+      "1940s": 16,
+      "1950s": 1
+    },
+    "gender_mix": {
+      "female": 22,
+      "male": 138
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 1361,
+      "missing_birth_year_pct": 0.0,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1920s\u20131950s",
+    "featured_path_labels": [
+      "Boris Karloff",
+      "Richard Tucker",
+      "John Miljan",
+      "Lionel Barrymore"
+    ]
+  },
+  {
+    "id": "horror_bloodlines",
+    "title": "Horror Royalty Bloodlines",
+    "subtitle": "horror regulars (men + women, \u22654 titles)",
+    "key_variable": "gender",
+    "node_count": 160,
+    "edge_count": 407,
+    "built_at": "2026-07-22T21:37:31.274215+00:00",
+    "method_note": "Population: male- and female-coded cast with \u22654 Horror credits (Adult excluded, numVotes \u226550) \u2014 scream-queen web extended across genders. Family edges skipped (no Wikidata relations in this build). Hero = co-appearance on shared Horror titles (\u22652).",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.2577,
+    "avg_path_length": 3.575,
+    "community_count": 27,
+    "top_name": "Johnny Depp",
+    "era_histogram": {
+      "1960s": 2,
+      "1970s": 4,
+      "1980s": 5,
+      "1990s": 18,
+      "2000s": 82,
+      "2010s": 44,
+      "2020s": 5
+    },
+    "gender_mix": {
+      "female": 44,
+      "male": 116
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 407,
+      "missing_birth_year_pct": 4.4,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1960s\u20132020s",
+    "featured_path_labels": [
+      "Johnny Depp",
+      "Christopher Lee",
+      "Samuel L. Jackson",
+      "Bruce Willis"
+    ]
+  },
+  {
+    "id": "acting_dynasties",
+    "title": "Acting Dynasties",
+    "subtitle": "family trees woven with co-appearance",
+    "key_variable": "family",
+    "node_count": 160,
+    "edge_count": 815,
+    "built_at": "2026-07-22T21:38:19.174007+00:00",
+    "method_note": "Population: people with Wikidata family links (spouse/child/sibling) when cache is present; otherwise high-volume multi-name careers as a weak surname proxy. Edges = co-appearance plus typed family links when available.",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.2883,
+    "avg_path_length": 2.575,
+    "community_count": 22,
+    "top_name": "Tom Hanks",
+    "era_histogram": {
+      "1970s": 1,
+      "1990s": 21,
+      "2000s": 84,
+      "2010s": 54
+    },
+    "gender_mix": {
+      "female": 31,
+      "male": 129
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 815,
+      "missing_birth_year_pct": 1.9,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1970s\u20132010s",
+    "featured_path_labels": [
+      "Tom Hanks",
+      "Giovanni Ribisi",
+      "Cate Blanchett",
+      "Brad Pitt"
+    ]
+  },
+  {
+    "id": "athletes_actors",
+    "title": "Athletes to Actors",
+    "subtitle": "wrestlers, martial artists, athletes who crossed over",
+    "key_variable": "prior_occupation",
+    "node_count": 160,
+    "edge_count": 774,
+    "built_at": "2026-07-22T21:42:55.705713+00:00",
+    "method_note": "Population: Wikidata occupations matching athlete/wrestler/martial-artist when cache is warm; otherwise prolific Action-genre careers (\u22658 titles) as a physical-performance proxy. Edges = shared titles (\u22652).",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.384,
+    "avg_path_length": 2.923,
+    "community_count": 20,
+    "top_name": "Robert Downey Jr.",
+    "era_histogram": {
+      "1970s": 1,
+      "1990s": 12,
+      "2000s": 75,
+      "2010s": 72
+    },
+    "gender_mix": {
+      "female": 29,
+      "male": 131
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 774,
+      "missing_birth_year_pct": 1.9,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1970s\u20132010s",
+    "featured_path_labels": [
+      "Robert Downey Jr.",
+      "Eddie Marsan",
+      "Christian Bale"
+    ]
+  },
+  {
+    "id": "drama_schools",
+    "title": "The Drama School Webs",
+    "subtitle": "RADA, Juilliard, and stage-school clusters",
+    "key_variable": "drama_school",
+    "node_count": 160,
+    "edge_count": 791,
+    "built_at": "2026-07-22T21:40:57.876861+00:00",
+    "method_note": "Population: Wikidata educated-at matching known drama schools when cache exists; otherwise prolific Drama-genre careers as a weak proxy. Edges = shared titles (\u22652).",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.1542,
+    "avg_path_length": 2.524,
+    "community_count": 16,
+    "top_name": "Leonardo DiCaprio",
+    "era_histogram": {
+      "1980s": 2,
+      "1990s": 21,
+      "2000s": 95,
+      "2010s": 42
+    },
+    "gender_mix": {
+      "female": 33,
+      "male": 127
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 791,
+      "missing_birth_year_pct": 0.6,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1980s\u20132010s",
+    "featured_path_labels": [
+      "Leonardo DiCaprio",
+      "Jonah Hill",
+      "Morgan Freeman",
+      "Tom Hanks"
+    ]
+  },
+  {
+    "id": "award_cohorts",
+    "title": "Award Season Cohorts",
+    "subtitle": "award-linked careers woven by shared titles",
+    "key_variable": "award_wins",
+    "node_count": 160,
+    "edge_count": 774,
+    "built_at": "2026-07-22T21:41:44.182345+00:00",
+    "method_note": "Population: Wikidata P166 award recipients when cache exists; otherwise actors with median title rating \u22657.5 as a soft quality cohort. Edges = shared titles (\u22652).",
+    "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+    "clustering_coefficient": 0.3161,
+    "avg_path_length": 2.695,
+    "community_count": 17,
+    "top_name": "Leonardo DiCaprio",
+    "era_histogram": {
+      "1970s": 1,
+      "1980s": 2,
+      "1990s": 19,
+      "2000s": 79,
+      "2010s": 59
+    },
+    "gender_mix": {
+      "female": 28,
+      "male": 132
+    },
+    "quality": {
+      "node_count": 160,
+      "edge_count": 774,
+      "missing_birth_year_pct": 1.9,
+      "gender_unknown_pct": 0.0,
+      "prominence_coverage_pct": 100.0,
+      "edges_with_year_pct": 100.0
+    },
+    "era_span": "1970s\u20132010s",
+    "featured_path_labels": [
+      "Leonardo DiCaprio",
+      "Robert De Niro",
+      "Morgan Freeman",
+      "Tom Hanks"
+    ]
   }
 ]

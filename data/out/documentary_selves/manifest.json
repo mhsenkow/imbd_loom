@@ -1,0 +1,75 @@
+{
+  "avg_path_length": 3.474,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 13209,
+    "era_slices": 7,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:35:06.064644+00:00",
+  "clustering_coefficient": 0.3021,
+  "community_count": 23,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 353,
+  "featured_path": [
+    {
+      "id": "nm0000138",
+      "label": "Leonardo DiCaprio"
+    },
+    {
+      "id": "nm0000134",
+      "label": "Robert De Niro"
+    },
+    {
+      "id": "nm0000151",
+      "label": "Morgan Freeman"
+    },
+    {
+      "id": "nm0000158",
+      "label": "Tom Hanks"
+    }
+  ],
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "documentary_selves",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "self_count",
+  "method_note": "Population: people with ≥8 category=self credits OR ≥8 Documentary-genre credits (Adult excluded, numVotes ≥50). Hero = co-appearance among the documentary / talk-show ecosystem (min_shared=2).",
+  "min_credits": 8,
+  "min_shared": 2,
+  "node_count": 160,
+  "stage_row_count": 8,
+  "subtitle": "Self / Documentary credit ecosystems",
+  "summary": {
+    "degree_max": 650,
+    "degree_median": 95,
+    "era_histogram": {
+      "1950s": 1,
+      "1960s": 1,
+      "1970s": 5,
+      "1980s": 5,
+      "1990s": 39,
+      "2000s": 69,
+      "2010s": 34,
+      "2020s": 6
+    },
+    "gender_mix": {
+      "unknown": 160
+    },
+    "top_name": "Leonardo DiCaprio"
+  },
+  "title": "Documentary Selves",
+  "tmdb_gender_rows": 0,
+  "top_n": 160
+}

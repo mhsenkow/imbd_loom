@@ -1,0 +1,67 @@
+{
+  "avg_path_length": 2.923,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 28766,
+    "era_slices": 6,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:42:55.705713+00:00",
+  "clustering_coefficient": 0.384,
+  "community_count": 20,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 774,
+  "featured_path": [
+    {
+      "id": "nm0000375",
+      "label": "Robert Downey Jr."
+    },
+    {
+      "id": "nm0550371",
+      "label": "Eddie Marsan"
+    },
+    {
+      "id": "nm0000288",
+      "label": "Christian Bale"
+    }
+  ],
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "athletes_actors",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "prior_occupation",
+  "method_note": "Population: Wikidata occupations matching athlete/wrestler/martial-artist when cache is warm; otherwise prolific Action-genre careers (\u22658 titles) as a physical-performance proxy. Edges = shared titles (\u22652).",
+  "node_count": 160,
+  "stage_row_count": 11,
+  "subtitle": "wrestlers, martial artists, athletes who crossed over",
+  "summary": {
+    "degree_max": 1587,
+    "degree_median": 290,
+    "era_histogram": {
+      "1970s": 1,
+      "1990s": 12,
+      "2000s": 75,
+      "2010s": 72
+    },
+    "gender_mix": {
+      "female": 29,
+      "male": 131
+    },
+    "top_name": "Robert Downey Jr."
+  },
+  "title": "Athletes to Actors",
+  "tmdb_gender_rows": 0,
+  "top_n": 160,
+  "stages_source": "default_from_nodes"
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "male",
+    "categoryTo": "unknown era",
+    "value": 92
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "female",
+    "categoryTo": "unknown era",
+    "value": 68
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "degree",
+    "categoryFrom": "unknown era",
+    "categoryTo": "connected",
+    "value": 26
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "degree",
+    "categoryFrom": "unknown era",
+    "categoryTo": "linked",
+    "value": 111
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "degree",
+    "categoryFrom": "unknown era",
+    "categoryTo": "sparse",
+    "value": 23
+  }
+]

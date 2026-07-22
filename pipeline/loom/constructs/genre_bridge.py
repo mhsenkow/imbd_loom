@@ -5,14 +5,23 @@ from __future__ import annotations
 import duckdb
 
 from loom.constructs import gender_expr
-from loom.constructs.emit import coappearance_edges, make_manifest, rows_to_stages
+from loom.constructs.emit import coappearance_edges, finalize_payload, rows_to_stages
+from loom.filters import (
+    LOW_SIGNAL_GENRES,
+    adult_exclusion_sql,
+    title_type_sql,
+    vote_floor_sql,
+)
 
 
 def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     ge = gender_expr("p")
+    adult = adult_exclusion_sql("t")
+    types = title_type_sql("t")
+    votes = vote_floor_sql("r", min_votes=50)
+    low = ", ".join(f"'{g}'" for g in sorted(LOW_SIGNAL_GENRES))
 
-    # People whose 2nd genre is still ≥25% of credits and top genre < 70%
-    # → not one-role wonders, but real cross-genre careers
+    # People whose 2nd genre is still ≥20% of credits and top genre < 70%
     con.execute(
         f"""
         CREATE OR REPLACE TEMP TABLE _bridge_people AS
@@ -26,14 +35,19 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
           FROM title_principals p
           JOIN title_basics t ON t.tconst = p.tconst
           JOIN name_basics n ON n.nconst = p.nconst
+          LEFT JOIN title_ratings r ON r.tconst = p.tconst
           LEFT JOIN gender_enrich ge ON ge.nconst = p.nconst
           WHERE p.category IN ('actor', 'actress')
             AND t.genres IS NOT NULL
-            AND t.titleType IN ('movie', 'tvSeries', 'tvMovie', 'tvMiniSeries')
+            AND {types}
+            AND {adult}
+            AND {votes}
         ),
         per AS (
           SELECT nconst, label, gender, genre, COUNT(DISTINCT tconst) AS g_count
-          FROM credits GROUP BY 1, 2, 3, 4
+          FROM credits
+          WHERE genre NOT IN ({low})
+          GROUP BY 1, 2, 3, 4
         ),
         tot AS (
           SELECT nconst, SUM(g_count) AS total FROM per GROUP BY 1 HAVING SUM(g_count) >= 12
@@ -80,7 +94,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         LIMIT {int(top_n * 3)}
     """
 
-    nodes, edges = coappearance_edges(
+    nodes, edges, stats = coappearance_edges(
         con, person_sql, construct="genre_bridge", top_n=top_n, min_shared=2
     )
 
@@ -97,20 +111,18 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         FROM _bridge_people GROUP BY 3, 4
         """
     ).fetchall()
-    # Cap noisy bridge labels in stages — keep top pairs by count
-    # (already limited via people set size)
     stages = rows_to_stages(
         stage_rows, ("stageFrom", "stageTo", "categoryFrom", "categoryTo", "value")
     )
-    # Trim stage categories for readability
     stages = _cap_stage_categories(stages, 16)
 
     method = (
-        "Population: actors/actresses with ≥12 title-genre credits whose largest genre "
-        "is <70% and second genre is ≥20% — careers that meaningfully span genres. "
+        "Population: actors/actresses with ≥12 title-genre credits (Adult excluded, "
+        "numVotes ≥50) whose largest genre is <70% and second genre is ≥20% — "
+        "careers that meaningfully span genres. "
         "Hero = co-appearance; node.bridge shows top two genres."
     )
-    manifest = make_manifest(
+    return finalize_payload(
         con,
         construct_id="genre_bridge",
         title="Genre Bridges",
@@ -120,28 +132,25 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         nodes=nodes,
         edges=edges,
         stages=stages,
+        build_stats=stats,
         extra={"top_n": top_n, "min_shared": 2},
     )
-    return {"nodes": nodes, "edges": edges, "stages": stages, "manifest": manifest}
 
 
 def _cap_stage_categories(stages: list[dict], max_cats: int) -> list[dict]:
     from collections import defaultdict
 
-    # Keep highest-value categoryFrom/To pairs per stage hop
     by_hop: dict[tuple, list] = defaultdict(list)
     for s in stages:
         by_hop[(s["stageFrom"], s["stageTo"])].append(s)
     out = []
-    for hop, rows in by_hop.items():
-        # rank categories by total value
+    for _hop, rows in by_hop.items():
         cat_val: dict[str, int] = defaultdict(int)
         for r in rows:
             cat_val[r["categoryFrom"]] += int(r["value"])
             cat_val[r["categoryTo"]] += int(r["value"])
         keep = {
-            c
-            for c, _ in sorted(cat_val.items(), key=lambda x: -x[1])[:max_cats]
+            c for c, _ in sorted(cat_val.items(), key=lambda x: -x[1])[:max_cats]
         }
         for r in rows:
             if r["categoryFrom"] in keep and r["categoryTo"] in keep:

@@ -1,0 +1,74 @@
+{
+  "avg_path_length": 2.89,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 26315,
+    "era_slices": 6,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:31:47.288757+00:00",
+  "clustering_coefficient": 0.359,
+  "community_count": 18,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 819,
+  "featured_path": [
+    {
+      "id": "nm0000138",
+      "label": "Leonardo DiCaprio"
+    },
+    {
+      "id": "nm1706767",
+      "label": "Jonah Hill"
+    },
+    {
+      "id": "nm0000151",
+      "label": "Morgan Freeman"
+    },
+    {
+      "id": "nm0000158",
+      "label": "Tom Hanks"
+    }
+  ],
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "national_bridges",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "region_count",
+  "method_note": "Population: actors with credits on titles appearing in \u22652 distinct title_akas regions (Adult excluded, numVotes \u226550). Hero = co-appearance among cross-regional careers.",
+  "min_regions": 2,
+  "min_shared": 2,
+  "node_count": 160,
+  "stage_row_count": 13,
+  "subtitle": "actors credited across \u22652 production regions",
+  "summary": {
+    "degree_max": 2524,
+    "degree_median": 236,
+    "era_histogram": {
+      "1970s": 2,
+      "1980s": 1,
+      "1990s": 23,
+      "2000s": 75,
+      "2010s": 59
+    },
+    "gender_mix": {
+      "female": 45,
+      "male": 115
+    },
+    "top_name": "Leonardo DiCaprio"
+  },
+  "title": "National Cinema Bridges",
+  "tmdb_gender_rows": 0,
+  "top_n": 160,
+  "stages_source": "default_from_nodes"
+}

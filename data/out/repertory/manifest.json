@@ -1,0 +1,70 @@
+{
+  "avg_path_length": 2.02,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 53408,
+    "era_slices": 7,
+    "min_shared": 3,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:24:17.988896+00:00",
+  "clustering_coefficient": 0.8086,
+  "community_count": 10,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 2682,
+  "featured_path": [
+    {
+      "id": "nm0474774",
+      "label": "Akshay Kumar"
+    },
+    {
+      "id": "nm0849199",
+      "label": "Raveena Tandon"
+    },
+    {
+      "id": "nm0006795",
+      "label": "Salman Khan"
+    }
+  ],
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "repertory",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "troupe_partners",
+  "method_note": "Population: actors with \u22653 co-appearance partners who each share \u22653 titles (Adult excluded, numVotes \u226550) \u2014 repertory / troupe careers. Edges require \u22653 shared titles.",
+  "min_partners": 3,
+  "min_shared": 3,
+  "node_count": 160,
+  "stage_row_count": 11,
+  "subtitle": "tight multi-person troupes (\u22653 shared titles)",
+  "summary": {
+    "degree_max": 6405,
+    "degree_median": 1559,
+    "era_histogram": {
+      "1970s": 5,
+      "1980s": 19,
+      "1990s": 35,
+      "2000s": 50,
+      "2010s": 51
+    },
+    "gender_mix": {
+      "female": 29,
+      "male": 131
+    },
+    "top_name": "Akshay Kumar"
+  },
+  "title": "The Repertory Companies",
+  "tmdb_gender_rows": 0,
+  "top_n": 160,
+  "stages_source": "default_from_nodes"
+}

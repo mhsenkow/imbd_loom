@@ -1,0 +1,70 @@
+{
+  "avg_path_length": 1.773,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 8446,
+    "era_slices": 9,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:30:56.646537+00:00",
+  "clustering_coefficient": 0.5642,
+  "community_count": 29,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 733,
+  "featured_path": [
+    {
+      "id": "nm0316995",
+      "label": "Hoot Gibson"
+    },
+    {
+      "id": "nm0562770",
+      "label": "Ken Maynard"
+    }
+  ],
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "b_movie",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "b_movie_share",
+  "method_note": "Population: actors with ≥10 credits where ≥70% of titles are below the global median of numVotes (Adult excluded, vote floor ≥50). Hero = co-appearance among B-movie-loyal careers.",
+  "min_share": 0.7,
+  "min_shared": 2,
+  "min_titles": 10,
+  "node_count": 160,
+  "stage_row_count": 5,
+  "subtitle": "careers ≥70% below-median-votes titles",
+  "summary": {
+    "degree_max": 1037,
+    "degree_median": 94,
+    "era_histogram": {
+      "1930s": 20,
+      "1940s": 57,
+      "1950s": 28,
+      "1960s": 3,
+      "1970s": 5,
+      "1980s": 5,
+      "2000s": 10,
+      "2010s": 11,
+      "2020s": 21
+    },
+    "gender_mix": {
+      "female": 47,
+      "male": 113
+    },
+    "top_name": "Hoot Gibson"
+  },
+  "title": "The B-Movie Loyalists",
+  "tmdb_gender_rows": 0,
+  "top_n": 160
+}

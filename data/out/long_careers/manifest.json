@@ -1,17 +1,77 @@
 {
-  "id": "long_careers",
-  "title": "Long Careers",
-  "subtitle": "35+ year credited spans",
-  "key_variable": "career_span",
-  "built_at": "2026-07-22T04:51:01.721707+00:00",
-  "node_count": 160,
-  "edge_count": 482,
-  "stage_row_count": 4,
-  "method_note": "Population: actors/actresses with ≥15 credits whose earliest and latest title years span ≥35 years (IMDb startYear). Hero = co-appearance among long-career peers.",
-  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
-  "tmdb_gender_rows": 0,
+  "avg_path_length": 4.27,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 24242,
+    "era_slices": 9,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:22:40.095334+00:00",
+  "clustering_coefficient": 0.2876,
+  "community_count": 18,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 376,
+  "featured_path": [
+    {
+      "id": "nm0000197",
+      "label": "Jack Nicholson"
+    },
+    {
+      "id": "nm0001136",
+      "label": "Bruce Dern"
+    },
+    {
+      "id": "nm0000404",
+      "label": "Jane Fonda"
+    },
+    {
+      "id": "nm0000323",
+      "label": "Michael Caine"
+    }
+  ],
   "gender_method": "imdb_actor_actress_proxy",
+  "id": "long_careers",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "career_span",
+  "method_note": "Population: actors/actresses with ≥15 credits whose earliest and latest title years span ≥35 years (Adult excluded, numVotes ≥50). Hero = co-appearance among long-career peers.",
+  "min_shared": 2,
   "min_span_years": 35,
   "min_titles": 15,
+  "node_count": 160,
+  "stage_row_count": 4,
+  "subtitle": "35+ year credited spans",
+  "summary": {
+    "degree_max": 649,
+    "degree_median": 81,
+    "era_histogram": {
+      "1930s": 1,
+      "1940s": 5,
+      "1950s": 9,
+      "1960s": 23,
+      "1970s": 28,
+      "1980s": 39,
+      "1990s": 48,
+      "2000s": 7
+    },
+    "gender_mix": {
+      "female": 58,
+      "male": 102
+    },
+    "top_name": "Jack Nicholson"
+  },
+  "title": "Long Careers",
+  "tmdb_gender_rows": 0,
   "top_n": 160
 }

@@ -1,0 +1,69 @@
+{
+  "avg_path_length": 3.658,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 11800,
+    "era_slices": 7,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:25:02.718130+00:00",
+  "clustering_coefficient": 0.4501,
+  "community_count": 55,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 141,
+  "featured_path": [
+    {
+      "id": "nm0424060",
+      "label": "Scarlett Johansson"
+    },
+    {
+      "id": "nm0005377",
+      "label": "Sam Rockwell"
+    }
+  ],
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "child_stars",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "worked_past_25",
+  "max_debut_age": 11,
+  "method_note": "Population: actors with known birthYear whose first credited title year minus birthYear is <12 (Adult excluded, numVotes ≥50, ≥3 titles). Node color key: worked_past_25 (career continues to age ≥25).",
+  "min_shared": 2,
+  "node_count": 160,
+  "stage_row_count": 10,
+  "subtitle": "debut before age 12 → what happened next",
+  "summary": {
+    "degree_max": 191,
+    "degree_median": 27,
+    "era_histogram": {
+      "1930s": 1,
+      "1940s": 1,
+      "1960s": 2,
+      "1970s": 2,
+      "1980s": 3,
+      "1990s": 12,
+      "2000s": 50,
+      "2010s": 84,
+      "2020s": 5
+    },
+    "gender_mix": {
+      "female": 59,
+      "male": 101
+    },
+    "top_name": "Scarlett Johansson"
+  },
+  "title": "Child Stars",
+  "tmdb_gender_rows": 0,
+  "top_n": 160
+}

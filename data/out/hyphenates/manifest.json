@@ -1,0 +1,74 @@
+{
+  "avg_path_length": 2.796,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 26534,
+    "director_actor_edges": 155,
+    "era_slices": 6,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:33:26.122065+00:00",
+  "clustering_coefficient": 0.2425,
+  "community_count": 23,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 749,
+  "featured_path": [
+    {
+      "id": "nm0000138",
+      "label": "Leonardo DiCaprio"
+    },
+    {
+      "id": "nm0000134",
+      "label": "Robert De Niro"
+    },
+    {
+      "id": "nm0000151",
+      "label": "Morgan Freeman"
+    },
+    {
+      "id": "nm0000158",
+      "label": "Tom Hanks"
+    }
+  ],
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "hyphenates",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "hyphenate_kind",
+  "method_note": "Population: people whose primaryProfession includes actor/actress and director or writer (Adult excluded, numVotes \u226550, \u22655 acting credits). Edges = co-appearance plus director\u2192actor links among hyphenates when title_crew is available.",
+  "min_shared": 2,
+  "node_count": 160,
+  "stage_row_count": 11,
+  "subtitle": "actor-directors and actor-writers",
+  "summary": {
+    "degree_max": 839,
+    "degree_median": 230,
+    "era_histogram": {
+      "1970s": 1,
+      "1980s": 1,
+      "1990s": 21,
+      "2000s": 83,
+      "2010s": 54
+    },
+    "gender_mix": {
+      "female": 29,
+      "male": 131
+    },
+    "top_name": "Leonardo DiCaprio"
+  },
+  "title": "The Hyphenates",
+  "tmdb_gender_rows": 0,
+  "top_n": 160,
+  "stages_source": "default_from_nodes"
+}

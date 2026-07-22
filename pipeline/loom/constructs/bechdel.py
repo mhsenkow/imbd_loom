@@ -5,8 +5,9 @@ from __future__ import annotations
 import duckdb
 
 from loom.constructs import gender_expr
-from loom.constructs.emit import coappearance_edges, make_manifest, rows_to_stages
+from loom.constructs.emit import coappearance_edges, finalize_payload, rows_to_stages
 from loom.db import parquet_path
+from loom.filters import adult_exclusion_sql, title_type_sql, vote_floor_sql
 
 
 def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
@@ -22,7 +23,6 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         SELECT * FROM read_parquet('{bechdel_path}')
         """
     )
-    # Normalize IMDb ids to tt#######
     con.execute(
         """
         CREATE OR REPLACE TEMP TABLE _pass AS
@@ -41,6 +41,10 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     )
 
     ge = gender_expr("p")
+    adult = adult_exclusion_sql("t")
+    types = title_type_sql("t", types=("movie", "tvMovie"))
+    votes = vote_floor_sql("r", min_votes=50)
+
     person_sql = f"""
         SELECT
           p.nconst,
@@ -52,16 +56,19 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         JOIN _pass b ON b.tconst = p.tconst
         JOIN title_basics t ON t.tconst = p.tconst
         JOIN name_basics n ON n.nconst = p.nconst
+        LEFT JOIN title_ratings r ON r.tconst = p.tconst
         LEFT JOIN gender_enrich ge ON ge.nconst = p.nconst
         WHERE p.category IN ('actor', 'actress')
-          AND t.titleType IN ('movie', 'tvMovie')
+          AND {types}
+          AND {adult}
+          AND {votes}
         GROUP BY p.nconst, n.primaryName, ge.tmdb_gender, p.category
         HAVING COUNT(DISTINCT p.tconst) >= 3
         ORDER BY COUNT(DISTINCT p.tconst) DESC
         LIMIT {int(top_n * 3)}
     """
 
-    nodes, edges = coappearance_edges(
+    nodes, edges, stats = coappearance_edges(
         con, person_sql, construct="bechdel", top_n=top_n, min_shared=2
     )
 
@@ -92,9 +99,12 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             FROM _bechdel
             WHERE imdbid IS NOT NULL AND CAST(imdbid AS VARCHAR) != ''
           ) b ON b.tconst = p.tconst
+          LEFT JOIN title_ratings r ON r.tconst = p.tconst
           LEFT JOIN gender_enrich ge ON ge.nconst = p.nconst
           WHERE p.category IN ('actor', 'actress')
-            AND t.titleType IN ('movie', 'tvMovie')
+            AND {types}
+            AND {adult}
+            AND {votes}
             AND t.startYear IS NOT NULL
         )
         SELECT 'gender', 'bechdel_band', gender, bechdel_band, COUNT(*) FROM scored GROUP BY 3, 4
@@ -110,11 +120,11 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     method = (
         f"Population: cast credited on movies that fully pass the Bechdel test "
         f"(rating=3 on bechdeltest.com; {n_pass:,} titles in cache). "
+        "Adult excluded, numVotes ≥50. "
         "Hero = co-appearance among people with ≥3 pass-film credits. "
-        "Alluvial: gender → Bechdel band (0–3) → era across all rated titles. "
-        "Bechdel ratings are community-contributed and incomplete — not every film is scored."
+        "Alluvial: gender → Bechdel band (0–3) → era across all rated titles."
     )
-    manifest = make_manifest(
+    return finalize_payload(
         con,
         construct_id="bechdel",
         title="The Bechdel Web",
@@ -124,6 +134,6 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         nodes=nodes,
         edges=edges,
         stages=stages,
+        build_stats=stats,
         extra={"top_n": top_n, "min_shared": 2, "bechdel_pass_titles": int(n_pass)},
     )
-    return {"nodes": nodes, "edges": edges, "stages": stages, "manifest": manifest}

@@ -1,0 +1,76 @@
+{
+  "avg_path_length": 3.621,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 160,
+    "credit_rows": 21598,
+    "era_slices": 7,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 160,
+    "population_sql": 480
+  },
+  "built_at": "2026-07-22T21:28:36.928673+00:00",
+  "clustering_coefficient": 0.3607,
+  "community_count": 24,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 408,
+  "featured_path": [
+    {
+      "id": "nm0000158",
+      "label": "Tom Hanks"
+    },
+    {
+      "id": "nm0010736",
+      "label": "Amy Adams"
+    },
+    {
+      "id": "nm0719637",
+      "label": "Jeremy Renner"
+    },
+    {
+      "id": "nm0000375",
+      "label": "Robert Downey Jr."
+    }
+  ],
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "genre_drift",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "drift",
+  "method_note": "Population: actors with ≥15 credits (Adult excluded, numVotes ≥50) whose dominant early-career genre (first third of years) differs from late-career genre (last third). Hero = co-appearance among drifters.",
+  "min_shared": 2,
+  "min_titles": 15,
+  "node_count": 160,
+  "stage_row_count": 40,
+  "subtitle": "early vs late career genre change",
+  "summary": {
+    "degree_max": 815,
+    "degree_median": 142,
+    "era_histogram": {
+      "1950s": 1,
+      "1960s": 1,
+      "1970s": 2,
+      "1980s": 3,
+      "1990s": 16,
+      "2000s": 66,
+      "2010s": 68,
+      "2020s": 3
+    },
+    "gender_mix": {
+      "female": 38,
+      "male": 122
+    },
+    "top_name": "Tom Hanks"
+  },
+  "title": "Genre Drift",
+  "tmdb_gender_rows": 0,
+  "top_n": 160
+}

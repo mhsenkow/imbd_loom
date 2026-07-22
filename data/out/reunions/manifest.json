@@ -1,0 +1,75 @@
+{
+  "avg_path_length": 2.774,
+  "build_seed": 42,
+  "build_stats": {
+    "after_degree_cap": 480,
+    "after_reunion_filter": 160,
+    "credit_rows": 46372,
+    "era_slices": 7,
+    "min_shared": 2,
+    "min_votes": 50,
+    "people_faceted": 480,
+    "population_sql": 800,
+    "reunion_edges": 158
+  },
+  "built_at": "2026-07-22T21:26:44.960950+00:00",
+  "clustering_coefficient": 0.2001,
+  "community_count": 30,
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 158,
+  "featured_path": [
+    {
+      "id": "nm0000138",
+      "label": "Leonardo DiCaprio"
+    },
+    {
+      "id": "nm0000285",
+      "label": "Alec Baldwin"
+    },
+    {
+      "id": "nm0000349",
+      "label": "Joan Cusack"
+    },
+    {
+      "id": "nm0000158",
+      "label": "Tom Hanks"
+    }
+  ],
+  "gender_method": "imdb_actor_actress_proxy",
+  "id": "reunions",
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "key_variable": "max_reunion_gap",
+  "method_note": "Population: actors with \u22658 credits spanning \u226520 years (Adult excluded, numVotes \u226550). Edges kept only when first/last co-appearance gap \u226520 years (reunions).",
+  "min_reunion_gap": 20,
+  "node_count": 160,
+  "stage_row_count": 10,
+  "subtitle": "pairs who reunited after \u226520 years apart",
+  "summary": {
+    "degree_max": 2159,
+    "degree_median": 322,
+    "era_histogram": {
+      "1970s": 3,
+      "1980s": 8,
+      "1990s": 59,
+      "2000s": 248,
+      "2010s": 162
+    },
+    "gender_mix": {
+      "female": 119,
+      "male": 361
+    },
+    "top_name": "Leonardo DiCaprio"
+  },
+  "title": "The Reunion Map",
+  "tmdb_gender_rows": 0,
+  "top_n": 160,
+  "stages_source": "default_from_nodes"
+}

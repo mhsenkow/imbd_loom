@@ -43,7 +43,11 @@ TABLES = [
           TRY_CAST(startYear AS INTEGER) AS startYear,
           TRY_CAST(endYear AS INTEGER) AS endYear,
           TRY_CAST(runtimeMinutes AS INTEGER) AS runtimeMinutes,
-          genres
+          genres,
+          CASE
+            WHEN TRY_CAST(startYear AS INTEGER) IS NULL THEN NULL
+            ELSE CAST((TRY_CAST(startYear AS INTEGER) / 10) * 10 AS INTEGER)
+          END AS decade
         FROM {read}
         """,
     ),
@@ -72,17 +76,58 @@ TABLES = [
         FROM {read}
         """,
     ),
+    (
+        "title.crew.tsv.gz",
+        "title_crew",
+        """
+        SELECT
+          tconst,
+          directors,
+          writers
+        FROM {read}
+        """,
+    ),
+    (
+        "title.episode.tsv.gz",
+        "title_episode",
+        """
+        SELECT
+          tconst,
+          parentTconst,
+          TRY_CAST(seasonNumber AS INTEGER) AS seasonNumber,
+          TRY_CAST(episodeNumber AS INTEGER) AS episodeNumber
+        FROM {read}
+        """,
+    ),
+    (
+        "title.akas.tsv.gz",
+        "title_akas",
+        """
+        SELECT
+          titleId AS tconst,
+          TRY_CAST(ordering AS INTEGER) AS ordering,
+          title,
+          region,
+          language,
+          types,
+          attributes,
+          TRY_CAST(isOriginalTitle AS INTEGER) AS isOriginalTitle
+        FROM {read}
+        """,
+    ),
 ]
 
 
-def convert_to_parquet() -> None:
+def convert_to_parquet(*, only: list[str] | None = None) -> None:
     ensure_dirs()
     con = connect()
     for tsv_name, logical, sql_template in TABLES:
+        if only and logical not in only and tsv_name not in only:
+            continue
         src = RAW / tsv_name
         if not src.exists():
-            console.print(f"[red]missing[/red] {src} — run `loom download` first")
-            raise SystemExit(1)
+            console.print(f"[yellow]skip[/yellow] {tsv_name} (missing — run `loom download`)")
+            continue
         dest = parquet_path(logical)
         console.print(f"[bold]{tsv_name}[/bold] → {dest.name} …")
         src_lit = str(src).replace("'", "''")
