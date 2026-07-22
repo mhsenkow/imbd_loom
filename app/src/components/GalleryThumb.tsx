@@ -11,7 +11,7 @@ import {
   resolveColorBy,
 } from "../lib/filter";
 import { matchSearch } from "../lib/search";
-import type { ConstructData, PosterSpec } from "../lib/types";
+import type { ConstructData, PosterSpec, StatMarkId } from "../lib/types";
 
 const W = 360;
 const H = 220;
@@ -59,14 +59,16 @@ export function GalleryThumb({ spec }: Props) {
     };
   }, [visible, spec.activeConstruct]);
 
-  const previewSpec = useMemo(
-    (): PosterSpec => ({
+  const previewSpec = useMemo((): PosterSpec => {
+    const lean: StatMarkId[] = ["top5_degree", "densest_pair", "median_peak"];
+    return {
       ...spec,
       topN: Math.min(spec.topN, 48),
       labelMode: "none",
-    }),
-    [spec],
-  );
+      // Lean core marks so gallery cards still read as charts, not dashboards
+      statMarks: lean.filter((id) => spec.statMarks.includes(id)),
+    };
+  }, [spec]);
 
   const search = useMemo(() => {
     if (!data || !previewSpec.searchQuery.trim()) return null;
@@ -130,6 +132,11 @@ export function GalleryThumb({ spec }: Props) {
             flipped={previewSpec.timelineFlip}
             search={search}
             palette={previewSpec.palette}
+            sortBy={previewSpec.sortBy}
+            thicknessBy={previewSpec.thicknessBy}
+            sizeBy={previewSpec.sizeBy}
+            statMarks={previewSpec.statMarks}
+            manifest={data.manifest}
           />
         ) : (
           <g transform="translate(0, -8)">
@@ -147,6 +154,10 @@ export function GalleryThumb({ spec }: Props) {
               labelMode="none"
               search={search}
               palette={previewSpec.palette}
+              sortBy={previewSpec.sortBy}
+              thicknessBy={previewSpec.thicknessBy}
+              statMarks={previewSpec.statMarks}
+              manifest={data.manifest}
             />
           </g>
         )}

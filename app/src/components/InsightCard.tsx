@@ -7,9 +7,16 @@ interface Props {
   onFocus?: (id: string) => void;
   /** Render inside Inspect panel instead of floating on the stage */
   embedded?: boolean;
+  /** Show “on chart” when insight_sync mark is painting the focus */
+  syncOnChart?: boolean;
 }
 
-export function InsightCard({ insights, onFocus, embedded = false }: Props) {
+export function InsightCard({
+  insights,
+  onFocus,
+  embedded = false,
+  syncOnChart = true,
+}: Props) {
   if (!insights.length) return null;
   const primary = insights[0];
   const secondary = insights[1];
@@ -22,6 +29,11 @@ export function InsightCard({ insights, onFocus, embedded = false }: Props) {
       <div className="insight-kicker mono">
         Insight
         <span className="insight-kind-inline">{primary.kind}</span>
+        {syncOnChart && primary.focusId ? (
+          <span className="insight-sync-hint" title="Halo on the chart matches this focus">
+            · on chart
+          </span>
+        ) : null}
       </div>
       <p className="insight-headline">
         {primary.focusId && onFocus ? (

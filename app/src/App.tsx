@@ -16,6 +16,7 @@ import {
 } from "./lib/filter";
 import { matchSearch } from "./lib/search";
 import { deriveInsights } from "./lib/insights";
+import { computeViewStatMarks } from "./lib/statsMarks";
 import { specFromSearchParams, specToQuery, specToSearchParams } from "./lib/specUrl";
 import {
   homeHref,
@@ -301,6 +302,22 @@ export default function App() {
     });
   }, [active, nodes, edges, spec, searchMatch, focusId]);
 
+  const insightFocusId = insights[0]?.focusId ?? null;
+
+  const viewStats = useMemo(() => {
+    if (!nodes.length || !spec.statMarks.length) return null;
+    return computeViewStatMarks({
+      nodes,
+      edges,
+      enabled: spec.statMarks,
+      manifest: active?.manifest,
+      insightFocusId,
+      fullNodeCount: active?.nodes.length,
+      sortBy: spec.sortBy,
+      focusId: pinnedId,
+    });
+  }, [nodes, edges, spec.statMarks, spec.sortBy, active?.manifest, active?.nodes.length, insightFocusId, pinnedId]);
+
   const onHover = useCallback((id: string | null) => {
     setSelection((s) => (s.pinnedId ? s : { ...s, hoveredId: id }));
   }, []);
@@ -426,6 +443,7 @@ export default function App() {
                 ? ` · ${spec.yearFrom}–${spec.yearTo}`
                 : ""}
               {spec.searchQuery.trim() ? ` · find “${spec.searchQuery.trim()}”` : ""}
+              {spec.statMarks.length ? ` · ${spec.statMarks.length} stats` : ""}
             </span>
           </div>
         )}
@@ -454,12 +472,20 @@ export default function App() {
             flipped={spec.timelineFlip}
             search={searchMatch}
             palette={spec.palette}
+            sortBy={spec.sortBy}
+            thicknessBy={spec.thicknessBy}
+            sizeBy={spec.sizeBy}
+            statMarks={spec.statMarks}
+            manifest={active.manifest}
+            insightFocusId={insightFocusId}
+            viewStats={viewStats}
           />
         ) : (
           <div className="poster-frame">
             <ChartLegend
               form={spec.heroForm === "bundle" ? "bundle" : "chord"}
               colorBy={colorBy}
+              statMarks={viewStats}
             />
             <Poster
               spec={spec}
@@ -477,6 +503,8 @@ export default function App() {
               filteredEdges={edges}
               colorBy={colorBy}
               search={searchMatch}
+              viewStats={viewStats}
+              insightFocusId={insightFocusId}
             />
           </div>
         )}
@@ -490,6 +518,7 @@ export default function App() {
           pinned={!!selection.pinnedId}
           edgePinned={!!selection.pinnedEdge}
           insights={insights}
+          viewStats={viewStats}
           onPin={onPin}
           onFocusNeighbor={(id) => onPin(id)}
           open={inspectOpen}

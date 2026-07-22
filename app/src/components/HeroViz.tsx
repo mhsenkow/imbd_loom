@@ -1,11 +1,28 @@
 /** React SVG components for chord / bundle hero visualizations. */
 
 import { useMemo } from "react";
-import type { Edge, LabelMode, Node } from "../lib/types";
+import type {
+  ColorBy,
+  Edge,
+  LabelMode,
+  Manifest,
+  Node,
+  SortBy,
+  StatMarkId,
+  ThicknessBy,
+} from "../lib/types";
 import { layoutChord } from "../viz/chord";
 import { layoutBundle } from "../viz/bundle";
 import { activeEdge, activeId, neighborIds, type SelectionState } from "../lib/selection";
 import { edgeKey, type SearchMatch } from "../lib/search";
+import { computeViewStatMarks, hasStat, linkStatStyle, nodeFillOverride, nodeOpacityMod, showMedianSize, type ViewStatMarks } from "../lib/statsMarks";
+import {
+  DensestPairLabel,
+  GiniCallout,
+  MedianSizeGhost,
+  PersonStatDecor,
+  RetentionMeter,
+} from "./StatMarkDecor";
 
 interface Props {
   nodes: Node[];
@@ -13,7 +30,7 @@ interface Props {
   width: number;
   height: number;
   form: "chord" | "bundle";
-  colorBy: "gender" | "degree";
+  colorBy: ColorBy;
   minWeight: number;
   title: string;
   subtitle: string;
@@ -26,6 +43,12 @@ interface Props {
   labelMode?: LabelMode;
   search?: SearchMatch | null;
   palette?: string;
+  sortBy?: SortBy;
+  thicknessBy?: ThicknessBy;
+  statMarks?: StatMarkId[];
+  manifest?: Manifest | null;
+  insightFocusId?: string | null;
+  viewStats?: ViewStatMarks | null;
 }
 
 export function HeroViz({
@@ -47,6 +70,12 @@ export function HeroViz({
   labelMode = "hubs",
   search = null,
   palette = "loom",
+  sortBy = "degree",
+  thicknessBy = "shared",
+  statMarks = [],
+  manifest = null,
+  insightFocusId = null,
+  viewStats: viewStatsProp = null,
 }: Props) {
   const cx = width / 2;
   const cy = height / 2 + 8;
@@ -54,27 +83,60 @@ export function HeroViz({
   const focus = selection ? activeId(selection) : null;
   const edgeFocus = selection ? activeEdge(selection) : null;
   const neighbors = useMemo(() => neighborIds(focus, edges), [focus, edges]);
+  const byId = useMemo(() => new Map(nodes.map((n) => [n.id, n])), [nodes]);
+
+  const stats = useMemo(() => {
+    if (viewStatsProp) return viewStatsProp;
+    if (!statMarks.length) return null;
+    return computeViewStatMarks({
+      nodes,
+      edges,
+      enabled: statMarks,
+      manifest,
+      insightFocusId,
+    });
+  }, [viewStatsProp, statMarks, nodes, edges, manifest, insightFocusId]);
 
   const chord = useMemo(
     () =>
       form === "chord"
-        ? layoutChord(nodes, edges, radius, { colorBy, minWeight, palette })
+        ? layoutChord(nodes, edges, radius, {
+            colorBy,
+            minWeight,
+            palette,
+            sortBy,
+            thicknessBy,
+          })
         : null,
-    [nodes, edges, radius, form, colorBy, minWeight, palette],
+    [nodes, edges, radius, form, colorBy, minWeight, palette, sortBy, thicknessBy],
   );
 
   const bundle = useMemo(
     () =>
       form === "bundle"
-        ? layoutBundle(nodes, edges, radius, { colorBy, minWeight, palette })
+        ? layoutBundle(nodes, edges, radius, {
+            colorBy,
+            minWeight,
+            palette,
+            sortBy,
+            thicknessBy,
+          })
         : null,
-    [nodes, edges, radius, form, colorBy, minWeight, palette],
+    [nodes, edges, radius, form, colorBy, minWeight, palette, sortBy, thicknessBy],
   );
 
   const isEdge = (sourceId: string, targetId: string) =>
     !!edgeFocus &&
     ((edgeFocus.source === sourceId && edgeFocus.target === targetId) ||
       (edgeFocus.source === targetId && edgeFocus.target === sourceId));
+
+  const densestLabel = useMemo(() => {
+    if (!stats || !hasStat(stats, "densest_pair") || !stats.densestPair) return null;
+    const dp = stats.densestPair;
+    const a = byId.get(dp.source)?.label ?? "?";
+    const b = byId.get(dp.target)?.label ?? "?";
+    return `Densest · ${a} ↔ ${b} (${dp.weight})`;
+  }, [stats, byId]);
 
   return (
     <g className="hero">
@@ -108,16 +170,24 @@ export function HeroViz({
                 const searchHot =
                   !search ||
                   search.matchedEdgeKeys.has(edgeKey(r.sourceId, r.targetId));
+                const statLink = linkStatStyle(stats, r.sourceId, r.targetId, r.value);
                 let fillOpacity = !focus ? (hot ? 0.9 : 0.55) : related ? 0.9 : 0.05;
                 if (search && !searchHot) fillOpacity = Math.min(fillOpacity, 0.06);
                 if (search && searchHot) fillOpacity = Math.max(fillOpacity, 0.85);
+                if (statLink) fillOpacity = Math.max(fillOpacity, statLink.thin ? 0.08 : 0.88);
                 return (
                   <path
                     key={i}
                     d={r.path}
-                    fill={hot || (search && searchHot) ? "#c45c26" : r.fill}
+                    fill={
+                      hot || (search && searchHot)
+                        ? "#c45c26"
+                        : statLink?.stroke ?? r.fill
+                    }
                     fillOpacity={fillOpacity}
-                    stroke="none"
+                    stroke={statLink?.dash ? statLink.stroke : "none"}
+                    strokeWidth={statLink?.dash ? 0.6 : 0}
+                    strokeDasharray={statLink?.dash}
                     style={{ cursor: interactive ? "pointer" : undefined }}
                     onMouseEnter={() => {
                       if (r.edge) onHoverEdge?.(r.edge);
@@ -146,10 +216,15 @@ export function HeroViz({
                 const related = !focus || neighbors.has(a.id);
                 const isFocus = focus === a.id;
                 const searchHot = !search || search.matchedNodeIds.has(a.id);
+                const lx = Math.cos(a.angle - Math.PI / 2) * (radius + 2);
+                const ly = Math.sin(a.angle - Math.PI / 2) * (radius + 2);
+                const nodeOp =
+                  (related && searchHot ? 1 : search && !searchHot ? 0.12 : related ? 1 : 0.14) *
+                  nodeOpacityMod(stats, a.id);
                 return (
                   <g
                     key={a.id}
-                    opacity={related && searchHot ? 1 : search && !searchHot ? 0.12 : related ? 1 : 0.14}
+                    opacity={nodeOp}
                     style={{ cursor: interactive ? "pointer" : undefined }}
                     onMouseEnter={() => onHover?.(a.id)}
                     onMouseLeave={() => onHover?.(null)}
@@ -160,10 +235,19 @@ export function HeroViz({
                   >
                     <path
                       d={a.path}
-                      fill={a.fill}
+                      fill={nodeFillOverride(stats, a.id, a.fill)}
                       stroke={isFocus ? "#c45c26" : "#f7f2e8"}
                       strokeWidth={isFocus ? 1.2 : 0.3}
                     />
+                    {stats ? (
+                      <PersonStatDecor
+                        stats={stats}
+                        id={a.id}
+                        cx={lx}
+                        cy={ly}
+                        baseR={isFocus ? 3.2 : 2.4}
+                      />
+                    ) : null}
                     {(labelMode === "all" ||
                       (labelMode === "hubs" && a.showLabel) ||
                       isFocus) && (
@@ -185,6 +269,9 @@ export function HeroViz({
                 );
               })}
             </g>
+            {densestLabel ? (
+              <DensestPairLabel x={-radius * 0.2} y={-radius - 8} text={densestLabel} />
+            ) : null}
           </>
         )}
 
@@ -198,6 +285,7 @@ export function HeroViz({
                 const searchHot =
                   !search ||
                   search.matchedEdgeKeys.has(edgeKey(l.sourceId, l.targetId));
+                const statLink = linkStatStyle(stats, l.sourceId, l.targetId, l.weight);
                 let strokeOpacity = !focus
                   ? hot
                     ? 0.95
@@ -207,14 +295,22 @@ export function HeroViz({
                     : 0.04;
                 if (search && !searchHot) strokeOpacity = Math.min(strokeOpacity, 0.05);
                 if (search && searchHot) strokeOpacity = Math.max(strokeOpacity, 0.85);
+                if (statLink) strokeOpacity = Math.max(strokeOpacity, statLink.thin ? 0.08 : 0.9);
+                const baseW =
+                  (hot ? 0.9 : 0) + (l.strokeWidth ?? 0.4 + Math.min(2, l.weight * 0.15));
                 return (
                   <path
                     key={i}
                     d={l.path}
                     fill="none"
-                    stroke={hot || (search && searchHot) ? "#c45c26" : l.fill}
+                    stroke={
+                      hot || (search && searchHot)
+                        ? "#c45c26"
+                        : statLink?.stroke ?? l.fill
+                    }
                     strokeOpacity={strokeOpacity}
-                    strokeWidth={0.4 + Math.min(2, l.weight * 0.15) + (hot ? 0.8 : 0)}
+                    strokeWidth={Math.max(0.25, baseW + (statLink?.strokeWidthBoost ?? 0))}
+                    strokeDasharray={statLink?.dash}
                     style={{ cursor: interactive ? "pointer" : undefined }}
                     onMouseEnter={() => {
                       onHoverEdge?.(l.edge);
@@ -239,18 +335,19 @@ export function HeroViz({
                 const related = !focus || neighbors.has(leaf.id);
                 const isFocus = focus === leaf.id;
                 const searchHot = !search || search.matchedNodeIds.has(leaf.id);
+                const r = isFocus ? 3.2 : 2.2;
+                const nodeOp =
+                  (related && searchHot
+                    ? 1
+                    : search && !searchHot
+                      ? 0.12
+                      : related
+                        ? 1
+                        : 0.14) * nodeOpacityMod(stats, leaf.id);
                 return (
                   <g
                     key={leaf.id}
-                    opacity={
-                      related && searchHot
-                        ? 1
-                        : search && !searchHot
-                          ? 0.12
-                          : related
-                            ? 1
-                            : 0.14
-                    }
+                    opacity={nodeOp}
                     style={{ cursor: interactive ? "pointer" : undefined }}
                     onMouseEnter={() => onHover?.(leaf.id)}
                     onMouseLeave={() => onHover?.(null)}
@@ -262,11 +359,20 @@ export function HeroViz({
                     <circle
                       cx={leaf.x}
                       cy={leaf.y}
-                      r={isFocus ? 3.2 : 2.2}
-                      fill={leaf.fill}
+                      r={r}
+                      fill={nodeFillOverride(stats, leaf.id, leaf.fill)}
                       stroke={isFocus ? "#c45c26" : "#f7f2e8"}
                       strokeWidth={isFocus ? 1 : 0.4}
                     />
+                    {stats ? (
+                      <PersonStatDecor
+                        stats={stats}
+                        id={leaf.id}
+                        cx={leaf.x}
+                        cy={leaf.y}
+                        baseR={r}
+                      />
+                    ) : null}
                     {(labelMode === "all" ||
                       (labelMode === "hubs" && leaf.showLabel) ||
                       isFocus) && (
@@ -287,8 +393,35 @@ export function HeroViz({
                 );
               })}
             </g>
+            {densestLabel ? (
+              <DensestPairLabel x={-radius * 0.25} y={-radius - 6} text={densestLabel} />
+            ) : null}
           </>
         )}
+
+        {stats && showMedianSize(stats) ? (
+          <MedianSizeGhost
+            cx={radius + 28}
+            cy={-radius + 8}
+            r={2.2}
+            label={
+              stats.medianDegreeValue != null
+                ? `med ${Math.round(stats.medianDegreeValue)}`
+                : "median"
+            }
+          />
+        ) : null}
+        {stats && hasStat(stats, "retention_meter") && stats.retentionPct != null ? (
+          <RetentionMeter x={-radius - 8} y={radius - 4} pct={stats.retentionPct} />
+        ) : null}
+        {stats && hasStat(stats, "gini_callout") && stats.gini != null ? (
+          <GiniCallout
+            x={-radius * 0.3}
+            y={radius + 18}
+            gini={stats.gini}
+            top10Share={stats.top10Share}
+          />
+        ) : null}
       </g>
     </g>
   );

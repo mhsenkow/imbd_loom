@@ -1,8 +1,16 @@
 /** Timeline / arc layout — people as rows, years on X (or flipped). */
 
 import * as d3 from "d3";
-import type { Edge, Node } from "../lib/types";
-import { colorForGender, degreeColor } from "../lib/colors";
+import type { ColorBy, Edge, Node, SizeBy, SortBy, ThicknessBy } from "../lib/types";
+import {
+  buildGenreColor,
+  edgeYearExtents,
+  linkStrokeWidth,
+  markScale,
+  nodeColor,
+  nodeExtents,
+} from "../lib/encode";
+import { compareNodesBySort } from "../lib/filter";
 
 export interface TimelinePerson {
   id: string;
@@ -15,6 +23,8 @@ export interface TimelinePerson {
   /** Lane coordinate (y when normal, x when flipped) */
   y: number;
   fill: string;
+  /** Relative bar/dot scale from Size encoding */
+  scale: number;
   titleCount?: number;
   characterCount?: number;
   dominantGenre?: string;
@@ -31,6 +41,7 @@ export interface TimelineLink {
   y2: number;
   path: string;
   fill: string;
+  strokeWidth: number;
   shared: Edge["shared"];
   edge: Edge;
 }
@@ -58,16 +69,23 @@ export function layoutTimeline(
   nodes: Node[],
   edges: Edge[],
   opts: {
-    colorBy: "gender" | "degree";
+    colorBy: ColorBy;
     minWeight: number;
     pxPerYear?: number;
     rowH?: number;
     flipped?: boolean;
     palette?: string;
+    /** Lane order — same metric as Density/Connect Top-N sort */
+    sortBy?: SortBy;
+    thicknessBy?: ThicknessBy;
+    sizeBy?: SizeBy;
   },
 ): TimelineLayout {
   const flipped = opts.flipped ?? false;
   const palette = opts.palette ?? "loom";
+  const sortBy = opts.sortBy ?? "year_peak";
+  const thicknessBy = opts.thicknessBy ?? "shared";
+  const sizeBy = opts.sizeBy ?? "degree";
   const rowH = opts.rowH ?? 18;
   const padR = 24;
   const padB = 24;
@@ -90,8 +108,8 @@ export function layoutTimeline(
     yearPeak: number;
   }>;
 
-  // Sort by peak year then degree — reads as a career procession
-  withYears.sort((a, b) => a.yearPeak - b.yearPeak || b.n.degree - a.n.degree);
+  // Lane order follows Connect → Sort (peak year = career procession; else rank desc)
+  withYears.sort((a, b) => compareNodesBySort(a.n, b.n, sortBy));
 
   let yearMin = d3.min(withYears, (d) => d.yearMin) ?? 1970;
   let yearMax = d3.max(withYears, (d) => d.yearMax) ?? 2024;
@@ -100,8 +118,14 @@ export function layoutTimeline(
     yearMax += 5;
   }
 
-  const maxDeg = d3.max(withYears, (d) => d.n.degree) ?? 1;
   const nPeople = withYears.length;
+  const extents = nodeExtents(withYears.map((d) => d.n));
+  const genreColor = buildGenreColor(
+    withYears.map((d) => d.n),
+    palette,
+  );
+  const maxWeight = d3.max(edges, (e) => e.weight) ?? 1;
+  const years = edgeYearExtents(edges);
 
   let width: number;
   let height: number;
@@ -127,10 +151,6 @@ export function layoutTimeline(
   }
 
   const people: TimelinePerson[] = withYears.map((d, i) => {
-    const fill =
-      opts.colorBy === "gender"
-        ? colorForGender(d.n.gender as string)
-        : degreeColor(d.n.degree, maxDeg, palette);
     const lane = flipped
       ? padL + i * Math.max(14, rowH) + Math.max(14, rowH) / 2
       : padT + i * rowH + rowH / 2;
@@ -143,7 +163,8 @@ export function layoutTimeline(
       yearMax: d.yearMax,
       yearPeak: d.yearPeak,
       y: lane,
-      fill,
+      fill: nodeColor(d.n, opts.colorBy, extents, genreColor, palette),
+      scale: markScale(d.n, sizeBy, extents),
       titleCount: num(d.n.title_count),
       characterCount: num(d.n.character_count),
       dominantGenre: d.n.dominant_genre as string | undefined,
@@ -162,13 +183,14 @@ export function layoutTimeline(
       num(e.year) ??
       Math.round((Math.max(a.yearMin, b.yearMin) + Math.min(a.yearMax, b.yearMax)) / 2);
     if (!Number.isFinite(year)) continue;
+    const strokeWidth = linkStrokeWidth(e, thicknessBy, maxWeight, years);
 
     if (flipped) {
       const y = yScale(year);
       const x1 = a.y;
       const x2 = b.y;
       const midX = (x1 + x2) / 2;
-      const bulge = Math.min(80, Math.abs(x2 - x1) * 0.35 + e.weight * 2);
+      const bulge = Math.min(80, Math.abs(x2 - x1) * 0.35 + strokeWidth * 8);
       const path = `M${x1},${y} Q${midX},${y + bulge} ${x2},${y}`;
       links.push({
         source: a.id,
@@ -180,6 +202,7 @@ export function layoutTimeline(
         y2: y,
         path,
         fill: a.fill,
+        strokeWidth,
         shared: e.shared,
         edge: e,
       });
@@ -188,7 +211,7 @@ export function layoutTimeline(
       const y1 = a.y;
       const y2 = b.y;
       const midY = (y1 + y2) / 2;
-      const bulge = Math.min(80, Math.abs(y2 - y1) * 0.35 + e.weight * 2);
+      const bulge = Math.min(80, Math.abs(y2 - y1) * 0.35 + strokeWidth * 8);
       const path = `M${x},${y1} Q${x + bulge},${midY} ${x},${y2}`;
       links.push({
         source: a.id,
@@ -200,6 +223,7 @@ export function layoutTimeline(
         y2,
         path,
         fill: a.fill,
+        strokeWidth,
         shared: e.shared,
         edge: e,
       });

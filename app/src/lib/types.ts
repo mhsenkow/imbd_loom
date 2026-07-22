@@ -2,6 +2,61 @@
 
 export type Gender = "male" | "female" | "nonbinary" | "unknown";
 
+/**
+ * Statistical overlay marks for hero / alluvial.
+ * Default set stays lean; sidebar can enable the rest.
+ */
+export type StatMarkId =
+  // Core / first-ship
+  | "top5_degree"
+  | "median_size"
+  | "median_peak"
+  | "gap_spikes"
+  | "bridge_outliers"
+  | "featured_path"
+  | "densest_pair"
+  | "insight_sync"
+  // Percentiles & rank
+  | "bottom5_degree"
+  | "top5_prominence"
+  | "p90_edges"
+  | "rank_ladder"
+  // Central tendency
+  | "median_career"
+  | "mode_decade"
+  | "modal_flow"
+  // Outliers
+  | "span_outliers"
+  | "reunion_edges"
+  | "one_scene_wonder"
+  | "billing_glyphs"
+  | "genre_entropy"
+  | "genre_drift"
+  | "weight_zscore"
+  // Distributions / story
+  | "era_histogram"
+  | "peak_extremes"
+  | "longest_collab"
+  | "loyalty_pair"
+  | "gini_callout"
+  | "retention_meter"
+  // Graph structure
+  | "community_cuts"
+  | "ego_rings"
+  | "island_ghost"
+  | "votes_centroid";
+
+export const DEFAULT_STAT_MARKS: StatMarkId[] = [
+  "top5_degree",
+  "median_size",
+  "median_peak",
+  "gap_spikes",
+  "bridge_outliers",
+  "featured_path",
+  "densest_pair",
+  "insight_sync",
+];
+
 export interface RoleCredit {
   title: string;
   character?: string | null;
@@ -82,9 +137,14 @@ export interface Annotation {
 
 export type GenderFilter = "all" | Gender;
 export type SortBy = "degree" | "prominence" | "year_peak" | "title_count";
-export type ColorMode = "auto" | "gender" | "degree";
+export type ColorMode = "auto" | "gender" | "degree" | "prominence" | "genre";
+export type ColorBy = "gender" | "degree" | "prominence" | "genre";
 export type LabelMode = "hubs" | "all" | "none";
 export type SearchMode = "highlight" | "isolate";
+/** Link stroke / ribbon weight encoding */
+export type ThicknessBy = "shared" | "uniform" | "recency";
+/** Person mark scale (timeline bars, etc.) */
+export type SizeBy = "degree" | "prominence" | "titles" | "uniform";
 
 export interface PosterSpec {
   pageSize: "a1" | "a0" | "tabloid" | "letter";
@@ -104,6 +164,8 @@ export interface PosterSpec {
   sortBy: SortBy;
   colorMode: ColorMode;
   labelMode: LabelMode;
+  thicknessBy: ThicknessBy;
+  sizeBy: SizeBy;
   /** When someone is pinned, keep only their neighborhood */
   neighborhoodOnly: boolean;
   /** Hide edges whose collaboration year is outside the year window */
@@ -123,6 +185,8 @@ export interface PosterSpec {
   showWarps: boolean;
   /** Cap how many warp threads render */
   maxWarps: number;
+  /** Statistical overlay marks on hero / alluvial */
+  statMarks: StatMarkId[];
 }
 
 export const DEFAULT_SPEC: PosterSpec = {
@@ -142,6 +206,8 @@ export const DEFAULT_SPEC: PosterSpec = {
   sortBy: "degree",
   colorMode: "auto",
   labelMode: "hubs",
+  thicknessBy: "shared",
+  sizeBy: "degree",
   neighborhoodOnly: false,
   edgeYearFilter: false,
   searchQuery: "",
@@ -152,6 +218,7 @@ export const DEFAULT_SPEC: PosterSpec = {
   showStrip: true,
   showWarps: true,
   maxWarps: 24,
+  statMarks: [...DEFAULT_STAT_MARKS],
 };
 
 /** ≤6 categorical hues — print-safe, not fully saturated */

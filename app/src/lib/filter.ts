@@ -24,6 +24,27 @@ function sortValue(n: Node, sortBy: PosterSpec["sortBy"]): number {
   }
 }
 
+/** Shared ranking metric for Top-N, timeline lanes, and layout order. */
+export function nodeSortValue(n: Node, sortBy: PosterSpec["sortBy"]): number {
+  return sortValue(n, sortBy);
+}
+
+/** Compare two nodes for display order (peak year ascending; others descending). */
+export function compareNodesBySort(
+  a: Node,
+  b: Node,
+  sortBy: PosterSpec["sortBy"],
+): number {
+  if (sortBy === "year_peak") {
+    const ay = sortValue(a, sortBy);
+    const by = sortValue(b, sortBy);
+    return ay - by || b.degree - a.degree || a.label.localeCompare(b.label);
+  }
+  const av = sortValue(a, sortBy);
+  const bv = sortValue(b, sortBy);
+  return bv - av || a.label.localeCompare(b.label);
+}
+
 /** Connect + density gates before Top-N (and before search isolate). */
 export function filterNodesPool(nodes: Node[], spec: PosterSpec): Node[] {
   let list = nodes.filter((n) => {
@@ -42,12 +63,7 @@ export function filterNodesPool(nodes: Node[], spec: PosterSpec): Node[] {
     return true;
   });
 
-  const desc = spec.sortBy !== "year_peak";
-  list = [...list].sort((a, b) => {
-    const av = sortValue(a, spec.sortBy);
-    const bv = sortValue(b, spec.sortBy);
-    return desc ? bv - av : av - bv;
-  });
+  list = [...list].sort((a, b) => compareNodesBySort(a, b, spec.sortBy));
 
   return list;
 }
@@ -171,8 +187,9 @@ export function materializeConstruct(
 export function resolveColorBy(
   spec: PosterSpec,
   keyVariable: string,
-): "gender" | "degree" {
-  if (spec.colorMode === "gender") return "gender";
-  if (spec.colorMode === "degree") return "degree";
-  return keyVariable === "gender" ? "gender" : "degree";
+): import("./types").ColorBy {
+  if (spec.colorMode === "auto") {
+    return keyVariable === "gender" ? "gender" : "degree";
+  }
+  return spec.colorMode;
 }

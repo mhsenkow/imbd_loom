@@ -6,6 +6,7 @@ import { PALETTES } from "../lib/types";
 import { PAGE_SIZES } from "../lib/geometry";
 import type { SearchMatch } from "../lib/search";
 import { searchSummary } from "../lib/search";
+import { ALL_STAT_MARKS, STAT_GROUPS, STAT_MARK_META, STAT_PRESETS, toggleStatMark } from "../lib/statsMarks";
 
 interface Props {
   spec: PosterSpec;
@@ -26,7 +27,7 @@ interface Props {
   weightMax?: number;
 }
 
-type Section = "find" | "construct" | "form" | "connect" | "density" | "page";
+type Section = "find" | "construct" | "form" | "connect" | "encode" | "stats" | "density" | "page";
 
 function Accordion({
   title,
@@ -319,6 +320,29 @@ export function Sidebar({
             </div>
           </div>
 
+          <label className="check touch">
+            <input
+              type="checkbox"
+              checked={spec.neighborhoodOnly}
+              onChange={(e) => onChange({ neighborhoodOnly: e.target.checked })}
+            />
+            <span>Neighborhood only (when pinned)</span>
+          </label>
+          <label className="check touch">
+            <input
+              type="checkbox"
+              checked={spec.edgeYearFilter}
+              onChange={(e) => onChange({ edgeYearFilter: e.target.checked })}
+            />
+            <span>Filter links by career window</span>
+          </label>
+        </Accordion>
+
+        <Accordion
+          title="Encode"
+          open={section === "encode"}
+          onToggle={() => openSec("encode")}
+        >
           <div className="field">
             <label>Sort people by</label>
             <ChipRow
@@ -327,15 +351,10 @@ export function Sidebar({
               options={[
                 { id: "degree", label: "Degree" },
                 { id: "prominence", label: "Votes" },
-                { id: "year_peak", label: "Peak yr" },
+                { id: "year_peak", label: "Peak" },
                 { id: "title_count", label: "Titles" },
               ]}
             />
-            {isTimeline ? (
-              <p className="control-footnote">
-                Chooses who makes the Top-N cut; timeline lanes still order by peak year.
-              </p>
-            ) : null}
           </div>
 
           <div className="field">
@@ -347,8 +366,40 @@ export function Sidebar({
                 { id: "auto", label: "Auto" },
                 { id: "gender", label: "Gender" },
                 { id: "degree", label: "Degree" },
+                { id: "prominence", label: "Votes" },
+                { id: "genre", label: "Genre" },
               ]}
             />
+          </div>
+
+          <div className="field">
+            <label>Line thickness by</label>
+            <ChipRow
+              value={spec.thicknessBy}
+              onChange={(thicknessBy) => onChange({ thicknessBy })}
+              options={[
+                { id: "shared", label: "Shared" },
+                { id: "uniform", label: "Even" },
+                { id: "recency", label: "Recency" },
+              ]}
+            />
+          </div>
+
+          <div className="field">
+            <label>People size by</label>
+            <ChipRow
+              value={spec.sizeBy}
+              onChange={(sizeBy) => onChange({ sizeBy })}
+              options={[
+                { id: "degree", label: "Degree" },
+                { id: "prominence", label: "Votes" },
+                { id: "titles", label: "Titles" },
+                { id: "uniform", label: "Even" },
+              ]}
+            />
+            <p className="control-footnote">
+              Timeline career bars · chord/bundle use color + order primarily.
+            </p>
           </div>
 
           <div className="field">
@@ -366,27 +417,87 @@ export function Sidebar({
                 { id: "none", label: "None" },
               ]}
             />
-            {isTimeline ? (
-              <p className="control-footnote">Timeline always labels people lanes.</p>
-            ) : null}
           </div>
+        </Accordion>
 
-          <label className="check touch">
-            <input
-              type="checkbox"
-              checked={spec.neighborhoodOnly}
-              onChange={(e) => onChange({ neighborhoodOnly: e.target.checked })}
-            />
-            <span>Neighborhood only (when pinned)</span>
-          </label>
-          <label className="check touch">
-            <input
-              type="checkbox"
-              checked={spec.edgeYearFilter}
-              onChange={(e) => onChange({ edgeYearFilter: e.target.checked })}
-            />
-            <span>Filter links by career window</span>
-          </label>
+        <Accordion
+          title={`Stats${spec.statMarks.length ? ` · ${spec.statMarks.length}` : ""}`}
+          open={section === "stats"}
+          onToggle={() => openSec("stats")}
+        >
+          <p className="control-footnote">
+            Overlay marks on the hero (and strip). Relative to the current filtered
+            cut. Core presets stay quiet; turn on more for denser readouts.
+          </p>
+          <div className="chip-row" style={{ marginBottom: 8 }}>
+            {(
+              [
+                ["core", "Core"],
+                ["outliers", "Outliers"],
+                ["graph", "Graph"],
+                ["story", "Story"],
+                ["all", "All"],
+                ["none", "None"],
+              ] as const
+            ).map(([id, label]) => (
+              <button
+                key={id}
+                type="button"
+                className="chip"
+                onClick={() => onChange({ statMarks: [...STAT_PRESETS[id]] })}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+          {spec.statMarks.length >= 20 ? (
+            <p className="control-footnote">
+              Dense overlay — try Core or Outliers if the chart feels crowded.
+            </p>
+          ) : null}
+          {STAT_GROUPS.map((group) => {
+            const ids = ALL_STAT_MARKS.filter((id) => STAT_MARK_META[id].group === group);
+            if (!ids.length) return null;
+            return (
+              <div key={group} className="stat-mark-group">
+                <div className="stat-mark-group-label mono">{group}</div>
+                <div className="stat-mark-list">
+                  {ids.map((id) => {
+                    const meta = STAT_MARK_META[id];
+                    const on = spec.statMarks.includes(id);
+                    const formOk =
+                      meta.forms.includes(
+                        isTimeline
+                          ? "timeline"
+                          : spec.heroForm === "bundle"
+                            ? "bundle"
+                            : "chord",
+                      ) || meta.forms.includes("alluvial");
+                    return (
+                      <label
+                        key={id}
+                        className={`check touch${!formOk ? " muted" : ""}`}
+                      >
+                        <input
+                          type="checkbox"
+                          checked={on}
+                          onChange={() =>
+                            onChange({
+                              statMarks: toggleStatMark(spec.statMarks, id),
+                            })
+                          }
+                        />
+                        <span>
+                          {meta.label}
+                          <span className="stat-mark-hint mono">{meta.hint}</span>
+                        </span>
+                      </label>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
         </Accordion>
 
         <Accordion

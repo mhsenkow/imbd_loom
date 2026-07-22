@@ -3,6 +3,7 @@
 import { useMemo } from "react";
 import type { StageRow } from "../lib/types";
 import { layoutAlluvial } from "../viz/alluvial";
+import { STAT_COLORS, hasStat, type ViewStatMarks } from "../lib/statsMarks";
 
 interface Props {
   stages: StageRow[];
@@ -12,6 +13,7 @@ interface Props {
   palette: string;
   x?: number;
   y?: number;
+  colorBy?: "gender" | "degree" | "prominence" | "genre";
   /**
    * Category names (gender / era / degree band) belonging to the focused person
    * in this construct — lights matching bars/flows.
@@ -21,6 +23,10 @@ interface Props {
   focusMember?: boolean;
   /** Someone is focused somewhere — dim panels that don’t include them */
   focusActive?: boolean;
+  /** View-local statistical marks (hub band / insight path) */
+  viewStats?: ViewStatMarks | null;
+  /** Extra category keys to emphasize from stats (e.g. hub + insight facets) */
+  statKeys?: Set<string> | null;
 }
 
 export function AlluvialPanel({
@@ -31,17 +37,35 @@ export function AlluvialPanel({
   palette,
   x = 0,
   y = 0,
+  colorBy = "degree",
   focusKeys = null,
   focusMember = false,
   focusActive = false,
+  viewStats = null,
+  statKeys = null,
 }: Props) {
   const layout = useMemo(
-    () => layoutAlluvial(stages, width, height - 14, palette),
-    [stages, width, height, palette],
+    () => layoutAlluvial(stages, width, height - 14, palette, { colorBy }),
+    [stages, width, height, palette, colorBy],
   );
 
   const dimPanel = focusActive && !focusMember;
   const hotPanel = focusActive && focusMember;
+
+  const boostHub =
+    !!viewStats && hasStat(viewStats, "top5_degree") && viewStats.top5DegreeIds.size > 0;
+
+  const modalParts =
+    viewStats && hasStat(viewStats, "modal_flow") && viewStats.modalFlowKey
+      ? viewStats.modalFlowKey.split("\0")
+      : null;
+
+  const isStatHot = (name: string) => {
+    if (statKeys?.has(name)) return true;
+    if (boostHub && name === "hub") return true;
+    if (modalParts && (name === modalParts[0] || name === modalParts[1])) return true;
+    return false;
+  };
 
   return (
     <g transform={`translate(${x}, ${y})`} opacity={dimPanel ? 0.28 : 1}>
@@ -80,15 +104,27 @@ export function AlluvialPanel({
           const hot =
             focusKeys &&
             (focusKeys.has(l.sourceName) || focusKeys.has(l.targetName));
+          const statHot = isStatHot(l.sourceName) || isStatHot(l.targetName);
+          const modalHot =
+            !!modalParts &&
+            ((l.sourceName === modalParts[0] && l.targetName === modalParts[1]) ||
+              l.sourceName === modalParts[1] ||
+              l.targetName === modalParts[0]);
           let fillOpacity = 0.45;
           if (focusKeys && focusMember) {
             fillOpacity = hot ? 0.85 : 0.08;
+          } else if (modalHot) {
+            fillOpacity = 0.88;
+          } else if (statHot && !focusActive) {
+            fillOpacity = 0.72;
+          } else if (modalParts && !focusActive) {
+            fillOpacity = 0.2;
           }
           return (
             <path
               key={i}
               d={l.path}
-              fill={hot ? "#c45c26" : l.fill}
+              fill={hot ? "#c45c26" : statHot ? STAT_COLORS.halo : l.fill}
               fillOpacity={fillOpacity}
               stroke="none"
               pointerEvents="none"
@@ -99,6 +135,7 @@ export function AlluvialPanel({
         })}
         {layout.nodes.map((n) => {
           const hot = focusKeys?.has(n.name) ?? false;
+          const statHot = isStatHot(n.name);
           let opacity = 1;
           if (focusKeys && focusMember) {
             opacity = hot ? 1 : 0.18;
@@ -110,9 +147,9 @@ export function AlluvialPanel({
                 y={n.y0}
                 width={Math.max(1, n.x1 - n.x0)}
                 height={Math.max(0.5, n.y1 - n.y0)}
-                fill={hot ? "#c45c26" : n.fill}
-                stroke={hot ? "#1a1814" : "none"}
-                strokeWidth={hot ? 0.25 : 0}
+                fill={hot ? "#c45c26" : statHot ? STAT_COLORS.halo : n.fill}
+                stroke={hot ? "#1a1814" : statHot ? STAT_COLORS.halo : "none"}
+                strokeWidth={hot || statHot ? 0.25 : 0}
               />
               {n.y1 - n.y0 > 5 && (
                 <text
@@ -120,8 +157,8 @@ export function AlluvialPanel({
                   y={(n.y0 + n.y1) / 2}
                   fontSize={3.2}
                   fontFamily="IBM Plex Sans, sans-serif"
-                  fill={hot ? "#c45c26" : "#3a3630"}
-                  fontWeight={hot ? 600 : 400}
+                  fill={hot ? "#c45c26" : statHot ? STAT_COLORS.guide : "#3a3630"}
+                  fontWeight={hot || statHot ? 600 : 400}
                   dominantBaseline="middle"
                 >
                   {n.name.length > 18 ? n.name.slice(0, 16) + "…" : n.name}

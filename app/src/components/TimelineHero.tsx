@@ -2,18 +2,26 @@
 
 import { useEffect, useMemo, useRef } from "react";
 import * as d3 from "d3";
-import type { Edge, Node } from "../lib/types";
+import type { ColorBy, Edge, Manifest, Node, SizeBy, SortBy, ThicknessBy } from "../lib/types";
+import type { StatMarkId } from "../lib/types";
 import { layoutTimeline } from "../viz/timeline";
 import { activeEdge, activeId, neighborIds } from "../lib/selection";
 import type { SelectionState } from "../lib/selection";
 import { filmLine, sharedLabel, uniqueShared } from "../lib/sharedTitles";
 import { edgeKey, type SearchMatch } from "../lib/search";
+import { computeViewStatMarks, hasStat, isGapSpike, linkStatStyle, nodeFillOverride, nodeOpacityMod, type ViewStatMarks } from "../lib/statsMarks";
 import { ChartLegend } from "./ChartLegend";
+import {
+  DensestPairLabel,
+  GapSpikeMark,
+  PersonStatDecor,
+} from "./StatMarkDecor";
+import { TimelineStatGuides } from "./TimelineStatGuides";
 
 interface Props {
   nodes: Node[];
   edges: Edge[];
-  colorBy: "gender" | "degree";
+  colorBy: ColorBy;
   minWeight: number;
   title: string;
   subtitle: string;
@@ -26,6 +34,16 @@ interface Props {
   flipped?: boolean;
   search?: SearchMatch | null;
   palette?: string;
+  sortBy?: SortBy;
+  thicknessBy?: ThicknessBy;
+  sizeBy?: SizeBy;
+  /** Statistical overlay toggles */
+  statMarks?: StatMarkId[];
+  manifest?: Manifest | null;
+  /** Insight card primary focus — for insight_sync */
+  insightFocusId?: string | null;
+  /** Precomputed stats (optional; computed if omitted) */
+  viewStats?: ViewStatMarks | null;
 }
 
 export function TimelineHero({
@@ -44,6 +62,13 @@ export function TimelineHero({
   flipped = false,
   search = null,
   palette = "loom",
+  sortBy = "year_peak",
+  thicknessBy = "shared",
+  sizeBy = "degree",
+  statMarks = [],
+  manifest = null,
+  insightFocusId = null,
+  viewStats: viewStatsProp = null,
 }: Props) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
@@ -51,6 +76,19 @@ export function TimelineHero({
   const edgeFocus = activeEdge(selection);
   const neighbors = useMemo(() => neighborIds(focus, edges), [focus, edges]);
   const byId = useMemo(() => new Map(nodes.map((n) => [n.id, n])), [nodes]);
+
+  const stats = useMemo(() => {
+    if (viewStatsProp) return viewStatsProp;
+    if (!statMarks.length) return null;
+    return computeViewStatMarks({
+      nodes,
+      edges,
+      enabled: statMarks,
+      manifest,
+      insightFocusId,
+      sortBy,
+    });
+  }, [viewStatsProp, statMarks, nodes, edges, manifest, insightFocusId, sortBy]);
 
   const layout = useMemo(
     () =>
@@ -61,8 +99,11 @@ export function TimelineHero({
         rowH: printMode ? 14 : 20,
         flipped,
         palette,
+        sortBy,
+        thicknessBy,
+        sizeBy,
       }),
-    [nodes, edges, colorBy, minWeight, printMode, flipped, palette],
+    [nodes, edges, colorBy, minWeight, printMode, flipped, palette, sortBy, thicknessBy, sizeBy],
   );
 
   const visibleLinks = useMemo(() => {
@@ -138,9 +179,10 @@ export function TimelineHero({
   }
 
   const personOpacity = (id: string) => {
-    if (focus) return neighbors.has(id) ? 1 : 0.15;
-    if (search) return search.matchedNodeIds.has(id) ? 1 : 0.12;
-    return 1;
+    let op = 1;
+    if (focus) op = neighbors.has(id) ? 1 : 0.15;
+    else if (search) op = search.matchedNodeIds.has(id) ? 1 : 0.12;
+    return Math.min(op, nodeOpacityMod(stats, id));
   };
 
   const linkOpacity = (source: string, target: string, isEdge: boolean) => {
@@ -170,6 +212,12 @@ export function TimelineHero({
     : null;
 
   const yearTicks = layout.ticks.map((y) => {
+    const isModeDecade =
+      stats &&
+      hasStat(stats, "mode_decade") &&
+      stats.modeDecade != null &&
+      y >= stats.modeDecade &&
+      y < stats.modeDecade + 10;
     if (layout.flipped) {
       const yy = layout.yScale(y);
       return (
@@ -177,16 +225,18 @@ export function TimelineHero({
           <line
             x1={layout.padL - 8}
             x2={layout.width - layout.padR}
-            stroke="#d9d0c0"
-            strokeWidth={0.6}
+            stroke={isModeDecade ? "#3D5A80" : "#d9d0c0"}
+            strokeWidth={isModeDecade ? 1.6 : 0.6}
+            strokeOpacity={isModeDecade ? 0.7 : 1}
           />
           <text
             x={layout.padL - 12}
             textAnchor="end"
             dominantBaseline="middle"
-            fontSize={10}
+            fontSize={isModeDecade ? 11 : 10}
+            fontWeight={isModeDecade ? 600 : 400}
             fontFamily="IBM Plex Mono, monospace"
-            fill="#6e6a62"
+            fill={isModeDecade ? "#3D5A80" : "#6e6a62"}
           >
             {y}
           </text>
@@ -198,21 +248,28 @@ export function TimelineHero({
         <line
           y1={layout.padT - 8}
           y2={layout.height - 8}
-          stroke="#d9d0c0"
-          strokeWidth={0.6}
+          stroke={isModeDecade ? "#3D5A80" : "#d9d0c0"}
+          strokeWidth={isModeDecade ? 1.6 : 0.6}
+          strokeOpacity={isModeDecade ? 0.7 : 1}
         />
         <text
           y={layout.padT - 14}
           textAnchor="middle"
-          fontSize={10}
+          fontSize={isModeDecade ? 11 : 10}
+          fontWeight={isModeDecade ? 600 : 400}
           fontFamily="IBM Plex Mono, monospace"
-          fill="#6e6a62"
+          fill={isModeDecade ? "#3D5A80" : "#6e6a62"}
         >
           {y}
         </text>
       </g>
     );
   });
+
+  const personFill = (id: string, base: string, hot?: boolean) => {
+    if (hot) return "#c45c26";
+    return nodeFillOverride(stats, id, base);
+  };
 
   const svgInner = (
     <svg
@@ -227,6 +284,8 @@ export function TimelineHero({
       <g className="zoom-root">
         {yearTicks}
 
+        <TimelineStatGuides layout={layout} stats={stats} />
+
         <g className="timeline-links">
           {visibleLinks.map((l, i) => {
             const related = !focus || l.source === focus || l.target === focus;
@@ -236,14 +295,18 @@ export function TimelineHero({
                 (edgeFocus.source === l.target && edgeFocus.target === l.source));
             const opacity = linkOpacity(l.source, l.target, isEdge);
             const films = sharedLabel(l.shared);
+            const statLink = linkStatStyle(stats, l.source, l.target, l.weight);
+            const baseW = (isEdge ? 0.8 : 0) + (l.strokeWidth ?? 0.8 + Math.min(3, l.weight * 0.25));
+            const w = Math.max(0.35, baseW + (statLink?.strokeWidthBoost ?? 0));
             return (
               <path
                 key={`${l.source}-${l.target}-${l.year}-${i}`}
                 d={l.path}
                 fill="none"
-                stroke={isEdge ? "#c45c26" : l.fill}
-                strokeOpacity={opacity}
-                strokeWidth={(isEdge ? 1.6 : 0.8) + Math.min(3, l.weight * 0.25)}
+                stroke={isEdge ? "#c45c26" : statLink?.stroke ?? l.fill}
+                strokeOpacity={statLink?.strokeOpacity ?? opacity}
+                strokeWidth={w}
+                strokeDasharray={statLink?.dash}
                 style={{
                   pointerEvents: related || !focus ? "stroke" : "none",
                   cursor: "pointer",
@@ -287,6 +350,50 @@ export function TimelineHero({
               </text>
             </g>
           ))}
+          {stats &&
+          hasStat(stats, "densest_pair") &&
+          stats.densestPair &&
+          (() => {
+            const dp = stats.densestPair;
+            const link = visibleLinks.find(
+              (l) =>
+                (l.source === dp.source && l.target === dp.target) ||
+                (l.source === dp.target && l.target === dp.source),
+            );
+            if (!link) return null;
+            const a = byId.get(dp.source)?.label ?? "?";
+            const b = byId.get(dp.target)?.label ?? "?";
+            return (
+              <DensestPairLabel
+                key="densest"
+                x={layout.flipped ? link.x : link.x + 24}
+                y={(link.y1 + link.y2) / 2}
+                text={`Densest · ${a} ↔ ${b} (${dp.weight})`}
+              />
+            );
+          })()}
+          {stats &&
+          hasStat(stats, "longest_collab") &&
+          stats.longestCollab &&
+          (() => {
+            const lc = stats.longestCollab;
+            const link = visibleLinks.find(
+              (l) =>
+                (l.source === lc.source && l.target === lc.target) ||
+                (l.source === lc.target && l.target === lc.source),
+            );
+            if (!link) return null;
+            const a = byId.get(lc.source)?.label ?? "?";
+            const b = byId.get(lc.target)?.label ?? "?";
+            return (
+              <DensestPairLabel
+                key="longest"
+                x={layout.flipped ? link.x : link.x + 24}
+                y={(link.y1 + link.y2) / 2 + 18}
+                text={`Longest · ${a} ↔ ${b} (${lc.years}y)`}
+              />
+            );
+          })()}
         </g>
 
         <g className="timeline-people">
@@ -294,9 +401,20 @@ export function TimelineHero({
             const isFocus = focus === p.id;
             const opacity = personOpacity(p.id);
             const hot = search?.matchedNodeIds.has(p.id);
+            const fill = personFill(p.id, p.fill, hot);
+            const drift =
+              stats && hasStat(stats, "genre_drift") && stats.driftIds.has(p.id);
+            const rank =
+              stats && hasStat(stats, "rank_ladder")
+                ? stats.rankLadder.find((r) => r.id === p.id)
+                : null;
+
             if (layout.flipped) {
               const y0 = layout.yScale(p.yearMin);
               const y1 = layout.yScale(p.yearMax);
+              const peakY = layout.yScale(p.yearPeak);
+              const midY = (y0 + y1) / 2;
+              const r = (isFocus ? 4.5 : 2.8) * Math.sqrt(p.scale ?? 1);
               return (
                 <g
                   key={p.id}
@@ -317,20 +435,49 @@ export function TimelineHero({
                     x1={p.y}
                     x2={p.y}
                     y1={y0}
+                    y2={midY}
+                    stroke={drift ? "#C45C26" : fill}
+                    strokeWidth={(isFocus || hot ? 2.4 : 1.35) * (p.scale ?? 1)}
+                    strokeLinecap="round"
+                    strokeOpacity={0.85}
+                  />
+                  <line
+                    x1={p.y}
+                    x2={p.y}
+                    y1={midY}
                     y2={y1}
-                    stroke={hot ? "#c45c26" : p.fill}
-                    strokeWidth={isFocus || hot ? 3 : 1.6}
+                    stroke={drift ? "#2F5D50" : fill}
+                    strokeWidth={(isFocus || hot ? 2.4 : 1.35) * (p.scale ?? 1)}
                     strokeLinecap="round"
                     strokeOpacity={0.85}
                   />
                   <circle
                     cx={p.y}
-                    cy={layout.yScale(p.yearPeak)}
-                    r={isFocus ? 4.5 : 2.8}
-                    fill={p.fill}
+                    cy={peakY}
+                    r={r}
+                    fill={fill}
                     stroke="#f7f2e8"
                     strokeWidth={isFocus ? 1.2 : 0.6}
                   />
+                  {stats ? (
+                    <PersonStatDecor stats={stats} id={p.id} cx={p.y} cy={peakY} baseR={r} />
+                  ) : null}
+                  {stats && isGapSpike(stats, p.id) ? (
+                    <GapSpikeMark x={p.y} y={midY} flipped />
+                  ) : null}
+                  {rank ? (
+                    <text
+                      x={p.y}
+                      y={layout.padT - 28}
+                      textAnchor="middle"
+                      fontSize={9}
+                      fontFamily="IBM Plex Mono, monospace"
+                      fill="#C4A35A"
+                      fontWeight={600}
+                    >
+                      #{rank.rank}
+                    </text>
+                  ) : null}
                   <text
                     x={p.y}
                     y={layout.padT - 12}
@@ -349,6 +496,9 @@ export function TimelineHero({
 
             const x0 = layout.xScale(p.yearMin);
             const x1 = layout.xScale(p.yearMax);
+            const peakX = layout.xScale(p.yearPeak);
+            const midX = (x0 + x1) / 2;
+            const r = (isFocus ? 4.5 : 2.8) * Math.sqrt(p.scale ?? 1);
             return (
               <g
                 key={p.id}
@@ -367,22 +517,49 @@ export function TimelineHero({
               >
                 <line
                   x1={x0}
+                  x2={midX}
+                  y1={p.y}
+                  y2={p.y}
+                  stroke={drift ? "#C45C26" : fill}
+                  strokeWidth={(isFocus || hot ? 2.4 : 1.35) * (p.scale ?? 1)}
+                  strokeLinecap="round"
+                  strokeOpacity={0.85}
+                />
+                <line
+                  x1={midX}
                   x2={x1}
                   y1={p.y}
                   y2={p.y}
-                  stroke={hot ? "#c45c26" : p.fill}
-                  strokeWidth={isFocus || hot ? 3 : 1.6}
+                  stroke={drift ? "#2F5D50" : fill}
+                  strokeWidth={(isFocus || hot ? 2.4 : 1.35) * (p.scale ?? 1)}
                   strokeLinecap="round"
                   strokeOpacity={0.85}
                 />
                 <circle
-                  cx={layout.xScale(p.yearPeak)}
+                  cx={peakX}
                   cy={p.y}
-                  r={isFocus ? 4.5 : 2.8}
-                  fill={p.fill}
+                  r={r}
+                  fill={fill}
                   stroke="#f7f2e8"
                   strokeWidth={isFocus ? 1.2 : 0.6}
                 />
+                {stats ? (
+                  <PersonStatDecor stats={stats} id={p.id} cx={peakX} cy={p.y} baseR={r} />
+                ) : null}
+                {stats && isGapSpike(stats, p.id) ? <GapSpikeMark x={midX} y={p.y} /> : null}
+                {rank ? (
+                  <text
+                    x={4}
+                    y={p.y}
+                    dominantBaseline="middle"
+                    fontSize={9}
+                    fontFamily="IBM Plex Mono, monospace"
+                    fill="#C4A35A"
+                    fontWeight={600}
+                  >
+                    #{rank.rank}
+                  </text>
+                ) : null}
                 <text
                   x={layout.padL - 8}
                   y={p.y}
@@ -408,6 +585,13 @@ export function TimelineHero({
     return null;
   }
 
+  const statsHint =
+    stats && stats.enabled.size
+      ? ` · ${stats.enabled.size} stats${
+          stats.medianPeakYear != null ? ` · med peak ${Math.round(stats.medianPeakYear)}` : ""
+        }`
+      : "";
+
   return (
     <div className="timeline-shell">
       <div className="timeline-chrome">
@@ -422,11 +606,16 @@ export function TimelineHero({
         <div className="timeline-hint mono">
           {layout.yearMin}–{layout.yearMax} · {layout.people.length} people · showing{" "}
           {visibleLinks.length}
-          {focus ? " partner links" : search ? " matched links" : ` strongest of ${layout.links.length}`}
+          {focus
+            ? " partner links"
+            : search
+              ? " matched links"
+              : ` strongest of ${layout.links.length}`}
+          {statsHint}
         </div>
       </div>
 
-      <ChartLegend form="timeline" flipped={flipped} colorBy={colorBy} />
+      <ChartLegend form="timeline" flipped={flipped} colorBy={colorBy} statMarks={stats} />
 
       {(edgeBanner || search) && (
         <div className={`status-strip${edgeBanner ? " status-strip--link" : ""}`}>

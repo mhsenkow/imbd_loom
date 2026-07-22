@@ -14,6 +14,7 @@ import type { SearchMatch } from "../lib/search";
 import { pickStripIds, type PersonIndexEntry } from "../lib/bridges";
 import { materializeConstruct } from "../lib/filter";
 import { personFacetLabels, synthesizeStages } from "../lib/stages";
+import { hasStat, isInsightFocus, type ViewStatMarks } from "../lib/statsMarks";
 
 interface Props {
   spec: PosterSpec;
@@ -29,8 +30,10 @@ interface Props {
   interactive?: boolean;
   filteredNodes?: Node[];
   filteredEdges?: Edge[];
-  colorBy?: "gender" | "degree";
+  colorBy?: import("../lib/types").ColorBy;
   search?: SearchMatch | null;
+  viewStats?: ViewStatMarks | null;
+  insightFocusId?: string | null;
 }
 
 export function Poster({
@@ -49,6 +52,8 @@ export function Poster({
   filteredEdges,
   colorBy: colorByProp,
   search = null,
+  viewStats = null,
+  insightFocusId = null,
 }: Props) {
   const layout = bands(spec.pageSize);
   const colorBy =
@@ -196,6 +201,15 @@ export function Poster({
     [stripIds, focusByPanel],
   );
 
+  /** Insight-sync facets for alluvial when no hover/pin focus. */
+  const insightStatKeys = useMemo(() => {
+    if (!viewStats || !hasStat(viewStats, "insight_sync") || !insightFocusId) return null;
+    if (focusPersonId) return null; // pin/hover already drives focusKeys
+    const n = nodes.find((x) => x.id === insightFocusId);
+    if (!n || !isInsightFocus(viewStats, insightFocusId)) return null;
+    return personFacetLabels(n).keys;
+  }, [viewStats, insightFocusId, focusPersonId, nodes]);
+
   return (
     <svg
       className="poster"
@@ -281,6 +295,13 @@ export function Poster({
             flipped={spec.timelineFlip}
             search={search}
             palette={spec.palette}
+            sortBy={spec.sortBy}
+            thicknessBy={spec.thicknessBy}
+            sizeBy={spec.sizeBy}
+            statMarks={spec.statMarks}
+            manifest={active.manifest}
+            insightFocusId={insightFocusId}
+            viewStats={viewStats}
           />
         ) : (
           <HeroViz
@@ -302,6 +323,12 @@ export function Poster({
             labelMode={spec.labelMode}
             search={search}
             palette={spec.palette}
+            sortBy={spec.sortBy}
+            thicknessBy={spec.thicknessBy}
+            statMarks={spec.statMarks}
+            manifest={active.manifest}
+            insightFocusId={insightFocusId}
+            viewStats={viewStats}
           />
         )}
       </g>
@@ -347,9 +374,14 @@ export function Poster({
                   stages={view.stages}
                   title={data.manifest.title}
                   palette={spec.palette}
+                  colorBy={colorBy}
                   focusActive={!!focusPersonId}
                   focusMember={!!focus?.member}
                   focusKeys={focus?.member ? focus.keys : null}
+                  viewStats={id === active.manifest.id ? viewStats : null}
+                  statKeys={
+                    id === active.manifest.id && !focusPersonId ? insightStatKeys : null
+                  }
                 />
               );
             })}
@@ -374,7 +406,7 @@ export function Poster({
 
       {/* Footer: legend + method + credit */}
       <g transform={`translate(${layout.footer.x}, ${layout.footer.y + 4})`}>
-        <Legend colorBy={colorBy} />
+        <Legend colorBy={colorBy} statCount={spec.statMarks.length} />
         <text
           y={28}
           fontFamily="IBM Plex Mono, monospace"
@@ -468,13 +500,20 @@ function wrapText(text: string, maxChars: number): string[] {
   return lines.slice(0, 6);
 }
 
-function Legend({ colorBy }: { colorBy: "gender" | "degree" }) {
+function Legend({
+  colorBy,
+  statCount = 0,
+}: {
+  colorBy: import("../lib/types").ColorBy;
+  statCount?: number;
+}) {
   if (colorBy === "gender") {
     const items = Object.entries(GENDER_COLORS);
     return (
       <g>
         <text fontSize={5} fontFamily="IBM Plex Mono, monospace" fill="#6e6a62" letterSpacing={1}>
           COLOR = GENDER
+          {statCount ? `  ·  ${statCount} STAT MARKS` : ""}
         </text>
         {items.map(([k, c], i) => (
           <g key={k} transform={`translate(${i * 42}, 8)`}>
@@ -487,10 +526,17 @@ function Legend({ colorBy }: { colorBy: "gender" | "degree" }) {
       </g>
     );
   }
+  const label =
+    colorBy === "prominence"
+      ? "COLOR = VOTE PROMINENCE"
+      : colorBy === "genre"
+        ? "COLOR = DOMINANT GENRE"
+        : "COLOR = COLLABORATION DEGREE";
   return (
     <g>
       <text fontSize={5} fontFamily="IBM Plex Mono, monospace" fill="#6e6a62" letterSpacing={1}>
-        COLOR = COLLABORATION DEGREE
+        {label}
+        {statCount ? `  ·  ${statCount} STAT MARKS` : ""}
       </text>
       <defs>
         <linearGradient id="degGrad" x1="0" x2="1">

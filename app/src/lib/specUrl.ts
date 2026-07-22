@@ -1,6 +1,7 @@
 /** Encode / decode PosterSpec fields for print URLs and export. */
 
 import { DEFAULT_SPEC, type PosterSpec } from "./types";
+import { parseStatMarksParam, serializeStatMarks } from "./statsMarks";
 
 const KEYS = [
   "construct",
@@ -20,12 +21,15 @@ const KEYS = [
   "labelMode",
   "colorMode",
   "sortBy",
+  "thicknessBy",
+  "sizeBy",
   "neighborhood",
   "edgeYear",
   "hideIsolates",
   "strip",
   "warps",
   "maxWarps",
+  "statMarks",
 ] as const;
 
 export function specFromSearchParams(
@@ -71,12 +75,29 @@ export function specFromSearchParams(
     timelineFlip: params.get("flip") === "1" || params.get("flip") === "true",
     palette: params.get("palette") || base.palette,
     labelMode: str("labelMode", base.labelMode, ["hubs", "all", "none"] as const),
-    colorMode: str("colorMode", base.colorMode, ["auto", "gender", "degree"] as const),
+    colorMode: str("colorMode", base.colorMode, [
+      "auto",
+      "gender",
+      "degree",
+      "prominence",
+      "genre",
+    ] as const),
     sortBy: str(
       "sortBy",
       base.sortBy,
       ["degree", "prominence", "year_peak", "title_count"] as const,
     ),
+    thicknessBy: str("thicknessBy", base.thicknessBy, [
+      "shared",
+      "uniform",
+      "recency",
+    ] as const),
+    sizeBy: str("sizeBy", base.sizeBy, [
+      "degree",
+      "prominence",
+      "titles",
+      "uniform",
+    ] as const),
     neighborhoodOnly:
       params.get("neighborhood") === "1" || params.get("neighborhood") === "true",
     edgeYearFilter: flag("edgeYear", base.edgeYearFilter),
@@ -84,6 +105,7 @@ export function specFromSearchParams(
     showStrip: flag("strip", base.showStrip),
     showWarps: flag("warps", base.showWarps),
     maxWarps: num("maxWarps", base.maxWarps),
+    statMarks: parseStatMarksParam(params.get("statMarks"), base.statMarks),
   };
 }
 
@@ -104,10 +126,13 @@ export function specToQuery(spec: PosterSpec): Record<string, string> {
     labelMode: spec.labelMode,
     colorMode: spec.colorMode,
     sortBy: spec.sortBy,
+    thicknessBy: spec.thicknessBy,
+    sizeBy: spec.sizeBy,
     maxWarps: String(spec.maxWarps),
     hideIsolates: spec.hideIsolates ? "1" : "0",
     strip: spec.showStrip ? "1" : "0",
     warps: spec.showWarps ? "1" : "0",
+    statMarks: serializeStatMarks(spec.statMarks),
   };
   if (spec.searchQuery.trim()) q.search = spec.searchQuery.trim();
   if (spec.timelineFlip) q.flip = "1";

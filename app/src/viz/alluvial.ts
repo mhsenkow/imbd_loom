@@ -2,7 +2,7 @@
 
 import { sankey, sankeyLinkHorizontal, type SankeyGraph, type SankeyNode, type SankeyLink } from "d3-sankey";
 import type { StageRow } from "../lib/types";
-import { categoricalScale } from "../lib/colors";
+import { categoricalScale, colorForGender } from "../lib/colors";
 
 export interface AlluvialNode {
   id: string;
@@ -39,8 +39,10 @@ export function layoutAlluvial(
   width: number,
   height: number,
   paletteName: string,
+  opts?: { colorBy?: "gender" | "degree" | "prominence" | "genre" },
 ): AlluvialLayout {
   if (!stages.length) return { nodes: [], links: [], stages: [] };
+  const colorBy = opts?.colorBy ?? "degree";
 
   // Determine stage order from edges
   const stageOrder: string[] = [];
@@ -109,6 +111,19 @@ export function layoutAlluvial(
 
   const cats = Array.from(new Set(nodes.map((n) => n.name)));
   const color = categoricalScale(paletteName, cats);
+  const fillFor = (name: string, stage: string) => {
+    if (
+      colorBy === "gender" &&
+      (stage === "gender" ||
+        name === "female" ||
+        name === "male" ||
+        name === "nonbinary" ||
+        name === "unknown")
+    ) {
+      return colorForGender(name);
+    }
+    return color(name);
+  };
   const pathGen = sankeyLinkHorizontal();
 
   const outNodes: AlluvialNode[] = (graph.nodes as SNode[]).map((n) => ({
@@ -119,7 +134,7 @@ export function layoutAlluvial(
     x1: n.x1 ?? 0,
     y0: n.y0 ?? 0,
     y1: n.y1 ?? 0,
-    fill: color(n.name),
+    fill: fillFor(n.name, n.stage),
   }));
 
   const outLinks: AlluvialLink[] = (graph.links as SLink[]).map((l) => {
@@ -127,7 +142,7 @@ export function layoutAlluvial(
     const tgt = l.target as SNode;
     return {
       path: pathGen(l as never) ?? "",
-      fill: color(src.name),
+      fill: fillFor(src.name, src.stage),
       value: l.value,
       title: `${src.name} → ${tgt.name}: ${l.value}`,
       width: Math.max(1, l.width ?? 1),

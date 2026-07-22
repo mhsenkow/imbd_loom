@@ -5,6 +5,7 @@ import type { Edge, Node, RoleCredit } from "../lib/types";
 import { colorForGender } from "../lib/colors";
 import { filmLine, uniqueShared } from "../lib/sharedTitles";
 import type { Insight } from "../lib/insights";
+import { describeNodeStats, hasStat, type ViewStatMarks } from "../lib/statsMarks";
 import { InsightCard } from "./InsightCard";
 
 interface Props {
@@ -15,6 +16,7 @@ interface Props {
   pinned: boolean;
   edgePinned?: boolean;
   insights?: Insight[];
+  viewStats?: ViewStatMarks | null;
   onPin: (id: string | null) => void;
   onFocusNeighbor: (id: string) => void;
   open: boolean;
@@ -38,6 +40,7 @@ export function DetailPanel({
   pinned,
   edgePinned = false,
   insights = [],
+  viewStats = null,
   onPin,
   onFocusNeighbor,
   open,
@@ -46,7 +49,12 @@ export function DetailPanel({
   const byId = new Map(nodes.map((n) => [n.id, n]));
   const insightBlock =
     insights.length > 0 ? (
-      <InsightCard insights={insights} onFocus={(id) => onPin(id)} embedded />
+      <InsightCard
+        insights={insights}
+        onFocus={(id) => onPin(id)}
+        embedded
+        syncOnChart={!!viewStats && hasStat(viewStats, "insight_sync")}
+      />
     ) : null;
 
   if (!open) {
@@ -186,6 +194,7 @@ export function DetailPanel({
   const yearPeak = yearPeakRaw != null ? Number(yearPeakRaw) : null;
   const hasYears = Number.isFinite(yearMin) || Number.isFinite(yearMax);
   const roles = (node.roles as RoleCredit[] | undefined) ?? [];
+  const statTags = describeNodeStats(viewStats, node.id);
 
   return (
     <aside className={`detail-panel panel-open ${pinned ? "pinned" : ""}`}>
@@ -226,6 +235,15 @@ export function DetailPanel({
         </div>
       </div>
 
+      {statTags.length ? (
+        <div className="stat-tag-row" aria-label="Active statistical marks">
+          {statTags.map((t) => (
+            <span key={t} className="stat-tag mono">
+              {t}
+            </span>
+          ))}
+        </div>
+      ) : null}
       <dl className="stats">
         <div>
           <dt>Degree</dt>

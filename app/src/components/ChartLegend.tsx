@@ -1,72 +1,200 @@
-/** Chart reading guide — what marks and links mean. */
+/** Chart reading guide — what marks and links mean (collapsible). */
 
-import { GENDER_COLORS } from "../lib/types";
+import { useEffect, useState } from "react";
+import { colorLegendLabel } from "../lib/encode";
+import { GENDER_COLORS, type ColorBy } from "../lib/types";
+import {
+  STAT_COLORS,
+  STAT_MARK_META,
+  hasStat,
+  type StatMarkId,
+  type ViewStatMarks,
+} from "../lib/statsMarks";
 
 interface Props {
   form: "chord" | "bundle" | "timeline";
   flipped?: boolean;
-  colorBy?: "gender" | "degree";
+  colorBy?: ColorBy;
+  statMarks?: ViewStatMarks | null;
 }
 
-export function ChartLegend({ form, flipped = false, colorBy }: Props) {
+const STORAGE_KEY = "loom-chart-legend-open";
+
+function activeMarkIds(stats: ViewStatMarks | null | undefined, form: Props["form"]): StatMarkId[] {
+  if (!stats) return [];
+  const out: StatMarkId[] = [];
+  for (const id of Object.keys(STAT_MARK_META) as StatMarkId[]) {
+    if (!hasStat(stats, id)) continue;
+    const forms = STAT_MARK_META[id].forms;
+    if (forms.includes(form) || forms.includes("alluvial")) out.push(id);
+  }
+  return out;
+}
+
+function swatchColor(id: StatMarkId): string {
+  switch (id) {
+    case "top5_degree":
+    case "gini_callout":
+    case "rank_ladder":
+      return STAT_COLORS.halo;
+    case "bridge_outliers":
+    case "community_cuts":
+    case "genre_entropy":
+      return STAT_COLORS.bridge;
+    case "featured_path":
+    case "longest_collab":
+    case "loyalty_pair":
+    case "billing_glyphs":
+      return STAT_COLORS.path;
+    case "median_peak":
+    case "gap_spikes":
+    case "mode_decade":
+    case "era_histogram":
+    case "span_outliers":
+    case "peak_extremes":
+    case "retention_meter":
+    case "votes_centroid":
+      return STAT_COLORS.guide;
+    case "reunion_edges":
+      return STAT_COLORS.reunion;
+    case "top5_prominence":
+    case "densest_pair":
+    case "insight_sync":
+      return STAT_COLORS.warm;
+    default:
+      return STAT_COLORS.ghost;
+  }
+}
+
+export function ChartLegend({ form, flipped = false, colorBy, statMarks = null }: Props) {
+  const [open, setOpen] = useState(() => {
+    if (typeof window === "undefined") return true;
+    const saved = window.sessionStorage.getItem(STORAGE_KEY);
+    if (saved === "0") return false;
+    if (saved === "1") return true;
+    return true;
+  });
+
+  useEffect(() => {
+    try {
+      window.sessionStorage.setItem(STORAGE_KEY, open ? "1" : "0");
+    } catch {
+      /* ignore quota */
+    }
+  }, [open]);
+
   const link =
     form === "timeline"
       ? flipped
-        ? "Curved links = co-appearances. Height ≈ overlap year. Thickness = shared titles."
-        : "Curved links = co-appearances on the same title. Position ≈ overlap; thickness = count."
+        ? "Curved links = co-appearances. Height ≈ overlap year. Thickness follows Encode."
+        : "Curved links = co-appearances. Position ≈ overlap; thickness follows Encode."
       : form === "chord"
-        ? "Ribbons = co-appearances. Thicker ribbon = more shared titles."
-        : "Bundled lines = co-appearances. Stroke weight = shared-title count.";
+        ? "Ribbons = co-appearances. Weight follows Thickness · arc order follows Sort."
+        : "Bundled lines = co-appearances. Stroke follows Thickness · clusters follow Color.";
 
   const node =
     form === "timeline"
       ? flipped
-        ? "Vertical bar = career span. Dot = peak year."
-        : "Horizontal bar = career span. Dot = peak year."
-      : "Each mark is a person.";
+        ? "Vertical bar = career span (Size). Dot = peak year. Lane order follows Sort."
+        : "Horizontal bar = career span (Size). Dot = peak year. Lane order follows Sort."
+      : "Each mark is a person. Order follows Sort.";
 
-  return (
-    <div className="chart-legend">
+  const colorRow =
+    colorBy === "gender" ? (
       <div className="legend-row">
-        <span className="legend-key">People</span>
-        <span className="legend-val">{node}</span>
-      </div>
-      <div className="legend-row">
-        <span className="legend-key">Links</span>
-        <span className="legend-val">{link}</span>
-      </div>
-      {colorBy === "gender" && (
-        <div className="legend-row">
-          <span className="legend-key">Color</span>
-          <span className="legend-val legend-swatches">
-            {(
-              [
-                ["female", "Women"],
-                ["male", "Men"],
-                ["nonbinary", "NB"],
-                ["unknown", "?"],
-              ] as const
-            ).map(([id, label]) => (
-              <span key={id} className="legend-swatch">
-                <span className="swatch-dot" style={{ background: GENDER_COLORS[id] }} />
-                {label}
-              </span>
-            ))}
-          </span>
-        </div>
-      )}
-      {colorBy === "degree" && (
-        <div className="legend-row">
-          <span className="legend-key">Color</span>
-          <span className="legend-val">Darker = higher collaboration degree.</span>
-        </div>
-      )}
-      <div className="legend-row">
-        <span className="legend-key">Tip</span>
-        <span className="legend-val">
-          Hover a link for titles · click to pin · pin a person for roles.
+        <span className="legend-key">Color</span>
+        <span className="legend-val legend-swatches">
+          {(
+            [
+              ["female", "Women"],
+              ["male", "Men"],
+              ["nonbinary", "NB"],
+              ["unknown", "?"],
+            ] as const
+          ).map(([id, label]) => (
+            <span key={id} className="legend-swatch">
+              <span className="swatch-dot" style={{ background: GENDER_COLORS[id] }} />
+              {label}
+            </span>
+          ))}
         </span>
       </div>
+    ) : colorBy === "prominence" ? (
+      <div className="legend-row">
+        <span className="legend-key">Color</span>
+        <span className="legend-val">Darker = higher vote prominence.</span>
+      </div>
+    ) : colorBy === "genre" ? (
+      <div className="legend-row">
+        <span className="legend-key">Color</span>
+        <span className="legend-val">Hue = dominant genre.</span>
+      </div>
+    ) : (
+      <div className="legend-row">
+        <span className="legend-key">Color</span>
+        <span className="legend-val">Darker = higher collaboration degree.</span>
+      </div>
+    );
+
+  const marks = activeMarkIds(statMarks, form);
+  // Cap legend clutter — show first 8 + count
+  const shown = marks.slice(0, 8);
+  const extra = marks.length - shown.length;
+
+  return (
+    <div className={`chart-legend${open ? " open" : " collapsed"}`}>
+      <button
+        type="button"
+        className="chart-legend-toggle"
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+      >
+        <span className="chart-legend-toggle-label">Reading guide</span>
+        {!open && colorBy ? (
+          <span className="chart-legend-toggle-hint mono">
+            {colorLegendLabel(colorBy)}
+            {marks.length ? ` · ${marks.length} stats` : ""}
+          </span>
+        ) : null}
+        <span className="chev" aria-hidden>
+          {open ? "▾" : "▸"}
+        </span>
+      </button>
+      {open ? (
+        <div className="chart-legend-body">
+          <div className="legend-row">
+            <span className="legend-key">People</span>
+            <span className="legend-val">{node}</span>
+          </div>
+          <div className="legend-row">
+            <span className="legend-key">Links</span>
+            <span className="legend-val">{link}</span>
+          </div>
+          {colorRow}
+          {shown.length ? (
+            <div className="legend-row">
+              <span className="legend-key">Stats</span>
+              <span className="legend-val legend-stats">
+                {shown.map((id) => (
+                  <span key={id} className="legend-stat-line">
+                    <span className="swatch-dot" style={{ background: swatchColor(id) }} />
+                    {STAT_MARK_META[id].hint}
+                  </span>
+                ))}
+                {extra > 0 ? (
+                  <span className="legend-stat-line mono">+{extra} more in Controls → Stats</span>
+                ) : null}
+              </span>
+            </div>
+          ) : null}
+          <div className="legend-row">
+            <span className="legend-key">Tip</span>
+            <span className="legend-val">
+              Hover a link for titles · click to pin · pin a person for roles.
+            </span>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }

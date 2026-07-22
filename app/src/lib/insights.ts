@@ -151,6 +151,7 @@ export function deriveInsights(opts: {
       kind: "Pair",
       headline: `${a?.label ?? "?"} ↔ ${b?.label ?? "?"} share ${bestEdge.weight} titles — densest co-appearance here.`,
       detail: film ? `Sample: ${film}.` : undefined,
+      focusId: bestEdge.source,
       score: 7 + Math.min(5, bestEdge.weight / 2),
     });
   }

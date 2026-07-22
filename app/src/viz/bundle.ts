@@ -1,8 +1,15 @@
 /** Hierarchical edge bundling hero alternative. */
 
 import * as d3 from "d3";
-import type { Edge, Node } from "../lib/types";
-import { colorForGender, degreeColor } from "../lib/colors";
+import type { ColorBy, Edge, Node, SortBy, ThicknessBy } from "../lib/types";
+import {
+  buildGenreColor,
+  edgeYearExtents,
+  linkStrokeWidth,
+  nodeColor,
+  nodeExtents,
+} from "../lib/encode";
+import { compareNodesBySort } from "../lib/filter";
 import { sharedLabel } from "../lib/sharedTitles";
 
 export interface BundleLayout {
@@ -10,6 +17,7 @@ export interface BundleLayout {
     path: string;
     fill: string;
     weight: number;
+    strokeWidth: number;
     title: string;
     sourceId: string;
     targetId: string;
@@ -30,31 +38,53 @@ export function layoutBundle(
   nodes: Node[],
   edges: Edge[],
   radius: number,
-  opts: { colorBy: "gender" | "degree"; minWeight: number; palette?: string } = {
+  opts: {
+    colorBy: ColorBy;
+    minWeight: number;
+    palette?: string;
+    sortBy?: SortBy;
+    thicknessBy?: ThicknessBy;
+  } = {
     colorBy: "degree",
     minWeight: 1,
   },
 ): BundleLayout {
   const palette = opts.palette ?? "loom";
+  const sortBy = opts.sortBy ?? "degree";
+  const thicknessBy = opts.thicknessBy ?? "shared";
   if (nodes.length === 0) return { links: [], leaves: [] };
 
-  // Group by gender (or dominant_genre if present) for hierarchy
-  const groupKey = (n: Node) =>
-    (n.dominant_genre as string) || (n.gender as string) || "unknown";
+  const groupKey = (n: Node) => {
+    if (opts.colorBy === "gender") return (n.gender as string) || "unknown";
+    if (opts.colorBy === "genre") return String(n.dominant_genre || "unknown");
+    const d = n.degree || 0;
+    if (d >= 40) return "hub";
+    if (d >= 15) return "connected";
+    if (d >= 5) return "linked";
+    return "sparse";
+  };
 
-  const groups = d3.group(nodes, groupKey);
+  const ordered = [...nodes].sort((a, b) => compareNodesBySort(a, b, sortBy));
+  const groups = d3.group(ordered, groupKey);
   const rootData = {
     name: "root",
     children: Array.from(groups, ([name, kids]) => ({
       name,
-      children: kids.map((k) => ({ name: k.id, node: k })),
+      children: [...kids]
+        .sort((a, b) => compareNodesBySort(a, b, sortBy))
+        .map((k) => ({ name: k.id, node: k })),
     })),
   };
 
   const root = d3
     .hierarchy(rootData)
     .sum(() => 1)
-    .sort((a, b) => (a.data.name > b.data.name ? 1 : -1));
+    .sort((a, b) => {
+      if (a.depth === 1 && b.depth === 1) {
+        return String(a.data.name).localeCompare(String(b.data.name));
+      }
+      return 0;
+    });
 
   const cluster = d3.cluster<typeof rootData>().size([2 * Math.PI, radius - 20]);
   cluster(root as d3.HierarchyNode<typeof rootData>);
@@ -70,20 +100,19 @@ export function layoutBundle(
     .radius((d) => d.y)
     .angle((d) => d.x);
 
-  const maxDeg = d3.max(nodes, (d) => d.degree) ?? 1;
-  const labelThreshold = maxDeg * 0.3;
+  const extents = nodeExtents(nodes);
+  const genreColor = buildGenreColor(nodes, palette);
+  const labelThreshold = extents.maxDegree * 0.3;
+  const maxWeight = d3.max(edges, (e) => e.weight) ?? 1;
+  const years = edgeYearExtents(edges);
 
   const leaves = Array.from(idToLeaf.values()).map((leaf) => {
     const node = leaf.data.node as Node;
-    const fill =
-      opts.colorBy === "gender"
-        ? colorForGender(node.gender as string)
-        : degreeColor(node.degree, maxDeg, palette);
     return {
       x: Math.sin(leaf.x) * leaf.y,
       y: -Math.cos(leaf.x) * leaf.y,
       label: node.label,
-      fill,
+      fill: nodeColor(node, opts.colorBy, extents, genreColor, palette),
       showLabel: node.degree >= labelThreshold,
       angle: leaf.x,
       id: node.id,
@@ -99,20 +128,16 @@ export function layoutBundle(
     const pathNodes = a.path(b);
     const pts = pathNodes.map((p) => ({ x: p.x, y: p.y }));
     const src = a.data.node as Node;
-    const tgt = b.data.node as Node;
-    const fill =
-      opts.colorBy === "gender"
-        ? colorForGender(src.gender as string)
-        : degreeColor(src.degree, maxDeg, palette);
     links.push({
       path: line(pts) ?? "",
-      fill,
+      fill: nodeColor(src, opts.colorBy, extents, genreColor, palette),
       weight: e.weight,
-      title: `${src.label} ↔ ${tgt.label}: ${e.weight} shared title(s)${
+      strokeWidth: linkStrokeWidth(e, thicknessBy, maxWeight, years),
+      title: `${src.label} ↔ ${(b.data.node as Node).label}: ${e.weight} shared title(s)${
         sharedLabel(e.shared) ? `\n${sharedLabel(e.shared)}` : ""
       }`,
       sourceId: src.id,
-      targetId: tgt.id,
+      targetId: (b.data.node as Node).id,
       edge: e,
     });
   }
