@@ -1,0 +1,15 @@
+{
+  "id": "dubbing",
+  "title": "The Dubbing Multiverse",
+  "subtitle": "voice actor → character fan-out",
+  "key_variable": "character_count",
+  "built_at": "2026-07-22T04:51:24.997830+00:00",
+  "node_count": 160,
+  "edge_count": 1130,
+  "stage_row_count": 147,
+  "method_note": "Population: people with a voice signal and ≥5 distinct character credits. Hero = co-appearance among prolific voice performers. Alluvial: top actors → medium → role-count band.",
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
+  "tmdb_gender_rows": 0,
+  "gender_method": "imdb_actor_actress_proxy",
+  "top_n": 160
+}

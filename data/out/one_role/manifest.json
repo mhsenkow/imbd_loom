@@ -1,0 +1,17 @@
+{
+  "id": "one_role",
+  "title": "One-Role Wonders",
+  "subtitle": "person → genre concentration (≥90%)",
+  "key_variable": "dominant_genre",
+  "built_at": "2026-07-22T04:50:49.087498+00:00",
+  "node_count": 160,
+  "edge_count": 183,
+  "stage_row_count": 58,
+  "method_note": "Population: actors/actresses with ≥8 title-genre credits whose single largest genre accounts for ≥90% of those credits. Hero links people within the same dominant genre.",
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
+  "tmdb_gender_rows": 0,
+  "gender_method": "imdb_actor_actress_proxy",
+  "concentration_threshold": 0.9,
+  "min_credits": 8,
+  "top_n": 160
+}

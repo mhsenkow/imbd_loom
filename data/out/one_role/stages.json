@@ -1,0 +1,408 @@
+[
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "female",
+    "categoryTo": "Comedy",
+    "value": 83
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "male",
+    "categoryTo": "Comedy",
+    "value": 149
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "female",
+    "categoryTo": "Horror",
+    "value": 2
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "male",
+    "categoryTo": "Sport",
+    "value": 23
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "female",
+    "categoryTo": "Sport",
+    "value": 16
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "female",
+    "categoryTo": "Mystery",
+    "value": 2
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "male",
+    "categoryTo": "Horror",
+    "value": 11
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "male",
+    "categoryTo": "Animation",
+    "value": 6
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "male",
+    "categoryTo": "Mystery",
+    "value": 2
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "male",
+    "categoryTo": "Drama",
+    "value": 421
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "female",
+    "categoryTo": "Drama",
+    "value": 363
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "female",
+    "categoryTo": "Family",
+    "value": 6
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "male",
+    "categoryTo": "Family",
+    "value": 8
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "male",
+    "categoryTo": "Action",
+    "value": 9
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "female",
+    "categoryTo": "Action",
+    "value": 1
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "female",
+    "categoryTo": "Fantasy",
+    "value": 1
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "male",
+    "categoryTo": "Fantasy",
+    "value": 1
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "male",
+    "categoryTo": "History",
+    "value": 1
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "male",
+    "categoryTo": "Music",
+    "value": 10
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "female",
+    "categoryTo": "Music",
+    "value": 2
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "male",
+    "categoryTo": "Adventure",
+    "value": 7
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "male",
+    "categoryTo": "Documentary",
+    "value": 46
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "male",
+    "categoryTo": "Adult",
+    "value": 170
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "female",
+    "categoryTo": "Documentary",
+    "value": 18
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "female",
+    "categoryTo": "Adult",
+    "value": 179
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "dominant_genre",
+    "categoryFrom": "female",
+    "categoryTo": "Reality-TV",
+    "value": 1
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Drama",
+    "categoryTo": "near-pure",
+    "value": 110
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Documentary",
+    "categoryTo": "pure (≥97%)",
+    "value": 39
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Documentary",
+    "categoryTo": "concentrated (90–93%)",
+    "value": 18
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Reality-TV",
+    "categoryTo": "near-pure",
+    "value": 1
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "History",
+    "categoryTo": "near-pure",
+    "value": 1
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Action",
+    "categoryTo": "pure (≥97%)",
+    "value": 5
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Horror",
+    "categoryTo": "near-pure",
+    "value": 1
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Action",
+    "categoryTo": "concentrated (90–93%)",
+    "value": 5
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Animation",
+    "categoryTo": "concentrated (90–93%)",
+    "value": 1
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Animation",
+    "categoryTo": "pure (≥97%)",
+    "value": 5
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Adult",
+    "categoryTo": "concentrated (90–93%)",
+    "value": 105
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Comedy",
+    "categoryTo": "concentrated (90–93%)",
+    "value": 88
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Adult",
+    "categoryTo": "pure (≥97%)",
+    "value": 211
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Comedy",
+    "categoryTo": "pure (≥97%)",
+    "value": 114
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Sport",
+    "categoryTo": "near-pure",
+    "value": 6
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Family",
+    "categoryTo": "near-pure",
+    "value": 3
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Fantasy",
+    "categoryTo": "pure (≥97%)",
+    "value": 2
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Comedy",
+    "categoryTo": "near-pure",
+    "value": 30
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Adult",
+    "categoryTo": "near-pure",
+    "value": 33
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Sport",
+    "categoryTo": "concentrated (90–93%)",
+    "value": 10
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Sport",
+    "categoryTo": "pure (≥97%)",
+    "value": 23
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Family",
+    "categoryTo": "concentrated (90–93%)",
+    "value": 3
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Mystery",
+    "categoryTo": "pure (≥97%)",
+    "value": 4
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Family",
+    "categoryTo": "pure (≥97%)",
+    "value": 8
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Music",
+    "categoryTo": "concentrated (90–93%)",
+    "value": 6
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Music",
+    "categoryTo": "pure (≥97%)",
+    "value": 6
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Adventure",
+    "categoryTo": "pure (≥97%)",
+    "value": 7
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Documentary",
+    "categoryTo": "near-pure",
+    "value": 7
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Drama",
+    "categoryTo": "pure (≥97%)",
+    "value": 412
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Drama",
+    "categoryTo": "concentrated (90–93%)",
+    "value": 262
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Horror",
+    "categoryTo": "pure (≥97%)",
+    "value": 7
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Horror",
+    "categoryTo": "concentrated (90–93%)",
+    "value": 5
+  }
+]

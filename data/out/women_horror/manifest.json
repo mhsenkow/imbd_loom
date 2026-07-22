@@ -1,0 +1,15 @@
+{
+  "id": "women_horror",
+  "title": "Women in Horror",
+  "subtitle": "gender → role prominence → title profile",
+  "key_variable": "gender",
+  "built_at": "2026-07-22T04:49:50.611432+00:00",
+  "node_count": 160,
+  "edge_count": 429,
+  "stage_row_count": 15,
+  "method_note": "Population: female-coded cast (TMDB gender=female, else IMDb category=actress) with ≥3 Horror credits. Hero = co-appearance on shared Horror titles (≥2). Alluvial includes all genders to show imbalance. Note: gender proxy is imperfect without TMDB enrichment.",
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
+  "tmdb_gender_rows": 0,
+  "gender_method": "imdb_actor_actress_proxy",
+  "top_n": 160
+}

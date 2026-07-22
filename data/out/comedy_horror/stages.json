@@ -1,0 +1,107 @@
+[
+  {
+    "stageFrom": "gender",
+    "stageTo": "lane",
+    "categoryFrom": "male",
+    "categoryTo": "comedy",
+    "value": 25391
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "lane",
+    "categoryFrom": "male",
+    "categoryTo": "horror",
+    "value": 3510
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "lane",
+    "categoryFrom": "female",
+    "categoryTo": "horror-comedy",
+    "value": 427
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "lane",
+    "categoryFrom": "male",
+    "categoryTo": "horror-comedy",
+    "value": 1268
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "lane",
+    "categoryFrom": "female",
+    "categoryTo": "comedy",
+    "value": 5556
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "lane",
+    "categoryFrom": "female",
+    "categoryTo": "horror",
+    "value": 1505
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "prominence",
+    "categoryFrom": "comedy",
+    "categoryTo": "lead",
+    "value": 9166
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "prominence",
+    "categoryFrom": "horror",
+    "categoryTo": "ensemble",
+    "value": 920
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "prominence",
+    "categoryFrom": "horror",
+    "categoryTo": "supporting",
+    "value": 1950
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "prominence",
+    "categoryFrom": "horror-comedy",
+    "categoryTo": "ensemble",
+    "value": 420
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "prominence",
+    "categoryFrom": "horror-comedy",
+    "categoryTo": "supporting",
+    "value": 688
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "prominence",
+    "categoryFrom": "comedy",
+    "categoryTo": "supporting",
+    "value": 12479
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "prominence",
+    "categoryFrom": "comedy",
+    "categoryTo": "ensemble",
+    "value": 9302
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "prominence",
+    "categoryFrom": "horror",
+    "categoryTo": "lead",
+    "value": 2145
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "prominence",
+    "categoryFrom": "horror-comedy",
+    "categoryTo": "lead",
+    "value": 587
+  }
+]

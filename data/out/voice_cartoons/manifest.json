@@ -1,0 +1,16 @@
+{
+  "id": "voice_cartoons",
+  "title": "Voice Actors in Cartoons",
+  "subtitle": "actor → show → character reuse",
+  "key_variable": "degree",
+  "built_at": "2026-07-22T04:49:24.696362+00:00",
+  "node_count": 160,
+  "edge_count": 6907,
+  "stage_row_count": 20,
+  "method_note": "Population: cast credited on Animation titles with a voice signal (Wikidata occupation 'voice actor', IMDb characters containing '(voice)', or voice job string). Edges = shared Animation titles (≥2). Gender via TMDB when enriched, else IMDb actor/actress category.",
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
+  "tmdb_gender_rows": 0,
+  "gender_method": "imdb_actor_actress_proxy",
+  "min_shared_titles": 2,
+  "top_n": 160
+}

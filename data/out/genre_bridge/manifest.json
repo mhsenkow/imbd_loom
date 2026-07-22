@@ -1,0 +1,15 @@
+{
+  "id": "genre_bridge",
+  "title": "Genre Bridges",
+  "subtitle": "careers spanning two (or more) genres",
+  "key_variable": "bridge",
+  "built_at": "2026-07-22T04:50:43.532375+00:00",
+  "node_count": 160,
+  "edge_count": 1764,
+  "stage_row_count": 67,
+  "method_note": "Population: actors/actresses with ≥12 title-genre credits whose largest genre is <70% and second genre is ≥20% — careers that meaningfully span genres. Hero = co-appearance; node.bridge shows top two genres.",
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
+  "tmdb_gender_rows": 0,
+  "gender_method": "imdb_actor_actress_proxy",
+  "top_n": 160
+}

@@ -1,0 +1,15 @@
+{
+  "id": "scream_queen",
+  "title": "The Scream-Queen Web",
+  "subtitle": "actress ↔ actress co-appearance in horror",
+  "key_variable": "coappearance",
+  "built_at": "2026-07-22T04:50:03.770708+00:00",
+  "node_count": 160,
+  "edge_count": 429,
+  "stage_row_count": 125,
+  "method_note": "Population: female-coded cast with ≥3 Horror credits. Hero = co-appearance web (shared horror titles ≥2). Alluvial: top actresses → era → role band.",
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
+  "tmdb_gender_rows": 0,
+  "gender_method": "imdb_actor_actress_proxy",
+  "top_n": 160
+}

@@ -1,0 +1,16 @@
+{
+  "id": "bechdel",
+  "title": "The Bechdel Web",
+  "subtitle": "cast across films that pass the Bechdel test",
+  "key_variable": "gender",
+  "built_at": "2026-07-22T04:50:15.950674+00:00",
+  "node_count": 160,
+  "edge_count": 1217,
+  "stage_row_count": 24,
+  "method_note": "Population: cast credited on movies that fully pass the Bechdel test (rating=3 on bechdeltest.com; 5,105 titles in cache). Hero = co-appearance among people with ≥3 pass-film credits. Alluvial: gender → Bechdel band (0–3) → era across all rated titles. Bechdel ratings are community-contributed and incomplete — not every film is scored.",
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
+  "tmdb_gender_rows": 0,
+  "gender_method": "imdb_actor_actress_proxy",
+  "top_n": 160,
+  "bechdel_pass_titles": 5105
+}

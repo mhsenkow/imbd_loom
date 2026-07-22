@@ -1,0 +1,107 @@
+[
+  {
+    "stageFrom": "gender",
+    "stageTo": "prominence",
+    "categoryFrom": "female",
+    "categoryTo": "bit",
+    "value": 49165
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "prominence",
+    "categoryFrom": "male",
+    "categoryTo": "supporting",
+    "value": 90992
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "prominence",
+    "categoryFrom": "female",
+    "categoryTo": "lead",
+    "value": 36442
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "prominence",
+    "categoryFrom": "male",
+    "categoryTo": "bit",
+    "value": 82739
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "prominence",
+    "categoryFrom": "female",
+    "categoryTo": "supporting",
+    "value": 58966
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "prominence",
+    "categoryFrom": "male",
+    "categoryTo": "lead",
+    "value": 50950
+  },
+  {
+    "stageFrom": "prominence",
+    "stageTo": "title_profile",
+    "categoryFrom": "bit",
+    "categoryTo": "cult/low",
+    "value": 119978
+  },
+  {
+    "stageFrom": "prominence",
+    "stageTo": "title_profile",
+    "categoryFrom": "bit",
+    "categoryTo": "high-profile",
+    "value": 2725
+  },
+  {
+    "stageFrom": "prominence",
+    "stageTo": "title_profile",
+    "categoryFrom": "bit",
+    "categoryTo": "mid-profile",
+    "value": 9201
+  },
+  {
+    "stageFrom": "prominence",
+    "stageTo": "title_profile",
+    "categoryFrom": "lead",
+    "categoryTo": "cult/low",
+    "value": 81824
+  },
+  {
+    "stageFrom": "prominence",
+    "stageTo": "title_profile",
+    "categoryFrom": "lead",
+    "categoryTo": "mid-profile",
+    "value": 4304
+  },
+  {
+    "stageFrom": "prominence",
+    "stageTo": "title_profile",
+    "categoryFrom": "lead",
+    "categoryTo": "high-profile",
+    "value": 1264
+  },
+  {
+    "stageFrom": "prominence",
+    "stageTo": "title_profile",
+    "categoryFrom": "supporting",
+    "categoryTo": "cult/low",
+    "value": 138886
+  },
+  {
+    "stageFrom": "prominence",
+    "stageTo": "title_profile",
+    "categoryFrom": "supporting",
+    "categoryTo": "mid-profile",
+    "value": 8553
+  },
+  {
+    "stageFrom": "prominence",
+    "stageTo": "title_profile",
+    "categoryFrom": "supporting",
+    "categoryTo": "high-profile",
+    "value": 2519
+  }
+]

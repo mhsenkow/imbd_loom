@@ -1,0 +1,15 @@
+{
+  "id": "men_horror",
+  "title": "Men in Horror",
+  "subtitle": "gender → role prominence → title profile",
+  "key_variable": "gender",
+  "built_at": "2026-07-22T04:49:37.704005+00:00",
+  "node_count": 160,
+  "edge_count": 582,
+  "stage_row_count": 15,
+  "method_note": "Population: male-coded cast (TMDB gender=male, else IMDb category=actor) credited on Horror movies/series with ≥3 horror titles. Alluvial includes all genders to reveal imbalance. Edges = shared Horror titles (≥2).",
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
+  "tmdb_gender_rows": 0,
+  "gender_method": "imdb_actor_actress_proxy",
+  "top_n": 160
+}

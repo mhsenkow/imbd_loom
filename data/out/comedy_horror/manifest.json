@@ -1,0 +1,15 @@
+{
+  "id": "comedy_horror",
+  "title": "Comedy × Horror",
+  "subtitle": "crossover careers between laughs and screams",
+  "key_variable": "crossover_weight",
+  "built_at": "2026-07-22T04:50:30.355542+00:00",
+  "node_count": 160,
+  "edge_count": 1541,
+  "stage_row_count": 15,
+  "method_note": "Population: people with ≥2 Horror and ≥2 Comedy title credits. Hero = co-appearance among crossover performers. Alluvial: gender → horror/comedy/horror-comedy lane → billing band.",
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
+  "tmdb_gender_rows": 0,
+  "gender_method": "imdb_actor_actress_proxy",
+  "top_n": 160
+}

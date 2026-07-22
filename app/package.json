@@ -1,0 +1,33 @@
+{
+  "name": "imbd-loom-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "sync-data": "bash ../scripts/sync-public-data.sh",
+    "build": "npm run sync-data && tsc -b && vite build",
+    "build:pages": "npm run sync-data && tsc -b && GITHUB_PAGES=1 vite build --mode pages",
+    "preview": "vite preview",
+    "export": "tsx ../export/export-pdf.ts"
+  },
+  "dependencies": {
+    "d3": "^7.9.0",
+    "d3-chord": "^3.0.1",
+    "d3-hierarchy": "^3.1.2",
+    "d3-sankey": "^0.12.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "@types/d3-sankey": "^0.12.4",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "puppeteer": "^23.11.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
+  }
+}

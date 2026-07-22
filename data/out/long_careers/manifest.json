@@ -1,0 +1,17 @@
+{
+  "id": "long_careers",
+  "title": "Long Careers",
+  "subtitle": "35+ year credited spans",
+  "key_variable": "career_span",
+  "built_at": "2026-07-22T04:51:01.721707+00:00",
+  "node_count": 160,
+  "edge_count": 482,
+  "stage_row_count": 4,
+  "method_note": "Population: actors/actresses with ≥15 credits whose earliest and latest title years span ≥35 years (IMDb startYear). Hero = co-appearance among long-career peers.",
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics.",
+  "tmdb_gender_rows": 0,
+  "gender_method": "imdb_actor_actress_proxy",
+  "min_span_years": 35,
+  "min_titles": 15,
+  "top_n": 160
+}

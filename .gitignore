@@ -1,0 +1,41 @@
+# Data (large / regenerable)
+data/raw/
+data/parquet/
+data/cache/
+# Commit built construct JSON so GitHub Pages can ship without re-running the pipeline
+# data/out/ is synced into app/public/data at build time; keep out/ locally too
+data/out/_spike/
+
+!data/out/.gitkeep
+!data/raw/.gitkeep
+!data/parquet/.gitkeep
+!data/cache/.gitkeep
+
+# Python
+pipeline/.venv/
+pipeline/**/__pycache__/
+pipeline/**/*.pyc
+pipeline/.env
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Node
+app/node_modules/
+app/dist/
+app/public/data/
+export/node_modules/
+export/output/
+*.log
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+.cursor/
+
+# Exports
+*.pdf
+!docs/**
+*.tsbuildinfo
