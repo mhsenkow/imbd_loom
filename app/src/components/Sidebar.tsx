@@ -2,11 +2,14 @@
 
 import { useState, type ReactNode } from "react";
 import type { Manifest, PosterSpec } from "../lib/types";
-import { PALETTES } from "../lib/types";
 import { PAGE_SIZES } from "../lib/geometry";
 import type { SearchMatch } from "../lib/search";
 import { searchSummary } from "../lib/search";
 import { ALL_STAT_MARKS, STAT_GROUPS, STAT_MARK_META, STAT_PRESETS, toggleStatMark } from "../lib/statsMarks";
+import { useTheme } from "../lib/theme/ThemeContext";
+import { PALETTE_META, PALETTE_NAMES, type ThemePreference } from "../lib/theme/tokens";
+import { Chip } from "./ui/Chip";
+import { Swatch } from "./ui/Swatch";
 
 interface Props {
   spec: PosterSpec;
@@ -19,6 +22,7 @@ interface Props {
   open: boolean;
   onToggle: () => void;
   onOpenHome?: () => void;
+  onOpenMethodology?: () => void;
   searchMatch?: SearchMatch | null;
   filteredCounts?: { people: number; links: number };
   /** People remaining after connect filters, before Top-N */
@@ -92,16 +96,17 @@ export function Sidebar({
   open,
   onToggle,
   onOpenHome,
+  onOpenMethodology,
   searchMatch = null,
   filteredCounts,
   poolSize,
   weightMax = 10,
 }: Props) {
   const [section, setSection] = useState<Section | null>("find");
+  const { themePreference, setTheme, setPalette } = useTheme();
   const openSec = (k: Section) => setSection((s) => (s === k ? null : k));
   const isTimeline = spec.heroForm === "timeline";
   const clampedWeight = Math.min(spec.minWeight, weightMax);
-
   if (!open) {
     return (
       <aside className="panel-rail left">
@@ -635,17 +640,60 @@ export function Sidebar({
             </select>
           </div>
           <div className="field">
-            <label>Palette</label>
-            <select
-              value={spec.palette}
-              onChange={(e) => onChange({ palette: e.target.value })}
-            >
-              {Object.keys(PALETTES).map((k) => (
-                <option key={k} value={k}>
-                  {k}
-                </option>
+            <label>Theme</label>
+            <div className="chip-row theme-row">
+              {(["auto", "light", "dark"] as ThemePreference[]).map((t) => (
+                <Chip
+                  key={t}
+                  active={themePreference === t}
+                  onClick={() => setTheme(t)}
+                >
+                  {t}
+                </Chip>
               ))}
-            </select>
+            </div>
+            <p className="field-hint">
+              Recolors atelier chrome and the poster sheet (print/PDF still forces paper).
+            </p>
+          </div>
+          <div className="field">
+            <label>Palette</label>
+            <p className="field-hint">
+              Recolors people, ribbons, and gender marks. Colorblind-safe:{" "}
+              <strong>Okabe</strong>, <strong>Tol Bright</strong>, <strong>Ink</strong>.
+            </p>
+            <div className="palette-picker" role="listbox" aria-label="Color palette">
+              {PALETTE_NAMES.map((name) => {
+                const meta = PALETTE_META[name];
+                const active = spec.palette === name;
+                return (
+                  <button
+                    key={name}
+                    type="button"
+                    role="option"
+                    aria-selected={active}
+                    className={`palette-option${active ? " active" : ""}`}
+                    onClick={() => {
+                      setPalette(name);
+                      onChange({ palette: name });
+                    }}
+                  >
+                    <span className="palette-swatches" aria-hidden>
+                      {meta.hues.slice(0, 6).map((h, i) => (
+                        <Swatch key={i} color={h} size={9} />
+                      ))}
+                    </span>
+                    <span className="palette-meta">
+                      <span className="palette-label">{meta.label}</span>
+                      <span className="palette-desc">{meta.description}</span>
+                      {meta.colorblindSafe ? (
+                        <span className="palette-badge mono">CB-safe</span>
+                      ) : null}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
           <label className="check touch">
             <input
@@ -668,6 +716,15 @@ export function Sidebar({
 
       <div className="sidebar-footer">
         <div className="status">{status}</div>
+        {onOpenMethodology ? (
+          <button
+            type="button"
+            className="ghost home-link"
+            onClick={onOpenMethodology}
+          >
+            Trust the data
+          </button>
+        ) : null}
         <button
           type="button"
           className="export-btn"

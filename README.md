@@ -44,8 +44,10 @@ After the first push, enable **Settings → Pages → Source: GitHub Actions** i
 
 ## Explorer tips
 
+- **Trust the data** — `?view=methodology` (sources, math, per-construct quality report, IMDb spot-check)
 - **Find** — search movie / character / person; **Highlight** dims the rest, **Isolate** keeps only the matched web
 - **Years** hero — career lanes + co-appearance arcs; flip axes under Hero form
+- **Theme / Palette** — Page accordion: light / dark / auto theme + swatch picker (`loom`, `ink`, `dusk`, `okabe`, `contrast`). Palette is stored in the share URL; theme persists in localStorage. Styleguide at `?view=styleguide`
 - **Insight** — analytical observation of the current cut lives in the Inspect panel
 - **Links** — co-appearances (same IMDb title), except **One-role wonders** (genre co-membership)
 - Density knobs (Top N, min edge weight, min titles) mirror the pipeline budget (~150–300 people)

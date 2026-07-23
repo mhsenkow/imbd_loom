@@ -1,6 +1,23 @@
 /** Shared types for construct JSON. */
 
+import {
+  PALETTES as THEME_PALETTES,
+  type PaletteName,
+} from "./theme/tokens";
+import { genderColors } from "./colors";
+
 export type Gender = "male" | "female" | "nonbinary" | "unknown";
+
+/** ≤6 categorical hues — re-exported from theme/tokens (single source of truth). */
+export const PALETTES: Record<string, readonly string[]> = THEME_PALETTES;
+
+export type { PaletteName };
+
+/**
+ * Default gender swatches (loom slots). Prefer `genderColors(palette)` at render
+ * so legends track the active palette.
+ */
+export const GENDER_COLORS: Record<string, string> = genderColors("loom", "light");
 
 /**
  * Statistical overlay marks for hero / alluvial.
@@ -102,6 +119,49 @@ export interface StageRow {
   value: number;
 }
 
+export interface BuildStats {
+  population_sql?: number;
+  credit_rows?: number;
+  after_degree_cap?: number;
+  people_faceted?: number;
+  min_shared?: number;
+  min_votes?: number;
+  era_slices?: number;
+  validation_warnings?: string[];
+  stages_source?: string;
+  [key: string]: unknown;
+}
+
+export interface ManifestSummary {
+  degree_max?: number;
+  degree_median?: number;
+  era_histogram?: Record<string, number>;
+  gender_mix?: Record<string, number>;
+  top_name?: string;
+}
+
+export interface FeaturedPathHop {
+  id: string;
+  label: string;
+}
+
+export interface Quality {
+  id?: string;
+  node_count: number;
+  edge_count: number;
+  missing_birth_year_pct: number;
+  gender_unknown_pct: number;
+  prominence_coverage_pct: number;
+  edges_with_year_pct: number;
+  /** Optional enrichment coverage (pipeline may add these). */
+  tmdb_coverage_pct?: number;
+  voice_flag_source?: string;
+  bechdel_matched_pct?: number;
+  validation_warnings?: string[];
+  imdb_snapshot_as_of?: string;
+  gender_method?: string;
+}
+
 export interface Manifest {
   id: string;
   title: string;
@@ -115,6 +175,17 @@ export interface Manifest {
   data_credit: string;
   gender_method?: string;
   tmdb_gender_rows?: number;
+  build_seed?: number;
+  build_stats?: BuildStats;
+  imdb_snapshot_files?: Record<string, string>;
+  min_shared_titles?: number;
+  top_n?: number;
+  avg_path_length?: number;
+  avg_path_sample_n?: number;
+  clustering_coefficient?: number;
+  community_count?: number;
+  featured_path?: FeaturedPathHop[];
+  summary?: ManifestSummary;
   [key: string]: unknown;
 }
 
@@ -221,26 +292,3 @@ export const DEFAULT_SPEC: PosterSpec = {
   statMarks: [...DEFAULT_STAT_MARKS],
 };
 
-/** ≤6 categorical hues — print-safe, not fully saturated */
-export const PALETTES: Record<string, string[]> = {
-  /** Print-safe categorical weave (primary) */
-  loom: ["#C45C26", "#2F5D50", "#C4A35A", "#5B4B8A", "#8B3A3A", "#3D5A80"],
-  /** Grayscale letterpress — first-class poster mode */
-  ink: ["#1a1814", "#3a3630", "#6e6a62", "#9a958c", "#c4bfb4", "#e8e0d0"],
-  /** Soft dusk — first-class poster mode (warm, print-safe) */
-  dusk: ["#E07A5F", "#3D405B", "#81B29A", "#F2CC8F", "#C4A35A", "#6D597A"],
-};
-
-/** Midtones for ribbon/link gradients (same hue family, softer ink). */
-export const PALETTE_MIDTONES: Record<string, string[]> = {
-  loom: ["#D4845A", "#4A7A6C", "#D4B87A", "#7A6BA0", "#A55A5A", "#5A7294"],
-  ink: ["#2e2c28", "#524e48", "#848078", "#b0aaa0", "#d4cfc4", "#f0ebe2"],
-  dusk: ["#E8947C", "#555870", "#9AC4B0", "#F5D9A8", "#D4B87A", "#857294"],
-};
-
-export const GENDER_COLORS: Record<string, string> = {
-  female: "#C45C26",
-  male: "#2F5D50",
-  nonbinary: "#5B4B8A",
-  unknown: "#9a958c",
-};

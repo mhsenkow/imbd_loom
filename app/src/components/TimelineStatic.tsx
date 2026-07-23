@@ -2,16 +2,18 @@
 
 import {
   ACCENT,
+  DECADE_GRID,
   DIM_GHOST,
   FONT_MONO,
   FONT_SANS,
-  INK,
-  INK_FAINT,
   MODE_DECADE,
-  PAPER,
   RULE,
 } from "../lib/fonts";
 import { useMemo } from "react";
+import { driftThreadColors, weaveGradient } from "../lib/theme/scales";
+import { chartChrome } from "../lib/theme/chartChrome";
+import { useTheme } from "../lib/theme/ThemeContext";
+import { ChartDefs } from "./ChartDefs";
 import type {
   ColorBy,
   Edge,
@@ -91,6 +93,10 @@ export function TimelineStatic({
   insightFocusId = null,
   viewStats: viewStatsProp = null,
 }: Props) {
+  const { theme, printForced } = useTheme();
+  const chartTheme = printForced ? "light" : theme;
+  const chrome = useMemo(() => chartChrome(chartTheme), [chartTheme]);
+  const { paper: PAPER, ink: INK, inkFaint: INK_FAINT } = chrome;
   const focus = selection ? activeId(selection) : null;
   const neighbors = useMemo(() => neighborIds(focus, edges), [focus, edges]);
   const byId = useMemo(() => new Map(nodes.map((n) => [n.id, n])), [nodes]);
@@ -107,6 +113,11 @@ export function TimelineStatic({
       sortBy,
     });
   }, [viewStatsProp, statMarks, nodes, edges, manifest, insightFocusId, sortBy]);
+
+  const driftColors = useMemo(
+    () => driftThreadColors(palette, chartTheme),
+    [palette, chartTheme],
+  );
 
   const layout = useMemo(() => {
     const yearSpan = (() => {
@@ -136,6 +147,7 @@ export function TimelineStatic({
       sortBy,
       thicknessBy,
       sizeBy,
+      theme: chartTheme,
     });
   }, [
     nodes,
@@ -149,6 +161,7 @@ export function TimelineStatic({
     sortBy,
     thicknessBy,
     sizeBy,
+    chartTheme,
   ]);
 
   if (!layout.people.length) {
@@ -213,23 +226,20 @@ export function TimelineStatic({
       ) : null}
 
       <g transform={`translate(0, ${title || subtitle ? 30 : 0}) scale(${s})`}>
-        <defs>
-          {layout.links.map((l, i) =>
-            l.fill === l.targetFill ? null : (
-              <linearGradient
-                key={`ts-weave-${i}`}
-                id={`ts-weave-${l.source}-${l.target}-${i}`}
-                x1="0%"
-                y1="0%"
-                x2="0%"
-                y2="100%"
-              >
-                <stop offset="0%" stopColor={l.fill} />
-                <stop offset="100%" stopColor={l.targetFill} />
-              </linearGradient>
-            ),
-          )}
-        </defs>
+        <ChartDefs
+          theme={chartTheme}
+          weaves={layout.links
+            .map((l, i) =>
+              l.fill === l.targetFill
+                ? null
+                : weaveGradient(
+                    l.fill,
+                    l.targetFill,
+                    `ts-weave-${l.source}-${l.target}-${i}`,
+                  ),
+            )
+            .filter((w): w is NonNullable<typeof w> => w != null)}
+        />
 
         {layout.ticks.map((y) => {
           const isDecade = y % 10 === 0;
@@ -239,7 +249,7 @@ export function TimelineStatic({
             stats.modeDecade != null &&
             y >= stats.modeDecade &&
             y < stats.modeDecade + 10;
-          const stroke = isMode ? MODE_DECADE : isDecade ? "#c8bfb0" : RULE;
+          const stroke = isMode ? MODE_DECADE : isDecade ? DECADE_GRID : RULE;
           const strokeW = isMode ? 1.4 : isDecade ? 0.85 : 0.4;
           const dash = !isDecade && !isMode ? "1.5 3" : undefined;
           return layout.flipped ? (
@@ -404,7 +414,7 @@ export function TimelineStatic({
                   x2={p.y}
                   y1={y0}
                   y2={midY}
-                  stroke={drift ? "#C45C26" : fill}
+                  stroke={drift ? driftColors.fading : fill}
                   strokeWidth={threadW}
                   strokeLinecap="round"
                 />
@@ -413,7 +423,7 @@ export function TimelineStatic({
                   x2={p.y}
                   y1={midY}
                   y2={y1}
-                  stroke={drift ? "#2F5D50" : fill}
+                  stroke={drift ? driftColors.rising : fill}
                   strokeWidth={threadW}
                   strokeLinecap="round"
                 />
@@ -460,7 +470,7 @@ export function TimelineStatic({
                 x2={midX}
                 y1={p.y}
                 y2={p.y}
-                stroke={drift ? "#C45C26" : fill}
+                stroke={drift ? driftColors.fading : fill}
                 strokeWidth={threadW}
                 strokeLinecap="round"
               />
@@ -469,7 +479,7 @@ export function TimelineStatic({
                 x2={x1}
                 y1={p.y}
                 y2={p.y}
-                stroke={drift ? "#2F5D50" : fill}
+                stroke={drift ? driftColors.rising : fill}
                 strokeWidth={threadW}
                 strokeLinecap="round"
               />

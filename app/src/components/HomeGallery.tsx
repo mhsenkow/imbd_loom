@@ -13,6 +13,7 @@ import {
 interface Props {
   onOpenStory: (story: StoryPreset) => void;
   onOpenAtelier: () => void;
+  onOpenMethodology?: () => void;
 }
 
 function StoryGrid({
@@ -69,7 +70,7 @@ function StoryGrid({
   );
 }
 
-export function HomeGallery({ onOpenStory, onOpenAtelier }: Props) {
+export function HomeGallery({ onOpenStory, onOpenAtelier, onOpenMethodology }: Props) {
   const base = import.meta.env.BASE_URL;
   const [tab, setTab] = useState(
     () => collectionById(new URLSearchParams(window.location.search).get("tab")).id,
@@ -125,6 +126,11 @@ export function HomeGallery({ onOpenStory, onOpenAtelier }: Props) {
           <button type="button" className="gallery-cta" onClick={onOpenAtelier}>
             Open atelier
           </button>
+          {onOpenMethodology ? (
+            <button type="button" className="gallery-cta ghost" onClick={onOpenMethodology}>
+              Trust the data
+            </button>
+          ) : null}
         </div>
       </header>
 
@@ -170,6 +176,14 @@ export function HomeGallery({ onOpenStory, onOpenAtelier }: Props) {
           0,
         )}{" "}
         curated cuts
+        {onOpenMethodology ? (
+          <>
+            {" · "}
+            <button type="button" className="ghost inline" onClick={onOpenMethodology}>
+              Trust the data
+            </button>
+          </>
+        ) : null}
       </footer>
     </div>
   );

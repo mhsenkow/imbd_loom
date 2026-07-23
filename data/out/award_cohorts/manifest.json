@@ -45,7 +45,7 @@
     "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
   },
   "key_variable": "award_wins",
-  "method_note": "Population: Wikidata P166 award recipients when cache exists; otherwise actors with median title rating \u22657.5 as a soft quality cohort. Edges = shared titles (\u22652).",
+  "method_note": "Population: Wikidata P166 award recipients when cache exists; otherwise actors with median title rating ≥7.5 as a soft quality cohort. Edges = shared titles (≥2).",
   "node_count": 160,
   "stage_row_count": 11,
   "subtitle": "award-linked careers woven by shared titles",
@@ -68,5 +68,6 @@
   "title": "Award Season Cohorts",
   "tmdb_gender_rows": 0,
   "top_n": 160,
-  "stages_source": "default_from_nodes"
+  "stages_source": "default_from_nodes",
+  "avg_path_sample_n": 40
 }

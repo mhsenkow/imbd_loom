@@ -98,7 +98,55 @@ def test_analytics_tiny():
     assert set(comm.keys()) == {"a", "b", "c"}
 
 
-def test_fixture_tables():
-    con = _fixture_con()
-    n = con.execute("SELECT COUNT(*) FROM title_principals").fetchone()[0]
-    assert n == 6
+def test_method_notes_nonempty_in_out():
+    """Trust page must never render blank method_note / data_credit."""
+    from pathlib import Path
+
+    from loom import OUT
+
+    if not OUT.exists():
+        pytest.skip("data/out not present")
+    missing = []
+    for mpath in OUT.glob("*/manifest.json"):
+        import json
+
+        m = json.loads(mpath.read_text(encoding="utf-8"))
+        if not (m.get("method_note") or "").strip():
+            missing.append(f"{mpath.parent.name}:method_note")
+        if not (m.get("data_credit") or "").strip():
+            missing.append(f"{mpath.parent.name}:data_credit")
+    assert not missing, missing
+
+
+def test_quality_report_includes_warnings():
+    from loom.constructs.emit import quality_report
+
+    nodes = [{"id": "a", "label": "A", "gender": "unknown", "prominence": 1}]
+    edges = [{"source": "a", "target": "a", "weight": 1, "year": 2000}]
+    q = quality_report(
+        nodes,
+        edges,
+        gender_method="imdb_actor_actress_proxy",
+        validation_warnings=["edge endpoint missing"],
+        imdb_snapshot_as_of="2024-01-01T00:00:00+00:00",
+    )
+    assert q["validation_warnings"] == ["edge endpoint missing"]
+    assert q["gender_method"] == "imdb_actor_actress_proxy"
+    assert q["imdb_snapshot_as_of"].startswith("2024")
+
+
+def test_avg_path_returns_sample_n():
+    from loom.analytics import average_path_length
+
+    nodes = [{"id": x} for x in "abcdef"]
+    edges = [
+        {"source": "a", "target": "b"},
+        {"source": "b", "target": "c"},
+        {"source": "c", "target": "d"},
+        {"source": "d", "target": "e"},
+        {"source": "e", "target": "f"},
+    ]
+    val, n = average_path_length(nodes, edges, sample=40)
+    assert val is not None
+    assert n == 6  # exact for small graphs
+

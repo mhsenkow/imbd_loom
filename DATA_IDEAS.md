@@ -138,7 +138,7 @@ Priority key: **[P1]** high-impact / unblocks others · **[P2]** solid win · **
 96. **[P3] `data/out/index.json` enrichment**: add per-construct thumbnail stats (node/edge counts, era span, top name) so the gallery can render richer cards before loading full JSON.
 97. **[P3] Percentile-normalized facets**: ship `degree_pct`, `prominence_pct` (0–100 within construct) so the UI can offer "top 10%" filters that mean the same thing everywhere.
 98. **[P3] Cross-construct person index**: `people.json` mapping nconst → which constructs they appear in; enables "follow this person across looms" in the app.
-99. **[P3] Data-quality report page**: emit `quality.json` per construct (missing birth years %, gender-unknown %, vote coverage %) and render it in the app's method panel.
+99. **[P3] ~~Data-quality report page~~** ✅ Done — `?view=methodology` (“Trust the data”) consumes `quality.json` + manifests; see `DATA_TRUST_PAGE_ACTIONS.md`.
 100. **[P3] Nightly refresh automation**: GitHub Action that re-downloads IMDb weekly, rebuilds constructs, commits changed `data/out/`, and redeploys Pages — the loom stays alive.
 
 ---

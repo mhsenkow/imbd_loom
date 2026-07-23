@@ -30,27 +30,29 @@ export function nodeColor(
   extents: { maxDegree: number; maxProminence: number },
   genreColor: (k: string) => string,
   palette: string,
+  theme: "light" | "dark" = "light",
 ): string {
   switch (colorBy) {
     case "gender":
-      return colorForGender(n.gender as string | undefined);
+      return colorForGender(n.gender as string | undefined, theme, palette);
     case "prominence":
-      return degreeColor(nodeMetric(n, "prominence"), extents.maxProminence || 1, palette);
+      return degreeColor(nodeMetric(n, "prominence"), extents.maxProminence || 1, palette, theme);
     case "genre":
       return genreColor(String(n.dominant_genre || "unknown"));
     default:
-      return degreeColor(n.degree, extents.maxDegree || 1, palette);
+      return degreeColor(n.degree, extents.maxDegree || 1, palette, theme);
   }
 }
 
 export function buildGenreColor(
   nodes: Node[],
   palette: string,
+  theme: "light" | "dark" = "light",
 ): (k: string) => string {
   const keys = Array.from(
     new Set(nodes.map((n) => String(n.dominant_genre || "unknown"))),
   ).sort();
-  return categoricalScale(palette, keys);
+  return categoricalScale(palette, keys, theme);
 }
 
 export function nodeExtents(nodes: Node[]): {
@@ -129,15 +131,16 @@ export function markScale(n: Node, sizeBy: SizeBy, extents: ReturnType<typeof no
   return 0.55 + 0.7 * Math.min(1, Math.max(0, raw));
 }
 
-export function colorLegendLabel(colorBy: ColorBy): string {
+export function colorLegendLabel(colorBy: ColorBy, palette?: string): string {
+  const pal = palette ? ` · ${palette}` : "";
   switch (colorBy) {
     case "gender":
-      return "color = gender";
+      return `color = gender${pal}`;
     case "prominence":
-      return "color = votes";
+      return `color = votes${pal}`;
     case "genre":
-      return "color = genre";
+      return `color = genre${pal}`;
     default:
-      return "color = degree";
+      return `color = degree${pal}`;
   }
 }

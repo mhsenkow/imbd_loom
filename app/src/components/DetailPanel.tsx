@@ -3,6 +3,7 @@
 import { topNeighbors } from "../lib/selection";
 import type { Edge, Node, RoleCredit } from "../lib/types";
 import { colorForGender } from "../lib/colors";
+import { useTheme } from "../lib/theme/ThemeContext";
 import { filmLine, uniqueShared } from "../lib/sharedTitles";
 import type { Insight } from "../lib/insights";
 import { describeNodeStats, hasStat, type ViewStatMarks } from "../lib/statsMarks";
@@ -21,6 +22,7 @@ interface Props {
   onFocusNeighbor: (id: string) => void;
   open: boolean;
   onToggle: () => void;
+  onOpenMethodology?: (hash?: string) => void;
 }
 
 function roleLine(r: RoleCredit): { character: string; credit: string } {
@@ -45,7 +47,9 @@ export function DetailPanel({
   onFocusNeighbor,
   open,
   onToggle,
+  onOpenMethodology,
 }: Props) {
+  const { theme, palette } = useTheme();
   const byId = new Map(nodes.map((n) => [n.id, n]));
   const insightBlock =
     insights.length > 0 ? (
@@ -112,6 +116,18 @@ export function DetailPanel({
             </>
           ) : null}
           .
+          {onOpenMethodology ? (
+            <>
+              {" "}
+              <button
+                type="button"
+                className="ghost inline"
+                onClick={() => onOpenMethodology("metric-edge")}
+              >
+                How edges are defined
+              </button>
+            </>
+          ) : null}
         </p>
         <div className="link-pair">
           <button type="button" className="link-person" onClick={() => a && onPin(a.id)}>
@@ -183,6 +199,18 @@ export function DetailPanel({
           <strong>Links mean co-appearances</strong> — both people credited on the same film or
           show. Hover a curved link to see which titles connect them. Tap a person for their roles
           and partners.
+          {onOpenMethodology ? (
+            <>
+              {" "}
+              <button
+                type="button"
+                className="ghost inline"
+                onClick={() => onOpenMethodology("metric-edge")}
+              >
+                Trust the data
+              </button>
+            </>
+          ) : null}
         </p>
       </aside>
     );
@@ -225,7 +253,7 @@ export function DetailPanel({
       <div className="detail-name">
         <span
           className="swatch"
-          style={{ background: colorForGender(node.gender as string) }}
+          style={{ background: colorForGender(node.gender as string, theme, palette) }}
         />
         <div>
           <div className="name">{node.label}</div>

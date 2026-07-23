@@ -293,7 +293,7 @@ def _load_constructs() -> dict[str, Construct]:
             id="award_cohorts",
             title="Award Season Cohorts",
             subtitle="award-linked careers woven by shared titles",
-            key_variable="award_wins",
+            key_variable="awards_p166",
             build=award_cohorts,
         ),
     ]

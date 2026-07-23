@@ -1,0 +1,70 @@
+{
+  "sources": [
+    {
+      "id": "imdb",
+      "name": "IMDb Non-Commercial Datasets",
+      "url": "https://datasets.imdbws.com",
+      "provides": "people, titles, principals, ratings, crew, episodes, akas",
+      "caveat": "Top-billed cast only; non-commercial",
+      "status": "required"
+    },
+    {
+      "id": "tmdb",
+      "name": "TMDB API v3",
+      "url": "https://www.themoviedb.org",
+      "provides": "gender, birth country, popularity",
+      "caveat": "Skipped without TMDB_API_KEY \u2192 proxy gender",
+      "status": "optional"
+    },
+    {
+      "id": "wikidata",
+      "name": "Wikidata SPARQL",
+      "url": "https://query.wikidata.org",
+      "provides": "voice-actor flag (P106), nationality, awards (P166), kin",
+      "caveat": "May be blocked \u2192 heuristic fallback",
+      "status": "best-effort"
+    },
+    {
+      "id": "bechdel",
+      "name": "Bechdel Test API",
+      "url": "https://bechdeltest.com",
+      "provides": "film Bechdel rating 0\u20133",
+      "caveat": "Community-sourced; failover mirror",
+      "status": "best-effort"
+    },
+    {
+      "id": "bechdel-mirror",
+      "name": "Bechdel mirror (TidyTuesday)",
+      "url": "https://github.com/rfordatascience/tidytuesday",
+      "provides": "Bechdel CSV fallback",
+      "caveat": "Used only when API fails",
+      "status": "best-effort"
+    },
+    {
+      "id": "movielens",
+      "name": "MovieLens (ml-latest-small)",
+      "url": "https://grouplens.org/datasets/movielens/",
+      "provides": "user tags",
+      "caveat": "Small dataset, limited coverage",
+      "status": "best-effort"
+    },
+    {
+      "id": "pageviews",
+      "name": "Wikimedia Pageviews",
+      "url": "https://wikimedia.org/api/rest_v1/",
+      "provides": "2024 pageviews",
+      "caveat": "Explicit stub, \u226440 names",
+      "status": "best-effort"
+    }
+  ],
+  "imdb_snapshot_files": {
+    "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
+    "title.akas.tsv.gz": "2026-07-22T20:25:46.179730+00:00",
+    "title.basics.tsv.gz": "2026-07-22T04:05:06.793929+00:00",
+    "title.crew.tsv.gz": "2026-07-22T20:25:37.930279+00:00",
+    "title.episode.tsv.gz": "2026-07-22T20:25:38.910124+00:00",
+    "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
+    "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
+  },
+  "imdb_snapshot_as_of": "2026-07-22T04:05:06.793929+00:00"
+}

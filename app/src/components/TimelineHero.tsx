@@ -10,7 +10,13 @@ import type { SelectionState } from "../lib/selection";
 import { filmLine, sharedLabel, uniqueShared } from "../lib/sharedTitles";
 import { edgeKey, type SearchMatch } from "../lib/search";
 import { computeViewStatMarks, hasStat, isGapSpike, linkStatStyle, nodeFillOverride, nodeOpacityMod, type ViewStatMarks } from "../lib/statsMarks";
-import { ACCENT, DIM_GHOST, FOCUS_UNDERPAINT, FONT_MONO, FONT_SANS, INK_FAINT, MODE_DECADE, PAPER, RULE, TRIM } from "../lib/fonts";
+import { ACCENT, DECADE_GRID, DIM_GHOST, FILM_LABEL, FOCUS_UNDERPAINT, FONT_MONO, FONT_SANS, MODE_DECADE, RULE, TRIM } from "../lib/fonts";
+import { driftThreadColors } from "../lib/theme/scales";
+import { chartChrome } from "../lib/theme/chartChrome";
+import { useTheme } from "../lib/theme/ThemeContext";
+import { token } from "../lib/theme/tokens";
+import { ChartDefs } from "./ChartDefs";
+import { weaveGradient } from "../lib/theme/scales";
 import { ChartLegend } from "./ChartLegend";
 import {
   DensestPairLabel,
@@ -71,6 +77,10 @@ export function TimelineHero({
   insightFocusId = null,
   viewStats: viewStatsProp = null,
 }: Props) {
+  const { theme, printForced } = useTheme();
+  const chartTheme = printMode || printForced ? "light" : theme;
+  const chrome = useMemo(() => chartChrome(chartTheme), [chartTheme]);
+  const { paper: PAPER, ink: INK, inkFaint: INK_FAINT } = chrome;
   const wrapRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
   const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
@@ -106,9 +116,16 @@ export function TimelineHero({
         sortBy,
         thicknessBy,
         sizeBy,
+        theme: chartTheme,
       }),
-    [nodes, edges, colorBy, minWeight, printMode, flipped, palette, sortBy, thicknessBy, sizeBy],
+    [nodes, edges, colorBy, minWeight, printMode, flipped, palette, sortBy, thicknessBy, sizeBy, chartTheme],
   );
+
+  const driftColors = useMemo(
+    () => driftThreadColors(palette, chartTheme),
+    [palette, chartTheme],
+  );
+  const rankColor = token("stat.halo", chartTheme);
 
   const visibleLinks = useMemo(() => {
     let links = layout.links;
@@ -298,7 +315,7 @@ export function TimelineHero({
       stats.modeDecade != null &&
       y >= stats.modeDecade &&
       y < stats.modeDecade + 10;
-    const stroke = isModeDecade ? MODE_DECADE : isDecade ? "#c8bfb0" : RULE;
+    const stroke = isModeDecade ? MODE_DECADE : isDecade ? DECADE_GRID : RULE;
     const strokeW = isModeDecade ? 1.6 : isDecade ? 0.9 : 0.45;
     const dash = !isDecade && !isModeDecade ? "1.5 3" : undefined;
     if (layout.flipped) {
@@ -346,7 +363,7 @@ export function TimelineHero({
             y={layout.padT - 8}
             width={10}
             height={layout.height - layout.padT}
-            fill={isModeDecade ? MODE_DECADE : "#c8bfb0"}
+            fill={isModeDecade ? MODE_DECADE : DECADE_GRID}
             fillOpacity={0.08}
           />
         ) : null}
@@ -389,23 +406,20 @@ export function TimelineHero({
       aria-label={`${title} timeline`}
     >
       <g className="zoom-root">
-        <defs>
-          {visibleLinks.map((l, i) =>
-            l.fill === l.targetFill ? null : (
-              <linearGradient
-                key={`tl-weave-${i}`}
-                id={`tl-weave-${l.source}-${l.target}-${i}`}
-                x1="0%"
-                y1="0%"
-                x2="0%"
-                y2="100%"
-              >
-                <stop offset="0%" stopColor={l.fill} />
-                <stop offset="100%" stopColor={l.targetFill} />
-              </linearGradient>
-            ),
-          )}
-        </defs>
+        <ChartDefs
+          theme={chartTheme}
+          weaves={visibleLinks
+            .map((l, i) =>
+              l.fill === l.targetFill
+                ? null
+                : weaveGradient(
+                    l.fill,
+                    l.targetFill,
+                    `tl-weave-${l.source}-${l.target}-${i}`,
+                  ),
+            )
+            .filter((w): w is NonNullable<typeof w> => w != null)}
+        />
         {yearTicks}
 
         <TimelineStatGuides layout={layout} stats={stats} />
@@ -489,7 +503,7 @@ export function TimelineHero({
                 strokeWidth={1.3}
                 strokeOpacity={0.55}
               />
-              <text x={1} y={3} fontSize={9} fontFamily={FONT_MONO} fill="#5c3d2e">
+              <text x={1} y={3} fontSize={9} fontFamily={FONT_MONO} fill={FILM_LABEL}>
                 {lab.text.length > 36 ? lab.text.slice(0, 34) + "…" : lab.text}
               </text>
             </g>
@@ -594,7 +608,7 @@ export function TimelineHero({
                     x2={p.y}
                     y1={y0}
                     y2={midY}
-                    stroke={drift ? "#C45C26" : fill}
+                    stroke={drift ? driftColors.fading : fill}
                     strokeWidth={threadW}
                     strokeLinecap="round"
                     strokeOpacity={0.88}
@@ -604,7 +618,7 @@ export function TimelineHero({
                     x2={p.y}
                     y1={midY}
                     y2={y1}
-                    stroke={drift ? "#2F5D50" : fill}
+                    stroke={drift ? driftColors.rising : fill}
                     strokeWidth={threadW}
                     strokeLinecap="round"
                     strokeOpacity={0.88}
@@ -655,7 +669,7 @@ export function TimelineHero({
                       textAnchor="middle"
                       fontSize={9}
                       fontFamily={FONT_MONO}
-                      fill="#C4A35A"
+                      fill={rankColor}
                       fontWeight={600}
                     >
                       #{rank.rank}
@@ -669,7 +683,7 @@ export function TimelineHero({
                     fontSize={isFocus ? 10 : 8.5}
                     fontWeight={isFocus ? 600 : 400}
                     fontFamily={FONT_SANS}
-                    fill="#1a1814"
+                    fill={INK}
                   >
                     <title>{p.label}</title>
                     {p.label.length > 18 ? p.label.slice(0, 16) + "…" : p.label}
@@ -717,7 +731,7 @@ export function TimelineHero({
                   x2={midX}
                   y1={p.y}
                   y2={p.y}
-                  stroke={drift ? "#C45C26" : fill}
+                  stroke={drift ? driftColors.fading : fill}
                   strokeWidth={threadW}
                   strokeLinecap="round"
                   strokeOpacity={0.88}
@@ -727,7 +741,7 @@ export function TimelineHero({
                   x2={x1}
                   y1={p.y}
                   y2={p.y}
-                  stroke={drift ? "#2F5D50" : fill}
+                  stroke={drift ? driftColors.rising : fill}
                   strokeWidth={threadW}
                   strokeLinecap="round"
                   strokeOpacity={0.88}
@@ -775,7 +789,7 @@ export function TimelineHero({
                     dominantBaseline="middle"
                     fontSize={9}
                     fontFamily={FONT_MONO}
-                    fill="#C4A35A"
+                    fill={rankColor}
                     fontWeight={600}
                   >
                     #{rank.rank}
@@ -789,7 +803,7 @@ export function TimelineHero({
                   fontSize={isFocus ? 11 : 9.5}
                   fontWeight={isFocus ? 600 : 400}
                   fontFamily={FONT_SANS}
-                  fill="#1a1814"
+                  fill={INK}
                 >
                   <title>{p.label}</title>
                   {p.label.length > 22 ? p.label.slice(0, 20) + "…" : p.label}
@@ -837,7 +851,7 @@ export function TimelineHero({
         </div>
       </div>
 
-      <ChartLegend form="timeline" flipped={flipped} colorBy={colorBy} statMarks={stats} />
+      <ChartLegend form="timeline" flipped={flipped} colorBy={colorBy} palette={palette} statMarks={stats} />
 
       {(edgeBanner || search) && (
         <div className={`status-strip${edgeBanner ? " status-strip--link" : ""}`}>

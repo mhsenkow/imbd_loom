@@ -134,8 +134,8 @@ def enrich_wikidata_people(nconsts: list[str] | None = None, *, limit: int = 800
                 rec["nconst"],
                 ",".join(sorted(rec["nationalities"])) or None,
                 ",".join(sorted(rec["occupations"])) or None,
-                len(awards),  # award_wins proxy (P166 = awards received)
-                len(awards),  # award_noms same without nomination prop for now
+                len(awards),  # award_wins ≡ awards_p166 (Wikidata P166 received)
+                None,  # award_noms not scraped — do not mirror wins
                 ",".join(sorted(rec["educated"])) or None,
                 rec["height_m"],
                 rec["birth_year_wd"],

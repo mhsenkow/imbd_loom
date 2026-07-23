@@ -15,7 +15,11 @@ import { layoutChord } from "../viz/chord";
 import { layoutBundle } from "../viz/bundle";
 import { activeEdge, activeId, neighborIds, type SelectionState } from "../lib/selection";
 import { edgeKey, type SearchMatch } from "../lib/search";
-import { ACCENT, FONT_MONO, FONT_SANS, INK, INK_FAINT, INK_SOFT, PAPER } from "../lib/fonts";
+import { ACCENT, FONT_MONO, FONT_SANS } from "../lib/fonts";
+import { ChartDefs } from "./ChartDefs";
+import { weaveGradient } from "../lib/theme/scales";
+import { chartChrome } from "../lib/theme/chartChrome";
+import { useTheme } from "../lib/theme/ThemeContext";
 import { computeViewStatMarks, hasStat, linkStatStyle, nodeFillOverride, nodeOpacityMod, showMedianSize, type ViewStatMarks } from "../lib/statsMarks";
 import {
   DensestPairLabel,
@@ -78,6 +82,9 @@ export function HeroViz({
   insightFocusId = null,
   viewStats: viewStatsProp = null,
 }: Props) {
+  const { theme } = useTheme();
+  const chrome = useMemo(() => chartChrome(theme), [theme]);
+  const { paper: PAPER, ink: INK, inkFaint: INK_FAINT, inkSoft: INK_SOFT } = chrome;
   const cx = width / 2;
   const cy = height / 2 + 8;
   const radius = Math.min(width, height) * 0.38;
@@ -107,9 +114,10 @@ export function HeroViz({
             palette,
             sortBy,
             thicknessBy,
+            theme,
           })
         : null,
-    [nodes, edges, radius, form, colorBy, minWeight, palette, sortBy, thicknessBy],
+    [nodes, edges, radius, form, colorBy, minWeight, palette, sortBy, thicknessBy, theme],
   );
 
   const bundle = useMemo(
@@ -121,9 +129,10 @@ export function HeroViz({
             palette,
             sortBy,
             thicknessBy,
+            theme,
           })
         : null,
-    [nodes, edges, radius, form, colorBy, minWeight, palette, sortBy, thicknessBy],
+    [nodes, edges, radius, form, colorBy, minWeight, palette, sortBy, thicknessBy, theme],
   );
 
   const isEdge = (sourceId: string, targetId: string) =>
@@ -160,23 +169,23 @@ export function HeroViz({
       <g transform={`translate(${cx}, ${cy})`}>
         {chord && (
           <>
-            <defs>
-              {chord.ribbons.map((r, i) =>
-                r.fill === r.targetFill ? null : (
-                  <linearGradient
-                    key={`weave-${i}`}
-                    id={`weave-${r.sourceId}-${r.targetId}-${i}`}
-                    x1="0%"
-                    y1="0%"
-                    x2="100%"
-                    y2="100%"
-                  >
-                    <stop offset="0%" stopColor={r.fill} />
-                    <stop offset="100%" stopColor={r.targetFill} />
-                  </linearGradient>
-                ),
-              )}
-            </defs>
+            <ChartDefs
+              theme={theme}
+              weaves={chord.ribbons
+                .map((r, i) =>
+                  r.fill === r.targetFill
+                    ? null
+                    : {
+                        ...weaveGradient(
+                          r.fill,
+                          r.targetFill,
+                          `weave-${r.sourceId}-${r.targetId}-${i}`,
+                          "horizontal",
+                        ),
+                      },
+                )
+                .filter((w): w is NonNullable<typeof w> => w != null)}
+            />
             <g className="ribbons">
               {chord.ribbons.map((r, i) => {
                 const related =

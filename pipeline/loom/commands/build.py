@@ -103,17 +103,110 @@ def write_people_index(construct_ids: list[str]) -> None:
 
 
 def write_quality_rollup(construct_ids: list[str]) -> None:
+    from loom.db import dataset_snapshot_meta
+
     rollup = []
+    snap = dataset_snapshot_meta().get("imdb_snapshot_files") or {}
+    global_as_of = min(snap.values()) if snap else None
     for cid in construct_ids:
         path = OUT / cid / "quality.json"
         if path.exists():
             with open(path, encoding="utf-8") as f:
                 q = json.load(f)
             q["id"] = cid
+            if global_as_of and not q.get("imdb_snapshot_as_of"):
+                q["imdb_snapshot_as_of"] = global_as_of
+            # Pull validation_warnings from manifest if missing on quality
+            if "validation_warnings" not in q:
+                mpath = OUT / cid / "manifest.json"
+                if mpath.exists():
+                    with open(mpath, encoding="utf-8") as f:
+                        m = json.load(f)
+                    warns = (m.get("build_stats") or {}).get("validation_warnings")
+                    if warns:
+                        q["validation_warnings"] = warns
+                    if m.get("gender_method") and not q.get("gender_method"):
+                        q["gender_method"] = m["gender_method"]
             rollup.append(q)
     path = OUT / "quality.json"
     with open(path, "w", encoding="utf-8") as f:
         json.dump(rollup, f, indent=2)
+    console.print(f"[green]✓[/green] Wrote {path}")
+
+
+# Machine-readable source credits (kept in sync with app provenance table).
+PIPELINE_SOURCES = [
+    {
+        "id": "imdb",
+        "name": "IMDb Non-Commercial Datasets",
+        "url": "https://datasets.imdbws.com",
+        "provides": "people, titles, principals, ratings, crew, episodes, akas",
+        "caveat": "Top-billed cast only; non-commercial",
+        "status": "required",
+    },
+    {
+        "id": "tmdb",
+        "name": "TMDB API v3",
+        "url": "https://www.themoviedb.org",
+        "provides": "gender, birth country, popularity",
+        "caveat": "Skipped without TMDB_API_KEY → proxy gender",
+        "status": "optional",
+    },
+    {
+        "id": "wikidata",
+        "name": "Wikidata SPARQL",
+        "url": "https://query.wikidata.org",
+        "provides": "voice-actor flag (P106), nationality, awards (P166), kin",
+        "caveat": "May be blocked → heuristic fallback",
+        "status": "best-effort",
+    },
+    {
+        "id": "bechdel",
+        "name": "Bechdel Test API",
+        "url": "https://bechdeltest.com",
+        "provides": "film Bechdel rating 0–3",
+        "caveat": "Community-sourced; failover mirror",
+        "status": "best-effort",
+    },
+    {
+        "id": "bechdel-mirror",
+        "name": "Bechdel mirror (TidyTuesday)",
+        "url": "https://github.com/rfordatascience/tidytuesday",
+        "provides": "Bechdel CSV fallback",
+        "caveat": "Used only when API fails",
+        "status": "best-effort",
+    },
+    {
+        "id": "movielens",
+        "name": "MovieLens (ml-latest-small)",
+        "url": "https://grouplens.org/datasets/movielens/",
+        "provides": "user tags",
+        "caveat": "Small dataset, limited coverage",
+        "status": "best-effort",
+    },
+    {
+        "id": "pageviews",
+        "name": "Wikimedia Pageviews",
+        "url": "https://wikimedia.org/api/rest_v1/",
+        "provides": "2024 pageviews",
+        "caveat": "Explicit stub, ≤40 names",
+        "status": "best-effort",
+    },
+]
+
+
+def write_sources_meta() -> None:
+    from loom.db import dataset_snapshot_meta
+
+    snap = dataset_snapshot_meta().get("imdb_snapshot_files") or {}
+    payload = {
+        "sources": PIPELINE_SOURCES,
+        "imdb_snapshot_files": snap,
+        "imdb_snapshot_as_of": min(snap.values()) if snap else None,
+    }
+    path = OUT / "sources.json"
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
     console.print(f"[green]✓[/green] Wrote {path}")
 
 
@@ -136,3 +229,4 @@ def build_all(*, top_n: int = 200) -> None:
 
     write_people_index(ids)
     write_quality_rollup(ids)
+    write_sources_meta()

@@ -41,12 +41,12 @@
     "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
   },
   "key_variable": "troupe_partners",
-  "method_note": "Population: actors with \u22653 co-appearance partners who each share \u22653 titles (Adult excluded, numVotes \u226550) \u2014 repertory / troupe careers. Edges require \u22653 shared titles.",
+  "method_note": "Population: actors with ≥3 co-appearance partners who each share ≥3 titles (Adult excluded, numVotes ≥50) — repertory / troupe careers. Edges require ≥3 shared titles.",
   "min_partners": 3,
   "min_shared": 3,
   "node_count": 160,
   "stage_row_count": 11,
-  "subtitle": "tight multi-person troupes (\u22653 shared titles)",
+  "subtitle": "tight multi-person troupes (≥3 shared titles)",
   "summary": {
     "degree_max": 6405,
     "degree_median": 1559,
@@ -66,5 +66,6 @@
   "title": "The Repertory Companies",
   "tmdb_gender_rows": 0,
   "top_n": 160,
-  "stages_source": "default_from_nodes"
+  "stages_source": "default_from_nodes",
+  "avg_path_sample_n": 40
 }

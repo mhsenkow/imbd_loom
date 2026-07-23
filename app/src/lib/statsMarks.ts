@@ -4,6 +4,7 @@ import type { Edge, Manifest, Node, SortBy, StatMarkId } from "./types";
 import { DEFAULT_STAT_MARKS } from "./types";
 import { edgeKey } from "./search";
 import { compareNodesBySort } from "./filter";
+import { token } from "./theme/tokens";
 
 export type { StatMarkId };
 export { DEFAULT_STAT_MARKS };
@@ -249,20 +250,25 @@ export const STAT_PRESETS: Record<string, StatMarkId[]> = {
   none: [],
 };
 
+/**
+ * Stat overlay colors — fixed annotation layer (do not track active palette).
+ * Values resolve from semantic `stat.*` tokens so charts stay shareable and
+ * reading guides don't collide with genre/degree encoding.
+ */
 export const STAT_COLORS = {
-  guide: "#3D5A80",
-  halo: "#C4A35A",
-  warm: "#C45C26",
-  bridge: "#5B4B8A",
-  path: "#2F5D50",
-  densest: "#C45C26",
-  insight: "#C45C26",
-  ghost: "#9a958c",
-  rising: "#2F5D50",
-  fading: "#8B3A3A",
-  community: "#5B4B8A",
-  reunion: "#8B3A3A",
-  zglow: "#C4A35A",
+  guide: token("stat.guide", "light"),
+  halo: token("stat.halo", "light"),
+  warm: token("stat.warm", "light"),
+  bridge: token("stat.bridge", "light"),
+  path: token("stat.path", "light"),
+  densest: token("stat.densest", "light"),
+  insight: token("stat.insight", "light"),
+  ghost: token("stat.ghost", "light"),
+  rising: token("stat.rising", "light"),
+  fading: token("stat.fading", "light"),
+  community: token("stat.community", "light"),
+  reunion: token("stat.reunion", "light"),
+  zglow: token("stat.zglow", "light"),
 } as const;
 
 function num(v: unknown): number | undefined {

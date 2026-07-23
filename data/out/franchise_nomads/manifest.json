@@ -37,12 +37,12 @@
     "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
   },
   "key_variable": "franchise_count",
-  "method_note": "Population: actors in \u22653 distinct franchises \u2014 parent series via title_episode and/or shared title-name prefixes (Adult excluded, numVotes \u226550). Hero = co-appearance among franchise hoppers.",
+  "method_note": "Population: actors in ≥3 distinct franchises — parent series via title_episode and/or shared title-name prefixes (Adult excluded, numVotes ≥50). Hero = co-appearance among franchise hoppers.",
   "min_franchises": 3,
   "min_shared": 2,
   "node_count": 160,
   "stage_row_count": 11,
-  "subtitle": "people in \u22653 distinct series / IP groups",
+  "subtitle": "people in ≥3 distinct series / IP groups",
   "summary": {
     "degree_max": 6085,
     "degree_median": 1530,
@@ -62,5 +62,6 @@
   "title": "Franchise Nomads",
   "tmdb_gender_rows": 0,
   "top_n": 160,
-  "stages_source": "default_from_nodes"
+  "stages_source": "default_from_nodes",
+  "avg_path_sample_n": 40
 }

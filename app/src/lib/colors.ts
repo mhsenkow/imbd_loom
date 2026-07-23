@@ -1,50 +1,72 @@
-/** Color helpers for constructs. */
+/** Color helpers for constructs — thin wrappers over theme scales. */
 
-import { GENDER_COLORS, PALETTES } from "./types";
+import { mark, PALETTES, token, type PaletteName, type Theme } from "./theme/tokens";
+import {
+  categoricalScale as catScale,
+  degreeColor as degColor,
+  paletteMidtones,
+} from "./theme/scales";
 
-export function colorForGender(g: string | undefined): string {
-  return GENDER_COLORS[g ?? "unknown"] ?? GENDER_COLORS.unknown;
+const GENDER_ORDER = ["female", "male", "nonbinary", "unknown"] as const;
+
+/**
+ * Gender → color. Uses the active palette's first 4 hues so Ink/Okabe/Loom
+ * always recolor gender-encoded charts. Falls back to semantic mark.gender.* tokens.
+ * Ink on dark surfaces uses the reversed ramp so marks stay visible.
+ */
+export function colorForGender(
+  g: string | undefined,
+  theme: Theme = "light",
+  palette: string = "loom",
+): string {
+  const key = (g ?? "unknown") as (typeof GENDER_ORDER)[number] | string;
+  const idx = GENDER_ORDER.indexOf(key as (typeof GENDER_ORDER)[number]);
+  let hues = [...(PALETTES[palette as PaletteName] ?? [])];
+  if (palette === "ink" && theme === "dark") {
+    hues = hues.slice().reverse();
+  }
+  if (hues.length && idx >= 0) {
+    return hues[Math.min(idx, hues.length - 1)];
+  }
+  const path =
+    key in mark.gender ? `mark.gender.${key}` : "mark.gender.unknown";
+  return token(path, theme);
 }
 
-export function categoricalScale(paletteName: string, keys: string[]): (k: string) => string {
-  const palette = PALETTES[paletteName] ?? PALETTES.loom;
-  const map = new Map<string, string>();
-  keys.forEach((k, i) => map.set(k, palette[i % palette.length]));
-  return (k) => map.get(k) ?? palette[0];
+/** Legend / swatch map for the active palette. */
+export function genderColors(
+  palette: string = "loom",
+  theme: Theme = "light",
+): Record<string, string> {
+  return {
+    female: colorForGender("female", theme, palette),
+    male: colorForGender("male", theme, palette),
+    nonbinary: colorForGender("nonbinary", theme, palette),
+    unknown: colorForGender("unknown", theme, palette),
+  };
+}
+
+export function categoricalScale(
+  paletteName: string,
+  keys: string[],
+  theme: Theme = "light",
+): (k: string) => string {
+  return catScale(paletteName, keys, theme);
 }
 
 /** Sequential shade from degree; base hue from active palette. */
 export function degreeColor(
   degree: number,
   max: number,
-  baseOrPalette: string = "#C45C26",
+  baseOrPalette: string = "loom",
+  theme: Theme = "light",
 ): string {
-  const base =
-    PALETTES[baseOrPalette]?.[0] ??
-    (baseOrPalette.startsWith("#") ? baseOrPalette : "#C45C26");
-  const t = max > 0 ? Math.min(1, degree / max) : 0;
-  return mix(base, "#F7F2E8", 1 - (0.25 + t * 0.75));
+  return degColor(degree, max, baseOrPalette, theme);
 }
 
 export function paletteAccent(paletteName: string, index = 0): string {
-  const palette = PALETTES[paletteName] ?? PALETTES.loom;
+  const palette = PALETTES[paletteName as PaletteName] ?? PALETTES.loom;
   return palette[index % palette.length];
 }
 
-function mix(a: string, b: string, t: number): string {
-  const pa = hexToRgb(a);
-  const pb = hexToRgb(b);
-  const r = Math.round(pa.r + (pb.r - pa.r) * t);
-  const g = Math.round(pa.g + (pb.g - pa.g) * t);
-  const bl = Math.round(pa.b + (pb.b - pa.b) * t);
-  return `rgb(${r},${g},${bl})`;
-}
-
-function hexToRgb(hex: string): { r: number; g: number; b: number } {
-  const h = hex.replace("#", "");
-  return {
-    r: parseInt(h.slice(0, 2), 16),
-    g: parseInt(h.slice(2, 4), 16),
-    b: parseInt(h.slice(4, 6), 16),
-  };
-}
+export { paletteMidtones };

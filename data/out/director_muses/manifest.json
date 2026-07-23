@@ -18,15 +18,15 @@
   "featured_path": [
     {
       "id": "nm0001536",
-      "label": "Toshir\u014d Mifune"
+      "label": "Toshirō Mifune"
     },
     {
       "id": "nm0753479",
-      "label": "Chish\u016b Ry\u016b"
+      "label": "Chishū Ryū"
     },
     {
       "id": "nm0047962",
-      "label": "Chieko Baish\u014d"
+      "label": "Chieko Baishō"
     }
   ],
   "gender_method": "imdb_actor_actress_proxy",
@@ -41,12 +41,12 @@
     "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
   },
   "key_variable": "top_director",
-  "method_note": "Population: actors with \u22654 titles under the same director (via title_crew; Adult excluded, numVotes \u226550). Node.top_director is their most-repeated director. Hero = co-appearance among muse actors.",
+  "method_note": "Population: actors with ≥4 titles under the same director (via title_crew; Adult excluded, numVotes ≥50). Node.top_director is their most-repeated director. Hero = co-appearance among muse actors.",
   "min_muse_titles": 4,
   "min_shared": 2,
   "node_count": 160,
   "stage_row_count": 14,
-  "subtitle": "actors with \u22654 titles under the same director",
+  "subtitle": "actors with ≥4 titles under the same director",
   "summary": {
     "degree_max": 3254,
     "degree_median": 607,
@@ -66,10 +66,11 @@
       "female": 29,
       "male": 131
     },
-    "top_name": "Toshir\u014d Mifune"
+    "top_name": "Toshirō Mifune"
   },
   "title": "Director's Muses",
   "tmdb_gender_rows": 0,
   "top_n": 160,
-  "stages_source": "default_from_nodes"
+  "stages_source": "default_from_nodes",
+  "avg_path_sample_n": 40
 }
