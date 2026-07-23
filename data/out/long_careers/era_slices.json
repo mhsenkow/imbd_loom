@@ -1,28 +1,28 @@
 {
   "1930s": [
     {
+      "source": "nm0000026",
+      "target": "nm0000897",
+      "weight": 21,
+      "year": 1939
+    },
+    {
+      "source": "nm0000897",
+      "target": "nm0002034",
+      "weight": 8,
+      "year": 1939
+    },
+    {
+      "source": "nm0000817",
+      "target": "nm0001577",
+      "weight": 17,
+      "year": 1937
+    },
+    {
       "source": "nm0002034",
       "target": "nm0949835",
       "weight": 41,
       "year": 1939
-    },
-    {
-      "source": "nm0001922",
-      "target": "nm0889024",
-      "weight": 10,
-      "year": 1937
-    },
-    {
-      "source": "nm0000026",
-      "target": "nm0796662",
-      "weight": 21,
-      "year": 1933
-    },
-    {
-      "source": "nm0001922",
-      "target": "nm0239513",
-      "weight": 13,
-      "year": 1936
     },
     {
       "source": "nm0001577",
@@ -31,24 +31,36 @@
       "year": 1936
     },
     {
-      "source": "nm0201638",
-      "target": "nm0889024",
-      "weight": 10,
-      "year": 1936
-    },
-    {
       "source": "nm0001682",
       "target": "nm0002034",
       "weight": 11,
+      "year": 1936
+    },
+    {
+      "source": "nm0201638",
+      "target": "nm0889024",
+      "weight": 10,
       "year": 1936
     }
   ],
   "1940s": [
     {
-      "source": "nm0000904",
+      "source": "nm0000063",
       "target": "nm0604702",
-      "weight": 14,
-      "year": 1947
+      "weight": 15,
+      "year": 1944
+    },
+    {
+      "source": "nm0002034",
+      "target": "nm0604702",
+      "weight": 16,
+      "year": 1943
+    },
+    {
+      "source": "nm0001013",
+      "target": "nm0002034",
+      "weight": 18,
+      "year": 1949
     },
     {
       "source": "nm0000063",
@@ -63,6 +75,12 @@
       "year": 1947
     },
     {
+      "source": "nm0001522",
+      "target": "nm0179786",
+      "weight": 13,
+      "year": 1946
+    },
+    {
       "source": "nm0000026",
       "target": "nm0949835",
       "weight": 17,
@@ -75,79 +93,13 @@
       "year": 1943
     },
     {
-      "source": "nm0001013",
-      "target": "nm0002034",
-      "weight": 18,
-      "year": 1949
-    },
-    {
-      "source": "nm0002034",
-      "target": "nm0604702",
-      "weight": 16,
-      "year": 1943
-    },
-    {
-      "source": "nm0000063",
-      "target": "nm0604702",
-      "weight": 15,
-      "year": 1944
-    },
-    {
-      "source": "nm0001922",
-      "target": "nm0201638",
+      "source": "nm0000897",
+      "target": "nm0485272",
       "weight": 11,
-      "year": 1946
+      "year": 1941
     }
   ],
   "1950s": [
-    {
-      "source": "nm0000974",
-      "target": "nm0604702",
-      "weight": 24,
-      "year": 1958
-    },
-    {
-      "source": "nm0000002",
-      "target": "nm0540416",
-      "weight": 21,
-      "year": 1951
-    },
-    {
-      "source": "nm0000018",
-      "target": "nm0000904",
-      "weight": 16,
-      "year": 1957
-    },
-    {
-      "source": "nm0000018",
-      "target": "nm0000063",
-      "weight": 27,
-      "year": 1956
-    },
-    {
-      "source": "nm0000974",
-      "target": "nm0001013",
-      "weight": 16,
-      "year": 1950
-    },
-    {
-      "source": "nm0000047",
-      "target": "nm0000063",
-      "weight": 21,
-      "year": 1957
-    },
-    {
-      "source": "nm0036734",
-      "target": "nm0603402",
-      "weight": 10,
-      "year": 1954
-    },
-    {
-      "source": "nm0000018",
-      "target": "nm0485272",
-      "weight": 13,
-      "year": 1955
-    },
     {
       "source": "nm0000002",
       "target": "nm0821041",
@@ -159,12 +111,6 @@
       "target": "nm0696163",
       "weight": 11,
       "year": 1958
-    },
-    {
-      "source": "nm0007042",
-      "target": "nm0590055",
-      "weight": 12,
-      "year": 1957
     },
     {
       "source": "nm0000002",
@@ -179,10 +125,106 @@
       "year": 1954
     },
     {
-      "source": "nm0000058",
-      "target": "nm0000063",
-      "weight": 47,
+      "source": "nm0007042",
+      "target": "nm0590055",
+      "weight": 12,
+      "year": 1957
+    },
+    {
+      "source": "nm0252823",
+      "target": "nm0357303",
+      "weight": 31,
       "year": 1955
+    },
+    {
+      "source": "nm0001666",
+      "target": "nm0640307",
+      "weight": 20,
+      "year": 1953
+    },
+    {
+      "source": "nm0001666",
+      "target": "nm0485272",
+      "weight": 14,
+      "year": 1956
+    },
+    {
+      "source": "nm0000974",
+      "target": "nm0604702",
+      "weight": 24,
+      "year": 1958
+    },
+    {
+      "source": "nm0000018",
+      "target": "nm0000063",
+      "weight": 27,
+      "year": 1956
+    },
+    {
+      "source": "nm0000002",
+      "target": "nm0540416",
+      "weight": 21,
+      "year": 1951
+    },
+    {
+      "source": "nm0258757",
+      "target": "nm0640307",
+      "weight": 14,
+      "year": 1956
+    },
+    {
+      "source": "nm0000018",
+      "target": "nm0000348",
+      "weight": 22,
+      "year": 1959
+    },
+    {
+      "source": "nm0000974",
+      "target": "nm0001013",
+      "weight": 16,
+      "year": 1950
+    },
+    {
+      "source": "nm0001725",
+      "target": "nm0357303",
+      "weight": 44,
+      "year": 1957
+    },
+    {
+      "source": "nm0000047",
+      "target": "nm0000063",
+      "weight": 21,
+      "year": 1957
+    },
+    {
+      "source": "nm0000817",
+      "target": "nm0580565",
+      "weight": 21,
+      "year": 1957
+    },
+    {
+      "source": "nm0000018",
+      "target": "nm0485272",
+      "weight": 13,
+      "year": 1955
+    },
+    {
+      "source": "nm0434593",
+      "target": "nm0753479",
+      "weight": 21,
+      "year": 1957
+    },
+    {
+      "source": "nm0036734",
+      "target": "nm0603402",
+      "weight": 10,
+      "year": 1954
+    },
+    {
+      "source": "nm0000897",
+      "target": "nm0821041",
+      "weight": 8,
+      "year": 1959
     },
     {
       "source": "nm0000024",
@@ -191,9 +233,45 @@
       "year": 1952
     },
     {
+      "source": "nm0000058",
+      "target": "nm0000063",
+      "weight": 47,
+      "year": 1955
+    },
+    {
       "source": "nm0036734",
       "target": "nm0201638",
       "weight": 22,
+      "year": 1959
+    },
+    {
+      "source": "nm0000026",
+      "target": "nm0000047",
+      "weight": 17,
+      "year": 1958
+    },
+    {
+      "source": "nm0540416",
+      "target": "nm0821041",
+      "weight": 26,
+      "year": 1958
+    },
+    {
+      "source": "nm0000489",
+      "target": "nm0226446",
+      "weight": 20,
+      "year": 1957
+    },
+    {
+      "source": "nm0580565",
+      "target": "nm0940946",
+      "weight": 14,
+      "year": 1959
+    },
+    {
+      "source": "nm0222473",
+      "target": "nm0755087",
+      "weight": 9,
       "year": 1959
     },
     {
@@ -203,31 +281,133 @@
       "year": 1958
     },
     {
+      "source": "nm0001725",
+      "target": "nm0252823",
+      "weight": 17,
+      "year": 1959
+    },
+    {
+      "source": "nm0581028",
+      "target": "nm0707728",
+      "weight": 24,
+      "year": 1955
+    },
+    {
       "source": "nm0001739",
       "target": "nm0007042",
       "weight": 18,
       "year": 1955
-    },
-    {
-      "source": "nm0540416",
-      "target": "nm0821041",
-      "weight": 26,
-      "year": 1958
-    },
-    {
-      "source": "nm0000026",
-      "target": "nm0000047",
-      "weight": 17,
-      "year": 1958
-    },
-    {
-      "source": "nm0036734",
-      "target": "nm0239513",
-      "weight": 13,
-      "year": 1957
     }
   ],
   "1960s": [
+    {
+      "source": "nm0681566",
+      "target": "nm0889024",
+      "weight": 27,
+      "year": 1964
+    },
+    {
+      "source": "nm0006369",
+      "target": "nm0755087",
+      "weight": 18,
+      "year": 1967
+    },
+    {
+      "source": "nm0007147",
+      "target": "nm0374974",
+      "weight": 37,
+      "year": 1965
+    },
+    {
+      "source": "nm0434593",
+      "target": "nm0619938",
+      "weight": 15,
+      "year": 1969
+    },
+    {
+      "source": "nm0007147",
+      "target": "nm0222473",
+      "weight": 22,
+      "year": 1961
+    },
+    {
+      "source": "nm0004429",
+      "target": "nm0755087",
+      "weight": 25,
+      "year": 1969
+    },
+    {
+      "source": "nm0000072",
+      "target": "nm0001450",
+      "weight": 18,
+      "year": 1962
+    },
+    {
+      "source": "nm0000018",
+      "target": "nm0001313",
+      "weight": 15,
+      "year": 1969
+    },
+    {
+      "source": "nm0000308",
+      "target": "nm0000348",
+      "weight": 22,
+      "year": 1961
+    },
+    {
+      "source": "nm0619938",
+      "target": "nm0753479",
+      "weight": 15,
+      "year": 1965
+    },
+    {
+      "source": "nm0007147",
+      "target": "nm0415556",
+      "weight": 9,
+      "year": 1964
+    },
+    {
+      "source": "nm0001260",
+      "target": "nm0001811",
+      "weight": 18,
+      "year": 1961
+    },
+    {
+      "source": "nm0001577",
+      "target": "nm0822034",
+      "weight": 12,
+      "year": 1966
+    },
+    {
+      "source": "nm0590055",
+      "target": "nm0843401",
+      "weight": 21,
+      "year": 1963
+    },
+    {
+      "source": "nm0374974",
+      "target": "nm0442470",
+      "weight": 9,
+      "year": 1969
+    },
+    {
+      "source": "nm0001842",
+      "target": "nm0580565",
+      "weight": 21,
+      "year": 1966
+    },
+    {
+      "source": "nm0001822",
+      "target": "nm0940946",
+      "weight": 16,
+      "year": 1963
+    },
+    {
+      "source": "nm0374974",
+      "target": "nm0755087",
+      "weight": 9,
+      "year": 1964
+    },
     {
       "source": "nm0674742",
       "target": "nm0762248",
@@ -235,15 +415,69 @@
       "year": 1969
     },
     {
-      "source": "nm0000063",
-      "target": "nm0514059",
+      "source": "nm0000728",
+      "target": "nm0707728",
+      "weight": 14,
+      "year": 1968
+    },
+    {
+      "source": "nm0000489",
+      "target": "nm0001088",
+      "weight": 166,
+      "year": 1969
+    },
+    {
+      "source": "nm0001725",
+      "target": "nm0183822",
+      "weight": 21,
+      "year": 1966
+    },
+    {
+      "source": "nm0322937",
+      "target": "nm0676127",
+      "weight": 9,
+      "year": 1968
+    },
+    {
+      "source": "nm0000817",
+      "target": "nm0000842",
+      "weight": 14,
+      "year": 1968
+    },
+    {
+      "source": "nm0000348",
+      "target": "nm0179786",
+      "weight": 16,
+      "year": 1960
+    },
+    {
+      "source": "nm0159159",
+      "target": "nm0755087",
+      "weight": 9,
+      "year": 1968
+    },
+    {
+      "source": "nm0000348",
+      "target": "nm0001450",
       "weight": 16,
       "year": 1968
     },
     {
-      "source": "nm0001811",
-      "target": "nm0007042",
-      "weight": 22,
+      "source": "nm0043396",
+      "target": "nm0476179",
+      "weight": 11,
+      "year": 1963
+    },
+    {
+      "source": "nm0007147",
+      "target": "nm0755087",
+      "weight": 19,
+      "year": 1960
+    },
+    {
+      "source": "nm0043396",
+      "target": "nm0847361",
+      "weight": 12,
       "year": 1961
     },
     {
@@ -253,10 +487,82 @@
       "year": 1969
     },
     {
-      "source": "nm0000489",
-      "target": "nm0001088",
-      "weight": 166,
-      "year": 1969
+      "source": "nm0000047",
+      "target": "nm0001725",
+      "weight": 17,
+      "year": 1966
+    },
+    {
+      "source": "nm0001811",
+      "target": "nm0007042",
+      "weight": 22,
+      "year": 1961
+    },
+    {
+      "source": "nm0000058",
+      "target": "nm0001013",
+      "weight": 36,
+      "year": 1961
+    },
+    {
+      "source": "nm0619938",
+      "target": "nm0847361",
+      "weight": 12,
+      "year": 1962
+    },
+    {
+      "source": "nm0001128",
+      "target": "nm0036734",
+      "weight": 13,
+      "year": 1961
+    },
+    {
+      "source": "nm0001765",
+      "target": "nm0593192",
+      "weight": 15,
+      "year": 1968
+    },
+    {
+      "source": "nm0586733",
+      "target": "nm0753479",
+      "weight": 19,
+      "year": 1961
+    },
+    {
+      "source": "nm0000268",
+      "target": "nm0179786",
+      "weight": 18,
+      "year": 1965
+    },
+    {
+      "source": "nm0000608",
+      "target": "nm0001313",
+      "weight": 14,
+      "year": 1967
+    },
+    {
+      "source": "nm0001012",
+      "target": "nm0001128",
+      "weight": 28,
+      "year": 1963
+    },
+    {
+      "source": "nm0476179",
+      "target": "nm0619938",
+      "weight": 18,
+      "year": 1964
+    },
+    {
+      "source": "nm0000063",
+      "target": "nm0514059",
+      "weight": 16,
+      "year": 1968
+    },
+    {
+      "source": "nm0001313",
+      "target": "nm0603402",
+      "weight": 16,
+      "year": 1964
     },
     {
       "source": "nm0000018",
@@ -277,57 +583,21 @@
       "year": 1964
     },
     {
-      "source": "nm0001765",
-      "target": "nm0593192",
-      "weight": 15,
-      "year": 1968
-    },
-    {
-      "source": "nm0322937",
-      "target": "nm0676127",
-      "weight": 9,
-      "year": 1968
-    },
-    {
-      "source": "nm0001128",
-      "target": "nm0036734",
-      "weight": 13,
-      "year": 1961
-    },
-    {
-      "source": "nm0000058",
-      "target": "nm0001013",
-      "weight": 36,
-      "year": 1961
-    },
-    {
-      "source": "nm0000638",
-      "target": "nm0001954",
-      "weight": 16,
-      "year": 1961
-    },
-    {
       "source": "nm0674742",
       "target": "nm0681566",
       "weight": 39,
       "year": 1968
     },
     {
-      "source": "nm0476179",
-      "target": "nm0847361",
-      "weight": 28,
-      "year": 1961
-    },
-    {
-      "source": "nm0000926",
-      "target": "nm0001682",
-      "weight": 25,
-      "year": 1969
-    },
-    {
       "source": "nm0222473",
       "target": "nm0374974",
       "weight": 13,
+      "year": 1964
+    },
+    {
+      "source": "nm0674742",
+      "target": "nm0889024",
+      "weight": 16,
       "year": 1964
     },
     {
@@ -337,46 +607,28 @@
       "year": 1969
     },
     {
-      "source": "nm0001626",
-      "target": "nm0658339",
-      "weight": 13,
-      "year": 1968
-    },
-    {
-      "source": "nm0239513",
-      "target": "nm0603402",
-      "weight": 14,
-      "year": 1964
-    },
-    {
-      "source": "nm0674742",
-      "target": "nm0889024",
-      "weight": 16,
-      "year": 1964
-    },
-    {
-      "source": "nm0296389",
-      "target": "nm0417370",
-      "weight": 9,
+      "source": "nm0000926",
+      "target": "nm0001682",
+      "weight": 25,
       "year": 1969
     },
     {
-      "source": "nm0000308",
-      "target": "nm0590055",
-      "weight": 13,
-      "year": 1963
+      "source": "nm0105475",
+      "target": "nm0674742",
+      "weight": 17,
+      "year": 1969
     },
     {
-      "source": "nm0000994",
-      "target": "nm0847361",
-      "weight": 21,
-      "year": 1963
+      "source": "nm0000733",
+      "target": "nm0707728",
+      "weight": 9,
+      "year": 1965
     },
     {
-      "source": "nm0004462",
-      "target": "nm0603402",
-      "weight": 14,
-      "year": 1962
+      "source": "nm0043396",
+      "target": "nm0619938",
+      "weight": 33,
+      "year": 1961
     },
     {
       "source": "nm0603402",
@@ -385,69 +637,105 @@
       "year": 1967
     },
     {
-      "source": "nm0681566",
-      "target": "nm0889024",
-      "weight": 27,
-      "year": 1964
+      "source": "nm0001626",
+      "target": "nm0658339",
+      "weight": 13,
+      "year": 1968
     },
     {
-      "source": "nm0007147",
-      "target": "nm0222473",
-      "weight": 22,
-      "year": 1961
+      "source": "nm0000559",
+      "target": "nm0179786",
+      "weight": 14,
+      "year": 1967
     },
     {
-      "source": "nm0007147",
-      "target": "nm0374974",
-      "weight": 37,
-      "year": 1965
+      "source": "nm0004462",
+      "target": "nm0603402",
+      "weight": 14,
+      "year": 1962
     },
     {
-      "source": "nm0374974",
-      "target": "nm0442470",
-      "weight": 9,
-      "year": 1969
-    },
-    {
-      "source": "nm0201638",
-      "target": "nm0239513",
-      "weight": 9,
-      "year": 1961
-    },
-    {
-      "source": "nm0590055",
-      "target": "nm0843401",
+      "source": "nm0000994",
+      "target": "nm0847361",
       "weight": 21,
       "year": 1963
     },
     {
-      "source": "nm0001260",
+      "source": "nm0000308",
+      "target": "nm0590055",
+      "weight": 13,
+      "year": 1963
+    },
+    {
+      "source": "nm0000072",
       "target": "nm0001811",
-      "weight": 18,
-      "year": 1961
-    },
-    {
-      "source": "nm0001739",
-      "target": "nm0001922",
-      "weight": 10,
-      "year": 1968
-    },
-    {
-      "source": "nm0007147",
-      "target": "nm0415556",
-      "weight": 9,
+      "weight": 22,
       "year": 1964
     },
     {
-      "source": "nm0000024",
-      "target": "nm0001954",
-      "weight": 18,
+      "source": "nm0000063",
+      "target": "nm0001725",
+      "weight": 27,
+      "year": 1964
+    },
+    {
+      "source": "nm0476179",
+      "target": "nm0847361",
+      "weight": 28,
+      "year": 1961
+    },
+    {
+      "source": "nm0296389",
+      "target": "nm0417370",
+      "weight": 9,
+      "year": 1969
+    },
+    {
+      "source": "nm0001884",
+      "target": "nm0252473",
+      "weight": 14,
+      "year": 1969
+    },
+    {
+      "source": "nm0000348",
+      "target": "nm0001666",
+      "weight": 15,
+      "year": 1962
+    },
+    {
+      "source": "nm0000728",
+      "target": "nm0001012",
+      "weight": 13,
       "year": 1968
     },
     {
-      "source": "nm0000197",
-      "target": "nm0593192",
-      "weight": 15,
+      "source": "nm0000974",
+      "target": "nm0485272",
+      "weight": 12,
+      "year": 1962
+    },
+    {
+      "source": "nm0006369",
+      "target": "nm0849863",
+      "weight": 24,
+      "year": 1966
+    },
+    {
+      "source": "nm0374974",
+      "target": "nm0716851",
+      "weight": 10,
+      "year": 1964
+    },
+    {
+      "source": "nm0000489",
+      "target": "nm0157796",
+      "weight": 37,
+      "year": 1967
+    },
+    {
+      "source": "nm0000018",
+      "target": "nm0580565",
+      "weight": 18,
       "year": 1968
     },
     {
@@ -457,10 +745,16 @@
       "year": 1963
     },
     {
-      "source": "nm0006369",
-      "target": "nm0849863",
-      "weight": 24,
-      "year": 1966
+      "source": "nm0257563",
+      "target": "nm0296389",
+      "weight": 13,
+      "year": 1967
+    },
+    {
+      "source": "nm0000197",
+      "target": "nm0593192",
+      "weight": 15,
+      "year": 1968
     },
     {
       "source": "nm0001811",
@@ -469,33 +763,9 @@
       "year": 1967
     },
     {
-      "source": "nm0257563",
-      "target": "nm0296389",
+      "source": "nm0000817",
+      "target": "nm0822034",
       "weight": 13,
-      "year": 1967
-    },
-    {
-      "source": "nm0001884",
-      "target": "nm0252473",
-      "weight": 14,
-      "year": 1969
-    },
-    {
-      "source": "nm0000974",
-      "target": "nm0485272",
-      "weight": 12,
-      "year": 1962
-    },
-    {
-      "source": "nm0036734",
-      "target": "nm0109725",
-      "weight": 11,
-      "year": 1963
-    },
-    {
-      "source": "nm0000489",
-      "target": "nm0157796",
-      "weight": 37,
       "year": 1967
     },
     {
@@ -505,354 +775,36 @@
       "year": 1968
     },
     {
-      "source": "nm0374974",
-      "target": "nm0716851",
-      "weight": 10,
-      "year": 1964
+      "source": "nm0036734",
+      "target": "nm0109725",
+      "weight": 11,
+      "year": 1963
     }
   ],
   "1970s": [
     {
-      "source": "nm0006369",
-      "target": "nm0415556",
-      "weight": 31,
-      "year": 1977
-    },
-    {
-      "source": "nm0045119",
-      "target": "nm0451863",
-      "weight": 17,
-      "year": 1976
-    },
-    {
-      "source": "nm0004429",
-      "target": "nm0006369",
-      "weight": 68,
-      "year": 1976
-    },
-    {
-      "source": "nm0000047",
-      "target": "nm0001260",
-      "weight": 12,
-      "year": 1970
-    },
-    {
-      "source": "nm0045119",
-      "target": "nm0222473",
-      "weight": 10,
-      "year": 1976
-    },
-    {
-      "source": "nm0045119",
-      "target": "nm0442470",
-      "weight": 16,
-      "year": 1975
-    },
-    {
-      "source": "nm0000489",
-      "target": "nm0001058",
-      "weight": 13,
-      "year": 1974
-    },
-    {
-      "source": "nm0000018",
-      "target": "nm0001136",
-      "weight": 17,
-      "year": 1971
-    },
-    {
-      "source": "nm0000024",
-      "target": "nm0001626",
-      "weight": 26,
-      "year": 1979
-    },
-    {
-      "source": "nm0374974",
-      "target": "nm0846616",
-      "weight": 24,
-      "year": 1972
-    },
-    {
-      "source": "nm0000197",
-      "target": "nm0001765",
-      "weight": 33,
-      "year": 1976
-    },
-    {
-      "source": "nm0001682",
-      "target": "nm0402554",
-      "weight": 13,
-      "year": 1976
-    },
-    {
-      "source": "nm0000489",
-      "target": "nm0001522",
-      "weight": 14,
-      "year": 1979
-    },
-    {
-      "source": "nm0004429",
+      "source": "nm0159159",
       "target": "nm0374974",
-      "weight": 50,
-      "year": 1970
-    },
-    {
-      "source": "nm0006369",
-      "target": "nm0442470",
-      "weight": 15,
+      "weight": 49,
       "year": 1972
-    },
-    {
-      "source": "nm0001128",
-      "target": "nm0603402",
-      "weight": 24,
-      "year": 1971
-    },
-    {
-      "source": "nm0154164",
-      "target": "nm0846616",
-      "weight": 31,
-      "year": 1973
-    },
-    {
-      "source": "nm0316284",
-      "target": "nm0320988",
-      "weight": 14,
-      "year": 1973
     },
     {
       "source": "nm0159159",
-      "target": "nm0846616",
-      "weight": 24,
-      "year": 1979
-    },
-    {
-      "source": "nm0000366",
-      "target": "nm0109725",
-      "weight": 22,
+      "target": "nm0442470",
+      "weight": 33,
       "year": 1973
     },
     {
-      "source": "nm0045119",
-      "target": "nm0374974",
-      "weight": 10,
-      "year": 1971
-    },
-    {
-      "source": "nm0514059",
-      "target": "nm0650753",
+      "source": "nm0105475",
+      "target": "nm0681566",
       "weight": 23,
-      "year": 1970
-    },
-    {
-      "source": "nm0650753",
-      "target": "nm0681566",
-      "weight": 13,
       "year": 1976
-    },
-    {
-      "source": "nm0756378",
-      "target": "nm0849863",
-      "weight": 10,
-      "year": 1977
-    },
-    {
-      "source": "nm0000432",
-      "target": "nm0001884",
-      "weight": 17,
-      "year": 1972
-    },
-    {
-      "source": "nm0000728",
-      "target": "nm0000919",
-      "weight": 36,
-      "year": 1977
-    },
-    {
-      "source": "nm0272295",
-      "target": "nm0417370",
-      "weight": 13,
-      "year": 1971
-    },
-    {
-      "source": "nm0004462",
-      "target": "nm0674742",
-      "weight": 31,
-      "year": 1970
-    },
-    {
-      "source": "nm0045119",
-      "target": "nm0716851",
-      "weight": 10,
-      "year": 1977
-    },
-    {
-      "source": "nm0000842",
-      "target": "nm0626259",
-      "weight": 26,
-      "year": 1976
-    },
-    {
-      "source": "nm0374974",
-      "target": "nm0849863",
-      "weight": 18,
-      "year": 1970
-    },
-    {
-      "source": "nm0000063",
-      "target": "nm0000308",
-      "weight": 16,
-      "year": 1971
-    },
-    {
-      "source": "nm0000024",
-      "target": "nm0000032",
-      "weight": 14,
-      "year": 1979
-    },
-    {
-      "source": "nm0000638",
-      "target": "nm0000643",
-      "weight": 17,
-      "year": 1975
-    },
-    {
-      "source": "nm0031967",
-      "target": "nm0374974",
-      "weight": 12,
-      "year": 1974
-    },
-    {
-      "source": "nm0264554",
-      "target": "nm0681566",
-      "weight": 17,
-      "year": 1976
-    },
-    {
-      "source": "nm0468651",
-      "target": "nm0871827",
-      "weight": 13,
-      "year": 1973
-    },
-    {
-      "source": "nm0000728",
-      "target": "nm0762248",
-      "weight": 14,
-      "year": 1973
-    },
-    {
-      "source": "nm0514059",
-      "target": "nm0626259",
-      "weight": 13,
-      "year": 1974
-    },
-    {
-      "source": "nm0000366",
-      "target": "nm0681566",
-      "weight": 70,
-      "year": 1976
-    },
-    {
-      "source": "nm0272295",
-      "target": "nm0651459",
-      "weight": 10,
-      "year": 1976
-    },
-    {
-      "source": "nm0000267",
-      "target": "nm0001884",
-      "weight": 15,
-      "year": 1976
-    },
-    {
-      "source": "nm0047962",
-      "target": "nm0407030",
-      "weight": 26,
-      "year": 1975
-    },
-    {
-      "source": "nm0001058",
-      "target": "nm0001822",
-      "weight": 11,
-      "year": 1976
-    },
-    {
-      "source": "nm0004429",
-      "target": "nm0716851",
-      "weight": 25,
-      "year": 1973
-    },
-    {
-      "source": "nm0374974",
-      "target": "nm0420090",
-      "weight": 14,
-      "year": 1975
-    },
-    {
-      "source": "nm0000063",
-      "target": "nm0626259",
-      "weight": 14,
-      "year": 1977
     },
     {
       "source": "nm0006369",
-      "target": "nm0716851",
-      "weight": 15,
-      "year": 1975
-    },
-    {
-      "source": "nm0004462",
-      "target": "nm0650753",
-      "weight": 14,
-      "year": 1975
-    },
-    {
-      "source": "nm0651459",
-      "target": "nm0676127",
-      "weight": 9,
-      "year": 1976
-    },
-    {
-      "source": "nm0296389",
-      "target": "nm0676127",
-      "weight": 12,
-      "year": 1972
-    },
-    {
-      "source": "nm0296389",
-      "target": "nm0322937",
-      "weight": 12,
-      "year": 1978
-    },
-    {
-      "source": "nm0000308",
-      "target": "nm0001522",
-      "weight": 21,
-      "year": 1976
-    },
-    {
-      "source": "nm0000366",
-      "target": "nm0696163",
-      "weight": 16,
-      "year": 1972
-    },
-    {
-      "source": "nm0000398",
-      "target": "nm0000608",
+      "target": "nm0846616",
       "weight": 39,
-      "year": 1978
-    },
-    {
-      "source": "nm0650753",
-      "target": "nm0829155",
-      "weight": 13,
-      "year": 1978
-    },
-    {
-      "source": "nm0420090",
-      "target": "nm0442470",
-      "weight": 8,
-      "year": 1977
+      "year": 1973
     },
     {
       "source": "nm0004462",
@@ -867,28 +819,16 @@
       "year": 1972
     },
     {
-      "source": "nm0006369",
-      "target": "nm0846616",
-      "weight": 39,
-      "year": 1973
-    },
-    {
-      "source": "nm0159159",
-      "target": "nm0374974",
-      "weight": 49,
-      "year": 1972
-    },
-    {
-      "source": "nm0159159",
-      "target": "nm0442470",
-      "weight": 33,
-      "year": 1973
-    },
-    {
       "source": "nm0001088",
       "target": "nm0590055",
       "weight": 20,
       "year": 1972
+    },
+    {
+      "source": "nm0004462",
+      "target": "nm0105475",
+      "weight": 31,
+      "year": 1979
     },
     {
       "source": "nm0109725",
@@ -897,28 +837,10 @@
       "year": 1973
     },
     {
-      "source": "nm0001577",
-      "target": "nm0634313",
-      "weight": 18,
-      "year": 1976
-    },
-    {
-      "source": "nm0000842",
-      "target": "nm0796662",
-      "weight": 20,
-      "year": 1976
-    },
-    {
       "source": "nm0590055",
       "target": "nm0658339",
       "weight": 14,
       "year": 1970
-    },
-    {
-      "source": "nm0045119",
-      "target": "nm0846616",
-      "weight": 11,
-      "year": 1972
     },
     {
       "source": "nm0006369",
@@ -927,58 +849,28 @@
       "year": 1978
     },
     {
-      "source": "nm0415556",
-      "target": "nm0420090",
-      "weight": 50,
-      "year": 1978
-    },
-    {
-      "source": "nm0415556",
-      "target": "nm0849863",
+      "source": "nm0000328",
+      "target": "nm0001816",
       "weight": 19,
-      "year": 1977
+      "year": 1972
     },
     {
-      "source": "nm0000063",
-      "target": "nm0000323",
-      "weight": 15,
-      "year": 1971
-    },
-    {
-      "source": "nm0004462",
-      "target": "nm0681566",
-      "weight": 27,
-      "year": 1977
-    },
-    {
-      "source": "nm0001058",
-      "target": "nm0590055",
-      "weight": 17,
-      "year": 1979
-    },
-    {
-      "source": "nm0001682",
-      "target": "nm0001998",
-      "weight": 12,
-      "year": 1978
-    },
-    {
-      "source": "nm0000024",
-      "target": "nm0000063",
+      "source": "nm0001577",
+      "target": "nm0634313",
       "weight": 18,
-      "year": 1974
+      "year": 1976
     },
     {
-      "source": "nm0417370",
-      "target": "nm0871827",
-      "weight": 18,
-      "year": 1974
+      "source": "nm0045119",
+      "target": "nm0846616",
+      "weight": 11,
+      "year": 1972
     },
     {
-      "source": "nm0001749",
-      "target": "nm0001811",
-      "weight": 18,
-      "year": 1975
+      "source": "nm0335519",
+      "target": "nm0769974",
+      "weight": 20,
+      "year": 1976
     },
     {
       "source": "nm0000919",
@@ -1005,16 +897,76 @@
       "year": 1971
     },
     {
-      "source": "nm0000323",
-      "target": "nm0002103",
-      "weight": 17,
-      "year": 1978
+      "source": "nm0159159",
+      "target": "nm0219946",
+      "weight": 30,
+      "year": 1979
     },
     {
       "source": "nm0000489",
       "target": "nm0007042",
       "weight": 21,
       "year": 1971
+    },
+    {
+      "source": "nm0000380",
+      "target": "nm0000454",
+      "weight": 24,
+      "year": 1974
+    },
+    {
+      "source": "nm0755087",
+      "target": "nm0849863",
+      "weight": 9,
+      "year": 1970
+    },
+    {
+      "source": "nm0417370",
+      "target": "nm0871827",
+      "weight": 18,
+      "year": 1974
+    },
+    {
+      "source": "nm0001157",
+      "target": "nm0335519",
+      "weight": 18,
+      "year": 1973
+    },
+    {
+      "source": "nm0000404",
+      "target": "nm0000661",
+      "weight": 17,
+      "year": 1972
+    },
+    {
+      "source": "nm0000323",
+      "target": "nm0001725",
+      "weight": 16,
+      "year": 1975
+    },
+    {
+      "source": "nm0415556",
+      "target": "nm0849863",
+      "weight": 19,
+      "year": 1977
+    },
+    {
+      "source": "nm0415556",
+      "target": "nm0420090",
+      "weight": 50,
+      "year": 1978
+    },
+    {
+      "source": "nm0001058",
+      "target": "nm0590055",
+      "weight": 17,
+      "year": 1979
+    },
+    {
+      "source": "nm0045119",
+      "target": "nm0755087",
+      "weight": 22,
+      "year": 1973
     },
     {
       "source": "nm0603402",
@@ -1029,16 +981,76 @@
       "year": 1972
     },
     {
+      "source": "nm0000024",
+      "target": "nm0000063",
+      "weight": 18,
+      "year": 1974
+    },
+    {
+      "source": "nm0000842",
+      "target": "nm0179786",
+      "weight": 17,
+      "year": 1978
+    },
+    {
+      "source": "nm0000063",
+      "target": "nm0000323",
+      "weight": 15,
+      "year": 1971
+    },
+    {
+      "source": "nm0004462",
+      "target": "nm0681566",
+      "weight": 27,
+      "year": 1977
+    },
+    {
       "source": "nm0000994",
       "target": "nm0821041",
       "weight": 14,
       "year": 1972
     },
     {
-      "source": "nm0000489",
-      "target": "nm0002103",
-      "weight": 16,
+      "source": "nm0001749",
+      "target": "nm0001811",
+      "weight": 18,
+      "year": 1975
+    },
+    {
+      "source": "nm0000398",
+      "target": "nm0001123",
+      "weight": 18,
+      "year": 1979
+    },
+    {
+      "source": "nm0000842",
+      "target": "nm0001450",
+      "weight": 14,
+      "year": 1974
+    },
+    {
+      "source": "nm0226446",
+      "target": "nm0255678",
+      "weight": 9,
+      "year": 1979
+    },
+    {
+      "source": "nm0000268",
+      "target": "nm0001136",
+      "weight": 12,
       "year": 1978
+    },
+    {
+      "source": "nm0219946",
+      "target": "nm0755087",
+      "weight": 14,
+      "year": 1972
+    },
+    {
+      "source": "nm0000919",
+      "target": "nm0226446",
+      "weight": 12,
+      "year": 1971
     },
     {
       "source": "nm0000366",
@@ -1047,16 +1059,460 @@
       "year": 1977
     },
     {
-      "source": "nm0000380",
-      "target": "nm0000454",
-      "weight": 24,
+      "source": "nm0045119",
+      "target": "nm0222473",
+      "weight": 10,
+      "year": 1976
+    },
+    {
+      "source": "nm0045119",
+      "target": "nm0451863",
+      "weight": 17,
+      "year": 1976
+    },
+    {
+      "source": "nm0006369",
+      "target": "nm0415556",
+      "weight": 31,
+      "year": 1977
+    },
+    {
+      "source": "nm0004429",
+      "target": "nm0006369",
+      "weight": 68,
+      "year": 1976
+    },
+    {
+      "source": "nm0000047",
+      "target": "nm0001260",
+      "weight": 12,
+      "year": 1970
+    },
+    {
+      "source": "nm0219946",
+      "target": "nm0415556",
+      "weight": 13,
+      "year": 1978
+    },
+    {
+      "source": "nm0045119",
+      "target": "nm0442470",
+      "weight": 16,
+      "year": 1975
+    },
+    {
+      "source": "nm0000489",
+      "target": "nm0001058",
+      "weight": 13,
       "year": 1974
     },
     {
-      "source": "nm0001739",
-      "target": "nm0001811",
-      "weight": 26,
+      "source": "nm0316284",
+      "target": "nm0320988",
+      "weight": 14,
+      "year": 1973
+    },
+    {
+      "source": "nm0006369",
+      "target": "nm0219946",
+      "weight": 32,
+      "year": 1976
+    },
+    {
+      "source": "nm0219946",
+      "target": "nm0374974",
+      "weight": 14,
+      "year": 1970
+    },
+    {
+      "source": "nm0006369",
+      "target": "nm0442470",
+      "weight": 15,
       "year": 1972
+    },
+    {
+      "source": "nm0000197",
+      "target": "nm0001765",
+      "weight": 33,
+      "year": 1976
+    },
+    {
+      "source": "nm0159159",
+      "target": "nm0846616",
+      "weight": 24,
+      "year": 1979
+    },
+    {
+      "source": "nm0004429",
+      "target": "nm0219946",
+      "weight": 20,
+      "year": 1973
+    },
+    {
+      "source": "nm0000489",
+      "target": "nm0001522",
+      "weight": 14,
+      "year": 1979
+    },
+    {
+      "source": "nm0000366",
+      "target": "nm0109725",
+      "weight": 22,
+      "year": 1973
+    },
+    {
+      "source": "nm0000328",
+      "target": "nm0000489",
+      "weight": 42,
+      "year": 1979
+    },
+    {
+      "source": "nm0154164",
+      "target": "nm0846616",
+      "weight": 31,
+      "year": 1973
+    },
+    {
+      "source": "nm0004429",
+      "target": "nm0374974",
+      "weight": 50,
+      "year": 1970
+    },
+    {
+      "source": "nm0650753",
+      "target": "nm0681566",
+      "weight": 13,
+      "year": 1976
+    },
+    {
+      "source": "nm0000024",
+      "target": "nm0001626",
+      "weight": 26,
+      "year": 1979
+    },
+    {
+      "source": "nm0514059",
+      "target": "nm0650753",
+      "weight": 23,
+      "year": 1970
+    },
+    {
+      "source": "nm0756378",
+      "target": "nm0849863",
+      "weight": 10,
+      "year": 1977
+    },
+    {
+      "source": "nm0226446",
+      "target": "nm0590055",
+      "weight": 15,
+      "year": 1970
+    },
+    {
+      "source": "nm0374974",
+      "target": "nm0846616",
+      "weight": 24,
+      "year": 1972
+    },
+    {
+      "source": "nm0001128",
+      "target": "nm0603402",
+      "weight": 24,
+      "year": 1971
+    },
+    {
+      "source": "nm0000432",
+      "target": "nm0001884",
+      "weight": 17,
+      "year": 1972
+    },
+    {
+      "source": "nm0000621",
+      "target": "nm0769974",
+      "weight": 17,
+      "year": 1972
+    },
+    {
+      "source": "nm0000063",
+      "target": "nm0001012",
+      "weight": 15,
+      "year": 1974
+    },
+    {
+      "source": "nm0000018",
+      "target": "nm0001136",
+      "weight": 17,
+      "year": 1971
+    },
+    {
+      "source": "nm0001313",
+      "target": "nm0001822",
+      "weight": 13,
+      "year": 1978
+    },
+    {
+      "source": "nm0581028",
+      "target": "nm0865573",
+      "weight": 13,
+      "year": 1974
+    },
+    {
+      "source": "nm0045119",
+      "target": "nm0374974",
+      "weight": 10,
+      "year": 1971
+    },
+    {
+      "source": "nm0000163",
+      "target": "nm0000842",
+      "weight": 22,
+      "year": 1973
+    },
+    {
+      "source": "nm0000842",
+      "target": "nm0001185",
+      "weight": 19,
+      "year": 1977
+    },
+    {
+      "source": "nm0272295",
+      "target": "nm0417370",
+      "weight": 13,
+      "year": 1971
+    },
+    {
+      "source": "nm0000728",
+      "target": "nm0000919",
+      "weight": 36,
+      "year": 1977
+    },
+    {
+      "source": "nm0001012",
+      "target": "nm0626259",
+      "weight": 21,
+      "year": 1974
+    },
+    {
+      "source": "nm0000380",
+      "target": "nm0001001",
+      "weight": 40,
+      "year": 1971
+    },
+    {
+      "source": "nm0004462",
+      "target": "nm0674742",
+      "weight": 31,
+      "year": 1970
+    },
+    {
+      "source": "nm0045119",
+      "target": "nm0716851",
+      "weight": 10,
+      "year": 1977
+    },
+    {
+      "source": "nm0001088",
+      "target": "nm0226446",
+      "weight": 27,
+      "year": 1978
+    },
+    {
+      "source": "nm0000489",
+      "target": "nm0000661",
+      "weight": 15,
+      "year": 1972
+    },
+    {
+      "source": "nm0000267",
+      "target": "nm0001884",
+      "weight": 15,
+      "year": 1976
+    },
+    {
+      "source": "nm0047962",
+      "target": "nm0407030",
+      "weight": 26,
+      "year": 1975
+    },
+    {
+      "source": "nm0000398",
+      "target": "nm0940946",
+      "weight": 17,
+      "year": 1977
+    },
+    {
+      "source": "nm0001058",
+      "target": "nm0001822",
+      "weight": 11,
+      "year": 1976
+    },
+    {
+      "source": "nm0374974",
+      "target": "nm0420090",
+      "weight": 14,
+      "year": 1975
+    },
+    {
+      "source": "nm0000728",
+      "target": "nm0762248",
+      "weight": 14,
+      "year": 1973
+    },
+    {
+      "source": "nm0000366",
+      "target": "nm0681566",
+      "weight": 70,
+      "year": 1976
+    },
+    {
+      "source": "nm0000842",
+      "target": "nm0626259",
+      "weight": 26,
+      "year": 1976
+    },
+    {
+      "source": "nm0031967",
+      "target": "nm0374974",
+      "weight": 12,
+      "year": 1974
+    },
+    {
+      "source": "nm0000380",
+      "target": "nm0000661",
+      "weight": 28,
+      "year": 1973
+    },
+    {
+      "source": "nm0004429",
+      "target": "nm0716851",
+      "weight": 25,
+      "year": 1973
+    },
+    {
+      "source": "nm0000063",
+      "target": "nm0626259",
+      "weight": 14,
+      "year": 1977
+    },
+    {
+      "source": "nm0000398",
+      "target": "nm0000608",
+      "weight": 39,
+      "year": 1978
+    },
+    {
+      "source": "nm0650753",
+      "target": "nm0829155",
+      "weight": 13,
+      "year": 1978
+    },
+    {
+      "source": "nm0514059",
+      "target": "nm0626259",
+      "weight": 13,
+      "year": 1974
+    },
+    {
+      "source": "nm0272295",
+      "target": "nm0651459",
+      "weight": 10,
+      "year": 1976
+    },
+    {
+      "source": "nm0420090",
+      "target": "nm0442470",
+      "weight": 8,
+      "year": 1977
+    },
+    {
+      "source": "nm0468651",
+      "target": "nm0871827",
+      "weight": 13,
+      "year": 1973
+    },
+    {
+      "source": "nm0000308",
+      "target": "nm0001522",
+      "weight": 21,
+      "year": 1976
+    },
+    {
+      "source": "nm0296389",
+      "target": "nm0322937",
+      "weight": 12,
+      "year": 1978
+    },
+    {
+      "source": "nm0000661",
+      "target": "nm0001626",
+      "weight": 29,
+      "year": 1977
+    },
+    {
+      "source": "nm0000366",
+      "target": "nm0696163",
+      "weight": 16,
+      "year": 1972
+    },
+    {
+      "source": "nm0374974",
+      "target": "nm0849863",
+      "weight": 18,
+      "year": 1970
+    },
+    {
+      "source": "nm0006369",
+      "target": "nm0716851",
+      "weight": 15,
+      "year": 1975
+    },
+    {
+      "source": "nm0651459",
+      "target": "nm0676127",
+      "weight": 9,
+      "year": 1976
+    },
+    {
+      "source": "nm0296389",
+      "target": "nm0676127",
+      "weight": 12,
+      "year": 1972
+    },
+    {
+      "source": "nm0000024",
+      "target": "nm0000032",
+      "weight": 14,
+      "year": 1979
+    },
+    {
+      "source": "nm0000995",
+      "target": "nm0001458",
+      "weight": 17,
+      "year": 1973
+    },
+    {
+      "source": "nm0000638",
+      "target": "nm0000643",
+      "weight": 17,
+      "year": 1975
+    },
+    {
+      "source": "nm0000063",
+      "target": "nm0000308",
+      "weight": 16,
+      "year": 1971
+    },
+    {
+      "source": "nm0264554",
+      "target": "nm0681566",
+      "weight": 17,
+      "year": 1976
+    },
+    {
+      "source": "nm0004462",
+      "target": "nm0650753",
+      "weight": 14,
+      "year": 1975
     },
     {
       "source": "nm0619077",
@@ -1071,21 +1527,9 @@
       "year": 1977
     },
     {
-      "source": "nm0201638",
-      "target": "nm0681566",
-      "weight": 12,
-      "year": 1974
-    },
-    {
-      "source": "nm0476179",
-      "target": "nm0753479",
-      "weight": 12,
-      "year": 1977
-    },
-    {
-      "source": "nm0006369",
-      "target": "nm0007147",
-      "weight": 17,
+      "source": "nm0001739",
+      "target": "nm0001811",
+      "weight": 26,
       "year": 1972
     },
     {
@@ -1095,75 +1539,33 @@
       "year": 1972
     },
     {
-      "source": "nm0000558",
-      "target": "nm0593192",
-      "weight": 11,
-      "year": 1979
-    },
-    {
-      "source": "nm0433887",
-      "target": "nm1129966",
-      "weight": 11,
-      "year": 1976
-    },
-    {
-      "source": "nm0001283",
-      "target": "nm0335519",
-      "weight": 14,
-      "year": 1975
-    },
-    {
-      "source": "nm0651459",
-      "target": "nm0871827",
-      "weight": 10,
-      "year": 1979
-    },
-    {
       "source": "nm0201638",
-      "target": "nm0696163",
-      "weight": 16,
-      "year": 1979
+      "target": "nm0681566",
+      "weight": 12,
+      "year": 1974
     },
     {
-      "source": "nm0149846",
-      "target": "nm0846616",
+      "source": "nm0006369",
+      "target": "nm0007147",
       "weight": 17,
-      "year": 1975
-    },
-    {
-      "source": "nm0000366",
-      "target": "nm0004462",
-      "weight": 26,
-      "year": 1979
-    },
-    {
-      "source": "nm0004429",
-      "target": "nm0849863",
-      "weight": 23,
       "year": 1972
     },
     {
-      "source": "nm0257563",
-      "target": "nm0468651",
-      "weight": 29,
+      "source": "nm0476179",
+      "target": "nm0753479",
+      "weight": 12,
       "year": 1977
     },
     {
-      "source": "nm0000799",
-      "target": "nm0001445",
-      "weight": 19,
-      "year": 1979
+      "source": "nm0219946",
+      "target": "nm0420090",
+      "weight": 8,
+      "year": 1974
     },
     {
       "source": "nm0681566",
       "target": "nm0829155",
       "weight": 9,
-      "year": 1970
-    },
-    {
-      "source": "nm0000308",
-      "target": "nm0000432",
-      "weight": 18,
       "year": 1970
     },
     {
@@ -1173,10 +1575,124 @@
       "year": 1973
     },
     {
+      "source": "nm0000308",
+      "target": "nm0000432",
+      "weight": 18,
+      "year": 1970
+    },
+    {
+      "source": "nm0755087",
+      "target": "nm0846616",
+      "weight": 9,
+      "year": 1972
+    },
+    {
       "source": "nm0001458",
       "target": "nm0001765",
       "weight": 14,
       "year": 1977
+    },
+    {
+      "source": "nm0201638",
+      "target": "nm0696163",
+      "weight": 16,
+      "year": 1979
+    },
+    {
+      "source": "nm0000842",
+      "target": "nm0580565",
+      "weight": 16,
+      "year": 1975
+    },
+    {
+      "source": "nm0392250",
+      "target": "nm0468651",
+      "weight": 14,
+      "year": 1977
+    },
+    {
+      "source": "nm0000002",
+      "target": "nm0000018",
+      "weight": 16,
+      "year": 1975
+    },
+    {
+      "source": "nm0257563",
+      "target": "nm0468651",
+      "weight": 29,
+      "year": 1977
+    },
+    {
+      "source": "nm0001283",
+      "target": "nm0335519",
+      "weight": 14,
+      "year": 1975
+    },
+    {
+      "source": "nm0000197",
+      "target": "nm0001136",
+      "weight": 24,
+      "year": 1970
+    },
+    {
+      "source": "nm0000308",
+      "target": "nm0634313",
+      "weight": 16,
+      "year": 1973
+    },
+    {
+      "source": "nm0004429",
+      "target": "nm0849863",
+      "weight": 23,
+      "year": 1972
+    },
+    {
+      "source": "nm0001012",
+      "target": "nm0681566",
+      "weight": 17,
+      "year": 1976
+    },
+    {
+      "source": "nm0603402",
+      "target": "nm0829155",
+      "weight": 14,
+      "year": 1975
+    },
+    {
+      "source": "nm0000366",
+      "target": "nm0004462",
+      "weight": 26,
+      "year": 1979
+    },
+    {
+      "source": "nm0000799",
+      "target": "nm0001445",
+      "weight": 19,
+      "year": 1979
+    },
+    {
+      "source": "nm0000197",
+      "target": "nm0000268",
+      "weight": 20,
+      "year": 1973
+    },
+    {
+      "source": "nm0468651",
+      "target": "nm0676127",
+      "weight": 12,
+      "year": 1972
+    },
+    {
+      "source": "nm0433887",
+      "target": "nm1129966",
+      "weight": 11,
+      "year": 1976
+    },
+    {
+      "source": "nm0000489",
+      "target": "nm0001816",
+      "weight": 15,
+      "year": 1974
     },
     {
       "source": "nm0415556",
@@ -1191,54 +1707,282 @@
       "year": 1974
     },
     {
-      "source": "nm0000197",
-      "target": "nm0001136",
-      "weight": 24,
-      "year": 1970
-    },
-    {
-      "source": "nm0392250",
-      "target": "nm0468651",
-      "weight": 14,
-      "year": 1977
-    },
-    {
-      "source": "nm0603402",
-      "target": "nm0829155",
-      "weight": 14,
-      "year": 1975
-    },
-    {
-      "source": "nm0468651",
-      "target": "nm0676127",
-      "weight": 12,
-      "year": 1972
-    },
-    {
-      "source": "nm0000308",
-      "target": "nm0634313",
-      "weight": 16,
+      "source": "nm0000348",
+      "target": "nm0001811",
+      "weight": 20,
       "year": 1973
     },
     {
-      "source": "nm0000489",
-      "target": "nm0001816",
-      "weight": 15,
-      "year": 1974
+      "source": "nm0000558",
+      "target": "nm0593192",
+      "weight": 11,
+      "year": 1979
     },
     {
-      "source": "nm0000002",
-      "target": "nm0000018",
-      "weight": 16,
+      "source": "nm0149846",
+      "target": "nm0846616",
+      "weight": 17,
       "year": 1975
+    },
+    {
+      "source": "nm0651459",
+      "target": "nm0871827",
+      "weight": 10,
+      "year": 1979
     }
   ],
   "1980s": [
     {
       "source": "nm0045119",
+      "target": "nm0159159",
+      "weight": 136,
+      "year": 1987
+    },
+    {
+      "source": "nm0183822",
+      "target": "nm0289038",
+      "weight": 14,
+      "year": 1980
+    },
+    {
+      "source": "nm0000559",
+      "target": "nm0001786",
+      "weight": 89,
+      "year": 1981
+    },
+    {
+      "source": "nm0716851",
+      "target": "nm0846616",
+      "weight": 12,
+      "year": 1983
+    },
+    {
+      "source": "nm0159159",
       "target": "nm0415556",
-      "weight": 95,
+      "weight": 37,
+      "year": 1980
+    },
+    {
+      "source": "nm0006369",
+      "target": "nm0159159",
+      "weight": 49,
+      "year": 1984
+    },
+    {
+      "source": "nm0000489",
+      "target": "nm0001725",
+      "weight": 14,
+      "year": 1987
+    },
+    {
+      "source": "nm0004429",
+      "target": "nm0159159",
+      "weight": 105,
+      "year": 1983
+    },
+    {
+      "source": "nm0000380",
+      "target": "nm0000685",
+      "weight": 17,
+      "year": 1989
+    },
+    {
+      "source": "nm0001765",
+      "target": "nm0001777",
+      "weight": 21,
       "year": 1985
+    },
+    {
+      "source": "nm0407030",
+      "target": "nm0619938",
+      "weight": 62,
+      "year": 1981
+    },
+    {
+      "source": "nm0322937",
+      "target": "nm0871827",
+      "weight": 20,
+      "year": 1987
+    },
+    {
+      "source": "nm0000640",
+      "target": "nm0000799",
+      "weight": 11,
+      "year": 1982
+    },
+    {
+      "source": "nm0001013",
+      "target": "nm0001016",
+      "weight": 17,
+      "year": 1989
+    },
+    {
+      "source": "nm0004429",
+      "target": "nm0045119",
+      "weight": 57,
+      "year": 1983
+    },
+    {
+      "source": "nm0068407",
+      "target": "nm0123553",
+      "weight": 39,
+      "year": 1985
+    },
+    {
+      "source": "nm0004429",
+      "target": "nm0004569",
+      "weight": 28,
+      "year": 1989
+    },
+    {
+      "source": "nm0000063",
+      "target": "nm0829155",
+      "weight": 14,
+      "year": 1985
+    },
+    {
+      "source": "nm0000454",
+      "target": "nm0001777",
+      "weight": 40,
+      "year": 1987
+    },
+    {
+      "source": "nm0068407",
+      "target": "nm0919798",
+      "weight": 117,
+      "year": 1983
+    },
+    {
+      "source": "nm0000197",
+      "target": "nm0001021",
+      "weight": 29,
+      "year": 1986
+    },
+    {
+      "source": "nm0000366",
+      "target": "nm0036734",
+      "weight": 16,
+      "year": 1980
+    },
+    {
+      "source": "nm0000733",
+      "target": "nm0001012",
+      "weight": 16,
+      "year": 1981
+    },
+    {
+      "source": "nm0000489",
+      "target": "nm0626259",
+      "weight": 18,
+      "year": 1982
+    },
+    {
+      "source": "nm0001522",
+      "target": "nm0001811",
+      "weight": 32,
+      "year": 1983
+    },
+    {
+      "source": "nm0272295",
+      "target": "nm0468651",
+      "weight": 11,
+      "year": 1984
+    },
+    {
+      "source": "nm0296389",
+      "target": "nm0464945",
+      "weight": 10,
+      "year": 1988
+    },
+    {
+      "source": "nm0296389",
+      "target": "nm0468651",
+      "weight": 16,
+      "year": 1984
+    },
+    {
+      "source": "nm0420090",
+      "target": "nm0849863",
+      "weight": 23,
+      "year": 1981
+    },
+    {
+      "source": "nm0005162",
+      "target": "nm0007042",
+      "weight": 28,
+      "year": 1981
+    },
+    {
+      "source": "nm0001648",
+      "target": "nm0001884",
+      "weight": 12,
+      "year": 1985
+    },
+    {
+      "source": "nm0000380",
+      "target": "nm0000603",
+      "weight": 21,
+      "year": 1987
+    },
+    {
+      "source": "nm0257563",
+      "target": "nm0871827",
+      "weight": 10,
+      "year": 1981
+    },
+    {
+      "source": "nm0716851",
+      "target": "nm0755087",
+      "weight": 12,
+      "year": 1980
+    },
+    {
+      "source": "nm0000323",
+      "target": "nm0000511",
+      "weight": 20,
+      "year": 1986
+    },
+    {
+      "source": "nm0000733",
+      "target": "nm0865573",
+      "weight": 12,
+      "year": 1985
+    },
+    {
+      "source": "nm0000799",
+      "target": "nm0001001",
+      "weight": 23,
+      "year": 1985
+    },
+    {
+      "source": "nm0001626",
+      "target": "nm0001703",
+      "weight": 13,
+      "year": 1983
+    },
+    {
+      "source": "nm0000643",
+      "target": "nm0000661",
+      "weight": 20,
+      "year": 1986
+    },
+    {
+      "source": "nm0000063",
+      "target": "nm0316284",
+      "weight": 19,
+      "year": 1982
+    },
+    {
+      "source": "nm0000323",
+      "target": "nm0000398",
+      "weight": 16,
+      "year": 1983
+    },
+    {
+      "source": "nm0159159",
+      "target": "nm0451863",
+      "weight": 14,
+      "year": 1980
     },
     {
       "source": "nm0000558",
@@ -1251,6 +1995,12 @@
       "target": "nm0005033",
       "weight": 96,
       "year": 1984
+    },
+    {
+      "source": "nm0045119",
+      "target": "nm0415556",
+      "weight": 95,
+      "year": 1985
     },
     {
       "source": "nm0001021",
@@ -1271,6 +2021,24 @@
       "year": 1981
     },
     {
+      "source": "nm0000608",
+      "target": "nm0001123",
+      "weight": 59,
+      "year": 1982
+    },
+    {
+      "source": "nm0001884",
+      "target": "nm0514059",
+      "weight": 11,
+      "year": 1982
+    },
+    {
+      "source": "nm0219947",
+      "target": "nm0415556",
+      "weight": 24,
+      "year": 1983
+    },
+    {
       "source": "nm0004429",
       "target": "nm0415556",
       "weight": 39,
@@ -1283,9 +2051,33 @@
       "year": 1988
     },
     {
-      "source": "nm0007147",
-      "target": "nm0159159",
-      "weight": 45,
+      "source": "nm0000799",
+      "target": "nm0001458",
+      "weight": 31,
+      "year": 1980
+    },
+    {
+      "source": "nm0322937",
+      "target": "nm0417370",
+      "weight": 21,
+      "year": 1981
+    },
+    {
+      "source": "nm0001136",
+      "target": "nm0001765",
+      "weight": 17,
+      "year": 1983
+    },
+    {
+      "source": "nm0000348",
+      "target": "nm0001313",
+      "weight": 19,
+      "year": 1986
+    },
+    {
+      "source": "nm0000638",
+      "target": "nm0001786",
+      "weight": 89,
       "year": 1981
     },
     {
@@ -1295,70 +2087,16 @@
       "year": 1981
     },
     {
-      "source": "nm0322937",
-      "target": "nm0417370",
-      "weight": 21,
-      "year": 1981
-    },
-    {
-      "source": "nm0417370",
-      "target": "nm0651459",
-      "weight": 10,
-      "year": 1984
-    },
-    {
-      "source": "nm0420090",
-      "target": "nm0716851",
-      "weight": 20,
+      "source": "nm0001012",
+      "target": "nm0674742",
+      "weight": 18,
       "year": 1982
-    },
-    {
-      "source": "nm0000511",
-      "target": "nm0000643",
-      "weight": 20,
-      "year": 1983
     },
     {
       "source": "nm0415556",
       "target": "nm0756378",
       "weight": 9,
       "year": 1983
-    },
-    {
-      "source": "nm0257563",
-      "target": "nm0417370",
-      "weight": 17,
-      "year": 1986
-    },
-    {
-      "source": "nm0001884",
-      "target": "nm0514059",
-      "weight": 11,
-      "year": 1982
-    },
-    {
-      "source": "nm0000799",
-      "target": "nm0001458",
-      "weight": 31,
-      "year": 1980
-    },
-    {
-      "source": "nm0001136",
-      "target": "nm0001765",
-      "weight": 17,
-      "year": 1983
-    },
-    {
-      "source": "nm0000638",
-      "target": "nm0001786",
-      "weight": 89,
-      "year": 1981
-    },
-    {
-      "source": "nm0001016",
-      "target": "nm0001522",
-      "weight": 16,
-      "year": 1985
     },
     {
       "source": "nm0514059",
@@ -1373,16 +2111,64 @@
       "year": 1987
     },
     {
-      "source": "nm0000733",
-      "target": "nm0681566",
-      "weight": 41,
+      "source": "nm0420090",
+      "target": "nm0716851",
+      "weight": 20,
       "year": 1982
     },
     {
+      "source": "nm0001016",
+      "target": "nm0001522",
+      "weight": 16,
+      "year": 1985
+    },
+    {
+      "source": "nm0045119",
+      "target": "nm0219946",
+      "weight": 10,
+      "year": 1980
+    },
+    {
       "source": "nm0007147",
-      "target": "nm0849863",
-      "weight": 12,
+      "target": "nm0159159",
+      "weight": 45,
+      "year": 1981
+    },
+    {
+      "source": "nm0257563",
+      "target": "nm0646037",
+      "weight": 9,
+      "year": 1981
+    },
+    {
+      "source": "nm0257563",
+      "target": "nm0417370",
+      "weight": 17,
+      "year": 1986
+    },
+    {
+      "source": "nm0000511",
+      "target": "nm0000643",
+      "weight": 20,
       "year": 1983
+    },
+    {
+      "source": "nm0417370",
+      "target": "nm0651459",
+      "weight": 10,
+      "year": 1984
+    },
+    {
+      "source": "nm0301515",
+      "target": "nm0392250",
+      "weight": 10,
+      "year": 1983
+    },
+    {
+      "source": "nm0580565",
+      "target": "nm0829155",
+      "weight": 12,
+      "year": 1981
     },
     {
       "source": "nm0272295",
@@ -1391,10 +2177,16 @@
       "year": 1984
     },
     {
-      "source": "nm0352032",
-      "target": "nm1129966",
-      "weight": 52,
-      "year": 1986
+      "source": "nm0000733",
+      "target": "nm0681566",
+      "weight": 41,
+      "year": 1982
+    },
+    {
+      "source": "nm0252473",
+      "target": "nm0348965",
+      "weight": 39,
+      "year": 1984
     },
     {
       "source": "nm0000032",
@@ -1403,10 +2195,34 @@
       "year": 1980
     },
     {
+      "source": "nm0000306",
+      "target": "nm0001394",
+      "weight": 44,
+      "year": 1988
+    },
+    {
+      "source": "nm0352032",
+      "target": "nm1129966",
+      "weight": 52,
+      "year": 1986
+    },
+    {
       "source": "nm0316284",
       "target": "nm0514059",
       "weight": 18,
       "year": 1981
+    },
+    {
+      "source": "nm0007147",
+      "target": "nm0849863",
+      "weight": 12,
+      "year": 1983
+    },
+    {
+      "source": "nm0000172",
+      "target": "nm0000197",
+      "weight": 19,
+      "year": 1986
     },
     {
       "source": "nm0159159",
@@ -1415,9 +2231,21 @@
       "year": 1983
     },
     {
-      "source": "nm0068407",
-      "target": "nm0258757",
-      "weight": 17,
+      "source": "nm0000268",
+      "target": "nm0580565",
+      "weight": 31,
+      "year": 1989
+    },
+    {
+      "source": "nm0159159",
+      "target": "nm0849863",
+      "weight": 16,
+      "year": 1981
+    },
+    {
+      "source": "nm0219947",
+      "target": "nm0352032",
+      "weight": 9,
       "year": 1983
     },
     {
@@ -1427,16 +2255,88 @@
       "year": 1989
     },
     {
-      "source": "nm0001954",
-      "target": "nm0590055",
-      "weight": 13,
-      "year": 1987
+      "source": "nm0769974",
+      "target": "nm0919798",
+      "weight": 16,
+      "year": 1982
+    },
+    {
+      "source": "nm0000002",
+      "target": "nm0000024",
+      "weight": 20,
+      "year": 1981
+    },
+    {
+      "source": "nm0000661",
+      "target": "nm0393222",
+      "weight": 15,
+      "year": 1989
+    },
+    {
+      "source": "nm0000366",
+      "target": "nm0105475",
+      "weight": 25,
+      "year": 1985
+    },
+    {
+      "source": "nm0068407",
+      "target": "nm0258757",
+      "weight": 17,
+      "year": 1983
+    },
+    {
+      "source": "nm0258757",
+      "target": "nm0919798",
+      "weight": 11,
+      "year": 1983
+    },
+    {
+      "source": "nm0407030",
+      "target": "nm0753479",
+      "weight": 27,
+      "year": 1981
+    },
+    {
+      "source": "nm0296389",
+      "target": "nm0651459",
+      "weight": 9,
+      "year": 1981
+    },
+    {
+      "source": "nm0000640",
+      "target": "nm0000897",
+      "weight": 14,
+      "year": 1980
+    },
+    {
+      "source": "nm0415556",
+      "target": "nm0451863",
+      "weight": 11,
+      "year": 1980
+    },
+    {
+      "source": "nm0352032",
+      "target": "nm0415556",
+      "weight": 9,
+      "year": 1983
     },
     {
       "source": "nm0000643",
       "target": "nm0001021",
       "weight": 22,
       "year": 1983
+    },
+    {
+      "source": "nm0000024",
+      "target": "nm0001394",
+      "weight": 22,
+      "year": 1981
+    },
+    {
+      "source": "nm0420090",
+      "target": "nm0451863",
+      "weight": 9,
+      "year": 1989
     },
     {
       "source": "nm0001816",
@@ -1457,274 +2357,16 @@
       "year": 1984
     },
     {
-      "source": "nm0000024",
-      "target": "nm0001394",
-      "weight": 22,
-      "year": 1981
-    },
-    {
-      "source": "nm0420090",
-      "target": "nm0451863",
-      "weight": 9,
-      "year": 1989
-    },
-    {
-      "source": "nm0159159",
-      "target": "nm0849863",
-      "weight": 16,
-      "year": 1981
-    },
-    {
-      "source": "nm0000018",
-      "target": "nm0001998",
-      "weight": 13,
-      "year": 1985
-    },
-    {
-      "source": "nm0407030",
-      "target": "nm0753479",
-      "weight": 27,
-      "year": 1981
-    },
-    {
       "source": "nm0000267",
       "target": "nm0005162",
       "weight": 16,
       "year": 1984
     },
     {
-      "source": "nm0296389",
-      "target": "nm0651459",
-      "weight": 9,
-      "year": 1981
-    },
-    {
-      "source": "nm0258757",
-      "target": "nm0919798",
-      "weight": 11,
-      "year": 1983
-    },
-    {
-      "source": "nm0000002",
-      "target": "nm0000024",
-      "weight": 20,
-      "year": 1981
-    },
-    {
-      "source": "nm0415556",
-      "target": "nm0451863",
-      "weight": 11,
-      "year": 1980
-    },
-    {
-      "source": "nm0352032",
-      "target": "nm0415556",
-      "weight": 9,
-      "year": 1983
-    },
-    {
-      "source": "nm0159159",
-      "target": "nm0415556",
-      "weight": 37,
-      "year": 1980
-    },
-    {
-      "source": "nm0716851",
-      "target": "nm0846616",
-      "weight": 12,
-      "year": 1983
-    },
-    {
-      "source": "nm0183822",
-      "target": "nm0289038",
-      "weight": 14,
-      "year": 1980
-    },
-    {
       "source": "nm0045119",
-      "target": "nm0159159",
-      "weight": 136,
-      "year": 1987
-    },
-    {
-      "source": "nm0004429",
-      "target": "nm0159159",
-      "weight": 105,
-      "year": 1983
-    },
-    {
-      "source": "nm0000559",
-      "target": "nm0001786",
-      "weight": 89,
+      "target": "nm0420090",
+      "weight": 87,
       "year": 1981
-    },
-    {
-      "source": "nm0006369",
-      "target": "nm0159159",
-      "weight": 49,
-      "year": 1984
-    },
-    {
-      "source": "nm0068407",
-      "target": "nm0919798",
-      "weight": 117,
-      "year": 1983
-    },
-    {
-      "source": "nm0420090",
-      "target": "nm0849863",
-      "weight": 23,
-      "year": 1981
-    },
-    {
-      "source": "nm0000063",
-      "target": "nm0316284",
-      "weight": 19,
-      "year": 1982
-    },
-    {
-      "source": "nm0000323",
-      "target": "nm0000398",
-      "weight": 16,
-      "year": 1983
-    },
-    {
-      "source": "nm0000063",
-      "target": "nm0829155",
-      "weight": 14,
-      "year": 1985
-    },
-    {
-      "source": "nm0004429",
-      "target": "nm0004569",
-      "weight": 28,
-      "year": 1989
-    },
-    {
-      "source": "nm0001522",
-      "target": "nm0001811",
-      "weight": 32,
-      "year": 1983
-    },
-    {
-      "source": "nm0001765",
-      "target": "nm0001777",
-      "weight": 21,
-      "year": 1985
-    },
-    {
-      "source": "nm0000733",
-      "target": "nm0865573",
-      "weight": 12,
-      "year": 1985
-    },
-    {
-      "source": "nm0000323",
-      "target": "nm0000511",
-      "weight": 20,
-      "year": 1986
-    },
-    {
-      "source": "nm0068407",
-      "target": "nm0123553",
-      "weight": 39,
-      "year": 1985
-    },
-    {
-      "source": "nm0000197",
-      "target": "nm0001021",
-      "weight": 29,
-      "year": 1986
-    },
-    {
-      "source": "nm0257563",
-      "target": "nm0871827",
-      "weight": 10,
-      "year": 1981
-    },
-    {
-      "source": "nm0004429",
-      "target": "nm0045119",
-      "weight": 57,
-      "year": 1983
-    },
-    {
-      "source": "nm0322937",
-      "target": "nm0871827",
-      "weight": 20,
-      "year": 1987
-    },
-    {
-      "source": "nm0001013",
-      "target": "nm0001016",
-      "weight": 17,
-      "year": 1989
-    },
-    {
-      "source": "nm0000640",
-      "target": "nm0000799",
-      "weight": 11,
-      "year": 1982
-    },
-    {
-      "source": "nm0258757",
-      "target": "nm0402554",
-      "weight": 11,
-      "year": 1980
-    },
-    {
-      "source": "nm0000454",
-      "target": "nm0001777",
-      "weight": 40,
-      "year": 1987
-    },
-    {
-      "source": "nm0000366",
-      "target": "nm0036734",
-      "weight": 16,
-      "year": 1980
-    },
-    {
-      "source": "nm0000489",
-      "target": "nm0626259",
-      "weight": 18,
-      "year": 1982
-    },
-    {
-      "source": "nm0159159",
-      "target": "nm0451863",
-      "weight": 14,
-      "year": 1980
-    },
-    {
-      "source": "nm0296389",
-      "target": "nm0468651",
-      "weight": 16,
-      "year": 1984
-    },
-    {
-      "source": "nm0000380",
-      "target": "nm0000603",
-      "weight": 21,
-      "year": 1987
-    },
-    {
-      "source": "nm0005162",
-      "target": "nm0007042",
-      "weight": 28,
-      "year": 1981
-    },
-    {
-      "source": "nm0001648",
-      "target": "nm0001884",
-      "weight": 12,
-      "year": 1985
-    },
-    {
-      "source": "nm0272295",
-      "target": "nm0468651",
-      "weight": 11,
-      "year": 1984
     },
     {
       "source": "nm0004462",
@@ -1733,10 +2375,22 @@
       "year": 1980
     },
     {
-      "source": "nm0006369",
-      "target": "nm0420090",
-      "weight": 45,
-      "year": 1980
+      "source": "nm0001123",
+      "target": "nm0001458",
+      "weight": 20,
+      "year": 1988
+    },
+    {
+      "source": "nm0316284",
+      "target": "nm0762248",
+      "weight": 23,
+      "year": 1989
+    },
+    {
+      "source": "nm0322937",
+      "target": "nm0468651",
+      "weight": 12,
+      "year": 1982
     },
     {
       "source": "nm0159159",
@@ -1752,27 +2406,9 @@
     },
     {
       "source": "nm0045119",
-      "target": "nm0420090",
-      "weight": 87,
-      "year": 1981
-    },
-    {
-      "source": "nm0316284",
-      "target": "nm0762248",
-      "weight": 23,
-      "year": 1989
-    },
-    {
-      "source": "nm0322937",
-      "target": "nm0468651",
-      "weight": 12,
+      "target": "nm0849863",
+      "weight": 30,
       "year": 1982
-    },
-    {
-      "source": "nm0001136",
-      "target": "nm0001283",
-      "weight": 24,
-      "year": 1985
     },
     {
       "source": "nm0004429",
@@ -1781,10 +2417,10 @@
       "year": 1986
     },
     {
-      "source": "nm0045119",
-      "target": "nm0849863",
-      "weight": 30,
-      "year": 1982
+      "source": "nm0006369",
+      "target": "nm0219947",
+      "weight": 14,
+      "year": 1986
     },
     {
       "source": "nm0000323",
@@ -1793,22 +2429,40 @@
       "year": 1987
     },
     {
-      "source": "nm0001522",
-      "target": "nm0335519",
-      "weight": 16,
-      "year": 1989
+      "source": "nm0001136",
+      "target": "nm0001283",
+      "weight": 24,
+      "year": 1985
     },
     {
-      "source": "nm0000024",
-      "target": "nm0000603",
-      "weight": 22,
+      "source": "nm0045119",
+      "target": "nm0219947",
+      "weight": 26,
+      "year": 1986
+    },
+    {
+      "source": "nm0006369",
+      "target": "nm0420090",
+      "weight": 45,
       "year": 1980
     },
     {
-      "source": "nm0159159",
-      "target": "nm0756378",
-      "weight": 28,
-      "year": 1982
+      "source": "nm0252298",
+      "target": "nm0348965",
+      "weight": 35,
+      "year": 1988
+    },
+    {
+      "source": "nm0080149",
+      "target": "nm0442470",
+      "weight": 19,
+      "year": 1983
+    },
+    {
+      "source": "nm0000799",
+      "target": "nm0001739",
+      "weight": 9,
+      "year": 1985
     },
     {
       "source": "nm0330015",
@@ -1817,15 +2471,51 @@
       "year": 1985
     },
     {
-      "source": "nm0000489",
-      "target": "nm0001016",
-      "weight": 14,
-      "year": 1980
+      "source": "nm0219946",
+      "target": "nm0219947",
+      "weight": 59,
+      "year": 1985
     },
     {
-      "source": "nm0417370",
+      "source": "nm0464945",
       "target": "nm0468651",
+      "weight": 11,
+      "year": 1987
+    },
+    {
+      "source": "nm0219947",
+      "target": "nm0420090",
       "weight": 14,
+      "year": 1985
+    },
+    {
+      "source": "nm0001123",
+      "target": "nm0001682",
+      "weight": 20,
+      "year": 1987
+    },
+    {
+      "source": "nm0000638",
+      "target": "nm0001157",
+      "weight": 13,
+      "year": 1987
+    },
+    {
+      "source": "nm0001648",
+      "target": "nm0843401",
+      "weight": 18,
+      "year": 1988
+    },
+    {
+      "source": "nm0000926",
+      "target": "nm0001123",
+      "weight": 14,
+      "year": 1982
+    },
+    {
+      "source": "nm0000267",
+      "target": "nm0001626",
+      "weight": 19,
       "year": 1983
     },
     {
@@ -1835,40 +2525,16 @@
       "year": 1984
     },
     {
-      "source": "nm0296389",
-      "target": "nm0871827",
-      "weight": 20,
-      "year": 1983
+      "source": "nm0159159",
+      "target": "nm0756378",
+      "weight": 28,
+      "year": 1982
     },
     {
-      "source": "nm0004569",
-      "target": "nm0451863",
-      "weight": 8,
-      "year": 1984
-    },
-    {
-      "source": "nm0000799",
-      "target": "nm0001739",
-      "weight": 9,
-      "year": 1985
-    },
-    {
-      "source": "nm0080149",
-      "target": "nm0442470",
-      "weight": 19,
-      "year": 1983
-    },
-    {
-      "source": "nm0001648",
-      "target": "nm0843401",
-      "weight": 18,
-      "year": 1988
-    },
-    {
-      "source": "nm0000267",
-      "target": "nm0001626",
-      "weight": 19,
-      "year": 1983
+      "source": "nm0001157",
+      "target": "nm0769974",
+      "weight": 13,
+      "year": 1981
     },
     {
       "source": "nm0000728",
@@ -1878,23 +2544,239 @@
     },
     {
       "source": "nm0004569",
-      "target": "nm0415556",
-      "weight": 12,
-      "year": 1986
+      "target": "nm0219946",
+      "weight": 14,
+      "year": 1985
+    },
+    {
+      "source": "nm0001450",
+      "target": "nm0007042",
+      "weight": 16,
+      "year": 1982
     },
     {
       "source": "nm0000621",
       "target": "nm0393222",
       "weight": 24,
       "year": 1988
+    },
+    {
+      "source": "nm0296389",
+      "target": "nm0871827",
+      "weight": 20,
+      "year": 1983
+    },
+    {
+      "source": "nm0000024",
+      "target": "nm0000603",
+      "weight": 22,
+      "year": 1980
+    },
+    {
+      "source": "nm0004429",
+      "target": "nm0219947",
+      "weight": 10,
+      "year": 1986
+    },
+    {
+      "source": "nm0000489",
+      "target": "nm0001016",
+      "weight": 14,
+      "year": 1980
+    },
+    {
+      "source": "nm0004569",
+      "target": "nm0415556",
+      "weight": 12,
+      "year": 1986
+    },
+    {
+      "source": "nm0001128",
+      "target": "nm0105475",
+      "weight": 20,
+      "year": 1988
+    },
+    {
+      "source": "nm0004569",
+      "target": "nm0451863",
+      "weight": 8,
+      "year": 1984
+    },
+    {
+      "source": "nm0586733",
+      "target": "nm0619938",
+      "weight": 10,
+      "year": 1984
+    },
+    {
+      "source": "nm0417370",
+      "target": "nm0468651",
+      "weight": 14,
+      "year": 1983
+    },
+    {
+      "source": "nm0001522",
+      "target": "nm0335519",
+      "weight": 16,
+      "year": 1989
     }
   ],
   "1990s": [
+    {
+      "source": "nm0000323",
+      "target": "nm0001749",
+      "weight": 27,
+      "year": 1996
+    },
+    {
+      "source": "nm0000728",
+      "target": "nm0255678",
+      "weight": 19,
+      "year": 1993
+    },
+    {
+      "source": "nm0001884",
+      "target": "nm0639152",
+      "weight": 29,
+      "year": 1991
+    },
+    {
+      "source": "nm0001012",
+      "target": "nm0316284",
+      "weight": 10,
+      "year": 1996
+    },
+    {
+      "source": "nm0301515",
+      "target": "nm0871827",
+      "weight": 27,
+      "year": 1991
+    },
+    {
+      "source": "nm0000603",
+      "target": "nm0626259",
+      "weight": 66,
+      "year": 1990
+    },
+    {
+      "source": "nm0000308",
+      "target": "nm0001816",
+      "weight": 17,
+      "year": 1993
+    },
+    {
+      "source": "nm0646037",
+      "target": "nm0871827",
+      "weight": 23,
+      "year": 1996
+    },
+    {
+      "source": "nm0001822",
+      "target": "nm0822034",
+      "weight": 38,
+      "year": 1992
+    },
+    {
+      "source": "nm0272295",
+      "target": "nm0464945",
+      "weight": 18,
+      "year": 1997
+    },
+    {
+      "source": "nm0000603",
+      "target": "nm0000685",
+      "weight": 22,
+      "year": 1999
+    },
+    {
+      "source": "nm0255678",
+      "target": "nm0626259",
+      "weight": 10,
+      "year": 1991
+    },
+    {
+      "source": "nm0000817",
+      "target": "nm0001822",
+      "weight": 10,
+      "year": 1990
+    },
+    {
+      "source": "nm0464945",
+      "target": "nm0871827",
+      "weight": 14,
+      "year": 1998
+    },
+    {
+      "source": "nm0000995",
+      "target": "nm0001445",
+      "weight": 13,
+      "year": 1999
+    },
     {
       "source": "nm0004569",
       "target": "nm0849863",
       "weight": 38,
       "year": 1996
+    },
+    {
+      "source": "nm0417370",
+      "target": "nm0646037",
+      "weight": 17,
+      "year": 1994
+    },
+    {
+      "source": "nm0301515",
+      "target": "nm0676127",
+      "weight": 26,
+      "year": 1993
+    },
+    {
+      "source": "nm0301515",
+      "target": "nm0417370",
+      "weight": 42,
+      "year": 1992
+    },
+    {
+      "source": "nm0000172",
+      "target": "nm0001765",
+      "weight": 15,
+      "year": 1991
+    },
+    {
+      "source": "nm0000366",
+      "target": "nm0201638",
+      "weight": 40,
+      "year": 1992
+    },
+    {
+      "source": "nm0000640",
+      "target": "nm0001445",
+      "weight": 16,
+      "year": 1990
+    },
+    {
+      "source": "nm0322937",
+      "target": "nm0651459",
+      "weight": 13,
+      "year": 1990
+    },
+    {
+      "source": "nm0464945",
+      "target": "nm0676127",
+      "weight": 10,
+      "year": 1996
+    },
+    {
+      "source": "nm0000799",
+      "target": "nm0919798",
+      "weight": 42,
+      "year": 1992
+    },
+    {
+      "source": "nm0001128",
+      "target": "nm0674742",
+      "weight": 13,
+      "year": 1994
     },
     {
       "source": "nm0004569",
@@ -1903,9 +2785,27 @@
       "year": 1992
     },
     {
-      "source": "nm0000799",
+      "source": "nm0464945",
+      "target": "nm0646037",
+      "weight": 13,
+      "year": 1996
+    },
+    {
+      "source": "nm0001185",
       "target": "nm0919798",
-      "weight": 42,
+      "weight": 19,
+      "year": 1991
+    },
+    {
+      "source": "nm0000398",
+      "target": "nm0000640",
+      "weight": 19,
+      "year": 1992
+    },
+    {
+      "source": "nm0000661",
+      "target": "nm0000995",
+      "weight": 16,
       "year": 1992
     },
     {
@@ -1921,10 +2821,10 @@
       "year": 1996
     },
     {
-      "source": "nm0000366",
-      "target": "nm0201638",
-      "weight": 40,
-      "year": 1992
+      "source": "nm0000308",
+      "target": "nm0001123",
+      "weight": 15,
+      "year": 1996
     },
     {
       "source": "nm0762248",
@@ -1933,70 +2833,16 @@
       "year": 1995
     },
     {
-      "source": "nm0001394",
-      "target": "nm0002103",
+      "source": "nm0272295",
+      "target": "nm0301515",
+      "weight": 28,
+      "year": 1998
+    },
+    {
+      "source": "nm0000995",
+      "target": "nm0001136",
       "weight": 16,
-      "year": 1996
-    },
-    {
-      "source": "nm0000640",
-      "target": "nm0001445",
-      "weight": 16,
-      "year": 1990
-    },
-    {
-      "source": "nm0322937",
-      "target": "nm0651459",
-      "weight": 13,
-      "year": 1990
-    },
-    {
-      "source": "nm0001128",
-      "target": "nm0674742",
-      "weight": 13,
-      "year": 1994
-    },
-    {
-      "source": "nm0000398",
-      "target": "nm0000640",
-      "weight": 19,
-      "year": 1992
-    },
-    {
-      "source": "nm0045119",
-      "target": "nm0352032",
-      "weight": 16,
-      "year": 1991
-    },
-    {
-      "source": "nm0000842",
-      "target": "nm0001260",
-      "weight": 19,
-      "year": 1992
-    },
-    {
-      "source": "nm0000047",
-      "target": "nm0865573",
-      "weight": 16,
-      "year": 1997
-    },
-    {
-      "source": "nm0004569",
-      "target": "nm0045119",
-      "weight": 30,
-      "year": 1996
-    },
-    {
-      "source": "nm0045119",
-      "target": "nm0756378",
-      "weight": 11,
       "year": 1995
-    },
-    {
-      "source": "nm0676127",
-      "target": "nm0871827",
-      "weight": 27,
-      "year": 1990
     },
     {
       "source": "nm0289038",
@@ -2017,10 +2863,52 @@
       "year": 1995
     },
     {
+      "source": "nm0676127",
+      "target": "nm0871827",
+      "weight": 27,
+      "year": 1990
+    },
+    {
+      "source": "nm0000047",
+      "target": "nm0865573",
+      "weight": 16,
+      "year": 1997
+    },
+    {
+      "source": "nm0000842",
+      "target": "nm0001260",
+      "weight": 19,
+      "year": 1992
+    },
+    {
+      "source": "nm0296389",
+      "target": "nm0646037",
+      "weight": 16,
+      "year": 1996
+    },
+    {
+      "source": "nm0001012",
+      "target": "nm0001725",
+      "weight": 21,
+      "year": 1992
+    },
+    {
+      "source": "nm0004569",
+      "target": "nm0045119",
+      "weight": 30,
+      "year": 1996
+    },
+    {
       "source": "nm0154164",
       "target": "nm0849863",
       "weight": 11,
       "year": 1994
+    },
+    {
+      "source": "nm0252298",
+      "target": "nm0252473",
+      "weight": 36,
+      "year": 1993
     },
     {
       "source": "nm0000323",
@@ -2029,46 +2917,52 @@
       "year": 1990
     },
     {
+      "source": "nm0296389",
+      "target": "nm0301515",
+      "weight": 13,
+      "year": 1995
+    },
+    {
       "source": "nm0000323",
       "target": "nm0289038",
       "weight": 14,
       "year": 1992
     },
     {
-      "source": "nm0001884",
-      "target": "nm0639152",
-      "weight": 29,
+      "source": "nm0045119",
+      "target": "nm0352032",
+      "weight": 16,
       "year": 1991
     },
     {
-      "source": "nm0000323",
-      "target": "nm0001749",
-      "weight": 27,
-      "year": 1996
-    },
-    {
-      "source": "nm0000728",
-      "target": "nm0255678",
-      "weight": 19,
-      "year": 1993
+      "source": "nm0045119",
+      "target": "nm0756378",
+      "weight": 11,
+      "year": 1995
     },
     {
       "source": "nm0000603",
-      "target": "nm0626259",
-      "weight": 66,
-      "year": 1990
+      "target": "nm0001703",
+      "weight": 51,
+      "year": 1992
     },
     {
-      "source": "nm0000308",
-      "target": "nm0001816",
-      "weight": 17,
-      "year": 1993
-    },
-    {
-      "source": "nm0255678",
-      "target": "nm0626259",
+      "source": "nm0159159",
+      "target": "nm0219947",
       "weight": 10,
       "year": 1991
+    },
+    {
+      "source": "nm0407030",
+      "target": "nm0586733",
+      "weight": 10,
+      "year": 1992
+    },
+    {
+      "source": "nm0000380",
+      "target": "nm0001703",
+      "weight": 20,
+      "year": 1995
     },
     {
       "source": "nm0626259",
@@ -2077,10 +2971,34 @@
       "year": 1995
     },
     {
+      "source": "nm0031967",
+      "target": "nm0154164",
+      "weight": 33,
+      "year": 1991
+    },
+    {
+      "source": "nm0001522",
+      "target": "nm0001822",
+      "weight": 11,
+      "year": 1996
+    },
+    {
       "source": "nm0123553",
       "target": "nm0919798",
       "weight": 124,
       "year": 1993
+    },
+    {
+      "source": "nm0301515",
+      "target": "nm0464945",
+      "weight": 25,
+      "year": 1996
+    },
+    {
+      "source": "nm0257563",
+      "target": "nm0464945",
+      "weight": 15,
+      "year": 1998
     },
     {
       "source": "nm0468651",
@@ -2089,10 +3007,28 @@
       "year": 1997
     },
     {
-      "source": "nm0031967",
-      "target": "nm0154164",
-      "weight": 33,
-      "year": 1991
+      "source": "nm0392250",
+      "target": "nm0464945",
+      "weight": 29,
+      "year": 1992
+    },
+    {
+      "source": "nm0000643",
+      "target": "nm0000995",
+      "weight": 13,
+      "year": 1995
+    },
+    {
+      "source": "nm0000047",
+      "target": "nm0316284",
+      "weight": 12,
+      "year": 1990
+    },
+    {
+      "source": "nm0289038",
+      "target": "nm0574534",
+      "weight": 17,
+      "year": 1995
     },
     {
       "source": "nm0000643",
@@ -2107,114 +3043,24 @@
       "year": 1994
     },
     {
-      "source": "nm0289038",
-      "target": "nm0574534",
-      "weight": 17,
-      "year": 1995
+      "source": "nm0000002",
+      "target": "nm0001001",
+      "weight": 25,
+      "year": 1997
     },
     {
-      "source": "nm0001522",
-      "target": "nm0001822",
-      "weight": 11,
-      "year": 1996
-    },
-    {
-      "source": "nm0000047",
-      "target": "nm0316284",
-      "weight": 12,
-      "year": 1990
+      "source": "nm0000661",
+      "target": "nm0001884",
+      "weight": 16,
+      "year": 1991
     }
   ],
   "2000s": [
-    {
-      "source": "nm0001132",
-      "target": "nm0001394",
-      "weight": 11,
-      "year": 2002
-    },
-    {
-      "source": "nm0001445",
-      "target": "nm0001626",
-      "weight": 29,
-      "year": 2005
-    },
-    {
-      "source": "nm0000366",
-      "target": "nm0762248",
-      "weight": 22,
-      "year": 2004
-    },
-    {
-      "source": "nm0001648",
-      "target": "nm0289038",
-      "weight": 14,
-      "year": 2006
-    },
-    {
-      "source": "nm0392250",
-      "target": "nm0417370",
-      "weight": 11,
-      "year": 2001
-    },
-    {
-      "source": "nm0004569",
-      "target": "nm0846616",
-      "weight": 16,
-      "year": 2006
-    },
-    {
-      "source": "nm0000621",
-      "target": "nm0001136",
-      "weight": 29,
-      "year": 2001
-    },
-    {
-      "source": "nm0031967",
-      "target": "nm0149846",
-      "weight": 16,
-      "year": 2000
-    },
-    {
-      "source": "nm0000919",
-      "target": "nm0903110",
-      "weight": 32,
-      "year": 2005
-    },
-    {
-      "source": "nm0001132",
-      "target": "nm0316284",
-      "weight": 27,
-      "year": 2007
-    },
-    {
-      "source": "nm0157796",
-      "target": "nm0393222",
-      "weight": 21,
-      "year": 2008
-    },
-    {
-      "source": "nm0004569",
-      "target": "nm0159159",
-      "weight": 21,
-      "year": 2002
-    },
     {
       "source": "nm0004569",
       "target": "nm0756378",
       "weight": 31,
       "year": 2009
-    },
-    {
-      "source": "nm0000308",
-      "target": "nm0001682",
-      "weight": 10,
-      "year": 2003
-    },
-    {
-      "source": "nm0001132",
-      "target": "nm0001749",
-      "weight": 52,
-      "year": 2003
     },
     {
       "source": "nm0000608",
@@ -2229,10 +3075,142 @@
       "year": 2002
     },
     {
+      "source": "nm0000172",
+      "target": "nm0000685",
+      "weight": 25,
+      "year": 2006
+    },
+    {
       "source": "nm0393222",
       "target": "nm0574534",
       "weight": 29,
       "year": 2005
+    },
+    {
+      "source": "nm0001132",
+      "target": "nm0001749",
+      "weight": 52,
+      "year": 2003
+    },
+    {
+      "source": "nm0000308",
+      "target": "nm0001682",
+      "weight": 10,
+      "year": 2003
+    },
+    {
+      "source": "nm0301515",
+      "target": "nm0322937",
+      "weight": 19,
+      "year": 2004
+    },
+    {
+      "source": "nm0001132",
+      "target": "nm0001394",
+      "weight": 11,
+      "year": 2002
+    },
+    {
+      "source": "nm0000366",
+      "target": "nm0762248",
+      "weight": 22,
+      "year": 2004
+    },
+    {
+      "source": "nm0001648",
+      "target": "nm0289038",
+      "weight": 14,
+      "year": 2006
+    },
+    {
+      "source": "nm0407030",
+      "target": "nm0434593",
+      "weight": 25,
+      "year": 2003
+    },
+    {
+      "source": "nm0392250",
+      "target": "nm0417370",
+      "weight": 11,
+      "year": 2001
+    },
+    {
+      "source": "nm0001445",
+      "target": "nm0001626",
+      "weight": 29,
+      "year": 2005
+    },
+    {
+      "source": "nm0301515",
+      "target": "nm0646037",
+      "weight": 14,
+      "year": 2002
+    },
+    {
+      "source": "nm0004569",
+      "target": "nm0846616",
+      "weight": 16,
+      "year": 2006
+    },
+    {
+      "source": "nm0000621",
+      "target": "nm0001136",
+      "weight": 29,
+      "year": 2001
+    },
+    {
+      "source": "nm0000267",
+      "target": "nm0001185",
+      "weight": 24,
+      "year": 2003
+    },
+    {
+      "source": "nm0031967",
+      "target": "nm0149846",
+      "weight": 16,
+      "year": 2000
+    },
+    {
+      "source": "nm0000919",
+      "target": "nm0903110",
+      "weight": 32,
+      "year": 2005
+    },
+    {
+      "source": "nm0157796",
+      "target": "nm0393222",
+      "weight": 21,
+      "year": 2008
+    },
+    {
+      "source": "nm0004569",
+      "target": "nm0159159",
+      "weight": 21,
+      "year": 2002
+    },
+    {
+      "source": "nm0000268",
+      "target": "nm0000995",
+      "weight": 24,
+      "year": 2005
+    },
+    {
+      "source": "nm0001132",
+      "target": "nm0316284",
+      "weight": 27,
+      "year": 2007
+    },
+    {
+      "source": "nm0000172",
+      "target": "nm0316284",
+      "weight": 13,
+      "year": 2003
+    },
+    {
+      "source": "nm0417370",
+      "target": "nm0464945",
+      "weight": 23,
+      "year": 2004
     },
     {
       "source": "nm0149846",
@@ -2245,14 +3223,50 @@
       "target": "nm0289038",
       "weight": 10,
       "year": 2005
+    },
+    {
+      "source": "nm0322937",
+      "target": "nm0464945",
+      "weight": 20,
+      "year": 2001
+    },
+    {
+      "source": "nm0301515",
+      "target": "nm0468651",
+      "weight": 21,
+      "year": 2005
     }
   ],
   "2010s": [
     {
-      "source": "nm0000329",
+      "source": "nm0000511",
+      "target": "nm0001626",
+      "weight": 17,
+      "year": 2011
+    },
+    {
+      "source": "nm0301515",
+      "target": "nm0651459",
+      "weight": 19,
+      "year": 2012
+    },
+    {
+      "source": "nm0000163",
       "target": "nm0393222",
-      "weight": 26,
-      "year": 2010
+      "weight": 37,
+      "year": 2014
+    },
+    {
+      "source": "nm0000366",
+      "target": "nm0218634",
+      "weight": 16,
+      "year": 2015
+    },
+    {
+      "source": "nm0000163",
+      "target": "nm0574534",
+      "weight": 25,
+      "year": 2016
     },
     {
       "source": "nm0000799",
@@ -2261,15 +3275,39 @@
       "year": 2015
     },
     {
+      "source": "nm0000163",
+      "target": "nm0000329",
+      "weight": 38,
+      "year": 2012
+    },
+    {
+      "source": "nm0000329",
+      "target": "nm0393222",
+      "weight": 26,
+      "year": 2010
+    },
+    {
       "source": "nm0000323",
       "target": "nm0183822",
       "weight": 19,
       "year": 2010
     },
     {
-      "source": "nm0000511",
-      "target": "nm0001626",
-      "weight": 17,
+      "source": "nm0000685",
+      "target": "nm0001001",
+      "weight": 13,
+      "year": 2018
+    },
+    {
+      "source": "nm0000995",
+      "target": "nm0001001",
+      "weight": 19,
+      "year": 2011
+    },
+    {
+      "source": "nm0105475",
+      "target": "nm0218634",
+      "weight": 23,
       "year": 2011
     }
   ]

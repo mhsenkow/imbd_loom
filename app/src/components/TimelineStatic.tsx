@@ -87,7 +87,7 @@ export function TimelineStatic({
   palette = "loom",
   sortBy = "year_peak",
   thicknessBy = "shared",
-  sizeBy = "degree",
+  sizeBy = "strength",
   statMarks = [],
   manifest = null,
   insightFocusId = null,

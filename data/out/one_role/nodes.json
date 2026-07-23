@@ -1,189 +1,11 @@
 [
   {
-    "id": "nm0014953",
-    "label": "Carrie Aizley",
-    "label_ascii": "Carrie Aizley",
-    "type": "person",
-    "gender": "female",
-    "degree": 53101,
-    "dominant_genre": "Comedy",
-    "concentration": 1.0,
-    "title_count": 8,
-    "prominence": 12868.8,
-    "year_min": 1998,
-    "year_max": 2020,
-    "year_peak": 2007,
-    "roles": [
-      {
-        "title": "The Thin Pink Line",
-        "character": "Jocelyn Silverberg",
-        "characters": [
-          "Jocelyn Silverberg"
-        ],
-        "year": 1998,
-        "billing": 1,
-        "tconst": "tt0171825",
-        "votes": 421
-      },
-      {
-        "title": "Transparent: The Lost Sessions",
-        "character": "Laura Milton-Kaufberger",
-        "characters": [
-          "Laura Milton-Kaufberger"
-        ],
-        "year": 2017,
-        "billing": 1,
-        "tconst": "tt7784170",
-        "votes": 39
-      },
-      {
-        "title": "This Actually Happened",
-        "character": "Darlene",
-        "characters": [
-          "Darlene"
-        ],
-        "year": 2022,
-        "billing": 1,
-        "tconst": "tt18278732",
-        "votes": 11
-      },
-      {
-        "title": "Campus Ladies",
-        "character": "Joan",
-        "characters": [
-          "Joan"
-        ],
-        "year": 2006,
-        "billing": 2,
-        "tconst": "tt0487812",
-        "votes": 434
-      },
-      {
-        "title": "The Miller Reese Experience",
-        "character": "Francine Shuster",
-        "characters": [
-          "Francine Shuster"
-        ],
-        "year": 2017,
-        "billing": 2,
-        "tconst": "tt7607796",
-        "votes": 0
-      },
-      {
-        "title": "Family Tree",
-        "character": "Kitty Chadwick",
-        "characters": [
-          "Kitty Chadwick"
-        ],
-        "year": 2013,
-        "billing": 5,
-        "tconst": "tt2340036",
-        "votes": 3750
-      }
-    ],
-    "bridge_score": 0.006846,
-    "community": 3,
-    "degree_pct": 100,
-    "prominence_pct": 94,
-    "embed_x": 0.7615,
-    "embed_y": -1.3193
-  },
-  {
-    "id": "nm0707231",
-    "label": "Marjatta Raita",
-    "label_ascii": "Marjatta Raita",
-    "type": "person",
-    "gender": "female",
-    "degree": 52993,
-    "dominant_genre": "Comedy",
-    "concentration": 1.0,
-    "title_count": 21,
-    "prominence": 9266.6,
-    "year_min": 1968,
-    "year_max": 2004,
-    "year_peak": 1986,
-    "roles": [
-      {
-        "title": "Tapulikylä",
-        "character": "Laila Rissanen",
-        "characters": [
-          "Laila Rissanen"
-        ],
-        "year": 1992,
-        "billing": 1,
-        "tconst": "tt0356303",
-        "votes": 0
-      },
-      {
-        "title": "Uuno Turhapuro armeijan leivissä",
-        "character": "Elisabeth Turhapuro",
-        "characters": [
-          "Elisabeth Turhapuro"
-        ],
-        "year": 1984,
-        "billing": 2,
-        "tconst": "tt0088336",
-        "votes": 2703
-      },
-      {
-        "title": "Uuno Turhapuro muuttaa maalle",
-        "character": "Elisabeth Turhapuro",
-        "characters": [
-          "Elisabeth Turhapuro"
-        ],
-        "year": 1986,
-        "billing": 2,
-        "tconst": "tt0092144",
-        "votes": 1437
-      },
-      {
-        "title": "Uuno Turhapuro menettää muistinsa",
-        "character": "Elisabeth Turhapuro",
-        "characters": [
-          "Elisabeth Turhapuro"
-        ],
-        "year": 1982,
-        "billing": 2,
-        "tconst": "tt0084845",
-        "votes": 1372
-      },
-      {
-        "title": "Uuno Turhapuro",
-        "character": "Elisabeth Turhapuro",
-        "characters": [
-          "Elisabeth Turhapuro"
-        ],
-        "year": 1973,
-        "billing": 2,
-        "tconst": "tt0070860",
-        "votes": 1223
-      },
-      {
-        "title": "Uuno Turhapuron muisti palailee pätkittäin",
-        "character": "Elisabeth Turhapuro",
-        "characters": [
-          "Elisabeth Turhapuro"
-        ],
-        "year": 1983,
-        "billing": 2,
-        "tconst": "tt0086523",
-        "votes": 1128
-      }
-    ],
-    "bridge_score": 0.025806,
-    "community": 3,
-    "degree_pct": 97,
-    "prominence_pct": 90,
-    "embed_x": 1.1799,
-    "embed_y": -3.0699
-  },
-  {
     "id": "nm0699614",
     "label": "Stathis Psaltis",
     "label_ascii": "Stathis Psaltis",
     "type": "person",
     "gender": "male",
-    "degree": 49140,
+    "degree": 6,
     "dominant_genre": "Comedy",
     "concentration": 0.906,
     "title_count": 32,
@@ -191,6 +13,7 @@
     "year_min": 1979,
     "year_max": 1989,
     "year_peak": 1984,
+    "strength": 49140,
     "roles": [
       {
         "title": "Vasika... kalispera sas",
@@ -259,101 +82,25 @@
         "votes": 385
       }
     ],
-    "bridge_score": 0.025233,
-    "community": 3,
-    "degree_pct": 94,
-    "prominence_pct": 87,
-    "embed_x": -0.5902,
-    "embed_y": -2.3478
-  },
-  {
-    "id": "nm0776856",
-    "label": "Leon Schuster",
-    "label_ascii": "Leon Schuster",
-    "type": "person",
-    "gender": "male",
-    "degree": 47045,
-    "dominant_genre": "Comedy",
-    "concentration": 0.9,
-    "title_count": 20,
-    "prominence": 15832.1,
-    "year_min": 1983,
-    "year_max": 2022,
-    "year_peak": 2001,
-    "roles": [
-      {
-        "title": "Mr. Bones",
-        "character": "Mr. Bones",
-        "characters": [
-          "Mr. Bones"
-        ],
-        "year": 2001,
-        "billing": 1,
-        "tconst": "tt0302819",
-        "votes": 3116
-      },
-      {
-        "title": "Yankee Zulu",
-        "character": "Rhino Labuschagne",
-        "characters": [
-          "Rhino Labuschagne"
-        ],
-        "year": 1993,
-        "billing": 1,
-        "tconst": "tt0111787",
-        "votes": 2151
-      },
-      {
-        "title": "Mr. Bones 2: Back from the Past",
-        "character": "Mr. Bones",
-        "characters": [
-          "Mr. Bones"
-        ],
-        "year": 2008,
-        "billing": 1,
-        "tconst": "tt0995857",
-        "votes": 1007
-      },
-      {
-        "title": "Mad Buddies",
-        "character": "Boetie de Wett",
-        "characters": [
-          "Boetie de Wett"
-        ],
-        "year": 2012,
-        "billing": 1,
-        "tconst": "tt2334731",
-        "votes": 506
-      },
-      {
-        "title": "Mama Jack",
-        "character": "Jack Theron",
-        "characters": [
-          "Jack Theron"
-        ],
-        "year": 2005,
-        "billing": 1,
-        "tconst": "tt0471251",
-        "votes": 496
-      },
-      {
-        "title": "Kwagga Strikes Back",
-        "character": "Kwagga Robbertse",
-        "characters": [
-          "Kwagga Robbertse"
-        ],
-        "year": 1990,
-        "billing": 1,
-        "tconst": "tt0099961",
-        "votes": 400
-      }
-    ],
-    "bridge_score": 0.001434,
-    "community": 3,
-    "degree_pct": 90,
-    "prominence_pct": 97,
-    "embed_x": 0.6407,
-    "embed_y": -2.6897
+    "bridge_score": 0.02193,
+    "community": 1,
+    "pagerank": 0.03498016,
+    "eigen_centrality": 0.374167,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 95,
+    "prominence_pct": 90,
+    "prominence_pct_construct": 90,
+    "pagerank_pct": 97,
+    "degree_z": 0.588,
+    "strength_z": 2.278,
+    "prominence_z": 1.177,
+    "pagerank_z": 1.752,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -0.7331,
+    "embed_y": -2.8145
   },
   {
     "id": "nm0701248",
@@ -361,7 +108,7 @@
     "label_ascii": "Paul Putner",
     "type": "person",
     "gender": "male",
-    "degree": 43189,
+    "degree": 6,
     "dominant_genre": "Comedy",
     "concentration": 0.917,
     "title_count": 12,
@@ -369,6 +116,7 @@
     "year_min": 1998,
     "year_max": 2019,
     "year_peak": 2002,
+    "strength": 43189,
     "roles": [
       {
         "title": "Stand Up",
@@ -437,12 +185,3630 @@
         "votes": 1831
       }
     ],
-    "bridge_score": 0.028746,
+    "bridge_score": 0.025236,
     "community": 3,
-    "degree_pct": 87,
-    "prominence_pct": 84,
-    "embed_x": -1.5582,
-    "embed_y": -1.1471
+    "pagerank": 0.0329828,
+    "eigen_centrality": 0.303819,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 90,
+    "prominence_pct": 87,
+    "prominence_pct_construct": 87,
+    "pagerank_pct": 92,
+    "degree_z": 0.588,
+    "strength_z": 1.887,
+    "prominence_z": 1.164,
+    "pagerank_z": 1.401,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -0.3763,
+    "embed_y": -1.9012
+  },
+  {
+    "id": "nm0707231",
+    "label": "Marjatta Raita",
+    "label_ascii": "Marjatta Raita",
+    "type": "person",
+    "gender": "female",
+    "degree": 6,
+    "dominant_genre": "Comedy",
+    "concentration": 1.0,
+    "title_count": 21,
+    "prominence": 9266.6,
+    "year_min": 1968,
+    "year_max": 2004,
+    "year_peak": 1986,
+    "strength": 52993,
+    "roles": [
+      {
+        "title": "Tapulikylä",
+        "character": "Laila Rissanen",
+        "characters": [
+          "Laila Rissanen"
+        ],
+        "year": 1992,
+        "billing": 1,
+        "tconst": "tt0356303",
+        "votes": 0
+      },
+      {
+        "title": "Uuno Turhapuro armeijan leivissä",
+        "character": "Elisabeth Turhapuro",
+        "characters": [
+          "Elisabeth Turhapuro"
+        ],
+        "year": 1984,
+        "billing": 2,
+        "tconst": "tt0088336",
+        "votes": 2703
+      },
+      {
+        "title": "Uuno Turhapuro muuttaa maalle",
+        "character": "Elisabeth Turhapuro",
+        "characters": [
+          "Elisabeth Turhapuro"
+        ],
+        "year": 1986,
+        "billing": 2,
+        "tconst": "tt0092144",
+        "votes": 1437
+      },
+      {
+        "title": "Uuno Turhapuro menettää muistinsa",
+        "character": "Elisabeth Turhapuro",
+        "characters": [
+          "Elisabeth Turhapuro"
+        ],
+        "year": 1982,
+        "billing": 2,
+        "tconst": "tt0084845",
+        "votes": 1372
+      },
+      {
+        "title": "Uuno Turhapuro",
+        "character": "Elisabeth Turhapuro",
+        "characters": [
+          "Elisabeth Turhapuro"
+        ],
+        "year": 1973,
+        "billing": 2,
+        "tconst": "tt0070860",
+        "votes": 1223
+      },
+      {
+        "title": "Uuno Turhapuron muisti palailee pätkittäin",
+        "character": "Elisabeth Turhapuro",
+        "characters": [
+          "Elisabeth Turhapuro"
+        ],
+        "year": 1983,
+        "billing": 2,
+        "tconst": "tt0086523",
+        "votes": 1128
+      }
+    ],
+    "bridge_score": 0.021255,
+    "community": 1,
+    "pagerank": 0.03574414,
+    "eigen_centrality": 0.42844,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 97,
+    "prominence_pct": 92,
+    "prominence_pct_construct": 92,
+    "pagerank_pct": 100,
+    "degree_z": 0.588,
+    "strength_z": 2.531,
+    "prominence_z": 1.217,
+    "pagerank_z": 1.886,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": 1.1622,
+    "embed_y": -2.7447
+  },
+  {
+    "id": "nm0758741",
+    "label": "Simo Salminen",
+    "label_ascii": "Simo Salminen",
+    "type": "person",
+    "gender": "male",
+    "degree": 6,
+    "dominant_genre": "Comedy",
+    "concentration": 0.925,
+    "title_count": 40,
+    "prominence": 7096.5,
+    "year_min": 1964,
+    "year_max": 2004,
+    "year_peak": 1981,
+    "strength": 33195,
+    "roles": [
+      {
+        "title": "Hirttämättömät",
+        "character": "Tonto",
+        "characters": [
+          "Tonto"
+        ],
+        "year": 1971,
+        "billing": 2,
+        "tconst": "tt0136997",
+        "votes": 819
+      },
+      {
+        "title": "Pähkähullu Suomi",
+        "character": "Simo",
+        "characters": [
+          "Simo"
+        ],
+        "year": 1967,
+        "billing": 2,
+        "tconst": "tt0062165",
+        "votes": 521
+      },
+      {
+        "title": "Hei kliffaa hei",
+        "character": "Kullervo 'Kultsi' Kankinen",
+        "characters": [
+          "Kullervo 'Kultsi' Kankinen"
+        ],
+        "year": 1985,
+        "billing": 2,
+        "tconst": "tt0089427",
+        "votes": 433
+      },
+      {
+        "title": "Leftovers from the North",
+        "character": "Törrönen",
+        "characters": [
+          "Törrönen"
+        ],
+        "year": 1969,
+        "billing": 2,
+        "tconst": "tt0064823",
+        "votes": 390
+      },
+      {
+        "title": "Lentävät luupäät",
+        "character": "Salaiseksi agentiksi opiskellut pohjalaishämäläinen",
+        "characters": [
+          "Salaiseksi agentiksi opiskellut pohjalaishämäläinen"
+        ],
+        "year": 1984,
+        "billing": 2,
+        "tconst": "tt0087611",
+        "votes": 381
+      },
+      {
+        "title": "Naisen logiikka",
+        "character": "Pullo Pölkkynen",
+        "characters": [
+          "Pullo Pölkkynen"
+        ],
+        "year": 1999,
+        "billing": 2,
+        "tconst": "tt0117148",
+        "votes": 250
+      }
+    ],
+    "bridge_score": 0.034076,
+    "community": 3,
+    "pagerank": 0.02867059,
+    "eigen_centrality": 0.195967,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 85,
+    "prominence_pct": 85,
+    "prominence_pct_construct": 85,
+    "pagerank_pct": 79,
+    "degree_z": 0.588,
+    "strength_z": 1.231,
+    "prominence_z": 0.753,
+    "pagerank_z": 0.644,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -1.4136,
+    "embed_y": -3.3588
+  },
+  {
+    "id": "nm0825983",
+    "label": "Peter Steiner",
+    "label_ascii": "Peter Steiner",
+    "type": "person",
+    "gender": "male",
+    "degree": 6,
+    "dominant_genre": "Comedy",
+    "concentration": 1.0,
+    "title_count": 13,
+    "prominence": 1209.4,
+    "year_min": 1973,
+    "year_max": 1983,
+    "year_peak": 1978,
+    "strength": 5969,
+    "roles": [
+      {
+        "title": "Liebesgrüße aus der Lederhos'n",
+        "character": "Sepp Eber",
+        "characters": [
+          "Sepp Eber"
+        ],
+        "year": 1973,
+        "billing": 1,
+        "tconst": "tt0071753",
+        "votes": 180
+      },
+      {
+        "title": "Der Kurpfuscher und seine fixen Töchter",
+        "character": "Josef Brezenbichler",
+        "characters": [
+          "Josef Brezenbichler"
+        ],
+        "year": 1980,
+        "billing": 1,
+        "tconst": "tt0081018",
+        "votes": 157
+      },
+      {
+        "title": "Drei Lederhosen in St. Tropez",
+        "character": "Peter Eichel",
+        "characters": [
+          "Peter Eichel"
+        ],
+        "year": 1980,
+        "billing": 1,
+        "tconst": "tt0166583",
+        "votes": 137
+      },
+      {
+        "title": "Liebesgrüße aus der Lederhose II. Teil: Zwei Kumpel auf der Alm",
+        "character": "Sepp Eber",
+        "characters": [
+          "Sepp Eber"
+        ],
+        "year": 1974,
+        "billing": 1,
+        "tconst": "tt0187241",
+        "votes": 131
+      },
+      {
+        "title": "Clattering Chastity Belts",
+        "character": "Archibald",
+        "characters": [
+          "Archibald"
+        ],
+        "year": 1974,
+        "billing": 1,
+        "tconst": "tt0070740",
+        "votes": 119
+      },
+      {
+        "title": "Zum Gasthof der spritzigen Mädchen",
+        "character": "Alois",
+        "characters": [
+          "Alois"
+        ],
+        "year": 1979,
+        "billing": 1,
+        "tconst": "tt0080181",
+        "votes": 112
+      }
+    ],
+    "bridge_score": 0.02193,
+    "community": 5,
+    "pagerank": 0.02075226,
+    "eigen_centrality": 8.9e-05,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 33,
+    "prominence_pct": 33,
+    "prominence_pct_construct": 33,
+    "pagerank_pct": 15,
+    "degree_z": 0.588,
+    "strength_z": -0.556,
+    "prominence_z": -0.505,
+    "pagerank_z": -0.746,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": 1.7557,
+    "embed_y": 3.4068
+  },
+  {
+    "id": "nm1080706",
+    "label": "Maurizio Battista",
+    "label_ascii": "Maurizio Battista",
+    "type": "person",
+    "gender": "male",
+    "degree": 6,
+    "dominant_genre": "Comedy",
+    "concentration": 0.9,
+    "title_count": 10,
+    "prominence": 965.0,
+    "year_min": 2011,
+    "year_max": 2019,
+    "year_peak": 2013,
+    "strength": 4776,
+    "roles": [
+      {
+        "title": "Uno anzi due",
+        "character": "Maurizio Scaratti",
+        "characters": [
+          "Maurizio Scaratti"
+        ],
+        "year": 2015,
+        "billing": 1,
+        "tconst": "tt4401364",
+        "votes": 103
+      },
+      {
+        "title": "Tu quoque",
+        "character": "Massimo Quinto",
+        "characters": [
+          "Massimo Quinto"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt35980408",
+        "votes": 41
+      },
+      {
+        "title": "Una cella in due",
+        "character": "Angelo",
+        "characters": [
+          "Angelo"
+        ],
+        "year": 2011,
+        "billing": 2,
+        "tconst": "tt1846809",
+        "votes": 105
+      },
+      {
+        "title": "Fausto & Furio",
+        "character": "Furio",
+        "characters": [
+          "Furio"
+        ],
+        "year": 2016,
+        "billing": 2,
+        "tconst": "tt5749662",
+        "votes": 98
+      },
+      {
+        "title": "Din Don - Una parrocchia in due",
+        "character": "Don Dino",
+        "characters": [
+          "Don Dino"
+        ],
+        "year": 2019,
+        "billing": 2,
+        "tconst": "tt9691688",
+        "votes": 56
+      },
+      {
+        "title": "Maledetto tempo",
+        "character": "Maurizio",
+        "characters": [
+          "Maurizio"
+        ],
+        "year": 2025,
+        "billing": 2,
+        "tconst": "tt38265064",
+        "votes": 14
+      }
+    ],
+    "bridge_score": 0.021255,
+    "community": 5,
+    "pagerank": 0.01971469,
+    "eigen_centrality": 2.8e-05,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 26,
+    "prominence_pct": 28,
+    "prominence_pct_construct": 28,
+    "pagerank_pct": 13,
+    "degree_z": 0.588,
+    "strength_z": -0.634,
+    "prominence_z": -0.557,
+    "pagerank_z": -0.928,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": 0.8998,
+    "embed_y": 3.2109
+  },
+  {
+    "id": "nm1205389",
+    "label": "Yda Manzano",
+    "label_ascii": "Yda Manzano",
+    "type": "person",
+    "gender": "female",
+    "degree": 6,
+    "dominant_genre": "Drama",
+    "concentration": 0.933,
+    "title_count": 15,
+    "prominence": 1211.6,
+    "year_min": 2023,
+    "year_max": 2026,
+    "year_peak": 2024,
+    "strength": 6353,
+    "roles": [
+      {
+        "title": "Mamasan",
+        "character": "Myrna",
+        "characters": [
+          "Myrna"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt38608640",
+        "votes": 99
+      },
+      {
+        "title": "Sa iyong mga haplos",
+        "character": "Lourdes Mercado",
+        "characters": [
+          "Lourdes Mercado"
+        ],
+        "year": 2001,
+        "billing": 1,
+        "tconst": "tt0350078",
+        "votes": 0
+      },
+      {
+        "title": "Sagaran",
+        "character": "Glenda",
+        "characters": [
+          "Glenda"
+        ],
+        "year": 2026,
+        "billing": 2,
+        "tconst": "tt39376926",
+        "votes": 198
+      },
+      {
+        "title": "Sex Hub 1",
+        "character": "Jessa",
+        "characters": [
+          "Jessa"
+        ],
+        "year": 2023,
+        "billing": 2,
+        "tconst": "tt38745417",
+        "votes": 138
+      },
+      {
+        "title": "Sex Hub 2",
+        "character": "Jessa",
+        "characters": [
+          "Jessa"
+        ],
+        "year": 2023,
+        "billing": 2,
+        "tconst": "tt38745419",
+        "votes": 137
+      },
+      {
+        "title": "Katas",
+        "character": "Grace",
+        "characters": [
+          "Grace"
+        ],
+        "year": 2024,
+        "billing": 3,
+        "tconst": "tt31031372",
+        "votes": 337
+      }
+    ],
+    "bridge_score": 0.038462,
+    "community": 0,
+    "pagerank": 0.02674573,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 36,
+    "prominence_pct": 36,
+    "prominence_pct_construct": 36,
+    "pagerank_pct": 64,
+    "degree_z": 0.588,
+    "strength_z": -0.53,
+    "prominence_z": -0.504,
+    "pagerank_z": 0.306,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -2.8472,
+    "embed_y": -0.2609
+  },
+  {
+    "id": "nm12690549",
+    "label": "Ardy Raymundo",
+    "label_ascii": "Ardy Raymundo",
+    "type": "person",
+    "gender": "male",
+    "degree": 6,
+    "dominant_genre": "Drama",
+    "concentration": 0.9,
+    "title_count": 10,
+    "prominence": 600.6,
+    "year_min": 2023,
+    "year_max": 2026,
+    "year_peak": 2024,
+    "strength": 3521,
+    "roles": [
+      {
+        "title": "Delusion",
+        "character": "Noli",
+        "characters": [
+          "Noli"
+        ],
+        "year": 2025,
+        "billing": 2,
+        "tconst": "tt35889157",
+        "votes": 207
+      },
+      {
+        "title": "Late Bloomer",
+        "character": "Aries",
+        "characters": [
+          "Aries"
+        ],
+        "year": 2024,
+        "billing": 3,
+        "tconst": "tt32165698",
+        "votes": 195
+      },
+      {
+        "title": "Maid's Obsession",
+        "character": "Robert",
+        "characters": [
+          "Robert"
+        ],
+        "year": 2026,
+        "billing": 4,
+        "tconst": "tt40112747",
+        "votes": 178
+      },
+      {
+        "title": "Maharot",
+        "character": "Tasyo",
+        "characters": [
+          "Tasyo"
+        ],
+        "year": 2024,
+        "billing": 4,
+        "tconst": "tt32792977",
+        "votes": 131
+      },
+      {
+        "title": "Scandal Queen",
+        "character": "Sir B",
+        "characters": [
+          "Sir B"
+        ],
+        "year": 2026,
+        "billing": 5,
+        "tconst": "tt42995023",
+        "votes": 41
+      },
+      {
+        "title": "Foursome",
+        "character": "Taong Grasa",
+        "characters": [
+          "Taong Grasa"
+        ],
+        "year": 2023,
+        "billing": 6,
+        "tconst": "tt30343025",
+        "votes": 773
+      }
+    ],
+    "bridge_score": 0.02193,
+    "community": 4,
+    "pagerank": 0.02338059,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 18,
+    "prominence_pct": 15,
+    "prominence_pct_construct": 15,
+    "pagerank_pct": 31,
+    "degree_z": 0.588,
+    "strength_z": -0.716,
+    "prominence_z": -0.635,
+    "pagerank_z": -0.284,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -1.443,
+    "embed_y": 0.2453
+  },
+  {
+    "id": "nm13851921",
+    "label": "Tiffany Grey",
+    "label_ascii": "Tiffany Grey",
+    "type": "person",
+    "gender": "female",
+    "degree": 6,
+    "dominant_genre": "Drama",
+    "concentration": 0.909,
+    "title_count": 11,
+    "prominence": 1293.8,
+    "year_min": 2022,
+    "year_max": 2024,
+    "year_peak": 2023,
+    "strength": 7360,
+    "roles": [
+      {
+        "title": "Kamadora",
+        "character": "Ica",
+        "characters": [
+          "Ica"
+        ],
+        "year": 2023,
+        "billing": 1,
+        "tconst": "tt28537936",
+        "votes": 370
+      },
+      {
+        "title": "Paupahan",
+        "character": "Analyn Salvacion",
+        "characters": [
+          "Analyn Salvacion"
+        ],
+        "year": 2023,
+        "billing": 1,
+        "tconst": "tt27373005",
+        "votes": 310
+      },
+      {
+        "title": "Torn Heaven",
+        "character": "Claudia",
+        "characters": [
+          "Claudia"
+        ],
+        "year": 2023,
+        "billing": 1,
+        "tconst": "tt28809763",
+        "votes": 184
+      },
+      {
+        "title": "Lovely Ladies Dormitory 1",
+        "character": "Alma",
+        "characters": [
+          "Alma"
+        ],
+        "year": 2022,
+        "billing": 4,
+        "tconst": "tt38960647",
+        "votes": 112
+      },
+      {
+        "title": "Lovely Ladies Dormitory 2",
+        "character": "Alma",
+        "characters": [
+          "Alma"
+        ],
+        "year": 2022,
+        "billing": 4,
+        "tconst": "tt39139726",
+        "votes": 111
+      },
+      {
+        "title": "Lovely Ladies Dormitory 3",
+        "character": "Alma",
+        "characters": [
+          "Alma"
+        ],
+        "year": 2022,
+        "billing": 4,
+        "tconst": "tt39139724",
+        "votes": 110
+      }
+    ],
+    "bridge_score": 0.03502,
+    "community": 0,
+    "pagerank": 0.02705032,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 44,
+    "prominence_pct": 41,
+    "prominence_pct_construct": 41,
+    "pagerank_pct": 67,
+    "degree_z": 0.588,
+    "strength_z": -0.464,
+    "prominence_z": -0.487,
+    "pagerank_z": 0.36,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -3.3906,
+    "embed_y": -1.0649
+  },
+  {
+    "id": "nm13934854",
+    "label": "Juan Calma",
+    "label_ascii": "Juan Calma",
+    "type": "person",
+    "gender": "male",
+    "degree": 6,
+    "dominant_genre": "Drama",
+    "concentration": 1.0,
+    "title_count": 9,
+    "prominence": 733.7,
+    "year_min": 2024,
+    "year_max": 2026,
+    "year_peak": 2024,
+    "strength": 3965,
+    "roles": [
+      {
+        "title": "Dirty Pleasures",
+        "character": "Rener",
+        "characters": [
+          "Rener"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt43600147",
+        "votes": 100
+      },
+      {
+        "title": "Crossing Lines",
+        "character": "Rener",
+        "characters": [
+          "Rener"
+        ],
+        "year": 2026,
+        "billing": 1,
+        "tconst": "tt43599824",
+        "votes": 0
+      },
+      {
+        "title": "How to Kiss a Girl",
+        "character": "Van",
+        "characters": [
+          "Van"
+        ],
+        "year": 2025,
+        "billing": 2,
+        "tconst": "tt35403083",
+        "votes": 159
+      },
+      {
+        "title": "Claim Me",
+        "character": "Daniel",
+        "characters": [
+          "Daniel"
+        ],
+        "year": 2026,
+        "billing": 3,
+        "tconst": "tt39283969",
+        "votes": 230
+      },
+      {
+        "title": "Kabitan",
+        "character": "Van",
+        "characters": [
+          "Van"
+        ],
+        "year": 2024,
+        "billing": 3,
+        "tconst": "tt34524464",
+        "votes": 209
+      },
+      {
+        "title": "Kiskisan",
+        "character": "Rener",
+        "characters": [
+          "Rener"
+        ],
+        "year": 2024,
+        "billing": 4,
+        "tconst": "tt33269451",
+        "votes": 376
+      }
+    ],
+    "bridge_score": 0.025236,
+    "community": 4,
+    "pagerank": 0.02391631,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 21,
+    "prominence_pct": 18,
+    "prominence_pct_construct": 18,
+    "pagerank_pct": 33,
+    "degree_z": 0.588,
+    "strength_z": -0.687,
+    "prominence_z": -0.606,
+    "pagerank_z": -0.19,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -1.0334,
+    "embed_y": 2.3461
+  },
+  {
+    "id": "nm14688444",
+    "label": "Arah Alonzo",
+    "label_ascii": "Arah Alonzo",
+    "type": "person",
+    "gender": "female",
+    "degree": 6,
+    "dominant_genre": "Drama",
+    "concentration": 0.917,
+    "title_count": 12,
+    "prominence": 1830.7,
+    "year_min": 2023,
+    "year_max": 2025,
+    "year_peak": 2024,
+    "strength": 10138,
+    "roles": [
+      {
+        "title": "Online Selling",
+        "character": "Melissa",
+        "characters": [
+          "Melissa"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt35544722",
+        "votes": 201
+      },
+      {
+        "title": "Sssshhh! 1",
+        "character": "Eunice",
+        "characters": [
+          "Eunice"
+        ],
+        "year": 2023,
+        "billing": 1,
+        "tconst": "tt38348933",
+        "votes": 159
+      },
+      {
+        "title": "Sssshhh! 2",
+        "character": "Eunice",
+        "characters": [
+          "Eunice"
+        ],
+        "year": 2023,
+        "billing": 1,
+        "tconst": "tt38348928",
+        "votes": 156
+      },
+      {
+        "title": "Araro 1",
+        "character": "Rosalia",
+        "characters": [
+          "Rosalia"
+        ],
+        "year": 2023,
+        "billing": 1,
+        "tconst": "tt39301902",
+        "votes": 0
+      },
+      {
+        "title": "Thrust (Araro 2)",
+        "character": "Rosalia",
+        "characters": [
+          "Rosalia"
+        ],
+        "year": 2023,
+        "billing": 1,
+        "tconst": "tt40590761",
+        "votes": 0
+      },
+      {
+        "title": "Stag",
+        "character": "Arah",
+        "characters": [
+          "Arah"
+        ],
+        "year": 2024,
+        "billing": 2,
+        "tconst": "tt31912843",
+        "votes": 783
+      }
+    ],
+    "bridge_score": 0.02193,
+    "community": 4,
+    "pagerank": 0.03051135,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 62,
+    "prominence_pct": 51,
+    "prominence_pct_construct": 51,
+    "pagerank_pct": 85,
+    "degree_z": 0.588,
+    "strength_z": -0.282,
+    "prominence_z": -0.372,
+    "pagerank_z": 0.968,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": 0.9801,
+    "embed_y": 0.1322
+  },
+  {
+    "id": "nm15043068",
+    "label": "Jenn Rosa",
+    "label_ascii": "Jenn Rosa",
+    "type": "person",
+    "gender": "female",
+    "degree": 6,
+    "dominant_genre": "Drama",
+    "concentration": 1.0,
+    "title_count": 13,
+    "prominence": 1569.0,
+    "year_min": 2023,
+    "year_max": 2025,
+    "year_peak": 2024,
+    "strength": 8617,
+    "roles": [
+      {
+        "title": "Boss Ma'am",
+        "character": "V.A.D Vern Andrea Vixon",
+        "characters": [
+          "V.A.D Vern Andrea Vixon"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt34525380",
+        "votes": 314
+      },
+      {
+        "title": "Nympho",
+        "character": "Meg",
+        "characters": [
+          "Meg"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt38348188",
+        "votes": 264
+      },
+      {
+        "title": "TL",
+        "character": "Brenda",
+        "characters": [
+          "Brenda"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt31797468",
+        "votes": 244
+      },
+      {
+        "title": "Kulong",
+        "character": "Minerva",
+        "characters": [
+          "Minerva"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt32164798",
+        "votes": 188
+      },
+      {
+        "title": "Backrider",
+        "character": "Faith",
+        "characters": [
+          "Faith"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt33045566",
+        "votes": 110
+      },
+      {
+        "title": "Halinghing",
+        "character": "Faith",
+        "characters": [
+          "Faith"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt33475730",
+        "votes": 87
+      }
+    ],
+    "bridge_score": 0.034076,
+    "community": 4,
+    "pagerank": 0.02807798,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 49,
+    "prominence_pct": 46,
+    "prominence_pct_construct": 46,
+    "pagerank_pct": 77,
+    "degree_z": 0.588,
+    "strength_z": -0.382,
+    "prominence_z": -0.428,
+    "pagerank_z": 0.54,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -2.0391,
+    "embed_y": 0.2736
+  },
+  {
+    "id": "nm15129858",
+    "label": "Dyessa Garcia",
+    "label_ascii": "Dyessa Garcia",
+    "type": "person",
+    "gender": "female",
+    "degree": 6,
+    "dominant_genre": "Drama",
+    "concentration": 0.917,
+    "title_count": 12,
+    "prominence": 1730.3,
+    "year_min": 2023,
+    "year_max": 2025,
+    "year_peak": 2024,
+    "strength": 9401,
+    "roles": [
+      {
+        "title": "Dilig",
+        "character": "Katelyn",
+        "characters": [
+          "Katelyn"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt31021984",
+        "votes": 333
+      },
+      {
+        "title": "Init",
+        "character": "Luisa",
+        "characters": [
+          "Luisa"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt32864326",
+        "votes": 303
+      },
+      {
+        "title": "Borrowed Moment",
+        "character": "Ester",
+        "characters": [
+          "Ester"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt35488927",
+        "votes": 239
+      },
+      {
+        "title": "Donselya",
+        "character": "Iris",
+        "characters": [
+          "Iris"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt33511103",
+        "votes": 124
+      },
+      {
+        "title": "Boy Kaldag",
+        "character": "Bettina",
+        "characters": [
+          "Bettina"
+        ],
+        "year": 2024,
+        "billing": 2,
+        "tconst": "tt34877062",
+        "votes": 235
+      },
+      {
+        "title": "Sweet Release",
+        "character": "Xan",
+        "characters": [
+          "Xan"
+        ],
+        "year": 2024,
+        "billing": 2,
+        "tconst": "tt32032481",
+        "votes": 129
+      }
+    ],
+    "bridge_score": 0.025236,
+    "community": 4,
+    "pagerank": 0.0292422,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 59,
+    "prominence_pct": 49,
+    "prominence_pct_construct": 49,
+    "pagerank_pct": 82,
+    "degree_z": 0.588,
+    "strength_z": -0.33,
+    "prominence_z": -0.393,
+    "pagerank_z": 0.745,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -0.0554,
+    "embed_y": -0.2999
+  },
+  {
+    "id": "nm1513957",
+    "label": "Tiago Dores",
+    "label_ascii": "Tiago Dores",
+    "type": "person",
+    "gender": "male",
+    "degree": 6,
+    "dominant_genre": "Comedy",
+    "concentration": 1.0,
+    "title_count": 8,
+    "prominence": 2874.5,
+    "year_min": 2002,
+    "year_max": 2009,
+    "year_peak": 2005,
+    "strength": 15761,
+    "roles": [
+      {
+        "title": "Gato Fedorento: Série Meireles",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2004,
+        "billing": 1,
+        "tconst": "tt0786790",
+        "votes": 775
+      },
+      {
+        "title": "Gato Fedorento: Série Barbosa",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2005,
+        "billing": 1,
+        "tconst": "tt0786789",
+        "votes": 654
+      },
+      {
+        "title": "Gato Fedorento: Diz que é uma Espécie de Magazine",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2006,
+        "billing": 2,
+        "tconst": "tt0891380",
+        "votes": 914
+      },
+      {
+        "title": "Gato Fedorento: Série Lopes da Silva",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2006,
+        "billing": 2,
+        "tconst": "tt0781285",
+        "votes": 833
+      },
+      {
+        "title": "Gato Fedorento: Série Fonseca",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2003,
+        "billing": 3,
+        "tconst": "tt0390707",
+        "votes": 929
+      },
+      {
+        "title": "Gato Fedorento: Zé Carlos",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2008,
+        "billing": 3,
+        "tconst": "tt1450378",
+        "votes": 483
+      }
+    ],
+    "bridge_score": 0.038462,
+    "community": 2,
+    "pagerank": 0.02302264,
+    "eigen_centrality": 0.024264,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 77,
+    "prominence_pct": 72,
+    "prominence_pct_construct": 72,
+    "pagerank_pct": 26,
+    "degree_z": 0.588,
+    "strength_z": 0.087,
+    "prominence_z": -0.149,
+    "pagerank_z": -0.347,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -0.0968,
+    "embed_y": -3.5695
+  },
+  {
+    "id": "nm1515877",
+    "label": "Ricardo de Araújo Pereira",
+    "label_ascii": "Ricardo de Araujo Pereira",
+    "type": "person",
+    "gender": "male",
+    "degree": 6,
+    "dominant_genre": "Comedy",
+    "concentration": 1.0,
+    "title_count": 9,
+    "prominence": 3246.8,
+    "year_min": 2003,
+    "year_max": 2023,
+    "year_peak": 2009,
+    "strength": 17514,
+    "roles": [
+      {
+        "title": "Gato Fedorento: Diz que é uma Espécie de Magazine",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2006,
+        "billing": 1,
+        "tconst": "tt0891380",
+        "votes": 914
+      },
+      {
+        "title": "Gato Fedorento: Série Lopes da Silva",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2006,
+        "billing": 1,
+        "tconst": "tt0781285",
+        "votes": 833
+      },
+      {
+        "title": "Gato Fedorento: Zé Carlos",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2008,
+        "billing": 1,
+        "tconst": "tt1450378",
+        "votes": 483
+      },
+      {
+        "title": "Melhor do que Falecer",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2014,
+        "billing": 1,
+        "tconst": "tt3673234",
+        "votes": 52
+      },
+      {
+        "title": "Gato Fedorento: Série Fonseca",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2003,
+        "billing": 2,
+        "tconst": "tt0390707",
+        "votes": 929
+      },
+      {
+        "title": "Gato Fedorento: Série Meireles",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2004,
+        "billing": 3,
+        "tconst": "tt0786790",
+        "votes": 775
+      }
+    ],
+    "bridge_score": 0.03502,
+    "community": 2,
+    "pagerank": 0.0220734,
+    "eigen_centrality": 0.047352,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 79,
+    "prominence_pct": 77,
+    "prominence_pct_construct": 77,
+    "pagerank_pct": 23,
+    "degree_z": 0.588,
+    "strength_z": 0.202,
+    "prominence_z": -0.069,
+    "pagerank_z": -0.514,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": 1.0349,
+    "embed_y": -3.4881
+  },
+  {
+    "id": "nm1516026",
+    "label": "José Diogo Quintela",
+    "label_ascii": "Jose Diogo Quintela",
+    "type": "person",
+    "gender": "male",
+    "degree": 6,
+    "dominant_genre": "Comedy",
+    "concentration": 1.0,
+    "title_count": 8,
+    "prominence": 2237.8,
+    "year_min": 2003,
+    "year_max": 2019,
+    "year_peak": 2008,
+    "strength": 12010,
+    "roles": [
+      {
+        "title": "Gato Fedorento: Série Fonseca",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2003,
+        "billing": 1,
+        "tconst": "tt0390707",
+        "votes": 929
+      },
+      {
+        "title": "Gente que não sabe estar",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2019,
+        "billing": 2,
+        "tconst": "tt9827134",
+        "votes": 88
+      },
+      {
+        "title": "Gato Fedorento: Diz que é uma Espécie de Magazine",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2006,
+        "billing": 4,
+        "tconst": "tt0891380",
+        "votes": 914
+      },
+      {
+        "title": "Gato Fedorento: Série Lopes da Silva",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2006,
+        "billing": 4,
+        "tconst": "tt0781285",
+        "votes": 833
+      },
+      {
+        "title": "Gato Fedorento: Série Meireles",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2004,
+        "billing": 4,
+        "tconst": "tt0786790",
+        "votes": 775
+      },
+      {
+        "title": "Gato Fedorento: Série Barbosa",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2005,
+        "billing": 4,
+        "tconst": "tt0786789",
+        "votes": 654
+      }
+    ],
+    "bridge_score": 0.034413,
+    "community": 2,
+    "pagerank": 0.02611378,
+    "eigen_centrality": 0.002063,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 69,
+    "prominence_pct": 64,
+    "prominence_pct_construct": 64,
+    "pagerank_pct": 62,
+    "degree_z": 0.588,
+    "strength_z": -0.159,
+    "prominence_z": -0.285,
+    "pagerank_z": 0.196,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": 2.0444,
+    "embed_y": -0.3604
+  },
+  {
+    "id": "nm1520887",
+    "label": "Miguel Góis",
+    "label_ascii": "Miguel Gois",
+    "type": "person",
+    "gender": "male",
+    "degree": 6,
+    "dominant_genre": "Comedy",
+    "concentration": 1.0,
+    "title_count": 9,
+    "prominence": 1985.3,
+    "year_min": 2002,
+    "year_max": 2019,
+    "year_peak": 2007,
+    "strength": 8938,
+    "roles": [
+      {
+        "title": "Gato Fedorento: Série Meireles",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2004,
+        "billing": 2,
+        "tconst": "tt0786790",
+        "votes": 775
+      },
+      {
+        "title": "Gato Fedorento: Série Barbosa",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2005,
+        "billing": 2,
+        "tconst": "tt0786789",
+        "votes": 654
+      },
+      {
+        "title": "Gato Fedorento: Zé Carlos",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2008,
+        "billing": 2,
+        "tconst": "tt1450378",
+        "votes": 483
+      },
+      {
+        "title": "Gato Fedorento: Diz que é uma Espécie de Magazine",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2006,
+        "billing": 3,
+        "tconst": "tt0891380",
+        "votes": 914
+      },
+      {
+        "title": "Gato Fedorento: Série Lopes da Silva",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2006,
+        "billing": 3,
+        "tconst": "tt0781285",
+        "votes": 833
+      },
+      {
+        "title": "Gente que não sabe estar",
+        "character": "Various Roles",
+        "characters": [
+          "Various Roles"
+        ],
+        "year": 2019,
+        "billing": 3,
+        "tconst": "tt9827134",
+        "votes": 88
+      }
+    ],
+    "bridge_score": 0.025236,
+    "community": 5,
+    "pagerank": 0.02503186,
+    "eigen_centrality": 0.000332,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 54,
+    "prominence_pct": 59,
+    "prominence_pct_construct": 59,
+    "pagerank_pct": 46,
+    "degree_z": 0.588,
+    "strength_z": -0.361,
+    "prominence_z": -0.339,
+    "pagerank_z": 0.006,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": 1.6276,
+    "embed_y": 2.465
+  },
+  {
+    "id": "nm15943122",
+    "label": "Angeline Aril",
+    "label_ascii": "Angeline Aril",
+    "type": "person",
+    "gender": "female",
+    "degree": 6,
+    "dominant_genre": "Drama",
+    "concentration": 1.0,
+    "title_count": 8,
+    "prominence": 963.8,
+    "year_min": 2024,
+    "year_max": 2026,
+    "year_peak": 2025,
+    "strength": 4977,
+    "roles": [
+      {
+        "title": "Sa Gabing Mainit",
+        "character": "Nica",
+        "characters": [
+          "Nica"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt37627976",
+        "votes": 196
+      },
+      {
+        "title": "How to Kiss a Girl",
+        "character": "Carmina",
+        "characters": [
+          "Carmina"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt35403083",
+        "votes": 159
+      },
+      {
+        "title": "Cheaters",
+        "character": "April",
+        "characters": [
+          "April"
+        ],
+        "year": 2024,
+        "billing": 2,
+        "tconst": "tt31830638",
+        "votes": 239
+      },
+      {
+        "title": "I Love What You Love",
+        "character": "Carmina",
+        "characters": [
+          "Carmina"
+        ],
+        "year": 2024,
+        "billing": 2,
+        "tconst": "tt32408442",
+        "votes": 143
+      },
+      {
+        "title": "Sex Trip",
+        "character": "Grace",
+        "characters": [
+          "Grace"
+        ],
+        "year": 2026,
+        "billing": 3,
+        "tconst": "tt38080080",
+        "votes": 367
+      },
+      {
+        "title": "Pihit",
+        "character": "Claire",
+        "characters": [
+          "Claire"
+        ],
+        "year": 2025,
+        "billing": 3,
+        "tconst": "tt36816245",
+        "votes": 255
+      }
+    ],
+    "bridge_score": 0.034413,
+    "community": 0,
+    "pagerank": 0.02491058,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 28,
+    "prominence_pct": 26,
+    "prominence_pct_construct": 26,
+    "pagerank_pct": 41,
+    "degree_z": 0.588,
+    "strength_z": -0.621,
+    "prominence_z": -0.557,
+    "pagerank_z": -0.016,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -3.2434,
+    "embed_y": 1.2908
+  },
+  {
+    "id": "nm16033060",
+    "label": "Reina Castillo",
+    "label_ascii": "Reina Castillo",
+    "type": "person",
+    "gender": "female",
+    "degree": 6,
+    "dominant_genre": "Drama",
+    "concentration": 0.9,
+    "title_count": 10,
+    "prominence": 585.5,
+    "year_min": 2024,
+    "year_max": 2025,
+    "year_peak": 2025,
+    "strength": 3383,
+    "roles": [
+      {
+        "title": "Wanted: Girlfriend",
+        "character": "Nica",
+        "characters": [
+          "Nica"
+        ],
+        "year": 2024,
+        "billing": 3,
+        "tconst": "tt32104849",
+        "votes": 280
+      },
+      {
+        "title": "Women's Escort Service",
+        "character": "Rayda",
+        "characters": [
+          "Rayda"
+        ],
+        "year": 2025,
+        "billing": 3,
+        "tconst": "tt39939485",
+        "votes": 157
+      },
+      {
+        "title": "Barurot",
+        "character": "Rayda",
+        "characters": [
+          "Rayda"
+        ],
+        "year": 2025,
+        "billing": 3,
+        "tconst": "tt38080013",
+        "votes": 86
+      },
+      {
+        "title": "Kapag Tumayo Ang Testigo",
+        "character": "Mariposa",
+        "characters": [
+          "Mariposa"
+        ],
+        "year": 2025,
+        "billing": 4,
+        "tconst": "tt39018764",
+        "votes": 197
+      },
+      {
+        "title": "Sabik",
+        "character": "Luth",
+        "characters": [
+          "Luth"
+        ],
+        "year": 2025,
+        "billing": 4,
+        "tconst": "tt36454928",
+        "votes": 106
+      },
+      {
+        "title": "Unli Pop",
+        "character": "Kath",
+        "characters": [
+          "Kath"
+        ],
+        "year": 2025,
+        "billing": 4,
+        "tconst": "tt38080086",
+        "votes": 61
+      }
+    ],
+    "bridge_score": 0.021255,
+    "community": 4,
+    "pagerank": 0.02420144,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 13,
+    "prominence_pct": 13,
+    "prominence_pct_construct": 13,
+    "pagerank_pct": 36,
+    "degree_z": 0.588,
+    "strength_z": -0.725,
+    "prominence_z": -0.638,
+    "pagerank_z": -0.14,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -1.2821,
+    "embed_y": 1.3678
+  },
+  {
+    "id": "nm16044348",
+    "label": "Athena Red",
+    "label_ascii": "Athena Red",
+    "type": "person",
+    "gender": "female",
+    "degree": 6,
+    "dominant_genre": "Drama",
+    "concentration": 0.929,
+    "title_count": 14,
+    "prominence": 1268.0,
+    "year_min": 2024,
+    "year_max": 2026,
+    "year_peak": 2025,
+    "strength": 6980,
+    "roles": [
+      {
+        "title": "Pansamantala",
+        "character": "Jessa",
+        "characters": [
+          "Jessa"
+        ],
+        "year": 2026,
+        "billing": 1,
+        "tconst": "tt39376898",
+        "votes": 286
+      },
+      {
+        "title": "Kabitan",
+        "character": "Alice",
+        "characters": [
+          "Alice"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt34524464",
+        "votes": 209
+      },
+      {
+        "title": "Secret Sessions",
+        "character": "Cara",
+        "characters": [
+          "Cara"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt34877055",
+        "votes": 118
+      },
+      {
+        "title": "Habal",
+        "character": "Erika",
+        "characters": [
+          "Erika"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt36303713",
+        "votes": 108
+      },
+      {
+        "title": "Undergrads",
+        "character": "Sofia",
+        "characters": [
+          "Sofia"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt33396473",
+        "votes": 102
+      },
+      {
+        "title": "Vape Shop",
+        "character": "Ruby",
+        "characters": [
+          "Ruby"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt37145477",
+        "votes": 77
+      }
+    ],
+    "bridge_score": 0.038462,
+    "community": 0,
+    "pagerank": 0.02732734,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 41,
+    "prominence_pct": 38,
+    "prominence_pct_construct": 38,
+    "pagerank_pct": 72,
+    "degree_z": 0.588,
+    "strength_z": -0.489,
+    "prominence_z": -0.492,
+    "pagerank_z": 0.409,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -2.1814,
+    "embed_y": -0.9439
+  },
+  {
+    "id": "nm1632883",
+    "label": "Tali Sharon",
+    "label_ascii": "Tali Sharon",
+    "type": "person",
+    "gender": "female",
+    "degree": 6,
+    "dominant_genre": "Drama",
+    "concentration": 0.909,
+    "title_count": 11,
+    "prominence": 1002.3,
+    "year_min": 2005,
+    "year_max": 2024,
+    "year_peak": 2013,
+    "strength": 5457,
+    "roles": [
+      {
+        "title": "Out of Sight",
+        "character": "Yaara",
+        "characters": [
+          "Yaara"
+        ],
+        "year": 2006,
+        "billing": 1,
+        "tconst": "tt0759604",
+        "votes": 230
+      },
+      {
+        "title": "Highway 65",
+        "character": "Daphna",
+        "characters": [
+          "Daphna"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt7176064",
+        "votes": 216
+      },
+      {
+        "title": "She Is Coming Home",
+        "character": "Michal",
+        "characters": [
+          "Michal"
+        ],
+        "year": 2013,
+        "billing": 1,
+        "tconst": "tt2965510",
+        "votes": 73
+      },
+      {
+        "title": "Sabbath Entertainment",
+        "character": "Rachel",
+        "characters": [
+          "Rachel"
+        ],
+        "year": 2003,
+        "billing": 1,
+        "tconst": "tt0426198",
+        "votes": 49
+      },
+      {
+        "title": "Almost",
+        "character": "Naomi",
+        "characters": [
+          "Naomi"
+        ],
+        "year": 2005,
+        "billing": 1,
+        "tconst": "tt11278992",
+        "votes": 0
+      },
+      {
+        "title": "Houses",
+        "character": "Anna",
+        "characters": [
+          "Anna"
+        ],
+        "year": 2025,
+        "billing": 2,
+        "tconst": "tt27750778",
+        "votes": 45
+      }
+    ],
+    "bridge_score": 0.03502,
+    "community": 0,
+    "pagerank": 0.02523529,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 31,
+    "prominence_pct": 31,
+    "prominence_pct_construct": 31,
+    "pagerank_pct": 49,
+    "degree_z": 0.588,
+    "strength_z": -0.589,
+    "prominence_z": -0.549,
+    "pagerank_z": 0.041,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -2.4678,
+    "embed_y": 1.1847
+  },
+  {
+    "id": "nm17002888",
+    "label": "Ashley Lopez",
+    "label_ascii": "Ashley Lopez",
+    "type": "person",
+    "gender": "female",
+    "degree": 6,
+    "dominant_genre": "Drama",
+    "concentration": 0.909,
+    "title_count": 11,
+    "prominence": 1920.0,
+    "year_min": 2025,
+    "year_max": 2026,
+    "year_peak": 2025,
+    "strength": 10889,
+    "roles": [
+      {
+        "title": "Bayo",
+        "character": "Claire",
+        "characters": [
+          "Claire"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt36920832",
+        "votes": 302
+      },
+      {
+        "title": "Maninilip",
+        "character": "Martha",
+        "characters": [
+          "Martha"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt36920947",
+        "votes": 250
+      },
+      {
+        "title": "Sagaran",
+        "character": "Mika",
+        "characters": [
+          "Mika"
+        ],
+        "year": 2026,
+        "billing": 1,
+        "tconst": "tt39376926",
+        "votes": 198
+      },
+      {
+        "title": "Sticky",
+        "character": "Mindy",
+        "characters": [
+          "Mindy"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt35682199",
+        "votes": 156
+      },
+      {
+        "title": "Tayuan 2",
+        "character": "Rhea",
+        "characters": [
+          "Rhea"
+        ],
+        "year": 2026,
+        "billing": 1,
+        "tconst": "tt40541183",
+        "votes": 77
+      },
+      {
+        "title": "Pain",
+        "character": "Maita",
+        "characters": [
+          "Maita"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt37790907",
+        "votes": 65
+      }
+    ],
+    "bridge_score": 0.021255,
+    "community": 4,
+    "pagerank": 0.03211357,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 67,
+    "prominence_pct": 54,
+    "prominence_pct_construct": 54,
+    "pagerank_pct": 90,
+    "degree_z": 0.588,
+    "strength_z": -0.233,
+    "prominence_z": -0.353,
+    "pagerank_z": 1.249,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": 1.724,
+    "embed_y": 1.4372
+  },
+  {
+    "id": "nm1750778",
+    "label": "Emrah",
+    "label_ascii": "Emrah",
+    "type": "person",
+    "gender": "male",
+    "degree": 6,
+    "dominant_genre": "Drama",
+    "concentration": 0.917,
+    "title_count": 12,
+    "prominence": 1349.2,
+    "year_min": 1984,
+    "year_max": 2004,
+    "year_peak": 1990,
+    "strength": 7819,
+    "roles": [
+      {
+        "title": "Kinali Kar",
+        "character": "Ali",
+        "characters": [
+          "Ali"
+        ],
+        "year": 2002,
+        "billing": 1,
+        "tconst": "tt0426735",
+        "votes": 381
+      },
+      {
+        "title": "Boynu Bükükler",
+        "character": "Emrah",
+        "characters": [
+          "Emrah"
+        ],
+        "year": 1985,
+        "billing": 1,
+        "tconst": "tt4288948",
+        "votes": 111
+      },
+      {
+        "title": "Zavallilar",
+        "character": "Emrah",
+        "characters": [
+          "Emrah"
+        ],
+        "year": 1984,
+        "billing": 1,
+        "tconst": "tt5546742",
+        "votes": 98
+      },
+      {
+        "title": "Es Deli Rüzgar",
+        "character": "Emrah",
+        "characters": [
+          "Emrah"
+        ],
+        "year": 1988,
+        "billing": 1,
+        "tconst": "tt0499327",
+        "votes": 93
+      },
+      {
+        "title": "Aci",
+        "character": "Emrah",
+        "characters": [
+          "Emrah"
+        ],
+        "year": 1988,
+        "billing": 1,
+        "tconst": "tt0429508",
+        "votes": 82
+      },
+      {
+        "title": "Vurmayin",
+        "character": "Emrah",
+        "characters": [
+          "Emrah"
+        ],
+        "year": 1987,
+        "billing": 1,
+        "tconst": "tt5659308",
+        "votes": 62
+      }
+    ],
+    "bridge_score": 0.034413,
+    "community": 4,
+    "pagerank": 0.02709648,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 46,
+    "prominence_pct": 44,
+    "prominence_pct_construct": 44,
+    "pagerank_pct": 69,
+    "degree_z": 0.588,
+    "strength_z": -0.434,
+    "prominence_z": -0.475,
+    "pagerank_z": 0.368,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -2.453,
+    "embed_y": -1.708
+  },
+  {
+    "id": "nm2325955",
+    "label": "Rodrigo Sant'anna",
+    "label_ascii": "Rodrigo Sant'anna",
+    "type": "person",
+    "gender": "male",
+    "degree": 6,
+    "dominant_genre": "Comedy",
+    "concentration": 1.0,
+    "title_count": 13,
+    "prominence": 2326.4,
+    "year_min": 1999,
+    "year_max": 2024,
+    "year_peak": 2014,
+    "strength": 13305,
+    "roles": [
+      {
+        "title": "Um Suburbano Sortudo",
+        "character": "Denilson",
+        "characters": [
+          "Denilson"
+        ],
+        "year": 2016,
+        "billing": 1,
+        "tconst": "tt5529392",
+        "votes": 430
+      },
+      {
+        "title": "Graceful Graça",
+        "character": "Graça",
+        "characters": [
+          "Graça"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt31863351",
+        "votes": 134
+      },
+      {
+        "title": "Tô de Graça",
+        "character": "Graça",
+        "characters": [
+          "Graça"
+        ],
+        "year": 2017,
+        "billing": 1,
+        "tconst": "tt7742604",
+        "votes": 114
+      },
+      {
+        "title": "O Casamento de Gorete",
+        "character": "Gorete",
+        "characters": [
+          "Gorete"
+        ],
+        "year": 2014,
+        "billing": 1,
+        "tconst": "tt4340222",
+        "votes": 87
+      },
+      {
+        "title": "End of the Line",
+        "character": "Ivan",
+        "characters": [
+          "Ivan"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt30476509",
+        "votes": 74
+      },
+      {
+        "title": "Os Suburbanos",
+        "character": "Jefinho do Pagode (Jeferson dos Santos)",
+        "characters": [
+          "Jefinho do Pagode (Jeferson dos Santos)"
+        ],
+        "year": 2015,
+        "billing": 1,
+        "tconst": "tt5963298",
+        "votes": 14
+      }
+    ],
+    "bridge_score": 0.03502,
+    "community": 2,
+    "pagerank": 0.02572825,
+    "eigen_centrality": 0.004474,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 72,
+    "prominence_pct": 67,
+    "prominence_pct_construct": 67,
+    "pagerank_pct": 51,
+    "degree_z": 0.588,
+    "strength_z": -0.074,
+    "prominence_z": -0.266,
+    "pagerank_z": 0.128,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": 0.5915,
+    "embed_y": -1.5525
+  },
+  {
+    "id": "nm2660337",
+    "label": "Salvatore Misticone",
+    "label_ascii": "Salvatore Misticone",
+    "type": "person",
+    "gender": "male",
+    "degree": 6,
+    "dominant_genre": "Comedy",
+    "concentration": 1.0,
+    "title_count": 9,
+    "prominence": 2576.8,
+    "year_min": 2010,
+    "year_max": 2021,
+    "year_peak": 2016,
+    "strength": 14396,
+    "roles": [
+      {
+        "title": "Fausto & Furio",
+        "character": "Tonino",
+        "characters": [
+          "Tonino"
+        ],
+        "year": 2016,
+        "billing": 3,
+        "tconst": "tt5749662",
+        "votes": 98
+      },
+      {
+        "title": "L'Elisir di Leonardo da Vinci e la Banda del Buffardello",
+        "character": "Max Mosley",
+        "characters": [
+          "Max Mosley"
+        ],
+        "year": 2024,
+        "billing": 4,
+        "tconst": "tt29861225",
+        "votes": 5
+      },
+      {
+        "title": "Il circo delle meraviglie",
+        "character": "Sandokan",
+        "characters": [
+          "Sandokan"
+        ],
+        "year": 2024,
+        "billing": 4,
+        "tconst": "tt29861602",
+        "votes": 0
+      },
+      {
+        "title": "La prigione oscura",
+        "character": "Tassista",
+        "characters": [
+          "Tassista"
+        ],
+        "year": 2007,
+        "billing": 4,
+        "tconst": "tt5567868",
+        "votes": 0
+      },
+      {
+        "title": "Santa Claus 'Nzallanu' 2.0",
+        "character": "Giacomo",
+        "characters": [
+          "Giacomo"
+        ],
+        "year": 2025,
+        "billing": 4,
+        "tconst": "tt38579516",
+        "votes": 0
+      },
+      {
+        "title": "Welcome at Esposito's",
+        "character": "Nonno Gaetano",
+        "characters": [
+          "Nonno Gaetano"
+        ],
+        "year": 2021,
+        "billing": 5,
+        "tconst": "tt15243614",
+        "votes": 215
+      }
+    ],
+    "bridge_score": 0.038462,
+    "community": 5,
+    "pagerank": 0.02425704,
+    "eigen_centrality": 0.011345,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 74,
+    "prominence_pct": 69,
+    "prominence_pct_construct": 69,
+    "pagerank_pct": 38,
+    "degree_z": 0.588,
+    "strength_z": -0.002,
+    "prominence_z": -0.213,
+    "pagerank_z": -0.13,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": 1.9997,
+    "embed_y": -1.8265
+  },
+  {
+    "id": "nm3532880",
+    "label": "Burcu Gönder",
+    "label_ascii": "Burcu Gonder",
+    "type": "person",
+    "gender": "female",
+    "degree": 6,
+    "dominant_genre": "Comedy",
+    "concentration": 1.0,
+    "title_count": 9,
+    "prominence": 5787.1,
+    "year_min": 2008,
+    "year_max": 2024,
+    "year_peak": 2015,
+    "strength": 26057,
+    "roles": [
+      {
+        "title": "Eski Köye Yeni Adet",
+        "character": "Sadiye",
+        "characters": [
+          "Sadiye"
+        ],
+        "year": 2018,
+        "billing": 3,
+        "tconst": "tt8720458",
+        "votes": 585
+      },
+      {
+        "title": "Hükümet Kadin",
+        "character": "Güle",
+        "characters": [
+          "Güle"
+        ],
+        "year": 2013,
+        "billing": 6,
+        "tconst": "tt2645092",
+        "votes": 10537
+      },
+      {
+        "title": "Hükümet Kadin 2",
+        "character": "Gule",
+        "characters": [
+          "Gule"
+        ],
+        "year": 2013,
+        "billing": 6,
+        "tconst": "tt3283718",
+        "votes": 5935
+      },
+      {
+        "title": "Asagi Yukari Yemislililer",
+        "character": "Handan",
+        "characters": [
+          "Handan"
+        ],
+        "year": 2011,
+        "billing": 6,
+        "tconst": "tt30833079",
+        "votes": 19
+      },
+      {
+        "title": "Anali Ogullu",
+        "character": "Gözde",
+        "characters": [
+          "Gözde"
+        ],
+        "year": 2014,
+        "billing": 9,
+        "tconst": "tt3672132",
+        "votes": 98
+      },
+      {
+        "title": "Anasinin Oglu",
+        "character": "Gözde",
+        "characters": [
+          "Gözde"
+        ],
+        "year": 2014,
+        "billing": 10,
+        "tconst": "tt32272122",
+        "votes": 0
+      }
+    ],
+    "bridge_score": 0.034413,
+    "community": 3,
+    "pagerank": 0.02599182,
+    "eigen_centrality": 0.118767,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 82,
+    "prominence_pct": 79,
+    "prominence_pct_construct": 79,
+    "pagerank_pct": 59,
+    "degree_z": 0.588,
+    "strength_z": 0.763,
+    "prominence_z": 0.473,
+    "pagerank_z": 0.174,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -0.6843,
+    "embed_y": -1.2871
+  },
+  {
+    "id": "nm5961385",
+    "label": "Melha Bedia",
+    "label_ascii": "Melha Bedia",
+    "type": "person",
+    "gender": "female",
+    "degree": 6,
+    "dominant_genre": "Comedy",
+    "concentration": 0.909,
+    "title_count": 11,
+    "prominence": 2105.8,
+    "year_min": 2012,
+    "year_max": 2025,
+    "year_peak": 2019,
+    "strength": 10474,
+    "roles": [
+      {
+        "title": "Ballsy Girl",
+        "character": "Nour",
+        "characters": [
+          "Nour"
+        ],
+        "year": 2020,
+        "billing": 1,
+        "tconst": "tt9372172",
+        "votes": 1024
+      },
+      {
+        "title": "Two Much for the Job",
+        "character": "Sofia",
+        "characters": [
+          "Sofia"
+        ],
+        "year": 2022,
+        "billing": 1,
+        "tconst": "tt17049058",
+        "votes": 283
+      },
+      {
+        "title": "Miskina, Poor Thing",
+        "character": "Fara",
+        "characters": [
+          "Fara"
+        ],
+        "year": 2022,
+        "billing": 1,
+        "tconst": "tt21941802",
+        "votes": 249
+      },
+      {
+        "title": "Le fumoir",
+        "character": "Farah",
+        "characters": [
+          "Farah"
+        ],
+        "year": 2020,
+        "billing": 1,
+        "tconst": "tt13670716",
+        "votes": 6
+      },
+      {
+        "title": "Rentrons",
+        "character": "Nouria",
+        "characters": [
+          "Nouria"
+        ],
+        "year": 2023,
+        "billing": 1,
+        "tconst": "tt36257869",
+        "votes": 0
+      },
+      {
+        "title": "Deviens génial",
+        "character": "Iris",
+        "characters": [
+          "Iris"
+        ],
+        "year": 2026,
+        "billing": 2,
+        "tconst": "tt37511048",
+        "votes": 40
+      }
+    ],
+    "bridge_score": 0.034076,
+    "community": 5,
+    "pagerank": 0.02579932,
+    "eigen_centrality": 0.00086,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 64,
+    "prominence_pct": 62,
+    "prominence_pct_construct": 62,
+    "pagerank_pct": 54,
+    "degree_z": 0.588,
+    "strength_z": -0.26,
+    "prominence_z": -0.313,
+    "pagerank_z": 0.14,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": 0.8796,
+    "embed_y": 1.7393
+  },
+  {
+    "id": "nm8801103",
+    "label": "Miah Green",
+    "label_ascii": "Miah Green",
+    "type": "person",
+    "gender": "female",
+    "degree": 6,
+    "dominant_genre": "Drama",
+    "concentration": 0.909,
+    "title_count": 11,
+    "prominence": 755.4,
+    "year_min": 2025,
+    "year_max": 2026,
+    "year_peak": 2025,
+    "strength": 4183,
+    "roles": [
+      {
+        "title": "How to Break a DILF",
+        "character": "Sophie Holland",
+        "characters": [
+          "Sophie Holland"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt38883928",
+        "votes": 156
+      },
+      {
+        "title": "Summer Honeymoon with My Secret Billionaire",
+        "character": "Ellie Green",
+        "characters": [
+          "Ellie Green"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt37727135",
+        "votes": 134
+      },
+      {
+        "title": "Wrong!",
+        "character": "Sophie",
+        "characters": [
+          "Sophie"
+        ],
+        "year": 2026,
+        "billing": 1,
+        "tconst": "tt39381346",
+        "votes": 84
+      },
+      {
+        "title": "Moving on from My Bodyguard",
+        "character": "Kelly Stewart",
+        "characters": [
+          "Kelly Stewart"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt38677138",
+        "votes": 62
+      },
+      {
+        "title": "Catch Me If You Can",
+        "character": "Nora Ellis",
+        "characters": [
+          "Nora Ellis"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt37269296",
+        "votes": 56
+      },
+      {
+        "title": "Swan Queen Dancing Back into His Arms",
+        "character": "Talia Monroe Shaw",
+        "characters": [
+          "Talia Monroe Shaw"
+        ],
+        "year": 2026,
+        "billing": 1,
+        "tconst": "tt39400869",
+        "votes": 44
+      }
+    ],
+    "bridge_score": 0.034076,
+    "community": 4,
+    "pagerank": 0.02333349,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.6,
+    "kcore": 3,
+    "degree_pct": 31,
+    "strength_pct": 23,
+    "prominence_pct": 21,
+    "prominence_pct_construct": 21,
+    "pagerank_pct": 28,
+    "degree_z": 0.588,
+    "strength_z": -0.673,
+    "prominence_z": -0.602,
+    "pagerank_z": -0.293,
+    "hub_vs_loyal": 6.0,
+    "collaborator_reach": 6,
+    "embed_x": -1.8185,
+    "embed_y": 2.0829
+  },
+  {
+    "id": "nm0014953",
+    "label": "Carrie Aizley",
+    "label_ascii": "Carrie Aizley",
+    "type": "person",
+    "gender": "female",
+    "degree": 5,
+    "dominant_genre": "Comedy",
+    "concentration": 1.0,
+    "title_count": 8,
+    "prominence": 12868.8,
+    "year_min": 1998,
+    "year_max": 2020,
+    "year_peak": 2007,
+    "strength": 53101,
+    "roles": [
+      {
+        "title": "The Thin Pink Line",
+        "character": "Jocelyn Silverberg",
+        "characters": [
+          "Jocelyn Silverberg"
+        ],
+        "year": 1998,
+        "billing": 1,
+        "tconst": "tt0171825",
+        "votes": 421
+      },
+      {
+        "title": "Transparent: The Lost Sessions",
+        "character": "Laura Milton-Kaufberger",
+        "characters": [
+          "Laura Milton-Kaufberger"
+        ],
+        "year": 2017,
+        "billing": 1,
+        "tconst": "tt7784170",
+        "votes": 39
+      },
+      {
+        "title": "This Actually Happened",
+        "character": "Darlene",
+        "characters": [
+          "Darlene"
+        ],
+        "year": 2022,
+        "billing": 1,
+        "tconst": "tt18278732",
+        "votes": 11
+      },
+      {
+        "title": "Campus Ladies",
+        "character": "Joan",
+        "characters": [
+          "Joan"
+        ],
+        "year": 2006,
+        "billing": 2,
+        "tconst": "tt0487812",
+        "votes": 434
+      },
+      {
+        "title": "The Miller Reese Experience",
+        "character": "Francine Shuster",
+        "characters": [
+          "Francine Shuster"
+        ],
+        "year": 2017,
+        "billing": 2,
+        "tconst": "tt7607796",
+        "votes": 0
+      },
+      {
+        "title": "Family Tree",
+        "character": "Kitty Chadwick",
+        "characters": [
+          "Kitty Chadwick"
+        ],
+        "year": 2013,
+        "billing": 5,
+        "tconst": "tt2340036",
+        "votes": 3750
+      }
+    ],
+    "bridge_score": 0.005196,
+    "community": 1,
+    "pagerank": 0.03470009,
+    "eigen_centrality": 0.455991,
+    "clustering_local": 0.7,
+    "kcore": 3,
+    "degree_pct": 21,
+    "strength_pct": 100,
+    "prominence_pct": 95,
+    "prominence_pct_construct": 95,
+    "pagerank_pct": 95,
+    "degree_z": -0.392,
+    "strength_z": 2.538,
+    "prominence_z": 1.986,
+    "pagerank_z": 1.703,
+    "hub_vs_loyal": 5.0,
+    "collaborator_reach": 5,
+    "embed_x": 1.2315,
+    "embed_y": -1.664
+  },
+  {
+    "id": "nm0272204",
+    "label": "Věra Ferbasová",
+    "label_ascii": "Vera Ferbasova",
+    "type": "person",
+    "gender": "female",
+    "degree": 5,
+    "dominant_genre": "Comedy",
+    "concentration": 1.0,
+    "title_count": 9,
+    "prominence": 809.0,
+    "year_min": 1936,
+    "year_max": 1974,
+    "year_peak": 1946,
+    "strength": 3499,
+    "roles": [
+      {
+        "title": "Falesná kocicka",
+        "character": "Míla Janotová",
+        "characters": [
+          "Míla Janotová"
+        ],
+        "year": 1937,
+        "billing": 1,
+        "tconst": "tt0167154",
+        "votes": 69
+      },
+      {
+        "title": "Andula vyhrála",
+        "character": "Andula Mrácková",
+        "characters": [
+          "Andula Mrácková"
+        ],
+        "year": 1937,
+        "billing": 1,
+        "tconst": "tt0166479",
+        "votes": 67
+      },
+      {
+        "title": "Ulicnice",
+        "character": "Vera Janáková alias Kvetová",
+        "characters": [
+          "Vera Janáková alias Kvetová"
+        ],
+        "year": 1936,
+        "billing": 1,
+        "tconst": "tt0167469",
+        "votes": 42
+      },
+      {
+        "title": "Rozkosný príbeh",
+        "character": "Helena Veselá",
+        "characters": [
+          "Helena Veselá"
+        ],
+        "year": 1937,
+        "billing": 1,
+        "tconst": "tt0152237",
+        "votes": 30
+      },
+      {
+        "title": "Vandiny trampoty",
+        "character": "Vanda Karhanova",
+        "characters": [
+          "Vanda Karhanova"
+        ],
+        "year": 1938,
+        "billing": 1,
+        "tconst": "tt0153494",
+        "votes": 21
+      },
+      {
+        "title": "Devcátko z venkova",
+        "character": "Zdenka Stepánová - orphan",
+        "characters": [
+          "Zdenka Stepánová - orphan"
+        ],
+        "year": 1937,
+        "billing": 1,
+        "tconst": "tt0247986",
+        "votes": 17
+      }
+    ],
+    "bridge_score": 0.005196,
+    "community": 5,
+    "pagerank": 0.01646466,
+    "eigen_centrality": 8e-06,
+    "clustering_local": 0.7,
+    "kcore": 3,
+    "degree_pct": 21,
+    "strength_pct": 15,
+    "prominence_pct": 23,
+    "prominence_pct_construct": 23,
+    "pagerank_pct": 8,
+    "degree_z": -0.392,
+    "strength_z": -0.718,
+    "prominence_z": -0.59,
+    "pagerank_z": -1.498,
+    "hub_vs_loyal": 5.0,
+    "collaborator_reach": 5,
+    "embed_x": 2.9322,
+    "embed_y": 3.2188
+  },
+  {
+    "id": "nm13872754",
+    "label": "Calvin Reyes",
+    "label_ascii": "Calvin Reyes",
+    "type": "person",
+    "gender": "male",
+    "degree": 5,
+    "dominant_genre": "Drama",
+    "concentration": 1.0,
+    "title_count": 9,
+    "prominence": 581.8,
+    "year_min": 2022,
+    "year_max": 2024,
+    "year_peak": 2023,
+    "strength": 2790,
+    "roles": [
+      {
+        "title": "F-Buddies",
+        "character": "Aiden",
+        "characters": [
+          "Aiden"
+        ],
+        "year": 2024,
+        "billing": 2,
+        "tconst": "tt33132266",
+        "votes": 234
+      },
+      {
+        "title": "Dayo",
+        "character": "Eddy",
+        "characters": [
+          "Eddy"
+        ],
+        "year": 2024,
+        "billing": 2,
+        "tconst": "tt32033132",
+        "votes": 93
+      },
+      {
+        "title": "Baligtaran",
+        "character": "Ace",
+        "characters": [
+          "Ace"
+        ],
+        "year": 2024,
+        "billing": 3,
+        "tconst": "tt33511073",
+        "votes": 318
+      },
+      {
+        "title": "Stepmom's Affair",
+        "character": "Xavier",
+        "characters": [
+          "Xavier"
+        ],
+        "year": 2025,
+        "billing": 3,
+        "tconst": "tt40497901",
+        "votes": 0
+      },
+      {
+        "title": "Tempting",
+        "character": "Jason",
+        "characters": [
+          "Jason"
+        ],
+        "year": 2024,
+        "billing": 4,
+        "tconst": "tt31492137",
+        "votes": 300
+      },
+      {
+        "title": "Paupahan",
+        "character": "Paolo",
+        "characters": [
+          "Paolo"
+        ],
+        "year": 2023,
+        "billing": 5,
+        "tconst": "tt27373005",
+        "votes": 310
+      }
+    ],
+    "bridge_score": 0.005196,
+    "community": 4,
+    "pagerank": 0.02117024,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.7,
+    "kcore": 3,
+    "degree_pct": 21,
+    "strength_pct": 10,
+    "prominence_pct": 10,
+    "prominence_pct_construct": 10,
+    "pagerank_pct": 21,
+    "degree_z": -0.392,
+    "strength_z": -0.764,
+    "prominence_z": -0.639,
+    "pagerank_z": -0.672,
+    "hub_vs_loyal": 5.0,
+    "collaborator_reach": 5,
+    "embed_x": -2.5636,
+    "embed_y": 2.335
+  },
+  {
+    "id": "nm15415030",
+    "label": "Sahara Bernales",
+    "label_ascii": "Sahara Bernales",
+    "type": "person",
+    "gender": "female",
+    "degree": 5,
+    "dominant_genre": "Drama",
+    "concentration": 0.933,
+    "title_count": 15,
+    "prominence": 1952.5,
+    "year_min": 2023,
+    "year_max": 2026,
+    "year_peak": 2024,
+    "strength": 9384,
+    "roles": [
+      {
+        "title": "Katas",
+        "character": "Carmina",
+        "characters": [
+          "Carmina"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt31031372",
+        "votes": 337
+      },
+      {
+        "title": "Tampipi",
+        "character": "Pia",
+        "characters": [
+          "Pia"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt36535080",
+        "votes": 244
+      },
+      {
+        "title": "Maryang Palad",
+        "character": "Marya",
+        "characters": [
+          "Marya"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt34150380",
+        "votes": 241
+      },
+      {
+        "title": "Himas",
+        "character": "Dana",
+        "characters": [
+          "Dana"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt32408414",
+        "votes": 156
+      },
+      {
+        "title": "The Best Laid Plans",
+        "character": "Lorraine",
+        "characters": [
+          "Lorraine"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt35403108",
+        "votes": 131
+      },
+      {
+        "title": "Maliko",
+        "character": "Leng",
+        "characters": [
+          "Leng"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt32523268",
+        "votes": 104
+      }
+    ],
+    "bridge_score": 0.005196,
+    "community": 4,
+    "pagerank": 0.02789491,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.7,
+    "kcore": 3,
+    "degree_pct": 21,
+    "strength_pct": 56,
+    "prominence_pct": 56,
+    "prominence_pct_construct": 56,
+    "pagerank_pct": 74,
+    "degree_z": -0.392,
+    "strength_z": -0.331,
+    "prominence_z": -0.346,
+    "pagerank_z": 0.508,
+    "hub_vs_loyal": 5.0,
+    "collaborator_reach": 5,
+    "embed_x": 1.012,
+    "embed_y": 0.9323
+  },
+  {
+    "id": "nm0520876",
+    "label": "Patrizia Loreti",
+    "label_ascii": "Patrizia Loreti",
+    "type": "person",
+    "gender": "female",
+    "degree": 4,
+    "dominant_genre": "Comedy",
+    "concentration": 1.0,
+    "title_count": 9,
+    "prominence": 568.3,
+    "year_min": 1988,
+    "year_max": 2011,
+    "year_peak": 1998,
+    "strength": 2208,
+    "roles": [
+      {
+        "title": "Blackout",
+        "character": "Mary",
+        "characters": [
+          "Mary"
+        ],
+        "year": null,
+        "billing": 1,
+        "tconst": "tt13529982",
+        "votes": 0
+      },
+      {
+        "title": "Sarti Antonio brigadiere",
+        "character": "Nipote guardiano",
+        "characters": [
+          "Nipote guardiano"
+        ],
+        "year": 1978,
+        "billing": 1,
+        "tconst": "tt0984674",
+        "votes": 0
+      },
+      {
+        "title": "Cronaca di un rapimento",
+        "character": "Graziana Massimucci",
+        "characters": [
+          "Graziana Massimucci"
+        ],
+        "year": 2008,
+        "billing": 2,
+        "tconst": "tt1347319",
+        "votes": 8
+      },
+      {
+        "title": "Te la ricordi Francesca Lupo?",
+        "character": "Rossella",
+        "characters": [
+          "Rossella"
+        ],
+        "year": 2010,
+        "billing": 2,
+        "tconst": "tt1805427",
+        "votes": 0
+      },
+      {
+        "title": "The Fish in Love",
+        "character": "Sig.na Benincasa",
+        "characters": [
+          "Sig.na Benincasa"
+        ],
+        "year": 1999,
+        "billing": 4,
+        "tconst": "tt0210225",
+        "votes": 1072
+      },
+      {
+        "title": "Casa mia, casa mia...",
+        "character": "Elvira Cappellini",
+        "characters": [
+          "Elvira Cappellini"
+        ],
+        "year": 1988,
+        "billing": 4,
+        "tconst": "tt0094842",
+        "votes": 323
+      }
+    ],
+    "bridge_score": 0.001012,
+    "community": 2,
+    "pagerank": 0.01251608,
+    "eigen_centrality": 2e-06,
+    "clustering_local": 0.8333,
+    "kcore": 3,
+    "degree_pct": 10,
+    "strength_pct": 8,
+    "prominence_pct": 8,
+    "prominence_pct_construct": 8,
+    "pagerank_pct": 3,
+    "degree_z": -1.373,
+    "strength_z": -0.802,
+    "prominence_z": -0.642,
+    "pagerank_z": -2.192,
+    "hub_vs_loyal": 4.0,
+    "collaborator_reach": 4,
+    "embed_x": 3.4002,
+    "embed_y": 1.1825
+  },
+  {
+    "id": "nm0776856",
+    "label": "Leon Schuster",
+    "label_ascii": "Leon Schuster",
+    "type": "person",
+    "gender": "male",
+    "degree": 4,
+    "dominant_genre": "Comedy",
+    "concentration": 0.9,
+    "title_count": 20,
+    "prominence": 15832.1,
+    "year_min": 1983,
+    "year_max": 2022,
+    "year_peak": 2001,
+    "strength": 47045,
+    "roles": [
+      {
+        "title": "Mr. Bones",
+        "character": "Mr. Bones",
+        "characters": [
+          "Mr. Bones"
+        ],
+        "year": 2001,
+        "billing": 1,
+        "tconst": "tt0302819",
+        "votes": 3116
+      },
+      {
+        "title": "Yankee Zulu",
+        "character": "Rhino Labuschagne",
+        "characters": [
+          "Rhino Labuschagne"
+        ],
+        "year": 1993,
+        "billing": 1,
+        "tconst": "tt0111787",
+        "votes": 2151
+      },
+      {
+        "title": "Mr. Bones 2: Back from the Past",
+        "character": "Mr. Bones",
+        "characters": [
+          "Mr. Bones"
+        ],
+        "year": 2008,
+        "billing": 1,
+        "tconst": "tt0995857",
+        "votes": 1007
+      },
+      {
+        "title": "Mad Buddies",
+        "character": "Boetie de Wett",
+        "characters": [
+          "Boetie de Wett"
+        ],
+        "year": 2012,
+        "billing": 1,
+        "tconst": "tt2334731",
+        "votes": 506
+      },
+      {
+        "title": "Mama Jack",
+        "character": "Jack Theron",
+        "characters": [
+          "Jack Theron"
+        ],
+        "year": 2005,
+        "billing": 1,
+        "tconst": "tt0471251",
+        "votes": 496
+      },
+      {
+        "title": "Kwagga Strikes Back",
+        "character": "Kwagga Robbertse",
+        "characters": [
+          "Kwagga Robbertse"
+        ],
+        "year": 1990,
+        "billing": 1,
+        "tconst": "tt0099961",
+        "votes": 400
+      }
+    ],
+    "bridge_score": 0.001012,
+    "community": 3,
+    "pagerank": 0.03054613,
+    "eigen_centrality": 0.427515,
+    "clustering_local": 0.8333,
+    "kcore": 3,
+    "degree_pct": 10,
+    "strength_pct": 92,
+    "prominence_pct": 97,
+    "prominence_pct_construct": 97,
+    "pagerank_pct": 87,
+    "degree_z": -1.373,
+    "strength_z": 2.14,
+    "prominence_z": 2.62,
+    "pagerank_z": 0.974,
+    "hub_vs_loyal": 4.0,
+    "collaborator_reach": 4,
+    "embed_x": 0.3802,
+    "embed_y": -3.0244
+  },
+  {
+    "id": "nm11484807",
+    "label": "Victor Relosa",
+    "label_ascii": "Victor Relosa",
+    "type": "person",
+    "gender": "male",
+    "degree": 4,
+    "dominant_genre": "Drama",
+    "concentration": 0.957,
+    "title_count": 23,
+    "prominence": 2940.8,
+    "year_min": 2023,
+    "year_max": 2026,
+    "year_peak": 2024,
+    "strength": 8642,
+    "roles": [
+      {
+        "title": "Fall",
+        "character": "Edmar",
+        "characters": [
+          "Edmar"
+        ],
+        "year": 2023,
+        "billing": 1,
+        "tconst": "tt26671717",
+        "votes": 700
+      },
+      {
+        "title": "Palipat-lipat, papalit-palit",
+        "character": "Larry",
+        "characters": [
+          "Larry"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt30524107",
+        "votes": 309
+      },
+      {
+        "title": "L: Langoy",
+        "character": "Luis",
+        "characters": [
+          "Luis"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt37501925",
+        "votes": 59
+      },
+      {
+        "title": "Cheat",
+        "character": "Jay",
+        "characters": [
+          "Jay"
+        ],
+        "year": 2020,
+        "billing": 1,
+        "tconst": "tt13886182",
+        "votes": 46
+      },
+      {
+        "title": "Kamadora",
+        "character": "Dave",
+        "characters": [
+          "Dave"
+        ],
+        "year": 2023,
+        "billing": 2,
+        "tconst": "tt28537936",
+        "votes": 370
+      },
+      {
+        "title": "Litsoneras",
+        "character": "Jonas",
+        "characters": [
+          "Jonas"
+        ],
+        "year": 2023,
+        "billing": 2,
+        "tconst": "tt28361664",
+        "votes": 249
+      }
+    ],
+    "bridge_score": 0.001012,
+    "community": 4,
+    "pagerank": 0.02587183,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.8333,
+    "kcore": 3,
+    "degree_pct": 10,
+    "strength_pct": 51,
+    "prominence_pct": 74,
+    "prominence_pct_construct": 74,
+    "pagerank_pct": 56,
+    "degree_z": -1.373,
+    "strength_z": -0.38,
+    "prominence_z": -0.135,
+    "pagerank_z": 0.153,
+    "hub_vs_loyal": 4.0,
+    "collaborator_reach": 4,
+    "embed_x": 3.0499,
+    "embed_y": 1.9442
+  },
+  {
+    "id": "nm16417214",
+    "label": "Jayda Stephens",
+    "label_ascii": "Jayda Stephens",
+    "type": "person",
+    "gender": "female",
+    "degree": 4,
+    "dominant_genre": "Drama",
+    "concentration": 0.909,
+    "title_count": 11,
+    "prominence": 555.0,
+    "year_min": 2024,
+    "year_max": 2025,
+    "year_peak": 2025,
+    "strength": 2157,
+    "roles": [
+      {
+        "title": "This Time I Choose Mr. Mafia",
+        "character": "Stella Hart",
+        "characters": [
+          "Stella Hart"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt38839274",
+        "votes": 171
+      },
+      {
+        "title": "My Poor Ex-Wife Is a Heiress",
+        "character": "Crystal Brown",
+        "characters": [
+          "Crystal Brown"
+        ],
+        "year": 2024,
+        "billing": 1,
+        "tconst": "tt33083670",
+        "votes": 83
+      },
+      {
+        "title": "The Heiress's Blind Love",
+        "character": "Grace Harrison",
+        "characters": [
+          "Grace Harrison"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt37021685",
+        "votes": 56
+      },
+      {
+        "title": "The Billionaire Heiress's Ex-Ectomy",
+        "character": "Emily Carter",
+        "characters": [
+          "Emily Carter"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt37499846",
+        "votes": 52
+      },
+      {
+        "title": "Step Aside! The Chairman Is Here",
+        "character": "Ellie",
+        "characters": [
+          "Ellie"
+        ],
+        "year": 2026,
+        "billing": 1,
+        "tconst": "tt41214319",
+        "votes": 49
+      },
+      {
+        "title": "Mommy Why Does Daddy Hate Me",
+        "character": "Sophia Clarke",
+        "characters": [
+          "Sophia Clarke"
+        ],
+        "year": 2025,
+        "billing": 1,
+        "tconst": "tt39176076",
+        "votes": 43
+      }
+    ],
+    "bridge_score": 0.001012,
+    "community": 4,
+    "pagerank": 0.01761387,
+    "eigen_centrality": 0.0,
+    "clustering_local": 0.8333,
+    "kcore": 3,
+    "degree_pct": 10,
+    "strength_pct": 5,
+    "prominence_pct": 5,
+    "prominence_pct_construct": 5,
+    "pagerank_pct": 10,
+    "degree_z": -1.373,
+    "strength_z": -0.806,
+    "prominence_z": -0.645,
+    "pagerank_z": -1.297,
+    "hub_vs_loyal": 4.0,
+    "collaborator_reach": 4,
+    "embed_x": -0.7942,
+    "embed_y": 0.5882
+  },
+  {
+    "id": "nm0203721",
+    "label": "Geoffrey Davies",
+    "label_ascii": "Geoffrey Davies",
+    "type": "person",
+    "gender": "male",
+    "degree": 3,
+    "dominant_genre": "Comedy",
+    "concentration": 1.0,
+    "title_count": 8,
+    "prominence": 504.2,
+    "year_min": 1969,
+    "year_max": 1994,
+    "year_peak": 1977,
+    "strength": 1512,
+    "roles": [
+      {
+        "title": "Waiting for Gorgo",
+        "character": "Mr Tunstall",
+        "characters": [
+          "Mr Tunstall"
+        ],
+        "year": 2009,
+        "billing": 1,
+        "tconst": "tt1514449",
+        "votes": 62
+      },
+      {
+        "title": "Doctor on the Go",
+        "character": "Dr. Dick Stuart-Clark",
+        "characters": [
+          "Dr. Dick Stuart-Clark"
+        ],
+        "year": 1975,
+        "billing": 2,
+        "tconst": "tt0072492",
+        "votes": 110
+      },
+      {
+        "title": "Doctor at Sea",
+        "character": "Dr. Dick Stuart-Clark",
+        "characters": [
+          "Dr. Dick Stuart-Clark"
+        ],
+        "year": 1974,
+        "billing": 2,
+        "tconst": "tt0070984",
+        "votes": 95
+      },
+      {
+        "title": "Doctor Down Under",
+        "character": "Dr. Dick Stuart-Clark",
+        "characters": [
+          "Dr. Dick Stuart-Clark"
+        ],
+        "year": 1979,
+        "billing": 2,
+        "tconst": "tt0078602",
+        "votes": 61
+      },
+      {
+        "title": "Doctor at the Top",
+        "character": "Professor Dick Stuart-Clark",
+        "characters": [
+          "Professor Dick Stuart-Clark"
+        ],
+        "year": 1991,
+        "billing": 2,
+        "tconst": "tt0101083",
+        "votes": 61
+      },
+      {
+        "title": "Murdered To Death",
+        "character": "Colonel Charles Craddock",
+        "characters": [
+          "Colonel Charles Craddock"
+        ],
+        "year": 2002,
+        "billing": 2,
+        "tconst": "tt10480174",
+        "votes": 0
+      }
+    ],
+    "bridge_score": 0.0,
+    "community": 2,
+    "pagerank": 0.00996264,
+    "eigen_centrality": 0.0,
+    "clustering_local": 1.0,
+    "kcore": 3,
+    "degree_pct": 0,
+    "strength_pct": 3,
+    "prominence_pct": 3,
+    "prominence_pct_construct": 3,
+    "pagerank_pct": 0,
+    "degree_z": -2.353,
+    "strength_z": -0.848,
+    "prominence_z": -0.655,
+    "pagerank_z": -2.64,
+    "hub_vs_loyal": 3.0,
+    "collaborator_reach": 3,
+    "embed_x": 4.3184,
+    "embed_y": 1.4689
   },
   {
     "id": "nm0654741",
@@ -450,7 +3816,7 @@
     "label_ascii": "Selim Nasit Ozcan",
     "type": "person",
     "gender": "male",
-    "degree": 37966,
+    "degree": 3,
     "dominant_genre": "Comedy",
     "concentration": 0.9,
     "title_count": 10,
@@ -458,6 +3824,7 @@
     "year_min": 1975,
     "year_max": 1999,
     "year_peak": 1986,
+    "strength": 37966,
     "roles": [
       {
         "title": "Medeni Haller",
@@ -527,1613 +3894,24 @@
       }
     ],
     "bridge_score": 0.0,
-    "community": 3,
-    "degree_pct": 84,
+    "community": 1,
+    "pagerank": 0.02494764,
+    "eigen_centrality": 0.371406,
+    "clustering_local": 1.0,
+    "kcore": 3,
+    "degree_pct": 0,
+    "strength_pct": 87,
     "prominence_pct": 100,
-    "embed_x": 1.243,
-    "embed_y": -4.0945
-  },
-  {
-    "id": "nm0758741",
-    "label": "Simo Salminen",
-    "label_ascii": "Simo Salminen",
-    "type": "person",
-    "gender": "male",
-    "degree": 33195,
-    "dominant_genre": "Comedy",
-    "concentration": 0.925,
-    "title_count": 40,
-    "prominence": 7096.5,
-    "year_min": 1964,
-    "year_max": 2004,
-    "year_peak": 1981,
-    "roles": [
-      {
-        "title": "Hirttämättömät",
-        "character": "Tonto",
-        "characters": [
-          "Tonto"
-        ],
-        "year": 1971,
-        "billing": 2,
-        "tconst": "tt0136997",
-        "votes": 819
-      },
-      {
-        "title": "Pähkähullu Suomi",
-        "character": "Simo",
-        "characters": [
-          "Simo"
-        ],
-        "year": 1967,
-        "billing": 2,
-        "tconst": "tt0062165",
-        "votes": 521
-      },
-      {
-        "title": "Hei kliffaa hei",
-        "character": "Kullervo 'Kultsi' Kankinen",
-        "characters": [
-          "Kullervo 'Kultsi' Kankinen"
-        ],
-        "year": 1985,
-        "billing": 2,
-        "tconst": "tt0089427",
-        "votes": 433
-      },
-      {
-        "title": "Leftovers from the North",
-        "character": "Törrönen",
-        "characters": [
-          "Törrönen"
-        ],
-        "year": 1969,
-        "billing": 2,
-        "tconst": "tt0064823",
-        "votes": 390
-      },
-      {
-        "title": "Lentävät luupäät",
-        "character": "Salaiseksi agentiksi opiskellut pohjalaishämäläinen",
-        "characters": [
-          "Salaiseksi agentiksi opiskellut pohjalaishämäläinen"
-        ],
-        "year": 1984,
-        "billing": 2,
-        "tconst": "tt0087611",
-        "votes": 381
-      },
-      {
-        "title": "Naisen logiikka",
-        "character": "Pullo Pölkkynen",
-        "characters": [
-          "Pullo Pölkkynen"
-        ],
-        "year": 1999,
-        "billing": 2,
-        "tconst": "tt0117148",
-        "votes": 250
-      }
-    ],
-    "bridge_score": 0.03871,
-    "community": 2,
-    "degree_pct": 81,
-    "prominence_pct": 81,
-    "embed_x": -2.1025,
-    "embed_y": -2.871
-  },
-  {
-    "id": "nm3532880",
-    "label": "Burcu Gönder",
-    "label_ascii": "Burcu Gonder",
-    "type": "person",
-    "gender": "female",
-    "degree": 26057,
-    "dominant_genre": "Comedy",
-    "concentration": 1.0,
-    "title_count": 9,
-    "prominence": 5787.1,
-    "year_min": 2008,
-    "year_max": 2024,
-    "year_peak": 2015,
-    "roles": [
-      {
-        "title": "Eski Köye Yeni Adet",
-        "character": "Sadiye",
-        "characters": [
-          "Sadiye"
-        ],
-        "year": 2018,
-        "billing": 3,
-        "tconst": "tt8720458",
-        "votes": 585
-      },
-      {
-        "title": "Hükümet Kadin",
-        "character": "Güle",
-        "characters": [
-          "Güle"
-        ],
-        "year": 2013,
-        "billing": 6,
-        "tconst": "tt2645092",
-        "votes": 10537
-      },
-      {
-        "title": "Hükümet Kadin 2",
-        "character": "Gule",
-        "characters": [
-          "Gule"
-        ],
-        "year": 2013,
-        "billing": 6,
-        "tconst": "tt3283718",
-        "votes": 5935
-      },
-      {
-        "title": "Asagi Yukari Yemislililer",
-        "character": "Handan",
-        "characters": [
-          "Handan"
-        ],
-        "year": 2011,
-        "billing": 6,
-        "tconst": "tt30833079",
-        "votes": 19
-      },
-      {
-        "title": "Anali Ogullu",
-        "character": "Gözde",
-        "characters": [
-          "Gözde"
-        ],
-        "year": 2014,
-        "billing": 9,
-        "tconst": "tt3672132",
-        "votes": 98
-      },
-      {
-        "title": "Anasinin Oglu",
-        "character": "Gözde",
-        "characters": [
-          "Gözde"
-        ],
-        "year": 2014,
-        "billing": 10,
-        "tconst": "tt32272122",
-        "votes": 0
-      }
-    ],
-    "bridge_score": 0.034516,
-    "community": 3,
-    "degree_pct": 77,
-    "prominence_pct": 74,
-    "embed_x": -2.0352,
-    "embed_y": -1.8665
-  },
-  {
-    "id": "nm1515877",
-    "label": "Ricardo de Araújo Pereira",
-    "label_ascii": "Ricardo de Araujo Pereira",
-    "type": "person",
-    "gender": "male",
-    "degree": 17514,
-    "dominant_genre": "Comedy",
-    "concentration": 1.0,
-    "title_count": 9,
-    "prominence": 3246.8,
-    "year_min": 2003,
-    "year_max": 2023,
-    "year_peak": 2009,
-    "roles": [
-      {
-        "title": "Gato Fedorento: Diz que é uma Espécie de Magazine",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2006,
-        "billing": 1,
-        "tconst": "tt0891380",
-        "votes": 914
-      },
-      {
-        "title": "Gato Fedorento: Série Lopes da Silva",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2006,
-        "billing": 1,
-        "tconst": "tt0781285",
-        "votes": 833
-      },
-      {
-        "title": "Gato Fedorento: Zé Carlos",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2008,
-        "billing": 1,
-        "tconst": "tt1450378",
-        "votes": 483
-      },
-      {
-        "title": "Melhor do que Falecer",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2014,
-        "billing": 1,
-        "tconst": "tt3673234",
-        "votes": 52
-      },
-      {
-        "title": "Gato Fedorento: Série Fonseca",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2003,
-        "billing": 2,
-        "tconst": "tt0390707",
-        "votes": 929
-      },
-      {
-        "title": "Gato Fedorento: Série Meireles",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2004,
-        "billing": 3,
-        "tconst": "tt0786790",
-        "votes": 775
-      }
-    ],
-    "bridge_score": 0.034516,
-    "community": 2,
-    "degree_pct": 74,
-    "prominence_pct": 71,
-    "embed_x": -0.463,
-    "embed_y": -3.267
-  },
-  {
-    "id": "nm1513957",
-    "label": "Tiago Dores",
-    "label_ascii": "Tiago Dores",
-    "type": "person",
-    "gender": "male",
-    "degree": 15761,
-    "dominant_genre": "Comedy",
-    "concentration": 1.0,
-    "title_count": 8,
-    "prominence": 2874.5,
-    "year_min": 2002,
-    "year_max": 2009,
-    "year_peak": 2005,
-    "roles": [
-      {
-        "title": "Gato Fedorento: Série Meireles",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2004,
-        "billing": 1,
-        "tconst": "tt0786790",
-        "votes": 775
-      },
-      {
-        "title": "Gato Fedorento: Série Barbosa",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2005,
-        "billing": 1,
-        "tconst": "tt0786789",
-        "votes": 654
-      },
-      {
-        "title": "Gato Fedorento: Diz que é uma Espécie de Magazine",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2006,
-        "billing": 2,
-        "tconst": "tt0891380",
-        "votes": 914
-      },
-      {
-        "title": "Gato Fedorento: Série Lopes da Silva",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2006,
-        "billing": 2,
-        "tconst": "tt0781285",
-        "votes": 833
-      },
-      {
-        "title": "Gato Fedorento: Série Fonseca",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2003,
-        "billing": 3,
-        "tconst": "tt0390707",
-        "votes": 929
-      },
-      {
-        "title": "Gato Fedorento: Zé Carlos",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2008,
-        "billing": 3,
-        "tconst": "tt1450378",
-        "votes": 483
-      }
-    ],
-    "bridge_score": 0.03871,
-    "community": 2,
-    "degree_pct": 71,
-    "prominence_pct": 65,
-    "embed_x": -1.2386,
-    "embed_y": -2.8704
-  },
-  {
-    "id": "nm2660337",
-    "label": "Salvatore Misticone",
-    "label_ascii": "Salvatore Misticone",
-    "type": "person",
-    "gender": "male",
-    "degree": 14396,
-    "dominant_genre": "Comedy",
-    "concentration": 1.0,
-    "title_count": 9,
-    "prominence": 2576.8,
-    "year_min": 2010,
-    "year_max": 2021,
-    "year_peak": 2016,
-    "roles": [
-      {
-        "title": "Fausto & Furio",
-        "character": "Tonino",
-        "characters": [
-          "Tonino"
-        ],
-        "year": 2016,
-        "billing": 3,
-        "tconst": "tt5749662",
-        "votes": 98
-      },
-      {
-        "title": "L'Elisir di Leonardo da Vinci e la Banda del Buffardello",
-        "character": "Max Mosley",
-        "characters": [
-          "Max Mosley"
-        ],
-        "year": 2024,
-        "billing": 4,
-        "tconst": "tt29861225",
-        "votes": 5
-      },
-      {
-        "title": "La prigione oscura",
-        "character": "Tassista",
-        "characters": [
-          "Tassista"
-        ],
-        "year": 2007,
-        "billing": 4,
-        "tconst": "tt5567868",
-        "votes": 0
-      },
-      {
-        "title": "Santa Claus 'Nzallanu' 2.0",
-        "character": "Giacomo",
-        "characters": [
-          "Giacomo"
-        ],
-        "year": 2025,
-        "billing": 4,
-        "tconst": "tt38579516",
-        "votes": 0
-      },
-      {
-        "title": "Il circo delle meraviglie",
-        "character": "Sandokan",
-        "characters": [
-          "Sandokan"
-        ],
-        "year": 2024,
-        "billing": 4,
-        "tconst": "tt29861602",
-        "votes": 0
-      },
-      {
-        "title": "Welcome at Esposito's",
-        "character": "Nonno Gaetano",
-        "characters": [
-          "Nonno Gaetano"
-        ],
-        "year": 2021,
-        "billing": 5,
-        "tconst": "tt15243614",
-        "votes": 215
-      }
-    ],
-    "bridge_score": 0.028746,
-    "community": 2,
-    "degree_pct": 68,
-    "prominence_pct": 61,
-    "embed_x": 1.2009,
-    "embed_y": -1.69
-  },
-  {
-    "id": "nm2325955",
-    "label": "Rodrigo Sant'anna",
-    "label_ascii": "Rodrigo Sant'anna",
-    "type": "person",
-    "gender": "male",
-    "degree": 13305,
-    "dominant_genre": "Comedy",
-    "concentration": 1.0,
-    "title_count": 13,
-    "prominence": 2326.4,
-    "year_min": 1999,
-    "year_max": 2024,
-    "year_peak": 2014,
-    "roles": [
-      {
-        "title": "Um Suburbano Sortudo",
-        "character": "Denilson",
-        "characters": [
-          "Denilson"
-        ],
-        "year": 2016,
-        "billing": 1,
-        "tconst": "tt5529392",
-        "votes": 430
-      },
-      {
-        "title": "Graceful Graça",
-        "character": "Graça",
-        "characters": [
-          "Graça"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt31863351",
-        "votes": 134
-      },
-      {
-        "title": "Tô de Graça",
-        "character": "Graça",
-        "characters": [
-          "Graça"
-        ],
-        "year": 2017,
-        "billing": 1,
-        "tconst": "tt7742604",
-        "votes": 114
-      },
-      {
-        "title": "O Casamento de Gorete",
-        "character": "Gorete",
-        "characters": [
-          "Gorete"
-        ],
-        "year": 2014,
-        "billing": 1,
-        "tconst": "tt4340222",
-        "votes": 87
-      },
-      {
-        "title": "End of the Line",
-        "character": "Ivan",
-        "characters": [
-          "Ivan"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt30476509",
-        "votes": 74
-      },
-      {
-        "title": "Os Suburbanos",
-        "character": "Jefinho do Pagode (Jeferson dos Santos)",
-        "characters": [
-          "Jefinho do Pagode (Jeferson dos Santos)"
-        ],
-        "year": 2015,
-        "billing": 1,
-        "tconst": "tt5963298",
-        "votes": 14
-      }
-    ],
-    "bridge_score": 0.025233,
-    "community": 2,
-    "degree_pct": 65,
-    "prominence_pct": 58,
-    "embed_x": 0.0449,
-    "embed_y": -1.1135
-  },
-  {
-    "id": "nm1516026",
-    "label": "José Diogo Quintela",
-    "label_ascii": "Jose Diogo Quintela",
-    "type": "person",
-    "gender": "male",
-    "degree": 12010,
-    "dominant_genre": "Comedy",
-    "concentration": 1.0,
-    "title_count": 8,
-    "prominence": 2237.8,
-    "year_min": 2003,
-    "year_max": 2019,
-    "year_peak": 2008,
-    "roles": [
-      {
-        "title": "Gato Fedorento: Série Fonseca",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2003,
-        "billing": 1,
-        "tconst": "tt0390707",
-        "votes": 929
-      },
-      {
-        "title": "Gente que não sabe estar",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2019,
-        "billing": 2,
-        "tconst": "tt9827134",
-        "votes": 88
-      },
-      {
-        "title": "Gato Fedorento: Diz que é uma Espécie de Magazine",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2006,
-        "billing": 4,
-        "tconst": "tt0891380",
-        "votes": 914
-      },
-      {
-        "title": "Gato Fedorento: Série Lopes da Silva",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2006,
-        "billing": 4,
-        "tconst": "tt0781285",
-        "votes": 833
-      },
-      {
-        "title": "Gato Fedorento: Série Meireles",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2004,
-        "billing": 4,
-        "tconst": "tt0786790",
-        "votes": 775
-      },
-      {
-        "title": "Gato Fedorento: Série Barbosa",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2005,
-        "billing": 4,
-        "tconst": "tt0786789",
-        "votes": 654
-      }
-    ],
-    "bridge_score": 0.025806,
-    "community": 2,
-    "degree_pct": 61,
-    "prominence_pct": 55,
-    "embed_x": 0.4598,
-    "embed_y": 0.9415
-  },
-  {
-    "id": "nm17002888",
-    "label": "Ashley Lopez",
-    "label_ascii": "Ashley Lopez",
-    "type": "person",
-    "gender": "female",
-    "degree": 10889,
-    "dominant_genre": "Drama",
-    "concentration": 0.909,
-    "title_count": 11,
-    "prominence": 1920.0,
-    "year_min": 2025,
-    "year_max": 2026,
-    "year_peak": 2025,
-    "roles": [
-      {
-        "title": "Bayo",
-        "character": "Claire",
-        "characters": [
-          "Claire"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt36920832",
-        "votes": 302
-      },
-      {
-        "title": "Maninilip",
-        "character": "Martha",
-        "characters": [
-          "Martha"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt36920947",
-        "votes": 250
-      },
-      {
-        "title": "Sagaran",
-        "character": "Mika",
-        "characters": [
-          "Mika"
-        ],
-        "year": 2026,
-        "billing": 1,
-        "tconst": "tt39376926",
-        "votes": 198
-      },
-      {
-        "title": "Sticky",
-        "character": "Mindy",
-        "characters": [
-          "Mindy"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt35682199",
-        "votes": 156
-      },
-      {
-        "title": "Tayuan 2",
-        "character": "Rhea",
-        "characters": [
-          "Rhea"
-        ],
-        "year": 2026,
-        "billing": 1,
-        "tconst": "tt40541183",
-        "votes": 77
-      },
-      {
-        "title": "Pain",
-        "character": "Maita",
-        "characters": [
-          "Maita"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt37790907",
-        "votes": 65
-      }
-    ],
-    "bridge_score": 0.025806,
-    "community": 1,
-    "degree_pct": 58,
-    "prominence_pct": 42,
-    "embed_x": 2.637,
-    "embed_y": 1.4825
-  },
-  {
-    "id": "nm14688444",
-    "label": "Arah Alonzo",
-    "label_ascii": "Arah Alonzo",
-    "type": "person",
-    "gender": "female",
-    "degree": 10138,
-    "dominant_genre": "Drama",
-    "concentration": 0.917,
-    "title_count": 12,
-    "prominence": 1830.7,
-    "year_min": 2023,
-    "year_max": 2025,
-    "year_peak": 2024,
-    "roles": [
-      {
-        "title": "Online Selling",
-        "character": "Melissa",
-        "characters": [
-          "Melissa"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt35544722",
-        "votes": 201
-      },
-      {
-        "title": "Sssshhh! 1",
-        "character": "Eunice",
-        "characters": [
-          "Eunice"
-        ],
-        "year": 2023,
-        "billing": 1,
-        "tconst": "tt38348933",
-        "votes": 159
-      },
-      {
-        "title": "Sssshhh! 2",
-        "character": "Eunice",
-        "characters": [
-          "Eunice"
-        ],
-        "year": 2023,
-        "billing": 1,
-        "tconst": "tt38348928",
-        "votes": 156
-      },
-      {
-        "title": "Araro 1",
-        "character": "Rosalia",
-        "characters": [
-          "Rosalia"
-        ],
-        "year": 2023,
-        "billing": 1,
-        "tconst": "tt39301902",
-        "votes": 0
-      },
-      {
-        "title": "Thrust (Araro 2)",
-        "character": "Rosalia",
-        "characters": [
-          "Rosalia"
-        ],
-        "year": 2023,
-        "billing": 1,
-        "tconst": "tt40590761",
-        "votes": 0
-      },
-      {
-        "title": "Stag",
-        "character": "Arah",
-        "characters": [
-          "Arah"
-        ],
-        "year": 2024,
-        "billing": 2,
-        "tconst": "tt31912843",
-        "votes": 783
-      }
-    ],
-    "bridge_score": 0.025233,
-    "community": 1,
-    "degree_pct": 55,
-    "prominence_pct": 39,
-    "embed_x": 2.4715,
-    "embed_y": -0.1381
-  },
-  {
-    "id": "nm5961385",
-    "label": "Melha Bedia",
-    "label_ascii": "Melha Bedia",
-    "type": "person",
-    "gender": "female",
-    "degree": 9509,
-    "dominant_genre": "Comedy",
-    "concentration": 0.909,
-    "title_count": 11,
-    "prominence": 2105.8,
-    "year_min": 2012,
-    "year_max": 2025,
-    "year_peak": 2019,
-    "roles": [
-      {
-        "title": "Ballsy Girl",
-        "character": "Nour",
-        "characters": [
-          "Nour"
-        ],
-        "year": 2020,
-        "billing": 1,
-        "tconst": "tt9372172",
-        "votes": 1024
-      },
-      {
-        "title": "Two Much for the Job",
-        "character": "Sofia",
-        "characters": [
-          "Sofia"
-        ],
-        "year": 2022,
-        "billing": 1,
-        "tconst": "tt17049058",
-        "votes": 283
-      },
-      {
-        "title": "Miskina, Poor Thing",
-        "character": "Fara",
-        "characters": [
-          "Fara"
-        ],
-        "year": 2022,
-        "billing": 1,
-        "tconst": "tt21941802",
-        "votes": 249
-      },
-      {
-        "title": "Le fumoir",
-        "character": "Farah",
-        "characters": [
-          "Farah"
-        ],
-        "year": 2020,
-        "billing": 1,
-        "tconst": "tt13670716",
-        "votes": 6
-      },
-      {
-        "title": "Rentrons",
-        "character": "Nouria",
-        "characters": [
-          "Nouria"
-        ],
-        "year": 2023,
-        "billing": 1,
-        "tconst": "tt36257869",
-        "votes": 0
-      },
-      {
-        "title": "Deviens génial",
-        "character": "Iris",
-        "characters": [
-          "Iris"
-        ],
-        "year": 2026,
-        "billing": 2,
-        "tconst": "tt37511048",
-        "votes": 40
-      }
-    ],
-    "bridge_score": 0.006846,
-    "community": 2,
-    "degree_pct": 52,
-    "prominence_pct": 52,
-    "embed_x": 0.5069,
-    "embed_y": 1.839
-  },
-  {
-    "id": "nm15129858",
-    "label": "Dyessa Garcia",
-    "label_ascii": "Dyessa Garcia",
-    "type": "person",
-    "gender": "female",
-    "degree": 9401,
-    "dominant_genre": "Drama",
-    "concentration": 0.917,
-    "title_count": 12,
-    "prominence": 1730.3,
-    "year_min": 2023,
-    "year_max": 2025,
-    "year_peak": 2024,
-    "roles": [
-      {
-        "title": "Dilig",
-        "character": "Katelyn",
-        "characters": [
-          "Katelyn"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt31021984",
-        "votes": 333
-      },
-      {
-        "title": "Init",
-        "character": "Luisa",
-        "characters": [
-          "Luisa"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt32864326",
-        "votes": 303
-      },
-      {
-        "title": "Borrowed Moment",
-        "character": "Ester",
-        "characters": [
-          "Ester"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt35488927",
-        "votes": 239
-      },
-      {
-        "title": "Donselya",
-        "character": "Iris",
-        "characters": [
-          "Iris"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt33511103",
-        "votes": 124
-      },
-      {
-        "title": "Boy Kaldag",
-        "character": "Bettina",
-        "characters": [
-          "Bettina"
-        ],
-        "year": 2024,
-        "billing": 2,
-        "tconst": "tt34877062",
-        "votes": 235
-      },
-      {
-        "title": "Sweet Release",
-        "character": "Xan",
-        "characters": [
-          "Xan"
-        ],
-        "year": 2024,
-        "billing": 2,
-        "tconst": "tt32032481",
-        "votes": 129
-      }
-    ],
-    "bridge_score": 0.028746,
-    "community": 0,
-    "degree_pct": 48,
-    "prominence_pct": 35,
-    "embed_x": 1.3999,
-    "embed_y": -0.0417
-  },
-  {
-    "id": "nm15415030",
-    "label": "Sahara Bernales",
-    "label_ascii": "Sahara Bernales",
-    "type": "person",
-    "gender": "female",
-    "degree": 9384,
-    "dominant_genre": "Drama",
-    "concentration": 0.933,
-    "title_count": 15,
-    "prominence": 1952.5,
-    "year_min": 2023,
-    "year_max": 2026,
-    "year_peak": 2024,
-    "roles": [
-      {
-        "title": "Katas",
-        "character": "Carmina",
-        "characters": [
-          "Carmina"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt31031372",
-        "votes": 337
-      },
-      {
-        "title": "Tampipi",
-        "character": "Pia",
-        "characters": [
-          "Pia"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt36535080",
-        "votes": 244
-      },
-      {
-        "title": "Maryang Palad",
-        "character": "Marya",
-        "characters": [
-          "Marya"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt34150380",
-        "votes": 241
-      },
-      {
-        "title": "Himas",
-        "character": "Dana",
-        "characters": [
-          "Dana"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt32408414",
-        "votes": 156
-      },
-      {
-        "title": "The Best Laid Plans",
-        "character": "Lorraine",
-        "characters": [
-          "Lorraine"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt35403108",
-        "votes": 131
-      },
-      {
-        "title": "Maliko",
-        "character": "Leng",
-        "characters": [
-          "Leng"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt32523268",
-        "votes": 104
-      }
-    ],
-    "bridge_score": 0.006846,
-    "community": 1,
-    "degree_pct": 45,
-    "prominence_pct": 45,
-    "embed_x": 1.9281,
-    "embed_y": 1.3829
-  },
-  {
-    "id": "nm11484807",
-    "label": "Victor Relosa",
-    "label_ascii": "Victor Relosa",
-    "type": "person",
-    "gender": "male",
-    "degree": 8642,
-    "dominant_genre": "Drama",
-    "concentration": 0.957,
-    "title_count": 23,
-    "prominence": 2940.8,
-    "year_min": 2023,
-    "year_max": 2026,
-    "year_peak": 2024,
-    "roles": [
-      {
-        "title": "Fall",
-        "character": "Edmar",
-        "characters": [
-          "Edmar"
-        ],
-        "year": 2023,
-        "billing": 1,
-        "tconst": "tt26671717",
-        "votes": 700
-      },
-      {
-        "title": "Palipat-lipat, papalit-palit",
-        "character": "Larry",
-        "characters": [
-          "Larry"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt30524107",
-        "votes": 309
-      },
-      {
-        "title": "L: Langoy",
-        "character": "Luis",
-        "characters": [
-          "Luis"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt37501925",
-        "votes": 59
-      },
-      {
-        "title": "Cheat",
-        "character": "Jay",
-        "characters": [
-          "Jay"
-        ],
-        "year": 2020,
-        "billing": 1,
-        "tconst": "tt13886182",
-        "votes": 46
-      },
-      {
-        "title": "Kamadora",
-        "character": "Dave",
-        "characters": [
-          "Dave"
-        ],
-        "year": 2023,
-        "billing": 2,
-        "tconst": "tt28537936",
-        "votes": 370
-      },
-      {
-        "title": "Litsoneras",
-        "character": "Jonas",
-        "characters": [
-          "Jonas"
-        ],
-        "year": 2023,
-        "billing": 2,
-        "tconst": "tt28361664",
-        "votes": 249
-      }
-    ],
-    "bridge_score": 0.001434,
-    "community": 1,
-    "degree_pct": 42,
-    "prominence_pct": 68,
-    "embed_x": 3.8174,
-    "embed_y": 1.426
-  },
-  {
-    "id": "nm15043068",
-    "label": "Jenn Rosa",
-    "label_ascii": "Jenn Rosa",
-    "type": "person",
-    "gender": "female",
-    "degree": 8617,
-    "dominant_genre": "Drama",
-    "concentration": 1.0,
-    "title_count": 13,
-    "prominence": 1569.0,
-    "year_min": 2023,
-    "year_max": 2025,
-    "year_peak": 2024,
-    "roles": [
-      {
-        "title": "Boss Ma'am",
-        "character": "V.A.D Vern Andrea Vixon",
-        "characters": [
-          "V.A.D Vern Andrea Vixon"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt34525380",
-        "votes": 314
-      },
-      {
-        "title": "Nympho",
-        "character": "Meg",
-        "characters": [
-          "Meg"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt38348188",
-        "votes": 264
-      },
-      {
-        "title": "TL",
-        "character": "Brenda",
-        "characters": [
-          "Brenda"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt31797468",
-        "votes": 244
-      },
-      {
-        "title": "Kulong",
-        "character": "Minerva",
-        "characters": [
-          "Minerva"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt32164798",
-        "votes": 188
-      },
-      {
-        "title": "Backrider",
-        "character": "Faith",
-        "characters": [
-          "Faith"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt33045566",
-        "votes": 110
-      },
-      {
-        "title": "Halinghing",
-        "character": "Faith",
-        "characters": [
-          "Faith"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt33475730",
-        "votes": 87
-      }
-    ],
-    "bridge_score": 0.03871,
-    "community": 0,
-    "degree_pct": 39,
-    "prominence_pct": 32,
-    "embed_x": 0.3097,
-    "embed_y": 0.1407
-  },
-  {
-    "id": "nm1750778",
-    "label": "Emrah",
-    "label_ascii": "Emrah",
-    "type": "person",
-    "gender": "male",
-    "degree": 7819,
-    "dominant_genre": "Drama",
-    "concentration": 0.917,
-    "title_count": 12,
-    "prominence": 1349.2,
-    "year_min": 1984,
-    "year_max": 2004,
-    "year_peak": 1990,
-    "roles": [
-      {
-        "title": "Kinali Kar",
-        "character": "Ali",
-        "characters": [
-          "Ali"
-        ],
-        "year": 2002,
-        "billing": 1,
-        "tconst": "tt0426735",
-        "votes": 381
-      },
-      {
-        "title": "Boynu Bükükler",
-        "character": "Emrah",
-        "characters": [
-          "Emrah"
-        ],
-        "year": 1985,
-        "billing": 1,
-        "tconst": "tt4288948",
-        "votes": 111
-      },
-      {
-        "title": "Zavallilar",
-        "character": "Emrah",
-        "characters": [
-          "Emrah"
-        ],
-        "year": 1984,
-        "billing": 1,
-        "tconst": "tt5546742",
-        "votes": 98
-      },
-      {
-        "title": "Es Deli Rüzgar",
-        "character": "Emrah",
-        "characters": [
-          "Emrah"
-        ],
-        "year": 1988,
-        "billing": 1,
-        "tconst": "tt0499327",
-        "votes": 93
-      },
-      {
-        "title": "Aci",
-        "character": "Emrah",
-        "characters": [
-          "Emrah"
-        ],
-        "year": 1988,
-        "billing": 1,
-        "tconst": "tt0429508",
-        "votes": 82
-      },
-      {
-        "title": "Vurmayin",
-        "character": "Emrah",
-        "characters": [
-          "Emrah"
-        ],
-        "year": 1987,
-        "billing": 1,
-        "tconst": "tt5659308",
-        "votes": 62
-      }
-    ],
-    "bridge_score": 0.034516,
-    "community": 1,
-    "degree_pct": 35,
-    "prominence_pct": 29,
-    "embed_x": -0.689,
-    "embed_y": -1.0135
-  },
-  {
-    "id": "nm13851921",
-    "label": "Tiffany Grey",
-    "label_ascii": "Tiffany Grey",
-    "type": "person",
-    "gender": "female",
-    "degree": 7360,
-    "dominant_genre": "Drama",
-    "concentration": 0.909,
-    "title_count": 11,
-    "prominence": 1293.8,
-    "year_min": 2022,
-    "year_max": 2024,
-    "year_peak": 2023,
-    "roles": [
-      {
-        "title": "Kamadora",
-        "character": "Ica",
-        "characters": [
-          "Ica"
-        ],
-        "year": 2023,
-        "billing": 1,
-        "tconst": "tt28537936",
-        "votes": 370
-      },
-      {
-        "title": "Paupahan",
-        "character": "Analyn Salvacion",
-        "characters": [
-          "Analyn Salvacion"
-        ],
-        "year": 2023,
-        "billing": 1,
-        "tconst": "tt27373005",
-        "votes": 310
-      },
-      {
-        "title": "Torn Heaven",
-        "character": "Claudia",
-        "characters": [
-          "Claudia"
-        ],
-        "year": 2023,
-        "billing": 1,
-        "tconst": "tt28809763",
-        "votes": 184
-      },
-      {
-        "title": "Lovely Ladies Dormitory 1",
-        "character": "Alma",
-        "characters": [
-          "Alma"
-        ],
-        "year": 2022,
-        "billing": 4,
-        "tconst": "tt38960647",
-        "votes": 112
-      },
-      {
-        "title": "Lovely Ladies Dormitory 2",
-        "character": "Alma",
-        "characters": [
-          "Alma"
-        ],
-        "year": 2022,
-        "billing": 4,
-        "tconst": "tt39139726",
-        "votes": 111
-      },
-      {
-        "title": "Lovely Ladies Dormitory 3",
-        "character": "Alma",
-        "characters": [
-          "Alma"
-        ],
-        "year": 2022,
-        "billing": 4,
-        "tconst": "tt39139724",
-        "votes": 110
-      }
-    ],
-    "bridge_score": 0.034516,
-    "community": 1,
-    "degree_pct": 32,
-    "prominence_pct": 26,
-    "embed_x": -2.2737,
-    "embed_y": -0.167
-  },
-  {
-    "id": "nm1520887",
-    "label": "Miguel Góis",
-    "label_ascii": "Miguel Gois",
-    "type": "person",
-    "gender": "male",
-    "degree": 7164,
-    "dominant_genre": "Comedy",
-    "concentration": 1.0,
-    "title_count": 9,
-    "prominence": 1985.3,
-    "year_min": 2002,
-    "year_max": 2019,
-    "year_peak": 2007,
-    "roles": [
-      {
-        "title": "Gato Fedorento: Série Meireles",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2004,
-        "billing": 2,
-        "tconst": "tt0786790",
-        "votes": 775
-      },
-      {
-        "title": "Gato Fedorento: Série Barbosa",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2005,
-        "billing": 2,
-        "tconst": "tt0786789",
-        "votes": 654
-      },
-      {
-        "title": "Gato Fedorento: Zé Carlos",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2008,
-        "billing": 2,
-        "tconst": "tt1450378",
-        "votes": 483
-      },
-      {
-        "title": "Gato Fedorento: Diz que é uma Espécie de Magazine",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2006,
-        "billing": 3,
-        "tconst": "tt0891380",
-        "votes": 914
-      },
-      {
-        "title": "Gato Fedorento: Série Lopes da Silva",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2006,
-        "billing": 3,
-        "tconst": "tt0781285",
-        "votes": 833
-      },
-      {
-        "title": "Gente que não sabe estar",
-        "character": "Various Roles",
-        "characters": [
-          "Various Roles"
-        ],
-        "year": 2019,
-        "billing": 3,
-        "tconst": "tt9827134",
-        "votes": 88
-      }
-    ],
-    "bridge_score": 0.001434,
-    "community": 2,
-    "degree_pct": 29,
-    "prominence_pct": 48,
-    "embed_x": -0.2675,
-    "embed_y": 2.4608
-  },
-  {
-    "id": "nm16044348",
-    "label": "Athena Red",
-    "label_ascii": "Athena Red",
-    "type": "person",
-    "gender": "female",
-    "degree": 6980,
-    "dominant_genre": "Drama",
-    "concentration": 0.929,
-    "title_count": 14,
-    "prominence": 1268.0,
-    "year_min": 2024,
-    "year_max": 2026,
-    "year_peak": 2025,
-    "roles": [
-      {
-        "title": "Pansamantala",
-        "character": "Jessa",
-        "characters": [
-          "Jessa"
-        ],
-        "year": 2026,
-        "billing": 1,
-        "tconst": "tt39376898",
-        "votes": 286
-      },
-      {
-        "title": "Kabitan",
-        "character": "Alice",
-        "characters": [
-          "Alice"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt34524464",
-        "votes": 209
-      },
-      {
-        "title": "Secret Sessions",
-        "character": "Cara",
-        "characters": [
-          "Cara"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt34877055",
-        "votes": 118
-      },
-      {
-        "title": "Habal",
-        "character": "Erika",
-        "characters": [
-          "Erika"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt36303713",
-        "votes": 108
-      },
-      {
-        "title": "Undergrads",
-        "character": "Sofia",
-        "characters": [
-          "Sofia"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt33396473",
-        "votes": 102
-      },
-      {
-        "title": "Vape Shop",
-        "character": "Ruby",
-        "characters": [
-          "Ruby"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt37145477",
-        "votes": 77
-      }
-    ],
-    "bridge_score": 0.03871,
-    "community": 1,
-    "degree_pct": 26,
-    "prominence_pct": 23,
-    "embed_x": -0.775,
-    "embed_y": 0.0085
+    "prominence_pct_construct": 100,
+    "pagerank_pct": 44,
+    "degree_z": -2.353,
+    "strength_z": 1.545,
+    "prominence_z": 4.057,
+    "pagerank_z": -0.009,
+    "hub_vs_loyal": 3.0,
+    "collaborator_reach": 3,
+    "embed_x": 1.0836,
+    "embed_y": -4.5242
   },
   {
     "id": "nm0786929",
@@ -2141,7 +3919,7 @@
     "label_ascii": "Cengiz Sezici",
     "type": "person",
     "gender": "male",
-    "degree": 6812,
+    "degree": 3,
     "dominant_genre": "Drama",
     "concentration": 0.9,
     "title_count": 10,
@@ -2149,6 +3927,7 @@
     "year_min": 1977,
     "year_max": 2011,
     "year_peak": 1995,
+    "strength": 6812,
     "roles": [
       {
         "title": "Ver Elini Kayinço",
@@ -2219,632 +3998,125 @@
     ],
     "bridge_score": 0.0,
     "community": 0,
-    "degree_pct": 23,
-    "prominence_pct": 77,
-    "embed_x": 3.2494,
-    "embed_y": 0.7255
+    "pagerank": 0.02097647,
+    "eigen_centrality": 0.0,
+    "clustering_local": 1.0,
+    "kcore": 3,
+    "degree_pct": 0,
+    "strength_pct": 38,
+    "prominence_pct": 82,
+    "prominence_pct_construct": 82,
+    "pagerank_pct": 18,
+    "degree_z": -2.353,
+    "strength_z": -0.5,
+    "prominence_z": 0.649,
+    "pagerank_z": -0.706,
+    "hub_vs_loyal": 3.0,
+    "collaborator_reach": 3,
+    "embed_x": 2.4932,
+    "embed_y": 0.8997
   },
   {
-    "id": "nm1205389",
-    "label": "Yda Manzano",
-    "label_ascii": "Yda Manzano",
-    "type": "person",
-    "gender": "female",
-    "degree": 6353,
-    "dominant_genre": "Drama",
-    "concentration": 0.933,
-    "title_count": 15,
-    "prominence": 1211.6,
-    "year_min": 2023,
-    "year_max": 2026,
-    "year_peak": 2024,
-    "roles": [
-      {
-        "title": "Mamasan",
-        "character": "Myrna",
-        "characters": [
-          "Myrna"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt38608640",
-        "votes": 99
-      },
-      {
-        "title": "Sa iyong mga haplos",
-        "character": "Lourdes Mercado",
-        "characters": [
-          "Lourdes Mercado"
-        ],
-        "year": 2001,
-        "billing": 1,
-        "tconst": "tt0350078",
-        "votes": 0
-      },
-      {
-        "title": "Sagaran",
-        "character": "Glenda",
-        "characters": [
-          "Glenda"
-        ],
-        "year": 2026,
-        "billing": 2,
-        "tconst": "tt39376926",
-        "votes": 198
-      },
-      {
-        "title": "Sex Hub 1",
-        "character": "Jessa",
-        "characters": [
-          "Jessa"
-        ],
-        "year": 2023,
-        "billing": 2,
-        "tconst": "tt38745417",
-        "votes": 138
-      },
-      {
-        "title": "Sex Hub 2",
-        "character": "Jessa",
-        "characters": [
-          "Jessa"
-        ],
-        "year": 2023,
-        "billing": 2,
-        "tconst": "tt38745419",
-        "votes": 137
-      },
-      {
-        "title": "Katas",
-        "character": "Grace",
-        "characters": [
-          "Grace"
-        ],
-        "year": 2024,
-        "billing": 3,
-        "tconst": "tt31031372",
-        "votes": 337
-      }
-    ],
-    "bridge_score": 0.028746,
-    "community": 1,
-    "degree_pct": 19,
-    "prominence_pct": 19,
-    "embed_x": -1.62,
-    "embed_y": 0.3119
-  },
-  {
-    "id": "nm1632883",
-    "label": "Tali Sharon",
-    "label_ascii": "Tali Sharon",
-    "type": "person",
-    "gender": "female",
-    "degree": 5457,
-    "dominant_genre": "Drama",
-    "concentration": 0.909,
-    "title_count": 11,
-    "prominence": 1002.3,
-    "year_min": 2005,
-    "year_max": 2024,
-    "year_peak": 2013,
-    "roles": [
-      {
-        "title": "Out of Sight",
-        "character": "Yaara",
-        "characters": [
-          "Yaara"
-        ],
-        "year": 2006,
-        "billing": 1,
-        "tconst": "tt0759604",
-        "votes": 230
-      },
-      {
-        "title": "Highway 65",
-        "character": "Daphna",
-        "characters": [
-          "Daphna"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt7176064",
-        "votes": 216
-      },
-      {
-        "title": "She Is Coming Home",
-        "character": "Michal",
-        "characters": [
-          "Michal"
-        ],
-        "year": 2013,
-        "billing": 1,
-        "tconst": "tt2965510",
-        "votes": 73
-      },
-      {
-        "title": "Sabbath Entertainment",
-        "character": "Rachel",
-        "characters": [
-          "Rachel"
-        ],
-        "year": 2003,
-        "billing": 1,
-        "tconst": "tt0426198",
-        "votes": 49
-      },
-      {
-        "title": "Almost",
-        "character": "Naomi",
-        "characters": [
-          "Naomi"
-        ],
-        "year": 2005,
-        "billing": 1,
-        "tconst": "tt11278992",
-        "votes": 0
-      },
-      {
-        "title": "Houses",
-        "character": "Anna",
-        "characters": [
-          "Anna"
-        ],
-        "year": 2025,
-        "billing": 2,
-        "tconst": "tt27750778",
-        "votes": 45
-      }
-    ],
-    "bridge_score": 0.025233,
-    "community": 1,
-    "degree_pct": 16,
-    "prominence_pct": 13,
-    "embed_x": -1.5075,
-    "embed_y": 1.1766
-  },
-  {
-    "id": "nm15943122",
-    "label": "Angeline Aril",
-    "label_ascii": "Angeline Aril",
-    "type": "person",
-    "gender": "female",
-    "degree": 4977,
-    "dominant_genre": "Drama",
-    "concentration": 1.0,
-    "title_count": 8,
-    "prominence": 963.8,
-    "year_min": 2024,
-    "year_max": 2026,
-    "year_peak": 2025,
-    "roles": [
-      {
-        "title": "Sa Gabing Mainit",
-        "character": "Nica",
-        "characters": [
-          "Nica"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt37627976",
-        "votes": 196
-      },
-      {
-        "title": "How to Kiss a Girl",
-        "character": "Carmina",
-        "characters": [
-          "Carmina"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt35403083",
-        "votes": 159
-      },
-      {
-        "title": "Cheaters",
-        "character": "April",
-        "characters": [
-          "April"
-        ],
-        "year": 2024,
-        "billing": 2,
-        "tconst": "tt31830638",
-        "votes": 239
-      },
-      {
-        "title": "I Love What You Love",
-        "character": "Carmina",
-        "characters": [
-          "Carmina"
-        ],
-        "year": 2024,
-        "billing": 2,
-        "tconst": "tt32408442",
-        "votes": 143
-      },
-      {
-        "title": "Sex Trip",
-        "character": "Grace",
-        "characters": [
-          "Grace"
-        ],
-        "year": 2026,
-        "billing": 3,
-        "tconst": "tt38080080",
-        "votes": 367
-      },
-      {
-        "title": "Pihit",
-        "character": "Claire",
-        "characters": [
-          "Claire"
-        ],
-        "year": 2025,
-        "billing": 3,
-        "tconst": "tt36816245",
-        "votes": 255
-      }
-    ],
-    "bridge_score": 0.025806,
-    "community": 0,
-    "degree_pct": 13,
-    "prominence_pct": 10,
-    "embed_x": -1.4987,
-    "embed_y": 2.0659
-  },
-  {
-    "id": "nm0825983",
-    "label": "Peter Steiner",
-    "label_ascii": "Peter Steiner",
+    "id": "nm14815297",
+    "label": "Ghion Layug",
+    "label_ascii": "Ghion Layug",
     "type": "person",
     "gender": "male",
-    "degree": 3627,
-    "dominant_genre": "Comedy",
-    "concentration": 1.0,
-    "title_count": 13,
-    "prominence": 1209.4,
-    "year_min": 1973,
-    "year_max": 1983,
-    "year_peak": 1978,
-    "roles": [
-      {
-        "title": "Liebesgrüße aus der Lederhos'n",
-        "character": "Sepp Eber",
-        "characters": [
-          "Sepp Eber"
-        ],
-        "year": 1973,
-        "billing": 1,
-        "tconst": "tt0071753",
-        "votes": 180
-      },
-      {
-        "title": "Der Kurpfuscher und seine fixen Töchter",
-        "character": "Josef Brezenbichler",
-        "characters": [
-          "Josef Brezenbichler"
-        ],
-        "year": 1980,
-        "billing": 1,
-        "tconst": "tt0081018",
-        "votes": 157
-      },
-      {
-        "title": "Drei Lederhosen in St. Tropez",
-        "character": "Peter Eichel",
-        "characters": [
-          "Peter Eichel"
-        ],
-        "year": 1980,
-        "billing": 1,
-        "tconst": "tt0166583",
-        "votes": 137
-      },
-      {
-        "title": "Liebesgrüße aus der Lederhose II. Teil: Zwei Kumpel auf der Alm",
-        "character": "Sepp Eber",
-        "characters": [
-          "Sepp Eber"
-        ],
-        "year": 1974,
-        "billing": 1,
-        "tconst": "tt0187241",
-        "votes": 131
-      },
-      {
-        "title": "Clattering Chastity Belts",
-        "character": "Archibald",
-        "characters": [
-          "Archibald"
-        ],
-        "year": 1974,
-        "billing": 1,
-        "tconst": "tt0070740",
-        "votes": 119
-      },
-      {
-        "title": "Zum Gasthof der spritzigen Mädchen",
-        "character": "Alois",
-        "characters": [
-          "Alois"
-        ],
-        "year": 1979,
-        "billing": 1,
-        "tconst": "tt0080181",
-        "votes": 112
-      }
-    ],
-    "bridge_score": 0.0,
-    "community": 2,
-    "degree_pct": 10,
-    "prominence_pct": 16,
-    "embed_x": -0.5087,
-    "embed_y": 3.8952
-  },
-  {
-    "id": "nm8801103",
-    "label": "Miah Green",
-    "label_ascii": "Miah Green",
-    "type": "person",
-    "gender": "female",
-    "degree": 3598,
-    "dominant_genre": "Drama",
-    "concentration": 0.909,
-    "title_count": 11,
-    "prominence": 755.4,
-    "year_min": 2025,
-    "year_max": 2026,
-    "year_peak": 2025,
-    "roles": [
-      {
-        "title": "How to Break a DILF",
-        "character": "Sophie Holland",
-        "characters": [
-          "Sophie Holland"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt38883928",
-        "votes": 156
-      },
-      {
-        "title": "Summer Honeymoon with My Secret Billionaire",
-        "character": "Ellie Green",
-        "characters": [
-          "Ellie Green"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt37727135",
-        "votes": 134
-      },
-      {
-        "title": "Wrong!",
-        "character": "Sophie",
-        "characters": [
-          "Sophie"
-        ],
-        "year": 2026,
-        "billing": 1,
-        "tconst": "tt39381346",
-        "votes": 84
-      },
-      {
-        "title": "Moving on from My Bodyguard",
-        "character": "Kelly Stewart",
-        "characters": [
-          "Kelly Stewart"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt38677138",
-        "votes": 62
-      },
-      {
-        "title": "Catch Me If You Can",
-        "character": "Nora Ellis",
-        "characters": [
-          "Nora Ellis"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt37269296",
-        "votes": 56
-      },
-      {
-        "title": "Swan Queen Dancing Back into His Arms",
-        "character": "Talia Monroe Shaw",
-        "characters": [
-          "Talia Monroe Shaw"
-        ],
-        "year": 2026,
-        "billing": 1,
-        "tconst": "tt39400869",
-        "votes": 44
-      }
-    ],
-    "bridge_score": 0.006846,
-    "community": 0,
-    "degree_pct": 6,
-    "prominence_pct": 6,
-    "embed_x": -2.527,
-    "embed_y": 1.8989
-  },
-  {
-    "id": "nm13934854",
-    "label": "Juan Calma",
-    "label_ascii": "Juan Calma",
-    "type": "person",
-    "gender": "male",
-    "degree": 2799,
+    "degree": 3,
     "dominant_genre": "Drama",
     "concentration": 1.0,
-    "title_count": 9,
-    "prominence": 733.7,
-    "year_min": 2024,
-    "year_max": 2026,
-    "year_peak": 2024,
-    "roles": [
-      {
-        "title": "Dirty Pleasures",
-        "character": "Rener",
-        "characters": [
-          "Rener"
-        ],
-        "year": 2024,
-        "billing": 1,
-        "tconst": "tt43600147",
-        "votes": 100
-      },
-      {
-        "title": "Crossing Lines",
-        "character": "Rener",
-        "characters": [
-          "Rener"
-        ],
-        "year": 2026,
-        "billing": 1,
-        "tconst": "tt43599824",
-        "votes": 0
-      },
-      {
-        "title": "How to Kiss a Girl",
-        "character": "Van",
-        "characters": [
-          "Van"
-        ],
-        "year": 2025,
-        "billing": 2,
-        "tconst": "tt35403083",
-        "votes": 159
-      },
-      {
-        "title": "Claim Me",
-        "character": "Daniel",
-        "characters": [
-          "Daniel"
-        ],
-        "year": 2026,
-        "billing": 3,
-        "tconst": "tt39283969",
-        "votes": 230
-      },
-      {
-        "title": "Kabitan",
-        "character": "Van",
-        "characters": [
-          "Van"
-        ],
-        "year": 2024,
-        "billing": 3,
-        "tconst": "tt34524464",
-        "votes": 209
-      },
-      {
-        "title": "Kiskisan",
-        "character": "Rener",
-        "characters": [
-          "Rener"
-        ],
-        "year": 2024,
-        "billing": 4,
-        "tconst": "tt33269451",
-        "votes": 376
-      }
-    ],
-    "bridge_score": 0.001434,
-    "community": 0,
-    "degree_pct": 3,
-    "prominence_pct": 3,
-    "embed_x": 0.0759,
-    "embed_y": 3.303
-  },
-  {
-    "id": "nm12690549",
-    "label": "Ardy Raymundo",
-    "label_ascii": "Ardy Raymundo",
-    "type": "person",
-    "gender": "male",
-    "degree": 1800,
-    "dominant_genre": "Drama",
-    "concentration": 0.9,
     "title_count": 10,
-    "prominence": 600.6,
-    "year_min": 2023,
+    "prominence": 492.8,
+    "year_min": 2024,
     "year_max": 2026,
-    "year_peak": 2024,
+    "year_peak": 2025,
+    "strength": 1476,
     "roles": [
       {
-        "title": "Delusion",
-        "character": "Noli",
+        "title": "Growl",
+        "character": "Abet",
         "characters": [
-          "Noli"
+          "Abet"
         ],
-        "year": 2025,
+        "year": 2024,
         "billing": 2,
-        "tconst": "tt35889157",
-        "votes": 207
+        "tconst": "tt34150317",
+        "votes": 106
       },
       {
-        "title": "Late Bloomer",
+        "title": "The Sunflower's Bloom",
         "character": "Aries",
         "characters": [
           "Aries"
         ],
-        "year": 2024,
+        "year": 2025,
         "billing": 3,
-        "tconst": "tt32165698",
-        "votes": 195
+        "tconst": "tt36454949",
+        "votes": 65
       },
       {
-        "title": "Maid's Obsession",
-        "character": "Robert",
+        "title": "Paalam, Salamat",
+        "character": "Young Carlo",
         "characters": [
-          "Robert"
+          "Young Carlo"
         ],
-        "year": 2026,
+        "year": 2025,
         "billing": 4,
-        "tconst": "tt40112747",
-        "votes": 178
+        "tconst": "tt38080085",
+        "votes": 230
       },
       {
-        "title": "Maharot",
-        "character": "Tasyo",
+        "title": "Karinyo Brutal",
+        "character": "Quito",
         "characters": [
-          "Tasyo"
+          "Quito"
         ],
         "year": 2024,
-        "billing": 4,
-        "tconst": "tt32792977",
-        "votes": 131
-      },
-      {
-        "title": "Scandal Queen",
-        "character": "Sir B",
-        "characters": [
-          "Sir B"
-        ],
-        "year": 2026,
         "billing": 5,
-        "tconst": "tt42995023",
-        "votes": 41
+        "tconst": "tt30691232",
+        "votes": 470
       },
       {
-        "title": "Foursome",
-        "character": "Taong Grasa",
+        "title": "Init",
+        "character": "Zander",
         "characters": [
-          "Taong Grasa"
+          "Zander"
         ],
-        "year": 2023,
-        "billing": 6,
-        "tconst": "tt30343025",
-        "votes": 773
+        "year": 2024,
+        "billing": 5,
+        "tconst": "tt32864326",
+        "votes": 303
+      },
+      {
+        "title": "Dirty Ice Cream",
+        "character": "Monch",
+        "characters": [
+          "Monch"
+        ],
+        "year": 2024,
+        "billing": 5,
+        "tconst": "tt32164743",
+        "votes": 175
       }
     ],
     "bridge_score": 0.0,
-    "community": 0,
+    "community": 4,
+    "pagerank": 0.01333001,
+    "eigen_centrality": 0.0,
+    "clustering_local": 1.0,
+    "kcore": 3,
     "degree_pct": 0,
+    "strength_pct": 0,
     "prominence_pct": 0,
-    "embed_x": -2.0289,
-    "embed_y": 3.2826
+    "prominence_pct_construct": 0,
+    "pagerank_pct": 5,
+    "degree_z": -2.353,
+    "strength_z": -0.85,
+    "prominence_z": -0.658,
+    "pagerank_z": -2.049,
+    "hub_vs_loyal": 3.0,
+    "collaborator_reach": 3,
+    "embed_x": -3.6164,
+    "embed_y": 0.2914
   }
 ]

@@ -89,7 +89,7 @@ export function layoutTimeline(
   const theme = opts.theme ?? "light";
   const sortBy = opts.sortBy ?? "year_peak";
   const thicknessBy = opts.thicknessBy ?? "shared";
-  const sizeBy = opts.sizeBy ?? "degree";
+  const sizeBy = opts.sizeBy ?? "strength";
   const rowH = opts.rowH ?? 18;
   const padR = 24;
   const padB = 24;

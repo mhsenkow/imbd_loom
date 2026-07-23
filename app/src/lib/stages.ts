@@ -1,6 +1,7 @@
 /** Client-side alluvial stages when a construct ships an empty stages.json. */
 
 import type { Node, StageRow } from "./types";
+import { nodeStrength } from "./metrics";
 
 function era(year: unknown): string {
   const y = typeof year === "number" ? year : Number(year);
@@ -11,11 +12,11 @@ function era(year: unknown): string {
   return "2015+";
 }
 
-function degreeBand(degree: unknown): string {
-  const d = typeof degree === "number" ? degree : Number(degree) || 0;
-  if (d >= 40) return "hub";
-  if (d >= 15) return "connected";
-  if (d >= 5) return "linked";
+/** Hub bands use strength (Σ weights), not neighbor count. */
+function strengthBand(strength: number): string {
+  if (strength >= 40) return "hub";
+  if (strength >= 15) return "connected";
+  if (strength >= 5) return "linked";
   return "sparse";
 }
 
@@ -28,7 +29,7 @@ export function personFacetLabels(n: Node): {
 } {
   const gender = String(n.gender || "unknown");
   const e = era(n.year_peak ?? n.year_max);
-  const band = degreeBand(n.degree);
+  const band = strengthBand(nodeStrength(n));
   return {
     gender,
     era: e,
@@ -45,7 +46,7 @@ export function synthesizeStages(nodes: Node[]): StageRow[] {
   for (const n of nodes) {
     const gender = String(n.gender || "unknown");
     const e = era(n.year_peak ?? n.year_max);
-    const band = degreeBand(n.degree);
+    const band = strengthBand(nodeStrength(n));
     const k1 = `${gender}\0${e}`;
     const k2 = `${e}\0${band}`;
     ge.set(k1, (ge.get(k1) || 0) + 1);

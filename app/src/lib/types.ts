@@ -56,6 +56,8 @@ export type StatMarkId =
   | "longest_collab"
   | "loyalty_pair"
   | "gini_callout"
+  | "assortativity"
+  | "giant_component"
   | "retention_meter"
   // Graph structure
   | "community_cuts"
@@ -88,7 +90,17 @@ export interface Node {
   label: string;
   type: "person" | "title" | "genre" | "role";
   gender?: Gender | string;
+  /** Neighbor count (graph degree). Pre-v2 payloads may store strength here. */
   degree: number;
+  /** Σ incident edge weights (hub signal). */
+  strength?: number;
+  prominence?: number;
+  prominence_raw?: number;
+  pagerank?: number;
+  acclaim_gap?: number;
+  eigen_centrality?: number;
+  clustering_local?: number;
+  kcore?: number;
   roles?: RoleCredit[];
   [key: string]: unknown;
 }
@@ -106,6 +118,17 @@ export interface Edge {
   weight: number;
   construct: string;
   year?: number;
+  year_min?: number;
+  year_max?: number;
+  shared_count?: number;
+  collab_count?: number;
+  collab_strength?: number;
+  reunion_span?: number;
+  recency?: number;
+  loyalty_ab?: number;
+  loyalty_ba?: number;
+  edge_genre_jaccard?: number;
+  shared_votes_max?: number;
   /** Example titles both people appear in */
   shared?: SharedTitle[];
   [key: string]: unknown;
@@ -135,9 +158,30 @@ export interface BuildStats {
 export interface ManifestSummary {
   degree_max?: number;
   degree_median?: number;
+  strength_max?: number;
+  strength_median?: number;
+  degree_gini?: number;
+  strength_gini?: number;
+  assortativity?: number | null;
+  density?: number;
+  modularity?: number;
+  community_sizes?: number[];
+  largest_community_share?: number;
+  component_count?: number;
+  giant_component_share?: number;
+  diameter?: number | null;
+  effective_diameter?: number | null;
+  degree_hist?: Array<{ lo: number; hi: number; count: number }>;
+  strength_hist?: Array<{ lo: number; hi: number; count: number }>;
+  prominence_hist?: Array<{ lo: number; hi: number; count: number }>;
+  scatter_strength_prominence?: Array<{ id: string; x: number; y: number }>;
+  gender_homophily?: number | null;
+  era_homophily?: number | null;
+  outliers?: Record<string, string[]>;
   era_histogram?: Record<string, number>;
   gender_mix?: Record<string, number>;
   top_name?: string;
+  [key: string]: unknown;
 }
 
 export interface FeaturedPathHop {
@@ -176,16 +220,20 @@ export interface Manifest {
   gender_method?: string;
   tmdb_gender_rows?: number;
   build_seed?: number;
+  metrics_version?: string;
   build_stats?: BuildStats;
   imdb_snapshot_files?: Record<string, string>;
   min_shared_titles?: number;
   top_n?: number;
   avg_path_length?: number;
   avg_path_sample_n?: number;
+  avg_path_length_sampled?: boolean;
   clustering_coefficient?: number;
   community_count?: number;
   featured_path?: FeaturedPathHop[];
   summary?: ManifestSummary;
+  correlations?: Record<string, { r?: number | null; rho?: number | null; n?: number }>;
+  insight?: string;
   [key: string]: unknown;
 }
 
@@ -207,20 +255,47 @@ export interface Annotation {
 }
 
 export type GenderFilter = "all" | Gender;
-export type SortBy = "degree" | "prominence" | "year_peak" | "title_count";
-export type ColorMode = "auto" | "gender" | "degree" | "prominence" | "genre";
-export type ColorBy = "gender" | "degree" | "prominence" | "genre";
+export type SortBy =
+  | "strength"
+  | "degree"
+  | "prominence"
+  | "year_peak"
+  | "title_count"
+  | "pagerank";
+export type ColorMode =
+  | "auto"
+  | "gender"
+  | "strength"
+  | "degree"
+  | "prominence"
+  | "genre"
+  | "pagerank"
+  | "acclaim_gap";
+export type ColorBy =
+  | "gender"
+  | "strength"
+  | "degree"
+  | "prominence"
+  | "genre"
+  | "pagerank"
+  | "acclaim_gap";
 export type LabelMode = "hubs" | "all" | "none";
 export type SearchMode = "highlight" | "isolate";
 /** Link stroke / ribbon weight encoding */
 export type ThicknessBy = "shared" | "uniform" | "recency";
 /** Person mark scale (timeline bars, etc.) */
-export type SizeBy = "degree" | "prominence" | "titles" | "uniform";
+export type SizeBy =
+  | "strength"
+  | "degree"
+  | "prominence"
+  | "titles"
+  | "uniform"
+  | "pagerank";
 
 export interface PosterSpec {
   pageSize: "a1" | "a0" | "tabloid" | "letter";
   activeConstruct: string;
-  heroForm: "chord" | "bundle" | "timeline";
+  heroForm: "chord" | "bundle" | "timeline" | "scatter";
   topN: number;
   minWeight: number;
   showSafeGuide: boolean;
@@ -248,7 +323,7 @@ export interface PosterSpec {
   timelineFlip: boolean;
   /** Drop people with no surviving links after edge filters */
   hideIsolates: boolean;
-  /** Minimum collaboration degree (pre top-N) */
+  /** Minimum strength (legacy name — filters on strength) */
   minDegree: number;
   /** Show construct-thread strip under the hero */
   showStrip: boolean;
@@ -274,11 +349,11 @@ export const DEFAULT_SPEC: PosterSpec = {
   yearFrom: 1920,
   yearTo: 2030,
   minTitles: 1,
-  sortBy: "degree",
+  sortBy: "strength",
   colorMode: "auto",
   labelMode: "hubs",
   thicknessBy: "shared",
-  sizeBy: "degree",
+  sizeBy: "strength",
   neighborhoodOnly: false,
   edgeYearFilter: false,
   searchQuery: "",

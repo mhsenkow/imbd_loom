@@ -3,7 +3,7 @@
  * Token map (canonical values live in lib/theme/tokens.ts → cssVars()):
  *   Paper surface:  --paper, --paper-wash, --paper-edge, --paper-grain, --trim, --rule
  *   Ink hierarchy:  --ink, --ink-soft, --ink-faint
- *   Workshop:       --atelier, --atelier-panel, --atelier-border, --atelier-text, --atelier-muted
+ *   Workshop:       --atelier, --atelier-panel, --atelier-border, --atelier-text, --atelier-muted, --on-accent
  *   Light:          --atelier-glow-warm, --atelier-glow-cool
  *   Accent:         --accent, --accent-soft, --accent-hover, --accent-pressed, --accent-focus
  *   Extended:       --surface-well, --hover-wash, --shadow-*, --paper-grain-opacity
@@ -35,6 +35,8 @@
   --atelier-border: #2a2730;
   --atelier-text: #e8e4dc;
   --atelier-muted: #a39e94;
+  --atelier-bg: #121014;
+  --on-accent: #faf6ee;
   --atelier-glow-warm: #2a221c;
   --atelier-glow-cool: #1c1814;
 
@@ -71,6 +73,10 @@
 
   /* Motion */
   --ease-atelier: cubic-bezier(0.4, 0, 0.2, 1);
+  /* Soft start → settle — for weave focus / panel peeks */
+  --ease-settle: cubic-bezier(0.33, 0, 0.12, 1);
+  --duration-peek: 180ms;
+  --duration-settle: 380ms;
   --radius-letterpress: 8px;
   --radius-stamp: 4px;
 
@@ -101,12 +107,24 @@
 }
 
 @media (prefers-contrast: more) {
-  :root {
+  :root[data-theme="light"] {
     --ink: #0e0c0a;
+    --ink-soft: #2a2620;
     --ink-faint: #4a4640;
+    --atelier-text: #0e0c0a;
+    --atelier-muted: #4a4640;
+    --atelier-border: #8a8070;
+    --rule: #b8b0a0;
+  }
+  :root[data-theme="dark"],
+  :root:not([data-theme="light"]) {
+    --ink: #e8e4dc;
+    --ink-soft: #c4bfb4;
+    --ink-faint: #c4bfb4;
+    --atelier-text: #e8e4dc;
     --atelier-muted: #c4bfb4;
     --atelier-border: #3a3640;
-    --rule: #b8b0a0;
+    --rule: #3a3640;
   }
 }
 
@@ -662,7 +680,7 @@ select:focus-visible,
 .export-btn {
   margin-top: auto;
   background: color-mix(in srgb, var(--accent) 88%, var(--ink));
-  color: var(--paper);
+  color: var(--on-accent);
   border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
   border-radius: var(--radius-letterpress);
   min-height: 52px;
@@ -758,6 +776,21 @@ select:focus-visible,
     var(--atelier);
   user-select: none;
   min-height: 0;
+}
+
+/* Timeline explorer: fill the stage so zoom maps 1:1 to the visible viewport */
+.stage:has(.timeline-shell) {
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 0;
+  overflow: hidden;
+}
+.stage:has(.timeline-shell) .timeline-shell {
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  height: auto;
+  border-radius: 0;
 }
 
 .stage-hud {
@@ -904,13 +937,21 @@ select:focus-visible,
   max-height: calc(100dvh - 64px);
 }
 
-/* Calm opacity only — avoid fighting pan/zoom */
+/* Calm opacity — soft-start settle so scanning doesn't hard-cut the weave */
 .timeline-links path,
 .timeline-people g,
 .ribbons path,
-.bundle-links path {
-  transition: stroke-opacity 0.12s var(--ease-atelier), fill-opacity 0.12s var(--ease-atelier),
-    opacity 0.12s var(--ease-atelier);
+.bundle-links path,
+.chord-arcs path,
+.arcs g,
+.bundle-leaves g,
+.poster svg .arc,
+.poster svg .ribbon {
+  transition:
+    stroke-opacity var(--duration-settle) var(--ease-settle),
+    fill-opacity var(--duration-settle) var(--ease-settle),
+    opacity var(--duration-settle) var(--ease-settle),
+    stroke-width 220ms var(--ease-settle);
 }
 
 .timeline-shell.is-zooming .timeline-links path,
@@ -948,7 +989,11 @@ select:focus-visible,
   .timeline-people g,
   .ribbons path,
   .bundle-links path,
-  .insight-card {
+  .chord-arcs path,
+  .poster svg .arc,
+  .poster svg .ribbon,
+  .insight-card,
+  .detail-panel .detail-peek {
     transition: none;
     animation: none;
   }
@@ -1016,6 +1061,33 @@ select:focus-visible,
 
 .detail-panel.pinned {
   box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.detail-panel .detail-peek {
+  /* Soft content settle when Inspect opens / solidifies — not on every skim */
+  transition:
+    opacity var(--duration-peek) var(--ease-settle),
+    transform var(--duration-peek) var(--ease-settle);
+}
+
+.detail-panel.panel-open:not(.pinned) .detail-peek:not(.is-solid) {
+  animation: detail-peek-in var(--duration-peek) var(--ease-settle) both;
+}
+
+.detail-panel .detail-peek.is-solid,
+.detail-panel.pinned .detail-peek {
+  animation: none;
+}
+
+@keyframes detail-peek-in {
+  from {
+    opacity: 0.72;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .detail-panel.empty-detail .hint {
@@ -1201,6 +1273,7 @@ select:focus-visible,
 
 .timeline-viewport {
   flex: 1;
+  min-height: 0;
   overflow: hidden;
   cursor: grab;
   background:
@@ -1216,7 +1289,8 @@ select:focus-visible,
 
 .timeline-svg {
   display: block;
-  min-width: 100%;
+  width: 100%;
+  height: 100%;
   touch-action: none;
 }
 
@@ -1271,6 +1345,9 @@ select:focus-visible,
   font-size: 12px;
   line-height: 1.4;
   color: var(--ink-soft);
+  flex-shrink: 0;
+  max-height: min(38vh, 280px);
+  overflow: auto;
 }
 
 .chart-legend-toggle {
@@ -1346,7 +1423,7 @@ select:focus-visible,
 .link-banner {
   padding: 10px 16px;
   background: color-mix(in srgb, var(--paper) 8%, var(--atelier));
-  color: var(--paper);
+  color: var(--atelier-text);
   border-bottom: 1px solid var(--atelier-border);
 }
 
@@ -1377,6 +1454,25 @@ select:focus-visible,
   border: 1px solid var(--trim);
   border-top: none;
   box-shadow: 0 1px 0 color-mix(in srgb, var(--paper) 60%, transparent) inset;
+}
+
+.status-strip--overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid var(--trim);
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(6px);
+  pointer-events: none;
+}
+
+.status-strip--overlay.status-strip--link {
+  border-left: none;
+  box-shadow: inset 3px 0 0 var(--accent);
 }
 
 .status-strip--link {
@@ -2109,7 +2205,7 @@ body.print-mode .poster-frame svg.poster {
   letter-spacing: -0.03em;
   line-height: 1.05;
   text-transform: none;
-  color: var(--paper);
+  color: var(--atelier-text);
   text-wrap: balance;
   animation: gallery-brand-in 0.7s var(--ease-atelier) both;
 }
@@ -2121,7 +2217,7 @@ body.print-mode .poster-frame svg.poster {
   font-weight: 500;
   letter-spacing: -0.01em;
   line-height: 1.35;
-  color: var(--atelier-muted);
+  color: var(--atelier-text);
   text-wrap: balance;
 }
 
@@ -2130,7 +2226,8 @@ body.print-mode .poster-frame svg.poster {
   max-width: 34rem;
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--atelier-muted);
+  color: var(--atelier-text);
+  opacity: 0.82;
   text-wrap: pretty;
 }
 
@@ -2182,19 +2279,19 @@ body.print-mode .poster-frame svg.poster {
 }
 
 .gallery-tab.active {
-  color: var(--paper);
+  color: var(--atelier-text);
   background: var(--atelier-panel);
   border-color: var(--atelier-border);
 }
 
 .gallery-tab-count {
   font-size: 10px;
-  opacity: 0.55;
+  color: var(--atelier-muted);
+  font-variant-numeric: tabular-nums;
 }
 
 .gallery-tab.active .gallery-tab-count {
   color: var(--accent);
-  opacity: 1;
 }
 
 .gallery-tab-blurb {
@@ -2202,7 +2299,8 @@ body.print-mode .poster-frame svg.poster {
   max-width: 40rem;
   font-size: 0.95rem;
   line-height: 1.5;
-  color: var(--atelier-muted);
+  color: var(--atelier-text);
+  opacity: 0.78;
 }
 
 .gallery-cta {
@@ -2214,7 +2312,7 @@ body.print-mode .poster-frame svg.poster {
   border-radius: var(--radius-stamp);
   border: 1px solid var(--accent);
   background: var(--accent);
-  color: var(--paper);
+  color: var(--on-accent);
   font-family: var(--mono);
   font-size: 12px;
   letter-spacing: 0.08em;
@@ -2361,7 +2459,7 @@ body.print-mode .poster-frame svg.poster {
   font-size: 9px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--ink-faint);
+  color: var(--ink-soft);
   background: var(--paper-wash);
 }
 
@@ -2370,7 +2468,7 @@ body.print-mode .poster-frame svg.poster {
   margin-top: auto;
   font-size: 10px;
   letter-spacing: 0.02em;
-  color: var(--ink-faint);
+  color: var(--ink-soft);
   line-height: 1.4;
   flex-shrink: 0;
 }
@@ -2666,6 +2764,109 @@ body.print-mode .poster-frame svg.poster {
 }
 
 /* ── Trust the data / methodology page ─────────────────────────── */
+.stats-rail {
+  margin: 0 0 12px;
+  padding: 12px 14px;
+  background: var(--atelier-panel);
+  border: 1px solid var(--atelier-border);
+  border-radius: 8px;
+  max-width: 100%;
+}
+.stats-rail-title {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+}
+.stats-rail-insight {
+  margin: 0 0 10px;
+  font-size: 0.85rem;
+  color: var(--atelier-muted);
+  line-height: 1.4;
+}
+.stats-rail-kicker {
+  margin: 10px 0 6px;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--atelier-muted);
+}
+.stats-rail-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+.stats-rail-metrics dt {
+  font-size: 0.7rem;
+  color: var(--atelier-muted);
+}
+.stats-rail-metrics dd {
+  margin: 2px 0 0;
+  font-size: 0.95rem;
+}
+.stats-rail-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 48px;
+}
+.stats-rail-bar {
+  flex: 1;
+  min-width: 4px;
+  background: var(--accent);
+  opacity: 0.75;
+  border-radius: 2px 2px 0 0;
+}
+.stats-rail-scatter-svg {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  background: var(--surface-well, transparent);
+  border-radius: 4px;
+}
+.stats-rail-dot {
+  fill: var(--accent);
+  cursor: pointer;
+}
+.stats-rail-corr ul {
+  margin: 0;
+  padding-left: 1.1em;
+  font-size: 0.75rem;
+  color: var(--atelier-muted);
+}
+.stats-rail-note {
+  margin: 10px 0 0;
+  font-size: 0.75rem;
+  color: var(--atelier-muted);
+}
+.scatter-stage {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media (min-width: 900px) {
+  .scatter-stage {
+    grid-template-columns: 260px 1fr;
+    align-items: start;
+  }
+}
+.scatter-stage-title {
+  margin: 0 0 4px;
+  font-family: var(--font-display, "Iowan Old Style", Palatino, serif);
+}
+.scatter-stage-sub {
+  margin: 0 0 12px;
+  color: var(--atelier-muted);
+  font-size: 0.9rem;
+}
+.scatter-hero {
+  width: 100%;
+  height: auto;
+  background: var(--atelier-panel);
+  border: 1px solid var(--atelier-border);
+  border-radius: 8px;
+}
 .trust-page {
   --trust-max: 720px;
   min-height: 100dvh;

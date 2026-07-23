@@ -75,7 +75,7 @@ export function HeroViz({
   labelMode = "hubs",
   search = null,
   palette = "loom",
-  sortBy = "degree",
+  sortBy = "strength",
   thicknessBy = "shared",
   statMarks = [],
   manifest = null,
@@ -90,6 +90,8 @@ export function HeroViz({
   const radius = Math.min(width, height) * 0.38;
   const focus = selection ? activeId(selection) : null;
   const edgeFocus = selection ? activeEdge(selection) : null;
+  const skimId = selection?.skimId ?? null;
+  const skimEdge = selection?.skimEdge ?? null;
   const neighbors = useMemo(() => neighborIds(focus, edges), [focus, edges]);
   const byId = useMemo(() => new Map(nodes.map((n) => [n.id, n])), [nodes]);
 
@@ -139,6 +141,12 @@ export function HeroViz({
     !!edgeFocus &&
     ((edgeFocus.source === sourceId && edgeFocus.target === targetId) ||
       (edgeFocus.source === targetId && edgeFocus.target === sourceId));
+
+  const isSkimLink = (sourceId: string, targetId: string) =>
+    !edgeFocus &&
+    !!skimEdge &&
+    ((skimEdge.source === sourceId && skimEdge.target === targetId) ||
+      (skimEdge.source === targetId && skimEdge.target === sourceId));
 
   const densestLabel = useMemo(() => {
     if (!stats || !hasStat(stats, "densest_pair") || !stats.densestPair) return null;
@@ -194,24 +202,34 @@ export function HeroViz({
                     neighbors.has(r.sourceId) &&
                     neighbors.has(r.targetId));
                 const hot = isEdge(r.sourceId, r.targetId);
+                const skim = isSkimLink(r.sourceId, r.targetId);
                 const searchHot =
                   !search ||
                   search.matchedEdgeKeys.has(edgeKey(r.sourceId, r.targetId));
                 const statLink = linkStatStyle(stats, r.sourceId, r.targetId, r.value);
-                let fillOpacity = !focus ? (hot ? 0.9 : 0.55) : related ? 0.9 : 0.08;
+                let fillOpacity = !focus
+                  ? hot
+                    ? 0.9
+                    : skim
+                      ? 0.78
+                      : 0.55
+                  : related
+                    ? 0.9
+                    : 0.08;
                 if (search && !searchHot) fillOpacity = Math.min(fillOpacity, 0.06);
                 if (search && searchHot) fillOpacity = Math.max(fillOpacity, 0.85);
                 if (statLink) fillOpacity = Math.max(fillOpacity, statLink.thin ? 0.08 : 0.88);
                 const weaveId = `weave-${r.sourceId}-${r.targetId}-${i}`;
                 const useGradient =
-                  !hot && !(search && searchHot) && !statLink && r.fill !== r.targetFill;
+                  !hot && !skim && !(search && searchHot) && !statLink && r.fill !== r.targetFill;
                 const fill =
-                  hot || (search && searchHot)
+                  hot || skim || (search && searchHot)
                     ? ACCENT
                     : statLink?.stroke ?? (useGradient ? `url(#${weaveId})` : r.fill);
                 return (
                   <path
                     key={i}
+                    className={skim ? "is-skim" : undefined}
                     d={r.path}
                     fill={fill}
                     fillOpacity={fillOpacity}
@@ -245,6 +263,7 @@ export function HeroViz({
               {chord.arcs.map((a) => {
                 const related = !focus || neighbors.has(a.id);
                 const isFocus = focus === a.id;
+                const isSkim = !isFocus && skimId === a.id;
                 const searchHot = !search || search.matchedNodeIds.has(a.id);
                 const lx = Math.cos(a.angle - Math.PI / 2) * (radius + 2);
                 const ly = Math.sin(a.angle - Math.PI / 2) * (radius + 2);
@@ -254,6 +273,7 @@ export function HeroViz({
                 return (
                   <g
                     key={a.id}
+                    className={isSkim ? "is-skim" : undefined}
                     opacity={nodeOp}
                     style={{ cursor: interactive ? "pointer" : undefined }}
                     onMouseEnter={() => onHover?.(a.id)}
@@ -266,8 +286,8 @@ export function HeroViz({
                     <path
                       d={a.path}
                       fill={nodeFillOverride(stats, a.id, a.fill)}
-                      stroke={isFocus ? ACCENT : PAPER}
-                      strokeWidth={isFocus ? 1.4 : 0.45}
+                      stroke={isFocus || isSkim ? ACCENT : PAPER}
+                      strokeWidth={isFocus ? 1.4 : isSkim ? 1 : 0.45}
                     />
                     {stats ? (
                       <PersonStatDecor
@@ -275,12 +295,13 @@ export function HeroViz({
                         id={a.id}
                         cx={lx}
                         cy={ly}
-                        baseR={isFocus ? 3.2 : 2.4}
+                        baseR={isFocus || isSkim ? 3.2 : 2.4}
                       />
                     ) : null}
                     {(labelMode === "all" ||
                       (labelMode === "hubs" && a.showLabel) ||
-                      isFocus) && (
+                      isFocus ||
+                      isSkim) && (
                       <text
                         transform={`rotate(${(a.angle * 180) / Math.PI - 90}) translate(${radius + 4}) ${
                           a.angle > Math.PI ? "rotate(180)" : ""
@@ -312,6 +333,7 @@ export function HeroViz({
                 const related =
                   !focus || l.sourceId === focus || l.targetId === focus;
                 const hot = isEdge(l.sourceId, l.targetId);
+                const skim = isSkimLink(l.sourceId, l.targetId);
                 const searchHot =
                   !search ||
                   search.matchedEdgeKeys.has(edgeKey(l.sourceId, l.targetId));
@@ -319,7 +341,9 @@ export function HeroViz({
                 let strokeOpacity = !focus
                   ? hot
                     ? 0.95
-                    : 0.35
+                    : skim
+                      ? 0.7
+                      : 0.35
                   : related
                     ? 0.75
                     : 0.04;
@@ -327,14 +351,16 @@ export function HeroViz({
                 if (search && searchHot) strokeOpacity = Math.max(strokeOpacity, 0.85);
                 if (statLink) strokeOpacity = Math.max(strokeOpacity, statLink.thin ? 0.08 : 0.9);
                 const baseW =
-                  (hot ? 0.7 : 0) + (l.strokeWidth ?? 0.28 + Math.min(1.6, l.weight * 0.12));
+                  (hot ? 0.7 : skim ? 0.35 : 0) +
+                  (l.strokeWidth ?? 0.28 + Math.min(1.6, l.weight * 0.12));
                 return (
                   <path
                     key={i}
+                    className={skim ? "is-skim" : undefined}
                     d={l.path}
                     fill="none"
                     stroke={
-                      hot || (search && searchHot)
+                      hot || skim || (search && searchHot)
                         ? ACCENT
                         : statLink?.stroke ?? l.fill
                     }
@@ -365,8 +391,9 @@ export function HeroViz({
               {bundle.leaves.map((leaf) => {
                 const related = !focus || neighbors.has(leaf.id);
                 const isFocus = focus === leaf.id;
+                const isSkim = !isFocus && skimId === leaf.id;
                 const searchHot = !search || search.matchedNodeIds.has(leaf.id);
-                const r = isFocus ? 3.2 : 2.2;
+                const r = isFocus ? 3.2 : isSkim ? 2.8 : 2.2;
                 const nodeOp =
                   (related && searchHot
                     ? 1
@@ -378,6 +405,7 @@ export function HeroViz({
                 return (
                   <g
                     key={leaf.id}
+                    className={isSkim ? "is-skim" : undefined}
                     opacity={nodeOp}
                     style={{ cursor: interactive ? "pointer" : undefined }}
                     onMouseEnter={() => onHover?.(leaf.id)}
@@ -392,18 +420,18 @@ export function HeroViz({
                       cy={leaf.y}
                       r={r + 0.9}
                       fill="none"
-                      stroke={isFocus ? ACCENT : leaf.fill}
+                      stroke={isFocus || isSkim ? ACCENT : leaf.fill}
                       strokeWidth={0.45}
                       strokeOpacity={0.55}
-                      strokeDasharray={isFocus ? undefined : "1.2 1.1"}
+                      strokeDasharray={isFocus || isSkim ? undefined : "1.2 1.1"}
                     />
                     <circle
                       cx={leaf.x}
                       cy={leaf.y}
                       r={r * 0.72}
                       fill={nodeFillOverride(stats, leaf.id, leaf.fill)}
-                      stroke={isFocus ? ACCENT : PAPER}
-                      strokeWidth={isFocus ? 1 : 0.35}
+                      stroke={isFocus || isSkim ? ACCENT : PAPER}
+                      strokeWidth={isFocus ? 1 : isSkim ? 0.7 : 0.35}
                     />
                     {stats ? (
                       <PersonStatDecor

@@ -124,18 +124,41 @@ export const METRIC_DEFS: MetricDef[] = [
   },
   {
     id: "degree",
-    label: "Node degree",
+    label: "Node degree (neighbors)",
     definition:
-      "Sum of incident edge weights. Population is capped to Top-N (default 200, hard max 300) ranked by degree.",
-    formula: "degree(v) = Σ_{e ∋ v} weight(e)",
+      "Count of distinct neighbors in the construct graph. Not the same as strength.",
+    formula: "degree(v) = |{u : edge(v,u)}|",
+    sourceFile: "pipeline/loom/constructs/emit.py",
+  },
+  {
+    id: "strength",
+    label: "Node strength (hub signal)",
+    definition:
+      "Sum of incident edge weights. Top-N ranking and default color/size use strength. Pre-metrics_version-2 JSON mislabeled this as degree.",
+    formula: "strength(v) = Σ_{e ∋ v} weight(e)",
     sourceFile: "pipeline/loom/constructs/emit.py",
   },
   {
     id: "prominence",
-    label: "Prominence",
-    definition: "Vote-weighted, billing-discounted career signal.",
-    formula: "prominence = Σ (votes / max(ordering, 1))",
+    label: "Prominence (log-votes)",
+    definition:
+      "Log-vote, billing-discounted career signal (canonical). Raw votes version kept as prominence_raw.",
+    formula: "prominence = Σ ln(votes + 1) / max(ordering, 1)",
     sourceFile: "pipeline/loom/facets.py",
+  },
+  {
+    id: "pagerank",
+    label: "PageRank",
+    definition: "Weighted PageRank (damping 0.85) — influence independent of raw fame.",
+    formula: "PR = (1−d)/n + d Σ_{u→v} PR(u)·w(u,v)/strength(u)",
+    sourceFile: "pipeline/loom/analytics.py",
+  },
+  {
+    id: "acclaim-gap",
+    label: "Acclaim–popularity gap",
+    definition: "z(title_rating_median) − z(prominence) within the construct.",
+    formula: "acclaim_gap = z(rating) − z(prominence)",
+    sourceFile: "pipeline/loom/analytics.py",
   },
   {
     id: "betweenness",

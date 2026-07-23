@@ -7,6 +7,7 @@ import { useTheme } from "../lib/theme/ThemeContext";
 import { filmLine, uniqueShared } from "../lib/sharedTitles";
 import type { Insight } from "../lib/insights";
 import { describeNodeStats, hasStat, type ViewStatMarks } from "../lib/statsMarks";
+import { nodeDegree, nodeStrength } from "../lib/metrics";
 import { InsightCard } from "./InsightCard";
 
 interface Props {
@@ -106,6 +107,7 @@ export function DetailPanel({
           </button>
         </div>
         {insightBlock}
+        <div className={`detail-peek${edgePinned ? " is-solid" : ""}`}>
         <p className="link-explain">
           These two people are linked because they were both credited on the{" "}
           <strong>same title(s)</strong>
@@ -176,6 +178,7 @@ export function DetailPanel({
             <code>uv run loom build</code> to attach shared-title samples.
           </p>
         )}
+        </div>
       </aside>
     );
   }
@@ -250,6 +253,7 @@ export function DetailPanel({
 
       {insightBlock}
 
+      <div className={`detail-peek${pinned ? " is-solid" : ""}`}>
       <div className="detail-name">
         <span
           className="swatch"
@@ -274,10 +278,32 @@ export function DetailPanel({
         </div>
       ) : null}
       <dl className="stats">
-        <div>
+        <div title="Neighbor count in this construct">
           <dt>Degree</dt>
-          <dd>{node.degree}</dd>
+          <dd>{nodeDegree(node)}</dd>
         </div>
+        <div title="Sum of incident edge weights (hub signal)">
+          <dt>Strength</dt>
+          <dd>{nodeStrength(node)}</dd>
+        </div>
+        {node.prominence != null && (
+          <div title="Σ ln(votes+1) / billing">
+            <dt>Prominence</dt>
+            <dd>{String(node.prominence)}</dd>
+          </div>
+        )}
+        {node.pagerank != null && (
+          <div title="Weighted PageRank">
+            <dt>PageRank</dt>
+            <dd>{Number(node.pagerank).toExponential(2)}</dd>
+          </div>
+        )}
+        {node.acclaim_gap != null && (
+          <div title="z(rating) − z(prominence)">
+            <dt>Acclaim gap</dt>
+            <dd>{String(node.acclaim_gap)}</dd>
+          </div>
+        )}
         {node.title_count != null && (
           <div>
             <dt>Titles</dt>
@@ -358,6 +384,7 @@ export function DetailPanel({
           </ul>
         </div>
       )}
+      </div>
     </aside>
   );
 }

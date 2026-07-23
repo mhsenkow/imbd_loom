@@ -15,7 +15,7 @@ import {
 } from "../lib/statsMarks";
 
 interface Props {
-  form: "chord" | "bundle" | "timeline";
+  form: "chord" | "bundle" | "timeline" | "scatter";
   flipped?: boolean;
   colorBy?: ColorBy;
   palette?: string;
@@ -111,11 +111,13 @@ export function ChartLegend({ form, flipped = false, colorBy, palette = "loom", 
   const { theme } = useTheme();
   const genderSwatches = genderColors(palette, theme);
   const [open, setOpen] = useState(() => {
-    if (typeof window === "undefined") return true;
+    if (typeof window === "undefined") return false;
     const saved = window.sessionStorage.getItem(STORAGE_KEY);
     if (saved === "0") return false;
     if (saved === "1") return true;
-    return true;
+    // Default collapsed — open legend steals timeline viewport height and
+    // throws off pan/zoom fit + pointer mapping.
+    return false;
   });
 
   useEffect(() => {

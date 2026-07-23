@@ -4,6 +4,8 @@ import { Poster } from "./components/Poster";
 import { DetailPanel } from "./components/DetailPanel";
 import { TimelineHero } from "./components/TimelineHero";
 import { ChartLegend } from "./components/ChartLegend";
+import { ScatterHero } from "./components/ScatterHero";
+import { StatsRail } from "./components/StatsRail";
 import { HomeGallery } from "./components/HomeGallery";
 import { StyleGuide } from "./components/StyleGuide";
 import { ThemeProvider, useTheme } from "./lib/theme/ThemeContext";
@@ -42,9 +44,12 @@ import {
 import type { PersonIndexEntry } from "./lib/bridges";
 import {
   EMPTY_SELECTION,
+  HOVER_CLEAR_MS,
+  HOVER_SETTLE_MS,
   activeEdge,
   activeId,
   neighborIds,
+  vizSelection,
   type SelectionState,
 } from "./lib/selection";
 import { COARSE_MQ, PHONE_MQ, useMediaQuery } from "./lib/useMediaQuery";
@@ -153,6 +158,9 @@ export default function App() {
   const [exporting, setExporting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [selection, setSelection] = useState<SelectionState>(EMPTY_SELECTION);
+  /** Dwell-settled hover — main weave dims only after pause / pin. */
+  const [settledHoverId, setSettledHoverId] = useState<string | null>(null);
+  const [settledHoverEdge, setSettledHoverEdge] = useState<Edge | null>(null);
   const [controlsOpen, setControlsOpen] = useState(() => {
     if (typeof window === "undefined") return true;
     // Desktop: open; tablet/phone overlay: start closed so the chart fills the screen
@@ -564,21 +572,16 @@ export default function App() {
     setSelection((s) => (s.pinnedId ? s : { ...s, hoveredId: id }));
   }, []);
 
-  const onHoverEdge = useCallback(
-    (edge: Edge | null) => {
-      setSelection((s) => {
-        if (s.pinnedId || s.pinnedEdge) return s;
-        return {
-          ...s,
-          hoveredEdge: edge,
-          hoveredId: edge ? edge.source : null,
-        };
-      });
-      // Tap-to-open on touch; hover-to-open only on fine pointers
-      if (edge && !isCoarse) openInspect();
-    },
-    [isCoarse, openInspect],
-  );
+  const onHoverEdge = useCallback((edge: Edge | null) => {
+    setSelection((s) => {
+      if (s.pinnedId || s.pinnedEdge) return s;
+      return {
+        ...s,
+        hoveredEdge: edge,
+        hoveredId: edge ? edge.source : null,
+      };
+    });
+  }, []);
 
   const onPinEdge = useCallback(
     (edge: Edge | null) => {
@@ -618,6 +621,46 @@ export default function App() {
     [openInspect],
   );
 
+  // Settle hover before the main weave dims; Inspect still tracks the pointer.
+  useEffect(() => {
+    if (selection.pinnedId || selection.pinnedEdge) {
+      setSettledHoverId(null);
+      setSettledHoverEdge(null);
+      return;
+    }
+    const id = selection.hoveredId;
+    const edge = selection.hoveredEdge;
+    if (!id && !edge) {
+      const t = window.setTimeout(() => {
+        setSettledHoverId(null);
+        setSettledHoverEdge(null);
+      }, HOVER_CLEAR_MS);
+      return () => window.clearTimeout(t);
+    }
+    // Drop prior solidify as soon as the pointer moves — scanning stays soft.
+    setSettledHoverId(null);
+    setSettledHoverEdge(null);
+    const t = window.setTimeout(() => {
+      setSettledHoverId(id);
+      setSettledHoverEdge(edge);
+      // Open Inspect once hover rests (panel already tracks if open).
+      if (!isCoarse) openInspect();
+    }, HOVER_SETTLE_MS);
+    return () => window.clearTimeout(t);
+  }, [
+    selection.hoveredId,
+    selection.hoveredEdge,
+    selection.pinnedId,
+    selection.pinnedEdge,
+    isCoarse,
+    openInspect,
+  ]);
+
+  const chartSelection = useMemo(
+    () => vizSelection(selection, settledHoverId, settledHoverEdge),
+    [selection, settledHoverId, settledHoverEdge],
+  );
+
   useEffect(() => {
     // Annotations are positioned in the hero layout when available; skip orphan footer stubs.
     setSpec((s) => (s.annotations.length ? { ...s, annotations: [] } : s));
@@ -651,6 +694,7 @@ export default function App() {
 
   const colorBy = resolveColorBy(spec, active?.manifest.key_variable || "degree");
   const showTimelineExplorer = !isPrint && spec.heroForm === "timeline" && !!active;
+  const showScatterExplorer = !isPrint && spec.heroForm === "scatter" && !!active;
   const scrimVisible = overlayPanels && (controlsOpen || inspectOpen);
 
   const layoutClass = [
@@ -760,7 +804,7 @@ export default function App() {
             minWeight={spec.minWeight}
             title={active.manifest.title}
             subtitle={active.manifest.subtitle}
-            selection={selection}
+            selection={chartSelection}
             onHover={onHover}
             onHoverEdge={onHoverEdge}
             onPinEdge={onPinEdge}
@@ -776,34 +820,73 @@ export default function App() {
             insightFocusId={insightFocusId}
             viewStats={viewStats}
           />
+        ) : showScatterExplorer ? (
+          <div className="scatter-stage">
+            <StatsRail
+              manifest={active.manifest}
+              onHoverIds={(ids) => {
+                if (ids?.[0]) onHover(ids[0]);
+                else onHover(null);
+              }}
+            />
+            <div className="scatter-stage-plot">
+              <h2 className="scatter-stage-title">{active.manifest.title}</h2>
+              <p className="scatter-stage-sub">{active.manifest.subtitle}</p>
+              <ScatterHero
+                nodes={nodes}
+                width={720}
+                height={480}
+                highlightIds={
+                  selection.pinnedId || settledHoverId
+                    ? new Set(
+                        [selection.pinnedId, settledHoverId].filter(Boolean) as string[],
+                      )
+                    : null
+                }
+                onHover={(id) => onHover(id)}
+                onSelect={(id) => onPin(id)}
+              />
+            </div>
+          </div>
         ) : (
-          <PosterShell print={isPrint}>
-            <ChartLegend
-              form={spec.heroForm === "bundle" ? "bundle" : "chord"}
-              colorBy={colorBy}
-              palette={spec.palette}
-              statMarks={viewStats}
-            />
-            <Poster
-              spec={spec}
-              active={active}
-              all={cache}
-              index={index}
-              peopleIndex={peopleIndex}
-              selection={selection}
-              onHover={onHover}
-              onHoverEdge={onHoverEdge}
-              onPinEdge={onPinEdge}
-              onPin={(id) => onPin(id)}
-              interactive={!isPrint}
-              filteredNodes={nodes}
-              filteredEdges={edges}
-              colorBy={colorBy}
-              search={searchMatch}
-              viewStats={viewStats}
-              insightFocusId={insightFocusId}
-            />
-          </PosterShell>
+          <>
+            <PosterShell print={isPrint}>
+              <ChartLegend
+                form={spec.heroForm === "bundle" ? "bundle" : "chord"}
+                colorBy={colorBy}
+                palette={spec.palette}
+                statMarks={viewStats}
+              />
+              <Poster
+                spec={spec}
+                active={active}
+                all={cache}
+                index={index}
+                peopleIndex={peopleIndex}
+                selection={chartSelection}
+                onHover={onHover}
+                onHoverEdge={onHoverEdge}
+                onPinEdge={onPinEdge}
+                onPin={(id) => onPin(id)}
+                interactive={!isPrint}
+                filteredNodes={nodes}
+                filteredEdges={edges}
+                colorBy={colorBy}
+                search={searchMatch}
+                viewStats={viewStats}
+                insightFocusId={insightFocusId}
+              />
+            </PosterShell>
+            {!isPrint && active ? (
+              <StatsRail
+                manifest={active.manifest}
+                onHoverIds={(ids) => {
+                  if (ids?.[0]) onHover(ids[0]);
+                  else onHover(null);
+                }}
+              />
+            ) : null}
+          </>
         )}
       </main>
       {!isPrint && (

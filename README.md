@@ -81,12 +81,16 @@ After the first push, enable **Settings → Pages → Source: GitHub Actions** i
 | Co-appearances | High | Same IMDb title in `title.principals` (top-billed cast only — not full credits) |
 | Edge `shared` samples | High | Top shared titles by votes (attached at build) for Inspect / hover |
 | Character + film in Inspect | High when present | Parsed from IMDb `characters`; some credits lack names |
+| **Degree vs strength** | High (metrics v2) | `degree` = neighbor count; `strength` = Σ edge weights (default color/sort). Pre-v2 JSON mislabeled strength as degree — UI shims until rebuild |
 | Years / career span | Medium-high | Uses title `startYear` (release), not filming dates |
 | Gender | Medium without TMDB | Falls back to IMDb `actor`/`actress` (binary, imperfect). Add `TMDB_API_KEY` for better data |
 | Voice roles | Medium | Wikidata may be blocked; falls back to `(voice)` character / job heuristics |
 | Bechdel | As good as the source | Community ratings on bechdeltest.com; not every film is scored |
 | Genres | Medium | IMDb allows ≤3 genres per title; multi-genre titles inflate bridges |
 | One-role edges | Synthetic | Same dominant genre — not co-appearances |
+| Prominence | Log-votes (v2) | `Σ ln(votes+1) / billing`; raw votes kept as `prominence_raw` |
+
+Canonical formulas: [pipeline/METRICS.md](pipeline/METRICS.md). Trust UI: `?view=methodology`.
 
 IMDb Non-Commercial Datasets — fine for a personal poster, not for resale.
 See [BRIEF.md](BRIEF.md) for the full product & engineering design.

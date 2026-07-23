@@ -27,3 +27,6 @@ MAX_HERO_NODES = 300
 
 # Deterministic build seed (stable JSON ordering)
 BUILD_SEED = 42
+
+# Schema / semantic version for node+edge metrics (frontend detects changes)
+METRICS_VERSION = "2"

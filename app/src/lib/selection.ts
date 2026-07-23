@@ -1,6 +1,6 @@
-/** Progressive disclosure: hover peek → pinned detail panel. */
+/** Progressive disclosure: hover peek → dwell settle → pinned detail. */
 
-import type { Edge, Node } from "../lib/types";
+import type { Edge, Node } from "./types";
 
 export interface SelectionState {
   hoveredId: string | null;
@@ -8,6 +8,12 @@ export interface SelectionState {
   hoveredEdge: Edge | null;
   /** Clicked link — stays until another pin/clear so Inspect can show films. */
   pinnedEdge: Edge | null;
+  /**
+   * Immediate pointer target for a soft accent while the weave has not
+   * dwell-settled yet (no neighbor dimming).
+   */
+  skimId?: string | null;
+  skimEdge?: Edge | null;
 }
 
 export const EMPTY_SELECTION: SelectionState = {
@@ -15,14 +21,60 @@ export const EMPTY_SELECTION: SelectionState = {
   pinnedId: null,
   hoveredEdge: null,
   pinnedEdge: null,
+  skimId: null,
+  skimEdge: null,
 };
+
+/** How long hover must rest before the main weave dims/solidifies. */
+export const HOVER_SETTLE_MS = 260;
+/** Brief lag before clearing settled focus so exit isn't a hard cut. */
+export const HOVER_CLEAR_MS = 120;
 
 export function activeEdge(sel: SelectionState): Edge | null {
   return sel.pinnedEdge ?? sel.hoveredEdge;
 }
 
+/** Immediate focus for Inspect / peek (follows the pointer). */
 export function activeId(sel: SelectionState): string | null {
   return sel.pinnedId ?? sel.hoveredId;
+}
+
+/**
+ * Focus used by the main chart. Uses a dwell-settled hover so scanning the
+ * weave updates Inspect without thrashing dimming until you pause or pin.
+ */
+export function vizFocusId(
+  sel: SelectionState,
+  settledHoverId: string | null,
+): string | null {
+  return sel.pinnedId ?? settledHoverId;
+}
+
+export function vizActiveEdge(
+  sel: SelectionState,
+  settledEdge: Edge | null,
+): Edge | null {
+  return sel.pinnedEdge ?? settledEdge;
+}
+
+/** Selection view for heroes — settled hover dims; skim accents while scanning. */
+export function vizSelection(
+  sel: SelectionState,
+  settledHoverId: string | null,
+  settledEdge: Edge | null,
+): SelectionState {
+  if (sel.pinnedId || sel.pinnedEdge) {
+    return { ...sel, skimId: null, skimEdge: null };
+  }
+  const settled = !!(settledHoverId || settledEdge);
+  return {
+    ...sel,
+    hoveredId: settledHoverId,
+    hoveredEdge: settledEdge,
+    // Soft pointer accent only before dwell solidifies the weave.
+    skimId: settled ? null : sel.hoveredId,
+    skimEdge: settled ? null : sel.hoveredEdge,
+  };
 }
 
 export function neighborIds(

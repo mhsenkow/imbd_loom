@@ -140,25 +140,47 @@ def attach_person_facets(
             n["year_min"] = n.get("year_min") or years[0]
             n["year_max"] = n.get("year_max") or years[-1]
             if birth:
-                n["debut_age"] = years[0] - int(birth)
-                n["retirement_age"] = years[-1] - int(birth)
+                debut = years[0] - int(birth)
+                retire = years[-1] - int(birth)
                 peak = int(n.get("year_peak") or years[len(years) // 2])
-                n["age_at_peak"] = peak - int(birth)
+                age_peak = peak - int(birth)
+                suspect = False
+                for key, val in (
+                    ("debut_age", debut),
+                    ("retirement_age", retire),
+                    ("age_at_peak", age_peak),
+                ):
+                    if val < 0 or val > 90:
+                        suspect = True
+                    else:
+                        n[key] = val
+                n["birth_year_suspect"] = suspect
             if death:
                 n["posthumous_credits"] = sum(1 for c in credits if c[5] and int(c[5]) > int(death))
                 n["worked_posthumously"] = n["posthumous_credits"] > 0
 
-            # Gap years
-            gaps = [years[i + 1] - years[i] for i in range(len(years) - 1)]
-            n["gap_years"] = max(gaps) if gaps else 0
+            # Gap years — null for single-credit (ambiguous with "no gaps")
+            if len(years) < 2:
+                n["gap_years"] = None
+            else:
+                gaps = [years[i + 1] - years[i] for i in range(len(years) - 1)]
+                n["gap_years"] = max(gaps) if gaps else 0
 
-        # Prominence
-        prom = 0.0
+        # Prominence: canonical log-votes; keep raw for comparison
+        prom_raw = 0.0
+        prom_log = 0.0
+        billing_fallback = 0
         for c in credits:
             votes, ordering = c[11], c[2]
+            if ordering is None:
+                billing_fallback += 1
             billing = max(int(ordering or 10), 1)
-            prom += votes / billing
-        n["prominence"] = round(prom, 1)
+            v = float(votes or 0)
+            prom_raw += v / billing
+            prom_log += math.log(v + 1.0) / billing
+        n["prominence_raw"] = round(prom_raw, 1)
+        n["prominence"] = round(prom_log, 3)
+        stats["billing_null_fallback"] = stats.get("billing_null_fallback", 0) + billing_fallback
 
         # Genre distribution + entropy
         genre_counts: Counter[str] = Counter()
@@ -175,9 +197,10 @@ def attach_person_facets(
             entropy -= p * math.log(p + 1e-12, 2)
         n["genre_entropy"] = round(entropy, 3)
         if genre_counts:
-            top = genre_counts.most_common(1)[0]
-            n["dominant_genre"] = n.get("dominant_genre") or top[0]
-            n["concentration"] = n.get("concentration") or round(top[1] / total_g, 3)
+            # Deterministic tie-break: count desc, then name asc
+            top_g = sorted(genre_counts.items(), key=lambda kv: (-kv[1], kv[0]))[0]
+            n["dominant_genre"] = n.get("dominant_genre") or top_g[0]
+            n["concentration"] = n.get("concentration") or round(top_g[1] / total_g, 3)
 
         # Career phases (early / peak / late by year thirds)
         if years and len(years) >= 3:
@@ -195,18 +218,26 @@ def attach_person_facets(
                     if g:
                         phases[phase][g] += 1
             n["career_phases"] = {
-                ph: (pc.most_common(1)[0][0] if pc else None) for ph, pc in phases.items()
+                ph: (sorted(pc.items(), key=lambda kv: (-kv[1], kv[0]))[0][0] if pc else None)
+                for ph, pc in phases.items()
             }
-            # Genre drift: Jaccard distance early vs late
+            # Genre drift: null when early or late empty (not "total drift")
             e_set = set(phases["early"].keys())
             l_set = set(phases["late"].keys())
-            if e_set or l_set:
+            if e_set and l_set:
                 jacc = len(e_set & l_set) / max(len(e_set | l_set), 1)
                 n["genre_drift"] = round(1 - jacc, 3)
+            else:
+                n["genre_drift"] = None
             first_y = min((c[5], c[9]) for c in credits if c[5] and c[9])
             last_y = max((c[5], c[9]) for c in credits if c[5] and c[9])
             n["genre_first"] = (first_y[1] or "").split(",")[0] or None
             n["genre_last"] = (last_y[1] or "").split(",")[0] or None
+            # Categorical first-vs-last distance
+            if n.get("genre_first") and n.get("genre_last"):
+                n["genre_first_last_distance"] = (
+                    0 if n["genre_first"] == n["genre_last"] else 1
+                )
 
         # Typecast character
         chars: Counter[str] = Counter()
@@ -263,15 +294,47 @@ def attach_person_facets(
         if rated:
             n["title_rating_median"] = round(sorted(rated)[len(rated) // 2], 2)
             n["title_rating_max"] = round(max(rated), 2)
+            if len(rated) >= 2:
+                mean_r = sum(rated) / len(rated)
+                var = sum((x - mean_r) ** 2 for x in rated) / len(rated)
+                n["rating_stdev"] = round(math.sqrt(var), 3)
 
         # Ensemble size proxy: use ordering max as weak signal; better computed separately
         # Blockbuster share: % credits in top-decile votes among this person's titles
         if credits:
             top_dec = sum(1 for c in credits if vote_pct(c[11]) >= 0.9)
             n["blockbuster_share"] = round(top_dec / len(credits), 3)
+            n["peak_sharpness"] = n["blockbuster_share"]
             # one-scene wonder: high votes + late billing
             late_hi = sum(1 for c in credits if c[11] >= 50000 and (c[2] or 99) >= 8)
             n["one_scene_wonder"] = late_hi >= 3 and (n.get("median_billing") or 0) >= 6
+
+        # Title / character counts + role diversity
+        title_count = len({c[1] for c in credits if c[1]})
+        char_keys = {
+            normalize_character(c[3])
+            for c in credits
+            if normalize_character(c[3]) and len(normalize_character(c[3]) or "") > 1
+        }
+        n["title_count"] = n.get("title_count") or title_count
+        if char_keys:
+            n["character_count"] = len(char_keys)
+            if title_count:
+                n["role_diversity"] = round(len(char_keys) / title_count, 3)
+
+        # Career velocity + longevity-adjusted prominence
+        ymin = n.get("year_min")
+        ymax = n.get("year_max")
+        if ymin is not None and ymax is not None:
+            active = max(int(ymax) - int(ymin), 1)
+            n["career_velocity"] = round((n.get("title_count") or title_count) / active, 3)
+            if n.get("prominence"):
+                n["prominence_per_year"] = round(float(n["prominence"]) / active, 3)
+
+        # Medium focus = max share in medium_mix
+        mm = n.get("medium_mix") or {}
+        if mm:
+            n["medium_focus"] = round(max(mm.values()), 3)
 
         # Known for
         if known_for_raw:

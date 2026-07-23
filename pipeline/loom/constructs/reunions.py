@@ -5,7 +5,7 @@ from __future__ import annotations
 import duckdb
 
 from loom.constructs import gender_expr
-from loom.constructs.emit import coappearance_edges, finalize_payload
+from loom.constructs.emit import coappearance_edges, finalize_payload, recompute_degree_strength
 from loom.filters import adult_exclusion_sql, title_type_sql, vote_floor_sql
 
 
@@ -49,7 +49,6 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     )
 
     reunion_edges = [e for e in edges if e.get("reunion")]
-    keep = {e["source"] for e in reunion_edges} | {e["target"] for e in reunion_edges}
 
     # Prefer highest reunion_gap, then weight
     reunion_edges.sort(
@@ -71,15 +70,15 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             break
 
     if len(selected) > top_n:
-        # Trim to top_n by degree on reunion edges
-        deg: dict[str, int] = {n: 0 for n in selected}
+        # Trim to top_n by strength on reunion edges
+        strength: dict[str, int] = {n: 0 for n in selected}
         for e in final_edges:
-            if e["source"] in deg:
-                deg[e["source"]] += e["weight"]
-            if e["target"] in deg:
-                deg[e["target"]] += e["weight"]
+            if e["source"] in strength:
+                strength[e["source"]] += e["weight"]
+            if e["target"] in strength:
+                strength[e["target"]] += e["weight"]
         keep_ids = {
-            n for n, _ in sorted(deg.items(), key=lambda x: -x[1])[:top_n]
+            n for n, _ in sorted(strength.items(), key=lambda x: -x[1])[:top_n]
         }
         final_edges = [
             e
@@ -89,13 +88,8 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         selected = keep_ids
 
     nodes = [n for n in nodes if n["id"] in selected]
-    deg2 = {n["id"]: 0 for n in nodes}
-    for e in final_edges:
-        deg2[e["source"]] = deg2.get(e["source"], 0) + e["weight"]
-        deg2[e["target"]] = deg2.get(e["target"], 0) + e["weight"]
+    recompute_degree_strength(nodes, final_edges)
     for n in nodes:
-        n["degree"] = deg2.get(n["id"], 0)
-        # Attach max reunion gap involving this person
         gaps = [
             e.get("reunion_gap", 0)
             for e in final_edges
@@ -104,6 +98,8 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         if gaps:
             n["max_reunion_gap"] = max(gaps)
 
+    # Stale analytics were computed on the pre-reunion graph — force recompute
+    stats.pop("analytics", None)
     stats["reunion_edges"] = len(final_edges)
     stats["after_reunion_filter"] = len(nodes)
 

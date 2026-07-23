@@ -1,28 +1,82 @@
 {
-  "avg_path_length": 1.957,
+  "avg_path_length": 2.077,
+  "avg_path_length_sampled": false,
+  "avg_path_sample_n": 200,
   "build_seed": 42,
   "build_stats": {
-    "after_degree_cap": 160,
-    "credit_rows": 18875,
+    "after_degree_cap": 200,
+    "billing_null_fallback": 0,
+    "credit_rows": 21519,
     "era_slices": 7,
     "min_shared": 2,
     "min_votes": 50,
-    "people_faceted": 160,
-    "population_sql": 480
+    "people_faceted": 200,
+    "population_sql": 600
   },
-  "built_at": "2026-07-22T21:17:04.229585+00:00",
-  "clustering_coefficient": 0.4626,
-  "community_count": 11,
-  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
-  "edge_count": 2052,
-  "featured_path": [
-    {
-      "id": "nm0849028",
-      "label": "Mayumi Tanaka"
+  "built_at": "2026-07-23T16:13:30.806746+00:00",
+  "clustering_coefficient": 0.4497,
+  "community_count": 14,
+  "correlations": {
+    "acclaim_gap×prominence": {
+      "n": 200,
+      "r": -0.6531,
+      "rho": -0.5047
     },
+    "degree×collaborator_loyalty": {
+      "n": 200,
+      "r": -0.4865,
+      "rho": -0.6735
+    },
+    "degree×prominence": {
+      "n": 200,
+      "r": 0.5838,
+      "rho": 0.52
+    },
+    "degree×strength": {
+      "n": 200,
+      "r": 0.8674,
+      "rho": 0.816
+    },
+    "genre_entropy×degree": {
+      "n": 200,
+      "r": 0.2596,
+      "rho": 0.2554
+    },
+    "genre_entropy×strength": {
+      "n": 200,
+      "r": 0.0863,
+      "rho": 0.1019
+    },
+    "pagerank×prominence": {
+      "n": 200,
+      "r": 0.7536,
+      "rho": 0.7123
+    },
+    "strength×prominence": {
+      "n": 200,
+      "r": 0.7313,
+      "rho": 0.6397
+    },
+    "title_rating_median×prominence": {
+      "n": 200,
+      "r": 0.147,
+      "rho": 0.164
+    }
+  },
+  "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
+  "edge_count": 2536,
+  "featured_path": [
     {
       "id": "nm0637586",
       "label": "Masako Nozawa"
+    },
+    {
+      "id": "nm0410907",
+      "label": "Akira Ishida"
+    },
+    {
+      "id": "nm2573928",
+      "label": "Kana Hanazawa"
     }
   ],
   "gender_method": "imdb_actor_actress_proxy",
@@ -36,31 +90,733 @@
     "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
     "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
   },
+  "insight": "In this cut, degree and strength track with r=0.8674.",
   "key_variable": "degree",
   "method_note": "Population: cast credited on Animation titles with a voice signal (Wikidata occupation 'voice actor', IMDb characters containing '(voice)', or voice job string). Adult excluded, numVotes ≥50. Edges = shared Animation titles (≥2).",
+  "metrics_version": "2",
   "min_shared_titles": 2,
-  "node_count": 160,
+  "node_count": 200,
   "stage_row_count": 20,
   "subtitle": "actor → show → character reuse",
   "summary": {
-    "degree_max": 2477,
-    "degree_median": 513,
+    "acclaim_gap_hist": [
+      {
+        "count": 2,
+        "hi": -4.226,
+        "lo": -5.153
+      },
+      {
+        "count": 2,
+        "hi": -3.299,
+        "lo": -4.226
+      },
+      {
+        "count": 3,
+        "hi": -2.372,
+        "lo": -3.299
+      },
+      {
+        "count": 13,
+        "hi": -1.445,
+        "lo": -2.372
+      },
+      {
+        "count": 42,
+        "hi": -0.518,
+        "lo": -1.445
+      },
+      {
+        "count": 76,
+        "hi": 0.409,
+        "lo": -0.518
+      },
+      {
+        "count": 36,
+        "hi": 1.336,
+        "lo": 0.409
+      },
+      {
+        "count": 18,
+        "hi": 2.263,
+        "lo": 1.336
+      },
+      {
+        "count": 5,
+        "hi": 3.19,
+        "lo": 2.263
+      },
+      {
+        "count": 3,
+        "hi": 4.117,
+        "lo": 3.19
+      }
+    ],
+    "assortativity": 0.0984,
+    "community_sizes": [
+      35,
+      30,
+      26,
+      23,
+      17,
+      15,
+      15,
+      12,
+      9,
+      6,
+      5,
+      4,
+      2,
+      1
+    ],
+    "component_count": 2,
+    "corr_degree×prominence": {
+      "n": 200,
+      "r": 0.5838,
+      "rho": 0.52
+    },
+    "corr_degree×strength": {
+      "n": 200,
+      "r": 0.8674,
+      "rho": 0.816
+    },
+    "corr_strength×prominence": {
+      "n": 200,
+      "r": 0.7313,
+      "rho": 0.6397
+    },
+    "degree_gini": 0.3144,
+    "degree_hist": [
+      {
+        "count": 22,
+        "hi": 10.2,
+        "lo": 2.0
+      },
+      {
+        "count": 52,
+        "hi": 18.4,
+        "lo": 10.2
+      },
+      {
+        "count": 53,
+        "hi": 26.6,
+        "lo": 18.4
+      },
+      {
+        "count": 30,
+        "hi": 34.8,
+        "lo": 26.6
+      },
+      {
+        "count": 14,
+        "hi": 43.0,
+        "lo": 34.8
+      },
+      {
+        "count": 16,
+        "hi": 51.2,
+        "lo": 43.0
+      },
+      {
+        "count": 7,
+        "hi": 59.4,
+        "lo": 51.2
+      },
+      {
+        "count": 2,
+        "hi": 67.6,
+        "lo": 59.4
+      },
+      {
+        "count": 2,
+        "hi": 75.8,
+        "lo": 67.6
+      },
+      {
+        "count": 2,
+        "hi": 84.0,
+        "lo": 75.8
+      }
+    ],
+    "degree_max": 84,
+    "degree_median": 22,
+    "density": 0.127437,
+    "diameter": 5,
+    "effective_diameter": 3.0,
     "era_histogram": {
-      "1970s": 7,
-      "1980s": 8,
-      "1990s": 17,
-      "2000s": 31,
-      "2010s": 81,
-      "2020s": 16
+      "1970s": 9,
+      "1980s": 10,
+      "1990s": 22,
+      "2000s": 40,
+      "2010s": 99,
+      "2020s": 20
     },
+    "era_homophily": 0.901,
+    "gender_homophily": 0.611,
     "gender_mix": {
-      "female": 93,
-      "male": 67
+      "female": 121,
+      "male": 79
     },
-    "top_name": "Mayumi Tanaka"
+    "giant_component_share": 0.93,
+    "largest_community_share": 0.175,
+    "modularity": 0.1387,
+    "outliers": {
+      "acclaim_gap": [
+        "nm0297921",
+        "nm0468729",
+        "nm0637586",
+        "nm0722676",
+        "nm0754526",
+        "nm0757327",
+        "nm0945372",
+        "nm2573928",
+        "nm8787094"
+      ],
+      "pagerank": [
+        "nm0468729",
+        "nm0722676",
+        "nm0757327",
+        "nm0782840",
+        "nm0827267",
+        "nm0849028",
+        "nm1697606",
+        "nm1778495",
+        "nm2573928"
+      ],
+      "prominence": [
+        "nm0000434",
+        "nm0012121",
+        "nm0468729",
+        "nm0637586",
+        "nm0722676",
+        "nm0757327",
+        "nm0849028",
+        "nm1328859",
+        "nm1697606",
+        "nm2573928"
+      ],
+      "strength": [
+        "nm0468729",
+        "nm0722676",
+        "nm0757327",
+        "nm0782840",
+        "nm0849028",
+        "nm1697606",
+        "nm1778495",
+        "nm2573928"
+      ]
+    },
+    "prominence_hist": [
+      {
+        "count": 63,
+        "hi": 87.492,
+        "lo": 28.489
+      },
+      {
+        "count": 67,
+        "hi": 146.496,
+        "lo": 87.492
+      },
+      {
+        "count": 35,
+        "hi": 205.499,
+        "lo": 146.496
+      },
+      {
+        "count": 20,
+        "hi": 264.503,
+        "lo": 205.499
+      },
+      {
+        "count": 5,
+        "hi": 323.506,
+        "lo": 264.503
+      },
+      {
+        "count": 6,
+        "hi": 382.509,
+        "lo": 323.506
+      },
+      {
+        "count": 0,
+        "hi": 441.513,
+        "lo": 382.509
+      },
+      {
+        "count": 2,
+        "hi": 500.516,
+        "lo": 441.513
+      },
+      {
+        "count": 0,
+        "hi": 559.52,
+        "lo": 500.516
+      },
+      {
+        "count": 2,
+        "hi": 618.523,
+        "lo": 559.52
+      }
+    ],
+    "scatter_strength_prominence": [
+      {
+        "id": "nm0000434",
+        "x": 51.0,
+        "y": 366.912
+      },
+      {
+        "id": "nm0144252",
+        "x": 238.0,
+        "y": 63.633
+      },
+      {
+        "id": "nm0179478",
+        "x": 565.0,
+        "y": 126.437
+      },
+      {
+        "id": "nm0238546",
+        "x": 127.0,
+        "y": 219.577
+      },
+      {
+        "id": "nm0289710",
+        "x": 132.0,
+        "y": 141.732
+      },
+      {
+        "id": "nm0297921",
+        "x": 283.0,
+        "y": 35.172
+      },
+      {
+        "id": "nm0299192",
+        "x": 953.0,
+        "y": 277.926
+      },
+      {
+        "id": "nm0312656",
+        "x": 821.0,
+        "y": 228.271
+      },
+      {
+        "id": "nm0351338",
+        "x": 538.0,
+        "y": 77.452
+      },
+      {
+        "id": "nm0359168",
+        "x": 416.0,
+        "y": 89.371
+      },
+      {
+        "id": "nm0386286",
+        "x": 1276.0,
+        "y": 174.116
+      },
+      {
+        "id": "nm0387033",
+        "x": 416.0,
+        "y": 91.065
+      },
+      {
+        "id": "nm0394690",
+        "x": 880.0,
+        "y": 137.203
+      },
+      {
+        "id": "nm0408042",
+        "x": 224.0,
+        "y": 51.234
+      },
+      {
+        "id": "nm0411167",
+        "x": 366.0,
+        "y": 133.913
+      },
+      {
+        "id": "nm0435358",
+        "x": 597.0,
+        "y": 93.921
+      },
+      {
+        "id": "nm0440487",
+        "x": 340.0,
+        "y": 164.324
+      },
+      {
+        "id": "nm0442808",
+        "x": 386.0,
+        "y": 96.869
+      },
+      {
+        "id": "nm0442933",
+        "x": 977.0,
+        "y": 215.199
+      },
+      {
+        "id": "nm0468711",
+        "x": 1031.0,
+        "y": 177.034
+      },
+      {
+        "id": "nm0476223",
+        "x": 944.0,
+        "y": 135.359
+      },
+      {
+        "id": "nm0557968",
+        "x": 322.0,
+        "y": 122.747
+      },
+      {
+        "id": "nm0578510",
+        "x": 418.0,
+        "y": 86.462
+      },
+      {
+        "id": "nm0593911",
+        "x": 523.0,
+        "y": 67.465
+      },
+      {
+        "id": "nm0594646",
+        "x": 574.0,
+        "y": 81.316
+      },
+      {
+        "id": "nm0619200",
+        "x": 543.0,
+        "y": 93.904
+      },
+      {
+        "id": "nm0620124",
+        "x": 553.0,
+        "y": 105.455
+      },
+      {
+        "id": "nm0637586",
+        "x": 1292.0,
+        "y": 618.523
+      },
+      {
+        "id": "nm0645500",
+        "x": 773.0,
+        "y": 102.57
+      },
+      {
+        "id": "nm0646955",
+        "x": 103.0,
+        "y": 118.24
+      },
+      {
+        "id": "nm0649178",
+        "x": 272.0,
+        "y": 159.625
+      },
+      {
+        "id": "nm0657139",
+        "x": 501.0,
+        "y": 157.368
+      },
+      {
+        "id": "nm0741398",
+        "x": 565.0,
+        "y": 167.402
+      },
+      {
+        "id": "nm0757076",
+        "x": 247.0,
+        "y": 67.342
+      },
+      {
+        "id": "nm0757327",
+        "x": 2261.0,
+        "y": 500.4
+      },
+      {
+        "id": "nm0782840",
+        "x": 1791.0,
+        "y": 318.442
+      },
+      {
+        "id": "nm0793987",
+        "x": 580.0,
+        "y": 57.435
+      },
+      {
+        "id": "nm0808401",
+        "x": 669.0,
+        "y": 189.636
+      },
+      {
+        "id": "nm0847085",
+        "x": 606.0,
+        "y": 152.082
+      },
+      {
+        "id": "nm0861558",
+        "x": 360.0,
+        "y": 209.406
+      },
+      {
+        "id": "nm0866729",
+        "x": 170.0,
+        "y": 61.111
+      },
+      {
+        "id": "nm0879486",
+        "x": 280.0,
+        "y": 84.889
+      },
+      {
+        "id": "nm0888717",
+        "x": 595.0,
+        "y": 98.12
+      },
+      {
+        "id": "nm0945372",
+        "x": 716.0,
+        "y": 35.267
+      },
+      {
+        "id": "nm0950830",
+        "x": 610.0,
+        "y": 121.329
+      },
+      {
+        "id": "nm10273089",
+        "x": 390.0,
+        "y": 126.165
+      },
+      {
+        "id": "nm1046347",
+        "x": 451.0,
+        "y": 146.698
+      },
+      {
+        "id": "nm1063029",
+        "x": 279.0,
+        "y": 84.809
+      },
+      {
+        "id": "nm1132505",
+        "x": 486.0,
+        "y": 104.813
+      },
+      {
+        "id": "nm1192347",
+        "x": 884.0,
+        "y": 131.63
+      },
+      {
+        "id": "nm1230837",
+        "x": 709.0,
+        "y": 164.264
+      },
+      {
+        "id": "nm1289399",
+        "x": 393.0,
+        "y": 69.026
+      },
+      {
+        "id": "nm1324897",
+        "x": 195.0,
+        "y": 60.32
+      },
+      {
+        "id": "nm1364905",
+        "x": 496.0,
+        "y": 162.906
+      },
+      {
+        "id": "nm1399925",
+        "x": 639.0,
+        "y": 142.908
+      },
+      {
+        "id": "nm1543296",
+        "x": 1240.0,
+        "y": 164.865
+      },
+      {
+        "id": "nm1555635",
+        "x": 1209.0,
+        "y": 168.116
+      },
+      {
+        "id": "nm1670451",
+        "x": 346.0,
+        "y": 65.002
+      },
+      {
+        "id": "nm1697606",
+        "x": 1882.0,
+        "y": 355.331
+      },
+      {
+        "id": "nm1778495",
+        "x": 1512.0,
+        "y": 190.016
+      },
+      {
+        "id": "nm1785499",
+        "x": 292.0,
+        "y": 28.489
+      },
+      {
+        "id": "nm1840556",
+        "x": 977.0,
+        "y": 199.792
+      },
+      {
+        "id": "nm1883210",
+        "x": 1219.0,
+        "y": 203.663
+      },
+      {
+        "id": "nm1920556",
+        "x": 658.0,
+        "y": 183.266
+      },
+      {
+        "id": "nm2132616",
+        "x": 566.0,
+        "y": 126.851
+      },
+      {
+        "id": "nm2146022",
+        "x": 871.0,
+        "y": 254.345
+      },
+      {
+        "id": "nm2299231",
+        "x": 389.0,
+        "y": 138.641
+      },
+      {
+        "id": "nm2413617",
+        "x": 392.0,
+        "y": 93.315
+      },
+      {
+        "id": "nm2571848",
+        "x": 738.0,
+        "y": 116.755
+      },
+      {
+        "id": "nm2583829",
+        "x": 311.0,
+        "y": 209.092
+      },
+      {
+        "id": "nm2594314",
+        "x": 535.0,
+        "y": 118.698
+      },
+      {
+        "id": "nm2770525",
+        "x": 503.0,
+        "y": 222.626
+      },
+      {
+        "id": "nm2837894",
+        "x": 338.0,
+        "y": 241.692
+      },
+      {
+        "id": "nm2893431",
+        "x": 1010.0,
+        "y": 239.202
+      },
+      {
+        "id": "nm2955927",
+        "x": 1106.0,
+        "y": 208.606
+      },
+      {
+        "id": "nm2999868",
+        "x": 745.0,
+        "y": 104.684
+      },
+      {
+        "id": "nm3287449",
+        "x": 380.0,
+        "y": 71.135
+      },
+      {
+        "id": "nm3351936",
+        "x": 285.0,
+        "y": 81.932
+      },
+      {
+        "id": "nm3620483",
+        "x": 875.0,
+        "y": 132.596
+      },
+      {
+        "id": "nm3892914",
+        "x": 288.0,
+        "y": 59.461
+      }
+    ],
+    "strength_gini": 0.3467,
+    "strength_hist": [
+      {
+        "count": 55,
+        "hi": 312.4,
+        "lo": 51.0
+      },
+      {
+        "count": 69,
+        "hi": 573.8,
+        "lo": 312.4
+      },
+      {
+        "count": 34,
+        "hi": 835.2,
+        "lo": 573.8
+      },
+      {
+        "count": 19,
+        "hi": 1096.6,
+        "lo": 835.2
+      },
+      {
+        "count": 15,
+        "hi": 1358.0,
+        "lo": 1096.6
+      },
+      {
+        "count": 2,
+        "hi": 1619.4,
+        "lo": 1358.0
+      },
+      {
+        "count": 3,
+        "hi": 1880.8,
+        "lo": 1619.4
+      },
+      {
+        "count": 1,
+        "hi": 2142.2,
+        "lo": 1880.8
+      },
+      {
+        "count": 1,
+        "hi": 2403.6,
+        "lo": 2142.2
+      },
+      {
+        "count": 1,
+        "hi": 2665.0,
+        "lo": 2403.6
+      }
+    ],
+    "strength_max": 2665,
+    "strength_median": 486,
+    "top_name": "Masako Nozawa"
   },
   "title": "Voice Actors in Cartoons",
   "tmdb_gender_rows": 0,
-  "top_n": 160,
-  "avg_path_sample_n": 40
+  "top_n": 200
 }

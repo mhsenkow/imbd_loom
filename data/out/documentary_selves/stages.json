@@ -3,36 +3,43 @@
     "stageFrom": "gender",
     "stageTo": "lane",
     "categoryFrom": "unknown",
-    "categoryTo": "documentary",
-    "value": 2
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "lane",
-    "categoryFrom": "unknown",
     "categoryTo": "self",
-    "value": 66
+    "value": 98
   },
   {
     "stageFrom": "gender",
     "stageTo": "lane",
     "categoryFrom": "unknown",
     "categoryTo": "self + doc",
-    "value": 412
+    "value": 500
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "lane",
+    "categoryFrom": "unknown",
+    "categoryTo": "documentary",
+    "value": 2
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "volume",
+    "categoryFrom": "self + doc",
+    "categoryTo": "40+ credits",
+    "value": 342
   },
   {
     "stageFrom": "lane",
     "stageTo": "volume",
     "categoryFrom": "self + doc",
     "categoryTo": "20–39",
-    "value": 114
+    "value": 158
   },
   {
     "stageFrom": "lane",
     "stageTo": "volume",
     "categoryFrom": "self",
     "categoryTo": "40+ credits",
-    "value": 40
+    "value": 52
   },
   {
     "stageFrom": "lane",
@@ -44,15 +51,8 @@
   {
     "stageFrom": "lane",
     "stageTo": "volume",
-    "categoryFrom": "self + doc",
-    "categoryTo": "40+ credits",
-    "value": 298
-  },
-  {
-    "stageFrom": "lane",
-    "stageTo": "volume",
     "categoryFrom": "self",
     "categoryTo": "20–39",
-    "value": 26
+    "value": 46
   }
 ]

@@ -4,42 +4,28 @@
     "stageTo": "dominant_genre",
     "categoryFrom": "male",
     "categoryTo": "Drama",
-    "value": 5
+    "value": 7
   },
   {
     "stageFrom": "gender",
     "stageTo": "dominant_genre",
     "categoryFrom": "female",
     "categoryTo": "Drama",
-    "value": 11
+    "value": 13
   },
   {
     "stageFrom": "gender",
     "stageTo": "dominant_genre",
     "categoryFrom": "male",
     "categoryTo": "Comedy",
-    "value": 12
+    "value": 14
   },
   {
     "stageFrom": "gender",
     "stageTo": "dominant_genre",
     "categoryFrom": "female",
     "categoryTo": "Comedy",
-    "value": 4
-  },
-  {
-    "stageFrom": "dominant_genre",
-    "stageTo": "band",
-    "categoryFrom": "Drama",
-    "categoryTo": "concentrated (90–93%)",
-    "value": 10
-  },
-  {
-    "stageFrom": "dominant_genre",
-    "stageTo": "band",
-    "categoryFrom": "Drama",
-    "categoryTo": "pure (≥97%)",
-    "value": 3
+    "value": 6
   },
   {
     "stageFrom": "dominant_genre",
@@ -51,15 +37,29 @@
   {
     "stageFrom": "dominant_genre",
     "stageTo": "band",
+    "categoryFrom": "Drama",
+    "categoryTo": "concentrated (90–93%)",
+    "value": 12
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Drama",
+    "categoryTo": "pure (≥97%)",
+    "value": 5
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
     "categoryFrom": "Comedy",
     "categoryTo": "concentrated (90–93%)",
-    "value": 6
+    "value": 7
   },
   {
     "stageFrom": "dominant_genre",
     "stageTo": "band",
     "categoryFrom": "Comedy",
     "categoryTo": "pure (≥97%)",
-    "value": 10
+    "value": 13
   }
 ]

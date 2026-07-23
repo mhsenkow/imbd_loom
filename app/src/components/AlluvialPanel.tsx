@@ -14,7 +14,7 @@ interface Props {
   palette: string;
   x?: number;
   y?: number;
-  colorBy?: "gender" | "degree" | "prominence" | "genre";
+  colorBy?: import("../lib/types").ColorBy;
   /**
    * Category names (gender / era / degree band) belonging to the focused person
    * in this construct — lights matching bars/flows.
@@ -38,7 +38,7 @@ export function AlluvialPanel({
   palette,
   x = 0,
   y = 0,
-  colorBy = "degree",
+  colorBy = "strength",
   focusKeys = null,
   focusMember = false,
   focusActive = false,

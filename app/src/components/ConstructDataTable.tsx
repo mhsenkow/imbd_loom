@@ -6,6 +6,7 @@ import { useMemo, useState } from "react";
 import type { ConstructData, Edge, Node } from "../lib/types";
 import { dataUrl } from "../lib/data";
 import { imdbNameUrl, imdbTitleUrl } from "../lib/formatTime";
+import { nodeStrength } from "../lib/metrics";
 import { filmLine, uniqueShared } from "../lib/sharedTitles";
 
 interface Props {
@@ -14,7 +15,7 @@ interface Props {
 }
 
 type Tab = "people" | "links";
-type PeopleSort = "degree" | "prominence" | "label";
+type PeopleSort = "strength" | "degree" | "prominence" | "label";
 type LinksSort = "weight" | "year";
 
 const PAGE = 40;
@@ -26,7 +27,7 @@ function num(v: unknown): number {
 
 export function ConstructDataTable({ data, onOpenAtelier }: Props) {
   const [tab, setTab] = useState<Tab>("people");
-  const [peopleSort, setPeopleSort] = useState<PeopleSort>("degree");
+  const [peopleSort, setPeopleSort] = useState<PeopleSort>("strength");
   const [linksSort, setLinksSort] = useState<LinksSort>("weight");
   const [query, setQuery] = useState("");
   const [limit, setLimit] = useState(PAGE);
@@ -52,7 +53,8 @@ export function ConstructDataTable({ data, onOpenAtelier }: Props) {
     rows.sort((a, b) => {
       if (peopleSort === "label") return a.label.localeCompare(b.label);
       if (peopleSort === "prominence") return num(b.prominence) - num(a.prominence);
-      return num(b.degree) - num(a.degree);
+      if (peopleSort === "degree") return num(b.degree) - num(a.degree);
+      return nodeStrength(b) - nodeStrength(a);
     });
     return rows;
   }, [data, query, peopleSort]);
@@ -142,7 +144,8 @@ export function ConstructDataTable({ data, onOpenAtelier }: Props) {
               value={peopleSort}
               onChange={(e) => setPeopleSort(e.target.value as PeopleSort)}
             >
-              <option value="degree">degree</option>
+              <option value="strength">strength</option>
+              <option value="degree">neighbors</option>
               <option value="prominence">prominence</option>
               <option value="label">name</option>
             </select>
@@ -169,7 +172,8 @@ export function ConstructDataTable({ data, onOpenAtelier }: Props) {
               <tr>
                 <th scope="col">Name</th>
                 <th scope="col">Gender</th>
-                <th scope="col">Degree</th>
+                <th scope="col">Strength</th>
+                <th scope="col">Neighbors</th>
                 <th scope="col">Prominence</th>
                 <th scope="col">Peak</th>
                 <th scope="col">Verify</th>
@@ -190,6 +194,7 @@ export function ConstructDataTable({ data, onOpenAtelier }: Props) {
                     <div className="trust-id mono">{n.id}</div>
                   </td>
                   <td>{String(n.gender ?? "unknown")}</td>
+                  <td className="mono">{nodeStrength(n)}</td>
                   <td className="mono">{num(n.degree)}</td>
                   <td className="mono">{num(n.prominence).toFixed(1)}</td>
                   <td className="mono">{n.year_peak != null ? String(n.year_peak) : "—"}</td>

@@ -146,7 +146,89 @@ def test_avg_path_returns_sample_n():
         {"source": "d", "target": "e"},
         {"source": "e", "target": "f"},
     ]
-    val, n = average_path_length(nodes, edges, sample=40)
+    val, n, sampled = average_path_length(nodes, edges, sample=40)
     assert val is not None
     assert n == 6  # exact for small graphs
+    assert sampled is False
+
+
+def test_pearson_engine():
+    from loom.analytics import pearson
+
+    assert pearson([1, 2, 3, 4], [1, 2, 3, 4]) == 1.0
+    assert pearson([1, 2, 3, 4], [4, 3, 2, 1]) == -1.0
+    assert pearson([1, 1, 1, 1], [1, 2, 3, 4]) is None
+
+
+def test_spearman_and_correlations():
+    from loom.analytics import correlations, spearman
+
+    assert spearman([1, 2, 3, 4], [1, 2, 3, 4]) == 1.0
+    assert spearman([1, 2, 3, 4], [4, 3, 2, 1]) == -1.0
+    # n < 8 → null r
+    nodes = [
+        {"id": f"n{i}", "degree": i, "strength": i * 2, "prominence": i * 3}
+        for i in range(5)
+    ]
+    c = correlations(nodes)
+    assert c["degree×strength"]["r"] is None
+    assert c["degree×strength"]["n"] == 5
+    # constant → null
+    big = [
+        {"id": f"n{i}", "degree": 1, "strength": 10, "prominence": float(i)}
+        for i in range(10)
+    ]
+    c2 = correlations(big)
+    assert c2["degree×prominence"]["r"] is None
+
+
+def test_enrich_edge_loyalty():
+    from loom.analytics import enrich_edge_metrics
+
+    nodes = [
+        {
+            "id": "a",
+            "year_min": 2000,
+            "year_max": 2010,
+            "birth_year": 1970,
+            "dominant_genre": "Horror",
+            "top_director": "D1",
+        },
+        {
+            "id": "b",
+            "year_min": 2005,
+            "year_max": 2015,
+            "birth_year": 1995,
+            "dominant_genre": "Horror",
+            "top_director": "D1",
+        },
+    ]
+    edges = [
+        {
+            "source": "a",
+            "target": "b",
+            "shared_count": 4,
+            "genres": ["Horror"],
+            "first_worked_together": 2005,
+            "last_worked_together": 2008,
+        }
+    ]
+    enrich_edge_metrics(nodes, edges)
+    e = edges[0]
+    assert e["loyalty_ab"] == 1.0
+    assert e["loyalty_ba"] == 1.0
+    assert e["cross_generational"] is True
+    assert e["directorial_glue"] is True
+    assert 0 <= e["edge_genre_jaccard"] <= 1
+
+
+def test_degree_strength_validate():
+    from loom.constructs.emit import validate_construct
+
+    nodes = [
+        {"id": "a", "label": "A", "degree": 1, "strength": 5},
+        {"id": "b", "label": "B", "degree": 1, "strength": 5},
+    ]
+    edges = [{"source": "a", "target": "b", "weight": 5, "reunion_span": 0}]
+    assert validate_construct(nodes, edges) == []
 

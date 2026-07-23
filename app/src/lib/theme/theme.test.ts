@@ -62,14 +62,30 @@ describe("contrast", () => {
     for (const theme of ["light", "dark"] as Theme[]) {
       const paper = token("surface.paper", theme);
       const workshop = token("surface.workshop", theme);
+      const panel = token("surface.workshopPanel", theme);
       const ink = token("text.ink", theme);
       const workshopText = token("text.workshop", theme);
+      const muted = token("text.muted", theme);
+      const onAccent = token("text.onAccent", theme);
+      const accent = token("accent.base", theme);
       // Paper charts: ink on paper
       if (theme === "light") {
         expect(contrastRatio(ink, paper)).toBeGreaterThanOrEqual(4.5);
       }
       // Chrome: workshop text on atelier
       expect(contrastRatio(workshopText, workshop)).toBeGreaterThanOrEqual(4.5);
+      expect(contrastRatio(workshopText, panel)).toBeGreaterThanOrEqual(4.5);
+      expect(contrastRatio(muted, workshop)).toBeGreaterThanOrEqual(4.5);
+      // Accent buttons always use light on-accent ink
+      expect(contrastRatio(onAccent, accent)).toBeGreaterThanOrEqual(3);
+    }
+  });
+
+  it("cssVars exposes on-accent and atelier-bg", () => {
+    for (const theme of ["light", "dark"] as Theme[]) {
+      const vars = cssVars(theme);
+      expect(vars["--on-accent"]).toMatch(/^#/);
+      expect(vars["--atelier-bg"]).toBe(vars["--atelier"]);
     }
   });
 

@@ -585,7 +585,13 @@ function Legend({
       ? "COLOR = VOTE PROMINENCE"
       : colorBy === "genre"
         ? "COLOR = DOMINANT GENRE"
-        : "COLOR = COLLABORATION DEGREE";
+        : colorBy === "pagerank"
+          ? "COLOR = PAGERANK"
+          : colorBy === "acclaim_gap"
+            ? "COLOR = ACCLAIM − POPULARITY"
+            : colorBy === "degree"
+              ? "COLOR = DEGREE (NEIGHBORS)"
+              : "COLOR = STRENGTH (Σ WEIGHT)";
   return (
     <g>
       <text fontSize={5} fontFamily={FONT_MONO} fill={token("text.inkFaint", theme)} letterSpacing={1}>

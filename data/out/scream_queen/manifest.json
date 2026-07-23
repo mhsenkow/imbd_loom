@@ -1,84 +1,106 @@
 {
-  "avg_path_length": 8.787,
+  "avg_path_length": 11.707,
+  "avg_path_length_sampled": false,
+  "avg_path_sample_n": 198,
   "build_seed": 42,
   "build_stats": {
-    "after_degree_cap": 160,
-    "credit_rows": 14705,
+    "after_degree_cap": 200,
+    "billing_null_fallback": 0,
+    "credit_rows": 18189,
     "era_slices": 6,
     "min_shared": 2,
     "min_votes": 50,
-    "people_faceted": 160,
-    "population_sql": 480
+    "people_faceted": 200,
+    "population_sql": 600
   },
-  "built_at": "2026-07-22T21:19:25.775504+00:00",
-  "clustering_coefficient": 0.3156,
-  "community_count": 43,
+  "built_at": "2026-07-23T16:15:51.598742+00:00",
+  "clustering_coefficient": 0.2507,
+  "community_count": 53,
+  "correlations": {
+    "acclaim_gap×prominence": {
+      "n": 200,
+      "r": -0.6721,
+      "rho": -0.6606
+    },
+    "degree×collaborator_loyalty": {
+      "n": 199,
+      "r": -0.4825,
+      "rho": -0.5282
+    },
+    "degree×prominence": {
+      "n": 200,
+      "r": 0.1057,
+      "rho": 0.2184
+    },
+    "degree×strength": {
+      "n": 200,
+      "r": 0.9336,
+      "rho": 0.8821
+    },
+    "genre_entropy×degree": {
+      "n": 200,
+      "r": 0.1691,
+      "rho": 0.1517
+    },
+    "genre_entropy×strength": {
+      "n": 200,
+      "r": 0.2076,
+      "rho": 0.1786
+    },
+    "pagerank×prominence": {
+      "n": 200,
+      "r": 0.0863,
+      "rho": 0.0499
+    },
+    "strength×prominence": {
+      "n": 200,
+      "r": 0.0832,
+      "rho": 0.1722
+    },
+    "title_rating_median×prominence": {
+      "n": 200,
+      "r": 0.0965,
+      "rho": 0.0723
+    }
+  },
   "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
-  "edge_count": 155,
+  "edge_count": 194,
   "featured_path": [
     {
-      "id": "nm0000244",
-      "label": "Sigourney Weaver"
-    },
-    {
-      "id": "nm0735442",
-      "label": "Michelle Rodriguez"
-    },
-    {
-      "id": "nm0000170",
-      "label": "Milla Jovovich"
-    },
-    {
-      "id": "nm1682400",
-      "label": "Spencer Locke"
-    },
-    {
-      "id": "nm0005417",
-      "label": "Lin Shaye"
-    },
-    {
-      "id": "nm0126284",
-      "label": "Rose Byrne"
-    },
-    {
-      "id": "nm1631269",
-      "label": "Chloë Grace Moretz"
-    },
-    {
-      "id": "nm0000201",
-      "label": "Michelle Pfeiffer"
-    },
-    {
-      "id": "nm0266824",
-      "label": "Dakota Fanning"
-    },
-    {
-      "id": "nm0000223",
-      "label": "Elisabeth Shue"
-    },
-    {
-      "id": "nm0502425",
-      "label": "Melissa Leo"
-    },
-    {
-      "id": "nm2832695",
-      "label": "Deborah Ann Woll"
-    },
-    {
-      "id": "nm5347988",
-      "label": "Taylor Russell"
-    },
-    {
-      "id": "nm0662504",
-      "label": "Molly Parker"
+      "id": "nm0000173",
+      "label": "Nicole Kidman"
     },
     {
       "id": "nm0000205",
       "label": "Parker Posey"
     },
     {
-      "id": "nm0000173",
-      "label": "Nicole Kidman"
+      "id": "nm0662504",
+      "label": "Molly Parker"
+    },
+    {
+      "id": "nm5347988",
+      "label": "Taylor Russell"
+    },
+    {
+      "id": "nm2832695",
+      "label": "Deborah Ann Woll"
+    },
+    {
+      "id": "nm0502425",
+      "label": "Melissa Leo"
+    },
+    {
+      "id": "nm0818055",
+      "label": "Octavia Spencer"
+    },
+    {
+      "id": "nm0915208",
+      "label": "Naomi Watts"
+    },
+    {
+      "id": "nm0000215",
+      "label": "Susan Sarandon"
     }
   ],
   "gender_method": "imdb_actor_actress_proxy",
@@ -92,31 +114,776 @@
     "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
     "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
   },
+  "insight": "In this cut, degree and strength track with r=0.9336.",
   "key_variable": "coappearance",
   "method_note": "Population: female-coded cast with ≥3 Horror credits (Adult excluded, numVotes ≥50). Hero = co-appearance web (shared horror titles ≥2). Alluvial: top actresses → era → role band.",
+  "metrics_version": "2",
   "min_shared": 2,
-  "node_count": 160,
+  "node_count": 200,
   "stage_row_count": 127,
   "subtitle": "actress ↔ actress co-appearance in horror",
   "summary": {
-    "degree_max": 213,
-    "degree_median": 35,
+    "acclaim_gap_hist": [
+      {
+        "count": 4,
+        "hi": -3.098,
+        "lo": -3.854
+      },
+      {
+        "count": 5,
+        "hi": -2.341,
+        "lo": -3.098
+      },
+      {
+        "count": 10,
+        "hi": -1.585,
+        "lo": -2.341
+      },
+      {
+        "count": 34,
+        "hi": -0.828,
+        "lo": -1.585
+      },
+      {
+        "count": 33,
+        "hi": -0.072,
+        "lo": -0.828
+      },
+      {
+        "count": 53,
+        "hi": 0.685,
+        "lo": -0.072
+      },
+      {
+        "count": 34,
+        "hi": 1.441,
+        "lo": 0.685
+      },
+      {
+        "count": 17,
+        "hi": 2.198,
+        "lo": 1.441
+      },
+      {
+        "count": 7,
+        "hi": 2.954,
+        "lo": 2.198
+      },
+      {
+        "count": 3,
+        "hi": 3.711,
+        "lo": 2.954
+      }
+    ],
+    "assortativity": 0.3367,
+    "community_sizes": [
+      25,
+      19,
+      11,
+      10,
+      9,
+      7,
+      7,
+      6,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      3,
+      3,
+      3,
+      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1
+    ],
+    "component_count": 36,
+    "corr_degree×prominence": {
+      "n": 200,
+      "r": 0.1057,
+      "rho": 0.2184
+    },
+    "corr_degree×strength": {
+      "n": 200,
+      "r": 0.9336,
+      "rho": 0.8821
+    },
+    "corr_strength×prominence": {
+      "n": 200,
+      "r": 0.0832,
+      "rho": 0.1722
+    },
+    "degree_gini": 0.3363,
+    "degree_hist": [
+      {
+        "count": 2,
+        "hi": 0.9,
+        "lo": 0.0
+      },
+      {
+        "count": 102,
+        "hi": 1.8,
+        "lo": 0.9
+      },
+      {
+        "count": 49,
+        "hi": 2.7,
+        "lo": 1.8
+      },
+      {
+        "count": 21,
+        "hi": 3.6,
+        "lo": 2.7
+      },
+      {
+        "count": 13,
+        "hi": 4.5,
+        "lo": 3.6
+      },
+      {
+        "count": 8,
+        "hi": 5.4,
+        "lo": 4.5
+      },
+      {
+        "count": 4,
+        "hi": 6.3,
+        "lo": 5.4
+      },
+      {
+        "count": 0,
+        "hi": 7.2,
+        "lo": 6.3
+      },
+      {
+        "count": 0,
+        "hi": 8.1,
+        "lo": 7.2
+      },
+      {
+        "count": 1,
+        "hi": 9.0,
+        "lo": 8.1
+      }
+    ],
+    "degree_max": 9,
+    "degree_median": 1,
+    "density": 0.009749,
+    "diameter": 30,
+    "effective_diameter": 20.0,
     "era_histogram": {
       "1960s": 1,
       "1970s": 3,
-      "1980s": 5,
-      "1990s": 13,
-      "2000s": 52,
-      "2010s": 72,
-      "2020s": 14
+      "1980s": 6,
+      "1990s": 19,
+      "2000s": 68,
+      "2010s": 87,
+      "2020s": 16
     },
+    "era_homophily": 0.758,
+    "gender_homophily": 1.0,
     "gender_mix": {
-      "female": 160
+      "female": 200
     },
-    "top_name": "Sigourney Weaver"
+    "giant_component_share": 0.59,
+    "largest_community_share": 0.125,
+    "modularity": 0.288,
+    "outliers": {
+      "acclaim_gap": [
+        "nm0000173",
+        "nm0000215",
+        "nm0000449",
+        "nm0001287",
+        "nm0001576",
+        "nm0174021",
+        "nm0908914",
+        "nm1246724",
+        "nm1884875",
+        "nm6442992"
+      ],
+      "pagerank": [
+        "nm0000130",
+        "nm0000207",
+        "nm0001303",
+        "nm0001721",
+        "nm0502425",
+        "nm0735442",
+        "nm0888882",
+        "nm0935541",
+        "nm1297015",
+        "nm2318089"
+      ],
+      "prominence": [
+        "nm0000173",
+        "nm0000194",
+        "nm0000215",
+        "nm0000244",
+        "nm0000995",
+        "nm0001057",
+        "nm0001648",
+        "nm0915208"
+      ],
+      "strength": [
+        "nm0000117",
+        "nm0000170",
+        "nm0000535",
+        "nm0001073",
+        "nm0001303",
+        "nm0480465",
+        "nm0688624",
+        "nm0735442",
+        "nm0935541",
+        "nm1057928",
+        "nm1139632",
+        "nm2318089"
+      ]
+    },
+    "prominence_hist": [
+      {
+        "count": 57,
+        "hi": 66.516,
+        "lo": 5.407
+      },
+      {
+        "count": 35,
+        "hi": 127.626,
+        "lo": 66.516
+      },
+      {
+        "count": 35,
+        "hi": 188.735,
+        "lo": 127.626
+      },
+      {
+        "count": 35,
+        "hi": 249.845,
+        "lo": 188.735
+      },
+      {
+        "count": 19,
+        "hi": 310.954,
+        "lo": 249.845
+      },
+      {
+        "count": 9,
+        "hi": 372.064,
+        "lo": 310.954
+      },
+      {
+        "count": 5,
+        "hi": 433.173,
+        "lo": 372.064
+      },
+      {
+        "count": 2,
+        "hi": 494.283,
+        "lo": 433.173
+      },
+      {
+        "count": 1,
+        "hi": 555.392,
+        "lo": 494.283
+      },
+      {
+        "count": 2,
+        "hi": 616.502,
+        "lo": 555.392
+      }
+    ],
+    "scatter_strength_prominence": [
+      {
+        "id": "nm0000096",
+        "x": 21.0,
+        "y": 208.268
+      },
+      {
+        "id": "nm0000117",
+        "x": 117.0,
+        "y": 244.689
+      },
+      {
+        "id": "nm0000161",
+        "x": 25.0,
+        "y": 256.365
+      },
+      {
+        "id": "nm0000173",
+        "x": 44.0,
+        "y": 616.502
+      },
+      {
+        "id": "nm0000201",
+        "x": 43.0,
+        "y": 309.803
+      },
+      {
+        "id": "nm0000207",
+        "x": 0.0,
+        "y": 324.214
+      },
+      {
+        "id": "nm0000215",
+        "x": 19.0,
+        "y": 576.502
+      },
+      {
+        "id": "nm0000227",
+        "x": 53.0,
+        "y": 338.565
+      },
+      {
+        "id": "nm0000244",
+        "x": 63.0,
+        "y": 447.455
+      },
+      {
+        "id": "nm0000295",
+        "x": 20.0,
+        "y": 348.247
+      },
+      {
+        "id": "nm0000307",
+        "x": 25.0,
+        "y": 381.497
+      },
+      {
+        "id": "nm0000449",
+        "x": 35.0,
+        "y": 271.465
+      },
+      {
+        "id": "nm0000492",
+        "x": 44.0,
+        "y": 314.579
+      },
+      {
+        "id": "nm0000539",
+        "x": 38.0,
+        "y": 191.962
+      },
+      {
+        "id": "nm0000666",
+        "x": 26.0,
+        "y": 200.805
+      },
+      {
+        "id": "nm0000782",
+        "x": 39.0,
+        "y": 247.513
+      },
+      {
+        "id": "nm0000932",
+        "x": 94.0,
+        "y": 351.243
+      },
+      {
+        "id": "nm0001026",
+        "x": 21.0,
+        "y": 208.589
+      },
+      {
+        "id": "nm0001073",
+        "x": 156.0,
+        "y": 188.201
+      },
+      {
+        "id": "nm0001236",
+        "x": 36.0,
+        "y": 147.808
+      },
+      {
+        "id": "nm0001264",
+        "x": 23.0,
+        "y": 219.927
+      },
+      {
+        "id": "nm0001303",
+        "x": 141.0,
+        "y": 275.435
+      },
+      {
+        "id": "nm0001347",
+        "x": 50.0,
+        "y": 277.891
+      },
+      {
+        "id": "nm0001388",
+        "x": 78.0,
+        "y": 119.946
+      },
+      {
+        "id": "nm0001453",
+        "x": 29.0,
+        "y": 177.108
+      },
+      {
+        "id": "nm0001491",
+        "x": 13.0,
+        "y": 207.378
+      },
+      {
+        "id": "nm0001584",
+        "x": 38.0,
+        "y": 180.384
+      },
+      {
+        "id": "nm0001634",
+        "x": 40.0,
+        "y": 107.185
+      },
+      {
+        "id": "nm0001721",
+        "x": 76.0,
+        "y": 191.255
+      },
+      {
+        "id": "nm0001860",
+        "x": 34.0,
+        "y": 197.085
+      },
+      {
+        "id": "nm0004742",
+        "x": 25.0,
+        "y": 194.883
+      },
+      {
+        "id": "nm0005123",
+        "x": 60.0,
+        "y": 102.605
+      },
+      {
+        "id": "nm0005305",
+        "x": 42.0,
+        "y": 145.101
+      },
+      {
+        "id": "nm0005417",
+        "x": 83.0,
+        "y": 201.572
+      },
+      {
+        "id": "nm0005569",
+        "x": 14.0,
+        "y": 245.856
+      },
+      {
+        "id": "nm0007491",
+        "x": 40.0,
+        "y": 35.732
+      },
+      {
+        "id": "nm0068338",
+        "x": 21.0,
+        "y": 314.159
+      },
+      {
+        "id": "nm0108287",
+        "x": 76.0,
+        "y": 127.132
+      },
+      {
+        "id": "nm0174021",
+        "x": 23.0,
+        "y": 249.107
+      },
+      {
+        "id": "nm0222643",
+        "x": 55.0,
+        "y": 201.537
+      },
+      {
+        "id": "nm0252238",
+        "x": 25.0,
+        "y": 89.926
+      },
+      {
+        "id": "nm0267812",
+        "x": 69.0,
+        "y": 266.413
+      },
+      {
+        "id": "nm0314514",
+        "x": 26.0,
+        "y": 64.853
+      },
+      {
+        "id": "nm0330069",
+        "x": 22.0,
+        "y": 14.153
+      },
+      {
+        "id": "nm0335275",
+        "x": 20.0,
+        "y": 156.486
+      },
+      {
+        "id": "nm0347149",
+        "x": 36.0,
+        "y": 141.993
+      },
+      {
+        "id": "nm0372176",
+        "x": 21.0,
+        "y": 223.524
+      },
+      {
+        "id": "nm0410622",
+        "x": 26.0,
+        "y": 157.702
+      },
+      {
+        "id": "nm0452748",
+        "x": 23.0,
+        "y": 57.826
+      },
+      {
+        "id": "nm0477341",
+        "x": 24.0,
+        "y": 8.29
+      },
+      {
+        "id": "nm0491090",
+        "x": 23.0,
+        "y": 40.047
+      },
+      {
+        "id": "nm0517820",
+        "x": 44.0,
+        "y": 232.54
+      },
+      {
+        "id": "nm0540441",
+        "x": 38.0,
+        "y": 206.216
+      },
+      {
+        "id": "nm0556051",
+        "x": 21.0,
+        "y": 5.407
+      },
+      {
+        "id": "nm0600667",
+        "x": 44.0,
+        "y": 50.997
+      },
+      {
+        "id": "nm0628601",
+        "x": 44.0,
+        "y": 162.143
+      },
+      {
+        "id": "nm0640323",
+        "x": 37.0,
+        "y": 131.901
+      },
+      {
+        "id": "nm0662504",
+        "x": 64.0,
+        "y": 195.769
+      },
+      {
+        "id": "nm0688467",
+        "x": 56.0,
+        "y": 31.83
+      },
+      {
+        "id": "nm0714147",
+        "x": 48.0,
+        "y": 72.582
+      },
+      {
+        "id": "nm0735442",
+        "x": 169.0,
+        "y": 153.528
+      },
+      {
+        "id": "nm0799706",
+        "x": 63.0,
+        "y": 46.76
+      },
+      {
+        "id": "nm0811242",
+        "x": 39.0,
+        "y": 155.502
+      },
+      {
+        "id": "nm0829576",
+        "x": 44.0,
+        "y": 314.174
+      },
+      {
+        "id": "nm0885840",
+        "x": 21.0,
+        "y": 63.411
+      },
+      {
+        "id": "nm0908914",
+        "x": 15.0,
+        "y": 356.792
+      },
+      {
+        "id": "nm0915865",
+        "x": 38.0,
+        "y": 143.447
+      },
+      {
+        "id": "nm0935345",
+        "x": 23.0,
+        "y": 24.682
+      },
+      {
+        "id": "nm0951471",
+        "x": 35.0,
+        "y": 90.704
+      },
+      {
+        "id": "nm1113550",
+        "x": 26.0,
+        "y": 154.397
+      },
+      {
+        "id": "nm1246724",
+        "x": 21.0,
+        "y": 16.25
+      },
+      {
+        "id": "nm1297015",
+        "x": 78.0,
+        "y": 246.488
+      },
+      {
+        "id": "nm1418096",
+        "x": 36.0,
+        "y": 17.643
+      },
+      {
+        "id": "nm1555340",
+        "x": 87.0,
+        "y": 167.125
+      },
+      {
+        "id": "nm1567113",
+        "x": 25.0,
+        "y": 288.482
+      },
+      {
+        "id": "nm1677477",
+        "x": 30.0,
+        "y": 134.305
+      },
+      {
+        "id": "nm1720028",
+        "x": 25.0,
+        "y": 131.46
+      },
+      {
+        "id": "nm1834115",
+        "x": 21.0,
+        "y": 64.542
+      },
+      {
+        "id": "nm1884875",
+        "x": 21.0,
+        "y": 35.846
+      },
+      {
+        "id": "nm1985859",
+        "x": 73.0,
+        "y": 168.064
+      }
+    ],
+    "strength_gini": 0.3707,
+    "strength_hist": [
+      {
+        "count": 33,
+        "hi": 21.3,
+        "lo": 0.0
+      },
+      {
+        "count": 94,
+        "hi": 42.6,
+        "lo": 21.3
+      },
+      {
+        "count": 31,
+        "hi": 63.9,
+        "lo": 42.6
+      },
+      {
+        "count": 14,
+        "hi": 85.2,
+        "lo": 63.9
+      },
+      {
+        "count": 13,
+        "hi": 106.5,
+        "lo": 85.2
+      },
+      {
+        "count": 7,
+        "hi": 127.8,
+        "lo": 106.5
+      },
+      {
+        "count": 4,
+        "hi": 149.1,
+        "lo": 127.8
+      },
+      {
+        "count": 2,
+        "hi": 170.4,
+        "lo": 149.1
+      },
+      {
+        "count": 1,
+        "hi": 191.7,
+        "lo": 170.4
+      },
+      {
+        "count": 1,
+        "hi": 213.0,
+        "lo": 191.7
+      }
+    ],
+    "strength_max": 213,
+    "strength_median": 33,
+    "top_name": "Nicole Kidman"
   },
   "title": "The Scream-Queen Web",
   "tmdb_gender_rows": 0,
-  "top_n": 160,
-  "avg_path_sample_n": 40
+  "top_n": 200
 }
