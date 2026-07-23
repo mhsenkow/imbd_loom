@@ -2769,6 +2769,8 @@ body.print-mode .poster-frame svg.poster {
   border: 1px solid var(--atelier-border);
   border-radius: 8px;
 }
+.trust-page {
+  --trust-max: 720px;
   min-height: 100dvh;
   padding: clamp(16px, 4vw, 40px) clamp(16px, 4vw, 48px) 64px;
   background:
