@@ -105,7 +105,6 @@ export function Sidebar({
   const openSec = (k: Section) => setSection((s) => (s === k ? null : k));
   const isTimeline = spec.heroForm === "timeline";
   const clampedWeight = Math.min(spec.minWeight, weightMax);
-
   if (!open) {
     return (
       <aside className="panel-rail left">
@@ -651,9 +650,16 @@ export function Sidebar({
                 </Chip>
               ))}
             </div>
+            <p className="field-hint">
+              Recolors atelier chrome and the poster sheet (print/PDF still forces paper).
+            </p>
           </div>
           <div className="field">
             <label>Palette</label>
+            <p className="field-hint">
+              Recolors people, ribbons, and gender marks. Colorblind-safe:{" "}
+              <strong>Okabe</strong>, <strong>Tol Bright</strong>, <strong>Ink</strong>.
+            </p>
             <div className="palette-picker" role="listbox" aria-label="Color palette">
               {PALETTE_NAMES.map((name) => {
                 const meta = PALETTE_META[name];

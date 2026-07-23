@@ -3,6 +3,7 @@
 import { topNeighbors } from "../lib/selection";
 import type { Edge, Node, RoleCredit } from "../lib/types";
 import { colorForGender } from "../lib/colors";
+import { useTheme } from "../lib/theme/ThemeContext";
 import { filmLine, uniqueShared } from "../lib/sharedTitles";
 import type { Insight } from "../lib/insights";
 import { describeNodeStats, hasStat, type ViewStatMarks } from "../lib/statsMarks";
@@ -46,6 +47,7 @@ export function DetailPanel({
   open,
   onToggle,
 }: Props) {
+  const { theme, palette } = useTheme();
   const byId = new Map(nodes.map((n) => [n.id, n]));
   const insightBlock =
     insights.length > 0 ? (
@@ -225,7 +227,7 @@ export function DetailPanel({
       <div className="detail-name">
         <span
           className="swatch"
-          style={{ background: colorForGender(node.gender as string) }}
+          style={{ background: colorForGender(node.gender as string, theme, palette) }}
         />
         <div>
           <div className="name">{node.label}</div>

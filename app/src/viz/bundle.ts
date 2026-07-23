@@ -44,12 +44,14 @@ export function layoutBundle(
     palette?: string;
     sortBy?: SortBy;
     thicknessBy?: ThicknessBy;
+    theme?: "light" | "dark";
   } = {
     colorBy: "degree",
     minWeight: 1,
   },
 ): BundleLayout {
   const palette = opts.palette ?? "loom";
+  const theme = opts.theme ?? "light";
   const sortBy = opts.sortBy ?? "degree";
   const thicknessBy = opts.thicknessBy ?? "shared";
   if (nodes.length === 0) return { links: [], leaves: [] };
@@ -101,7 +103,7 @@ export function layoutBundle(
     .angle((d) => d.x);
 
   const extents = nodeExtents(nodes);
-  const genreColor = buildGenreColor(nodes, palette);
+  const genreColor = buildGenreColor(nodes, palette, theme);
   const labelThreshold = extents.maxDegree * 0.3;
   const maxWeight = d3.max(edges, (e) => e.weight) ?? 1;
   const years = edgeYearExtents(edges);
@@ -112,7 +114,7 @@ export function layoutBundle(
       x: Math.sin(leaf.x) * leaf.y,
       y: -Math.cos(leaf.x) * leaf.y,
       label: node.label,
-      fill: nodeColor(node, opts.colorBy, extents, genreColor, palette),
+      fill: nodeColor(node, opts.colorBy, extents, genreColor, palette, theme),
       showLabel: node.degree >= labelThreshold,
       angle: leaf.x,
       id: node.id,
@@ -130,7 +132,7 @@ export function layoutBundle(
     const src = a.data.node as Node;
     links.push({
       path: line(pts) ?? "",
-      fill: nodeColor(src, opts.colorBy, extents, genreColor, palette),
+      fill: nodeColor(src, opts.colorBy, extents, genreColor, palette, theme),
       weight: e.weight,
       strokeWidth: linkStrokeWidth(e, thicknessBy, maxWeight, years),
       title: `${src.label} ↔ ${(b.data.node as Node).label}: ${e.weight} shared title(s)${

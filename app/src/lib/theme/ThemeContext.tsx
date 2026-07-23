@@ -13,6 +13,7 @@ import {
   type CSSProperties,
   type ReactNode,
 } from "react";
+import { clearScaleCache } from "./scales";
 import {
   cssVars,
   contrastOverrides,
@@ -136,7 +137,8 @@ export function ThemeProvider({
 
   useEffect(() => {
     applyCssVars(theme, contrastMore);
-  }, [theme, contrastMore, system]);
+    clearScaleCache();
+  }, [theme, contrastMore, system, palette]);
 
   useEffect(() => {
     writeStored({ theme: themePreference, palette });

@@ -6,9 +6,10 @@ import { TimelineHero } from "./components/TimelineHero";
 import { ChartLegend } from "./components/ChartLegend";
 import { HomeGallery } from "./components/HomeGallery";
 import { StyleGuide } from "./components/StyleGuide";
-import { ThemeProvider } from "./lib/theme/ThemeContext";
+import { ThemeProvider, useTheme } from "./lib/theme/ThemeContext";
 import type { PaletteName } from "./lib/theme/tokens";
 import { SurfaceCard } from "./components/ui/SurfaceCard";
+import type { ReactNode } from "react";
 import { loadConstruct, loadIndex, loadPeopleIndex } from "./lib/data";
 import {
   dropIsolates,
@@ -45,6 +46,21 @@ import {
   type SelectionState,
 } from "./lib/selection";
 import { COARSE_MQ, PHONE_MQ, useMediaQuery } from "./lib/useMediaQuery";
+
+function PosterShell({
+  print,
+  children,
+}: {
+  print: boolean;
+  children: ReactNode;
+}) {
+  const { theme } = useTheme();
+  return (
+    <SurfaceCard theme={print ? "light" : theme} className="poster-frame paper-grain">
+      {children}
+    </SurfaceCard>
+  );
+}
 
 function usePrintMode(): boolean {
   const [print, setPrint] = useState(
@@ -648,7 +664,7 @@ export default function App() {
             viewStats={viewStats}
           />
         ) : (
-          <SurfaceCard theme="light" className="poster-frame paper-grain">
+          <PosterShell print={isPrint}>
             <ChartLegend
               form={spec.heroForm === "bundle" ? "bundle" : "chord"}
               colorBy={colorBy}
@@ -674,7 +690,7 @@ export default function App() {
               viewStats={viewStats}
               insightFocusId={insightFocusId}
             />
-          </SurfaceCard>
+          </PosterShell>
         )}
       </main>
       {!isPrint && (

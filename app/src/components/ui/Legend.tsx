@@ -2,13 +2,15 @@
  * Legend composing ChartLegend + live palette swatches for the active encoding.
  */
 
+import { genderColors } from "../../lib/colors";
 import { ChartLegend } from "../ChartLegend";
 import { Swatch } from "./Swatch";
 import { colorLegendLabel } from "../../lib/encode";
-import { GENDER_COLORS, type ColorBy } from "../../lib/types";
+import type { ColorBy } from "../../lib/types";
 import { PALETTE_META, type PaletteName } from "../../lib/theme/tokens";
 import { sequentialLow } from "../../lib/theme/scales";
 import type { ViewStatMarks } from "../../lib/statsMarks";
+import { useTheme } from "../../lib/theme/ThemeContext";
 
 interface Props {
   form: "chord" | "bundle" | "timeline";
@@ -25,8 +27,10 @@ export function Legend({
   palette = "loom",
   statMarks,
 }: Props) {
+  const { theme } = useTheme();
   const meta = PALETTE_META[palette as PaletteName] ?? PALETTE_META.loom;
   const encoding = colorBy ? colorLegendLabel(colorBy, palette) : null;
+  const genders = genderColors(palette, theme);
 
   return (
     <div className="legend-compose">
@@ -38,7 +42,7 @@ export function Legend({
           {colorBy === "gender" ? (
             <span className="legend-swatches">
               {(["female", "male", "nonbinary", "unknown"] as const).map((g) => (
-                <Swatch key={g} color={GENDER_COLORS[g]} size={8} title={g} />
+                <Swatch key={g} color={genders[g]} size={8} title={g} />
               ))}
             </span>
           ) : colorBy === "genre" ? (

@@ -7,10 +7,43 @@ import {
   paletteMidtones,
 } from "./theme/scales";
 
-export function colorForGender(g: string | undefined, theme: Theme = "light"): string {
-  const key = (g ?? "unknown") as keyof typeof mark.gender;
-  const path = mark.gender[key] ? `mark.gender.${key}` : "mark.gender.unknown";
+const GENDER_ORDER = ["female", "male", "nonbinary", "unknown"] as const;
+
+/**
+ * Gender → color. Uses the active palette's first 4 hues so Ink/Okabe/Loom
+ * always recolor gender-encoded charts. Falls back to semantic mark.gender.* tokens.
+ * Ink on dark surfaces uses the reversed ramp so marks stay visible.
+ */
+export function colorForGender(
+  g: string | undefined,
+  theme: Theme = "light",
+  palette: string = "loom",
+): string {
+  const key = (g ?? "unknown") as (typeof GENDER_ORDER)[number] | string;
+  const idx = GENDER_ORDER.indexOf(key as (typeof GENDER_ORDER)[number]);
+  let hues = [...(PALETTES[palette as PaletteName] ?? [])];
+  if (palette === "ink" && theme === "dark") {
+    hues = hues.slice().reverse();
+  }
+  if (hues.length && idx >= 0) {
+    return hues[Math.min(idx, hues.length - 1)];
+  }
+  const path =
+    key in mark.gender ? `mark.gender.${key}` : "mark.gender.unknown";
   return token(path, theme);
+}
+
+/** Legend / swatch map for the active palette. */
+export function genderColors(
+  palette: string = "loom",
+  theme: Theme = "light",
+): Record<string, string> {
+  return {
+    female: colorForGender("female", theme, palette),
+    male: colorForGender("male", theme, palette),
+    nonbinary: colorForGender("nonbinary", theme, palette),
+    unknown: colorForGender("unknown", theme, palette),
+  };
 }
 
 export function categoricalScale(

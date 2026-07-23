@@ -120,7 +120,7 @@ export function layoutAlluvial(
         name === "nonbinary" ||
         name === "unknown")
     ) {
-      return colorForGender(name);
+      return colorForGender(name, "light", paletteName);
     }
     return color(name);
   };

@@ -3,7 +3,6 @@
 import { useMemo } from "react";
 import type { ConstructData, Edge, Manifest, Node, PosterSpec } from "../lib/types";
 import { bands } from "../lib/geometry";
-import { GENDER_COLORS } from "../lib/types";
 import { HeroViz } from "./HeroViz";
 import { TimelineStatic } from "./TimelineStatic";
 import { AlluvialPanel } from "./AlluvialPanel";
@@ -14,9 +13,12 @@ import type { SearchMatch } from "../lib/search";
 import { pickStripIds, type PersonIndexEntry } from "../lib/bridges";
 import { materializeConstruct } from "../lib/filter";
 import { personFacetLabels, synthesizeStages } from "../lib/stages";
-import { ACCENT, FONT_MONO, FONT_SANS, INK, INK_FAINT, INK_SOFT, PAPER, TRIM } from "../lib/fonts";
+import { ACCENT, FONT_MONO, FONT_SANS } from "../lib/fonts";
 import { sequentialLow } from "../lib/theme/scales";
 import { LIGHT, PALETTES, token, type PaletteName } from "../lib/theme/tokens";
+import { chartChrome } from "../lib/theme/chartChrome";
+import { useTheme } from "../lib/theme/ThemeContext";
+import { genderColors } from "../lib/colors";
 import { hasStat, isInsightFocus, type ViewStatMarks } from "../lib/statsMarks";
 
 interface Props {
@@ -58,6 +60,14 @@ export function Poster({
   viewStats = null,
   insightFocusId = null,
 }: Props) {
+  const { theme, printForced } = useTheme();
+  const chartTheme = printForced ? "light" : theme;
+  const chrome = useMemo(() => chartChrome(chartTheme), [chartTheme]);
+  const { paper: PAPER, ink: INK, inkSoft: INK_SOFT, inkFaint: INK_FAINT, trim: TRIM } = chrome;
+  const genderSwatches = useMemo(
+    () => genderColors(spec.palette, chartTheme),
+    [spec.palette, chartTheme],
+  );
   const layout = bands(spec.pageSize);
   const colorBy =
     colorByProp ??
@@ -418,7 +428,13 @@ export function Poster({
 
       {/* Footer: legend + method + credit */}
       <g transform={`translate(${layout.footer.x}, ${layout.footer.y + 4})`}>
-        <Legend colorBy={colorBy} palette={spec.palette} statCount={spec.statMarks.length} />
+        <Legend
+          colorBy={colorBy}
+          palette={spec.palette}
+          theme={chartTheme}
+          genderSwatches={genderSwatches}
+          statCount={spec.statMarks.length}
+        />
         <line
           x1={0}
           y1={24}
@@ -502,7 +518,7 @@ export function Poster({
         ))}
       </g>
 
-      {spec.showCropMarks && <CropMarks layout={layout} />}
+      {spec.showCropMarks && <CropMarks layout={layout} ink={INK} />}
     </svg>
   );
 }
@@ -526,24 +542,34 @@ function wrapText(text: string, maxChars: number): string[] {
 function Legend({
   colorBy,
   palette = "loom",
+  theme = "light",
+  genderSwatches,
   statCount = 0,
 }: {
   colorBy: import("../lib/types").ColorBy;
   palette?: string;
+  theme?: "light" | "dark";
+  genderSwatches?: Record<string, string>;
   statCount?: number;
 }) {
   if (colorBy === "gender") {
-    const items = Object.entries(GENDER_COLORS);
+    const items = Object.entries(genderSwatches ?? genderColors(palette, theme));
     return (
       <g>
-        <text fontSize={5} fontFamily={FONT_MONO} fill={INK_FAINT} letterSpacing={1}>
+        <text fontSize={5} fontFamily={FONT_MONO} fill={token("text.inkFaint", theme)} letterSpacing={1}>
           COLOR = GENDER
           {statCount ? `  ·  ${statCount} STAT MARKS` : ""}
         </text>
         {items.map(([k, c], i) => (
           <g key={k} transform={`translate(${i * 42}, 8)`}>
             <rect width={5} height={5} fill={c} />
-            <text x={7} y={4.2} fontSize={4.5} fontFamily={FONT_SANS} fill={INK_SOFT}>
+            <text
+              x={7}
+              y={4.2}
+              fontSize={4.5}
+              fontFamily={FONT_SANS}
+              fill={token("text.inkSoft", theme)}
+            >
               {k}
             </text>
           </g>
@@ -552,7 +578,7 @@ function Legend({
     );
   }
   const hues = PALETTES[palette as PaletteName] ?? PALETTES.loom;
-  const low = sequentialLow(palette, "light");
+  const low = sequentialLow(palette, theme);
   const high = hues[0];
   const label =
     colorBy === "prominence"
@@ -562,7 +588,7 @@ function Legend({
         : "COLOR = COLLABORATION DEGREE";
   return (
     <g>
-      <text fontSize={5} fontFamily={FONT_MONO} fill={INK_FAINT} letterSpacing={1}>
+      <text fontSize={5} fontFamily={FONT_MONO} fill={token("text.inkFaint", theme)} letterSpacing={1}>
         {label}
         {statCount ? `  ·  ${statCount} STAT MARKS` : ""}
       </text>
@@ -581,10 +607,17 @@ function Legend({
         stroke={LIGHT.LEGEND_STROKE}
         strokeWidth={0.2}
       />
-      <text x={0} y={18} fontSize={4} fontFamily={FONT_MONO} fill={INK_FAINT}>
+      <text x={0} y={18} fontSize={4} fontFamily={FONT_MONO} fill={token("text.inkFaint", theme)}>
         low
       </text>
-      <text x={80} y={18} textAnchor="end" fontSize={4} fontFamily={FONT_MONO} fill={INK_FAINT}>
+      <text
+        x={80}
+        y={18}
+        textAnchor="end"
+        fontSize={4}
+        fontFamily={FONT_MONO}
+        fill={token("text.inkFaint", theme)}
+      >
         high
       </text>
     </g>
@@ -593,8 +626,10 @@ function Legend({
 
 function CropMarks({
   layout,
+  ink,
 }: {
   layout: ReturnType<typeof bands>;
+  ink: string;
 }) {
   const b = layout.bleed;
   const marks: Array<[number, number, number, number]> = [
@@ -612,7 +647,7 @@ function CropMarks({
     [layout.w - b, layout.h - b + 0.5, layout.w - b, layout.h],
   ];
   return (
-    <g className="crop-marks" stroke={INK} strokeWidth={0.18} strokeOpacity={0.7}>
+    <g className="crop-marks" stroke={ink} strokeWidth={0.18} strokeOpacity={0.7}>
       {marks.map(([x1, y1, x2, y2], i) => (
         <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} />
       ))}

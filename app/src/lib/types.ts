@@ -2,11 +2,22 @@
 
 import {
   PALETTES as THEME_PALETTES,
-  token,
   type PaletteName,
 } from "./theme/tokens";
+import { genderColors } from "./colors";
 
 export type Gender = "male" | "female" | "nonbinary" | "unknown";
+
+/** ≤6 categorical hues — re-exported from theme/tokens (single source of truth). */
+export const PALETTES: Record<string, readonly string[]> = THEME_PALETTES;
+
+export type { PaletteName };
+
+/**
+ * Default gender swatches (loom slots). Prefer `genderColors(palette)` at render
+ * so legends track the active palette.
+ */
+export const GENDER_COLORS: Record<string, string> = genderColors("loom", "light");
 
 /**
  * Statistical overlay marks for hero / alluvial.
@@ -227,18 +238,3 @@ export const DEFAULT_SPEC: PosterSpec = {
   statMarks: [...DEFAULT_STAT_MARKS],
 };
 
-/** ≤6 categorical hues — re-exported from theme/tokens (single source of truth). */
-export const PALETTES: Record<string, readonly string[]> = THEME_PALETTES;
-
-export type { PaletteName };
-
-/**
- * Gender mark colors — semantic tokens distinct from categorical palettes
- * (Okabe–Ito subset; see mark.gender in theme/tokens.ts).
- */
-export const GENDER_COLORS: Record<string, string> = {
-  female: token("mark.gender.female", "light"),
-  male: token("mark.gender.male", "light"),
-  nonbinary: token("mark.gender.nonbinary", "light"),
-  unknown: token("mark.gender.unknown", "light"),
-};

@@ -46,16 +46,13 @@ describe("tokens", () => {
     }
   });
 
-  it("gender marks differ from loom categorical slots", () => {
-    const loom = PALETTES.loom;
-    const genders = [
-      token("mark.gender.female"),
-      token("mark.gender.male"),
-      token("mark.gender.nonbinary"),
-    ];
-    for (const g of genders) {
-      expect(loom.includes(g as (typeof loom)[number])).toBe(false);
-    }
+  it("genderColors track the active palette", async () => {
+    const { genderColors } = await import("../colors");
+    const ink = genderColors("ink", "light");
+    expect(ink.female.toLowerCase()).toBe(PALETTES.ink[0].toLowerCase());
+    expect(ink.male.toLowerCase()).toBe(PALETTES.ink[1].toLowerCase());
+    const okabe = genderColors("okabe", "light");
+    expect(okabe.female.toLowerCase()).toBe(PALETTES.okabe[0].toLowerCase());
     void mark;
   });
 });

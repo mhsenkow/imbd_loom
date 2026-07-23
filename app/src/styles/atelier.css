@@ -2652,6 +2652,19 @@ body.print-mode .poster-frame svg.poster {
 .theme-row {
   flex-wrap: wrap;
 }
+.field-hint {
+  margin: 6px 0 8px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--atelier-muted);
+}
+.field-hint.warn {
+  color: color-mix(in srgb, var(--accent) 75%, var(--atelier-text));
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
 
 } /* @layer chrome */
 

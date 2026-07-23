@@ -1,9 +1,11 @@
 /** Chart reading guide — what marks and links mean (collapsible). */
 
 import { useEffect, useState } from "react";
+import { genderColors } from "../lib/colors";
 import { Swatch } from "./ui/Swatch";
 import { colorLegendLabel } from "../lib/encode";
-import { GENDER_COLORS, type ColorBy } from "../lib/types";
+import type { ColorBy } from "../lib/types";
+import { useTheme } from "../lib/theme/ThemeContext";
 import {
   STAT_COLORS,
   STAT_MARK_META,
@@ -105,7 +107,9 @@ function MarkIcon({ id, color }: { id: StatMarkId; color: string }) {
   }
 }
 
-export function ChartLegend({ form, flipped = false, colorBy, palette, statMarks = null }: Props) {
+export function ChartLegend({ form, flipped = false, colorBy, palette = "loom", statMarks = null }: Props) {
+  const { theme } = useTheme();
+  const genderSwatches = genderColors(palette, theme);
   const [open, setOpen] = useState(() => {
     if (typeof window === "undefined") return true;
     const saved = window.sessionStorage.getItem(STORAGE_KEY);
@@ -152,7 +156,7 @@ export function ChartLegend({ form, flipped = false, colorBy, palette, statMarks
             ] as const
           ).map(([id, label]) => (
             <span key={id} className="legend-swatch">
-              <Swatch color={GENDER_COLORS[id]} size={8} />
+              <Swatch color={genderSwatches[id]} size={8} />
               {label}
             </span>
           ))}

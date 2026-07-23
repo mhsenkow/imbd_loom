@@ -46,12 +46,14 @@ export function layoutChord(
     palette?: string;
     sortBy?: SortBy;
     thicknessBy?: ThicknessBy;
+    theme?: "light" | "dark";
   } = {
     colorBy: "degree",
     minWeight: 1,
   },
 ): ChordLayout {
   const palette = opts.palette ?? "loom";
+  const theme = opts.theme ?? "light";
   const sortBy = opts.sortBy ?? "degree";
   const thicknessBy = opts.thicknessBy ?? "shared";
   const filtered = [...nodes].sort((a, b) => compareNodesBySort(a, b, sortBy));
@@ -86,7 +88,7 @@ export function layoutChord(
   const arc = d3.arc<d3.ChordGroup>().innerRadius(inner).outerRadius(outer);
   const ribbon = d3.ribbon<d3.Chord, d3.ChordSubgroup>().radius(inner - 1);
   const extents = nodeExtents(filtered);
-  const genreColor = buildGenreColor(filtered, palette);
+  const genreColor = buildGenreColor(filtered, palette, theme);
   const labelThreshold = extents.maxDegree * 0.28;
 
   const arcs = chord.groups.map((g) => {
@@ -95,7 +97,7 @@ export function layoutChord(
     return {
       path: arc(g) ?? "",
       label: node.label,
-      fill: nodeColor(node, opts.colorBy, extents, genreColor, palette),
+      fill: nodeColor(node, opts.colorBy, extents, genreColor, palette, theme),
       angle,
       showLabel: node.degree >= labelThreshold || n <= 40,
       id: node.id,
@@ -113,8 +115,8 @@ export function layoutChord(
       sourceLabel: src.label,
       targetLabel: tgt.label,
       value: c.source.value,
-      fill: nodeColor(src, opts.colorBy, extents, genreColor, palette),
-      targetFill: nodeColor(tgt, opts.colorBy, extents, genreColor, palette),
+      fill: nodeColor(src, opts.colorBy, extents, genreColor, palette, theme),
+      targetFill: nodeColor(tgt, opts.colorBy, extents, genreColor, palette, theme),
       edge,
       sharedLabel: sharedLabel(edge?.shared),
     };

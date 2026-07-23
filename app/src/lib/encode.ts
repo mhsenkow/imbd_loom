@@ -30,27 +30,29 @@ export function nodeColor(
   extents: { maxDegree: number; maxProminence: number },
   genreColor: (k: string) => string,
   palette: string,
+  theme: "light" | "dark" = "light",
 ): string {
   switch (colorBy) {
     case "gender":
-      return colorForGender(n.gender as string | undefined);
+      return colorForGender(n.gender as string | undefined, theme, palette);
     case "prominence":
-      return degreeColor(nodeMetric(n, "prominence"), extents.maxProminence || 1, palette);
+      return degreeColor(nodeMetric(n, "prominence"), extents.maxProminence || 1, palette, theme);
     case "genre":
       return genreColor(String(n.dominant_genre || "unknown"));
     default:
-      return degreeColor(n.degree, extents.maxDegree || 1, palette);
+      return degreeColor(n.degree, extents.maxDegree || 1, palette, theme);
   }
 }
 
 export function buildGenreColor(
   nodes: Node[],
   palette: string,
+  theme: "light" | "dark" = "light",
 ): (k: string) => string {
   const keys = Array.from(
     new Set(nodes.map((n) => String(n.dominant_genre || "unknown"))),
   ).sort();
-  return categoricalScale(palette, keys);
+  return categoricalScale(palette, keys, theme);
 }
 
 export function nodeExtents(nodes: Node[]): {

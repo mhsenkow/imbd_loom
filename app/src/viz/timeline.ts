@@ -81,10 +81,12 @@ export function layoutTimeline(
     sortBy?: SortBy;
     thicknessBy?: ThicknessBy;
     sizeBy?: SizeBy;
+    theme?: "light" | "dark";
   },
 ): TimelineLayout {
   const flipped = opts.flipped ?? false;
   const palette = opts.palette ?? "loom";
+  const theme = opts.theme ?? "light";
   const sortBy = opts.sortBy ?? "year_peak";
   const thicknessBy = opts.thicknessBy ?? "shared";
   const sizeBy = opts.sizeBy ?? "degree";
@@ -125,6 +127,7 @@ export function layoutTimeline(
   const genreColor = buildGenreColor(
     withYears.map((d) => d.n),
     palette,
+    theme,
   );
   const maxWeight = d3.max(edges, (e) => e.weight) ?? 1;
   const years = edgeYearExtents(edges);
@@ -165,7 +168,7 @@ export function layoutTimeline(
       yearMax: d.yearMax,
       yearPeak: d.yearPeak,
       y: lane,
-      fill: nodeColor(d.n, opts.colorBy, extents, genreColor, palette),
+      fill: nodeColor(d.n, opts.colorBy, extents, genreColor, palette, theme),
       scale: markScale(d.n, sizeBy, extents),
       titleCount: num(d.n.title_count),
       characterCount: num(d.n.character_count),

@@ -6,15 +6,14 @@ import {
   DIM_GHOST,
   FONT_MONO,
   FONT_SANS,
-  INK,
-  INK_FAINT,
   MODE_DECADE,
-  PAPER,
   RULE,
 } from "../lib/fonts";
 import { useMemo } from "react";
-import { ChartDefs } from "./ChartDefs";
 import { driftThreadColors, weaveGradient } from "../lib/theme/scales";
+import { chartChrome } from "../lib/theme/chartChrome";
+import { useTheme } from "../lib/theme/ThemeContext";
+import { ChartDefs } from "./ChartDefs";
 import type {
   ColorBy,
   Edge,
@@ -94,6 +93,10 @@ export function TimelineStatic({
   insightFocusId = null,
   viewStats: viewStatsProp = null,
 }: Props) {
+  const { theme, printForced } = useTheme();
+  const chartTheme = printForced ? "light" : theme;
+  const chrome = useMemo(() => chartChrome(chartTheme), [chartTheme]);
+  const { paper: PAPER, ink: INK, inkFaint: INK_FAINT } = chrome;
   const focus = selection ? activeId(selection) : null;
   const neighbors = useMemo(() => neighborIds(focus, edges), [focus, edges]);
   const byId = useMemo(() => new Map(nodes.map((n) => [n.id, n])), [nodes]);
@@ -111,7 +114,10 @@ export function TimelineStatic({
     });
   }, [viewStatsProp, statMarks, nodes, edges, manifest, insightFocusId, sortBy]);
 
-  const driftColors = useMemo(() => driftThreadColors(palette, "light"), [palette]);
+  const driftColors = useMemo(
+    () => driftThreadColors(palette, chartTheme),
+    [palette, chartTheme],
+  );
 
   const layout = useMemo(() => {
     const yearSpan = (() => {
@@ -141,6 +147,7 @@ export function TimelineStatic({
       sortBy,
       thicknessBy,
       sizeBy,
+      theme: chartTheme,
     });
   }, [
     nodes,
@@ -154,6 +161,7 @@ export function TimelineStatic({
     sortBy,
     thicknessBy,
     sizeBy,
+    chartTheme,
   ]);
 
   if (!layout.people.length) {
@@ -219,7 +227,7 @@ export function TimelineStatic({
 
       <g transform={`translate(0, ${title || subtitle ? 30 : 0}) scale(${s})`}>
         <ChartDefs
-          theme="light"
+          theme={chartTheme}
           weaves={layout.links
             .map((l, i) =>
               l.fill === l.targetFill

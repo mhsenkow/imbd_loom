@@ -10,10 +10,13 @@ import type { SelectionState } from "../lib/selection";
 import { filmLine, sharedLabel, uniqueShared } from "../lib/sharedTitles";
 import { edgeKey, type SearchMatch } from "../lib/search";
 import { computeViewStatMarks, hasStat, isGapSpike, linkStatStyle, nodeFillOverride, nodeOpacityMod, type ViewStatMarks } from "../lib/statsMarks";
-import { ACCENT, DECADE_GRID, DIM_GHOST, FILM_LABEL, FOCUS_UNDERPAINT, FONT_MONO, FONT_SANS, INK, INK_FAINT, MODE_DECADE, PAPER, RULE, TRIM } from "../lib/fonts";
-import { driftThreadColors, weaveGradient } from "../lib/theme/scales";
+import { ACCENT, DECADE_GRID, DIM_GHOST, FILM_LABEL, FOCUS_UNDERPAINT, FONT_MONO, FONT_SANS, MODE_DECADE, RULE, TRIM } from "../lib/fonts";
+import { driftThreadColors } from "../lib/theme/scales";
+import { chartChrome } from "../lib/theme/chartChrome";
+import { useTheme } from "../lib/theme/ThemeContext";
 import { token } from "../lib/theme/tokens";
 import { ChartDefs } from "./ChartDefs";
+import { weaveGradient } from "../lib/theme/scales";
 import { ChartLegend } from "./ChartLegend";
 import {
   DensestPairLabel,
@@ -74,6 +77,10 @@ export function TimelineHero({
   insightFocusId = null,
   viewStats: viewStatsProp = null,
 }: Props) {
+  const { theme, printForced } = useTheme();
+  const chartTheme = printMode || printForced ? "light" : theme;
+  const chrome = useMemo(() => chartChrome(chartTheme), [chartTheme]);
+  const { paper: PAPER, ink: INK, inkFaint: INK_FAINT } = chrome;
   const wrapRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
   const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
@@ -109,12 +116,16 @@ export function TimelineHero({
         sortBy,
         thicknessBy,
         sizeBy,
+        theme: chartTheme,
       }),
-    [nodes, edges, colorBy, minWeight, printMode, flipped, palette, sortBy, thicknessBy, sizeBy],
+    [nodes, edges, colorBy, minWeight, printMode, flipped, palette, sortBy, thicknessBy, sizeBy, chartTheme],
   );
 
-  const driftColors = useMemo(() => driftThreadColors(palette, "light"), [palette]);
-  const rankColor = token("stat.halo", "light");
+  const driftColors = useMemo(
+    () => driftThreadColors(palette, chartTheme),
+    [palette, chartTheme],
+  );
+  const rankColor = token("stat.halo", chartTheme);
 
   const visibleLinks = useMemo(() => {
     let links = layout.links;
@@ -396,7 +407,7 @@ export function TimelineHero({
     >
       <g className="zoom-root">
         <ChartDefs
-          theme="light"
+          theme={chartTheme}
           weaves={visibleLinks
             .map((l, i) =>
               l.fill === l.targetFill

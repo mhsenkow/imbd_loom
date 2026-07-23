@@ -108,17 +108,18 @@ export const surface = {
   paperWash: { light: P.paper[0], dark: P.workshop[1] } satisfies ThemedColor,
   paperEdge: { light: P.paper[3], dark: P.workshop[3] } satisfies ThemedColor,
   paperGrain: { light: P.paper[2], dark: P.workshop[2] } satisfies ThemedColor,
-  workshop: { light: P.workshop[1], dark: P.workshop[1] } satisfies ThemedColor,
-  workshopPanel: { light: P.workshop[2], dark: P.workshop[2] } satisfies ThemedColor,
-  well: { light: P.workshop[0], dark: P.workshop[0] } satisfies ThemedColor,
+  /** Chrome shell — light theme is a warm workshop loft, dark is the night atelier. */
+  workshop: { light: "#ebe4d6", dark: P.workshop[1] } satisfies ThemedColor,
+  workshopPanel: { light: "#f3ede2", dark: P.workshop[2] } satisfies ThemedColor,
+  well: { light: "#e2d9c8", dark: P.workshop[0] } satisfies ThemedColor,
 } as const;
 
 export const text = {
   ink: { light: P.ink[0], dark: P.workshop.text } satisfies ThemedColor,
   inkSoft: { light: P.ink[1], dark: P.workshop.mutedHi } satisfies ThemedColor,
   inkFaint: { light: P.ink[2], dark: P.workshop.muted } satisfies ThemedColor,
-  workshop: { light: P.workshop.text, dark: P.workshop.text } satisfies ThemedColor,
-  muted: { light: P.workshop.muted, dark: P.workshop.muted } satisfies ThemedColor,
+  workshop: { light: P.ink[0], dark: P.workshop.text } satisfies ThemedColor,
+  muted: { light: "#6e6a62", dark: P.workshop.muted } satisfies ThemedColor,
 } as const;
 
 export const line = {
@@ -126,7 +127,7 @@ export const line = {
   trim: { light: P.paper[4], dark: P.workshop[3] } satisfies ThemedColor,
   decade: { light: "#c8bfb0", dark: P.workshop[4] } satisfies ThemedColor,
   filmLabel: { light: "#5c3d2e", dark: P.gold.soft } satisfies ThemedColor,
-  border: { light: P.workshop[3], dark: P.workshop[3] } satisfies ThemedColor,
+  border: { light: "#d0c6b4", dark: P.workshop[3] } satisfies ThemedColor,
 } as const;
 
 export const accent = {
@@ -205,16 +206,16 @@ export const opacity = {
 } as const;
 
 export const shadow = {
-  sm: { light: "#00000022", dark: "#00000044" } satisfies ThemedColor,
-  md: { light: "#00000033", dark: "#00000055" } satisfies ThemedColor,
-  lg: { light: "#00000055", dark: "#00000066" } satisfies ThemedColor,
-  xl: { light: "#00000066", dark: "#00000088" } satisfies ThemedColor,
-  inset: { light: "#ffffff22", dark: "#ffffff22" } satisfies ThemedColor,
+  sm: { light: "#00000018", dark: "#00000044" } satisfies ThemedColor,
+  md: { light: "#00000022", dark: "#00000055" } satisfies ThemedColor,
+  lg: { light: "#00000033", dark: "#00000066" } satisfies ThemedColor,
+  xl: { light: "#00000044", dark: "#00000088" } satisfies ThemedColor,
+  inset: { light: "#ffffff88", dark: "#ffffff22" } satisfies ThemedColor,
 } as const;
 
 export const wash = {
-  hover: { light: "#ffffff0a", dark: "#ffffff0a" } satisfies ThemedColor,
-  hoverSoft: { light: "#ffffff08", dark: "#ffffff08" } satisfies ThemedColor,
+  hover: { light: "#1a181414", dark: "#ffffff0a" } satisfies ThemedColor,
+  hoverSoft: { light: "#1a18140a", dark: "#ffffff08" } satisfies ThemedColor,
 } as const;
 
 export const type = {
@@ -225,7 +226,7 @@ export const type = {
 
 // ─── Categorical palettes ────────────────────────────────────────────────────
 
-export type PaletteName = "loom" | "ink" | "dusk" | "okabe" | "contrast";
+export type PaletteName = "loom" | "ink" | "dusk" | "okabe" | "tol" | "contrast";
 
 export interface PaletteMeta {
   name: PaletteName;
@@ -281,7 +282,7 @@ export const PALETTE_META: Record<PaletteName, PaletteMeta> = {
   okabe: {
     name: "okabe",
     label: "Okabe",
-    description: "Colorblind-safe Okabe–Ito retinted for atelier paper",
+    description: "Best colorblind-safe categorical set (Okabe–Ito) — use with Genre / Degree",
     colorblindSafe: true,
     kind: "categorical",
     hues: [
@@ -292,6 +293,15 @@ export const PALETTE_META: Record<PaletteName, PaletteMeta> = {
       P.okabe.purple,
       P.okabe.sky,
     ],
+    sequentialLow: { light: P.paper[1], dark: P.workshop[2] },
+  },
+  tol: {
+    name: "tol",
+    label: "Tol Bright",
+    description: "Paul Tol bright — strong CB-safe categorical for many genres",
+    colorblindSafe: true,
+    kind: "categorical",
+    hues: ["#4477AA", "#EE6677", "#228833", "#CCBB44", "#66CCEE", "#AA3377"],
     sequentialLow: { light: P.paper[1], dark: P.workshop[2] },
   },
   contrast: {
@@ -311,6 +321,7 @@ export const PALETTES: Record<PaletteName, readonly string[]> = {
   ink: PALETTE_META.ink.hues,
   dusk: PALETTE_META.dusk.hues,
   okabe: PALETTE_META.okabe.hues,
+  tol: PALETTE_META.tol.hues,
   contrast: PALETTE_META.contrast.hues,
 };
 
@@ -405,14 +416,14 @@ export function cssVars(theme: Theme): Record<string, string> {
     "--trim": t(line.trim),
     "--rule": t(line.rule),
 
-    // Workshop chrome (always dark atelier shell)
+    // Workshop chrome
     "--atelier": t(surface.workshop),
     "--atelier-panel": t(surface.workshopPanel),
     "--atelier-border": t(line.border),
     "--atelier-text": t(text.workshop),
     "--atelier-muted": t(text.muted),
-    "--atelier-glow-warm": P.workshop.glowWarm,
-    "--atelier-glow-cool": P.workshop.glowCool,
+    "--atelier-glow-warm": theme === "light" ? "#f0e8d8" : P.workshop.glowWarm,
+    "--atelier-glow-cool": theme === "light" ? "#e8e0d0" : P.workshop.glowCool,
 
     // Accent
     "--accent": t(accent.base),
