@@ -22,6 +22,15 @@ Use at desktop (≥1100px), tablet (~768), phone (360–414), and landscape phon
 - [ ] Legend shows mark icons for bridge / gap / halo / median
 - [ ] Stat tags are stamps (not pills); bridge diamond is embossed
 
+## Theming
+- [ ] Sidebar theme chips (auto / light / dark) flip chrome; poster stays paper via ThemeScope
+- [ ] Palette swatches preview hues; switching loom→ink→dusk→okabe→contrast recolors charts + drift threads
+- [ ] Gender encoding uses Okabe marks (not loom[0]/loom[1])
+- [ ] `?print` / PDF export forces light paper theme
+- [ ] `?view=styleguide` shows token matrix + CVD simulation
+- [ ] `rg -n "#[0-9A-Fa-f]{3,8}" app/src/components app/src/viz` returns empty
+- [ ] `npm test` in `app/` passes contrast + ΔE + scale tests
+
 ## Motion & a11y
 - [ ] Home: brand fade, sheet settle, CTA ink-in
 - [ ] Atelier: poster settle; drawers slide; no neon glow

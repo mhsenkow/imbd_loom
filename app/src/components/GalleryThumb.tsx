@@ -12,6 +12,7 @@ import {
 } from "../lib/filter";
 import { matchSearch } from "../lib/search";
 import type { ConstructData, PosterSpec, StatMarkId } from "../lib/types";
+import { PAPER } from "../lib/fonts";
 
 const W = 360;
 const H = 220;
@@ -117,7 +118,7 @@ export function GalleryThumb({ spec }: Props) {
   return (
     <div ref={hostRef} className="gallery-thumb" aria-hidden>
       <svg viewBox={`0 0 ${W} ${H}`} width="100%" height="100%" role="img">
-        <rect width={W} height={H} fill="#f7f2e8" />
+        <rect width={W} height={H} fill={PAPER} />
         {previewSpec.heroForm === "timeline" ? (
           <TimelineStatic
             nodes={nodes}

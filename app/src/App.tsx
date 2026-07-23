@@ -5,6 +5,10 @@ import { DetailPanel } from "./components/DetailPanel";
 import { TimelineHero } from "./components/TimelineHero";
 import { ChartLegend } from "./components/ChartLegend";
 import { HomeGallery } from "./components/HomeGallery";
+import { StyleGuide } from "./components/StyleGuide";
+import { ThemeProvider } from "./lib/theme/ThemeContext";
+import type { PaletteName } from "./lib/theme/tokens";
+import { SurfaceCard } from "./components/ui/SurfaceCard";
 import { loadConstruct, loadIndex, loadPeopleIndex } from "./lib/data";
 import {
   dropIsolates,
@@ -96,9 +100,11 @@ export default function App() {
   const overlayPanels = useMediaQuery("(max-width: 900px)");
   const params = readParams();
 
-  const [view, setView] = useState<"home" | "atelier">(() =>
-    viewFromSearchParams(params),
-  );
+  const [view, setView] = useState<"home" | "atelier" | "styleguide">(() => {
+    const v = params.get("view");
+    if (v === "styleguide") return "styleguide";
+    return viewFromSearchParams(params);
+  });
   const [spec, setSpec] = useState<PosterSpec>(() =>
     specFromSearchParams(params, DEFAULT_SPEC),
   );
@@ -549,11 +555,28 @@ export default function App() {
     .filter(Boolean)
     .join(" ");
 
+  if (!isPrint && view === "styleguide") {
+    return (
+      <ThemeProvider printMode={false} palette={spec.palette as PaletteName}>
+        <StyleGuide onBack={() => setView("home")} />
+      </ThemeProvider>
+    );
+  }
+
   if (!isPrint && view === "home") {
-    return <HomeGallery onOpenStory={openStory} onOpenAtelier={openAtelier} />;
+    return (
+      <ThemeProvider printMode={false} palette={spec.palette as PaletteName}>
+        <HomeGallery onOpenStory={openStory} onOpenAtelier={openAtelier} />
+      </ThemeProvider>
+    );
   }
 
   return (
+    <ThemeProvider
+      printMode={isPrint}
+      palette={spec.palette as PaletteName}
+      onPaletteChange={(p) => patch({ palette: p })}
+    >
     <div className={layoutClass}>
       {!isPrint && (
         <Sidebar
@@ -625,10 +648,11 @@ export default function App() {
             viewStats={viewStats}
           />
         ) : (
-          <div className="poster-frame paper-grain">
+          <SurfaceCard theme="light" className="poster-frame paper-grain">
             <ChartLegend
               form={spec.heroForm === "bundle" ? "bundle" : "chord"}
               colorBy={colorBy}
+              palette={spec.palette}
               statMarks={viewStats}
             />
             <Poster
@@ -650,7 +674,7 @@ export default function App() {
               viewStats={viewStats}
               insightFocusId={insightFocusId}
             />
-          </div>
+          </SurfaceCard>
         )}
       </main>
       {!isPrint && (
@@ -679,5 +703,6 @@ export default function App() {
         />
       )}
     </div>
+    </ThemeProvider>
   );
 }

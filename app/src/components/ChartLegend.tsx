@@ -1,6 +1,7 @@
 /** Chart reading guide — what marks and links mean (collapsible). */
 
 import { useEffect, useState } from "react";
+import { Swatch } from "./ui/Swatch";
 import { colorLegendLabel } from "../lib/encode";
 import { GENDER_COLORS, type ColorBy } from "../lib/types";
 import {
@@ -15,6 +16,7 @@ interface Props {
   form: "chord" | "bundle" | "timeline";
   flipped?: boolean;
   colorBy?: ColorBy;
+  palette?: string;
   statMarks?: ViewStatMarks | null;
 }
 
@@ -99,11 +101,11 @@ function MarkIcon({ id, color }: { id: StatMarkId; color: string }) {
         </svg>
       );
     default:
-      return <span className="swatch-dot" style={{ background: color }} />;
+      return <Swatch color={color} size={8} />;
   }
 }
 
-export function ChartLegend({ form, flipped = false, colorBy, statMarks = null }: Props) {
+export function ChartLegend({ form, flipped = false, colorBy, palette, statMarks = null }: Props) {
   const [open, setOpen] = useState(() => {
     if (typeof window === "undefined") return true;
     const saved = window.sessionStorage.getItem(STORAGE_KEY);
@@ -150,7 +152,7 @@ export function ChartLegend({ form, flipped = false, colorBy, statMarks = null }
             ] as const
           ).map(([id, label]) => (
             <span key={id} className="legend-swatch">
-              <span className="swatch-dot" style={{ background: GENDER_COLORS[id] }} />
+              <Swatch color={GENDER_COLORS[id]} size={8} />
               {label}
             </span>
           ))}
@@ -189,7 +191,7 @@ export function ChartLegend({ form, flipped = false, colorBy, statMarks = null }
         <span className="chart-legend-toggle-label">Reading guide</span>
         {!open && colorBy ? (
           <span className="chart-legend-toggle-hint mono">
-            {colorLegendLabel(colorBy)}
+            {colorLegendLabel(colorBy, palette)}
             {marks.length ? ` · ${marks.length} stats` : ""}
           </span>
         ) : null}

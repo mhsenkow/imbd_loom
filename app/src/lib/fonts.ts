@@ -1,21 +1,29 @@
-/** Shared typeface stacks for SVG text (mirrors CSS --sans / --mono / --serif). */
+/**
+ * Shared typeface + paper/ink aliases for SVG.
+ * Values live in `lib/theme/tokens.ts` — this file is a compatibility re-export.
+ */
 
-export const FONT_SANS = "IBM Plex Sans, system-ui, sans-serif";
-export const FONT_MONO = "IBM Plex Mono, ui-monospace, monospace";
-export const FONT_SERIF = "IBM Plex Serif, Georgia, serif";
+import { LIGHT, opacity, type } from "./theme/tokens";
 
-/** Paper / ink constants shared by SVG charts (mirrors CSS tokens). */
-export const PAPER = "#f7f2e8";
-export const PAPER_WASH = "#faf6ee";
-export const INK = "#1a1814";
-export const INK_SOFT = "#3a3630";
-export const INK_FAINT = "#6e6a62";
-export const RULE = "#d9d0c0";
-export const TRIM = "#e0d8c8";
-export const ACCENT = "#c45c26";
+export const FONT_SANS = type.sans;
+export const FONT_MONO = type.mono;
+export const FONT_SERIF = type.serif;
+
+export const PAPER = LIGHT.PAPER;
+export const PAPER_WASH = LIGHT.PAPER_WASH;
+export const INK = LIGHT.INK;
+export const INK_SOFT = LIGHT.INK_SOFT;
+export const INK_FAINT = LIGHT.INK_FAINT;
+export const RULE = LIGHT.RULE;
+export const TRIM = LIGHT.TRIM;
+export const ACCENT = LIGHT.ACCENT;
 /** Warm paper underpaint for focus (print-safe, not neon). */
-export const FOCUS_UNDERPAINT = "#c45c2622";
+export const FOCUS_UNDERPAINT = LIGHT.FOCUS_UNDERPAINT;
 /** Ghost dim opacity — warm paper-ink, not pure void. */
-export const DIM_GHOST = 0.12;
+export const DIM_GHOST = opacity.markDim;
 /** Mode-decade wash (loom cool categorical). */
-export const MODE_DECADE = "#3D5A80";
+export const MODE_DECADE = LIGHT.MODE_DECADE;
+/** Soft decade grid line. */
+export const DECADE_GRID = LIGHT.DECADE_GRID;
+/** Film strip label ink. */
+export const FILM_LABEL = LIGHT.FILM_LABEL;

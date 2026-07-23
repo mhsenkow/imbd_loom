@@ -1,5 +1,11 @@
 /** Shared types for construct JSON. */
 
+import {
+  PALETTES as THEME_PALETTES,
+  token,
+  type PaletteName,
+} from "./theme/tokens";
+
 export type Gender = "male" | "female" | "nonbinary" | "unknown";
 
 /**
@@ -221,26 +227,18 @@ export const DEFAULT_SPEC: PosterSpec = {
   statMarks: [...DEFAULT_STAT_MARKS],
 };
 
-/** ≤6 categorical hues — print-safe, not fully saturated */
-export const PALETTES: Record<string, string[]> = {
-  /** Print-safe categorical weave (primary) */
-  loom: ["#C45C26", "#2F5D50", "#C4A35A", "#5B4B8A", "#8B3A3A", "#3D5A80"],
-  /** Grayscale letterpress — first-class poster mode */
-  ink: ["#1a1814", "#3a3630", "#6e6a62", "#9a958c", "#c4bfb4", "#e8e0d0"],
-  /** Soft dusk — first-class poster mode (warm, print-safe) */
-  dusk: ["#E07A5F", "#3D405B", "#81B29A", "#F2CC8F", "#C4A35A", "#6D597A"],
-};
+/** ≤6 categorical hues — re-exported from theme/tokens (single source of truth). */
+export const PALETTES: Record<string, readonly string[]> = THEME_PALETTES;
 
-/** Midtones for ribbon/link gradients (same hue family, softer ink). */
-export const PALETTE_MIDTONES: Record<string, string[]> = {
-  loom: ["#D4845A", "#4A7A6C", "#D4B87A", "#7A6BA0", "#A55A5A", "#5A7294"],
-  ink: ["#2e2c28", "#524e48", "#848078", "#b0aaa0", "#d4cfc4", "#f0ebe2"],
-  dusk: ["#E8947C", "#555870", "#9AC4B0", "#F5D9A8", "#D4B87A", "#857294"],
-};
+export type { PaletteName };
 
+/**
+ * Gender mark colors — semantic tokens distinct from categorical palettes
+ * (Okabe–Ito subset; see mark.gender in theme/tokens.ts).
+ */
 export const GENDER_COLORS: Record<string, string> = {
-  female: "#C45C26",
-  male: "#2F5D50",
-  nonbinary: "#5B4B8A",
-  unknown: "#9a958c",
+  female: token("mark.gender.female", "light"),
+  male: token("mark.gender.male", "light"),
+  nonbinary: token("mark.gender.nonbinary", "light"),
+  unknown: token("mark.gender.unknown", "light"),
 };

@@ -129,15 +129,16 @@ export function markScale(n: Node, sizeBy: SizeBy, extents: ReturnType<typeof no
   return 0.55 + 0.7 * Math.min(1, Math.max(0, raw));
 }
 
-export function colorLegendLabel(colorBy: ColorBy): string {
+export function colorLegendLabel(colorBy: ColorBy, palette?: string): string {
+  const pal = palette ? ` · ${palette}` : "";
   switch (colorBy) {
     case "gender":
-      return "color = gender";
+      return `color = gender${pal}`;
     case "prominence":
-      return "color = votes";
+      return `color = votes${pal}`;
     case "genre":
-      return "color = genre";
+      return `color = genre${pal}`;
     default:
-      return "color = degree";
+      return `color = degree${pal}`;
   }
 }

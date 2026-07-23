@@ -15,6 +15,8 @@ import { pickStripIds, type PersonIndexEntry } from "../lib/bridges";
 import { materializeConstruct } from "../lib/filter";
 import { personFacetLabels, synthesizeStages } from "../lib/stages";
 import { ACCENT, FONT_MONO, FONT_SANS, INK, INK_FAINT, INK_SOFT, PAPER, TRIM } from "../lib/fonts";
+import { sequentialLow } from "../lib/theme/scales";
+import { LIGHT, PALETTES, token, type PaletteName } from "../lib/theme/tokens";
 import { hasStat, isInsightFocus, type ViewStatMarks } from "../lib/statsMarks";
 
 interface Props {
@@ -240,7 +242,7 @@ export function Poster({
           width={layout.trimW - layout.safe * 2}
           height={layout.trimH - layout.safe * 2}
           fill="none"
-          stroke="#c45c2644"
+          stroke={token("accent.soft", "light")}
           strokeWidth={0.3}
           strokeDasharray="2 2"
         />
@@ -416,7 +418,7 @@ export function Poster({
 
       {/* Footer: legend + method + credit */}
       <g transform={`translate(${layout.footer.x}, ${layout.footer.y + 4})`}>
-        <Legend colorBy={colorBy} statCount={spec.statMarks.length} />
+        <Legend colorBy={colorBy} palette={spec.palette} statCount={spec.statMarks.length} />
         <line
           x1={0}
           y1={24}
@@ -523,9 +525,11 @@ function wrapText(text: string, maxChars: number): string[] {
 
 function Legend({
   colorBy,
+  palette = "loom",
   statCount = 0,
 }: {
   colorBy: import("../lib/types").ColorBy;
+  palette?: string;
   statCount?: number;
 }) {
   if (colorBy === "gender") {
@@ -547,6 +551,9 @@ function Legend({
       </g>
     );
   }
+  const hues = PALETTES[palette as PaletteName] ?? PALETTES.loom;
+  const low = sequentialLow(palette, "light");
+  const high = hues[0];
   const label =
     colorBy === "prominence"
       ? "COLOR = VOTE PROMINENCE"
@@ -561,11 +568,19 @@ function Legend({
       </text>
       <defs>
         <linearGradient id="degGrad" x1="0" x2="1">
-          <stop offset="0%" stopColor="#F7F2E8" />
-          <stop offset="100%" stopColor="#C45C26" />
+          <stop offset="0%" stopColor={low} />
+          <stop offset="100%" stopColor={high} />
         </linearGradient>
       </defs>
-      <rect x={0} y={7} width={80} height={5} fill="url(#degGrad)" stroke="#cfc6b4" strokeWidth={0.2} />
+      <rect
+        x={0}
+        y={7}
+        width={80}
+        height={5}
+        fill="url(#degGrad)"
+        stroke={LIGHT.LEGEND_STROKE}
+        strokeWidth={0.2}
+      />
       <text x={0} y={18} fontSize={4} fontFamily={FONT_MONO} fill={INK_FAINT}>
         low
       </text>

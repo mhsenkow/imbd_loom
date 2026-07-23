@@ -8,6 +8,7 @@ import {
   type StripBridge,
 } from "../lib/bridges";
 import { ACCENT, FONT_MONO, FONT_SANS, INK, INK_FAINT } from "../lib/fonts";
+import { token } from "../lib/theme/tokens";
 
 interface Props {
   people: PersonIndexEntry[];
@@ -156,11 +157,11 @@ function WarpThread({
   onPin?: (id: string) => void;
 }) {
   const names = bridge.panels.map((pi) => stripTitles[pi] || stripIds[pi]).join(" → ");
-  let stroke = full ? INK : "#2F5D50";
+  let stroke = full ? INK : token("link.base", "light");
   let strokeWidth = full ? 0.6 : 0.25 + spanRatio * 0.3;
   let strokeOpacity = full ? 0.5 : 0.2 + spanRatio * 0.25;
   let dotR = full ? 0.9 : 0.65;
-  let dotFill = full ? INK : "#2F5D50";
+  let dotFill = full ? INK : token("link.base", "light");
   let dotOpacity = full ? 0.55 : 0.35;
 
   if (isFocus) {
