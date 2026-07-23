@@ -39,10 +39,10 @@ export function layoutAlluvial(
   width: number,
   height: number,
   paletteName: string,
-  opts?: { colorBy?: "gender" | "degree" | "prominence" | "genre" },
+  opts?: { colorBy?: import("../lib/types").ColorBy },
 ): AlluvialLayout {
   if (!stages.length) return { nodes: [], links: [], stages: [] };
-  const colorBy = opts?.colorBy ?? "degree";
+  const colorBy = opts?.colorBy ?? "strength";
 
   // Determine stage order from edges
   const stageOrder: string[] = [];

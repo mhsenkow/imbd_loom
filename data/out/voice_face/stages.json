@@ -3,91 +3,105 @@
     "stageFrom": "gender",
     "stageTo": "balance",
     "categoryFrom": "male",
-    "categoryTo": "balanced",
-    "value": 155
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "balance",
-    "categoryFrom": "female",
-    "categoryTo": "balanced",
-    "value": 51
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "balance",
-    "categoryFrom": "male",
     "categoryTo": "voice-heavy",
-    "value": 32
+    "value": 41
   },
   {
     "stageFrom": "gender",
     "stageTo": "balance",
     "categoryFrom": "male",
     "categoryTo": "face-heavy",
-    "value": 189
+    "value": 219
   },
   {
     "stageFrom": "gender",
     "stageTo": "balance",
     "categoryFrom": "female",
     "categoryTo": "face-heavy",
-    "value": 47
+    "value": 70
   },
   {
     "stageFrom": "gender",
     "stageTo": "balance",
     "categoryFrom": "female",
     "categoryTo": "voice-heavy",
-    "value": 6
+    "value": 9
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "balance",
+    "categoryFrom": "male",
+    "categoryTo": "balanced",
+    "value": 192
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "balance",
+    "categoryFrom": "female",
+    "categoryTo": "balanced",
+    "value": 69
   },
   {
     "stageFrom": "balance",
     "stageTo": "volume",
     "categoryFrom": "voice-heavy",
     "categoryTo": "40+ titles",
-    "value": 24
+    "value": 29
   },
   {
     "stageFrom": "balance",
     "stageTo": "volume",
     "categoryFrom": "balanced",
     "categoryTo": "20–39",
-    "value": 117
+    "value": 147
   },
   {
     "stageFrom": "balance",
     "stageTo": "volume",
     "categoryFrom": "balanced",
     "categoryTo": "under 20",
-    "value": 23
-  },
-  {
-    "stageFrom": "balance",
-    "stageTo": "volume",
-    "categoryFrom": "face-heavy",
-    "categoryTo": "40+ titles",
-    "value": 171
+    "value": 47
   },
   {
     "stageFrom": "balance",
     "stageTo": "volume",
     "categoryFrom": "face-heavy",
     "categoryTo": "20–39",
-    "value": 65
+    "value": 86
+  },
+  {
+    "stageFrom": "balance",
+    "stageTo": "volume",
+    "categoryFrom": "face-heavy",
+    "categoryTo": "under 20",
+    "value": 1
+  },
+  {
+    "stageFrom": "balance",
+    "stageTo": "volume",
+    "categoryFrom": "face-heavy",
+    "categoryTo": "40+ titles",
+    "value": 202
   },
   {
     "stageFrom": "balance",
     "stageTo": "volume",
     "categoryFrom": "balanced",
     "categoryTo": "40+ titles",
-    "value": 66
+    "value": 67
   },
   {
     "stageFrom": "balance",
     "stageTo": "volume",
     "categoryFrom": "voice-heavy",
     "categoryTo": "20–39",
-    "value": 14
+    "value": 20
+  },
+  {
+    "stageFrom": "balance",
+    "stageTo": "volume",
+    "categoryFrom": "voice-heavy",
+    "categoryTo": "under 20",
+    "value": 1
   }
 ]

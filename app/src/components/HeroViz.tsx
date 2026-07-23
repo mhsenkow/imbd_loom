@@ -75,7 +75,7 @@ export function HeroViz({
   labelMode = "hubs",
   search = null,
   palette = "loom",
-  sortBy = "degree",
+  sortBy = "strength",
   thicknessBy = "shared",
   statMarks = [],
   manifest = null,

@@ -2,12 +2,14 @@
 
 from __future__ import annotations
 
-from collections import defaultdict
-
 import duckdb
 
 from loom.constructs import gender_expr
-from loom.constructs.emit import attach_prominent_roles, finalize_payload
+from loom.constructs.emit import (
+    attach_prominent_roles,
+    finalize_payload,
+    recompute_degree_strength,
+)
 from loom.filters import adult_exclusion_sql, title_type_sql, vote_floor_sql
 from loom.textnorm import ascii_fold
 
@@ -156,11 +158,6 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             }
         )
 
-    deg: dict[str, int] = defaultdict(int)
-    for e in edges:
-        deg[e["source"]] += e["weight"]
-        deg[e["target"]] += e["weight"]
-
     nodes = []
     for nconst, label, gender, scount, prominence, top_char in ranked:
         nodes.append(
@@ -170,12 +167,14 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
                 "label_ascii": ascii_fold(label),
                 "type": "person",
                 "gender": gender or "unknown",
-                "degree": deg.get(nconst, 0),
+                "degree": 0,
+                "strength": 0,
                 "shared_character_count": int(scount or 0),
                 "top_shared_character": top_char,
                 "prominence": float(prominence or 0),
             }
         )
+    recompute_degree_strength(nodes, edges)
 
     attach_prominent_roles(con, nodes, limit=6)
     multi_n = con.execute("SELECT COUNT(*) FROM _multi").fetchone()[0]

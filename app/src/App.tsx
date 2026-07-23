@@ -4,6 +4,8 @@ import { Poster } from "./components/Poster";
 import { DetailPanel } from "./components/DetailPanel";
 import { TimelineHero } from "./components/TimelineHero";
 import { ChartLegend } from "./components/ChartLegend";
+import { ScatterHero } from "./components/ScatterHero";
+import { StatsRail } from "./components/StatsRail";
 import { HomeGallery } from "./components/HomeGallery";
 import { StyleGuide } from "./components/StyleGuide";
 import { ThemeProvider, useTheme } from "./lib/theme/ThemeContext";
@@ -651,6 +653,7 @@ export default function App() {
 
   const colorBy = resolveColorBy(spec, active?.manifest.key_variable || "degree");
   const showTimelineExplorer = !isPrint && spec.heroForm === "timeline" && !!active;
+  const showScatterExplorer = !isPrint && spec.heroForm === "scatter" && !!active;
   const scrimVisible = overlayPanels && (controlsOpen || inspectOpen);
 
   const layoutClass = [
@@ -776,8 +779,45 @@ export default function App() {
             insightFocusId={insightFocusId}
             viewStats={viewStats}
           />
+        ) : showScatterExplorer ? (
+          <div className="scatter-stage">
+            <StatsRail
+              manifest={active.manifest}
+              onHoverIds={(ids) => {
+                if (ids?.[0]) onHover(ids[0]);
+                else onHover(null);
+              }}
+            />
+            <div className="scatter-stage-plot">
+              <h2 className="scatter-stage-title">{active.manifest.title}</h2>
+              <p className="scatter-stage-sub">{active.manifest.subtitle}</p>
+              <ScatterHero
+                nodes={nodes}
+                width={720}
+                height={480}
+                highlightIds={
+                  selection.hoveredId || selection.pinnedId
+                    ? new Set(
+                        [selection.hoveredId, selection.pinnedId].filter(Boolean) as string[],
+                      )
+                    : null
+                }
+                onHover={(id) => onHover(id)}
+                onSelect={(id) => onPin(id)}
+              />
+            </div>
+          </div>
         ) : (
           <PosterShell print={isPrint}>
+            {!isPrint && active ? (
+              <StatsRail
+                manifest={active.manifest}
+                onHoverIds={(ids) => {
+                  if (ids?.[0]) onHover(ids[0]);
+                  else onHover(null);
+                }}
+              />
+            ) : null}
             <ChartLegend
               form={spec.heroForm === "bundle" ? "bundle" : "chord"}
               colorBy={colorBy}

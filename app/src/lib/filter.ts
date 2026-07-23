@@ -4,6 +4,7 @@ import type { ConstructData, Edge, Node, PosterSpec, StageRow } from "./types";
 import { neighborIds } from "./selection";
 import { edgeKey, type SearchMatch } from "./search";
 import { synthesizeStages } from "./stages";
+import { nodeStrength } from "./metrics";
 
 function num(v: unknown): number | undefined {
   if (v == null) return undefined;
@@ -14,13 +15,18 @@ function num(v: unknown): number | undefined {
 function sortValue(n: Node, sortBy: PosterSpec["sortBy"]): number {
   switch (sortBy) {
     case "prominence":
-      return num(n.prominence) ?? n.degree;
+      return num(n.prominence) ?? nodeStrength(n);
     case "year_peak":
       return num(n.year_peak) ?? num(n.yearPeak) ?? 0;
     case "title_count":
-      return num(n.title_count) ?? num(n.titleCount) ?? n.degree;
+      return num(n.title_count) ?? num(n.titleCount) ?? nodeStrength(n);
+    case "pagerank":
+      return num(n.pagerank) ?? 0;
+    case "degree":
+      return num(n.degree) ?? 0;
+    case "strength":
     default:
-      return n.degree;
+      return nodeStrength(n);
   }
 }
 
@@ -38,7 +44,7 @@ export function compareNodesBySort(
   if (sortBy === "year_peak") {
     const ay = sortValue(a, sortBy);
     const by = sortValue(b, sortBy);
-    return ay - by || b.degree - a.degree || a.label.localeCompare(b.label);
+    return ay - by || nodeStrength(b) - nodeStrength(a) || a.label.localeCompare(b.label);
   }
   const av = sortValue(a, sortBy);
   const bv = sortValue(b, sortBy);
@@ -53,8 +59,7 @@ export function filterNodesPool(nodes: Node[], spec: PosterSpec): Node[] {
     }
     const titles = num(n.title_count) ?? num(n.titleCount) ?? 0;
     if (titles < spec.minTitles) return false;
-    const deg = num(n.degree) ?? 0;
-    if (deg < spec.minDegree) return false;
+    if (nodeStrength(n) < spec.minDegree) return false;
     const yMin = num(n.year_min) ?? num(n.yearMin);
     const yMax = num(n.year_max) ?? num(n.yearMax);
     if (yMin != null && yMax != null) {
@@ -189,7 +194,10 @@ export function resolveColorBy(
   keyVariable: string,
 ): import("./types").ColorBy {
   if (spec.colorMode === "auto") {
-    return keyVariable === "gender" ? "gender" : "degree";
+    if (keyVariable === "gender") return "gender";
+    if (keyVariable === "pagerank") return "pagerank";
+    if (keyVariable === "acclaim_gap") return "acclaim_gap";
+    return "strength";
   }
   return spec.colorMode;
 }

@@ -10,6 +10,7 @@ from loom.commands.download import download_imdb
 from loom.commands.enrich import enrich_all
 from loom.commands.parquet_cmd import convert_to_parquet
 from loom.commands.spike import run_spike
+from loom.commands.verify import verify_all
 
 app = typer.Typer(
     name="loom",
@@ -74,6 +75,12 @@ def build(
 def spike() -> None:
     """M0 fail-fast: voice-actors-in-cartoons → static HTML sketch."""
     run_spike()
+
+
+@app.command()
+def verify() -> None:
+    """Recompute neighbor/strength invariants and sanity-check manifests."""
+    raise SystemExit(verify_all())
 
 
 @app.command("list-constructs")

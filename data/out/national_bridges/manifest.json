@@ -1,36 +1,83 @@
 {
-  "avg_path_length": 2.89,
+  "avg_path_length": 2.834,
+  "avg_path_length_sampled": false,
+  "avg_path_sample_n": 200,
   "build_seed": 42,
   "build_stats": {
-    "after_degree_cap": 160,
-    "credit_rows": 26315,
-    "era_slices": 6,
+    "after_degree_cap": 200,
+    "billing_null_fallback": 0,
+    "credit_rows": 32318,
+    "era_slices": 7,
     "min_shared": 2,
     "min_votes": 50,
-    "people_faceted": 160,
-    "population_sql": 480
+    "people_faceted": 200,
+    "population_sql": 600,
+    "stages_source": "default_from_nodes"
   },
-  "built_at": "2026-07-22T21:31:47.288757+00:00",
-  "clustering_coefficient": 0.359,
-  "community_count": 18,
+  "built_at": "2026-07-23T16:27:27.903629+00:00",
+  "clustering_coefficient": 0.342,
+  "community_count": 21,
+  "correlations": {
+    "acclaim_gap×prominence": {
+      "n": 200,
+      "r": -0.7596,
+      "rho": -0.7383
+    },
+    "degree×collaborator_loyalty": {
+      "n": 200,
+      "r": -0.5165,
+      "rho": -0.6419
+    },
+    "degree×prominence": {
+      "n": 200,
+      "r": 0.1592,
+      "rho": 0.2142
+    },
+    "degree×strength": {
+      "n": 200,
+      "r": 0.8812,
+      "rho": 0.8713
+    },
+    "genre_entropy×degree": {
+      "n": 200,
+      "r": -0.4852,
+      "rho": -0.2322
+    },
+    "genre_entropy×strength": {
+      "n": 200,
+      "r": -0.5622,
+      "rho": -0.3083
+    },
+    "pagerank×prominence": {
+      "n": 200,
+      "r": 0.2958,
+      "rho": 0.2824
+    },
+    "strength×prominence": {
+      "n": 200,
+      "r": 0.1218,
+      "rho": 0.0827
+    },
+    "title_rating_median×prominence": {
+      "n": 200,
+      "r": -0.154,
+      "rho": -0.071
+    }
+  },
   "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
-  "edge_count": 819,
+  "edge_count": 1140,
   "featured_path": [
     {
-      "id": "nm0000138",
-      "label": "Leonardo DiCaprio"
+      "id": "nm0000115",
+      "label": "Nicolas Cage"
     },
     {
-      "id": "nm1706767",
-      "label": "Jonah Hill"
+      "id": "nm0000658",
+      "label": "Meryl Streep"
     },
     {
-      "id": "nm0000151",
-      "label": "Morgan Freeman"
-    },
-    {
-      "id": "nm0000158",
-      "label": "Tom Hanks"
+      "id": "nm0000134",
+      "label": "Robert De Niro"
     }
   ],
   "gender_method": "imdb_actor_actress_proxy",
@@ -44,32 +91,740 @@
     "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
     "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
   },
+  "insight": "In this cut, degree and strength track with r=0.8812.",
   "key_variable": "region_count",
   "method_note": "Population: actors with credits on titles appearing in ≥2 distinct title_akas regions (Adult excluded, numVotes ≥50). Hero = co-appearance among cross-regional careers.",
+  "metrics_version": "2",
   "min_regions": 2,
   "min_shared": 2,
-  "node_count": 160,
-  "stage_row_count": 13,
+  "node_count": 200,
+  "stage_row_count": 19,
   "subtitle": "actors credited across ≥2 production regions",
   "summary": {
-    "degree_max": 2524,
-    "degree_median": 236,
+    "acclaim_gap_hist": [
+      {
+        "count": 1,
+        "hi": -6.214,
+        "lo": -7.332
+      },
+      {
+        "count": 1,
+        "hi": -5.096,
+        "lo": -6.214
+      },
+      {
+        "count": 3,
+        "hi": -3.978,
+        "lo": -5.096
+      },
+      {
+        "count": 1,
+        "hi": -2.86,
+        "lo": -3.978
+      },
+      {
+        "count": 17,
+        "hi": -1.742,
+        "lo": -2.86
+      },
+      {
+        "count": 36,
+        "hi": -0.625,
+        "lo": -1.742
+      },
+      {
+        "count": 62,
+        "hi": 0.493,
+        "lo": -0.625
+      },
+      {
+        "count": 57,
+        "hi": 1.611,
+        "lo": 0.493
+      },
+      {
+        "count": 19,
+        "hi": 2.729,
+        "lo": 1.611
+      },
+      {
+        "count": 3,
+        "hi": 3.847,
+        "lo": 2.729
+      }
+    ],
+    "assortativity": 0.5011,
+    "community_sizes": [
+      29,
+      28,
+      19,
+      17,
+      14,
+      10,
+      9,
+      8,
+      8,
+      7,
+      7,
+      7,
+      6,
+      6,
+      6,
+      5,
+      5,
+      5,
+      2,
+      1,
+      1
+    ],
+    "component_count": 1,
+    "corr_degree×prominence": {
+      "n": 200,
+      "r": 0.1592,
+      "rho": 0.2142
+    },
+    "corr_degree×strength": {
+      "n": 200,
+      "r": 0.8812,
+      "rho": 0.8713
+    },
+    "corr_strength×prominence": {
+      "n": 200,
+      "r": 0.1218,
+      "rho": 0.0827
+    },
+    "degree_gini": 0.3155,
+    "degree_hist": [
+      {
+        "count": 47,
+        "hi": 6.2,
+        "lo": 3.0
+      },
+      {
+        "count": 58,
+        "hi": 9.4,
+        "lo": 6.2
+      },
+      {
+        "count": 43,
+        "hi": 12.6,
+        "lo": 9.4
+      },
+      {
+        "count": 15,
+        "hi": 15.8,
+        "lo": 12.6
+      },
+      {
+        "count": 9,
+        "hi": 19.0,
+        "lo": 15.8
+      },
+      {
+        "count": 6,
+        "hi": 22.2,
+        "lo": 19.0
+      },
+      {
+        "count": 7,
+        "hi": 25.4,
+        "lo": 22.2
+      },
+      {
+        "count": 5,
+        "hi": 28.6,
+        "lo": 25.4
+      },
+      {
+        "count": 3,
+        "hi": 31.8,
+        "lo": 28.6
+      },
+      {
+        "count": 7,
+        "hi": 35.0,
+        "lo": 31.8
+      }
+    ],
+    "degree_max": 35,
+    "degree_median": 9,
+    "density": 0.057286,
+    "diameter": 6,
+    "effective_diameter": 4.0,
     "era_histogram": {
       "1970s": 2,
       "1980s": 1,
-      "1990s": 23,
-      "2000s": 75,
-      "2010s": 59
+      "1990s": 28,
+      "2000s": 93,
+      "2010s": 76
     },
+    "era_homophily": 0.704,
+    "gender_homophily": 0.611,
     "gender_mix": {
-      "female": 45,
-      "male": 115
+      "female": 56,
+      "male": 144
     },
-    "top_name": "Leonardo DiCaprio"
+    "giant_component_share": 1.0,
+    "largest_community_share": 0.145,
+    "modularity": 0.1665,
+    "outliers": {
+      "acclaim_gap": [
+        "nm0000115",
+        "nm0000185",
+        "nm0000246",
+        "nm0000514",
+        "nm0001803",
+        "nm0816950",
+        "nm0916432"
+      ],
+      "pagerank": [
+        "nm0000114",
+        "nm0048389",
+        "nm0071818",
+        "nm0152839",
+        "nm0191906",
+        "nm0217221",
+        "nm0444786",
+        "nm0667326",
+        "nm0724656",
+        "nm0919798"
+      ],
+      "prominence": [
+        "nm0000115",
+        "nm0000134",
+        "nm0000158",
+        "nm0000168",
+        "nm0000246",
+        "nm0000323",
+        "nm0000514",
+        "nm0919798"
+      ],
+      "strength": [
+        "nm0048389",
+        "nm0071818",
+        "nm0152839",
+        "nm0191906",
+        "nm0217221",
+        "nm0444786",
+        "nm0534134",
+        "nm0667326",
+        "nm0724656",
+        "nm0815718",
+        "nm0919798"
+      ]
+    },
+    "prominence_hist": [
+      {
+        "count": 19,
+        "hi": 122.739,
+        "lo": 20.245
+      },
+      {
+        "count": 35,
+        "hi": 225.233,
+        "lo": 122.739
+      },
+      {
+        "count": 51,
+        "hi": 327.727,
+        "lo": 225.233
+      },
+      {
+        "count": 34,
+        "hi": 430.221,
+        "lo": 327.727
+      },
+      {
+        "count": 26,
+        "hi": 532.716,
+        "lo": 430.221
+      },
+      {
+        "count": 20,
+        "hi": 635.21,
+        "lo": 532.716
+      },
+      {
+        "count": 8,
+        "hi": 737.704,
+        "lo": 635.21
+      },
+      {
+        "count": 3,
+        "hi": 840.198,
+        "lo": 737.704
+      },
+      {
+        "count": 3,
+        "hi": 942.692,
+        "lo": 840.198
+      },
+      {
+        "count": 1,
+        "hi": 1045.186,
+        "lo": 942.692
+      }
+    ],
+    "scatter_strength_prominence": [
+      {
+        "id": "nm0000092",
+        "x": 337.0,
+        "y": 475.179
+      },
+      {
+        "id": "nm0000104",
+        "x": 639.0,
+        "y": 589.087
+      },
+      {
+        "id": "nm0000115",
+        "x": 329.0,
+        "y": 1045.186
+      },
+      {
+        "id": "nm0000128",
+        "x": 217.0,
+        "y": 506.04
+      },
+      {
+        "id": "nm0000134",
+        "x": 556.0,
+        "y": 908.968
+      },
+      {
+        "id": "nm0000138",
+        "x": 283.0,
+        "y": 402.79
+      },
+      {
+        "id": "nm0000146",
+        "x": 235.0,
+        "y": 411.09
+      },
+      {
+        "id": "nm0000148",
+        "x": 175.0,
+        "y": 544.074
+      },
+      {
+        "id": "nm0000156",
+        "x": 216.0,
+        "y": 378.184
+      },
+      {
+        "id": "nm0000161",
+        "x": 236.0,
+        "y": 256.365
+      },
+      {
+        "id": "nm0000164",
+        "x": 312.0,
+        "y": 701.58
+      },
+      {
+        "id": "nm0000169",
+        "x": 228.0,
+        "y": 428.507
+      },
+      {
+        "id": "nm0000173",
+        "x": 222.0,
+        "y": 616.502
+      },
+      {
+        "id": "nm0000194",
+        "x": 331.0,
+        "y": 494.821
+      },
+      {
+        "id": "nm0000198",
+        "x": 337.0,
+        "y": 416.254
+      },
+      {
+        "id": "nm0000206",
+        "x": 220.0,
+        "y": 599.938
+      },
+      {
+        "id": "nm0000234",
+        "x": 332.0,
+        "y": 344.999
+      },
+      {
+        "id": "nm0000243",
+        "x": 119.0,
+        "y": 569.751
+      },
+      {
+        "id": "nm0000246",
+        "x": 286.0,
+        "y": 767.646
+      },
+      {
+        "id": "nm0000285",
+        "x": 283.0,
+        "y": 623.102
+      },
+      {
+        "id": "nm0000317",
+        "x": 470.0,
+        "y": 330.722
+      },
+      {
+        "id": "nm0000347",
+        "x": 485.0,
+        "y": 278.977
+      },
+      {
+        "id": "nm0000353",
+        "x": 288.0,
+        "y": 642.028
+      },
+      {
+        "id": "nm0000362",
+        "x": 113.0,
+        "y": 317.469
+      },
+      {
+        "id": "nm0000376",
+        "x": 269.0,
+        "y": 113.271
+      },
+      {
+        "id": "nm0000391",
+        "x": 270.0,
+        "y": 290.383
+      },
+      {
+        "id": "nm0000422",
+        "x": 279.0,
+        "y": 470.388
+      },
+      {
+        "id": "nm0000437",
+        "x": 348.0,
+        "y": 517.797
+      },
+      {
+        "id": "nm0000473",
+        "x": 128.0,
+        "y": 395.886
+      },
+      {
+        "id": "nm0000502",
+        "x": 104.0,
+        "y": 379.27
+      },
+      {
+        "id": "nm0000545",
+        "x": 311.0,
+        "y": 598.591
+      },
+      {
+        "id": "nm0000552",
+        "x": 282.0,
+        "y": 509.307
+      },
+      {
+        "id": "nm0000579",
+        "x": 394.0,
+        "y": 432.077
+      },
+      {
+        "id": "nm0000604",
+        "x": 206.0,
+        "y": 285.346
+      },
+      {
+        "id": "nm0000658",
+        "x": 444.0,
+        "y": 572.466
+      },
+      {
+        "id": "nm0000668",
+        "x": 177.0,
+        "y": 310.267
+      },
+      {
+        "id": "nm0000705",
+        "x": 119.0,
+        "y": 212.796
+      },
+      {
+        "id": "nm0000949",
+        "x": 542.0,
+        "y": 437.545
+      },
+      {
+        "id": "nm0000982",
+        "x": 127.0,
+        "y": 285.937
+      },
+      {
+        "id": "nm0001354",
+        "x": 261.0,
+        "y": 243.308
+      },
+      {
+        "id": "nm0001426",
+        "x": 229.0,
+        "y": 547.501
+      },
+      {
+        "id": "nm0001573",
+        "x": 162.0,
+        "y": 168.589
+      },
+      {
+        "id": "nm0001745",
+        "x": 83.0,
+        "y": 386.777
+      },
+      {
+        "id": "nm0001772",
+        "x": 233.0,
+        "y": 440.043
+      },
+      {
+        "id": "nm0001787",
+        "x": 273.0,
+        "y": 200.78
+      },
+      {
+        "id": "nm0001804",
+        "x": 430.0,
+        "y": 335.835
+      },
+      {
+        "id": "nm0001855",
+        "x": 136.0,
+        "y": 64.849
+      },
+      {
+        "id": "nm0004266",
+        "x": 204.0,
+        "y": 343.568
+      },
+      {
+        "id": "nm0004813",
+        "x": 474.0,
+        "y": 136.453
+      },
+      {
+        "id": "nm0004931",
+        "x": 241.0,
+        "y": 211.461
+      },
+      {
+        "id": "nm0005188",
+        "x": 204.0,
+        "y": 240.043
+      },
+      {
+        "id": "nm0005212",
+        "x": 321.0,
+        "y": 407.836
+      },
+      {
+        "id": "nm0005377",
+        "x": 167.0,
+        "y": 321.235
+      },
+      {
+        "id": "nm0005458",
+        "x": 380.0,
+        "y": 409.757
+      },
+      {
+        "id": "nm0010736",
+        "x": 172.0,
+        "y": 281.97
+      },
+      {
+        "id": "nm0048389",
+        "x": 2480.0,
+        "y": 475.423
+      },
+      {
+        "id": "nm0085312",
+        "x": 325.0,
+        "y": 447.291
+      },
+      {
+        "id": "nm0089707",
+        "x": 657.0,
+        "y": 341.427
+      },
+      {
+        "id": "nm0136797",
+        "x": 354.0,
+        "y": 418.446
+      },
+      {
+        "id": "nm0152839",
+        "x": 1700.0,
+        "y": 512.583
+      },
+      {
+        "id": "nm0191906",
+        "x": 1893.0,
+        "y": 520.373
+      },
+      {
+        "id": "nm0202966",
+        "x": 440.0,
+        "y": 559.347
+      },
+      {
+        "id": "nm0217221",
+        "x": 2656.0,
+        "y": 473.692
+      },
+      {
+        "id": "nm0224007",
+        "x": 1360.0,
+        "y": 253.087
+      },
+      {
+        "id": "nm0262635",
+        "x": 305.0,
+        "y": 304.53
+      },
+      {
+        "id": "nm0272581",
+        "x": 193.0,
+        "y": 138.962
+      },
+      {
+        "id": "nm0296546",
+        "x": 552.0,
+        "y": 106.836
+      },
+      {
+        "id": "nm0338425",
+        "x": 270.0,
+        "y": 103.14
+      },
+      {
+        "id": "nm0361957",
+        "x": 300.0,
+        "y": 87.49
+      },
+      {
+        "id": "nm0396558",
+        "x": 175.0,
+        "y": 235.085
+      },
+      {
+        "id": "nm0424060",
+        "x": 414.0,
+        "y": 362.902
+      },
+      {
+        "id": "nm0444786",
+        "x": 2365.0,
+        "y": 581.735
+      },
+      {
+        "id": "nm0482851",
+        "x": 1101.0,
+        "y": 230.073
+      },
+      {
+        "id": "nm0534134",
+        "x": 1598.0,
+        "y": 226.506
+      },
+      {
+        "id": "nm0574534",
+        "x": 299.0,
+        "y": 294.763
+      },
+      {
+        "id": "nm0631490",
+        "x": 322.0,
+        "y": 353.645
+      },
+      {
+        "id": "nm0667326",
+        "x": 2282.0,
+        "y": 432.77
+      },
+      {
+        "id": "nm0724656",
+        "x": 1927.0,
+        "y": 279.079
+      },
+      {
+        "id": "nm0736622",
+        "x": 414.0,
+        "y": 334.205
+      },
+      {
+        "id": "nm0757855",
+        "x": 342.0,
+        "y": 224.088
+      }
+    ],
+    "strength_gini": 0.4305,
+    "strength_hist": [
+      {
+        "count": 141,
+        "hi": 353.3,
+        "lo": 70.0
+      },
+      {
+        "count": 35,
+        "hi": 636.6,
+        "lo": 353.3
+      },
+      {
+        "count": 4,
+        "hi": 919.9,
+        "lo": 636.6
+      },
+      {
+        "count": 7,
+        "hi": 1203.2,
+        "lo": 919.9
+      },
+      {
+        "count": 3,
+        "hi": 1486.5,
+        "lo": 1203.2
+      },
+      {
+        "count": 2,
+        "hi": 1769.8,
+        "lo": 1486.5
+      },
+      {
+        "count": 2,
+        "hi": 2053.1,
+        "lo": 1769.8
+      },
+      {
+        "count": 1,
+        "hi": 2336.4,
+        "lo": 2053.1
+      },
+      {
+        "count": 2,
+        "hi": 2619.7,
+        "lo": 2336.4
+      },
+      {
+        "count": 3,
+        "hi": 2903.0,
+        "lo": 2619.7
+      }
+    ],
+    "strength_max": 2903,
+    "strength_median": 279,
+    "top_name": "Nicolas Cage"
   },
   "title": "National Cinema Bridges",
   "tmdb_gender_rows": 0,
-  "top_n": 160,
-  "stages_source": "default_from_nodes",
-  "avg_path_sample_n": 40
+  "top_n": 200
 }

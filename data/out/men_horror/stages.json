@@ -2,30 +2,9 @@
   {
     "stageFrom": "gender",
     "stageTo": "prominence",
-    "categoryFrom": "female",
-    "categoryTo": "bit",
-    "value": 29958
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "prominence",
-    "categoryFrom": "female",
+    "categoryFrom": "male",
     "categoryTo": "lead",
-    "value": 18538
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "prominence",
-    "categoryFrom": "male",
-    "categoryTo": "supporting",
-    "value": 48912
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "prominence",
-    "categoryFrom": "male",
-    "categoryTo": "bit",
-    "value": 50461
+    "value": 23273
   },
   {
     "stageFrom": "gender",
@@ -38,29 +17,50 @@
     "stageFrom": "gender",
     "stageTo": "prominence",
     "categoryFrom": "male",
+    "categoryTo": "bit",
+    "value": 50461
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "prominence",
+    "categoryFrom": "male",
+    "categoryTo": "supporting",
+    "value": 48912
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "prominence",
+    "categoryFrom": "female",
     "categoryTo": "lead",
-    "value": 23273
+    "value": 18538
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "prominence",
+    "categoryFrom": "female",
+    "categoryTo": "bit",
+    "value": 29958
   },
   {
     "stageFrom": "prominence",
     "stageTo": "title_profile",
-    "categoryFrom": "bit",
+    "categoryFrom": "lead",
     "categoryTo": "cult/low",
-    "value": 68493
+    "value": 36243
   },
   {
     "stageFrom": "prominence",
     "stageTo": "title_profile",
-    "categoryFrom": "bit",
+    "categoryFrom": "lead",
     "categoryTo": "mid-profile",
-    "value": 9201
+    "value": 4304
   },
   {
     "stageFrom": "prominence",
     "stageTo": "title_profile",
-    "categoryFrom": "bit",
+    "categoryFrom": "lead",
     "categoryTo": "high-profile",
-    "value": 2725
+    "value": 1264
   },
   {
     "stageFrom": "prominence",
@@ -86,22 +86,22 @@
   {
     "stageFrom": "prominence",
     "stageTo": "title_profile",
-    "categoryFrom": "lead",
+    "categoryFrom": "bit",
     "categoryTo": "cult/low",
-    "value": 36243
+    "value": 68493
   },
   {
     "stageFrom": "prominence",
     "stageTo": "title_profile",
-    "categoryFrom": "lead",
+    "categoryFrom": "bit",
     "categoryTo": "mid-profile",
-    "value": 4304
+    "value": 9201
   },
   {
     "stageFrom": "prominence",
     "stageTo": "title_profile",
-    "categoryFrom": "lead",
+    "categoryFrom": "bit",
     "categoryTo": "high-profile",
-    "value": 1264
+    "value": 2725
   }
 ]

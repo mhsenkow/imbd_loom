@@ -71,7 +71,7 @@ export function TimelineHero({
   palette = "loom",
   sortBy = "year_peak",
   thicknessBy = "shared",
-  sizeBy = "degree",
+  sizeBy = "strength",
   statMarks = [],
   manifest = null,
   insightFocusId = null,

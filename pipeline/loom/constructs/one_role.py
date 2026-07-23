@@ -8,6 +8,7 @@ from loom.constructs import gender_expr
 from loom.constructs.emit import (
     attach_prominent_roles,
     finalize_payload,
+    recompute_degree_strength,
     rows_to_stages,
 )
 from loom.filters import (
@@ -203,13 +204,8 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
                     edge["year"] = year
                 edges.append(edge)
 
-    # Recompute degree from edge weights
-    deg = {n["id"]: 0 for n in nodes}
-    for e in edges:
-        deg[e["source"]] += e["weight"]
-        deg[e["target"]] += e["weight"]
-    for n in nodes:
-        n["degree"] = deg.get(n["id"], 0)
+    # Recompute degree (neighbors) and strength (Σ weights)
+    recompute_degree_strength(nodes, edges)
 
     stage_rows = con.execute(
         """

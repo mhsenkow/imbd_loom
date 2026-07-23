@@ -1,21 +1,78 @@
 [
   {
+    "source": "nm0031958",
+    "target": "nm0554928",
+    "weight": 17,
+    "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 17,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 1972,
+    "year_min": 1969,
+    "year_max": 1977,
+    "first_worked_together": 1969,
+    "last_worked_together": 1977,
+    "recency": 49,
+    "reunion_span": 8,
+    "shared_votes_max": 380,
+    "genres": [
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Old Man Made in Spain",
+        "year": 1969,
+        "tconst": "tt0063983",
+        "votes": 380
+      },
+      {
+        "title": "Estoy hecho un chaval",
+        "year": 1977,
+        "tconst": "tt0076004",
+        "votes": 320
+      },
+      {
+        "title": "Hay que educar a papá",
+        "year": 1971,
+        "tconst": "tt0067191",
+        "votes": 262
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.683,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
+  },
+  {
     "source": "nm0035488",
     "target": "nm0358669",
     "weight": 25,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 25,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1996,
+    "year_min": 1975,
+    "year_max": 2008,
     "first_worked_together": 1975,
     "last_worked_together": 2008,
+    "recency": 18,
+    "reunion_span": 33,
     "reunion": true,
     "reunion_gap": 33,
+    "shared_votes_max": 57970,
     "genres": [
+      "Drama",
+      "Romance",
       "Comedy",
       "Music",
-      "News",
-      "Drama",
-      "Romance"
+      "News"
     ],
     "shared": [
       {
@@ -36,23 +93,38 @@
         "tconst": "tt1217217",
         "votes": 1059
       }
-    ]
+    ],
+    "loyalty_ab": 0.6,
+    "loyalty_ba": 0.6,
+    "tenure_overlap": 0.96,
+    "same_era": true,
+    "age_gap": 11,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0035488",
     "target": "nm1024878",
     "weight": 18,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 18,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1992,
+    "year_min": 1975,
+    "year_max": 2008,
     "first_worked_together": 1975,
     "last_worked_together": 2008,
+    "recency": 18,
+    "reunion_span": 33,
     "reunion": true,
     "reunion_gap": 33,
+    "shared_votes_max": 57970,
     "genres": [
       "Comedy",
-      "Music",
-      "News"
+      "News",
+      "Music"
     ],
     "shared": [
       {
@@ -73,19 +145,84 @@
         "tconst": "tt1615728",
         "votes": 658
       }
-    ]
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.76,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0059847",
+    "target": "nm0835470",
+    "weight": 10,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 10,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 1972,
+    "year_min": 1965,
+    "year_max": 1978,
+    "first_worked_together": 1965,
+    "last_worked_together": 1978,
+    "recency": 48,
+    "reunion_span": 13,
+    "shared_votes_max": 135,
+    "genres": [
+      "Drama",
+      "Romance",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Granatovyy braslet",
+        "year": 1965,
+        "tconst": "tt0060471",
+        "votes": 135
+      },
+      {
+        "title": "Funny People",
+        "year": 1978,
+        "tconst": "tt0076728",
+        "votes": 115
+      },
+      {
+        "title": "Litsom k litsu",
+        "year": 1987,
+        "tconst": "tt0091417",
+        "votes": 29
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.605,
+    "same_era": true,
+    "age_gap": 13,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0082511",
     "target": "nm0558487",
     "weight": 26,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 26,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1977,
+    "year_min": 1957,
+    "year_max": 1984,
     "first_worked_together": 1957,
     "last_worked_together": 1984,
+    "recency": 42,
+    "reunion_span": 27,
     "reunion": true,
     "reunion_gap": 27,
+    "shared_votes_max": 10615,
     "genres": [
       "Comedy",
       "Family"
@@ -109,17 +246,231 @@
         "tconst": "tt0630173",
         "votes": 389
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.573,
+    "same_era": true,
+    "age_gap": 33,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
+  },
+  {
+    "source": "nm0132607",
+    "target": "nm0250038",
+    "weight": 13,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 1944,
+    "year_min": 1941,
+    "year_max": 1946,
+    "first_worked_together": 1941,
+    "last_worked_together": 1946,
+    "recency": 80,
+    "reunion_span": 5,
+    "shared_votes_max": 6351,
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Mystery"
+    ],
+    "shared": [
+      {
+        "title": "Green for Danger",
+        "year": 1946,
+        "tconst": "tt0038577",
+        "votes": 6351
+      },
+      {
+        "title": "The Strangler",
+        "year": 1941,
+        "tconst": "tt0033108",
+        "votes": 82
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.19,
+    "same_era": true,
+    "age_gap": 34,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0197461",
+    "target": "nm0538448",
+    "weight": 11,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 11,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 1974,
+    "year_min": 1974,
+    "year_max": 1974,
+    "first_worked_together": 1974,
+    "last_worked_together": 1974,
+    "recency": 52,
+    "reunion_span": 0,
+    "shared_votes_max": 271,
+    "genres": [
+      "Drama",
+      "Music"
+    ],
+    "shared": [
+      {
+        "title": "Cat's Play",
+        "year": 1974,
+        "tconst": "tt0068891",
+        "votes": 271
+      },
+      {
+        "title": "141 Minutes from the Unfinished Sentence",
+        "year": 1974,
+        "tconst": "tt0071081",
+        "votes": 192
+      },
+      {
+        "title": "A hamu alatt",
+        "year": 1981,
+        "tconst": "tt7852208",
+        "votes": 0
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.719,
+    "same_era": true,
+    "age_gap": 16,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0212016",
+    "target": "nm0841929",
+    "weight": 39,
+    "shared_count": 6,
+    "collab_count": 6,
+    "collab_strength": 39,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 2012,
+    "year_min": 1990,
+    "year_max": 2020,
+    "first_worked_together": 1990,
+    "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 30,
+    "reunion": true,
+    "reunion_gap": 30,
+    "shared_votes_max": 1672,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Sport"
+    ],
+    "shared": [
+      {
+        "title": "F.C. De Kampioenen",
+        "year": 1990,
+        "tconst": "tt0149453",
+        "votes": 1672
+      },
+      {
+        "title": "F.C. De Kampioenen: Kampioen zijn blijft plezant",
+        "year": 2013,
+        "tconst": "tt2671776",
+        "votes": 1139
+      },
+      {
+        "title": "F.C. De Kampioenen 2: Jubilee General!",
+        "year": 2015,
+        "tconst": "tt4002200",
+        "votes": 858
+      }
+    ],
+    "loyalty_ab": 0.545,
+    "loyalty_ba": 0.545,
+    "tenure_overlap": 0.732,
+    "same_era": true,
+    "age_gap": 18,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
+  },
+  {
+    "source": "nm0212016",
+    "target": "nm0878310",
+    "weight": 32,
+    "shared_count": 5,
+    "collab_count": 5,
+    "collab_strength": 32,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 2011,
+    "year_min": 1990,
+    "year_max": 2020,
+    "first_worked_together": 1990,
+    "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 30,
+    "reunion": true,
+    "reunion_gap": 30,
+    "shared_votes_max": 1672,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Sport"
+    ],
+    "shared": [
+      {
+        "title": "F.C. De Kampioenen",
+        "year": 1990,
+        "tconst": "tt0149453",
+        "votes": 1672
+      },
+      {
+        "title": "F.C. De Kampioenen: Kampioen zijn blijft plezant",
+        "year": 2013,
+        "tconst": "tt2671776",
+        "votes": 1139
+      },
+      {
+        "title": "F.C. De Kampioenen 2: Jubilee General!",
+        "year": 2015,
+        "tconst": "tt4002200",
+        "votes": 858
+      }
+    ],
+    "loyalty_ab": 0.455,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.714,
+    "same_era": true,
+    "age_gap": 13,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0240811",
     "target": "nm1252668",
     "weight": 11,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 11,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2011,
+    "year_min": 2008,
+    "year_max": 2013,
     "first_worked_together": 2008,
     "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 5,
+    "shared_votes_max": 755,
     "genres": [
       "Horror",
       "Thriller"
@@ -143,17 +494,30 @@
         "tconst": "tt1233228",
         "votes": 33
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.907,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0257237",
     "target": "nm0937000",
     "weight": 20,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 20,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2016,
+    "year_max": 2024,
     "first_worked_together": 2016,
     "last_worked_together": 2024,
+    "recency": 2,
+    "reunion_span": 8,
+    "shared_votes_max": 1694,
     "genres": [
       "Comedy",
       "Drama"
@@ -177,25 +541,40 @@
         "tconst": "tt5852442",
         "votes": 450
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.811,
+    "same_era": true,
+    "age_gap": 12,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0272295",
     "target": "nm0322937",
     "weight": 26,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 26,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1989,
+    "year_min": 1953,
+    "year_max": 2006,
     "first_worked_together": 1953,
     "last_worked_together": 2006,
+    "recency": 20,
+    "reunion_span": 53,
     "reunion": true,
     "reunion_gap": 53,
+    "shared_votes_max": 1440,
     "genres": [
       "Adventure",
       "Comedy",
       "History",
-      "Romance",
       "Drama",
+      "Romance",
       "War",
       "Fantasy"
     ],
@@ -218,19 +597,34 @@
         "tconst": "tt0114204",
         "votes": 1010
       }
-    ]
+    ],
+    "loyalty_ab": 0.364,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.873,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0272295",
     "target": "nm0417370",
     "weight": 13,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1971,
+    "year_min": 1953,
+    "year_max": 1989,
     "first_worked_together": 1953,
     "last_worked_together": 1989,
+    "recency": 37,
+    "reunion_span": 36,
     "reunion": true,
     "reunion_gap": 36,
+    "shared_votes_max": 4084,
     "genres": [
       "Crime",
       "Drama",
@@ -251,22 +645,37 @@
         "tconst": "tt0441074",
         "votes": 113
       }
-    ]
+    ],
+    "loyalty_ab": 0.182,
+    "loyalty_ba": 0.286,
+    "tenure_overlap": 0.972,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0272295",
     "target": "nm0651459",
     "weight": 10,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 10,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1976,
+    "year_min": 1953,
+    "year_max": 1999,
     "first_worked_together": 1953,
     "last_worked_together": 1999,
+    "recency": 27,
+    "reunion_span": 46,
     "reunion": true,
     "reunion_gap": 46,
+    "shared_votes_max": 149,
     "genres": [
-      "Comedy",
       "Drama",
+      "Comedy",
       "Fantasy"
     ],
     "shared": [
@@ -288,19 +697,34 @@
         "tconst": "tt9035462",
         "votes": 29
       }
-    ]
+    ],
+    "loyalty_ab": 0.182,
+    "loyalty_ba": 0.222,
+    "tenure_overlap": 0.986,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0272295",
     "target": "nm0676127",
     "weight": 19,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 19,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1991,
+    "year_min": 1953,
+    "year_max": 2024,
     "first_worked_together": 1953,
     "last_worked_together": 2024,
+    "recency": 2,
+    "reunion_span": 71,
     "reunion": true,
     "reunion_gap": 71,
+    "shared_votes_max": 4426,
     "genres": [
       "Action",
       "Drama",
@@ -328,23 +752,38 @@
         "tconst": "tt0441074",
         "votes": 113
       }
-    ]
+    ],
+    "loyalty_ab": 0.273,
+    "loyalty_ba": 0.429,
+    "tenure_overlap": 0.986,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0293196",
     "target": "nm0741398",
     "weight": 15,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 15,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1999,
+    "year_min": 1997,
+    "year_max": 2000,
     "first_worked_together": 1997,
     "last_worked_together": 2000,
+    "recency": 26,
+    "reunion_span": 3,
+    "shared_votes_max": 249,
     "genres": [
-      "Action",
       "Animation",
-      "Drama",
       "Comedy",
-      "Sci-Fi"
+      "Sci-Fi",
+      "Action",
+      "Drama"
     ],
     "shared": [
       {
@@ -365,17 +804,30 @@
         "tconst": "tt0338661",
         "votes": 88
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.13,
+    "tenure_overlap": 0.589,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0312407",
     "target": "nm0322793",
     "weight": 9,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 9,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2016,
+    "year_min": 2015,
+    "year_max": 2017,
     "first_worked_together": 2015,
     "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 2,
+    "shared_votes_max": 115,
     "genres": [
       "Drama",
       "Comedy",
@@ -400,20 +852,35 @@
         "tconst": "tt3807200",
         "votes": 115
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.778,
+    "same_era": true,
+    "age_gap": 26,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0322793",
     "target": "nm0729705",
     "weight": 9,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 9,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2018,
+    "year_min": 2018,
+    "year_max": 2018,
     "first_worked_together": 2018,
     "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 0,
+    "shared_votes_max": 111,
     "genres": [
-      "Drama",
-      "Comedy"
+      "Comedy",
+      "Drama"
     ],
     "shared": [
       {
@@ -429,29 +896,44 @@
         "votes": 75
       },
       {
-        "title": "Money and power",
+        "title": "You came from a man and you will return to a man",
         "year": 2020,
-        "tconst": "tt12326276",
+        "tconst": "tt12247112",
         "votes": 0
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.83,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0322937",
     "target": "nm0417370",
     "weight": 21,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 21,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1981,
+    "year_min": 1953,
+    "year_max": 2001,
     "first_worked_together": 1953,
     "last_worked_together": 2001,
+    "recency": 25,
+    "reunion_span": 48,
     "reunion": true,
     "reunion_gap": 48,
+    "shared_votes_max": 24507,
     "genres": [
-      "Comedy",
-      "Drama",
-      "Fantasy",
       "Crime",
+      "Drama",
+      "Comedy",
+      "Fantasy",
       "Mystery"
     ],
     "shared": [
@@ -473,25 +955,40 @@
         "tconst": "tt0268032",
         "votes": 414
       }
-    ]
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 0.429,
+    "tenure_overlap": 0.899,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0322937",
     "target": "nm0651459",
     "weight": 13,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 13,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1990,
+    "year_min": 1953,
+    "year_max": 2013,
     "first_worked_together": 1953,
     "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 60,
     "reunion": true,
     "reunion_gap": 60,
+    "shared_votes_max": 113,
     "genres": [
+      "Adventure",
+      "Family",
       "Comedy",
       "Drama",
-      "Fantasy",
-      "Adventure",
-      "Family"
+      "Fantasy"
     ],
     "shared": [
       {
@@ -512,19 +1009,34 @@
         "tconst": "tt3150862",
         "votes": 54
       }
-    ]
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.861,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0322937",
     "target": "nm0676127",
     "weight": 9,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 9,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1968,
+    "year_min": 1953,
+    "year_max": 1983,
     "first_worked_together": 1953,
     "last_worked_together": 1983,
+    "recency": 43,
+    "reunion_span": 30,
     "reunion": true,
     "reunion_gap": 30,
+    "shared_votes_max": 113,
     "genres": [
       "Documentary",
       "History",
@@ -552,17 +1064,32 @@
         "tconst": "tt1967554",
         "votes": 5
       }
-    ]
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 0.286,
+    "tenure_overlap": 0.861,
+    "same_era": true,
+    "age_gap": 13,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0333104",
     "target": "nm0344348",
     "weight": 10,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 10,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1975,
+    "year_min": 1972,
+    "year_max": 1977,
     "first_worked_together": 1972,
     "last_worked_together": 1977,
+    "recency": 49,
+    "reunion_span": 5,
+    "shared_votes_max": 196,
     "genres": [
       "Drama",
       "Music",
@@ -587,22 +1114,38 @@
         "tconst": "tt0469680",
         "votes": 27
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.207,
+    "same_era": true,
+    "age_gap": 27,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0333104",
     "target": "nm0438895",
     "weight": 11,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 11,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1970,
+    "year_min": 1969,
+    "year_max": 1971,
     "first_worked_together": 1969,
     "last_worked_together": 1971,
+    "recency": 55,
+    "reunion_span": 2,
+    "shared_votes_max": 376,
     "genres": [
-      "Drama",
-      "Romance",
       "Crime",
-      "Thriller"
+      "Drama",
+      "Thriller",
+      "Romance"
     ],
     "shared": [
       {
@@ -617,23 +1160,38 @@
         "tconst": "tt0182673",
         "votes": 175
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.116,
+    "same_era": true,
+    "age_gap": 49,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0358669",
     "target": "nm1024878",
     "weight": 18,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 18,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1992,
+    "year_min": 1975,
+    "year_max": 2008,
     "first_worked_together": 1975,
     "last_worked_together": 2008,
+    "recency": 18,
+    "reunion_span": 33,
     "reunion": true,
     "reunion_gap": 33,
+    "shared_votes_max": 57970,
     "genres": [
       "Comedy",
-      "News",
-      "Music"
+      "Music",
+      "News"
     ],
     "shared": [
       {
@@ -654,19 +1212,35 @@
         "tconst": "tt0917937",
         "votes": 335
       }
-    ]
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.792,
+    "same_era": true,
+    "age_gap": 18,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0417370",
     "target": "nm0651459",
     "weight": 10,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 10,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1984,
+    "year_min": 1953,
+    "year_max": 2015,
     "first_worked_together": 1953,
     "last_worked_together": 2015,
+    "recency": 11,
+    "reunion_span": 62,
     "reunion": true,
     "reunion_gap": 62,
+    "shared_votes_max": 287,
     "genres": [
       "Comedy",
       "Drama",
@@ -691,17 +1265,32 @@
         "tconst": "tt8264764",
         "votes": 8
       }
-    ]
+    ],
+    "loyalty_ab": 0.286,
+    "loyalty_ba": 0.222,
+    "tenure_overlap": 0.958,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0442207",
     "target": "nm0499614",
     "weight": 11,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 11,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2022,
+    "year_min": 2021,
+    "year_max": 2022,
     "first_worked_together": 2021,
     "last_worked_together": 2022,
+    "recency": 4,
+    "reunion_span": 1,
+    "shared_votes_max": 686,
     "genres": [
       "Horror"
     ],
@@ -718,17 +1307,32 @@
         "tconst": "tt13481480",
         "votes": 57
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.855,
+    "same_era": true,
+    "age_gap": 20,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0442207",
     "target": "nm0602985",
     "weight": 9,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 9,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2016,
+    "year_min": 2015,
+    "year_max": 2017,
     "first_worked_together": 2015,
     "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 2,
+    "shared_votes_max": 82,
     "genres": [
       "Action",
       "Adventure",
@@ -748,17 +1352,32 @@
         "tconst": "tt3628704",
         "votes": 62
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.855,
+    "same_era": true,
+    "age_gap": 12,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0442207",
     "target": "nm1252668",
     "weight": 9,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 9,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2011,
+    "year_min": 2005,
+    "year_max": 2017,
     "first_worked_together": 2005,
     "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 12,
+    "shared_votes_max": 97,
     "genres": [
       "Horror"
     ],
@@ -781,17 +1400,30 @@
         "tconst": "tt0426629",
         "votes": 66
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.929,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0484929",
     "target": "nm0499614",
     "weight": 12,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 12,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2021,
+    "year_min": 2019,
+    "year_max": 2022,
     "first_worked_together": 2019,
     "last_worked_together": 2022,
+    "recency": 4,
+    "reunion_span": 3,
+    "shared_votes_max": 652,
     "genres": [
       "Horror"
     ],
@@ -808,17 +1440,138 @@
         "tconst": "tt4834300",
         "votes": 205
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.979,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0485670",
+    "target": "nm0741398",
+    "weight": 76,
+    "shared_count": 13,
+    "collab_count": 13,
+    "collab_strength": 76,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 2002,
+    "year_min": 1971,
+    "year_max": 2018,
+    "first_worked_together": 1971,
+    "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 47,
+    "reunion": true,
+    "reunion_gap": 47,
+    "shared_votes_max": 5769,
+    "genres": [
+      "Action",
+      "Animation",
+      "Horror",
+      "Crime",
+      "Drama",
+      "Comedy",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "shared": [
+      {
+        "title": "Gungrave",
+        "year": 2003,
+        "tconst": "tt0435961",
+        "votes": 5769
+      },
+      {
+        "title": "Lupin the Third Part 1",
+        "year": 1971,
+        "tconst": "tt0159175",
+        "votes": 2767
+      },
+      {
+        "title": "Magic Knight Rayearth",
+        "year": 1994,
+        "tconst": "tt0112057",
+        "votes": 1244
+      }
+    ],
+    "loyalty_ab": 0.812,
+    "loyalty_ba": 0.565,
+    "tenure_overlap": 0.982,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0485670",
+    "target": "nm1063287",
+    "weight": 22,
+    "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 22,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 1999,
+    "year_min": 1971,
+    "year_max": 2018,
+    "first_worked_together": 1971,
+    "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 47,
+    "reunion": true,
+    "reunion_gap": 47,
+    "shared_votes_max": 2767,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Action"
+    ],
+    "shared": [
+      {
+        "title": "Lupin the Third Part 1",
+        "year": 1971,
+        "tconst": "tt0159175",
+        "votes": 2767
+      },
+      {
+        "title": "Happily N'ever After 2: Snow White: Another Bite at the Apple",
+        "year": 2009,
+        "tconst": "tt1235837",
+        "votes": 2241
+      },
+      {
+        "title": "The Nightmare Returns... Revival of the Espada",
+        "year": 2010,
+        "tconst": "tt2378764",
+        "votes": 1230
+      }
+    ],
+    "loyalty_ab": 0.188,
+    "loyalty_ba": 0.3,
+    "tenure_overlap": 0.944,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0499614",
     "target": "nm0602985",
     "weight": 11,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 11,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2024,
+    "year_min": 2022,
+    "year_max": 2025,
     "first_worked_together": 2022,
     "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 3,
+    "shared_votes_max": 652,
     "genres": [
       "Horror"
     ],
@@ -841,17 +1594,32 @@
         "tconst": "tt8270812",
         "votes": 0
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "age_gap": 8,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0558950",
     "target": "nm0842081",
     "weight": 59,
     "shared_count": 8,
+    "collab_count": 8,
+    "collab_strength": 59,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2018,
+    "year_min": 2015,
+    "year_max": 2023,
     "first_worked_together": 2015,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 8,
+    "shared_votes_max": 2928,
     "genres": [
       "Crime",
       "Mystery",
@@ -877,17 +1645,33 @@
         "tconst": "tt5317546",
         "votes": 1974
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.902,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0583774",
     "target": "nm0759944",
     "weight": 10,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 10,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 2007,
+    "year_max": 2009,
     "first_worked_together": 2007,
     "last_worked_together": 2009,
+    "recency": 17,
+    "reunion_span": 2,
+    "shared_votes_max": 338,
     "genres": [
       "Comedy",
       "Drama",
@@ -913,17 +1697,32 @@
         "tconst": "tt0776726",
         "votes": 47
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.833,
+    "same_era": true,
+    "age_gap": 31,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0648777",
     "target": "nm0879762",
     "weight": 10,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 10,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2004,
+    "year_min": 1998,
+    "year_max": 2010,
     "first_worked_together": 1998,
     "last_worked_together": 2010,
+    "recency": 16,
+    "reunion_span": 12,
+    "shared_votes_max": 366,
     "genres": [
       "Action",
       "Comedy",
@@ -942,19 +1741,34 @@
         "tconst": "tt0271096",
         "votes": 51
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.897,
+    "same_era": true,
+    "age_gap": 33,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0651459",
     "target": "nm0676127",
     "weight": 9,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 9,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1976,
+    "year_min": 1953,
+    "year_max": 1998,
     "first_worked_together": 1953,
     "last_worked_together": 1998,
+    "recency": 28,
+    "reunion_span": 45,
     "reunion": true,
     "reunion_gap": 45,
+    "shared_votes_max": 113,
     "genres": [
       "Comedy",
       "Drama",
@@ -979,19 +1793,34 @@
         "tconst": "tt8282986",
         "votes": 0
       }
-    ]
+    ],
+    "loyalty_ab": 0.222,
+    "loyalty_ba": 0.286,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "age_gap": 14,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0741398",
     "target": "nm1063287",
     "weight": 37,
     "shared_count": 7,
+    "collab_count": 7,
+    "collab_strength": 37,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 1971,
+    "year_max": 2020,
     "first_worked_together": 1971,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 49,
     "reunion": true,
     "reunion_gap": 49,
+    "shared_votes_max": 2767,
     "genres": [
       "Animation",
       "Comedy",
@@ -1018,17 +1847,233 @@
         "tconst": "tt3403556",
         "votes": 1188
       }
-    ]
+    ],
+    "loyalty_ab": 0.304,
+    "loyalty_ba": 0.7,
+    "tenure_overlap": 0.927,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0841929",
+    "target": "nm0878310",
+    "weight": 32,
+    "shared_count": 5,
+    "collab_count": 5,
+    "collab_strength": 32,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 2011,
+    "year_min": 1990,
+    "year_max": 2020,
+    "first_worked_together": 1990,
+    "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 30,
+    "reunion": true,
+    "reunion_gap": 30,
+    "shared_votes_max": 1672,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Sport"
+    ],
+    "shared": [
+      {
+        "title": "F.C. De Kampioenen",
+        "year": 1990,
+        "tconst": "tt0149453",
+        "votes": 1672
+      },
+      {
+        "title": "F.C. De Kampioenen: Kampioen zijn blijft plezant",
+        "year": 2013,
+        "tconst": "tt2671776",
+        "votes": 1139
+      },
+      {
+        "title": "F.C. De Kampioenen 2: Jubilee General!",
+        "year": 2015,
+        "tconst": "tt4002200",
+        "votes": 858
+      }
+    ],
+    "loyalty_ab": 0.455,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.968,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0865064",
+    "target": "nm8630499",
+    "weight": 14,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 14,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 2011,
+    "year_min": 2009,
+    "year_max": 2013,
+    "first_worked_together": 2009,
+    "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 4,
+    "shared_votes_max": 1174,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Action"
+    ],
+    "shared": [
+      {
+        "title": "Barbie Mariposa and Her Butterfly Fairy Friends",
+        "year": 2008,
+        "tconst": "tt1201561",
+        "votes": 4508
+      },
+      {
+        "title": "Pac-Man and the Ghostly Adventures",
+        "year": 2013,
+        "tconst": "tt2392179",
+        "votes": 1174
+      },
+      {
+        "title": "Geronimo Stilton",
+        "year": 2009,
+        "tconst": "tt1875337",
+        "votes": 719
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.811,
+    "same_era": true,
+    "age_gap": 8,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm1027702",
+    "target": "nm1649765",
+    "weight": 17,
+    "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 17,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 1986,
+    "year_min": 1974,
+    "year_max": 2008,
+    "first_worked_together": 1974,
+    "last_worked_together": 2008,
+    "recency": 18,
+    "reunion_span": 34,
+    "reunion": true,
+    "reunion_gap": 34,
+    "shared_votes_max": 642,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "shared": [
+      {
+        "title": "Ala Ganb Ya Usta",
+        "year": 2008,
+        "tconst": "tt2341991",
+        "votes": 642
+      },
+      {
+        "title": "Amirah Hubbi Ana",
+        "year": 1974,
+        "tconst": "tt5811272",
+        "votes": 211
+      },
+      {
+        "title": "Allam Eyal Eyal",
+        "year": 1976,
+        "tconst": "tt6272706",
+        "votes": 136
+      }
+    ],
+    "loyalty_ab": 0.6,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.667,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm1027702",
+    "target": "nm1760489",
+    "weight": 11,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 11,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 2005,
+    "year_min": 2004,
+    "year_max": 2006,
+    "first_worked_together": 2004,
+    "last_worked_together": 2006,
+    "recency": 20,
+    "reunion_span": 2,
+    "shared_votes_max": 1376,
+    "genres": [
+      "Drama"
+    ],
+    "shared": [
+      {
+        "title": "Meshwar emraa",
+        "year": 2004,
+        "tconst": "tt0431547",
+        "votes": 1376
+      },
+      {
+        "title": "Hada'eq el-shaytan",
+        "year": 2006,
+        "tconst": "tt13796068",
+        "votes": 53
+      },
+      {
+        "title": "Episode #1.30",
+        "year": 2006,
+        "tconst": "tt26254280",
+        "votes": 0
+      }
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 0.4,
+    "tenure_overlap": 0.592,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1059365",
     "target": "nm1549743",
     "weight": 10,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 10,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2015,
+    "year_min": 2011,
+    "year_max": 2019,
     "first_worked_together": 2011,
     "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 8,
+    "shared_votes_max": 339,
     "genres": [
       "Drama",
       "Romance",
@@ -1048,25 +2093,190 @@
         "tconst": "tt11187956",
         "votes": 86
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.894,
+    "same_era": true,
+    "age_gap": 8,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm1097660",
+    "target": "nm2168032",
+    "weight": 14,
+    "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 14,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 1983,
+    "year_min": 1983,
+    "year_max": 1984,
+    "first_worked_together": 1983,
+    "last_worked_together": 1984,
+    "recency": 42,
+    "reunion_span": 1,
+    "shared_votes_max": 396,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "shared": [
+      {
+        "title": "Maju Kena Mundur Kena",
+        "year": 1983,
+        "tconst": "tt1066456",
+        "votes": 396
+      },
+      {
+        "title": "Pokoknya Beres",
+        "year": 1983,
+        "tconst": "tt1066477",
+        "votes": 66
+      },
+      {
+        "title": "Tahu Diri Dong",
+        "year": 1984,
+        "tconst": "tt1157723",
+        "votes": 60
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.957,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm1245198",
+    "target": "nm2168032",
+    "weight": 21,
+    "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 21,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 2022,
+    "year_min": 2019,
+    "year_max": 2025,
+    "first_worked_together": 2019,
+    "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 6,
+    "shared_votes_max": 363,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Drama",
+      "Family"
+    ],
+    "shared": [
+      {
+        "title": "The Super Frugal Family",
+        "year": 2025,
+        "tconst": "tt32546802",
+        "votes": 363
+      },
+      {
+        "title": "Warkop DKI Reborn 3",
+        "year": 2019,
+        "tconst": "tt10656222",
+        "votes": 223
+      },
+      {
+        "title": "Si Juki the Movie: Harta Pulau Monyet",
+        "year": 2024,
+        "tconst": "tt10640084",
+        "votes": 168
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.444,
+    "tenure_overlap": 0.674,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm1293820",
+    "target": "nm1760489",
+    "weight": 18,
+    "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 18,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 2011,
+    "year_min": 2007,
+    "year_max": 2017,
+    "first_worked_together": 2007,
+    "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 10,
+    "shared_votes_max": 1491,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Animation",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Kharej ala el kanoun",
+        "year": 2007,
+        "tconst": "tt2605454",
+        "votes": 1491
+      },
+      {
+        "title": "Ramadan Kareem",
+        "year": 2017,
+        "tconst": "tt9495738",
+        "votes": 202
+      },
+      {
+        "title": "Bassant and Diyasty",
+        "year": 2008,
+        "tconst": "tt2396048",
+        "votes": 175
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.6,
+    "tenure_overlap": 0.889,
+    "same_era": true,
+    "age_gap": 25,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1371858",
     "target": "nm1372094",
     "weight": 71,
     "shared_count": 12,
+    "collab_count": 12,
+    "collab_strength": 71,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2014,
+    "year_min": 1983,
+    "year_max": 2019,
     "first_worked_together": 1983,
     "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 36,
     "reunion": true,
     "reunion_gap": 36,
+    "shared_votes_max": 4067,
     "genres": [
+      "Romance",
       "Comedy",
       "Drama",
       "Action",
-      "Biography",
-      "Romance"
+      "Biography"
     ],
     "shared": [
       {
@@ -1087,17 +2297,31 @@
         "tconst": "tt5929890",
         "votes": 1149
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.857,
+    "tenure_overlap": 0.953,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm1372094",
     "target": "nm1397705",
     "weight": 12,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 12,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2014,
+    "year_min": 2011,
+    "year_max": 2017,
     "first_worked_together": 2011,
     "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 6,
+    "shared_votes_max": 1226,
     "genres": [
       "Comedy",
       "Drama",
@@ -1124,19 +2348,241 @@
         "tconst": "tt7378348",
         "votes": 44
       }
-    ]
+    ],
+    "loyalty_ab": 0.143,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.953,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm1796932",
+    "target": "nm2168032",
+    "weight": 11,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 11,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 2024,
+    "year_min": 2023,
+    "year_max": 2024,
+    "first_worked_together": 2023,
+    "last_worked_together": 2024,
+    "recency": 2,
+    "reunion_span": 1,
+    "shared_votes_max": 475,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Drama",
+      "Fantasy"
+    ],
+    "shared": [
+      {
+        "title": "Hello Ghost",
+        "year": 2023,
+        "tconst": "tt14399128",
+        "votes": 475
+      },
+      {
+        "title": "Si Juki the Movie: Harta Pulau Monyet",
+        "year": 2024,
+        "tconst": "tt10640084",
+        "votes": 168
+      },
+      {
+        "title": "Warkop DKI Kartun",
+        "year": 2025,
+        "tconst": "tt37150775",
+        "votes": 43
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.222,
+    "tenure_overlap": 0.957,
+    "same_era": true,
+    "age_gap": 14,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm2044600",
+    "target": "nm2418653",
+    "weight": 17,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 17,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 2001,
+    "year_min": 1983,
+    "year_max": 2018,
+    "first_worked_together": 1983,
+    "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 35,
+    "reunion": true,
+    "reunion_gap": 35,
+    "shared_votes_max": 8949,
+    "genres": [
+      "Animation",
+      "Drama",
+      "Family",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Captain Tsubasa",
+        "year": 1983,
+        "tconst": "tt0294023",
+        "votes": 8949
+      },
+      {
+        "title": "Captain Tsubasa",
+        "year": 2018,
+        "tconst": "tt7784442",
+        "votes": 2999
+      },
+      {
+        "title": "Shi no gake e tsuppashire",
+        "year": 2013,
+        "tconst": "tt3635334",
+        "votes": 2258
+      }
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.93,
+    "same_era": true,
+    "age_gap": 12,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm2044600",
+    "target": "nm3150446",
+    "weight": 17,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 17,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 2001,
+    "year_min": 1983,
+    "year_max": 2018,
+    "first_worked_together": 1983,
+    "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 35,
+    "reunion": true,
+    "reunion_gap": 35,
+    "shared_votes_max": 8949,
+    "genres": [
+      "Animation",
+      "Drama",
+      "Family",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Captain Tsubasa",
+        "year": 1983,
+        "tconst": "tt0294023",
+        "votes": 8949
+      },
+      {
+        "title": "Captain Tsubasa",
+        "year": 2018,
+        "tconst": "tt7784442",
+        "votes": 2999
+      },
+      {
+        "title": "Birth of Nankatsu Golden Duo",
+        "year": 2018,
+        "tconst": "tt8422092",
+        "votes": 110
+      }
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.222,
+    "tenure_overlap": 0.93,
+    "same_era": true,
+    "age_gap": 15,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm2044600",
+    "target": "nm6929960",
+    "weight": 17,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 17,
+    "construct": "comeback",
+    "shared_sample_cap": 3,
+    "year": 2001,
+    "year_min": 1983,
+    "year_max": 2018,
+    "first_worked_together": 1983,
+    "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 35,
+    "reunion": true,
+    "reunion_gap": 35,
+    "shared_votes_max": 8949,
+    "genres": [
+      "Animation",
+      "Drama",
+      "Family",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Captain Tsubasa",
+        "year": 1983,
+        "tconst": "tt0294023",
+        "votes": 8949
+      },
+      {
+        "title": "Captain Tsubasa",
+        "year": 2018,
+        "tconst": "tt7784442",
+        "votes": 2999
+      },
+      {
+        "title": "Birth of Nankatsu Golden Duo",
+        "year": 2018,
+        "tconst": "tt8422092",
+        "votes": 110
+      }
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.286,
+    "tenure_overlap": 0.93,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm2418653",
     "target": "nm3150446",
     "weight": 17,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 17,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2001,
+    "year_min": 1983,
+    "year_max": 2018,
     "first_worked_together": 1983,
     "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 35,
     "reunion": true,
     "reunion_gap": 35,
+    "shared_votes_max": 8949,
     "genres": [
       "Animation",
       "Comedy",
@@ -1162,19 +2608,34 @@
         "tconst": "tt8343140",
         "votes": 118
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.222,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm2418653",
     "target": "nm6929960",
     "weight": 17,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 17,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2001,
+    "year_min": 1983,
+    "year_max": 2018,
     "first_worked_together": 1983,
     "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 35,
     "reunion": true,
     "reunion_gap": 35,
+    "shared_votes_max": 8949,
     "genres": [
       "Animation",
       "Drama",
@@ -1200,25 +2661,38 @@
         "tconst": "tt8343130",
         "votes": 137
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.286,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm3150446",
     "target": "nm6929960",
     "weight": 23,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 23,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 1983,
+    "year_max": 2024,
     "first_worked_together": 1983,
     "last_worked_together": 2024,
+    "recency": 2,
+    "reunion_span": 41,
     "reunion": true,
     "reunion_gap": 41,
+    "shared_votes_max": 8949,
     "genres": [
       "Animation",
+      "Comedy",
       "Drama",
       "Fantasy",
-      "Family",
-      "Comedy"
+      "Family"
     ],
     "shared": [
       {
@@ -1239,24 +2713,37 @@
         "tconst": "tt32174340",
         "votes": 480
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.429,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm3150446",
     "target": "nm7878421",
     "weight": 16,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 16,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 2005,
+    "year_min": 1983,
+    "year_max": 2026,
     "first_worked_together": 1983,
     "last_worked_together": 2026,
+    "recency": 0,
+    "reunion_span": 43,
     "reunion": true,
     "reunion_gap": 43,
+    "shared_votes_max": 8949,
     "genres": [
       "Animation",
+      "Fantasy",
       "Comedy",
-      "Drama",
-      "Fantasy"
+      "Drama"
     ],
     "shared": [
       {
@@ -1277,19 +2764,34 @@
         "tconst": "tt41151699",
         "votes": 78
       }
-    ]
+    ],
+    "loyalty_ab": 0.222,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm8034423",
     "target": "nm8630499",
     "weight": 15,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 15,
     "construct": "comeback",
+    "shared_sample_cap": 3,
     "year": 1997,
+    "year_min": 1978,
+    "year_max": 2016,
     "first_worked_together": 1978,
     "last_worked_together": 2016,
+    "recency": 10,
+    "reunion_span": 38,
     "reunion": true,
     "reunion_gap": 38,
+    "shared_votes_max": 5801,
     "genres": [
       "Adventure",
       "Animation",
@@ -1314,6 +2816,11 @@
         "tconst": "tt0850061",
         "votes": 202
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.894,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   }
 ]

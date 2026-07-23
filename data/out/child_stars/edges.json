@@ -4,10 +4,18 @@
     "target": "nm0001522",
     "weight": 14,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 14,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1973,
+    "year_min": 1965,
+    "year_max": 1980,
     "first_worked_together": 1965,
     "last_worked_together": 1980,
+    "recency": 46,
+    "reunion_span": 15,
+    "shared_votes_max": 4693,
     "genres": [
       "Drama",
       "Music",
@@ -26,23 +34,38 @@
         "tconst": "tt0081151",
         "votes": 182
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.617,
+    "same_era": true,
+    "age_gap": 10,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000106",
     "target": "nm0005377",
     "weight": 35,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 35,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2004,
+    "year_min": 2000,
+    "year_max": 2009,
     "first_worked_together": 2000,
     "last_worked_together": 2009,
+    "recency": 17,
+    "reunion_span": 9,
+    "shared_votes_max": 207141,
     "genres": [
-      "Biography",
-      "Comedy",
-      "Crime",
       "Action",
       "Adventure",
+      "Comedy",
+      "Biography",
+      "Crime",
       "Drama"
     ],
     "shared": [
@@ -64,23 +87,38 @@
         "tconst": "tt0780511",
         "votes": 67805
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.429,
+    "tenure_overlap": 0.957,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000165",
     "target": "nm0397212",
     "weight": 21,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 21,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1974,
+    "year_min": 1970,
+    "year_max": 1977,
     "first_worked_together": 1970,
     "last_worked_together": 1977,
+    "recency": 49,
+    "reunion_span": 7,
+    "shared_votes_max": 3192,
     "genres": [
       "Action",
       "Comedy",
       "Romance",
-      "Adventure",
-      "Crime"
+      "Crime",
+      "Adventure"
     ],
     "shared": [
       {
@@ -101,22 +139,37 @@
         "tconst": "tt0512556",
         "votes": 510
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.429,
+    "tenure_overlap": 0.761,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.833
   },
   {
     "source": "nm0000222",
     "target": "nm0000977",
     "weight": 21,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 21,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2016,
+    "year_min": 2016,
+    "year_max": 2016,
     "first_worked_together": 2016,
     "last_worked_together": 2016,
+    "recency": 10,
+    "reunion_span": 0,
+    "shared_votes_max": 1419,
     "genres": [
       "Crime",
-      "Drama",
       "Mystery",
-      "Romance"
+      "Romance",
+      "Drama"
     ],
     "shared": [
       {
@@ -137,17 +190,32 @@
         "tconst": "tt5459456",
         "votes": 1133
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.628,
+    "same_era": true,
+    "age_gap": 24,
+    "cross_generational": true,
+    "edge_genre_jaccard": 0.8
   },
   {
     "source": "nm0000276",
     "target": "nm0000704",
     "weight": 49,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 49,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2004,
+    "year_min": 2001,
+    "year_max": 2010,
     "first_worked_together": 2001,
     "last_worked_together": 2010,
+    "recency": 16,
+    "reunion_span": 9,
+    "shared_votes_max": 2218754,
     "genres": [
       "Adventure",
       "Drama",
@@ -175,17 +243,32 @@
         "tconst": "tt0167261",
         "votes": 1967916
       }
-    ]
+    ],
+    "loyalty_ab": 0.308,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.8,
+    "same_era": true,
+    "age_gap": 10,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.857
   },
   {
     "source": "nm0000276",
     "target": "nm0000998",
     "weight": 14,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 14,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2017,
+    "year_min": 2017,
+    "year_max": 2017,
     "first_worked_together": 2017,
     "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 0,
+    "shared_votes_max": 1909,
     "genres": [
       "Action",
       "Adventure",
@@ -206,17 +289,32 @@
         "tconst": "tt5301544",
         "votes": 400
       }
-    ]
+    ],
+    "loyalty_ab": 0.154,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.917,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.833
   },
   {
     "source": "nm0000276",
     "target": "nm0001293",
     "weight": 15,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 15,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2014,
+    "year_min": 2012,
+    "year_max": 2015,
     "first_worked_together": 2012,
     "last_worked_together": 2015,
+    "recency": 11,
+    "reunion_span": 3,
+    "shared_votes_max": 18419,
     "genres": [
       "Action",
       "Adventure",
@@ -241,27 +339,42 @@
         "tconst": "tt4448716",
         "votes": 473
       }
-    ]
+    ],
+    "loyalty_ab": 0.154,
+    "loyalty_ba": 0.133,
+    "tenure_overlap": 0.933,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000276",
     "target": "nm0040012",
     "weight": 27,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 27,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2015,
+    "year_min": 2003,
+    "year_max": 2026,
     "first_worked_together": 2003,
     "last_worked_together": 2026,
+    "recency": 0,
+    "reunion_span": 23,
     "reunion": true,
     "reunion_gap": 23,
+    "shared_votes_max": 2176319,
     "genres": [
+      "Sci-Fi",
       "Adventure",
       "Drama",
       "Fantasy",
       "Action",
       "Comedy",
-      "Thriller",
-      "Sci-Fi"
+      "Thriller"
     ],
     "shared": [
       {
@@ -282,17 +395,77 @@
         "tconst": "tt27723650",
         "votes": 68
       }
-    ]
+    ],
+    "loyalty_ab": 0.231,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.511,
+    "same_era": true,
+    "age_gap": 25,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0000276",
+    "target": "nm1767820",
+    "weight": 15,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 15,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2015,
+    "year_min": 2012,
+    "year_max": 2017,
+    "first_worked_together": 2012,
+    "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 5,
+    "shared_votes_max": 2287,
+    "genres": [
+      "Action",
+      "Comedy",
+      "Thriller",
+      "Drama"
+    ],
+    "shared": [
+      {
+        "title": "Bad Kids of Crestview Academy",
+        "year": 2017,
+        "tconst": "tt3349578",
+        "votes": 2287
+      },
+      {
+        "title": "Amazing Love",
+        "year": 2012,
+        "tconst": "tt2081167",
+        "votes": 1187
+      }
+    ],
+    "loyalty_ab": 0.154,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.333,
+    "same_era": true,
+    "age_gap": 24,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000327",
     "target": "nm0192505",
     "weight": 13,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2005,
+    "year_min": 2005,
+    "year_max": 2005,
     "first_worked_together": 2005,
     "last_worked_together": 2005,
+    "recency": 21,
+    "reunion_span": 0,
+    "shared_votes_max": 1219,
     "genres": [
       "Animation",
       "Adventure",
@@ -317,17 +490,32 @@
         "tconst": "tt28483230",
         "votes": 875
       }
-    ]
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.886,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000327",
     "target": "nm0215281",
     "weight": 15,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 15,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1999,
+    "year_min": 1998,
+    "year_max": 1999,
     "first_worked_together": 1998,
     "last_worked_together": 1999,
+    "recency": 27,
+    "reunion_span": 1,
+    "shared_votes_max": 2323,
     "genres": [
       "Adventure",
       "Animation",
@@ -346,17 +534,82 @@
         "tconst": "tt0197230",
         "votes": 1616
       }
-    ]
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.743,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.6
+  },
+  {
+    "source": "nm0000327",
+    "target": "nm0352374",
+    "weight": 13,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2005,
+    "year_min": 2005,
+    "year_max": 2005,
+    "first_worked_together": 2005,
+    "last_worked_together": 2005,
+    "recency": 21,
+    "reunion_span": 0,
+    "shared_votes_max": 1219,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Bratz: Passion 4 Fashion - Diamondz",
+        "year": 2006,
+        "tconst": "tt0417503",
+        "votes": 3468
+      },
+      {
+        "title": "Bratz",
+        "year": 2005,
+        "tconst": "tt0471990",
+        "votes": 1219
+      },
+      {
+        "title": "Bratz Rock Angelz",
+        "year": 2005,
+        "tconst": "tt0492571",
+        "votes": 585
+      }
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.8,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000327",
     "target": "nm0364583",
     "weight": 33,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 33,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2004,
+    "year_min": 1998,
+    "year_max": 2014,
     "first_worked_together": 1998,
     "last_worked_together": 2014,
+    "recency": 12,
+    "reunion_span": 16,
+    "shared_votes_max": 17407,
     "genres": [
       "Adventure",
       "Animation",
@@ -382,21 +635,36 @@
         "tconst": "tt1974393",
         "votes": 1332
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.667,
+    "tenure_overlap": 0.921,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000327",
     "target": "nm1536605",
     "weight": 15,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 15,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2017,
+    "year_max": 2021,
     "first_worked_together": 2017,
     "last_worked_together": 2021,
+    "recency": 5,
+    "reunion_span": 4,
+    "shared_votes_max": 2605,
     "genres": [
-      "Drama",
+      "Comedy",
       "Romance",
-      "Comedy"
+      "Drama"
     ],
     "shared": [
       {
@@ -411,26 +679,42 @@
         "tconst": "tt14477372",
         "votes": 1891
       }
-    ]
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 0.167,
+    "tenure_overlap": 0.886,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0000329",
     "target": "nm0005033",
     "weight": 96,
     "shared_count": 11,
+    "collab_count": 11,
+    "collab_strength": 96,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1984,
+    "year_min": 1962,
+    "year_max": 1997,
     "first_worked_together": 1962,
     "last_worked_together": 1997,
+    "recency": 29,
+    "reunion_span": 35,
     "reunion": true,
     "reunion_gap": 35,
+    "shared_votes_max": 31143,
     "genres": [
       "Action",
+      "Comedy",
       "Crime",
       "Drama",
-      "Comedy",
-      "Romance",
-      "Adventure"
+      "Adventure",
+      "Romance"
     ],
     "shared": [
       {
@@ -451,17 +735,32 @@
         "tconst": "tt0087578",
         "votes": 17341
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.846,
+    "tenure_overlap": 0.984,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000346",
     "target": "nm0001293",
     "weight": 23,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 23,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2003,
+    "year_max": 2019,
     "first_worked_together": 2003,
     "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 16,
+    "shared_votes_max": 18342,
     "genres": [
       "Biography",
       "Crime",
@@ -488,17 +787,32 @@
         "tconst": "tt0687776",
         "votes": 708
       }
-    ]
+    ],
+    "loyalty_ab": 0.6,
+    "loyalty_ba": 0.2,
+    "tenure_overlap": 0.714,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000346",
     "target": "nm0711864",
     "weight": 27,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 27,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1991,
+    "year_min": 1990,
+    "year_max": 1992,
     "first_worked_together": 1990,
     "last_worked_together": 1992,
+    "recency": 34,
+    "reunion_span": 2,
+    "shared_votes_max": 749191,
     "genres": [
       "Comedy",
       "Family",
@@ -518,17 +832,32 @@
         "tconst": "tt0104431",
         "votes": 458635
       }
-    ]
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.909,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000379",
     "target": "nm0682300",
     "weight": 20,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 20,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1996,
+    "year_min": 1995,
+    "year_max": 1996,
     "first_worked_together": 1995,
     "last_worked_together": 1996,
+    "recency": 30,
+    "reunion_span": 1,
+    "shared_votes_max": 416054,
     "genres": [
       "Adventure",
       "Comedy",
@@ -549,17 +878,74 @@
         "tconst": "tt0117523",
         "votes": 781
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.743,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0000441",
+    "target": "nm0364583",
+    "weight": 11,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 11,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2014,
+    "year_min": 2013,
+    "year_max": 2014,
+    "first_worked_together": 2013,
+    "last_worked_together": 2014,
+    "recency": 12,
+    "reunion_span": 1,
+    "shared_votes_max": 486,
+    "genres": [
+      "Horror"
+    ],
+    "shared": [
+      {
+        "title": "Tom Holland's Twisted Tales",
+        "year": 2014,
+        "tconst": "tt3607814",
+        "votes": 486
+      },
+      {
+        "title": "Twisted Tales",
+        "year": 2013,
+        "tconst": "tt2333420",
+        "votes": 148
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.729,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000475",
     "target": "nm0289038",
     "weight": 13,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1990,
+    "year_min": 1986,
+    "year_max": 1994,
     "first_worked_together": 1986,
     "last_worked_together": 1994,
+    "recency": 32,
+    "reunion_span": 8,
+    "shared_votes_max": 3979,
     "genres": [
       "Drama",
       "Musical",
@@ -578,17 +964,32 @@
         "tconst": "tt0109768",
         "votes": 135
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.56,
+    "same_era": true,
+    "age_gap": 29,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000775",
     "target": "nm0004910",
     "weight": 17,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 17,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1989,
+    "year_min": 1987,
+    "year_max": 1991,
     "first_worked_together": 1987,
     "last_worked_together": 1991,
+    "recency": 35,
+    "reunion_span": 4,
+    "shared_votes_max": 118480,
     "genres": [
       "Comedy"
     ],
@@ -611,19 +1012,34 @@
         "tconst": "tt0642419",
         "votes": 1079
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.818,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000913",
     "target": "nm0397212",
     "weight": 12,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 12,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1998,
+    "year_min": 1977,
+    "year_max": 2019,
     "first_worked_together": 1977,
     "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 42,
     "reunion": true,
     "reunion_gap": 42,
+    "shared_votes_max": 565,
     "genres": [
       "Drama"
     ],
@@ -640,17 +1056,32 @@
         "tconst": "tt7466496",
         "votes": 340
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.286,
+    "tenure_overlap": 0.839,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.5
   },
   {
     "source": "nm0001013",
     "target": "nm0001016",
     "weight": 17,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 17,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1989,
+    "year_min": 1980,
+    "year_max": 1997,
     "first_worked_together": 1980,
     "last_worked_together": 1997,
+    "recency": 29,
+    "reunion_span": 17,
+    "shared_votes_max": 14818,
     "genres": [
       "Biography",
       "Crime",
@@ -671,17 +1102,32 @@
         "tconst": "tt0119501",
         "votes": 2552
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.5,
+    "same_era": true,
+    "age_gap": 15,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001016",
     "target": "nm0001522",
     "weight": 16,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 16,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1985,
+    "year_min": 1978,
+    "year_max": 1992,
     "first_worked_together": 1978,
     "last_worked_together": 1992,
+    "recency": 34,
+    "reunion_span": 14,
+    "shared_votes_max": 2834,
     "genres": [
       "Action",
       "Adventure",
@@ -702,17 +1148,32 @@
         "tconst": "tt0104135",
         "votes": 2453
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.614,
+    "same_era": true,
+    "age_gap": 8,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001085",
     "target": "nm0148418",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2017,
+    "year_min": 2010,
+    "year_max": 2023,
     "first_worked_together": 2010,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 13,
+    "shared_votes_max": 498658,
     "genres": [
       "Action",
       "Comedy",
@@ -739,17 +1200,32 @@
         "tconst": "tt16364376",
         "votes": 3174
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.765,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001085",
     "target": "nm0191412",
     "weight": 20,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 20,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2005,
+    "year_min": 2002,
+    "year_max": 2008,
     "first_worked_together": 2002,
     "last_worked_together": 2008,
+    "recency": 18,
+    "reunion_span": 6,
+    "shared_votes_max": 37496,
     "genres": [
       "Comedy",
       "Drama",
@@ -768,25 +1244,92 @@
         "tconst": "tt0363780",
         "votes": 14791
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.706,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0001147",
+    "target": "nm0001760",
+    "weight": 19,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2005,
+    "year_min": 1990,
+    "year_max": 2019,
+    "first_worked_together": 1990,
+    "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 29,
+    "reunion": true,
+    "reunion_gap": 29,
+    "shared_votes_max": 41069,
+    "genres": [
+      "Drama",
+      "Romance",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Beverly Hills, 90210",
+        "year": 1990,
+        "tconst": "tt0098749",
+        "votes": 41069
+      },
+      {
+        "title": "BH90210",
+        "year": 2019,
+        "tconst": "tt8179162",
+        "votes": 4649
+      },
+      {
+        "title": "Class of Beverly Hills",
+        "year": 1990,
+        "tconst": "tt0125674",
+        "votes": 1165
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.953,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001293",
     "target": "nm0005227",
     "weight": 55,
     "shared_count": 7,
+    "collab_count": 7,
+    "collab_strength": 55,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2013,
+    "year_min": 2005,
+    "year_max": 2020,
     "first_worked_together": 2005,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 15,
+    "shared_votes_max": 48992,
     "genres": [
       "Adventure",
       "Animation",
       "Comedy",
       "Drama",
       "Action",
-      "Fantasy",
-      "Sci-Fi"
+      "Sci-Fi",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -807,19 +1350,34 @@
         "tconst": "tt2381287",
         "votes": 2105
       }
-    ]
+    ],
+    "loyalty_ab": 0.467,
+    "loyalty_ba": 0.778,
+    "tenure_overlap": 0.841,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001293",
     "target": "nm0814259",
     "weight": 24,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 24,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2010,
+    "year_min": 1998,
+    "year_max": 2019,
     "first_worked_together": 1998,
     "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 21,
     "reunion": true,
     "reunion_gap": 21,
+    "shared_votes_max": 7083,
     "genres": [
       "Comedy",
       "Family",
@@ -845,17 +1403,32 @@
         "tconst": "tt0218744",
         "votes": 910
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.667,
+    "same_era": true,
+    "age_gap": 14,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001515",
     "target": "nm0954225",
     "weight": 12,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 12,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 2004,
+    "year_max": 2011,
     "first_worked_together": 2004,
     "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 7,
+    "shared_votes_max": 2388,
     "genres": [
       "Drama",
       "Fantasy",
@@ -875,17 +1448,32 @@
         "tconst": "tt1854280",
         "votes": 59
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.912,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001576",
     "target": "nm0732319",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1984,
+    "year_min": 1982,
+    "year_max": 1986,
     "first_worked_together": 1982,
     "last_worked_together": 1986,
+    "recency": 40,
+    "reunion_span": 4,
+    "shared_votes_max": 195877,
     "genres": [
       "Horror",
       "Thriller"
@@ -903,17 +1491,88 @@
         "tconst": "tt0091778",
         "votes": 32957
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.136,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0001580",
+    "target": "nm0001581",
+    "weight": 109,
+    "shared_count": 13,
+    "collab_count": 13,
+    "collab_strength": 109,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 1997,
+    "year_min": 1987,
+    "year_max": 2004,
+    "first_worked_together": 1987,
+    "last_worked_together": 2004,
+    "recency": 22,
+    "reunion_span": 17,
+    "shared_votes_max": 67478,
+    "genres": [
+      "Comedy",
+      "Family",
+      "Romance",
+      "Adventure",
+      "Crime",
+      "Sport",
+      "Western",
+      "Animation"
+    ],
+    "shared": [
+      {
+        "title": "Full House",
+        "year": 1987,
+        "tconst": "tt0092359",
+        "votes": 67478
+      },
+      {
+        "title": "It Takes Two",
+        "year": 1995,
+        "tconst": "tt0113442",
+        "votes": 28695
+      },
+      {
+        "title": "New York Minute",
+        "year": 2004,
+        "tconst": "tt0363282",
+        "votes": 26640
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.708,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0001593",
     "target": "nm0002907",
     "weight": 19,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2008,
+    "year_max": 2010,
     "first_worked_together": 2008,
     "last_worked_together": 2010,
+    "recency": 16,
+    "reunion_span": 2,
+    "shared_votes_max": 271936,
     "genres": [
       "Drama",
       "Fantasy",
@@ -939,24 +1598,284 @@
         "tconst": "tt2139373",
         "votes": 2077
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.714,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0001668",
+    "target": "nm0724202",
+    "weight": 14,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 14,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 1983,
+    "year_min": 1977,
+    "year_max": 1989,
+    "first_worked_together": 1977,
+    "last_worked_together": 1989,
+    "recency": 37,
+    "reunion_span": 12,
+    "shared_votes_max": 13103,
+    "genres": [
+      "Adventure",
+      "Action",
+      "Fantasy",
+      "Horror"
+    ],
+    "shared": [
+      {
+        "title": "The Car",
+        "year": 1977,
+        "tconst": "tt0075809",
+        "votes": 13103
+      },
+      {
+        "title": "Escape",
+        "year": 1989,
+        "tconst": "tt0099517",
+        "votes": 140
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.611,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.667
+  },
+  {
+    "source": "nm0004437",
+    "target": "nm0082848",
+    "weight": 16,
+    "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 16,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 1988,
+    "year_min": 1985,
+    "year_max": 1993,
+    "first_worked_together": 1985,
+    "last_worked_together": 1993,
+    "recency": 33,
+    "reunion_span": 8,
+    "shared_votes_max": 1112,
+    "genres": [
+      "Action",
+      "Drama",
+      "Romance",
+      "Crime",
+      "Thriller",
+      "Musical"
+    ],
+    "shared": [
+      {
+        "title": "Roop Ki Rani Choron Ka Raja",
+        "year": 1993,
+        "tconst": "tt0107986",
+        "votes": 1112
+      },
+      {
+        "title": "Balidaan",
+        "year": 1985,
+        "tconst": "tt0186850",
+        "votes": 95
+      },
+      {
+        "title": "Aag Aur Shola",
+        "year": 1986,
+        "tconst": "tt0154104",
+        "votes": 71
+      }
+    ],
+    "loyalty_ab": 0.188,
+    "loyalty_ba": 0.3,
+    "tenure_overlap": 0.673,
+    "same_era": true,
+    "age_gap": 12,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0004437",
+    "target": "nm0352032",
+    "weight": 80,
+    "shared_count": 13,
+    "collab_count": 13,
+    "collab_strength": 80,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 1980,
+    "year_min": 1976,
+    "year_max": 1986,
+    "first_worked_together": 1976,
+    "last_worked_together": 1986,
+    "recency": 40,
+    "reunion_span": 10,
+    "shared_votes_max": 3903,
+    "genres": [
+      "Drama",
+      "Romance",
+      "Action",
+      "Crime",
+      "Musical",
+      "Thriller",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Sadma",
+        "year": 1983,
+        "tconst": "tt0086230",
+        "votes": 3903
+      },
+      {
+        "title": "Moondram Pirai",
+        "year": 1982,
+        "tconst": "tt0187318",
+        "votes": 3683
+      },
+      {
+        "title": "Sigappu Rojakkal",
+        "year": 1978,
+        "tconst": "tt0156079",
+        "votes": 2231
+      }
+    ],
+    "loyalty_ab": 0.812,
+    "loyalty_ba": 0.812,
+    "tenure_overlap": 0.708,
+    "same_era": true,
+    "age_gap": 9,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0004569",
+    "target": "nm0082848",
+    "weight": 10,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 10,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 1997,
+    "year_min": 1986,
+    "year_max": 2008,
+    "first_worked_together": 1986,
+    "last_worked_together": 2008,
+    "recency": 18,
+    "reunion_span": 22,
+    "reunion": true,
+    "reunion_gap": 22,
+    "shared_votes_max": 464,
+    "genres": [
+      "Action",
+      "Drama",
+      "Romance"
+    ],
+    "shared": [
+      {
+        "title": "Mehbooba",
+        "year": 2008,
+        "tconst": "tt1234250",
+        "votes": 464
+      },
+      {
+        "title": "Mera Haque",
+        "year": 1986,
+        "tconst": "tt0361904",
+        "votes": 64
+      }
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 0.2,
+    "tenure_overlap": 0.688,
+    "same_era": true,
+    "age_gap": 8,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0004569",
+    "target": "nm0447240",
+    "weight": 18,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 18,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2009,
+    "year_min": 1998,
+    "year_max": 2019,
+    "first_worked_together": 1998,
+    "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 21,
+    "reunion": true,
+    "reunion_gap": 21,
+    "shared_votes_max": 21947,
+    "genres": [
+      "Drama",
+      "Romance",
+      "Action",
+      "Crime"
+    ],
+    "shared": [
+      {
+        "title": "Kalank",
+        "year": 2019,
+        "tconst": "tt6988116",
+        "votes": 21947
+      },
+      {
+        "title": "Dushman",
+        "year": 1998,
+        "tconst": "tt0189492",
+        "votes": 2439
+      }
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.516,
+    "same_era": true,
+    "age_gap": 24,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0004569",
     "target": "nm0756378",
     "weight": 31,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 31,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2006,
+    "year_max": 2014,
     "first_worked_together": 2006,
     "last_worked_together": 2014,
+    "recency": 12,
+    "reunion_span": 8,
+    "shared_votes_max": 224473,
     "genres": [
       "Comedy",
       "Drama",
       "Musical",
+      "Romance",
       "Action",
-      "Mystery",
-      "Romance"
+      "Mystery"
     ],
     "shared": [
       {
@@ -977,21 +1896,36 @@
         "tconst": "tt0459605",
         "votes": 3630
       }
-    ]
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 0.231,
+    "tenure_overlap": 0.747,
+    "same_era": true,
+    "age_gap": 15,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0004569",
     "target": "nm1017633",
     "weight": 21,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2020,
+    "year_min": 2019,
+    "year_max": 2020,
     "first_worked_together": 2019,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 1,
+    "shared_votes_max": 97256,
     "genres": [
+      "Action",
       "Drama",
-      "Romance",
-      "Action"
+      "Romance"
     ],
     "shared": [
       {
@@ -1006,24 +1940,39 @@
         "tconst": "tt6988116",
         "votes": 21947
       }
-    ]
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.435,
+    "same_era": true,
+    "age_gap": 34,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0004569",
     "target": "nm4271961",
     "weight": 32,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 32,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2024,
+    "year_min": 2022,
+    "year_max": 2026,
     "first_worked_together": 2022,
     "last_worked_together": 2026,
+    "recency": 0,
+    "reunion_span": 4,
+    "shared_votes_max": 147100,
     "genres": [
-      "Drama",
-      "Family",
-      "Sport",
       "Action",
       "Crime",
-      "Thriller"
+      "Thriller",
+      "Drama",
+      "Family",
+      "Sport"
     ],
     "shared": [
       {
@@ -1044,17 +1993,32 @@
         "tconst": "tt13623916",
         "votes": 5749
       }
-    ]
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.242,
+    "same_era": true,
+    "age_gap": 46,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0004700",
     "target": "nm0005355",
     "weight": 17,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 17,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1993,
+    "year_min": 1990,
+    "year_max": 1995,
     "first_worked_together": 1990,
     "last_worked_together": 1995,
+    "recency": 31,
+    "reunion_span": 5,
+    "shared_votes_max": 153527,
     "genres": [
       "Comedy",
       "Family"
@@ -1078,17 +2042,32 @@
         "tconst": "tt0583047",
         "votes": 1699
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.585,
+    "same_era": true,
+    "age_gap": 8,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0004997",
     "target": "nm0005129",
     "weight": 19,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2010,
+    "year_min": 2009,
+    "year_max": 2010,
     "first_worked_together": 2009,
     "last_worked_together": 2010,
+    "recency": 16,
+    "reunion_span": 1,
+    "shared_votes_max": 20534,
     "genres": [
       "Comedy",
       "Romance"
@@ -1112,17 +2091,32 @@
         "tconst": "tt1602317",
         "votes": 249
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.087,
+    "tenure_overlap": 0.886,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0004997",
     "target": "nm0530249",
     "weight": 16,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 16,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2007,
+    "year_max": 2017,
     "first_worked_together": 2007,
     "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 10,
+    "shared_votes_max": 8253,
     "genres": [
       "Comedy",
       "Drama",
@@ -1141,17 +2135,32 @@
         "tconst": "tt7069196",
         "votes": 1306
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.951,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0005033",
     "target": "nm0266658",
     "weight": 17,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 17,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2010,
+    "year_min": 2009,
+    "year_max": 2010,
     "first_worked_together": 2009,
     "last_worked_together": 2010,
+    "recency": 16,
+    "reunion_span": 1,
+    "shared_votes_max": 33306,
     "genres": [
       "Action",
       "Biography",
@@ -1177,28 +2186,101 @@
         "tconst": "tt0387228",
         "votes": 202
       }
-    ]
+    ],
+    "loyalty_ab": 0.154,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.656,
+    "same_era": true,
+    "age_gap": 21,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0005129",
+    "target": "nm0492620",
+    "weight": 73,
+    "shared_count": 11,
+    "collab_count": 11,
+    "collab_strength": 73,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2010,
+    "year_min": 1995,
+    "year_max": 2024,
+    "first_worked_together": 1995,
+    "last_worked_together": 2024,
+    "recency": 2,
+    "reunion_span": 29,
+    "reunion": true,
+    "reunion_gap": 29,
+    "shared_votes_max": 6122,
+    "genres": [
+      "Drama",
+      "Family",
+      "Action",
+      "Comedy",
+      "Crime",
+      "Romance",
+      "Adventure",
+      "Western"
+    ],
+    "shared": [
+      {
+        "title": "Money Plane",
+        "year": 2020,
+        "tconst": "tt7286966",
+        "votes": 6122
+      },
+      {
+        "title": "Horse Sense",
+        "year": 1999,
+        "tconst": "tt0219813",
+        "votes": 2335
+      },
+      {
+        "title": "Jumping Ship",
+        "year": 2001,
+        "tconst": "tt0271172",
+        "votes": 2319
+      }
+    ],
+    "loyalty_ab": 0.478,
+    "loyalty_ba": 0.407,
+    "tenure_overlap": 0.682,
+    "same_era": true,
+    "age_gap": 12,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0005129",
     "target": "nm0492932",
     "weight": 71,
     "shared_count": 10,
+    "collab_count": 10,
+    "collab_strength": 71,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 1981,
+    "year_max": 2024,
     "first_worked_together": 1981,
     "last_worked_together": 2024,
+    "recency": 2,
+    "reunion_span": 43,
     "reunion": true,
     "reunion_gap": 43,
+    "shared_votes_max": 6122,
     "genres": [
       "Action",
       "Comedy",
       "Crime",
       "Horror",
       "Sci-Fi",
-      "Family",
-      "Romance",
-      "Thriller"
+      "Adventure",
+      "Drama",
+      "Western"
     ],
     "shared": [
       {
@@ -1219,47 +2301,33 @@
         "tconst": "tt0095924",
         "votes": 3301
       }
-    ]
+    ],
+    "loyalty_ab": 0.435,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.977,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0005156",
     "target": "nm0107748",
     "weight": 22,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2004,
+    "year_min": 2002,
+    "year_max": 2006,
     "first_worked_together": 2002,
     "last_worked_together": 2006,
-    "genres": [
-      "Comedy",
-      "Family",
-      "Fantasy",
-      "Adventure"
-    ],
-    "shared": [
-      {
-        "title": "The Santa Clause 2",
-        "year": 2002,
-        "tconst": "tt0304669",
-        "votes": 69949
-      },
-      {
-        "title": "The Santa Clause 3: The Escape Clause",
-        "year": 2006,
-        "tconst": "tt0452681",
-        "votes": 46817
-      }
-    ]
-  },
-  {
-    "source": "nm0005156",
-    "target": "nm1137414",
-    "weight": 22,
-    "shared_count": 2,
-    "construct": "child_stars",
-    "year": 2004,
-    "first_worked_together": 2002,
-    "last_worked_together": 2006,
+    "recency": 20,
+    "reunion_span": 4,
+    "shared_votes_max": 69949,
     "genres": [
       "Adventure",
       "Comedy",
@@ -1279,17 +2347,77 @@
         "tconst": "tt0452681",
         "votes": 46817
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.273,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0005156",
+    "target": "nm1137414",
+    "weight": 22,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2004,
+    "year_min": 2002,
+    "year_max": 2006,
+    "first_worked_together": 2002,
+    "last_worked_together": 2006,
+    "recency": 20,
+    "reunion_span": 4,
+    "shared_votes_max": 69949,
+    "genres": [
+      "Comedy",
+      "Family",
+      "Fantasy",
+      "Adventure"
+    ],
+    "shared": [
+      {
+        "title": "The Santa Clause 2",
+        "year": 2002,
+        "tconst": "tt0304669",
+        "votes": 69949
+      },
+      {
+        "title": "The Santa Clause 3: The Escape Clause",
+        "year": 2006,
+        "tconst": "tt0452681",
+        "votes": 46817
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.143,
+    "same_era": true,
+    "age_gap": 8,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.8
   },
   {
     "source": "nm0005227",
     "target": "nm0424534",
     "weight": 14,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 14,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2001,
+    "year_min": 1998,
+    "year_max": 2003,
     "first_worked_together": 1998,
     "last_worked_together": 2003,
+    "recency": 23,
+    "reunion_span": 5,
+    "shared_votes_max": 2715,
     "genres": [
       "Comedy",
       "Drama",
@@ -1314,17 +2442,32 @@
         "tconst": "tt0642183",
         "votes": 0
       }
-    ]
+    ],
+    "loyalty_ab": 0.222,
+    "loyalty_ba": 0.143,
+    "tenure_overlap": 0.818,
+    "same_era": true,
+    "age_gap": 9,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm0005346",
     "target": "nm0397212",
     "weight": 12,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 12,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2016,
+    "year_min": 2012,
+    "year_max": 2019,
     "first_worked_together": 2012,
     "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 7,
+    "shared_votes_max": 636,
     "genres": [
       "Comedy"
     ],
@@ -1341,17 +2484,32 @@
         "tconst": "tt9104384",
         "votes": 269
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.286,
+    "tenure_overlap": 0.71,
+    "same_era": true,
+    "age_gap": 16,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0005377",
     "target": "nm0424060",
     "weight": 27,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 27,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2015,
+    "year_min": 2010,
+    "year_max": 2019,
     "first_worked_together": 2010,
     "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 9,
+    "shared_votes_max": 944136,
     "genres": [
       "Action",
       "Sci-Fi",
@@ -1378,17 +2536,32 @@
         "tconst": "tt18270542",
         "votes": 0
       }
-    ]
+    ],
+    "loyalty_ab": 0.286,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.638,
+    "same_era": true,
+    "age_gap": 16,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0005377",
     "target": "nm3061574",
     "weight": 19,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2014,
+    "year_min": 2013,
+    "year_max": 2015,
     "first_worked_together": 2013,
     "last_worked_together": 2015,
+    "recency": 11,
+    "reunion_span": 2,
+    "shared_votes_max": 64748,
     "genres": [
       "Fantasy",
       "Horror",
@@ -1409,17 +2582,32 @@
         "tconst": "tt2421416",
         "votes": 3707
       }
-    ]
+    ],
+    "loyalty_ab": 0.286,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.239,
+    "same_era": true,
+    "age_gap": 31,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0005399",
     "target": "nm0835045",
     "weight": 17,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 17,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1991,
+    "year_min": 1989,
+    "year_max": 1993,
     "first_worked_together": 1989,
     "last_worked_together": 1993,
+    "recency": 33,
+    "reunion_span": 4,
+    "shared_votes_max": 50142,
     "genres": [
       "Comedy",
       "Drama"
@@ -1443,23 +2631,90 @@
         "tconst": "tt3486744",
         "votes": 663
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.788,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0005502",
+    "target": "nm0261678",
+    "weight": 12,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 12,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2001,
+    "year_min": 1997,
+    "year_max": 2005,
+    "first_worked_together": 1997,
+    "last_worked_together": 2005,
+    "recency": 21,
+    "reunion_span": 8,
+    "shared_votes_max": 806,
+    "genres": [
+      "Drama",
+      "Romance",
+      "Comedy",
+      "Family",
+      "Sci-Fi"
+    ],
+    "shared": [
+      {
+        "title": "The Dive from Clausen's Pier",
+        "year": 2005,
+        "tconst": "tt0452611",
+        "votes": 806
+      },
+      {
+        "title": "Meego",
+        "year": 1997,
+        "tconst": "tt0118397",
+        "votes": 183
+      },
+      {
+        "title": "Halloween",
+        "year": 1997,
+        "tconst": "tt0645690",
+        "votes": 9
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.676,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0035488",
     "target": "nm1024878",
     "weight": 18,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 18,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1992,
+    "year_min": 1975,
+    "year_max": 2008,
     "first_worked_together": 1975,
     "last_worked_together": 2008,
+    "recency": 18,
+    "reunion_span": 33,
     "reunion": true,
     "reunion_gap": 33,
+    "shared_votes_max": 57970,
     "genres": [
       "Comedy",
-      "News",
-      "Music"
+      "Music",
+      "News"
     ],
     "shared": [
       {
@@ -1480,17 +2735,33 @@
         "tconst": "tt1615728",
         "votes": 658
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.76,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0043552",
     "target": "nm0424534",
     "weight": 35,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 35,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2021,
+    "year_min": 2015,
+    "year_max": 2025,
     "first_worked_together": 2015,
     "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 10,
+    "shared_votes_max": 55960,
     "genres": [
       "Adventure",
       "Fantasy",
@@ -1516,22 +2787,38 @@
         "tconst": "tt26453092",
         "votes": 13933
       }
-    ]
+    ],
+    "loyalty_ab": 0.267,
+    "loyalty_ba": 0.286,
+    "tenure_overlap": 0.93,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0043552",
     "target": "nm0473873",
     "weight": 13,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2015,
+    "year_min": 2014,
+    "year_max": 2016,
     "first_worked_together": 2014,
     "last_worked_together": 2016,
+    "recency": 10,
+    "reunion_span": 2,
+    "shared_votes_max": 1711,
     "genres": [
-      "Animation",
-      "Sport",
       "Action",
-      "Adventure"
+      "Adventure",
+      "Animation",
+      "Sport"
     ],
     "shared": [
       {
@@ -1552,17 +2839,32 @@
         "tconst": "tt6315902",
         "votes": 55
       }
-    ]
+    ],
+    "loyalty_ab": 0.133,
+    "loyalty_ba": 0.1,
+    "tenure_overlap": 0.786,
+    "same_era": true,
+    "age_gap": 11,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0043552",
     "target": "nm1154161",
     "weight": 40,
     "shared_count": 5,
+    "collab_count": 5,
+    "collab_strength": 40,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2020,
+    "year_min": 2015,
+    "year_max": 2025,
     "first_worked_together": 2015,
     "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 10,
+    "shared_votes_max": 55960,
     "genres": [
       "Adventure",
       "Comedy",
@@ -1589,23 +2891,39 @@
         "tconst": "tt26453092",
         "votes": 13933
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.417,
+    "tenure_overlap": 0.786,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0043552",
     "target": "nm4515899",
     "weight": 9,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 9,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2015,
+    "year_min": 2015,
+    "year_max": 2015,
     "first_worked_together": 2015,
     "last_worked_together": 2015,
+    "recency": 11,
+    "reunion_span": 0,
+    "shared_votes_max": 220,
     "genres": [
-      "Action",
       "Animation",
-      "Fantasy",
       "Comedy",
-      "Drama"
+      "Drama",
+      "Action",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -1626,23 +2944,38 @@
         "tconst": "tt5924106",
         "votes": 33
       }
-    ]
+    ],
+    "loyalty_ab": 0.133,
+    "loyalty_ba": 0.053,
+    "tenure_overlap": 0.674,
+    "same_era": true,
+    "age_gap": 14,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0043552",
     "target": "nm5211370",
     "weight": 9,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 9,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2015,
+    "year_min": 2015,
+    "year_max": 2015,
     "first_worked_together": 2015,
     "last_worked_together": 2015,
+    "recency": 11,
+    "reunion_span": 0,
+    "shared_votes_max": 220,
     "genres": [
-      "Action",
       "Animation",
-      "Fantasy",
       "Comedy",
-      "Drama"
+      "Drama",
+      "Action",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -1658,22 +2991,37 @@
         "votes": 53
       },
       {
-        "title": "Flap! Bound Wings",
+        "title": "Bring Them Together! Heart and Heart",
         "year": 2015,
-        "tconst": "tt7740830",
+        "tconst": "tt7740834",
         "votes": 0
       }
-    ]
+    ],
+    "loyalty_ab": 0.133,
+    "loyalty_ba": 0.062,
+    "tenure_overlap": 0.69,
+    "same_era": true,
+    "age_gap": 14,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0068166",
     "target": "nm1388927",
     "weight": 28,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 28,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2006,
+    "year_min": 2004,
+    "year_max": 2008,
     "first_worked_together": 2004,
     "last_worked_together": 2008,
+    "recency": 18,
+    "reunion_span": 4,
+    "shared_votes_max": 47077,
     "genres": [
       "Comedy",
       "Family",
@@ -1698,22 +3046,38 @@
         "tconst": "tt1249300",
         "votes": 4883
       }
-    ]
+    ],
+    "loyalty_ab": 0.6,
+    "loyalty_ba": 0.2,
+    "tenure_overlap": 0.5,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0068166",
     "target": "nm1933128",
     "weight": 14,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 14,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2010,
+    "year_min": 2008,
+    "year_max": 2012,
     "first_worked_together": 2008,
     "last_worked_together": 2012,
+    "recency": 14,
+    "reunion_span": 4,
+    "shared_votes_max": 4883,
     "genres": [
-      "Adventure",
-      "Animation",
+      "Comedy",
       "Family",
-      "Comedy"
+      "Adventure",
+      "Animation"
     ],
     "shared": [
       {
@@ -1728,17 +3092,134 @@
         "tconst": "tt2318440",
         "votes": 251
       }
-    ]
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.387,
+    "same_era": true,
+    "age_gap": 13,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0082848",
+    "target": "nm0756378",
+    "weight": 14,
+    "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 14,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 1983,
+    "year_min": 1971,
+    "year_max": 1991,
+    "first_worked_together": 1971,
+    "last_worked_together": 1991,
+    "recency": 35,
+    "reunion_span": 20,
+    "reunion": true,
+    "reunion_gap": 20,
+    "shared_votes_max": 198,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Action"
+    ],
+    "shared": [
+      {
+        "title": "Phool Bane Angaray",
+        "year": 1991,
+        "tconst": "tt0363887",
+        "votes": 198
+      },
+      {
+        "title": "Kalyug Aur Ramayan",
+        "year": 1987,
+        "tconst": "tt0242568",
+        "votes": 91
+      },
+      {
+        "title": "Lagan",
+        "year": 1971,
+        "tconst": "tt0352511",
+        "votes": 55
+      }
+    ],
+    "loyalty_ab": 0.3,
+    "loyalty_ba": 0.231,
+    "tenure_overlap": 0.667,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0082848",
+    "target": "nm0802183",
+    "weight": 8,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 8,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 1975,
+    "year_min": 1974,
+    "year_max": 1975,
+    "first_worked_together": 1974,
+    "last_worked_together": 1975,
+    "recency": 51,
+    "reunion_span": 1,
+    "shared_votes_max": 61,
+    "genres": [
+      "Drama",
+      "Romance",
+      "Thriller"
+    ],
+    "shared": [
+      {
+        "title": "Hawas",
+        "year": 1974,
+        "tconst": "tt0304147",
+        "votes": 61
+      },
+      {
+        "title": "Sewak",
+        "year": 1975,
+        "tconst": "tt0359960",
+        "votes": 52
+      },
+      {
+        "title": "Maha Badmaash",
+        "year": 1977,
+        "tconst": "tt0382825",
+        "votes": 39
+      }
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.625,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0088298",
     "target": "nm0912703",
     "weight": 34,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 34,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2006,
+    "year_max": 2008,
     "first_worked_together": 2006,
     "last_worked_together": 2008,
+    "recency": 18,
+    "reunion_span": 2,
+    "shared_votes_max": 106096,
     "genres": [
       "Comedy",
       "Drama",
@@ -1763,22 +3244,38 @@
         "tconst": "tt0810900",
         "votes": 72546
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.958,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0103038",
     "target": "nm0189200",
     "weight": 18,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 18,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2006,
+    "year_max": 2011,
     "first_worked_together": 2006,
     "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 5,
+    "shared_votes_max": 134718,
     "genres": [
-      "Action",
-      "Adventure",
+      "Comedy",
       "Drama",
-      "Comedy"
+      "Action",
+      "Adventure"
     ],
     "shared": [
       {
@@ -1793,23 +3290,38 @@
         "tconst": "tt1144815",
         "votes": 694
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.61,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0107748",
     "target": "nm1085951",
     "weight": 13,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2025,
+    "year_min": 2024,
+    "year_max": 2026,
     "first_worked_together": 2024,
     "last_worked_together": 2026,
+    "recency": 0,
+    "reunion_span": 2,
+    "shared_votes_max": 1199,
     "genres": [
-      "Adventure",
       "Comedy",
-      "Fantasy",
       "Crime",
-      "Horror"
+      "Horror",
+      "Adventure",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -1830,17 +3342,33 @@
         "tconst": "tt39066158",
         "votes": 0
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.862,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0107748",
     "target": "nm1137414",
     "weight": 22,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2004,
+    "year_min": 2002,
+    "year_max": 2006,
     "first_worked_together": 2002,
     "last_worked_together": 2006,
+    "recency": 20,
+    "reunion_span": 4,
+    "shared_votes_max": 69949,
     "genres": [
       "Adventure",
       "Comedy",
@@ -1860,24 +3388,195 @@
         "tconst": "tt0452681",
         "votes": 46817
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.655,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.8
+  },
+  {
+    "source": "nm0122466",
+    "target": "nm0635851",
+    "weight": 14,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 14,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 1992,
+    "year_min": 1991,
+    "year_max": 1993,
+    "first_worked_together": 1991,
+    "last_worked_together": 1993,
+    "recency": 33,
+    "reunion_span": 2,
+    "shared_votes_max": 1405,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Family"
+    ],
+    "shared": [
+      {
+        "title": "The Torkelsons",
+        "year": 1991,
+        "tconst": "tt0101223",
+        "votes": 1405
+      },
+      {
+        "title": "Almost Home",
+        "year": 1993,
+        "tconst": "tt0105939",
+        "votes": 530
+      },
+      {
+        "title": "The Fox and the Hound",
+        "year": 1993,
+        "tconst": "tt0510437",
+        "votes": 29
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.469,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0184085",
+    "target": "nm0184102",
+    "weight": 38,
+    "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 38,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 1992,
+    "year_min": 1990,
+    "year_max": 1995,
+    "first_worked_together": 1990,
+    "last_worked_together": 1995,
+    "recency": 31,
+    "reunion_span": 5,
+    "shared_votes_max": 176708,
+    "genres": [
+      "Biography",
+      "Horror",
+      "Mystery",
+      "Action",
+      "Comedy",
+      "Crime",
+      "Family",
+      "Thriller"
+    ],
+    "shared": [
+      {
+        "title": "Kindergarten Cop",
+        "year": 1990,
+        "tconst": "tt0099938",
+        "votes": 176708
+      },
+      {
+        "title": "Critters 3",
+        "year": 1991,
+        "tconst": "tt0101627",
+        "votes": 14476
+      },
+      {
+        "title": "Twin Sitters",
+        "year": 1995,
+        "tconst": "tt0122768",
+        "votes": 4983
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.455,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
+  },
+  {
+    "source": "nm0192505",
+    "target": "nm0352374",
+    "weight": 13,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2005,
+    "year_min": 2005,
+    "year_max": 2005,
+    "first_worked_together": 2005,
+    "last_worked_together": 2005,
+    "recency": 21,
+    "reunion_span": 0,
+    "shared_votes_max": 1219,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Bratz: Passion 4 Fashion - Diamondz",
+        "year": 2006,
+        "tconst": "tt0417503",
+        "votes": 3468
+      },
+      {
+        "title": "Bratz",
+        "year": 2005,
+        "tconst": "tt0471990",
+        "votes": 1219
+      },
+      {
+        "title": "Bratz Rock Angelz",
+        "year": 2005,
+        "tconst": "tt0492571",
+        "votes": 585
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.735,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0201660",
     "target": "nm0427934",
     "weight": 21,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 21,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1942,
+    "year_min": 1938,
+    "year_max": 1949,
     "first_worked_together": 1938,
     "last_worked_together": 1949,
+    "recency": 77,
+    "reunion_span": 11,
+    "shared_votes_max": 173534,
     "genres": [
       "Drama",
-      "Music",
       "Western",
       "Adventure",
       "Animation",
-      "Comedy"
+      "Comedy",
+      "Music"
     ],
     "shared": [
       {
@@ -1898,17 +3597,32 @@
         "tconst": "tt0030978",
         "votes": 63
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.463,
+    "same_era": true,
+    "age_gap": 10,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0215281",
     "target": "nm0932454",
     "weight": 15,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 15,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 2008,
+    "year_max": 2008,
     "first_worked_together": 2008,
     "last_worked_together": 2008,
+    "recency": 18,
+    "reunion_span": 0,
+    "shared_votes_max": 8255,
     "genres": [
       "Drama",
       "Horror",
@@ -1928,17 +3642,32 @@
         "tconst": "tt1210120",
         "votes": 611
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.897,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0266824",
     "target": "nm2740002",
     "weight": 19,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2014,
+    "year_min": 2013,
+    "year_max": 2014,
     "first_worked_together": 2013,
     "last_worked_together": 2014,
+    "recency": 12,
+    "reunion_span": 1,
+    "shared_votes_max": 16888,
     "genres": [
       "Drama",
       "Romance",
@@ -1958,25 +3687,40 @@
         "tconst": "tt1706598",
         "votes": 10321
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.417,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0290075",
     "target": "nm0319308",
     "weight": 36,
     "shared_count": 6,
+    "collab_count": 6,
+    "collab_strength": 36,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 1999,
+    "year_max": 2020,
     "first_worked_together": 1999,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 21,
     "reunion": true,
     "reunion_gap": 21,
+    "shared_votes_max": 1260,
     "genres": [
+      "Action",
       "Adventure",
       "Animation",
-      "Comedy",
-      "Action",
       "Sport",
+      "Comedy",
       "Family",
       "Drama",
       "Fantasy"
@@ -2000,22 +3744,88 @@
         "tconst": "tt1674117",
         "votes": 1260
       }
-    ]
+    ],
+    "loyalty_ab": 0.162,
+    "loyalty_ba": 0.081,
+    "tenure_overlap": 0.621,
+    "same_era": true,
+    "age_gap": 21,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0290075",
+    "target": "nm0508877",
+    "weight": 11,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 11,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2014,
+    "year_min": 2007,
+    "year_max": 2020,
+    "first_worked_together": 2007,
+    "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 13,
+    "shared_votes_max": 640,
+    "genres": [
+      "Animation",
+      "Family",
+      "Adventure",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "A Canterlot Wedding - Part 2",
+        "year": 2012,
+        "tconst": "tt2303845",
+        "votes": 1386
+      },
+      {
+        "title": "Twilight's Kingdom - Part 2",
+        "year": 2014,
+        "tconst": "tt3088332",
+        "votes": 1229
+      },
+      {
+        "title": "A Canterlot Wedding - Part 1",
+        "year": 2012,
+        "tconst": "tt2303843",
+        "votes": 1169
+      }
+    ],
+    "loyalty_ab": 0.054,
+    "loyalty_ba": 0.04,
+    "tenure_overlap": 0.865,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0290075",
     "target": "nm0841448",
     "weight": 23,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 23,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2004,
+    "year_min": 2002,
+    "year_max": 2006,
     "first_worked_together": 2002,
     "last_worked_together": 2006,
+    "recency": 20,
+    "reunion_span": 4,
+    "shared_votes_max": 1087,
     "genres": [
-      "Adventure",
+      "Action",
       "Animation",
       "Fantasy",
-      "Action",
+      "Adventure",
       "Comedy"
     ],
     "shared": [
@@ -2037,26 +3847,93 @@
         "tconst": "tt1687093",
         "votes": 349
       }
-    ]
+    ],
+    "loyalty_ab": 0.108,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.66,
+    "same_era": true,
+    "age_gap": 9,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0290075",
+    "target": "nm0865064",
+    "weight": 62,
+    "shared_count": 10,
+    "collab_count": 10,
+    "collab_strength": 62,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2010,
+    "year_min": 2002,
+    "year_max": 2016,
+    "first_worked_together": 2002,
+    "last_worked_together": 2016,
+    "recency": 10,
+    "reunion_span": 14,
+    "shared_votes_max": 11180,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation",
+      "Fantasy",
+      "Crime"
+    ],
+    "shared": [
+      {
+        "title": "Johnny Test",
+        "year": 2005,
+        "tconst": "tt0454349",
+        "votes": 11180
+      },
+      {
+        "title": "Bionicle: Mask of Light",
+        "year": 2003,
+        "tconst": "tt0369281",
+        "votes": 4301
+      },
+      {
+        "title": "Barbie Fairytopia: Magic of the Rainbow",
+        "year": 2007,
+        "tconst": "tt1007920",
+        "votes": 4106
+      }
+    ],
+    "loyalty_ab": 0.27,
+    "loyalty_ba": 0.222,
+    "tenure_overlap": 0.593,
+    "same_era": true,
+    "age_gap": 16,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0290075",
     "target": "nm1027678",
     "weight": 32,
     "shared_count": 6,
+    "collab_count": 6,
+    "collab_strength": 32,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 1989,
+    "year_max": 2022,
     "first_worked_together": 1989,
     "last_worked_together": 2022,
+    "recency": 4,
+    "reunion_span": 33,
     "reunion": true,
     "reunion_gap": 33,
+    "shared_votes_max": 486,
     "genres": [
-      "Action",
-      "Adventure",
       "Animation",
       "Comedy",
       "Drama",
-      "Fantasy"
+      "Action",
+      "Fantasy",
+      "Adventure"
     ],
     "shared": [
       {
@@ -2077,17 +3954,196 @@
         "tconst": "tt4855784",
         "votes": 890
       }
-    ]
+    ],
+    "loyalty_ab": 0.162,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.946,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
+  },
+  {
+    "source": "nm0290075",
+    "target": "nm1275101",
+    "weight": 52,
+    "shared_count": 9,
+    "collab_count": 9,
+    "collab_strength": 52,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2015,
+    "year_min": 2011,
+    "year_max": 2020,
+    "first_worked_together": 2011,
+    "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 9,
+    "shared_votes_max": 3331,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "shared": [
+      {
+        "title": "Slugterra",
+        "year": 2012,
+        "tconst": "tt2548200",
+        "votes": 3331
+      },
+      {
+        "title": "A Canterlot Wedding - Part 1",
+        "year": 2012,
+        "tconst": "tt2303843",
+        "votes": 1169
+      },
+      {
+        "title": "The Crystal Empire - Part 1",
+        "year": 2012,
+        "tconst": "tt2230398",
+        "votes": 1159
+      }
+    ],
+    "loyalty_ab": 0.243,
+    "loyalty_ba": 0.237,
+    "tenure_overlap": 0.73,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0319308",
+    "target": "nm0508877",
+    "weight": 179,
+    "shared_count": 29,
+    "collab_count": 29,
+    "collab_strength": 179,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2015,
+    "year_min": 1997,
+    "year_max": 2025,
+    "first_worked_together": 1997,
+    "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 28,
+    "reunion": true,
+    "reunion_gap": 28,
+    "shared_votes_max": 26289,
+    "genres": [
+      "Action",
+      "Animation",
+      "Family",
+      "Adventure",
+      "Comedy",
+      "Fantasy",
+      "Drama",
+      "Crime"
+    ],
+    "shared": [
+      {
+        "title": "My Little Pony: Friendship Is Magic",
+        "year": 2010,
+        "tconst": "tt1751105",
+        "votes": 26289
+      },
+      {
+        "title": "My Little Pony: Equestria Girls",
+        "year": 2013,
+        "tconst": "tt2908228",
+        "votes": 7088
+      },
+      {
+        "title": "Barbie Fairytopia: Mermaidia",
+        "year": 2006,
+        "tconst": "tt0775425",
+        "votes": 5742
+      }
+    ],
+    "loyalty_ab": 0.392,
+    "loyalty_ba": 0.58,
+    "tenure_overlap": 0.561,
+    "same_era": true,
+    "age_gap": 20,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
+  },
+  {
+    "source": "nm0319308",
+    "target": "nm0571741",
+    "weight": 29,
+    "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 29,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2007,
+    "year_min": 2003,
+    "year_max": 2015,
+    "first_worked_together": 2003,
+    "last_worked_together": 2015,
+    "recency": 11,
+    "reunion_span": 12,
+    "shared_votes_max": 2932,
+    "genres": [
+      "Animation",
+      "Family",
+      "Fantasy",
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "My Little Pony: The Princess Promenade",
+        "year": 2006,
+        "tconst": "tt0490668",
+        "votes": 4830
+      },
+      {
+        "title": "My Little Pony: Equestria Girls - Friendship Games",
+        "year": 2015,
+        "tconst": "tt4450396",
+        "votes": 2932
+      },
+      {
+        "title": "Scary Godmother: Halloween Spooktakular",
+        "year": 2003,
+        "tconst": "tt0330859",
+        "votes": 1594
+      }
+    ],
+    "loyalty_ab": 0.054,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.456,
+    "same_era": true,
+    "age_gap": 27,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0319308",
     "target": "nm0841448",
     "weight": 21,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 21,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2005,
+    "year_min": 2002,
+    "year_max": 2010,
     "first_worked_together": 2002,
     "last_worked_together": 2010,
+    "recency": 16,
+    "reunion_span": 8,
+    "shared_votes_max": 1375,
     "genres": [
       "Action",
       "Adventure",
@@ -2114,22 +4170,91 @@
         "tconst": "tt0398617",
         "votes": 128
       }
-    ]
+    ],
+    "loyalty_ab": 0.054,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.719,
+    "same_era": true,
+    "age_gap": 12,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0319308",
+    "target": "nm0865064",
+    "weight": 116,
+    "shared_count": 18,
+    "collab_count": 18,
+    "collab_strength": 116,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2009,
+    "year_min": 2001,
+    "year_max": 2017,
+    "first_worked_together": 2001,
+    "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 16,
+    "shared_votes_max": 7088,
+    "genres": [
+      "Animation",
+      "Family",
+      "Comedy",
+      "Adventure",
+      "Mystery",
+      "Action",
+      "History"
+    ],
+    "shared": [
+      {
+        "title": "My Little Pony: Equestria Girls",
+        "year": 2013,
+        "tconst": "tt2908228",
+        "votes": 7088
+      },
+      {
+        "title": "Barbie: Fairytopia",
+        "year": 2005,
+        "tconst": "tt0450982",
+        "votes": 6729
+      },
+      {
+        "title": "Barbie Fairytopia: Mermaidia",
+        "year": 2006,
+        "tconst": "tt0775425",
+        "votes": 5742
+      }
+    ],
+    "loyalty_ab": 0.243,
+    "loyalty_ba": 0.4,
+    "tenure_overlap": 0.86,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0319308",
     "target": "nm1027678",
     "weight": 25,
     "shared_count": 5,
+    "collab_count": 5,
+    "collab_strength": 25,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2002,
+    "year_max": 2015,
     "first_worked_together": 2002,
     "last_worked_together": 2015,
+    "recency": 11,
+    "reunion_span": 13,
+    "shared_votes_max": 996,
     "genres": [
       "Animation",
+      "Action",
       "Adventure",
-      "Comedy",
-      "Action"
+      "Comedy"
     ],
     "shared": [
       {
@@ -2150,25 +4275,92 @@
         "tconst": "tt12567058",
         "votes": 430
       }
-    ]
+    ],
+    "loyalty_ab": 0.068,
+    "loyalty_ba": 0.278,
+    "tenure_overlap": 0.614,
+    "same_era": true,
+    "age_gap": 17,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0319308",
+    "target": "nm1275101",
+    "weight": 54,
+    "shared_count": 8,
+    "collab_count": 8,
+    "collab_strength": 54,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2013,
+    "year_min": 2003,
+    "year_max": 2020,
+    "first_worked_together": 2003,
+    "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 17,
+    "shared_votes_max": 26289,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Action",
+      "Family"
+    ],
+    "shared": [
+      {
+        "title": "My Little Pony: Friendship Is Magic",
+        "year": 2010,
+        "tconst": "tt1751105",
+        "votes": 26289
+      },
+      {
+        "title": "Barbie: A Fashion Fairytale",
+        "year": 2010,
+        "tconst": "tt1725929",
+        "votes": 4513
+      },
+      {
+        "title": "Barbie & Her Sisters in a Pony Tale",
+        "year": 2013,
+        "tconst": "tt3321254",
+        "votes": 1908
+      }
+    ],
+    "loyalty_ab": 0.108,
+    "loyalty_ba": 0.211,
+    "tenure_overlap": 0.448,
+    "same_era": true,
+    "age_gap": 24,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0352032",
     "target": "nm0694893",
     "weight": 20,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 20,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2003,
+    "year_min": 1989,
+    "year_max": 2016,
     "first_worked_together": 1989,
     "last_worked_together": 2016,
+    "recency": 10,
+    "reunion_span": 27,
     "reunion": true,
     "reunion_gap": 27,
+    "shared_votes_max": 4367,
     "genres": [
       "Comedy",
       "Drama",
-      "Fantasy",
       "Action",
-      "Mystery"
+      "Mystery",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -2189,17 +4381,74 @@
         "tconst": "tt6264438",
         "votes": 171
       }
-    ]
+    ],
+    "loyalty_ab": 0.188,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.97,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0352374",
+    "target": "nm0497522",
+    "weight": 20,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 20,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 1996,
+    "year_min": 1995,
+    "year_max": 1996,
+    "first_worked_together": 1995,
+    "last_worked_together": 1996,
+    "recency": 30,
+    "reunion_span": 1,
+    "shared_votes_max": 26370,
+    "genres": [
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "The Brady Bunch Movie",
+        "year": 1995,
+        "tconst": "tt0112572",
+        "votes": 26370
+      },
+      {
+        "title": "A Very Brady Sequel",
+        "year": 1996,
+        "tconst": "tt0118073",
+        "votes": 12678
+      }
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.931,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.333
   },
   {
     "source": "nm0356017",
     "target": "nm0424060",
     "weight": 27,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 27,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2006,
+    "year_max": 2008,
     "first_worked_together": 2006,
     "last_worked_together": 2008,
+    "recency": 18,
+    "reunion_span": 2,
+    "shared_votes_max": 1601812,
     "genres": [
       "Drama",
       "Mystery",
@@ -2220,24 +4469,39 @@
         "tconst": "tt0497465",
         "votes": 281489
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.912,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0410622",
     "target": "nm0799706",
     "weight": 26,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 26,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 2002,
+    "year_max": 2014,
     "first_worked_together": 2002,
     "last_worked_together": 2014,
+    "recency": 12,
+    "reunion_span": 12,
+    "shared_votes_max": 12677,
     "genres": [
       "Action",
       "Horror",
       "Thriller",
-      "Drama",
+      "Fantasy",
       "Sci-Fi",
-      "Fantasy"
+      "Drama"
     ],
     "shared": [
       {
@@ -2258,21 +4522,36 @@
         "tconst": "tt0923824",
         "votes": 2372
       }
-    ]
+    ],
+    "loyalty_ab": 0.6,
+    "loyalty_ba": 0.6,
+    "tenure_overlap": 0.703,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.857
   },
   {
     "source": "nm0410622",
     "target": "nm1536605",
     "weight": 19,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2000,
+    "year_max": 2013,
     "first_worked_together": 2000,
     "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 13,
+    "shared_votes_max": 57997,
     "genres": [
+      "Horror",
       "Drama",
-      "Fantasy",
-      "Horror"
+      "Fantasy"
     ],
     "shared": [
       {
@@ -2293,17 +4572,32 @@
         "tconst": "tt2181432",
         "votes": 304
       }
-    ]
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 0.167,
+    "tenure_overlap": 0.838,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0416596",
     "target": "nm1497548",
     "weight": 18,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 18,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 2005,
+    "year_max": 2010,
     "first_worked_together": 2005,
     "last_worked_together": 2010,
+    "recency": 16,
+    "reunion_span": 5,
+    "shared_votes_max": 122974,
     "genres": [
       "Horror",
       "Drama"
@@ -2321,17 +4615,32 @@
         "tconst": "tt1447480",
         "votes": 419
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.739,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0424060",
     "target": "nm0513281",
     "weight": 19,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 1998,
+    "year_min": 1997,
+    "year_max": 1999,
     "first_worked_together": 1997,
     "last_worked_together": 1999,
+    "recency": 27,
+    "reunion_span": 2,
+    "shared_votes_max": 138875,
     "genres": [
       "Action",
       "Comedy",
@@ -2352,22 +4661,37 @@
         "tconst": "tt0165396",
         "votes": 1679
       }
-    ]
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.387,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0424060",
     "target": "nm0532683",
     "weight": 21,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2006,
+    "year_min": 2004,
+    "year_max": 2008,
     "first_worked_together": 2004,
     "last_worked_together": 2008,
+    "recency": 18,
+    "reunion_span": 4,
+    "shared_votes_max": 64386,
     "genres": [
+      "Drama",
       "Action",
       "Crime",
-      "Fantasy",
-      "Drama"
+      "Fantasy"
     ],
     "shared": [
       {
@@ -2382,17 +4706,132 @@
         "tconst": "tt0369672",
         "votes": 28239
       }
-    ]
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.37,
+    "same_era": true,
+    "age_gap": 12,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0424534",
+    "target": "nm0492620",
+    "weight": 20,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 20,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 1999,
+    "year_min": 1997,
+    "year_max": 2001,
+    "first_worked_together": 1997,
+    "last_worked_together": 2001,
+    "recency": 25,
+    "reunion_span": 4,
+    "shared_votes_max": 30703,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Recess",
+        "year": 1997,
+        "tconst": "tt0126170",
+        "votes": 30703
+      },
+      {
+        "title": "Recess: School's Out",
+        "year": 2001,
+        "tconst": "tt0265632",
+        "votes": 12612
+      },
+      {
+        "title": "Recess: All Growed Down",
+        "year": 2003,
+        "tconst": "tt0382936",
+        "votes": 1067
+      }
+    ],
+    "loyalty_ab": 0.143,
+    "loyalty_ba": 0.074,
+    "tenure_overlap": 0.732,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0424534",
+    "target": "nm0574882",
+    "weight": 20,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 20,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 1999,
+    "year_min": 1997,
+    "year_max": 2001,
+    "first_worked_together": 1997,
+    "last_worked_together": 2001,
+    "recency": 25,
+    "reunion_span": 4,
+    "shared_votes_max": 30703,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Recess",
+        "year": 1997,
+        "tconst": "tt0126170",
+        "votes": 30703
+      },
+      {
+        "title": "Recess: School's Out",
+        "year": 2001,
+        "tconst": "tt0265632",
+        "votes": 12612
+      },
+      {
+        "title": "Recess: Taking the Fifth Grade",
+        "year": 2003,
+        "tconst": "tt0382937",
+        "votes": 2560
+      }
+    ],
+    "loyalty_ab": 0.143,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.195,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0424534",
     "target": "nm1154161",
     "weight": 35,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 35,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2021,
+    "year_min": 2015,
+    "year_max": 2025,
     "first_worked_together": 2015,
     "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 10,
+    "shared_votes_max": 55960,
     "genres": [
       "Adventure",
       "Fantasy",
@@ -2418,19 +4857,80 @@
         "tconst": "tt6298000",
         "votes": 54057
       }
-    ]
+    ],
+    "loyalty_ab": 0.286,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.805,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
+  },
+  {
+    "source": "nm0447240",
+    "target": "nm0451148",
+    "weight": 18,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 18,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 1995,
+    "year_min": 1993,
+    "year_max": 1996,
+    "first_worked_together": 1993,
+    "last_worked_together": 1996,
+    "recency": 30,
+    "reunion_span": 3,
+    "shared_votes_max": 9306,
+    "genres": [
+      "Action",
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "shared": [
+      {
+        "title": "Raja Hindustani",
+        "year": 1996,
+        "tconst": "tt0117437",
+        "votes": 9306
+      },
+      {
+        "title": "Hum Hain Rahi Pyar Ke",
+        "year": 1993,
+        "tconst": "tt0107166",
+        "votes": 6782
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.4,
+    "tenure_overlap": 0.615,
+    "same_era": true,
+    "age_gap": 18,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0451148",
     "target": "nm0756378",
     "weight": 33,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 33,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2004,
+    "year_min": 1990,
+    "year_max": 2014,
     "first_worked_together": 1990,
     "last_worked_together": 2014,
+    "recency": 12,
+    "reunion_span": 24,
     "reunion": true,
     "reunion_gap": 24,
+    "shared_votes_max": 485813,
     "genres": [
       "Comedy",
       "Drama",
@@ -2457,28 +4957,43 @@
         "tconst": "tt0154183",
         "votes": 1291
       }
-    ]
+    ],
+    "loyalty_ab": 0.6,
+    "loyalty_ba": 0.231,
+    "tenure_overlap": 0.613,
+    "same_era": true,
+    "age_gap": 21,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0465160",
     "target": "nm0840720",
     "weight": 72,
     "shared_count": 9,
+    "collab_count": 9,
+    "collab_strength": 72,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2010,
+    "year_min": 1983,
+    "year_max": 2025,
     "first_worked_together": 1983,
     "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 42,
     "reunion": true,
     "reunion_gap": 42,
+    "shared_votes_max": 101994,
     "genres": [
       "Animation",
       "Drama",
       "Family",
+      "Adventure",
       "Comedy",
-      "Romance",
       "Action",
       "Fantasy",
-      "Adventure"
+      "Romance"
     ],
     "shared": [
       {
@@ -2499,17 +5014,32 @@
         "tconst": "tt4917066",
         "votes": 10501
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.692,
+    "tenure_overlap": 0.977,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0465160",
     "target": "nm0997115",
     "weight": 21,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 21,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2017,
+    "year_min": 2012,
+    "year_max": 2023,
     "first_worked_together": 2012,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 11,
+    "shared_votes_max": 1322,
     "genres": [
       "Action",
       "Animation",
@@ -2536,17 +5066,32 @@
         "tconst": "tt28100780",
         "votes": 783
       }
-    ]
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 0.6,
+    "tenure_overlap": 0.744,
+    "same_era": true,
+    "age_gap": 15,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0465160",
     "target": "nm1063287",
     "weight": 12,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 12,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2003,
+    "year_max": 2020,
     "first_worked_together": 2003,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 17,
+    "shared_votes_max": 664,
     "genres": [
       "Animation",
       "Drama",
@@ -2573,24 +5118,39 @@
         "tconst": "tt10595698",
         "votes": 2734
       }
-    ]
+    ],
+    "loyalty_ab": 0.111,
+    "loyalty_ba": 0.4,
+    "tenure_overlap": 0.709,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0465160",
     "target": "nm2171329",
     "weight": 23,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 23,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2015,
+    "year_min": 2007,
+    "year_max": 2020,
     "first_worked_together": 2007,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 13,
+    "shared_votes_max": 2230,
     "genres": [
       "Animation",
       "Drama",
       "Horror",
-      "Music",
       "Comedy",
-      "Action"
+      "Action",
+      "Music"
     ],
     "shared": [
       {
@@ -2611,17 +5171,32 @@
         "tconst": "tt9885888",
         "votes": 298
       }
-    ]
+    ],
+    "loyalty_ab": 0.222,
+    "loyalty_ba": 0.108,
+    "tenure_overlap": 0.674,
+    "same_era": true,
+    "age_gap": 12,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0470941",
     "target": "nm1388927",
     "weight": 36,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 36,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2007,
+    "year_max": 2021,
     "first_worked_together": 2007,
     "last_worked_together": 2021,
+    "recency": 5,
+    "reunion_span": 14,
+    "shared_votes_max": 50437,
     "genres": [
       "Adventure",
       "Comedy",
@@ -2648,17 +5223,33 @@
         "tconst": "tt1286124",
         "votes": 4776
       }
-    ]
+    ],
+    "loyalty_ab": 0.444,
+    "loyalty_ba": 0.267,
+    "tenure_overlap": 0.63,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0470941",
     "target": "nm1390614",
     "weight": 27,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 27,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2007,
+    "year_max": 2011,
     "first_worked_together": 2007,
     "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 4,
+    "shared_votes_max": 50437,
     "genres": [
       "Adventure",
       "Comedy",
@@ -2684,17 +5275,33 @@
         "tconst": "tt1857596",
         "votes": 2042
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.3,
+    "tenure_overlap": 0.696,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0470941",
     "target": "nm2470538",
     "weight": 18,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 18,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2007,
+    "year_max": 2011,
     "first_worked_together": 2007,
     "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 4,
+    "shared_votes_max": 50437,
     "genres": [
       "Comedy",
       "Family",
@@ -2719,17 +5326,33 @@
         "tconst": "tt2495724",
         "votes": 1237
       }
-    ]
+    ],
+    "loyalty_ab": 0.222,
+    "loyalty_ba": 0.286,
+    "tenure_overlap": 0.435,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0473873",
     "target": "nm1309787",
     "weight": 12,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 12,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 2007,
+    "year_max": 2009,
     "first_worked_together": 2007,
     "last_worked_together": 2009,
+    "recency": 17,
+    "reunion_span": 2,
+    "shared_votes_max": 354,
     "genres": [
       "Action",
       "Animation",
@@ -2755,17 +5378,32 @@
         "tconst": "tt7382382",
         "votes": 277
       }
-    ]
+    ],
+    "loyalty_ab": 0.1,
+    "loyalty_ba": 0.154,
+    "tenure_overlap": 0.879,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0473873",
     "target": "nm2299231",
     "weight": 18,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 18,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2016,
+    "year_min": 2014,
+    "year_max": 2018,
     "first_worked_together": 2014,
     "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 4,
+    "shared_votes_max": 2600,
     "genres": [
       "Adventure",
       "Animation",
@@ -2792,27 +5430,42 @@
         "tconst": "tt7229940",
         "votes": 107
       }
-    ]
+    ],
+    "loyalty_ab": 0.15,
+    "loyalty_ba": 0.143,
+    "tenure_overlap": 0.824,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0473873",
     "target": "nm2583829",
     "weight": 45,
     "shared_count": 6,
+    "collab_count": 6,
+    "collab_strength": 45,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2014,
+    "year_min": 1992,
+    "year_max": 2021,
     "first_worked_together": 1992,
     "last_worked_together": 2021,
+    "recency": 5,
+    "reunion_span": 29,
     "reunion": true,
     "reunion_gap": 29,
+    "shared_votes_max": 36531,
     "genres": [
       "Animation",
       "Family",
       "Sport",
       "Action",
+      "Adventure",
       "Sci-Fi",
-      "Drama",
-      "Adventure"
+      "Drama"
     ],
     "shared": [
       {
@@ -2833,24 +5486,39 @@
         "tconst": "tt4727692",
         "votes": 2008
       }
-    ]
+    ],
+    "loyalty_ab": 0.3,
+    "loyalty_ba": 0.429,
+    "tenure_overlap": 0.971,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0473873",
     "target": "nm3470960",
     "weight": 33,
     "shared_count": 5,
+    "collab_count": 5,
+    "collab_strength": 33,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2007,
+    "year_max": 2011,
     "first_worked_together": 2007,
     "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 4,
+    "shared_votes_max": 1910,
     "genres": [
+      "Action",
+      "Adventure",
       "Animation",
       "Comedy",
       "Fantasy",
-      "Action",
-      "Drama",
-      "Adventure"
+      "Drama"
     ],
     "shared": [
       {
@@ -2871,17 +5539,32 @@
         "tconst": "tt1690400",
         "votes": 940
       }
-    ]
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 0.172,
+    "tenure_overlap": 0.879,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0473873",
     "target": "nm4515899",
     "weight": 12,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 12,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2020,
+    "year_min": 2016,
+    "year_max": 2023,
     "first_worked_together": 2016,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 7,
+    "shared_votes_max": 884,
     "genres": [
       "Action",
       "Adventure",
@@ -2906,17 +5589,32 @@
         "tconst": "tt15011420",
         "votes": 182
       }
-    ]
+    ],
+    "loyalty_ab": 0.1,
+    "loyalty_ba": 0.053,
+    "tenure_overlap": 0.853,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0475752",
     "target": "nm1126340",
     "weight": 25,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 25,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2011,
+    "year_min": 2005,
+    "year_max": 2013,
     "first_worked_together": 2005,
     "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 8,
+    "shared_votes_max": 2887,
     "genres": [
       "Action",
       "Drama",
@@ -2943,21 +5641,505 @@
         "tconst": "tt1988184",
         "votes": 330
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.4,
+    "tenure_overlap": 0.833,
+    "same_era": true,
+    "age_gap": 9,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0492620",
+    "target": "nm0492932",
+    "weight": 66,
+    "shared_count": 10,
+    "collab_count": 10,
+    "collab_strength": 66,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2012,
+    "year_min": 1995,
+    "year_max": 2024,
+    "first_worked_together": 1995,
+    "last_worked_together": 2024,
+    "recency": 2,
+    "reunion_span": 29,
+    "reunion": true,
+    "reunion_gap": 29,
+    "shared_votes_max": 6122,
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Drama",
+      "Thriller",
+      "Romance",
+      "Western",
+      "Family",
+      "Action"
+    ],
+    "shared": [
+      {
+        "title": "Money Plane",
+        "year": 2020,
+        "tconst": "tt7286966",
+        "votes": 6122
+      },
+      {
+        "title": "Jumping Ship",
+        "year": 2001,
+        "tconst": "tt0271172",
+        "votes": 2319
+      },
+      {
+        "title": "Brotherly Love",
+        "year": 1995,
+        "tconst": "tt0111901",
+        "votes": 1953
+      }
+    ],
+    "loyalty_ab": 0.37,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.698,
+    "same_era": true,
+    "age_gap": 8,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
+  },
+  {
+    "source": "nm0492620",
+    "target": "nm0547349",
+    "weight": 17,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 17,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 1999,
+    "year_min": 1998,
+    "year_max": 2000,
+    "first_worked_together": 1998,
+    "last_worked_together": 2000,
+    "recency": 26,
+    "reunion_span": 2,
+    "shared_votes_max": 44751,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Family"
+    ],
+    "shared": [
+      {
+        "title": "Jack Frost",
+        "year": 1998,
+        "tconst": "tt0141109",
+        "votes": 44751
+      },
+      {
+        "title": "Tucker",
+        "year": 2000,
+        "tconst": "tt0247141",
+        "votes": 445
+      },
+      {
+        "title": "Seth Green with Envy",
+        "year": 2000,
+        "tconst": "tt0734103",
+        "votes": 20
+      }
+    ],
+    "loyalty_ab": 0.074,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.267,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0492620",
+    "target": "nm0574882",
+    "weight": 20,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 20,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 1999,
+    "year_min": 1997,
+    "year_max": 2001,
+    "first_worked_together": 1997,
+    "last_worked_together": 2001,
+    "recency": 25,
+    "reunion_span": 4,
+    "shared_votes_max": 30703,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Recess",
+        "year": 1997,
+        "tconst": "tt0126170",
+        "votes": 30703
+      },
+      {
+        "title": "Recess: School's Out",
+        "year": 2001,
+        "tconst": "tt0265632",
+        "votes": 12612
+      },
+      {
+        "title": "Recess: All Growed Down",
+        "year": 2003,
+        "tconst": "tt0382936",
+        "votes": 1067
+      }
+    ],
+    "loyalty_ab": 0.074,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.226,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0508877",
+    "target": "nm0571741",
+    "weight": 39,
+    "shared_count": 7,
+    "collab_count": 7,
+    "collab_strength": 39,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2013,
+    "year_min": 2009,
+    "year_max": 2019,
+    "first_worked_together": 2009,
+    "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 10,
+    "shared_votes_max": 2932,
+    "genres": [
+      "Animation",
+      "Family",
+      "Adventure",
+      "Comedy",
+      "Fantasy"
+    ],
+    "shared": [
+      {
+        "title": "My Little Pony: The Princess Promenade",
+        "year": 2006,
+        "tconst": "tt0490668",
+        "votes": 4830
+      },
+      {
+        "title": "My Little Pony: Equestria Girls - Friendship Games",
+        "year": 2015,
+        "tconst": "tt4450396",
+        "votes": 2932
+      },
+      {
+        "title": "A Canterlot Wedding - Part 2",
+        "year": 2012,
+        "tconst": "tt2303845",
+        "votes": 1386
+      }
+    ],
+    "loyalty_ab": 0.14,
+    "loyalty_ba": 0.438,
+    "tenure_overlap": 0.812,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0508877",
+    "target": "nm0865064",
+    "weight": 26,
+    "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 26,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2011,
+    "year_min": 2000,
+    "year_max": 2017,
+    "first_worked_together": 2000,
+    "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 17,
+    "shared_votes_max": 7088,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Family"
+    ],
+    "shared": [
+      {
+        "title": "My Little Pony: Equestria Girls",
+        "year": 2013,
+        "tconst": "tt2908228",
+        "votes": 7088
+      },
+      {
+        "title": "Barbie Fairytopia: Mermaidia",
+        "year": 2006,
+        "tconst": "tt0775425",
+        "votes": 5742
+      },
+      {
+        "title": "Friendship Is Magic - Part 2 (Elements of Harmony)",
+        "year": 2010,
+        "tconst": "tt1758314",
+        "votes": 1245
+      }
+    ],
+    "loyalty_ab": 0.08,
+    "loyalty_ba": 0.089,
+    "tenure_overlap": 0.528,
+    "same_era": true,
+    "age_gap": 15,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0508877",
+    "target": "nm1275101",
+    "weight": 50,
+    "shared_count": 8,
+    "collab_count": 8,
+    "collab_strength": 50,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2015,
+    "year_min": 2009,
+    "year_max": 2023,
+    "first_worked_together": 2009,
+    "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 14,
+    "shared_votes_max": 26289,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Family"
+    ],
+    "shared": [
+      {
+        "title": "My Little Pony: Friendship Is Magic",
+        "year": 2010,
+        "tconst": "tt1751105",
+        "votes": 26289
+      },
+      {
+        "title": "Party of One",
+        "year": 2011,
+        "tconst": "tt1880664",
+        "votes": 1260
+      },
+      {
+        "title": "Friendship Is Magic - Part 2 (Elements of Harmony)",
+        "year": 2010,
+        "tconst": "tt1758314",
+        "votes": 1245
+      }
+    ],
+    "loyalty_ab": 0.16,
+    "loyalty_ba": 0.211,
+    "tenure_overlap": 0.788,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0570860",
+    "target": "nm4835867",
+    "weight": 29,
+    "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 29,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2018,
+    "year_min": 2017,
+    "year_max": 2019,
+    "first_worked_together": 2017,
+    "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 2,
+    "shared_votes_max": 23592,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance",
+      "Family"
+    ],
+    "shared": [
+      {
+        "title": "A Christmas Prince",
+        "year": 2017,
+        "tconst": "tt7608418",
+        "votes": 23592
+      },
+      {
+        "title": "A Christmas Prince: The Royal Wedding",
+        "year": 2018,
+        "tconst": "tt8709036",
+        "votes": 13004
+      },
+      {
+        "title": "A Christmas Prince: The Royal Baby",
+        "year": 2019,
+        "tconst": "tt10006006",
+        "votes": 8849
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.222,
+    "same_era": true,
+    "age_gap": 16,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0571741",
+    "target": "nm1275101",
+    "weight": 18,
+    "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 18,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2007,
+    "year_min": 2003,
+    "year_max": 2009,
+    "first_worked_together": 2003,
+    "last_worked_together": 2009,
+    "recency": 17,
+    "reunion_span": 6,
+    "shared_votes_max": 707,
+    "genres": [
+      "Animation",
+      "Family",
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "The Crystal Empire - Part 1",
+        "year": 2012,
+        "tconst": "tt2230398",
+        "votes": 1159
+      },
+      {
+        "title": "Strawberry Shortcake's Berry Bitty Adventures",
+        "year": 2009,
+        "tconst": "tt1815377",
+        "votes": 707
+      },
+      {
+        "title": "Sabrina's Secret Life",
+        "year": 2003,
+        "tconst": "tt0386975",
+        "votes": 647
+      }
+    ],
+    "loyalty_ab": 0.188,
+    "loyalty_ba": 0.079,
+    "tenure_overlap": 0.893,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0571741",
+    "target": "nm1536605",
+    "weight": 13,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2012,
+    "year_min": 2005,
+    "year_max": 2018,
+    "first_worked_together": 2005,
+    "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 13,
+    "shared_votes_max": 907,
+    "genres": [
+      "Crime",
+      "Horror",
+      "Thriller",
+      "Adventure",
+      "Animation",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Daddy's Girl",
+        "year": 2018,
+        "tconst": "tt1662546",
+        "votes": 907
+      },
+      {
+        "title": "Trollz",
+        "year": 2005,
+        "tconst": "tt0482436",
+        "votes": 537
+      },
+      {
+        "title": "Onyx's Gem",
+        "year": 2005,
+        "tconst": "tt1931237",
+        "votes": 7
+      }
+    ],
+    "loyalty_ab": 0.125,
+    "loyalty_ba": 0.167,
+    "tenure_overlap": 0.839,
+    "same_era": true,
+    "age_gap": 8,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.857
   },
   {
     "source": "nm0581365",
     "target": "nm1536605",
     "weight": 20,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 20,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 2006,
+    "year_max": 2009,
     "first_worked_together": 2006,
     "last_worked_together": 2009,
+    "recency": 17,
+    "reunion_span": 3,
+    "shared_votes_max": 186128,
     "genres": [
-      "Comedy",
       "Horror",
-      "Thriller"
+      "Thriller",
+      "Comedy"
     ],
     "shared": [
       {
@@ -2972,17 +6154,32 @@
         "tconst": "tt1222329",
         "votes": 2104
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.167,
+    "tenure_overlap": 0.938,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0694893",
     "target": "nm0897201",
     "weight": 30,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 30,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2018,
+    "year_min": 2015,
+    "year_max": 2023,
     "first_worked_together": 2015,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 8,
+    "shared_votes_max": 41430,
     "genres": [
       "Action",
       "Crime",
@@ -3010,17 +6207,32 @@
         "tconst": "tt3803860",
         "votes": 11420
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.597,
+    "same_era": true,
+    "age_gap": 18,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0705356",
     "target": "nm0914612",
     "weight": 109,
     "shared_count": 8,
+    "collab_count": 8,
+    "collab_strength": 109,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2006,
+    "year_min": 2001,
+    "year_max": 2011,
     "first_worked_together": 2001,
     "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 10,
+    "shared_votes_max": 1053201,
     "genres": [
       "Adventure",
       "Family",
@@ -3045,17 +6257,83 @@
         "tconst": "tt0304141",
         "votes": 771765
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.667,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75,
+    "directorial_glue": true
+  },
+  {
+    "source": "nm0732436",
+    "target": "nm1154161",
+    "weight": 24,
+    "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 24,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2016,
+    "year_min": 2012,
+    "year_max": 2023,
+    "first_worked_together": 2012,
+    "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 11,
+    "shared_votes_max": 9458,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation"
+    ],
+    "shared": [
+      {
+        "title": "Avengers Assemble",
+        "year": 2012,
+        "tconst": "tt2455546",
+        "votes": 9458
+      },
+      {
+        "title": "Lego Marvel Super Heroes: Maximum Overload",
+        "year": 2013,
+        "tconst": "tt3322904",
+        "votes": 1865
+      },
+      {
+        "title": "Lego Marvel Avengers: Code Red",
+        "year": 2023,
+        "tconst": "tt28477867",
+        "votes": 1371
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.775,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0754512",
     "target": "nm0891786",
     "weight": 45,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 45,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2004,
+    "year_min": 2001,
+    "year_max": 2011,
     "first_worked_together": 2001,
     "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 10,
+    "shared_votes_max": 136676,
     "genres": [
       "Action",
       "Adventure",
@@ -3080,17 +6358,84 @@
         "tconst": "tt0338459",
         "votes": 71770
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.667,
+    "tenure_overlap": 0.633,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0756378",
+    "target": "nm0802183",
+    "weight": 26,
+    "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 26,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 1976,
+    "year_min": 1970,
+    "year_max": 1979,
+    "first_worked_together": 1970,
+    "last_worked_together": 1979,
+    "recency": 47,
+    "reunion_span": 9,
+    "shared_votes_max": 3179,
+    "genres": [
+      "Drama",
+      "Romance",
+      "Family",
+      "Action",
+      "History"
+    ],
+    "shared": [
+      {
+        "title": "Kaala Patthar",
+        "year": 1979,
+        "tconst": "tt0079386",
+        "votes": 3179
+      },
+      {
+        "title": "Kabhi Kabhie",
+        "year": 1976,
+        "tconst": "tt0074730",
+        "votes": 2730
+      },
+      {
+        "title": "Doosara Aadmi",
+        "year": 1977,
+        "tconst": "tt0301215",
+        "votes": 388
+      }
+    ],
+    "loyalty_ab": 0.308,
+    "loyalty_ba": 0.667,
+    "tenure_overlap": 0.693,
+    "same_era": true,
+    "age_gap": 14,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0799706",
     "target": "nm1536605",
     "weight": 24,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 2006,
+    "year_max": 2010,
     "first_worked_together": 2006,
     "last_worked_together": 2010,
+    "recency": 16,
+    "reunion_span": 4,
+    "shared_votes_max": 210170,
     "genres": [
       "Comedy",
       "Horror",
@@ -3109,17 +6454,32 @@
         "tconst": "tt0414982",
         "votes": 186128
       }
-    ]
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 0.167,
+    "tenure_overlap": 0.676,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm0814259",
     "target": "nm0819850",
     "weight": 40,
     "shared_count": 5,
+    "collab_count": 5,
+    "collab_strength": 40,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 2005,
+    "year_max": 2011,
     "first_worked_together": 2005,
     "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 6,
+    "shared_votes_max": 43248,
     "genres": [
       "Comedy",
       "Family",
@@ -3146,23 +6506,38 @@
         "tconst": "tt1754799",
         "votes": 5315
       }
-    ]
+    ],
+    "loyalty_ab": 0.417,
+    "loyalty_ba": 0.357,
+    "tenure_overlap": 0.818,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0814259",
     "target": "nm0819851",
     "weight": 34,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 34,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 2005,
+    "year_max": 2011,
     "first_worked_together": 2005,
     "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 6,
+    "shared_votes_max": 43248,
     "genres": [
+      "Action",
+      "Adventure",
       "Comedy",
       "Family",
-      "Adventure",
-      "Crime",
-      "Action"
+      "Crime"
     ],
     "shared": [
       {
@@ -3183,25 +6558,40 @@
         "tconst": "tt1754799",
         "votes": 5315
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.308,
+    "tenure_overlap": 0.818,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0819850",
     "target": "nm0819851",
     "weight": 79,
     "shared_count": 9,
+    "collab_count": 9,
+    "collab_strength": 79,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2003,
+    "year_min": 1993,
+    "year_max": 2011,
     "first_worked_together": 1993,
     "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 18,
+    "shared_votes_max": 252817,
     "genres": [
       "Action",
       "Adventure",
       "Comedy",
-      "Family",
-      "Crime",
       "Drama",
-      "Romance"
+      "Romance",
+      "Family",
+      "Crime"
     ],
     "shared": [
       {
@@ -3222,22 +6612,37 @@
         "tconst": "tt1181917",
         "votes": 24124
       }
-    ]
+    ],
+    "loyalty_ab": 0.643,
+    "loyalty_ba": 0.692,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0840720",
     "target": "nm0997115",
     "weight": 13,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2001,
+    "year_max": 2012,
     "first_worked_together": 2001,
     "last_worked_together": 2012,
+    "recency": 14,
+    "reunion_span": 11,
+    "shared_votes_max": 3608,
     "genres": [
-      "Action",
       "Animation",
       "Comedy",
-      "Drama"
+      "Drama",
+      "Action"
     ],
     "shared": [
       {
@@ -3258,17 +6663,32 @@
         "tconst": "tt3096224",
         "votes": 889
       }
-    ]
+    ],
+    "loyalty_ab": 0.154,
+    "loyalty_ba": 0.4,
+    "tenure_overlap": 0.721,
+    "same_era": true,
+    "age_gap": 14,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0840720",
     "target": "nm2171329",
     "weight": 10,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 10,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2010,
+    "year_min": 2007,
+    "year_max": 2012,
     "first_worked_together": 2007,
     "last_worked_together": 2012,
+    "recency": 14,
+    "reunion_span": 5,
+    "shared_votes_max": 201,
     "genres": [
       "Action",
       "Adventure",
@@ -3288,17 +6708,83 @@
         "tconst": "tt1132204",
         "votes": 138
       }
-    ]
+    ],
+    "loyalty_ab": 0.154,
+    "loyalty_ba": 0.054,
+    "tenure_overlap": 0.69,
+    "same_era": true,
+    "age_gap": 11,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0841448",
+    "target": "nm0865064",
+    "weight": 10,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 10,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2004,
+    "year_min": 2002,
+    "year_max": 2006,
+    "first_worked_together": 2002,
+    "last_worked_together": 2006,
+    "recency": 20,
+    "reunion_span": 4,
+    "shared_votes_max": 367,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Fantasy",
+      "Action"
+    ],
+    "shared": [
+      {
+        "title": ".hack//Roots",
+        "year": 2006,
+        "tconst": "tt0807655",
+        "votes": 367
+      },
+      {
+        "title": "Dragon Drive",
+        "year": 2002,
+        "tconst": "tt0960287",
+        "votes": 86
+      },
+      {
+        "title": "Bat Hound and the Robin/Furry Fish",
+        "year": 2005,
+        "tconst": "tt0956858",
+        "votes": 22
+      }
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 0.044,
+    "tenure_overlap": 0.837,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0841448",
     "target": "nm1027678",
     "weight": 10,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 10,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2004,
+    "year_min": 2002,
+    "year_max": 2006,
     "first_worked_together": 2002,
     "last_worked_together": 2006,
+    "recency": 20,
+    "reunion_span": 4,
+    "shared_votes_max": 349,
     "genres": [
       "Action",
       "Adventure",
@@ -3324,17 +6810,136 @@
         "tconst": "tt1302096",
         "votes": 81
       }
-    ]
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 0.111,
+    "tenure_overlap": 0.689,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0865064",
+    "target": "nm1027678",
+    "weight": 16,
+    "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 16,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2016,
+    "year_min": 2013,
+    "year_max": 2021,
+    "first_worked_together": 2013,
+    "last_worked_together": 2021,
+    "recency": 5,
+    "reunion_span": 8,
+    "shared_votes_max": 996,
+    "genres": [
+      "Family",
+      "Action",
+      "Adventure",
+      "Animation",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Supernoobs",
+        "year": 2015,
+        "tconst": "tt4033696",
+        "votes": 996
+      },
+      {
+        "title": "Big Trouble, Little Ninjago",
+        "year": 2018,
+        "tconst": "tt7503576",
+        "votes": 778
+      },
+      {
+        "title": "Public Enemy Number One",
+        "year": 2016,
+        "tconst": "tt4671832",
+        "votes": 732
+      }
+    ],
+    "loyalty_ab": 0.067,
+    "loyalty_ba": 0.167,
+    "tenure_overlap": 0.615,
+    "same_era": true,
+    "age_gap": 12,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0865064",
+    "target": "nm1275101",
+    "weight": 52,
+    "shared_count": 8,
+    "collab_count": 8,
+    "collab_strength": 52,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2015,
+    "year_min": 2012,
+    "year_max": 2016,
+    "first_worked_together": 2012,
+    "last_worked_together": 2016,
+    "recency": 10,
+    "reunion_span": 4,
+    "shared_votes_max": 4761,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Barbie: Princess Charm School",
+        "year": 2011,
+        "tconst": "tt2066832",
+        "votes": 5925
+      },
+      {
+        "title": "Open Season: Scared Silly",
+        "year": 2015,
+        "tconst": "tt4938374",
+        "votes": 4761
+      },
+      {
+        "title": "Slugterra",
+        "year": 2012,
+        "tconst": "tt2548200",
+        "votes": 3331
+      }
+    ],
+    "loyalty_ab": 0.178,
+    "loyalty_ba": 0.211,
+    "tenure_overlap": 0.407,
+    "same_era": true,
+    "age_gap": 19,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0878940",
     "target": "nm0926165",
     "weight": 24,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 24,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2006,
+    "year_min": 2005,
+    "year_max": 2007,
     "first_worked_together": 2005,
     "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 2,
+    "shared_votes_max": 448299,
     "genres": [
       "Action",
       "Adventure",
@@ -3361,17 +6966,33 @@
         "tconst": "tt1204264",
         "votes": 15821
       }
-    ]
+    ],
+    "loyalty_ab": 0.6,
+    "loyalty_ba": 0.6,
+    "tenure_overlap": 0.258,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0878940",
     "target": "nm1402100",
     "weight": 18,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 18,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2006,
+    "year_min": 2005,
+    "year_max": 2007,
     "first_worked_together": 2005,
     "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 2,
+    "shared_votes_max": 448299,
     "genres": [
       "Action",
       "Adventure",
@@ -3398,17 +7019,33 @@
         "tconst": "tt1204264",
         "votes": 15821
       }
-    ]
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.077,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0891786",
     "target": "nm1536605",
     "weight": 13,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2020,
+    "year_min": 2020,
+    "year_max": 2020,
     "first_worked_together": 2020,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 0,
+    "shared_votes_max": 902,
     "genres": [
       "Mystery",
       "Crime"
@@ -3426,17 +7063,32 @@
         "tconst": "tt11686316",
         "votes": 708
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.167,
+    "tenure_overlap": 0.968,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.5
   },
   {
     "source": "nm0926165",
     "target": "nm1402100",
     "weight": 18,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 18,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2006,
+    "year_min": 2005,
+    "year_max": 2007,
     "first_worked_together": 2005,
     "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 2,
+    "shared_votes_max": 448299,
     "genres": [
       "Action",
       "Adventure",
@@ -3463,19 +7115,35 @@
         "tconst": "tt1204264",
         "votes": 15821
       }
-    ]
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.645,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0949069",
     "target": "nm1126340",
     "weight": 23,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 23,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2016,
+    "year_min": 2003,
+    "year_max": 2023,
     "first_worked_together": 2003,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 20,
     "reunion": true,
     "reunion_gap": 20,
+    "shared_votes_max": 228092,
     "genres": [
       "Drama",
       "Action",
@@ -3500,17 +7168,83 @@
         "tconst": "tt24067424",
         "votes": 148
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.3,
+    "tenure_overlap": 0.511,
+    "same_era": true,
+    "age_gap": 23,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm10138913",
+    "target": "nm1242688",
+    "weight": 23,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2024,
+    "year_min": 2023,
+    "year_max": 2025,
+    "first_worked_together": 2023,
+    "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 2,
+    "shared_votes_max": 141182,
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "shared": [
+      {
+        "title": "Five Nights at Freddy's",
+        "year": 2023,
+        "tconst": "tt4589218",
+        "votes": 141182
+      },
+      {
+        "title": "Five Nights at Freddy's 2",
+        "year": 2025,
+        "tconst": "tt30274401",
+        "votes": 43179
+      },
+      {
+        "title": "Five Nights at Freddy's 3",
+        "year": 2027,
+        "tconst": "tt37063243",
+        "votes": 0
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.217,
+    "same_era": true,
+    "age_gap": 21,
+    "cross_generational": true,
+    "edge_genre_jaccard": 0.75,
+    "directorial_glue": true
   },
   {
     "source": "nm1017633",
     "target": "nm1306410",
     "weight": 19,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2016,
+    "year_min": 2014,
+    "year_max": 2017,
     "first_worked_together": 2014,
     "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 3,
+    "shared_votes_max": 15626,
     "genres": [
       "Comedy",
       "Drama",
@@ -3529,17 +7263,82 @@
         "tconst": "tt6277440",
         "votes": 14960
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.667,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm1027678",
+    "target": "nm1275101",
+    "weight": 10,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 10,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2019,
+    "year_min": 2018,
+    "year_max": 2020,
+    "first_worked_together": 2018,
+    "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 2,
+    "shared_votes_max": 333,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation"
+    ],
+    "shared": [
+      {
+        "title": "The Temple of Madness",
+        "year": 2020,
+        "tconst": "tt12059736",
+        "votes": 355
+      },
+      {
+        "title": "Racer Seven",
+        "year": 2020,
+        "tconst": "tt11930212",
+        "votes": 355
+      },
+      {
+        "title": "The Speedway Five-Billion",
+        "year": 2020,
+        "tconst": "tt11930220",
+        "votes": 351
+      }
+    ],
+    "loyalty_ab": 0.111,
+    "loyalty_ba": 0.053,
+    "tenure_overlap": 0.676,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1032473",
     "target": "nm1351987",
     "weight": 27,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 27,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2007,
+    "year_max": 2011,
     "first_worked_together": 2007,
     "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 4,
+    "shared_votes_max": 68532,
     "genres": [
       "Animation",
       "Comedy",
@@ -3566,22 +7365,37 @@
         "tconst": "tt1115563",
         "votes": 1076
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.6,
+    "tenure_overlap": 0.875,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.833
   },
   {
     "source": "nm1063287",
     "target": "nm2299231",
     "weight": 27,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 27,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2014,
+    "year_min": 2012,
+    "year_max": 2016,
     "first_worked_together": 2012,
     "last_worked_together": 2016,
+    "recency": 10,
+    "reunion_span": 4,
+    "shared_votes_max": 58801,
     "genres": [
       "Action",
-      "Adventure",
       "Animation",
-      "Sci-Fi"
+      "Sci-Fi",
+      "Adventure"
     ],
     "shared": [
       {
@@ -3602,17 +7416,32 @@
         "tconst": "tt5895314",
         "votes": 1639
       }
-    ]
+    ],
+    "loyalty_ab": 0.6,
+    "loyalty_ba": 0.143,
+    "tenure_overlap": 0.455,
+    "same_era": true,
+    "age_gap": 16,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1084853",
     "target": "nm1335704",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2023,
+    "year_min": 2021,
+    "year_max": 2024,
     "first_worked_together": 2021,
     "last_worked_together": 2024,
+    "recency": 2,
+    "reunion_span": 3,
+    "shared_votes_max": 100792,
     "genres": [
       "Action",
       "Crime",
@@ -3631,23 +7460,38 @@
         "tconst": "tt16539454",
         "votes": 67666
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.8,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1126340",
     "target": "nm1541331",
     "weight": 20,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 20,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 2006,
+    "year_max": 2010,
     "first_worked_together": 2006,
     "last_worked_together": 2010,
+    "recency": 16,
+    "reunion_span": 4,
+    "shared_votes_max": 118171,
     "genres": [
-      "Mystery",
       "Adventure",
-      "Family",
       "Animation",
-      "Drama"
+      "Drama",
+      "Mystery",
+      "Family"
     ],
     "shared": [
       {
@@ -3668,21 +7512,36 @@
         "tconst": "tt0884210",
         "votes": 69
       }
-    ]
+    ],
+    "loyalty_ab": 0.3,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.8,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1137414",
     "target": "nm1351987",
     "weight": 16,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 16,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2005,
+    "year_min": 2003,
+    "year_max": 2006,
     "first_worked_together": 2003,
     "last_worked_together": 2006,
+    "recency": 20,
+    "reunion_span": 3,
+    "shared_votes_max": 115878,
     "genres": [
-      "Comedy",
+      "Animation",
       "Family",
-      "Animation"
+      "Comedy"
     ],
     "shared": [
       {
@@ -3703,20 +7562,35 @@
         "tconst": "tt0813620",
         "votes": 95
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.4,
+    "tenure_overlap": 0.905,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1161069",
     "target": "nm1659650",
     "weight": 17,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 17,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2005,
+    "year_max": 2009,
     "first_worked_together": 2005,
     "last_worked_together": 2009,
+    "recency": 17,
+    "reunion_span": 4,
+    "shared_votes_max": 209977,
     "genres": [
-      "Drama",
       "Biography",
+      "Drama",
       "Romance"
     ],
     "shared": [
@@ -3732,17 +7606,32 @@
         "tconst": "tt1331298",
         "votes": 152
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.238,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm1185747",
     "target": "nm3160752",
     "weight": 19,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2017,
+    "year_min": 2011,
+    "year_max": 2022,
     "first_worked_together": 2011,
     "last_worked_together": 2022,
+    "recency": 4,
+    "reunion_span": 11,
+    "shared_votes_max": 335696,
     "genres": [
       "Comedy",
       "Drama",
@@ -3767,23 +7656,38 @@
         "tconst": "tt3570280",
         "votes": 5078
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.636,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1309787",
     "target": "nm2171329",
     "weight": 30,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 30,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2017,
+    "year_min": 2011,
+    "year_max": 2025,
     "first_worked_together": 2011,
     "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 14,
+    "shared_votes_max": 16616,
     "genres": [
       "Action",
       "Adventure",
-      "Drama",
       "Animation",
-      "Fantasy"
+      "Fantasy",
+      "Drama"
     ],
     "shared": [
       {
@@ -3804,23 +7708,38 @@
         "tconst": "tt11066364",
         "votes": 1993
       }
-    ]
+    ],
+    "loyalty_ab": 0.308,
+    "loyalty_ba": 0.108,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1309787",
     "target": "nm3470960",
     "weight": 14,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 14,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2018,
+    "year_max": 2019,
     "first_worked_together": 2018,
     "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 1,
+    "shared_votes_max": 30462,
     "genres": [
+      "Action",
+      "Adventure",
       "Animation",
       "Comedy",
-      "Drama",
-      "Action",
-      "Adventure"
+      "Drama"
     ],
     "shared": [
       {
@@ -3841,17 +7760,32 @@
         "tconst": "tt6538162",
         "votes": 14
       }
-    ]
+    ],
+    "loyalty_ab": 0.154,
+    "loyalty_ba": 0.069,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1309787",
     "target": "nm4515899",
     "weight": 19,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 19,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2017,
+    "year_min": 2016,
+    "year_max": 2018,
     "first_worked_together": 2016,
     "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 2,
+    "shared_votes_max": 1350,
     "genres": [
       "Animation",
       "Comedy",
@@ -3878,22 +7812,37 @@
         "tconst": "tt7962652",
         "votes": 1057
       }
-    ]
+    ],
+    "loyalty_ab": 0.231,
+    "loyalty_ba": 0.079,
+    "tenure_overlap": 0.967,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1309787",
     "target": "nm5211370",
     "weight": 15,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 15,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2015,
+    "year_min": 2014,
+    "year_max": 2015,
     "first_worked_together": 2014,
     "last_worked_together": 2015,
+    "recency": 11,
+    "reunion_span": 1,
+    "shared_votes_max": 2730,
     "genres": [
       "Action",
+      "Adventure",
       "Animation",
-      "Comedy",
-      "Adventure"
+      "Comedy"
     ],
     "shared": [
       {
@@ -3914,17 +7863,32 @@
         "tconst": "tt11629136",
         "votes": 3818
       }
-    ]
+    ],
+    "loyalty_ab": 0.154,
+    "loyalty_ba": 0.062,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1339223",
     "target": "nm1364532",
     "weight": 15,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 15,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2014,
+    "year_min": 2012,
+    "year_max": 2015,
     "first_worked_together": 2012,
     "last_worked_together": 2015,
+    "recency": 11,
+    "reunion_span": 3,
+    "shared_votes_max": 2980,
     "genres": [
       "Adventure",
       "Drama",
@@ -3951,17 +7915,83 @@
         "tconst": "tt1773049",
         "votes": 10
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.857,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm1370269",
+    "target": "nm1631269",
+    "weight": 12,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 12,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2007,
+    "year_min": 2007,
+    "year_max": 2007,
+    "first_worked_together": 2007,
+    "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 0,
+    "shared_votes_max": 668,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Family"
+    ],
+    "shared": [
+      {
+        "title": "My Friends Tigger & Pooh",
+        "year": 2007,
+        "tconst": "tt0805905",
+        "votes": 668
+      },
+      {
+        "title": "My Friends Tigger and Pooh - Super Sleuth Christmas Movie",
+        "year": 2007,
+        "tconst": "tt1141984",
+        "votes": 306
+      },
+      {
+        "title": "Tigger & Pooh and a Musical Too",
+        "year": 2009,
+        "tconst": "tt1415904",
+        "votes": 204
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.95,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1388927",
     "target": "nm1390614",
     "weight": 33,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 33,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 2007,
+    "year_max": 2011,
     "first_worked_together": 2007,
     "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 4,
+    "shared_votes_max": 50437,
     "genres": [
       "Adventure",
       "Comedy",
@@ -3987,17 +8017,33 @@
         "tconst": "tt1857596",
         "votes": 2042
       }
-    ]
+    ],
+    "loyalty_ab": 0.267,
+    "loyalty_ba": 0.4,
+    "tenure_overlap": 0.609,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm1388927",
     "target": "nm2470538",
     "weight": 18,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 18,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2007,
+    "year_max": 2011,
     "first_worked_together": 2007,
     "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 4,
+    "shared_votes_max": 50437,
     "genres": [
       "Comedy",
       "Family",
@@ -4022,17 +8068,33 @@
         "tconst": "tt2495724",
         "votes": 1237
       }
-    ]
+    ],
+    "loyalty_ab": 0.133,
+    "loyalty_ba": 0.286,
+    "tenure_overlap": 0.476,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm1388927",
     "target": "nm3220568",
     "weight": 26,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 26,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2010,
+    "year_max": 2013,
     "first_worked_together": 2010,
     "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 3,
+    "shared_votes_max": 636922,
     "genres": [
       "Adventure",
       "Animation",
@@ -4057,23 +8119,38 @@
         "tconst": "tt2129997",
         "votes": 3163
       }
-    ]
+    ],
+    "loyalty_ab": 0.133,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.857,
+    "same_era": true,
+    "age_gap": 10,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm1390614",
     "target": "nm2470538",
     "weight": 26,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 26,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2010,
+    "year_min": 2007,
+    "year_max": 2013,
     "first_worked_together": 2007,
     "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 6,
+    "shared_votes_max": 50437,
     "genres": [
+      "Action",
+      "Adventure",
       "Comedy",
       "Family",
-      "Romance",
-      "Action",
-      "Adventure"
+      "Romance"
     ],
     "shared": [
       {
@@ -4094,23 +8171,39 @@
         "tconst": "tt1857596",
         "votes": 2042
       }
-    ]
+    ],
+    "loyalty_ab": 0.3,
+    "loyalty_ba": 0.429,
+    "tenure_overlap": 0.625,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm1736769",
     "target": "nm2188098",
     "weight": 19,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2011,
+    "year_min": 2009,
+    "year_max": 2012,
     "first_worked_together": 2009,
     "last_worked_together": 2012,
+    "recency": 14,
+    "reunion_span": 3,
+    "shared_votes_max": 543244,
     "genres": [
-      "Adventure",
-      "Animation",
       "Comedy",
       "Drama",
-      "Romance"
+      "Romance",
+      "Adventure",
+      "Animation"
     ],
     "shared": [
       {
@@ -4131,17 +8224,32 @@
         "tconst": "tt1444504",
         "votes": 6252
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.85,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1736769",
     "target": "nm2349726",
     "weight": 20,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 20,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2009,
+    "year_max": 2009,
     "first_worked_together": 2009,
     "last_worked_together": 2009,
+    "recency": 17,
+    "reunion_span": 0,
+    "shared_votes_max": 543244,
     "genres": [
       "Comedy",
       "Family",
@@ -4167,23 +8275,38 @@
         "tconst": "tt1444504",
         "votes": 6252
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.8,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1821102",
     "target": "nm2051265",
     "weight": 13,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2010,
+    "year_min": 2008,
+    "year_max": 2012,
     "first_worked_together": 2008,
     "last_worked_together": 2012,
+    "recency": 14,
+    "reunion_span": 4,
+    "shared_votes_max": 6026,
     "genres": [
+      "Horror",
+      "Thriller",
       "Animation",
       "Comedy",
-      "Family",
-      "Horror",
-      "Thriller"
+      "Family"
     ],
     "shared": [
       {
@@ -4204,23 +8327,38 @@
         "tconst": "tt3902936",
         "votes": 10
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.381,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.833
   },
   {
     "source": "nm1822659",
     "target": "nm1842974",
     "weight": 22,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 22,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2010,
+    "year_min": 2005,
+    "year_max": 2018,
     "first_worked_together": 2005,
     "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 13,
+    "shared_votes_max": 3407,
     "genres": [
       "Comedy",
       "Family",
       "Music",
-      "Drama",
-      "Musical"
+      "Musical",
+      "Drama"
     ],
     "shared": [
       {
@@ -4241,22 +8379,38 @@
         "tconst": "tt6923740",
         "votes": 1120
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm1934618",
     "target": "nm2557831",
     "weight": 16,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 16,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2015,
+    "year_min": 2015,
+    "year_max": 2015,
     "first_worked_together": 2015,
     "last_worked_together": 2015,
+    "recency": 11,
+    "reunion_span": 0,
+    "shared_votes_max": 3563,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [
       {
@@ -4277,27 +8431,93 @@
         "tconst": "tt5260320",
         "votes": 172
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.455,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm2171329",
+    "target": "nm3211484",
+    "weight": 16,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 16,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2011,
+    "year_min": 2011,
+    "year_max": 2011,
+    "first_worked_together": 2011,
+    "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 0,
+    "shared_votes_max": 23802,
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Romance",
+      "Action"
+    ],
+    "shared": [
+      {
+        "title": "The Future Diary",
+        "year": 2011,
+        "tconst": "tt2069441",
+        "votes": 23802
+      },
+      {
+        "title": "Majikoi ~ Oh! Samurai Girls",
+        "year": 2011,
+        "tconst": "tt3416460",
+        "votes": 488
+      },
+      {
+        "title": "Early Predicament",
+        "year": 2011,
+        "tconst": "tt3249258",
+        "votes": 387
+      }
+    ],
+    "loyalty_ab": 0.054,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.725,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm2171329",
     "target": "nm3470960",
     "weight": 57,
     "shared_count": 9,
+    "collab_count": 9,
+    "collab_strength": 57,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2011,
+    "year_min": 1996,
+    "year_max": 2018,
     "first_worked_together": 1996,
     "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 22,
     "reunion": true,
     "reunion_gap": 22,
+    "shared_votes_max": 12959,
     "genres": [
       "Animation",
       "Comedy",
       "Fantasy",
       "Action",
-      "Adventure",
+      "Drama",
       "Romance",
-      "Drama"
+      "Adventure"
     ],
     "shared": [
       {
@@ -4318,25 +8538,40 @@
         "tconst": "tt1655610",
         "votes": 1667
       }
-    ]
+    ],
+    "loyalty_ab": 0.243,
+    "loyalty_ba": 0.31,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm2171329",
     "target": "nm4515899",
     "weight": 31,
     "shared_count": 5,
+    "collab_count": 5,
+    "collab_strength": 31,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2013,
+    "year_min": 1996,
+    "year_max": 2018,
     "first_worked_together": 1996,
     "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 22,
     "reunion": true,
     "reunion_gap": 22,
+    "shared_votes_max": 1855,
     "genres": [
       "Action",
       "Animation",
       "Fantasy",
-      "Drama",
       "Comedy",
+      "Drama",
       "Adventure",
       "Mystery"
     ],
@@ -4359,28 +8594,43 @@
         "tconst": "tt10483244",
         "votes": 1225
       }
-    ]
+    ],
+    "loyalty_ab": 0.135,
+    "loyalty_ba": 0.132,
+    "tenure_overlap": 0.967,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm2171329",
     "target": "nm5211370",
     "weight": 40,
     "shared_count": 7,
+    "collab_count": 7,
+    "collab_strength": 40,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2011,
+    "year_min": 1996,
+    "year_max": 2019,
     "first_worked_together": 1996,
     "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 23,
     "reunion": true,
     "reunion_gap": 23,
+    "shared_votes_max": 1560,
     "genres": [
       "Action",
       "Animation",
       "Fantasy",
       "Comedy",
       "Drama",
-      "Adventure",
-      "Thriller",
-      "Horror"
+      "Sport",
+      "Horror",
+      "Adventure"
     ],
     "shared": [
       {
@@ -4401,24 +8651,93 @@
         "tconst": "tt10985810",
         "votes": 1618
       }
-    ]
+    ],
+    "loyalty_ab": 0.189,
+    "loyalty_ba": 0.219,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm2171329",
+    "target": "nm5410860",
+    "weight": 22,
+    "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 22,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2007,
+    "year_min": 1996,
+    "year_max": 2018,
+    "first_worked_together": 1996,
+    "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 22,
+    "reunion": true,
+    "reunion_gap": 22,
+    "shared_votes_max": 944,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation",
+      "Crime",
+      "Drama"
+    ],
+    "shared": [
+      {
+        "title": "Legend of the Galactic Heroes: Die Neue These",
+        "year": 2018,
+        "tconst": "tt7407236",
+        "votes": 944
+      },
+      {
+        "title": "Saikyô! Saiaku! Furîza ôabare!!",
+        "year": 2017,
+        "tconst": "tt7002070",
+        "votes": 824
+      },
+      {
+        "title": "Hakata Tonkotsu Ramens",
+        "year": 2018,
+        "tconst": "tt8129662",
+        "votes": 488
+      }
+    ],
+    "loyalty_ab": 0.108,
+    "loyalty_ba": 0.211,
+    "tenure_overlap": 0.967,
+    "same_era": true,
+    "age_gap": 8,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm2299231",
     "target": "nm2583829",
     "weight": 56,
     "shared_count": 8,
+    "collab_count": 8,
+    "collab_strength": 56,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2013,
+    "year_min": 2004,
+    "year_max": 2020,
     "first_worked_together": 2004,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 16,
+    "shared_votes_max": 4690,
     "genres": [
-      "Adventure",
       "Animation",
-      "Family",
-      "Action",
       "Comedy",
-      "Drama"
+      "Drama",
+      "Action",
+      "Adventure",
+      "Family"
     ],
     "shared": [
       {
@@ -4439,25 +8758,40 @@
         "tconst": "tt3737650",
         "votes": 2328
       }
-    ]
+    ],
+    "loyalty_ab": 0.381,
+    "loyalty_ba": 0.571,
+    "tenure_overlap": 0.853,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm2299231",
     "target": "nm4515899",
     "weight": 37,
     "shared_count": 5,
+    "collab_count": 5,
+    "collab_strength": 37,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2021,
+    "year_min": 2011,
+    "year_max": 2026,
     "first_worked_together": 2011,
     "last_worked_together": 2026,
+    "recency": 0,
+    "reunion_span": 15,
+    "shared_votes_max": 17696,
     "genres": [
       "Animation",
-      "Drama",
-      "Mystery",
+      "Comedy",
+      "Fantasy",
       "Action",
       "Adventure",
-      "Comedy",
-      "Fantasy"
+      "Drama",
+      "Mystery"
     ],
     "shared": [
       {
@@ -4478,17 +8812,32 @@
         "tconst": "tt13796604",
         "votes": 8784
       }
-    ]
+    ],
+    "loyalty_ab": 0.238,
+    "loyalty_ba": 0.132,
+    "tenure_overlap": 0.967,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm2299231",
     "target": "nm5211370",
     "weight": 9,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 9,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2006,
+    "year_min": 1997,
+    "year_max": 2015,
     "first_worked_together": 1997,
     "last_worked_together": 2015,
+    "recency": 11,
+    "reunion_span": 18,
+    "shared_votes_max": 166,
     "genres": [
       "Action",
       "Adventure",
@@ -4514,17 +8863,32 @@
         "tconst": "tt5037560",
         "votes": 166
       }
-    ]
+    ],
+    "loyalty_ab": 0.095,
+    "loyalty_ba": 0.062,
+    "tenure_overlap": 0.933,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm2325393",
     "target": "nm2572554",
     "weight": 21,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2011,
+    "year_max": 2012,
     "first_worked_together": 2011,
     "last_worked_together": 2012,
+    "recency": 14,
+    "reunion_span": 1,
+    "shared_votes_max": 43667,
     "genres": [
       "Comedy",
       "Family"
@@ -4542,21 +8906,36 @@
         "tconst": "tt2023453",
         "votes": 34885
       }
-    ]
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.765,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm2325393",
     "target": "nm3557613",
     "weight": 32,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 32,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2011,
+    "year_min": 2010,
+    "year_max": 2012,
     "first_worked_together": 2010,
     "last_worked_together": 2012,
+    "recency": 14,
+    "reunion_span": 2,
+    "shared_votes_max": 67707,
     "genres": [
       "Comedy",
-      "Drama",
-      "Family"
+      "Family",
+      "Drama"
     ],
     "shared": [
       {
@@ -4577,17 +8956,32 @@
         "tconst": "tt2023453",
         "votes": 34885
       }
-    ]
+    ],
+    "loyalty_ab": 0.6,
+    "loyalty_ba": 0.429,
+    "tenure_overlap": 0.714,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm2572554",
     "target": "nm3557613",
     "weight": 40,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 40,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2011,
+    "year_max": 2015,
     "first_worked_together": 2011,
     "last_worked_together": 2015,
+    "recency": 11,
+    "reunion_span": 4,
+    "shared_votes_max": 43667,
     "genres": [
       "Comedy",
       "Drama",
@@ -4612,17 +9006,32 @@
         "tconst": "tt1865769",
         "votes": 22254
       }
-    ]
+    ],
+    "loyalty_ab": 0.667,
+    "loyalty_ba": 0.571,
+    "tenure_overlap": 0.625,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm2743784",
     "target": "nm3458761",
     "weight": 13,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2014,
+    "year_max": 2024,
     "first_worked_together": 2014,
     "last_worked_together": 2024,
+    "recency": 2,
+    "reunion_span": 10,
+    "shared_votes_max": 1557,
     "genres": [
       "Adventure",
       "Family",
@@ -4643,27 +9052,42 @@
         "tconst": "tt14445366",
         "votes": 464
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.923,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm3470960",
     "target": "nm4515899",
     "weight": 31,
     "shared_count": 6,
+    "collab_count": 6,
+    "collab_strength": 31,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2014,
+    "year_min": 1996,
+    "year_max": 2022,
     "first_worked_together": 1996,
     "last_worked_together": 2022,
+    "recency": 4,
+    "reunion_span": 26,
     "reunion": true,
     "reunion_gap": 26,
+    "shared_votes_max": 1492,
     "genres": [
       "Action",
       "Animation",
       "Fantasy",
       "Comedy",
       "Drama",
-      "Adventure",
-      "Sci-Fi"
+      "Sci-Fi",
+      "Adventure"
     ],
     "shared": [
       {
@@ -4684,25 +9108,40 @@
         "tconst": "tt0331863",
         "votes": 193
       }
-    ]
+    ],
+    "loyalty_ab": 0.207,
+    "loyalty_ba": 0.158,
+    "tenure_overlap": 0.967,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm3470960",
     "target": "nm5211370",
     "weight": 27,
     "shared_count": 5,
+    "collab_count": 5,
+    "collab_strength": 27,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2013,
+    "year_min": 1996,
+    "year_max": 2023,
     "first_worked_together": 1996,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 27,
     "reunion": true,
     "reunion_gap": 27,
+    "shared_votes_max": 920,
     "genres": [
       "Action",
       "Adventure",
       "Animation",
-      "Drama",
       "Fantasy",
+      "Drama",
       "Comedy"
     ],
     "shared": [
@@ -4724,28 +9163,144 @@
         "tconst": "tt5236260",
         "votes": 264
       }
-    ]
+    ],
+    "loyalty_ab": 0.172,
+    "loyalty_ba": 0.156,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm3470960",
+    "target": "nm5410860",
+    "weight": 11,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 11,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2007,
+    "year_min": 1996,
+    "year_max": 2017,
+    "first_worked_together": 1996,
+    "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 21,
+    "reunion": true,
+    "reunion_gap": 21,
+    "shared_votes_max": 272,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation",
+      "Drama"
+    ],
+    "shared": [
+      {
+        "title": "Clockwork Planet",
+        "year": 2017,
+        "tconst": "tt7120888",
+        "votes": 272
+      },
+      {
+        "title": "B'T X",
+        "year": 1996,
+        "tconst": "tt0331863",
+        "votes": 193
+      },
+      {
+        "title": "Something to Believe in Part 2",
+        "year": 2017,
+        "tconst": "tt9777508",
+        "votes": 0
+      }
+    ],
+    "loyalty_ab": 0.069,
+    "loyalty_ba": 0.105,
+    "tenure_overlap": 0.967,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm3993221",
+    "target": "nm6200897",
+    "weight": 11,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 11,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2016,
+    "year_min": 2015,
+    "year_max": 2017,
+    "first_worked_together": 2015,
+    "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 2,
+    "shared_votes_max": 289,
+    "genres": [
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Nickelodeon's Ho Ho Holiday Special",
+        "year": 2015,
+        "tconst": "tt5252134",
+        "votes": 289
+      },
+      {
+        "title": "Nickelodeon's Sizzling Summer Camp Special",
+        "year": 2017,
+        "tconst": "tt6917656",
+        "votes": 144
+      },
+      {
+        "title": "Nickelodeon's Not So Valentine's Special",
+        "year": 2017,
+        "tconst": "tt6553448",
+        "votes": 55
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.357,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm4515899",
     "target": "nm5211370",
     "weight": 44,
     "shared_count": 8,
+    "collab_count": 8,
+    "collab_strength": 44,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2013,
+    "year_min": 1996,
+    "year_max": 2018,
     "first_worked_together": 1996,
     "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 22,
     "reunion": true,
     "reunion_gap": 22,
+    "shared_votes_max": 1995,
     "genres": [
       "Animation",
-      "Comedy",
-      "Fantasy",
+      "Action",
+      "Adventure",
       "Crime",
       "Horror",
-      "Drama",
-      "Action",
-      "Adventure"
+      "Comedy",
+      "Fantasy",
+      "Drama"
     ],
     "shared": [
       {
@@ -4766,22 +9321,94 @@
         "tconst": "tt5879454",
         "votes": 1995
       }
-    ]
+    ],
+    "loyalty_ab": 0.211,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.967,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm4515899",
+    "target": "nm5410860",
+    "weight": 45,
+    "shared_count": 7,
+    "collab_count": 7,
+    "collab_strength": 45,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2015,
+    "year_min": 1996,
+    "year_max": 2021,
+    "first_worked_together": 1996,
+    "last_worked_together": 2021,
+    "recency": 5,
+    "reunion_span": 25,
+    "reunion": true,
+    "reunion_gap": 25,
+    "shared_votes_max": 6754,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Drama",
+      "Mystery",
+      "Action",
+      "Music",
+      "Fantasy"
+    ],
+    "shared": [
+      {
+        "title": "SK8 the Infinity",
+        "year": 2021,
+        "tconst": "tt13129190",
+        "votes": 6754
+      },
+      {
+        "title": "Kono Oto Tomare!",
+        "year": 2019,
+        "tconst": "tt9886006",
+        "votes": 1951
+      },
+      {
+        "title": "Legend of the Galactic Heroes: Die Neue These",
+        "year": 2018,
+        "tconst": "tt7407236",
+        "votes": 944
+      }
+    ],
+    "loyalty_ab": 0.184,
+    "loyalty_ba": 0.368,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm4563869",
     "target": "nm6786013",
     "weight": 14,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 14,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2018,
+    "year_min": 2016,
+    "year_max": 2019,
     "first_worked_together": 2016,
     "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 3,
+    "shared_votes_max": 1848,
     "genres": [
+      "Drama",
       "Family",
       "Fantasy",
-      "Horror",
-      "Drama"
+      "Horror"
     ],
     "shared": [
       {
@@ -4796,17 +9423,32 @@
         "tconst": "tt1821701",
         "votes": 839
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.444,
+    "same_era": true,
+    "age_gap": 8,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm5085683",
     "target": "nm5097044",
     "weight": 13,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2022,
+    "year_min": 2021,
+    "year_max": 2022,
     "first_worked_together": 2021,
     "last_worked_together": 2022,
+    "recency": 4,
+    "reunion_span": 1,
+    "shared_votes_max": 5531,
     "genres": [
       "Adventure",
       "Animation",
@@ -4826,26 +9468,41 @@
         "votes": 65
       },
       {
-        "title": "Foal's First Check Up",
+        "title": "Bunny Gets His Bounce Back",
         "year": 2022,
-        "tconst": "tt19487328",
+        "tconst": "tt19373598",
         "votes": 0
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.857,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm5200476",
     "target": "nm5897057",
     "weight": 26,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 26,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2018,
+    "year_min": 2017,
+    "year_max": 2019,
     "first_worked_together": 2017,
     "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 2,
+    "shared_votes_max": 702561,
     "genres": [
-      "Horror",
       "Drama",
-      "Fantasy"
+      "Fantasy",
+      "Horror"
     ],
     "shared": [
       {
@@ -4860,17 +9517,89 @@
         "tconst": "tt7349950",
         "votes": 358554
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
+  },
+  {
+    "source": "nm5211370",
+    "target": "nm5410860",
+    "weight": 33,
+    "shared_count": 6,
+    "collab_count": 6,
+    "collab_strength": 33,
+    "construct": "child_stars",
+    "shared_sample_cap": 3,
+    "year": 2010,
+    "year_min": 1996,
+    "year_max": 2019,
+    "first_worked_together": 1996,
+    "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 23,
+    "reunion": true,
+    "reunion_gap": 23,
+    "shared_votes_max": 666,
+    "genres": [
+      "Animation",
+      "Sport",
+      "Action",
+      "Adventure",
+      "Drama",
+      "Comedy",
+      "Fantasy"
+    ],
+    "shared": [
+      {
+        "title": "Nanbaka",
+        "year": 2016,
+        "tconst": "tt7382936",
+        "votes": 666
+      },
+      {
+        "title": "Sarazanmai",
+        "year": 2019,
+        "tconst": "tt8096510",
+        "votes": 481
+      },
+      {
+        "title": "All Out",
+        "year": 2016,
+        "tconst": "tt6738600",
+        "votes": 298
+      }
+    ],
+    "loyalty_ab": 0.188,
+    "loyalty_ba": 0.316,
+    "tenure_overlap": 0.967,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm5411494",
     "target": "nm6236783",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2016,
+    "year_min": 2015,
+    "year_max": 2017,
     "first_worked_together": 2015,
     "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 2,
+    "shared_votes_max": 139942,
     "genres": [
       "Comedy",
       "Family"
@@ -4888,26 +9617,41 @@
         "tconst": "tt5657846",
         "votes": 93260
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.6,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm7805169",
     "target": "nm7805172",
     "weight": 54,
     "shared_count": 6,
+    "collab_count": 6,
+    "collab_strength": 54,
     "construct": "child_stars",
+    "shared_sample_cap": 3,
     "year": 2021,
+    "year_min": 2017,
+    "year_max": 2023,
     "first_worked_together": 2017,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 6,
+    "shared_votes_max": 246385,
     "genres": [
-      "Crime",
-      "Drama",
-      "Horror",
       "Action",
       "Adventure",
       "Comedy",
-      "Fantasy",
-      "Mystery"
+      "Crime",
+      "Drama",
+      "Horror",
+      "Mystery",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -4928,6 +9672,14 @@
         "tconst": "tt9000184",
         "votes": 19666
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.857,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   }
 ]

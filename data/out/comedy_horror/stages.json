@@ -3,105 +3,105 @@
     "stageFrom": "gender",
     "stageTo": "lane",
     "categoryFrom": "male",
-    "categoryTo": "horror-comedy",
-    "value": 1075
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "lane",
-    "categoryFrom": "female",
     "categoryTo": "comedy",
-    "value": 4219
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "lane",
-    "categoryFrom": "female",
-    "categoryTo": "horror",
-    "value": 904
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "lane",
-    "categoryFrom": "male",
-    "categoryTo": "comedy",
-    "value": 17604
+    "value": 20317
   },
   {
     "stageFrom": "gender",
     "stageTo": "lane",
     "categoryFrom": "male",
     "categoryTo": "horror",
-    "value": 2751
+    "value": 3163
   },
   {
     "stageFrom": "gender",
     "stageTo": "lane",
     "categoryFrom": "female",
     "categoryTo": "horror-comedy",
-    "value": 268
+    "value": 323
   },
   {
-    "stageFrom": "lane",
-    "stageTo": "prominence",
-    "categoryFrom": "horror-comedy",
-    "categoryTo": "supporting",
-    "value": 558
+    "stageFrom": "gender",
+    "stageTo": "lane",
+    "categoryFrom": "female",
+    "categoryTo": "comedy",
+    "value": 5257
   },
   {
-    "stageFrom": "lane",
-    "stageTo": "prominence",
-    "categoryFrom": "horror-comedy",
-    "categoryTo": "ensemble",
-    "value": 346
+    "stageFrom": "gender",
+    "stageTo": "lane",
+    "categoryFrom": "female",
+    "categoryTo": "horror",
+    "value": 1052
   },
   {
-    "stageFrom": "lane",
-    "stageTo": "prominence",
-    "categoryFrom": "comedy",
-    "categoryTo": "ensemble",
-    "value": 6877
-  },
-  {
-    "stageFrom": "lane",
-    "stageTo": "prominence",
-    "categoryFrom": "comedy",
-    "categoryTo": "supporting",
-    "value": 8834
-  },
-  {
-    "stageFrom": "lane",
-    "stageTo": "prominence",
-    "categoryFrom": "horror",
-    "categoryTo": "lead",
-    "value": 1486
+    "stageFrom": "gender",
+    "stageTo": "lane",
+    "categoryFrom": "male",
+    "categoryTo": "horror-comedy",
+    "value": 1189
   },
   {
     "stageFrom": "lane",
     "stageTo": "prominence",
     "categoryFrom": "comedy",
     "categoryTo": "lead",
-    "value": 6112
+    "value": 7225
   },
   {
     "stageFrom": "lane",
     "stageTo": "prominence",
     "categoryFrom": "horror",
     "categoryTo": "supporting",
-    "value": 1466
+    "value": 1730
   },
   {
     "stageFrom": "lane",
     "stageTo": "prominence",
     "categoryFrom": "horror",
     "categoryTo": "ensemble",
-    "value": 703
+    "value": 811
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "prominence",
+    "categoryFrom": "horror-comedy",
+    "categoryTo": "ensemble",
+    "value": 396
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "prominence",
+    "categoryFrom": "horror-comedy",
+    "categoryTo": "supporting",
+    "value": 624
   },
   {
     "stageFrom": "lane",
     "stageTo": "prominence",
     "categoryFrom": "horror-comedy",
     "categoryTo": "lead",
-    "value": 439
+    "value": 492
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "prominence",
+    "categoryFrom": "comedy",
+    "categoryTo": "ensemble",
+    "value": 8050
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "prominence",
+    "categoryFrom": "horror",
+    "categoryTo": "lead",
+    "value": 1674
+  },
+  {
+    "stageFrom": "lane",
+    "stageTo": "prominence",
+    "categoryFrom": "comedy",
+    "categoryTo": "supporting",
+    "value": 10299
   }
 ]

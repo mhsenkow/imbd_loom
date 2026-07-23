@@ -10,6 +10,7 @@ import {
   nodeExtents,
 } from "../lib/encode";
 import { compareNodesBySort } from "../lib/filter";
+import { nodeStrength } from "../lib/metrics";
 import { sharedLabel } from "../lib/sharedTitles";
 
 export interface ChordLayout {
@@ -48,13 +49,13 @@ export function layoutChord(
     thicknessBy?: ThicknessBy;
     theme?: "light" | "dark";
   } = {
-    colorBy: "degree",
+    colorBy: "strength",
     minWeight: 1,
   },
 ): ChordLayout {
   const palette = opts.palette ?? "loom";
   const theme = opts.theme ?? "light";
-  const sortBy = opts.sortBy ?? "degree";
+  const sortBy = opts.sortBy ?? "strength";
   const thicknessBy = opts.thicknessBy ?? "shared";
   const filtered = [...nodes].sort((a, b) => compareNodesBySort(a, b, sortBy));
   const n = filtered.length;
@@ -89,7 +90,7 @@ export function layoutChord(
   const ribbon = d3.ribbon<d3.Chord, d3.ChordSubgroup>().radius(inner - 1);
   const extents = nodeExtents(filtered);
   const genreColor = buildGenreColor(filtered, palette, theme);
-  const labelThreshold = extents.maxDegree * 0.28;
+  const labelThreshold = extents.maxStrength * 0.28;
 
   const arcs = chord.groups.map((g) => {
     const node = filtered[g.index];
@@ -99,7 +100,7 @@ export function layoutChord(
       label: node.label,
       fill: nodeColor(node, opts.colorBy, extents, genreColor, palette, theme),
       angle,
-      showLabel: node.degree >= labelThreshold || n <= 40,
+      showLabel: nodeStrength(node) >= labelThreshold || n <= 40,
       id: node.id,
     };
   });

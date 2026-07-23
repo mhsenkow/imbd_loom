@@ -1,6 +1,12 @@
 {
   "1980s": [
     {
+      "source": "nm0000134",
+      "target": "nm0000658",
+      "weight": 33,
+      "year": 1986
+    },
+    {
       "source": "nm0000576",
       "target": "nm0000604",
       "weight": 31,
@@ -15,48 +21,6 @@
   ],
   "1990s": [
     {
-      "source": "nm0000237",
-      "target": "nm0000246",
-      "weight": 37,
-      "year": 1991
-    },
-    {
-      "source": "nm0000576",
-      "target": "nm0000705",
-      "weight": 46,
-      "year": 1998
-    },
-    {
-      "source": "nm0000450",
-      "target": "nm0000569",
-      "weight": 24,
-      "year": 1998
-    },
-    {
-      "source": "nm0000206",
-      "target": "nm0000234",
-      "weight": 25,
-      "year": 1999
-    },
-    {
-      "source": "nm0000139",
-      "target": "nm0001774",
-      "weight": 17,
-      "year": 1998
-    },
-    {
-      "source": "nm0000129",
-      "target": "nm0000173",
-      "weight": 36,
-      "year": 1994
-    },
-    {
-      "source": "nm0000245",
-      "target": "nm0000349",
-      "weight": 21,
-      "year": 1994
-    },
-    {
       "source": "nm0000552",
       "target": "nm0001454",
       "weight": 21,
@@ -69,10 +33,46 @@
       "year": 1994
     },
     {
-      "source": "nm0000168",
-      "target": "nm0000237",
-      "weight": 26,
+      "source": "nm0000163",
+      "target": "nm0000245",
+      "weight": 20,
+      "year": 1991
+    },
+    {
+      "source": "nm0000245",
+      "target": "nm0000349",
+      "weight": 21,
+      "year": 1994
+    },
+    {
+      "source": "nm0000129",
+      "target": "nm0000173",
+      "weight": 36,
+      "year": 1994
+    },
+    {
+      "source": "nm0000246",
+      "target": "nm0000932",
+      "weight": 23,
       "year": 1999
+    },
+    {
+      "source": "nm0000255",
+      "target": "nm0005377",
+      "weight": 14,
+      "year": 1994
+    },
+    {
+      "source": "nm0000237",
+      "target": "nm0000362",
+      "weight": 22,
+      "year": 1994
+    },
+    {
+      "source": "nm0000362",
+      "target": "nm0000474",
+      "weight": 34,
+      "year": 1998
     },
     {
       "source": "nm0000206",
@@ -87,27 +87,33 @@
       "year": 1999
     },
     {
-      "source": "nm0000255",
-      "target": "nm0005377",
-      "weight": 14,
-      "year": 1994
+      "source": "nm0000168",
+      "target": "nm0000237",
+      "weight": 26,
+      "year": 1999
     },
     {
-      "source": "nm0000177",
-      "target": "nm0000375",
-      "weight": 21,
-      "year": 1992
+      "source": "nm0000160",
+      "target": "nm0000235",
+      "weight": 23,
+      "year": 1999
     },
     {
-      "source": "nm0000681",
-      "target": "nm0001618",
-      "weight": 19,
-      "year": 1998
+      "source": "nm0000569",
+      "target": "nm0001057",
+      "weight": 20,
+      "year": 1996
     },
     {
-      "source": "nm0000255",
-      "target": "nm0000729",
-      "weight": 36,
+      "source": "nm0000288",
+      "target": "nm0001057",
+      "weight": 22,
+      "year": 1999
+    },
+    {
+      "source": "nm0000194",
+      "target": "nm0000681",
+      "weight": 24,
       "year": 1998
     },
     {
@@ -117,204 +123,78 @@
       "year": 1999
     },
     {
-      "source": "nm0000194",
-      "target": "nm0000681",
+      "source": "nm0000168",
+      "target": "nm0000932",
+      "weight": 17,
+      "year": 1993
+    },
+    {
+      "source": "nm0000237",
+      "target": "nm0000246",
+      "weight": 37,
+      "year": 1991
+    },
+    {
+      "source": "nm0000450",
+      "target": "nm0000569",
       "weight": 24,
       "year": 1998
+    },
+    {
+      "source": "nm0000576",
+      "target": "nm0000705",
+      "weight": 46,
+      "year": 1998
+    },
+    {
+      "source": "nm0000139",
+      "target": "nm0001774",
+      "weight": 17,
+      "year": 1998
+    },
+    {
+      "source": "nm0000206",
+      "target": "nm0000234",
+      "weight": 25,
+      "year": 1999
+    },
+    {
+      "source": "nm0000177",
+      "target": "nm0000375",
+      "weight": 21,
+      "year": 1992
+    },
+    {
+      "source": "nm0000349",
+      "target": "nm0001624",
+      "weight": 21,
+      "year": 1998
+    },
+    {
+      "source": "nm0000255",
+      "target": "nm0000729",
+      "weight": 36,
+      "year": 1998
+    },
+    {
+      "source": "nm0000681",
+      "target": "nm0001618",
+      "weight": 19,
+      "year": 1998
+    },
+    {
+      "source": "nm0000332",
+      "target": "nm0000576",
+      "weight": 21,
+      "year": 1996
     }
   ],
   "2000s": [
     {
-      "source": "nm0000124",
-      "target": "nm0001618",
-      "weight": 20,
-      "year": 2002
-    },
-    {
-      "source": "nm0000179",
-      "target": "nm0000949",
-      "weight": 25,
-      "year": 2002
-    },
-    {
-      "source": "nm0342488",
-      "target": "nm0914612",
-      "weight": 109,
-      "year": 2006
-    },
-    {
-      "source": "nm0000168",
-      "target": "nm0004937",
-      "weight": 24,
-      "year": 2004
-    },
-    {
-      "source": "nm0136797",
-      "target": "nm1706767",
-      "weight": 24,
-      "year": 2008
-    },
-    {
-      "source": "nm0000179",
-      "target": "nm0000204",
-      "weight": 45,
-      "year": 2008
-    },
-    {
-      "source": "nm0000198",
-      "target": "nm0000288",
-      "weight": 44,
-      "year": 2008
-    },
-    {
-      "source": "nm0001774",
-      "target": "nm0005562",
-      "weight": 125,
-      "year": 2007
-    },
-    {
-      "source": "nm0001191",
-      "target": "nm1706767",
-      "weight": 25,
-      "year": 2008
-    },
-    {
-      "source": "nm0000194",
-      "target": "nm0000450",
-      "weight": 58,
-      "year": 2007
-    },
-    {
-      "source": "nm0000354",
-      "target": "nm0001427",
-      "weight": 23,
-      "year": 2007
-    },
-    {
-      "source": "nm0001674",
-      "target": "nm0056187",
-      "weight": 38,
-      "year": 2008
-    },
-    {
-      "source": "nm0000139",
-      "target": "nm0005182",
-      "weight": 22,
-      "year": 2005
-    },
-    {
-      "source": "nm0005028",
-      "target": "nm0765597",
-      "weight": 20,
-      "year": 2002
-    },
-    {
-      "source": "nm0000255",
-      "target": "nm0000354",
-      "weight": 93,
-      "year": 2007
-    },
-    {
-      "source": "nm0000246",
-      "target": "nm0000705",
-      "weight": 23,
-      "year": 2004
-    },
-    {
-      "source": "nm0002071",
-      "target": "nm0221046",
-      "weight": 22,
-      "year": 2004
-    },
-    {
       "source": "nm0000586",
-      "target": "nm0004937",
-      "weight": 25,
-      "year": 2003
-    },
-    {
-      "source": "nm0000586",
-      "target": "nm0056187",
-      "weight": 38,
-      "year": 2008
-    },
-    {
-      "source": "nm0136797",
-      "target": "nm0736622",
-      "weight": 38,
-      "year": 2006
-    },
-    {
-      "source": "nm0262635",
-      "target": "nm0913488",
-      "weight": 25,
-      "year": 2006
-    },
-    {
-      "source": "nm0001674",
-      "target": "nm0913488",
-      "weight": 21,
-      "year": 2005
-    },
-    {
-      "source": "nm0184445",
-      "target": "nm1706767",
-      "weight": 22,
-      "year": 2007
-    },
-    {
-      "source": "nm0000158",
-      "target": "nm0010736",
-      "weight": 26,
-      "year": 2005
-    },
-    {
-      "source": "nm0000190",
-      "target": "nm0005028",
-      "weight": 24,
-      "year": 2006
-    },
-    {
-      "source": "nm0000139",
-      "target": "nm0000196",
-      "weight": 61,
-      "year": 2006
-    },
-    {
-      "source": "nm0000237",
-      "target": "nm0000681",
-      "weight": 22,
-      "year": 2003
-    },
-    {
-      "source": "nm0000134",
-      "target": "nm0000245",
-      "weight": 23,
-      "year": 2002
-    },
-    {
-      "source": "nm0000681",
-      "target": "nm0005562",
-      "weight": 37,
-      "year": 2007
-    },
-    {
-      "source": "nm0000375",
       "target": "nm0001774",
-      "weight": 22,
-      "year": 2004
-    },
-    {
-      "source": "nm0000204",
-      "target": "nm0177896",
-      "weight": 20,
-      "year": 2008
-    },
-    {
-      "source": "nm0000729",
-      "target": "nm0005028",
-      "weight": 18,
-      "year": 2004
+      "weight": 47,
+      "year": 2009
     },
     {
       "source": "nm0001191",
@@ -323,10 +203,16 @@
       "year": 2002
     },
     {
-      "source": "nm0000586",
-      "target": "nm0001774",
-      "weight": 47,
-      "year": 2009
+      "source": "nm0000131",
+      "target": "nm0000349",
+      "weight": 53,
+      "year": 2002
+    },
+    {
+      "source": "nm0000134",
+      "target": "nm0000163",
+      "weight": 48,
+      "year": 2002
     },
     {
       "source": "nm0705356",
@@ -335,9 +221,15 @@
       "year": 2006
     },
     {
-      "source": "nm0000179",
-      "target": "nm0000569",
-      "weight": 37,
+      "source": "nm0000158",
+      "target": "nm0000210",
+      "weight": 23,
+      "year": 2009
+    },
+    {
+      "source": "nm0000136",
+      "target": "nm0461136",
+      "weight": 41,
       "year": 2005
     },
     {
@@ -347,34 +239,10 @@
       "year": 2006
     },
     {
-      "source": "nm0000234",
-      "target": "nm0000242",
-      "weight": 23,
-      "year": 2002
-    },
-    {
-      "source": "nm0000576",
-      "target": "nm0001254",
-      "weight": 19,
-      "year": 2002
-    },
-    {
       "source": "nm0913488",
       "target": "nm1107001",
       "weight": 17,
       "year": 2007
-    },
-    {
-      "source": "nm0000134",
-      "target": "nm0005562",
-      "weight": 37,
-      "year": 2005
-    },
-    {
-      "source": "nm0000131",
-      "target": "nm0000349",
-      "weight": 53,
-      "year": 2002
     },
     {
       "source": "nm0001674",
@@ -383,81 +251,99 @@
       "year": 2009
     },
     {
+      "source": "nm0000354",
+      "target": "nm0000531",
+      "weight": 17,
+      "year": 2004
+    },
+    {
+      "source": "nm0000134",
+      "target": "nm0005562",
+      "weight": 37,
+      "year": 2005
+    },
+    {
       "source": "nm0000093",
       "target": "nm0000354",
       "weight": 26,
       "year": 2004
     },
     {
-      "source": "nm0001774",
-      "target": "nm0002071",
-      "weight": 37,
+      "source": "nm0001593",
+      "target": "nm0005188",
+      "weight": 40,
+      "year": 2003
+    },
+    {
+      "source": "nm0461136",
+      "target": "nm1659547",
+      "weight": 25,
+      "year": 2008
+    },
+    {
+      "source": "nm0000191",
+      "target": "nm0000204",
+      "weight": 51,
+      "year": 2005
+    },
+    {
+      "source": "nm0000531",
+      "target": "nm0001570",
+      "weight": 38,
       "year": 2009
     },
     {
-      "source": "nm0177896",
-      "target": "nm0221046",
+      "source": "nm0000531",
+      "target": "nm0424060",
       "weight": 24,
-      "year": 2007
+      "year": 2009
     },
     {
-      "source": "nm0005028",
-      "target": "nm0221046",
-      "weight": 22,
+      "source": "nm0000234",
+      "target": "nm0000242",
+      "weight": 23,
+      "year": 2002
+    },
+    {
+      "source": "nm0000120",
+      "target": "nm0136797",
+      "weight": 36,
       "year": 2008
+    },
+    {
+      "source": "nm0000179",
+      "target": "nm0000569",
+      "weight": 37,
+      "year": 2005
+    },
+    {
+      "source": "nm0000932",
+      "target": "nm0005188",
+      "weight": 40,
+      "year": 2003
+    },
+    {
+      "source": "nm0000201",
+      "target": "nm1374980",
+      "weight": 23,
+      "year": 2009
+    },
+    {
+      "source": "nm0413168",
+      "target": "nm0424060",
+      "weight": 26,
+      "year": 2006
+    },
+    {
+      "source": "nm0001838",
+      "target": "nm0193295",
+      "weight": 24,
+      "year": 2005
     },
     {
       "source": "nm0000115",
       "target": "nm0000131",
       "weight": 33,
-      "year": 2009
-    },
-    {
-      "source": "nm0000234",
-      "target": "nm0000437",
-      "weight": 20,
-      "year": 2007
-    },
-    {
-      "source": "nm0002071",
-      "target": "nm0005562",
-      "weight": 33,
-      "year": 2007
-    },
-    {
-      "source": "nm0000237",
-      "target": "nm0001254",
-      "weight": 43,
-      "year": 2002
-    },
-    {
-      "source": "nm0000242",
-      "target": "nm0001618",
-      "weight": 22,
-      "year": 2004
-    },
-    {
-      "source": "nm0000134",
-      "target": "nm0000230",
-      "weight": 23,
-      "year": 2005
-    },
-    {
-      "source": "nm1104131",
-      "target": "nm1157358",
-      "weight": 24,
-      "year": 2009
-    },
-    {
-      "source": "nm0352778",
-      "target": "nm0736622",
-      "weight": 25,
-      "year": 2007
-    },
-    {
-      "source": "nm0000604",
-      "target": "nm0056187",
-      "weight": 25,
       "year": 2009
     },
     {
@@ -467,220 +353,82 @@
       "year": 2004
     },
     {
-      "source": "nm0413168",
-      "target": "nm0424060",
-      "weight": 26,
-      "year": 2006
+      "source": "nm0002071",
+      "target": "nm0005562",
+      "weight": 33,
+      "year": 2007
     },
     {
-      "source": "nm0000201",
-      "target": "nm1374980",
-      "weight": 23,
+      "source": "nm0000604",
+      "target": "nm0056187",
+      "weight": 25,
       "year": 2009
-    },
-    {
-      "source": "nm0000375",
-      "target": "nm1157358",
-      "weight": 25,
-      "year": 2008
-    },
-    {
-      "source": "nm0000244",
-      "target": "nm0000741",
-      "weight": 21,
-      "year": 2005
-    },
-    {
-      "source": "nm0001454",
-      "target": "nm0001674",
-      "weight": 21,
-      "year": 2001
-    },
-    {
-      "source": "nm0000168",
-      "target": "nm0000246",
-      "weight": 53,
-      "year": 2002
-    },
-    {
-      "source": "nm0000354",
-      "target": "nm0000569",
-      "weight": 25,
-      "year": 2005
-    },
-    {
-      "source": "nm0000179",
-      "target": "nm0000450",
-      "weight": 25,
-      "year": 2001
-    },
-    {
-      "source": "nm0342488",
-      "target": "nm0705356",
-      "weight": 109,
-      "year": 2006
-    },
-    {
-      "source": "nm0000129",
-      "target": "nm0000450",
-      "weight": 26,
-      "year": 2003
     },
     {
       "source": "nm0000134",
-      "target": "nm0001774",
-      "weight": 37,
-      "year": 2005
-    },
-    {
-      "source": "nm0000179",
-      "target": "nm0000354",
-      "weight": 25,
-      "year": 2005
-    },
-    {
-      "source": "nm0000206",
-      "target": "nm0269463",
+      "target": "nm0000230",
       "weight": 23,
-      "year": 2002
+      "year": 2005
     },
     {
-      "source": "nm0000195",
-      "target": "nm0000949",
+      "source": "nm0000598",
+      "target": "nm0001427",
+      "weight": 20,
+      "year": 2007
+    },
+    {
+      "source": "nm0177896",
+      "target": "nm0221046",
       "weight": 24,
-      "year": 2009
-    },
-    {
-      "source": "nm0004754",
-      "target": "nm0005458",
-      "weight": 22,
-      "year": 2005
-    },
-    {
-      "source": "nm0004754",
-      "target": "nm0262635",
-      "weight": 22,
-      "year": 2005
-    },
-    {
-      "source": "nm0005458",
-      "target": "nm0262635",
-      "weight": 22,
-      "year": 2005
+      "year": 2007
     },
     {
       "source": "nm0001774",
-      "target": "nm0056187",
-      "weight": 38,
-      "year": 2008
-    },
-    {
-      "source": "nm0000124",
-      "target": "nm0000604",
-      "weight": 23,
-      "year": 2007
-    },
-    {
-      "source": "nm0004695",
-      "target": "nm0913488",
-      "weight": 25,
-      "year": 2006
-    },
-    {
-      "source": "nm0000134",
-      "target": "nm0000138",
-      "weight": 34,
-      "year": 2004
-    },
-    {
-      "source": "nm0005109",
-      "target": "nm1659221",
-      "weight": 20,
-      "year": 2007
-    },
-    {
-      "source": "nm0000190",
-      "target": "nm0005023",
-      "weight": 22,
-      "year": 2008
-    },
-    {
-      "source": "nm0000194",
-      "target": "nm0000949",
-      "weight": 20,
-      "year": 2000
-    },
-    {
-      "source": "nm0005109",
-      "target": "nm0757855",
-      "weight": 20,
-      "year": 2007
-    },
-    {
-      "source": "nm0000129",
-      "target": "nm0000139",
-      "weight": 25,
-      "year": 2006
-    },
-    {
-      "source": "nm0004266",
-      "target": "nm0251986",
-      "weight": 31,
-      "year": 2008
-    },
-    {
-      "source": "nm0000168",
-      "target": "nm0000569",
-      "weight": 25,
-      "year": 2003
-    },
-    {
-      "source": "nm0000168",
-      "target": "nm0000604",
-      "weight": 24,
-      "year": 2007
-    },
-    {
-      "source": "nm0005562",
-      "target": "nm1046097",
-      "weight": 26,
-      "year": 2008
-    },
-    {
-      "source": "nm0005182",
-      "target": "nm2957717",
+      "target": "nm0002071",
       "weight": 37,
       "year": 2009
     },
     {
-      "source": "nm0000177",
-      "target": "nm0000244",
-      "weight": 30,
-      "year": 2004
+      "source": "nm0352778",
+      "target": "nm0736622",
+      "weight": 25,
+      "year": 2007
     },
     {
-      "source": "nm0000134",
-      "target": "nm0001570",
-      "weight": 23,
-      "year": 2006
-    },
-    {
-      "source": "nm0000450",
-      "target": "nm0010736",
-      "weight": 36,
+      "source": "nm1104131",
+      "target": "nm1157358",
+      "weight": 24,
       "year": 2009
     },
     {
-      "source": "nm0000168",
-      "target": "nm0000204",
-      "weight": 27,
+      "source": "nm0005028",
+      "target": "nm0221046",
+      "weight": 22,
+      "year": 2008
+    },
+    {
+      "source": "nm0000234",
+      "target": "nm0000437",
+      "weight": 20,
+      "year": 2007
+    },
+    {
+      "source": "nm0000242",
+      "target": "nm0001618",
+      "weight": 22,
       "year": 2004
     },
     {
-      "source": "nm0000354",
-      "target": "nm0000949",
-      "weight": 24,
-      "year": 2007
+      "source": "nm0000243",
+      "target": "nm0000332",
+      "weight": 23,
+      "year": 2004
+    },
+    {
+      "source": "nm0004754",
+      "target": "nm0004937",
+      "weight": 23,
+      "year": 2008
     },
     {
       "source": "nm0000177",
@@ -689,10 +437,64 @@
       "year": 2006
     },
     {
-      "source": "nm0000093",
-      "target": "nm0001254",
+      "source": "nm0000195",
+      "target": "nm0005562",
+      "weight": 50,
+      "year": 2005
+    },
+    {
+      "source": "nm0000586",
+      "target": "nm0001674",
+      "weight": 47,
+      "year": 2009
+    },
+    {
+      "source": "nm0000177",
+      "target": "nm0000604",
+      "weight": 19,
+      "year": 2008
+    },
+    {
+      "source": "nm0000163",
+      "target": "nm0001774",
       "weight": 24,
       "year": 2007
+    },
+    {
+      "source": "nm0000195",
+      "target": "nm0000437",
+      "weight": 25,
+      "year": 2003
+    },
+    {
+      "source": "nm0000450",
+      "target": "nm0010736",
+      "weight": 36,
+      "year": 2009
+    },
+    {
+      "source": "nm0000210",
+      "target": "nm0316079",
+      "weight": 22,
+      "year": 2008
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0000204",
+      "weight": 27,
+      "year": 2004
+    },
+    {
+      "source": "nm0000604",
+      "target": "nm0000658",
+      "weight": 21,
+      "year": 2000
+    },
+    {
+      "source": "nm0000134",
+      "target": "nm0001401",
+      "weight": 24,
+      "year": 2005
     },
     {
       "source": "nm0736622",
@@ -719,10 +521,10 @@
       "year": 2003
     },
     {
-      "source": "nm0000586",
-      "target": "nm0001674",
-      "weight": 47,
-      "year": 2009
+      "source": "nm0000354",
+      "target": "nm0000949",
+      "weight": 24,
+      "year": 2007
     },
     {
       "source": "nm0001191",
@@ -731,70 +533,28 @@
       "year": 2004
     },
     {
-      "source": "nm0004754",
-      "target": "nm0004937",
-      "weight": 23,
-      "year": 2008
-    },
-    {
-      "source": "nm0000195",
-      "target": "nm0005562",
-      "weight": 50,
-      "year": 2005
-    },
-    {
-      "source": "nm0000177",
-      "target": "nm0000604",
-      "weight": 19,
-      "year": 2008
-    },
-    {
-      "source": "nm0000195",
-      "target": "nm0000437",
-      "weight": 25,
-      "year": 2003
-    },
-    {
-      "source": "nm0005182",
-      "target": "nm0736622",
-      "weight": 38,
-      "year": 2007
-    },
-    {
-      "source": "nm0000354",
-      "target": "nm0000729",
-      "weight": 47,
-      "year": 2005
-    },
-    {
-      "source": "nm0004695",
-      "target": "nm0262635",
-      "weight": 25,
-      "year": 2006
-    },
-    {
-      "source": "nm0000093",
-      "target": "nm0000949",
-      "weight": 26,
-      "year": 2007
-    },
-    {
-      "source": "nm0005188",
-      "target": "nm0413168",
-      "weight": 40,
-      "year": 2003
-    },
-    {
-      "source": "nm0005023",
-      "target": "nm0124930",
+      "source": "nm0000158",
+      "target": "nm0000705",
       "weight": 25,
       "year": 2009
     },
     {
-      "source": "nm0000450",
-      "target": "nm0001570",
-      "weight": 25,
-      "year": 2002
+      "source": "nm0000139",
+      "target": "nm0000552",
+      "weight": 52,
+      "year": 2006
+    },
+    {
+      "source": "nm0000681",
+      "target": "nm0001774",
+      "weight": 36,
+      "year": 2007
+    },
+    {
+      "source": "nm0000131",
+      "target": "nm0001624",
+      "weight": 23,
+      "year": 2008
     },
     {
       "source": "nm0000138",
@@ -809,46 +569,52 @@
       "year": 2000
     },
     {
-      "source": "nm0000168",
-      "target": "nm0000375",
-      "weight": 35,
-      "year": 2006
-    },
-    {
-      "source": "nm0005182",
-      "target": "nm1706767",
-      "weight": 33,
-      "year": 2009
-    },
-    {
-      "source": "nm0005562",
-      "target": "nm0352778",
-      "weight": 24,
-      "year": 2008
-    },
-    {
       "source": "nm0004937",
       "target": "nm0913488",
       "weight": 26,
       "year": 2008
     },
     {
-      "source": "nm0000702",
-      "target": "nm0736622",
-      "weight": 20,
+      "source": "nm0001057",
+      "target": "nm0001427",
+      "weight": 21,
+      "year": 2004
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0000375",
+      "weight": 35,
+      "year": 2006
+    },
+    {
+      "source": "nm0005023",
+      "target": "nm0124930",
+      "weight": 25,
       "year": 2009
     },
     {
-      "source": "nm0000681",
-      "target": "nm0001774",
-      "weight": 36,
+      "source": "nm0000245",
+      "target": "nm0001624",
+      "weight": 21,
       "year": 2007
     },
     {
-      "source": "nm0000139",
-      "target": "nm0000552",
-      "weight": 52,
-      "year": 2006
+      "source": "nm0000177",
+      "target": "nm0000658",
+      "weight": 31,
+      "year": 2001
+    },
+    {
+      "source": "nm0000163",
+      "target": "nm0001838",
+      "weight": 22,
+      "year": 2003
+    },
+    {
+      "source": "nm0005188",
+      "target": "nm0413168",
+      "weight": 40,
+      "year": 2003
     },
     {
       "source": "nm0000134",
@@ -857,66 +623,1920 @@
       "year": 2007
     },
     {
+      "source": "nm0000354",
+      "target": "nm0000729",
+      "weight": 47,
+      "year": 2005
+    },
+    {
+      "source": "nm0000450",
+      "target": "nm0001570",
+      "weight": 25,
+      "year": 2002
+    },
+    {
+      "source": "nm0001838",
+      "target": "nm0316079",
+      "weight": 21,
+      "year": 2005
+    },
+    {
+      "source": "nm0005182",
+      "target": "nm1706767",
+      "weight": 33,
+      "year": 2009
+    },
+    {
+      "source": "nm0000138",
+      "target": "nm0000658",
+      "weight": 24,
+      "year": 2009
+    },
+    {
+      "source": "nm0000191",
+      "target": "nm0931329",
+      "weight": 20,
+      "year": 2008
+    },
+    {
+      "source": "nm0000115",
+      "target": "nm0000658",
+      "weight": 23,
+      "year": 2004
+    },
+    {
+      "source": "nm0005182",
+      "target": "nm0736622",
+      "weight": 38,
+      "year": 2007
+    },
+    {
+      "source": "nm0004695",
+      "target": "nm0262635",
+      "weight": 25,
+      "year": 2006
+    },
+    {
+      "source": "nm0005562",
+      "target": "nm0352778",
+      "weight": 24,
+      "year": 2008
+    },
+    {
+      "source": "nm0000093",
+      "target": "nm0000949",
+      "weight": 26,
+      "year": 2007
+    },
+    {
+      "source": "nm0001872",
+      "target": "nm1289434",
+      "weight": 21,
+      "year": 2008
+    },
+    {
+      "source": "nm0342488",
+      "target": "nm0914612",
+      "weight": 109,
+      "year": 2006
+    },
+    {
+      "source": "nm0000093",
+      "target": "nm0000210",
+      "weight": 38,
+      "year": 2002
+    },
+    {
+      "source": "nm0000354",
+      "target": "nm0001427",
+      "weight": 23,
+      "year": 2007
+    },
+    {
+      "source": "nm0001624",
+      "target": "nm0915208",
+      "weight": 20,
+      "year": 2007
+    },
+    {
+      "source": "nm0000139",
+      "target": "nm0005182",
+      "weight": 22,
+      "year": 2005
+    },
+    {
+      "source": "nm0000210",
+      "target": "nm0001570",
+      "weight": 17,
+      "year": 2005
+    },
+    {
+      "source": "nm0001674",
+      "target": "nm0056187",
+      "weight": 38,
+      "year": 2008
+    },
+    {
+      "source": "nm0000179",
+      "target": "nm0000204",
+      "weight": 45,
+      "year": 2008
+    },
+    {
+      "source": "nm0136797",
+      "target": "nm1706767",
+      "weight": 24,
+      "year": 2008
+    },
+    {
+      "source": "nm0000194",
+      "target": "nm0000450",
+      "weight": 58,
+      "year": 2007
+    },
+    {
       "source": "nm0000158",
+      "target": "nm0001872",
+      "weight": 33,
+      "year": 2001
+    },
+    {
+      "source": "nm0000198",
+      "target": "nm0000288",
+      "weight": 44,
+      "year": 2008
+    },
+    {
+      "source": "nm0001774",
+      "target": "nm0005562",
+      "weight": 125,
+      "year": 2007
+    },
+    {
+      "source": "nm0000136",
+      "target": "nm0001624",
+      "weight": 19,
+      "year": 2003
+    },
+    {
+      "source": "nm0000658",
+      "target": "nm0933940",
+      "weight": 20,
+      "year": 2005
+    },
+    {
+      "source": "nm0221046",
+      "target": "nm0330687",
+      "weight": 23,
+      "year": 2005
+    },
+    {
+      "source": "nm0000139",
+      "target": "nm0000598",
+      "weight": 23,
+      "year": 2006
+    },
+    {
+      "source": "nm0000124",
+      "target": "nm0001618",
+      "weight": 20,
+      "year": 2002
+    },
+    {
+      "source": "nm0000163",
+      "target": "nm0005562",
+      "weight": 24,
+      "year": 2007
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0000191",
+      "weight": 27,
+      "year": 2004
+    },
+    {
+      "source": "nm0000206",
+      "target": "nm0001838",
+      "weight": 24,
+      "year": 2001
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0004937",
+      "weight": 24,
+      "year": 2004
+    },
+    {
+      "source": "nm0000179",
+      "target": "nm0000949",
+      "weight": 25,
+      "year": 2002
+    },
+    {
+      "source": "nm0005351",
+      "target": "nm0316079",
+      "weight": 18,
+      "year": 2006
+    },
+    {
+      "source": "nm0001191",
+      "target": "nm1706767",
+      "weight": 25,
+      "year": 2008
+    },
+    {
+      "source": "nm1227814",
+      "target": "nm1374980",
+      "weight": 34,
+      "year": 2007
+    },
+    {
+      "source": "nm0000160",
+      "target": "nm0000243",
+      "weight": 26,
+      "year": 2009
+    },
+    {
+      "source": "nm0002071",
+      "target": "nm0221046",
+      "weight": 22,
+      "year": 2004
+    },
+    {
+      "source": "nm0000139",
+      "target": "nm0000196",
+      "weight": 61,
+      "year": 2006
+    },
+    {
+      "source": "nm0000681",
+      "target": "nm0005562",
+      "weight": 37,
+      "year": 2007
+    },
+    {
+      "source": "nm0356017",
+      "target": "nm0424060",
+      "weight": 27,
+      "year": 2007
+    },
+    {
+      "source": "nm0000194",
+      "target": "nm0000332",
+      "weight": 18,
+      "year": 2009
+    },
+    {
+      "source": "nm0000729",
+      "target": "nm0005028",
+      "weight": 18,
+      "year": 2004
+    },
+    {
+      "source": "nm0184445",
+      "target": "nm1706767",
+      "weight": 22,
+      "year": 2007
+    },
+    {
+      "source": "nm0000586",
+      "target": "nm0056187",
+      "weight": 38,
+      "year": 2008
+    },
+    {
+      "source": "nm0136797",
+      "target": "nm0736622",
+      "weight": 38,
+      "year": 2006
+    },
+    {
+      "source": "nm0000255",
+      "target": "nm0000354",
+      "weight": 93,
+      "year": 2007
+    },
+    {
+      "source": "nm0000204",
+      "target": "nm0177896",
+      "weight": 20,
+      "year": 2008
+    },
+    {
+      "source": "nm0000375",
+      "target": "nm0001774",
+      "weight": 22,
+      "year": 2004
+    },
+    {
+      "source": "nm0000190",
+      "target": "nm0005028",
+      "weight": 24,
+      "year": 2006
+    },
+    {
+      "source": "nm0000237",
+      "target": "nm0000681",
+      "weight": 22,
+      "year": 2003
+    },
+    {
+      "source": "nm0000658",
+      "target": "nm0010736",
+      "weight": 24,
+      "year": 2009
+    },
+    {
+      "source": "nm0000158",
+      "target": "nm0010736",
+      "weight": 26,
+      "year": 2005
+    },
+    {
+      "source": "nm0262635",
+      "target": "nm0913488",
+      "weight": 25,
+      "year": 2006
+    },
+    {
+      "source": "nm0000246",
       "target": "nm0000705",
+      "weight": 23,
+      "year": 2004
+    },
+    {
+      "source": "nm0000134",
+      "target": "nm0000245",
+      "weight": 23,
+      "year": 2002
+    },
+    {
+      "source": "nm0001674",
+      "target": "nm0913488",
+      "weight": 21,
+      "year": 2005
+    },
+    {
+      "source": "nm0000586",
+      "target": "nm0004937",
+      "weight": 25,
+      "year": 2003
+    },
+    {
+      "source": "nm0005028",
+      "target": "nm0765597",
+      "weight": 20,
+      "year": 2002
+    },
+    {
+      "source": "nm0000160",
+      "target": "nm0001872",
+      "weight": 26,
+      "year": 2006
+    },
+    {
+      "source": "nm0000206",
+      "target": "nm0269463",
+      "weight": 23,
+      "year": 2002
+    },
+    {
+      "source": "nm0342488",
+      "target": "nm0705356",
+      "weight": 109,
+      "year": 2006
+    },
+    {
+      "source": "nm0000191",
+      "target": "nm0915208",
+      "weight": 24,
+      "year": 2009
+    },
+    {
+      "source": "nm0004754",
+      "target": "nm0005458",
+      "weight": 22,
+      "year": 2005
+    },
+    {
+      "source": "nm0001593",
+      "target": "nm0413168",
+      "weight": 54,
+      "year": 2006
+    },
+    {
+      "source": "nm0000195",
+      "target": "nm0000949",
+      "weight": 24,
+      "year": 2009
+    },
+    {
+      "source": "nm0000134",
+      "target": "nm0001774",
+      "weight": 37,
+      "year": 2005
+    },
+    {
+      "source": "nm0004754",
+      "target": "nm0262635",
+      "weight": 22,
+      "year": 2005
+    },
+    {
+      "source": "nm0005458",
+      "target": "nm0262635",
+      "weight": 22,
+      "year": 2005
+    },
+    {
+      "source": "nm0004266",
+      "target": "nm0330687",
       "weight": 25,
       "year": 2009
+    },
+    {
+      "source": "nm0001774",
+      "target": "nm0056187",
+      "weight": 38,
+      "year": 2008
+    },
+    {
+      "source": "nm0000244",
+      "target": "nm0000741",
+      "weight": 21,
+      "year": 2005
+    },
+    {
+      "source": "nm0000120",
+      "target": "nm0005182",
+      "weight": 24,
+      "year": 2003
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0000246",
+      "weight": 53,
+      "year": 2002
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0316079",
+      "weight": 24,
+      "year": 2006
+    },
+    {
+      "source": "nm0000375",
+      "target": "nm1157358",
+      "weight": 25,
+      "year": 2008
+    },
+    {
+      "source": "nm0000179",
+      "target": "nm0000450",
+      "weight": 25,
+      "year": 2001
+    },
+    {
+      "source": "nm0001454",
+      "target": "nm0001674",
+      "weight": 21,
+      "year": 2001
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0159789",
+      "weight": 46,
+      "year": 2006
+    },
+    {
+      "source": "nm0000576",
+      "target": "nm0915208",
+      "weight": 34,
+      "year": 2006
+    },
+    {
+      "source": "nm0000354",
+      "target": "nm0000569",
+      "weight": 25,
+      "year": 2005
+    },
+    {
+      "source": "nm0000437",
+      "target": "nm0001624",
+      "weight": 24,
+      "year": 2001
+    },
+    {
+      "source": "nm0000129",
+      "target": "nm0000450",
+      "weight": 26,
+      "year": 2003
+    },
+    {
+      "source": "nm0000179",
+      "target": "nm0000354",
+      "weight": 25,
+      "year": 2005
+    },
+    {
+      "source": "nm0000179",
+      "target": "nm0001838",
+      "weight": 22,
+      "year": 2006
+    },
+    {
+      "source": "nm0000124",
+      "target": "nm0000604",
+      "weight": 23,
+      "year": 2007
+    },
+    {
+      "source": "nm0000932",
+      "target": "nm0413168",
+      "weight": 66,
+      "year": 2005
+    },
+    {
+      "source": "nm0000932",
+      "target": "nm0001593",
+      "weight": 54,
+      "year": 2006
+    },
+    {
+      "source": "nm0004266",
+      "target": "nm0251986",
+      "weight": 31,
+      "year": 2008
+    },
+    {
+      "source": "nm0000177",
+      "target": "nm0000244",
+      "weight": 30,
+      "year": 2004
+    },
+    {
+      "source": "nm0000204",
+      "target": "nm0159789",
+      "weight": 38,
+      "year": 2005
+    },
+    {
+      "source": "nm0000134",
+      "target": "nm0001570",
+      "weight": 23,
+      "year": 2006
+    },
+    {
+      "source": "nm0005562",
+      "target": "nm1046097",
+      "weight": 26,
+      "year": 2008
+    },
+    {
+      "source": "nm0005109",
+      "target": "nm1659221",
+      "weight": 20,
+      "year": 2007
+    },
+    {
+      "source": "nm0000134",
+      "target": "nm0000138",
+      "weight": 34,
+      "year": 2004
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0000604",
+      "weight": 24,
+      "year": 2007
+    },
+    {
+      "source": "nm0000190",
+      "target": "nm0001872",
+      "weight": 25,
+      "year": 2009
+    },
+    {
+      "source": "nm0005109",
+      "target": "nm0757855",
+      "weight": 20,
+      "year": 2007
+    },
+    {
+      "source": "nm0000190",
+      "target": "nm0005023",
+      "weight": 22,
+      "year": 2008
+    },
+    {
+      "source": "nm0000129",
+      "target": "nm0000139",
+      "weight": 25,
+      "year": 2006
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0001057",
+      "weight": 34,
+      "year": 2006
+    },
+    {
+      "source": "nm0000194",
+      "target": "nm0000949",
+      "weight": 20,
+      "year": 2000
+    },
+    {
+      "source": "nm0004695",
+      "target": "nm0913488",
+      "weight": 25,
+      "year": 2006
+    },
+    {
+      "source": "nm0004874",
+      "target": "nm0881631",
+      "weight": 25,
+      "year": 2009
+    },
+    {
+      "source": "nm0000234",
+      "target": "nm0000531",
+      "weight": 23,
+      "year": 2005
+    },
+    {
+      "source": "nm0005182",
+      "target": "nm2957717",
+      "weight": 37,
+      "year": 2009
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0000569",
+      "weight": 25,
+      "year": 2003
     }
   ],
   "2010s": [
     {
-      "source": "nm0002071",
-      "target": "nm1063517",
-      "weight": 35,
+      "source": "nm0004874",
+      "target": "nm0425005",
+      "weight": 52,
+      "year": 2014
+    },
+    {
+      "source": "nm0000437",
+      "target": "nm2955013",
+      "weight": 49,
+      "year": 2015
+    },
+    {
+      "source": "nm0262635",
+      "target": "nm0424060",
+      "weight": 94,
+      "year": 2014
+    },
+    {
+      "source": "nm0001191",
+      "target": "nm0001674",
+      "weight": 47,
+      "year": 2012
+    },
+    {
+      "source": "nm0000437",
+      "target": "nm2225369",
+      "weight": 40,
+      "year": 2014
+    },
+    {
+      "source": "nm0413168",
+      "target": "nm0931329",
+      "weight": 23,
+      "year": 2013
+    },
+    {
+      "source": "nm0000098",
+      "target": "nm0005562",
+      "weight": 22,
       "year": 2011
     },
     {
-      "source": "nm0000255",
-      "target": "nm0147147",
-      "weight": 40,
+      "source": "nm0000198",
+      "target": "nm0362766",
+      "weight": 51,
+      "year": 2013
+    },
+    {
+      "source": "nm0000246",
+      "target": "nm0330687",
+      "weight": 25,
+      "year": 2013
+    },
+    {
+      "source": "nm0000195",
+      "target": "nm0915208",
+      "weight": 21,
+      "year": 2019
+    },
+    {
+      "source": "nm1567113",
+      "target": "nm1659221",
+      "weight": 25,
+      "year": 2019
+    },
+    {
+      "source": "nm0736622",
+      "target": "nm1063517",
+      "weight": 24,
+      "year": 2015
+    },
+    {
+      "source": "nm0000190",
+      "target": "nm1706767",
+      "weight": 25,
+      "year": 2016
+    },
+    {
+      "source": "nm0000949",
+      "target": "nm1706767",
+      "weight": 38,
       "year": 2018
     },
     {
-      "source": "nm0447695",
-      "target": "nm1500155",
+      "source": "nm0000139",
+      "target": "nm0004937",
+      "weight": 34,
+      "year": 2013
+    },
+    {
+      "source": "nm0000349",
+      "target": "nm0000741",
+      "weight": 48,
+      "year": 2012
+    },
+    {
+      "source": "nm0000198",
+      "target": "nm0005351",
+      "weight": 35,
+      "year": 2018
+    },
+    {
+      "source": "nm0000681",
+      "target": "nm1157358",
+      "weight": 37,
+      "year": 2014
+    },
+    {
+      "source": "nm0269463",
+      "target": "nm4043618",
+      "weight": 41,
+      "year": 2019
+    },
+    {
+      "source": "nm2546012",
+      "target": "nm3729721",
+      "weight": 38,
+      "year": 2016
+    },
+    {
+      "source": "nm0000255",
+      "target": "nm1046097",
+      "weight": 22,
+      "year": 2011
+    },
+    {
+      "source": "nm0000437",
+      "target": "nm0001872",
+      "weight": 23,
+      "year": 2013
+    },
+    {
+      "source": "nm0000158",
+      "target": "nm0000349",
+      "weight": 48,
+      "year": 2012
+    },
+    {
+      "source": "nm0000354",
+      "target": "nm1289434",
+      "weight": 26,
+      "year": 2017
+    },
+    {
+      "source": "nm0670408",
+      "target": "nm0881631",
+      "weight": 39,
+      "year": 2013
+    },
+    {
+      "source": "nm1411125",
+      "target": "nm1676221",
+      "weight": 47,
+      "year": 2017
+    },
+    {
+      "source": "nm0424060",
+      "target": "nm1569276",
+      "weight": 42,
+      "year": 2018
+    },
+    {
+      "source": "nm0000949",
+      "target": "nm0124930",
+      "weight": 25,
+      "year": 2017
+    },
+    {
+      "source": "nm0262635",
+      "target": "nm1569276",
+      "weight": 42,
+      "year": 2018
+    },
+    {
+      "source": "nm0736622",
+      "target": "nm2957717",
+      "weight": 37,
+      "year": 2011
+    },
+    {
+      "source": "nm0000437",
+      "target": "nm0000450",
+      "weight": 40,
+      "year": 2014
+    },
+    {
+      "source": "nm1242688",
+      "target": "nm2955013",
+      "weight": 54,
+      "year": 2014
+    },
+    {
+      "source": "nm0124930",
+      "target": "nm1325419",
+      "weight": 39,
+      "year": 2014
+    },
+    {
+      "source": "nm0002071",
+      "target": "nm0356017",
+      "weight": 22,
+      "year": 2014
+    },
+    {
+      "source": "nm0000332",
+      "target": "nm1569276",
+      "weight": 42,
+      "year": 2018
+    },
+    {
+      "source": "nm1242688",
+      "target": "nm2225369",
+      "weight": 54,
+      "year": 2014
+    },
+    {
+      "source": "nm0000230",
+      "target": "nm0005458",
+      "weight": 49,
+      "year": 2015
+    },
+    {
+      "source": "nm0000949",
+      "target": "nm0765597",
+      "weight": 19,
+      "year": 2017
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0424060",
+      "weight": 52,
+      "year": 2012
+    },
+    {
+      "source": "nm0004266",
+      "target": "nm0056187",
+      "weight": 25,
+      "year": 2014
+    },
+    {
+      "source": "nm3918035",
+      "target": "nm4043618",
+      "weight": 41,
+      "year": 2019
+    },
+    {
+      "source": "nm0000255",
+      "target": "nm0597388",
+      "weight": 26,
+      "year": 2019
+    },
+    {
+      "source": "nm0005450",
+      "target": "nm1063517",
+      "weight": 22,
+      "year": 2019
+    },
+    {
+      "source": "nm0000375",
+      "target": "nm1165110",
+      "weight": 56,
+      "year": 2016
+    },
+    {
+      "source": "nm0000173",
+      "target": "nm1374980",
+      "weight": 21,
+      "year": 2018
+    },
+    {
+      "source": "nm0005377",
+      "target": "nm0136797",
+      "weight": 24,
+      "year": 2016
+    },
+    {
+      "source": "nm0000134",
+      "target": "nm0004695",
+      "weight": 24,
+      "year": 2010
+    },
+    {
+      "source": "nm0000234",
+      "target": "nm1086543",
+      "weight": 23,
+      "year": 2016
+    },
+    {
+      "source": "nm0352778",
+      "target": "nm0564215",
+      "weight": 41,
+      "year": 2015
+    },
+    {
+      "source": "nm0000332",
+      "target": "nm0262635",
+      "weight": 56,
+      "year": 2017
+    },
+    {
+      "source": "nm0000375",
+      "target": "nm1046097",
+      "weight": 27,
+      "year": 2010
+    },
+    {
+      "source": "nm0940362",
+      "target": "nm2368789",
+      "weight": 37,
+      "year": 2016
+    },
+    {
+      "source": "nm0000375",
+      "target": "nm0004937",
+      "weight": 24,
+      "year": 2010
+    },
+    {
+      "source": "nm0000450",
+      "target": "nm1242688",
+      "weight": 40,
+      "year": 2014
+    },
+    {
+      "source": "nm0000332",
+      "target": "nm0424060",
+      "weight": 70,
+      "year": 2016
+    },
+    {
+      "source": "nm0000198",
+      "target": "nm1086543",
+      "weight": 23,
+      "year": 2016
+    },
+    {
+      "source": "nm0193295",
+      "target": "nm0413168",
+      "weight": 24,
+      "year": 2014
+    },
+    {
+      "source": "nm0010736",
+      "target": "nm0251986",
+      "weight": 27,
+      "year": 2019
+    },
+    {
+      "source": "nm0000131",
+      "target": "nm0000168",
+      "weight": 32,
+      "year": 2013
+    },
+    {
+      "source": "nm0695435",
+      "target": "nm1176985",
+      "weight": 54,
+      "year": 2019
+    },
+    {
+      "source": "nm0200452",
+      "target": "nm0931329",
+      "weight": 22,
+      "year": 2016
+    },
+    {
+      "source": "nm0837177",
+      "target": "nm1325419",
+      "weight": 40,
+      "year": 2012
+    },
+    {
+      "source": "nm0004874",
+      "target": "nm0757855",
+      "weight": 28,
+      "year": 2016
+    },
+    {
+      "source": "nm0205626",
+      "target": "nm0564215",
+      "weight": 28,
+      "year": 2013
+    },
+    {
+      "source": "nm0396558",
+      "target": "nm4446467",
+      "weight": 47,
+      "year": 2019
+    },
+    {
+      "source": "nm0837177",
+      "target": "nm1104131",
+      "weight": 22,
+      "year": 2018
+    },
+    {
+      "source": "nm1886602",
+      "target": "nm5052065",
+      "weight": 38,
+      "year": 2015
+    },
+    {
+      "source": "nm1055413",
+      "target": "nm1404239",
+      "weight": 25,
+      "year": 2018
+    },
+    {
+      "source": "nm0005450",
+      "target": "nm1221047",
+      "weight": 34,
+      "year": 2018
+    },
+    {
+      "source": "nm0001057",
+      "target": "nm0136797",
       "weight": 25,
       "year": 2010
     },
     {
-      "source": "nm0736622",
-      "target": "nm1706767",
-      "weight": 75,
-      "year": 2010
+      "source": "nm0330687",
+      "target": "nm1475594",
+      "weight": 30,
+      "year": 2011
     },
     {
-      "source": "nm0000375",
-      "target": "nm0424060",
-      "weight": 96,
-      "year": 2015
-    },
-    {
-      "source": "nm0000437",
-      "target": "nm0705356",
-      "weight": 21,
+      "source": "nm0001191",
+      "target": "nm1221047",
+      "weight": 24,
       "year": 2017
     },
     {
-      "source": "nm2955013",
+      "source": "nm0005562",
+      "target": "nm0837177",
+      "weight": 23,
+      "year": 2014
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0000332",
+      "weight": 48,
+      "year": 2018
+    },
+    {
+      "source": "nm0002071",
+      "target": "nm0136797",
+      "weight": 43,
+      "year": 2012
+    },
+    {
+      "source": "nm0000160",
+      "target": "nm0765597",
+      "weight": 25,
+      "year": 2019
+    },
+    {
+      "source": "nm0000226",
+      "target": "nm0001454",
+      "weight": 49,
+      "year": 2011
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0262635",
+      "weight": 41,
+      "year": 2013
+    },
+    {
+      "source": "nm1886602",
+      "target": "nm3772243",
+      "weight": 38,
+      "year": 2015
+    },
+    {
+      "source": "nm0000195",
+      "target": "nm1104131",
+      "weight": 21,
+      "year": 2015
+    },
+    {
+      "source": "nm0000234",
+      "target": "nm0396558",
+      "weight": 25,
+      "year": 2015
+    },
+    {
+      "source": "nm0164809",
+      "target": "nm0252961",
+      "weight": 20,
+      "year": 2017
+    },
+    {
+      "source": "nm0416673",
+      "target": "nm1676221",
+      "weight": 36,
+      "year": 2015
+    },
+    {
+      "source": "nm0164809",
+      "target": "nm0915208",
+      "weight": 17,
+      "year": 2012
+    },
+    {
+      "source": "nm0147147",
+      "target": "nm0597388",
+      "weight": 26,
+      "year": 2019
+    },
+    {
+      "source": "nm0001057",
+      "target": "nm0396558",
+      "weight": 24,
+      "year": 2013
+    },
+    {
+      "source": "nm0000437",
+      "target": "nm0000531",
+      "weight": 24,
+      "year": 2011
+    },
+    {
+      "source": "nm1165110",
+      "target": "nm1569276",
+      "weight": 28,
+      "year": 2019
+    },
+    {
+      "source": "nm0000681",
+      "target": "nm0425005",
+      "weight": 23,
+      "year": 2012
+    },
+    {
+      "source": "nm0005562",
+      "target": "nm1063517",
+      "weight": 21,
+      "year": 2012
+    },
+    {
+      "source": "nm0005028",
+      "target": "nm1063517",
+      "weight": 26,
+      "year": 2013
+    },
+    {
+      "source": "nm0000194",
       "target": "nm3510471",
       "weight": 26,
       "year": 2015
     },
     {
-      "source": "nm0000705",
-      "target": "nm1517976",
+      "source": "nm0396558",
+      "target": "nm2225369",
+      "weight": 39,
+      "year": 2016
+    },
+    {
+      "source": "nm0177896",
+      "target": "nm0757855",
+      "weight": 39,
+      "year": 2014
+    },
+    {
+      "source": "nm1517976",
+      "target": "nm2933757",
       "weight": 26,
       "year": 2019
     },
     {
-      "source": "nm0004874",
-      "target": "nm0908094",
-      "weight": 65,
+      "source": "nm0000168",
+      "target": "nm0004874",
+      "weight": 24,
       "year": 2010
+    },
+    {
+      "source": "nm0000190",
+      "target": "nm0000437",
+      "weight": 23,
+      "year": 2011
+    },
+    {
+      "source": "nm0000226",
+      "target": "nm3053338",
+      "weight": 26,
+      "year": 2016
+    },
+    {
+      "source": "nm0010736",
+      "target": "nm0687146",
+      "weight": 24,
+      "year": 2015
+    },
+    {
+      "source": "nm0000194",
+      "target": "nm0136797",
+      "weight": 23,
+      "year": 2013
+    },
+    {
+      "source": "nm2225369",
+      "target": "nm2955013",
+      "weight": 54,
+      "year": 2014
+    },
+    {
+      "source": "nm0251986",
+      "target": "nm2933757",
+      "weight": 27,
+      "year": 2019
+    },
+    {
+      "source": "nm0001570",
+      "target": "nm0915208",
+      "weight": 25,
+      "year": 2010
+    },
+    {
+      "source": "nm0000949",
+      "target": "nm1325419",
+      "weight": 35,
+      "year": 2017
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0000474",
+      "weight": 49,
+      "year": 2011
+    },
+    {
+      "source": "nm0000242",
+      "target": "nm1086543",
+      "weight": 23,
+      "year": 2018
+    },
+    {
+      "source": "nm0735442",
+      "target": "nm0908094",
+      "weight": 52,
+      "year": 2010
+    },
+    {
+      "source": "nm0000437",
+      "target": "nm0251986",
+      "weight": 63,
+      "year": 2016
+    },
+    {
+      "source": "nm0000115",
+      "target": "nm0005351",
+      "weight": 23,
+      "year": 2017
+    },
+    {
+      "source": "nm0000115",
+      "target": "nm0396558",
+      "weight": 23,
+      "year": 2014
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm1107001",
+      "weight": 44,
+      "year": 2011
+    },
+    {
+      "source": "nm0908094",
+      "target": "nm2933757",
+      "weight": 39,
+      "year": 2011
+    },
+    {
+      "source": "nm0004874",
+      "target": "nm0735442",
+      "weight": 88,
+      "year": 2014
+    },
+    {
+      "source": "nm0000115",
+      "target": "nm1297015",
+      "weight": 23,
+      "year": 2017
+    },
+    {
+      "source": "nm0000604",
+      "target": "nm0350453",
+      "weight": 22,
+      "year": 2010
+    },
+    {
+      "source": "nm0000705",
+      "target": "nm1046097",
+      "weight": 23,
+      "year": 2012
+    },
+    {
+      "source": "nm0000136",
+      "target": "nm0004266",
+      "weight": 25,
+      "year": 2013
+    },
+    {
+      "source": "nm0004874",
+      "target": "nm0005458",
+      "weight": 37,
+      "year": 2018
+    },
+    {
+      "source": "nm0000195",
+      "target": "nm1297015",
+      "weight": 25,
+      "year": 2012
+    },
+    {
+      "source": "nm1176985",
+      "target": "nm1476806",
+      "weight": 21,
+      "year": 2017
+    },
+    {
+      "source": "nm0000437",
+      "target": "nm1242688",
+      "weight": 40,
+      "year": 2014
+    },
+    {
+      "source": "nm0262635",
+      "target": "nm0757855",
+      "weight": 26,
+      "year": 2014
+    },
+    {
+      "source": "nm0564215",
+      "target": "nm1404239",
+      "weight": 25,
+      "year": 2018
+    },
+    {
+      "source": "nm0262635",
+      "target": "nm1659221",
+      "weight": 41,
+      "year": 2014
+    },
+    {
+      "source": "nm0000450",
+      "target": "nm2955013",
+      "weight": 40,
+      "year": 2014
+    },
+    {
+      "source": "nm0177896",
+      "target": "nm2225369",
+      "weight": 49,
+      "year": 2014
+    },
+    {
+      "source": "nm0000658",
+      "target": "nm1086543",
+      "weight": 24,
+      "year": 2013
+    },
+    {
+      "source": "nm0000194",
+      "target": "nm0000437",
+      "weight": 45,
+      "year": 2012
+    },
+    {
+      "source": "nm0262635",
+      "target": "nm1107001",
+      "weight": 49,
+      "year": 2017
+    },
+    {
+      "source": "nm0004874",
+      "target": "nm2933757",
+      "weight": 39,
+      "year": 2011
+    },
+    {
+      "source": "nm0000245",
+      "target": "nm0315041",
+      "weight": 37,
+      "year": 2010
+    },
+    {
+      "source": "nm0124930",
+      "target": "nm1706767",
+      "weight": 39,
+      "year": 2014
+    },
+    {
+      "source": "nm0000234",
+      "target": "nm1165110",
+      "weight": 24,
+      "year": 2014
+    },
+    {
+      "source": "nm0221046",
+      "target": "nm1104131",
+      "weight": 30,
+      "year": 2010
+    },
+    {
+      "source": "nm0005351",
+      "target": "nm0352778",
+      "weight": 24,
+      "year": 2011
+    },
+    {
+      "source": "nm2225369",
+      "target": "nm4446467",
+      "weight": 25,
+      "year": 2018
+    },
+    {
+      "source": "nm0829576",
+      "target": "nm1210124",
+      "weight": 64,
+      "year": 2010
+    },
+    {
+      "source": "nm1221047",
+      "target": "nm1411125",
+      "weight": 34,
+      "year": 2018
+    },
+    {
+      "source": "nm0447695",
+      "target": "nm1210124",
+      "weight": 25,
+      "year": 2010
+    },
+    {
+      "source": "nm0000245",
+      "target": "nm0005562",
+      "weight": 24,
+      "year": 2012
+    },
+    {
+      "source": "nm0000949",
+      "target": "nm1165110",
+      "weight": 20,
+      "year": 2019
+    },
+    {
+      "source": "nm0000450",
+      "target": "nm2225369",
+      "weight": 40,
+      "year": 2014
+    },
+    {
+      "source": "nm0000332",
+      "target": "nm0000375",
+      "weight": 83,
+      "year": 2015
+    },
+    {
+      "source": "nm3772243",
+      "target": "nm5052065",
+      "weight": 38,
+      "year": 2015
+    },
+    {
+      "source": "nm0000576",
+      "target": "nm4446467",
+      "weight": 21,
+      "year": 2017
+    },
+    {
+      "source": "nm0000204",
+      "target": "nm0000288",
+      "weight": 23,
+      "year": 2019
+    },
+    {
+      "source": "nm0000375",
+      "target": "nm0000569",
+      "weight": 55,
+      "year": 2012
+    },
+    {
+      "source": "nm0002071",
+      "target": "nm1325419",
+      "weight": 35,
+      "year": 2017
+    },
+    {
+      "source": "nm0352778",
+      "target": "nm1104131",
+      "weight": 44,
+      "year": 2014
+    },
+    {
+      "source": "nm0000173",
+      "target": "nm0413168",
+      "weight": 32,
+      "year": 2012
+    },
+    {
+      "source": "nm0004754",
+      "target": "nm0177896",
+      "weight": 24,
+      "year": 2010
+    },
+    {
+      "source": "nm1567113",
+      "target": "nm4446467",
+      "weight": 25,
+      "year": 2015
+    },
+    {
+      "source": "nm0004874",
+      "target": "nm0695435",
+      "weight": 41,
+      "year": 2018
+    },
+    {
+      "source": "nm0010736",
+      "target": "nm0147147",
+      "weight": 53,
+      "year": 2017
+    },
+    {
+      "source": "nm0000246",
+      "target": "nm0001570",
+      "weight": 24,
+      "year": 2016
+    },
+    {
+      "source": "nm0000204",
+      "target": "nm0000949",
+      "weight": 20,
+      "year": 2016
+    },
+    {
+      "source": "nm0000179",
+      "target": "nm1046097",
+      "weight": 27,
+      "year": 2010
+    },
+    {
+      "source": "nm0010736",
+      "target": "nm2933757",
+      "weight": 40,
+      "year": 2018
+    },
+    {
+      "source": "nm0000093",
+      "target": "nm1055413",
+      "weight": 28,
+      "year": 2011
+    },
+    {
+      "source": "nm1631269",
+      "target": "nm5052065",
+      "weight": 21,
+      "year": 2015
+    },
+    {
+      "source": "nm0352778",
+      "target": "nm1325419",
+      "weight": 30,
+      "year": 2010
+    },
+    {
+      "source": "nm0005351",
+      "target": "nm2933757",
+      "weight": 24,
+      "year": 2019
+    },
+    {
+      "source": "nm0252961",
+      "target": "nm0757855",
+      "weight": 24,
+      "year": 2013
+    },
+    {
+      "source": "nm0005450",
+      "target": "nm1676221",
+      "weight": 47,
+      "year": 2017
+    },
+    {
+      "source": "nm0000138",
+      "target": "nm0362766",
+      "weight": 29,
+      "year": 2013
+    },
+    {
+      "source": "nm0000173",
+      "target": "nm0000658",
+      "weight": 22,
+      "year": 2011
+    },
+    {
+      "source": "nm0005182",
+      "target": "nm0005351",
+      "weight": 23,
+      "year": 2016
+    },
+    {
+      "source": "nm0001191",
+      "target": "nm1676221",
+      "weight": 48,
+      "year": 2014
+    },
+    {
+      "source": "nm0000437",
+      "target": "nm1107001",
+      "weight": 20,
+      "year": 2010
+    },
+    {
+      "source": "nm0004695",
+      "target": "nm0735442",
+      "weight": 24,
+      "year": 2012
+    },
+    {
+      "source": "nm0000437",
+      "target": "nm0000729",
+      "weight": 23,
+      "year": 2015
+    },
+    {
+      "source": "nm0177896",
+      "target": "nm0695435",
+      "weight": 41,
+      "year": 2018
+    },
+    {
+      "source": "nm0425005",
+      "target": "nm2933757",
+      "weight": 39,
+      "year": 2015
+    },
+    {
+      "source": "nm2368789",
+      "target": "nm5052065",
+      "weight": 25,
+      "year": 2015
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0000198",
+      "weight": 49,
+      "year": 2011
+    },
+    {
+      "source": "nm1017633",
+      "target": "nm3315894",
+      "weight": 39,
+      "year": 2016
+    },
+    {
+      "source": "nm0350453",
+      "target": "nm1659547",
+      "weight": 22,
+      "year": 2014
+    },
+    {
+      "source": "nm1325419",
+      "target": "nm1706767",
+      "weight": 58,
+      "year": 2014
+    },
+    {
+      "source": "nm0000098",
+      "target": "nm0004937",
+      "weight": 17,
+      "year": 2017
+    },
+    {
+      "source": "nm0425005",
+      "target": "nm0735442",
+      "weight": 39,
+      "year": 2015
+    },
+    {
+      "source": "nm0000242",
+      "target": "nm0005109",
+      "weight": 25,
+      "year": 2010
+    },
+    {
+      "source": "nm0757855",
+      "target": "nm1517976",
+      "weight": 39,
+      "year": 2013
+    },
+    {
+      "source": "nm0000134",
+      "target": "nm0177896",
+      "weight": 39,
+      "year": 2013
+    },
+    {
+      "source": "nm0000195",
+      "target": "nm0000246",
+      "weight": 22,
+      "year": 2014
+    },
+    {
+      "source": "nm2368789",
+      "target": "nm3772243",
+      "weight": 25,
+      "year": 2015
+    },
+    {
+      "source": "nm1165110",
+      "target": "nm4043618",
+      "weight": 26,
+      "year": 2017
+    },
+    {
+      "source": "nm0597388",
+      "target": "nm2933757",
+      "weight": 26,
+      "year": 2019
+    },
+    {
+      "source": "nm0424060",
+      "target": "nm1659221",
+      "weight": 28,
+      "year": 2015
+    },
+    {
+      "source": "nm0000190",
+      "target": "nm1374980",
+      "weight": 21,
+      "year": 2016
+    },
+    {
+      "source": "nm0330687",
+      "target": "nm0362766",
+      "weight": 29,
+      "year": 2011
+    },
+    {
+      "source": "nm0000288",
+      "target": "nm0136797",
+      "weight": 25,
+      "year": 2017
+    },
+    {
+      "source": "nm0000177",
+      "target": "nm0914612",
+      "weight": 23,
+      "year": 2013
+    },
+    {
+      "source": "nm0424060",
+      "target": "nm1107001",
+      "weight": 28,
+      "year": 2015
+    },
+    {
+      "source": "nm0396558",
+      "target": "nm1055413",
+      "weight": 39,
+      "year": 2016
+    },
+    {
+      "source": "nm0005028",
+      "target": "nm0352778",
+      "weight": 21,
+      "year": 2010
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm1659221",
+      "weight": 28,
+      "year": 2013
+    },
+    {
+      "source": "nm0736622",
+      "target": "nm0931329",
+      "weight": 22,
+      "year": 2017
+    },
+    {
+      "source": "nm0000658",
+      "target": "nm0316079",
+      "weight": 19,
+      "year": 2010
+    },
+    {
+      "source": "nm0330687",
+      "target": "nm0736622",
+      "weight": 24,
+      "year": 2013
+    },
+    {
+      "source": "nm0000173",
+      "target": "nm0000179",
+      "weight": 22,
+      "year": 2010
+    },
+    {
+      "source": "nm0416673",
+      "target": "nm1221047",
+      "weight": 24,
+      "year": 2017
+    },
+    {
+      "source": "nm0000210",
+      "target": "nm0000658",
+      "weight": 22,
+      "year": 2010
+    },
+    {
+      "source": "nm0000598",
+      "target": "nm0350453",
+      "weight": 24,
+      "year": 2013
+    },
+    {
+      "source": "nm0000138",
+      "target": "nm1706767",
+      "weight": 28,
+      "year": 2017
+    },
+    {
+      "source": "nm0005351",
+      "target": "nm1297015",
+      "weight": 33,
+      "year": 2014
+    },
+    {
+      "source": "nm0000098",
+      "target": "nm0837177",
+      "weight": 61,
+      "year": 2013
+    },
+    {
+      "source": "nm0193295",
+      "target": "nm0757855",
+      "weight": 37,
+      "year": 2019
+    },
+    {
+      "source": "nm1107001",
+      "target": "nm1659221",
+      "weight": 40,
+      "year": 2017
+    },
+    {
+      "source": "nm0251986",
+      "target": "nm1297015",
+      "weight": 26,
+      "year": 2014
+    },
+    {
+      "source": "nm0358316",
+      "target": "nm0705356",
+      "weight": 19,
+      "year": 2016
     },
     {
       "source": "nm0000158",
@@ -925,58 +2545,16 @@
       "year": 2011
     },
     {
-      "source": "nm0001774",
-      "target": "nm0315041",
-      "weight": 37,
+      "source": "nm0000658",
+      "target": "nm1289434",
+      "weight": 48,
+      "year": 2016
+    },
+    {
+      "source": "nm0004874",
+      "target": "nm0908094",
+      "weight": 65,
       "year": 2010
-    },
-    {
-      "source": "nm0000244",
-      "target": "nm0757855",
-      "weight": 52,
-      "year": 2016
-    },
-    {
-      "source": "nm0000129",
-      "target": "nm0670408",
-      "weight": 77,
-      "year": 2016
-    },
-    {
-      "source": "nm0001191",
-      "target": "nm0416673",
-      "weight": 106,
-      "year": 2014
-    },
-    {
-      "source": "nm1209966",
-      "target": "nm1659547",
-      "weight": 38,
-      "year": 2016
-    },
-    {
-      "source": "nm0000098",
-      "target": "nm0001191",
-      "weight": 36,
-      "year": 2018
-    },
-    {
-      "source": "nm0000195",
-      "target": "nm0001570",
-      "weight": 39,
-      "year": 2015
-    },
-    {
-      "source": "nm1221047",
-      "target": "nm1676221",
-      "weight": 56,
-      "year": 2019
-    },
-    {
-      "source": "nm1209966",
-      "target": "nm1567113",
-      "weight": 22,
-      "year": 2018
     },
     {
       "source": "nm0564215",
@@ -985,58 +2563,46 @@
       "year": 2016
     },
     {
-      "source": "nm0000255",
-      "target": "nm0010736",
-      "weight": 40,
+      "source": "nm0000246",
+      "target": "nm1476806",
+      "weight": 66,
       "year": 2018
     },
     {
-      "source": "nm0352778",
-      "target": "nm1567113",
-      "weight": 41,
+      "source": "nm0001774",
+      "target": "nm1706767",
+      "weight": 25,
+      "year": 2011
+    },
+    {
+      "source": "nm0940362",
+      "target": "nm5052065",
+      "weight": 51,
       "year": 2015
     },
     {
-      "source": "nm1063517",
-      "target": "nm1221047",
-      "weight": 32,
-      "year": 2017
-    },
-    {
-      "source": "nm0757855",
-      "target": "nm1176985",
-      "weight": 28,
+      "source": "nm1209966",
+      "target": "nm1659547",
+      "weight": 38,
       "year": 2016
     },
     {
-      "source": "nm0000375",
-      "target": "nm0262635",
-      "weight": 70,
+      "source": "nm0000729",
+      "target": "nm1157358",
+      "weight": 22,
+      "year": 2014
+    },
+    {
+      "source": "nm0000658",
+      "target": "nm0004266",
+      "weight": 24,
       "year": 2016
     },
     {
-      "source": "nm0829576",
-      "target": "nm1500155",
-      "weight": 64,
+      "source": "nm0000168",
+      "target": "nm0913488",
+      "weight": 35,
       "year": 2010
-    },
-    {
-      "source": "nm1633541",
-      "target": "nm2138653",
-      "weight": 31,
-      "year": 2012
-    },
-    {
-      "source": "nm0000124",
-      "target": "nm0001427",
-      "weight": 20,
-      "year": 2012
-    },
-    {
-      "source": "nm0221046",
-      "target": "nm0447695",
-      "weight": 20,
-      "year": 2017
     },
     {
       "source": "nm0000437",
@@ -1051,58 +2617,16 @@
       "year": 2016
     },
     {
-      "source": "nm0564215",
-      "target": "nm1055413",
-      "weight": 53,
-      "year": 2015
-    },
-    {
-      "source": "nm1107001",
-      "target": "nm1157358",
-      "weight": 23,
-      "year": 2011
-    },
-    {
-      "source": "nm0447695",
-      "target": "nm0829576",
-      "weight": 25,
-      "year": 2010
-    },
-    {
-      "source": "nm0000245",
-      "target": "nm0001774",
-      "weight": 37,
-      "year": 2010
-    },
-    {
-      "source": "nm0781981",
-      "target": "nm2957717",
-      "weight": 25,
-      "year": 2010
-    },
-    {
-      "source": "nm0000129",
-      "target": "nm1157358",
-      "weight": 26,
+      "source": "nm0000163",
+      "target": "nm0736622",
+      "weight": 38,
       "year": 2012
     },
     {
-      "source": "nm0005450",
-      "target": "nm0416673",
-      "weight": 61,
-      "year": 2014
-    },
-    {
-      "source": "nm0251986",
-      "target": "nm1297015",
-      "weight": 26,
-      "year": 2014
-    },
-    {
-      "source": "nm0000098",
-      "target": "nm0837177",
-      "weight": 61,
-      "year": 2013
+      "source": "nm0000194",
+      "target": "nm0931329",
+      "weight": 18,
+      "year": 2018
     },
     {
       "source": "nm0424060",
@@ -1117,28 +2641,16 @@
       "year": 2018
     },
     {
-      "source": "nm0001774",
-      "target": "nm1706767",
-      "weight": 25,
-      "year": 2011
-    },
-    {
-      "source": "nm0000729",
-      "target": "nm1157358",
-      "weight": 22,
-      "year": 2014
+      "source": "nm0000255",
+      "target": "nm0147147",
+      "weight": 40,
+      "year": 2018
     },
     {
       "source": "nm0262635",
       "target": "nm1165110",
       "weight": 56,
       "year": 2016
-    },
-    {
-      "source": "nm0000168",
-      "target": "nm0913488",
-      "weight": 35,
-      "year": 2010
     },
     {
       "source": "nm0829576",
@@ -1159,21 +2671,351 @@
       "year": 2015
     },
     {
+      "source": "nm0940362",
+      "target": "nm1886602",
+      "weight": 50,
+      "year": 2015
+    },
+    {
+      "source": "nm2138653",
+      "target": "nm3828984",
+      "weight": 62,
+      "year": 2018
+    },
+    {
       "source": "nm0000234",
       "target": "nm1631269",
       "weight": 31,
       "year": 2018
     },
     {
-      "source": "nm1107001",
-      "target": "nm1659221",
+      "source": "nm0000255",
+      "target": "nm0010736",
       "weight": 40,
+      "year": 2018
+    },
+    {
+      "source": "nm0000255",
+      "target": "nm2933757",
+      "weight": 40,
+      "year": 2018
+    },
+    {
+      "source": "nm0269463",
+      "target": "nm3918035",
+      "weight": 41,
+      "year": 2019
+    },
+    {
+      "source": "nm0736622",
+      "target": "nm1706767",
+      "weight": 75,
+      "year": 2010
+    },
+    {
+      "source": "nm0002071",
+      "target": "nm1063517",
+      "weight": 35,
+      "year": 2011
+    },
+    {
+      "source": "nm0001774",
+      "target": "nm0315041",
+      "weight": 37,
+      "year": 2010
+    },
+    {
+      "source": "nm0000375",
+      "target": "nm0424060",
+      "weight": 96,
+      "year": 2015
+    },
+    {
+      "source": "nm0000437",
+      "target": "nm0705356",
+      "weight": 21,
       "year": 2017
     },
     {
-      "source": "nm2138653",
-      "target": "nm3828984",
-      "weight": 62,
+      "source": "nm0829576",
+      "target": "nm1500155",
+      "weight": 64,
+      "year": 2010
+    },
+    {
+      "source": "nm0001191",
+      "target": "nm0416673",
+      "weight": 106,
+      "year": 2014
+    },
+    {
+      "source": "nm1063517",
+      "target": "nm1221047",
+      "weight": 32,
+      "year": 2017
+    },
+    {
+      "source": "nm0757855",
+      "target": "nm1176985",
+      "weight": 28,
+      "year": 2016
+    },
+    {
+      "source": "nm0252961",
+      "target": "nm1165110",
+      "weight": 41,
+      "year": 2017
+    },
+    {
+      "source": "nm0000129",
+      "target": "nm0670408",
+      "weight": 77,
+      "year": 2016
+    },
+    {
+      "source": "nm0000195",
+      "target": "nm0001570",
+      "weight": 39,
+      "year": 2015
+    },
+    {
+      "source": "nm1221047",
+      "target": "nm1676221",
+      "weight": 56,
+      "year": 2019
+    },
+    {
+      "source": "nm0000124",
+      "target": "nm0001427",
+      "weight": 20,
+      "year": 2012
+    },
+    {
+      "source": "nm1209966",
+      "target": "nm1567113",
+      "weight": 22,
+      "year": 2018
+    },
+    {
+      "source": "nm1242688",
+      "target": "nm3510471",
+      "weight": 26,
+      "year": 2015
+    },
+    {
+      "source": "nm0352778",
+      "target": "nm1567113",
+      "weight": 41,
+      "year": 2015
+    },
+    {
+      "source": "nm0447695",
+      "target": "nm1500155",
+      "weight": 25,
+      "year": 2010
+    },
+    {
+      "source": "nm0000191",
+      "target": "nm0159789",
+      "weight": 40,
+      "year": 2010
+    },
+    {
+      "source": "nm0000244",
+      "target": "nm0757855",
+      "weight": 52,
+      "year": 2016
+    },
+    {
+      "source": "nm0000230",
+      "target": "nm1055590",
+      "weight": 19,
+      "year": 2019
+    },
+    {
+      "source": "nm1633541",
+      "target": "nm2138653",
+      "weight": 31,
+      "year": 2012
+    },
+    {
+      "source": "nm0000705",
+      "target": "nm1517976",
+      "weight": 26,
+      "year": 2019
+    },
+    {
+      "source": "nm0000195",
+      "target": "nm0000531",
+      "weight": 25,
+      "year": 2015
+    },
+    {
+      "source": "nm0000332",
+      "target": "nm1165110",
+      "weight": 42,
+      "year": 2017
+    },
+    {
+      "source": "nm0221046",
+      "target": "nm0447695",
+      "weight": 20,
+      "year": 2017
+    },
+    {
+      "source": "nm0447695",
+      "target": "nm0829576",
+      "weight": 25,
+      "year": 2010
+    },
+    {
+      "source": "nm0000093",
+      "target": "nm0001401",
+      "weight": 23,
+      "year": 2010
+    },
+    {
+      "source": "nm0000375",
+      "target": "nm0262635",
+      "weight": 70,
+      "year": 2016
+    },
+    {
+      "source": "nm1107001",
+      "target": "nm1157358",
+      "weight": 23,
+      "year": 2011
+    },
+    {
+      "source": "nm0000098",
+      "target": "nm0001191",
+      "weight": 36,
+      "year": 2018
+    },
+    {
+      "source": "nm2955013",
+      "target": "nm3510471",
+      "weight": 26,
+      "year": 2015
+    },
+    {
+      "source": "nm0781981",
+      "target": "nm2957717",
+      "weight": 25,
+      "year": 2010
+    },
+    {
+      "source": "nm0564215",
+      "target": "nm1055413",
+      "weight": 53,
+      "year": 2015
+    },
+    {
+      "source": "nm0000129",
+      "target": "nm1157358",
+      "weight": 26,
+      "year": 2012
+    },
+    {
+      "source": "nm0940362",
+      "target": "nm3772243",
+      "weight": 38,
+      "year": 2015
+    },
+    {
+      "source": "nm0000245",
+      "target": "nm0001774",
+      "weight": 37,
+      "year": 2010
+    },
+    {
+      "source": "nm0005450",
+      "target": "nm0416673",
+      "weight": 61,
+      "year": 2014
+    },
+    {
+      "source": "nm0000375",
+      "target": "nm1569276",
+      "weight": 42,
+      "year": 2018
+    },
+    {
+      "source": "nm0004937",
+      "target": "nm1157358",
+      "weight": 23,
+      "year": 2014
+    },
+    {
+      "source": "nm0000098",
+      "target": "nm1063517",
+      "weight": 35,
+      "year": 2013
+    },
+    {
+      "source": "nm0136797",
+      "target": "nm1297015",
+      "weight": 24,
+      "year": 2014
+    },
+    {
+      "source": "nm1055590",
+      "target": "nm1476806",
+      "weight": 37,
+      "year": 2018
+    },
+    {
+      "source": "nm0005351",
+      "target": "nm0413168",
+      "weight": 27,
+      "year": 2017
+    },
+    {
+      "source": "nm0005377",
+      "target": "nm0447695",
+      "weight": 22,
+      "year": 2018
+    },
+    {
+      "source": "nm0000450",
+      "target": "nm0000705",
+      "weight": 33,
+      "year": 2010
+    },
+    {
+      "source": "nm0000179",
+      "target": "nm0000375",
+      "weight": 27,
+      "year": 2010
+    },
+    {
+      "source": "nm0000139",
+      "target": "nm0000206",
+      "weight": 19,
+      "year": 2011
+    },
+    {
+      "source": "nm1055413",
+      "target": "nm2225369",
+      "weight": 53,
+      "year": 2015
+    },
+    {
+      "source": "nm0205626",
+      "target": "nm1567113",
+      "weight": 41,
+      "year": 2013
+    },
+    {
+      "source": "nm0000138",
+      "target": "nm3053338",
+      "weight": 28,
+      "year": 2016
+    },
+    {
+      "source": "nm0447695",
+      "target": "nm1374980",
+      "weight": 18,
       "year": 2018
     },
     {
@@ -1183,46 +3025,22 @@
       "year": 2017
     },
     {
-      "source": "nm0004266",
-      "target": "nm1289434",
-      "weight": 24,
-      "year": 2016
-    },
-    {
-      "source": "nm0004937",
-      "target": "nm1157358",
-      "weight": 23,
+      "source": "nm0001191",
+      "target": "nm0005450",
+      "weight": 83,
       "year": 2014
     },
     {
-      "source": "nm0001674",
-      "target": "nm0004742",
+      "source": "nm0000204",
+      "target": "nm1165110",
+      "weight": 40,
+      "year": 2015
+    },
+    {
+      "source": "nm1297015",
+      "target": "nm1706767",
       "weight": 25,
-      "year": 2012
-    },
-    {
-      "source": "nm0000194",
-      "target": "nm2225369",
-      "weight": 26,
-      "year": 2015
-    },
-    {
-      "source": "nm0000139",
-      "target": "nm0781981",
-      "weight": 24,
       "year": 2013
-    },
-    {
-      "source": "nm1055413",
-      "target": "nm2225369",
-      "weight": 53,
-      "year": 2015
-    },
-    {
-      "source": "nm0000450",
-      "target": "nm0000705",
-      "weight": 33,
-      "year": 2010
     },
     {
       "source": "nm0005028",
@@ -1231,64 +3049,58 @@
       "year": 2011
     },
     {
-      "source": "nm0000179",
-      "target": "nm0000375",
-      "weight": 27,
+      "source": "nm0000195",
+      "target": "nm0424060",
+      "weight": 26,
       "year": 2010
     },
     {
-      "source": "nm0136797",
-      "target": "nm1297015",
-      "weight": 24,
+      "source": "nm0352778",
+      "target": "nm0837177",
+      "weight": 29,
       "year": 2014
     },
     {
-      "source": "nm0000437",
-      "target": "nm0005377",
-      "weight": 26,
-      "year": 2015
-    },
-    {
-      "source": "nm0000138",
-      "target": "nm3053338",
-      "weight": 28,
-      "year": 2016
-    },
-    {
-      "source": "nm0205626",
-      "target": "nm1567113",
-      "weight": 41,
-      "year": 2013
-    },
-    {
-      "source": "nm0000194",
-      "target": "nm2955013",
-      "weight": 26,
-      "year": 2015
-    },
-    {
-      "source": "nm0000375",
-      "target": "nm1569276",
-      "weight": 42,
+      "source": "nm1055413",
+      "target": "nm4446467",
+      "weight": 25,
       "year": 2018
     },
     {
-      "source": "nm0005182",
-      "target": "nm0781981",
+      "source": "nm0000204",
+      "target": "nm0252961",
+      "weight": 27,
+      "year": 2017
+    },
+    {
+      "source": "nm0005450",
+      "target": "nm1411125",
+      "weight": 47,
+      "year": 2017
+    },
+    {
+      "source": "nm1886602",
+      "target": "nm2368789",
       "weight": 25,
+      "year": 2015
+    },
+    {
+      "source": "nm0001191",
+      "target": "nm1411125",
+      "weight": 36,
+      "year": 2015
+    },
+    {
+      "source": "nm0147147",
+      "target": "nm2933757",
+      "weight": 40,
+      "year": 2018
+    },
+    {
+      "source": "nm0000246",
+      "target": "nm0004695",
+      "weight": 26,
       "year": 2010
-    },
-    {
-      "source": "nm0004742",
-      "target": "nm0416673",
-      "weight": 25,
-      "year": 2012
-    },
-    {
-      "source": "nm0000235",
-      "target": "nm1209966",
-      "weight": 19,
-      "year": 2016
     },
     {
       "source": "nm0425005",
@@ -1303,16 +3115,40 @@
       "year": 2012
     },
     {
-      "source": "nm0001191",
-      "target": "nm0005450",
-      "weight": 83,
-      "year": 2014
+      "source": "nm0757855",
+      "target": "nm0881631",
+      "weight": 39,
+      "year": 2013
     },
     {
-      "source": "nm0004742",
-      "target": "nm0005450",
+      "source": "nm0000194",
+      "target": "nm2955013",
+      "weight": 26,
+      "year": 2015
+    },
+    {
+      "source": "nm0396558",
+      "target": "nm1404239",
       "weight": 25,
-      "year": 2012
+      "year": 2018
+    },
+    {
+      "source": "nm0735442",
+      "target": "nm2933757",
+      "weight": 26,
+      "year": 2011
+    },
+    {
+      "source": "nm0000194",
+      "target": "nm2225369",
+      "weight": 26,
+      "year": 2015
+    },
+    {
+      "source": "nm0000235",
+      "target": "nm1209966",
+      "weight": 19,
+      "year": 2016
     },
     {
       "source": "nm0000288",
@@ -1321,556 +3157,40 @@
       "year": 2014
     },
     {
-      "source": "nm0000702",
-      "target": "nm0424060",
-      "weight": 24,
-      "year": 2019
+      "source": "nm0005182",
+      "target": "nm0781981",
+      "weight": 25,
+      "year": 2010
     },
     {
-      "source": "nm0005450",
-      "target": "nm1411125",
-      "weight": 47,
+      "source": "nm0252961",
+      "target": "nm0881631",
+      "weight": 26,
       "year": 2017
     },
     {
-      "source": "nm0000139",
-      "target": "nm0000206",
-      "weight": 19,
-      "year": 2011
-    },
-    {
-      "source": "nm0000204",
-      "target": "nm1165110",
-      "weight": 40,
-      "year": 2015
-    },
-    {
-      "source": "nm0000195",
-      "target": "nm0424060",
-      "weight": 26,
-      "year": 2010
-    },
-    {
-      "source": "nm0000098",
-      "target": "nm1063517",
-      "weight": 35,
-      "year": 2013
-    },
-    {
-      "source": "nm0000246",
-      "target": "nm0004695",
-      "weight": 26,
-      "year": 2010
-    },
-    {
-      "source": "nm1297015",
-      "target": "nm1706767",
-      "weight": 25,
-      "year": 2013
-    },
-    {
-      "source": "nm0001191",
-      "target": "nm1411125",
-      "weight": 36,
-      "year": 2015
-    },
-    {
-      "source": "nm0352778",
-      "target": "nm0837177",
-      "weight": 29,
-      "year": 2014
-    },
-    {
-      "source": "nm0005377",
-      "target": "nm0447695",
+      "source": "nm0000598",
+      "target": "nm0933940",
       "weight": 22,
-      "year": 2018
-    },
-    {
-      "source": "nm0447695",
-      "target": "nm1374980",
-      "weight": 18,
-      "year": 2018
-    },
-    {
-      "source": "nm1055413",
-      "target": "nm4446467",
-      "weight": 25,
-      "year": 2018
-    },
-    {
-      "source": "nm0000949",
-      "target": "nm0765597",
-      "weight": 19,
-      "year": 2017
-    },
-    {
-      "source": "nm0124930",
-      "target": "nm1325419",
-      "weight": 39,
-      "year": 2014
-    },
-    {
-      "source": "nm0262635",
-      "target": "nm0424060",
-      "weight": 94,
-      "year": 2014
-    },
-    {
-      "source": "nm0000354",
-      "target": "nm1289434",
-      "weight": 26,
-      "year": 2017
-    },
-    {
-      "source": "nm0000173",
-      "target": "nm1374980",
-      "weight": 21,
-      "year": 2018
-    },
-    {
-      "source": "nm1567113",
-      "target": "nm1659221",
-      "weight": 25,
-      "year": 2019
-    },
-    {
-      "source": "nm0000349",
-      "target": "nm0000741",
-      "weight": 48,
-      "year": 2012
-    },
-    {
-      "source": "nm0000255",
-      "target": "nm0597388",
-      "weight": 26,
-      "year": 2019
-    },
-    {
-      "source": "nm0005450",
-      "target": "nm1063517",
-      "weight": 22,
-      "year": 2019
-    },
-    {
-      "source": "nm0000139",
-      "target": "nm0004937",
-      "weight": 34,
-      "year": 2013
-    },
-    {
-      "source": "nm0000134",
-      "target": "nm0004695",
-      "weight": 24,
-      "year": 2010
-    },
-    {
-      "source": "nm0000168",
-      "target": "nm0424060",
-      "weight": 52,
       "year": 2012
     },
     {
       "source": "nm0000437",
-      "target": "nm2225369",
-      "weight": 40,
-      "year": 2014
-    },
-    {
-      "source": "nm0736622",
-      "target": "nm2957717",
-      "weight": 37,
-      "year": 2011
-    },
-    {
-      "source": "nm0000375",
-      "target": "nm0004937",
-      "weight": 24,
-      "year": 2010
+      "target": "nm0005377",
+      "weight": 26,
+      "year": 2015
     },
     {
       "source": "nm0004266",
-      "target": "nm0056187",
-      "weight": 25,
-      "year": 2014
-    },
-    {
-      "source": "nm0000949",
-      "target": "nm1706767",
-      "weight": 38,
-      "year": 2018
-    },
-    {
-      "source": "nm0004874",
-      "target": "nm0425005",
-      "weight": 52,
-      "year": 2014
-    },
-    {
-      "source": "nm0352778",
-      "target": "nm0564215",
-      "weight": 41,
-      "year": 2015
-    },
-    {
-      "source": "nm0000375",
-      "target": "nm1165110",
-      "weight": 56,
-      "year": 2016
-    },
-    {
-      "source": "nm0005377",
-      "target": "nm0136797",
-      "weight": 24,
-      "year": 2016
-    },
-    {
-      "source": "nm0000375",
-      "target": "nm1046097",
-      "weight": 27,
-      "year": 2010
-    },
-    {
-      "source": "nm1411125",
-      "target": "nm1676221",
-      "weight": 47,
-      "year": 2017
-    },
-    {
-      "source": "nm0000230",
-      "target": "nm0005458",
-      "weight": 49,
-      "year": 2015
-    },
-    {
-      "source": "nm0000437",
-      "target": "nm2955013",
-      "weight": 49,
-      "year": 2015
-    },
-    {
-      "source": "nm0000437",
-      "target": "nm0000450",
-      "weight": 40,
-      "year": 2014
-    },
-    {
-      "source": "nm0001191",
-      "target": "nm0001674",
-      "weight": 47,
-      "year": 2012
-    },
-    {
-      "source": "nm0000098",
-      "target": "nm0005562",
-      "weight": 22,
-      "year": 2011
-    },
-    {
-      "source": "nm0269463",
-      "target": "nm4043618",
-      "weight": 41,
-      "year": 2019
-    },
-    {
-      "source": "nm0736622",
-      "target": "nm1063517",
-      "weight": 24,
-      "year": 2015
-    },
-    {
-      "source": "nm0000190",
-      "target": "nm1706767",
-      "weight": 25,
-      "year": 2016
-    },
-    {
-      "source": "nm0000255",
-      "target": "nm1046097",
-      "weight": 22,
-      "year": 2011
-    },
-    {
-      "source": "nm0000949",
-      "target": "nm0124930",
-      "weight": 25,
-      "year": 2017
-    },
-    {
-      "source": "nm0000158",
-      "target": "nm0000349",
-      "weight": 48,
-      "year": 2012
-    },
-    {
-      "source": "nm0000681",
-      "target": "nm1157358",
-      "weight": 37,
-      "year": 2014
-    },
-    {
-      "source": "nm0424060",
-      "target": "nm1569276",
-      "weight": 42,
-      "year": 2018
-    },
-    {
-      "source": "nm0262635",
-      "target": "nm1569276",
-      "weight": 42,
-      "year": 2018
-    },
-    {
-      "source": "nm0000226",
-      "target": "nm0001454",
-      "weight": 49,
-      "year": 2011
-    },
-    {
-      "source": "nm0000168",
-      "target": "nm0262635",
-      "weight": 41,
-      "year": 2013
-    },
-    {
-      "source": "nm0000194",
-      "target": "nm3510471",
-      "weight": 26,
-      "year": 2015
-    },
-    {
-      "source": "nm0005562",
-      "target": "nm1063517",
-      "weight": 21,
-      "year": 2012
-    },
-    {
-      "source": "nm1165110",
-      "target": "nm1569276",
-      "weight": 28,
-      "year": 2019
-    },
-    {
-      "source": "nm0002071",
-      "target": "nm0136797",
-      "weight": 43,
-      "year": 2012
-    },
-    {
-      "source": "nm0000226",
-      "target": "nm3053338",
-      "weight": 26,
-      "year": 2016
-    },
-    {
-      "source": "nm0396558",
-      "target": "nm2225369",
-      "weight": 39,
-      "year": 2016
-    },
-    {
-      "source": "nm0416673",
-      "target": "nm1676221",
-      "weight": 36,
-      "year": 2015
-    },
-    {
-      "source": "nm0000190",
-      "target": "nm0000437",
-      "weight": 23,
-      "year": 2011
-    },
-    {
-      "source": "nm0147147",
-      "target": "nm0597388",
-      "weight": 26,
-      "year": 2019
-    },
-    {
-      "source": "nm0010736",
-      "target": "nm0687146",
-      "weight": 24,
-      "year": 2015
-    },
-    {
-      "source": "nm1886602",
-      "target": "nm5052065",
-      "weight": 38,
-      "year": 2015
-    },
-    {
-      "source": "nm0177896",
-      "target": "nm0757855",
-      "weight": 39,
-      "year": 2014
-    },
-    {
-      "source": "nm0837177",
-      "target": "nm1325419",
-      "weight": 40,
-      "year": 2012
-    },
-    {
-      "source": "nm0396558",
-      "target": "nm4446467",
-      "weight": 47,
-      "year": 2019
-    },
-    {
-      "source": "nm0000681",
-      "target": "nm0425005",
-      "weight": 23,
-      "year": 2012
-    },
-    {
-      "source": "nm0205626",
-      "target": "nm0564215",
-      "weight": 28,
-      "year": 2013
-    },
-    {
-      "source": "nm0000168",
-      "target": "nm0004874",
-      "weight": 24,
-      "year": 2010
-    },
-    {
-      "source": "nm0005028",
-      "target": "nm1063517",
-      "weight": 26,
-      "year": 2013
-    },
-    {
-      "source": "nm0001191",
-      "target": "nm1221047",
-      "weight": 24,
-      "year": 2017
-    },
-    {
-      "source": "nm0000234",
-      "target": "nm0396558",
-      "weight": 25,
-      "year": 2015
-    },
-    {
-      "source": "nm0695435",
-      "target": "nm1176985",
-      "weight": 54,
-      "year": 2019
-    },
-    {
-      "source": "nm0005450",
-      "target": "nm1221047",
-      "weight": 34,
-      "year": 2018
-    },
-    {
-      "source": "nm0004874",
-      "target": "nm0757855",
-      "weight": 28,
-      "year": 2016
-    },
-    {
-      "source": "nm0000131",
-      "target": "nm0000168",
-      "weight": 32,
-      "year": 2013
-    },
-    {
-      "source": "nm0000195",
-      "target": "nm1104131",
-      "weight": 21,
-      "year": 2015
-    },
-    {
-      "source": "nm0005562",
-      "target": "nm0837177",
-      "weight": 23,
-      "year": 2014
-    },
-    {
-      "source": "nm0837177",
-      "target": "nm1104131",
-      "weight": 22,
-      "year": 2018
-    },
-    {
-      "source": "nm0010736",
-      "target": "nm0251986",
-      "weight": 27,
-      "year": 2019
-    },
-    {
-      "source": "nm0251986",
-      "target": "nm0829576",
-      "weight": 35,
-      "year": 2013
-    },
-    {
-      "source": "nm0670408",
-      "target": "nm0757855",
-      "weight": 39,
-      "year": 2013
-    },
-    {
-      "source": "nm0000450",
-      "target": "nm3510471",
-      "weight": 26,
-      "year": 2015
-    },
-    {
-      "source": "nm1475594",
-      "target": "nm1706767",
-      "weight": 38,
-      "year": 2014
-    },
-    {
-      "source": "nm0000134",
-      "target": "nm0000201",
-      "weight": 22,
-      "year": 2015
-    },
-    {
-      "source": "nm0564215",
-      "target": "nm2225369",
-      "weight": 53,
-      "year": 2015
-    },
-    {
-      "source": "nm0564215",
       "target": "nm1289434",
-      "weight": 21,
-      "year": 2015
+      "weight": 24,
+      "year": 2016
     },
     {
-      "source": "nm2225369",
-      "target": "nm3510471",
-      "weight": 26,
-      "year": 2015
-    },
-    {
-      "source": "nm0200452",
-      "target": "nm0205626",
-      "weight": 26,
-      "year": 2012
-    },
-    {
-      "source": "nm0136797",
-      "target": "nm1325419",
-      "weight": 62,
-      "year": 2015
-    },
-    {
-      "source": "nm0005109",
-      "target": "nm1063517",
-      "weight": 23,
-      "year": 2017
-    },
-    {
-      "source": "nm0000179",
-      "target": "nm0005023",
-      "weight": 26,
-      "year": 2018
+      "source": "nm0000139",
+      "target": "nm0781981",
+      "weight": 24,
+      "year": 2013
     },
     {
       "source": "nm0200452",
@@ -1879,34 +3199,28 @@
       "year": 2015
     },
     {
-      "source": "nm0205626",
-      "target": "nm3053338",
+      "source": "nm0564215",
+      "target": "nm1289434",
+      "weight": 21,
+      "year": 2015
+    },
+    {
+      "source": "nm0000163",
+      "target": "nm0001401",
+      "weight": 38,
+      "year": 2012
+    },
+    {
+      "source": "nm0000194",
+      "target": "nm1107001",
+      "weight": 21,
+      "year": 2014
+    },
+    {
+      "source": "nm0000255",
+      "target": "nm0251986",
       "weight": 27,
       "year": 2019
-    },
-    {
-      "source": "nm0670408",
-      "target": "nm1517976",
-      "weight": 39,
-      "year": 2013
-    },
-    {
-      "source": "nm0564215",
-      "target": "nm4446467",
-      "weight": 25,
-      "year": 2018
-    },
-    {
-      "source": "nm0350453",
-      "target": "nm0765597",
-      "weight": 57,
-      "year": 2017
-    },
-    {
-      "source": "nm0200452",
-      "target": "nm0765597",
-      "weight": 26,
-      "year": 2016
     },
     {
       "source": "nm0000288",
@@ -1921,16 +3235,34 @@
       "year": 2015
     },
     {
-      "source": "nm0000437",
-      "target": "nm1297015",
-      "weight": 26,
+      "source": "nm0350453",
+      "target": "nm0765597",
+      "weight": 57,
+      "year": 2017
+    },
+    {
+      "source": "nm0001401",
+      "target": "nm0736622",
+      "weight": 38,
+      "year": 2012
+    },
+    {
+      "source": "nm0670408",
+      "target": "nm1517976",
+      "weight": 39,
+      "year": 2013
+    },
+    {
+      "source": "nm1475594",
+      "target": "nm1706767",
+      "weight": 38,
       "year": 2014
     },
     {
-      "source": "nm0164809",
-      "target": "nm1567113",
-      "weight": 35,
-      "year": 2012
+      "source": "nm0000230",
+      "target": "nm1476806",
+      "weight": 19,
+      "year": 2018
     },
     {
       "source": "nm0736622",
@@ -1939,28 +3271,52 @@
       "year": 2011
     },
     {
-      "source": "nm0000255",
-      "target": "nm0251986",
-      "weight": 27,
-      "year": 2019
-    },
-    {
       "source": "nm0002071",
       "target": "nm0695435",
       "weight": 24,
       "year": 2017
     },
     {
-      "source": "nm0000194",
-      "target": "nm1107001",
-      "weight": 21,
-      "year": 2014
+      "source": "nm0881631",
+      "target": "nm1517976",
+      "weight": 39,
+      "year": 2013
+    },
+    {
+      "source": "nm0000136",
+      "target": "nm0056187",
+      "weight": 25,
+      "year": 2012
+    },
+    {
+      "source": "nm0670408",
+      "target": "nm0757855",
+      "weight": 39,
+      "year": 2013
+    },
+    {
+      "source": "nm0164809",
+      "target": "nm1567113",
+      "weight": 35,
+      "year": 2012
     },
     {
       "source": "nm0000604",
       "target": "nm0002071",
       "weight": 36,
       "year": 2011
+    },
+    {
+      "source": "nm2225369",
+      "target": "nm3510471",
+      "weight": 26,
+      "year": 2015
+    },
+    {
+      "source": "nm0000437",
+      "target": "nm1297015",
+      "weight": 26,
+      "year": 2014
     },
     {
       "source": "nm1706767",
@@ -1975,28 +3331,112 @@
       "year": 2011
     },
     {
-      "source": "nm0396558",
-      "target": "nm0564215",
-      "weight": 48,
-      "year": 2017
+      "source": "nm0413168",
+      "target": "nm1086543",
+      "weight": 24,
+      "year": 2014
     },
     {
-      "source": "nm0000201",
-      "target": "nm1631269",
-      "weight": 22,
+      "source": "nm0000194",
+      "target": "nm1242688",
+      "weight": 38,
+      "year": 2013
+    },
+    {
+      "source": "nm0316079",
+      "target": "nm0425005",
+      "weight": 25,
+      "year": 2018
+    },
+    {
+      "source": "nm0251986",
+      "target": "nm0829576",
+      "weight": 35,
+      "year": 2013
+    },
+    {
+      "source": "nm0200452",
+      "target": "nm0205626",
+      "weight": 26,
+      "year": 2012
+    },
+    {
+      "source": "nm0000705",
+      "target": "nm2933757",
+      "weight": 26,
       "year": 2019
     },
     {
-      "source": "nm0352778",
-      "target": "nm1676221",
-      "weight": 55,
-      "year": 2010
+      "source": "nm0000134",
+      "target": "nm0000201",
+      "weight": 22,
+      "year": 2015
     },
     {
-      "source": "nm0000204",
+      "source": "nm0000179",
+      "target": "nm0005023",
+      "weight": 26,
+      "year": 2018
+    },
+    {
+      "source": "nm0564215",
+      "target": "nm2225369",
+      "weight": 53,
+      "year": 2015
+    },
+    {
+      "source": "nm0000246",
+      "target": "nm1055590",
+      "weight": 47,
+      "year": 2018
+    },
+    {
+      "source": "nm0000375",
+      "target": "nm0000474",
+      "weight": 22,
+      "year": 2011
+    },
+    {
+      "source": "nm0136797",
+      "target": "nm1325419",
+      "weight": 62,
+      "year": 2015
+    },
+    {
+      "source": "nm0005109",
+      "target": "nm1063517",
+      "weight": 23,
+      "year": 2017
+    },
+    {
+      "source": "nm0205626",
+      "target": "nm3053338",
+      "weight": 27,
+      "year": 2019
+    },
+    {
+      "source": "nm0564215",
+      "target": "nm4446467",
+      "weight": 25,
+      "year": 2018
+    },
+    {
+      "source": "nm0200452",
       "target": "nm0765597",
-      "weight": 24,
-      "year": 2010
+      "weight": 26,
+      "year": 2016
+    },
+    {
+      "source": "nm0000450",
+      "target": "nm3510471",
+      "weight": 26,
+      "year": 2015
+    },
+    {
+      "source": "nm0004754",
+      "target": "nm0933940",
+      "weight": 22,
+      "year": 2013
     },
     {
       "source": "nm0001427",
@@ -2005,15 +3445,27 @@
       "year": 2010
     },
     {
-      "source": "nm0001674",
-      "target": "nm0005450",
-      "weight": 25,
-      "year": 2012
+      "source": "nm0004874",
+      "target": "nm0177896",
+      "weight": 52,
+      "year": 2019
     },
     {
       "source": "nm0005458",
       "target": "nm0735442",
       "weight": 37,
+      "year": 2018
+    },
+    {
+      "source": "nm0396558",
+      "target": "nm1102577",
+      "weight": 20,
+      "year": 2017
+    },
+    {
+      "source": "nm1404239",
+      "target": "nm2225369",
+      "weight": 25,
       "year": 2018
     },
     {
@@ -2023,45 +3475,117 @@
       "year": 2013
     },
     {
+      "source": "nm0670408",
+      "target": "nm1157358",
+      "weight": 26,
+      "year": 2012
+    },
+    {
+      "source": "nm0000242",
+      "target": "nm0002071",
+      "weight": 36,
+      "year": 2014
+    },
+    {
+      "source": "nm0000332",
+      "target": "nm0356017",
+      "weight": 19,
+      "year": 2017
+    },
+    {
+      "source": "nm0004874",
+      "target": "nm1176985",
+      "weight": 53,
+      "year": 2017
+    },
+    {
+      "source": "nm0000234",
+      "target": "nm0005458",
+      "weight": 37,
+      "year": 2014
+    },
+    {
+      "source": "nm0356017",
+      "target": "nm0837177",
+      "weight": 18,
+      "year": 2016
+    },
+    {
+      "source": "nm0000093",
+      "target": "nm1706767",
+      "weight": 26,
+      "year": 2011
+    },
+    {
       "source": "nm0781981",
       "target": "nm1289434",
       "weight": 23,
       "year": 2011
     },
     {
-      "source": "nm0000681",
-      "target": "nm1046097",
-      "weight": 26,
+      "source": "nm0000204",
+      "target": "nm0765597",
+      "weight": 24,
       "year": 2010
     },
     {
-      "source": "nm0000375",
-      "target": "nm0269463",
-      "weight": 40,
-      "year": 2015
+      "source": "nm1055590",
+      "target": "nm1176985",
+      "weight": 30,
+      "year": 2017
     },
     {
-      "source": "nm0000138",
-      "target": "nm0000949",
-      "weight": 26,
-      "year": 2013
+      "source": "nm0000598",
+      "target": "nm0757855",
+      "weight": 23,
+      "year": 2010
     },
     {
-      "source": "nm0147147",
-      "target": "nm0251986",
-      "weight": 27,
+      "source": "nm0000160",
+      "target": "nm0695435",
+      "weight": 22,
+      "year": 2018
+    },
+    {
+      "source": "nm0000190",
+      "target": "nm0424060",
+      "weight": 24,
       "year": 2019
     },
     {
-      "source": "nm0416673",
-      "target": "nm1411125",
-      "weight": 36,
-      "year": 2015
+      "source": "nm0000332",
+      "target": "nm0000569",
+      "weight": 28,
+      "year": 2012
+    },
+    {
+      "source": "nm0695435",
+      "target": "nm0757855",
+      "weight": 28,
+      "year": 2016
+    },
+    {
+      "source": "nm1209966",
+      "target": "nm4446467",
+      "weight": 24,
+      "year": 2019
     },
     {
       "source": "nm0177896",
-      "target": "nm1176985",
-      "weight": 41,
+      "target": "nm1046097",
+      "weight": 24,
+      "year": 2010
+    },
+    {
+      "source": "nm0000681",
+      "target": "nm0829576",
+      "weight": 23,
+      "year": 2013
+    },
+    {
+      "source": "nm1404239",
+      "target": "nm4446467",
+      "weight": 25,
       "year": 2018
     },
     {
@@ -2071,136 +3595,10 @@
       "year": 2012
     },
     {
-      "source": "nm0004874",
-      "target": "nm0177896",
-      "weight": 52,
-      "year": 2019
-    },
-    {
-      "source": "nm0000681",
-      "target": "nm0829576",
-      "weight": 23,
-      "year": 2013
-    },
-    {
-      "source": "nm0205626",
-      "target": "nm1569276",
-      "weight": 21,
-      "year": 2017
-    },
-    {
-      "source": "nm0736622",
-      "target": "nm1374980",
-      "weight": 37,
-      "year": 2016
-    },
-    {
-      "source": "nm0000375",
-      "target": "nm4043618",
-      "weight": 28,
-      "year": 2018
-    },
-    {
-      "source": "nm0001191",
-      "target": "nm0004742",
-      "weight": 25,
-      "year": 2012
-    },
-    {
-      "source": "nm0005028",
-      "target": "nm1104131",
-      "weight": 19,
-      "year": 2014
-    },
-    {
-      "source": "nm0005377",
-      "target": "nm0424060",
-      "weight": 27,
-      "year": 2015
-    },
-    {
-      "source": "nm1209966",
-      "target": "nm4446467",
-      "weight": 24,
-      "year": 2019
-    },
-    {
       "source": "nm0000190",
       "target": "nm0004266",
       "weight": 26,
       "year": 2017
-    },
-    {
-      "source": "nm0000244",
-      "target": "nm0735442",
-      "weight": 23,
-      "year": 2013
-    },
-    {
-      "source": "nm0004874",
-      "target": "nm1176985",
-      "weight": 53,
-      "year": 2017
-    },
-    {
-      "source": "nm0010736",
-      "target": "nm0597388",
-      "weight": 26,
-      "year": 2019
-    },
-    {
-      "source": "nm1374980",
-      "target": "nm5584344",
-      "weight": 25,
-      "year": 2017
-    },
-    {
-      "source": "nm0004754",
-      "target": "nm0005188",
-      "weight": 18,
-      "year": 2016
-    },
-    {
-      "source": "nm0004695",
-      "target": "nm1325419",
-      "weight": 18,
-      "year": 2011
-    },
-    {
-      "source": "nm0001618",
-      "target": "nm0010736",
-      "weight": 26,
-      "year": 2013
-    },
-    {
-      "source": "nm0000234",
-      "target": "nm0005458",
-      "weight": 37,
-      "year": 2014
-    },
-    {
-      "source": "nm0695435",
-      "target": "nm0757855",
-      "weight": 28,
-      "year": 2016
-    },
-    {
-      "source": "nm0177896",
-      "target": "nm1046097",
-      "weight": 24,
-      "year": 2010
-    },
-    {
-      "source": "nm0004266",
-      "target": "nm1567113",
-      "weight": 25,
-      "year": 2019
-    },
-    {
-      "source": "nm0004754",
-      "target": "nm0933940",
-      "weight": 22,
-      "year": 2013
     },
     {
       "source": "nm0000198",
@@ -2209,15 +3607,27 @@
       "year": 2013
     },
     {
-      "source": "nm0000134",
-      "target": "nm2225369",
-      "weight": 25,
-      "year": 2014
+      "source": "nm0001624",
+      "target": "nm0356017",
+      "weight": 31,
+      "year": 2012
     },
     {
-      "source": "nm0164809",
-      "target": "nm1659547",
-      "weight": 24,
+      "source": "nm0205626",
+      "target": "nm1569276",
+      "weight": 21,
+      "year": 2017
+    },
+    {
+      "source": "nm0352778",
+      "target": "nm1676221",
+      "weight": 55,
+      "year": 2010
+    },
+    {
+      "source": "nm0000124",
+      "target": "nm0358316",
+      "weight": 26,
       "year": 2015
     },
     {
@@ -2227,498 +3637,348 @@
       "year": 2015
     },
     {
-      "source": "nm0000702",
-      "target": "nm1517976",
-      "weight": 23,
-      "year": 2015
-    },
-    {
-      "source": "nm0000242",
-      "target": "nm0002071",
-      "weight": 36,
+      "source": "nm0000204",
+      "target": "nm0358316",
+      "weight": 18,
       "year": 2014
     },
     {
-      "source": "nm0000093",
-      "target": "nm1706767",
+      "source": "nm0001618",
+      "target": "nm0010736",
       "weight": 26,
-      "year": 2011
-    },
-    {
-      "source": "nm0000190",
-      "target": "nm0424060",
-      "weight": 24,
-      "year": 2019
-    },
-    {
-      "source": "nm0396558",
-      "target": "nm1102577",
-      "weight": 20,
-      "year": 2017
-    },
-    {
-      "source": "nm0670408",
-      "target": "nm1157358",
-      "weight": 26,
-      "year": 2012
-    },
-    {
-      "source": "nm0000194",
-      "target": "nm0000437",
-      "weight": 45,
-      "year": 2012
-    },
-    {
-      "source": "nm0262635",
-      "target": "nm1107001",
-      "weight": 49,
-      "year": 2017
-    },
-    {
-      "source": "nm0735442",
-      "target": "nm0908094",
-      "weight": 52,
-      "year": 2010
-    },
-    {
-      "source": "nm0000245",
-      "target": "nm0315041",
-      "weight": 37,
-      "year": 2010
-    },
-    {
-      "source": "nm0000949",
-      "target": "nm1165110",
-      "weight": 20,
-      "year": 2019
-    },
-    {
-      "source": "nm0000115",
-      "target": "nm1297015",
-      "weight": 23,
-      "year": 2017
-    },
-    {
-      "source": "nm0000437",
-      "target": "nm0251986",
-      "weight": 63,
-      "year": 2016
-    },
-    {
-      "source": "nm0177896",
-      "target": "nm2225369",
-      "weight": 49,
-      "year": 2014
-    },
-    {
-      "source": "nm0000450",
-      "target": "nm2225369",
-      "weight": 40,
-      "year": 2014
-    },
-    {
-      "source": "nm0004874",
-      "target": "nm0735442",
-      "weight": 88,
-      "year": 2014
-    },
-    {
-      "source": "nm0000194",
-      "target": "nm0136797",
-      "weight": 23,
       "year": 2013
-    },
-    {
-      "source": "nm2225369",
-      "target": "nm4446467",
-      "weight": 25,
-      "year": 2018
-    },
-    {
-      "source": "nm0124930",
-      "target": "nm1706767",
-      "weight": 39,
-      "year": 2014
-    },
-    {
-      "source": "nm0447695",
-      "target": "nm1210124",
-      "weight": 25,
-      "year": 2010
-    },
-    {
-      "source": "nm0000245",
-      "target": "nm0005562",
-      "weight": 24,
-      "year": 2012
-    },
-    {
-      "source": "nm0221046",
-      "target": "nm1104131",
-      "weight": 30,
-      "year": 2010
-    },
-    {
-      "source": "nm0262635",
-      "target": "nm1659221",
-      "weight": 41,
-      "year": 2014
-    },
-    {
-      "source": "nm0829576",
-      "target": "nm1210124",
-      "weight": 64,
-      "year": 2010
-    },
-    {
-      "source": "nm0000234",
-      "target": "nm1165110",
-      "weight": 24,
-      "year": 2014
-    },
-    {
-      "source": "nm0000450",
-      "target": "nm2955013",
-      "weight": 40,
-      "year": 2014
-    },
-    {
-      "source": "nm1221047",
-      "target": "nm1411125",
-      "weight": 34,
-      "year": 2018
-    },
-    {
-      "source": "nm0004874",
-      "target": "nm0005458",
-      "weight": 37,
-      "year": 2018
-    },
-    {
-      "source": "nm2225369",
-      "target": "nm2955013",
-      "weight": 54,
-      "year": 2014
-    },
-    {
-      "source": "nm0000115",
-      "target": "nm0396558",
-      "weight": 23,
-      "year": 2014
-    },
-    {
-      "source": "nm0000949",
-      "target": "nm1325419",
-      "weight": 35,
-      "year": 2017
-    },
-    {
-      "source": "nm0000195",
-      "target": "nm1297015",
-      "weight": 25,
-      "year": 2012
-    },
-    {
-      "source": "nm0000705",
-      "target": "nm1046097",
-      "weight": 23,
-      "year": 2012
-    },
-    {
-      "source": "nm0000604",
-      "target": "nm0350453",
-      "weight": 22,
-      "year": 2010
-    },
-    {
-      "source": "nm0000168",
-      "target": "nm1107001",
-      "weight": 44,
-      "year": 2011
-    },
-    {
-      "source": "nm0262635",
-      "target": "nm0757855",
-      "weight": 26,
-      "year": 2014
-    },
-    {
-      "source": "nm0425005",
-      "target": "nm0735442",
-      "weight": 39,
-      "year": 2015
-    },
-    {
-      "source": "nm0416673",
-      "target": "nm1221047",
-      "weight": 24,
-      "year": 2017
-    },
-    {
-      "source": "nm1017633",
-      "target": "nm3315894",
-      "weight": 39,
-      "year": 2016
-    },
-    {
-      "source": "nm0757855",
-      "target": "nm1517976",
-      "weight": 39,
-      "year": 2013
-    },
-    {
-      "source": "nm0000168",
-      "target": "nm0000198",
-      "weight": 49,
-      "year": 2011
-    },
-    {
-      "source": "nm0000168",
-      "target": "nm1659221",
-      "weight": 28,
-      "year": 2013
-    },
-    {
-      "source": "nm0002071",
-      "target": "nm1325419",
-      "weight": 35,
-      "year": 2017
-    },
-    {
-      "source": "nm0000177",
-      "target": "nm0914612",
-      "weight": 23,
-      "year": 2013
-    },
-    {
-      "source": "nm0000138",
-      "target": "nm1706767",
-      "weight": 28,
-      "year": 2017
-    },
-    {
-      "source": "nm0000173",
-      "target": "nm0000179",
-      "weight": 22,
-      "year": 2010
-    },
-    {
-      "source": "nm0424060",
-      "target": "nm1107001",
-      "weight": 28,
-      "year": 2015
-    },
-    {
-      "source": "nm0000134",
-      "target": "nm0177896",
-      "weight": 39,
-      "year": 2013
-    },
-    {
-      "source": "nm0000179",
-      "target": "nm1046097",
-      "weight": 27,
-      "year": 2010
-    },
-    {
-      "source": "nm0396558",
-      "target": "nm1055413",
-      "weight": 39,
-      "year": 2016
-    },
-    {
-      "source": "nm0177896",
-      "target": "nm0695435",
-      "weight": 41,
-      "year": 2018
-    },
-    {
-      "source": "nm0424060",
-      "target": "nm1659221",
-      "weight": 28,
-      "year": 2015
-    },
-    {
-      "source": "nm0000437",
-      "target": "nm0000729",
-      "weight": 23,
-      "year": 2015
-    },
-    {
-      "source": "nm0005028",
-      "target": "nm0352778",
-      "weight": 21,
-      "year": 2010
-    },
-    {
-      "source": "nm0352778",
-      "target": "nm1104131",
-      "weight": 44,
-      "year": 2014
     },
     {
       "source": "nm0010736",
-      "target": "nm0147147",
-      "weight": 53,
-      "year": 2017
-    },
-    {
-      "source": "nm0000242",
-      "target": "nm0005109",
-      "weight": 25,
-      "year": 2010
-    },
-    {
-      "source": "nm1165110",
-      "target": "nm4043618",
+      "target": "nm0597388",
       "weight": 26,
-      "year": 2017
+      "year": 2019
     },
     {
-      "source": "nm1325419",
-      "target": "nm1706767",
-      "weight": 58,
+      "source": "nm0001674",
+      "target": "nm0005450",
+      "weight": 25,
+      "year": 2012
+    },
+    {
+      "source": "nm0000474",
+      "target": "nm0358316",
+      "weight": 23,
       "year": 2014
     },
     {
-      "source": "nm0000195",
-      "target": "nm0000246",
-      "weight": 22,
+      "source": "nm0177896",
+      "target": "nm1176985",
+      "weight": 41,
+      "year": 2018
+    },
+    {
+      "source": "nm0416673",
+      "target": "nm1411125",
+      "weight": 36,
+      "year": 2015
+    },
+    {
+      "source": "nm0004266",
+      "target": "nm1567113",
+      "weight": 25,
+      "year": 2019
+    },
+    {
+      "source": "nm0000134",
+      "target": "nm2225369",
+      "weight": 25,
       "year": 2014
     },
     {
-      "source": "nm0000204",
-      "target": "nm0000949",
-      "weight": 20,
+      "source": "nm0004754",
+      "target": "nm0005188",
+      "weight": 18,
       "year": 2016
     },
     {
-      "source": "nm0001191",
-      "target": "nm1676221",
-      "weight": 48,
+      "source": "nm0000362",
+      "target": "nm0005377",
+      "weight": 20,
+      "year": 2011
+    },
+    {
+      "source": "nm0000244",
+      "target": "nm0735442",
+      "weight": 23,
+      "year": 2013
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0005351",
+      "weight": 36,
+      "year": 2017
+    },
+    {
+      "source": "nm0164809",
+      "target": "nm1659547",
+      "weight": 24,
+      "year": 2015
+    },
+    {
+      "source": "nm0736622",
+      "target": "nm1374980",
+      "weight": 37,
+      "year": 2016
+    },
+    {
+      "source": "nm0005028",
+      "target": "nm1104131",
+      "weight": 19,
       "year": 2014
     },
     {
-      "source": "nm0352778",
-      "target": "nm1325419",
-      "weight": 30,
+      "source": "nm0000173",
+      "target": "nm2368789",
+      "weight": 19,
+      "year": 2019
+    },
+    {
+      "source": "nm0000681",
+      "target": "nm1046097",
+      "weight": 26,
       "year": 2010
     },
     {
-      "source": "nm0000288",
-      "target": "nm0136797",
+      "source": "nm0004695",
+      "target": "nm1325419",
+      "weight": 18,
+      "year": 2011
+    },
+    {
+      "source": "nm0001401",
+      "target": "nm1102577",
       "weight": 25,
       "year": 2017
     },
     {
-      "source": "nm0000576",
-      "target": "nm4446467",
-      "weight": 21,
+      "source": "nm0005377",
+      "target": "nm0424060",
+      "weight": 27,
+      "year": 2015
+    },
+    {
+      "source": "nm0147147",
+      "target": "nm0251986",
+      "weight": 27,
+      "year": 2019
+    },
+    {
+      "source": "nm0000375",
+      "target": "nm0269463",
+      "weight": 40,
+      "year": 2015
+    },
+    {
+      "source": "nm0396558",
+      "target": "nm0564215",
+      "weight": 48,
       "year": 2017
     },
     {
       "source": "nm0000375",
-      "target": "nm0000569",
-      "weight": 55,
-      "year": 2012
-    },
-    {
-      "source": "nm0000190",
-      "target": "nm1374980",
-      "weight": 21,
-      "year": 2016
-    },
-    {
-      "source": "nm0000173",
-      "target": "nm0413168",
-      "weight": 32,
-      "year": 2012
-    },
-    {
-      "source": "nm0000093",
-      "target": "nm1055413",
+      "target": "nm4043618",
       "weight": 28,
-      "year": 2011
-    },
-    {
-      "source": "nm0000437",
-      "target": "nm1107001",
-      "weight": 20,
-      "year": 2010
-    },
-    {
-      "source": "nm0000246",
-      "target": "nm0001570",
-      "weight": 24,
-      "year": 2016
-    },
-    {
-      "source": "nm0350453",
-      "target": "nm1659547",
-      "weight": 22,
-      "year": 2014
-    },
-    {
-      "source": "nm0004695",
-      "target": "nm0735442",
-      "weight": 24,
-      "year": 2012
-    },
-    {
-      "source": "nm0000190",
-      "target": "nm0000702",
-      "weight": 36,
-      "year": 2016
-    },
-    {
-      "source": "nm0004874",
-      "target": "nm0695435",
-      "weight": 41,
       "year": 2018
     },
     {
-      "source": "nm0005450",
-      "target": "nm1676221",
-      "weight": 47,
-      "year": 2017
-    },
-    {
-      "source": "nm0000098",
-      "target": "nm0004937",
-      "weight": 17,
-      "year": 2017
-    },
-    {
-      "source": "nm1567113",
-      "target": "nm4446467",
-      "weight": 25,
-      "year": 2015
-    },
-    {
-      "source": "nm1631269",
-      "target": "nm5052065",
-      "weight": 21,
-      "year": 2015
-    },
-    {
-      "source": "nm0000204",
-      "target": "nm0000288",
-      "weight": 23,
+      "source": "nm0000201",
+      "target": "nm1631269",
+      "weight": 22,
       "year": 2019
     },
     {
-      "source": "nm0004754",
-      "target": "nm0177896",
-      "weight": 24,
-      "year": 2010
+      "source": "nm0000138",
+      "target": "nm0000949",
+      "weight": 26,
+      "year": 2013
     }
   ],
   "2020s": [
     {
-      "source": "nm0205626",
-      "target": "nm1256532",
-      "weight": 23,
+      "source": "nm0000234",
+      "target": "nm1209966",
+      "weight": 21,
       "year": 2020
+    },
+    {
+      "source": "nm1500155",
+      "target": "nm4043618",
+      "weight": 23,
+      "year": 2021
+    },
+    {
+      "source": "nm0000206",
+      "target": "nm0252961",
+      "weight": 18,
+      "year": 2022
+    },
+    {
+      "source": "nm0005188",
+      "target": "nm0252961",
+      "weight": 23,
+      "year": 2023
+    },
+    {
+      "source": "nm0736622",
+      "target": "nm1659221",
+      "weight": 22,
+      "year": 2023
+    },
+    {
+      "source": "nm0000168",
+      "target": "nm0005023",
+      "weight": 22,
+      "year": 2021
+    },
+    {
+      "source": "nm0001570",
+      "target": "nm0736622",
+      "weight": 18,
+      "year": 2025
+    },
+    {
+      "source": "nm1017633",
+      "target": "nm3828984",
+      "weight": 22,
+      "year": 2021
+    },
+    {
+      "source": "nm0005458",
+      "target": "nm2812026",
+      "weight": 24,
+      "year": 2020
+    },
+    {
+      "source": "nm0000234",
+      "target": "nm2812026",
+      "weight": 37,
+      "year": 2020
+    },
+    {
+      "source": "nm0687146",
+      "target": "nm1297015",
+      "weight": 23,
+      "year": 2025
+    },
+    {
+      "source": "nm0001618",
+      "target": "nm1297015",
+      "weight": 22,
+      "year": 2020
+    },
+    {
+      "source": "nm0000093",
+      "target": "nm3053338",
+      "weight": 26,
+      "year": 2021
+    },
+    {
+      "source": "nm0000173",
+      "target": "nm0597388",
+      "weight": 25,
+      "year": 2021
+    },
+    {
+      "source": "nm0000437",
+      "target": "nm0931329",
+      "weight": 26,
+      "year": 2020
+    },
+    {
+      "source": "nm0000173",
+      "target": "nm1102577",
+      "weight": 30,
+      "year": 2020
+    },
+    {
+      "source": "nm0131966",
+      "target": "nm0350453",
+      "weight": 22,
+      "year": 2021
+    },
+    {
+      "source": "nm0131966",
+      "target": "nm0765597",
+      "weight": 21,
+      "year": 2021
+    },
+    {
+      "source": "nm0330687",
+      "target": "nm0940362",
+      "weight": 22,
+      "year": 2020
+    },
+    {
+      "source": "nm0735442",
+      "target": "nm2812026",
+      "weight": 37,
+      "year": 2020
+    },
+    {
+      "source": "nm0000244",
+      "target": "nm0193295",
+      "weight": 26,
+      "year": 2024
+    },
+    {
+      "source": "nm0425005",
+      "target": "nm1289434",
+      "weight": 24,
+      "year": 2023
+    },
+    {
+      "source": "nm0000681",
+      "target": "nm0005188",
+      "weight": 21,
+      "year": 2021
+    },
+    {
+      "source": "nm0000134",
+      "target": "nm0131966",
+      "weight": 25,
+      "year": 2022
+    },
+    {
+      "source": "nm0362766",
+      "target": "nm0931329",
+      "weight": 26,
+      "year": 2020
+    },
+    {
+      "source": "nm0000201",
+      "target": "nm1102577",
+      "weight": 21,
+      "year": 2023
+    },
+    {
+      "source": "nm0597388",
+      "target": "nm0933940",
+      "weight": 25,
+      "year": 2021
+    },
+    {
+      "source": "nm0000226",
+      "target": "nm1227814",
+      "weight": 24,
+      "year": 2022
+    },
+    {
+      "source": "nm0005458",
+      "target": "nm0193295",
+      "weight": 36,
+      "year": 2020
+    },
+    {
+      "source": "nm0000120",
+      "target": "nm0252961",
+      "weight": 23,
+      "year": 2023
     },
     {
       "source": "nm0000237",
@@ -2739,8 +3999,38 @@
       "year": 2021
     },
     {
+      "source": "nm0000196",
+      "target": "nm3053338",
+      "weight": 22,
+      "year": 2020
+    },
+    {
       "source": "nm0000354",
       "target": "nm0131966",
+      "weight": 23,
+      "year": 2020
+    },
+    {
+      "source": "nm1209966",
+      "target": "nm1631269",
+      "weight": 21,
+      "year": 2020
+    },
+    {
+      "source": "nm0004874",
+      "target": "nm2812026",
+      "weight": 37,
+      "year": 2020
+    },
+    {
+      "source": "nm0358316",
+      "target": "nm1165110",
+      "weight": 23,
+      "year": 2021
+    },
+    {
+      "source": "nm0424060",
+      "target": "nm1475594",
       "weight": 23,
       "year": 2020
     },
@@ -2757,112 +4047,28 @@
       "year": 2021
     },
     {
-      "source": "nm0424060",
-      "target": "nm1475594",
-      "weight": 23,
-      "year": 2020
-    },
-    {
-      "source": "nm0004874",
-      "target": "nm2812026",
-      "weight": 37,
-      "year": 2020
-    },
-    {
-      "source": "nm1209966",
-      "target": "nm1631269",
+      "source": "nm0000168",
+      "target": "nm0396558",
       "weight": 21,
-      "year": 2020
-    },
-    {
-      "source": "nm0000196",
-      "target": "nm3053338",
-      "weight": 22,
-      "year": 2020
-    },
-    {
-      "source": "nm1500155",
-      "target": "nm4043618",
-      "weight": 23,
-      "year": 2021
-    },
-    {
-      "source": "nm0000234",
-      "target": "nm1209966",
-      "weight": 21,
-      "year": 2020
-    },
-    {
-      "source": "nm0736622",
-      "target": "nm1659221",
-      "weight": 22,
-      "year": 2023
-    },
-    {
-      "source": "nm0000173",
-      "target": "nm5584344",
-      "weight": 25,
-      "year": 2021
-    },
-    {
-      "source": "nm0000173",
-      "target": "nm0597388",
-      "weight": 25,
-      "year": 2021
-    },
-    {
-      "source": "nm0000234",
-      "target": "nm2812026",
-      "weight": 37,
-      "year": 2020
-    },
-    {
-      "source": "nm1102577",
-      "target": "nm3154303",
-      "weight": 23,
       "year": 2022
     },
     {
-      "source": "nm0001570",
-      "target": "nm0736622",
-      "weight": 18,
-      "year": 2025
-    },
-    {
-      "source": "nm0000093",
-      "target": "nm3053338",
-      "weight": 26,
-      "year": 2021
-    },
-    {
-      "source": "nm0001618",
-      "target": "nm1297015",
-      "weight": 22,
-      "year": 2020
-    },
-    {
       "source": "nm0687146",
-      "target": "nm1297015",
-      "weight": 23,
-      "year": 2025
-    },
-    {
-      "source": "nm1017633",
-      "target": "nm3828984",
-      "weight": 22,
-      "year": 2021
-    },
-    {
-      "source": "nm0000168",
-      "target": "nm0005023",
-      "weight": 22,
-      "year": 2021
-    },
-    {
-      "source": "nm0005458",
-      "target": "nm2812026",
-      "weight": 24,
+      "target": "nm0781981",
+      "weight": 21,
       "year": 2020
+    },
+    {
+      "source": "nm0001454",
+      "target": "nm1227814",
+      "weight": 24,
+      "year": 2022
+    },
+    {
+      "source": "nm0000658",
+      "target": "nm0000949",
+      "weight": 19,
+      "year": 2021
     },
     {
       "source": "nm0000158",
@@ -2889,38 +4095,14 @@
       "year": 2020
     },
     {
-      "source": "nm0687146",
-      "target": "nm0781981",
-      "weight": 21,
-      "year": 2020
-    },
-    {
       "source": "nm0131966",
       "target": "nm0687146",
       "weight": 23,
       "year": 2022
     },
     {
-      "source": "nm0000168",
-      "target": "nm0396558",
-      "weight": 21,
-      "year": 2022
-    },
-    {
-      "source": "nm0000255",
-      "target": "nm1256532",
-      "weight": 25,
-      "year": 2021
-    },
-    {
       "source": "nm0000234",
       "target": "nm0735442",
-      "weight": 37,
-      "year": 2020
-    },
-    {
-      "source": "nm0000234",
-      "target": "nm0004874",
       "weight": 37,
       "year": 2020
     },
@@ -2931,70 +4113,28 @@
       "year": 2023
     },
     {
-      "source": "nm0597388",
-      "target": "nm5584344",
-      "weight": 25,
-      "year": 2021
-    },
-    {
-      "source": "nm0933940",
-      "target": "nm5584344",
-      "weight": 25,
-      "year": 2021
-    },
-    {
-      "source": "nm0000173",
-      "target": "nm1102577",
-      "weight": 30,
-      "year": 2020
-    },
-    {
-      "source": "nm0425005",
-      "target": "nm1289434",
-      "weight": 24,
-      "year": 2023
-    },
-    {
-      "source": "nm0131966",
-      "target": "nm0350453",
-      "weight": 22,
-      "year": 2021
-    },
-    {
-      "source": "nm0131966",
-      "target": "nm0765597",
-      "weight": 21,
-      "year": 2021
-    },
-    {
-      "source": "nm0735442",
-      "target": "nm2812026",
+      "source": "nm0000234",
+      "target": "nm0004874",
       "weight": 37,
       "year": 2020
     },
     {
-      "source": "nm0000201",
-      "target": "nm1102577",
-      "weight": 21,
-      "year": 2023
+      "source": "nm0000120",
+      "target": "nm0000206",
+      "weight": 22,
+      "year": 2020
     },
     {
-      "source": "nm0000134",
-      "target": "nm0131966",
-      "weight": 25,
+      "source": "nm0000120",
+      "target": "nm0005188",
+      "weight": 35,
       "year": 2022
     },
     {
-      "source": "nm0000681",
-      "target": "nm0005188",
-      "weight": 21,
-      "year": 2021
-    },
-    {
-      "source": "nm0597388",
-      "target": "nm0933940",
-      "weight": 25,
-      "year": 2021
+      "source": "nm0000437",
+      "target": "nm0362766",
+      "weight": 26,
+      "year": 2020
     }
   ]
 }

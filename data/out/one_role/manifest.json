@@ -1,18 +1,67 @@
 {
-  "avg_path_length": 2.25,
+  "avg_path_length": 2.689,
+  "avg_path_length_sampled": false,
+  "avg_path_sample_n": 40,
   "build_seed": 42,
   "build_stats": {
-    "after_degree_cap": 32,
+    "after_degree_cap": 40,
     "min_votes": 50,
-    "per_genre_cap": 16,
-    "population_sql": 32
+    "per_genre_cap": 20,
+    "population_sql": 40
   },
-  "built_at": "2026-07-22T21:41:48.794163+00:00",
-  "clustering_coefficient": 0.6917,
-  "community_count": 4,
+  "built_at": "2026-07-23T16:40:10.808329+00:00",
+  "clustering_coefficient": 0.6733,
+  "community_count": 6,
   "concentration_threshold": 0.9,
+  "correlations": {
+    "acclaim_gap×prominence": {
+      "n": 0,
+      "r": null,
+      "rho": null
+    },
+    "degree×collaborator_loyalty": {
+      "n": 0,
+      "r": null,
+      "rho": null
+    },
+    "degree×prominence": {
+      "n": 40,
+      "r": -0.3184,
+      "rho": 0.0835
+    },
+    "degree×strength": {
+      "n": 40,
+      "r": 0.0229,
+      "rho": 0.2607
+    },
+    "genre_entropy×degree": {
+      "n": 0,
+      "r": null,
+      "rho": null
+    },
+    "genre_entropy×strength": {
+      "n": 0,
+      "r": null,
+      "rho": null
+    },
+    "pagerank×prominence": {
+      "n": 40,
+      "r": 0.4455,
+      "rho": 0.6381
+    },
+    "strength×prominence": {
+      "n": 40,
+      "r": 0.8442,
+      "rho": 0.9522
+    },
+    "title_rating_median×prominence": {
+      "n": 0,
+      "r": null,
+      "rho": null
+    }
+  },
   "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
-  "edge_count": 84,
+  "edge_count": 108,
   "edge_kind": "genre_comembership",
   "featured_path": [
     {
@@ -35,32 +84,447 @@
     "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
     "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
   },
+  "insight": "In this cut, strength and prominence track with r=0.8442.",
   "key_variable": "dominant_genre",
   "method_note": "Population: actors/actresses with ≥8 title-genre credits (Adult excluded, numVotes ≥50) whose single largest genre accounts for ≥90% of those credits. Stratified: top N/8 people per dominant genre (genres with enough people), ranked by prominence (Σ votes/billing) rather than raw title count. Hero links connect people who share the same dominant genre; edge weight = min(prominence).",
+  "metrics_version": "2",
   "min_credits": 8,
-  "node_count": 32,
-  "per_genre_cap": 16,
+  "node_count": 40,
+  "per_genre_cap": 20,
   "stage_row_count": 9,
   "subtitle": "person → genre concentration (≥90%)",
   "summary": {
-    "degree_max": 53101,
-    "degree_median": 9509,
+    "acclaim_gap_hist": [],
+    "assortativity": 0.334,
+    "community_sizes": [
+      14,
+      6,
+      6,
+      6,
+      4,
+      4
+    ],
+    "component_count": 2,
+    "corr_degree×prominence": {
+      "n": 40,
+      "r": -0.3184,
+      "rho": 0.0835
+    },
+    "corr_degree×strength": {
+      "n": 40,
+      "r": 0.0229,
+      "rho": 0.2607
+    },
+    "corr_strength×prominence": {
+      "n": 40,
+      "r": 0.8442,
+      "rho": 0.9522
+    },
+    "degree_gini": 0.0852,
+    "degree_hist": [
+      {
+        "count": 4,
+        "hi": 3.3,
+        "lo": 3.0
+      },
+      {
+        "count": 0,
+        "hi": 3.6,
+        "lo": 3.3
+      },
+      {
+        "count": 0,
+        "hi": 3.9,
+        "lo": 3.6
+      },
+      {
+        "count": 4,
+        "hi": 4.2,
+        "lo": 3.9
+      },
+      {
+        "count": 0,
+        "hi": 4.5,
+        "lo": 4.2
+      },
+      {
+        "count": 0,
+        "hi": 4.8,
+        "lo": 4.5
+      },
+      {
+        "count": 4,
+        "hi": 5.1,
+        "lo": 4.8
+      },
+      {
+        "count": 0,
+        "hi": 5.4,
+        "lo": 5.1
+      },
+      {
+        "count": 0,
+        "hi": 5.7,
+        "lo": 5.4
+      },
+      {
+        "count": 28,
+        "hi": 6.0,
+        "lo": 5.7
+      }
+    ],
+    "degree_max": 6,
+    "degree_median": 6,
+    "density": 0.138462,
+    "diameter": 7,
+    "effective_diameter": 5.0,
     "era_histogram": {
-      "1970s": 1,
+      "1940s": 1,
+      "1970s": 2,
       "1980s": 4,
-      "1990s": 2,
+      "1990s": 3,
       "2000s": 7,
-      "2010s": 5,
-      "2020s": 13
+      "2010s": 6,
+      "2020s": 17
     },
+    "era_homophily": 0.741,
+    "gender_homophily": 0.528,
     "gender_mix": {
-      "female": 15,
-      "male": 17
+      "female": 19,
+      "male": 21
     },
+    "giant_component_share": 0.5,
+    "largest_community_share": 0.35,
+    "modularity": 0.1787,
+    "outliers": {
+      "pagerank": [
+        "nm0203721",
+        "nm0520876",
+        "nm14815297"
+      ],
+      "prominence": [
+        "nm0654741",
+        "nm0776856"
+      ],
+      "strength": [
+        "nm0014953",
+        "nm0699614",
+        "nm0707231",
+        "nm0776856"
+      ]
+    },
+    "prominence_hist": [
+      {
+        "count": 28,
+        "hi": 2699.57,
+        "lo": 492.8
+      },
+      {
+        "count": 3,
+        "hi": 4906.34,
+        "lo": 2699.57
+      },
+      {
+        "count": 3,
+        "hi": 7113.11,
+        "lo": 4906.34
+      },
+      {
+        "count": 3,
+        "hi": 9319.88,
+        "lo": 7113.11
+      },
+      {
+        "count": 0,
+        "hi": 11526.65,
+        "lo": 9319.88
+      },
+      {
+        "count": 1,
+        "hi": 13733.42,
+        "lo": 11526.65
+      },
+      {
+        "count": 1,
+        "hi": 15940.19,
+        "lo": 13733.42
+      },
+      {
+        "count": 0,
+        "hi": 18146.96,
+        "lo": 15940.19
+      },
+      {
+        "count": 0,
+        "hi": 20353.73,
+        "lo": 18146.96
+      },
+      {
+        "count": 1,
+        "hi": 22560.5,
+        "lo": 20353.73
+      }
+    ],
+    "scatter_strength_prominence": [
+      {
+        "id": "nm0014953",
+        "x": 53101.0,
+        "y": 12868.8
+      },
+      {
+        "id": "nm0203721",
+        "x": 1512.0,
+        "y": 504.2
+      },
+      {
+        "id": "nm0272204",
+        "x": 3499.0,
+        "y": 809.0
+      },
+      {
+        "id": "nm0520876",
+        "x": 2208.0,
+        "y": 568.3
+      },
+      {
+        "id": "nm0654741",
+        "x": 37966.0,
+        "y": 22560.5
+      },
+      {
+        "id": "nm0699614",
+        "x": 49140.0,
+        "y": 9079.2
+      },
+      {
+        "id": "nm0701248",
+        "x": 43189.0,
+        "y": 9020.7
+      },
+      {
+        "id": "nm0707231",
+        "x": 52993.0,
+        "y": 9266.6
+      },
+      {
+        "id": "nm0758741",
+        "x": 33195.0,
+        "y": 7096.5
+      },
+      {
+        "id": "nm0776856",
+        "x": 47045.0,
+        "y": 15832.1
+      },
+      {
+        "id": "nm0786929",
+        "x": 6812.0,
+        "y": 6609.0
+      },
+      {
+        "id": "nm0825983",
+        "x": 5969.0,
+        "y": 1209.4
+      },
+      {
+        "id": "nm1080706",
+        "x": 4776.0,
+        "y": 965.0
+      },
+      {
+        "id": "nm11484807",
+        "x": 8642.0,
+        "y": 2940.8
+      },
+      {
+        "id": "nm1205389",
+        "x": 6353.0,
+        "y": 1211.6
+      },
+      {
+        "id": "nm12690549",
+        "x": 3521.0,
+        "y": 600.6
+      },
+      {
+        "id": "nm13851921",
+        "x": 7360.0,
+        "y": 1293.8
+      },
+      {
+        "id": "nm13872754",
+        "x": 2790.0,
+        "y": 581.8
+      },
+      {
+        "id": "nm13934854",
+        "x": 3965.0,
+        "y": 733.7
+      },
+      {
+        "id": "nm14688444",
+        "x": 10138.0,
+        "y": 1830.7
+      },
+      {
+        "id": "nm14815297",
+        "x": 1476.0,
+        "y": 492.8
+      },
+      {
+        "id": "nm15043068",
+        "x": 8617.0,
+        "y": 1569.0
+      },
+      {
+        "id": "nm15129858",
+        "x": 9401.0,
+        "y": 1730.3
+      },
+      {
+        "id": "nm1513957",
+        "x": 15761.0,
+        "y": 2874.5
+      },
+      {
+        "id": "nm1515877",
+        "x": 17514.0,
+        "y": 3246.8
+      },
+      {
+        "id": "nm1516026",
+        "x": 12010.0,
+        "y": 2237.8
+      },
+      {
+        "id": "nm1520887",
+        "x": 8938.0,
+        "y": 1985.3
+      },
+      {
+        "id": "nm15415030",
+        "x": 9384.0,
+        "y": 1952.5
+      },
+      {
+        "id": "nm15943122",
+        "x": 4977.0,
+        "y": 963.8
+      },
+      {
+        "id": "nm16033060",
+        "x": 3383.0,
+        "y": 585.5
+      },
+      {
+        "id": "nm16044348",
+        "x": 6980.0,
+        "y": 1268.0
+      },
+      {
+        "id": "nm1632883",
+        "x": 5457.0,
+        "y": 1002.3
+      },
+      {
+        "id": "nm16417214",
+        "x": 2157.0,
+        "y": 555.0
+      },
+      {
+        "id": "nm17002888",
+        "x": 10889.0,
+        "y": 1920.0
+      },
+      {
+        "id": "nm1750778",
+        "x": 7819.0,
+        "y": 1349.2
+      },
+      {
+        "id": "nm2325955",
+        "x": 13305.0,
+        "y": 2326.4
+      },
+      {
+        "id": "nm2660337",
+        "x": 14396.0,
+        "y": 2576.8
+      },
+      {
+        "id": "nm3532880",
+        "x": 26057.0,
+        "y": 5787.1
+      },
+      {
+        "id": "nm5961385",
+        "x": 10474.0,
+        "y": 2105.8
+      },
+      {
+        "id": "nm8801103",
+        "x": 4183.0,
+        "y": 755.4
+      }
+    ],
+    "strength_gini": 0.5114,
+    "strength_hist": [
+      {
+        "count": 15,
+        "hi": 6638.5,
+        "lo": 1476.0
+      },
+      {
+        "count": 12,
+        "hi": 11801.0,
+        "lo": 6638.5
+      },
+      {
+        "count": 4,
+        "hi": 16963.5,
+        "lo": 11801.0
+      },
+      {
+        "count": 1,
+        "hi": 22126.0,
+        "lo": 16963.5
+      },
+      {
+        "count": 1,
+        "hi": 27288.5,
+        "lo": 22126.0
+      },
+      {
+        "count": 0,
+        "hi": 32451.0,
+        "lo": 27288.5
+      },
+      {
+        "count": 1,
+        "hi": 37613.5,
+        "lo": 32451.0
+      },
+      {
+        "count": 1,
+        "hi": 42776.0,
+        "lo": 37613.5
+      },
+      {
+        "count": 2,
+        "hi": 47938.5,
+        "lo": 42776.0
+      },
+      {
+        "count": 3,
+        "hi": 53101.0,
+        "lo": 47938.5
+      }
+    ],
+    "strength_max": 53101,
+    "strength_median": 8642,
     "top_name": "Selim Nasit Özcan"
   },
   "title": "One-Role Wonders",
   "tmdb_gender_rows": 0,
-  "top_n": 160,
-  "avg_path_sample_n": 40
+  "top_n": 200
 }

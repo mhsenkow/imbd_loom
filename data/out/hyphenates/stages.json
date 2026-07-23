@@ -3,22 +3,29 @@
     "stageFrom": "gender",
     "stageTo": "era",
     "categoryFrom": "male",
-    "categoryTo": "2000\u20132014",
-    "value": 104
+    "categoryTo": "2000–2014",
+    "value": 127
   },
   {
     "stageFrom": "gender",
     "stageTo": "era",
     "categoryFrom": "male",
-    "categoryTo": "1980\u20131999",
-    "value": 19
+    "categoryTo": "1980–1999",
+    "value": 26
   },
   {
     "stageFrom": "gender",
     "stageTo": "era",
     "categoryFrom": "female",
-    "categoryTo": "2000\u20132014",
-    "value": 23
+    "categoryTo": "2000–2014",
+    "value": 26
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "female",
+    "categoryTo": "2015+",
+    "value": 6
   },
   {
     "stageFrom": "gender",
@@ -30,50 +37,85 @@
   {
     "stageFrom": "gender",
     "stageTo": "era",
-    "categoryFrom": "female",
-    "categoryTo": "2015+",
-    "value": 3
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "era",
     "categoryFrom": "male",
     "categoryTo": "2015+",
-    "value": 7
+    "value": 10
   },
   {
     "stageFrom": "gender",
     "stageTo": "era",
     "categoryFrom": "female",
-    "categoryTo": "1980\u20131999",
-    "value": 3
+    "categoryTo": "1980–1999",
+    "value": 4
   },
   {
     "stageFrom": "era",
     "stageTo": "degree",
-    "categoryFrom": "2000\u20132014",
-    "categoryTo": "hub",
-    "value": 127
-  },
-  {
-    "stageFrom": "era",
-    "stageTo": "degree",
-    "categoryFrom": "1980\u20131999",
-    "categoryTo": "hub",
+    "categoryFrom": "2000–2014",
+    "categoryTo": "connected",
     "value": 22
   },
   {
     "stageFrom": "era",
     "stageTo": "degree",
+    "categoryFrom": "1980–1999",
+    "categoryTo": "connected",
+    "value": 3
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "degree",
+    "categoryFrom": "2000–2014",
+    "categoryTo": "linked",
+    "value": 121
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "degree",
+    "categoryFrom": "1980–1999",
+    "categoryTo": "linked",
+    "value": 25
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "degree",
+    "categoryFrom": "2015+",
+    "categoryTo": "connected",
+    "value": 1
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "degree",
     "categoryFrom": "pre-1980",
-    "categoryTo": "hub",
+    "categoryTo": "linked",
     "value": 1
   },
   {
     "stageFrom": "era",
     "stageTo": "degree",
     "categoryFrom": "2015+",
-    "categoryTo": "hub",
+    "categoryTo": "linked",
+    "value": 14
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "degree",
+    "categoryFrom": "2000–2014",
+    "categoryTo": "sparse",
     "value": 10
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "degree",
+    "categoryFrom": "1980–1999",
+    "categoryTo": "sparse",
+    "value": 2
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "degree",
+    "categoryFrom": "2015+",
+    "categoryTo": "sparse",
+    "value": 1
   }
 ]

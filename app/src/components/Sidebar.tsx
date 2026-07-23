@@ -248,6 +248,7 @@ export function Sidebar({
                 ["chord", "Chord"],
                 ["bundle", "Bundle"],
                 ["timeline", "Years"],
+                ["scatter", "Scatter"],
               ] as const
             ).map(([id, label]) => (
               <button
@@ -356,8 +357,10 @@ export function Sidebar({
               value={spec.sortBy}
               onChange={(sortBy) => onChange({ sortBy })}
               options={[
-                { id: "degree", label: "Degree" },
+                { id: "strength", label: "Strength" },
+                { id: "degree", label: "Neighbors" },
                 { id: "prominence", label: "Votes" },
+                { id: "pagerank", label: "PageRank" },
                 { id: "year_peak", label: "Peak" },
                 { id: "title_count", label: "Titles" },
               ]}
@@ -372,8 +375,11 @@ export function Sidebar({
               options={[
                 { id: "auto", label: "Auto" },
                 { id: "gender", label: "Gender" },
-                { id: "degree", label: "Degree" },
+                { id: "strength", label: "Strength" },
+                { id: "degree", label: "Neighbors" },
                 { id: "prominence", label: "Votes" },
+                { id: "pagerank", label: "PageRank" },
+                { id: "acclaim_gap", label: "Acclaim gap" },
                 { id: "genre", label: "Genre" },
               ]}
             />
@@ -398,8 +404,10 @@ export function Sidebar({
               value={spec.sizeBy}
               onChange={(sizeBy) => onChange({ sizeBy })}
               options={[
-                { id: "degree", label: "Degree" },
+                { id: "strength", label: "Strength" },
+                { id: "degree", label: "Neighbors" },
                 { id: "prominence", label: "Votes" },
+                { id: "pagerank", label: "PageRank" },
                 { id: "titles", label: "Titles" },
                 { id: "uniform", label: "Even" },
               ]}
@@ -572,7 +580,7 @@ export function Sidebar({
           </div>
           <div className="field">
             <label>
-              Min degree <span>{spec.minDegree}</span>
+              Min strength <span>{spec.minDegree}</span>
             </label>
             <input
               type="range"

@@ -10,6 +10,7 @@ import {
   nodeExtents,
 } from "../lib/encode";
 import { compareNodesBySort } from "../lib/filter";
+import { nodeStrength } from "../lib/metrics";
 import { sharedLabel } from "../lib/sharedTitles";
 
 export interface BundleLayout {
@@ -46,20 +47,20 @@ export function layoutBundle(
     thicknessBy?: ThicknessBy;
     theme?: "light" | "dark";
   } = {
-    colorBy: "degree",
+    colorBy: "strength",
     minWeight: 1,
   },
 ): BundleLayout {
   const palette = opts.palette ?? "loom";
   const theme = opts.theme ?? "light";
-  const sortBy = opts.sortBy ?? "degree";
+  const sortBy = opts.sortBy ?? "strength";
   const thicknessBy = opts.thicknessBy ?? "shared";
   if (nodes.length === 0) return { links: [], leaves: [] };
 
   const groupKey = (n: Node) => {
     if (opts.colorBy === "gender") return (n.gender as string) || "unknown";
     if (opts.colorBy === "genre") return String(n.dominant_genre || "unknown");
-    const d = n.degree || 0;
+    const d = nodeStrength(n);
     if (d >= 40) return "hub";
     if (d >= 15) return "connected";
     if (d >= 5) return "linked";
@@ -104,7 +105,7 @@ export function layoutBundle(
 
   const extents = nodeExtents(nodes);
   const genreColor = buildGenreColor(nodes, palette, theme);
-  const labelThreshold = extents.maxDegree * 0.3;
+  const labelThreshold = extents.maxStrength * 0.3;
   const maxWeight = d3.max(edges, (e) => e.weight) ?? 1;
   const years = edgeYearExtents(edges);
 
@@ -115,7 +116,7 @@ export function layoutBundle(
       y: -Math.cos(leaf.x) * leaf.y,
       label: node.label,
       fill: nodeColor(node, opts.colorBy, extents, genreColor, palette, theme),
-      showLabel: node.degree >= labelThreshold,
+      showLabel: nodeStrength(node) >= labelThreshold,
       angle: leaf.x,
       id: node.id,
     };

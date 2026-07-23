@@ -396,7 +396,37 @@ export function MethodologyPage({
 
         <section className="trust-section" id="math">
           <h2>How the numbers are computed</h2>
+          <p className="trust-callout">
+            <strong>Degree ≠ strength.</strong> Degree counts neighbors; strength sums edge
+            weights (the former mislabeled “degree”). Default color/sort use strength.
+          </p>
           <MetricDefList />
+          {manifest?.correlations && Object.keys(manifest.correlations).length ? (
+            <div className="trust-table-wrap">
+              <table className="trust-table">
+                <caption>Precomputed correlations for {manifest.title}</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Pair</th>
+                    <th scope="col">Pearson r</th>
+                    <th scope="col">Spearman ρ</th>
+                    <th scope="col">n</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {Object.entries(manifest.correlations).map(([k, v]) => (
+                    <tr key={k}>
+                      <td className="mono">{k}</td>
+                      <td className="mono">{v.r ?? "—"}</td>
+                      <td className="mono">{v.rho ?? "—"}</td>
+                      <td className="mono">{v.n ?? "—"}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ) : null}
+          {manifest?.insight ? <p className="trust-callout">{manifest.insight}</p> : null}
           <h3>Honest caveats</h3>
           <ul className="trust-caveat-list">
             {CAVEATS.map((c) => (
@@ -448,8 +478,9 @@ export function MethodologyPage({
             <div className="trust-summary">
               <h3>Summary</h3>
               <p className="mono">
-                degree_max={manifest.summary.degree_max ?? "—"} · degree_median=
-                {manifest.summary.degree_median ?? "—"} · top=
+                strength_max={manifest.summary.strength_max ?? "—"} · strength_median=
+                {manifest.summary.strength_median ?? "—"} · degree_max=
+                {manifest.summary.degree_max ?? "—"} · top=
                 {manifest.summary.top_name ?? "—"}
               </p>
               {manifest.summary.gender_mix ? (

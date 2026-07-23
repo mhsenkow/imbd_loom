@@ -24,6 +24,30 @@
     "year": 1996
   },
   {
+    "source": "nm0272204",
+    "target": "nm0203721",
+    "weight": 504,
+    "construct": "one_role",
+    "genre": "Comedy",
+    "year": 1961
+  },
+  {
+    "source": "nm0272204",
+    "target": "nm0520876",
+    "weight": 568,
+    "construct": "one_role",
+    "genre": "Comedy",
+    "year": 1972
+  },
+  {
+    "source": "nm0520876",
+    "target": "nm0203721",
+    "weight": 504,
+    "construct": "one_role",
+    "genre": "Comedy",
+    "year": 1987
+  },
+  {
     "source": "nm0654741",
     "target": "nm0014953",
     "weight": 12868,
@@ -192,6 +216,54 @@
     "year": 2010
   },
   {
+    "source": "nm0825983",
+    "target": "nm0272204",
+    "weight": 809,
+    "construct": "one_role",
+    "genre": "Comedy",
+    "year": 1962
+  },
+  {
+    "source": "nm0825983",
+    "target": "nm0520876",
+    "weight": 568,
+    "construct": "one_role",
+    "genre": "Comedy",
+    "year": 1988
+  },
+  {
+    "source": "nm0825983",
+    "target": "nm1080706",
+    "weight": 965,
+    "construct": "one_role",
+    "genre": "Comedy",
+    "year": 1995
+  },
+  {
+    "source": "nm1080706",
+    "target": "nm0203721",
+    "weight": 504,
+    "construct": "one_role",
+    "genre": "Comedy",
+    "year": 1995
+  },
+  {
+    "source": "nm1080706",
+    "target": "nm0272204",
+    "weight": 809,
+    "construct": "one_role",
+    "genre": "Comedy",
+    "year": 1979
+  },
+  {
+    "source": "nm1080706",
+    "target": "nm0520876",
+    "weight": 568,
+    "construct": "one_role",
+    "genre": "Comedy",
+    "year": 2005
+  },
+  {
     "source": "nm11484807",
     "target": "nm14688444",
     "weight": 1830,
@@ -240,6 +312,30 @@
     "year": 2024
   },
   {
+    "source": "nm12690549",
+    "target": "nm13872754",
+    "weight": 581,
+    "construct": "one_role",
+    "genre": "Drama",
+    "year": 2023
+  },
+  {
+    "source": "nm12690549",
+    "target": "nm16033060",
+    "weight": 585,
+    "construct": "one_role",
+    "genre": "Drama",
+    "year": 2024
+  },
+  {
+    "source": "nm12690549",
+    "target": "nm16417214",
+    "weight": 555,
+    "construct": "one_role",
+    "genre": "Drama",
+    "year": 2024
+  },
+  {
     "source": "nm13851921",
     "target": "nm1205389",
     "weight": 1211,
@@ -264,9 +360,41 @@
     "year": 2018
   },
   {
+    "source": "nm13872754",
+    "target": "nm14815297",
+    "weight": 492,
+    "construct": "one_role",
+    "genre": "Drama",
+    "year": 2024
+  },
+  {
+    "source": "nm13872754",
+    "target": "nm16417214",
+    "weight": 555,
+    "construct": "one_role",
+    "genre": "Drama",
+    "year": 2024
+  },
+  {
     "source": "nm13934854",
     "target": "nm12690549",
     "weight": 600,
+    "construct": "one_role",
+    "genre": "Drama",
+    "year": 2024
+  },
+  {
+    "source": "nm13934854",
+    "target": "nm13872754",
+    "weight": 581,
+    "construct": "one_role",
+    "genre": "Drama",
+    "year": 2023
+  },
+  {
+    "source": "nm13934854",
+    "target": "nm16033060",
+    "weight": 585,
     "construct": "one_role",
     "genre": "Drama",
     "year": 2024
@@ -417,11 +545,27 @@
   },
   {
     "source": "nm1520887",
+    "target": "nm0272204",
+    "weight": 809,
+    "construct": "one_role",
+    "genre": "Comedy",
+    "year": 1976
+  },
+  {
+    "source": "nm1520887",
     "target": "nm0825983",
     "weight": 1209,
     "construct": "one_role",
     "genre": "Comedy",
     "year": 1992
+  },
+  {
+    "source": "nm1520887",
+    "target": "nm1080706",
+    "weight": 965,
+    "construct": "one_role",
+    "genre": "Comedy",
+    "year": 2010
   },
   {
     "source": "nm15415030",
@@ -467,6 +611,30 @@
     "source": "nm15943122",
     "target": "nm8801103",
     "weight": 755,
+    "construct": "one_role",
+    "genre": "Drama",
+    "year": 2025
+  },
+  {
+    "source": "nm16033060",
+    "target": "nm13872754",
+    "weight": 581,
+    "construct": "one_role",
+    "genre": "Drama",
+    "year": 2024
+  },
+  {
+    "source": "nm16033060",
+    "target": "nm14815297",
+    "weight": 492,
+    "construct": "one_role",
+    "genre": "Drama",
+    "year": 2025
+  },
+  {
+    "source": "nm16033060",
+    "target": "nm16417214",
+    "weight": 555,
     "construct": "one_role",
     "genre": "Drama",
     "year": 2025
@@ -518,6 +686,14 @@
     "construct": "one_role",
     "genre": "Drama",
     "year": 2019
+  },
+  {
+    "source": "nm16417214",
+    "target": "nm14815297",
+    "weight": 492,
+    "construct": "one_role",
+    "genre": "Drama",
+    "year": 2025
   },
   {
     "source": "nm17002888",
@@ -649,6 +825,14 @@
   },
   {
     "source": "nm5961385",
+    "target": "nm1080706",
+    "weight": 965,
+    "construct": "one_role",
+    "genre": "Comedy",
+    "year": 2016
+  },
+  {
+    "source": "nm5961385",
     "target": "nm1520887",
     "weight": 1985,
     "construct": "one_role",
@@ -670,5 +854,13 @@
     "construct": "one_role",
     "genre": "Drama",
     "year": 2024
+  },
+  {
+    "source": "nm8801103",
+    "target": "nm16033060",
+    "weight": 585,
+    "construct": "one_role",
+    "genre": "Drama",
+    "year": 2025
   }
 ]

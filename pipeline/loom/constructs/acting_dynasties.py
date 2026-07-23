@@ -7,7 +7,12 @@ import json
 import duckdb
 
 from loom.constructs import gender_expr
-from loom.constructs.emit import coappearance_edges, finalize_payload, rows_to_stages
+from loom.constructs.emit import (
+    coappearance_edges,
+    finalize_payload,
+    recompute_degree_strength,
+    rows_to_stages,
+)
 from loom.filters import adult_exclusion_sql, title_type_sql, vote_floor_sql
 
 
@@ -119,6 +124,8 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
                             )
         except Exception:
             pass
+        recompute_degree_strength(nodes, edges)
+        stats.pop("analytics", None)
     else:
         # Fallback: prolific multi-word-name actors (weak dynasty proxy without Wikidata)
         person_sql = f"""

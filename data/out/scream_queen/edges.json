@@ -1,19 +1,76 @@
 [
   {
+    "source": "nm0000096",
+    "target": "nm4957233",
+    "weight": 21,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2019,
+    "year_min": 2013,
+    "year_max": 2025,
+    "first_worked_together": 2013,
+    "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 12,
+    "shared_votes_max": 132709,
+    "genres": [
+      "Drama",
+      "Western",
+      "Crime",
+      "Thriller"
+    ],
+    "shared": [
+      {
+        "title": "The Fall",
+        "year": 2013,
+        "tconst": "tt2294189",
+        "votes": 132709
+      },
+      {
+        "title": "The Abandons",
+        "year": 2025,
+        "tconst": "tt16280546",
+        "votes": 10650
+      },
+      {
+        "title": "The Vast Abyss",
+        "year": 2013,
+        "tconst": "tt2308001",
+        "votes": 2345
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.353,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
     "source": "nm0000099",
     "target": "nm0001721",
     "weight": 24,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 24,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2015,
+    "year_min": 2013,
+    "year_max": 2019,
     "first_worked_together": 2013,
     "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 6,
+    "shared_votes_max": 43061,
     "genres": [
-      "Drama",
-      "Thriller",
       "Action",
       "Biography",
-      "Crime"
+      "Crime",
+      "Drama",
+      "Thriller"
     ],
     "shared": [
       {
@@ -34,19 +91,34 @@
         "tconst": "tt9381934",
         "votes": 1226
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.795,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000117",
     "target": "nm0001073",
     "weight": 73,
     "shared_count": 6,
+    "collab_count": 6,
+    "collab_strength": 73,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 1996,
+    "year_max": 2026,
     "first_worked_together": 1996,
     "last_worked_together": 2026,
+    "recency": 0,
+    "reunion_span": 30,
     "reunion": true,
     "reunion_gap": 30,
+    "shared_votes_max": 449510,
     "genres": [
       "Horror",
       "Mystery",
@@ -71,22 +143,38 @@
         "tconst": "tt1262416",
         "votes": 192645
       }
-    ]
+    ],
+    "loyalty_ab": 0.6,
+    "loyalty_ba": 0.462,
+    "tenure_overlap": 0.773,
+    "same_era": true,
+    "age_gap": 9,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.6,
+    "directorial_glue": true
   },
   {
     "source": "nm0000117",
     "target": "nm0068338",
     "weight": 21,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 2005,
+    "year_max": 2011,
     "first_worked_together": 2005,
     "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 6,
+    "shared_votes_max": 192645,
     "genres": [
-      "Horror",
-      "Mystery",
       "Comedy",
-      "Drama"
+      "Drama",
+      "Horror",
+      "Mystery"
     ],
     "shared": [
       {
@@ -101,17 +189,32 @@
         "tconst": "tt0404364",
         "votes": 7284
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.618,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000117",
     "target": "nm5506401",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2024,
+    "year_min": 2022,
+    "year_max": 2026,
     "first_worked_together": 2022,
     "last_worked_together": 2026,
+    "recency": 0,
+    "reunion_span": 4,
+    "shared_votes_max": 189579,
     "genres": [
       "Horror",
       "Mystery",
@@ -130,17 +233,32 @@
         "tconst": "tt27047903",
         "votes": 61627
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.222,
+    "tenure_overlap": 0.353,
+    "same_era": true,
+    "age_gap": 21,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000130",
     "target": "nm0001463",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 1989,
+    "year_min": 1980,
+    "year_max": 1998,
     "first_worked_together": 1980,
     "last_worked_together": 1998,
+    "recency": 28,
+    "reunion_span": 18,
+    "shared_votes_max": 92218,
     "genres": [
       "Horror",
       "Thriller"
@@ -164,17 +282,32 @@
         "tconst": "tt0636801",
         "votes": 161
       }
-    ]
+    ],
+    "loyalty_ab": 0.222,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.354,
+    "same_era": true,
+    "age_gap": 31,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000130",
     "target": "nm0477341",
     "weight": 24,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 1979,
+    "year_min": 1978,
+    "year_max": 1980,
     "first_worked_together": 1978,
     "last_worked_together": 1980,
+    "recency": 46,
+    "reunion_span": 2,
+    "shared_votes_max": 340781,
     "genres": [
       "Horror",
       "Thriller"
@@ -192,19 +325,34 @@
         "tconst": "tt0080749",
         "votes": 92218
       }
-    ]
+    ],
+    "loyalty_ab": 0.222,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.1,
+    "same_era": true,
+    "age_gap": 9,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.667
   },
   {
     "source": "nm0000130",
     "target": "nm0517820",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2014,
+    "year_min": 2003,
+    "year_max": 2025,
     "first_worked_together": 2003,
     "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 22,
     "reunion": true,
     "reunion_gap": 22,
+    "shared_votes_max": 178633,
     "genres": [
       "Comedy",
       "Family",
@@ -223,17 +371,32 @@
         "tconst": "tt31956415",
         "votes": 40191
       }
-    ]
+    ],
+    "loyalty_ab": 0.222,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.551,
+    "same_era": true,
+    "age_gap": 28,
+    "cross_generational": true,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm0000130",
     "target": "nm5506858",
     "weight": 35,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 35,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2020,
+    "year_min": 2018,
+    "year_max": 2022,
     "first_worked_together": 2018,
     "last_worked_together": 2022,
+    "recency": 4,
+    "reunion_span": 4,
+    "shared_votes_max": 187679,
     "genres": [
       "Crime",
       "Drama",
@@ -261,17 +424,32 @@
         "tconst": "tt10665342",
         "votes": 83477
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.102,
+    "same_era": true,
+    "age_gap": 36,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000161",
     "target": "nm0004742",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2010,
+    "year_max": 2013,
     "first_worked_together": 2010,
     "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 3,
+    "shared_votes_max": 315826,
     "genres": [
       "Comedy"
     ],
@@ -294,17 +472,32 @@
         "tconst": "tt42653197",
         "votes": 0
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.784,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000170",
     "target": "nm0005123",
     "weight": 36,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 36,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2011,
+    "year_min": 2007,
+    "year_max": 2016,
     "first_worked_together": 2007,
     "last_worked_together": 2016,
+    "recency": 10,
+    "reunion_span": 9,
+    "shared_votes_max": 216900,
     "genres": [
       "Action",
       "Horror",
@@ -329,17 +522,32 @@
         "tconst": "tt2592614",
         "votes": 109286
       }
-    ]
+    ],
+    "loyalty_ab": 0.3,
+    "loyalty_ba": 0.6,
+    "tenure_overlap": 0.676,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm0000170",
     "target": "nm0347149",
     "weight": 36,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 36,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2004,
+    "year_max": 2012,
     "first_worked_together": 2004,
     "last_worked_together": 2012,
+    "recency": 14,
+    "reunion_span": 8,
+    "shared_votes_max": 222475,
     "genres": [
       "Action",
       "Horror",
@@ -364,17 +572,32 @@
         "tconst": "tt1855325",
         "votes": 159656
       }
-    ]
+    ],
+    "loyalty_ab": 0.3,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.865,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm0000170",
     "target": "nm0735442",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2002,
+    "year_max": 2012,
     "first_worked_together": 2002,
     "last_worked_together": 2012,
+    "recency": 14,
+    "reunion_span": 10,
+    "shared_votes_max": 312513,
     "genres": [
       "Action",
       "Horror",
@@ -393,17 +616,32 @@
         "tconst": "tt1855325",
         "votes": 159656
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.143,
+    "tenure_overlap": 0.622,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000170",
     "target": "nm1682400",
     "weight": 24,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2007,
+    "year_max": 2010,
     "first_worked_together": 2007,
     "last_worked_together": 2010,
+    "recency": 16,
+    "reunion_span": 3,
+    "shared_votes_max": 216900,
     "genres": [
       "Action",
       "Horror",
@@ -422,17 +660,30 @@
         "tconst": "tt1220634",
         "votes": 188751
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.459,
+    "same_era": true,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm0000173",
     "target": "nm0000205",
     "weight": 19,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2013,
+    "year_min": 2012,
+    "year_max": 2014,
     "first_worked_together": 2012,
     "last_worked_together": 2014,
+    "recency": 12,
+    "reunion_span": 2,
+    "shared_votes_max": 22287,
     "genres": [
       "Biography",
       "Drama",
@@ -451,17 +702,32 @@
         "tconst": "tt0423455",
         "votes": 11302
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.721,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm0000173",
     "target": "nm1720028",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2021,
+    "year_min": 2018,
+    "year_max": 2023,
     "first_worked_together": 2018,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 5,
+    "shared_votes_max": 556044,
     "genres": [
       "Action",
       "Adventure",
@@ -480,26 +746,41 @@
         "tconst": "tt9663764",
         "votes": 119804
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.442,
+    "same_era": true,
+    "age_gap": 19,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000194",
     "target": "nm0000492",
     "weight": 31,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 31,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 1993,
+    "year_max": 2021,
     "first_worked_together": 1993,
     "last_worked_together": 2021,
+    "recency": 5,
+    "reunion_span": 28,
     "reunion": true,
     "reunion_gap": 28,
+    "shared_votes_max": 90871,
     "genres": [
       "Comedy",
       "Drama",
-      "Fantasy",
-      "Horror",
       "Crime",
-      "Mystery"
+      "Mystery",
+      "Fantasy",
+      "Horror"
     ],
     "shared": [
       {
@@ -520,17 +801,32 @@
         "tconst": "tt3319460",
         "votes": 8012
       }
-    ]
+    ],
+    "loyalty_ab": 0.429,
+    "loyalty_ba": 0.6,
+    "tenure_overlap": 0.826,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000194",
     "target": "nm0006969",
     "weight": 26,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 26,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2015,
+    "year_min": 2014,
+    "year_max": 2015,
     "first_worked_together": 2014,
     "last_worked_together": 2015,
+    "recency": 11,
+    "reunion_span": 1,
+    "shared_votes_max": 549613,
     "genres": [
       "Action",
       "Adventure",
@@ -549,17 +845,32 @@
         "tconst": "tt1951266",
         "votes": 417474
       }
-    ]
+    ],
+    "loyalty_ab": 0.286,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.692,
+    "same_era": true,
+    "age_gap": 14,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.6
   },
   {
     "source": "nm0000194",
     "target": "nm1985859",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2010,
+    "year_max": 2014,
     "first_worked_together": 2010,
     "last_worked_together": 2014,
+    "recency": 12,
+    "reunion_span": 4,
+    "shared_votes_max": 137631,
     "genres": [
       "Comedy",
       "Drama",
@@ -579,22 +890,37 @@
         "tconst": "tt2172584",
         "votes": 44848
       }
-    ]
+    ],
+    "loyalty_ab": 0.286,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.487,
+    "same_era": true,
+    "age_gap": 29,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000201",
     "target": "nm0266824",
     "weight": 21,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2001,
+    "year_max": 2022,
     "first_worked_together": 2001,
     "last_worked_together": 2022,
+    "recency": 4,
+    "reunion_span": 21,
     "reunion": true,
     "reunion_gap": 21,
+    "shared_votes_max": 162872,
     "genres": [
-      "Biography",
       "Drama",
+      "Biography",
       "History"
     ],
     "shared": [
@@ -616,17 +942,32 @@
         "tconst": "tt13291936",
         "votes": 435
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.511,
+    "same_era": true,
+    "age_gap": 36,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000201",
     "target": "nm1631269",
     "weight": 22,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2012,
+    "year_max": 2025,
     "first_worked_together": 2012,
     "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 13,
+    "shared_votes_max": 295212,
     "genres": [
       "Comedy",
       "Fantasy",
@@ -645,23 +986,38 @@
         "tconst": "tt31998881",
         "votes": 15044
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.426,
+    "same_era": true,
+    "age_gap": 39,
+    "cross_generational": true,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm0000205",
     "target": "nm0662504",
     "weight": 21,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2015,
+    "year_min": 2012,
+    "year_max": 2018,
     "first_worked_together": 2012,
     "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 6,
+    "shared_votes_max": 113963,
     "genres": [
-      "Adventure",
-      "Drama",
-      "Family",
       "Biography",
-      "Romance"
+      "Drama",
+      "Romance",
+      "Adventure",
+      "Family"
     ],
     "shared": [
       {
@@ -682,19 +1038,34 @@
         "tconst": "tt6112292",
         "votes": 4420
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.939,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.833
   },
   {
     "source": "nm0000213",
     "target": "nm0000899",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 1992,
+    "year_max": 2024,
     "first_worked_together": 1992,
     "last_worked_together": 2024,
+    "recency": 2,
+    "reunion_span": 32,
     "reunion": true,
     "reunion_gap": 32,
+    "shared_votes_max": 269282,
     "genres": [
       "Comedy",
       "Fantasy",
@@ -714,20 +1085,35 @@
         "tconst": "tt2049403",
         "votes": 176935
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.825,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000215",
     "target": "nm0915208",
     "weight": 19,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2016,
+    "year_min": 2015,
+    "year_max": 2017,
     "first_worked_together": 2015,
     "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 2,
+    "shared_votes_max": 29737,
     "genres": [
-      "Drama",
-      "Biography"
+      "Biography",
+      "Drama"
     ],
     "shared": [
       {
@@ -742,17 +1128,32 @@
         "tconst": "tt4158624",
         "votes": 7340
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.6,
+    "same_era": true,
+    "age_gap": 22,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000223",
     "target": "nm0266824",
     "weight": 21,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2005,
+    "year_min": 2005,
+    "year_max": 2005,
     "first_worked_together": 2005,
     "last_worked_together": 2005,
+    "recency": 21,
+    "reunion_span": 0,
+    "shared_votes_max": 93007,
     "genres": [
       "Horror",
       "Mystery",
@@ -773,17 +1174,32 @@
         "tconst": "tt0418647",
         "votes": 14817
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.537,
+    "same_era": true,
+    "age_gap": 31,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000223",
     "target": "nm0502425",
     "weight": 19,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2005,
+    "year_max": 2009,
     "first_worked_together": 2005,
     "last_worked_together": 2009,
+    "recency": 17,
+    "reunion_span": 4,
+    "shared_votes_max": 93007,
     "genres": [
       "Horror",
       "Mystery",
@@ -803,22 +1219,37 @@
         "tconst": "tt1281374",
         "votes": 2530
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.167,
+    "tenure_overlap": 0.905,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000223",
     "target": "nm0811242",
     "weight": 15,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 15,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2017,
+    "year_min": 2010,
+    "year_max": 2023,
     "first_worked_together": 2010,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 13,
+    "shared_votes_max": 2459,
     "genres": [
-      "Biography",
+      "Comedy",
       "Drama",
-      "Music",
-      "Comedy"
+      "Biography",
+      "Music"
     ],
     "shared": [
       {
@@ -833,17 +1264,202 @@
         "tconst": "tt27544281",
         "votes": 1279
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.537,
+    "same_era": true,
+    "age_gap": 23,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0000227",
+    "target": "nm0444223",
+    "weight": 20,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 20,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2022,
+    "year_min": 2021,
+    "year_max": 2022,
+    "first_worked_together": 2021,
+    "last_worked_together": 2022,
+    "recency": 4,
+    "reunion_span": 1,
+    "shared_votes_max": 25216,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "shared": [
+      {
+        "title": "After We Fell",
+        "year": 2021,
+        "tconst": "tt13069986",
+        "votes": 25216
+      },
+      {
+        "title": "After Ever Happy",
+        "year": 2022,
+        "tconst": "tt13070038",
+        "votes": 15668
+      }
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.4,
+    "tenure_overlap": 0.618,
+    "same_era": true,
+    "edge_genre_jaccard": 0.667
+  },
+  {
+    "source": "nm0000227",
+    "target": "nm1364532",
+    "weight": 13,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2012,
+    "year_min": 2011,
+    "year_max": 2013,
+    "first_worked_together": 2011,
+    "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 2,
+    "shared_votes_max": 1434,
+    "genres": [
+      "Adventure",
+      "Family",
+      "Sci-Fi"
+    ],
+    "shared": [
+      {
+        "title": "Space Warriors",
+        "year": 2013,
+        "tconst": "tt2328745",
+        "votes": 1434
+      },
+      {
+        "title": "Jeremy Fink and the Meaning of Life",
+        "year": 2011,
+        "tconst": "tt1710394",
+        "votes": 427
+      }
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.576,
+    "same_era": true,
+    "age_gap": 31,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0000227",
+    "target": "nm2854112",
+    "weight": 20,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 20,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2022,
+    "year_min": 2021,
+    "year_max": 2022,
+    "first_worked_together": 2021,
+    "last_worked_together": 2022,
+    "recency": 4,
+    "reunion_span": 1,
+    "shared_votes_max": 25216,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "shared": [
+      {
+        "title": "After We Fell",
+        "year": 2021,
+        "tconst": "tt13069986",
+        "votes": 25216
+      },
+      {
+        "title": "After Ever Happy",
+        "year": 2022,
+        "tconst": "tt13070038",
+        "votes": 15668
+      }
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.2,
+    "tenure_overlap": 0.412,
+    "same_era": true,
+    "age_gap": 25,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0000235",
+    "target": "nm0001250",
+    "weight": 23,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2013,
+    "year_min": 2013,
+    "year_max": 2013,
+    "first_worked_together": 2013,
+    "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 0,
+    "shared_votes_max": 139404,
+    "genres": [
+      "Drama"
+    ],
+    "shared": [
+      {
+        "title": "Nymphomaniac: Vol. I",
+        "year": 2013,
+        "tconst": "tt1937390",
+        "votes": 139404
+      },
+      {
+        "title": "Nymphomaniac: Vol. II",
+        "year": 2013,
+        "tconst": "tt2382009",
+        "votes": 104159
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.927,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000244",
     "target": "nm0001634",
     "weight": 40,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 40,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2009,
+    "year_max": 2025,
     "first_worked_together": 2009,
     "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 16,
+    "shared_votes_max": 1506592,
     "genres": [
       "Action",
       "Adventure",
@@ -869,23 +1485,39 @@
         "tconst": "tt1757678",
         "votes": 192287
       }
-    ]
+    ],
+    "loyalty_ab": 0.6,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.857,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0000244",
     "target": "nm0735442",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2013,
+    "year_min": 2009,
+    "year_max": 2016,
     "first_worked_together": 2009,
     "last_worked_together": 2016,
+    "recency": 10,
+    "reunion_span": 7,
+    "shared_votes_max": 1506592,
     "genres": [
       "Action",
-      "Adventure",
-      "Fantasy",
       "Crime",
-      "Thriller"
+      "Thriller",
+      "Adventure",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -906,17 +1538,82 @@
         "tconst": "tt1517155",
         "votes": 926
       }
-    ]
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 0.143,
+    "tenure_overlap": 0.469,
+    "same_era": true,
+    "age_gap": 29,
+    "cross_generational": true,
+    "edge_genre_jaccard": 0.833
+  },
+  {
+    "source": "nm0000291",
+    "target": "nm0222643",
+    "weight": 19,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2003,
+    "year_min": 1995,
+    "year_max": 2011,
+    "first_worked_together": 1995,
+    "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 16,
+    "shared_votes_max": 14062,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "shared": [
+      {
+        "title": "Waiting to Exhale",
+        "year": 1995,
+        "tconst": "tt0114885",
+        "votes": 14062
+      },
+      {
+        "title": "Jumping the Broom",
+        "year": 2011,
+        "tconst": "tt1640484",
+        "votes": 12165
+      },
+      {
+        "title": "Getting Happy",
+        "year": null,
+        "tconst": "tt1929253",
+        "votes": 0
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.818,
+    "same_era": true,
+    "age_gap": 9,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000291",
     "target": "nm2143282",
     "weight": 27,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 27,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2020,
+    "year_min": 2018,
+    "year_max": 2022,
     "first_worked_together": 2018,
     "last_worked_together": 2022,
+    "recency": 4,
+    "reunion_span": 4,
+    "shared_votes_max": 915353,
     "genres": [
       "Action",
       "Adventure",
@@ -936,17 +1633,77 @@
         "tconst": "tt9114286",
         "votes": 394255
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.278,
+    "same_era": true,
+    "age_gap": 25,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0000295",
+    "target": "nm0001721",
+    "weight": 20,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 20,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2007,
+    "year_min": 1998,
+    "year_max": 2016,
+    "first_worked_together": 1998,
+    "last_worked_together": 2016,
+    "recency": 10,
+    "reunion_span": 18,
+    "shared_votes_max": 27771,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance",
+      "Music"
+    ],
+    "shared": [
+      {
+        "title": "Love & Friendship",
+        "year": 2016,
+        "tconst": "tt3068194",
+        "votes": 27771
+      },
+      {
+        "title": "The Last Days of Disco",
+        "year": 1998,
+        "tconst": "tt0120728",
+        "votes": 15259
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.222,
+    "tenure_overlap": 0.857,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000304",
     "target": "nm0935345",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 1975,
+    "year_min": 1973,
+    "year_max": 1977,
     "first_worked_together": 1973,
     "last_worked_together": 1977,
+    "recency": 49,
+    "reunion_span": 4,
+    "shared_votes_max": 500661,
     "genres": [
       "Horror"
     ],
@@ -963,17 +1720,32 @@
         "tconst": "tt0076009",
         "votes": 30993
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.157,
+    "same_era": true,
+    "age_gap": 16,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000307",
     "target": "nm1985859",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2013,
+    "year_min": 2010,
+    "year_max": 2016,
     "first_worked_together": 2010,
     "last_worked_together": 2016,
+    "recency": 10,
+    "reunion_span": 6,
+    "shared_votes_max": 469914,
     "genres": [
       "Adventure",
       "Family",
@@ -992,17 +1764,164 @@
         "tconst": "tt2567026",
         "votes": 135832
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.5,
+    "same_era": true,
+    "age_gap": 23,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0000427",
+    "target": "nm0001026",
+    "weight": 21,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 1995,
+    "year_min": 1989,
+    "year_max": 2001,
+    "first_worked_together": 1989,
+    "last_worked_together": 2001,
+    "recency": 25,
+    "reunion_span": 12,
+    "shared_votes_max": 62121,
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "shared": [
+      {
+        "title": "Ghosts of Mars",
+        "year": 2001,
+        "tconst": "tt0228333",
+        "votes": 62121
+      },
+      {
+        "title": "The Package",
+        "year": 1989,
+        "tconst": "tt0098051",
+        "votes": 14258
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.963,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0000449",
+    "target": "nm0001339",
+    "weight": 22,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 1997,
+    "year_min": 1995,
+    "year_max": 1998,
+    "first_worked_together": 1995,
+    "last_worked_together": 1998,
+    "recency": 28,
+    "reunion_span": 3,
+    "shared_votes_max": 91186,
+    "genres": [
+      "Action",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "shared": [
+      {
+        "title": "Species",
+        "year": 1995,
+        "tconst": "tt0114508",
+        "votes": 91186
+      },
+      {
+        "title": "Species II",
+        "year": 1998,
+        "tconst": "tt0120841",
+        "votes": 33979
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.703,
+    "same_era": true,
+    "age_gap": 16,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0000449",
+    "target": "nm0005417",
+    "weight": 13,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2021,
+    "year_min": 2017,
+    "year_max": 2025,
+    "first_worked_together": 2017,
+    "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 8,
+    "shared_votes_max": 3183,
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Thriller"
+    ],
+    "shared": [
+      {
+        "title": "The Black Room",
+        "year": 2017,
+        "tconst": "tt5431600",
+        "votes": 3183
+      },
+      {
+        "title": "House of Abraham",
+        "year": 2025,
+        "tconst": "tt25566562",
+        "votes": 148
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.732,
+    "same_era": true,
+    "age_gap": 31,
+    "cross_generational": true,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm0000463",
     "target": "nm0000932",
     "weight": 40,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 40,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2003,
+    "year_min": 2000,
+    "year_max": 2006,
     "first_worked_together": 2000,
     "last_worked_together": 2006,
+    "recency": 20,
+    "reunion_span": 6,
+    "shared_votes_max": 694819,
     "genres": [
       "Action",
       "Adventure",
@@ -1028,17 +1947,32 @@
         "tconst": "tt0376994",
         "votes": 574332
       }
-    ]
+    ],
+    "loyalty_ab": 0.375,
+    "loyalty_ba": 0.429,
+    "tenure_overlap": 0.892,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.667
   },
   {
     "source": "nm0000463",
     "target": "nm0001593",
     "weight": 40,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 40,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2003,
+    "year_min": 2000,
+    "year_max": 2006,
     "first_worked_together": 2000,
     "last_worked_together": 2006,
+    "recency": 20,
+    "reunion_span": 6,
+    "shared_votes_max": 694819,
     "genres": [
       "Action",
       "Adventure",
@@ -1064,17 +1998,32 @@
         "tconst": "tt0376994",
         "votes": 574332
       }
-    ]
+    ],
+    "loyalty_ab": 0.375,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.909,
+    "same_era": true,
+    "age_gap": 18,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000463",
     "target": "nm0502425",
     "weight": 16,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 16,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2005,
+    "year_max": 2009,
     "first_worked_together": 2005,
     "last_worked_together": 2009,
+    "recency": 17,
+    "reunion_span": 4,
+    "shared_votes_max": 93007,
     "genres": [
       "Horror",
       "Mystery",
@@ -1093,21 +2042,79 @@
         "tconst": "tt1288495",
         "votes": 62
       }
-    ]
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 0.167,
+    "tenure_overlap": 0.805,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0000492",
+    "target": "nm0001339",
+    "weight": 13,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 1995,
+    "year_min": 1991,
+    "year_max": 1998,
+    "first_worked_together": 1991,
+    "last_worked_together": 1998,
+    "recency": 28,
+    "reunion_span": 7,
+    "shared_votes_max": 1294,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "shared": [
+      {
+        "title": "Crooked Hearts",
+        "year": 1991,
+        "tconst": "tt0101629",
+        "votes": 1294
+      },
+      {
+        "title": "Thanks of a Grateful Nation",
+        "year": 1998,
+        "tconst": "tt0142911",
+        "votes": 295
+      }
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.717,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000535",
     "target": "nm0480465",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2007,
+    "year_max": 2007,
     "first_worked_together": 2007,
     "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 0,
+    "shared_votes_max": 335409,
     "genres": [
-      "Drama",
+      "Horror",
       "Thriller",
-      "Horror"
+      "Drama"
     ],
     "shared": [
       {
@@ -1122,21 +2129,36 @@
         "tconst": "tt0462322",
         "votes": 197301
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.154,
+    "tenure_overlap": 0.88,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000535",
     "target": "nm0688624",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2007,
+    "year_max": 2007,
     "first_worked_together": 2007,
     "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 0,
+    "shared_votes_max": 335409,
     "genres": [
-      "Drama",
+      "Horror",
       "Thriller",
-      "Horror"
+      "Drama"
     ],
     "shared": [
       {
@@ -1151,21 +2173,36 @@
         "tconst": "tt0462322",
         "votes": 197301
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.2,
+    "tenure_overlap": 0.655,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000535",
     "target": "nm0935541",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2007,
+    "year_max": 2007,
     "first_worked_together": 2007,
     "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 0,
+    "shared_votes_max": 335409,
     "genres": [
-      "Drama",
+      "Horror",
       "Thriller",
-      "Horror"
+      "Drama"
     ],
     "shared": [
       {
@@ -1180,21 +2217,36 @@
         "tconst": "tt0462322",
         "votes": 197301
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.111,
+    "tenure_overlap": 0.6,
+    "same_era": true,
+    "age_gap": 11,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000535",
     "target": "nm1057928",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2007,
+    "year_max": 2007,
     "first_worked_together": 2007,
     "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 0,
+    "shared_votes_max": 335409,
     "genres": [
-      "Drama",
+      "Horror",
       "Thriller",
-      "Horror"
+      "Drama"
     ],
     "shared": [
       {
@@ -1209,21 +2261,36 @@
         "tconst": "tt0462322",
         "votes": 197301
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.182,
+    "tenure_overlap": 0.37,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm0000535",
     "target": "nm1139632",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2007,
+    "year_max": 2007,
     "first_worked_together": 2007,
     "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 0,
+    "shared_votes_max": 335409,
     "genres": [
-      "Drama",
+      "Horror",
       "Thriller",
-      "Horror"
+      "Drama"
     ],
     "shared": [
       {
@@ -1238,17 +2305,32 @@
         "tconst": "tt0462322",
         "votes": 197301
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.143,
+    "tenure_overlap": 0.484,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000539",
     "target": "nm0809938",
     "weight": 38,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 38,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2005,
+    "year_min": 2004,
+    "year_max": 2006,
     "first_worked_together": 2004,
     "last_worked_together": 2006,
+    "recency": 20,
+    "reunion_span": 2,
+    "shared_votes_max": 513615,
     "genres": [
       "Horror",
       "Mystery",
@@ -1273,19 +2355,32 @@
         "tconst": "tt0489270",
         "votes": 229351
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.7,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000651",
     "target": "nm0001388",
     "weight": 22,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 1989,
+    "year_min": 1976,
+    "year_max": 2002,
     "first_worked_together": 1976,
     "last_worked_together": 2002,
+    "recency": 24,
+    "reunion_span": 26,
     "reunion": true,
     "reunion_gap": 26,
+    "shared_votes_max": 229667,
     "genres": [
       "Drama",
       "Family",
@@ -1305,23 +2400,38 @@
         "tconst": "tt0283084",
         "votes": 25724
       }
-    ]
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 0.222,
+    "tenure_overlap": 0.868,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000651",
     "target": "nm0001453",
     "weight": 29,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 29,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 1991,
+    "year_min": 1976,
+    "year_max": 2001,
     "first_worked_together": 1976,
     "last_worked_together": 2001,
+    "recency": 25,
+    "reunion_span": 25,
     "reunion": true,
     "reunion_gap": 25,
+    "shared_votes_max": 229667,
     "genres": [
-      "Crime",
-      "Drama",
       "Comedy",
+      "Drama",
+      "Crime",
       "Horror"
     ],
     "shared": [
@@ -1343,17 +2453,32 @@
         "tconst": "tt0265320",
         "votes": 519
       }
-    ]
+    ],
+    "loyalty_ab": 0.6,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.613,
+    "same_era": true,
+    "age_gap": 17,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000666",
     "target": "nm0267812",
     "weight": 26,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 26,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2016,
+    "year_min": 2013,
+    "year_max": 2018,
     "first_worked_together": 2013,
     "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 5,
+    "shared_votes_max": 627563,
     "genres": [
       "Horror",
       "Mystery",
@@ -1372,21 +2497,36 @@
         "tconst": "tt5814060",
         "votes": 197479
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.757,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000679",
     "target": "nm0001860",
     "weight": 25,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2001,
+    "year_min": 1993,
+    "year_max": 2007,
     "first_worked_together": 1993,
     "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 14,
+    "shared_votes_max": 80516,
     "genres": [
+      "Crime",
       "Drama",
-      "Mystery",
-      "Crime"
+      "Mystery"
     ],
     "shared": [
       {
@@ -1407,17 +2547,32 @@
         "tconst": "tt0301924",
         "votes": 555
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.6,
+    "tenure_overlap": 0.806,
+    "same_era": true,
+    "age_gap": 9,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000679",
     "target": "nm0593664",
     "weight": 30,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 30,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2002,
+    "year_max": 2012,
     "first_worked_together": 2002,
     "last_worked_together": 2012,
+    "recency": 14,
+    "reunion_span": 10,
+    "shared_votes_max": 261969,
     "genres": [
       "Drama",
       "Horror",
@@ -1442,23 +2597,89 @@
         "tconst": "tt0301924",
         "votes": 555
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.861,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0000782",
+    "target": "nm0001250",
+    "weight": 15,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 15,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2006,
+    "year_min": 2000,
+    "year_max": 2012,
+    "first_worked_together": 2000,
+    "last_worked_together": 2012,
+    "recency": 14,
+    "reunion_span": 12,
+    "shared_votes_max": 4736,
+    "genres": [
+      "Drama",
+      "History",
+      "Comedy",
+      "Romance"
+    ],
+    "shared": [
+      {
+        "title": "Les misérables",
+        "year": 2000,
+        "tconst": "tt0230534",
+        "votes": 4736
+      },
+      {
+        "title": "Do Not Disturb",
+        "year": 2012,
+        "tconst": "tt2193782",
+        "votes": 821
+      },
+      {
+        "title": "Episode #1.1",
+        "year": 2000,
+        "tconst": "tt1916153",
+        "votes": 87
+      }
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.951,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000782",
     "target": "nm0630453",
     "weight": 24,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 24,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2002,
+    "year_min": 1998,
+    "year_max": 2007,
     "first_worked_together": 1998,
     "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 9,
+    "shared_votes_max": 11950,
     "genres": [
       "Drama",
-      "Horror",
-      "Thriller",
       "Adventure",
-      "Comedy"
+      "Comedy",
+      "Horror",
+      "Thriller"
     ],
     "shared": [
       {
@@ -1479,17 +2700,33 @@
         "tconst": "tt0122785",
         "votes": 668
       }
-    ]
+    ],
+    "loyalty_ab": 0.6,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.404,
+    "same_era": true,
+    "age_gap": 26,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0000932",
     "target": "nm0001593",
     "weight": 54,
     "shared_count": 4,
+    "collab_count": 4,
+    "collab_strength": 54,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2006,
+    "year_min": 2000,
+    "year_max": 2014,
     "first_worked_together": 2000,
     "last_worked_together": 2014,
+    "recency": 12,
+    "reunion_span": 14,
+    "shared_votes_max": 790953,
     "genres": [
       "Action",
       "Adventure",
@@ -1515,17 +2752,33 @@
         "tconst": "tt0290334",
         "votes": 612834
       }
-    ]
+    ],
+    "loyalty_ab": 0.571,
+    "loyalty_ba": 0.444,
+    "tenure_overlap": 0.811,
+    "same_era": true,
+    "age_gap": 16,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.667,
+    "directorial_glue": true
   },
   {
     "source": "nm0000995",
     "target": "nm0001303",
     "weight": 16,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 16,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2011,
+    "year_min": 2009,
+    "year_max": 2012,
     "first_worked_together": 2009,
     "last_worked_together": 2012,
+    "recency": 14,
+    "reunion_span": 3,
+    "shared_votes_max": 6812,
     "genres": [
       "Drama",
       "Sport"
@@ -1549,17 +2802,32 @@
         "tconst": "tt2164924",
         "votes": 368
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.143,
+    "tenure_overlap": 0.548,
+    "same_era": true,
+    "age_gap": 39,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0000995",
     "target": "nm0662504",
     "weight": 22,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2013,
+    "year_min": 2006,
+    "year_max": 2020,
     "first_worked_together": 2006,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 14,
+    "shared_votes_max": 75119,
     "genres": [
       "Drama",
       "Horror",
@@ -1585,21 +2853,36 @@
         "tconst": "tt4817660",
         "votes": 4123
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.508,
+    "same_era": true,
+    "age_gap": 40,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001057",
     "target": "nm1782299",
     "weight": 22,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2013,
+    "year_min": 2011,
+    "year_max": 2014,
     "first_worked_together": 2011,
     "last_worked_together": 2014,
+    "recency": 12,
+    "reunion_span": 3,
+    "shared_votes_max": 120096,
     "genres": [
+      "Action",
       "Comedy",
-      "Drama",
-      "Action"
+      "Drama"
     ],
     "shared": [
       {
@@ -1614,17 +2897,32 @@
         "tconst": "tt0458413",
         "votes": 35714
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.529,
+    "same_era": true,
+    "age_gap": 17,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001073",
     "target": "nm4574440",
     "weight": 24,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2023,
+    "year_min": 2022,
+    "year_max": 2023,
     "first_worked_together": 2022,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 1,
+    "shared_votes_max": 189579,
     "genres": [
       "Horror",
       "Mystery",
@@ -1643,17 +2941,30 @@
         "tconst": "tt17663992",
         "votes": 153998
       }
-    ]
+    ],
+    "loyalty_ab": 0.154,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.25,
+    "same_era": true,
+    "edge_genre_jaccard": 0.6
   },
   {
     "source": "nm0001073",
     "target": "nm4911194",
     "weight": 24,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2023,
+    "year_min": 2022,
+    "year_max": 2023,
     "first_worked_together": 2022,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 1,
+    "shared_votes_max": 189579,
     "genres": [
       "Horror",
       "Mystery",
@@ -1672,17 +2983,32 @@
         "tconst": "tt17663992",
         "votes": 153998
       }
-    ]
+    ],
+    "loyalty_ab": 0.154,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.318,
+    "same_era": true,
+    "age_gap": 38,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001073",
     "target": "nm5506401",
     "weight": 35,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 35,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2024,
+    "year_min": 2022,
+    "year_max": 2026,
     "first_worked_together": 2022,
     "last_worked_together": 2026,
+    "recency": 0,
+    "reunion_span": 4,
+    "shared_votes_max": 189579,
     "genres": [
       "Horror",
       "Mystery",
@@ -1707,21 +3033,36 @@
         "tconst": "tt27047903",
         "votes": 61627
       }
-    ]
+    ],
+    "loyalty_ab": 0.231,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.273,
+    "same_era": true,
+    "age_gap": 30,
+    "cross_generational": true,
+    "edge_genre_jaccard": 0.6
   },
   {
     "source": "nm0001110",
     "target": "nm1297015",
     "weight": 27,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 27,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2013,
+    "year_min": 2012,
+    "year_max": 2014,
     "first_worked_together": 2012,
     "last_worked_together": 2014,
+    "recency": 12,
+    "reunion_span": 2,
+    "shared_votes_max": 771518,
     "genres": [
       "Action",
-      "Sci-Fi",
-      "Adventure"
+      "Adventure",
+      "Sci-Fi"
     ],
     "shared": [
       {
@@ -1736,17 +3077,32 @@
         "tconst": "tt1872181",
         "votes": 595578
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.528,
+    "same_era": true,
+    "age_gap": 23,
+    "cross_generational": true,
+    "edge_genre_jaccard": 0.6
   },
   {
     "source": "nm0001236",
     "target": "nm0600667",
     "weight": 21,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2014,
+    "year_min": 2012,
+    "year_max": 2016,
     "first_worked_together": 2012,
     "last_worked_together": 2016,
+    "recency": 10,
+    "reunion_span": 4,
+    "shared_votes_max": 34395,
     "genres": [
       "Horror",
       "Thriller"
@@ -1764,22 +3120,37 @@
         "tconst": "tt3835080",
         "votes": 24927
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.373,
+    "same_era": true,
+    "age_gap": 22,
+    "cross_generational": true,
+    "edge_genre_jaccard": 0.667
   },
   {
     "source": "nm0001236",
     "target": "nm0908914",
     "weight": 15,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 15,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2011,
+    "year_max": 2012,
     "first_worked_together": 2011,
     "last_worked_together": 2012,
+    "recency": 14,
+    "reunion_span": 1,
+    "shared_votes_max": 34395,
     "genres": [
-      "Action",
       "Horror",
-      "Mystery",
-      "Thriller"
+      "Thriller",
+      "Action",
+      "Mystery"
     ],
     "shared": [
       {
@@ -1794,19 +3165,79 @@
         "tconst": "tt2318669",
         "votes": 60
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.818,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0001250",
+    "target": "nm0001648",
+    "weight": 21,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2008,
+    "year_min": 2005,
+    "year_max": 2011,
+    "first_worked_together": 2005,
+    "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 6,
+    "shared_votes_max": 209092,
+    "genres": [
+      "Drama",
+      "Sci-Fi",
+      "Mystery",
+      "Thriller"
+    ],
+    "shared": [
+      {
+        "title": "Melancholia",
+        "year": 2011,
+        "tconst": "tt1527186",
+        "votes": 209092
+      },
+      {
+        "title": "Lemming",
+        "year": 2005,
+        "tconst": "tt0415932",
+        "votes": 5538
+      }
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.683,
+    "same_era": true,
+    "age_gap": 25,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001264",
     "target": "nm0001349",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2011,
+    "year_min": 1997,
+    "year_max": 2025,
     "first_worked_together": 1997,
     "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 28,
     "reunion": true,
     "reunion_gap": 28,
+    "shared_votes_max": 181961,
     "genres": [
       "Horror",
       "Mystery"
@@ -1824,22 +3255,37 @@
         "tconst": "tt4045450",
         "votes": 49861
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.892,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.5
   },
   {
     "source": "nm0001287",
     "target": "nm0951471",
     "weight": 16,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 16,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 1992,
+    "year_min": 1989,
+    "year_max": 1994,
     "first_worked_together": 1989,
     "last_worked_together": 1994,
+    "recency": 32,
+    "reunion_span": 5,
+    "shared_votes_max": 43110,
     "genres": [
+      "Crime",
       "Drama",
       "Mystery",
-      "Romance",
-      "Crime"
+      "Romance"
     ],
     "shared": [
       {
@@ -1860,17 +3306,32 @@
         "tconst": "tt0576500",
         "votes": 71
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.761,
+    "same_era": true,
+    "age_gap": 29,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001287",
     "target": "nm2215143",
     "weight": 12,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 12,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2014,
+    "year_min": 2014,
+    "year_max": 2014,
     "first_worked_together": 2014,
     "last_worked_together": 2014,
+    "recency": 12,
+    "reunion_span": 0,
+    "shared_votes_max": 939,
     "genres": [
       "Drama",
       "Mystery",
@@ -1895,21 +3356,36 @@
         "tconst": "tt43602635",
         "votes": 164
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.462,
+    "same_era": true,
+    "age_gap": 29,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001303",
     "target": "nm0005420",
     "weight": 17,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 17,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2010,
+    "year_min": 2009,
+    "year_max": 2010,
     "first_worked_together": 2009,
     "last_worked_together": 2010,
+    "recency": 16,
+    "reunion_span": 1,
+    "shared_votes_max": 8025,
     "genres": [
-      "Comedy",
       "Drama",
-      "Sport"
+      "Sport",
+      "Comedy"
     ],
     "shared": [
       {
@@ -1930,22 +3406,37 @@
         "tconst": "tt0618593",
         "votes": 158
       }
-    ]
+    ],
+    "loyalty_ab": 0.143,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.703,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001303",
     "target": "nm0452748",
     "weight": 23,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 1998,
+    "year_min": 1995,
+    "year_max": 2001,
     "first_worked_together": 1995,
     "last_worked_together": 2001,
+    "recency": 25,
+    "reunion_span": 6,
+    "shared_votes_max": 4110,
     "genres": [
-      "Drama",
       "Fantasy",
       "Horror",
       "Thriller",
+      "Drama",
       "Adventure",
       "Romance"
     ],
@@ -1968,22 +3459,37 @@
         "tconst": "tt0116675",
         "votes": 869
       }
-    ]
+    ],
+    "loyalty_ab": 0.214,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.865,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001303",
     "target": "nm2318089",
     "weight": 36,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 36,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2017,
+    "year_max": 2023,
     "first_worked_together": 2017,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 6,
+    "shared_votes_max": 332417,
     "genres": [
       "Drama",
       "Horror",
-      "Mystery",
-      "Thriller"
+      "Thriller",
+      "Mystery"
     ],
     "shared": [
       {
@@ -2004,17 +3510,32 @@
         "tconst": "tt15567174",
         "votes": 136224
       }
-    ]
+    ],
+    "loyalty_ab": 0.214,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.486,
+    "same_era": true,
+    "age_gap": 11,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001303",
     "target": "nm2761963",
     "weight": 24,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2022,
+    "year_min": 2020,
+    "year_max": 2023,
     "first_worked_together": 2020,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 3,
+    "shared_votes_max": 145780,
     "genres": [
       "Drama",
       "Horror",
@@ -2039,17 +3560,32 @@
         "tconst": "tt9821166",
         "votes": 5634
       }
-    ]
+    ],
+    "loyalty_ab": 0.143,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.324,
+    "same_era": true,
+    "age_gap": 14,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001303",
     "target": "nm6442992",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2018,
+    "year_max": 2020,
     "first_worked_together": 2018,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 2,
+    "shared_votes_max": 332417,
     "genres": [
       "Drama",
       "Horror",
@@ -2074,17 +3610,32 @@
         "tconst": "tt7958030",
         "votes": 16844
       }
-    ]
+    ],
+    "loyalty_ab": 0.143,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.216,
+    "same_era": true,
+    "age_gap": 24,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001347",
     "target": "nm0005417",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2010,
+    "year_max": 2013,
     "first_worked_together": 2010,
     "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 3,
+    "shared_votes_max": 368989,
     "genres": [
       "Horror",
       "Mystery",
@@ -2103,17 +3654,32 @@
         "tconst": "tt2226417",
         "votes": 203720
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.65,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.6
   },
   {
     "source": "nm0001347",
     "target": "nm0126284",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2010,
+    "year_max": 2013,
     "first_worked_together": 2010,
     "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 3,
+    "shared_votes_max": 368989,
     "genres": [
       "Horror",
       "Mystery",
@@ -2132,22 +3698,83 @@
         "tconst": "tt2226417",
         "votes": 203720
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.483,
+    "same_era": true,
+    "age_gap": 31,
+    "cross_generational": true,
+    "edge_genre_jaccard": 0.6
+  },
+  {
+    "source": "nm0001349",
+    "target": "nm0005275",
+    "weight": 22,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2012,
+    "year_min": 1998,
+    "year_max": 2025,
+    "first_worked_together": 1998,
+    "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 27,
+    "reunion": true,
+    "reunion_gap": 27,
+    "shared_votes_max": 88825,
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "shared": [
+      {
+        "title": "I Still Know What You Did Last Summer",
+        "year": 1998,
+        "tconst": "tt0130018",
+        "votes": 88825
+      },
+      {
+        "title": "I Know What You Did Last Summer",
+        "year": 2025,
+        "tconst": "tt4045450",
+        "votes": 49861
+      }
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.97,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.6
   },
   {
     "source": "nm0001349",
     "target": "nm0005420",
     "weight": 13,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 1996,
+    "year_min": 1994,
+    "year_max": 1997,
     "first_worked_together": 1994,
     "last_worked_together": 1997,
+    "recency": 29,
+    "reunion_span": 3,
+    "shared_votes_max": 7035,
     "genres": [
-      "Adventure",
-      "Drama",
       "Comedy",
-      "Romance"
+      "Romance",
+      "Adventure",
+      "Drama"
     ],
     "shared": [
       {
@@ -2168,27 +3795,42 @@
         "tconst": "tt0644974",
         "votes": 0
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.788,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001388",
     "target": "nm0688467",
     "weight": 56,
     "shared_count": 7,
+    "collab_count": 7,
+    "collab_strength": 56,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 1987,
+    "year_min": 1976,
+    "year_max": 1996,
     "first_worked_together": 1976,
     "last_worked_together": 1996,
+    "recency": 30,
+    "reunion_span": 20,
     "reunion": true,
     "reunion_gap": 20,
+    "shared_votes_max": 229667,
     "genres": [
-      "Comedy",
-      "Romance",
-      "Horror",
       "Drama",
-      "Fantasy",
-      "Music",
       "Thriller",
+      "Romance",
+      "Music",
+      "Fantasy",
+      "Horror",
+      "Comedy",
       "Family"
     ],
     "shared": [
@@ -2210,17 +3852,32 @@
         "tconst": "tt0080888",
         "votes": 2079
       }
-    ]
+    ],
+    "loyalty_ab": 0.778,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.392,
+    "same_era": true,
+    "age_gap": 29,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001400",
     "target": "nm0279297",
     "weight": 21,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 1992,
+    "year_min": 1992,
+    "year_max": 1992,
     "first_worked_together": 1992,
     "last_worked_together": 1992,
+    "recency": 34,
+    "reunion_span": 0,
+    "shared_votes_max": 150786,
     "genres": [
       "Comedy",
       "Fantasy",
@@ -2240,17 +3897,32 @@
         "tconst": "tt0104139",
         "votes": 8638
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.452,
+    "same_era": true,
+    "age_gap": 27,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001491",
     "target": "nm1843026",
     "weight": 13,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2010,
+    "year_max": 2013,
     "first_worked_together": 2010,
     "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 3,
+    "shared_votes_max": 722,
     "genres": [
       "Comedy",
       "Drama"
@@ -2268,17 +3940,32 @@
         "tconst": "tt1394211",
         "votes": 434
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.2,
+    "tenure_overlap": 0.562,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001576",
     "target": "nm0001851",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 1984,
+    "year_min": 1982,
+    "year_max": 1986,
     "first_worked_together": 1982,
     "last_worked_together": 1986,
+    "recency": 40,
+    "reunion_span": 4,
+    "shared_votes_max": 195877,
     "genres": [
       "Horror",
       "Thriller"
@@ -2296,17 +3983,32 @@
         "tconst": "tt0091778",
         "votes": 32957
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.128,
+    "same_era": true,
+    "age_gap": 27,
+    "cross_generational": true,
+    "edge_genre_jaccard": 0.667
   },
   {
     "source": "nm0001584",
     "target": "nm0640323",
     "weight": 15,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 15,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2008,
+    "year_max": 2009,
     "first_worked_together": 2008,
     "last_worked_together": 2009,
+    "recency": 17,
+    "reunion_span": 1,
+    "shared_votes_max": 2933,
     "genres": [
       "Comedy",
       "Drama"
@@ -2330,22 +4032,35 @@
         "tconst": "tt1053504",
         "votes": 78
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.789,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001584",
     "target": "nm2215143",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2018,
+    "year_max": 2019,
     "first_worked_together": 2018,
     "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 1,
+    "shared_votes_max": 119579,
     "genres": [
       "Drama",
-      "Fantasy",
       "Horror",
-      "Sci-Fi"
+      "Sci-Fi",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -2366,17 +4081,32 @@
         "tconst": "tt7584356",
         "votes": 3381
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.474,
+    "same_era": true,
+    "age_gap": 32,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001593",
     "target": "nm2832695",
     "weight": 19,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2008,
+    "year_max": 2010,
     "first_worked_together": 2008,
     "last_worked_together": 2010,
+    "recency": 16,
+    "reunion_span": 2,
+    "shared_votes_max": 271936,
     "genres": [
       "Drama",
       "Fantasy",
@@ -2396,17 +4126,32 @@
         "tconst": "tt1654842",
         "votes": 694
       }
-    ]
+    ],
+    "loyalty_ab": 0.222,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.469,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001721",
     "target": "nm0540441",
     "weight": 13,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 13,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2010,
+    "year_min": 2006,
+    "year_max": 2013,
     "first_worked_together": 2006,
     "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 7,
+    "shared_votes_max": 783,
     "genres": [
       "Drama",
       "Thriller"
@@ -2424,17 +4169,32 @@
         "tconst": "tt0488151",
         "votes": 502
       }
-    ]
+    ],
+    "loyalty_ab": 0.222,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.968,
+    "same_era": true,
+    "age_gap": 10,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001721",
     "target": "nm0951471",
     "weight": 19,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 2006,
+    "year_max": 2009,
     "first_worked_together": 2006,
     "last_worked_together": 2009,
+    "recency": 17,
+    "reunion_span": 3,
+    "shared_votes_max": 24662,
     "genres": [
       "Drama",
       "Thriller"
@@ -2458,17 +4218,125 @@
         "tconst": "tt1075441",
         "votes": 253
       }
-    ]
+    ],
+    "loyalty_ab": 0.222,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.587,
+    "same_era": true,
+    "age_gap": 33,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0001860",
+    "target": "nm0335275",
+    "weight": 9,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 9,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2017,
+    "year_min": 2016,
+    "year_max": 2018,
+    "first_worked_together": 2016,
+    "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 2,
+    "shared_votes_max": 104,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "shared": [
+      {
+        "title": "Mississippi Requiem",
+        "year": 2018,
+        "tconst": "tt5699180",
+        "votes": 104
+      },
+      {
+        "title": "Six LA Love Stories",
+        "year": 2016,
+        "tconst": "tt5960020",
+        "votes": 99
+      },
+      {
+        "title": "Whose Wife Am I, Anyway?",
+        "year": 1998,
+        "tconst": "tt0551812",
+        "votes": 53
+      }
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.825,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0004695",
+    "target": "nm0735442",
+    "weight": 24,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2012,
+    "year_min": 2010,
+    "year_max": 2013,
+    "first_worked_together": 2010,
+    "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 3,
+    "shared_votes_max": 209957,
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Machete",
+        "year": 2010,
+        "tconst": "tt0985694",
+        "votes": 209957
+      },
+      {
+        "title": "Machete Kills",
+        "year": 2013,
+        "tconst": "tt2002718",
+        "votes": 85788
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.143,
+    "tenure_overlap": 0.793,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0004753",
     "target": "nm2254074",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2017,
+    "year_max": 2020,
     "first_worked_together": 2017,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 3,
+    "shared_votes_max": 123533,
     "genres": [
       "Comedy",
       "Horror"
@@ -2486,17 +4354,32 @@
         "tconst": "tt11024272",
         "votes": 60724
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.552,
+    "same_era": true,
+    "age_gap": 24,
+    "cross_generational": true,
+    "edge_genre_jaccard": 0.667
   },
   {
     "source": "nm0004753",
     "target": "nm2443438",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2017,
+    "year_max": 2020,
     "first_worked_together": 2017,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 3,
+    "shared_votes_max": 123533,
     "genres": [
       "Comedy",
       "Horror"
@@ -2514,17 +4397,30 @@
         "tconst": "tt11024272",
         "votes": 60724
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.2,
+    "tenure_overlap": 0.393,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0004753",
     "target": "nm3014840",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2017,
+    "year_max": 2020,
     "first_worked_together": 2017,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 3,
+    "shared_votes_max": 123533,
     "genres": [
       "Comedy",
       "Horror"
@@ -2542,17 +4438,30 @@
         "tconst": "tt11024272",
         "votes": 60724
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.517,
+    "same_era": true,
+    "edge_genre_jaccard": 0.667
   },
   {
     "source": "nm0004753",
     "target": "nm3034977",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2017,
+    "year_max": 2020,
     "first_worked_together": 2017,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 3,
+    "shared_votes_max": 123533,
     "genres": [
       "Comedy",
       "Horror"
@@ -2570,17 +4479,32 @@
         "tconst": "tt11024272",
         "votes": 60724
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.3,
+    "same_era": true,
+    "age_gap": 19,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0004753",
     "target": "nm4911194",
     "weight": 16,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 16,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2018,
+    "year_max": 2020,
     "first_worked_together": 2018,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 2,
+    "shared_votes_max": 60724,
     "genres": [
       "Comedy",
       "Horror"
@@ -2598,17 +4522,32 @@
         "tconst": "tt7588114",
         "votes": 113
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.4,
+    "same_era": true,
+    "age_gap": 29,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0005123",
     "target": "nm1682400",
     "weight": 24,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2007,
+    "year_max": 2010,
     "first_worked_together": 2007,
     "last_worked_together": 2010,
+    "recency": 16,
+    "reunion_span": 3,
+    "shared_votes_max": 216900,
     "genres": [
       "Action",
       "Horror",
@@ -2627,17 +4566,175 @@
         "tconst": "tt1220634",
         "votes": 188751
       }
-    ]
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.68,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0005305",
+    "target": "nm0372176",
+    "weight": 21,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2005,
+    "year_min": 2005,
+    "year_max": 2005,
+    "first_worked_together": 2005,
+    "last_worked_together": 2005,
+    "recency": 21,
+    "reunion_span": 0,
+    "shared_votes_max": 44258,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance",
+      "Adventure",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "shared": [
+      {
+        "title": "The Cave",
+        "year": 2005,
+        "tconst": "tt0402901",
+        "votes": 44258
+      },
+      {
+        "title": "Imagine Me & You",
+        "year": 2005,
+        "tconst": "tt0421994",
+        "votes": 39879
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.788,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0005305",
+    "target": "nm0885840",
+    "weight": 21,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2005,
+    "year_min": 2001,
+    "year_max": 2009,
+    "first_worked_together": 2001,
+    "last_worked_together": 2009,
+    "recency": 17,
+    "reunion_span": 8,
+    "shared_votes_max": 53401,
+    "genres": [
+      "Drama",
+      "Romance",
+      "Adventure",
+      "Horror"
+    ],
+    "shared": [
+      {
+        "title": "Carriers",
+        "year": 2009,
+        "tconst": "tt0806203",
+        "votes": 53401
+      },
+      {
+        "title": "Lost and Delirious",
+        "year": 2001,
+        "tconst": "tt0245238",
+        "votes": 23483
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.846,
+    "same_era": true,
+    "age_gap": 10,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0005313",
+    "target": "nm0314514",
+    "weight": 26,
+    "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 26,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2007,
+    "year_min": 2007,
+    "year_max": 2007,
+    "first_worked_together": 2007,
+    "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 0,
+    "shared_votes_max": 102469,
+    "genres": [
+      "Horror",
+      "Comedy",
+      "Romance",
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "shared": [
+      {
+        "title": "Hostel: Part II",
+        "year": 2007,
+        "tconst": "tt0498353",
+        "votes": 102469
+      },
+      {
+        "title": "What We Do Is Secret",
+        "year": 2007,
+        "tconst": "tt0384683",
+        "votes": 2184
+      },
+      {
+        "title": "Before You Here",
+        "year": 2007,
+        "tconst": "tt0490701",
+        "votes": 1306
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.562,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0005417",
     "target": "nm0126284",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2010,
+    "year_max": 2013,
     "first_worked_together": 2010,
     "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 3,
+    "shared_votes_max": 368989,
     "genres": [
       "Horror",
       "Mystery",
@@ -2656,17 +4753,32 @@
         "tconst": "tt2226417",
         "votes": 203720
       }
-    ]
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.756,
+    "same_era": true,
+    "age_gap": 36,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0005417",
     "target": "nm1682400",
     "weight": 20,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 20,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2018,
+    "year_min": 2018,
+    "year_max": 2018,
     "first_worked_together": 2018,
     "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 0,
+    "shared_votes_max": 80952,
     "genres": [
       "Horror",
       "Mystery",
@@ -2685,17 +4797,165 @@
         "tconst": "tt9109306",
         "votes": 7803
       }
-    ]
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.415,
+    "same_era": true,
+    "edge_genre_jaccard": 0.6
+  },
+  {
+    "source": "nm0005569",
+    "target": "nm0222643",
+    "weight": 14,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 14,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 1999,
+    "year_min": 1998,
+    "year_max": 1999,
+    "first_worked_together": 1998,
+    "last_worked_together": 1999,
+    "recency": 27,
+    "reunion_span": 1,
+    "shared_votes_max": 2017,
+    "genres": [
+      "Drama"
+    ],
+    "shared": [
+      {
+        "title": "Down in the Delta",
+        "year": 1998,
+        "tconst": "tt0142231",
+        "votes": 2017
+      },
+      {
+        "title": "Funny Valentines",
+        "year": 1999,
+        "tconst": "tt0180708",
+        "votes": 660
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.917,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0006969",
+    "target": "nm1555340",
+    "weight": 24,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2017,
+    "year_min": 2014,
+    "year_max": 2019,
+    "first_worked_together": 2014,
+    "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 5,
+    "shared_votes_max": 418633,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "The Lego Movie",
+        "year": 2014,
+        "tconst": "tt1490017",
+        "votes": 418633
+      },
+      {
+        "title": "The Lego Movie 2: The Second Part",
+        "year": 2019,
+        "tconst": "tt3513498",
+        "votes": 86088
+      },
+      {
+        "title": "Emmet's Holiday Party: A Lego Movie Short",
+        "year": 2018,
+        "tconst": "tt9410240",
+        "votes": 281
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.679,
+    "same_era": true,
+    "age_gap": 8,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0007491",
+    "target": "nm0186225",
+    "weight": 16,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 16,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2023,
+    "year_min": 2021,
+    "year_max": 2024,
+    "first_worked_together": 2021,
+    "last_worked_together": 2024,
+    "recency": 2,
+    "reunion_span": 3,
+    "shared_votes_max": 4702,
+    "genres": [
+      "Drama",
+      "Horror",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Jakob's Wife",
+        "year": 2021,
+        "tconst": "tt11908982",
+        "votes": 4702
+      },
+      {
+        "title": "Little Bites",
+        "year": 2024,
+        "tconst": "tt27725206",
+        "votes": 1825
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.415,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0007491",
     "target": "nm3920288",
     "weight": 24,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2021,
+    "year_min": 2018,
+    "year_max": 2023,
     "first_worked_together": 2018,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 5,
+    "shared_votes_max": 197479,
     "genres": [
       "Horror",
       "Mystery",
@@ -2714,17 +4974,73 @@
         "tconst": "tt10160976",
         "votes": 82820
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.647,
+    "same_era": true,
+    "edge_genre_jaccard": 0.75
+  },
+  {
+    "source": "nm0020329",
+    "target": "nm5557932",
+    "weight": 21,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2018,
+    "year_min": 2017,
+    "year_max": 2018,
+    "first_worked_together": 2017,
+    "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 1,
+    "shared_votes_max": 103608,
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Crime",
+      "Drama"
+    ],
+    "shared": [
+      {
+        "title": "Jigsaw",
+        "year": 2017,
+        "tconst": "tt3348730",
+        "votes": 103608
+      },
+      {
+        "title": "What Keeps You Alive",
+        "year": 2018,
+        "tconst": "tt7073710",
+        "votes": 10905
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.444,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0095751",
     "target": "nm0244630",
     "weight": 21,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2005,
+    "year_min": 2003,
+    "year_max": 2007,
     "first_worked_together": 2003,
     "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 4,
+    "shared_votes_max": 147080,
     "genres": [
       "Comedy",
       "Crime",
@@ -2745,24 +5061,37 @@
         "tconst": "tt0483756",
         "votes": 6349
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.633,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0108287",
     "target": "nm0735442",
     "weight": 76,
     "shared_count": 6,
+    "collab_count": 6,
+    "collab_strength": 76,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2014,
+    "year_min": 2001,
+    "year_max": 2023,
     "first_worked_together": 2001,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 22,
     "reunion": true,
     "reunion_gap": 22,
+    "shared_votes_max": 460730,
     "genres": [
       "Action",
-      "Adventure",
+      "Thriller",
       "Crime",
-      "Thriller"
+      "Adventure"
     ],
     "shared": [
       {
@@ -2783,17 +5112,32 @@
         "tconst": "tt2820852",
         "votes": 441657
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.429,
+    "tenure_overlap": 0.885,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0126284",
     "target": "nm1631269",
     "weight": 20,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 20,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2017,
+    "year_min": 2016,
+    "year_max": 2017,
     "first_worked_together": 2016,
     "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 1,
+    "shared_votes_max": 137992,
     "genres": [
       "Comedy",
       "Drama"
@@ -2811,17 +5155,77 @@
         "tconst": "tt7264080",
         "votes": 4894
       }
-    ]
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.645,
+    "same_era": true,
+    "age_gap": 18,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0126284",
+    "target": "nm4456120",
+    "weight": 21,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2020,
+    "year_min": 2018,
+    "year_max": 2021,
+    "first_worked_together": 2018,
+    "last_worked_together": 2021,
+    "recency": 5,
+    "reunion_span": 3,
+    "shared_votes_max": 53652,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Peter Rabbit",
+        "year": 2018,
+        "tconst": "tt5117670",
+        "votes": 53652
+      },
+      {
+        "title": "Peter Rabbit 2: The Runaway",
+        "year": 2021,
+        "tconst": "tt8376234",
+        "votes": 17214
+      }
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.438,
+    "same_era": true,
+    "age_gap": 11,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75,
+    "directorial_glue": true
   },
   {
     "source": "nm0174021",
     "target": "nm0600667",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 2007,
+    "year_max": 2009,
     "first_worked_together": 2007,
     "last_worked_together": 2009,
+    "recency": 17,
+    "reunion_span": 2,
+    "shared_votes_max": 139404,
     "genres": [
       "Horror"
     ],
@@ -2838,24 +5242,131 @@
         "tconst": "tt1311067",
         "votes": 64377
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.818,
+    "same_era": true,
+    "age_gap": 19,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0186225",
+    "target": "nm0330069",
+    "weight": 22,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 1986,
+    "year_min": 1985,
+    "year_max": 1986,
+    "first_worked_together": 1985,
+    "last_worked_together": 1986,
+    "recency": 40,
+    "reunion_span": 1,
+    "shared_votes_max": 79055,
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "shared": [
+      {
+        "title": "Re-Animator",
+        "year": 1985,
+        "tconst": "tt0089885",
+        "votes": 79055
+      },
+      {
+        "title": "From Beyond",
+        "year": 1986,
+        "tconst": "tt0091083",
+        "votes": 35965
+      },
+      {
+        "title": "Working with a Master: Stuart Gordon",
+        "year": 2006,
+        "tconst": "tt0791361",
+        "votes": 16
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.468,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0222643",
+    "target": "nm0628601",
+    "weight": 22,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2007,
+    "year_min": 2004,
+    "year_max": 2010,
+    "first_worked_together": 2004,
+    "last_worked_together": 2010,
+    "recency": 16,
+    "reunion_span": 6,
+    "shared_votes_max": 463111,
+    "genres": [
+      "Drama",
+      "Crime",
+      "Thriller"
+    ],
+    "shared": [
+      {
+        "title": "Crash",
+        "year": 2004,
+        "tconst": "tt0375679",
+        "votes": 463111
+      },
+      {
+        "title": "For Colored Girls",
+        "year": 2010,
+        "tconst": "tt1405500",
+        "votes": 8589
+      }
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.773,
+    "same_era": true,
+    "age_gap": 23,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0252238",
     "target": "nm2239702",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2018,
+    "year_min": 2017,
+    "year_max": 2018,
     "first_worked_together": 2017,
     "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 1,
+    "shared_votes_max": 346852,
     "genres": [
-      "Horror",
-      "Sci-Fi",
-      "Thriller",
       "Adventure",
       "Family",
-      "Fantasy"
+      "Fantasy",
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
     ],
     "shared": [
       {
@@ -2870,17 +5381,32 @@
         "tconst": "tt4123430",
         "votes": 333071
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.586,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0267812",
     "target": "nm0640323",
     "weight": 22,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2010,
+    "year_min": 2004,
+    "year_max": 2016,
     "first_worked_together": 2004,
     "last_worked_together": 2016,
+    "recency": 10,
+    "reunion_span": 12,
+    "shared_votes_max": 345951,
     "genres": [
       "Biography",
       "Drama",
@@ -2902,17 +5428,30 @@
         "tconst": "tt0338139",
         "votes": 6757
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.812,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0267812",
     "target": "nm3920288",
     "weight": 21,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2016,
+    "year_min": 2013,
+    "year_max": 2018,
     "first_worked_together": 2013,
     "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 5,
+    "shared_votes_max": 197479,
     "genres": [
       "Horror",
       "Mystery",
@@ -2933,17 +5472,32 @@
         "tconst": "tt1483324",
         "votes": 9706
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.393,
+    "same_era": true,
+    "age_gap": 21,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0328709",
     "target": "nm1534201",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2021,
+    "year_min": 2019,
+    "year_max": 2023,
     "first_worked_together": 2019,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 4,
+    "shared_votes_max": 415676,
     "genres": [
       "Action",
       "Adventure",
@@ -2962,17 +5516,32 @@
         "tconst": "tt10151854",
         "votes": 146611
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.75,
+    "same_era": true,
+    "age_gap": 15,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0332081",
     "target": "nm0364583",
     "weight": 22,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 1989,
+    "year_min": 1988,
+    "year_max": 1989,
     "first_worked_together": 1988,
     "last_worked_together": 1989,
+    "recency": 37,
+    "reunion_span": 1,
+    "shared_votes_max": 64898,
     "genres": [
       "Horror",
       "Thriller"
@@ -2990,17 +5559,79 @@
         "tconst": "tt0097474",
         "votes": 52291
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.842,
+    "same_era": true,
+    "age_gap": 14,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0335275",
+    "target": "nm0818055",
+    "weight": 11,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 11,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2011,
+    "year_min": 2009,
+    "year_max": 2012,
+    "first_worked_together": 2009,
+    "last_worked_together": 2012,
+    "recency": 14,
+    "reunion_span": 3,
+    "shared_votes_max": 230,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "shared": [
+      {
+        "title": "Blues for Willadean",
+        "year": 2012,
+        "tconst": "tt1833111",
+        "votes": 230
+      },
+      {
+        "title": "Herpes Boy",
+        "year": 2009,
+        "tconst": "tt1283911",
+        "votes": 165
+      },
+      {
+        "title": "The Perfect Fit",
+        "year": 2012,
+        "tconst": "tt2231621",
+        "votes": 28
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.675,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0337042",
     "target": "nm2209370",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2011,
+    "year_min": 2010,
+    "year_max": 2011,
     "first_worked_together": 2010,
     "last_worked_together": 2011,
+    "recency": 15,
+    "reunion_span": 1,
+    "shared_votes_max": 116061,
     "genres": [
       "Horror",
       "Mystery",
@@ -3025,17 +5656,30 @@
         "tconst": "tt1747160",
         "votes": 0
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.217,
+    "same_era": true,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm0383354",
     "target": "nm0491090",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 1988,
+    "year_min": 1987,
+    "year_max": 1988,
     "first_worked_together": 1987,
     "last_worked_together": 1988,
+    "recency": 38,
+    "reunion_span": 1,
+    "shared_votes_max": 154732,
     "genres": [
       "Horror",
       "Thriller"
@@ -3053,24 +5697,39 @@
         "tconst": "tt0095294",
         "votes": 61118
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.63,
+    "same_era": true,
+    "age_gap": 11,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.667
   },
   {
     "source": "nm0410622",
     "target": "nm0799706",
     "weight": 26,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 26,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2008,
+    "year_min": 2002,
+    "year_max": 2014,
     "first_worked_together": 2002,
     "last_worked_together": 2014,
+    "recency": 12,
+    "reunion_span": 12,
+    "shared_votes_max": 12677,
     "genres": [
-      "Fantasy",
+      "Drama",
       "Horror",
       "Sci-Fi",
       "Action",
       "Thriller",
-      "Drama"
+      "Fantasy"
     ],
     "shared": [
       {
@@ -3091,17 +5750,32 @@
         "tconst": "tt0923824",
         "votes": 2372
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.429,
+    "tenure_overlap": 0.703,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.857
   },
   {
     "source": "nm0444223",
     "target": "nm2854112",
     "weight": 29,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 29,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2022,
+    "year_min": 2021,
+    "year_max": 2023,
     "first_worked_together": 2021,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 2,
+    "shared_votes_max": 25216,
     "genres": [
       "Drama",
       "Romance"
@@ -3125,17 +5799,31 @@
         "tconst": "tt15334488",
         "votes": 12440
       }
-    ]
+    ],
+    "loyalty_ab": 0.6,
+    "loyalty_ba": 0.3,
+    "tenure_overlap": 0.682,
+    "same_era": true,
+    "edge_genre_jaccard": 0.667,
+    "directorial_glue": true
   },
   {
     "source": "nm0454415",
     "target": "nm0658133",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 1981,
+    "year_min": 1980,
+    "year_max": 1981,
     "first_worked_together": 1980,
     "last_worked_together": 1981,
+    "recency": 45,
+    "reunion_span": 1,
+    "shared_votes_max": 175724,
     "genres": [
       "Horror",
       "Mystery",
@@ -3154,46 +5842,32 @@
         "tconst": "tt0082418",
         "votes": 88004
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.38,
+    "same_era": true,
+    "age_gap": 29,
+    "cross_generational": true,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm0480465",
     "target": "nm0688624",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2007,
+    "year_max": 2007,
     "first_worked_together": 2007,
     "last_worked_together": 2007,
-    "genres": [
-      "Drama",
-      "Thriller",
-      "Horror"
-    ],
-    "shared": [
-      {
-        "title": "Death Proof",
-        "year": 2007,
-        "tconst": "tt1028528",
-        "votes": 335409
-      },
-      {
-        "title": "Grindhouse",
-        "year": 2007,
-        "tconst": "tt0462322",
-        "votes": 197301
-      }
-    ]
-  },
-  {
-    "source": "nm0480465",
-    "target": "nm0935541",
-    "weight": 25,
-    "shared_count": 2,
-    "construct": "scream_queen",
-    "year": 2007,
-    "first_worked_together": 2007,
-    "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 0,
+    "shared_votes_max": 335409,
     "genres": [
       "Horror",
       "Thriller",
@@ -3212,21 +5886,134 @@
         "tconst": "tt0462322",
         "votes": 197301
       }
-    ]
+    ],
+    "loyalty_ab": 0.154,
+    "loyalty_ba": 0.2,
+    "tenure_overlap": 0.759,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0480465",
+    "target": "nm0874086",
+    "weight": 22,
+    "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 22,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2003,
+    "year_min": 1995,
+    "year_max": 2017,
+    "first_worked_together": 1995,
+    "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 22,
+    "reunion": true,
+    "reunion_gap": 22,
+    "shared_votes_max": 12446,
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Comedy",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "shared": [
+      {
+        "title": "Nowhere",
+        "year": 1997,
+        "tconst": "tt0119809",
+        "votes": 12446
+      },
+      {
+        "title": "Embrace of the Vampire",
+        "year": 1995,
+        "tconst": "tt0109723",
+        "votes": 7531
+      },
+      {
+        "title": "Good Grief",
+        "year": 2017,
+        "tconst": "tt3877088",
+        "votes": 56
+      }
+    ],
+    "loyalty_ab": 0.231,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.862,
+    "same_era": true,
+    "age_gap": 9,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0480465",
+    "target": "nm0935541",
+    "weight": 25,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2007,
+    "year_min": 2007,
+    "year_max": 2007,
+    "first_worked_together": 2007,
+    "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 0,
+    "shared_votes_max": 335409,
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Drama"
+    ],
+    "shared": [
+      {
+        "title": "Death Proof",
+        "year": 2007,
+        "tconst": "tt1028528",
+        "votes": 335409
+      },
+      {
+        "title": "Grindhouse",
+        "year": 2007,
+        "tconst": "tt0462322",
+        "votes": 197301
+      }
+    ],
+    "loyalty_ab": 0.154,
+    "loyalty_ba": 0.111,
+    "tenure_overlap": 0.7,
+    "same_era": true,
+    "age_gap": 9,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0480465",
     "target": "nm1057928",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2007,
+    "year_max": 2007,
     "first_worked_together": 2007,
     "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 0,
+    "shared_votes_max": 335409,
     "genres": [
-      "Drama",
+      "Horror",
       "Thriller",
-      "Horror"
+      "Drama"
     ],
     "shared": [
       {
@@ -3241,21 +6028,36 @@
         "tconst": "tt0462322",
         "votes": 197301
       }
-    ]
+    ],
+    "loyalty_ab": 0.154,
+    "loyalty_ba": 0.182,
+    "tenure_overlap": 0.481,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm0480465",
     "target": "nm1139632",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2007,
+    "year_min": 2007,
+    "year_max": 2007,
     "first_worked_together": 2007,
     "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 0,
+    "shared_votes_max": 335409,
     "genres": [
-      "Drama",
+      "Horror",
       "Thriller",
-      "Horror"
+      "Drama"
     ],
     "shared": [
       {
@@ -3270,17 +6072,32 @@
         "tconst": "tt0462322",
         "votes": 197301
       }
-    ]
+    ],
+    "loyalty_ab": 0.154,
+    "loyalty_ba": 0.143,
+    "tenure_overlap": 0.581,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0502425",
     "target": "nm0818055",
     "weight": 18,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 18,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2017,
+    "year_min": 2013,
+    "year_max": 2021,
     "first_worked_together": 2013,
     "last_worked_together": 2021,
+    "recency": 5,
+    "reunion_span": 8,
+    "shared_votes_max": 48717,
     "genres": [
       "Drama",
       "Action",
@@ -3300,17 +6117,32 @@
         "tconst": "tt2536846",
         "votes": 1985
       }
-    ]
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.659,
+    "same_era": true,
+    "age_gap": 10,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0502425",
     "target": "nm0829576",
     "weight": 19,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2007,
+    "year_max": 2010,
     "first_worked_together": 2007,
     "last_worked_together": 2010,
+    "recency": 16,
+    "reunion_span": 3,
+    "shared_votes_max": 26041,
     "genres": [
       "Drama",
       "Comedy",
@@ -3329,17 +6161,32 @@
         "tconst": "tt0418586",
         "votes": 7638
       }
-    ]
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.561,
+    "same_era": true,
+    "age_gap": 30,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0502425",
     "target": "nm1677477",
     "weight": 16,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 16,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2011,
+    "year_max": 2013,
     "first_worked_together": 2011,
     "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 2,
+    "shared_votes_max": 26313,
     "genres": [
       "Drama",
       "Romance",
@@ -3365,22 +6212,35 @@
         "tconst": "tt2088903",
         "votes": 279
       }
-    ]
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.439,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0502425",
     "target": "nm2832695",
     "weight": 16,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 16,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2016,
+    "year_min": 2011,
+    "year_max": 2021,
     "first_worked_together": 2011,
     "last_worked_together": 2021,
+    "recency": 5,
+    "reunion_span": 10,
+    "shared_votes_max": 4755,
     "genres": [
       "Drama",
-      "Sport",
       "Thriller",
-      "Western"
+      "Western",
+      "Sport"
     ],
     "shared": [
       {
@@ -3395,17 +6255,32 @@
         "tconst": "tt11388416",
         "votes": 2776
       }
-    ]
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.415,
+    "same_era": true,
+    "age_gap": 25,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0517820",
     "target": "nm0735442",
     "weight": 21,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2012,
+    "year_min": 2010,
+    "year_max": 2013,
     "first_worked_together": 2010,
     "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 3,
+    "shared_votes_max": 209957,
     "genres": [
       "Comedy",
       "Action",
@@ -3425,17 +6300,32 @@
         "tconst": "tt1754811",
         "votes": 5083
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.143,
+    "tenure_overlap": 0.852,
+    "same_era": true,
+    "age_gap": 8,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0522909",
     "target": "nm0799706",
     "weight": 18,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 18,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2004,
+    "year_min": 2001,
+    "year_max": 2006,
     "first_worked_together": 2001,
     "last_worked_together": 2006,
+    "recency": 20,
+    "reunion_span": 5,
+    "shared_votes_max": 186128,
     "genres": [
       "Horror",
       "Thriller",
@@ -3456,17 +6346,32 @@
         "tconst": "tt0281482",
         "votes": 306
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.286,
+    "tenure_overlap": 0.457,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.833
   },
   {
     "source": "nm0522909",
     "target": "nm0935541",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2006,
+    "year_min": 2006,
+    "year_max": 2006,
     "first_worked_together": 2006,
     "last_worked_together": 2006,
+    "recency": 20,
+    "reunion_span": 0,
+    "shared_votes_max": 186128,
     "genres": [
       "Horror",
       "Thriller"
@@ -3484,23 +6389,38 @@
         "tconst": "tt0454082",
         "votes": 33204
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.111,
+    "tenure_overlap": 0.889,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0540441",
     "target": "nm0829576",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2016,
+    "year_min": 2007,
+    "year_max": 2024,
     "first_worked_together": 2007,
     "last_worked_together": 2024,
+    "recency": 2,
+    "reunion_span": 17,
+    "shared_votes_max": 697339,
     "genres": [
-      "Crime",
-      "Drama",
-      "Mystery",
       "Adventure",
-      "Biography"
+      "Biography",
+      "Drama",
+      "Crime",
+      "Mystery"
     ],
     "shared": [
       {
@@ -3515,17 +6435,122 @@
         "tconst": "tt19637052",
         "votes": 64885
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.767,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0546816",
+    "target": "nm0915865",
+    "weight": 14,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 14,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2020,
+    "year_min": 2014,
+    "year_max": 2026,
+    "first_worked_together": 2014,
+    "last_worked_together": 2026,
+    "recency": 0,
+    "reunion_span": 12,
+    "shared_votes_max": 2534,
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Drama",
+      "Animation"
+    ],
+    "shared": [
+      {
+        "title": "Maya the Bee Movie",
+        "year": 2014,
+        "tconst": "tt3336368",
+        "votes": 2534
+      },
+      {
+        "title": "Holy Days",
+        "year": 2026,
+        "tconst": "tt14734016",
+        "votes": 430
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.964,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0556051",
+    "target": "nm0620397",
+    "weight": 21,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 1999,
+    "year_min": 1998,
+    "year_max": 1999,
+    "first_worked_together": 1998,
+    "last_worked_together": 1999,
+    "recency": 27,
+    "reunion_span": 1,
+    "shared_votes_max": 86670,
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "shared": [
+      {
+        "title": "The Ring",
+        "year": 1998,
+        "tconst": "tt0178868",
+        "votes": 86670
+      },
+      {
+        "title": "Ring 2",
+        "year": 1999,
+        "tconst": "tt0218553",
+        "votes": 16084
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.071,
+    "same_era": true,
+    "age_gap": 12,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75,
+    "directorial_glue": true
   },
   {
     "source": "nm0628601",
     "target": "nm1935086",
     "weight": 22,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2013,
+    "year_min": 2010,
+    "year_max": 2016,
     "first_worked_together": 2010,
     "last_worked_together": 2016,
+    "recency": 10,
+    "reunion_span": 6,
+    "shared_votes_max": 559263,
     "genres": [
       "Drama",
       "Mystery",
@@ -3550,22 +6575,37 @@
         "tconst": "tt4630544",
         "votes": 16707
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.543,
+    "same_era": true,
+    "age_gap": 11,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0662504",
     "target": "nm5347988",
     "weight": 21,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2018,
+    "year_max": 2020,
     "first_worked_together": 2018,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 2,
+    "shared_votes_max": 113963,
     "genres": [
-      "Drama",
-      "Romance",
       "Adventure",
-      "Family"
+      "Drama",
+      "Family",
+      "Romance"
     ],
     "shared": [
       {
@@ -3586,17 +6626,32 @@
         "tconst": "tt6112292",
         "votes": 4420
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.324,
+    "same_era": true,
+    "age_gap": 22,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0683467",
     "target": "nm0935541",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2017,
+    "year_min": 2010,
+    "year_max": 2023,
     "first_worked_together": 2010,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 13,
+    "shared_votes_max": 498658,
     "genres": [
       "Action",
       "Comedy",
@@ -3623,396 +6678,32 @@
         "tconst": "tt19371358",
         "votes": 1842
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.111,
+    "tenure_overlap": 0.926,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0683467",
     "target": "nm2201555",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2017,
+    "year_min": 2010,
+    "year_max": 2023,
     "first_worked_together": 2010,
     "last_worked_together": 2023,
-    "genres": [
-      "Action",
-      "Comedy",
-      "Fantasy",
-      "Adventure",
-      "Animation"
-    ],
-    "shared": [
-      {
-        "title": "Scott Pilgrim vs. the World",
-        "year": 2010,
-        "tconst": "tt0446029",
-        "votes": 498658
-      },
-      {
-        "title": "Scott Pilgrim Takes Off",
-        "year": 2023,
-        "tconst": "tt16969708",
-        "votes": 23646
-      },
-      {
-        "title": "Scott Pilgrim's Precious Little Life",
-        "year": 2023,
-        "tconst": "tt19371358",
-        "votes": 1842
-      }
-    ]
-  },
-  {
-    "source": "nm0688624",
-    "target": "nm0935541",
-    "weight": 25,
-    "shared_count": 2,
-    "construct": "scream_queen",
-    "year": 2007,
-    "first_worked_together": 2007,
-    "last_worked_together": 2007,
-    "genres": [
-      "Drama",
-      "Thriller",
-      "Horror"
-    ],
-    "shared": [
-      {
-        "title": "Death Proof",
-        "year": 2007,
-        "tconst": "tt1028528",
-        "votes": 335409
-      },
-      {
-        "title": "Grindhouse",
-        "year": 2007,
-        "tconst": "tt0462322",
-        "votes": 197301
-      }
-    ]
-  },
-  {
-    "source": "nm0688624",
-    "target": "nm1057928",
-    "weight": 25,
-    "shared_count": 2,
-    "construct": "scream_queen",
-    "year": 2007,
-    "first_worked_together": 2007,
-    "last_worked_together": 2007,
-    "genres": [
-      "Drama",
-      "Thriller",
-      "Horror"
-    ],
-    "shared": [
-      {
-        "title": "Death Proof",
-        "year": 2007,
-        "tconst": "tt1028528",
-        "votes": 335409
-      },
-      {
-        "title": "Grindhouse",
-        "year": 2007,
-        "tconst": "tt0462322",
-        "votes": 197301
-      }
-    ]
-  },
-  {
-    "source": "nm0688624",
-    "target": "nm1139632",
-    "weight": 25,
-    "shared_count": 2,
-    "construct": "scream_queen",
-    "year": 2007,
-    "first_worked_together": 2007,
-    "last_worked_together": 2007,
-    "genres": [
-      "Drama",
-      "Thriller",
-      "Horror"
-    ],
-    "shared": [
-      {
-        "title": "Death Proof",
-        "year": 2007,
-        "tconst": "tt1028528",
-        "votes": 335409
-      },
-      {
-        "title": "Grindhouse",
-        "year": 2007,
-        "tconst": "tt0462322",
-        "votes": 197301
-      }
-    ]
-  },
-  {
-    "source": "nm0714147",
-    "target": "nm2318089",
-    "weight": 24,
-    "shared_count": 2,
-    "construct": "scream_queen",
-    "year": 2017,
-    "first_worked_together": 2016,
-    "last_worked_together": 2018,
-    "genres": [
-      "Drama",
-      "Horror",
-      "Mystery"
-    ],
-    "shared": [
-      {
-        "title": "The Haunting of Hill House",
-        "year": 2018,
-        "tconst": "tt6763664",
-        "votes": 332417
-      },
-      {
-        "title": "Ouija: Origin of Evil",
-        "year": 2016,
-        "tconst": "tt4361050",
-        "votes": 82867
-      },
-      {
-        "title": "The Bent-Neck Lady",
-        "year": 2018,
-        "tconst": "tt7958030",
-        "votes": 16844
-      }
-    ]
-  },
-  {
-    "source": "nm0714147",
-    "target": "nm5157662",
-    "weight": 24,
-    "shared_count": 2,
-    "construct": "scream_queen",
-    "year": 2017,
-    "first_worked_together": 2016,
-    "last_worked_together": 2018,
-    "genres": [
-      "Drama",
-      "Horror",
-      "Mystery"
-    ],
-    "shared": [
-      {
-        "title": "The Haunting of Hill House",
-        "year": 2018,
-        "tconst": "tt6763664",
-        "votes": 332417
-      },
-      {
-        "title": "Ouija: Origin of Evil",
-        "year": 2016,
-        "tconst": "tt4361050",
-        "votes": 82867
-      },
-      {
-        "title": "The Bent-Neck Lady",
-        "year": 2018,
-        "tconst": "tt7958030",
-        "votes": 16844
-      }
-    ]
-  },
-  {
-    "source": "nm0729345",
-    "target": "nm0749104",
-    "weight": 23,
-    "shared_count": 2,
-    "construct": "scream_queen",
-    "year": 2006,
-    "first_worked_together": 2004,
-    "last_worked_together": 2007,
-    "genres": [
-      "Drama",
-      "Horror",
-      "Mystery",
-      "Biography"
-    ],
-    "shared": [
-      {
-        "title": "The Orphanage",
-        "year": 2007,
-        "tconst": "tt0464141",
-        "votes": 171100
-      },
-      {
-        "title": "The Sea Inside",
-        "year": 2004,
-        "tconst": "tt0369702",
-        "votes": 89152
-      }
-    ]
-  },
-  {
-    "source": "nm0799706",
-    "target": "nm0935541",
-    "weight": 19,
-    "shared_count": 2,
-    "construct": "scream_queen",
-    "year": 2005,
-    "first_worked_together": 2004,
-    "last_worked_together": 2006,
-    "genres": [
-      "Horror",
-      "Thriller",
-      "Adventure",
-      "Comedy"
-    ],
-    "shared": [
-      {
-        "title": "Final Destination 3",
-        "year": 2006,
-        "tconst": "tt0414982",
-        "votes": 186128
-      },
-      {
-        "title": "Monster Island",
-        "year": 2004,
-        "tconst": "tt0382856",
-        "votes": 1514
-      }
-    ]
-  },
-  {
-    "source": "nm0811242",
-    "target": "nm2443438",
-    "weight": 24,
-    "shared_count": 2,
-    "construct": "scream_queen",
-    "year": 2015,
-    "first_worked_together": 2012,
-    "last_worked_together": 2017,
-    "genres": [
-      "Comedy",
-      "Music",
-      "Romance"
-    ],
-    "shared": [
-      {
-        "title": "Pitch Perfect",
-        "year": 2012,
-        "tconst": "tt1981677",
-        "votes": 352533
-      },
-      {
-        "title": "Pitch Perfect 3",
-        "year": 2017,
-        "tconst": "tt4765284",
-        "votes": 79221
-      }
-    ]
-  },
-  {
-    "source": "nm0818055",
-    "target": "nm0915208",
-    "weight": 22,
-    "shared_count": 2,
-    "construct": "scream_queen",
-    "year": 2018,
-    "first_worked_together": 2016,
-    "last_worked_together": 2019,
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Thriller",
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "shared": [
-      {
-        "title": "The Divergent Series: Allegiant",
-        "year": 2016,
-        "tconst": "tt3410834",
-        "votes": 147544
-      },
-      {
-        "title": "Luce",
-        "year": 2019,
-        "tconst": "tt7616148",
-        "votes": 16270
-      }
-    ]
-  },
-  {
-    "source": "nm0935541",
-    "target": "nm1057928",
-    "weight": 25,
-    "shared_count": 2,
-    "construct": "scream_queen",
-    "year": 2007,
-    "first_worked_together": 2007,
-    "last_worked_together": 2007,
-    "genres": [
-      "Drama",
-      "Thriller",
-      "Horror"
-    ],
-    "shared": [
-      {
-        "title": "Death Proof",
-        "year": 2007,
-        "tconst": "tt1028528",
-        "votes": 335409
-      },
-      {
-        "title": "Grindhouse",
-        "year": 2007,
-        "tconst": "tt0462322",
-        "votes": 197301
-      }
-    ]
-  },
-  {
-    "source": "nm0935541",
-    "target": "nm1139632",
-    "weight": 25,
-    "shared_count": 2,
-    "construct": "scream_queen",
-    "year": 2007,
-    "first_worked_together": 2007,
-    "last_worked_together": 2007,
-    "genres": [
-      "Drama",
-      "Thriller",
-      "Horror"
-    ],
-    "shared": [
-      {
-        "title": "Death Proof",
-        "year": 2007,
-        "tconst": "tt1028528",
-        "votes": 335409
-      },
-      {
-        "title": "Grindhouse",
-        "year": 2007,
-        "tconst": "tt0462322",
-        "votes": 197301
-      },
-      {
-        "title": "Taking on Water: How Leaks in D.C. Are Discovered and Patched",
-        "year": 2016,
-        "tconst": "tt5879846",
-        "votes": 351
-      }
-    ]
-  },
-  {
-    "source": "nm0935541",
-    "target": "nm2201555",
-    "weight": 23,
-    "shared_count": 2,
-    "construct": "scream_queen",
-    "year": 2017,
-    "first_worked_together": 2010,
-    "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 13,
+    "shared_votes_max": 498658,
     "genres": [
       "Action",
       "Adventure",
@@ -4039,22 +6730,733 @@
         "tconst": "tt19371358",
         "votes": 1842
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.571,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.833
+  },
+  {
+    "source": "nm0688624",
+    "target": "nm0935541",
+    "weight": 25,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2007,
+    "year_min": 2007,
+    "year_max": 2007,
+    "first_worked_together": 2007,
+    "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 0,
+    "shared_votes_max": 335409,
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Drama"
+    ],
+    "shared": [
+      {
+        "title": "Death Proof",
+        "year": 2007,
+        "tconst": "tt1028528",
+        "votes": 335409
+      },
+      {
+        "title": "Grindhouse",
+        "year": 2007,
+        "tconst": "tt0462322",
+        "votes": 197301
+      }
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.111,
+    "tenure_overlap": 0.926,
+    "same_era": true,
+    "age_gap": 11,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0688624",
+    "target": "nm1057928",
+    "weight": 25,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2007,
+    "year_min": 2007,
+    "year_max": 2007,
+    "first_worked_together": 2007,
+    "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 0,
+    "shared_votes_max": 335409,
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Drama"
+    ],
+    "shared": [
+      {
+        "title": "Death Proof",
+        "year": 2007,
+        "tconst": "tt1028528",
+        "votes": 335409
+      },
+      {
+        "title": "Grindhouse",
+        "year": 2007,
+        "tconst": "tt0462322",
+        "votes": 197301
+      }
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.182,
+    "tenure_overlap": 0.577,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75
+  },
+  {
+    "source": "nm0688624",
+    "target": "nm1139632",
+    "weight": 25,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2007,
+    "year_min": 2007,
+    "year_max": 2007,
+    "first_worked_together": 2007,
+    "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 0,
+    "shared_votes_max": 335409,
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Drama"
+    ],
+    "shared": [
+      {
+        "title": "Death Proof",
+        "year": 2007,
+        "tconst": "tt1028528",
+        "votes": 335409
+      },
+      {
+        "title": "Grindhouse",
+        "year": 2007,
+        "tconst": "tt0462322",
+        "votes": 197301
+      }
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.143,
+    "tenure_overlap": 0.786,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0714147",
+    "target": "nm2318089",
+    "weight": 24,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2017,
+    "year_min": 2016,
+    "year_max": 2018,
+    "first_worked_together": 2016,
+    "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 2,
+    "shared_votes_max": 332417,
+    "genres": [
+      "Drama",
+      "Horror",
+      "Mystery"
+    ],
+    "shared": [
+      {
+        "title": "The Haunting of Hill House",
+        "year": 2018,
+        "tconst": "tt6763664",
+        "votes": 332417
+      },
+      {
+        "title": "Ouija: Origin of Evil",
+        "year": 2016,
+        "tconst": "tt4361050",
+        "votes": 82867
+      },
+      {
+        "title": "The Bent-Neck Lady",
+        "year": 2018,
+        "tconst": "tt7958030",
+        "votes": 16844
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.167,
+    "tenure_overlap": 0.81,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0714147",
+    "target": "nm5157662",
+    "weight": 24,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2017,
+    "year_min": 2016,
+    "year_max": 2018,
+    "first_worked_together": 2016,
+    "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 2,
+    "shared_votes_max": 332417,
+    "genres": [
+      "Drama",
+      "Horror",
+      "Mystery"
+    ],
+    "shared": [
+      {
+        "title": "The Haunting of Hill House",
+        "year": 2018,
+        "tconst": "tt6763664",
+        "votes": 332417
+      },
+      {
+        "title": "Ouija: Origin of Evil",
+        "year": 2016,
+        "tconst": "tt4361050",
+        "votes": 82867
+      },
+      {
+        "title": "The Bent-Neck Lady",
+        "year": 2018,
+        "tconst": "tt7958030",
+        "votes": 16844
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.5,
+    "same_era": true,
+    "edge_genre_jaccard": 0.75
+  },
+  {
+    "source": "nm0729345",
+    "target": "nm0749104",
+    "weight": 23,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2006,
+    "year_min": 2004,
+    "year_max": 2007,
+    "first_worked_together": 2004,
+    "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 3,
+    "shared_votes_max": 171100,
+    "genres": [
+      "Biography",
+      "Drama",
+      "Horror",
+      "Mystery"
+    ],
+    "shared": [
+      {
+        "title": "The Orphanage",
+        "year": 2007,
+        "tconst": "tt0464141",
+        "votes": 171100
+      },
+      {
+        "title": "The Sea Inside",
+        "year": 2004,
+        "tconst": "tt0369702",
+        "votes": 89152
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.871,
+    "same_era": true,
+    "age_gap": 13,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0799706",
+    "target": "nm0935541",
+    "weight": 19,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 19,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2005,
+    "year_min": 2004,
+    "year_max": 2006,
+    "first_worked_together": 2004,
+    "last_worked_together": 2006,
+    "recency": 20,
+    "reunion_span": 2,
+    "shared_votes_max": 186128,
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Adventure",
+      "Comedy"
+    ],
+    "shared": [
+      {
+        "title": "Final Destination 3",
+        "year": 2006,
+        "tconst": "tt0414982",
+        "votes": 186128
+      },
+      {
+        "title": "Monster Island",
+        "year": 2004,
+        "tconst": "tt0382856",
+        "votes": 1514
+      }
+    ],
+    "loyalty_ab": 0.286,
+    "loyalty_ba": 0.111,
+    "tenure_overlap": 0.529,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.8
+  },
+  {
+    "source": "nm0811242",
+    "target": "nm2443438",
+    "weight": 24,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2015,
+    "year_min": 2012,
+    "year_max": 2017,
+    "first_worked_together": 2012,
+    "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 5,
+    "shared_votes_max": 352533,
+    "genres": [
+      "Comedy",
+      "Music",
+      "Romance"
+    ],
+    "shared": [
+      {
+        "title": "Pitch Perfect",
+        "year": 2012,
+        "tconst": "tt1981677",
+        "votes": 352533
+      },
+      {
+        "title": "Pitch Perfect 3",
+        "year": 2017,
+        "tconst": "tt4765284",
+        "votes": 79221
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.2,
+    "tenure_overlap": 0.458,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0818055",
+    "target": "nm0915208",
+    "weight": 22,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2018,
+    "year_min": 2016,
+    "year_max": 2019,
+    "first_worked_together": 2016,
+    "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 3,
+    "shared_votes_max": 147544,
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Thriller",
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "shared": [
+      {
+        "title": "The Divergent Series: Allegiant",
+        "year": 2016,
+        "tconst": "tt3410834",
+        "votes": 147544
+      },
+      {
+        "title": "Luce",
+        "year": 2019,
+        "tconst": "tt7616148",
+        "votes": 16270
+      }
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.743,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0915208",
+    "target": "nm1834115",
+    "weight": 21,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2020,
+    "year_min": 2019,
+    "year_max": 2020,
+    "first_worked_together": 2019,
+    "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 1,
+    "shared_votes_max": 90988,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Biography",
+      "Drama"
+    ],
+    "shared": [
+      {
+        "title": "Boss Level",
+        "year": 2020,
+        "tconst": "tt7638348",
+        "votes": 90988
+      },
+      {
+        "title": "The Loudest Voice",
+        "year": 2019,
+        "tconst": "tt6821044",
+        "votes": 15472
+      },
+      {
+        "title": "1995",
+        "year": 2019,
+        "tconst": "tt8906412",
+        "votes": 776
+      }
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.571,
+    "same_era": true,
+    "age_gap": 16,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0915865",
+    "target": "nm1555340",
+    "weight": 24,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2015,
+    "year_min": 2012,
+    "year_max": 2017,
+    "first_worked_together": 2012,
+    "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 5,
+    "shared_votes_max": 172264,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance",
+      "Biography"
+    ],
+    "shared": [
+      {
+        "title": "The Disaster Artist",
+        "year": 2017,
+        "tconst": "tt3521126",
+        "votes": 172264
+      },
+      {
+        "title": "The Five-Year Engagement",
+        "year": 2012,
+        "tconst": "tt1195478",
+        "votes": 105453
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.345,
+    "same_era": true,
+    "age_gap": 35,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0935190",
+    "target": "nm1631269",
+    "weight": 22,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2016,
+    "year_min": 2014,
+    "year_max": 2018,
+    "first_worked_together": 2014,
+    "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 4,
+    "shared_votes_max": 105769,
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Horror"
+    ],
+    "shared": [
+      {
+        "title": "Suspiria",
+        "year": 2018,
+        "tconst": "tt1034415",
+        "votes": 105769
+      },
+      {
+        "title": "Clouds of Sils Maria",
+        "year": 2014,
+        "tconst": "tt2452254",
+        "votes": 32633
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.321,
+    "same_era": true,
+    "age_gap": 53,
+    "cross_generational": true,
+    "edge_genre_jaccard": 0.75
+  },
+  {
+    "source": "nm0935541",
+    "target": "nm1057928",
+    "weight": 25,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2007,
+    "year_min": 2007,
+    "year_max": 2007,
+    "first_worked_together": 2007,
+    "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 0,
+    "shared_votes_max": 335409,
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Drama"
+    ],
+    "shared": [
+      {
+        "title": "Death Proof",
+        "year": 2007,
+        "tconst": "tt1028528",
+        "votes": 335409
+      },
+      {
+        "title": "Grindhouse",
+        "year": 2007,
+        "tconst": "tt0462322",
+        "votes": 197301
+      }
+    ],
+    "loyalty_ab": 0.111,
+    "loyalty_ba": 0.182,
+    "tenure_overlap": 0.577,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75
+  },
+  {
+    "source": "nm0935541",
+    "target": "nm1139632",
+    "weight": 25,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2007,
+    "year_min": 2007,
+    "year_max": 2007,
+    "first_worked_together": 2007,
+    "last_worked_together": 2007,
+    "recency": 19,
+    "reunion_span": 0,
+    "shared_votes_max": 335409,
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Drama"
+    ],
+    "shared": [
+      {
+        "title": "Death Proof",
+        "year": 2007,
+        "tconst": "tt1028528",
+        "votes": 335409
+      },
+      {
+        "title": "Grindhouse",
+        "year": 2007,
+        "tconst": "tt0462322",
+        "votes": 197301
+      },
+      {
+        "title": "Taking on Water: How Leaks in D.C. Are Discovered and Patched",
+        "year": 2016,
+        "tconst": "tt5879846",
+        "votes": 351
+      }
+    ],
+    "loyalty_ab": 0.111,
+    "loyalty_ba": 0.143,
+    "tenure_overlap": 0.852,
+    "same_era": true,
+    "age_gap": 9,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm0935541",
+    "target": "nm2201555",
+    "weight": 23,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2017,
+    "year_min": 2010,
+    "year_max": 2023,
+    "first_worked_together": 2010,
+    "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 13,
+    "shared_votes_max": 498658,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Fantasy"
+    ],
+    "shared": [
+      {
+        "title": "Scott Pilgrim vs. the World",
+        "year": 2010,
+        "tconst": "tt0446029",
+        "votes": 498658
+      },
+      {
+        "title": "Scott Pilgrim Takes Off",
+        "year": 2023,
+        "tconst": "tt16969708",
+        "votes": 23646
+      },
+      {
+        "title": "Scott Pilgrim's Precious Little Life",
+        "year": 2023,
+        "tconst": "tt19371358",
+        "votes": 1842
+      }
+    ],
+    "loyalty_ab": 0.111,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.63,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.833
   },
   {
     "source": "nm1057928",
     "target": "nm1139632",
     "weight": 34,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 34,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2007,
+    "year_max": 2013,
     "first_worked_together": 2007,
     "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 6,
+    "shared_votes_max": 335409,
     "genres": [
-      "Action",
       "Drama",
+      "Thriller",
       "Horror",
-      "Thriller"
+      "Action"
     ],
     "shared": [
       {
@@ -4075,17 +7477,32 @@
         "tconst": "tt2111392",
         "votes": 6714
       }
-    ]
+    ],
+    "loyalty_ab": 0.273,
+    "loyalty_ba": 0.214,
+    "tenure_overlap": 0.625,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1113550",
     "target": "nm1297015",
     "weight": 26,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 26,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2014,
+    "year_min": 2009,
+    "year_max": 2019,
     "first_worked_together": 2009,
     "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 10,
+    "shared_votes_max": 670794,
     "genres": [
       "Action",
       "Comedy",
@@ -4104,19 +7521,34 @@
         "tconst": "tt1560220",
         "votes": 227611
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.833,
+    "same_era": true,
+    "age_gap": 8,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm1139632",
     "target": "nm1289434",
     "weight": 38,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 38,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2015,
+    "year_min": 2006,
+    "year_max": 2026,
     "first_worked_together": 2006,
     "last_worked_together": 2026,
+    "recency": 0,
+    "reunion_span": 20,
     "reunion": true,
     "reunion_gap": 20,
+    "shared_votes_max": 630255,
     "genres": [
       "Comedy",
       "Drama",
@@ -4142,17 +7574,77 @@
         "tconst": "tt33612209",
         "votes": 74759
       }
-    ]
+    ],
+    "loyalty_ab": 0.214,
+    "loyalty_ba": 0.6,
+    "tenure_overlap": 0.958,
+    "same_era": true,
+    "age_gap": 8,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm1246724",
+    "target": "nm1884875",
+    "weight": 21,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2020,
+    "year_min": 2016,
+    "year_max": 2023,
+    "first_worked_together": 2016,
+    "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 7,
+    "shared_votes_max": 310584,
+    "genres": [
+      "Action",
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "shared": [
+      {
+        "title": "Train to Busan",
+        "year": 2016,
+        "tconst": "tt5700672",
+        "votes": 310584
+      },
+      {
+        "title": "Project Silence",
+        "year": 2023,
+        "tconst": "tt25808194",
+        "votes": 4418
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.391,
+    "same_era": true,
+    "age_gap": 51,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1289434",
     "target": "nm8075925",
     "weight": 26,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 26,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2018,
+    "year_max": 2020,
     "first_worked_together": 2018,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 2,
+    "shared_votes_max": 663554,
     "genres": [
       "Drama",
       "Horror",
@@ -4177,17 +7669,33 @@
         "tconst": "tt36495786",
         "votes": 0
       }
-    ]
+    ],
+    "loyalty_ab": 0.4,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.391,
+    "same_era": true,
+    "age_gap": 20,
+    "cross_generational": true,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm1297015",
     "target": "nm2057859",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2016,
+    "year_min": 2014,
+    "year_max": 2017,
     "first_worked_together": 2014,
     "last_worked_together": 2017,
+    "recency": 9,
+    "reunion_span": 3,
+    "shared_votes_max": 700772,
     "genres": [
       "Biography",
       "Comedy",
@@ -4206,17 +7714,76 @@
         "tconst": "tt4622512",
         "votes": 63974
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.95,
+    "same_era": true,
+    "age_gap": 7,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm1364532",
+    "target": "nm1843026",
+    "weight": 20,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 20,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2015,
+    "year_min": 2008,
+    "year_max": 2021,
+    "first_worked_together": 2008,
+    "last_worked_together": 2021,
+    "recency": 5,
+    "reunion_span": 13,
+    "shared_votes_max": 91467,
+    "genres": [
+      "Drama",
+      "Horror",
+      "Mystery"
+    ],
+    "shared": [
+      {
+        "title": "Fear Street: Part Two - 1978",
+        "year": 2021,
+        "tconst": "tt9701940",
+        "votes": 91467
+      },
+      {
+        "title": "Gardens of the Night",
+        "year": 2008,
+        "tconst": "tt0833960",
+        "votes": 5131
+      }
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.2,
+    "tenure_overlap": 0.81,
+    "same_era": true,
+    "age_gap": 16,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75
   },
   {
     "source": "nm1418096",
     "target": "nm2318089",
     "weight": 36,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 36,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2020,
+    "year_min": 2016,
+    "year_max": 2023,
     "first_worked_together": 2016,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 7,
+    "shared_votes_max": 171417,
     "genres": [
       "Drama",
       "Horror",
@@ -4243,17 +7810,125 @@
         "tconst": "tt15567174",
         "votes": 136224
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.611,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
+  },
+  {
+    "source": "nm1555340",
+    "target": "nm1843026",
+    "weight": 18,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 18,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2009,
+    "year_min": 2009,
+    "year_max": 2009,
+    "first_worked_together": 2009,
+    "last_worked_together": 2009,
+    "recency": 17,
+    "reunion_span": 0,
+    "shared_votes_max": 312446,
+    "genres": [
+      "Comedy",
+      "Short"
+    ],
+    "shared": [
+      {
+        "title": "Community",
+        "year": 2009,
+        "tconst": "tt1439629",
+        "votes": 312446
+      },
+      {
+        "title": "Modern Warfare",
+        "year": 2010,
+        "tconst": "tt1595996",
+        "votes": 16800
+      },
+      {
+        "title": "Remedial Chaos Theory",
+        "year": 2011,
+        "tconst": "tt2060963",
+        "votes": 14952
+      }
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 0.2,
+    "tenure_overlap": 1.0,
+    "same_era": true,
+    "age_gap": 0,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm1555340",
+    "target": "nm2201555",
+    "weight": 21,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2019,
+    "year_min": 2017,
+    "year_max": 2020,
+    "first_worked_together": 2017,
+    "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 3,
+    "shared_votes_max": 53508,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "shared": [
+      {
+        "title": "Happiest Season",
+        "year": 2020,
+        "tconst": "tt8522006",
+        "votes": 53508
+      },
+      {
+        "title": "The Little Hours",
+        "year": 2017,
+        "tconst": "tt5666304",
+        "votes": 28864
+      }
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.947,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1557329",
     "target": "nm4384329",
     "weight": 24,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2018,
+    "year_min": 2017,
+    "year_max": 2019,
     "first_worked_together": 2017,
     "last_worked_together": 2019,
+    "recency": 7,
+    "reunion_span": 2,
+    "shared_votes_max": 187580,
     "genres": [
       "Comedy",
       "Horror",
@@ -4272,17 +7947,31 @@
         "tconst": "tt8155288",
         "votes": 96738
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.533,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm1567113",
     "target": "nm1985859",
     "weight": 25,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 25,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2014,
+    "year_min": 2012,
+    "year_max": 2015,
     "first_worked_together": 2012,
     "last_worked_together": 2015,
+    "recency": 11,
+    "reunion_span": 3,
+    "shared_votes_max": 263325,
     "genres": [
       "Biography",
       "Crime",
@@ -4303,17 +7992,32 @@
         "tconst": "tt2554274",
         "votes": 170152
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 0.333,
+    "tenure_overlap": 0.905,
+    "same_era": true,
+    "age_gap": 12,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1677477",
     "target": "nm2239702",
     "weight": 14,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 14,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2013,
+    "year_min": 2012,
+    "year_max": 2014,
     "first_worked_together": 2012,
     "last_worked_together": 2014,
+    "recency": 12,
+    "reunion_span": 2,
+    "shared_votes_max": 1764,
     "genres": [
       "Drama",
       "Mystery",
@@ -4332,46 +8036,30 @@
         "tconst": "tt1714843",
         "votes": 937
       }
-    ]
+    ],
+    "loyalty_ab": 0.5,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.944,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1843026",
     "target": "nm2854112",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2021,
+    "year_min": 2021,
+    "year_max": 2021,
     "first_worked_together": 2021,
     "last_worked_together": 2021,
-    "genres": [
-      "Horror",
-      "Mystery",
-      "Drama"
-    ],
-    "shared": [
-      {
-        "title": "Fear Street: Part Two - 1978",
-        "year": 2021,
-        "tconst": "tt9701940",
-        "votes": 91467
-      },
-      {
-        "title": "Fear Street: Part Three - 1666",
-        "year": 2021,
-        "tconst": "tt9701942",
-        "votes": 76404
-      }
-    ]
-  },
-  {
-    "source": "nm1843026",
-    "target": "nm7326511",
-    "weight": 23,
-    "shared_count": 2,
-    "construct": "scream_queen",
-    "year": 2021,
-    "first_worked_together": 2021,
-    "last_worked_together": 2021,
+    "recency": 5,
+    "reunion_span": 0,
+    "shared_votes_max": 91467,
     "genres": [
       "Drama",
       "Horror",
@@ -4390,24 +8078,84 @@
         "tconst": "tt9701942",
         "votes": 76404
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.2,
+    "tenure_overlap": 0.789,
+    "same_era": true,
+    "age_gap": 10,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75
+  },
+  {
+    "source": "nm1843026",
+    "target": "nm7326511",
+    "weight": 23,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2021,
+    "year_min": 2021,
+    "year_max": 2021,
+    "first_worked_together": 2021,
+    "last_worked_together": 2021,
+    "recency": 5,
+    "reunion_span": 0,
+    "shared_votes_max": 91467,
+    "genres": [
+      "Drama",
+      "Horror",
+      "Mystery"
+    ],
+    "shared": [
+      {
+        "title": "Fear Street: Part Two - 1978",
+        "year": 2021,
+        "tconst": "tt9701940",
+        "votes": 91467
+      },
+      {
+        "title": "Fear Street: Part Three - 1666",
+        "year": 2021,
+        "tconst": "tt9701942",
+        "votes": 76404
+      }
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.4,
+    "tenure_overlap": 0.158,
+    "same_era": true,
+    "age_gap": 16,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.75,
+    "directorial_glue": true
   },
   {
     "source": "nm2100081",
     "target": "nm2322853",
     "weight": 26,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 26,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2009,
+    "year_min": 2006,
+    "year_max": 2013,
     "first_worked_together": 2006,
     "last_worked_together": 2013,
+    "recency": 13,
+    "reunion_span": 7,
+    "shared_votes_max": 161686,
     "genres": [
+      "Adventure",
+      "Comedy",
       "Drama",
       "Fantasy",
       "Horror",
-      "Family",
-      "Adventure",
-      "Comedy"
+      "Family"
     ],
     "shared": [
       {
@@ -4428,17 +8176,131 @@
         "tconst": "tt2879460",
         "votes": 2937
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.75,
+    "same_era": true,
+    "age_gap": 1,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm2140860",
+    "target": "nm3459140",
+    "weight": 21,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2016,
+    "year_min": 2014,
+    "year_max": 2018,
+    "first_worked_together": 2014,
+    "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 4,
+    "shared_votes_max": 301540,
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller",
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "shared": [
+      {
+        "title": "It Follows",
+        "year": 2014,
+        "tconst": "tt3235888",
+        "votes": 301540
+      },
+      {
+        "title": "After Everything",
+        "year": 2018,
+        "tconst": "tt6688022",
+        "votes": 3289
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.786,
+    "same_era": true,
+    "age_gap": 4,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
+  },
+  {
+    "source": "nm2142336",
+    "target": "nm3880181",
+    "weight": 21,
+    "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 21,
+    "construct": "scream_queen",
+    "shared_sample_cap": 3,
+    "year": 2017,
+    "year_min": 2015,
+    "year_max": 2018,
+    "first_worked_together": 2015,
+    "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 3,
+    "shared_votes_max": 1212503,
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "shared": [
+      {
+        "title": "Mad Max: Fury Road",
+        "year": 2015,
+        "tconst": "tt1392190",
+        "votes": 1212503
+      },
+      {
+        "title": "Welcome the Stranger",
+        "year": 2018,
+        "tconst": "tt5716280",
+        "votes": 1769
+      },
+      {
+        "title": "Hollywood Lucifer",
+        "year": 2014,
+        "tconst": "tt12176474",
+        "votes": 29
+      }
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.625,
+    "same_era": true,
+    "age_gap": 2,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm2254074",
     "target": "nm2443438",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2017,
+    "year_max": 2020,
     "first_worked_together": 2017,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 3,
+    "shared_votes_max": 123533,
     "genres": [
       "Comedy",
       "Horror"
@@ -4456,17 +8318,30 @@
         "tconst": "tt11024272",
         "votes": 60724
       }
-    ]
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 0.2,
+    "tenure_overlap": 0.647,
+    "same_era": true,
+    "edge_genre_jaccard": 0.667
   },
   {
     "source": "nm2254074",
     "target": "nm3014840",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2017,
+    "year_max": 2020,
     "first_worked_together": 2017,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 3,
+    "shared_votes_max": 123533,
     "genres": [
       "Comedy",
       "Horror"
@@ -4484,17 +8359,30 @@
         "tconst": "tt11024272",
         "votes": 60724
       }
-    ]
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.941,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm2254074",
     "target": "nm3034977",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2017,
+    "year_max": 2020,
     "first_worked_together": 2017,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 3,
+    "shared_votes_max": 123533,
     "genres": [
       "Comedy",
       "Horror"
@@ -4512,22 +8400,37 @@
         "tconst": "tt11024272",
         "votes": 60724
       }
-    ]
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.556,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.667
   },
   {
     "source": "nm2318089",
     "target": "nm2399383",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2015,
+    "year_min": 2013,
+    "year_max": 2016,
     "first_worked_together": 2013,
     "last_worked_together": 2016,
+    "recency": 10,
+    "reunion_span": 3,
+    "shared_votes_max": 150486,
     "genres": [
-      "Drama",
       "Horror",
       "Mystery",
-      "Thriller"
+      "Thriller",
+      "Drama"
     ],
     "shared": [
       {
@@ -4542,17 +8445,33 @@
         "tconst": "tt4361050",
         "votes": 82867
       }
-    ]
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.889,
+    "same_era": true,
+    "age_gap": 16,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm2318089",
     "target": "nm5157662",
     "weight": 24,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2017,
+    "year_min": 2016,
+    "year_max": 2018,
     "first_worked_together": 2016,
     "last_worked_together": 2018,
+    "recency": 8,
+    "reunion_span": 2,
+    "shared_votes_max": 332417,
     "genres": [
       "Drama",
       "Horror",
@@ -4577,17 +8496,31 @@
         "tconst": "tt7958030",
         "votes": 16844
       }
-    ]
+    ],
+    "loyalty_ab": 0.167,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.632,
+    "same_era": true,
+    "edge_genre_jaccard": 0.75,
+    "directorial_glue": true
   },
   {
     "source": "nm2443438",
     "target": "nm3014840",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2017,
+    "year_max": 2020,
     "first_worked_together": 2017,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 3,
+    "shared_votes_max": 123533,
     "genres": [
       "Comedy",
       "Horror"
@@ -4605,17 +8538,31 @@
         "tconst": "tt11024272",
         "votes": 60724
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.688,
+    "same_era": true,
+    "edge_genre_jaccard": 0.667,
+    "directorial_glue": true
   },
   {
     "source": "nm2443438",
     "target": "nm3034977",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2017,
+    "year_max": 2020,
     "first_worked_together": 2017,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 3,
+    "shared_votes_max": 123533,
     "genres": [
       "Comedy",
       "Horror"
@@ -4633,17 +8580,30 @@
         "tconst": "tt11024272",
         "votes": 60724
       }
-    ]
+    ],
+    "loyalty_ab": 0.2,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.571,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm2832695",
     "target": "nm5347988",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2020,
+    "year_min": 2019,
+    "year_max": 2021,
     "first_worked_together": 2019,
     "last_worked_together": 2021,
+    "recency": 5,
+    "reunion_span": 2,
+    "shared_votes_max": 160987,
     "genres": [
       "Action",
       "Adventure",
@@ -4662,17 +8622,33 @@
         "tconst": "tt9844522",
         "votes": 69096
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.5,
+    "tenure_overlap": 0.611,
+    "same_era": true,
+    "age_gap": 9,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm2854112",
     "target": "nm7326511",
     "weight": 34,
     "shared_count": 3,
+    "collab_count": 3,
+    "collab_strength": 34,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2021,
+    "year_min": 2021,
+    "year_max": 2021,
     "first_worked_together": 2021,
     "last_worked_together": 2021,
+    "recency": 5,
+    "reunion_span": 0,
+    "shared_votes_max": 111087,
     "genres": [
       "Horror",
       "Mystery",
@@ -4697,17 +8673,32 @@
         "tconst": "tt9701942",
         "votes": 76404
       }
-    ]
+    ],
+    "loyalty_ab": 0.3,
+    "loyalty_ba": 0.6,
+    "tenure_overlap": 0.2,
+    "same_era": true,
+    "age_gap": 6,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm3014840",
     "target": "nm3034977",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2017,
+    "year_max": 2020,
     "first_worked_together": 2017,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 3,
+    "shared_votes_max": 123533,
     "genres": [
       "Comedy",
       "Horror"
@@ -4725,22 +8716,35 @@
         "tconst": "tt11024272",
         "votes": 60724
       }
-    ]
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.588,
+    "same_era": true,
+    "edge_genre_jaccard": 0.667
   },
   {
     "source": "nm4129745",
     "target": "nm8627157",
     "weight": 23,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 23,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2024,
+    "year_min": 2022,
+    "year_max": 2025,
     "first_worked_together": 2022,
     "last_worked_together": 2025,
+    "recency": 1,
+    "reunion_span": 3,
+    "shared_votes_max": 183278,
     "genres": [
-      "Horror",
+      "Action",
       "Sci-Fi",
       "Thriller",
-      "Action"
+      "Horror"
     ],
     "shared": [
       {
@@ -4755,17 +8759,30 @@
         "tconst": "tt26342662",
         "votes": 54476
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.4,
+    "same_era": true,
+    "edge_genre_jaccard": 0.667
   },
   {
     "source": "nm4574440",
     "target": "nm4911194",
     "weight": 24,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2023,
+    "year_min": 2022,
+    "year_max": 2023,
     "first_worked_together": 2022,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 1,
+    "shared_votes_max": 189579,
     "genres": [
       "Horror",
       "Mystery",
@@ -4784,17 +8801,30 @@
         "tconst": "tt17663992",
         "votes": 153998
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.25,
+    "tenure_overlap": 0.786,
+    "same_era": true,
+    "edge_genre_jaccard": 0.6
   },
   {
     "source": "nm4574440",
     "target": "nm5506401",
     "weight": 24,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2023,
+    "year_min": 2022,
+    "year_max": 2023,
     "first_worked_together": 2022,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 1,
+    "shared_votes_max": 189579,
     "genres": [
       "Horror",
       "Mystery",
@@ -4813,17 +8843,30 @@
         "tconst": "tt17663992",
         "votes": 153998
       }
-    ]
+    ],
+    "loyalty_ab": 0.333,
+    "loyalty_ba": 0.222,
+    "tenure_overlap": 0.917,
+    "same_era": true,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm4911194",
     "target": "nm5506401",
     "weight": 24,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 24,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2023,
+    "year_min": 2022,
+    "year_max": 2023,
     "first_worked_together": 2022,
     "last_worked_together": 2023,
+    "recency": 3,
+    "reunion_span": 1,
+    "shared_votes_max": 189579,
     "genres": [
       "Horror",
       "Mystery",
@@ -4842,17 +8885,32 @@
         "tconst": "tt17663992",
         "votes": 153998
       }
-    ]
+    ],
+    "loyalty_ab": 0.25,
+    "loyalty_ba": 0.222,
+    "tenure_overlap": 0.857,
+    "same_era": true,
+    "age_gap": 8,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.6
   },
   {
     "source": "nm5301405",
     "target": "nm5896355",
     "weight": 22,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2019,
+    "year_min": 2017,
+    "year_max": 2020,
     "first_worked_together": 2017,
     "last_worked_together": 2020,
+    "recency": 6,
+    "reunion_span": 3,
+    "shared_votes_max": 72390,
     "genres": [
       "Drama",
       "Horror",
@@ -4873,17 +8931,32 @@
         "tconst": "tt5886440",
         "votes": 50876
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.769,
+    "same_era": true,
+    "age_gap": 3,
+    "cross_generational": false,
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm5394181",
     "target": "nm8367841",
     "weight": 22,
     "shared_count": 2,
+    "collab_count": 2,
+    "collab_strength": 22,
     "construct": "scream_queen",
+    "shared_sample_cap": 3,
     "year": 2023,
+    "year_min": 2022,
+    "year_max": 2024,
     "first_worked_together": 2022,
     "last_worked_together": 2024,
+    "recency": 2,
+    "reunion_span": 2,
+    "shared_votes_max": 83504,
     "genres": [
       "Horror"
     ],
@@ -4900,6 +8973,14 @@
         "tconst": "tt27911000",
         "votes": 64046
       }
-    ]
+    ],
+    "loyalty_ab": 1.0,
+    "loyalty_ba": 1.0,
+    "tenure_overlap": 0.455,
+    "same_era": true,
+    "age_gap": 5,
+    "cross_generational": false,
+    "edge_genre_jaccard": 0.5,
+    "directorial_glue": true
   }
 ]

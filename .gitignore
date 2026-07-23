@@ -5,6 +5,7 @@ data/cache/
 # Commit built construct JSON so GitHub Pages can ship without re-running the pipeline
 # data/out/ is synced into app/public/data at build time; keep out/ locally too
 data/out/_spike/
+data/out.baseline/
 
 !data/out/.gitkeep
 !data/raw/.gitkeep

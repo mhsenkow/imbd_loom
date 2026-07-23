@@ -11,8 +11,13 @@ from typing import Any
 import duckdb
 from rich.console import Console
 
-from loom import BUILD_SEED, OUT
-from loom.analytics import attach_analytics, decade_edge_slices, simple_layout_2d
+from loom import BUILD_SEED, METRICS_VERSION, OUT
+from loom.analytics import (
+    attach_analytics,
+    decade_edge_slices,
+    enrich_edge_metrics,
+    simple_layout_2d,
+)
 from loom.constructs import gender_source_flags
 from loom.db import dataset_snapshot_meta
 from loom.facets import attach_known_for_titles, attach_person_facets
@@ -26,6 +31,26 @@ from loom.stages_default import stages_from_nodes
 from loom.textnorm import ascii_fold, display_character
 
 console = Console()
+
+
+def recompute_degree_strength(nodes: list[dict], edges: list[dict]) -> None:
+    """Set degree = neighbor count and strength = Σ weights on the given edge list."""
+    ids = {n["id"] for n in nodes}
+    neighbors: dict[str, set[str]] = {i: set() for i in ids}
+    strength: dict[str, float] = {i: 0.0 for i in ids}
+    for e in edges:
+        a, b = e["source"], e["target"]
+        if a not in ids or b not in ids or a == b:
+            continue
+        neighbors[a].add(b)
+        neighbors[b].add(a)
+        w = float(e.get("weight") or 0)
+        strength[a] += w
+        strength[b] += w
+    for n in nodes:
+        nid = n["id"]
+        n["degree"] = len(neighbors.get(nid, ()))
+        n["strength"] = int(round(strength.get(nid, 0)))
 
 
 def write_construct(construct_id: str, payload: dict[str, Any]) -> Path:
@@ -91,10 +116,29 @@ def validate_construct(nodes: list[dict], edges: list[dict]) -> list[str]:
         if not n.get("id") or not n.get("label"):
             warnings.append("node missing id/label")
             break
-        if n.get("degree") is not None and (
-            isinstance(n["degree"], float) and math.isnan(n["degree"])
+        for key in ("degree", "strength"):
+            v = n.get(key)
+            if v is not None and isinstance(v, float) and math.isnan(v):
+                warnings.append(f"NaN {key} on {n.get('id')}")
+        deg = n.get("degree")
+        strength = n.get("strength")
+        if isinstance(deg, (int, float)) and isinstance(strength, (int, float)):
+            if strength + 1e-9 < deg and deg > 0:
+                # strength is weighted sum; with min weight 1, strength >= degree
+                if strength < deg:
+                    warnings.append(f"strength < degree on {n.get('id')}")
+                    break
+        for pk in (
+            "degree_pct",
+            "strength_pct",
+            "prominence_pct",
+            "pagerank_pct",
+            "prominence_pct_construct",
         ):
-            warnings.append(f"NaN degree on {n.get('id')}")
+            pv = n.get(pk)
+            if isinstance(pv, (int, float)) and (pv < 0 or pv > 100):
+                warnings.append(f"{pk} out of range on {n.get('id')}: {pv}")
+                break
     for e in edges:
         if e.get("source") not in ids or e.get("target") not in ids:
             warnings.append(f"edge endpoint missing: {e.get('source')}–{e.get('target')}")
@@ -102,6 +146,14 @@ def validate_construct(nodes: list[dict], edges: list[dict]) -> list[str]:
         w = e.get("weight")
         if w is None or (isinstance(w, (int, float)) and w < 1):
             warnings.append(f"edge weight < 1: {e.get('source')}–{e.get('target')}")
+            break
+        rs = e.get("reunion_span")
+        if isinstance(rs, (int, float)) and rs < 0:
+            warnings.append(f"reunion_span < 0: {e.get('source')}–{e.get('target')}")
+            break
+        j = e.get("edge_genre_jaccard")
+        if isinstance(j, (int, float)) and (j < 0 or j > 1):
+            warnings.append(f"edge_genre_jaccard out of range: {e.get('source')}–{e.get('target')}")
             break
     return warnings
 
@@ -192,6 +244,7 @@ def make_manifest(
             "Bechdel ratings where matched."
         ),
         "build_seed": BUILD_SEED,
+        "metrics_version": METRICS_VERSION,
         **dataset_snapshot_meta(),
         **flags,
     }
@@ -202,9 +255,12 @@ def make_manifest(
             "clustering_coefficient",
             "avg_path_length",
             "avg_path_sample_n",
+            "avg_path_length_sampled",
             "community_count",
             "featured_path",
             "summary",
+            "correlations",
+            "insight",
         ):
             if k in analytics:
                 m[k] = analytics[k]
@@ -325,8 +381,11 @@ def coappearance_edges(
           COUNT(DISTINCT a.title_key) AS shared_count,
           {weight_expr} AS weight,
           CAST(ROUND(AVG(a.startYear)) AS INTEGER) AS year,
+          MIN(a.startYear) AS year_min,
+          MAX(a.startYear) AS year_max,
           MIN(a.startYear) AS first_worked_together,
           MAX(a.startYear) AS last_worked_together,
+          MAX(a.votes) AS shared_votes_max,
           STRING_AGG(DISTINCT a.genres, '|') AS genre_blob
         FROM (
           SELECT DISTINCT nconst, title_key, startYear, votes, genres FROM _credits
@@ -343,7 +402,11 @@ def coappearance_edges(
     con.execute(
         """
         CREATE OR REPLACE TEMP TABLE _deg AS
-        SELECT nconst, SUM(w) AS degree FROM (
+        SELECT
+          nconst,
+          SUM(w) AS strength,
+          COUNT(*) AS degree
+        FROM (
           SELECT source AS nconst, weight AS w FROM _edges
           UNION ALL
           SELECT target AS nconst, weight AS w FROM _edges
@@ -352,12 +415,12 @@ def coappearance_edges(
     )
     top_rows = con.execute(
         f"""
-        SELECT pe.*, COALESCE(d.degree, 0) AS degree,
+        SELECT pe.*, COALESCE(d.strength, 0) AS strength, COALESCE(d.degree, 0) AS degree,
                y.year_min, y.year_max, y.year_peak
         FROM _people pe
         LEFT JOIN _deg d ON d.nconst = pe.nconst
         LEFT JOIN _years y ON y.nconst = pe.nconst
-        ORDER BY COALESCE(d.degree, 0) DESC, pe.nconst
+        ORDER BY COALESCE(d.strength, 0) DESC, pe.nconst
         LIMIT {int(top_n)}
         """
     ).fetchall()
@@ -365,16 +428,19 @@ def coappearance_edges(
     keep = {r[top_cols.index("nconst")] for r in top_rows}
     build_stats["after_degree_cap"] = len(keep)
 
+    from datetime import datetime as _dt
+
+    current_year = _dt.now().year
     edge_rows = con.execute(
         """
-        SELECT source, target, weight, shared_count, year,
-               first_worked_together, last_worked_together, genre_blob
+        SELECT source, target, weight, shared_count, year, year_min, year_max,
+               first_worked_together, last_worked_together, shared_votes_max, genre_blob
         FROM _edges
         """
     ).fetchall()
 
     edges: list[dict] = []
-    for s, t, w, shared, yr, first, last, genre_blob in edge_rows:
+    for s, t, w, shared, yr, ymin, ymax, first, last, votes_max, genre_blob in edge_rows:
         if s not in keep or t not in keep:
             continue
         genres: list[str] = []
@@ -385,32 +451,42 @@ def coappearance_edges(
                 if g and g not in seen:
                     seen.add(g)
                     genres.append(g)
+        weight = max(int(w or 1), 1)
+        shared_n = int(shared or 0)
         edge = {
             "source": s,
             "target": t,
-            "weight": max(int(w or 1), 1),
-            "shared_count": int(shared or 0),
+            "weight": weight,
+            "shared_count": shared_n,
+            "collab_count": shared_n,
+            "collab_strength": weight,
             "construct": construct,
+            "shared_sample_cap": 3,
         }
         if yr is not None:
             edge["year"] = int(yr)
+        if ymin is not None:
+            edge["year_min"] = int(ymin)
+        if ymax is not None:
+            edge["year_max"] = int(ymax)
         if first is not None:
             edge["first_worked_together"] = int(first)
         if last is not None:
             edge["last_worked_together"] = int(last)
-        if first is not None and last is not None and int(last) - int(first) >= 20:
-            edge["reunion"] = True
-            edge["reunion_gap"] = int(last) - int(first)
+            edge["recency"] = max(0, current_year - int(last))
+        if first is not None and last is not None:
+            span = int(last) - int(first)
+            edge["reunion_span"] = span
+            if span >= 20:
+                edge["reunion"] = True
+                edge["reunion_gap"] = span
+        if votes_max is not None:
+            edge["shared_votes_max"] = int(votes_max)
         if genres:
             edge["genres"] = genres[:8]
         edges.append(edge)
 
     attach_shared_titles(con, edges, limit=3)
-
-    deg: dict[str, int] = {n: 0 for n in keep}
-    for e in edges:
-        deg[e["source"]] += e["weight"]
-        deg[e["target"]] += e["weight"]
 
     nodes = []
     for row in top_rows:
@@ -424,10 +500,11 @@ def coappearance_edges(
             "label_ascii": ascii_fold(rec["label"]),
             "type": "person",
             "gender": rec.get("gender") or "unknown",
-            "degree": deg.get(nconst, 0),
+            "degree": 0,
+            "strength": 0,
         }
         for col, val in rec.items():
-            if col in ("nconst", "label", "gender", "degree"):
+            if col in ("nconst", "label", "gender", "degree", "strength"):
                 continue
             if val is None:
                 continue
@@ -439,6 +516,9 @@ def coappearance_edges(
                 node[col] = val
         nodes.append(node)
 
+    # Recompute degree (neighbor count) and strength (weighted) on kept edges
+    recompute_degree_strength(nodes, edges)
+
     attach_prominent_roles(con, nodes, limit=6)
 
     analytics: dict = {}
@@ -446,6 +526,7 @@ def coappearance_edges(
         facet_stats = attach_person_facets(con, nodes, min_votes=min_votes)
         attach_known_for_titles(con, nodes)
         build_stats.update(facet_stats)
+    enrich_edge_metrics(nodes, edges)
     if attach_graph_analytics and nodes and edges:
         analytics = attach_analytics(nodes, edges)
         simple_layout_2d(nodes, edges, seed=BUILD_SEED)

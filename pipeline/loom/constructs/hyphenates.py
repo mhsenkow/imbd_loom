@@ -5,7 +5,11 @@ from __future__ import annotations
 import duckdb
 
 from loom.constructs import gender_expr
-from loom.constructs.emit import coappearance_edges, finalize_payload
+from loom.constructs.emit import (
+    coappearance_edges,
+    finalize_payload,
+    recompute_degree_strength,
+)
 from loom.filters import adult_exclusion_sql, title_type_sql, vote_floor_sql
 
 
@@ -140,6 +144,9 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         for n in nodes:
             if n["id"] in self_map:
                 n["self_directed_titles"] = self_map[n["id"]]
+
+        recompute_degree_strength(nodes, edges)
+        stats.pop("analytics", None)
 
     method = (
         "Population: people whose primaryProfession includes actor/actress and "

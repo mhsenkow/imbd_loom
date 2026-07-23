@@ -5,11 +5,12 @@ import { DEFAULT_STAT_MARKS } from "./types";
 import { edgeKey } from "./search";
 import { compareNodesBySort } from "./filter";
 import { token } from "./theme/tokens";
+import { nodeStrength } from "./metrics";
 
 export type { StatMarkId };
 export { DEFAULT_STAT_MARKS };
 
-type Form = "timeline" | "chord" | "bundle" | "alluvial";
+type Form = "timeline" | "chord" | "bundle" | "alluvial" | "scatter";
 
 export const STAT_MARK_META: Record<
   StatMarkId,
@@ -173,9 +174,21 @@ export const STAT_MARK_META: Record<
   },
   gini_callout: {
     label: "Gini / top-10% share",
-    hint: "Highlight degree inequality",
-    forms: ["timeline", "chord", "bundle"],
+    hint: "Highlight strength inequality",
+    forms: ["timeline", "chord", "bundle", "scatter"],
     group: "Story",
+  },
+  assortativity: {
+    label: "Assortativity",
+    hint: "Manifest degree assortativity callout",
+    forms: ["timeline", "chord", "bundle", "scatter"],
+    group: "Story",
+  },
+  giant_component: {
+    label: "Giant component",
+    hint: "Dim nodes outside the giant component",
+    forms: ["timeline", "chord", "bundle"],
+    group: "Graph",
   },
   retention_meter: {
     label: "Filter retention",
@@ -226,24 +239,26 @@ export const STAT_PRESETS: Record<string, StatMarkId[]> = {
     "weight_zscore",
     "insight_sync",
   ],
-  graph: [
-    "featured_path",
-    "bridge_outliers",
-    "community_cuts",
-    "ego_rings",
-    "island_ghost",
-    "densest_pair",
-    "insight_sync",
-  ],
   story: [
     "densest_pair",
     "peak_extremes",
     "longest_collab",
     "loyalty_pair",
     "gini_callout",
+    "assortativity",
     "era_histogram",
     "retention_meter",
     "votes_centroid",
+    "insight_sync",
+  ],
+  graph: [
+    "featured_path",
+    "bridge_outliers",
+    "community_cuts",
+    "ego_rings",
+    "island_ghost",
+    "giant_component",
+    "densest_pair",
     "insight_sync",
   ],
   all: [...ALL_STAT_MARKS],
@@ -365,6 +380,9 @@ export interface ViewStatMarks {
   smallIslandIds: Set<string>;
   /** Prominence-weighted mean of year_peak */
   votesCentroidYear: number | null;
+  /** From manifest.summary when present */
+  assortativity: number | null;
+  giantComponentShare: number | null;
 }
 
 function parseFeaturedPath(manifest?: Manifest | null): FeaturedPathHop[] {
@@ -474,7 +492,7 @@ export function computeViewStatMarks(opts: {
   const { nodes, edges } = opts;
   const idSet = new Set(nodes.map((n) => n.id));
 
-  const degrees = nodes.map((n) => n.degree || 0).sort((a, b) => a - b);
+  const degrees = nodes.map((n) => nodeStrength(n)).sort((a, b) => a - b);
   const medianDegreeValue = median(degrees);
   const top5Floor = degrees.length ? percentile(degrees, 0.95) : 0;
   const bottom5Ceil = degrees.length ? percentile(degrees, 0.05) : 0;
@@ -482,12 +500,12 @@ export function computeViewStatMarks(opts: {
   const bottom5DegreeIds = new Set<string>();
   if (degrees.length >= 4) {
     for (const n of nodes) {
-      const d = n.degree || 0;
+      const d = nodeStrength(n);
       if (d >= top5Floor && d > 0) top5DegreeIds.add(n.id);
       if (d <= bottom5Ceil) bottom5DegreeIds.add(n.id);
     }
     if (!top5DegreeIds.size && nodes.length) {
-      const best = [...nodes].sort((a, b) => (b.degree || 0) - (a.degree || 0))[0];
+      const best = [...nodes].sort((a, b) => nodeStrength(b) - nodeStrength(a))[0];
       if (best) top5DegreeIds.add(best.id);
     }
   }
@@ -618,7 +636,7 @@ export function computeViewStatMarks(opts: {
   const insightFocusId =
     opts.insightFocusId && idSet.has(opts.insightFocusId) ? opts.insightFocusId : null;
 
-  const sortBy = opts.sortBy ?? "degree";
+  const sortBy = opts.sortBy ?? "strength";
   const ranked = [...nodes].sort((a, b) => compareNodesBySort(a, b, sortBy));
   // For year_peak ascending, rank ladder should still show "top" as highest degree-like —
   // use descending by sort value except year_peak where we show first 5 in lane order.
@@ -724,18 +742,18 @@ export function computeViewStatMarks(opts: {
     }
   }
 
-  const gini = giniCoefficient(nodes.map((n) => n.degree || 0));
+  const gini = giniCoefficient(nodes.map((n) => nodeStrength(n)));
   const top10DegreeIds = new Set<string>();
   let top10Share: number | null = null;
   if (nodes.length >= 5) {
-    const byDeg = [...nodes].sort((a, b) => (b.degree || 0) - (a.degree || 0));
+    const byDeg = [...nodes].sort((a, b) => nodeStrength(b) - nodeStrength(a));
     const k = Math.max(1, Math.ceil(nodes.length * 0.1));
     let topSum = 0;
     let allSum = 0;
-    for (const n of nodes) allSum += n.degree || 0;
+    for (const n of nodes) allSum += nodeStrength(n);
     for (let i = 0; i < k; i++) {
       top10DegreeIds.add(byDeg[i].id);
-      topSum += byDeg[i].degree || 0;
+      topSum += nodeStrength(byDeg[i]);
     }
     top10Share = allSum > 0 ? topSum / allSum : null;
   }
@@ -778,12 +796,21 @@ export function computeViewStatMarks(opts: {
     for (const n of nodes) {
       const y = num(n.year_peak) ?? num(n.yearPeak);
       if (y == null) continue;
-      const w = Math.max(0.01, num(n.prominence) ?? n.degree ?? 1);
+      const w = Math.max(0.01, num(n.prominence) ?? nodeStrength(n) ?? 1);
       wSum += w;
       yw += y * w;
     }
     if (wSum > 0) votesCentroidYear = yw / wSum;
   }
+
+  const assortativity =
+    opts.manifest?.summary?.assortativity != null
+      ? Number(opts.manifest.summary.assortativity)
+      : null;
+  const giantComponentShare =
+    opts.manifest?.summary?.giant_component_share != null
+      ? Number(opts.manifest.summary.giant_component_share)
+      : null;
 
   return {
     enabled,
@@ -833,6 +860,10 @@ export function computeViewStatMarks(opts: {
     egoCenterId: focusId,
     smallIslandIds,
     votesCentroidYear,
+    assortativity: Number.isFinite(assortativity as number) ? assortativity : null,
+    giantComponentShare: Number.isFinite(giantComponentShare as number)
+      ? giantComponentShare
+      : null,
   };
 }
 
@@ -919,6 +950,7 @@ export function nodeOpacityMod(stats: ViewStatMarks | null | undefined, id: stri
   let op = 1;
   if (isBottom5Degree(stats, id)) op = Math.min(op, 0.18);
   if (hasStat(stats, "island_ghost") && stats.smallIslandIds.has(id)) op = Math.min(op, 0.22);
+  if (hasStat(stats, "giant_component") && stats.smallIslandIds.has(id)) op = Math.min(op, 0.2);
   if (hasStat(stats, "ego_rings") && stats.egoCenterId) {
     if (id === stats.egoCenterId || stats.hop1Ids.has(id)) {
       /* full */
@@ -1065,7 +1097,7 @@ export function describeNodeStats(stats: ViewStatMarks | null | undefined, id: s
   if (!stats) return [];
   const tags: string[] = [];
   if (isInsightFocus(stats, id)) tags.push("insight");
-  if (isTop5Degree(stats, id)) tags.push("top 5% deg");
+  if (isTop5Degree(stats, id)) tags.push("top 5% strength");
   if (isTop5Prominence(stats, id)) tags.push("top 5% votes");
   if (isBottom5Degree(stats, id)) tags.push("bottom 5%");
   if (isBridge(stats, id)) tags.push("bridge");
@@ -1077,7 +1109,10 @@ export function describeNodeStats(stats: ViewStatMarks | null | undefined, id: s
   if (hasStat(stats, "genre_entropy") && stats.highEntropyIds.has(id)) tags.push("poly-genre");
   if (hasStat(stats, "genre_drift") && stats.driftIds.has(id)) tags.push("genre drift");
   if (isLoyaltyNode(stats, id)) tags.push("loyalty");
-  if (hasStat(stats, "gini_callout") && stats.top10DegreeIds.has(id)) tags.push("top 10% links");
+  if (hasStat(stats, "gini_callout") && stats.top10DegreeIds.has(id)) tags.push("top 10% strength");
+  if (hasStat(stats, "giant_component") && !stats.smallIslandIds.has(id) && stats.giantComponentShare != null) {
+    tags.push("giant");
+  }
   if (isFeaturedNode(stats, id)) tags.push("featured path");
   if (stats.earliestPeakId === id && hasStat(stats, "peak_extremes")) tags.push("earliest peak");
   if (stats.latestPeakId === id && hasStat(stats, "peak_extremes")) tags.push("latest peak");

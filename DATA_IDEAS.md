@@ -130,8 +130,8 @@ Priority key: **[P1]** high-impact / unblocks others · **[P2]** solid win · **
 
 89. **[P1] Betweenness centrality per construct** (compute in Python on the built graph) → `bridge_score` node facet; surface "connectors" in Insights.
 90. **[P2] Community detection** (Louvain/Leiden on each construct) → `community` node facet; app can color by community.
-91. **[P2] Precompute per-construct summary stats JSON** (degree distribution, era histogram, gender mix) for the gallery cards and Insight cards — no client-side recompute.
-92. **[P2] Small-world metrics in the manifest**: average path length, clustering coefficient — printable "this web is N handshakes wide" callouts.
+91. **[P2] ~~Precompute per-construct summary stats JSON~~** ✅ Done — `manifest.summary` includes degree/strength histograms, Gini, assortativity, density, modularity, communities, path stats, scatter samples (`metrics_version` 2; see `pipeline/METRICS.md`).
+92. **[P2] ~~Small-world metrics in the manifest~~** ✅ Done — average path length, clustering, diameter / effective diameter, giant-component share.
 93. **[P2] Six-degrees paths**: precompute shortest path between the 2 highest-prominence nodes per construct and emit as an annotated `featured_path` for poster callouts.
 94. **[P3] Node embeddings** (node2vec on the co-appearance graph) → 2D projection coordinates as an alternative "constellation" hero layout.
 95. **[P3] Era-sliced graph snapshots**: per-decade edge lists so the app can animate the weave growing through time.

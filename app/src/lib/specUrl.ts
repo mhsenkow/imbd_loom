@@ -58,7 +58,7 @@ export function specFromSearchParams(
     ...base,
     activeConstruct: params.get("construct") || base.activeConstruct,
     pageSize: str("size", base.pageSize, ["a1", "a0", "tabloid", "letter"] as const),
-    heroForm: str("hero", base.heroForm, ["chord", "bundle", "timeline"] as const),
+    heroForm: str("hero", base.heroForm, ["chord", "bundle", "timeline", "scatter"] as const),
     topN: num("topN", base.topN),
     minWeight: num("minWeight", base.minWeight),
     minTitles: num("minTitles", base.minTitles),

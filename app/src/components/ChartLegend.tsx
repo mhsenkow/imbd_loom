@@ -15,7 +15,7 @@ import {
 } from "../lib/statsMarks";
 
 interface Props {
-  form: "chord" | "bundle" | "timeline";
+  form: "chord" | "bundle" | "timeline" | "scatter";
   flipped?: boolean;
   colorBy?: ColorBy;
   palette?: string;
