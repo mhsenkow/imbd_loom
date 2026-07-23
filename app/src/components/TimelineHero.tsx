@@ -88,6 +88,8 @@ export function TimelineHero({
   const zoomIdleRef = useRef(0);
   const focus = activeId(selection);
   const edgeFocus = activeEdge(selection);
+  const skimId = selection.skimId ?? null;
+  const skimEdge = selection.skimEdge ?? null;
   const neighbors = useMemo(() => neighborIds(focus, edges), [focus, edges]);
   const byId = useMemo(() => new Map(nodes.map((n) => [n.id, n])), [nodes]);
 
@@ -227,11 +229,7 @@ export function TimelineHero({
     const applyFit = (force = false) => {
       const cw = wrap.clientWidth;
       const ch = wrap.clientHeight;
-      if (
-        !force &&
-        Math.abs(cw - lastW) < 48 &&
-        Math.abs(ch - lastH) < 48
-      ) {
+      if (!force && Math.abs(cw - lastW) < 8 && Math.abs(ch - lastH) < 8) {
         return;
       }
       lastW = cw;
@@ -248,9 +246,12 @@ export function TimelineHero({
     let roTimer = 0;
     const ro = new ResizeObserver(() => {
       window.clearTimeout(roTimer);
-      roTimer = window.setTimeout(() => applyFit(false), 120);
+      roTimer = window.setTimeout(() => applyFit(false), 80);
     });
     ro.observe(wrap);
+    // Chrome above the viewport (legend / status strip) changes wrap height
+    const shell = wrap.closest(".timeline-shell");
+    if (shell) ro.observe(shell);
 
     return () => {
       window.clearTimeout(roTimer);
@@ -280,6 +281,13 @@ export function TimelineHero({
     if (isEdge) return 0.95;
     if (focus) {
       return source === focus || target === focus ? 0.75 : DIM_GHOST * 0.4;
+    }
+    if (
+      skimEdge &&
+      ((skimEdge.source === source && skimEdge.target === target) ||
+        (skimEdge.source === target && skimEdge.target === source))
+    ) {
+      return 0.72;
     }
     if (search) {
       return search.matchedEdgeKeys.has(edgeKey(source, target)) ? 0.85 : 0.04;
@@ -399,8 +407,8 @@ export function TimelineHero({
     <svg
       ref={svgRef}
       className="timeline-svg"
-      width={printMode ? "100%" : layout.width}
-      height={printMode ? undefined : layout.height}
+      width="100%"
+      height="100%"
       viewBox={printMode ? `0 0 ${layout.width} ${layout.height}` : undefined}
       role="img"
       aria-label={`${title} timeline`}
@@ -431,23 +439,30 @@ export function TimelineHero({
               !!edgeFocus &&
               ((edgeFocus.source === l.source && edgeFocus.target === l.target) ||
                 (edgeFocus.source === l.target && edgeFocus.target === l.source));
+            const isSkimLink =
+              !isEdge &&
+              !!skimEdge &&
+              ((skimEdge.source === l.source && skimEdge.target === l.target) ||
+                (skimEdge.source === l.target && skimEdge.target === l.source));
             const opacity = linkOpacity(l.source, l.target, isEdge);
             const films = sharedLabel(l.shared);
             const statLink = linkStatStyle(stats, l.source, l.target, l.weight);
-            const baseW = (isEdge ? 0.8 : 0) + (l.strokeWidth ?? 0.8 + Math.min(3, l.weight * 0.25));
+            const baseW = (isEdge ? 0.8 : isSkimLink ? 0.35 : 0) + (l.strokeWidth ?? 0.8 + Math.min(3, l.weight * 0.25));
             // Weight-responsive ink pressure
             const pressure = Math.min(1, 0.55 + l.weight * 0.06);
             const w = Math.max(0.35, baseW + (statLink?.strokeWidthBoost ?? 0));
             const weaveId = `tl-weave-${l.source}-${l.target}-${i}`;
             const useGradient =
-              !isEdge && !statLink && l.fill !== l.targetFill && opacity > 0.2;
+              !isEdge && !isSkimLink && !statLink && l.fill !== l.targetFill && opacity > 0.2;
             const stroke = isEdge
               ? ACCENT
-              : statLink?.stroke ?? (useGradient ? `url(#${weaveId})` : l.fill);
+              : isSkimLink
+                ? ACCENT
+                : statLink?.stroke ?? (useGradient ? `url(#${weaveId})` : l.fill);
             return (
               <path
                 key={`${l.source}-${l.target}-${l.year}-${i}`}
-                className="link-enter"
+                className={`link-enter${isSkimLink ? " is-skim" : ""}`}
                 d={l.path}
                 fill="none"
                 stroke={stroke}
@@ -557,6 +572,7 @@ export function TimelineHero({
         <g className="timeline-people">
           {layout.people.map((p) => {
             const isFocus = focus === p.id;
+            const isSkim = !isFocus && skimId === p.id;
             const opacity = personOpacity(p.id);
             const hot = search?.matchedNodeIds.has(p.id);
             const fill = personFill(p.id, p.fill, hot);
@@ -573,12 +589,12 @@ export function TimelineHero({
               const peakY = layout.yScale(p.yearPeak);
               const midY = (y0 + y1) / 2;
               const scale = p.scale ?? 1;
-              const threadW = (isFocus || hot ? 2.2 : 1.2) * scale;
-              const r = (isFocus ? 4.2 : 2.6) * Math.sqrt(scale);
+              const threadW = (isFocus || isSkim || hot ? 2.2 : 1.2) * scale;
+              const r = (isFocus ? 4.2 : isSkim ? 3.4 : 2.6) * Math.sqrt(scale);
               return (
                 <g
                   key={p.id}
-                  className="person-enter"
+                  className={`person-enter${isSkim ? " is-skim" : ""}`}
                   opacity={opacity}
                   style={{ cursor: "pointer" }}
                   onMouseEnter={() => {
@@ -697,12 +713,12 @@ export function TimelineHero({
             const peakX = layout.xScale(p.yearPeak);
             const midX = (x0 + x1) / 2;
             const scale = p.scale ?? 1;
-            const threadW = (isFocus || hot ? 2.2 : 1.2) * scale;
-            const r = (isFocus ? 4.2 : 2.6) * Math.sqrt(scale);
+            const threadW = (isFocus || isSkim || hot ? 2.2 : 1.2) * scale;
+            const r = (isFocus ? 4.2 : isSkim ? 3.4 : 2.6) * Math.sqrt(scale);
             return (
               <g
                 key={p.id}
-                className="person-enter"
+                className={`person-enter${isSkim ? " is-skim" : ""}`}
                 opacity={opacity}
                 style={{ cursor: "pointer" }}
                 onMouseEnter={() => {
@@ -853,23 +869,6 @@ export function TimelineHero({
 
       <ChartLegend form="timeline" flipped={flipped} colorBy={colorBy} palette={palette} statMarks={stats} />
 
-      {(edgeBanner || search) && (
-        <div className={`status-strip${edgeBanner ? " status-strip--link" : ""}`}>
-          {edgeBanner ? (
-            <>
-              <div className="link-banner-who">{edgeBanner.who}</div>
-              <div className="link-banner-meta mono">{edgeBanner.meta}</div>
-              <div className="link-banner-films">{edgeBanner.films}</div>
-            </>
-          ) : search ? (
-            <div className="search-banner-inline">
-              Focusing {search.focusLabel ? `“${search.focusLabel}”` : `“${search.query}”`} —{" "}
-              {search.matchedNodeIds.size} people, {search.matchedEdgeKeys.size} links
-            </div>
-          ) : null}
-        </div>
-      )}
-
       <div
         className="timeline-viewport"
         ref={wrapRef}
@@ -878,6 +877,22 @@ export function TimelineHero({
           onHoverEdge(null);
         }}
       >
+        {(edgeBanner || search) && (
+          <div className={`status-strip status-strip--overlay${edgeBanner ? " status-strip--link" : ""}`}>
+            {edgeBanner ? (
+              <>
+                <div className="link-banner-who">{edgeBanner.who}</div>
+                <div className="link-banner-meta mono">{edgeBanner.meta}</div>
+                <div className="link-banner-films">{edgeBanner.films}</div>
+              </>
+            ) : search ? (
+              <div className="search-banner-inline">
+                Focusing {search.focusLabel ? `“${search.focusLabel}”` : `“${search.query}”`} —{" "}
+                {search.matchedNodeIds.size} people, {search.matchedEdgeKeys.size} links
+              </div>
+            ) : null}
+          </div>
+        )}
         {svgInner}
         <div className="timeline-zoom-controls" role="group" aria-label="Zoom controls">
           <button type="button" aria-label="Zoom in" title="Zoom in" onClick={() => zoomBy(1.35)}>

@@ -119,8 +119,8 @@ export function HomeGallery({ onOpenStory, onOpenAtelier, onOpenMethodology }: P
         <h1 className="gallery-brand">IMDb Loom</h1>
         <p className="gallery-headline">Actor networks, cut by construct</p>
         <p className="gallery-lede">
-          Four shelves of saved lenses — construct, chart form, and filters already
-          tuned. Open a sheet, then re-author in the atelier.
+          Six shelves of saved lenses — construct, chart form, filters, and marks
+          already tuned. Open a sheet, then re-author in the atelier.
         </p>
         <div className="gallery-actions">
           <button type="button" className="gallery-cta" onClick={onOpenAtelier}>

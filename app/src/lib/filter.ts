@@ -12,6 +12,36 @@ function num(v: unknown): number | undefined {
   return Number.isFinite(n) ? n : undefined;
 }
 
+/** Title count with roles[] fallback for constructs that omit the facet. */
+export function nodeTitleCount(n: Node): number {
+  const direct = num(n.title_count) ?? num(n.titleCount);
+  if (direct != null) return direct;
+  const roles = n.roles;
+  if (!Array.isArray(roles) || !roles.length) return 0;
+  const ids = new Set(
+    roles
+      .map((r) => r.tconst)
+      .filter((t): t is string => typeof t === "string" && t.length > 0),
+  );
+  return ids.size || roles.length;
+}
+
+/** Career year span — prefer facets, else derive from role years. */
+export function nodeYearSpan(n: Node): { min?: number; max?: number } {
+  let yMin = num(n.year_min) ?? num(n.yearMin);
+  let yMax = num(n.year_max) ?? num(n.yearMax);
+  if ((yMin == null || yMax == null) && Array.isArray(n.roles)) {
+    const years = n.roles
+      .map((r) => num(r.year))
+      .filter((y): y is number => y != null);
+    if (years.length) {
+      yMin ??= Math.min(...years);
+      yMax ??= Math.max(...years);
+    }
+  }
+  return { min: yMin, max: yMax };
+}
+
 function sortValue(n: Node, sortBy: PosterSpec["sortBy"]): number {
   switch (sortBy) {
     case "prominence":
@@ -19,7 +49,7 @@ function sortValue(n: Node, sortBy: PosterSpec["sortBy"]): number {
     case "year_peak":
       return num(n.year_peak) ?? num(n.yearPeak) ?? 0;
     case "title_count":
-      return num(n.title_count) ?? num(n.titleCount) ?? nodeStrength(n);
+      return nodeTitleCount(n) || nodeStrength(n);
     case "pagerank":
       return num(n.pagerank) ?? 0;
     case "degree":
@@ -57,11 +87,9 @@ export function filterNodesPool(nodes: Node[], spec: PosterSpec): Node[] {
     if (spec.genderFilter !== "all" && (n.gender || "unknown") !== spec.genderFilter) {
       return false;
     }
-    const titles = num(n.title_count) ?? num(n.titleCount) ?? 0;
-    if (titles < spec.minTitles) return false;
+    if (nodeTitleCount(n) < spec.minTitles) return false;
     if (nodeStrength(n) < spec.minDegree) return false;
-    const yMin = num(n.year_min) ?? num(n.yearMin);
-    const yMax = num(n.year_max) ?? num(n.yearMax);
+    const { min: yMin, max: yMax } = nodeYearSpan(n);
     if (yMin != null && yMax != null) {
       if (yMax < spec.yearFrom || yMin > spec.yearTo) return false;
     }

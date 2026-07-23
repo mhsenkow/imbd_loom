@@ -44,9 +44,12 @@ import {
 import type { PersonIndexEntry } from "./lib/bridges";
 import {
   EMPTY_SELECTION,
+  HOVER_CLEAR_MS,
+  HOVER_SETTLE_MS,
   activeEdge,
   activeId,
   neighborIds,
+  vizSelection,
   type SelectionState,
 } from "./lib/selection";
 import { COARSE_MQ, PHONE_MQ, useMediaQuery } from "./lib/useMediaQuery";
@@ -155,6 +158,9 @@ export default function App() {
   const [exporting, setExporting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [selection, setSelection] = useState<SelectionState>(EMPTY_SELECTION);
+  /** Dwell-settled hover — main weave dims only after pause / pin. */
+  const [settledHoverId, setSettledHoverId] = useState<string | null>(null);
+  const [settledHoverEdge, setSettledHoverEdge] = useState<Edge | null>(null);
   const [controlsOpen, setControlsOpen] = useState(() => {
     if (typeof window === "undefined") return true;
     // Desktop: open; tablet/phone overlay: start closed so the chart fills the screen
@@ -566,21 +572,16 @@ export default function App() {
     setSelection((s) => (s.pinnedId ? s : { ...s, hoveredId: id }));
   }, []);
 
-  const onHoverEdge = useCallback(
-    (edge: Edge | null) => {
-      setSelection((s) => {
-        if (s.pinnedId || s.pinnedEdge) return s;
-        return {
-          ...s,
-          hoveredEdge: edge,
-          hoveredId: edge ? edge.source : null,
-        };
-      });
-      // Tap-to-open on touch; hover-to-open only on fine pointers
-      if (edge && !isCoarse) openInspect();
-    },
-    [isCoarse, openInspect],
-  );
+  const onHoverEdge = useCallback((edge: Edge | null) => {
+    setSelection((s) => {
+      if (s.pinnedId || s.pinnedEdge) return s;
+      return {
+        ...s,
+        hoveredEdge: edge,
+        hoveredId: edge ? edge.source : null,
+      };
+    });
+  }, []);
 
   const onPinEdge = useCallback(
     (edge: Edge | null) => {
@@ -618,6 +619,46 @@ export default function App() {
       if (id) openInspect();
     },
     [openInspect],
+  );
+
+  // Settle hover before the main weave dims; Inspect still tracks the pointer.
+  useEffect(() => {
+    if (selection.pinnedId || selection.pinnedEdge) {
+      setSettledHoverId(null);
+      setSettledHoverEdge(null);
+      return;
+    }
+    const id = selection.hoveredId;
+    const edge = selection.hoveredEdge;
+    if (!id && !edge) {
+      const t = window.setTimeout(() => {
+        setSettledHoverId(null);
+        setSettledHoverEdge(null);
+      }, HOVER_CLEAR_MS);
+      return () => window.clearTimeout(t);
+    }
+    // Drop prior solidify as soon as the pointer moves — scanning stays soft.
+    setSettledHoverId(null);
+    setSettledHoverEdge(null);
+    const t = window.setTimeout(() => {
+      setSettledHoverId(id);
+      setSettledHoverEdge(edge);
+      // Open Inspect once hover rests (panel already tracks if open).
+      if (!isCoarse) openInspect();
+    }, HOVER_SETTLE_MS);
+    return () => window.clearTimeout(t);
+  }, [
+    selection.hoveredId,
+    selection.hoveredEdge,
+    selection.pinnedId,
+    selection.pinnedEdge,
+    isCoarse,
+    openInspect,
+  ]);
+
+  const chartSelection = useMemo(
+    () => vizSelection(selection, settledHoverId, settledHoverEdge),
+    [selection, settledHoverId, settledHoverEdge],
   );
 
   useEffect(() => {
@@ -763,7 +804,7 @@ export default function App() {
             minWeight={spec.minWeight}
             title={active.manifest.title}
             subtitle={active.manifest.subtitle}
-            selection={selection}
+            selection={chartSelection}
             onHover={onHover}
             onHoverEdge={onHoverEdge}
             onPinEdge={onPinEdge}
@@ -796,9 +837,9 @@ export default function App() {
                 width={720}
                 height={480}
                 highlightIds={
-                  selection.hoveredId || selection.pinnedId
+                  selection.pinnedId || settledHoverId
                     ? new Set(
-                        [selection.hoveredId, selection.pinnedId].filter(Boolean) as string[],
+                        [selection.pinnedId, settledHoverId].filter(Boolean) as string[],
                       )
                     : null
                 }
@@ -808,7 +849,34 @@ export default function App() {
             </div>
           </div>
         ) : (
-          <PosterShell print={isPrint}>
+          <>
+            <PosterShell print={isPrint}>
+              <ChartLegend
+                form={spec.heroForm === "bundle" ? "bundle" : "chord"}
+                colorBy={colorBy}
+                palette={spec.palette}
+                statMarks={viewStats}
+              />
+              <Poster
+                spec={spec}
+                active={active}
+                all={cache}
+                index={index}
+                peopleIndex={peopleIndex}
+                selection={chartSelection}
+                onHover={onHover}
+                onHoverEdge={onHoverEdge}
+                onPinEdge={onPinEdge}
+                onPin={(id) => onPin(id)}
+                interactive={!isPrint}
+                filteredNodes={nodes}
+                filteredEdges={edges}
+                colorBy={colorBy}
+                search={searchMatch}
+                viewStats={viewStats}
+                insightFocusId={insightFocusId}
+              />
+            </PosterShell>
             {!isPrint && active ? (
               <StatsRail
                 manifest={active.manifest}
@@ -818,32 +886,7 @@ export default function App() {
                 }}
               />
             ) : null}
-            <ChartLegend
-              form={spec.heroForm === "bundle" ? "bundle" : "chord"}
-              colorBy={colorBy}
-              palette={spec.palette}
-              statMarks={viewStats}
-            />
-            <Poster
-              spec={spec}
-              active={active}
-              all={cache}
-              index={index}
-              peopleIndex={peopleIndex}
-              selection={selection}
-              onHover={onHover}
-              onHoverEdge={onHoverEdge}
-              onPinEdge={onPinEdge}
-              onPin={(id) => onPin(id)}
-              interactive={!isPrint}
-              filteredNodes={nodes}
-              filteredEdges={edges}
-              colorBy={colorBy}
-              search={searchMatch}
-              viewStats={viewStats}
-              insightFocusId={insightFocusId}
-            />
-          </PosterShell>
+          </>
         )}
       </main>
       {!isPrint && (

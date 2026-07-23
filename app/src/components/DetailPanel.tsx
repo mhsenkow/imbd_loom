@@ -107,6 +107,7 @@ export function DetailPanel({
           </button>
         </div>
         {insightBlock}
+        <div className={`detail-peek${edgePinned ? " is-solid" : ""}`}>
         <p className="link-explain">
           These two people are linked because they were both credited on the{" "}
           <strong>same title(s)</strong>
@@ -177,6 +178,7 @@ export function DetailPanel({
             <code>uv run loom build</code> to attach shared-title samples.
           </p>
         )}
+        </div>
       </aside>
     );
   }
@@ -251,6 +253,7 @@ export function DetailPanel({
 
       {insightBlock}
 
+      <div className={`detail-peek${pinned ? " is-solid" : ""}`}>
       <div className="detail-name">
         <span
           className="swatch"
@@ -381,6 +384,7 @@ export function DetailPanel({
           </ul>
         </div>
       )}
+      </div>
     </aside>
   );
 }

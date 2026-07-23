@@ -119,7 +119,10 @@ export const text = {
   inkSoft: { light: P.ink[1], dark: P.workshop.mutedHi } satisfies ThemedColor,
   inkFaint: { light: P.ink[2], dark: P.workshop.muted } satisfies ThemedColor,
   workshop: { light: P.ink[0], dark: P.workshop.text } satisfies ThemedColor,
-  muted: { light: "#6e6a62", dark: P.workshop.muted } satisfies ThemedColor,
+  /** Secondary chrome copy — darker in light so muted labels stay WCAG-AA on workshop. */
+  muted: { light: "#5a564e", dark: P.workshop.muted } satisfies ThemedColor,
+  /** Always-light ink for terracotta / accent fills (both themes). */
+  onAccent: { light: P.paper[0], dark: P.paper[0] } satisfies ThemedColor,
 } as const;
 
 export const line = {
@@ -389,12 +392,27 @@ export function token(name: TokenName | string, theme: Theme = "light"): string 
 
 /** High-contrast overrides applied when prefers-contrast: more. */
 export function contrastOverrides(theme: Theme): Record<string, string> {
+  if (theme === "light") {
+    return {
+      "--ink": P.contrast.ink,
+      "--ink-soft": "#2a2620",
+      "--ink-faint": P.contrast.inkFaint,
+      "--atelier-text": P.contrast.ink,
+      "--atelier-muted": P.contrast.inkFaint,
+      "--atelier-border": "#8a8070",
+      "--rule": P.contrast.rule,
+      "--on-accent": P.paper[0],
+    };
+  }
   return {
-    "--ink": P.contrast.ink,
-    "--ink-faint": P.contrast.inkFaint,
+    "--ink": P.workshop.text,
+    "--ink-soft": P.workshop.mutedHi,
+    "--ink-faint": P.contrast.muted,
+    "--atelier-text": P.workshop.text,
     "--atelier-muted": P.contrast.muted,
     "--atelier-border": P.contrast.border,
-    "--rule": theme === "light" ? P.contrast.rule : P.contrast.border,
+    "--rule": P.contrast.border,
+    "--on-accent": P.paper[0],
   };
 }
 
@@ -422,6 +440,8 @@ export function cssVars(theme: Theme): Record<string, string> {
     "--atelier-border": t(line.border),
     "--atelier-text": t(text.workshop),
     "--atelier-muted": t(text.muted),
+    "--atelier-bg": t(surface.workshop),
+    "--on-accent": t(text.onAccent),
     "--atelier-glow-warm": theme === "light" ? "#f0e8d8" : P.workshop.glowWarm,
     "--atelier-glow-cool": theme === "light" ? "#e8e0d0" : P.workshop.glowCool,
 

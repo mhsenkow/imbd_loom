@@ -1,6 +1,6 @@
 /** Shared SVG decorations for statistical marks. */
 
-import { FONT_MONO, FONT_SANS, FOCUS_UNDERPAINT, PAPER, TRIM } from "../lib/fonts";
+import { FONT_MONO, FONT_SANS, FOCUS_UNDERPAINT, INK, PAPER, TRIM } from "../lib/fonts";
 import {
   STAT_COLORS,
   hasStat,
@@ -441,7 +441,7 @@ export function DensestPairLabel({
         stroke={STAT_COLORS.densest}
         strokeWidth={1.4}
       />
-      <text x={0} y={3} fontSize={9} fontFamily={FONT_SANS} fill={STAT_COLORS.densest}>
+      <text x={0} y={3} fontSize={9} fontFamily={FONT_SANS} fill={INK} fontWeight={560}>
         {text.length > 38 ? text.slice(0, 36) + "…" : text}
       </text>
     </g>

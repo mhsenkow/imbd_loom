@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { HeroViz } from "./HeroViz";
 import { TimelineStatic } from "./TimelineStatic";
+import { ScatterHero } from "./ScatterHero";
 import { loadConstruct } from "../lib/data";
 import {
   dropIsolates,
@@ -111,6 +112,22 @@ export function GalleryThumb({ spec }: Props) {
     return (
       <div ref={hostRef} className="gallery-thumb empty-thumb">
         Weaving…
+      </div>
+    );
+  }
+
+  if (nodes.length < 3) {
+    return (
+      <div ref={hostRef} className="gallery-thumb empty-thumb">
+        Too sparse for this cut
+      </div>
+    );
+  }
+
+  if (previewSpec.heroForm === "scatter") {
+    return (
+      <div ref={hostRef} className="gallery-thumb" aria-hidden>
+        <ScatterHero nodes={nodes} width={W} height={H} />
       </div>
     );
   }
