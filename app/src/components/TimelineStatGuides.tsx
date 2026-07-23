@@ -1,5 +1,6 @@
 /** Shared guide overlays for timeline heroes (explorer + print). */
 
+import { FONT_MONO, FONT_SANS, INK_FAINT, INK_SOFT, PAPER, ACCENT, TRIM } from "../lib/fonts";
 import type { TimelineLayout } from "../viz/timeline";
 import {
   STAT_COLORS,
@@ -70,7 +71,7 @@ export function TimelineStatGuides({ layout, stats, compact = false }: Props) {
             x={layout.xScale(stats.votesCentroidYear) + 4}
             y={layout.padT + (compact ? 8 : 22)}
             fontSize={compact ? 6 : 8}
-            fontFamily="IBM Plex Mono, monospace"
+            fontFamily={FONT_MONO}
             fill={STAT_COLORS.warm}
           >
             votes ⌀ {Math.round(stats.votesCentroidYear)}

@@ -40,6 +40,7 @@ import {
   neighborIds,
   type SelectionState,
 } from "./lib/selection";
+import { COARSE_MQ, PHONE_MQ, useMediaQuery } from "./lib/useMediaQuery";
 
 function usePrintMode(): boolean {
   const [print, setPrint] = useState(
@@ -52,6 +53,17 @@ function usePrintMode(): boolean {
   return print;
 }
 
+function useSaveDataClass() {
+  useEffect(() => {
+    const saveData =
+      typeof navigator !== "undefined" &&
+      !!(navigator as Navigator & { connection?: { saveData?: boolean } }).connection
+        ?.saveData;
+    if (saveData) document.body.classList.add("save-data");
+    else document.body.classList.remove("save-data");
+  }, []);
+}
+
 function readParams(): URLSearchParams {
   return new URLSearchParams(window.location.search);
 }
@@ -62,7 +74,10 @@ function writeUrl(
   mode: "push" | "replace" = "push",
 ) {
   const base = import.meta.env.BASE_URL;
-  const go = mode === "replace" ? window.history.replaceState.bind(window.history) : window.history.pushState.bind(window.history);
+  const go =
+    mode === "replace"
+      ? window.history.replaceState.bind(window.history)
+      : window.history.pushState.bind(window.history);
   if (view === "home") {
     go({ view: "home" }, "", homeHref(base));
     return;
@@ -75,6 +90,10 @@ function writeUrl(
 
 export default function App() {
   const isPrint = usePrintMode();
+  useSaveDataClass();
+  const isPhone = useMediaQuery(PHONE_MQ);
+  const isCoarse = useMediaQuery(COARSE_MQ);
+  const overlayPanels = useMediaQuery("(max-width: 900px)");
   const params = readParams();
 
   const [view, setView] = useState<"home" | "atelier">(() =>
@@ -92,28 +111,129 @@ export default function App() {
   const [exporting, setExporting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [selection, setSelection] = useState<SelectionState>(EMPTY_SELECTION);
-  const [controlsOpen, setControlsOpen] = useState(true);
+  const [controlsOpen, setControlsOpen] = useState(() => {
+    if (typeof window === "undefined") return true;
+    // Desktop: open; tablet/phone overlay: start closed so the chart fills the screen
+    return window.matchMedia("(min-width: 901px)").matches;
+  });
   const [inspectOpen, setInspectOpen] = useState(() => {
     if (typeof window === "undefined") return true;
     return window.matchMedia("(min-width: 901px)").matches;
   });
+  const drawerHistoryRef = useRef(false);
+  const ignoreNextPopRef = useRef(false);
 
-  const patch = useCallback((p: Partial<PosterSpec>) => {
-    setSpec((s) => {
-      const next = { ...s, ...p };
-      // Auto-enable edge year filter once the career window moves off full span
-      if (
-        (p.yearFrom != null || p.yearTo != null) &&
-        (next.yearFrom > 1920 || next.yearTo < 2030) &&
-        !s.edgeYearFilter &&
-        p.edgeYearFilter === undefined
-      ) {
-        next.edgeYearFilter = true;
-      }
-      return next;
-    });
-    if (p.activeConstruct || p.heroForm) setSelection(EMPTY_SELECTION);
+  const popDrawerHistory = useCallback(() => {
+    if (!drawerHistoryRef.current) return;
+    drawerHistoryRef.current = false;
+    ignoreNextPopRef.current = true;
+    window.history.back();
   }, []);
+
+  const closeAllDrawers = useCallback(() => {
+    setControlsOpen(false);
+    setInspectOpen(false);
+  }, []);
+
+  const toggleControls = useCallback(() => {
+    if (controlsOpen) {
+      setControlsOpen(false);
+    } else {
+      setInspectOpen(false);
+      setControlsOpen(true);
+    }
+  }, [controlsOpen]);
+
+  const toggleInspect = useCallback(() => {
+    if (inspectOpen) {
+      setInspectOpen(false);
+    } else {
+      setControlsOpen(false);
+      setInspectOpen(true);
+    }
+  }, [inspectOpen]);
+
+  const openInspect = useCallback(() => {
+    setControlsOpen(false);
+    setInspectOpen(true);
+  }, []);
+
+  // Clear the synthetic history entry when drawers finish closing
+  const prevAnyOpen = useRef(false);
+  useEffect(() => {
+    const anyOpen = controlsOpen || inspectOpen;
+    if (prevAnyOpen.current && !anyOpen) popDrawerHistory();
+    prevAnyOpen.current = anyOpen;
+  }, [controlsOpen, inspectOpen, popDrawerHistory]);
+
+  // Escape closes the topmost drawer
+  useEffect(() => {
+    if (view !== "atelier") return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== "Escape") return;
+      if (controlsOpen || inspectOpen) {
+        e.preventDefault();
+        closeAllDrawers();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [view, controlsOpen, inspectOpen, closeAllDrawers]);
+
+  // Browser back closes an overlay drawer (one history entry while any drawer is open)
+  useEffect(() => {
+    if (!overlayPanels || view !== "atelier") return;
+    const anyOpen = controlsOpen || inspectOpen;
+    if (anyOpen && !drawerHistoryRef.current) {
+      window.history.pushState({ loomDrawer: true }, "");
+      drawerHistoryRef.current = true;
+    }
+  }, [overlayPanels, view, controlsOpen, inspectOpen]);
+
+  useEffect(() => {
+    const onPop = () => {
+      if (ignoreNextPopRef.current) {
+        ignoreNextPopRef.current = false;
+        return;
+      }
+      const p = readParams();
+      if (drawerHistoryRef.current) {
+        drawerHistoryRef.current = false;
+        setControlsOpen(false);
+        setInspectOpen(false);
+        return;
+      }
+      setView(viewFromSearchParams(p));
+      setSpec(specFromSearchParams(p, DEFAULT_SPEC));
+      setSelection(EMPTY_SELECTION);
+    };
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  }, []);
+
+  const patch = useCallback(
+    (p: Partial<PosterSpec>) => {
+      setSpec((s) => {
+        const next = { ...s, ...p };
+        // Auto-enable edge year filter once the career window moves off full span
+        if (
+          (p.yearFrom != null || p.yearTo != null) &&
+          (next.yearFrom > 1920 || next.yearTo < 2030) &&
+          !s.edgeYearFilter &&
+          p.edgeYearFilter === undefined
+        ) {
+          next.edgeYearFilter = true;
+        }
+        return next;
+      });
+      if (p.activeConstruct || p.heroForm) setSelection(EMPTY_SELECTION);
+      // On phones, close controls after picking a construct/form so the chart shows
+      if (isPhone && (p.activeConstruct || p.heroForm)) {
+        setControlsOpen(false);
+      }
+    },
+    [isPhone],
+  );
 
   const openStory = useCallback((story: StoryPreset) => {
     const next = resolveStorySpec(story);
@@ -136,17 +256,6 @@ export default function App() {
     setSelection(EMPTY_SELECTION);
     writeUrl(spec, "home");
   }, [spec]);
-
-  useEffect(() => {
-    const onPop = () => {
-      const p = readParams();
-      setView(viewFromSearchParams(p));
-      setSpec(specFromSearchParams(p, DEFAULT_SPEC));
-      setSelection(EMPTY_SELECTION);
-    };
-    window.addEventListener("popstate", onPop);
-    return () => window.removeEventListener("popstate", onPop);
-  }, []);
 
   useEffect(() => {
     if (view !== "atelier") return;
@@ -193,6 +302,16 @@ export default function App() {
           if (ids.length) setStatus(`${ids.length} constructs loaded`);
           return;
         }
+        // On phones / metered: skip strip prefetch to save bandwidth
+        const saveData =
+          typeof navigator !== "undefined" &&
+          ((navigator as Navigator & { connection?: { saveData?: boolean } }).connection
+            ?.saveData ||
+            isPhone);
+        if (saveData) {
+          if (ids.length) setStatus(`${Object.keys(cacheRef.current).length} constructs loaded`);
+          return;
+        }
         setStatus(`Loading strip…`);
         const results = await Promise.all(
           toLoad.map(async (id) => {
@@ -221,7 +340,7 @@ export default function App() {
     return () => {
       cancelled = true;
     };
-  }, [view, index, spec.activeConstruct]);
+  }, [view, index, spec.activeConstruct, isPhone]);
 
   const active = cache[spec.activeConstruct];
   const focusId = activeId(selection);
@@ -316,55 +435,74 @@ export default function App() {
       sortBy: spec.sortBy,
       focusId: pinnedId,
     });
-  }, [nodes, edges, spec.statMarks, spec.sortBy, active?.manifest, active?.nodes.length, insightFocusId, pinnedId]);
+  }, [
+    nodes,
+    edges,
+    spec.statMarks,
+    spec.sortBy,
+    active?.manifest,
+    active?.nodes.length,
+    insightFocusId,
+    pinnedId,
+  ]);
 
   const onHover = useCallback((id: string | null) => {
     setSelection((s) => (s.pinnedId ? s : { ...s, hoveredId: id }));
   }, []);
 
-  const onHoverEdge = useCallback((edge: Edge | null) => {
-    setSelection((s) => {
-      if (s.pinnedId || s.pinnedEdge) return s;
-      return {
-        ...s,
-        hoveredEdge: edge,
-        hoveredId: edge ? edge.source : null,
-      };
-    });
-    if (edge) setInspectOpen(true);
-  }, []);
+  const onHoverEdge = useCallback(
+    (edge: Edge | null) => {
+      setSelection((s) => {
+        if (s.pinnedId || s.pinnedEdge) return s;
+        return {
+          ...s,
+          hoveredEdge: edge,
+          hoveredId: edge ? edge.source : null,
+        };
+      });
+      // Tap-to-open on touch; hover-to-open only on fine pointers
+      if (edge && !isCoarse) openInspect();
+    },
+    [isCoarse, openInspect],
+  );
 
-  const onPinEdge = useCallback((edge: Edge | null) => {
-    setSelection((s) => {
-      if (edge == null) return { ...s, pinnedEdge: null, hoveredEdge: null };
-      const same =
-        s.pinnedEdge &&
-        s.pinnedEdge.source === edge.source &&
-        s.pinnedEdge.target === edge.target;
-      if (same) return EMPTY_SELECTION;
-      return {
-        hoveredId: null,
-        pinnedId: null,
-        hoveredEdge: edge,
-        pinnedEdge: edge,
-      };
-    });
-    if (edge) setInspectOpen(true);
-  }, []);
+  const onPinEdge = useCallback(
+    (edge: Edge | null) => {
+      setSelection((s) => {
+        if (edge == null) return { ...s, pinnedEdge: null, hoveredEdge: null };
+        const same =
+          s.pinnedEdge &&
+          s.pinnedEdge.source === edge.source &&
+          s.pinnedEdge.target === edge.target;
+        if (same) return EMPTY_SELECTION;
+        return {
+          hoveredId: null,
+          pinnedId: null,
+          hoveredEdge: edge,
+          pinnedEdge: edge,
+        };
+      });
+      if (edge) openInspect();
+    },
+    [openInspect],
+  );
 
-  const onPin = useCallback((id: string | null) => {
-    setSelection((s) => {
-      if (id == null) return EMPTY_SELECTION;
-      if (s.pinnedId === id) return { ...EMPTY_SELECTION, hoveredId: id };
-      return {
-        hoveredId: id,
-        pinnedId: id,
-        hoveredEdge: null,
-        pinnedEdge: null,
-      };
-    });
-    if (id) setInspectOpen(true);
-  }, []);
+  const onPin = useCallback(
+    (id: string | null) => {
+      setSelection((s) => {
+        if (id == null) return EMPTY_SELECTION;
+        if (s.pinnedId === id) return { ...EMPTY_SELECTION, hoveredId: id };
+        return {
+          hoveredId: id,
+          pinnedId: id,
+          hoveredEdge: null,
+          pinnedEdge: null,
+        };
+      });
+      if (id) openInspect();
+    },
+    [openInspect],
+  );
 
   useEffect(() => {
     // Annotations are positioned in the hero layout when available; skip orphan footer stubs.
@@ -399,12 +537,14 @@ export default function App() {
 
   const colorBy = resolveColorBy(spec, active?.manifest.key_variable || "degree");
   const showTimelineExplorer = !isPrint && spec.heroForm === "timeline" && !!active;
+  const scrimVisible = overlayPanels && (controlsOpen || inspectOpen);
 
   const layoutClass = [
     "app",
     !isPrint && "with-panels",
     controlsOpen && "controls-open",
     inspectOpen && "inspect-open",
+    isPhone && "is-phone",
   ]
     .filter(Boolean)
     .join(" ");
@@ -425,7 +565,7 @@ export default function App() {
           exportAvailable={exportAvailable}
           status={status}
           open={controlsOpen}
-          onToggle={() => setControlsOpen((o) => !o)}
+          onToggle={toggleControls}
           onOpenHome={openHome}
           searchMatch={searchMatch}
           filteredCounts={{ people: nodes.length, links: edges.length }}
@@ -455,7 +595,11 @@ export default function App() {
             </p>
           </div>
         ) : !active ? (
-          <div className="empty">Loading poster…</div>
+          <div className="empty empty--loading">
+            <div className="empty-plate" aria-hidden />
+            <p>Loading poster…</p>
+            <p className="empty-hint">Warming the plate under the lamp.</p>
+          </div>
         ) : showTimelineExplorer ? (
           <TimelineHero
             nodes={nodes}
@@ -481,7 +625,7 @@ export default function App() {
             viewStats={viewStats}
           />
         ) : (
-          <div className="poster-frame">
+          <div className="poster-frame paper-grain">
             <ChartLegend
               form={spec.heroForm === "bundle" ? "bundle" : "chord"}
               colorBy={colorBy}
@@ -522,7 +666,16 @@ export default function App() {
           onPin={onPin}
           onFocusNeighbor={(id) => onPin(id)}
           open={inspectOpen}
-          onToggle={() => setInspectOpen((o) => !o)}
+          onToggle={toggleInspect}
+        />
+      )}
+      {!isPrint && (
+        <button
+          type="button"
+          className={`panel-scrim${scrimVisible ? " visible" : ""}`}
+          aria-label="Close panel"
+          tabIndex={scrimVisible ? 0 : -1}
+          onClick={closeAllDrawers}
         />
       )}
     </div>

@@ -1,5 +1,6 @@
 /** Shared SVG decorations for statistical marks. */
 
+import { FONT_MONO, FONT_SANS, FOCUS_UNDERPAINT, PAPER, TRIM } from "../lib/fonts";
 import {
   STAT_COLORS,
   hasStat,
@@ -19,16 +20,40 @@ export function BridgeDiamond({
   cy: number;
   r?: number;
 }) {
+  // Embossed diamond: paper underlay + ink face + hairline weave cross
   return (
-    <polygon
-      points={`${cx},${cy - r} ${cx + r},${cy} ${cx},${cy + r} ${cx - r},${cy}`}
-      fill={STAT_COLORS.bridge}
-      stroke="#f7f2e8"
-      strokeWidth={0.7}
-      pointerEvents="none"
-    >
+    <g pointerEvents="none">
+      <polygon
+        points={`${cx},${cy - r - 0.8} ${cx + r + 0.8},${cy} ${cx},${cy + r + 0.8} ${cx - r - 0.8},${cy}`}
+        fill={PAPER}
+        opacity={0.95}
+      />
+      <polygon
+        points={`${cx},${cy - r} ${cx + r},${cy} ${cx},${cy + r} ${cx - r},${cy}`}
+        fill={STAT_COLORS.bridge}
+        stroke={PAPER}
+        strokeWidth={0.7}
+      />
+      <line
+        x1={cx - r * 0.45}
+        y1={cy}
+        x2={cx + r * 0.45}
+        y2={cy}
+        stroke={PAPER}
+        strokeWidth={0.6}
+        strokeOpacity={0.7}
+      />
+      <line
+        x1={cx}
+        y1={cy - r * 0.45}
+        x2={cx}
+        y2={cy + r * 0.45}
+        stroke={PAPER}
+        strokeWidth={0.6}
+        strokeOpacity={0.7}
+      />
       <title>Bridge (high betweenness)</title>
-    </polygon>
+    </g>
   );
 }
 
@@ -73,20 +98,28 @@ export function GapSpikeMark({
   y: number;
   flipped?: boolean;
 }) {
-  const s = 5;
-  if (flipped) {
-    return (
-      <g transform={`translate(${x},${y})`} pointerEvents="none">
-        <line x1={-s} x2={s} y1={0} y2={0} stroke={STAT_COLORS.guide} strokeWidth={1.4} />
-        <line x1={0} x2={0} y1={-s} y2={s} stroke={STAT_COLORS.guide} strokeWidth={1.2} />
-        <title>Long career gap (p95+)</title>
-      </g>
-    );
-  }
+  const s = 4.5;
   return (
     <g transform={`translate(${x},${y})`} pointerEvents="none">
-      <line x1={0} x2={0} y1={-s} y2={s} stroke={STAT_COLORS.guide} strokeWidth={1.4} />
-      <line x1={-s} x2={s} y1={0} y2={0} stroke={STAT_COLORS.guide} strokeWidth={1.2} />
+      <line
+        x1={flipped ? -s : 0}
+        x2={flipped ? s : 0}
+        y1={flipped ? 0 : -s}
+        y2={flipped ? 0 : s}
+        stroke={STAT_COLORS.guide}
+        strokeWidth={1.1}
+        strokeLinecap="round"
+      />
+      <line
+        x1={flipped ? 0 : -s}
+        x2={flipped ? 0 : s}
+        y1={flipped ? -s : 0}
+        y2={flipped ? s : 0}
+        stroke={STAT_COLORS.guide}
+        strokeWidth={0.9}
+        strokeLinecap="round"
+      />
+      <circle r={1.1} fill={STAT_COLORS.guide} stroke={PAPER} strokeWidth={0.4} />
       <title>Long career gap (p95+)</title>
     </g>
   );
@@ -102,14 +135,17 @@ export function BillingGlyph({
   kind: "rising" | "fading";
 }) {
   const fill = kind === "rising" ? STAT_COLORS.rising : STAT_COLORS.fading;
+  // Letterpress triangles with serif-style apex
   const points =
     kind === "rising"
-      ? `${cx},${cy - 5} ${cx + 4},${cy + 3} ${cx - 4},${cy + 3}`
-      : `${cx},${cy + 5} ${cx + 4},${cy - 3} ${cx - 4},${cy - 3}`;
+      ? `${cx},${cy - 5.5} ${cx + 3.8},${cy + 2.8} ${cx - 3.8},${cy + 2.8}`
+      : `${cx},${cy + 5.5} ${cx + 3.8},${cy - 2.8} ${cx - 3.8},${cy - 2.8}`;
   return (
-    <polygon points={points} fill={fill} stroke="#f7f2e8" strokeWidth={0.5} pointerEvents="none">
+    <g pointerEvents="none">
+      <polygon points={points} fill={PAPER} opacity={0.9} />
+      <polygon points={points} fill={fill} stroke={PAPER} strokeWidth={0.55} />
       <title>{kind === "rising" ? "Rising billing" : "Fading billing"}</title>
-    </polygon>
+    </g>
   );
 }
 
@@ -123,16 +159,10 @@ export function HollowDot({
   r: number;
 }) {
   return (
-    <circle
-      cx={cx}
-      cy={cy}
-      r={r * 0.45}
-      fill="#f7f2e8"
-      stroke="none"
-      pointerEvents="none"
-    >
+    <g pointerEvents="none">
+      <circle cx={cx} cy={cy} r={r * 0.55} fill={PAPER} stroke={STAT_COLORS.ghost} strokeWidth={0.9} />
       <title>One-scene wonder</title>
-    </circle>
+    </g>
   );
 }
 
@@ -149,14 +179,14 @@ export function PeakPin({
 }) {
   return (
     <g transform={`translate(${x},${y})`} pointerEvents="none">
-      <circle r={3.2} fill={STAT_COLORS.guide} stroke="#f7f2e8" strokeWidth={0.8} />
+      <circle r={3.2} fill={STAT_COLORS.guide} stroke={PAPER} strokeWidth={0.8} />
       <text
         x={flipped ? 6 : 0}
         y={flipped ? 0 : -8}
         textAnchor={flipped ? "start" : "middle"}
         dominantBaseline="middle"
         fontSize={8}
-        fontFamily="IBM Plex Mono, monospace"
+        fontFamily={FONT_MONO}
         fill={STAT_COLORS.guide}
       >
         {label}
@@ -177,23 +207,24 @@ export function MedianSizeGhost({
   label?: string;
 }) {
   return (
-    <g className="stat-median-ghost" pointerEvents="none" opacity={0.85}>
+    <g className="stat-median-ghost" pointerEvents="none" opacity={0.9}>
       <circle
         cx={cx}
         cy={cy}
         r={r}
         fill="none"
         stroke={STAT_COLORS.ghost}
-        strokeWidth={1.2}
-        strokeDasharray="2 2"
+        strokeWidth={1.1}
+        strokeDasharray="2.5 2"
       />
       <text
         x={cx + r + 4}
         y={cy}
         dominantBaseline="middle"
         fontSize={8}
-        fontFamily="IBM Plex Mono, monospace"
+        fontFamily={FONT_MONO}
         fill={STAT_COLORS.ghost}
+        letterSpacing="0.04em"
       >
         {label}
       </text>
@@ -238,7 +269,7 @@ export function MedianPeakRule({
           y={y - 4}
           textAnchor="end"
           fontSize={8}
-          fontFamily="IBM Plex Mono, monospace"
+          fontFamily={FONT_MONO}
           fill={STAT_COLORS.guide}
         >
           med peak {year}
@@ -263,7 +294,7 @@ export function MedianPeakRule({
         x={x + 4}
         y={y1 + 10}
         fontSize={8}
-        fontFamily="IBM Plex Mono, monospace"
+        fontFamily={FONT_MONO}
         fill={STAT_COLORS.guide}
       >
         med peak {year}
@@ -329,7 +360,7 @@ export function MedianCareerBar({
         y={laneCoord}
         dominantBaseline="middle"
         fontSize={8}
-        fontFamily="IBM Plex Mono, monospace"
+        fontFamily={FONT_MONO}
         fill={STAT_COLORS.ghost}
       >
         med {Math.round(span)}y
@@ -396,13 +427,21 @@ export function DensestPairLabel({
         y={-9}
         width={w}
         height={16}
-        rx={2}
-        fill="#f7f2e8"
-        fillOpacity={0.94}
+        rx={1.5}
+        fill={PAPER}
+        fillOpacity={0.96}
         stroke={STAT_COLORS.densest}
-        strokeWidth={0.7}
+        strokeWidth={0.6}
       />
-      <text x={0} y={3} fontSize={9} fontFamily="IBM Plex Sans, sans-serif" fill={STAT_COLORS.densest}>
+      <line
+        x1={-4}
+        y1={-9}
+        x2={-4}
+        y2={7}
+        stroke={STAT_COLORS.densest}
+        strokeWidth={1.4}
+      />
+      <text x={0} y={3} fontSize={9} fontFamily={FONT_SANS} fill={STAT_COLORS.densest}>
         {text.length > 38 ? text.slice(0, 36) + "…" : text}
       </text>
     </g>
@@ -423,7 +462,7 @@ export function RetentionMeter({
   const dash = (Math.min(100, Math.max(0, pct)) / 100) * circ;
   return (
     <g transform={`translate(${x},${y})`} pointerEvents="none" className="stat-retention">
-      <circle r={r} fill="none" stroke="#e8e0d4" strokeWidth={3} />
+      <circle r={r} fill="none" stroke={TRIM} strokeWidth={3} />
       <circle
         r={r}
         fill="none"
@@ -433,11 +472,12 @@ export function RetentionMeter({
         strokeLinecap="round"
         transform="rotate(-90)"
       />
+      <circle r={r - 5} fill={PAPER} stroke={TRIM} strokeWidth={0.4} />
       <text
         textAnchor="middle"
         dominantBaseline="middle"
         fontSize={8}
-        fontFamily="IBM Plex Mono, monospace"
+        fontFamily={FONT_MONO}
         fill={STAT_COLORS.guide}
       >
         {Math.round(pct)}%
@@ -446,7 +486,7 @@ export function RetentionMeter({
         y={r + 12}
         textAnchor="middle"
         fontSize={7}
-        fontFamily="IBM Plex Mono, monospace"
+        fontFamily={FONT_MONO}
         fill={STAT_COLORS.ghost}
       >
         kept
@@ -495,6 +535,15 @@ export function PersonStatDecor({
   const entropy = hasStat(stats, "genre_entropy") && stats.highEntropyIds.has(id);
   return (
     <g className="person-stat-decor" pointerEvents="none">
+      {isInsightFocus(stats, id) ? (
+        <circle
+          cx={cx}
+          cy={cy}
+          r={baseR + 7}
+          fill={FOCUS_UNDERPAINT}
+          stroke="none"
+        />
+      ) : null}
       {stroke ? (
         <StatHalo
           cx={cx}

@@ -14,6 +14,7 @@ import type { SearchMatch } from "../lib/search";
 import { pickStripIds, type PersonIndexEntry } from "../lib/bridges";
 import { materializeConstruct } from "../lib/filter";
 import { personFacetLabels, synthesizeStages } from "../lib/stages";
+import { ACCENT, FONT_MONO, FONT_SANS, INK, INK_FAINT, INK_SOFT, PAPER, TRIM } from "../lib/fonts";
 import { hasStat, isInsightFocus, type ViewStatMarks } from "../lib/statsMarks";
 
 interface Props {
@@ -219,7 +220,7 @@ export function Poster({
       height={`${layout.h}mm`}
     >
       {/* Paper */}
-      <rect width={layout.w} height={layout.h} fill="#f7f2e8" />
+      <rect width={layout.w} height={layout.h} fill={PAPER} />
 
       {/* Trim guide (subtle) */}
       <rect
@@ -228,7 +229,7 @@ export function Poster({
         width={layout.trimW}
         height={layout.trimH}
         fill="none"
-        stroke="#e0d8c8"
+        stroke={TRIM}
         strokeWidth={0.2}
       />
 
@@ -248,31 +249,40 @@ export function Poster({
       {/* Masthead */}
       <g transform={`translate(${layout.content.x}, ${layout.content.y})`}>
         <text
-          fontFamily="IBM Plex Sans, sans-serif"
-          fontSize={16}
+          fontFamily={FONT_SANS}
+          fontSize={18}
           fontWeight={600}
-          letterSpacing={3}
-          fill="#1a1814"
+          letterSpacing={2.5}
+          fill={INK}
         >
           IMDb LOOM
         </text>
         <text
           x={layout.content.w}
           textAnchor="end"
-          fontFamily="IBM Plex Mono, monospace"
+          fontFamily={FONT_MONO}
           fontSize={5}
-          fill="#6e6a62"
-          y={6}
+          fill={INK_FAINT}
+          y={7}
+          letterSpacing={0.6}
         >
-          actors woven across constructs · non-commercial data
+          {active.manifest.title}
         </text>
         <line
           x1={0}
           y1={12}
           x2={layout.content.w}
           y2={12}
-          stroke="#1a1814"
-          strokeWidth={0.4}
+          stroke={INK}
+          strokeWidth={0.35}
+        />
+        <line
+          x1={0}
+          y1={13.2}
+          x2={layout.content.w}
+          y2={13.2}
+          stroke={TRIM}
+          strokeWidth={0.25}
         />
       </g>
 
@@ -339,13 +349,13 @@ export function Poster({
           <text
             x={layout.strip.x}
             y={layout.strip.y - 2}
-            fontFamily="IBM Plex Mono, monospace"
+            fontFamily={FONT_MONO}
             fontSize={4.5}
-            fill="#6e6a62"
+            fill={INK_FAINT}
             letterSpacing={1}
           >
             CONSTRUCT THREADS
-            <tspan fill="#8a857c">
+            <tspan fill={INK_FAINT}>
               {focusLabel
                 ? `  ·  ${focusLabel} in ${focusPanelCount}/${stripIds.length} panels`
                 : `  ·  ${bridgeStats.multi} people warp from this construct`}
@@ -407,12 +417,21 @@ export function Poster({
       {/* Footer: legend + method + credit */}
       <g transform={`translate(${layout.footer.x}, ${layout.footer.y + 4})`}>
         <Legend colorBy={colorBy} statCount={spec.statMarks.length} />
+        <line
+          x1={0}
+          y1={24}
+          x2={48}
+          y2={24}
+          stroke={TRIM}
+          strokeWidth={0.3}
+        />
         <text
-          y={28}
-          fontFamily="IBM Plex Mono, monospace"
-          fontSize={4.5}
-          fill="#6e6a62"
-          letterSpacing={0.8}
+          y={30}
+          fontFamily={FONT_MONO}
+          fontSize={4.2}
+          fill={INK_FAINT}
+          letterSpacing={1.2}
+          className="plate-credit"
         >
           METHOD
         </text>
@@ -420,10 +439,10 @@ export function Poster({
           (line, i) => (
             <text
               key={i}
-              y={36 + i * 6}
-              fontFamily="IBM Plex Sans, sans-serif"
+              y={38 + i * 6}
+              fontFamily={FONT_SANS}
               fontSize={5}
-              fill="#3a3630"
+              fill={INK_SOFT}
             >
               {line}
             </text>
@@ -431,21 +450,23 @@ export function Poster({
         )}
         <text
           x={layout.footer.w}
-          y={28}
+          y={30}
           textAnchor="end"
-          fontFamily="IBM Plex Mono, monospace"
-          fontSize={4.2}
-          fill="#6e6a62"
+          fontFamily={FONT_MONO}
+          fontSize={4}
+          fill={INK_FAINT}
+          letterSpacing={0.4}
+          className="plate-credit"
         >
           {layout.label} · bleed {layout.bleed} mm · {nodes.length} nodes · {edges.length} edges
         </text>
         <text
           x={layout.footer.w}
-          y={36}
+          y={38}
           textAnchor="end"
-          fontFamily="IBM Plex Mono, monospace"
-          fontSize={4}
-          fill="#6e6a62"
+          fontFamily={FONT_MONO}
+          fontSize={3.8}
+          fill={INK_FAINT}
         >
           Built {active.manifest.built_at?.slice(0, 10)}
         </text>
@@ -453,11 +474,11 @@ export function Poster({
           <text
             key={`c${i}`}
             x={layout.footer.w}
-            y={44 + i * 5.5}
+            y={46 + i * 5.5}
             textAnchor="end"
-            fontFamily="IBM Plex Mono, monospace"
-            fontSize={3.8}
-            fill="#8a857c"
+            fontFamily={FONT_MONO}
+            fontSize={3.6}
+            fill={INK_FAINT}
           >
             {line}
           </text>
@@ -465,13 +486,13 @@ export function Poster({
 
         {spec.annotations.map((a) => (
           <g key={a.id}>
-            <circle cx={a.x - layout.footer.x} cy={a.y - layout.footer.y} r={1.2} fill="#c45c26" />
+            <circle cx={a.x - layout.footer.x} cy={a.y - layout.footer.y} r={1.2} fill={ACCENT} />
             <text
               x={a.x - layout.footer.x + 3}
               y={a.y - layout.footer.y + 1}
               fontSize={4.5}
-              fontFamily="IBM Plex Sans, sans-serif"
-              fill="#c45c26"
+              fontFamily={FONT_SANS}
+              fill={ACCENT}
             >
               {a.text}
             </text>
@@ -511,14 +532,14 @@ function Legend({
     const items = Object.entries(GENDER_COLORS);
     return (
       <g>
-        <text fontSize={5} fontFamily="IBM Plex Mono, monospace" fill="#6e6a62" letterSpacing={1}>
+        <text fontSize={5} fontFamily={FONT_MONO} fill={INK_FAINT} letterSpacing={1}>
           COLOR = GENDER
           {statCount ? `  ·  ${statCount} STAT MARKS` : ""}
         </text>
         {items.map(([k, c], i) => (
           <g key={k} transform={`translate(${i * 42}, 8)`}>
             <rect width={5} height={5} fill={c} />
-            <text x={7} y={4.2} fontSize={4.5} fontFamily="IBM Plex Sans, sans-serif" fill="#3a3630">
+            <text x={7} y={4.2} fontSize={4.5} fontFamily={FONT_SANS} fill={INK_SOFT}>
               {k}
             </text>
           </g>
@@ -534,7 +555,7 @@ function Legend({
         : "COLOR = COLLABORATION DEGREE";
   return (
     <g>
-      <text fontSize={5} fontFamily="IBM Plex Mono, monospace" fill="#6e6a62" letterSpacing={1}>
+      <text fontSize={5} fontFamily={FONT_MONO} fill={INK_FAINT} letterSpacing={1}>
         {label}
         {statCount ? `  ·  ${statCount} STAT MARKS` : ""}
       </text>
@@ -545,10 +566,10 @@ function Legend({
         </linearGradient>
       </defs>
       <rect x={0} y={7} width={80} height={5} fill="url(#degGrad)" stroke="#cfc6b4" strokeWidth={0.2} />
-      <text x={0} y={18} fontSize={4} fontFamily="IBM Plex Mono, monospace" fill="#6e6a62">
+      <text x={0} y={18} fontSize={4} fontFamily={FONT_MONO} fill={INK_FAINT}>
         low
       </text>
-      <text x={80} y={18} textAnchor="end" fontSize={4} fontFamily="IBM Plex Mono, monospace" fill="#6e6a62">
+      <text x={80} y={18} textAnchor="end" fontSize={4} fontFamily={FONT_MONO} fill={INK_FAINT}>
         high
       </text>
     </g>
@@ -576,7 +597,7 @@ function CropMarks({
     [layout.w - b, layout.h - b + 0.5, layout.w - b, layout.h],
   ];
   return (
-    <g className="crop-marks" stroke="#1a1814" strokeWidth={0.25}>
+    <g className="crop-marks" stroke={INK} strokeWidth={0.18} strokeOpacity={0.7}>
       {marks.map(([x1, y1, x2, y2], i) => (
         <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} />
       ))}

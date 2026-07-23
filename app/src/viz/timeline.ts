@@ -41,6 +41,8 @@ export interface TimelineLink {
   y2: number;
   path: string;
   fill: string;
+  /** Target person fill for weave gradients */
+  targetFill: string;
   strokeWidth: number;
   shared: Edge["shared"];
   edge: Edge;
@@ -202,6 +204,7 @@ export function layoutTimeline(
         y2: y,
         path,
         fill: a.fill,
+        targetFill: b.fill,
         strokeWidth,
         shared: e.shared,
         edge: e,
@@ -223,6 +226,7 @@ export function layoutTimeline(
         y2,
         path,
         fill: a.fill,
+        targetFill: b.fill,
         strokeWidth,
         shared: e.shared,
         edge: e,

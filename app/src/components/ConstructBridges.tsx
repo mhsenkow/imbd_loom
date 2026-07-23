@@ -7,6 +7,7 @@ import {
   type PersonIndexEntry,
   type StripBridge,
 } from "../lib/bridges";
+import { ACCENT, FONT_MONO, FONT_SANS, INK, INK_FAINT } from "../lib/fonts";
 
 interface Props {
   people: PersonIndexEntry[];
@@ -59,7 +60,7 @@ export function ConstructBridges({
         y={laneY - 16}
         width={Math.max(0, centers[centers.length - 1] - centers[0])}
         height={32}
-        fill="#1a1814"
+        fill={INK}
         fillOpacity={0.03}
         pointerEvents="none"
       />
@@ -94,14 +95,14 @@ export function ConstructBridges({
         <text
           x={centers[focused.panels[0]] ?? centers[0]}
           y={laneY - 18}
-          fontFamily="IBM Plex Sans, sans-serif"
+          fontFamily={FONT_SANS}
           fontSize={4.2}
           fontWeight={600}
-          fill="#c45c26"
+          fill={ACCENT}
           pointerEvents="none"
         >
           {focused.label}
-          <tspan fill="#8a857c" fontWeight={400} fontFamily="IBM Plex Mono, monospace">
+          <tspan fill={INK_FAINT} fontWeight={400} fontFamily={FONT_MONO}>
             {`  ·  ${focused.panels.length}/${stripIds.length} constructs`}
           </tspan>
         </text>
@@ -110,9 +111,9 @@ export function ConstructBridges({
       <text
         x={centers[0]}
         y={height - 2}
-        fontFamily="IBM Plex Mono, monospace"
+        fontFamily={FONT_MONO}
         fontSize={3.2}
-        fill="#8a857c"
+        fill={INK_FAINT}
         pointerEvents="none"
       >
         {bridges.length} warps
@@ -155,19 +156,19 @@ function WarpThread({
   onPin?: (id: string) => void;
 }) {
   const names = bridge.panels.map((pi) => stripTitles[pi] || stripIds[pi]).join(" → ");
-  let stroke = full ? "#1a1814" : "#2F5D50";
+  let stroke = full ? INK : "#2F5D50";
   let strokeWidth = full ? 0.6 : 0.25 + spanRatio * 0.3;
   let strokeOpacity = full ? 0.5 : 0.2 + spanRatio * 0.25;
   let dotR = full ? 0.9 : 0.65;
-  let dotFill = full ? "#1a1814" : "#2F5D50";
+  let dotFill = full ? INK : "#2F5D50";
   let dotOpacity = full ? 0.55 : 0.35;
 
   if (isFocus) {
-    stroke = "#c45c26";
+    stroke = ACCENT;
     strokeWidth = 1.35;
     strokeOpacity = 0.95;
     dotR = 1.35;
-    dotFill = "#c45c26";
+    dotFill = ACCENT;
     dotOpacity = 1;
   } else if (dimmed) {
     strokeOpacity *= 0.12;

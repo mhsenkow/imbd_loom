@@ -1,5 +1,6 @@
 /** Alluvial small-multiple panel. */
 
+import { ACCENT, FONT_SANS, INK, INK_SOFT } from "../lib/fonts";
 import { useMemo } from "react";
 import type { StageRow } from "../lib/types";
 import { layoutAlluvial } from "../viz/alluvial";
@@ -72,15 +73,15 @@ export function AlluvialPanel({
       <text
         x={0}
         y={8}
-        fontFamily="IBM Plex Sans, sans-serif"
+        fontFamily={FONT_SANS}
         fontSize={6}
         fontWeight={600}
         letterSpacing={0.8}
-        fill={hotPanel ? "#c45c26" : "#1a1814"}
+        fill={hotPanel ? ACCENT : INK}
       >
         {title.toUpperCase()}
         {hotPanel ? (
-          <tspan fill="#c45c26" fontWeight={400} fontSize={4.5} letterSpacing={0}>
+          <tspan fill={ACCENT} fontWeight={400} fontSize={4.5} letterSpacing={0}>
             {"  · in"}
           </tspan>
         ) : null}
@@ -92,7 +93,7 @@ export function AlluvialPanel({
           width={width + 2}
           height={height - 10}
           fill="none"
-          stroke="#c45c26"
+          stroke={ACCENT}
           strokeWidth={0.35}
           strokeOpacity={0.55}
           rx={0.5}
@@ -110,7 +111,7 @@ export function AlluvialPanel({
             ((l.sourceName === modalParts[0] && l.targetName === modalParts[1]) ||
               l.sourceName === modalParts[1] ||
               l.targetName === modalParts[0]);
-          let fillOpacity = 0.45;
+          let fillOpacity = 0.38;
           if (focusKeys && focusMember) {
             fillOpacity = hot ? 0.85 : 0.08;
           } else if (modalHot) {
@@ -124,9 +125,11 @@ export function AlluvialPanel({
             <path
               key={i}
               d={l.path}
-              fill={hot ? "#c45c26" : statHot ? STAT_COLORS.halo : l.fill}
+              fill={hot ? ACCENT : statHot ? STAT_COLORS.halo : l.fill}
               fillOpacity={fillOpacity}
-              stroke="none"
+              stroke={modalHot || statHot ? STAT_COLORS.path : "none"}
+              strokeWidth={modalHot || statHot ? 0.2 : 0}
+              strokeDasharray={modalHot ? "1.5 1.2" : undefined}
               pointerEvents="none"
             >
               <title>{l.title}</title>
@@ -147,8 +150,8 @@ export function AlluvialPanel({
                 y={n.y0}
                 width={Math.max(1, n.x1 - n.x0)}
                 height={Math.max(0.5, n.y1 - n.y0)}
-                fill={hot ? "#c45c26" : statHot ? STAT_COLORS.halo : n.fill}
-                stroke={hot ? "#1a1814" : statHot ? STAT_COLORS.halo : "none"}
+                fill={hot ? ACCENT : statHot ? STAT_COLORS.halo : n.fill}
+                stroke={hot ? INK : statHot ? STAT_COLORS.halo : "none"}
                 strokeWidth={hot || statHot ? 0.25 : 0}
               />
               {n.y1 - n.y0 > 5 && (
@@ -156,8 +159,8 @@ export function AlluvialPanel({
                   x={n.x1 + 1.5}
                   y={(n.y0 + n.y1) / 2}
                   fontSize={3.2}
-                  fontFamily="IBM Plex Sans, sans-serif"
-                  fill={hot ? "#c45c26" : statHot ? STAT_COLORS.guide : "#3a3630"}
+                  fontFamily={FONT_SANS}
+                  fill={hot ? ACCENT : statHot ? STAT_COLORS.guide : INK_SOFT}
                   fontWeight={hot || statHot ? 600 : 400}
                   dominantBaseline="middle"
                 >

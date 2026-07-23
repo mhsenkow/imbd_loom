@@ -1,5 +1,16 @@
 /** Static timeline SVG for poster / print (no pan-zoom chrome). */
 
+import {
+  ACCENT,
+  DIM_GHOST,
+  FONT_MONO,
+  FONT_SANS,
+  INK,
+  INK_FAINT,
+  MODE_DECADE,
+  PAPER,
+  RULE,
+} from "../lib/fonts";
 import { useMemo } from "react";
 import type {
   ColorBy,
@@ -143,7 +154,7 @@ export function TimelineStatic({
   if (!layout.people.length) {
     return (
       <g>
-        <text x={0} y={20} fontSize={6} fill="#6e6a62" fontFamily="IBM Plex Sans, sans-serif">
+        <text x={0} y={20} fontSize={6} fill={INK_FAINT} fontFamily={FONT_SANS}>
           No career-year data for timeline view.
         </text>
       </g>
@@ -184,17 +195,17 @@ export function TimelineStatic({
         <text
           x={0}
           y={14}
-          fontFamily="IBM Plex Sans, sans-serif"
+          fontFamily={FONT_SANS}
           fontSize={11}
           fontWeight={600}
           letterSpacing={1.5}
-          fill="#1a1814"
+          fill={INK}
         >
           {title.toUpperCase()}
         </text>
       ) : null}
       {subtitle || title ? (
-        <text x={0} y={26} fontFamily="IBM Plex Mono, monospace" fontSize={6} fill="#6e6a62">
+        <text x={0} y={26} fontFamily={FONT_MONO} fontSize={6} fill={INK_FAINT}>
           {subtitle} · {layout.yearMin}–{layout.yearMax}
           {interactive ? " · hover to peek · click to pin" : ""}
           {flipped ? " · flipped" : ""}
@@ -202,46 +213,94 @@ export function TimelineStatic({
       ) : null}
 
       <g transform={`translate(0, ${title || subtitle ? 30 : 0}) scale(${s})`}>
+        <defs>
+          {layout.links.map((l, i) =>
+            l.fill === l.targetFill ? null : (
+              <linearGradient
+                key={`ts-weave-${i}`}
+                id={`ts-weave-${l.source}-${l.target}-${i}`}
+                x1="0%"
+                y1="0%"
+                x2="0%"
+                y2="100%"
+              >
+                <stop offset="0%" stopColor={l.fill} />
+                <stop offset="100%" stopColor={l.targetFill} />
+              </linearGradient>
+            ),
+          )}
+        </defs>
+
         {layout.ticks.map((y) => {
+          const isDecade = y % 10 === 0;
           const isMode =
             stats &&
             hasStat(stats, "mode_decade") &&
             stats.modeDecade != null &&
             y >= stats.modeDecade &&
             y < stats.modeDecade + 10;
+          const stroke = isMode ? MODE_DECADE : isDecade ? "#c8bfb0" : RULE;
+          const strokeW = isMode ? 1.4 : isDecade ? 0.85 : 0.4;
+          const dash = !isDecade && !isMode ? "1.5 3" : undefined;
           return layout.flipped ? (
             <g key={y} transform={`translate(0,${layout.yScale(y)})`}>
+              {isMode ? (
+                <rect
+                  x={layout.padL - 6}
+                  y={-5}
+                  width={layout.width - layout.padL - layout.padR + 6}
+                  height={10}
+                  fill={MODE_DECADE}
+                  fillOpacity={0.08}
+                />
+              ) : null}
               <line
                 x1={layout.padL - 6}
                 x2={layout.width - layout.padR}
-                stroke={isMode ? "#3D5A80" : "#d9d0c0"}
-                strokeWidth={isMode ? 1.2 : 0.5}
+                stroke={stroke}
+                strokeWidth={strokeW}
+                strokeDasharray={dash}
               />
               <text
                 x={layout.padL - 8}
                 textAnchor="end"
                 dominantBaseline="middle"
-                fontSize={8}
-                fontFamily="IBM Plex Mono, monospace"
-                fill={isMode ? "#3D5A80" : "#6e6a62"}
+                fontSize={isMode || isDecade ? 8 : 7}
+                fontWeight={isMode || isDecade ? 600 : 400}
+                fontFamily={FONT_MONO}
+                letterSpacing={isDecade ? "-0.02em" : undefined}
+                fill={isMode ? MODE_DECADE : INK_FAINT}
               >
                 {y}
               </text>
             </g>
           ) : (
             <g key={y} transform={`translate(${layout.xScale(y)},0)`}>
+              {isMode ? (
+                <rect
+                  x={-4}
+                  y={layout.padT - 6}
+                  width={8}
+                  height={layout.height - layout.padT}
+                  fill={MODE_DECADE}
+                  fillOpacity={0.08}
+                />
+              ) : null}
               <line
                 y1={layout.padT - 6}
                 y2={layout.height - 4}
-                stroke={isMode ? "#3D5A80" : "#d9d0c0"}
-                strokeWidth={isMode ? 1.2 : 0.5}
+                stroke={stroke}
+                strokeWidth={strokeW}
+                strokeDasharray={dash}
               />
               <text
                 y={layout.padT - 10}
                 textAnchor="middle"
-                fontSize={8}
-                fontFamily="IBM Plex Mono, monospace"
-                fill={isMode ? "#3D5A80" : "#6e6a62"}
+                fontSize={isMode || isDecade ? 8 : 7}
+                fontWeight={isMode || isDecade ? 600 : 400}
+                fontFamily={FONT_MONO}
+                letterSpacing={isDecade ? "-0.02em" : undefined}
+                fill={isMode ? MODE_DECADE : INK_FAINT}
               >
                 {y}
               </text>
@@ -256,18 +315,21 @@ export function TimelineStatic({
           const searchHot =
             !search || search.matchedEdgeKeys.has(edgeKey(l.source, l.target));
           const statLink = linkStatStyle(stats, l.source, l.target, l.weight);
-          let opacity = !focus ? 0.22 : related ? 0.65 : 0.03;
-          if (search && !searchHot) opacity = Math.min(opacity, 0.05);
+          let opacity = !focus ? 0.22 : related ? 0.65 : DIM_GHOST * 0.35;
+          if (search && !searchHot) opacity = Math.min(opacity, DIM_GHOST * 0.4);
           if (search && searchHot) opacity = Math.max(opacity, 0.7);
           if (statLink) opacity = Math.max(opacity, statLink.thin ? 0.08 : 0.85);
           const baseW = l.strokeWidth ?? 0.5 + Math.min(2, l.weight * 0.15);
+          const pressure = Math.min(1, 0.55 + l.weight * 0.06);
+          const weaveId = `ts-weave-${l.source}-${l.target}-${i}`;
+          const useGradient = !statLink && l.fill !== l.targetFill && opacity > 0.15;
           return (
             <path
               key={i}
               d={l.path}
               fill="none"
-              stroke={statLink?.stroke ?? l.fill}
-              strokeOpacity={opacity}
+              stroke={statLink?.stroke ?? (useGradient ? `url(#${weaveId})` : l.fill)}
+              strokeOpacity={statLink?.strokeOpacity ?? opacity * pressure}
               strokeWidth={Math.max(0.25, baseW + (statLink?.strokeWidthBoost ?? 0) * 0.6)}
               strokeDasharray={statLink?.dash}
             />
@@ -297,11 +359,18 @@ export function TimelineStatic({
           const isFocus = focus === p.id;
           const searchHot = !search || search.matchedNodeIds.has(p.id);
           const opacity =
-            (related && searchHot ? 1 : search && !searchHot ? 0.12 : related ? 1 : 0.12) *
-            nodeOpacityMod(stats, p.id);
+            (related && searchHot
+              ? 1
+              : search && !searchHot
+                ? DIM_GHOST
+                : related
+                  ? 1
+                  : DIM_GHOST) * nodeOpacityMod(stats, p.id);
           const fill = nodeFillOverride(stats, p.id, p.fill);
           const drift =
             stats && hasStat(stats, "genre_drift") && stats.driftIds.has(p.id);
+          const scale = p.scale ?? 1;
+          const threadW = (isFocus ? 2.0 : 1.15) * scale;
 
           if (layout.flipped) {
             const peakY = layout.yScale(p.yearPeak);
@@ -325,9 +394,18 @@ export function TimelineStatic({
                   x1={p.y}
                   x2={p.y}
                   y1={y0}
+                  y2={y1}
+                  stroke={PAPER}
+                  strokeWidth={threadW + 1.2}
+                  strokeLinecap="round"
+                />
+                <line
+                  x1={p.y}
+                  x2={p.y}
+                  y1={y0}
                   y2={midY}
                   stroke={drift ? "#C45C26" : fill}
-                  strokeWidth={(isFocus ? 2.0 : 1.0) * (p.scale ?? 1)}
+                  strokeWidth={threadW}
                   strokeLinecap="round"
                 />
                 <line
@@ -336,17 +414,11 @@ export function TimelineStatic({
                   y1={midY}
                   y2={y1}
                   stroke={drift ? "#2F5D50" : fill}
-                  strokeWidth={(isFocus ? 2.0 : 1.0) * (p.scale ?? 1)}
+                  strokeWidth={threadW}
                   strokeLinecap="round"
                 />
-                <circle
-                  cx={p.y}
-                  cy={peakY}
-                  r={r}
-                  fill={fill}
-                  stroke="#f7f2e8"
-                  strokeWidth={0.5}
-                />
+                <circle cx={p.y} cy={peakY} r={r + 1.2} fill={PAPER} />
+                <circle cx={p.y} cy={peakY} r={r} fill={fill} stroke={PAPER} strokeWidth={0.5} />
                 {stats ? (
                   <PersonStatDecor stats={stats} id={p.id} cx={p.y} cy={peakY} baseR={r} />
                 ) : null}
@@ -361,7 +433,7 @@ export function TimelineStatic({
           const x0 = layout.xScale(p.yearMin);
           const x1 = layout.xScale(p.yearMax);
           const midX = (x0 + x1) / 2;
-          const r = (isFocus ? 3 : 1.8) * Math.sqrt(p.scale ?? 1);
+          const r = (isFocus ? 3 : 1.8) * Math.sqrt(scale);
           return (
             <g
               key={p.id}
@@ -376,11 +448,20 @@ export function TimelineStatic({
             >
               <line
                 x1={x0}
+                x2={x1}
+                y1={p.y}
+                y2={p.y}
+                stroke={PAPER}
+                strokeWidth={threadW + 1.2}
+                strokeLinecap="round"
+              />
+              <line
+                x1={x0}
                 x2={midX}
                 y1={p.y}
                 y2={p.y}
                 stroke={drift ? "#C45C26" : fill}
-                strokeWidth={(isFocus ? 2.0 : 1.0) * (p.scale ?? 1)}
+                strokeWidth={threadW}
                 strokeLinecap="round"
               />
               <line
@@ -389,17 +470,11 @@ export function TimelineStatic({
                 y1={p.y}
                 y2={p.y}
                 stroke={drift ? "#2F5D50" : fill}
-                strokeWidth={(isFocus ? 2.0 : 1.0) * (p.scale ?? 1)}
+                strokeWidth={threadW}
                 strokeLinecap="round"
               />
-              <circle
-                cx={peakX}
-                cy={p.y}
-                r={r}
-                fill={fill}
-                stroke="#f7f2e8"
-                strokeWidth={0.5}
-              />
+              <circle cx={peakX} cy={p.y} r={r + 1.2} fill={PAPER} />
+              <circle cx={peakX} cy={p.y} r={r} fill={fill} stroke={PAPER} strokeWidth={0.5} />
               {stats ? (
                 <PersonStatDecor stats={stats} id={p.id} cx={peakX} cy={p.y} baseR={r} />
               ) : null}
@@ -411,8 +486,8 @@ export function TimelineStatic({
                 dominantBaseline="middle"
                 fontSize={isFocus ? 9 : 7.5}
                 fontWeight={isFocus ? 600 : 400}
-                fontFamily="IBM Plex Sans, sans-serif"
-                fill={isFocus ? "#c45c26" : "#1a1814"}
+                fontFamily={FONT_SANS}
+                fill={isFocus ? ACCENT : INK}
               >
                 {p.label.length > 20 ? p.label.slice(0, 18) + "…" : p.label}
               </text>

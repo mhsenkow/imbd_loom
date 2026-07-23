@@ -66,6 +66,43 @@ function swatchColor(id: StatMarkId): string {
   }
 }
 
+function MarkIcon({ id, color }: { id: StatMarkId; color: string }) {
+  const s = 10;
+  switch (id) {
+    case "bridge_outliers":
+      return (
+        <svg width={s} height={s} viewBox="0 0 10 10" aria-hidden className="legend-mark-icon">
+          <polygon points="5,1 9,5 5,9 1,5" fill={color} />
+        </svg>
+      );
+    case "gap_spikes":
+      return (
+        <svg width={s} height={s} viewBox="0 0 10 10" aria-hidden className="legend-mark-icon">
+          <line x1="5" y1="1" x2="5" y2="9" stroke={color} strokeWidth="1.2" />
+          <line x1="1" y1="5" x2="9" y2="5" stroke={color} strokeWidth="1.2" />
+          <circle cx="5" cy="5" r="1.2" fill={color} />
+        </svg>
+      );
+    case "top5_degree":
+    case "top5_prominence":
+    case "insight_sync":
+      return (
+        <svg width={s} height={s} viewBox="0 0 10 10" aria-hidden className="legend-mark-icon">
+          <circle cx="5" cy="5" r="3.2" fill="none" stroke={color} strokeWidth="1.2" />
+        </svg>
+      );
+    case "median_size":
+    case "median_peak":
+      return (
+        <svg width={s} height={s} viewBox="0 0 10 10" aria-hidden className="legend-mark-icon">
+          <circle cx="5" cy="5" r="3.5" fill="none" stroke={color} strokeWidth="1" strokeDasharray="2 1.5" />
+        </svg>
+      );
+    default:
+      return <span className="swatch-dot" style={{ background: color }} />;
+  }
+}
+
 export function ChartLegend({ form, flipped = false, colorBy, statMarks = null }: Props) {
   const [open, setOpen] = useState(() => {
     if (typeof window === "undefined") return true;
@@ -177,7 +214,7 @@ export function ChartLegend({ form, flipped = false, colorBy, statMarks = null }
               <span className="legend-val legend-stats">
                 {shown.map((id) => (
                   <span key={id} className="legend-stat-line">
-                    <span className="swatch-dot" style={{ background: swatchColor(id) }} />
+                    <MarkIcon id={id} color={swatchColor(id)} />
                     {STAT_MARK_META[id].hint}
                   </span>
                 ))}

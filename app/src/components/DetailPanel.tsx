@@ -65,6 +65,7 @@ export function DetailPanel({
           className={`rail-btn ${node || edge || insights.length ? "has-focus" : ""}`}
           onClick={onToggle}
           aria-label="Open inspect"
+          aria-expanded={false}
           title="Inspect"
         >
           <span className="rail-icon">◎</span>

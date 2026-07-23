@@ -15,6 +15,7 @@ import { layoutChord } from "../viz/chord";
 import { layoutBundle } from "../viz/bundle";
 import { activeEdge, activeId, neighborIds, type SelectionState } from "../lib/selection";
 import { edgeKey, type SearchMatch } from "../lib/search";
+import { ACCENT, FONT_MONO, FONT_SANS, INK, INK_FAINT, INK_SOFT, PAPER } from "../lib/fonts";
 import { computeViewStatMarks, hasStat, linkStatStyle, nodeFillOverride, nodeOpacityMod, showMedianSize, type ViewStatMarks } from "../lib/statsMarks";
 import {
   DensestPairLabel,
@@ -143,15 +144,15 @@ export function HeroViz({
       <text
         x={0}
         y={14}
-        fontFamily="IBM Plex Sans, sans-serif"
+        fontFamily={FONT_SANS}
         fontSize={11}
         fontWeight={600}
         letterSpacing={1.5}
-        fill="#1a1814"
+        fill={INK}
       >
         {title.toUpperCase()}
       </text>
-      <text x={0} y={26} fontFamily="IBM Plex Mono, monospace" fontSize={6} fill="#6e6a62">
+      <text x={0} y={26} fontFamily={FONT_MONO} fontSize={6} fill={INK_FAINT}>
         {subtitle}
         {interactive ? " · links = shared titles · hover / click a link" : ""}
       </text>
@@ -159,6 +160,23 @@ export function HeroViz({
       <g transform={`translate(${cx}, ${cy})`}>
         {chord && (
           <>
+            <defs>
+              {chord.ribbons.map((r, i) =>
+                r.fill === r.targetFill ? null : (
+                  <linearGradient
+                    key={`weave-${i}`}
+                    id={`weave-${r.sourceId}-${r.targetId}-${i}`}
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stopColor={r.fill} />
+                    <stop offset="100%" stopColor={r.targetFill} />
+                  </linearGradient>
+                ),
+              )}
+            </defs>
             <g className="ribbons">
               {chord.ribbons.map((r, i) => {
                 const related =
@@ -171,19 +189,22 @@ export function HeroViz({
                   !search ||
                   search.matchedEdgeKeys.has(edgeKey(r.sourceId, r.targetId));
                 const statLink = linkStatStyle(stats, r.sourceId, r.targetId, r.value);
-                let fillOpacity = !focus ? (hot ? 0.9 : 0.55) : related ? 0.9 : 0.05;
+                let fillOpacity = !focus ? (hot ? 0.9 : 0.55) : related ? 0.9 : 0.08;
                 if (search && !searchHot) fillOpacity = Math.min(fillOpacity, 0.06);
                 if (search && searchHot) fillOpacity = Math.max(fillOpacity, 0.85);
                 if (statLink) fillOpacity = Math.max(fillOpacity, statLink.thin ? 0.08 : 0.88);
+                const weaveId = `weave-${r.sourceId}-${r.targetId}-${i}`;
+                const useGradient =
+                  !hot && !(search && searchHot) && !statLink && r.fill !== r.targetFill;
+                const fill =
+                  hot || (search && searchHot)
+                    ? ACCENT
+                    : statLink?.stroke ?? (useGradient ? `url(#${weaveId})` : r.fill);
                 return (
                   <path
                     key={i}
                     d={r.path}
-                    fill={
-                      hot || (search && searchHot)
-                        ? "#c45c26"
-                        : statLink?.stroke ?? r.fill
-                    }
+                    fill={fill}
                     fillOpacity={fillOpacity}
                     stroke={statLink?.dash ? statLink.stroke : "none"}
                     strokeWidth={statLink?.dash ? 0.6 : 0}
@@ -236,8 +257,8 @@ export function HeroViz({
                     <path
                       d={a.path}
                       fill={nodeFillOverride(stats, a.id, a.fill)}
-                      stroke={isFocus ? "#c45c26" : "#f7f2e8"}
-                      strokeWidth={isFocus ? 1.2 : 0.3}
+                      stroke={isFocus ? ACCENT : PAPER}
+                      strokeWidth={isFocus ? 1.4 : 0.45}
                     />
                     {stats ? (
                       <PersonStatDecor
@@ -258,8 +279,8 @@ export function HeroViz({
                         textAnchor={a.angle > Math.PI ? "end" : "start"}
                         fontSize={isFocus ? 5 : 4.2}
                         fontWeight={isFocus ? 600 : 400}
-                        fontFamily="IBM Plex Sans, sans-serif"
-                        fill={isFocus ? "#c45c26" : "#3a3630"}
+                        fontFamily={FONT_SANS}
+                        fill={isFocus ? ACCENT : INK_SOFT}
                         dominantBaseline="middle"
                       >
                         {a.label}
@@ -297,7 +318,7 @@ export function HeroViz({
                 if (search && searchHot) strokeOpacity = Math.max(strokeOpacity, 0.85);
                 if (statLink) strokeOpacity = Math.max(strokeOpacity, statLink.thin ? 0.08 : 0.9);
                 const baseW =
-                  (hot ? 0.9 : 0) + (l.strokeWidth ?? 0.4 + Math.min(2, l.weight * 0.15));
+                  (hot ? 0.7 : 0) + (l.strokeWidth ?? 0.28 + Math.min(1.6, l.weight * 0.12));
                 return (
                   <path
                     key={i}
@@ -305,12 +326,13 @@ export function HeroViz({
                     fill="none"
                     stroke={
                       hot || (search && searchHot)
-                        ? "#c45c26"
+                        ? ACCENT
                         : statLink?.stroke ?? l.fill
                     }
                     strokeOpacity={strokeOpacity}
-                    strokeWidth={Math.max(0.25, baseW + (statLink?.strokeWidthBoost ?? 0))}
-                    strokeDasharray={statLink?.dash}
+                    strokeWidth={Math.max(0.2, baseW + (statLink?.strokeWidthBoost ?? 0))}
+                    strokeDasharray={statLink?.dash ?? (l.weight <= 1 ? "2 2.5" : undefined)}
+                    strokeLinecap="round"
                     style={{ cursor: interactive ? "pointer" : undefined }}
                     onMouseEnter={() => {
                       onHoverEdge?.(l.edge);
@@ -359,10 +381,20 @@ export function HeroViz({
                     <circle
                       cx={leaf.x}
                       cy={leaf.y}
-                      r={r}
+                      r={r + 0.9}
+                      fill="none"
+                      stroke={isFocus ? ACCENT : leaf.fill}
+                      strokeWidth={0.45}
+                      strokeOpacity={0.55}
+                      strokeDasharray={isFocus ? undefined : "1.2 1.1"}
+                    />
+                    <circle
+                      cx={leaf.x}
+                      cy={leaf.y}
+                      r={r * 0.72}
                       fill={nodeFillOverride(stats, leaf.id, leaf.fill)}
-                      stroke={isFocus ? "#c45c26" : "#f7f2e8"}
-                      strokeWidth={isFocus ? 1 : 0.4}
+                      stroke={isFocus ? ACCENT : PAPER}
+                      strokeWidth={isFocus ? 1 : 0.35}
                     />
                     {stats ? (
                       <PersonStatDecor
@@ -382,8 +414,8 @@ export function HeroViz({
                         }`}
                         textAnchor={leaf.angle > Math.PI ? "end" : "start"}
                         fontSize={isFocus ? 5 : 4.2}
-                        fontFamily="IBM Plex Sans, sans-serif"
-                        fill={isFocus ? "#c45c26" : "#3a3630"}
+                        fontFamily={FONT_SANS}
+                        fill={isFocus ? ACCENT : INK_SOFT}
                         dominantBaseline="middle"
                       >
                         {leaf.label}

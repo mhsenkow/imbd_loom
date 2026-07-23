@@ -32,7 +32,7 @@ function StoryGrid({
           <article
             key={story.id}
             className="gallery-card"
-            style={{ animationDelay: `${Math.min(i, 10) * 40}ms` }}
+            style={{ animationDelay: `${Math.min(i, 10) * 55}ms` }}
           >
             <a
               className="gallery-card-link"
@@ -45,21 +45,20 @@ function StoryGrid({
               <GalleryThumb spec={full} />
               <div className="gallery-card-body">
                 <h2>{story.concept}</h2>
-                <p>{story.hook}</p>
+                <div className="gallery-hook">
+                  <p>{story.hook}</p>
+                </div>
                 <ul className="gallery-tags">
                   {story.tags.map((t) => (
                     <li key={t}>{t}</li>
                   ))}
                 </ul>
                 <p className="gallery-meta mono">
-                  {full.activeConstruct.replace(/_/g, " ")} · {full.heroForm}
+                  {full.heroForm}
                   {full.yearFrom > 1920 || full.yearTo < 2030
                     ? ` · ${full.yearFrom}–${full.yearTo}`
                     : ""}
                   {full.genderFilter !== "all" ? ` · ${full.genderFilter}` : ""}
-                  {full.minWeight > 1 ? ` · min wt ${full.minWeight}` : ""}
-                  {full.timelineFlip ? " · flipped" : ""}
-                  {full.palette !== "loom" ? ` · ${full.palette}` : ""}
                 </p>
               </div>
             </a>
@@ -116,11 +115,11 @@ export function HomeGallery({ onOpenStory, onOpenAtelier }: Props) {
   return (
     <div className="home-gallery">
       <header className="gallery-hero">
-        <p className="gallery-brand">IMDb Loom</p>
-        <h1 className="gallery-headline">Actor networks, cut by construct</h1>
+        <h1 className="gallery-brand">IMDb Loom</h1>
+        <p className="gallery-headline">Actor networks, cut by construct</p>
         <p className="gallery-lede">
           Four shelves of saved lenses — construct, chart form, and filters already
-          tuned. Pick a tab, open a tile, then re-author in the atelier.
+          tuned. Open a sheet, then re-author in the atelier.
         </p>
         <div className="gallery-actions">
           <button type="button" className="gallery-cta" onClick={onOpenAtelier}>
@@ -158,6 +157,12 @@ export function HomeGallery({ onOpenStory, onOpenAtelier }: Props) {
         onOpenStory={onOpenStory}
         base={base}
       />
+
+      <div className="gallery-cta-sticky">
+        <button type="button" className="gallery-cta" onClick={onOpenAtelier}>
+          Open atelier
+        </button>
+      </div>
 
       <footer className="gallery-foot mono">
         Non-commercial IMDb data · printable poster atelier · {GALLERY_COLLECTIONS.reduce(

@@ -1,6 +1,6 @@
 /** Interactive timeline hero — pan/zoom, career lanes, explained co-appearance arcs. */
 
-import { useEffect, useMemo, useRef } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import * as d3 from "d3";
 import type { ColorBy, Edge, Manifest, Node, SizeBy, SortBy, ThicknessBy } from "../lib/types";
 import type { StatMarkId } from "../lib/types";
@@ -10,6 +10,7 @@ import type { SelectionState } from "../lib/selection";
 import { filmLine, sharedLabel, uniqueShared } from "../lib/sharedTitles";
 import { edgeKey, type SearchMatch } from "../lib/search";
 import { computeViewStatMarks, hasStat, isGapSpike, linkStatStyle, nodeFillOverride, nodeOpacityMod, type ViewStatMarks } from "../lib/statsMarks";
+import { ACCENT, DIM_GHOST, FOCUS_UNDERPAINT, FONT_MONO, FONT_SANS, INK_FAINT, MODE_DECADE, PAPER, RULE, TRIM } from "../lib/fonts";
 import { ChartLegend } from "./ChartLegend";
 import {
   DensestPairLabel,
@@ -72,6 +73,9 @@ export function TimelineHero({
 }: Props) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
+  const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
+  const [isZooming, setIsZooming] = useState(false);
+  const zoomIdleRef = useRef(0);
   const focus = activeId(selection);
   const edgeFocus = activeEdge(selection);
   const neighbors = useMemo(() => neighborIds(focus, edges), [focus, edges]);
@@ -147,26 +151,96 @@ export function TimelineHero({
       });
   }, [visibleLinks, focus, search, layout.flipped]);
 
+  const fitToView = useCallback(() => {
+    const svgEl = svgRef.current;
+    const wrap = wrapRef.current;
+    const zoom = zoomRef.current;
+    if (!svgEl || !wrap || !zoom) return;
+    const svg = d3.select(svgEl);
+    const w = Math.max(1, wrap.clientWidth - 16);
+    const h = Math.max(1, wrap.clientHeight - 16);
+    const scale = Math.min(1.15, w / layout.width, h / layout.height);
+    const tx = (wrap.clientWidth - layout.width * scale) / 2;
+    const ty = Math.max(8, (wrap.clientHeight - layout.height * scale) / 2);
+    svg
+      .transition()
+      .duration(220)
+      .call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(scale));
+  }, [layout.width, layout.height]);
+
+  const zoomBy = useCallback((factor: number) => {
+    const svgEl = svgRef.current;
+    const zoom = zoomRef.current;
+    if (!svgEl || !zoom) return;
+    d3.select(svgEl).transition().duration(160).call(zoom.scaleBy, factor);
+  }, []);
+
   useEffect(() => {
     if (printMode || !svgRef.current || !wrapRef.current) return;
-    const svg = d3.select(svgRef.current);
+    const svgEl = svgRef.current;
+    const wrap = wrapRef.current;
+    const svg = d3.select(svgEl);
     const g = svg.select<SVGGElement>("g.zoom-root");
     const zoom = d3
       .zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.4, 6])
+      .scaleExtent([0.25, 8])
       .filter((event) => {
+        // Allow wheel, mouse drag, and multi-touch pinch/pan
         if (event.type === "wheel") return true;
+        if ("touches" in event) return true;
         return !(event as MouseEvent).button;
+      })
+      .touchable(true)
+      .on("start", () => {
+        window.clearTimeout(zoomIdleRef.current);
+        setIsZooming(true);
       })
       .on("zoom", (event) => {
         g.attr("transform", event.transform.toString());
+      })
+      .on("end", () => {
+        window.clearTimeout(zoomIdleRef.current);
+        zoomIdleRef.current = window.setTimeout(() => setIsZooming(false), 80);
       });
+    zoomRef.current = zoom;
     svg.call(zoom);
-    const wrap = wrapRef.current;
-    const fitScale = Math.min(1, (wrap.clientWidth - 16) / layout.width);
-    svg.call(zoom.transform, d3.zoomIdentity.translate(8, 8).scale(fitScale));
+
+    let lastW = 0;
+    let lastH = 0;
+    const applyFit = (force = false) => {
+      const cw = wrap.clientWidth;
+      const ch = wrap.clientHeight;
+      if (
+        !force &&
+        Math.abs(cw - lastW) < 48 &&
+        Math.abs(ch - lastH) < 48
+      ) {
+        return;
+      }
+      lastW = cw;
+      lastH = ch;
+      const w = Math.max(1, cw - 16);
+      const h = Math.max(1, ch - 16);
+      const scale = Math.min(1.15, w / layout.width, h / layout.height);
+      const tx = (cw - layout.width * scale) / 2;
+      const ty = Math.max(8, (ch - layout.height * scale) / 2);
+      svg.call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(scale));
+    };
+    applyFit(true);
+
+    let roTimer = 0;
+    const ro = new ResizeObserver(() => {
+      window.clearTimeout(roTimer);
+      roTimer = window.setTimeout(() => applyFit(false), 120);
+    });
+    ro.observe(wrap);
+
     return () => {
+      window.clearTimeout(roTimer);
+      window.clearTimeout(zoomIdleRef.current);
+      ro.disconnect();
       svg.on(".zoom", null);
+      zoomRef.current = null;
     };
   }, [layout.width, layout.height, printMode, flipped]);
 
@@ -180,15 +254,15 @@ export function TimelineHero({
 
   const personOpacity = (id: string) => {
     let op = 1;
-    if (focus) op = neighbors.has(id) ? 1 : 0.15;
-    else if (search) op = search.matchedNodeIds.has(id) ? 1 : 0.12;
+    if (focus) op = neighbors.has(id) ? 1 : DIM_GHOST + 0.03;
+    else if (search) op = search.matchedNodeIds.has(id) ? 1 : DIM_GHOST;
     return Math.min(op, nodeOpacityMod(stats, id));
   };
 
   const linkOpacity = (source: string, target: string, isEdge: boolean) => {
     if (isEdge) return 0.95;
     if (focus) {
-      return source === focus || target === focus ? 0.75 : 0.03;
+      return source === focus || target === focus ? 0.75 : DIM_GHOST * 0.4;
     }
     if (search) {
       return search.matchedEdgeKeys.has(edgeKey(source, target)) ? 0.85 : 0.04;
@@ -211,32 +285,53 @@ export function TimelineHero({
       })()
     : null;
 
-  const yearTicks = layout.ticks.map((y) => {
+  const compactLabels = layout.people.length > 40 || layout.width > 1400;
+  const tickYears = compactLabels
+    ? layout.ticks.filter((y) => y % 10 === 0 || layout.ticks.length <= 10)
+    : layout.ticks;
+
+  const yearTicks = tickYears.map((y) => {
+    const isDecade = y % 10 === 0;
     const isModeDecade =
       stats &&
       hasStat(stats, "mode_decade") &&
       stats.modeDecade != null &&
       y >= stats.modeDecade &&
       y < stats.modeDecade + 10;
+    const stroke = isModeDecade ? MODE_DECADE : isDecade ? "#c8bfb0" : RULE;
+    const strokeW = isModeDecade ? 1.6 : isDecade ? 0.9 : 0.45;
+    const dash = !isDecade && !isModeDecade ? "1.5 3" : undefined;
     if (layout.flipped) {
       const yy = layout.yScale(y);
       return (
         <g key={y} transform={`translate(0,${yy})`}>
+          {isModeDecade ? (
+            <rect
+              x={layout.padL - 8}
+              y={-6}
+              width={layout.width - layout.padL - layout.padR + 8}
+              height={12}
+              fill={MODE_DECADE}
+              fillOpacity={0.08}
+            />
+          ) : null}
           <line
             x1={layout.padL - 8}
             x2={layout.width - layout.padR}
-            stroke={isModeDecade ? "#3D5A80" : "#d9d0c0"}
-            strokeWidth={isModeDecade ? 1.6 : 0.6}
-            strokeOpacity={isModeDecade ? 0.7 : 1}
+            stroke={stroke}
+            strokeWidth={strokeW}
+            strokeOpacity={isModeDecade ? 0.75 : 1}
+            strokeDasharray={dash}
           />
           <text
             x={layout.padL - 12}
             textAnchor="end"
             dominantBaseline="middle"
-            fontSize={isModeDecade ? 11 : 10}
-            fontWeight={isModeDecade ? 600 : 400}
-            fontFamily="IBM Plex Mono, monospace"
-            fill={isModeDecade ? "#3D5A80" : "#6e6a62"}
+            fontSize={isModeDecade || isDecade ? 10 : 9}
+            fontWeight={isModeDecade || isDecade ? 600 : 400}
+            fontFamily={FONT_MONO}
+            letterSpacing={isDecade ? "-0.02em" : undefined}
+            fill={isModeDecade ? MODE_DECADE : INK_FAINT}
           >
             {y}
           </text>
@@ -245,20 +340,32 @@ export function TimelineHero({
     }
     return (
       <g key={y} transform={`translate(${layout.xScale(y)},0)`}>
+        {isModeDecade ? (
+          <rect
+            x={-5}
+            y={layout.padT - 8}
+            width={10}
+            height={layout.height - layout.padT}
+            fill={isModeDecade ? MODE_DECADE : "#c8bfb0"}
+            fillOpacity={0.08}
+          />
+        ) : null}
         <line
           y1={layout.padT - 8}
           y2={layout.height - 8}
-          stroke={isModeDecade ? "#3D5A80" : "#d9d0c0"}
-          strokeWidth={isModeDecade ? 1.6 : 0.6}
-          strokeOpacity={isModeDecade ? 0.7 : 1}
+          stroke={stroke}
+          strokeWidth={strokeW}
+          strokeOpacity={isModeDecade ? 0.75 : 1}
+          strokeDasharray={dash}
         />
         <text
           y={layout.padT - 14}
           textAnchor="middle"
-          fontSize={isModeDecade ? 11 : 10}
-          fontWeight={isModeDecade ? 600 : 400}
-          fontFamily="IBM Plex Mono, monospace"
-          fill={isModeDecade ? "#3D5A80" : "#6e6a62"}
+          fontSize={isModeDecade || isDecade ? 10 : 9}
+          fontWeight={isModeDecade || isDecade ? 600 : 400}
+          fontFamily={FONT_MONO}
+          letterSpacing={isDecade ? "-0.02em" : undefined}
+          fill={isModeDecade ? MODE_DECADE : INK_FAINT}
         >
           {y}
         </text>
@@ -267,7 +374,7 @@ export function TimelineHero({
   });
 
   const personFill = (id: string, base: string, hot?: boolean) => {
-    if (hot) return "#c45c26";
+    if (hot) return ACCENT;
     return nodeFillOverride(stats, id, base);
   };
 
@@ -282,6 +389,23 @@ export function TimelineHero({
       aria-label={`${title} timeline`}
     >
       <g className="zoom-root">
+        <defs>
+          {visibleLinks.map((l, i) =>
+            l.fill === l.targetFill ? null : (
+              <linearGradient
+                key={`tl-weave-${i}`}
+                id={`tl-weave-${l.source}-${l.target}-${i}`}
+                x1="0%"
+                y1="0%"
+                x2="0%"
+                y2="100%"
+              >
+                <stop offset="0%" stopColor={l.fill} />
+                <stop offset="100%" stopColor={l.targetFill} />
+              </linearGradient>
+            ),
+          )}
+        </defs>
         {yearTicks}
 
         <TimelineStatGuides layout={layout} stats={stats} />
@@ -297,14 +421,23 @@ export function TimelineHero({
             const films = sharedLabel(l.shared);
             const statLink = linkStatStyle(stats, l.source, l.target, l.weight);
             const baseW = (isEdge ? 0.8 : 0) + (l.strokeWidth ?? 0.8 + Math.min(3, l.weight * 0.25));
+            // Weight-responsive ink pressure
+            const pressure = Math.min(1, 0.55 + l.weight * 0.06);
             const w = Math.max(0.35, baseW + (statLink?.strokeWidthBoost ?? 0));
+            const weaveId = `tl-weave-${l.source}-${l.target}-${i}`;
+            const useGradient =
+              !isEdge && !statLink && l.fill !== l.targetFill && opacity > 0.2;
+            const stroke = isEdge
+              ? ACCENT
+              : statLink?.stroke ?? (useGradient ? `url(#${weaveId})` : l.fill);
             return (
               <path
                 key={`${l.source}-${l.target}-${l.year}-${i}`}
+                className="link-enter"
                 d={l.path}
                 fill="none"
-                stroke={isEdge ? "#c45c26" : statLink?.stroke ?? l.fill}
-                strokeOpacity={statLink?.strokeOpacity ?? opacity}
+                stroke={stroke}
+                strokeOpacity={statLink?.strokeOpacity ?? opacity * pressure}
                 strokeWidth={w}
                 strokeDasharray={statLink?.dash}
                 style={{
@@ -337,15 +470,26 @@ export function TimelineHero({
           {labeledLinks.map((lab) => (
             <g key={lab.key} transform={`translate(${lab.x}, ${lab.y})`}>
               <rect
-                x={-4}
-                y={-8}
-                width={Math.min(220, lab.text.length * 6.2 + 8)}
-                height={16}
-                rx={2}
-                fill="#f7f2e8"
-                fillOpacity={0.92}
+                x={-5}
+                y={-9}
+                width={Math.min(220, lab.text.length * 6.2 + 12)}
+                height={17}
+                rx={1.5}
+                fill={PAPER}
+                fillOpacity={0.96}
+                stroke={TRIM}
+                strokeWidth={0.55}
               />
-              <text x={0} y={3} fontSize={9} fontFamily="IBM Plex Sans, sans-serif" fill="#5c3d2e">
+              <line
+                x1={-5}
+                y1={-9}
+                x2={-5}
+                y2={8}
+                stroke={ACCENT}
+                strokeWidth={1.3}
+                strokeOpacity={0.55}
+              />
+              <text x={1} y={3} fontSize={9} fontFamily={FONT_MONO} fill="#5c3d2e">
                 {lab.text.length > 36 ? lab.text.slice(0, 34) + "…" : lab.text}
               </text>
             </g>
@@ -414,10 +558,13 @@ export function TimelineHero({
               const y1 = layout.yScale(p.yearMax);
               const peakY = layout.yScale(p.yearPeak);
               const midY = (y0 + y1) / 2;
-              const r = (isFocus ? 4.5 : 2.8) * Math.sqrt(p.scale ?? 1);
+              const scale = p.scale ?? 1;
+              const threadW = (isFocus || hot ? 2.2 : 1.2) * scale;
+              const r = (isFocus ? 4.2 : 2.6) * Math.sqrt(scale);
               return (
                 <g
                   key={p.id}
+                  className="person-enter"
                   opacity={opacity}
                   style={{ cursor: "pointer" }}
                   onMouseEnter={() => {
@@ -431,15 +578,26 @@ export function TimelineHero({
                     onPin(p.id);
                   }}
                 >
+                  {/* Ruled thread underlayer */}
+                  <line
+                    x1={p.y}
+                    x2={p.y}
+                    y1={y0}
+                    y2={y1}
+                    stroke={PAPER}
+                    strokeWidth={threadW + 1.4}
+                    strokeLinecap="round"
+                    strokeOpacity={0.9}
+                  />
                   <line
                     x1={p.y}
                     x2={p.y}
                     y1={y0}
                     y2={midY}
                     stroke={drift ? "#C45C26" : fill}
-                    strokeWidth={(isFocus || hot ? 2.4 : 1.35) * (p.scale ?? 1)}
+                    strokeWidth={threadW}
                     strokeLinecap="round"
-                    strokeOpacity={0.85}
+                    strokeOpacity={0.88}
                   />
                   <line
                     x1={p.y}
@@ -447,17 +605,42 @@ export function TimelineHero({
                     y1={midY}
                     y2={y1}
                     stroke={drift ? "#2F5D50" : fill}
-                    strokeWidth={(isFocus || hot ? 2.4 : 1.35) * (p.scale ?? 1)}
+                    strokeWidth={threadW}
                     strokeLinecap="round"
-                    strokeOpacity={0.85}
+                    strokeOpacity={0.88}
+                  />
+                  <circle
+                    cx={p.y}
+                    cy={peakY}
+                    r={Math.max(r * 2.8, 14)}
+                    fill="transparent"
+                    stroke="none"
+                  />
+                  {/* Peak pin: paper halo + ink tick */}
+                  <circle
+                    cx={p.y}
+                    cy={peakY}
+                    r={r + 1.6}
+                    fill={PAPER}
+                    stroke="none"
+                    opacity={0.95}
                   />
                   <circle
                     cx={p.y}
                     cy={peakY}
                     r={r}
                     fill={fill}
-                    stroke="#f7f2e8"
-                    strokeWidth={isFocus ? 1.2 : 0.6}
+                    stroke={PAPER}
+                    strokeWidth={isFocus ? 1.1 : 0.5}
+                  />
+                  <line
+                    x1={p.y}
+                    x2={p.y}
+                    y1={peakY - r - 2.5}
+                    y2={peakY - r - 0.5}
+                    stroke={fill}
+                    strokeWidth={1.1}
+                    strokeLinecap="round"
                   />
                   {stats ? (
                     <PersonStatDecor stats={stats} id={p.id} cx={p.y} cy={peakY} baseR={r} />
@@ -471,7 +654,7 @@ export function TimelineHero({
                       y={layout.padT - 28}
                       textAnchor="middle"
                       fontSize={9}
-                      fontFamily="IBM Plex Mono, monospace"
+                      fontFamily={FONT_MONO}
                       fill="#C4A35A"
                       fontWeight={600}
                     >
@@ -485,9 +668,10 @@ export function TimelineHero({
                     transform={`rotate(-60 ${p.y} ${layout.padT - 12})`}
                     fontSize={isFocus ? 10 : 8.5}
                     fontWeight={isFocus ? 600 : 400}
-                    fontFamily="IBM Plex Sans, sans-serif"
+                    fontFamily={FONT_SANS}
                     fill="#1a1814"
                   >
+                    <title>{p.label}</title>
                     {p.label.length > 18 ? p.label.slice(0, 16) + "…" : p.label}
                   </text>
                 </g>
@@ -498,10 +682,13 @@ export function TimelineHero({
             const x1 = layout.xScale(p.yearMax);
             const peakX = layout.xScale(p.yearPeak);
             const midX = (x0 + x1) / 2;
-            const r = (isFocus ? 4.5 : 2.8) * Math.sqrt(p.scale ?? 1);
+            const scale = p.scale ?? 1;
+            const threadW = (isFocus || hot ? 2.2 : 1.2) * scale;
+            const r = (isFocus ? 4.2 : 2.6) * Math.sqrt(scale);
             return (
               <g
                 key={p.id}
+                className="person-enter"
                 opacity={opacity}
                 style={{ cursor: "pointer" }}
                 onMouseEnter={() => {
@@ -517,13 +704,23 @@ export function TimelineHero({
               >
                 <line
                   x1={x0}
+                  x2={x1}
+                  y1={p.y}
+                  y2={p.y}
+                  stroke={PAPER}
+                  strokeWidth={threadW + 1.4}
+                  strokeLinecap="round"
+                  strokeOpacity={0.9}
+                />
+                <line
+                  x1={x0}
                   x2={midX}
                   y1={p.y}
                   y2={p.y}
                   stroke={drift ? "#C45C26" : fill}
-                  strokeWidth={(isFocus || hot ? 2.4 : 1.35) * (p.scale ?? 1)}
+                  strokeWidth={threadW}
                   strokeLinecap="round"
-                  strokeOpacity={0.85}
+                  strokeOpacity={0.88}
                 />
                 <line
                   x1={midX}
@@ -531,17 +728,41 @@ export function TimelineHero({
                   y1={p.y}
                   y2={p.y}
                   stroke={drift ? "#2F5D50" : fill}
-                  strokeWidth={(isFocus || hot ? 2.4 : 1.35) * (p.scale ?? 1)}
+                  strokeWidth={threadW}
                   strokeLinecap="round"
-                  strokeOpacity={0.85}
+                  strokeOpacity={0.88}
+                />
+                <circle
+                  cx={peakX}
+                  cy={p.y}
+                  r={Math.max(r * 2.8, 14)}
+                  fill="transparent"
+                  stroke="none"
+                />
+                <circle
+                  cx={peakX}
+                  cy={p.y}
+                  r={r + 1.6}
+                  fill={PAPER}
+                  stroke="none"
+                  opacity={0.95}
                 />
                 <circle
                   cx={peakX}
                   cy={p.y}
                   r={r}
                   fill={fill}
-                  stroke="#f7f2e8"
-                  strokeWidth={isFocus ? 1.2 : 0.6}
+                  stroke={PAPER}
+                  strokeWidth={isFocus ? 1.1 : 0.5}
+                />
+                <line
+                  x1={peakX}
+                  x2={peakX}
+                  y1={p.y - r - 2.5}
+                  y2={p.y - r - 0.5}
+                  stroke={fill}
+                  strokeWidth={1.1}
+                  strokeLinecap="round"
                 />
                 {stats ? (
                   <PersonStatDecor stats={stats} id={p.id} cx={peakX} cy={p.y} baseR={r} />
@@ -553,7 +774,7 @@ export function TimelineHero({
                     y={p.y}
                     dominantBaseline="middle"
                     fontSize={9}
-                    fontFamily="IBM Plex Mono, monospace"
+                    fontFamily={FONT_MONO}
                     fill="#C4A35A"
                     fontWeight={600}
                   >
@@ -567,9 +788,10 @@ export function TimelineHero({
                   dominantBaseline="middle"
                   fontSize={isFocus ? 11 : 9.5}
                   fontWeight={isFocus ? 600 : 400}
-                  fontFamily="IBM Plex Sans, sans-serif"
+                  fontFamily={FONT_SANS}
                   fill="#1a1814"
                 >
+                  <title>{p.label}</title>
                   {p.label.length > 22 ? p.label.slice(0, 20) + "…" : p.label}
                 </text>
               </g>
@@ -593,12 +815,12 @@ export function TimelineHero({
       : "";
 
   return (
-    <div className="timeline-shell">
+    <div className={`timeline-shell paper-grain${isZooming ? " is-zooming" : ""}`}>
       <div className="timeline-chrome">
         <div>
           <div className="timeline-title">{title}</div>
           <div className="timeline-sub">
-            {subtitle} · drag to pan · scroll to zoom ·{" "}
+            {subtitle} · drag / pinch to pan &amp; zoom ·{" "}
             <strong>links = shared titles</strong>
             {flipped ? " · flipped" : ""}
           </div>
@@ -643,6 +865,17 @@ export function TimelineHero({
         }}
       >
         {svgInner}
+        <div className="timeline-zoom-controls" role="group" aria-label="Zoom controls">
+          <button type="button" aria-label="Zoom in" title="Zoom in" onClick={() => zoomBy(1.35)}>
+            +
+          </button>
+          <button type="button" aria-label="Zoom out" title="Zoom out" onClick={() => zoomBy(1 / 1.35)}>
+            −
+          </button>
+          <button type="button" aria-label="Fit to view" title="Fit" onClick={fitToView}>
+            ⌂
+          </button>
+        </div>
       </div>
     </div>
   );

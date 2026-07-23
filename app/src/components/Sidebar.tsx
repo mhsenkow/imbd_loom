@@ -122,6 +122,7 @@ export function Sidebar({
           className="rail-btn"
           onClick={onToggle}
           aria-label="Open controls"
+          aria-expanded={false}
           title="Controls"
         >
           <span className="rail-icon">☰</span>
@@ -132,7 +133,7 @@ export function Sidebar({
   }
 
   return (
-    <aside className="sidebar panel-open">
+    <aside className="sidebar panel-open" aria-label="Controls">
       <div className="panel-top">
         <div className="brand">
           <h1>IMDb Loom</h1>
@@ -143,6 +144,7 @@ export function Sidebar({
           className="panel-close"
           onClick={onToggle}
           aria-label="Close controls"
+          aria-expanded={true}
         >
           ✕
         </button>

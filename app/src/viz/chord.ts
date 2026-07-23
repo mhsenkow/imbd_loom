@@ -21,6 +21,8 @@ export interface ChordLayout {
     targetLabel: string;
     value: number;
     fill: string;
+    /** Target arc fill — used for weave gradients */
+    targetFill: string;
     edge?: Edge;
     sharedLabel: string;
   }>;
@@ -112,6 +114,7 @@ export function layoutChord(
       targetLabel: tgt.label,
       value: c.source.value,
       fill: nodeColor(src, opts.colorBy, extents, genreColor, palette),
+      targetFill: nodeColor(tgt, opts.colorBy, extents, genreColor, palette),
       edge,
       sharedLabel: sharedLabel(edge?.shared),
     };
