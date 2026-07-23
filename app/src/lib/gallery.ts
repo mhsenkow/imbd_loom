@@ -1027,10 +1027,13 @@ const ATELIER_HINTS = [
 ] as const;
 
 /** Decide landing surface from the current query string. */
-export function viewFromSearchParams(params: URLSearchParams): "home" | "atelier" {
+export function viewFromSearchParams(
+  params: URLSearchParams,
+): "home" | "atelier" | "methodology" {
   if (params.has("print")) return "atelier";
   const view = params.get("view");
   if (view === "home" || view === "gallery") return "home";
+  if (view === "methodology") return "methodology";
   if (view === "atelier") return "atelier";
   if (ATELIER_HINTS.some((k) => params.has(k))) return "atelier";
   return "home";

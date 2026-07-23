@@ -47,11 +47,11 @@
     "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
   },
   "key_variable": "max_reunion_gap",
-  "method_note": "Population: actors with \u22658 credits spanning \u226520 years (Adult excluded, numVotes \u226550). Edges kept only when first/last co-appearance gap \u226520 years (reunions).",
+  "method_note": "Population: actors with ≥8 credits spanning ≥20 years (Adult excluded, numVotes ≥50). Edges kept only when first/last co-appearance gap ≥20 years (reunions).",
   "min_reunion_gap": 20,
   "node_count": 160,
   "stage_row_count": 10,
-  "subtitle": "pairs who reunited after \u226520 years apart",
+  "subtitle": "pairs who reunited after ≥20 years apart",
   "summary": {
     "degree_max": 2159,
     "degree_median": 322,
@@ -71,5 +71,6 @@
   "title": "The Reunion Map",
   "tmdb_gender_rows": 0,
   "top_n": 160,
-  "stages_source": "default_from_nodes"
+  "stages_source": "default_from_nodes",
+  "avg_path_sample_n": 40
 }

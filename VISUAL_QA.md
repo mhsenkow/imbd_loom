@@ -38,7 +38,16 @@ Use at desktop (≥1100px), tablet (~768), phone (360–414), and landscape phon
 - [ ] Focus rings visible on keyboard Tab
 - [ ] Inputs ≥16px (no iOS focus zoom)
 
+## Trust the data (`?view=methodology`)
+- [ ] Header brand + TOC + construct picker readable on desktop and phone
+- [ ] Source cards link out with visible underline; light/dark token parity
+- [ ] Quality tiles + funnel + overview table render from `quality.json`
+- [ ] Spot-check widget opens IMDb name/title links; integrity badge updates
+- [ ] Deep link `?view=methodology&c=voice_cartoons#metric-edge` scrolls to math
+- [ ] Gallery + sidebar + Inspect “how edges are defined” reach the page
+
 ## Data integrity
 - [ ] Same counts, filters, and stat mark IDs as before
 - [ ] Pin / inspect / URL share still work
 - [ ] Print/`?print` poster still renders METHOD + crop marks
+- [ ] `quality.json` / `sources.json` present under `app/public/data` after sync

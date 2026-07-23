@@ -46,7 +46,7 @@
     "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
   },
   "key_variable": "hyphenate_kind",
-  "method_note": "Population: people whose primaryProfession includes actor/actress and director or writer (Adult excluded, numVotes \u226550, \u22655 acting credits). Edges = co-appearance plus director\u2192actor links among hyphenates when title_crew is available.",
+  "method_note": "Population: people whose primaryProfession includes actor/actress and director or writer (Adult excluded, numVotes ≥50, ≥5 acting credits). Edges = co-appearance plus director→actor links among hyphenates when title_crew is available.",
   "min_shared": 2,
   "node_count": 160,
   "stage_row_count": 11,
@@ -70,5 +70,6 @@
   "title": "The Hyphenates",
   "tmdb_gender_rows": 0,
   "top_n": 160,
-  "stages_source": "default_from_nodes"
+  "stages_source": "default_from_nodes",
+  "avg_path_sample_n": 40
 }

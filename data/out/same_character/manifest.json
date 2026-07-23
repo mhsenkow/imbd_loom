@@ -45,11 +45,11 @@
     "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
   },
   "key_variable": "top_shared_character",
-  "method_note": "Population: actors who share a normalized primary character name played by 3\u201380 distinct people on titles with \u2265500 votes (Adult excluded). Edges link people who share such characters.",
+  "method_note": "Population: actors who share a normalized primary character name played by 3–80 distinct people on titles with ≥500 votes (Adult excluded). Edges link people who share such characters.",
   "min_actors_per_character": 3,
   "node_count": 160,
   "stage_row_count": 5,
-  "subtitle": "Batmans, Bonds, Draculas \u2014 roles with 3+ faces",
+  "subtitle": "Batmans, Bonds, Draculas — roles with 3+ faces",
   "summary": {
     "degree_max": 33,
     "degree_median": 9,
@@ -63,5 +63,6 @@
   "title": "The Same Character Club",
   "tmdb_gender_rows": 0,
   "top_n": 160,
-  "stages_source": "default_from_nodes"
+  "stages_source": "default_from_nodes",
+  "avg_path_sample_n": 40
 }

@@ -132,14 +132,19 @@ def clustering_coefficient(nodes: list[dict], edges: list[dict]) -> float:
     return round(sum(coeffs) / len(coeffs), 4) if coeffs else 0.0
 
 
-def average_path_length(nodes: list[dict], edges: list[dict], *, sample: int = 40) -> float | None:
+def average_path_length(
+    nodes: list[dict], edges: list[dict], *, sample: int = 40
+) -> tuple[float | None, int]:
+    """Return (mean path length, sample source count). Exact when |V| ≤ sample."""
     g = _adj(nodes, edges)
     ids = [i for i, nbrs in g.items() if nbrs]
     if len(ids) < 2:
-        return None
-    # Sample sources for speed
-    step = max(1, len(ids) // sample)
-    sources = ids[::step][:sample]
+        return None, 0
+    if len(ids) <= sample:
+        sources = ids
+    else:
+        step = max(1, len(ids) // sample)
+        sources = ids[::step][:sample]
     total = 0
     count = 0
     for s in sources:
@@ -155,7 +160,9 @@ def average_path_length(nodes: list[dict], edges: list[dict], *, sample: int = 4
             if d > 0:
                 total += d
                 count += 1
-    return round(total / count, 3) if count else None
+    if not count:
+        return None, len(sources)
+    return round(total / count, 3), len(sources)
 
 
 def shortest_path(nodes: list[dict], edges: list[dict], source: str, target: str) -> list[str] | None:
@@ -238,9 +245,11 @@ def attach_analytics(nodes: list[dict], edges: list[dict]) -> dict[str, Any]:
             decade = f"{(int(yp) // 10) * 10}s"
             era[decade] += 1
 
+    avg_path, avg_path_n = average_path_length(nodes, edges)
     return {
         "clustering_coefficient": clustering_coefficient(nodes, edges),
-        "avg_path_length": average_path_length(nodes, edges),
+        "avg_path_length": avg_path,
+        "avg_path_sample_n": avg_path_n,
         "community_count": len(set(communities.values())) if communities else 0,
         "featured_path": featured,
         "summary": {

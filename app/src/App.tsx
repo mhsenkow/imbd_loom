@@ -10,7 +10,9 @@ import { ThemeProvider, useTheme } from "./lib/theme/ThemeContext";
 import type { PaletteName } from "./lib/theme/tokens";
 import { SurfaceCard } from "./components/ui/SurfaceCard";
 import type { ReactNode } from "react";
-import { loadConstruct, loadIndex, loadPeopleIndex } from "./lib/data";
+import { loadConstruct, loadIndex, loadPeopleIndex, loadQuality } from "./lib/data";
+import type { Quality } from "./lib/types";
+import { MethodologyPage } from "./components/MethodologyPage";
 import {
   dropIsolates,
   filterEdges,
@@ -90,21 +92,33 @@ function readParams(): URLSearchParams {
 
 function writeUrl(
   spec: PosterSpec,
-  view: "home" | "atelier",
+  view: "home" | "atelier" | "methodology" | "styleguide",
   mode: "push" | "replace" = "push",
+  methodologyConstruct?: string,
 ) {
   const base = import.meta.env.BASE_URL;
   const go =
     mode === "replace"
       ? window.history.replaceState.bind(window.history)
       : window.history.pushState.bind(window.history);
+  const root = base.endsWith("/") ? base : `${base}/`;
   if (view === "home") {
     go({ view: "home" }, "", homeHref(base));
     return;
   }
+  if (view === "methodology") {
+    const qs = new URLSearchParams();
+    qs.set("view", "methodology");
+    if (methodologyConstruct) qs.set("c", methodologyConstruct);
+    go({ view: "methodology" }, "", `${root}?${qs.toString()}`);
+    return;
+  }
+  if (view === "styleguide") {
+    go({ view: "styleguide" }, "", `${root}?view=styleguide`);
+    return;
+  }
   const qs = specToSearchParams(spec);
   qs.set("view", "atelier");
-  const root = base.endsWith("/") ? base : `${base}/`;
   go({ view: "atelier" }, "", `${root}?${qs.toString()}`);
 }
 
@@ -116,11 +130,17 @@ export default function App() {
   const overlayPanels = useMediaQuery("(max-width: 900px)");
   const params = readParams();
 
-  const [view, setView] = useState<"home" | "atelier" | "styleguide">(() => {
+  const [view, setView] = useState<"home" | "atelier" | "styleguide" | "methodology">(() => {
     const v = params.get("view");
     if (v === "styleguide") return "styleguide";
+    if (v === "methodology") return "methodology";
     return viewFromSearchParams(params);
   });
+  const [methodologyConstruct, setMethodologyConstruct] = useState(
+    () => params.get("c") || DEFAULT_SPEC.activeConstruct,
+  );
+  const [qualityRollup, setQualityRollup] = useState<Quality[] | null>(null);
+  const [qualityUnavailable, setQualityUnavailable] = useState(false);
   const [spec, setSpec] = useState<PosterSpec>(() =>
     specFromSearchParams(params, DEFAULT_SPEC),
   );
@@ -225,7 +245,14 @@ export default function App() {
         setInspectOpen(false);
         return;
       }
-      setView(viewFromSearchParams(p));
+      setView(
+        p.get("view") === "styleguide"
+          ? "styleguide"
+          : p.get("view") === "methodology"
+            ? "methodology"
+            : viewFromSearchParams(p),
+      );
+      if (p.get("c")) setMethodologyConstruct(p.get("c")!);
       setSpec(specFromSearchParams(p, DEFAULT_SPEC));
       setSelection(EMPTY_SELECTION);
     };
@@ -265,8 +292,11 @@ export default function App() {
     writeUrl(next, "atelier");
   }, []);
 
-  const openAtelier = useCallback(() => {
-    const next = { ...DEFAULT_SPEC };
+  const openAtelier = useCallback((constructId?: string) => {
+    const next = {
+      ...DEFAULT_SPEC,
+      ...(constructId ? { activeConstruct: constructId } : {}),
+    };
     setSpec(next);
     setSelection(EMPTY_SELECTION);
     setView("atelier");
@@ -278,6 +308,68 @@ export default function App() {
     setSelection(EMPTY_SELECTION);
     writeUrl(spec, "home");
   }, [spec]);
+
+  const openMethodology = useCallback(
+    (constructIdOrHash?: string, hash?: string) => {
+      // DetailPanel may pass only a hash like "metric-edge"
+      let c = methodologyConstruct || spec.activeConstruct;
+      let section = hash;
+      if (constructIdOrHash?.startsWith("metric-") || constructIdOrHash === "sources" || constructIdOrHash === "math" || constructIdOrHash === "report" || constructIdOrHash === "verify" || constructIdOrHash === "overview") {
+        section = constructIdOrHash;
+      } else if (constructIdOrHash) {
+        c = constructIdOrHash;
+      }
+      setMethodologyConstruct(c);
+      setView("methodology");
+      writeUrl(spec, "methodology", "push", c);
+      if (section) {
+        // Defer scroll until page mounts
+        requestAnimationFrame(() => {
+          window.setTimeout(() => {
+            document.getElementById(section!)?.scrollIntoView({ behavior: "smooth" });
+          }, 50);
+        });
+      }
+    },
+    [methodologyConstruct, spec],
+  );
+
+  const selectMethodologyConstruct = useCallback(
+    (id: string) => {
+      setMethodologyConstruct(id);
+      writeUrl(spec, "methodology", "replace", id);
+    },
+    [spec],
+  );
+
+  useEffect(() => {
+    let cancelled = false;
+    loadQuality()
+      .then((q) => {
+        if (cancelled) return;
+        setQualityRollup(q);
+        setQualityUnavailable(false);
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setQualityRollup(null);
+        setQualityUnavailable(true);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    // Always warm the construct index for home + methodology + atelier
+    loadIndex()
+      .then((idx) => {
+        setIndex(idx);
+      })
+      .catch(() => {
+        /* atelier effect handles error messaging */
+      });
+  }, []);
 
   useEffect(() => {
     if (view !== "atelier") return;
@@ -582,7 +674,27 @@ export default function App() {
   if (!isPrint && view === "home") {
     return (
       <ThemeProvider printMode={false} palette={spec.palette as PaletteName}>
-        <HomeGallery onOpenStory={openStory} onOpenAtelier={openAtelier} />
+        <HomeGallery
+          onOpenStory={openStory}
+          onOpenAtelier={() => openAtelier()}
+          onOpenMethodology={() => openMethodology()}
+        />
+      </ThemeProvider>
+    );
+  }
+
+  if (!isPrint && view === "methodology") {
+    return (
+      <ThemeProvider printMode={false} palette={spec.palette as PaletteName}>
+        <MethodologyPage
+          index={index}
+          constructId={methodologyConstruct}
+          onSelectConstruct={selectMethodologyConstruct}
+          onBackHome={openHome}
+          onOpenAtelier={(id) => openAtelier(id)}
+          qualityRollup={qualityRollup}
+          qualityUnavailable={qualityUnavailable}
+        />
       </ThemeProvider>
     );
   }
@@ -606,6 +718,7 @@ export default function App() {
           open={controlsOpen}
           onToggle={toggleControls}
           onOpenHome={openHome}
+          onOpenMethodology={() => openMethodology(spec.activeConstruct)}
           searchMatch={searchMatch}
           filteredCounts={{ people: nodes.length, links: edges.length }}
           poolSize={poolSize}
@@ -707,6 +820,7 @@ export default function App() {
           onFocusNeighbor={(id) => onPin(id)}
           open={inspectOpen}
           onToggle={toggleInspect}
+          onOpenMethodology={(hash) => openMethodology(hash)}
         />
       )}
       {!isPrint && (

@@ -22,6 +22,7 @@ interface Props {
   open: boolean;
   onToggle: () => void;
   onOpenHome?: () => void;
+  onOpenMethodology?: () => void;
   searchMatch?: SearchMatch | null;
   filteredCounts?: { people: number; links: number };
   /** People remaining after connect filters, before Top-N */
@@ -95,6 +96,7 @@ export function Sidebar({
   open,
   onToggle,
   onOpenHome,
+  onOpenMethodology,
   searchMatch = null,
   filteredCounts,
   poolSize,
@@ -714,6 +716,15 @@ export function Sidebar({
 
       <div className="sidebar-footer">
         <div className="status">{status}</div>
+        {onOpenMethodology ? (
+          <button
+            type="button"
+            className="ghost home-link"
+            onClick={onOpenMethodology}
+          >
+            Trust the data
+          </button>
+        ) : null}
         <button
           type="button"
           className="export-btn"

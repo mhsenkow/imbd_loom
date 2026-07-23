@@ -106,13 +106,33 @@ def validate_construct(nodes: list[dict], edges: list[dict]) -> list[str]:
     return warnings
 
 
-def quality_report(nodes: list[dict], edges: list[dict]) -> dict:
+def quality_report(
+    nodes: list[dict],
+    edges: list[dict],
+    *,
+    gender_method: str | None = None,
+    tmdb_gender_rows: int | None = None,
+    validation_warnings: list[str] | None = None,
+    imdb_snapshot_as_of: str | None = None,
+    construct_id: str | None = None,
+) -> dict:
     n = max(len(nodes), 1)
     missing_birth = sum(1 for x in nodes if not x.get("birth_year"))
     unknown_gender = sum(1 for x in nodes if (x.get("gender") or "unknown") == "unknown")
     with_votes = sum(1 for x in nodes if (x.get("prominence") or 0) > 0)
     edges_with_year = sum(1 for e in edges if e.get("year") is not None)
-    return {
+    # Enrichment coverage proxies from node facets when present
+    with_tmdb_signal = sum(
+        1
+        for x in nodes
+        if x.get("tmdb_id") is not None
+        or (x.get("gender") and (x.get("gender") or "unknown") != "unknown" and gender_method and "tmdb" in gender_method)
+    )
+    voice_flagged = sum(1 for x in nodes if x.get("is_voice") or x.get("voice_role"))
+    bechdel_matched = sum(
+        1 for x in nodes if x.get("bechdel_pass") is not None or x.get("bechdel_titles")
+    )
+    report: dict = {
         "node_count": len(nodes),
         "edge_count": len(edges),
         "missing_birth_year_pct": round(100 * missing_birth / n, 1),
@@ -120,6 +140,23 @@ def quality_report(nodes: list[dict], edges: list[dict]) -> dict:
         "prominence_coverage_pct": round(100 * with_votes / n, 1),
         "edges_with_year_pct": round(100 * edges_with_year / max(len(edges), 1), 1),
     }
+    if gender_method:
+        report["gender_method"] = gender_method
+    if tmdb_gender_rows is not None:
+        report["tmdb_gender_rows"] = tmdb_gender_rows
+        report["tmdb_coverage_pct"] = round(100 * min(tmdb_gender_rows, n) / n, 1) if n else 0.0
+    elif with_tmdb_signal:
+        report["tmdb_coverage_pct"] = round(100 * with_tmdb_signal / n, 1)
+    if voice_flagged:
+        report["voice_flag_source"] = "wikidata_or_heuristic"
+        report["voice_flagged_pct"] = round(100 * voice_flagged / n, 1)
+    if construct_id == "bechdel" or bechdel_matched:
+        report["bechdel_matched_pct"] = round(100 * bechdel_matched / n, 1) if bechdel_matched else 0.0
+    if validation_warnings is not None:
+        report["validation_warnings"] = list(validation_warnings)
+    if imdb_snapshot_as_of:
+        report["imdb_snapshot_as_of"] = imdb_snapshot_as_of
+    return report
 
 
 def make_manifest(
@@ -164,6 +201,7 @@ def make_manifest(
         for k in (
             "clustering_coefficient",
             "avg_path_length",
+            "avg_path_sample_n",
             "community_count",
             "featured_path",
             "summary",
@@ -462,13 +500,25 @@ def finalize_payload(
         build_stats={k: v for k, v in (build_stats or {}).items() if k != "analytics"},
         analytics=analytics,
     )
+    snap_files = manifest.get("imdb_snapshot_files") or {}
+    oldest_snap = min(snap_files.values()) if snap_files else None
+    warnings = list((build_stats or {}).get("validation_warnings") or [])
+    quality = quality_report(
+        nodes,
+        edges,
+        gender_method=manifest.get("gender_method"),
+        tmdb_gender_rows=manifest.get("tmdb_gender_rows"),
+        validation_warnings=warnings or None,
+        imdb_snapshot_as_of=oldest_snap,
+        construct_id=construct_id,
+    )
     payload = {
         "nodes": nodes,
         "edges": edges,
         "stages": stages,
         "manifest": manifest,
         "summary": analytics.get("summary") or {},
-        "quality": quality_report(nodes, edges),
+        "quality": quality,
         "era_slices": decade_edge_slices(edges),
     }
     return payload

@@ -1,4 +1,4 @@
-/** Default alluvial stages from person nodes when a construct emits none. */
+"""Default alluvial stages from person nodes when a construct emits none."""
 
 from __future__ import annotations
 

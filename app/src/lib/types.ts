@@ -119,6 +119,49 @@ export interface StageRow {
   value: number;
 }
 
+export interface BuildStats {
+  population_sql?: number;
+  credit_rows?: number;
+  after_degree_cap?: number;
+  people_faceted?: number;
+  min_shared?: number;
+  min_votes?: number;
+  era_slices?: number;
+  validation_warnings?: string[];
+  stages_source?: string;
+  [key: string]: unknown;
+}
+
+export interface ManifestSummary {
+  degree_max?: number;
+  degree_median?: number;
+  era_histogram?: Record<string, number>;
+  gender_mix?: Record<string, number>;
+  top_name?: string;
+}
+
+export interface FeaturedPathHop {
+  id: string;
+  label: string;
+}
+
+export interface Quality {
+  id?: string;
+  node_count: number;
+  edge_count: number;
+  missing_birth_year_pct: number;
+  gender_unknown_pct: number;
+  prominence_coverage_pct: number;
+  edges_with_year_pct: number;
+  /** Optional enrichment coverage (pipeline may add these). */
+  tmdb_coverage_pct?: number;
+  voice_flag_source?: string;
+  bechdel_matched_pct?: number;
+  validation_warnings?: string[];
+  imdb_snapshot_as_of?: string;
+  gender_method?: string;
+}
+
 export interface Manifest {
   id: string;
   title: string;
@@ -132,6 +175,17 @@ export interface Manifest {
   data_credit: string;
   gender_method?: string;
   tmdb_gender_rows?: number;
+  build_seed?: number;
+  build_stats?: BuildStats;
+  imdb_snapshot_files?: Record<string, string>;
+  min_shared_titles?: number;
+  top_n?: number;
+  avg_path_length?: number;
+  avg_path_sample_n?: number;
+  clustering_coefficient?: number;
+  community_count?: number;
+  featured_path?: FeaturedPathHop[];
+  summary?: ManifestSummary;
   [key: string]: unknown;
 }
 

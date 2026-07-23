@@ -82,11 +82,11 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         construct_id="award_cohorts",
         title="Award Season Cohorts",
         subtitle="award-linked careers woven by shared titles",
-        key_variable="award_wins",
+        key_variable="awards_p166",
         method_note=(
-            "Population: Wikidata P166 award recipients when cache exists; otherwise "
-            "actors with median title rating ≥7.5 as a soft quality cohort. "
-            "Edges = shared titles (≥2)."
+            "Population: Wikidata P166 award recipients (awards_p166 / award_wins field) when "
+            "cache exists; otherwise actors with median title rating ≥7.5 as a soft quality "
+            "cohort. Edges = shared titles (≥2). Nominations are not scraped separately."
         ),
         nodes=nodes,
         edges=edges,

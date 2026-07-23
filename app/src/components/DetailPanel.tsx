@@ -22,6 +22,7 @@ interface Props {
   onFocusNeighbor: (id: string) => void;
   open: boolean;
   onToggle: () => void;
+  onOpenMethodology?: (hash?: string) => void;
 }
 
 function roleLine(r: RoleCredit): { character: string; credit: string } {
@@ -46,6 +47,7 @@ export function DetailPanel({
   onFocusNeighbor,
   open,
   onToggle,
+  onOpenMethodology,
 }: Props) {
   const { theme, palette } = useTheme();
   const byId = new Map(nodes.map((n) => [n.id, n]));
@@ -114,6 +116,18 @@ export function DetailPanel({
             </>
           ) : null}
           .
+          {onOpenMethodology ? (
+            <>
+              {" "}
+              <button
+                type="button"
+                className="ghost inline"
+                onClick={() => onOpenMethodology("metric-edge")}
+              >
+                How edges are defined
+              </button>
+            </>
+          ) : null}
         </p>
         <div className="link-pair">
           <button type="button" className="link-person" onClick={() => a && onPin(a.id)}>
@@ -185,6 +199,18 @@ export function DetailPanel({
           <strong>Links mean co-appearances</strong> — both people credited on the same film or
           show. Hover a curved link to see which titles connect them. Tap a person for their roles
           and partners.
+          {onOpenMethodology ? (
+            <>
+              {" "}
+              <button
+                type="button"
+                className="ghost inline"
+                onClick={() => onOpenMethodology("metric-edge")}
+              >
+                Trust the data
+              </button>
+            </>
+          ) : null}
         </p>
       </aside>
     );
