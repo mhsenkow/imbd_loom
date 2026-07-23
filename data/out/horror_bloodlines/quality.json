@@ -1,12 +1,13 @@
 {
   "node_count": 200,
-  "edge_count": 544,
-  "missing_birth_year_pct": 5.5,
+  "edge_count": 3350,
+  "missing_birth_year_pct": 11.0,
   "gender_unknown_pct": 0.0,
   "prominence_coverage_pct": 100.0,
   "edges_with_year_pct": 100.0,
-  "gender_method": "imdb_actor_actress_proxy",
-  "tmdb_gender_rows": 0,
-  "tmdb_coverage_pct": 0.0,
-  "imdb_snapshot_as_of": "2026-07-22T04:05:06.793929+00:00"
+  "gender_method": "tmdb+imdb_fallback",
+  "tmdb_gender_rows": 5592,
+  "tmdb_coverage_pct": 100.0,
+  "imdb_snapshot_as_of": "2026-07-22T04:05:06.793929+00:00",
+  "enrichment_mode": "imdb"
 }

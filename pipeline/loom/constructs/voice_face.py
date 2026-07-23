@@ -7,6 +7,7 @@ import duckdb
 from loom.constructs import gender_expr
 from loom.constructs.emit import coappearance_edges, finalize_payload, rows_to_stages
 from loom.filters import adult_exclusion_sql, genre_contains_sql, title_type_sql, vote_floor_sql
+from loom.membership import rank_prominence_sql
 
 
 def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
@@ -15,6 +16,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     types = title_type_sql("t")
     votes = vote_floor_sql("r", min_votes=50)
     anim = genre_contains_sql("t", "Animation")
+    prom = rank_prominence_sql("r")
 
     person_sql = f"""
         WITH tagged AS (
@@ -27,7 +29,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
               WHEN NOT {anim} AND t.titleType = 'movie' THEN p.tconst
             END) AS live_action_movie_count,
             COUNT(DISTINCT p.tconst) AS title_count,
-            SUM(COALESCE(r.numVotes, 0)) AS prominence
+            {prom} AS prominence
           FROM title_principals p
           JOIN title_basics t ON t.tconst = p.tconst
           JOIN name_basics n ON n.nconst = p.nconst
@@ -41,15 +43,29 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
           nconst, label, gender, title_count,
           animation_count, live_action_movie_count, prominence,
           animation_count * 1.0 / NULLIF(animation_count + live_action_movie_count, 0)
-            AS voice_ratio
+            AS voice_ratio,
+          LEAST(animation_count, live_action_movie_count) * prominence AS balance_score
         FROM tagged
         WHERE animation_count >= 3 AND live_action_movie_count >= 3
-        ORDER BY LEAST(animation_count, live_action_movie_count) DESC, prominence DESC
-        LIMIT {int(top_n * 3)}
+        ORDER BY LEAST(animation_count, live_action_movie_count) * prominence DESC,
+                 prominence DESC
+        LIMIT {int(top_n * 5)}
     """
 
     nodes, edges, stats = coappearance_edges(
-        con, person_sql, construct="voice_face", top_n=top_n, min_shared=2
+        con,
+        person_sql,
+        construct="voice_face",
+        top_n=top_n,
+        min_shared=2,
+        cap_by="prominence",
+        enrichment_mode="imdb",
+        force_ids=[
+            "nm0000245",  # Robin Williams
+            "nm0000158",  # Tom Hanks
+            "nm0000552",  # Eddie Murphy
+            "nm0000434",  # Mark Hamill
+        ],
     )
 
     stage_rows = con.execute(
@@ -82,8 +98,8 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
 
     method = (
         "Population: people with ≥3 Animation credits and ≥3 non-Animation movie "
-        "credits (Adult excluded, numVotes ≥50). "
-        "Node.voice_ratio colors voice vs face balance. Hero = co-appearance."
+        "credits (Adult excluded, numVotes ≥50). Live movies must not be Animation. "
+        "Ranked by LEAST(anim, live) × prominence. Pool top_n×5; cap by blend."
     )
     return finalize_payload(
         con,

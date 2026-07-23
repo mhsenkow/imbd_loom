@@ -10,11 +10,17 @@ import type { SelectionState } from "../lib/selection";
 import { filmLine, sharedLabel, uniqueShared } from "../lib/sharedTitles";
 import { edgeKey, type SearchMatch } from "../lib/search";
 import { computeViewStatMarks, hasStat, isGapSpike, linkStatStyle, nodeFillOverride, nodeOpacityMod, type ViewStatMarks } from "../lib/statsMarks";
-import { ACCENT, DECADE_GRID, DIM_GHOST, FILM_LABEL, FOCUS_UNDERPAINT, FONT_MONO, FONT_SANS, MODE_DECADE, RULE, TRIM } from "../lib/fonts";
+import { FONT_MONO, FONT_SANS } from "../lib/fonts";
 import { driftThreadColors } from "../lib/theme/scales";
 import { chartChrome } from "../lib/theme/chartChrome";
-import { useTheme } from "../lib/theme/ThemeContext";
+import {
+  gridLineStyle,
+  linkInteractionStyle,
+  markOpacity,
+  resolveLinkState,
+} from "../lib/theme/lineStyle";
 import { token } from "../lib/theme/tokens";
+import { useTheme } from "../lib/theme/ThemeContext";
 import { ChartDefs } from "./ChartDefs";
 import { weaveGradient } from "../lib/theme/scales";
 import { ChartLegend } from "./ChartLegend";
@@ -80,7 +86,8 @@ export function TimelineHero({
   const { theme, printForced } = useTheme();
   const chartTheme = printMode || printForced ? "light" : theme;
   const chrome = useMemo(() => chartChrome(chartTheme), [chartTheme]);
-  const { paper: PAPER, ink: INK, inkFaint: INK_FAINT } = chrome;
+  const { paper: PAPER, ink: INK, inkFaint: INK_FAINT, trim: TRIM, linkHot, filmLabel, focusWash } =
+    chrome;
   const wrapRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
   const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
@@ -272,27 +279,13 @@ export function TimelineHero({
 
   const personOpacity = (id: string) => {
     let op = 1;
-    if (focus) op = neighbors.has(id) ? 1 : DIM_GHOST + 0.03;
-    else if (search) op = search.matchedNodeIds.has(id) ? 1 : DIM_GHOST;
+    if (focus) op = neighbors.has(id) ? 1 : markOpacity({ state: "dim", theme: chartTheme });
+    else if (search) {
+      op = search.matchedNodeIds.has(id)
+        ? 1
+        : markOpacity({ state: "searchMiss", theme: chartTheme });
+    }
     return Math.min(op, nodeOpacityMod(stats, id));
-  };
-
-  const linkOpacity = (source: string, target: string, isEdge: boolean) => {
-    if (isEdge) return 0.95;
-    if (focus) {
-      return source === focus || target === focus ? 0.75 : DIM_GHOST * 0.4;
-    }
-    if (
-      skimEdge &&
-      ((skimEdge.source === source && skimEdge.target === target) ||
-        (skimEdge.source === target && skimEdge.target === source))
-    ) {
-      return 0.72;
-    }
-    if (search) {
-      return search.matchedEdgeKeys.has(edgeKey(source, target)) ? 0.85 : 0.04;
-    }
-    return 0.35;
   };
 
   const edgeBanner = edgeFocus
@@ -323,9 +316,9 @@ export function TimelineHero({
       stats.modeDecade != null &&
       y >= stats.modeDecade &&
       y < stats.modeDecade + 10;
-    const stroke = isModeDecade ? MODE_DECADE : isDecade ? DECADE_GRID : RULE;
-    const strokeW = isModeDecade ? 1.6 : isDecade ? 0.9 : 0.45;
-    const dash = !isDecade && !isModeDecade ? "1.5 3" : undefined;
+    const kind = isModeDecade ? "mode" : isDecade ? "decade" : "year";
+    const grid = gridLineStyle({ kind, theme: chartTheme });
+    const dash = kind === "year" ? "1.5 3" : undefined;
     if (layout.flipped) {
       const yy = layout.yScale(y);
       return (
@@ -336,16 +329,17 @@ export function TimelineHero({
               y={-6}
               width={layout.width - layout.padL - layout.padR + 8}
               height={12}
-              fill={MODE_DECADE}
-              fillOpacity={0.08}
+              fill={chrome.modeDecade}
+              fillOpacity={0.1}
             />
           ) : null}
           <line
+            className={grid.className}
             x1={layout.padL - 8}
             x2={layout.width - layout.padR}
-            stroke={stroke}
-            strokeWidth={strokeW}
-            strokeOpacity={isModeDecade ? 0.75 : 1}
+            stroke={grid.stroke}
+            strokeWidth={grid.strokeWidth}
+            strokeOpacity={grid.strokeOpacity}
             strokeDasharray={dash}
           />
           <text
@@ -356,7 +350,7 @@ export function TimelineHero({
             fontWeight={isModeDecade || isDecade ? 600 : 400}
             fontFamily={FONT_MONO}
             letterSpacing={isDecade ? "-0.02em" : undefined}
-            fill={isModeDecade ? MODE_DECADE : INK_FAINT}
+            fill={isModeDecade ? chrome.modeDecade : INK_FAINT}
           >
             {y}
           </text>
@@ -371,16 +365,17 @@ export function TimelineHero({
             y={layout.padT - 8}
             width={10}
             height={layout.height - layout.padT}
-            fill={isModeDecade ? MODE_DECADE : DECADE_GRID}
-            fillOpacity={0.08}
+            fill={chrome.modeDecade}
+            fillOpacity={0.1}
           />
         ) : null}
         <line
+          className={grid.className}
           y1={layout.padT - 8}
           y2={layout.height - 8}
-          stroke={stroke}
-          strokeWidth={strokeW}
-          strokeOpacity={isModeDecade ? 0.75 : 1}
+          stroke={grid.stroke}
+          strokeWidth={grid.strokeWidth}
+          strokeOpacity={grid.strokeOpacity}
           strokeDasharray={dash}
         />
         <text
@@ -390,7 +385,7 @@ export function TimelineHero({
           fontWeight={isModeDecade || isDecade ? 600 : 400}
           fontFamily={FONT_MONO}
           letterSpacing={isDecade ? "-0.02em" : undefined}
-          fill={isModeDecade ? MODE_DECADE : INK_FAINT}
+          fill={isModeDecade ? chrome.modeDecade : INK_FAINT}
         >
           {y}
         </text>
@@ -399,8 +394,8 @@ export function TimelineHero({
   });
 
   const personFill = (id: string, base: string, hot?: boolean) => {
-    if (hot) return ACCENT;
-    return nodeFillOverride(stats, id, base);
+    if (hot) return linkHot;
+    return nodeFillOverride(stats, id, base, chartTheme);
   };
 
   const svgInner = (
@@ -444,31 +439,48 @@ export function TimelineHero({
               !!skimEdge &&
               ((skimEdge.source === l.source && skimEdge.target === l.target) ||
                 (skimEdge.source === l.target && skimEdge.target === l.source));
-            const opacity = linkOpacity(l.source, l.target, isEdge);
+            const searchHot =
+              !search || search.matchedEdgeKeys.has(edgeKey(l.source, l.target));
+            const state = resolveLinkState({
+              hot: isEdge,
+              skim: isSkimLink,
+              related: related && (!search || searchHot),
+              hasFocus: !!focus || (!!search && !searchHot),
+            });
             const films = sharedLabel(l.shared);
-            const statLink = linkStatStyle(stats, l.source, l.target, l.weight);
-            const baseW = (isEdge ? 0.8 : isSkimLink ? 0.35 : 0) + (l.strokeWidth ?? 0.8 + Math.min(3, l.weight * 0.25));
-            // Weight-responsive ink pressure
+            const statLink = linkStatStyle(stats, l.source, l.target, l.weight, chartTheme);
             const pressure = Math.min(1, 0.55 + l.weight * 0.06);
-            const w = Math.max(0.35, baseW + (statLink?.strokeWidthBoost ?? 0));
+            const paint = linkInteractionStyle({
+              state: statLink?.thin ? "dim" : state,
+              theme: chartTheme,
+              baseWidth: l.strokeWidth,
+              opacityScale: pressure,
+              widthBoost: statLink?.strokeWidthBoost,
+              dash: statLink?.dash,
+              stroke: isEdge || isSkimLink ? undefined : statLink?.stroke,
+            });
+            // Hot/skim use accent; ambient keeps weave / fill color when no stat stroke
             const weaveId = `tl-weave-${l.source}-${l.target}-${i}`;
             const useGradient =
-              !isEdge && !isSkimLink && !statLink && l.fill !== l.targetFill && opacity > 0.2;
-            const stroke = isEdge
-              ? ACCENT
-              : isSkimLink
-                ? ACCENT
-                : statLink?.stroke ?? (useGradient ? `url(#${weaveId})` : l.fill);
+              state === "ambient" &&
+              !statLink?.stroke &&
+              l.fill !== l.targetFill &&
+              paint.strokeOpacity > 0.2;
+            const stroke =
+              state === "hot" || state === "skim"
+                ? paint.stroke
+                : (statLink?.stroke ?? (useGradient ? `url(#${weaveId})` : l.fill));
             return (
               <path
                 key={`${l.source}-${l.target}-${l.year}-${i}`}
-                className={`link-enter${isSkimLink ? " is-skim" : ""}`}
+                className={`link-enter ${paint.className}`}
                 d={l.path}
                 fill="none"
                 stroke={stroke}
-                strokeOpacity={statLink?.strokeOpacity ?? opacity * pressure}
-                strokeWidth={w}
-                strokeDasharray={statLink?.dash}
+                strokeOpacity={statLink?.strokeOpacity ?? paint.strokeOpacity}
+                strokeWidth={paint.strokeWidth}
+                strokeDasharray={paint.strokeDasharray ?? statLink?.dash}
+                strokeLinecap={paint.strokeLinecap}
                 style={{
                   pointerEvents: related || !focus ? "stroke" : "none",
                   cursor: "pointer",
@@ -514,11 +526,11 @@ export function TimelineHero({
                 y1={-9}
                 x2={-5}
                 y2={8}
-                stroke={ACCENT}
+                stroke={linkHot}
                 strokeWidth={1.3}
                 strokeOpacity={0.55}
               />
-              <text x={1} y={3} fontSize={9} fontFamily={FONT_MONO} fill={FILM_LABEL}>
+              <text x={1} y={3} fontSize={9} fontFamily={FONT_MONO} fill={filmLabel}>
                 {lab.text.length > 36 ? lab.text.slice(0, 34) + "…" : lab.text}
               </text>
             </g>
@@ -647,6 +659,16 @@ export function TimelineHero({
                     stroke="none"
                   />
                   {/* Peak pin: paper halo + ink tick */}
+                  {isFocus ? (
+                    <circle
+                      cx={p.y}
+                      cy={peakY}
+                      r={r + 4}
+                      fill={focusWash}
+                      stroke="none"
+                      pointerEvents="none"
+                    />
+                  ) : null}
                   <circle
                     cx={p.y}
                     cy={peakY}
@@ -660,8 +682,8 @@ export function TimelineHero({
                     cy={peakY}
                     r={r}
                     fill={fill}
-                    stroke={PAPER}
-                    strokeWidth={isFocus ? 1.1 : 0.5}
+                    stroke={isFocus ? linkHot : PAPER}
+                    strokeWidth={isFocus ? 1.2 : isSkim ? 0.85 : 0.5}
                   />
                   <line
                     x1={p.y}
@@ -769,6 +791,16 @@ export function TimelineHero({
                   fill="transparent"
                   stroke="none"
                 />
+                {isFocus ? (
+                  <circle
+                    cx={peakX}
+                    cy={p.y}
+                    r={r + 4}
+                    fill={focusWash}
+                    stroke="none"
+                    pointerEvents="none"
+                  />
+                ) : null}
                 <circle
                   cx={peakX}
                   cy={p.y}
@@ -782,8 +814,8 @@ export function TimelineHero({
                   cy={p.y}
                   r={r}
                   fill={fill}
-                  stroke={PAPER}
-                  strokeWidth={isFocus ? 1.1 : 0.5}
+                  stroke={isFocus ? linkHot : PAPER}
+                  strokeWidth={isFocus ? 1.2 : isSkim ? 0.85 : 0.5}
                 />
                 <line
                   x1={peakX}

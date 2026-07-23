@@ -1,14 +1,15 @@
 /** Shared guide overlays for timeline heroes (explorer + print). */
 
-import { FONT_MONO, FONT_SANS, INK_FAINT, INK_SOFT, PAPER, ACCENT, TRIM } from "../lib/fonts";
+import { FONT_MONO } from "../lib/fonts";
 import type { TimelineLayout } from "../viz/timeline";
 import {
-  STAT_COLORS,
   hasStat,
   showMedianPeak,
   showMedianSize,
+  statColors,
   type ViewStatMarks,
 } from "../lib/statsMarks";
+import { useTheme } from "../lib/theme/ThemeContext";
 import {
   EraHistogram,
   GiniCallout,
@@ -27,6 +28,8 @@ interface Props {
 }
 
 export function TimelineStatGuides({ layout, stats, compact = false }: Props) {
+  const { theme } = useTheme();
+  const c = statColors(theme);
   if (!stats) return null;
 
   return (
@@ -63,7 +66,7 @@ export function TimelineStatGuides({ layout, stats, compact = false }: Props) {
             x2={layout.xScale(stats.votesCentroidYear)}
             y1={layout.padT - 8}
             y2={layout.height - 8}
-            stroke={STAT_COLORS.warm}
+            stroke={c.warm}
             strokeWidth={1.4}
             strokeOpacity={0.75}
           />
@@ -72,7 +75,7 @@ export function TimelineStatGuides({ layout, stats, compact = false }: Props) {
             y={layout.padT + (compact ? 8 : 22)}
             fontSize={compact ? 6 : 8}
             fontFamily={FONT_MONO}
-            fill={STAT_COLORS.warm}
+            fill={c.warm}
           >
             votes ⌀ {Math.round(stats.votesCentroidYear)}
           </text>

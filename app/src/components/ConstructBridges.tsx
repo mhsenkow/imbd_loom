@@ -7,8 +7,10 @@ import {
   type PersonIndexEntry,
   type StripBridge,
 } from "../lib/bridges";
-import { ACCENT, FONT_MONO, FONT_SANS, INK, INK_FAINT } from "../lib/fonts";
-import { token } from "../lib/theme/tokens";
+import { FONT_MONO, FONT_SANS } from "../lib/fonts";
+import { chartChrome } from "../lib/theme/chartChrome";
+import { warpLineStyle } from "../lib/theme/lineStyle";
+import { useTheme } from "../lib/theme/ThemeContext";
 
 interface Props {
   people: PersonIndexEntry[];
@@ -22,6 +24,8 @@ interface Props {
   maxWarps?: number;
   /** Shared focus with the hero (hover or pin) */
   focusId?: string | null;
+  /** Immediate skim (pre-settle) — soft accent without dimming others */
+  skimId?: string | null;
   interactive?: boolean;
   onHover?: (id: string | null) => void;
   onPin?: (id: string) => void;
@@ -36,10 +40,13 @@ export function ConstructBridges({
   height,
   maxWarps = 24,
   focusId = null,
+  skimId = null,
   interactive = false,
   onHover,
   onPin,
 }: Props) {
+  const { theme } = useTheme();
+  const chrome = useMemo(() => chartChrome(theme), [theme]);
   const bridges = useMemo(
     () => stripBridges(people, stripIds, maxWarps),
     [people, stripIds, maxWarps],
@@ -61,8 +68,8 @@ export function ConstructBridges({
         y={laneY - 16}
         width={Math.max(0, centers[centers.length - 1] - centers[0])}
         height={32}
-        fill={INK}
-        fillOpacity={0.03}
+        fill={chrome.ink}
+        fillOpacity={theme === "dark" ? 0.06 : 0.04}
         pointerEvents="none"
       />
 
@@ -71,6 +78,9 @@ export function ConstructBridges({
         const y = laneY + ((i % 9) - 4) * 1.8;
         const d = bridgePathThrough(centers, b.panels, y, amp);
         if (!d) return null;
+        const isFocus = focusId === b.id;
+        const isSkim = !isFocus && skimId === b.id;
+        const dimmed = anyFocus && !isFocus;
         return (
           <WarpThread
             key={b.id}
@@ -83,8 +93,12 @@ export function ConstructBridges({
             stripIds={stripIds}
             full={b.panels.length === stripIds.length}
             spanRatio={b.panels.length / maxSpan}
-            isFocus={focusId === b.id}
-            dimmed={anyFocus && focusId !== b.id}
+            isFocus={isFocus}
+            isSkim={isSkim}
+            dimmed={dimmed}
+            rank={i}
+            maxWarps={maxWarps}
+            theme={theme}
             interactive={interactive}
             onHover={onHover}
             onPin={onPin}
@@ -99,11 +113,11 @@ export function ConstructBridges({
           fontFamily={FONT_SANS}
           fontSize={4.2}
           fontWeight={600}
-          fill={ACCENT}
+          fill={chrome.linkHot}
           pointerEvents="none"
         >
           {focused.label}
-          <tspan fill={INK_FAINT} fontWeight={400} fontFamily={FONT_MONO}>
+          <tspan fill={chrome.inkFaint} fontWeight={400} fontFamily={FONT_MONO}>
             {`  ·  ${focused.panels.length}/${stripIds.length} constructs`}
           </tspan>
         </text>
@@ -114,7 +128,7 @@ export function ConstructBridges({
         y={height - 2}
         fontFamily={FONT_MONO}
         fontSize={3.2}
-        fill={INK_FAINT}
+        fill={chrome.inkFaint}
         pointerEvents="none"
       >
         {bridges.length} warps
@@ -136,7 +150,11 @@ function WarpThread({
   full,
   spanRatio,
   isFocus,
+  isSkim,
   dimmed,
+  rank,
+  maxWarps,
+  theme,
   interactive,
   onHover,
   onPin,
@@ -151,30 +169,25 @@ function WarpThread({
   full: boolean;
   spanRatio: number;
   isFocus: boolean;
+  isSkim: boolean;
   dimmed: boolean;
+  rank: number;
+  maxWarps: number;
+  theme: "light" | "dark";
   interactive: boolean;
   onHover?: (id: string | null) => void;
   onPin?: (id: string) => void;
 }) {
   const names = bridge.panels.map((pi) => stripTitles[pi] || stripIds[pi]).join(" → ");
-  let stroke = full ? INK : token("link.base", "light");
-  let strokeWidth = full ? 0.6 : 0.25 + spanRatio * 0.3;
-  let strokeOpacity = full ? 0.5 : 0.2 + spanRatio * 0.25;
-  let dotR = full ? 0.9 : 0.65;
-  let dotFill = full ? INK : token("link.base", "light");
-  let dotOpacity = full ? 0.55 : 0.35;
-
-  if (isFocus) {
-    stroke = ACCENT;
-    strokeWidth = 1.35;
-    strokeOpacity = 0.95;
-    dotR = 1.35;
-    dotFill = ACCENT;
-    dotOpacity = 1;
-  } else if (dimmed) {
-    strokeOpacity *= 0.12;
-    dotOpacity *= 0.15;
-  }
+  const state = isFocus ? "hot" : isSkim ? "skim" : dimmed ? "dim" : "ambient";
+  const paint = warpLineStyle({
+    full,
+    spanRatio,
+    state,
+    theme,
+    rank,
+    maxWarps,
+  });
 
   return (
     <g
@@ -193,17 +206,19 @@ function WarpThread({
           d={d}
           fill="none"
           stroke="transparent"
-          strokeWidth={4}
+          strokeWidth={5}
           strokeLinecap="round"
         />
       ) : null}
       <path
+        className={paint.className}
         d={d}
         fill="none"
-        stroke={stroke}
-        strokeWidth={strokeWidth}
-        strokeOpacity={strokeOpacity}
-        strokeLinecap="round"
+        stroke={paint.stroke}
+        strokeWidth={paint.strokeWidth}
+        strokeOpacity={paint.strokeOpacity}
+        strokeLinecap={paint.strokeLinecap}
+        strokeDasharray={paint.strokeDasharray}
         pointerEvents="none"
       >
         <title>{`${bridge.label} · ${bridge.panels.length}/${stripIds.length} panels\n${names}\nHover highlights this person in the hero`}</title>
@@ -213,9 +228,9 @@ function WarpThread({
           key={`${bridge.id}-${pi}`}
           cx={centers[pi]}
           cy={y + (bridge.panels.indexOf(pi) % 2 === 0 ? -amp : amp)}
-          r={dotR}
-          fill={dotFill}
-          fillOpacity={dotOpacity}
+          r={paint.dotR}
+          fill={paint.dotFill}
+          fillOpacity={paint.dotOpacity}
           pointerEvents="none"
         />
       ))}

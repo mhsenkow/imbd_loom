@@ -15,7 +15,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     types = title_type_sql("t")
     votes = vote_floor_sql("r", min_votes=50)
 
-    # Find longest gap between consecutive credit years; require ≥5 credits after gap
+    # Find longest gap between consecutive credit years; score by post-gap prominence
     person_sql = f"""
         WITH years AS (
           SELECT DISTINCT
@@ -23,7 +23,8 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             n.primaryName AS label,
             {ge} AS gender,
             t.startYear AS yr,
-            COALESCE(r.numVotes, 0) AS votes
+            COALESCE(r.numVotes, 0) AS votes,
+            LN(COALESCE(r.numVotes, 0) + 1) AS vote_w
           FROM title_principals p
           JOIN title_basics t ON t.tconst = p.tconst
           JOIN name_basics n ON n.nconst = p.nconst
@@ -35,7 +36,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         ),
         ordered AS (
           SELECT
-            nconst, label, gender, yr, votes,
+            nconst, label, gender, yr, votes, vote_w,
             LAG(yr) OVER (PARTITION BY nconst ORDER BY yr) AS prev_yr
           FROM years
         ),
@@ -56,7 +57,8 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         after_gap AS (
           SELECT
             g.nconst,
-            COUNT(DISTINCT y.yr) AS credits_after
+            COUNT(DISTINCT y.yr) AS credits_after,
+            SUM(y.vote_w) AS post_gap_prominence
           FROM best_gap g
           JOIN years y ON y.nconst = g.nconst AND y.yr >= g.gap_end
           WHERE g.rk = 1
@@ -70,19 +72,26 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
           g.gap_start,
           g.gap_end,
           a.credits_after,
-          COUNT(DISTINCT y.yr) AS year_count,
-          SUM(y.votes) AS prominence
+          a.post_gap_prominence AS prominence,
+          COUNT(DISTINCT y.yr) AS year_count
         FROM best_gap g
         JOIN after_gap a ON a.nconst = g.nconst
         JOIN years y ON y.nconst = g.nconst
         WHERE g.rk = 1 AND a.credits_after >= 5
-        GROUP BY g.nconst, g.label, g.gender, g.gap, g.gap_start, g.gap_end, a.credits_after
-        ORDER BY g.gap DESC, SUM(y.votes) DESC
+        GROUP BY g.nconst, g.label, g.gender, g.gap, g.gap_start, g.gap_end,
+                 a.credits_after, a.post_gap_prominence
+        ORDER BY a.post_gap_prominence DESC, g.gap DESC
         LIMIT {int(top_n * 3)}
     """
 
     nodes, edges, stats = coappearance_edges(
-        con, person_sql, construct="comeback", top_n=top_n, min_shared=2
+        con,
+        person_sql,
+        construct="comeback",
+        top_n=top_n,
+        min_shared=2,
+        cap_by="blend",
+        enrichment_mode="imdb",
     )
 
     stage_rows = con.execute(
@@ -112,7 +121,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     method = (
         "Population: careers with a ≥8-year gap between consecutive credit years, "
         "then ≥5 distinct credit-years after the return "
-        "(Adult excluded, numVotes ≥50). Hero = co-appearance among comeback peers."
+        "(Adult excluded, numVotes ≥50). Ranked by post-gap prominence. Cap by blend."
     )
     return finalize_payload(
         con,

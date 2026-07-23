@@ -1,17 +1,17 @@
 {
-  "avg_path_length": 2.689,
+  "avg_path_length": 2.143,
   "avg_path_length_sampled": false,
-  "avg_path_sample_n": 40,
+  "avg_path_sample_n": 30,
   "build_seed": 42,
   "build_stats": {
-    "after_degree_cap": 40,
+    "after_degree_cap": 30,
     "min_votes": 50,
-    "per_genre_cap": 20,
-    "population_sql": 40
+    "per_genre_cap": 25,
+    "population_sql": 30
   },
-  "built_at": "2026-07-23T16:40:10.808329+00:00",
-  "clustering_coefficient": 0.6733,
-  "community_count": 6,
+  "built_at": "2026-07-23T18:28:18.426479+00:00",
+  "clustering_coefficient": 0.6978,
+  "community_count": 4,
   "concentration_threshold": 0.9,
   "correlations": {
     "acclaim_gap×prominence": {
@@ -25,14 +25,14 @@
       "rho": null
     },
     "degree×prominence": {
-      "n": 40,
-      "r": -0.3184,
-      "rho": 0.0835
+      "n": 30,
+      "r": -0.2703,
+      "rho": 0.0646
     },
     "degree×strength": {
-      "n": 40,
-      "r": 0.0229,
-      "rho": 0.2607
+      "n": 30,
+      "r": -0.0151,
+      "rho": 0.2502
     },
     "genre_entropy×degree": {
       "n": 0,
@@ -45,14 +45,14 @@
       "rho": null
     },
     "pagerank×prominence": {
-      "n": 40,
-      "r": 0.4455,
-      "rho": 0.6381
+      "n": 30,
+      "r": 0.6776,
+      "rho": 0.7927
     },
     "strength×prominence": {
-      "n": 40,
-      "r": 0.8442,
-      "rho": 0.9522
+      "n": 30,
+      "r": 0.9158,
+      "rho": 0.9466
     },
     "title_rating_median×prominence": {
       "n": 0,
@@ -61,19 +61,19 @@
     }
   },
   "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
-  "edge_count": 108,
+  "edge_count": 78,
   "edge_kind": "genre_comembership",
   "featured_path": [
     {
-      "id": "nm0654741",
-      "label": "Selim Nasit Özcan"
+      "id": "nm0014953",
+      "label": "Carrie Aizley"
     },
     {
-      "id": "nm0776856",
-      "label": "Leon Schuster"
+      "id": "nm0707231",
+      "label": "Marjatta Raita"
     }
   ],
-  "gender_method": "imdb_actor_actress_proxy",
+  "gender_method": "tmdb+imdb_fallback",
   "id": "one_role",
   "imdb_snapshot_files": {
     "name.basics.tsv.gz": "2026-07-22T20:25:15.101104+00:00",
@@ -84,43 +84,41 @@
     "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
     "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
   },
-  "insight": "In this cut, strength and prominence track with r=0.8442.",
+  "insight": "In this cut, strength and prominence track with r=0.9158.",
   "key_variable": "dominant_genre",
   "method_note": "Population: actors/actresses with ≥8 title-genre credits (Adult excluded, numVotes ≥50) whose single largest genre accounts for ≥90% of those credits. Stratified: top N/8 people per dominant genre (genres with enough people), ranked by prominence (Σ votes/billing) rather than raw title count. Hero links connect people who share the same dominant genre; edge weight = min(prominence).",
   "metrics_version": "2",
   "min_credits": 8,
-  "node_count": 40,
-  "per_genre_cap": 20,
-  "stage_row_count": 9,
+  "node_count": 30,
+  "per_genre_cap": 25,
+  "stage_row_count": 10,
   "subtitle": "person → genre concentration (≥90%)",
   "summary": {
     "acclaim_gap_hist": [],
-    "assortativity": 0.334,
+    "assortativity": 0.2695,
     "community_sizes": [
-      14,
+      10,
+      9,
       6,
-      6,
-      6,
-      4,
-      4
+      5
     ],
     "component_count": 2,
     "corr_degree×prominence": {
-      "n": 40,
-      "r": -0.3184,
-      "rho": 0.0835
+      "n": 30,
+      "r": -0.2703,
+      "rho": 0.0646
     },
     "corr_degree×strength": {
-      "n": 40,
-      "r": 0.0229,
-      "rho": 0.2607
+      "n": 30,
+      "r": -0.0151,
+      "rho": 0.2502
     },
     "corr_strength×prominence": {
-      "n": 40,
-      "r": 0.8442,
-      "rho": 0.9522
+      "n": 30,
+      "r": 0.9158,
+      "rho": 0.9466
     },
-    "degree_gini": 0.0852,
+    "degree_gini": 0.106,
     "degree_hist": [
       {
         "count": 4,
@@ -168,363 +166,310 @@
         "lo": 5.4
       },
       {
-        "count": 28,
+        "count": 18,
         "hi": 6.0,
         "lo": 5.7
       }
     ],
     "degree_max": 6,
     "degree_median": 6,
-    "density": 0.138462,
-    "diameter": 7,
-    "effective_diameter": 5.0,
+    "density": 0.17931,
+    "diameter": 5,
+    "effective_diameter": 4.0,
     "era_histogram": {
-      "1940s": 1,
-      "1970s": 2,
-      "1980s": 4,
-      "1990s": 3,
-      "2000s": 7,
-      "2010s": 6,
-      "2020s": 17
+      "1960s": 2,
+      "1970s": 5,
+      "1980s": 5,
+      "2000s": 1,
+      "2010s": 2,
+      "2020s": 15
     },
-    "era_homophily": 0.741,
-    "gender_homophily": 0.528,
+    "era_homophily": 0.833,
+    "gender_homophily": 0.641,
     "gender_mix": {
-      "female": 19,
-      "male": 21
+      "female": 16,
+      "male": 14
     },
     "giant_component_share": 0.5,
-    "largest_community_share": 0.35,
-    "modularity": 0.1787,
+    "largest_community_share": 0.333,
+    "modularity": 0.1689,
     "outliers": {
       "pagerank": [
-        "nm0203721",
-        "nm0520876",
-        "nm14815297"
+        "nm0758741"
       ],
       "prominence": [
-        "nm0654741",
-        "nm0776856"
-      ],
-      "strength": [
         "nm0014953",
         "nm0699614",
+        "nm0707231"
+      ],
+      "strength": [
+        "nm0699614",
         "nm0707231",
-        "nm0776856"
+        "nm0758741"
       ]
     },
     "prominence_hist": [
       {
-        "count": 28,
-        "hi": 2699.57,
-        "lo": 492.8
+        "count": 17,
+        "hi": 1610.7,
+        "lo": 359.8
       },
       {
-        "count": 3,
-        "hi": 4906.34,
-        "lo": 2699.57
-      },
-      {
-        "count": 3,
-        "hi": 7113.11,
-        "lo": 4906.34
-      },
-      {
-        "count": 3,
-        "hi": 9319.88,
-        "lo": 7113.11
+        "count": 8,
+        "hi": 2861.6,
+        "lo": 1610.7
       },
       {
         "count": 0,
-        "hi": 11526.65,
-        "lo": 9319.88
+        "hi": 4112.5,
+        "lo": 2861.6
       },
       {
         "count": 1,
-        "hi": 13733.42,
-        "lo": 11526.65
-      },
-      {
-        "count": 1,
-        "hi": 15940.19,
-        "lo": 13733.42
+        "hi": 5363.4,
+        "lo": 4112.5
       },
       {
         "count": 0,
-        "hi": 18146.96,
-        "lo": 15940.19
-      },
-      {
-        "count": 0,
-        "hi": 20353.73,
-        "lo": 18146.96
+        "hi": 6614.3,
+        "lo": 5363.4
       },
       {
         "count": 1,
-        "hi": 22560.5,
-        "lo": 20353.73
+        "hi": 7865.2,
+        "lo": 6614.3
+      },
+      {
+        "count": 1,
+        "hi": 9116.1,
+        "lo": 7865.2
+      },
+      {
+        "count": 1,
+        "hi": 10367.0,
+        "lo": 9116.1
+      },
+      {
+        "count": 0,
+        "hi": 11617.9,
+        "lo": 10367.0
+      },
+      {
+        "count": 1,
+        "hi": 12868.8,
+        "lo": 11617.9
       }
     ],
     "scatter_strength_prominence": [
       {
         "id": "nm0014953",
-        "x": 53101.0,
+        "x": 24960.0,
         "y": 12868.8
       },
       {
-        "id": "nm0203721",
-        "x": 1512.0,
-        "y": 504.2
+        "id": "nm0145745",
+        "x": 12177.0,
+        "y": 2215.4
       },
       {
-        "id": "nm0272204",
-        "x": 3499.0,
-        "y": 809.0
+        "id": "nm0529955",
+        "x": 2663.0,
+        "y": 479.9
       },
       {
-        "id": "nm0520876",
-        "x": 2208.0,
-        "y": 568.3
+        "id": "nm0554928",
+        "x": 21430.0,
+        "y": 5002.0
       },
       {
-        "id": "nm0654741",
-        "x": 37966.0,
-        "y": 22560.5
+        "id": "nm0602178",
+        "x": 3244.0,
+        "y": 587.0
+      },
+      {
+        "id": "nm0616343",
+        "x": 3011.0,
+        "y": 555.9
+      },
+      {
+        "id": "nm0650828",
+        "x": 1613.0,
+        "y": 418.1
+      },
+      {
+        "id": "nm0654876",
+        "x": 1077.0,
+        "y": 359.8
+      },
+      {
+        "id": "nm0672430",
+        "x": 5590.0,
+        "y": 1323.5
       },
       {
         "id": "nm0699614",
-        "x": 49140.0,
-        "y": 9079.2
-      },
-      {
-        "id": "nm0701248",
-        "x": 43189.0,
-        "y": 9020.7
+        "x": 31509.0,
+        "y": 8598.9
       },
       {
         "id": "nm0707231",
-        "x": 52993.0,
+        "x": 29962.0,
         "y": 9266.6
       },
       {
+        "id": "nm0713999",
+        "x": 2124.0,
+        "y": 449.9
+      },
+      {
         "id": "nm0758741",
-        "x": 33195.0,
+        "x": 30616.0,
         "y": 7096.5
       },
       {
-        "id": "nm0776856",
-        "x": 47045.0,
-        "y": 15832.1
-      },
-      {
-        "id": "nm0786929",
-        "x": 6812.0,
-        "y": 6609.0
-      },
-      {
-        "id": "nm0825983",
-        "x": 5969.0,
-        "y": 1209.4
-      },
-      {
-        "id": "nm1080706",
-        "x": 4776.0,
-        "y": 965.0
+        "id": "nm11041462",
+        "x": 1329.0,
+        "y": 443.8
       },
       {
         "id": "nm11484807",
-        "x": 8642.0,
-        "y": 2940.8
+        "x": 5370.0,
+        "y": 2827.7
+      },
+      {
+        "id": "nm11843540",
+        "x": 8436.0,
+        "y": 1797.7
       },
       {
         "id": "nm1205389",
-        "x": 6353.0,
-        "y": 1211.6
+        "x": 5828.0,
+        "y": 1082.2
       },
       {
         "id": "nm12690549",
-        "x": 3521.0,
+        "x": 2778.0,
         "y": 600.6
       },
       {
         "id": "nm13851921",
-        "x": 7360.0,
-        "y": 1293.8
+        "x": 7002.0,
+        "y": 1272.6
       },
       {
         "id": "nm13872754",
-        "x": 2790.0,
-        "y": 581.8
+        "x": 2048.0,
+        "y": 535.3
       },
       {
         "id": "nm13934854",
-        "x": 3965.0,
+        "x": 3777.0,
         "y": 733.7
       },
       {
-        "id": "nm14688444",
-        "x": 10138.0,
-        "y": 1830.7
+        "id": "nm13935319",
+        "x": 4628.0,
+        "y": 920.7
       },
       {
-        "id": "nm14815297",
-        "x": 1476.0,
-        "y": 492.8
+        "id": "nm14688444",
+        "x": 9658.0,
+        "y": 1772.8
       },
       {
         "id": "nm15043068",
-        "x": 8617.0,
-        "y": 1569.0
+        "x": 7549.0,
+        "y": 1340.2
       },
       {
         "id": "nm15129858",
-        "x": 9401.0,
+        "x": 8977.0,
         "y": 1730.3
       },
       {
-        "id": "nm1513957",
-        "x": 15761.0,
-        "y": 2874.5
-      },
-      {
-        "id": "nm1515877",
-        "x": 17514.0,
-        "y": 3246.8
-      },
-      {
-        "id": "nm1516026",
-        "x": 12010.0,
-        "y": 2237.8
-      },
-      {
-        "id": "nm1520887",
-        "x": 8938.0,
-        "y": 1985.3
-      },
-      {
         "id": "nm15415030",
-        "x": 9384.0,
-        "y": 1952.5
-      },
-      {
-        "id": "nm15943122",
-        "x": 4977.0,
-        "y": 963.8
-      },
-      {
-        "id": "nm16033060",
-        "x": 3383.0,
-        "y": 585.5
+        "x": 7100.0,
+        "y": 1801.1
       },
       {
         "id": "nm16044348",
-        "x": 6980.0,
-        "y": 1268.0
+        "x": 6456.0,
+        "y": 1175.7
       },
       {
         "id": "nm1632883",
-        "x": 5457.0,
-        "y": 1002.3
-      },
-      {
-        "id": "nm16417214",
-        "x": 2157.0,
-        "y": 555.0
-      },
-      {
-        "id": "nm17002888",
-        "x": 10889.0,
-        "y": 1920.0
-      },
-      {
-        "id": "nm1750778",
-        "x": 7819.0,
-        "y": 1349.2
+        "x": 5040.0,
+        "y": 929.3
       },
       {
         "id": "nm2325955",
-        "x": 13305.0,
-        "y": 2326.4
-      },
-      {
-        "id": "nm2660337",
-        "x": 14396.0,
-        "y": 2576.8
-      },
-      {
-        "id": "nm3532880",
-        "x": 26057.0,
-        "y": 5787.1
+        "x": 10341.0,
+        "y": 2111.9
       },
       {
         "id": "nm5961385",
-        "x": 10474.0,
-        "y": 2105.8
-      },
-      {
-        "id": "nm8801103",
-        "x": 4183.0,
-        "y": 755.4
+        "x": 8759.0,
+        "y": 2098.2
       }
     ],
-    "strength_gini": 0.5114,
+    "strength_gini": 0.4748,
     "strength_hist": [
       {
-        "count": 15,
-        "hi": 6638.5,
-        "lo": 1476.0
+        "count": 10,
+        "hi": 4120.2,
+        "lo": 1077.0
       },
       {
-        "count": 12,
-        "hi": 11801.0,
-        "lo": 6638.5
+        "count": 8,
+        "hi": 7163.4,
+        "lo": 4120.2
       },
       {
-        "count": 4,
-        "hi": 16963.5,
-        "lo": 11801.0
-      },
-      {
-        "count": 1,
-        "hi": 22126.0,
-        "lo": 16963.5
-      },
-      {
-        "count": 1,
-        "hi": 27288.5,
-        "lo": 22126.0
-      },
-      {
-        "count": 0,
-        "hi": 32451.0,
-        "lo": 27288.5
-      },
-      {
-        "count": 1,
-        "hi": 37613.5,
-        "lo": 32451.0
-      },
-      {
-        "count": 1,
-        "hi": 42776.0,
-        "lo": 37613.5
+        "count": 5,
+        "hi": 10206.6,
+        "lo": 7163.4
       },
       {
         "count": 2,
-        "hi": 47938.5,
-        "lo": 42776.0
+        "hi": 13249.8,
+        "lo": 10206.6
+      },
+      {
+        "count": 0,
+        "hi": 16293.0,
+        "lo": 13249.8
+      },
+      {
+        "count": 0,
+        "hi": 19336.2,
+        "lo": 16293.0
+      },
+      {
+        "count": 1,
+        "hi": 22379.4,
+        "lo": 19336.2
+      },
+      {
+        "count": 1,
+        "hi": 25422.6,
+        "lo": 22379.4
+      },
+      {
+        "count": 0,
+        "hi": 28465.8,
+        "lo": 25422.6
       },
       {
         "count": 3,
-        "hi": 53101.0,
-        "lo": 47938.5
+        "hi": 31509.0,
+        "lo": 28465.8
       }
     ],
-    "strength_max": 53101,
-    "strength_median": 8642,
-    "top_name": "Selim Nasit Özcan"
+    "strength_max": 31509,
+    "strength_median": 6456,
+    "top_name": "Carrie Aizley"
   },
   "title": "One-Role Wonders",
-  "tmdb_gender_rows": 0,
+  "tmdb_gender_rows": 5392,
   "top_n": 200
 }

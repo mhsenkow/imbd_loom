@@ -16,11 +16,15 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     votes = vote_floor_sql("r", min_votes=50)
 
     person_sql = f"""
-        WITH thresh AS (
-          SELECT quantile_cont(r.numVotes, 0.5) AS med
+        WITH region_votes AS (
+          SELECT
+            COALESCE(a.region, 'XX') AS region,
+            quantile_cont(r.numVotes, 0.5) AS med
           FROM title_basics t
           JOIN title_ratings r ON r.tconst = t.tconst
+          LEFT JOIN title_akas a ON a.tconst = t.tconst AND a.isOriginalTitle = 1
           WHERE {types} AND {adult} AND {votes}
+          GROUP BY 1
         ),
         person AS (
           SELECT
@@ -28,15 +32,19 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             n.primaryName AS label,
             {ge} AS gender,
             COUNT(DISTINCT p.tconst) AS title_count,
-            COUNT(DISTINCT CASE WHEN r.numVotes < th.med THEN p.tconst END)
-              AS below_median_count,
-            SUM(COALESCE(r.numVotes, 0)) AS prominence
+            COUNT(DISTINCT CASE
+              WHEN r.numVotes < COALESCE(rv.med, g.med) THEN p.tconst
+            END) AS below_median_count,
+            SUM(COALESCE(r.numVotes, 0)) AS prominence,
+            MAX(COALESCE(a.region, 'XX')) AS sample_region
           FROM title_principals p
           JOIN title_basics t ON t.tconst = p.tconst
           JOIN name_basics n ON n.nconst = p.nconst
           LEFT JOIN title_ratings r ON r.tconst = p.tconst
+          LEFT JOIN title_akas a ON a.tconst = p.tconst AND a.isOriginalTitle = 1
+          LEFT JOIN region_votes rv ON rv.region = COALESCE(a.region, 'XX')
           LEFT JOIN gender_enrich ge ON ge.nconst = p.nconst
-          CROSS JOIN thresh th
+          CROSS JOIN (SELECT quantile_cont(numVotes, 0.5) AS med FROM title_ratings) g
           WHERE p.category IN ('actor', 'actress')
             AND {types} AND {adult} AND {votes}
           GROUP BY p.nconst, n.primaryName, ge.tmdb_gender, p.category
@@ -47,12 +55,17 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
           below_median_count * 1.0 / title_count AS b_movie_share
         FROM person
         WHERE below_median_count * 1.0 / title_count >= 0.70
-        ORDER BY b_movie_share DESC, title_count DESC
-        LIMIT {int(top_n * 3)}
+        ORDER BY b_movie_share DESC, prominence DESC
+        LIMIT {int(top_n * 5)}
     """
 
     nodes, edges, stats = coappearance_edges(
-        con, person_sql, construct="b_movie", top_n=top_n, min_shared=2
+        con,
+        person_sql,
+        construct="b_movie",
+        top_n=top_n,
+        min_shared=2,
+        cap_by="blend",
     )
 
     stage_rows = con.execute(
@@ -81,8 +94,8 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
 
     method = (
         "Population: actors with ≥10 credits where ≥70% of titles are below the "
-        "global median of numVotes (Adult excluded, vote floor ≥50). "
-        "Hero = co-appearance among B-movie-loyal careers."
+        "global / per-original-region median of numVotes (Adult excluded, vote floor ≥50). "
+        "Hero = co-appearance among B-movie-loyal careers; capped by blend strength+prominence."
     )
     return finalize_payload(
         con,

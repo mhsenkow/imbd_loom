@@ -1,56 +1,128 @@
 {
   "1960s": [
     {
-      "source": "nm0825983",
-      "target": "nm0272204",
-      "weight": 809,
-      "year": 1962
+      "source": "nm0672430",
+      "target": "nm0616343",
+      "weight": 555,
+      "year": 1969
     },
     {
-      "source": "nm0272204",
-      "target": "nm0203721",
-      "weight": 504,
-      "year": 1961
+      "source": "nm0602178",
+      "target": "nm0616343",
+      "weight": 555,
+      "year": 1969
+    },
+    {
+      "source": "nm0616343",
+      "target": "nm0529955",
+      "weight": 479,
+      "year": 1965
     }
   ],
   "1970s": [
     {
-      "source": "nm1520887",
-      "target": "nm0272204",
-      "weight": 809,
-      "year": 1976
-    },
-    {
-      "source": "nm1080706",
-      "target": "nm0272204",
-      "weight": 809,
+      "source": "nm0707231",
+      "target": "nm0554928",
+      "weight": 5002,
       "year": 1979
     },
     {
-      "source": "nm0272204",
-      "target": "nm0520876",
-      "weight": 568,
+      "source": "nm0699614",
+      "target": "nm0554928",
+      "weight": 5002,
+      "year": 1979
+    },
+    {
+      "source": "nm0758741",
+      "target": "nm0554928",
+      "weight": 5002,
+      "year": 1977
+    },
+    {
+      "source": "nm0672430",
+      "target": "nm0602178",
+      "weight": 587,
+      "year": 1975
+    },
+    {
+      "source": "nm0672430",
+      "target": "nm0529955",
+      "weight": 479,
+      "year": 1971
+    },
+    {
+      "source": "nm0602178",
+      "target": "nm0529955",
+      "weight": 479,
+      "year": 1971
+    },
+    {
+      "source": "nm0602178",
+      "target": "nm0713999",
+      "weight": 449,
+      "year": 1978
+    },
+    {
+      "source": "nm0616343",
+      "target": "nm0713999",
+      "weight": 449,
+      "year": 1971
+    },
+    {
+      "source": "nm0616343",
+      "target": "nm0650828",
+      "weight": 418,
+      "year": 1970
+    },
+    {
+      "source": "nm0529955",
+      "target": "nm0713999",
+      "weight": 449,
+      "year": 1973
+    },
+    {
+      "source": "nm0529955",
+      "target": "nm0650828",
+      "weight": 418,
       "year": 1972
+    },
+    {
+      "source": "nm0529955",
+      "target": "nm0654876",
+      "weight": 359,
+      "year": 1973
+    },
+    {
+      "source": "nm0713999",
+      "target": "nm0650828",
+      "weight": 418,
+      "year": 1978
+    },
+    {
+      "source": "nm0713999",
+      "target": "nm0654876",
+      "weight": 359,
+      "year": 1979
+    },
+    {
+      "source": "nm0650828",
+      "target": "nm0654876",
+      "weight": 359,
+      "year": 1978
     }
   ],
   "1980s": [
     {
-      "source": "nm0654741",
-      "target": "nm0707231",
-      "weight": 9266,
-      "year": 1986
-    },
-    {
       "source": "nm0707231",
       "target": "nm0699614",
-      "weight": 9079,
-      "year": 1985
+      "weight": 8598,
+      "year": 1984
     },
     {
       "source": "nm0707231",
       "target": "nm0758741",
       "weight": 7096,
-      "year": 1983
+      "year": 1982
     },
     {
       "source": "nm0699614",
@@ -59,369 +131,153 @@
       "year": 1982
     },
     {
-      "source": "nm0825983",
-      "target": "nm0520876",
-      "weight": 568,
-      "year": 1988
+      "source": "nm0699614",
+      "target": "nm0145745",
+      "weight": 2215,
+      "year": 1986
     },
     {
-      "source": "nm0520876",
-      "target": "nm0203721",
-      "weight": 504,
-      "year": 1987
+      "source": "nm0758741",
+      "target": "nm0145745",
+      "weight": 2215,
+      "year": 1985
+    },
+    {
+      "source": "nm0554928",
+      "target": "nm0145745",
+      "weight": 2215,
+      "year": 1981
+    },
+    {
+      "source": "nm0145745",
+      "target": "nm0672430",
+      "weight": 1323,
+      "year": 1982
     }
   ],
   "1990s": [
     {
-      "source": "nm0654741",
-      "target": "nm0776856",
-      "weight": 15832,
-      "year": 1993
-    },
-    {
-      "source": "nm0654741",
-      "target": "nm0014953",
-      "weight": 12868,
-      "year": 1996
-    },
-    {
-      "source": "nm0776856",
-      "target": "nm0707231",
-      "weight": 9266,
-      "year": 1993
-    },
-    {
-      "source": "nm0776856",
-      "target": "nm0699614",
-      "weight": 9079,
-      "year": 1992
-    },
-    {
       "source": "nm0014953",
       "target": "nm0707231",
       "weight": 9266,
-      "year": 1996
-    },
-    {
-      "source": "nm0014953",
-      "target": "nm0699614",
-      "weight": 9079,
       "year": 1995
     },
     {
-      "source": "nm0707231",
-      "target": "nm0701248",
-      "weight": 9020,
+      "source": "nm0014953",
+      "target": "nm0699614",
+      "weight": 8598,
+      "year": 1995
+    },
+    {
+      "source": "nm0014953",
+      "target": "nm0758741",
+      "weight": 7096,
       "year": 1994
     },
     {
-      "source": "nm0699614",
-      "target": "nm0701248",
-      "weight": 9020,
+      "source": "nm0758741",
+      "target": "nm2325955",
+      "weight": 2111,
+      "year": 1996
+    },
+    {
+      "source": "nm0554928",
+      "target": "nm2325955",
+      "weight": 2111,
       "year": 1993
     },
     {
-      "source": "nm0699614",
-      "target": "nm3532880",
-      "weight": 5787,
-      "year": 1999
+      "source": "nm0554928",
+      "target": "nm5961385",
+      "weight": 2098,
+      "year": 1997
     },
     {
-      "source": "nm0701248",
-      "target": "nm0758741",
-      "weight": 7096,
-      "year": 1991
-    },
-    {
-      "source": "nm0758741",
-      "target": "nm3532880",
-      "weight": 5787,
-      "year": 1998
-    },
-    {
-      "source": "nm0758741",
-      "target": "nm1515877",
-      "weight": 3246,
-      "year": 1995
-    },
-    {
-      "source": "nm0758741",
-      "target": "nm1513957",
-      "weight": 2874,
+      "source": "nm2325955",
+      "target": "nm0672430",
+      "weight": 1323,
       "year": 1993
     },
     {
-      "source": "nm1516026",
-      "target": "nm0825983",
-      "weight": 1209,
-      "year": 1993
+      "source": "nm2325955",
+      "target": "nm0602178",
+      "weight": 587,
+      "year": 1994
     },
     {
       "source": "nm5961385",
-      "target": "nm0825983",
-      "weight": 1209,
+      "target": "nm0672430",
+      "weight": 1323,
+      "year": 1997
+    },
+    {
+      "source": "nm5961385",
+      "target": "nm0602178",
+      "weight": 587,
       "year": 1998
     },
     {
-      "source": "nm1520887",
-      "target": "nm0825983",
-      "weight": 1209,
-      "year": 1992
-    },
-    {
-      "source": "nm0825983",
-      "target": "nm1080706",
-      "weight": 965,
-      "year": 1995
-    },
-    {
-      "source": "nm1080706",
-      "target": "nm0203721",
-      "weight": 504,
-      "year": 1995
+      "source": "nm5961385",
+      "target": "nm0616343",
+      "weight": 555,
+      "year": 1991
     }
   ],
   "2000s": [
     {
-      "source": "nm0776856",
-      "target": "nm0014953",
-      "weight": 12868,
-      "year": 2004
-    },
-    {
-      "source": "nm0014953",
-      "target": "nm0701248",
-      "weight": 9020,
-      "year": 2004
-    },
-    {
-      "source": "nm0701248",
-      "target": "nm3532880",
-      "weight": 5787,
-      "year": 2008
-    },
-    {
-      "source": "nm0701248",
-      "target": "nm1515877",
-      "weight": 3246,
-      "year": 2005
-    },
-    {
-      "source": "nm1515877",
-      "target": "nm1513957",
-      "weight": 2874,
-      "year": 2007
-    },
-    {
-      "source": "nm1513957",
+      "source": "nm0145745",
       "target": "nm2325955",
-      "weight": 2326,
-      "year": 2009
+      "weight": 2111,
+      "year": 2000
     },
     {
-      "source": "nm1513957",
-      "target": "nm1516026",
-      "weight": 2237,
-      "year": 2006
-    },
-    {
-      "source": "nm1516026",
-      "target": "nm1520887",
-      "weight": 1985,
-      "year": 2007
-    },
-    {
-      "source": "nm1080706",
-      "target": "nm0520876",
-      "weight": 568,
-      "year": 2005
-    },
-    {
-      "source": "nm0786929",
-      "target": "nm11484807",
-      "weight": 2940,
-      "year": 2009
-    },
-    {
-      "source": "nm0786929",
-      "target": "nm15415030",
-      "weight": 1952,
-      "year": 2009
-    },
-    {
-      "source": "nm14688444",
-      "target": "nm1750778",
-      "weight": 1349,
-      "year": 2007
-    },
-    {
-      "source": "nm15129858",
-      "target": "nm1750778",
-      "weight": 1349,
-      "year": 2007
-    },
-    {
-      "source": "nm15043068",
-      "target": "nm1750778",
-      "weight": 1349,
-      "year": 2007
-    },
-    {
-      "source": "nm1750778",
-      "target": "nm13851921",
-      "weight": 1293,
-      "year": 2006
-    },
-    {
-      "source": "nm1750778",
-      "target": "nm16044348",
-      "weight": 1268,
-      "year": 2007
-    },
-    {
-      "source": "nm1750778",
-      "target": "nm1205389",
-      "weight": 1211,
-      "year": 2007
+      "source": "nm0145745",
+      "target": "nm5961385",
+      "weight": 2098,
+      "year": 2004
     }
   ],
   "2010s": [
     {
-      "source": "nm3532880",
-      "target": "nm1515877",
-      "weight": 3246,
-      "year": 2012
-    },
-    {
-      "source": "nm3532880",
-      "target": "nm1513957",
-      "weight": 2874,
-      "year": 2010
-    },
-    {
-      "source": "nm3532880",
-      "target": "nm2660337",
-      "weight": 2576,
-      "year": 2015
-    },
-    {
-      "source": "nm1515877",
-      "target": "nm2660337",
-      "weight": 2576,
-      "year": 2012
-    },
-    {
-      "source": "nm1515877",
-      "target": "nm2325955",
-      "weight": 2326,
-      "year": 2011
-    },
-    {
-      "source": "nm1513957",
-      "target": "nm2660337",
-      "weight": 2576,
-      "year": 2010
-    },
-    {
-      "source": "nm2660337",
-      "target": "nm2325955",
-      "weight": 2326,
-      "year": 2015
-    },
-    {
-      "source": "nm2660337",
-      "target": "nm1516026",
-      "weight": 2237,
-      "year": 2012
-    },
-    {
-      "source": "nm2660337",
-      "target": "nm5961385",
-      "weight": 2105,
-      "year": 2017
-    },
-    {
-      "source": "nm2325955",
-      "target": "nm1516026",
-      "weight": 2237,
-      "year": 2011
-    },
-    {
       "source": "nm2325955",
       "target": "nm5961385",
-      "weight": 2105,
+      "weight": 2098,
       "year": 2016
-    },
-    {
-      "source": "nm2325955",
-      "target": "nm1520887",
-      "weight": 1985,
-      "year": 2010
-    },
-    {
-      "source": "nm1516026",
-      "target": "nm5961385",
-      "weight": 2105,
-      "year": 2013
-    },
-    {
-      "source": "nm5961385",
-      "target": "nm1520887",
-      "weight": 1985,
-      "year": 2013
-    },
-    {
-      "source": "nm5961385",
-      "target": "nm1080706",
-      "weight": 965,
-      "year": 2016
-    },
-    {
-      "source": "nm1520887",
-      "target": "nm1080706",
-      "weight": 965,
-      "year": 2010
-    },
-    {
-      "source": "nm0786929",
-      "target": "nm17002888",
-      "weight": 1920,
-      "year": 2010
     },
     {
       "source": "nm13851921",
       "target": "nm1632883",
-      "weight": 1002,
-      "year": 2018
+      "weight": 929,
+      "year": 2017
     },
     {
       "source": "nm16044348",
       "target": "nm1632883",
-      "weight": 1002,
-      "year": 2019
+      "weight": 929,
+      "year": 2018
     },
     {
       "source": "nm1205389",
       "target": "nm1632883",
-      "weight": 1002,
+      "weight": 929,
       "year": 2018
     },
     {
       "source": "nm1632883",
-      "target": "nm15943122",
-      "weight": 963,
-      "year": 2019
-    },
-    {
-      "source": "nm1632883",
-      "target": "nm8801103",
-      "weight": 755,
-      "year": 2019
+      "target": "nm13935319",
+      "weight": 920,
+      "year": 2018
     },
     {
       "source": "nm1632883",
       "target": "nm13934854",
       "weight": 733,
+      "year": 2018
+    },
+    {
+      "source": "nm1632883",
+      "target": "nm12690549",
+      "weight": 600,
       "year": 2018
     }
   ],
@@ -429,31 +285,31 @@
     {
       "source": "nm11484807",
       "target": "nm15415030",
-      "weight": 1952,
+      "weight": 1801,
       "year": 2024
     },
     {
       "source": "nm11484807",
-      "target": "nm17002888",
-      "weight": 1920,
+      "target": "nm11843540",
+      "weight": 1797,
       "year": 2024
     },
     {
       "source": "nm11484807",
       "target": "nm14688444",
-      "weight": 1830,
+      "weight": 1772,
       "year": 2024
     },
     {
       "source": "nm15415030",
-      "target": "nm17002888",
-      "weight": 1920,
+      "target": "nm11843540",
+      "weight": 1797,
       "year": 2024
     },
     {
       "source": "nm15415030",
       "target": "nm14688444",
-      "weight": 1830,
+      "weight": 1772,
       "year": 2024
     },
     {
@@ -463,21 +319,21 @@
       "year": 2024
     },
     {
-      "source": "nm17002888",
+      "source": "nm11843540",
       "target": "nm14688444",
-      "weight": 1830,
+      "weight": 1772,
       "year": 2024
     },
     {
-      "source": "nm17002888",
+      "source": "nm11843540",
       "target": "nm15129858",
       "weight": 1730,
       "year": 2024
     },
     {
-      "source": "nm17002888",
+      "source": "nm11843540",
       "target": "nm15043068",
-      "weight": 1569,
+      "weight": 1340,
       "year": 2024
     },
     {
@@ -489,104 +345,104 @@
     {
       "source": "nm14688444",
       "target": "nm15043068",
-      "weight": 1569,
+      "weight": 1340,
       "year": 2024
+    },
+    {
+      "source": "nm14688444",
+      "target": "nm13851921",
+      "weight": 1272,
+      "year": 2023
     },
     {
       "source": "nm15129858",
       "target": "nm15043068",
-      "weight": 1569,
+      "weight": 1340,
       "year": 2024
     },
     {
       "source": "nm15129858",
       "target": "nm13851921",
-      "weight": 1293,
+      "weight": 1272,
       "year": 2023
+    },
+    {
+      "source": "nm15129858",
+      "target": "nm16044348",
+      "weight": 1175,
+      "year": 2024
     },
     {
       "source": "nm15043068",
       "target": "nm13851921",
-      "weight": 1293,
+      "weight": 1272,
       "year": 2023
     },
     {
       "source": "nm15043068",
       "target": "nm16044348",
-      "weight": 1268,
+      "weight": 1175,
+      "year": 2024
+    },
+    {
+      "source": "nm15043068",
+      "target": "nm1205389",
+      "weight": 1082,
       "year": 2024
     },
     {
       "source": "nm13851921",
       "target": "nm16044348",
-      "weight": 1268,
+      "weight": 1175,
       "year": 2024
     },
     {
       "source": "nm13851921",
       "target": "nm1205389",
-      "weight": 1211,
+      "weight": 1082,
       "year": 2023
     },
     {
       "source": "nm16044348",
       "target": "nm1205389",
-      "weight": 1211,
+      "weight": 1082,
       "year": 2024
     },
     {
       "source": "nm16044348",
-      "target": "nm15943122",
-      "weight": 963,
-      "year": 2025
-    },
-    {
-      "source": "nm1205389",
-      "target": "nm15943122",
-      "weight": 963,
+      "target": "nm13935319",
+      "weight": 920,
       "year": 2024
     },
     {
       "source": "nm1205389",
-      "target": "nm8801103",
-      "weight": 755,
+      "target": "nm13935319",
+      "weight": 920,
       "year": 2024
     },
     {
-      "source": "nm15943122",
-      "target": "nm8801103",
-      "weight": 755,
-      "year": 2025
-    },
-    {
-      "source": "nm15943122",
+      "source": "nm1205389",
       "target": "nm13934854",
       "weight": 733,
       "year": 2024
     },
     {
-      "source": "nm15943122",
-      "target": "nm12690549",
-      "weight": 600,
-      "year": 2024
-    },
-    {
-      "source": "nm8801103",
+      "source": "nm13935319",
       "target": "nm13934854",
       "weight": 733,
       "year": 2024
     },
     {
-      "source": "nm8801103",
+      "source": "nm13935319",
       "target": "nm12690549",
       "weight": 600,
       "year": 2024
     },
     {
-      "source": "nm8801103",
-      "target": "nm16033060",
-      "weight": 585,
-      "year": 2025
+      "source": "nm13935319",
+      "target": "nm13872754",
+      "weight": 535,
+      "year": 2023
     },
     {
       "source": "nm13934854",
@@ -596,69 +452,33 @@
     },
     {
       "source": "nm13934854",
-      "target": "nm16033060",
-      "weight": 585,
-      "year": 2024
+      "target": "nm13872754",
+      "weight": 535,
+      "year": 2023
     },
     {
       "source": "nm13934854",
+      "target": "nm11041462",
+      "weight": 443,
+      "year": 2024
+    },
+    {
+      "source": "nm12690549",
       "target": "nm13872754",
-      "weight": 581,
+      "weight": 535,
       "year": 2023
     },
     {
       "source": "nm12690549",
-      "target": "nm16033060",
-      "weight": 585,
-      "year": 2024
-    },
-    {
-      "source": "nm12690549",
-      "target": "nm13872754",
-      "weight": 581,
-      "year": 2023
-    },
-    {
-      "source": "nm12690549",
-      "target": "nm16417214",
-      "weight": 555,
-      "year": 2024
-    },
-    {
-      "source": "nm16033060",
-      "target": "nm13872754",
-      "weight": 581,
-      "year": 2024
-    },
-    {
-      "source": "nm16033060",
-      "target": "nm16417214",
-      "weight": 555,
-      "year": 2025
-    },
-    {
-      "source": "nm16033060",
-      "target": "nm14815297",
-      "weight": 492,
-      "year": 2025
-    },
-    {
-      "source": "nm13872754",
-      "target": "nm16417214",
-      "weight": 555,
+      "target": "nm11041462",
+      "weight": 443,
       "year": 2024
     },
     {
       "source": "nm13872754",
-      "target": "nm14815297",
-      "weight": 492,
+      "target": "nm11041462",
+      "weight": 443,
       "year": 2024
-    },
-    {
-      "source": "nm16417214",
-      "target": "nm14815297",
-      "weight": 492,
-      "year": 2025
     }
   ]
 }

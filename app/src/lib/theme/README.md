@@ -11,7 +11,23 @@ chrome CSS uses `cssVars(theme)` injected by `ThemeProvider`.
 | `surface` / `text` / `line` / `accent` | Chrome semantic tokens |
 | `mark` / `link` / `grid` / `axis` | Chart mark semantics |
 | `stat.*` | Fixed annotation layer (does **not** track active palette) |
+| `opacity.*` + `lineStyle.ts` | Shared weave ladder: ambient → related → skim → hot → dim |
 | `PALETTES` / `PALETTE_META` | Categorical weave palettes only |
+
+## Line ladder
+
+Chart strokes go through `linkInteractionStyle` / `warpLineStyle` / `gridLineStyle`
+(`lib/theme/lineStyle.ts`) — not frozen `fonts.ts` LIGHT aliases.
+
+| State | Role |
+|---|---|
+| `ambient` | Resting weave |
+| `related` | Neighbor of focus |
+| `skim` | Pointer before dwell settle |
+| `hot` | Pin / settled edge |
+| `dim` | Non-related under focus |
+
+Dark theme adds `opacity.darkFloorBoost` so hairlines stay readable on workshop paper.
 
 ## Primitive consumers
 
@@ -22,7 +38,7 @@ chrome CSS uses `cssVars(theme)` injected by `ThemeProvider`.
 | `SurfaceCard` / `ThemeScope` | Pins subtree via `cssVars(theme)` |
 | `Legend` / `ChartLegend` | `mark.gender.*`, palette hues, sequential low/high |
 | `ChartDefs` | Weave stops, `--paper-grain-opacity`, `mark.dim` / `mark.hub` |
-| Timeline / Poster / HeroViz | `fonts.ts` aliases → `LIGHT.*` / `token()` |
+| Timeline / Poster / HeroViz / warps | `chartChrome(theme)` + `lineStyle` helpers |
 
 ## Rules
 

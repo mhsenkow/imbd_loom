@@ -2,27 +2,6 @@
   {
     "stageFrom": "gender",
     "stageTo": "era",
-    "categoryFrom": "female",
-    "categoryTo": "classic",
-    "value": 58
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "era",
-    "categoryFrom": "female",
-    "categoryTo": "remake era",
-    "value": 561
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "era",
-    "categoryFrom": "male",
-    "categoryTo": "elevated",
-    "value": 1141
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "era",
     "categoryFrom": "male",
     "categoryTo": "classic",
     "value": 424
@@ -51,6 +30,27 @@
   {
     "stageFrom": "gender",
     "stageTo": "era",
+    "categoryFrom": "female",
+    "categoryTo": "classic",
+    "value": 58
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "female",
+    "categoryTo": "remake era",
+    "value": 561
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "male",
+    "categoryTo": "elevated",
+    "value": 1141
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
     "categoryFrom": "male",
     "categoryTo": "slasher era",
     "value": 659
@@ -72,16 +72,16 @@
   {
     "stageFrom": "era",
     "stageTo": "role_band",
-    "categoryFrom": "slasher era",
+    "categoryFrom": "classic",
     "categoryTo": "featured",
-    "value": 272
+    "value": 129
   },
   {
     "stageFrom": "era",
     "stageTo": "role_band",
-    "categoryFrom": "classic",
+    "categoryFrom": "slasher era",
     "categoryTo": "featured",
-    "value": 129
+    "value": 272
   },
   {
     "stageFrom": "era",
@@ -93,23 +93,9 @@
   {
     "stageFrom": "era",
     "stageTo": "role_band",
-    "categoryFrom": "slasher era",
-    "categoryTo": "lead",
-    "value": 315
-  },
-  {
-    "stageFrom": "era",
-    "stageTo": "role_band",
-    "categoryFrom": "remake era",
-    "categoryTo": "ensemble",
-    "value": 572
-  },
-  {
-    "stageFrom": "era",
-    "stageTo": "role_band",
     "categoryFrom": "classic",
-    "categoryTo": "lead",
-    "value": 251
+    "categoryTo": "ensemble",
+    "value": 102
   },
   {
     "stageFrom": "era",
@@ -117,13 +103,6 @@
     "categoryFrom": "slasher era",
     "categoryTo": "ensemble",
     "value": 274
-  },
-  {
-    "stageFrom": "era",
-    "stageTo": "role_band",
-    "categoryFrom": "classic",
-    "categoryTo": "ensemble",
-    "value": 102
   },
   {
     "stageFrom": "era",
@@ -138,5 +117,26 @@
     "categoryFrom": "elevated",
     "categoryTo": "featured",
     "value": 616
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "role_band",
+    "categoryFrom": "classic",
+    "categoryTo": "lead",
+    "value": 251
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "role_band",
+    "categoryFrom": "slasher era",
+    "categoryTo": "lead",
+    "value": 315
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "role_band",
+    "categoryFrom": "remake era",
+    "categoryTo": "ensemble",
+    "value": 572
   }
 ]

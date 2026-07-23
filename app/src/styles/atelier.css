@@ -56,10 +56,14 @@
   --shadow-lg: #00000055;
   --shadow-xl: #00000088;
   --shadow-inset: #ffffff22;
-  --link-opacity-base: 0.45;
-  --link-opacity-hot: 0.85;
-  --link-opacity-dim: 0.12;
-  --mark-dim-opacity: 0.12;
+  --link-opacity-base: 0.48;
+  --link-opacity-ambient: 0.48;
+  --link-opacity-related: 0.75;
+  --link-opacity-skim: 0.68;
+  --link-opacity-hot: 0.9;
+  --link-opacity-dim: 0.15;
+  --warp-opacity-ambient: 0.5;
+  --mark-dim-opacity: 0.14;
   --mark-focus-wash: #c45c2622;
   --paper-grain-opacity: 0.045;
   --grid-decade: #c8bfb0;
@@ -752,6 +756,37 @@ select:focus-visible,
   color: color-mix(in srgb, var(--accent) 70%, #fff);
 }
 
+.search-global {
+  margin-top: 8px;
+}
+
+.search-global-list {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.search-global-name {
+  display: block;
+  font-size: 12px;
+  color: var(--atelier-text);
+}
+
+.search-global-jumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.search-jump {
+  font-size: 10px !important;
+  padding: 2px 6px !important;
+}
+
 .status {
   font-family: var(--mono);
   font-size: 11px;
@@ -938,13 +973,17 @@ select:focus-visible,
 }
 
 /* Calm opacity — soft-start settle so scanning doesn't hard-cut the weave */
+.loom-link,
 .timeline-links path,
 .timeline-people g,
+.timeline-static-links path,
 .ribbons path,
 .bundle-links path,
 .chord-arcs path,
 .arcs g,
 .bundle-leaves g,
+.construct-bridges path,
+.alluvial-flow,
 .poster svg .arc,
 .poster svg .ribbon {
   transition:
@@ -954,10 +993,20 @@ select:focus-visible,
     stroke-width 220ms var(--ease-settle);
 }
 
+.loom-link.is-skim {
+  /* Skim is attribute-driven; class marks intent for settle CSS */
+  vector-effect: non-scaling-stroke;
+}
+
+.loom-link.is-hot {
+  vector-effect: non-scaling-stroke;
+}
+
 .timeline-shell.is-zooming .timeline-links path,
 .timeline-shell.is-zooming .timeline-people g,
 .timeline-shell.is-zooming .link-enter,
-.timeline-shell.is-zooming .person-enter {
+.timeline-shell.is-zooming .person-enter,
+.timeline-shell.is-zooming .loom-link {
   transition: none !important;
   animation: none !important;
 }
@@ -985,11 +1034,15 @@ select:focus-visible,
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .loom-link,
   .timeline-links path,
   .timeline-people g,
+  .timeline-static-links path,
   .ribbons path,
   .bundle-links path,
   .chord-arcs path,
+  .construct-bridges path,
+  .alluvial-flow,
   .poster svg .arc,
   .poster svg .ribbon,
   .insight-card,

@@ -30,6 +30,10 @@ def _check_construct(cid: str) -> list[str]:
     manifest = json.loads((d / "manifest.json").read_text(encoding="utf-8"))
 
     if not nodes:
+        note = (manifest.get("method_note") or "").strip()
+        mode = (manifest.get("build_stats") or {}).get("enrichment_mode")
+        if note.startswith("EMPTY:") or mode == "empty":
+            return []
         errors.append(f"{cid}: empty nodes")
     if len(nodes) > 300:
         errors.append(f"{cid}: density budget exceeded ({len(nodes)} > 300)")

@@ -13,9 +13,9 @@ import type { SearchMatch } from "../lib/search";
 import { pickStripIds, type PersonIndexEntry } from "../lib/bridges";
 import { materializeConstruct } from "../lib/filter";
 import { personFacetLabels, synthesizeStages } from "../lib/stages";
-import { ACCENT, FONT_MONO, FONT_SANS } from "../lib/fonts";
+import { FONT_MONO, FONT_SANS } from "../lib/fonts";
 import { sequentialLow } from "../lib/theme/scales";
-import { LIGHT, PALETTES, token, type PaletteName } from "../lib/theme/tokens";
+import { PALETTES, token, type PaletteName } from "../lib/theme/tokens";
 import { chartChrome } from "../lib/theme/chartChrome";
 import { useTheme } from "../lib/theme/ThemeContext";
 import { genderColors } from "../lib/colors";
@@ -63,7 +63,15 @@ export function Poster({
   const { theme, printForced } = useTheme();
   const chartTheme = printForced ? "light" : theme;
   const chrome = useMemo(() => chartChrome(chartTheme), [chartTheme]);
-  const { paper: PAPER, ink: INK, inkSoft: INK_SOFT, inkFaint: INK_FAINT, trim: TRIM } = chrome;
+  const {
+    paper: PAPER,
+    ink: INK,
+    inkSoft: INK_SOFT,
+    inkFaint: INK_FAINT,
+    trim: TRIM,
+    accent: ACCENT,
+    accentMid,
+  } = chrome;
   const genderSwatches = useMemo(
     () => genderColors(spec.palette, chartTheme),
     [spec.palette, chartTheme],
@@ -252,7 +260,7 @@ export function Poster({
           width={layout.trimW - layout.safe * 2}
           height={layout.trimH - layout.safe * 2}
           fill="none"
-          stroke={token("accent.soft", "light")}
+          stroke={token("accent.soft", chartTheme)}
           strokeWidth={0.3}
           strokeDasharray="2 2"
         />
@@ -417,6 +425,7 @@ export function Poster({
                 height={panelH}
                 maxWarps={spec.maxWarps}
                 focusId={focusPersonId}
+                skimId={selection?.skimId ?? null}
                 interactive={interactive}
                 onHover={onHover}
                 onPin={onPin}
@@ -610,7 +619,7 @@ function Legend({
         width={80}
         height={5}
         fill="url(#degGrad)"
-        stroke={LIGHT.LEGEND_STROKE}
+        stroke={token("line.trim", theme)}
         strokeWidth={0.2}
       />
       <text x={0} y={18} fontSize={4} fontFamily={FONT_MONO} fill={token("text.inkFaint", theme)}>

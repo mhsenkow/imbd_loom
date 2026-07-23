@@ -37,6 +37,11 @@ def enrich(
     skip_tmdb: bool = typer.Option(False, help="Skip TMDB gender enrichment"),
     skip_wikidata: bool = typer.Option(False, help="Skip Wikidata voice enrichment"),
     skip_bechdel: bool = typer.Option(False, help="Skip Bechdel test movie list download"),
+    skip_extra: bool = typer.Option(False, help="Skip Wikidata people / MovieLens / pageviews"),
+    only_extra: bool = typer.Option(False, help="Only run extra enrichment (WD people etc.)"),
+    require_wikidata_people: bool = typer.Option(
+        False, help="Exit non-zero if wikidata_people cache is empty/failed"
+    ),
     limit: int = typer.Option(0, help="Cap people to enrich (0 = all candidates)"),
 ) -> None:
     """Enrich people with TMDB gender + Wikidata voice-actor flags + Bechdel titles."""
@@ -44,8 +49,26 @@ def enrich(
         skip_tmdb=skip_tmdb,
         skip_wikidata=skip_wikidata,
         skip_bechdel=skip_bechdel,
+        skip_extra=skip_extra,
+        only_extra=only_extra,
+        require_wikidata_people=require_wikidata_people,
         limit=limit or None,
     )
+
+
+@app.command()
+def validate(
+    canaries: bool = typer.Option(True, help="Check data/fixtures/canaries.json against nodes"),
+) -> None:
+    """Validate shipped construct outputs (canaries + verify invariants)."""
+    from loom.commands.validate_canaries import validate_canaries
+    from loom.commands.verify import verify_all
+
+    code = 0
+    if canaries:
+        code = validate_canaries() or code
+    code = verify_all() or code
+    raise SystemExit(code)
 
 
 @app.command()

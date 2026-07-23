@@ -1,10 +1,13 @@
 /** Alluvial small-multiple panel. */
 
-import { ACCENT, FONT_SANS, INK, INK_SOFT } from "../lib/fonts";
+import { FONT_SANS } from "../lib/fonts";
 import { useMemo } from "react";
 import type { StageRow } from "../lib/types";
 import { layoutAlluvial } from "../viz/alluvial";
-import { STAT_COLORS, hasStat, type ViewStatMarks } from "../lib/statsMarks";
+import { hasStat, statColors, type ViewStatMarks } from "../lib/statsMarks";
+import { chartChrome } from "../lib/theme/chartChrome";
+import { linkFillOpacity } from "../lib/theme/lineStyle";
+import { useTheme } from "../lib/theme/ThemeContext";
 
 interface Props {
   stages: StageRow[];
@@ -45,9 +48,13 @@ export function AlluvialPanel({
   viewStats = null,
   statKeys = null,
 }: Props) {
+  const { theme } = useTheme();
+  const chrome = useMemo(() => chartChrome(theme), [theme]);
+  const stats = useMemo(() => statColors(theme), [theme]);
+
   const layout = useMemo(
-    () => layoutAlluvial(stages, width, height - 14, palette, { colorBy }),
-    [stages, width, height, palette, colorBy],
+    () => layoutAlluvial(stages, width, height - 14, palette, { colorBy, theme }),
+    [stages, width, height, palette, colorBy, theme],
   );
 
   const dimPanel = focusActive && !focusMember;
@@ -68,8 +75,16 @@ export function AlluvialPanel({
     return false;
   };
 
+  const ambientFill = linkFillOpacity("ambient", theme);
+  const hotFill = linkFillOpacity("hot", theme);
+  const dimFill = linkFillOpacity("dim", theme);
+
   return (
-    <g transform={`translate(${x}, ${y})`} opacity={dimPanel ? 0.28 : 1}>
+    <g
+      className="alluvial-panel"
+      transform={`translate(${x}, ${y})`}
+      opacity={dimPanel ? 0.35 : 1}
+    >
       <text
         x={0}
         y={8}
@@ -77,11 +92,11 @@ export function AlluvialPanel({
         fontSize={6}
         fontWeight={600}
         letterSpacing={0.8}
-        fill={hotPanel ? ACCENT : INK}
+        fill={hotPanel ? chrome.linkHot : chrome.ink}
       >
         {title.toUpperCase()}
         {hotPanel ? (
-          <tspan fill={ACCENT} fontWeight={400} fontSize={4.5} letterSpacing={0}>
+          <tspan fill={chrome.linkHot} fontWeight={400} fontSize={4.5} letterSpacing={0}>
             {"  · in"}
           </tspan>
         ) : null}
@@ -93,9 +108,9 @@ export function AlluvialPanel({
           width={width + 2}
           height={height - 10}
           fill="none"
-          stroke={ACCENT}
-          strokeWidth={0.35}
-          strokeOpacity={0.55}
+          stroke={chrome.linkHot}
+          strokeWidth={0.4}
+          strokeOpacity={0.6}
           rx={0.5}
           pointerEvents="none"
         />
@@ -111,24 +126,27 @@ export function AlluvialPanel({
             ((l.sourceName === modalParts[0] && l.targetName === modalParts[1]) ||
               l.sourceName === modalParts[1] ||
               l.targetName === modalParts[0]);
-          let fillOpacity = 0.38;
+          let fillOpacity = ambientFill;
           if (focusKeys && focusMember) {
-            fillOpacity = hot ? 0.85 : 0.08;
+            fillOpacity = hot ? hotFill : dimFill;
           } else if (modalHot) {
-            fillOpacity = 0.88;
+            fillOpacity = hotFill;
           } else if (statHot && !focusActive) {
-            fillOpacity = 0.72;
+            fillOpacity = linkFillOpacity("related", theme);
           } else if (modalParts && !focusActive) {
-            fillOpacity = 0.2;
+            fillOpacity = dimFill;
           }
+          const outline = modalHot || (hot && theme === "dark");
           return (
             <path
               key={i}
+              className="loom-link alluvial-flow"
               d={l.path}
-              fill={hot ? ACCENT : statHot ? STAT_COLORS.halo : l.fill}
+              fill={hot ? chrome.linkHot : statHot ? stats.halo : l.fill}
               fillOpacity={fillOpacity}
-              stroke={modalHot || statHot ? STAT_COLORS.path : "none"}
-              strokeWidth={modalHot || statHot ? 0.2 : 0}
+              stroke={outline || statHot ? (modalHot || statHot ? stats.path : chrome.linkHot) : "none"}
+              strokeWidth={outline || statHot ? 0.35 : 0}
+              strokeOpacity={outline ? 0.55 : 1}
               strokeDasharray={modalHot ? "1.5 1.2" : undefined}
               pointerEvents="none"
             >
@@ -141,7 +159,7 @@ export function AlluvialPanel({
           const statHot = isStatHot(n.name);
           let opacity = 1;
           if (focusKeys && focusMember) {
-            opacity = hot ? 1 : 0.18;
+            opacity = hot ? 1 : 0.22;
           }
           return (
             <g key={n.id} opacity={opacity} pointerEvents="none">
@@ -150,9 +168,9 @@ export function AlluvialPanel({
                 y={n.y0}
                 width={Math.max(1, n.x1 - n.x0)}
                 height={Math.max(0.5, n.y1 - n.y0)}
-                fill={hot ? ACCENT : statHot ? STAT_COLORS.halo : n.fill}
-                stroke={hot ? INK : statHot ? STAT_COLORS.halo : "none"}
-                strokeWidth={hot || statHot ? 0.25 : 0}
+                fill={hot ? chrome.linkHot : statHot ? stats.halo : n.fill}
+                stroke={hot ? chrome.ink : statHot ? stats.halo : "none"}
+                strokeWidth={hot || statHot ? 0.3 : 0}
               />
               {n.y1 - n.y0 > 5 && (
                 <text
@@ -160,7 +178,7 @@ export function AlluvialPanel({
                   y={(n.y0 + n.y1) / 2}
                   fontSize={3.2}
                   fontFamily={FONT_SANS}
-                  fill={hot ? ACCENT : statHot ? STAT_COLORS.guide : INK_SOFT}
+                  fill={hot ? chrome.linkHot : statHot ? stats.guide : chrome.inkSoft}
                   fontWeight={hot || statHot ? 600 : 400}
                   dominantBaseline="middle"
                 >

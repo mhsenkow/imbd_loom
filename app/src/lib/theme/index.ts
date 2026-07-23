@@ -61,3 +61,20 @@ export {
   usePalette,
   useToken,
 } from "./ThemeContext";
+
+export { chartChrome, type ChartChrome } from "./chartChrome";
+
+export {
+  linkInteractionStyle,
+  linkFillOpacity,
+  linkOpacity,
+  linkClassName,
+  gridLineStyle,
+  warpLineStyle,
+  markOpacity,
+  resolveLinkState,
+  type LinkVisualState,
+  type GridLineKind,
+  type WarpVisualState,
+  type LinePaint,
+} from "./lineStyle";

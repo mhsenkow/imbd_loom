@@ -1,17 +1,16 @@
 /** Static timeline SVG for poster / print (no pan-zoom chrome). */
 
-import {
-  ACCENT,
-  DECADE_GRID,
-  DIM_GHOST,
-  FONT_MONO,
-  FONT_SANS,
-  MODE_DECADE,
-  RULE,
-} from "../lib/fonts";
+import { FONT_MONO, FONT_SANS } from "../lib/fonts";
 import { useMemo } from "react";
 import { driftThreadColors, weaveGradient } from "../lib/theme/scales";
 import { chartChrome } from "../lib/theme/chartChrome";
+import {
+  gridLineStyle,
+  linkInteractionStyle,
+  markOpacity,
+  resolveLinkState,
+} from "../lib/theme/lineStyle";
+import { opacity as opacityTokens } from "../lib/theme/tokens";
 import { useTheme } from "../lib/theme/ThemeContext";
 import { ChartDefs } from "./ChartDefs";
 import type {
@@ -96,7 +95,8 @@ export function TimelineStatic({
   const { theme, printForced } = useTheme();
   const chartTheme = printForced ? "light" : theme;
   const chrome = useMemo(() => chartChrome(chartTheme), [chartTheme]);
-  const { paper: PAPER, ink: INK, inkFaint: INK_FAINT } = chrome;
+  const { paper: PAPER, ink: INK, inkFaint: INK_FAINT, linkHot, modeDecade } = chrome;
+  const printScale = opacityTokens.printLinkScale;
   const focus = selection ? activeId(selection) : null;
   const neighbors = useMemo(() => neighborIds(focus, edges), [focus, edges]);
   const byId = useMemo(() => new Map(nodes.map((n) => [n.id, n])), [nodes]);
@@ -249,9 +249,9 @@ export function TimelineStatic({
             stats.modeDecade != null &&
             y >= stats.modeDecade &&
             y < stats.modeDecade + 10;
-          const stroke = isMode ? MODE_DECADE : isDecade ? DECADE_GRID : RULE;
-          const strokeW = isMode ? 1.4 : isDecade ? 0.85 : 0.4;
-          const dash = !isDecade && !isMode ? "1.5 3" : undefined;
+          const kind = isMode ? "mode" : isDecade ? "decade" : "year";
+          const grid = gridLineStyle({ kind, theme: chartTheme });
+          const dash = kind === "year" ? "1.5 3" : undefined;
           return layout.flipped ? (
             <g key={y} transform={`translate(0,${layout.yScale(y)})`}>
               {isMode ? (
@@ -260,15 +260,17 @@ export function TimelineStatic({
                   y={-5}
                   width={layout.width - layout.padL - layout.padR + 6}
                   height={10}
-                  fill={MODE_DECADE}
-                  fillOpacity={0.08}
+                  fill={modeDecade}
+                  fillOpacity={0.1}
                 />
               ) : null}
               <line
+                className={grid.className}
                 x1={layout.padL - 6}
                 x2={layout.width - layout.padR}
-                stroke={stroke}
-                strokeWidth={strokeW}
+                stroke={grid.stroke}
+                strokeWidth={grid.strokeWidth * 0.9}
+                strokeOpacity={grid.strokeOpacity}
                 strokeDasharray={dash}
               />
               <text
@@ -279,7 +281,7 @@ export function TimelineStatic({
                 fontWeight={isMode || isDecade ? 600 : 400}
                 fontFamily={FONT_MONO}
                 letterSpacing={isDecade ? "-0.02em" : undefined}
-                fill={isMode ? MODE_DECADE : INK_FAINT}
+                fill={isMode ? modeDecade : INK_FAINT}
               >
                 {y}
               </text>
@@ -292,15 +294,17 @@ export function TimelineStatic({
                   y={layout.padT - 6}
                   width={8}
                   height={layout.height - layout.padT}
-                  fill={MODE_DECADE}
-                  fillOpacity={0.08}
+                  fill={modeDecade}
+                  fillOpacity={0.1}
                 />
               ) : null}
               <line
+                className={grid.className}
                 y1={layout.padT - 6}
                 y2={layout.height - 4}
-                stroke={stroke}
-                strokeWidth={strokeW}
+                stroke={grid.stroke}
+                strokeWidth={grid.strokeWidth * 0.9}
+                strokeOpacity={grid.strokeOpacity}
                 strokeDasharray={dash}
               />
               <text
@@ -310,7 +314,7 @@ export function TimelineStatic({
                 fontWeight={isMode || isDecade ? 600 : 400}
                 fontFamily={FONT_MONO}
                 letterSpacing={isDecade ? "-0.02em" : undefined}
-                fill={isMode ? MODE_DECADE : INK_FAINT}
+                fill={isMode ? modeDecade : INK_FAINT}
               >
                 {y}
               </text>
@@ -320,31 +324,47 @@ export function TimelineStatic({
 
         <TimelineStatGuides layout={layout} stats={stats} compact />
 
+        <g className="timeline-static-links">
         {layout.links.map((l, i) => {
           const related = !focus || l.source === focus || l.target === focus;
           const searchHot =
             !search || search.matchedEdgeKeys.has(edgeKey(l.source, l.target));
-          const statLink = linkStatStyle(stats, l.source, l.target, l.weight);
-          let opacity = !focus ? 0.22 : related ? 0.65 : DIM_GHOST * 0.35;
-          if (search && !searchHot) opacity = Math.min(opacity, DIM_GHOST * 0.4);
-          if (search && searchHot) opacity = Math.max(opacity, 0.7);
-          if (statLink) opacity = Math.max(opacity, statLink.thin ? 0.08 : 0.85);
-          const baseW = l.strokeWidth ?? 0.5 + Math.min(2, l.weight * 0.15);
+          const state = resolveLinkState({
+            related: related && searchHot,
+            hasFocus: !!focus || (!!search && !searchHot),
+          });
+          const statLink = linkStatStyle(stats, l.source, l.target, l.weight, chartTheme);
           const pressure = Math.min(1, 0.55 + l.weight * 0.06);
+          const paint = linkInteractionStyle({
+            state: statLink?.thin ? "dim" : state,
+            theme: chartTheme,
+            baseWidth: l.strokeWidth,
+            opacityScale: pressure * printScale,
+            widthBoost: statLink?.strokeWidthBoost,
+            dash: statLink?.dash,
+            stroke: statLink?.stroke,
+          });
           const weaveId = `ts-weave-${l.source}-${l.target}-${i}`;
-          const useGradient = !statLink && l.fill !== l.targetFill && opacity > 0.15;
+          const useGradient =
+            state === "ambient" &&
+            !statLink?.stroke &&
+            l.fill !== l.targetFill &&
+            paint.strokeOpacity > 0.15;
           return (
             <path
               key={i}
+              className={paint.className}
               d={l.path}
               fill="none"
               stroke={statLink?.stroke ?? (useGradient ? `url(#${weaveId})` : l.fill)}
-              strokeOpacity={statLink?.strokeOpacity ?? opacity * pressure}
-              strokeWidth={Math.max(0.25, baseW + (statLink?.strokeWidthBoost ?? 0) * 0.6)}
-              strokeDasharray={statLink?.dash}
+              strokeOpacity={statLink?.strokeOpacity ?? paint.strokeOpacity}
+              strokeWidth={paint.strokeWidth}
+              strokeDasharray={paint.strokeDasharray ?? statLink?.dash}
+              strokeLinecap={paint.strokeLinecap}
             />
           );
         })}
+        </g>
 
         {densestLink && stats?.densestPair ? (
           <DensestPairLabel
@@ -372,11 +392,12 @@ export function TimelineStatic({
             (related && searchHot
               ? 1
               : search && !searchHot
-                ? DIM_GHOST
+                ? markOpacity({ state: "searchMiss", theme: chartTheme })
                 : related
                   ? 1
-                  : DIM_GHOST) * nodeOpacityMod(stats, p.id);
-          const fill = nodeFillOverride(stats, p.id, p.fill);
+                  : markOpacity({ state: "dim", theme: chartTheme })) *
+            nodeOpacityMod(stats, p.id);
+          const fill = nodeFillOverride(stats, p.id, p.fill, chartTheme);
           const drift =
             stats && hasStat(stats, "genre_drift") && stats.driftIds.has(p.id);
           const scale = p.scale ?? 1;
@@ -497,7 +518,7 @@ export function TimelineStatic({
                 fontSize={isFocus ? 9 : 7.5}
                 fontWeight={isFocus ? 600 : 400}
                 fontFamily={FONT_SANS}
-                fill={isFocus ? ACCENT : INK}
+                fill={isFocus ? linkHot : INK}
               >
                 {p.label.length > 20 ? p.label.slice(0, 18) + "…" : p.label}
               </text>

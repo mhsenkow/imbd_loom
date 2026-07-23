@@ -35,14 +35,20 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
           AND {adult}
           AND {votes}
         GROUP BY p.nconst, n.primaryName, ge.tmdb_gender, p.category
-        HAVING COUNT(DISTINCT p.tconst) >= 3
+        HAVING COUNT(DISTINCT p.tconst) >= 4
            AND ({ge}) = 'female'
+           AND AVG(p.ordering) <= 6
         ORDER BY SUM(COALESCE(r.numVotes, 0)) DESC
-        LIMIT {int(top_n * 3)}
+        LIMIT {int(top_n * 5)}
     """
 
     nodes, edges, stats = coappearance_edges(
-        con, person_sql, construct="scream_queen", top_n=top_n, min_shared=2
+        con,
+        person_sql,
+        construct="scream_queen",
+        top_n=top_n,
+        min_shared=2,
+        cap_by="blend",
     )
 
     stage_rows = con.execute(
@@ -91,10 +97,9 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     )
 
     method = (
-        "Population: female-coded cast with ≥3 Horror credits "
-        "(Adult excluded, numVotes ≥50). "
-        "Hero = co-appearance web (shared horror titles ≥2). "
-        "Alluvial: top actresses → era → role band."
+        "Population: female-coded cast with ≥4 Horror credits and lead-ish billing "
+        "(avg ordering ≤6; Adult excluded, numVotes ≥50). Differentiated from Women in Horror "
+        "by billing gate. Hero = co-appearance web (shared horror titles ≥2)."
     )
     return finalize_payload(
         con,

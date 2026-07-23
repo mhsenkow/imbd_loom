@@ -264,7 +264,7 @@ def _load_constructs() -> dict[str, Construct]:
         Construct(
             id="horror_bloodlines",
             title="Horror Royalty Bloodlines",
-            subtitle="horror regulars (men + women, ≥4 titles)",
+            subtitle="horror regulars (men + women, ≥4 titles — not genealogy)",
             key_variable="gender",
             build=horror_bloodlines,
         ),

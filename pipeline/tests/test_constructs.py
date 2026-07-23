@@ -232,3 +232,34 @@ def test_degree_strength_validate():
     edges = [{"source": "a", "target": "b", "weight": 5, "reunion_span": 0}]
     assert validate_construct(nodes, edges) == []
 
+
+
+def test_gender_method_flags_consistent():
+    from loom.constructs import gender_source_flags
+    from loom.db import connect, register_base_tables
+
+    con = connect()
+    register_base_tables(con)
+    flags = gender_source_flags(con)
+    assert "gender_method" in flags
+    assert flags["tmdb_gender_rows"] >= 0
+    if flags["tmdb_gender_rows"] > 0:
+        assert "tmdb" in flags["gender_method"]
+    else:
+        assert "proxy" in flags["gender_method"] or flags["gender_method"].startswith("imdb")
+
+
+def test_voice_membership_soft_true():
+    from loom.membership import voice_signal_sql
+
+    assert voice_signal_sql(soft=True) == "TRUE"
+    hard = voice_signal_sql(soft=False)
+    assert "is_voice_actor" in hard
+    assert "(voice)" in hard
+
+
+def test_character_blocklist_excludes_newscaster():
+    from loom.membership import CHARACTER_BLOCKLIST
+
+    assert "newscaster" in CHARACTER_BLOCKLIST
+    assert "warden" in CHARACTER_BLOCKLIST

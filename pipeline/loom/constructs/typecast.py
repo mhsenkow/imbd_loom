@@ -13,6 +13,11 @@ from loom.constructs.emit import (
     recompute_degree_strength,
 )
 from loom.filters import adult_exclusion_sql, title_type_sql, vote_floor_sql
+from loom.membership import (
+    character_blocklist_sql,
+    character_norm_sql,
+    empty_payload_stats,
+)
 
 
 def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
@@ -20,6 +25,8 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     adult = adult_exclusion_sql("t")
     types = title_type_sql("t")
     votes = vote_floor_sql("r", min_votes=50)
+    char_norm = character_norm_sql("char_name")
+    blocklist = character_blocklist_sql("char_norm")
 
     con.execute(
         f"""
@@ -28,13 +35,10 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
           p.nconst,
           n.primaryName AS label,
           {ge} AS gender,
-          LOWER(TRIM(
-            REGEXP_REPLACE(
-              REGEXP_REPLACE(char_name, '\\s*\\([^)]*\\)\\s*', ' '),
-              '\\s+', ' '
-            )
-          )) AS char_norm,
-          TRIM(REGEXP_REPLACE(char_name, '\\s*\\(voice\\)\\s*', '', 'i')) AS char_display
+          {char_norm} AS char_norm,
+          TRIM(REGEXP_REPLACE(char_name, '\\s*\\(voice\\)\\s*', '', 'i')) AS char_display,
+          COALESCE(r.numVotes, 0) AS votes,
+          LN(COALESCE(r.numVotes, 0) + 1) AS vote_w
         FROM title_principals p
         JOIN title_basics t ON t.tconst = p.tconst
         JOIN name_basics n ON n.nconst = p.nconst
@@ -48,18 +52,15 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     )
 
     con.execute(
-        """
+        f"""
         CREATE OR REPLACE TEMP TABLE _tc_clean AS
         SELECT
-          nconst, label, gender,
+          nconst, label, gender, votes, vote_w,
           CASE WHEN char_norm LIKE 'the %' THEN SUBSTRING(char_norm, 5) ELSE char_norm END
             AS char_norm,
           char_display
         FROM _tc_raw
-        WHERE char_norm NOT IN (
-          'himself', 'herself', 'themselves', 'self', 'narrator',
-          'host', 'announcer', 'additional voices', 'various', 'extra', 'uncredited'
-        )
+        WHERE {blocklist}
           AND LENGTH(char_norm) >= 2
         """
     )
@@ -71,6 +72,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
           SELECT
             nconst, label, gender, char_norm,
             COUNT(*) AS typecast_count,
+            SUM(vote_w) AS prominence,
             MAX(char_display) AS typecast_character
           FROM _tc_clean
           GROUP BY 1, 2, 3, 4
@@ -78,7 +80,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         best AS (
           SELECT *,
             ROW_NUMBER() OVER (
-              PARTITION BY nconst ORDER BY typecast_count DESC, char_norm
+              PARTITION BY nconst ORDER BY typecast_count DESC, prominence DESC, char_norm
             ) AS rk
           FROM counts
         )
@@ -86,10 +88,10 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
           nconst, label, gender,
           typecast_character, char_norm AS typecast_norm,
           typecast_count,
-          typecast_count * 1.0 AS prominence
+          prominence
         FROM best
         WHERE rk = 1 AND typecast_count >= 4
-        ORDER BY typecast_count DESC
+        ORDER BY prominence DESC, typecast_count DESC
         LIMIT {int(top_n * 3)}
         """
     )
@@ -106,16 +108,24 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             nodes=[],
             edges=[],
             stages=[],
-            build_stats={"population_sql": 0},
+            build_stats=empty_payload_stats(
+                reason="no_typecast_repeats", enrichment_mode="empty"
+            ),
             extra={"top_n": top_n},
         )
 
     person_sql = """
         SELECT * FROM _typecast_seed
-        ORDER BY typecast_count DESC, prominence DESC
+        ORDER BY prominence DESC, typecast_count DESC
     """
     nodes, edges, stats = coappearance_edges(
-        con, person_sql, construct="typecast", top_n=top_n, min_shared=2
+        con,
+        person_sql,
+        construct="typecast",
+        top_n=top_n,
+        min_shared=2,
+        cap_by="blend",
+        enrichment_mode="character_norm",
     )
 
     by_arch: dict[str, list[str]] = defaultdict(list)
@@ -153,8 +163,8 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
 
     method = (
         "Population: actors whose most common normalized character name appears "
-        "≥4 times (Adult excluded, numVotes ≥50). "
-        "Edges = co-appearance plus shared typecast archetype links."
+        "≥4 times (Adult excluded, numVotes ≥50; shared character_norm + blocklist). "
+        "Edges = co-appearance plus shared typecast archetype links. Cap by blend."
     )
     return finalize_payload(
         con,

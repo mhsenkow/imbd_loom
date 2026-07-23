@@ -135,6 +135,8 @@ export const line = {
 
 export const accent = {
   base: { light: P.terracotta.base, dark: P.terracotta.base } satisfies ThemedColor,
+  /** Mid tone for hot strokes on dark paper (lighter read than base). */
+  mid: { light: P.terracotta.base, dark: P.terracotta.mid } satisfies ThemedColor,
   hover: { light: P.terracotta.hover, dark: P.terracotta.hover } satisfies ThemedColor,
   pressed: { light: P.terracotta.pressed, dark: P.terracotta.pressed } satisfies ThemedColor,
   soft: { light: P.terracotta.soft, dark: P.terracotta.soft } satisfies ThemedColor,
@@ -148,8 +150,8 @@ export const mark = {
   dim: { light: P.paper[1], dark: P.workshop[2] } satisfies ThemedColor,
   highlight: { light: P.gold.base, dark: P.gold.mid } satisfies ThemedColor,
   isolate: { light: P.ink[3], dark: P.ink[3] } satisfies ThemedColor,
-  /** Focus wash underpaint (print-safe, not neon). */
-  focusWash: { light: P.terracotta.wash, dark: P.terracotta.wash } satisfies ThemedColor,
+  /** Focus wash underpaint (print-safe, not neon). Dark gets a lighter wash on workshop. */
+  focusWash: { light: P.terracotta.wash, dark: "#e07a4528" } satisfies ThemedColor,
   gender: {
     /**
      * Okabe–Ito subset retinted for atelier paper. Chosen for ΔE separation and
@@ -166,6 +168,7 @@ export const mark = {
 export const link = {
   base: { light: P.pine.base, dark: P.pine.mid } satisfies ThemedColor,
   hot: { light: P.terracotta.base, dark: P.terracotta.mid } satisfies ThemedColor,
+  skim: { light: P.terracotta.mid, dark: P.terracotta.mid } satisfies ThemedColor,
 } as const;
 
 export const grid = {
@@ -199,13 +202,30 @@ export const stat = {
   zglow: { light: P.gold.base, dark: P.gold.mid } satisfies ThemedColor,
 } as const;
 
+/**
+ * Chart line opacity ladder (light baseline). Dark theme adds a floor boost
+ * in lineStyle.ts so hairlines stay readable on workshop paper.
+ */
 export const opacity = {
-  linkBase: 0.45,
-  linkHot: 0.85,
-  linkDim: 0.12,
-  markDim: 0.12,
+  /** @deprecated Use linkAmbient — kept for cssVars / fonts.DIM_GHOST compat */
+  linkBase: 0.48,
+  linkAmbient: 0.48,
+  linkRelated: 0.75,
+  linkSkim: 0.68,
+  linkHot: 0.9,
+  linkDim: 0.15,
+  warpAmbient: 0.5,
+  warpDimFactor: 0.35,
+  gridYear: 0.55,
+  gridDecade: 0.72,
+  gridMode: 0.88,
+  markDim: 0.14,
   paperGrain: 0.045,
   paperGrainDark: 0.02,
+  /** Extra ambient/dim opacity on dark paper */
+  darkFloorBoost: 0.1,
+  /** Print / static timeline quieter scale */
+  printLinkScale: 0.85,
 } as const;
 
 export const shadow = {
@@ -461,9 +481,13 @@ export function cssVars(theme: Theme): Record<string, string> {
     "--shadow-lg": t(shadow.lg),
     "--shadow-xl": t(shadow.xl),
     "--shadow-inset": t(shadow.inset),
-    "--link-opacity-base": String(opacity.linkBase),
+    "--link-opacity-base": String(opacity.linkAmbient),
+    "--link-opacity-ambient": String(opacity.linkAmbient),
+    "--link-opacity-related": String(opacity.linkRelated),
+    "--link-opacity-skim": String(opacity.linkSkim),
     "--link-opacity-hot": String(opacity.linkHot),
     "--link-opacity-dim": String(opacity.linkDim),
+    "--warp-opacity-ambient": String(opacity.warpAmbient),
     "--mark-dim-opacity": String(opacity.markDim),
     "--mark-focus-wash": t(mark.focusWash),
     "--paper-grain-opacity": String(

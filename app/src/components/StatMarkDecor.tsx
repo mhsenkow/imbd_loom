@@ -1,15 +1,30 @@
 /** Shared SVG decorations for statistical marks. */
 
-import { FONT_MONO, FONT_SANS, FOCUS_UNDERPAINT, INK, PAPER, TRIM } from "../lib/fonts";
+import { FONT_MONO, FONT_SANS } from "../lib/fonts";
 import {
-  STAT_COLORS,
   hasStat,
   isBridge,
   isInsightFocus,
   isTop5Prominence,
   nodeStatStroke,
+  statColors,
   type ViewStatMarks,
 } from "../lib/statsMarks";
+import { useMemo } from "react";
+import { chartChrome } from "../lib/theme/chartChrome";
+import { useTheme } from "../lib/theme/ThemeContext";
+
+function usePaint() {
+  const { theme } = useTheme();
+  return useMemo(
+    () => ({
+      theme,
+      chrome: chartChrome(theme),
+      c: statColors(theme),
+    }),
+    [theme],
+  );
+}
 
 export function BridgeDiamond({
   cx,
@@ -20,6 +35,8 @@ export function BridgeDiamond({
   cy: number;
   r?: number;
 }) {
+  const { theme, chrome, c } = usePaint();
+  const { paper: PAPER, ink: INK, trim: TRIM, focusWash: FOCUS_UNDERPAINT } = chrome;
   // Embossed diamond: paper underlay + ink face + hairline weave cross
   return (
     <g pointerEvents="none">
@@ -30,7 +47,7 @@ export function BridgeDiamond({
       />
       <polygon
         points={`${cx},${cy - r} ${cx + r},${cy} ${cx},${cy + r} ${cx - r},${cy}`}
-        fill={STAT_COLORS.bridge}
+        fill={c.bridge}
         stroke={PAPER}
         strokeWidth={0.7}
       />
@@ -74,6 +91,8 @@ export function StatHalo({
   dashed?: boolean;
   pulse?: boolean;
 }) {
+  const { theme, chrome, c } = usePaint();
+  const { paper: PAPER, ink: INK, trim: TRIM, focusWash: FOCUS_UNDERPAINT } = chrome;
   return (
     <circle
       className={pulse ? "stat-halo-pulse" : undefined}
@@ -98,6 +117,8 @@ export function GapSpikeMark({
   y: number;
   flipped?: boolean;
 }) {
+  const { theme, chrome, c } = usePaint();
+  const { paper: PAPER, ink: INK, trim: TRIM, focusWash: FOCUS_UNDERPAINT } = chrome;
   const s = 4.5;
   return (
     <g transform={`translate(${x},${y})`} pointerEvents="none">
@@ -106,7 +127,7 @@ export function GapSpikeMark({
         x2={flipped ? s : 0}
         y1={flipped ? 0 : -s}
         y2={flipped ? 0 : s}
-        stroke={STAT_COLORS.guide}
+        stroke={c.guide}
         strokeWidth={1.1}
         strokeLinecap="round"
       />
@@ -115,11 +136,11 @@ export function GapSpikeMark({
         x2={flipped ? 0 : s}
         y1={flipped ? -s : 0}
         y2={flipped ? s : 0}
-        stroke={STAT_COLORS.guide}
+        stroke={c.guide}
         strokeWidth={0.9}
         strokeLinecap="round"
       />
-      <circle r={1.1} fill={STAT_COLORS.guide} stroke={PAPER} strokeWidth={0.4} />
+      <circle r={1.1} fill={c.guide} stroke={PAPER} strokeWidth={0.4} />
       <title>Long career gap (p95+)</title>
     </g>
   );
@@ -134,7 +155,9 @@ export function BillingGlyph({
   cy: number;
   kind: "rising" | "fading";
 }) {
-  const fill = kind === "rising" ? STAT_COLORS.rising : STAT_COLORS.fading;
+  const { theme, chrome, c } = usePaint();
+  const { paper: PAPER, ink: INK, trim: TRIM, focusWash: FOCUS_UNDERPAINT } = chrome;
+  const fill = kind === "rising" ? c.rising : c.fading;
   // Letterpress triangles with serif-style apex
   const points =
     kind === "rising"
@@ -158,9 +181,11 @@ export function HollowDot({
   cy: number;
   r: number;
 }) {
+  const { theme, chrome, c } = usePaint();
+  const { paper: PAPER, ink: INK, trim: TRIM, focusWash: FOCUS_UNDERPAINT } = chrome;
   return (
     <g pointerEvents="none">
-      <circle cx={cx} cy={cy} r={r * 0.55} fill={PAPER} stroke={STAT_COLORS.ghost} strokeWidth={0.9} />
+      <circle cx={cx} cy={cy} r={r * 0.55} fill={PAPER} stroke={c.ghost} strokeWidth={0.9} />
       <title>One-scene wonder</title>
     </g>
   );
@@ -177,9 +202,11 @@ export function PeakPin({
   label: string;
   flipped?: boolean;
 }) {
+  const { theme, chrome, c } = usePaint();
+  const { paper: PAPER, ink: INK, trim: TRIM, focusWash: FOCUS_UNDERPAINT } = chrome;
   return (
     <g transform={`translate(${x},${y})`} pointerEvents="none">
-      <circle r={3.2} fill={STAT_COLORS.guide} stroke={PAPER} strokeWidth={0.8} />
+      <circle r={3.2} fill={c.guide} stroke={PAPER} strokeWidth={0.8} />
       <text
         x={flipped ? 6 : 0}
         y={flipped ? 0 : -8}
@@ -187,7 +214,7 @@ export function PeakPin({
         dominantBaseline="middle"
         fontSize={8}
         fontFamily={FONT_MONO}
-        fill={STAT_COLORS.guide}
+        fill={c.guide}
       >
         {label}
       </text>
@@ -206,6 +233,8 @@ export function MedianSizeGhost({
   r: number;
   label?: string;
 }) {
+  const { theme, chrome, c } = usePaint();
+  const { paper: PAPER, ink: INK, trim: TRIM, focusWash: FOCUS_UNDERPAINT } = chrome;
   return (
     <g className="stat-median-ghost" pointerEvents="none" opacity={0.9}>
       <circle
@@ -213,7 +242,7 @@ export function MedianSizeGhost({
         cy={cy}
         r={r}
         fill="none"
-        stroke={STAT_COLORS.ghost}
+        stroke={c.ghost}
         strokeWidth={1.1}
         strokeDasharray="2.5 2"
       />
@@ -223,7 +252,7 @@ export function MedianSizeGhost({
         dominantBaseline="middle"
         fontSize={8}
         fontFamily={FONT_MONO}
-        fill={STAT_COLORS.ghost}
+        fill={c.ghost}
         letterSpacing="0.04em"
       >
         {label}
@@ -251,6 +280,8 @@ export function MedianPeakRule({
   y2: number;
   year: number;
 }) {
+  const { theme, chrome, c } = usePaint();
+  const { paper: PAPER, ink: INK, trim: TRIM, focusWash: FOCUS_UNDERPAINT } = chrome;
   if (flipped && y != null) {
     return (
       <g className="stat-median-peak" pointerEvents="none">
@@ -259,7 +290,7 @@ export function MedianPeakRule({
           x2={x2}
           y1={y}
           y2={y}
-          stroke={STAT_COLORS.guide}
+          stroke={c.guide}
           strokeWidth={1.1}
           strokeDasharray="4 3"
           strokeOpacity={0.85}
@@ -270,7 +301,7 @@ export function MedianPeakRule({
           textAnchor="end"
           fontSize={8}
           fontFamily={FONT_MONO}
-          fill={STAT_COLORS.guide}
+          fill={c.guide}
         >
           med peak {year}
         </text>
@@ -285,7 +316,7 @@ export function MedianPeakRule({
         x2={x}
         y1={y1}
         y2={y2}
-        stroke={STAT_COLORS.guide}
+        stroke={c.guide}
         strokeWidth={1.1}
         strokeDasharray="4 3"
         strokeOpacity={0.85}
@@ -295,7 +326,7 @@ export function MedianPeakRule({
         y={y1 + 10}
         fontSize={8}
         fontFamily={FONT_MONO}
-        fill={STAT_COLORS.guide}
+        fill={c.guide}
       >
         med peak {year}
       </text>
@@ -320,6 +351,8 @@ export function MedianCareerBar({
   yScale: (y: number) => number;
   span: number;
 }) {
+  const { theme, chrome, c } = usePaint();
+  const { paper: PAPER, ink: INK, trim: TRIM, focusWash: FOCUS_UNDERPAINT } = chrome;
   const mid = (yearMin + yearMax) / 2;
   const half = span / 2;
   if (flipped) {
@@ -332,7 +365,7 @@ export function MedianCareerBar({
           x2={laneCoord}
           y1={y0}
           y2={y1}
-          stroke={STAT_COLORS.ghost}
+          stroke={c.ghost}
           strokeWidth={2.2}
           strokeDasharray="3 3"
           strokeLinecap="round"
@@ -350,7 +383,7 @@ export function MedianCareerBar({
         x2={x1}
         y1={laneCoord}
         y2={laneCoord}
-        stroke={STAT_COLORS.ghost}
+        stroke={c.ghost}
         strokeWidth={2.2}
         strokeDasharray="3 3"
         strokeLinecap="round"
@@ -361,7 +394,7 @@ export function MedianCareerBar({
         dominantBaseline="middle"
         fontSize={8}
         fontFamily={FONT_MONO}
-        fill={STAT_COLORS.ghost}
+        fill={c.ghost}
       >
         med {Math.round(span)}y
       </text>
@@ -382,6 +415,8 @@ export function EraHistogram({
   height?: number;
   modeDecade?: number | null;
 }) {
+  const { theme, chrome, c } = usePaint();
+  const { paper: PAPER, ink: INK, trim: TRIM, focusWash: FOCUS_UNDERPAINT } = chrome;
   if (!bins.length) return null;
   const max = Math.max(...bins.map((b) => b.count), 1);
   return (
@@ -399,7 +434,7 @@ export function EraHistogram({
             y={yBase - h}
             width={w}
             height={h}
-            fill={isMode ? STAT_COLORS.guide : STAT_COLORS.ghost}
+            fill={isMode ? c.guide : c.ghost}
             fillOpacity={isMode ? 0.45 : 0.22}
           >
             <title>{`${b.decade}s · ${b.count} links`}</title>
@@ -419,6 +454,8 @@ export function DensestPairLabel({
   y: number;
   text: string;
 }) {
+  const { theme, chrome, c } = usePaint();
+  const { paper: PAPER, ink: INK, trim: TRIM, focusWash: FOCUS_UNDERPAINT } = chrome;
   const w = Math.min(220, text.length * 5.4 + 10);
   return (
     <g transform={`translate(${x}, ${y})`} pointerEvents="none" className="stat-densest-label">
@@ -430,7 +467,7 @@ export function DensestPairLabel({
         rx={1.5}
         fill={PAPER}
         fillOpacity={0.96}
-        stroke={STAT_COLORS.densest}
+        stroke={c.densest}
         strokeWidth={0.6}
       />
       <line
@@ -438,7 +475,7 @@ export function DensestPairLabel({
         y1={-9}
         x2={-4}
         y2={7}
-        stroke={STAT_COLORS.densest}
+        stroke={c.densest}
         strokeWidth={1.4}
       />
       <text x={0} y={3} fontSize={9} fontFamily={FONT_SANS} fill={INK} fontWeight={560}>
@@ -457,6 +494,8 @@ export function RetentionMeter({
   y: number;
   pct: number;
 }) {
+  const { theme, chrome, c } = usePaint();
+  const { paper: PAPER, ink: INK, trim: TRIM, focusWash: FOCUS_UNDERPAINT } = chrome;
   const r = 14;
   const circ = 2 * Math.PI * r;
   const dash = (Math.min(100, Math.max(0, pct)) / 100) * circ;
@@ -466,7 +505,7 @@ export function RetentionMeter({
       <circle
         r={r}
         fill="none"
-        stroke={STAT_COLORS.guide}
+        stroke={c.guide}
         strokeWidth={3}
         strokeDasharray={`${dash} ${circ}`}
         strokeLinecap="round"
@@ -478,7 +517,7 @@ export function RetentionMeter({
         dominantBaseline="middle"
         fontSize={8}
         fontFamily={FONT_MONO}
-        fill={STAT_COLORS.guide}
+        fill={c.guide}
       >
         {Math.round(pct)}%
       </text>
@@ -487,7 +526,7 @@ export function RetentionMeter({
         textAnchor="middle"
         fontSize={7}
         fontFamily={FONT_MONO}
-        fill={STAT_COLORS.ghost}
+        fill={c.ghost}
       >
         kept
       </text>
@@ -506,6 +545,8 @@ export function GiniCallout({
   gini: number;
   top10Share: number | null;
 }) {
+  const { theme, chrome, c } = usePaint();
+  const { paper: PAPER, ink: INK, trim: TRIM, focusWash: FOCUS_UNDERPAINT } = chrome;
   const text =
     top10Share != null
       ? `Gini ${gini.toFixed(2)} · top 10% hold ${Math.round(top10Share * 100)}% of links`
@@ -528,7 +569,9 @@ export function PersonStatDecor({
   cy: number;
   baseR: number;
 }) {
-  const stroke = nodeStatStroke(stats, id);
+  const { theme, chrome, c } = usePaint();
+  const { paper: PAPER, ink: INK, trim: TRIM, focusWash: FOCUS_UNDERPAINT } = chrome;
+  const stroke = nodeStatStroke(stats, id, theme);
   const rising = hasStat(stats, "billing_glyphs") && stats.risingIds.has(id);
   const fading = hasStat(stats, "billing_glyphs") && stats.fadingIds.has(id);
   const hollow = hasStat(stats, "one_scene_wonder") && stats.oneSceneIds.has(id);
@@ -561,7 +604,7 @@ export function PersonStatDecor({
           cy={cy}
           r={baseR + 3.5}
           fill="none"
-          stroke={STAT_COLORS.community}
+          stroke={c.community}
           strokeWidth={1}
           strokeDasharray="1 2"
         />
@@ -577,7 +620,7 @@ export function PersonStatDecor({
           cx={cx}
           cy={cy}
           r={baseR + 2.5}
-          stroke={STAT_COLORS.warm}
+          stroke={c.warm}
           strokeWidth={1.5}
         />
       ) : null}

@@ -11,6 +11,7 @@ from loom.constructs.emit import (
     recompute_degree_strength,
 )
 from loom.filters import adult_exclusion_sql, title_type_sql, vote_floor_sql
+from loom.membership import rank_prominence_sql
 
 
 def _has_table(con: duckdb.DuckDBPyConnection, name: str) -> bool:
@@ -26,46 +27,64 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     adult = adult_exclusion_sql("t")
     types = title_type_sql("t")
     votes = vote_floor_sql("r", min_votes=50)
+    prom = rank_prominence_sql("r")
 
     person_sql = f"""
-        SELECT
-          p.nconst,
-          n.primaryName AS label,
-          {ge} AS gender,
-          n.primaryProfession AS professions,
-          COUNT(DISTINCT p.tconst) AS title_count,
-          SUM(COALESCE(r.numVotes, 0)) AS prominence,
-          CASE
-            WHEN n.primaryProfession ILIKE '%director%'
-             AND n.primaryProfession ILIKE '%writer%' THEN 'actor-director-writer'
-            WHEN n.primaryProfession ILIKE '%director%' THEN 'actor-director'
-            WHEN n.primaryProfession ILIKE '%writer%' THEN 'actor-writer'
-            ELSE 'hyphenate'
-          END AS hyphenate_kind
-        FROM title_principals p
-        JOIN title_basics t ON t.tconst = p.tconst
-        JOIN name_basics n ON n.nconst = p.nconst
-        LEFT JOIN title_ratings r ON r.tconst = p.tconst
-        LEFT JOIN gender_enrich ge ON ge.nconst = p.nconst
-        WHERE p.category IN ('actor', 'actress')
-          AND (
-            n.primaryProfession ILIKE '%actor%'
-            OR n.primaryProfession ILIKE '%actress%'
-          )
-          AND (
-            n.primaryProfession ILIKE '%director%'
-            OR n.primaryProfession ILIKE '%writer%'
-          )
-          AND {types} AND {adult} AND {votes}
-        GROUP BY p.nconst, n.primaryName, ge.tmdb_gender, p.category,
-                 n.primaryProfession
-        HAVING COUNT(DISTINCT p.tconst) >= 5
-        ORDER BY SUM(COALESCE(r.numVotes, 0)) DESC
-        LIMIT {int(top_n * 3)}
+        WITH pool AS (
+          SELECT
+            p.nconst,
+            n.primaryName AS label,
+            {ge} AS gender,
+            n.primaryProfession AS professions,
+            COUNT(DISTINCT p.tconst) AS title_count,
+            {prom} AS prominence,
+            CASE
+              WHEN n.primaryProfession ILIKE '%director%'
+               AND n.primaryProfession ILIKE '%writer%' THEN 'actor-director-writer'
+              WHEN n.primaryProfession ILIKE '%director%' THEN 'actor-director'
+              WHEN n.primaryProfession ILIKE '%writer%' THEN 'actor-writer'
+              ELSE 'hyphenate'
+            END AS hyphenate_kind
+          FROM title_principals p
+          JOIN title_basics t ON t.tconst = p.tconst
+          JOIN name_basics n ON n.nconst = p.nconst
+          LEFT JOIN title_ratings r ON r.tconst = p.tconst
+          LEFT JOIN gender_enrich ge ON ge.nconst = p.nconst
+          WHERE p.category IN ('actor', 'actress')
+            AND (
+              n.primaryProfession ILIKE '%director%'
+              OR n.primaryProfession ILIKE '%writer%'
+            )
+            AND {types} AND {adult} AND {votes}
+          GROUP BY p.nconst, n.primaryName, ge.tmdb_gender, p.category,
+                   n.primaryProfession
+          HAVING COUNT(DISTINCT p.tconst) >= 5
+        )
+        SELECT * FROM pool
+        WHERE nconst IN (
+          'nm0000142','nm0000080','nm1950086','nm1443502','nm0736622'
+        )
+        UNION
+        SELECT * FROM (
+          SELECT * FROM pool ORDER BY prominence DESC LIMIT {int(top_n * 8)}
+        )
     """
 
     nodes, edges, stats = coappearance_edges(
-        con, person_sql, construct="hyphenates", top_n=top_n, min_shared=2
+        con,
+        person_sql,
+        construct="hyphenates",
+        top_n=top_n,
+        min_shared=2,
+        cap_by="prominence",
+        enrichment_mode="imdb",
+        force_ids=[
+            "nm0000142",  # Clint Eastwood
+            "nm0000080",  # Orson Welles
+            "nm1950086",  # Greta Gerwig
+            "nm1443502",  # Jordan Peele
+            "nm0736622",  # Seth Rogen
+        ],
     )
 
     # Add directed-self edges when title_crew available
@@ -151,8 +170,8 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     method = (
         "Population: people whose primaryProfession includes actor/actress and "
         "director or writer (Adult excluded, numVotes ≥50, ≥5 acting credits). "
-        "Edges = co-appearance plus director→actor links among hyphenates "
-        "when title_crew is available."
+        "Pool LIMIT top_n×5; cap by blend. Edges = co-appearance plus director→actor "
+        "links among hyphenates when title_crew is available."
     )
     return finalize_payload(
         con,

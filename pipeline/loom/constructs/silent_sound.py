@@ -36,15 +36,19 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
           AND t.startYear IS NOT NULL
           AND {types} AND {adult} AND {votes}
         GROUP BY p.nconst, n.primaryName, ge.tmdb_gender, p.category
-        HAVING COUNT(DISTINCT CASE WHEN t.startYear <= 1927 THEN p.tconst END) >= 1
-           AND COUNT(DISTINCT CASE WHEN t.startYear >= 1929 THEN p.tconst END) >= 1
+        HAVING COUNT(DISTINCT CASE WHEN t.startYear <= 1927 THEN p.tconst END) >= 3
+           AND COUNT(DISTINCT CASE WHEN t.startYear >= 1929 THEN p.tconst END) >= 3
+           AND (
+             AVG(p.ordering) <= 8
+             OR SUM(COALESCE(r.numVotes, 0)) >= 5000
+           )
         ORDER BY
           LEAST(
             COUNT(DISTINCT CASE WHEN t.startYear <= 1927 THEN p.tconst END),
             COUNT(DISTINCT CASE WHEN t.startYear >= 1929 THEN p.tconst END)
           ) DESC,
           SUM(COALESCE(r.numVotes, 0)) DESC
-        LIMIT {int(top_n * 3)}
+        LIMIT {int(top_n * 5)}
     """
 
     nodes, edges, stats = coappearance_edges(
@@ -54,6 +58,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         top_n=top_n,
         min_shared=2,
         min_votes=20,
+        cap_by="blend",
     )
 
     stage_rows = con.execute(
