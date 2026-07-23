@@ -30,6 +30,7 @@ import { QualityTiles } from "./QualityTiles";
 import { BuildFunnel } from "./BuildFunnel";
 import { MetricDefList } from "./MetricDefList";
 import { VerifySpotCheck } from "./VerifySpotCheck";
+import { ConstructDataTable } from "./ConstructDataTable";
 import { useTheme } from "../lib/theme/ThemeContext";
 import type { ThemePreference } from "../lib/theme/tokens";
 import { Chip } from "./ui/Chip";
@@ -45,10 +46,12 @@ interface Props {
 }
 
 const TOC = [
+  { id: "picker", label: "Construct" },
   { id: "sources", label: "Sources" },
   { id: "math", label: "Math" },
-  { id: "report", label: "Construct report" },
-  { id: "verify", label: "Double-check" },
+  { id: "report", label: "Report" },
+  { id: "data", label: "Data table" },
+  { id: "verify", label: "Verify" },
   { id: "overview", label: "All constructs" },
 ];
 
@@ -67,6 +70,7 @@ export function MethodologyPage({
   const [loadError, setLoadError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [snapshotAsOf, setSnapshotAsOf] = useState<string | null>(null);
+  const [activeSection, setActiveSection] = useState(TOC[0].id);
 
   const selected = index.find((m) => m.id === constructId) ?? index[0];
   const activeId = selected?.id ?? constructId;
@@ -133,6 +137,26 @@ export function MethodologyPage({
     return () => window.clearTimeout(t);
   }, [activeId]);
 
+  useEffect(() => {
+    const ids = TOC.map((t) => t.id);
+    const nodes = ids
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => !!el);
+    if (!nodes.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+        if (visible[0]?.target?.id) setActiveSection(visible[0].target.id);
+      },
+      { rootMargin: "-20% 0px -55% 0px", threshold: [0.1, 0.25, 0.5] },
+    );
+    for (const el of nodes) observer.observe(el);
+    return () => observer.disconnect();
+  }, [activeId, data, qualityRollup]);
+
   const asOf = snapshotAsOf || oldestSnap || manifest?.built_at;
   const isOneRole = activeId === "one_role";
   const isProxyGender =
@@ -171,14 +195,6 @@ export function MethodologyPage({
         </div>
       </header>
 
-      <nav className="trust-toc" aria-label="On this page">
-        {TOC.map((t) => (
-          <a key={t.id} href={`#${t.id}`}>
-            {t.label}
-          </a>
-        ))}
-      </nav>
-
       <div className="trust-banner" role="status">
         <strong>Data as of</strong>{" "}
         {asOf ? (
@@ -198,7 +214,37 @@ export function MethodologyPage({
         ) : null}
       </div>
 
-      <main id="trust-main" className="trust-main">
+      <div className="trust-layout">
+        <nav className="trust-side-nav" aria-label="On this page">
+          <p className="trust-side-nav-label">On this page</p>
+          <ol>
+            {TOC.map((t) => (
+              <li key={t.id}>
+                <a
+                  href={`#${t.id}`}
+                  className={activeSection === t.id ? "active" : undefined}
+                  aria-current={activeSection === t.id ? "location" : undefined}
+                >
+                  {t.label}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+
+        <nav className="trust-toc trust-toc--mobile" aria-label="On this page">
+          {TOC.map((t) => (
+            <a
+              key={t.id}
+              href={`#${t.id}`}
+              className={activeSection === t.id ? "active" : undefined}
+            >
+              {t.label}
+            </a>
+          ))}
+        </nav>
+
+        <main id="trust-main" className="trust-main">
         <section className="trust-section" id="picker">
           <h2>Construct</h2>
           <label className="trust-field">
@@ -478,6 +524,15 @@ export function MethodologyPage({
           ) : null}
         </section>
 
+        <section className="trust-section" id="data">
+          <h2>Browse the data</h2>
+          <p className="trust-lede">
+            People and links for the selected construct — filter, sort, verify on IMDb, or open the
+            raw JSON.
+          </p>
+          <ConstructDataTable data={data} onOpenAtelier={onOpenAtelier} />
+        </section>
+
         <section className="trust-section" id="verify">
           <h2>Double-check accuracy</h2>
           {!integrity.ok ? (
@@ -568,6 +623,7 @@ export function MethodologyPage({
           )}
         </section>
       </main>
+      </div>
     </div>
   );
 }
