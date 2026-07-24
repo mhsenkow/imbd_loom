@@ -121,6 +121,12 @@ export function edgeYearExtents(edges: Edge[]): { yearMin: number; yearMax: numb
   return { yearMin, yearMax };
 }
 
+/** Literal co-appearance count, distinct from the popularity-weighted edge score. */
+export function edgeSharedCount(e: Edge): number {
+  const count = Number(e.shared_count ?? e.collab_count);
+  return Number.isFinite(count) ? count : Number(e.weight) || 0;
+}
+
 /** Matrix / stroke magnitude for a link under Thickness encoding. */
 export function edgeThicknessValue(
   e: Edge,
@@ -140,7 +146,8 @@ export function edgeThicknessValue(
     const t = (y - years.yearMin) / Math.max(1, years.yearMax - years.yearMin);
     return 0.35 + 0.65 * Math.min(1, Math.max(0, t));
   }
-  return Math.max(0.01, e.weight / Math.max(1, maxWeight));
+  const magnitude = thicknessBy === "shared" ? edgeSharedCount(e) : e.weight;
+  return Math.max(0.01, magnitude / Math.max(1, maxWeight));
 }
 
 /** Pixel-ish stroke width for timeline / bundle lines. */
@@ -154,7 +161,8 @@ export function linkStrokeWidth(
   const v = edgeThicknessValue(e, thicknessBy, maxWeight, years);
   if (thicknessBy === "uniform") return hot ? 1.8 : 1.1;
   if (thicknessBy === "recency") return (hot ? 1.2 : 0.55) + v * 2.2;
-  return (hot ? 1.2 : 0.5) + Math.min(3.2, e.weight * 0.28);
+  const magnitude = thicknessBy === "shared" ? edgeSharedCount(e) : e.weight;
+  return (hot ? 1.2 : 0.5) + Math.min(3.2, magnitude * 0.28);
 }
 
 /** Relative mark scale 0.55–1.25 for career bars / dots. */

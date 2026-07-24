@@ -70,7 +70,7 @@ function StoryCard({
               </p>
               {preview.strongestPair ? (
                 <p className="gallery-evidence-pair mono">
-                  Strongest tie · {preview.strongestPair}
+                  Most shared · {preview.strongestPair}
                   {preview.strongestMetric ? ` · ${preview.strongestMetric}` : ""}
                   {preview.sharedTitle ? ` · e.g. ${preview.sharedTitle}` : ""}
                 </p>

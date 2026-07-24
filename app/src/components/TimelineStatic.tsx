@@ -370,9 +370,9 @@ export function TimelineStatic({
           <DensestPairLabel
             x={layout.flipped ? densestLink.x : densestLink.x + 16}
             y={(densestLink.y1 + densestLink.y2) / 2}
-            text={`Densest · ${byId.get(stats.densestPair.source)?.label ?? "?"} ↔ ${
+            text={`Most shared · ${byId.get(stats.densestPair.source)?.label ?? "?"} ↔ ${
               byId.get(stats.densestPair.target)?.label ?? "?"
-            }`}
+            } (${stats.densestPair.sharedCount})`}
           />
         ) : null}
 

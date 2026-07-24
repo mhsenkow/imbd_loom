@@ -120,7 +120,11 @@ export function GalleryThumb({ spec, onPreviewMeta }: Props) {
       )
       .slice(0, 3)
       .map((node) => node.label);
-    const strongest = [...edges].sort((a, b) => b.weight - a.weight)[0];
+    const strongest = [...edges].sort((a, b) => {
+      const aShared = Number(a.shared_count ?? a.collab_count ?? a.weight);
+      const bShared = Number(b.shared_count ?? b.collab_count ?? b.weight);
+      return bShared - aShared || b.weight - a.weight;
+    })[0];
     const source = strongest ? byId.get(strongest.source)?.label : null;
     const target = strongest ? byId.get(strongest.target)?.label : null;
     const sharedTitle = strongest?.shared?.find((title) => title.title)?.title ?? null;

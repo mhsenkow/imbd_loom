@@ -213,7 +213,7 @@ export const opacity = {
   linkRelated: 0.75,
   linkSkim: 0.68,
   linkHot: 0.9,
-  linkDim: 0.15,
+  linkDim: 0.2,
   warpAmbient: 0.5,
   warpDimFactor: 0.35,
   gridYear: 0.55,

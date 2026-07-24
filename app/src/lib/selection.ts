@@ -1,6 +1,7 @@
 /** Progressive disclosure: hover peek → dwell settle → pinned detail. */
 
 import type { Edge, Node } from "./types";
+import { edgeSharedCount } from "./encode";
 
 export interface SelectionState {
   hoveredId: string | null;
@@ -108,7 +109,11 @@ export function topNeighbors(
     if (!prev || e.weight > prev.weight) best.set(other, { weight: e.weight, edge: e });
   }
   return [...best.entries()]
-    .sort((a, b) => b[1].weight - a[1].weight)
+    .sort(
+      (a, b) =>
+        edgeSharedCount(b[1].edge) - edgeSharedCount(a[1].edge) ||
+        b[1].weight - a[1].weight,
+    )
     .slice(0, limit)
     .map(([nid, { weight, edge }]) => ({ node: byId.get(nid)!, weight, edge }))
     .filter((d) => d.node);

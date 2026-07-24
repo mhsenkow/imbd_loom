@@ -485,6 +485,74 @@ export function DensestPairLabel({
   );
 }
 
+export function DensestPairCard({
+  x,
+  y,
+  width = 96,
+  source,
+  target,
+  sharedCount,
+  weightedScore,
+  exampleTitle,
+}: {
+  x: number;
+  y: number;
+  width?: number;
+  source: string;
+  target: string;
+  sharedCount: number;
+  weightedScore: number;
+  exampleTitle?: string | null;
+}) {
+  const { chrome, c } = usePaint();
+  const { paper: PAPER, ink: INK, inkSoft: INK_SOFT, trim: TRIM } = chrome;
+  const short = (value: string, max = 25) =>
+    value.length > max ? `${value.slice(0, max - 1)}…` : value;
+  const height = exampleTitle ? 58 : 48;
+  return (
+    <g
+      transform={`translate(${x}, ${y})`}
+      pointerEvents="none"
+      className="stat-densest-card"
+    >
+      <rect
+        width={width}
+        height={height}
+        rx={2}
+        fill={PAPER}
+        fillOpacity={0.97}
+        stroke={TRIM}
+        strokeWidth={0.55}
+      />
+      <rect width={2.2} height={height} fill={c.densest} />
+      <text
+        x={8}
+        y={10}
+        fontSize={4.2}
+        fontFamily={FONT_MONO}
+        fill={c.densest}
+        letterSpacing={0.7}
+      >
+        MOST SHARED TITLES
+      </text>
+      <text x={8} y={21} fontSize={6.2} fontFamily={FONT_SANS} fill={INK} fontWeight={600}>
+        {short(source)}
+      </text>
+      <text x={8} y={30} fontSize={6.2} fontFamily={FONT_SANS} fill={INK} fontWeight={600}>
+        ↔ {short(target, 23)}
+      </text>
+      <text x={8} y={40} fontSize={4.4} fontFamily={FONT_MONO} fill={INK_SOFT}>
+        {sharedCount} shared title{sharedCount === 1 ? "" : "s"} · score {weightedScore}
+      </text>
+      {exampleTitle ? (
+        <text x={8} y={50} fontSize={4.2} fontFamily={FONT_MONO} fill={INK_SOFT}>
+          e.g. {short(exampleTitle, 27)}
+        </text>
+      ) : null}
+    </g>
+  );
+}
+
 export function RetentionMeter({
   x,
   y,
@@ -549,7 +617,7 @@ export function GiniCallout({
   const { paper: PAPER, ink: INK, trim: TRIM, focusWash: FOCUS_UNDERPAINT } = chrome;
   const text =
     top10Share != null
-      ? `Gini ${gini.toFixed(2)} · top 10% hold ${Math.round(top10Share * 100)}% of links`
+      ? `Gini ${gini.toFixed(2)} · top 10% hold ${Math.round(top10Share * 100)}% of strength`
       : `Gini ${gini.toFixed(2)}`;
   return (
     <DensestPairLabel x={x} y={y} text={text} />

@@ -1,5 +1,6 @@
 /** Detail panel — collapsible progressive disclosure. */
 
+import { useEffect, useState } from "react";
 import { topNeighbors } from "../lib/selection";
 import type { Edge, Node, RoleCredit } from "../lib/types";
 import { colorForGender } from "../lib/colors";
@@ -8,6 +9,7 @@ import { filmLine, uniqueShared } from "../lib/sharedTitles";
 import type { Insight } from "../lib/insights";
 import { describeNodeStats, hasStat, type ViewStatMarks } from "../lib/statsMarks";
 import { nodeDegree, nodeStrength } from "../lib/metrics";
+import { edgeSharedCount } from "../lib/encode";
 import { InsightCard } from "./InsightCard";
 
 interface Props {
@@ -51,6 +53,8 @@ export function DetailPanel({
   onOpenMethodology,
 }: Props) {
   const { theme, palette } = useTheme();
+  const [showAllNeighbors, setShowAllNeighbors] = useState(false);
+  useEffect(() => setShowAllNeighbors(false), [node?.id]);
   const byId = new Map(nodes.map((n) => [n.id, n]));
   const insightBlock =
     insights.length > 0 ? (
@@ -143,6 +147,10 @@ export function DetailPanel({
         <div className="stats">
           <div>
             <div className="stat-label">Shared titles</div>
+            <div className="stat-value mono">{edgeSharedCount(edge)}</div>
+          </div>
+          <div title="Σ ln(title votes + 1); popular shared titles contribute more">
+            <div className="stat-label">Weighted tie score</div>
             <div className="stat-value mono">{edge.weight}</div>
           </div>
           {edge.year != null && (
@@ -219,7 +227,8 @@ export function DetailPanel({
     );
   }
 
-  const neighbors = topNeighbors(node.id, nodes, edges, 10);
+  const allNeighbors = topNeighbors(node.id, nodes, edges, nodes.length);
+  const neighbors = showAllNeighbors ? allNeighbors : allNeighbors.slice(0, 10);
   const yearMin = Number(node.year_min ?? node.yearMin);
   const yearMax = Number(node.year_max ?? node.yearMax);
   const yearPeakRaw = node.year_peak ?? node.yearPeak;
@@ -376,12 +385,28 @@ export function DetailPanel({
                         <span className="neighbor-via">{filmLine(shared[0])}</span>
                       )}
                     </span>
-                    <span className="mono wt">{weight}</span>
+                    <span
+                      className="mono wt"
+                      title={`Weighted tie score ${weight}`}
+                    >
+                      {edgeSharedCount(edge)} title{edgeSharedCount(edge) === 1 ? "" : "s"}
+                    </span>
                   </button>
                 </li>
               );
             })}
           </ul>
+          {allNeighbors.length > 10 ? (
+            <button
+              type="button"
+              className="neighbor-more"
+              onClick={() => setShowAllNeighbors((shown) => !shown)}
+            >
+              {showAllNeighbors
+                ? "Show top 10"
+                : `Show all ${allNeighbors.length} connections`}
+            </button>
+          ) : null}
         </div>
       )}
       </div>

@@ -2,6 +2,7 @@
 
 import type { Edge, Node, PosterSpec } from "./types";
 import type { SearchMatch } from "./search";
+import { edgeSharedCount } from "./encode";
 import { uniqueShared } from "./sharedTitles";
 
 export interface Insight {
@@ -138,21 +139,34 @@ export function deriveInsights(opts: {
     });
   }
 
-  // ── Strongest co-appearance pair ──
+  // ── Most shared-title co-appearance pair (literal count, not weighted score) ──
   let bestEdge: Edge | null = null;
   for (const e of edges) {
-    if (!bestEdge || e.weight > bestEdge.weight) bestEdge = e;
+    const shared = edgeSharedCount(e);
+    const bestShared = bestEdge ? edgeSharedCount(bestEdge) : -1;
+    if (
+      !bestEdge ||
+      shared > bestShared ||
+      (shared === bestShared && e.weight > bestEdge.weight)
+    ) {
+      bestEdge = e;
+    }
   }
-  if (bestEdge && bestEdge.weight >= 2) {
+  if (bestEdge && edgeSharedCount(bestEdge) >= 2) {
     const a = byId.get(bestEdge.source);
     const b = byId.get(bestEdge.target);
+    const shared = edgeSharedCount(bestEdge);
     const film = filmHint(bestEdge);
     candidates.push({
       kind: "Pair",
-      headline: `${a?.label ?? "?"} ↔ ${b?.label ?? "?"} share ${bestEdge.weight} titles — densest co-appearance here.`,
-      detail: film ? `Sample: ${film}.` : undefined,
+      headline: `${a?.label ?? "?"} ↔ ${b?.label ?? "?"} share ${shared} title${
+        shared === 1 ? "" : "s"
+      } — densest co-appearance here.`,
+      detail: film
+        ? `Sample: ${film}. Weighted tie score ${bestEdge.weight}.`
+        : `Weighted tie score ${bestEdge.weight}.`,
       focusId: bestEdge.source,
-      score: 7 + Math.min(5, bestEdge.weight / 2),
+      score: 7 + Math.min(5, shared / 2),
     });
   }
 
@@ -363,17 +377,21 @@ export function deriveInsights(opts: {
       const d = degreeInView(focusId, edges);
       const top = [...edges]
         .filter((e) => e.source === focusId || e.target === focusId)
-        .sort((a, b) => b.weight - a.weight)[0];
+        .sort((a, b) => {
+          const ds = edgeSharedCount(b) - edgeSharedCount(a);
+          return ds !== 0 ? ds : b.weight - a.weight;
+        })[0];
       const other = top
         ? byId.get(top.source === focusId ? top.target : top.source)
         : null;
       const film = top ? filmHint(top) : undefined;
+      const shared = top ? edgeSharedCount(top) : 0;
       candidates.push({
         kind: "Focus",
         headline: `${n.label} is pinned with ${d} partners in this cut.`,
         detail:
           other && top
-            ? `Strongest tie: ${other.label} (${top.weight} titles)${
+            ? `Strongest tie: ${other.label} (${shared} shared · score ${top.weight})${
                 film ? ` · ${film}` : ""
               }.`
             : undefined,

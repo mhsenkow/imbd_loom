@@ -54,7 +54,7 @@ export function linkOpacity(state: LinkVisualState, theme: Theme = "light"): num
 export function linkFillOpacity(state: LinkVisualState, theme: Theme = "light"): number {
   // Chord reads denser as fill; bump ambient slightly vs stroke forms
   if (state === "ambient") return clamp01(linkOpacity("ambient", theme) + 0.08);
-  if (state === "dim") return clamp01(linkOpacity("dim", theme) * 0.7);
+  if (state === "dim") return linkOpacity("dim", theme);
   return linkOpacity(state, theme);
 }
 

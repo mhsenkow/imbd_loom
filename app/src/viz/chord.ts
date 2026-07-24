@@ -4,6 +4,7 @@ import * as d3 from "d3";
 import type { ColorBy, Edge, Node, SortBy, ThicknessBy } from "../lib/types";
 import {
   buildGenreColor,
+  edgeSharedCount,
   edgeThicknessValue,
   edgeYearExtents,
   nodeColor,
@@ -65,7 +66,8 @@ export function layoutChord(
   const matrix: number[][] = Array.from({ length: n }, () => Array(n).fill(0));
   const edgeByPair = new Map<string, Edge>();
   const pairKey = (a: string, b: string) => (a < b ? `${a}|${b}` : `${b}|${a}`);
-  const maxWeight = d3.max(edges, (e) => e.weight) ?? 1;
+  const maxWeight =
+    d3.max(edges, (e) => (thicknessBy === "shared" ? edgeSharedCount(e) : e.weight)) ?? 1;
   const years = edgeYearExtents(edges);
 
   for (const e of edges) {
@@ -75,7 +77,8 @@ export function layoutChord(
     if (i == null || j == null) continue;
     const v = edgeThicknessValue(e, thicknessBy, maxWeight, years);
     // Keep shared-title magnitude readable when thickness is a unit scale
-    const cell = thicknessBy === "shared" ? e.weight : Math.max(0.2, v * maxWeight);
+    const cell =
+      thicknessBy === "shared" ? edgeSharedCount(e) : Math.max(0.2, v * maxWeight);
     matrix[i][j] += cell;
     matrix[j][i] += cell;
     const key = pairKey(e.source, e.target);

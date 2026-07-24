@@ -17,6 +17,7 @@ import { activeEdge, activeId, neighborIds, type SelectionState } from "../lib/s
 import { edgeKey, type SearchMatch } from "../lib/search";
 import { FONT_MONO, FONT_SANS } from "../lib/fonts";
 import { ChartDefs } from "./ChartDefs";
+import { edgeSharedCount } from "../lib/encode";
 import { weaveGradient } from "../lib/theme/scales";
 import { chartChrome } from "../lib/theme/chartChrome";
 import {
@@ -29,6 +30,7 @@ import { useTheme } from "../lib/theme/ThemeContext";
 import { computeViewStatMarks, hasStat, linkStatStyle, nodeFillOverride, nodeOpacityMod, showMedianSize, type ViewStatMarks } from "../lib/statsMarks";
 import {
   DensestPairLabel,
+  DensestPairCard,
   GiniCallout,
   MedianSizeGhost,
   PersonStatDecor,
@@ -154,12 +156,12 @@ export function HeroViz({
     ((skimEdge.source === sourceId && skimEdge.target === targetId) ||
       (skimEdge.source === targetId && skimEdge.target === sourceId));
 
-  const densestLabel = useMemo(() => {
+  const densestInsight = useMemo(() => {
     if (!stats || !hasStat(stats, "densest_pair") || !stats.densestPair) return null;
     const dp = stats.densestPair;
     const a = byId.get(dp.source)?.label ?? "?";
     const b = byId.get(dp.target)?.label ?? "?";
-    return `Densest · ${a} ↔ ${b} (${dp.weight})`;
+    return { ...dp, sourceLabel: a, targetLabel: b };
   }, [stats, byId]);
 
   return (
@@ -234,7 +236,8 @@ export function HeroViz({
                 }
                 const weaveId = `weave-${r.sourceId}-${r.targetId}-${i}`;
                 const useGradient =
-                  state === "ambient" &&
+                  !hot &&
+                  !skim &&
                   !(search && searchHot) &&
                   !statLink &&
                   r.fill !== r.targetFill;
@@ -269,7 +272,7 @@ export function HeroViz({
                     }}
                   >
                     <title>
-                      {`${r.sourceLabel} ↔ ${r.targetLabel}: ${r.value} shared title(s)${
+                      {`${r.sourceLabel} ↔ ${r.targetLabel}: ${r.edge ? edgeSharedCount(r.edge) : r.value} shared title(s) · weighted tie score ${r.edge?.weight ?? r.value}${
                         r.sharedLabel ? `\n${r.sharedLabel}` : ""
                       }`}
                     </title>
@@ -343,8 +346,23 @@ export function HeroViz({
                 );
               })}
             </g>
-            {densestLabel ? (
-              <DensestPairLabel x={-radius * 0.2} y={-radius - 8} text={densestLabel} />
+            {densestInsight && width >= 450 ? (
+              <DensestPairCard
+                x={Math.min(radius + 8, width / 2 - Math.max(84, width / 2 - radius - 8))}
+                y={-radius + 24}
+                width={Math.max(84, width / 2 - radius - 8)}
+                source={densestInsight.sourceLabel}
+                target={densestInsight.targetLabel}
+                sharedCount={densestInsight.sharedCount}
+                weightedScore={densestInsight.weight}
+                exampleTitle={densestInsight.exampleTitle}
+              />
+            ) : densestInsight ? (
+              <DensestPairLabel
+                x={-radius * 0.2}
+                y={-radius - 8}
+                text={`Most shared · ${densestInsight.sourceLabel} ↔ ${densestInsight.targetLabel} (${densestInsight.sharedCount})`}
+              />
             ) : null}
           </>
         )}
@@ -496,8 +514,12 @@ export function HeroViz({
                 );
               })}
             </g>
-            {densestLabel ? (
-              <DensestPairLabel x={-radius * 0.25} y={-radius - 6} text={densestLabel} />
+            {densestInsight ? (
+              <DensestPairLabel
+                x={-radius * 0.25}
+                y={-radius - 6}
+                text={`Most shared · ${densestInsight.sourceLabel} ↔ ${densestInsight.targetLabel} (${densestInsight.sharedCount})`}
+              />
             ) : null}
           </>
         )}
@@ -505,7 +527,7 @@ export function HeroViz({
         {stats && showMedianSize(stats) ? (
           <MedianSizeGhost
             cx={radius + 28}
-            cy={-radius + 8}
+            cy={densestInsight && form === "chord" && width >= 450 ? -radius + 92 : -radius + 8}
             r={2.2}
             label={
               stats.medianDegreeValue != null

@@ -61,7 +61,7 @@
   --link-opacity-related: 0.75;
   --link-opacity-skim: 0.68;
   --link-opacity-hot: 0.9;
-  --link-opacity-dim: 0.15;
+  --link-opacity-dim: 0.2;
   --warp-opacity-ambient: 0.5;
   --mark-dim-opacity: 0.14;
   --mark-focus-wash: #c45c2622;
@@ -1239,6 +1239,28 @@ select:focus-visible,
 .neighbors .wt {
   color: var(--atelier-muted);
   font-size: 12px;
+  white-space: nowrap;
+}
+
+.neighbor-more {
+  width: 100%;
+  margin-top: 8px;
+  min-height: var(--touch);
+  border: 1px solid var(--atelier-border);
+  border-radius: var(--radius-letterpress);
+  background: color-mix(in srgb, var(--atelier-panel) 78%, var(--accent) 4%);
+  color: var(--atelier-text);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .neighbor-more:hover {
+    border-color: color-mix(in srgb, var(--accent) 45%, var(--atelier-border));
+    background: var(--hover-wash);
+  }
 }
 
 .roles ul {
@@ -2901,6 +2923,13 @@ body.print-mode .poster-frame svg.poster {
 .stats-rail-title {
   margin: 0 0 6px;
   font-size: 0.95rem;
+}
+.stats-rail-scope {
+  margin: 0 0 8px;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: var(--atelier-muted);
+  line-height: 1.4;
 }
 .stats-rail-insight {
   margin: 0 0 10px;

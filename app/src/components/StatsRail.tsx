@@ -8,9 +8,11 @@ import type { Manifest } from "../lib/types";
 interface Props {
   manifest: Manifest | null;
   onHoverIds?: (ids: string[] | null) => void;
+  /** Current on-screen cut — rail itself still shows full-construct summary. */
+  viewCounts?: { people: number; links: number } | null;
 }
 
-export function StatsRail({ manifest, onHoverIds }: Props) {
+export function StatsRail({ manifest, onHoverIds, viewCounts = null }: Props) {
   const s = manifest?.summary;
   const corr = manifest?.correlations;
   if (!s && !corr && !manifest?.insight) {
@@ -20,6 +22,13 @@ export function StatsRail({ manifest, onHoverIds }: Props) {
       </aside>
     );
   }
+
+  const fullPeople = manifest?.node_count ?? null;
+  const fullLinks = manifest?.edge_count ?? null;
+  const viewDiffers =
+    !!viewCounts &&
+    ((fullPeople != null && viewCounts.people !== fullPeople) ||
+      (fullLinks != null && viewCounts.links !== fullLinks));
 
   const hist = s?.strength_hist ?? s?.degree_hist ?? [];
   const maxBin = Math.max(1, ...hist.map((b) => Number(b.count) || 0));
@@ -34,6 +43,14 @@ export function StatsRail({ manifest, onHoverIds }: Props) {
   return (
     <aside className="stats-rail" aria-label="Network stats">
       <h3 className="stats-rail-title">Numbers in the weave</h3>
+      <p className="stats-rail-scope mono">
+        Full construct
+        {fullPeople != null ? ` · ${fullPeople} people` : ""}
+        {fullLinks != null ? ` · ${fullLinks.toLocaleString()} ties` : ""}
+        {viewDiffers
+          ? ` · chart cut now ${viewCounts!.people} / ${viewCounts!.links.toLocaleString()}`
+          : ""}
+      </p>
       {manifest?.insight ? <p className="stats-rail-insight">{manifest.insight}</p> : null}
 
       <dl className="stats-rail-metrics">
@@ -137,7 +154,9 @@ export function StatsRail({ manifest, onHoverIds }: Props) {
       ) : null}
 
       <p className="stats-rail-note">
-        Degree = neighbors · Strength = Σ edge weight · Prominence = log-votes / billing
+        These Gini / density numbers are for the full construct, not the Top-N chart cut.
+        Degree = distinct partners · Strength = Σ popularity-weighted tie scores · Link
+        thickness = shared-title count
       </p>
     </aside>
   );

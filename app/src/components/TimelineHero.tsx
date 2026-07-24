@@ -553,7 +553,7 @@ export function TimelineHero({
                 key="densest"
                 x={layout.flipped ? link.x : link.x + 24}
                 y={(link.y1 + link.y2) / 2}
-                text={`Densest · ${a} ↔ ${b} (${dp.weight})`}
+                text={`Most shared · ${a} ↔ ${b} (${dp.sharedCount})`}
               />
             );
           })()}

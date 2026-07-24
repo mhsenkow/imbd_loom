@@ -825,6 +825,7 @@ export default function App() {
           <div className="scatter-stage">
             <StatsRail
               manifest={active.manifest}
+              viewCounts={{ people: nodes.length, links: edges.length }}
               onHoverIds={(ids) => {
                 if (ids?.[0]) onHover(ids[0]);
                 else onHover(null);
@@ -881,6 +882,7 @@ export default function App() {
             {!isPrint && active ? (
               <StatsRail
                 manifest={active.manifest}
+                viewCounts={{ people: nodes.length, links: edges.length }}
                 onHoverIds={(ids) => {
                   if (ids?.[0]) onHover(ids[0]);
                   else onHover(null);

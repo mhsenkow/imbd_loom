@@ -4,6 +4,7 @@ import * as d3 from "d3";
 import type { ColorBy, Edge, Node, SizeBy, SortBy, ThicknessBy } from "../lib/types";
 import {
   buildGenreColor,
+  edgeSharedCount,
   edgeYearExtents,
   linkStrokeWidth,
   markScale,
@@ -129,7 +130,8 @@ export function layoutTimeline(
     palette,
     theme,
   );
-  const maxWeight = d3.max(edges, (e) => e.weight) ?? 1;
+  const maxWeight =
+    d3.max(edges, (e) => (thicknessBy === "shared" ? edgeSharedCount(e) : e.weight)) ?? 1;
   const years = edgeYearExtents(edges);
 
   let width: number;

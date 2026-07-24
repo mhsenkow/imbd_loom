@@ -5,7 +5,7 @@ import { DEFAULT_STAT_MARKS } from "./types";
 import { edgeKey } from "./search";
 import { compareNodesBySort } from "./filter";
 import { token, type Theme } from "./theme/tokens";
-import { nodeStrength } from "./metrics";
+import { nodeDegree, nodeStrength } from "./metrics";
 
 export type { StatMarkId };
 export { DEFAULT_STAT_MARKS };
@@ -53,8 +53,8 @@ export const STAT_MARK_META: Record<
     group: "Core",
   },
   densest_pair: {
-    label: "Densest pair",
-    hint: "Label heaviest co-appearance",
+    label: "Most shared titles",
+    hint: "Label the pair with the most distinct shared titles",
     forms: ["timeline", "chord", "bundle"],
     group: "Core",
   },
@@ -348,7 +348,14 @@ export interface ViewStatMarks {
   bridgeIds: Set<string>;
   featuredPathIds: string[];
   featuredPathEdgeKeys: Set<string>;
-  densestPair: { source: string; target: string; weight: number; key: string } | null;
+  densestPair: {
+    source: string;
+    target: string;
+    weight: number;
+    sharedCount: number;
+    exampleTitle: string | null;
+    key: string;
+  } | null;
   insightFocusId: string | null;
   p90Weight: number | null;
   rankLadder: RankLadderEntry[];
@@ -497,7 +504,7 @@ export function computeViewStatMarks(opts: {
   const { nodes, edges } = opts;
   const idSet = new Set(nodes.map((n) => n.id));
 
-  const degrees = nodes.map((n) => nodeStrength(n)).sort((a, b) => a - b);
+  const degrees = nodes.map((n) => nodeDegree(n)).sort((a, b) => a - b);
   const medianDegreeValue = median(degrees);
   const top5Floor = degrees.length ? percentile(degrees, 0.95) : 0;
   const bottom5Ceil = degrees.length ? percentile(degrees, 0.05) : 0;
@@ -505,12 +512,12 @@ export function computeViewStatMarks(opts: {
   const bottom5DegreeIds = new Set<string>();
   if (degrees.length >= 4) {
     for (const n of nodes) {
-      const d = nodeStrength(n);
+      const d = nodeDegree(n);
       if (d >= top5Floor && d > 0) top5DegreeIds.add(n.id);
       if (d <= bottom5Ceil) bottom5DegreeIds.add(n.id);
     }
     if (!top5DegreeIds.size && nodes.length) {
-      const best = [...nodes].sort((a, b) => nodeStrength(b) - nodeStrength(a))[0];
+      const best = [...nodes].sort((a, b) => nodeDegree(b) - nodeDegree(a))[0];
       if (best) top5DegreeIds.add(best.id);
     }
   }
@@ -617,8 +624,20 @@ export function computeViewStatMarks(opts: {
 
   for (const e of edges) {
     const key = edgeKey(e.source, e.target);
-    if (!densestPair || e.weight > densestPair.weight) {
-      densestPair = { source: e.source, target: e.target, weight: e.weight, key };
+    const sharedCount = Number(e.shared_count ?? e.collab_count ?? e.weight);
+    if (
+      !densestPair ||
+      sharedCount > densestPair.sharedCount ||
+      (sharedCount === densestPair.sharedCount && e.weight > densestPair.weight)
+    ) {
+      densestPair = {
+        source: e.source,
+        target: e.target,
+        weight: e.weight,
+        sharedCount,
+        exampleTitle: e.shared?.find((title) => title.title)?.title ?? null,
+        key,
+      };
     }
     if (weightSd > 0) {
       const z = (e.weight - weightMean) / weightSd;

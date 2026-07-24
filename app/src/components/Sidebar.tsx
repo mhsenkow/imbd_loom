@@ -603,7 +603,7 @@ export function Sidebar({
           </div>
           <div className="field">
             <label>
-              Min edge weight <span>{clampedWeight}</span>
+              Min weighted tie score <span>{clampedWeight}</span>
             </label>
             <input
               type="range"
