@@ -19,9 +19,9 @@
     "pool_size": 1000,
     "population_sql": 1000
   },
-  "built_at": "2026-07-23T18:21:14.013709+00:00",
+  "built_at": "2026-07-24T18:55:19.578420+00:00",
   "clustering_coefficient": 0.4275,
-  "community_count": 10,
+  "community_count": 13,
   "correlations": {
     "acclaim_gap×prominence": {
       "n": 200,
@@ -77,8 +77,8 @@
       "label": "Boris Karloff"
     },
     {
-      "id": "nm0807580",
-      "label": "C. Aubrey Smith"
+      "id": "nm0002143",
+      "label": "Edward Everett Horton"
     },
     {
       "id": "nm0000011",
@@ -161,15 +161,18 @@
     ],
     "assortativity": 0.0956,
     "community_sizes": [
-      43,
-      36,
-      33,
-      27,
-      26,
-      25,
+      41,
+      39,
+      34,
+      28,
+      24,
+      21,
       4,
       3,
       2,
+      1,
+      1,
+      1,
       1
     ],
     "component_count": 3,
@@ -261,8 +264,8 @@
       "male": 165
     },
     "giant_component_share": 0.975,
-    "largest_community_share": 0.215,
-    "modularity": 0.1159,
+    "largest_community_share": 0.205,
+    "modularity": 0.112,
     "outliers": {
       "acclaim_gap": [
         "nm0000011",
@@ -831,6 +834,6 @@
     "top_name": "Boris Karloff"
   },
   "title": "Silent → Sound Survivors",
-  "tmdb_gender_rows": 3795,
+  "tmdb_gender_rows": 160552,
   "top_n": 200
 }

@@ -118,8 +118,8 @@
     "medium_mix": {
       "tvMovie": 0.727,
       "tvSeries": 0.205,
-      "tvMiniSeries": 0.023,
-      "movie": 0.045
+      "movie": 0.045,
+      "tvMiniSeries": 0.023
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2002,
@@ -184,7 +184,7 @@
     "top_collaborator_id": "nm0270035",
     "collaborator_loyalty": 0.192,
     "bridge_score": 0.000855,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00681508,
     "eigen_centrality": 0.147028,
     "clustering_local": 0.7932,
@@ -314,15 +314,15 @@
     "genre_first": "Crime",
     "genre_last": "Crime",
     "genre_first_last_distance": 0,
-    "typecast_character": "Kartoffel Himmler Chef (RP)",
+    "typecast_character": "Otto van der Walt",
     "typecast_count": 1,
     "billing_trajectory": -0.0484,
     "median_billing": 5,
     "minutes_credited": 7410,
     "medium_mix": {
-      "tvSeries": 0.121,
       "tvMovie": 0.758,
       "movie": 0.11,
+      "tvSeries": 0.121,
       "tvMiniSeries": 0.011
     },
     "short_to_feature_ratio": 0.0,
@@ -361,7 +361,7 @@
       }
     ],
     "same_director_repeat": 4,
-    "top_director": "nm0746668",
+    "top_director": "nm0351486",
     "regions": [
       "AR",
       "AU",
@@ -384,11 +384,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Julia Richter",
-    "top_collaborator_id": "nm0725292",
+    "top_collaborator": "Oliver Breite",
+    "top_collaborator_id": "nm0126678",
     "collaborator_loyalty": 0.065,
     "bridge_score": 0.000855,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00982627,
     "eigen_centrality": 0.221661,
     "clustering_local": 0.7932,
@@ -405,7 +405,7 @@
     "acclaim_gap": -0.853,
     "hub_vs_loyal": 57.97,
     "collaborator_reach": 62,
-    "embed_x": 0.5895,
+    "embed_x": 0.5901,
     "embed_y": -1.3902
   },
   {
@@ -527,8 +527,8 @@
     "medium_mix": {
       "tvMovie": 0.56,
       "tvSeries": 0.345,
-      "movie": 0.048,
-      "tvMiniSeries": 0.048
+      "tvMiniSeries": 0.048,
+      "movie": 0.048
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1983,
@@ -593,7 +593,7 @@
     "top_collaborator_id": "nm0510832",
     "collaborator_loyalty": 0.414,
     "bridge_score": 0.000794,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.01041946,
     "eigen_centrality": 0.239085,
     "clustering_local": 0.8016,
@@ -611,7 +611,7 @@
     "hub_vs_loyal": 35.332,
     "collaborator_reach": 61,
     "embed_x": 0.2759,
-    "embed_y": -0.4355
+    "embed_y": -0.4407
   },
   {
     "id": "nm0770907",
@@ -688,14 +688,14 @@
         "votes": 11
       },
       {
-        "title": "Der Sturm",
-        "character": "Erzähler",
+        "title": "Was wollten Sie in Berlin?!",
+        "character": "Vernehmer eins",
         "characters": [
-          "Erzähler"
+          "Vernehmer eins"
         ],
-        "year": 2007,
+        "year": 2017,
         "billing": 1,
-        "tconst": "tt1405447",
+        "tconst": "tt8396354",
         "votes": 0
       }
     ],
@@ -730,9 +730,9 @@
     "median_billing": 5,
     "minutes_credited": 7213,
     "medium_mix": {
-      "tvMovie": 0.646,
       "movie": 0.219,
       "tvSeries": 0.115,
+      "tvMovie": 0.646,
       "tvMiniSeries": 0.021
     },
     "short_to_feature_ratio": 0.0,
@@ -794,11 +794,11 @@
       "2000s",
       "2010s"
     ],
-    "top_collaborator": "Tayfun Bademsoy",
-    "top_collaborator_id": "nm0046009",
+    "top_collaborator": "Nina Hoger",
+    "top_collaborator_id": "nm0389688",
     "collaborator_loyalty": 0.2,
     "bridge_score": 0.00075,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00904923,
     "eigen_centrality": 0.209248,
     "clustering_local": 0.8071,
@@ -815,7 +815,7 @@
     "acclaim_gap": -0.878,
     "hub_vs_loyal": 48.6,
     "collaborator_reach": 61,
-    "embed_x": 0.2407,
+    "embed_x": 0.2406,
     "embed_y": -0.9209
   },
   {
@@ -860,28 +860,6 @@
         "votes": 34
       },
       {
-        "title": "Schlösser",
-        "character": "Kindergärtnerin",
-        "characters": [
-          "Kindergärtnerin"
-        ],
-        "year": 1990,
-        "billing": 1,
-        "tconst": "tt0453545",
-        "votes": 0
-      },
-      {
-        "title": "Die Albertis",
-        "character": "Anne Alberti",
-        "characters": [
-          "Anne Alberti"
-        ],
-        "year": 2004,
-        "billing": 1,
-        "tconst": "tt0423610",
-        "votes": 0
-      },
-      {
         "title": "Die Speckners",
         "character": "Inge Speckner",
         "characters": [
@@ -901,6 +879,28 @@
         "year": 1994,
         "billing": 1,
         "tconst": "tt39228415",
+        "votes": 0
+      },
+      {
+        "title": "Die Albertis",
+        "character": "Anne Alberti",
+        "characters": [
+          "Anne Alberti"
+        ],
+        "year": 2004,
+        "billing": 1,
+        "tconst": "tt0423610",
+        "votes": 0
+      },
+      {
+        "title": "Schlösser",
+        "character": "Kindergärtnerin",
+        "characters": [
+          "Kindergärtnerin"
+        ],
+        "year": 1990,
+        "billing": 1,
+        "tconst": "tt0453545",
         "votes": 0
       }
     ],
@@ -934,8 +934,8 @@
     "minutes_credited": 2017,
     "medium_mix": {
       "movie": 0.212,
-      "tvSeries": 0.303,
-      "tvMovie": 0.485
+      "tvMovie": 0.485,
+      "tvSeries": 0.303
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1989,
@@ -1000,7 +1000,7 @@
     "top_collaborator_id": "nm0280117",
     "collaborator_loyalty": 0.15,
     "bridge_score": 0.000694,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00846488,
     "eigen_centrality": 0.189226,
     "clustering_local": 0.8153,
@@ -1018,7 +1018,7 @@
     "hub_vs_loyal": 50.7,
     "collaborator_reach": 60,
     "embed_x": -0.3239,
-    "embed_y": -1.1161
+    "embed_y": -1.1137
   },
   {
     "id": "nm0389688",
@@ -1051,17 +1051,6 @@
         "votes": 16
       },
       {
-        "title": "Flucht nach vorn",
-        "character": "Nina",
-        "characters": [
-          "Nina"
-        ],
-        "year": 1986,
-        "billing": 1,
-        "tconst": "tt0085553",
-        "votes": 0
-      },
-      {
         "title": "Kommissarin Goedeke",
         "character": "Anna Goedeke",
         "characters": [
@@ -1070,6 +1059,17 @@
         "year": 1990,
         "billing": 1,
         "tconst": "tt1252541",
+        "votes": 0
+      },
+      {
+        "title": "Flucht nach vorn",
+        "character": "Nina",
+        "characters": [
+          "Nina"
+        ],
+        "year": 1986,
+        "billing": 1,
+        "tconst": "tt0085553",
         "votes": 0
       },
       {
@@ -1137,9 +1137,9 @@
     "median_billing": 3,
     "minutes_credited": 4853,
     "medium_mix": {
+      "tvMiniSeries": 0.05,
       "tvMovie": 0.667,
       "movie": 0.217,
-      "tvMiniSeries": 0.05,
       "tvSeries": 0.067
     },
     "short_to_feature_ratio": 0.0,
@@ -1178,7 +1178,7 @@
       }
     ],
     "same_director_repeat": 4,
-    "top_director": "nm0341001",
+    "top_director": "nm0470666",
     "regions": [
       "AT",
       "AU",
@@ -1202,11 +1202,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Jutta Wachowiak",
-    "top_collaborator_id": "nm0905147",
+    "top_collaborator": "Udo Schenk",
+    "top_collaborator_id": "nm0770907",
     "collaborator_loyalty": 0.263,
     "bridge_score": 0.000656,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00800124,
     "eigen_centrality": 0.171029,
     "clustering_local": 0.8198,
@@ -1223,7 +1223,7 @@
     "acclaim_gap": 0.387,
     "hub_vs_loyal": 43.694,
     "collaborator_reach": 60,
-    "embed_x": -0.2834,
+    "embed_x": -0.2832,
     "embed_y": -1.3404
   },
   {
@@ -1344,10 +1344,10 @@
     "median_billing": 4,
     "minutes_credited": 4528,
     "medium_mix": {
-      "tvMiniSeries": 0.018,
       "tvMovie": 0.625,
+      "tvSeries": 0.071,
       "movie": 0.286,
-      "tvSeries": 0.071
+      "tvMiniSeries": 0.018
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1975,
@@ -1413,7 +1413,7 @@
     "top_collaborator_id": "nm0700671",
     "collaborator_loyalty": 0.263,
     "bridge_score": 0.000649,
-    "community": 0,
+    "community": 2,
     "pagerank": 0.00704088,
     "eigen_centrality": 0.150918,
     "clustering_local": 0.8209,
@@ -1430,8 +1430,8 @@
     "acclaim_gap": -0.21,
     "hub_vs_loyal": 43.694,
     "collaborator_reach": 60,
-    "embed_x": -0.6432,
-    "embed_y": 0.6056
+    "embed_x": -0.6429,
+    "embed_y": 0.6058
   },
   {
     "id": "nm0771243",
@@ -1549,9 +1549,9 @@
     "minutes_credited": 3520,
     "medium_mix": {
       "tvMovie": 0.649,
-      "tvMiniSeries": 0.108,
+      "movie": 0.081,
       "tvSeries": 0.162,
-      "movie": 0.081
+      "tvMiniSeries": 0.108
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1999,
@@ -1615,7 +1615,7 @@
     "top_collaborator_id": "nm0765638",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.000652,
-    "community": 0,
+    "community": 2,
     "pagerank": 0.00845849,
     "eigen_centrality": 0.199025,
     "clustering_local": 0.8203,
@@ -1632,7 +1632,7 @@
     "acclaim_gap": -0.136,
     "hub_vs_loyal": 39.354,
     "collaborator_reach": 60,
-    "embed_x": 1.2549,
+    "embed_x": 1.257,
     "embed_y": -0.569
   },
   {
@@ -1677,14 +1677,14 @@
         "votes": 9
       },
       {
-        "title": "For Good Reason",
-        "character": "Christine",
+        "title": "Mauer des Schweigens",
+        "character": "Susanne Pohl",
         "characters": [
-          "Christine"
+          "Susanne Pohl"
         ],
-        "year": 1991,
+        "year": 2022,
         "billing": 1,
-        "tconst": "tt0130481",
+        "tconst": "tt20780968",
         "votes": 0
       },
       {
@@ -1699,14 +1699,14 @@
         "votes": 0
       },
       {
-        "title": "Mauer des Schweigens",
-        "character": "Susanne Pohl",
+        "title": "For Good Reason",
+        "character": "Christine",
         "characters": [
-          "Susanne Pohl"
+          "Christine"
         ],
-        "year": 2022,
+        "year": 1991,
         "billing": 1,
-        "tconst": "tt20780968",
+        "tconst": "tt0130481",
         "votes": 0
       },
       {
@@ -1753,8 +1753,8 @@
     "minutes_credited": 3064,
     "medium_mix": {
       "tvMovie": 0.659,
-      "movie": 0.146,
       "tvSeries": 0.171,
+      "movie": 0.146,
       "tvMiniSeries": 0.024
     },
     "short_to_feature_ratio": 0.0,
@@ -1816,11 +1816,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Peter Lerchbaumer",
-    "top_collaborator_id": "nm0503479",
+    "top_collaborator": "Guntbert Warns",
+    "top_collaborator_id": "nm0912665",
     "collaborator_loyalty": 0.28,
     "bridge_score": 0.000623,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00835244,
     "eigen_centrality": 0.192446,
     "clustering_local": 0.8232,
@@ -1837,8 +1837,8 @@
     "acclaim_gap": 0.342,
     "hub_vs_loyal": 42.64,
     "collaborator_reach": 60,
-    "embed_x": 0.4688,
-    "embed_y": -0.1644
+    "embed_x": 0.4697,
+    "embed_y": -0.1645
   },
   {
     "id": "nm0700671",
@@ -1955,10 +1955,10 @@
     "median_billing": 8,
     "minutes_credited": 2103,
     "medium_mix": {
-      "tvSeries": 0.286,
-      "tvMiniSeries": 0.036,
       "tvMovie": 0.5,
-      "movie": 0.179
+      "movie": 0.179,
+      "tvSeries": 0.286,
+      "tvMiniSeries": 0.036
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2001,
@@ -2017,11 +2017,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Renate Krößner",
-    "top_collaborator_id": "nm0473191",
+    "top_collaborator": "Thomas Limpinsel",
+    "top_collaborator_id": "nm0510832",
     "collaborator_loyalty": 0.192,
     "bridge_score": 0.000498,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00765657,
     "eigen_centrality": 0.173362,
     "clustering_local": 0.841,
@@ -2039,7 +2039,7 @@
     "hub_vs_loyal": 47.096,
     "collaborator_reach": 59,
     "embed_x": -1.2841,
-    "embed_y": -0.1364
+    "embed_y": -0.1367
   },
   {
     "id": "nm0725292",
@@ -2158,9 +2158,9 @@
     "median_billing": 4,
     "minutes_credited": 4313,
     "medium_mix": {
-      "tvSeries": 0.136,
-      "movie": 0.254,
       "tvMovie": 0.593,
+      "movie": 0.254,
+      "tvSeries": 0.136,
       "tvMiniSeries": 0.017
     },
     "short_to_feature_ratio": 0.0,
@@ -2199,7 +2199,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0618391",
+    "top_director": "nm0384570",
     "regions": [
       "AR",
       "AT",
@@ -2221,11 +2221,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Walter Kreye",
-    "top_collaborator_id": "nm0471115",
+    "top_collaborator": "Ole Puppe",
+    "top_collaborator_id": "nm0700671",
     "collaborator_loyalty": 0.143,
     "bridge_score": 0.000689,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.0072514,
     "eigen_centrality": 0.163932,
     "clustering_local": 0.8171,
@@ -2243,7 +2243,7 @@
     "hub_vs_loyal": 50.134,
     "collaborator_reach": 59,
     "embed_x": -0.6732,
-    "embed_y": -0.741
+    "embed_y": -0.7409
   },
   {
     "id": "nm0765638",
@@ -2363,8 +2363,8 @@
     "minutes_credited": 2514,
     "medium_mix": {
       "movie": 0.25,
-      "tvMovie": 0.5,
-      "tvSeries": 0.25
+      "tvSeries": 0.25,
+      "tvMovie": 0.5
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2002,
@@ -2428,7 +2428,7 @@
     "top_collaborator_id": "nm0280117",
     "collaborator_loyalty": 0.386,
     "bridge_score": 0.000698,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00619849,
     "eigen_centrality": 0.141086,
     "clustering_local": 0.8159,
@@ -2445,8 +2445,8 @@
     "acclaim_gap": -0.542,
     "hub_vs_loyal": 35.068,
     "collaborator_reach": 59,
-    "embed_x": 0.7658,
-    "embed_y": 0.0722
+    "embed_x": 0.7682,
+    "embed_y": 0.075
   },
   {
     "id": "nm0046009",
@@ -2479,17 +2479,6 @@
         "votes": 0
       },
       {
-        "title": "Yaqup",
-        "character": "Yaqup",
-        "characters": [
-          "Yaqup"
-        ],
-        "year": 2015,
-        "billing": 1,
-        "tconst": "tt5794386",
-        "votes": 0
-      },
-      {
         "title": "Ich liebe Deutschland",
         "character": "Kemal",
         "characters": [
@@ -2509,6 +2498,17 @@
         "year": 1989,
         "billing": 1,
         "tconst": "tt0098001",
+        "votes": 0
+      },
+      {
+        "title": "Yaqup",
+        "character": "Yaqup",
+        "characters": [
+          "Yaqup"
+        ],
+        "year": 2015,
+        "billing": 1,
+        "tconst": "tt5794386",
         "votes": 0
       },
       {
@@ -2565,9 +2565,9 @@
     "median_billing": 5,
     "minutes_credited": 2887,
     "medium_mix": {
+      "tvSeries": 0.125,
       "tvMovie": 0.656,
-      "movie": 0.219,
-      "tvSeries": 0.125
+      "movie": 0.219
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1983,
@@ -2631,7 +2631,7 @@
     "top_collaborator_id": "nm0770907",
     "collaborator_loyalty": 0.185,
     "bridge_score": 0.000584,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00871533,
     "eigen_centrality": 0.195041,
     "clustering_local": 0.83,
@@ -2648,7 +2648,7 @@
     "acclaim_gap": 0.147,
     "hub_vs_loyal": 46.53,
     "collaborator_reach": 58,
-    "embed_x": 0.9321,
+    "embed_x": 0.9318,
     "embed_y": -0.3579
   },
   {
@@ -2760,15 +2760,15 @@
     "genre_first": "Drama",
     "genre_last": "Crime",
     "genre_first_last_distance": 1,
-    "typecast_character": "Oberstaatsanwalt Dr. Wolfgang Tümmler",
+    "typecast_character": "Dr. Markus Toprak",
     "typecast_count": 1,
     "billing_trajectory": 0.009,
     "median_billing": 4,
     "minutes_credited": 5147,
     "medium_mix": {
-      "tvSeries": 0.215,
-      "tvMovie": 0.692,
       "tvMiniSeries": 0.046,
+      "tvMovie": 0.692,
+      "tvSeries": 0.215,
       "movie": 0.046
     },
     "short_to_feature_ratio": 0.0,
@@ -2807,7 +2807,7 @@
       }
     ],
     "same_director_repeat": 4,
-    "top_director": "nm0231659",
+    "top_director": "nm0340170",
     "regions": [
       "AT",
       "AU",
@@ -2834,7 +2834,7 @@
     "top_collaborator_id": "nm0944237",
     "collaborator_loyalty": 0.182,
     "bridge_score": 0.000484,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00648304,
     "eigen_centrality": 0.142425,
     "clustering_local": 0.8445,
@@ -2851,7 +2851,7 @@
     "acclaim_gap": -1.225,
     "hub_vs_loyal": 46.716,
     "collaborator_reach": 58,
-    "embed_x": -1.0255,
+    "embed_x": -1.0252,
     "embed_y": -0.8532
   },
   {
@@ -2971,8 +2971,8 @@
     "median_billing": 4,
     "minutes_credited": 2300,
     "medium_mix": {
-      "tvMovie": 0.654,
-      "movie": 0.346
+      "movie": 0.346,
+      "tvMovie": 0.654
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2005,
@@ -3035,7 +3035,7 @@
     "top_collaborator_id": "nm0771243",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.00044,
-    "community": 0,
+    "community": 2,
     "pagerank": 0.00667853,
     "eigen_centrality": 0.151208,
     "clustering_local": 0.8542,
@@ -3053,7 +3053,7 @@
     "hub_vs_loyal": -4.0,
     "collaborator_reach": 58,
     "embed_x": -1.6023,
-    "embed_y": 0.1295
+    "embed_y": 0.1276
   },
   {
     "id": "nm0126678",
@@ -3164,15 +3164,15 @@
     "genre_first": "Comedy",
     "genre_last": "Family",
     "genre_first_last_distance": 1,
-    "typecast_character": "Dr. Michael Gerlach",
+    "typecast_character": "Winfried Kempe",
     "typecast_count": 1,
     "billing_trajectory": -0.1086,
     "median_billing": 7,
     "minutes_credited": 2424,
     "medium_mix": {
       "tvMovie": 0.679,
-      "movie": 0.143,
-      "tvSeries": 0.179
+      "tvSeries": 0.179,
+      "movie": 0.143
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2001,
@@ -3232,11 +3232,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Walter Kreye",
-    "top_collaborator_id": "nm0471115",
+    "top_collaborator": "Jan Fedder",
+    "top_collaborator_id": "nm0270035",
     "collaborator_loyalty": 0.4,
     "bridge_score": 0.000363,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.0054988,
     "eigen_centrality": 0.115465,
     "clustering_local": 0.8684,
@@ -3253,8 +3253,8 @@
     "acclaim_gap": 0.465,
     "hub_vs_loyal": 32.2,
     "collaborator_reach": 57,
-    "embed_x": 1.2274,
-    "embed_y": -1.0411
+    "embed_x": 1.2276,
+    "embed_y": -1.0414
   },
   {
     "id": "nm0399411",
@@ -3374,8 +3374,8 @@
     "minutes_credited": 2112,
     "medium_mix": {
       "tvMovie": 0.759,
-      "movie": 0.103,
-      "tvSeries": 0.138
+      "tvSeries": 0.138,
+      "movie": 0.103
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1997,
@@ -3435,11 +3435,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Anke Sevenich",
-    "top_collaborator_id": "nm0786258",
+    "top_collaborator": "Thomas Limpinsel",
+    "top_collaborator_id": "nm0510832",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.000373,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00704732,
     "eigen_centrality": 0.155683,
     "clustering_local": 0.8659,
@@ -3457,7 +3457,7 @@
     "hub_vs_loyal": 36.354,
     "collaborator_reach": 57,
     "embed_x": -0.5294,
-    "embed_y": -0.4397
+    "embed_y": -0.4401
   },
   {
     "id": "nm0469455",
@@ -3576,8 +3576,8 @@
     "minutes_credited": 5438,
     "medium_mix": {
       "tvMovie": 0.814,
-      "tvSeries": 0.114,
       "movie": 0.043,
+      "tvSeries": 0.114,
       "tvMiniSeries": 0.029
     },
     "short_to_feature_ratio": 0.0,
@@ -3642,7 +3642,7 @@
     "top_collaborator_id": "nm0597376",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.00039,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00428211,
     "eigen_centrality": 0.089281,
     "clustering_local": 0.8647,
@@ -3659,8 +3659,8 @@
     "acclaim_gap": -2.656,
     "hub_vs_loyal": 36.354,
     "collaborator_reach": 57,
-    "embed_x": -0.1213,
-    "embed_y": 0.9005
+    "embed_x": -0.1215,
+    "embed_y": 0.9136
   },
   {
     "id": "nm0632482",
@@ -3715,17 +3715,6 @@
         "votes": 21
       },
       {
-        "title": "Der geheime Zeuge",
-        "character": "Jana Hallberg",
-        "characters": [
-          "Jana Hallberg"
-        ],
-        "year": 1999,
-        "billing": 1,
-        "tconst": "tt0195740",
-        "votes": 0
-      },
-      {
         "title": "Cell 5 - A Reconstruction",
         "character": "Narrator",
         "characters": [
@@ -3734,6 +3723,17 @@
         "year": 2023,
         "billing": 1,
         "tconst": "tt29902648",
+        "votes": 0
+      },
+      {
+        "title": "Der geheime Zeuge",
+        "character": "Jana Hallberg",
+        "characters": [
+          "Jana Hallberg"
+        ],
+        "year": 1999,
+        "billing": 1,
+        "tconst": "tt0195740",
         "votes": 0
       },
       {
@@ -3773,15 +3773,15 @@
     "genre_first": "Drama",
     "genre_last": "Crime",
     "genre_first_last_distance": 1,
-    "typecast_character": "Sara",
+    "typecast_character": "Dena Paulos",
     "typecast_count": 1,
     "billing_trajectory": -0.0654,
     "median_billing": 5,
     "minutes_credited": 2059,
     "medium_mix": {
       "tvSeries": 0.267,
-      "movie": 0.133,
-      "tvMovie": 0.6
+      "tvMovie": 0.6,
+      "movie": 0.133
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1996,
@@ -3845,7 +3845,7 @@
     "top_collaborator_id": "nm0471115",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.000514,
-    "community": 0,
+    "community": 2,
     "pagerank": 0.00568848,
     "eigen_centrality": 0.125272,
     "clustering_local": 0.8402,
@@ -3862,7 +3862,7 @@
     "acclaim_gap": -0.71,
     "hub_vs_loyal": 36.354,
     "collaborator_reach": 57,
-    "embed_x": 0.9029,
+    "embed_x": 0.9031,
     "embed_y": 0.4774
   },
   {
@@ -3896,17 +3896,6 @@
         "votes": 0
       },
       {
-        "title": "Bags of Time",
-        "character": "Anton",
-        "characters": [
-          "Anton"
-        ],
-        "year": 1997,
-        "billing": 1,
-        "tconst": "tt0923585",
-        "votes": 0
-      },
-      {
         "title": "Null Risiko und reich",
         "character": "Junghans",
         "characters": [
@@ -3915,6 +3904,17 @@
         "year": 1997,
         "billing": 1,
         "tconst": "tt0119811",
+        "votes": 0
+      },
+      {
+        "title": "Bags of Time",
+        "character": "Anton",
+        "characters": [
+          "Anton"
+        ],
+        "year": 1997,
+        "billing": 1,
+        "tconst": "tt0923585",
         "votes": 0
       },
       {
@@ -4049,7 +4049,7 @@
     "top_collaborator_id": "nm0381277",
     "collaborator_loyalty": 0.393,
     "bridge_score": 0.000346,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00638661,
     "eigen_centrality": 0.152674,
     "clustering_local": 0.869,
@@ -4066,8 +4066,8 @@
     "acclaim_gap": 0.537,
     "hub_vs_loyal": 32.634,
     "collaborator_reach": 57,
-    "embed_x": 0.5051,
-    "embed_y": 0.4408
+    "embed_x": 0.5052,
+    "embed_y": 0.446
   },
   {
     "id": "nm0954240",
@@ -4111,17 +4111,6 @@
         "votes": 0
       },
       {
-        "title": "Fifty Fifty",
-        "character": "Sie",
-        "characters": [
-          "Sie"
-        ],
-        "year": 1996,
-        "billing": 2,
-        "tconst": "tt0116302",
-        "votes": 0
-      },
-      {
         "title": "Fremdkörper",
         "character": "Claudia Kess",
         "characters": [
@@ -4130,6 +4119,17 @@
         "year": 2011,
         "billing": 2,
         "tconst": "tt1263743",
+        "votes": 0
+      },
+      {
+        "title": "Fifty Fifty",
+        "character": "Sie",
+        "characters": [
+          "Sie"
+        ],
+        "year": 1996,
+        "billing": 2,
+        "tconst": "tt0116302",
         "votes": 0
       },
       {
@@ -4178,7 +4178,7 @@
     "genre_first": "Drama",
     "genre_last": "Documentary",
     "genre_first_last_distance": 1,
-    "typecast_character": "Jule Brandenburg",
+    "typecast_character": "Katinka Tabel",
     "typecast_count": 1,
     "billing_trajectory": 0.0778,
     "median_billing": 5,
@@ -4186,8 +4186,8 @@
     "medium_mix": {
       "tvMovie": 0.318,
       "movie": 0.409,
-      "tvMiniSeries": 0.045,
-      "tvSeries": 0.227
+      "tvSeries": 0.227,
+      "tvMiniSeries": 0.045
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2008,
@@ -4251,7 +4251,7 @@
     "top_collaborator_id": "nm0765638",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.000411,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00618545,
     "eigen_centrality": 0.145567,
     "clustering_local": 0.8609,
@@ -4268,8 +4268,8 @@
     "acclaim_gap": -0.036,
     "hub_vs_loyal": -5.0,
     "collaborator_reach": 57,
-    "embed_x": 1.0685,
-    "embed_y": 0.293
+    "embed_x": 1.086,
+    "embed_y": 0.2887
   },
   {
     "id": "nm0280117",
@@ -4335,17 +4335,6 @@
         "votes": 38
       },
       {
-        "title": "Er oder keiner",
-        "character": "Alex",
-        "characters": [
-          "Alex"
-        ],
-        "year": 2003,
-        "billing": 1,
-        "tconst": "tt0313756",
-        "votes": 12
-      },
-      {
         "title": "Wer entführt meine Frau?",
         "character": "Martin",
         "characters": [
@@ -4354,6 +4343,17 @@
         "year": 2006,
         "billing": 1,
         "tconst": "tt0461715",
+        "votes": 12
+      },
+      {
+        "title": "Er oder keiner",
+        "character": "Alex",
+        "characters": [
+          "Alex"
+        ],
+        "year": 2003,
+        "billing": 1,
+        "tconst": "tt0313756",
         "votes": 12
       }
     ],
@@ -4389,8 +4389,8 @@
     "medium_mix": {
       "tvMovie": 0.788,
       "tvSeries": 0.154,
-      "tvMiniSeries": 0.038,
-      "movie": 0.019
+      "movie": 0.019,
+      "tvMiniSeries": 0.038
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1997,
@@ -4455,7 +4455,7 @@
     "top_collaborator_id": "nm0765638",
     "collaborator_loyalty": 0.37,
     "bridge_score": 0.000513,
-    "community": 0,
+    "community": 2,
     "pagerank": 0.00736998,
     "eigen_centrality": 0.170313,
     "clustering_local": 0.8474,
@@ -4473,7 +4473,7 @@
     "hub_vs_loyal": 33.06,
     "collaborator_reach": 56,
     "embed_x": 0.3882,
-    "embed_y": -1.8729
+    "embed_y": -1.8716
   },
   {
     "id": "nm0510832",
@@ -4585,15 +4585,15 @@
     "genre_first": "Comedy",
     "genre_last": "Thriller",
     "genre_first_last_distance": 1,
-    "typecast_character": "Martin",
+    "typecast_character": "Katja's husband",
     "typecast_count": 1,
     "billing_trajectory": 0.117,
     "median_billing": 8,
     "minutes_credited": 4205,
     "medium_mix": {
       "tvMovie": 0.7,
-      "movie": 0.1,
-      "tvSeries": 0.2
+      "tvSeries": 0.2,
+      "movie": 0.1
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2010,
@@ -4631,7 +4631,7 @@
       }
     ],
     "same_director_repeat": 4,
-    "top_director": "nm0582733",
+    "top_director": "nm0021271",
     "regions": [
       "AR",
       "AT",
@@ -4657,7 +4657,7 @@
     "top_collaborator_id": "nm0738286",
     "collaborator_loyalty": 0.558,
     "bridge_score": 0.000282,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00654993,
     "eigen_centrality": 0.148345,
     "clustering_local": 0.8838,
@@ -4674,8 +4674,8 @@
     "acclaim_gap": -0.17,
     "hub_vs_loyal": 21.404,
     "collaborator_reach": 56,
-    "embed_x": 0.8676,
-    "embed_y": 0.0409
+    "embed_x": 0.864,
+    "embed_y": 0.042
   },
   {
     "id": "nm0902665",
@@ -4788,7 +4788,7 @@
     "genre_first": "Comedy",
     "genre_last": "Comedy",
     "genre_first_last_distance": 0,
-    "typecast_character": "Josef Eder",
+    "typecast_character": "Charly Wollinger",
     "typecast_count": 1,
     "billing_trajectory": -0.0074,
     "median_billing": 6,
@@ -4796,8 +4796,8 @@
     "medium_mix": {
       "tvSeries": 0.068,
       "tvMovie": 0.705,
-      "tvMiniSeries": 0.045,
-      "movie": 0.182
+      "movie": 0.182,
+      "tvMiniSeries": 0.045
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1985,
@@ -4863,7 +4863,7 @@
     "top_collaborator_id": "nm1365318",
     "collaborator_loyalty": 0.778,
     "bridge_score": 0.000444,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.0057614,
     "eigen_centrality": 0.131417,
     "clustering_local": 0.8558,
@@ -4881,7 +4881,7 @@
     "hub_vs_loyal": 7.764,
     "collaborator_reach": 56,
     "embed_x": 0.9667,
-    "embed_y": -0.6909
+    "embed_y": -0.6908
   },
   {
     "id": "nm0936944",
@@ -4998,9 +4998,9 @@
     "median_billing": 7,
     "minutes_credited": 1604,
     "medium_mix": {
-      "tvSeries": 0.143,
+      "tvMovie": 0.619,
       "movie": 0.238,
-      "tvMovie": 0.619
+      "tvSeries": 0.143
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2014,
@@ -5061,11 +5061,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Bernhard Piesk",
-    "top_collaborator_id": "nm0682832",
+    "top_collaborator": "Thomas Limpinsel",
+    "top_collaborator_id": "nm0510832",
     "collaborator_loyalty": 0.5,
     "bridge_score": 0.000268,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00564502,
     "eigen_centrality": 0.125174,
     "clustering_local": 0.887,
@@ -5082,7 +5082,7 @@
     "acclaim_gap": 0.752,
     "hub_vs_loyal": 25.0,
     "collaborator_reach": 56,
-    "embed_x": -0.2516,
+    "embed_x": -0.2511,
     "embed_y": -0.409
   },
   {
@@ -5195,7 +5195,7 @@
     "genre_first": "Drama",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Werner Matzerath",
+    "typecast_character": "Karl",
     "typecast_count": 2,
     "billing_trajectory": 0.1669,
     "median_billing": 8,
@@ -5203,8 +5203,8 @@
     "medium_mix": {
       "tvSeries": 0.324,
       "tvMovie": 0.529,
-      "movie": 0.088,
-      "tvMiniSeries": 0.059
+      "tvMiniSeries": 0.059,
+      "movie": 0.088
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2006,
@@ -5267,7 +5267,7 @@
     "top_collaborator_id": "nm0345708",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.000355,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00738824,
     "eigen_centrality": 0.170231,
     "clustering_local": 0.8695,
@@ -5318,14 +5318,14 @@
         "votes": 16
       },
       {
-        "title": "Sängerknaben",
-        "character": "Else Armbichler",
+        "title": "Letzter Wille",
+        "character": "Olga",
         "characters": [
-          "Else Armbichler"
+          "Olga"
         ],
-        "year": 2001,
+        "year": 2000,
         "billing": 1,
-        "tconst": "tt0283030",
+        "tconst": "tt0251183",
         "votes": 0
       },
       {
@@ -5340,14 +5340,14 @@
         "votes": 0
       },
       {
-        "title": "Letzter Wille",
-        "character": "Olga",
+        "title": "Sängerknaben",
+        "character": "Else Armbichler",
         "characters": [
-          "Olga"
+          "Else Armbichler"
         ],
-        "year": 2000,
+        "year": 2001,
         "billing": 1,
-        "tconst": "tt0251183",
+        "tconst": "tt0283030",
         "votes": 0
       },
       {
@@ -5406,8 +5406,8 @@
     "median_billing": 8,
     "minutes_credited": 3319,
     "medium_mix": {
-      "tvMovie": 0.673,
       "tvSeries": 0.25,
+      "tvMovie": 0.673,
       "movie": 0.077
     },
     "short_to_feature_ratio": 0.0,
@@ -5476,7 +5476,7 @@
     "top_collaborator_id": "nm0738286",
     "collaborator_loyalty": 0.611,
     "bridge_score": 0.002758,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00429978,
     "eigen_centrality": 0.076324,
     "clustering_local": 0.8512,
@@ -5516,17 +5516,6 @@
     "rk_prominence": 326,
     "roles": [
       {
-        "title": "Donauleichen",
-        "character": "Basti",
-        "characters": [
-          "Basti"
-        ],
-        "year": 2005,
-        "billing": 1,
-        "tconst": "tt0813381",
-        "votes": 11
-      },
-      {
         "title": "Yuppy Cars",
         "character": "Mark",
         "characters": [
@@ -5535,6 +5524,17 @@
         "year": 2008,
         "billing": 1,
         "tconst": "tt1283276",
+        "votes": 11
+      },
+      {
+        "title": "Donauleichen",
+        "character": "Basti",
+        "characters": [
+          "Basti"
+        ],
+        "year": 2005,
+        "billing": 1,
+        "tconst": "tt0813381",
         "votes": 11
       },
       {
@@ -5606,7 +5606,7 @@
     "genre_first": "Drama",
     "genre_last": "Mystery",
     "genre_first_last_distance": 1,
-    "typecast_character": "Louis",
+    "typecast_character": "Otto Schiffmann",
     "typecast_count": 1,
     "billing_trajectory": -0.0029,
     "median_billing": 3,
@@ -5652,7 +5652,7 @@
       }
     ],
     "same_director_repeat": 1,
-    "top_director": "nm0754050",
+    "top_director": "nm3415432",
     "regions": [
       "AR",
       "AT",
@@ -5674,7 +5674,7 @@
       "2010s"
     ],
     "bridge_score": 0.000284,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00546481,
     "eigen_centrality": 0.118085,
     "clustering_local": 0.8889,
@@ -5805,16 +5805,16 @@
     "genre_first": "Drama",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Schwarzer Magier",
+    "typecast_character": "Bernd",
     "typecast_count": 2,
     "billing_trajectory": -0.2418,
     "median_billing": 6,
     "minutes_credited": 3591,
     "medium_mix": {
-      "tvMiniSeries": 0.022,
       "tvMovie": 0.6,
       "movie": 0.333,
-      "tvSeries": 0.044
+      "tvSeries": 0.044,
+      "tvMiniSeries": 0.022
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1985,
@@ -5877,7 +5877,7 @@
     "top_collaborator_id": "nm0159591",
     "collaborator_loyalty": 0.375,
     "bridge_score": 0.00052,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.0048316,
     "eigen_centrality": 0.095704,
     "clustering_local": 0.8364,
@@ -5895,7 +5895,7 @@
     "hub_vs_loyal": 31.75,
     "collaborator_reach": 55,
     "embed_x": -1.6253,
-    "embed_y": -0.769
+    "embed_y": -0.7691
   },
   {
     "id": "nm2702975",
@@ -6079,7 +6079,7 @@
     "top_collaborator_id": "nm0944237",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.00024,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00557395,
     "eigen_centrality": 0.12467,
     "clustering_local": 0.8949,
@@ -6096,8 +6096,8 @@
     "acclaim_gap": 0.436,
     "hub_vs_loyal": -7.0,
     "collaborator_reach": 55,
-    "embed_x": -1.3552,
-    "embed_y": 0.4346
+    "embed_x": -1.3551,
+    "embed_y": 0.4339
   },
   {
     "id": "nm0744850",
@@ -6152,17 +6152,6 @@
         "votes": 2775
       },
       {
-        "title": "The Berlin Wall",
-        "character": "Helmut",
-        "characters": [
-          "Helmut"
-        ],
-        "year": 2009,
-        "billing": 2,
-        "tconst": "tt1351629",
-        "votes": 48
-      },
-      {
         "title": "Here Comes the Bride",
         "character": "Bernd",
         "characters": [
@@ -6171,6 +6160,17 @@
         "year": 2018,
         "billing": 2,
         "tconst": "tt7875644",
+        "votes": 48
+      },
+      {
+        "title": "The Berlin Wall",
+        "character": "Helmut",
+        "characters": [
+          "Helmut"
+        ],
+        "year": 2009,
+        "billing": 2,
+        "tconst": "tt1351629",
         "votes": 48
       },
       {
@@ -6281,7 +6281,7 @@
     "top_collaborator_id": "nm0345708",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.000212,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.005284,
     "eigen_centrality": 0.113841,
     "clustering_local": 0.9008,
@@ -6416,8 +6416,8 @@
     "median_billing": 4,
     "minutes_credited": 7058,
     "medium_mix": {
-      "movie": 0.372,
       "tvMovie": 0.581,
+      "movie": 0.372,
       "tvSeries": 0.035,
       "tvMiniSeries": 0.012
     },
@@ -6485,7 +6485,7 @@
     "top_collaborator_id": "nm0464826",
     "collaborator_loyalty": 0.818,
     "bridge_score": 0.000385,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00574577,
     "eigen_centrality": 0.118305,
     "clustering_local": 0.8701,
@@ -6502,8 +6502,8 @@
     "acclaim_gap": -0.459,
     "hub_vs_loyal": 2.284,
     "collaborator_reach": 53,
-    "embed_x": -0.5195,
-    "embed_y": 0.512
+    "embed_x": -0.5196,
+    "embed_y": 0.5098
   },
   {
     "id": "nm0345708",
@@ -6620,9 +6620,9 @@
     "median_billing": 3,
     "minutes_credited": 3908,
     "medium_mix": {
+      "tvSeries": 0.149,
       "tvMovie": 0.617,
-      "movie": 0.234,
-      "tvSeries": 0.149
+      "movie": 0.234
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1983,
@@ -6688,7 +6688,7 @@
     "top_collaborator_id": "nm0905147",
     "collaborator_loyalty": 0.241,
     "bridge_score": 0.000459,
-    "community": 0,
+    "community": 2,
     "pagerank": 0.00413289,
     "eigen_centrality": 0.082041,
     "clustering_local": 0.8476,
@@ -6705,7 +6705,7 @@
     "acclaim_gap": 0.651,
     "hub_vs_loyal": 38.058,
     "collaborator_reach": 53,
-    "embed_x": 0.7364,
+    "embed_x": 0.7255,
     "embed_y": -1.1665
   },
   {
@@ -6750,14 +6750,14 @@
         "votes": 9
       },
       {
-        "title": "Unterwegs nach Atlantis",
-        "character": "Professor Bohmann",
+        "title": "Ideen hast du, Liebling!",
+        "character": "Heinz Kunze",
         "characters": [
-          "Professor Bohmann"
+          "Heinz Kunze"
         ],
-        "year": 1977,
+        "year": 1983,
         "billing": 1,
-        "tconst": "tt0173389",
+        "tconst": "tt1776936",
         "votes": 0
       },
       {
@@ -6818,16 +6818,16 @@
     "genre_first": "War",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Georg Redlich",
+    "typecast_character": "Herr Körner",
     "typecast_count": 1,
     "billing_trajectory": -0.0252,
     "median_billing": 6,
     "minutes_credited": 4995,
     "medium_mix": {
-      "tvMiniSeries": 0.029,
-      "tvSeries": 0.129,
       "tvMovie": 0.471,
-      "movie": 0.371
+      "tvSeries": 0.129,
+      "movie": 0.371,
+      "tvMiniSeries": 0.029
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1974,
@@ -6894,7 +6894,7 @@
     "top_collaborator_id": "nm0374651",
     "collaborator_loyalty": 0.286,
     "bridge_score": 0.000283,
-    "community": 0,
+    "community": 2,
     "pagerank": 0.00457541,
     "eigen_centrality": 0.091032,
     "clustering_local": 0.8899,
@@ -7030,8 +7030,8 @@
     "minutes_credited": 2011,
     "medium_mix": {
       "tvMovie": 0.808,
-      "movie": 0.154,
-      "tvSeries": 0.038
+      "tvSeries": 0.038,
+      "movie": 0.154
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2000,
@@ -7069,7 +7069,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm0479810",
+    "top_director": "nm1490813",
     "regions": [
       "DE",
       "ES",
@@ -7092,7 +7092,7 @@
     "top_collaborator_id": "nm0270035",
     "collaborator_loyalty": 0.273,
     "bridge_score": 0.000247,
-    "community": 0,
+    "community": 2,
     "pagerank": 0.00440857,
     "eigen_centrality": 0.09551,
     "clustering_local": 0.8959,
@@ -7109,8 +7109,8 @@
     "acclaim_gap": 0.649,
     "hub_vs_loyal": 35.074,
     "collaborator_reach": 52,
-    "embed_x": -0.5487,
-    "embed_y": 0.9453
+    "embed_x": -0.5508,
+    "embed_y": 0.9439
   },
   {
     "id": "nm0725207",
@@ -7165,6 +7165,17 @@
         "votes": 21
       },
       {
+        "title": "Wie man Wünsche beim Schwanz packt",
+        "character": "Die Torte",
+        "characters": [
+          "Die Torte"
+        ],
+        "year": 1971,
+        "billing": 2,
+        "tconst": "tt1422795",
+        "votes": 0
+      },
+      {
         "title": "Der kopflose Falke",
         "character": "Das Mädchen",
         "characters": [
@@ -7184,17 +7195,6 @@
         "year": 1982,
         "billing": 2,
         "tconst": "tt1829664",
-        "votes": 0
-      },
-      {
-        "title": "Wie man Wünsche beim Schwanz packt",
-        "character": "Die Torte",
-        "characters": [
-          "Die Torte"
-        ],
-        "year": 1971,
-        "billing": 2,
-        "tconst": "tt1422795",
         "votes": 0
       }
     ],
@@ -7298,7 +7298,7 @@
     "top_collaborator_id": "nm0471115",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.000332,
-    "community": 0,
+    "community": 3,
     "pagerank": 0.00459028,
     "eigen_centrality": 0.098328,
     "clustering_local": 0.8801,
@@ -7433,8 +7433,8 @@
     "median_billing": 4,
     "minutes_credited": 1145,
     "medium_mix": {
-      "tvMovie": 0.5,
       "movie": 0.312,
+      "tvMovie": 0.5,
       "tvMiniSeries": 0.188
     },
     "short_to_feature_ratio": 0.0,
@@ -7473,7 +7473,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm2011733",
+    "top_director": "nm0918326",
     "regions": [
       "AT",
       "AU",
@@ -7497,7 +7497,7 @@
     "top_collaborator_id": "nm0725292",
     "collaborator_loyalty": 0.5,
     "bridge_score": 0.000167,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00462744,
     "eigen_centrality": 0.100749,
     "clustering_local": 0.917,
@@ -7514,8 +7514,8 @@
     "acclaim_gap": 0.485,
     "hub_vs_loyal": 21.0,
     "collaborator_reach": 52,
-    "embed_x": -0.1407,
-    "embed_y": -0.7308
+    "embed_x": -0.1383,
+    "embed_y": -0.7115
   },
   {
     "id": "nm0597376",
@@ -7632,9 +7632,9 @@
     "median_billing": 3,
     "minutes_credited": 5122,
     "medium_mix": {
-      "movie": 0.13,
       "tvMovie": 0.667,
       "tvSeries": 0.188,
+      "movie": 0.13,
       "tvMiniSeries": 0.014
     },
     "short_to_feature_ratio": 0.0,
@@ -7699,7 +7699,7 @@
     "top_collaborator_id": "nm0927453",
     "collaborator_loyalty": 0.308,
     "bridge_score": 0.000188,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00791273,
     "eigen_centrality": 0.185548,
     "clustering_local": 0.9145,
@@ -7829,15 +7829,15 @@
     "genre_first": "Comedy",
     "genre_last": "Comedy",
     "genre_first_last_distance": 0,
-    "typecast_character": "Anja Reimer",
+    "typecast_character": "Self",
     "typecast_count": 2,
     "billing_trajectory": -0.0522,
     "median_billing": 3,
     "minutes_credited": 3502,
     "medium_mix": {
+      "movie": 0.196,
       "tvSeries": 0.174,
       "tvMovie": 0.609,
-      "movie": 0.196,
       "tvMiniSeries": 0.022
     },
     "short_to_feature_ratio": 0.0,
@@ -7901,7 +7901,7 @@
     "top_collaborator_id": "nm0738286",
     "collaborator_loyalty": 0.3,
     "bridge_score": 0.000233,
-    "community": 0,
+    "community": 2,
     "pagerank": 0.00411176,
     "eigen_centrality": 0.089797,
     "clustering_local": 0.9012,
@@ -7918,7 +7918,7 @@
     "acclaim_gap": -1.808,
     "hub_vs_loyal": 32.4,
     "collaborator_reach": 51,
-    "embed_x": 0.3268,
+    "embed_x": 0.3201,
     "embed_y": -1.065
   },
   {
@@ -8031,15 +8031,15 @@
     "genre_first": "Drama",
     "genre_last": "Mystery",
     "genre_first_last_distance": 1,
-    "typecast_character": "Michael",
+    "typecast_character": "Walter Fromm",
     "typecast_count": 1,
     "billing_trajectory": 0.0203,
     "median_billing": 6,
     "minutes_credited": 2428,
     "medium_mix": {
-      "tvMovie": 0.5,
-      "movie": 0.194,
       "tvSeries": 0.278,
+      "movie": 0.194,
+      "tvMovie": 0.5,
       "tvMiniSeries": 0.028
     },
     "short_to_feature_ratio": 0.0,
@@ -8078,7 +8078,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm0379063",
+    "top_director": "nm0006753",
     "regions": [
       "AU",
       "BR",
@@ -8105,7 +8105,7 @@
     "top_collaborator_id": "nm0786258",
     "collaborator_loyalty": 0.438,
     "bridge_score": 0.000153,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00511935,
     "eigen_centrality": 0.122454,
     "clustering_local": 0.9231,
@@ -8236,15 +8236,15 @@
     "genre_first": "Crime",
     "genre_last": "Family",
     "genre_first_last_distance": 1,
-    "typecast_character": "Norbert Bachler",
+    "typecast_character": "Barney Brunner",
     "typecast_count": 1,
     "billing_trajectory": 0.0587,
     "median_billing": 3,
     "minutes_credited": 2748,
     "medium_mix": {
       "tvMovie": 0.743,
-      "tvMiniSeries": 0.029,
       "tvSeries": 0.171,
+      "tvMiniSeries": 0.029,
       "movie": 0.057
     },
     "short_to_feature_ratio": 0.0,
@@ -8309,7 +8309,7 @@
     "top_collaborator_id": "nm0771933",
     "collaborator_loyalty": 0.429,
     "bridge_score": 0.000246,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00517309,
     "eigen_centrality": 0.119813,
     "clustering_local": 0.8931,
@@ -8327,7 +8327,7 @@
     "hub_vs_loyal": 23.402,
     "collaborator_reach": 50,
     "embed_x": -0.1157,
-    "embed_y": 0.4561
+    "embed_y": 0.416
   },
   {
     "id": "nm0682832",
@@ -8445,8 +8445,8 @@
     "minutes_credited": 1690,
     "medium_mix": {
       "tvSeries": 0.321,
-      "movie": 0.143,
-      "tvMovie": 0.536
+      "tvMovie": 0.536,
+      "movie": 0.143
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1999,
@@ -8510,7 +8510,7 @@
     "top_collaborator_id": "nm0765638",
     "collaborator_loyalty": 0.438,
     "bridge_score": 0.000225,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00362759,
     "eigen_centrality": 0.077232,
     "clustering_local": 0.9045,
@@ -8527,8 +8527,8 @@
     "acclaim_gap": -0.349,
     "hub_vs_loyal": 22.844,
     "collaborator_reach": 50,
-    "embed_x": -0.2574,
-    "embed_y": -1.7394
+    "embed_x": -0.2556,
+    "embed_y": -1.7381
   },
   {
     "id": "nm0127017",
@@ -8550,17 +8550,6 @@
     "rk_prominence": 413,
     "roles": [
       {
-        "title": "Der Fall des Robert Schumann",
-        "character": "Friedrich Wieck",
-        "characters": [
-          "Friedrich Wieck"
-        ],
-        "year": 1990,
-        "billing": 1,
-        "tconst": "tt0877615",
-        "votes": 0
-      },
-      {
         "title": "Die Kopie",
         "character": "Main",
         "characters": [
@@ -8569,6 +8558,17 @@
         "year": 1988,
         "billing": 1,
         "tconst": "tt0832500",
+        "votes": 0
+      },
+      {
+        "title": "Der Fall des Robert Schumann",
+        "character": "Friedrich Wieck",
+        "characters": [
+          "Friedrich Wieck"
+        ],
+        "year": 1990,
+        "billing": 1,
+        "tconst": "tt0877615",
         "votes": 0
       },
       {
@@ -8646,8 +8646,8 @@
     "minutes_credited": 2998,
     "medium_mix": {
       "tvMovie": 0.676,
-      "movie": 0.189,
-      "tvSeries": 0.135
+      "tvSeries": 0.135,
+      "movie": 0.189
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1986,
@@ -8712,7 +8712,7 @@
     "top_collaborator_id": "nm0471115",
     "collaborator_loyalty": 0.667,
     "bridge_score": 0.000147,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00323258,
     "eigen_centrality": 0.060729,
     "clustering_local": 0.9201,
@@ -8729,7 +8729,7 @@
     "acclaim_gap": 0.42,
     "hub_vs_loyal": 7.646,
     "collaborator_reach": 49,
-    "embed_x": 0.8084,
+    "embed_x": 0.8106,
     "embed_y": -0.6234
   },
   {
@@ -8752,17 +8752,6 @@
     "rk_prominence": 234,
     "roles": [
       {
-        "title": "Glaube und Heimat",
-        "character": "Christoph Rott",
-        "characters": [
-          "Christoph Rott"
-        ],
-        "year": 2001,
-        "billing": 1,
-        "tconst": "tt0302609",
-        "votes": 0
-      },
-      {
         "title": "Der Weibsteufel",
         "character": "Der Mann",
         "characters": [
@@ -8771,6 +8760,17 @@
         "year": 2009,
         "billing": 1,
         "tconst": "tt1427034",
+        "votes": 0
+      },
+      {
+        "title": "Glaube und Heimat",
+        "character": "Christoph Rott",
+        "characters": [
+          "Christoph Rott"
+        ],
+        "year": 2001,
+        "billing": 1,
+        "tconst": "tt0302609",
         "votes": 0
       },
       {
@@ -8842,16 +8842,16 @@
     "genre_first": "Drama",
     "genre_last": "Crime",
     "genre_first_last_distance": 1,
-    "typecast_character": "Martin Brack",
+    "typecast_character": "Dieter Dombrowski",
     "typecast_count": 1,
     "billing_trajectory": -0.2584,
     "median_billing": 8,
     "minutes_credited": 1413,
     "medium_mix": {
-      "tvMovie": 0.7,
       "tvMiniSeries": 0.15,
-      "movie": 0.05,
-      "tvSeries": 0.1
+      "tvMovie": 0.7,
+      "tvSeries": 0.1,
+      "movie": 0.05
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2001,
@@ -8915,7 +8915,7 @@
     "top_collaborator_id": "nm0771933",
     "collaborator_loyalty": 0.4,
     "bridge_score": 0.000147,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00428258,
     "eigen_centrality": 0.095256,
     "clustering_local": 0.9204,
@@ -8932,7 +8932,7 @@
     "acclaim_gap": 0.35,
     "hub_vs_loyal": 22.2,
     "collaborator_reach": 47,
-    "embed_x": -1.2954,
+    "embed_x": -1.295,
     "embed_y": -0.3753
   },
   {
@@ -9053,8 +9053,8 @@
     "median_billing": 4,
     "minutes_credited": 3535,
     "medium_mix": {
-      "tvMovie": 0.5,
       "tvSeries": 0.304,
+      "tvMovie": 0.5,
       "movie": 0.196
     },
     "short_to_feature_ratio": 0.0,
@@ -9093,7 +9093,7 @@
       }
     ],
     "same_director_repeat": 8,
-    "top_director": "nm1081521",
+    "top_director": "nm0583361",
     "regions": [
       "AT",
       "AU",
@@ -9121,7 +9121,7 @@
     "top_collaborator_id": "nm0311766",
     "collaborator_loyalty": 0.238,
     "bridge_score": 0.000296,
-    "community": 0,
+    "community": 3,
     "pagerank": 0.00590245,
     "eigen_centrality": 0.121182,
     "clustering_local": 0.8783,
@@ -9138,8 +9138,8 @@
     "acclaim_gap": -0.67,
     "hub_vs_loyal": 31.244,
     "collaborator_reach": 46,
-    "embed_x": -0.8573,
-    "embed_y": -1.3451
+    "embed_x": -0.8571,
+    "embed_y": -1.345
   },
   {
     "id": "nm0905147",
@@ -9251,14 +9251,14 @@
     "genre_first": "Crime",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Magda Grawe",
+    "typecast_character": "Narrator",
     "typecast_count": 1,
     "billing_trajectory": -0.0218,
     "median_billing": 5,
     "minutes_credited": 4452,
     "medium_mix": {
-      "tvMovie": 0.566,
       "movie": 0.377,
+      "tvMovie": 0.566,
       "tvSeries": 0.019,
       "tvMiniSeries": 0.038
     },
@@ -9327,7 +9327,7 @@
     "top_collaborator_id": "nm0622608",
     "collaborator_loyalty": 0.276,
     "bridge_score": 8.5e-05,
-    "community": 0,
+    "community": 2,
     "pagerank": 0.00356894,
     "eigen_centrality": 0.073372,
     "clustering_local": 0.9449,
@@ -9344,7 +9344,7 @@
     "acclaim_gap": 0.702,
     "hub_vs_loyal": 28.888,
     "collaborator_reach": 46,
-    "embed_x": -1.0553,
+    "embed_x": -1.0606,
     "embed_y": 0.8863
   },
   {
@@ -9526,7 +9526,7 @@
     "top_collaborator_id": "nm1493930",
     "collaborator_loyalty": 1.0,
     "bridge_score": 7e-05,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00393032,
     "eigen_centrality": 0.092545,
     "clustering_local": 0.9536,
@@ -9543,8 +9543,8 @@
     "acclaim_gap": 0.863,
     "hub_vs_loyal": -16.0,
     "collaborator_reach": 46,
-    "embed_x": 0.4363,
-    "embed_y": 0.6602
+    "embed_x": 0.4361,
+    "embed_y": 0.6608
   },
   {
     "id": "nm0503479",
@@ -9655,7 +9655,7 @@
     "genre_first": "Drama",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Roland Kemmler",
+    "typecast_character": "Josef",
     "typecast_count": 1,
     "billing_trajectory": -0.0595,
     "median_billing": 7,
@@ -9730,7 +9730,7 @@
     "top_collaborator_id": "nm0786258",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.000122,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.0051121,
     "eigen_centrality": 0.117023,
     "clustering_local": 0.9242,
@@ -9747,7 +9747,7 @@
     "acclaim_gap": -0.119,
     "hub_vs_loyal": -17.0,
     "collaborator_reach": 45,
-    "embed_x": 1.4114,
+    "embed_x": 1.4133,
     "embed_y": -0.0415
   },
   {
@@ -9866,8 +9866,8 @@
     "minutes_credited": 2983,
     "medium_mix": {
       "tvMovie": 0.706,
-      "movie": 0.176,
-      "tvSeries": 0.118
+      "tvSeries": 0.118,
+      "movie": 0.176
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1999,
@@ -9931,7 +9931,7 @@
     "top_collaborator_id": "nm0874820",
     "collaborator_loyalty": 0.524,
     "bridge_score": 8e-05,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00251743,
     "eigen_centrality": 0.045992,
     "clustering_local": 0.9446,
@@ -10130,7 +10130,7 @@
       "2020s"
     ],
     "bridge_score": 7.4e-05,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00390464,
     "eigen_centrality": 0.078627,
     "clustering_local": 0.9454,
@@ -10147,8 +10147,8 @@
     "acclaim_gap": 0.715,
     "hub_vs_loyal": 42.0,
     "collaborator_reach": 42,
-    "embed_x": 1.1232,
-    "embed_y": 0.7681
+    "embed_x": 1.1224,
+    "embed_y": 0.7686
   },
   {
     "id": "nm0917193",
@@ -10266,8 +10266,8 @@
     "median_billing": 1,
     "minutes_credited": 2591,
     "medium_mix": {
-      "tvSeries": 0.289,
-      "tvMovie": 0.711
+      "tvMovie": 0.711,
+      "tvSeries": 0.289
     },
     "short_to_feature_ratio": 0.0,
     "title_rating_median": 5.5,
@@ -10330,7 +10330,7 @@
     "top_collaborator_id": "nm0765638",
     "collaborator_loyalty": 0.333,
     "bridge_score": 4.5e-05,
-    "community": 0,
+    "community": 2,
     "pagerank": 0.00254348,
     "eigen_centrality": 0.049019,
     "clustering_local": 0.964,
@@ -10347,7 +10347,7 @@
     "acclaim_gap": -1.743,
     "hub_vs_loyal": 21.354,
     "collaborator_reach": 42,
-    "embed_x": 0.5777,
+    "embed_x": 0.5781,
     "embed_y": -0.9588
   },
   {
@@ -10467,8 +10467,8 @@
     "minutes_credited": 1587,
     "medium_mix": {
       "tvMovie": 0.647,
-      "tvMiniSeries": 0.118,
       "movie": 0.176,
+      "tvMiniSeries": 0.118,
       "tvSeries": 0.059
     },
     "short_to_feature_ratio": 0.0,
@@ -10526,7 +10526,7 @@
       "2020s"
     ],
     "bridge_score": 6.9e-05,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00343657,
     "eigen_centrality": 0.074171,
     "clustering_local": 0.9462,
@@ -10543,7 +10543,7 @@
     "acclaim_gap": 0.275,
     "hub_vs_loyal": 40.0,
     "collaborator_reach": 40,
-    "embed_x": 0.7476,
+    "embed_x": 0.7468,
     "embed_y": 1.1877
   },
   {
@@ -10725,7 +10725,7 @@
       "2010s"
     ],
     "bridge_score": 5.6e-05,
-    "community": 0,
+    "community": 3,
     "pagerank": 0.00305825,
     "eigen_centrality": 0.061828,
     "clustering_local": 0.9528,
@@ -10743,7 +10743,7 @@
     "hub_vs_loyal": 39.0,
     "collaborator_reach": 39,
     "embed_x": 1.2466,
-    "embed_y": -1.3126
+    "embed_y": -1.3125
   },
   {
     "id": "nm0927453",
@@ -10776,14 +10776,14 @@
         "votes": 13
       },
       {
-        "title": "Fritze Bollmann will nicht angeln",
-        "character": "Friedrich Bollmann",
+        "title": "Das liebe, alte Haus",
+        "character": "Gustjatnikow",
         "characters": [
-          "Friedrich Bollmann"
+          "Gustjatnikow"
         ],
-        "year": 1994,
+        "year": 1973,
         "billing": 1,
-        "tconst": "tt0195460",
+        "tconst": "tt2580148",
         "votes": 0
       },
       {
@@ -10798,14 +10798,14 @@
         "votes": 0
       },
       {
-        "title": "Das liebe, alte Haus",
-        "character": "Gustjatnikow",
+        "title": "Fritze Bollmann will nicht angeln",
+        "character": "Friedrich Bollmann",
         "characters": [
-          "Gustjatnikow"
+          "Friedrich Bollmann"
         ],
-        "year": 1973,
+        "year": 1994,
         "billing": 1,
-        "tconst": "tt2580148",
+        "tconst": "tt0195460",
         "votes": 0
       },
       {
@@ -10856,16 +10856,16 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Horst Mattusch",
+    "typecast_character": "Bert",
     "typecast_count": 1,
     "billing_trajectory": -0.0978,
     "median_billing": 7,
     "minutes_credited": 4469,
     "medium_mix": {
-      "tvSeries": 0.06,
       "tvMovie": 0.46,
       "movie": 0.32,
-      "tvMiniSeries": 0.16
+      "tvMiniSeries": 0.16,
+      "tvSeries": 0.06
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1965,
@@ -10930,7 +10930,7 @@
     "top_collaborator_id": "nm0597376",
     "collaborator_loyalty": 0.615,
     "bridge_score": 7e-06,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00301586,
     "eigen_centrality": 0.060705,
     "clustering_local": 0.991,
@@ -11014,17 +11014,6 @@
         "votes": 6
       },
       {
-        "title": "Berühmte Ärzte der Charité: Krisis",
-        "character": "Robert Koch",
-        "characters": [
-          "Robert Koch"
-        ],
-        "year": 1981,
-        "billing": 1,
-        "tconst": "tt0186279",
-        "votes": 0
-      },
-      {
         "title": "Die Spur des Vermißten",
         "character": "Cosme",
         "characters": [
@@ -11033,6 +11022,17 @@
         "year": 1980,
         "billing": 1,
         "tconst": "tt0173239",
+        "votes": 0
+      },
+      {
+        "title": "Ein Strauß roter Rosen",
+        "character": "Lenin",
+        "characters": [
+          "Lenin"
+        ],
+        "year": 1970,
+        "billing": 1,
+        "tconst": "tt2522592",
         "votes": 0
       }
     ],
@@ -11062,15 +11062,15 @@
     "genre_first": "Comedy",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Vater",
+    "typecast_character": "Neumerkel, Schnitzergeselle",
     "typecast_count": 2,
     "billing_trajectory": 0.0567,
     "median_billing": 4,
     "minutes_credited": 6117,
     "medium_mix": {
-      "movie": 0.28,
-      "tvMiniSeries": 0.073,
       "tvMovie": 0.585,
+      "tvMiniSeries": 0.073,
+      "movie": 0.28,
       "tvSeries": 0.061
     },
     "short_to_feature_ratio": 0.0,
@@ -11109,7 +11109,7 @@
       }
     ],
     "same_director_repeat": 4,
-    "top_director": "nm0917102",
+    "top_director": "nm0895389",
     "regions": [
       "BG",
       "BR",
@@ -11137,7 +11137,7 @@
     "top_collaborator_id": "nm0905147",
     "collaborator_loyalty": 0.4,
     "bridge_score": 4.1e-05,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00344153,
     "eigen_centrality": 0.073552,
     "clustering_local": 0.9643,
@@ -11155,7 +11155,7 @@
     "hub_vs_loyal": 9.2,
     "collaborator_reach": 34,
     "embed_x": 0.1158,
-    "embed_y": -0.1871
+    "embed_y": -0.174
   },
   {
     "id": "nm1493930",
@@ -11267,7 +11267,7 @@
     "genre_first": "Crime",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Stiyn Vanderbrugge",
+    "typecast_character": "Heiner Stadler",
     "typecast_count": 1,
     "billing_trajectory": 0.2869,
     "median_billing": 7,
@@ -11311,7 +11311,7 @@
       }
     ],
     "same_director_repeat": 4,
-    "top_director": "nm0916780",
+    "top_director": "nm0906114",
     "regions": [
       "BG",
       "CA",
@@ -11335,7 +11335,7 @@
     "top_collaborator_id": "nm3757879",
     "collaborator_loyalty": 0.417,
     "bridge_score": 1.9e-05,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00299682,
     "eigen_centrality": 0.061866,
     "clustering_local": 0.9733,
@@ -11352,8 +11352,8 @@
     "acclaim_gap": 0.247,
     "hub_vs_loyal": 8.146,
     "collaborator_reach": 34,
-    "embed_x": 1.6556,
-    "embed_y": 0.2258
+    "embed_x": 1.6561,
+    "embed_y": 0.2256
   },
   {
     "id": "nm0704269",
@@ -11466,14 +11466,14 @@
     "genre_first": "Action",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Patricia",
+    "typecast_character": "Candy",
     "typecast_count": 2,
     "billing_trajectory": 0.0417,
     "median_billing": 3,
     "minutes_credited": 5608,
     "medium_mix": {
-      "movie": 0.679,
       "tvSeries": 0.309,
+      "movie": 0.679,
       "tvMiniSeries": 0.012
     },
     "short_to_feature_ratio": 0.0,
@@ -11538,7 +11538,7 @@
     "top_collaborator_id": "nm1232141",
     "collaborator_loyalty": 0.648,
     "bridge_score": 0.002048,
-    "community": 1,
+    "community": 7,
     "pagerank": 0.0066804,
     "eigen_centrality": 0.0,
     "clustering_local": 0.5656,
@@ -11556,7 +11556,7 @@
     "hub_vs_loyal": -9.176,
     "collaborator_reach": 31,
     "embed_x": -1.0642,
-    "embed_y": -1.7416
+    "embed_y": -1.7427
   },
   {
     "id": "nm0281534",
@@ -11600,17 +11600,6 @@
         "votes": 20
       },
       {
-        "title": "Die Protokolle des Herrn M",
-        "character": "Inspektor Walter Mannhardt",
-        "characters": [
-          "Inspektor Walter Mannhardt"
-        ],
-        "year": 1979,
-        "billing": 1,
-        "tconst": "tt0395893",
-        "votes": 19
-      },
-      {
         "title": "Der Marquis von Keith",
         "character": "Ernst Scholz",
         "characters": [
@@ -11619,6 +11608,17 @@
         "year": 1962,
         "billing": 1,
         "tconst": "tt0345626",
+        "votes": 19
+      },
+      {
+        "title": "Die Protokolle des Herrn M",
+        "character": "Inspektor Walter Mannhardt",
+        "characters": [
+          "Inspektor Walter Mannhardt"
+        ],
+        "year": 1979,
+        "billing": 1,
+        "tconst": "tt0395893",
         "votes": 19
       },
       {
@@ -11743,7 +11743,7 @@
     "top_collaborator_id": "nm0725207",
     "collaborator_loyalty": 0.571,
     "bridge_score": 8.9e-05,
-    "community": 0,
+    "community": 2,
     "pagerank": 0.00169458,
     "eigen_centrality": 0.0234,
     "clustering_local": 0.9126,
@@ -11760,8 +11760,8 @@
     "acclaim_gap": 2.26,
     "hub_vs_loyal": -5.402,
     "collaborator_reach": 30,
-    "embed_x": 0.3357,
-    "embed_y": 1.4468
+    "embed_x": 0.3392,
+    "embed_y": 1.4455
   },
   {
     "id": "nm1228132",
@@ -11938,7 +11938,7 @@
     "top_collaborator_id": "nm0626222",
     "collaborator_loyalty": 0.51,
     "bridge_score": 0.002454,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00734019,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6046,
@@ -11956,7 +11956,7 @@
     "hub_vs_loyal": -1.62,
     "collaborator_reach": 30,
     "embed_x": 0.1537,
-    "embed_y": -1.6021
+    "embed_y": -1.6022
   },
   {
     "id": "nm1365318",
@@ -12074,10 +12074,10 @@
     "median_billing": 3,
     "minutes_credited": 2746,
     "medium_mix": {
-      "tvMovie": 0.65,
-      "tvMiniSeries": 0.05,
       "tvSeries": 0.175,
-      "movie": 0.125
+      "tvMovie": 0.65,
+      "movie": 0.125,
+      "tvMiniSeries": 0.05
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2012,
@@ -12140,7 +12140,7 @@
     "top_collaborator_id": "nm0902665",
     "collaborator_loyalty": 0.538,
     "bridge_score": 2e-06,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00186325,
     "eigen_centrality": 0.030912,
     "clustering_local": 0.9954,
@@ -12157,7 +12157,7 @@
     "acclaim_gap": -0.651,
     "hub_vs_loyal": -3.356,
     "collaborator_reach": 30,
-    "embed_x": -2.0372,
+    "embed_x": -2.0375,
     "embed_y": 0.0332
   },
   {
@@ -12276,9 +12276,9 @@
     "median_billing": 7,
     "minutes_credited": 1918,
     "medium_mix": {
+      "movie": 0.304,
       "tvSeries": 0.174,
-      "tvMovie": 0.522,
-      "movie": 0.304
+      "tvMovie": 0.522
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1980,
@@ -12316,7 +12316,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0777029",
+    "top_director": "nm0666685",
     "regions": [
       "AR",
       "AT",
@@ -12343,7 +12343,7 @@
     "top_collaborator_id": "nm0074397",
     "collaborator_loyalty": 1.0,
     "bridge_score": 9.1e-05,
-    "community": 0,
+    "community": 3,
     "pagerank": 0.00186195,
     "eigen_centrality": 0.026057,
     "clustering_local": 0.9015,
@@ -12360,7 +12360,7 @@
     "acclaim_gap": 0.531,
     "hub_vs_loyal": -33.0,
     "collaborator_reach": 29,
-    "embed_x": -0.0725,
+    "embed_x": -0.0715,
     "embed_y": -2.4339
   },
   {
@@ -12545,7 +12545,7 @@
     "top_collaborator_id": "nm0945813",
     "collaborator_loyalty": 0.489,
     "bridge_score": 0.001495,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00857951,
     "eigen_centrality": 0.0,
     "clustering_local": 0.5688,
@@ -12562,8 +12562,8 @@
     "acclaim_gap": 0.886,
     "hub_vs_loyal": -2.318,
     "collaborator_reach": 28,
-    "embed_x": 1.6121,
-    "embed_y": 0.5528
+    "embed_x": 1.6112,
+    "embed_y": 0.5587
   },
   {
     "id": "nm0852365",
@@ -12596,36 +12596,14 @@
         "votes": 46
       },
       {
-        "title": "The Warning",
-        "character": "Fred Merrill",
+        "title": "The Hills of Glory",
+        "character": "Justus McCanna",
         "characters": [
-          "Fred Merrill"
+          "Justus McCanna"
         ],
-        "year": 1915,
+        "year": 1916,
         "billing": 1,
-        "tconst": "tt0433184",
-        "votes": 0
-      },
-      {
-        "title": "The Idol",
-        "character": "Cecil Fordyce",
-        "characters": [
-          "Cecil Fordyce"
-        ],
-        "year": 1915,
-        "billing": 1,
-        "tconst": "tt0231780",
-        "votes": 0
-      },
-      {
-        "title": "In the Sunset Country",
-        "character": "Hal Newcomb",
-        "characters": [
-          "Hal Newcomb"
-        ],
-        "year": 1915,
-        "billing": 1,
-        "tconst": "tt0231789",
+        "tconst": "tt0474104",
         "votes": 0
       },
       {
@@ -12640,14 +12618,36 @@
         "votes": 0
       },
       {
-        "title": "The Sheriff of Willow Creek",
-        "character": "Sheriff Ralph Watson",
+        "title": "The Warning",
+        "character": "Fred Merrill",
         "characters": [
-          "Sheriff Ralph Watson"
+          "Fred Merrill"
         ],
         "year": 1915,
         "billing": 1,
-        "tconst": "tt0232630",
+        "tconst": "tt0433184",
+        "votes": 0
+      },
+      {
+        "title": "Broadcloth and Buckskin",
+        "character": "James Gordon",
+        "characters": [
+          "James Gordon"
+        ],
+        "year": 1915,
+        "billing": 1,
+        "tconst": "tt0233382",
+        "votes": 0
+      },
+      {
+        "title": "The Trail of the Serpent",
+        "character": "Bob Hadley",
+        "characters": [
+          "Bob Hadley"
+        ],
+        "year": 1915,
+        "billing": 1,
+        "tconst": "tt0232838",
         "votes": 0
       }
     ],
@@ -12750,7 +12750,7 @@
     "top_collaborator_id": "nm0454559",
     "collaborator_loyalty": 0.126,
     "bridge_score": 0.000774,
-    "community": 13,
+    "community": 16,
     "pagerank": 0.00799955,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6455,
@@ -12767,8 +12767,8 @@
     "acclaim_gap": -1.203,
     "hub_vs_loyal": 20.188,
     "collaborator_reach": 28,
-    "embed_x": -2.2256,
-    "embed_y": 1.4886
+    "embed_x": -2.2255,
+    "embed_y": 1.4884
   },
   {
     "id": "nm0013793",
@@ -12887,8 +12887,8 @@
     "median_billing": 3,
     "minutes_credited": 2967,
     "medium_mix": {
-      "tvSeries": 0.477,
       "movie": 0.492,
+      "tvSeries": 0.477,
       "tvMovie": 0.031
     },
     "short_to_feature_ratio": 0.0,
@@ -12953,7 +12953,7 @@
     "top_collaborator_id": "nm0764156",
     "collaborator_loyalty": 0.307,
     "bridge_score": 0.0008,
-    "community": 1,
+    "community": 7,
     "pagerank": 0.00739204,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6353,
@@ -13015,17 +13015,6 @@
         "votes": 53
       },
       {
-        "title": "Batibot",
-        "character": "Ate Isay",
-        "characters": [
-          "Ate Isay"
-        ],
-        "year": 1984,
-        "billing": 3,
-        "tconst": "tt4207024",
-        "votes": 0
-      },
-      {
         "title": "Rehab",
         "character": "Daisy Fernandez",
         "characters": [
@@ -13057,6 +13046,17 @@
         "billing": 3,
         "tconst": "tt1994507",
         "votes": 0
+      },
+      {
+        "title": "Batibot",
+        "character": "Ate Isay",
+        "characters": [
+          "Ate Isay"
+        ],
+        "year": 1984,
+        "billing": 3,
+        "tconst": "tt4207024",
+        "votes": 0
       }
     ],
     "birth_year": null,
@@ -13079,7 +13079,7 @@
     "genre_first": "Family",
     "genre_last": "Music",
     "genre_first_last_distance": 1,
-    "typecast_character": "Atty. Patricia Celis",
+    "typecast_character": "Lola Ingrid",
     "typecast_count": 1,
     "billing_trajectory": -0.1058,
     "median_billing": 7,
@@ -13152,7 +13152,7 @@
     "top_collaborator_id": "nm1006583",
     "collaborator_loyalty": 0.485,
     "bridge_score": 0.00045,
-    "community": 5,
+    "community": 1,
     "pagerank": 0.00911758,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7293,
@@ -13225,14 +13225,14 @@
         "votes": 0
       },
       {
-        "title": "Garden of Eve",
-        "character": "(segment: Eos)",
+        "title": "Law of Economics",
+        "character": "Donya",
         "characters": [
-          "(segment: Eos)"
+          "Donya"
         ],
-        "year": 2010,
+        "year": 2024,
         "billing": 1,
-        "tconst": "tt1690126",
+        "tconst": "tt39832577",
         "votes": 0
       },
       {
@@ -13247,14 +13247,14 @@
         "votes": 0
       },
       {
-        "title": "Law of Economics",
-        "character": "Donya",
+        "title": "Garden of Eve",
+        "character": "(segment: Eos)",
         "characters": [
-          "Donya"
+          "(segment: Eos)"
         ],
-        "year": 2024,
+        "year": 2010,
         "billing": 1,
-        "tconst": "tt39832577",
+        "tconst": "tt1690126",
         "votes": 0
       }
     ],
@@ -13291,8 +13291,8 @@
     "medium_mix": {
       "movie": 0.898,
       "tvSeries": 0.076,
-      "tvMovie": 0.019,
-      "tvMiniSeries": 0.006
+      "tvMiniSeries": 0.006,
+      "tvMovie": 0.019
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1983,
@@ -13359,7 +13359,7 @@
     "top_collaborator_id": "nm1006583",
     "collaborator_loyalty": 0.469,
     "bridge_score": 0.000978,
-    "community": 1,
+    "community": 7,
     "pagerank": 0.00825673,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6667,
@@ -13376,8 +13376,8 @@
     "acclaim_gap": 0.748,
     "hub_vs_loyal": -2.078,
     "collaborator_reach": 27,
-    "embed_x": -0.1714,
-    "embed_y": 1.6186
+    "embed_x": -0.1632,
+    "embed_y": 1.6105
   },
   {
     "id": "nm0163417",
@@ -13399,47 +13399,25 @@
     "rk_prominence": 104,
     "roles": [
       {
-        "title": "The Timber Wolf",
-        "character": "Kirk MacLean",
-        "characters": [
-          "Kirk MacLean"
-        ],
-        "year": 1920,
-        "billing": 1,
-        "tconst": "tt0011776",
-        "votes": 0
-      },
-      {
-        "title": "A Son of the North",
+        "title": "Big Stakes",
         "character": "Sgt. Kirk McLean",
         "characters": [
           "Sgt. Kirk McLean"
         ],
         "year": 1920,
         "billing": 1,
-        "tconst": "tt0011718",
+        "tconst": "tt0010993",
         "votes": 0
       },
       {
-        "title": "The Scarlet Rider",
-        "character": "The Scarlet Rider",
+        "title": "The Death Trap",
+        "character": "The Mountie",
         "characters": [
-          "The Scarlet Rider"
+          "The Mountie"
         ],
         "year": 1920,
         "billing": 1,
-        "tconst": "tt0011658",
-        "votes": 0
-      },
-      {
-        "title": "The Girl and the Law",
-        "character": "Sgt. Kirk McLean",
-        "characters": [
-          "Sgt. Kirk McLean"
-        ],
-        "year": 1920,
-        "billing": 1,
-        "tconst": "tt0011227",
+        "tconst": "tt0011100",
         "votes": 0
       },
       {
@@ -13454,14 +13432,36 @@
         "votes": 0
       },
       {
-        "title": "The Death Trap",
-        "character": "The Mountie",
+        "title": "The Girl and the Law",
+        "character": "Sgt. Kirk McLean",
         "characters": [
-          "The Mountie"
+          "Sgt. Kirk McLean"
         ],
         "year": 1920,
         "billing": 1,
-        "tconst": "tt0011100",
+        "tconst": "tt0011227",
+        "votes": 0
+      },
+      {
+        "title": "Not Guilty for Runnin'",
+        "character": "Lem Dodge",
+        "characters": [
+          "Lem Dodge"
+        ],
+        "year": 1924,
+        "billing": 1,
+        "tconst": "tt0015183",
+        "votes": 0
+      },
+      {
+        "title": "The Scarlet Rider",
+        "character": "The Scarlet Rider",
+        "characters": [
+          "The Scarlet Rider"
+        ],
+        "year": 1920,
+        "billing": 1,
+        "tconst": "tt0011658",
         "votes": 0
       }
     ],
@@ -13563,7 +13563,7 @@
     "top_collaborator_id": "nm0651627",
     "collaborator_loyalty": 0.09,
     "bridge_score": 0.001371,
-    "community": 3,
+    "community": 16,
     "pagerank": 0.00973724,
     "eigen_centrality": 0.0,
     "clustering_local": 0.5897,
@@ -13581,7 +13581,7 @@
     "hub_vs_loyal": 21.42,
     "collaborator_reach": 27,
     "embed_x": -0.7064,
-    "embed_y": 2.1602
+    "embed_y": 2.159
   },
   {
     "id": "nm0651627",
@@ -13636,17 +13636,6 @@
         "votes": 24
       },
       {
-        "title": "The Raiders",
-        "character": "Pvt. Herrick",
-        "characters": [
-          "Pvt. Herrick"
-        ],
-        "year": 1921,
-        "billing": 2,
-        "tconst": "tt0012605",
-        "votes": 0
-      },
-      {
         "title": "Partners Three",
         "character": "Surley Larkin",
         "characters": [
@@ -13655,6 +13644,17 @@
         "year": 1923,
         "billing": 2,
         "tconst": "tt0884153",
+        "votes": 0
+      },
+      {
+        "title": "The Raiders",
+        "character": "Pvt. Herrick",
+        "characters": [
+          "Pvt. Herrick"
+        ],
+        "year": 1921,
+        "billing": 2,
+        "tconst": "tt0012605",
         "votes": 0
       },
       {
@@ -13696,7 +13696,7 @@
     "genre_first": "Comedy",
     "genre_last": "Horror",
     "genre_first_last_distance": 1,
-    "typecast_character": "Henchman",
+    "typecast_character": "Sheriff",
     "typecast_count": 13,
     "billing_trajectory": -0.1207,
     "median_billing": 7,
@@ -13768,7 +13768,7 @@
     "top_collaborator_id": "nm0454559",
     "collaborator_loyalty": 0.102,
     "bridge_score": 0.000776,
-    "community": 13,
+    "community": 16,
     "pagerank": 0.00986116,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6467,
@@ -13786,7 +13786,7 @@
     "hub_vs_loyal": 20.676,
     "collaborator_reach": 27,
     "embed_x": -0.9128,
-    "embed_y": -2.0295
+    "embed_y": -2.0294
   },
   {
     "id": "nm1006583",
@@ -13863,14 +13863,14 @@
         "votes": 9
       },
       {
-        "title": "Isusumbong kita sa Diyos",
-        "character": "Fina",
+        "title": "Lumuhod ka sa lupa!",
+        "character": "Mercy",
         "characters": [
-          "Fina"
+          "Mercy"
         ],
-        "year": 1988,
+        "year": 1986,
         "billing": 2,
-        "tconst": "tt0497225",
+        "tconst": "tt0378275",
         "votes": 0
       }
     ],
@@ -13965,11 +13965,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Gary Estrada",
-    "top_collaborator_id": "nm0261807",
+    "top_collaborator": "Amy Austria",
+    "top_collaborator_id": "nm0042564",
     "collaborator_loyalty": 0.235,
     "bridge_score": 0.000587,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00729973,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7037,
@@ -14169,7 +14169,7 @@
     "top_collaborator_id": "nm0454559",
     "collaborator_loyalty": 0.142,
     "bridge_score": 0.000616,
-    "community": 13,
+    "community": 16,
     "pagerank": 0.0060689,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6677,
@@ -14186,7 +14186,7 @@
     "acclaim_gap": -0.692,
     "hub_vs_loyal": 17.196,
     "collaborator_reach": 26,
-    "embed_x": -1.8308,
+    "embed_x": -1.831,
     "embed_y": 1.7093
   },
   {
@@ -14294,7 +14294,7 @@
     "genre_first": "Adventure",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Dorcas Escoto Ñedo",
+    "typecast_character": "Olivia Salcedo-Villaroman",
     "typecast_count": 1,
     "billing_trajectory": 0.0698,
     "median_billing": 7,
@@ -14361,11 +14361,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Edu Manzano",
-    "top_collaborator_id": "nm0544424",
+    "top_collaborator": "Vina Morales",
+    "top_collaborator_id": "nm0602784",
     "collaborator_loyalty": 0.243,
     "bridge_score": 0.000901,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00647971,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7077,
@@ -14383,7 +14383,7 @@
     "hub_vs_loyal": 10.934,
     "collaborator_reach": 26,
     "embed_x": 0.7849,
-    "embed_y": 1.5929
+    "embed_y": 1.5946
   },
   {
     "id": "nm0535800",
@@ -14502,8 +14502,8 @@
     "median_billing": 3,
     "minutes_credited": 2161,
     "medium_mix": {
-      "tvSeries": 0.532,
-      "movie": 0.468
+      "movie": 0.468,
+      "tvSeries": 0.532
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1995,
@@ -14567,7 +14567,7 @@
     "top_collaborator_id": "nm0013793",
     "collaborator_loyalty": 0.371,
     "bridge_score": 0.000901,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00468229,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6369,
@@ -14584,8 +14584,8 @@
     "acclaim_gap": 1.161,
     "hub_vs_loyal": 2.998,
     "collaborator_reach": 26,
-    "embed_x": 1.4285,
-    "embed_y": -1.7497
+    "embed_x": 1.4266,
+    "embed_y": -1.75
   },
   {
     "id": "nm0562771",
@@ -14771,7 +14771,7 @@
     "top_collaborator_id": "nm0820607",
     "collaborator_loyalty": 0.127,
     "bridge_score": 0.000621,
-    "community": 13,
+    "community": 16,
     "pagerank": 0.00972226,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6646,
@@ -14866,14 +14866,14 @@
         "votes": 75
       },
       {
-        "title": "Code of the Fearless",
-        "character": "Red Kane",
+        "title": "In Old Montana",
+        "character": "Ed Brandt",
         "characters": [
-          "Red Kane"
+          "Ed Brandt"
         ],
         "year": 1939,
         "billing": 3,
-        "tconst": "tt0031165",
+        "tconst": "tt0031479",
         "votes": 66
       }
     ],
@@ -14903,7 +14903,7 @@
     "genre_first": "Comedy",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Otis Kilburn",
+    "typecast_character": "Bart McCord",
     "typecast_count": 1,
     "billing_trajectory": -0.1016,
     "median_billing": 7,
@@ -14974,7 +14974,7 @@
     "top_collaborator_id": "nm0454559",
     "collaborator_loyalty": 0.103,
     "bridge_score": 0.000641,
-    "community": 3,
+    "community": 16,
     "pagerank": 0.00712337,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6738,
@@ -15174,7 +15174,7 @@
     "top_collaborator_id": "nm0095007",
     "collaborator_loyalty": 0.87,
     "bridge_score": 0.000671,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.0062059,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6738,
@@ -15191,8 +15191,8 @@
     "acclaim_gap": 0.123,
     "hub_vs_loyal": -27.94,
     "collaborator_reach": 26,
-    "embed_x": 1.9172,
-    "embed_y": -1.0367
+    "embed_x": 1.9167,
+    "embed_y": -1.0368
   },
   {
     "id": "nm0009486",
@@ -15306,8 +15306,8 @@
     "median_billing": 5,
     "minutes_credited": 4111,
     "medium_mix": {
-      "movie": 0.903,
       "tvSeries": 0.075,
+      "movie": 0.903,
       "tvMovie": 0.022
     },
     "short_to_feature_ratio": 0.0,
@@ -15374,7 +15374,7 @@
     "top_collaborator_id": "nm1232141",
     "collaborator_loyalty": 0.426,
     "bridge_score": 0.00049,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00921038,
     "eigen_centrality": 0.0,
     "clustering_local": 0.74,
@@ -15391,8 +15391,8 @@
     "acclaim_gap": 0.677,
     "hub_vs_loyal": -1.412,
     "collaborator_reach": 25,
-    "embed_x": -1.8678,
-    "embed_y": 0.4938
+    "embed_x": -1.8683,
+    "embed_y": 0.4931
   },
   {
     "id": "nm0042564",
@@ -15447,17 +15447,6 @@
         "votes": 0
       },
       {
-        "title": "Waywaya",
-        "character": "Waywaya",
-        "characters": [
-          "Waywaya"
-        ],
-        "year": 1982,
-        "billing": 1,
-        "tconst": "tt0494888",
-        "votes": 0
-      },
-      {
         "title": "Bubble's Ativan Gang",
         "character": "Celestina Sanchez aka Bubble",
         "characters": [
@@ -15466,6 +15455,17 @@
         "year": 1988,
         "billing": 1,
         "tconst": "tt0408618",
+        "votes": 0
+      },
+      {
+        "title": "Waywaya",
+        "character": "Waywaya",
+        "characters": [
+          "Waywaya"
+        ],
+        "year": 1982,
+        "billing": 1,
+        "tconst": "tt0494888",
         "votes": 0
       },
       {
@@ -15578,7 +15578,7 @@
     "top_collaborator_id": "nm0261807",
     "collaborator_loyalty": 0.378,
     "bridge_score": 0.001114,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00948907,
     "eigen_centrality": 0.0,
     "clustering_local": 0.61,
@@ -15595,7 +15595,7 @@
     "acclaim_gap": 1.476,
     "hub_vs_loyal": 1.564,
     "collaborator_reach": 25,
-    "embed_x": -1.5312,
+    "embed_x": -1.5311,
     "embed_y": -1.2464
   },
   {
@@ -15780,7 +15780,7 @@
     "top_collaborator_id": "nm0167760",
     "collaborator_loyalty": 0.081,
     "bridge_score": 0.000438,
-    "community": 13,
+    "community": 16,
     "pagerank": 0.00758136,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7133,
@@ -15797,8 +15797,8 @@
     "acclaim_gap": -0.62,
     "hub_vs_loyal": 19.978,
     "collaborator_reach": 25,
-    "embed_x": -2.3766,
-    "embed_y": 2.0163
+    "embed_x": -2.3765,
+    "embed_y": 2.0162
   },
   {
     "id": "nm0602784",
@@ -15983,7 +15983,7 @@
     "top_collaborator_id": "nm0523500",
     "collaborator_loyalty": 0.331,
     "bridge_score": 0.00029,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00883172,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7767,
@@ -16000,8 +16000,8 @@
     "acclaim_gap": 1.253,
     "hub_vs_loyal": 4.478,
     "collaborator_reach": 25,
-    "embed_x": 1.7469,
-    "embed_y": -2.1469
+    "embed_x": 1.7465,
+    "embed_y": -2.148
   },
   {
     "id": "nm1246270",
@@ -16045,17 +16045,6 @@
         "votes": 34
       },
       {
-        "title": "May isang pangarap",
-        "character": "James",
-        "characters": [
-          "James"
-        ],
-        "year": 2013,
-        "billing": 3,
-        "tconst": "tt2899472",
-        "votes": 0
-      },
-      {
         "title": "Muntik na kitang minahal",
         "character": "PJ",
         "characters": [
@@ -16064,6 +16053,17 @@
         "year": 1994,
         "billing": 3,
         "tconst": "tt0424293",
+        "votes": 0
+      },
+      {
+        "title": "May isang pangarap",
+        "character": "James",
+        "characters": [
+          "James"
+        ],
+        "year": 2013,
+        "billing": 3,
+        "tconst": "tt2899472",
         "votes": 0
       },
       {
@@ -16181,7 +16181,7 @@
     "top_collaborator_id": "nm0544424",
     "collaborator_loyalty": 0.424,
     "bridge_score": 0.000413,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00680318,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7567,
@@ -16198,8 +16198,8 @@
     "acclaim_gap": 1.582,
     "hub_vs_loyal": -1.288,
     "collaborator_reach": 25,
-    "embed_x": 0.8399,
-    "embed_y": -2.2783
+    "embed_x": 0.8396,
+    "embed_y": -2.2784
   },
   {
     "id": "nm0143806",
@@ -16383,7 +16383,7 @@
     "top_collaborator_id": "nm0820607",
     "collaborator_loyalty": 0.11,
     "bridge_score": 0.000816,
-    "community": 13,
+    "community": 9,
     "pagerank": 0.01307656,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6594,
@@ -16400,7 +16400,7 @@
     "acclaim_gap": 0.122,
     "hub_vs_loyal": 17.18,
     "collaborator_reach": 24,
-    "embed_x": -0.5273,
+    "embed_x": -0.5266,
     "embed_y": -0.5927
   },
   {
@@ -16434,17 +16434,6 @@
         "votes": 414
       },
       {
-        "title": "Diamond Carlisle",
-        "character": "'Diamond' Carlisle",
-        "characters": [
-          "'Diamond' Carlisle"
-        ],
-        "year": 1922,
-        "billing": 1,
-        "tconst": "tt0013069",
-        "votes": 0
-      },
-      {
         "title": "Blind Circumstances",
         "character": "Silent Morse",
         "characters": [
@@ -16475,6 +16464,17 @@
         "year": 1922,
         "billing": 1,
         "tconst": "tt0013220",
+        "votes": 0
+      },
+      {
+        "title": "Diamond Carlisle",
+        "character": "'Diamond' Carlisle",
+        "characters": [
+          "'Diamond' Carlisle"
+        ],
+        "year": 1922,
+        "billing": 1,
+        "tconst": "tt0013069",
         "votes": 0
       },
       {
@@ -16516,7 +16516,7 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Henchman",
+    "typecast_character": "Townsman",
     "typecast_count": 2,
     "billing_trajectory": -0.1686,
     "median_billing": 7,
@@ -16586,7 +16586,7 @@
     "top_collaborator_id": "nm0454559",
     "collaborator_loyalty": 0.092,
     "bridge_score": 0.000444,
-    "community": 13,
+    "community": 16,
     "pagerank": 0.00488003,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7065,
@@ -16604,7 +16604,7 @@
     "hub_vs_loyal": 18.296,
     "collaborator_reach": 24,
     "embed_x": 0.338,
-    "embed_y": 2.771
+    "embed_y": 2.7707
   },
   {
     "id": "nm0167760",
@@ -16790,7 +16790,7 @@
     "top_collaborator_id": "nm0164521",
     "collaborator_loyalty": 0.133,
     "bridge_score": 0.000718,
-    "community": 13,
+    "community": 16,
     "pagerank": 0.00846976,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6123,
@@ -16808,7 +16808,7 @@
     "hub_vs_loyal": 15.754,
     "collaborator_reach": 24,
     "embed_x": 0.7848,
-    "embed_y": 2.3188
+    "embed_y": 2.3178
   },
   {
     "id": "nm0559045",
@@ -16852,14 +16852,14 @@
         "votes": 0
       },
       {
-        "title": "Ein General gegen Hitler - Wilhelm Zehner",
-        "character": "Wilhelm Zehner",
+        "title": "Till Eulenspiegel",
+        "character": "Till Eulenspiegel",
         "characters": [
-          "Wilhelm Zehner"
+          "Till Eulenspiegel"
         ],
-        "year": 2008,
+        "year": 1966,
         "billing": 1,
-        "tconst": "tt3222440",
+        "tconst": "tt41924130",
         "votes": 0
       },
       {
@@ -16874,14 +16874,14 @@
         "votes": 0
       },
       {
-        "title": "Till Eulenspiegel",
-        "character": "Till Eulenspiegel",
+        "title": "Ein General gegen Hitler - Wilhelm Zehner",
+        "character": "Wilhelm Zehner",
         "characters": [
-          "Till Eulenspiegel"
+          "Wilhelm Zehner"
         ],
-        "year": 1966,
+        "year": 2008,
         "billing": 1,
-        "tconst": "tt41924130",
+        "tconst": "tt3222440",
         "votes": 0
       },
       {
@@ -16929,10 +16929,10 @@
     "median_billing": 5,
     "minutes_credited": 5185,
     "medium_mix": {
-      "tvMiniSeries": 0.032,
-      "movie": 0.127,
+      "tvMovie": 0.714,
       "tvSeries": 0.127,
-      "tvMovie": 0.714
+      "movie": 0.127,
+      "tvMiniSeries": 0.032
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1964,
@@ -16998,7 +16998,7 @@
     "top_collaborator_id": "nm0917076",
     "collaborator_loyalty": 0.5,
     "bridge_score": 6.3e-05,
-    "community": 0,
+    "community": 3,
     "pagerank": 0.0019175,
     "eigen_centrality": 0.029565,
     "clustering_local": 0.8913,
@@ -17016,7 +17016,7 @@
     "hub_vs_loyal": -7.0,
     "collaborator_reach": 24,
     "embed_x": 1.7004,
-    "embed_y": -1.4075
+    "embed_y": -1.4074
   },
   {
     "id": "nm0785281",
@@ -17071,17 +17071,6 @@
         "votes": 15
       },
       {
-        "title": "Madonna... babaeng ahas",
-        "character": "Melinda",
-        "characters": [
-          "Melinda"
-        ],
-        "year": 1991,
-        "billing": 1,
-        "tconst": "tt0441357",
-        "votes": 13
-      },
-      {
         "title": "Stupid Cupid",
         "character": "Mariela (segment: Forever, My Love)",
         "characters": [
@@ -17090,6 +17079,17 @@
         "year": 1988,
         "billing": 1,
         "tconst": "tt0441510",
+        "votes": 13
+      },
+      {
+        "title": "Madonna... babaeng ahas",
+        "character": "Melinda",
+        "characters": [
+          "Melinda"
+        ],
+        "year": 1991,
+        "billing": 1,
+        "tconst": "tt0441357",
         "votes": 13
       },
       {
@@ -17198,7 +17198,7 @@
     "top_collaborator_id": "nm1006583",
     "collaborator_loyalty": 0.381,
     "bridge_score": 0.000231,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00763983,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7971,
@@ -17215,8 +17215,8 @@
     "acclaim_gap": 0.439,
     "hub_vs_loyal": 0.378,
     "collaborator_reach": 24,
-    "embed_x": 0.4968,
-    "embed_y": 1.7027
+    "embed_x": 0.4953,
+    "embed_y": 1.7021
   },
   {
     "id": "nm1109836",
@@ -17329,7 +17329,7 @@
     "genre_first": "Talk-Show",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Sugar",
+    "typecast_character": "Beckie",
     "typecast_count": 2,
     "billing_trajectory": 0.037,
     "median_billing": 6,
@@ -17401,7 +17401,7 @@
     "top_collaborator_id": "nm0643590",
     "collaborator_loyalty": 0.308,
     "bridge_score": 0.000618,
-    "community": 1,
+    "community": 7,
     "pagerank": 0.00570788,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6667,
@@ -17418,8 +17418,8 @@
     "acclaim_gap": -0.088,
     "hub_vs_loyal": 4.904,
     "collaborator_reach": 24,
-    "embed_x": 2.5157,
-    "embed_y": -1.0164
+    "embed_x": 2.5153,
+    "embed_y": -1.0175
   },
   {
     "id": "nm0254834",
@@ -17452,17 +17452,6 @@
         "votes": 18
       },
       {
-        "title": "The Road from Latigo",
-        "character": "Cowboy",
-        "characters": [
-          "Cowboy"
-        ],
-        "year": 1925,
-        "billing": 3,
-        "tconst": "tt0347885",
-        "votes": 0
-      },
-      {
         "title": "The Desert Demon",
         "character": "Jim Slade",
         "characters": [
@@ -17474,14 +17463,14 @@
         "votes": 0
       },
       {
-        "title": "Ace of Action",
-        "character": "Lafe Darcy",
+        "title": "The Road from Latigo",
+        "character": "Cowboy",
         "characters": [
-          "Lafe Darcy"
+          "Cowboy"
         ],
-        "year": 1926,
-        "billing": 4,
-        "tconst": "tt0016571",
+        "year": 1925,
+        "billing": 3,
+        "tconst": "tt0347885",
         "votes": 0
       },
       {
@@ -17493,6 +17482,17 @@
         "year": 1923,
         "billing": 4,
         "tconst": "tt0444100",
+        "votes": 0
+      },
+      {
+        "title": "Ace of Action",
+        "character": "Lafe Darcy",
+        "characters": [
+          "Lafe Darcy"
+        ],
+        "year": 1926,
+        "billing": 4,
+        "tconst": "tt0016571",
         "votes": 0
       },
       {
@@ -17604,7 +17604,7 @@
     "top_collaborator_id": "nm0820607",
     "collaborator_loyalty": 0.102,
     "bridge_score": 0.000347,
-    "community": 13,
+    "community": 9,
     "pagerank": 0.00452315,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7273,
@@ -17621,8 +17621,8 @@
     "acclaim_gap": -0.401,
     "hub_vs_loyal": 16.676,
     "collaborator_reach": 23,
-    "embed_x": -1.6438,
-    "embed_y": 2.4407
+    "embed_x": -1.6437,
+    "embed_y": 2.4409
   },
   {
     "id": "nm0626222",
@@ -17801,7 +17801,7 @@
     "top_collaborator_id": "nm1228132",
     "collaborator_loyalty": 0.918,
     "bridge_score": 0.000465,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00614264,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7549,
@@ -17818,7 +17818,7 @@
     "acclaim_gap": 1.566,
     "hub_vs_loyal": -33.916,
     "collaborator_reach": 23,
-    "embed_x": -0.3941,
+    "embed_x": -0.3799,
     "embed_y": 0.1195
   },
   {
@@ -17874,17 +17874,6 @@
         "votes": 7
       },
       {
-        "title": "Die Fontäne",
-        "character": "Birke",
-        "characters": [
-          "Birke"
-        ],
-        "year": 1963,
-        "billing": 1,
-        "tconst": "tt1964652",
-        "votes": 0
-      },
-      {
         "title": "Ein Engel reist ins Paradies",
         "character": "Dr. Sabine Kleiner",
         "characters": [
@@ -17893,6 +17882,17 @@
         "year": 1972,
         "billing": 1,
         "tconst": "tt1967488",
+        "votes": 0
+      },
+      {
+        "title": "Die Fontäne",
+        "character": "Birke",
+        "characters": [
+          "Birke"
+        ],
+        "year": 1963,
+        "billing": 1,
+        "tconst": "tt1964652",
         "votes": 0
       },
       {
@@ -17933,16 +17933,16 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Dr. Bettina Gabriel",
+    "typecast_character": "Mathilde Holtfreter",
     "typecast_count": 1,
     "billing_trajectory": -0.0485,
     "median_billing": 4,
     "minutes_credited": 4417,
     "medium_mix": {
-      "tvSeries": 0.074,
       "tvMovie": 0.556,
+      "movie": 0.333,
       "tvMiniSeries": 0.037,
-      "movie": 0.333
+      "tvSeries": 0.074
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1963,
@@ -18006,7 +18006,7 @@
     "top_collaborator_id": "nm0622608",
     "collaborator_loyalty": 0.35,
     "bridge_score": 2e-05,
-    "community": 0,
+    "community": 2,
     "pagerank": 0.00236665,
     "eigen_centrality": 0.045728,
     "clustering_local": 0.961,
@@ -18023,8 +18023,8 @@
     "acclaim_gap": 0.827,
     "hub_vs_loyal": 0.3,
     "collaborator_reach": 22,
-    "embed_x": 1.0736,
-    "embed_y": -2.7104
+    "embed_x": 1.0739,
+    "embed_y": -2.7103
   },
   {
     "id": "nm0454559",
@@ -18046,25 +18046,14 @@
     "rk_prominence": 131,
     "roles": [
       {
-        "title": "Dates for Two",
-        "character": "Mike",
+        "title": "Motor Trouble",
+        "character": "Charley",
         "characters": [
-          "Mike"
+          "Charley"
         ],
-        "year": 1928,
+        "year": 1926,
         "billing": 1,
-        "tconst": "tt0336246",
-        "votes": 0
-      },
-      {
-        "title": "What a Party!",
-        "character": "Mike",
-        "characters": [
-          "Mike"
-        ],
-        "year": 1928,
-        "billing": 1,
-        "tconst": "tt0337467",
+        "tconst": "tt0373167",
         "votes": 0
       },
       {
@@ -18079,6 +18068,39 @@
         "votes": 0
       },
       {
+        "title": "Dates for Two",
+        "character": "Mike",
+        "characters": [
+          "Mike"
+        ],
+        "year": 1928,
+        "billing": 1,
+        "tconst": "tt0336246",
+        "votes": 0
+      },
+      {
+        "title": "Oh, Mabel!",
+        "character": "Mike",
+        "characters": [
+          "Mike"
+        ],
+        "year": 1927,
+        "billing": 1,
+        "tconst": "tt0335325",
+        "votes": 0
+      },
+      {
+        "title": "Honeymooning with Ma",
+        "character": "The Husband",
+        "characters": [
+          "The Husband"
+        ],
+        "year": 1926,
+        "billing": 1,
+        "tconst": "tt0371732",
+        "votes": 0
+      },
+      {
         "title": "Too Many Babies",
         "character": "The Husband",
         "characters": [
@@ -18087,28 +18109,6 @@
         "year": 1926,
         "billing": 1,
         "tconst": "tt0373396",
-        "votes": 0
-      },
-      {
-        "title": "Dancing Fools",
-        "character": "Mike",
-        "characters": [
-          "Mike"
-        ],
-        "year": 1927,
-        "billing": 1,
-        "tconst": "tt0335028",
-        "votes": 0
-      },
-      {
-        "title": "Motor Trouble",
-        "character": "Charley",
-        "characters": [
-          "Charley"
-        ],
-        "year": 1926,
-        "billing": 1,
-        "tconst": "tt0373167",
         "votes": 0
       }
     ],
@@ -18139,7 +18139,7 @@
     "genre_first": "Drama",
     "genre_last": "Adventure",
     "genre_first_last_distance": 1,
-    "typecast_character": "Joe - Henchman",
+    "typecast_character": "Red",
     "typecast_count": 2,
     "billing_trajectory": -0.0186,
     "median_billing": 6,
@@ -18207,7 +18207,7 @@
     "top_collaborator_id": "nm0820607",
     "collaborator_loyalty": 0.106,
     "bridge_score": 0.000437,
-    "community": 13,
+    "community": 16,
     "pagerank": 0.00748417,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7056,
@@ -18344,8 +18344,8 @@
     "median_billing": 3,
     "minutes_credited": 6136,
     "medium_mix": {
-      "movie": 0.772,
       "tvSeries": 0.211,
+      "movie": 0.772,
       "tvMiniSeries": 0.008,
       "tvMovie": 0.008
     },
@@ -18413,7 +18413,7 @@
     "top_collaborator_id": "nm1137883",
     "collaborator_loyalty": 0.242,
     "bridge_score": 0.000424,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00385891,
     "eigen_centrality": 0.0,
     "clustering_local": 0.684,
@@ -18430,7 +18430,7 @@
     "acclaim_gap": -0.473,
     "hub_vs_loyal": 6.996,
     "collaborator_reach": 22,
-    "embed_x": -1.9667,
+    "embed_x": -1.9664,
     "embed_y": -1.3012
   },
   {
@@ -18549,8 +18549,8 @@
     "median_billing": 3,
     "minutes_credited": 9695,
     "medium_mix": {
-      "tvMovie": 0.375,
       "tvSeries": 0.164,
+      "tvMovie": 0.375,
       "movie": 0.391,
       "tvMiniSeries": 0.07
     },
@@ -18620,7 +18620,7 @@
     "top_collaborator_id": "nm0559045",
     "collaborator_loyalty": 0.714,
     "bridge_score": 0.000661,
-    "community": 0,
+    "community": 3,
     "pagerank": 0.00184825,
     "eigen_centrality": 0.02298,
     "clustering_local": 0.8658,
@@ -18637,8 +18637,8 @@
     "acclaim_gap": -2.421,
     "hub_vs_loyal": -22.268,
     "collaborator_reach": 22,
-    "embed_x": 0.2656,
-    "embed_y": -2.6945
+    "embed_x": 0.2659,
+    "embed_y": -2.6948
   },
   {
     "id": "nm0695395",
@@ -18682,17 +18682,6 @@
         "votes": 61
       },
       {
-        "title": "Hiling",
-        "character": "Anna",
-        "characters": [
-          "Anna"
-        ],
-        "year": 1998,
-        "billing": 1,
-        "tconst": "tt0408847",
-        "votes": 49
-      },
-      {
         "title": "Ang pulubi at ang prinsesa",
         "character": "Rosalie",
         "characters": [
@@ -18701,6 +18690,17 @@
         "year": 1997,
         "billing": 1,
         "tconst": "tt0378609",
+        "votes": 49
+      },
+      {
+        "title": "Hiling",
+        "character": "Anna",
+        "characters": [
+          "Anna"
+        ],
+        "year": 1998,
+        "billing": 1,
+        "tconst": "tt0408847",
         "votes": 49
       },
       {
@@ -18795,7 +18795,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm1931428",
+    "top_director": "nm0519983",
     "regions": [
       "AU",
       "CA",
@@ -18821,7 +18821,7 @@
     "top_collaborator_id": "nm1715384",
     "collaborator_loyalty": 0.373,
     "bridge_score": 0.000194,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.0055998,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7952,
@@ -18838,8 +18838,8 @@
     "acclaim_gap": 1.43,
     "hub_vs_loyal": -2.126,
     "collaborator_reach": 21,
-    "embed_x": -1.6407,
-    "embed_y": 1.0609
+    "embed_x": -1.6428,
+    "embed_y": 1.0598
   },
   {
     "id": "nm0924307",
@@ -18894,28 +18894,6 @@
         "votes": 35
       },
       {
-        "title": "The Open Switch",
-        "character": "Jim McGuire",
-        "characters": [
-          "Jim McGuire"
-        ],
-        "year": 1926,
-        "billing": 3,
-        "tconst": "tt0015201",
-        "votes": 0
-      },
-      {
-        "title": "Tested by Fire",
-        "character": "Bill Burke, Packer",
-        "characters": [
-          "Bill Burke, Packer"
-        ],
-        "year": 1914,
-        "billing": 3,
-        "tconst": "tt0004683",
-        "votes": 0
-      },
-      {
         "title": "Pioneer Trail",
         "character": "Curley",
         "characters": [
@@ -18924,6 +18902,28 @@
         "year": 1938,
         "billing": 3,
         "tconst": "tt0030588",
+        "votes": 0
+      },
+      {
+        "title": "Almost Human",
+        "character": "Luke Rawlins",
+        "characters": [
+          "Luke Rawlins"
+        ],
+        "year": 1927,
+        "billing": 3,
+        "tconst": "tt1243987",
+        "votes": 0
+      },
+      {
+        "title": "Tearin' Loose",
+        "character": "Matt Harris",
+        "characters": [
+          "Matt Harris"
+        ],
+        "year": 1925,
+        "billing": 3,
+        "tconst": "tt0016412",
         "votes": 0
       }
     ],
@@ -19022,7 +19022,7 @@
     "top_collaborator_id": "nm0571186",
     "collaborator_loyalty": 0.164,
     "bridge_score": 0.000308,
-    "community": 13,
+    "community": 9,
     "pagerank": 0.00295987,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7476,
@@ -19040,7 +19040,7 @@
     "hub_vs_loyal": 10.832,
     "collaborator_reach": 21,
     "embed_x": -1.3622,
-    "embed_y": 2.8472
+    "embed_y": 2.8468
   },
   {
     "id": "nm0261807",
@@ -19095,17 +19095,6 @@
         "votes": 9
       },
       {
-        "title": "Oras na para lumaban",
-        "character": "Patrick Sioson",
-        "characters": [
-          "Patrick Sioson"
-        ],
-        "year": 2001,
-        "billing": 1,
-        "tconst": "tt0349920",
-        "votes": 0
-      },
-      {
         "title": "Gising na si Adan",
         "character": "Lt. Adrian Crisologo",
         "characters": [
@@ -19125,6 +19114,17 @@
         "year": 2000,
         "billing": 1,
         "tconst": "tt0347041",
+        "votes": 0
+      },
+      {
+        "title": "Oras na para lumaban",
+        "character": "Patrick Sioson",
+        "characters": [
+          "Patrick Sioson"
+        ],
+        "year": 2001,
+        "billing": 1,
+        "tconst": "tt0349920",
         "votes": 0
       }
     ],
@@ -19221,7 +19221,7 @@
     "top_collaborator_id": "nm0042564",
     "collaborator_loyalty": 0.324,
     "bridge_score": 0.000233,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00613772,
     "eigen_centrality": 0.0,
     "clustering_local": 0.8,
@@ -19238,8 +19238,8 @@
     "acclaim_gap": 1.684,
     "hub_vs_loyal": -0.088,
     "collaborator_reach": 20,
-    "embed_x": 0.3433,
-    "embed_y": 2.1474
+    "embed_x": 0.3416,
+    "embed_y": 2.1459
   },
   {
     "id": "nm1232141",
@@ -19358,8 +19358,8 @@
     "median_billing": 2,
     "minutes_credited": 2504,
     "medium_mix": {
-      "tvSeries": 0.239,
       "movie": 0.716,
+      "tvSeries": 0.239,
       "tvMovie": 0.045
     },
     "short_to_feature_ratio": 0.0,
@@ -19425,7 +19425,7 @@
     "top_collaborator_id": "nm0704269",
     "collaborator_loyalty": 0.527,
     "bridge_score": 0.000299,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.0050351,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7842,
@@ -19442,8 +19442,8 @@
     "acclaim_gap": 0.719,
     "hub_vs_loyal": -12.674,
     "collaborator_reach": 20,
-    "embed_x": 2.4083,
-    "embed_y": -1.5394
+    "embed_x": 2.4079,
+    "embed_y": -1.5398
   },
   {
     "id": "nm0124560",
@@ -19465,17 +19465,6 @@
     "rk_prominence": 251,
     "roles": [
       {
-        "title": "Drums of Destiny",
-        "character": "Kentuck",
-        "characters": [
-          "Kentuck"
-        ],
-        "year": 1937,
-        "billing": 3,
-        "tconst": "tt0028812",
-        "votes": 38
-      },
-      {
         "title": "Under Strange Flags",
         "character": "Tequila",
         "characters": [
@@ -19484,6 +19473,17 @@
         "year": 1937,
         "billing": 3,
         "tconst": "tt0029710",
+        "votes": 38
+      },
+      {
+        "title": "Drums of Destiny",
+        "character": "Kentuck",
+        "characters": [
+          "Kentuck"
+        ],
+        "year": 1937,
+        "billing": 3,
+        "tconst": "tt0028812",
         "votes": 38
       },
       {
@@ -19624,7 +19624,7 @@
     "top_collaborator_id": "nm0454559",
     "collaborator_loyalty": 0.106,
     "bridge_score": 0.000166,
-    "community": 13,
+    "community": 9,
     "pagerank": 0.0036158,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7895,
@@ -19642,7 +19642,7 @@
     "hub_vs_loyal": 12.428,
     "collaborator_reach": 19,
     "embed_x": 0.6531,
-    "embed_y": 3.2316
+    "embed_y": 3.2314
   },
   {
     "id": "nm0405904",
@@ -19708,17 +19708,6 @@
         "votes": 11
       },
       {
-        "title": "Warum lügst Du, Elisabeth?",
-        "character": "Elisabeth Ponholzer i.e.Lena Rodien",
-        "characters": [
-          "Elisabeth Ponholzer i.e.Lena Rodien"
-        ],
-        "year": 1944,
-        "billing": 1,
-        "tconst": "tt0229030",
-        "votes": 0
-      },
-      {
         "title": "Solitudine",
         "character": "Vera Navarri",
         "characters": [
@@ -19727,6 +19716,17 @@
         "year": 1941,
         "billing": 1,
         "tconst": "tt0034215",
+        "votes": 0
+      },
+      {
+        "title": "Dove andiamo, signora?",
+        "character": "Alice",
+        "characters": [
+          "Alice"
+        ],
+        "year": 1942,
+        "billing": 1,
+        "tconst": "tt0034674",
         "votes": 0
       }
     ],
@@ -19764,8 +19764,8 @@
     "minutes_credited": 6217,
     "medium_mix": {
       "tvMovie": 0.212,
-      "movie": 0.729,
-      "tvSeries": 0.059
+      "tvSeries": 0.059,
+      "movie": 0.729
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1959,
@@ -19831,7 +19831,7 @@
       "2000s"
     ],
     "bridge_score": 2e-06,
-    "community": 0,
+    "community": 3,
     "pagerank": 0.00125695,
     "eigen_centrality": 0.015268,
     "clustering_local": 0.9883,
@@ -19848,7 +19848,7 @@
     "acclaim_gap": 0.311,
     "hub_vs_loyal": 19.0,
     "collaborator_reach": 19,
-    "embed_x": 2.3727,
+    "embed_x": 2.3742,
     "embed_y": -0.3928
   },
   {
@@ -20033,7 +20033,7 @@
     "top_collaborator_id": "nm0454559",
     "collaborator_loyalty": 0.138,
     "bridge_score": 0.000136,
-    "community": 13,
+    "community": 16,
     "pagerank": 0.00610146,
     "eigen_centrality": 0.0,
     "clustering_local": 0.8129,
@@ -20164,15 +20164,15 @@
     "genre_first": "Comedy",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Oliver Falcon",
+    "typecast_character": "Joma",
     "typecast_count": 1,
     "billing_trajectory": 0.1454,
     "median_billing": 2,
     "minutes_credited": 3396,
     "medium_mix": {
-      "tvSeries": 0.431,
       "movie": 0.552,
-      "tvMovie": 0.017
+      "tvMovie": 0.017,
+      "tvSeries": 0.431
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1997,
@@ -20236,7 +20236,7 @@
     "top_collaborator_id": "nm1216694",
     "collaborator_loyalty": 0.46,
     "bridge_score": 0.001045,
-    "community": 1,
+    "community": 7,
     "pagerank": 0.00537936,
     "eigen_centrality": 0.0,
     "clustering_local": 0.4795,
@@ -20253,8 +20253,8 @@
     "acclaim_gap": -0.198,
     "hub_vs_loyal": -9.52,
     "collaborator_reach": 19,
-    "embed_x": -1.7737,
-    "embed_y": -2.1102
+    "embed_x": -1.7732,
+    "embed_y": -2.1105
   },
   {
     "id": "nm0352475",
@@ -20435,7 +20435,7 @@
     "top_collaborator_id": "nm0454559",
     "collaborator_loyalty": 0.146,
     "bridge_score": 0.00014,
-    "community": 3,
+    "community": 16,
     "pagerank": 0.00426134,
     "eigen_centrality": 0.0,
     "clustering_local": 0.8105,
@@ -20453,7 +20453,7 @@
     "hub_vs_loyal": 8.948,
     "collaborator_reach": 18,
     "embed_x": -1.2647,
-    "embed_y": 3.2685
+    "embed_y": 3.2683
   },
   {
     "id": "nm0655777",
@@ -20566,7 +20566,7 @@
     "genre_first": "Adventure",
     "genre_last": "Crime",
     "genre_first_last_distance": 1,
-    "typecast_character": "Eleanor",
+    "typecast_character": "Sandra",
     "typecast_count": 2,
     "billing_trajectory": -0.1089,
     "median_billing": 3,
@@ -20635,11 +20635,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Jolina Magdangal",
-    "top_collaborator_id": "nm0535800",
+    "top_collaborator": "Marvin Agustin",
+    "top_collaborator_id": "nm0013793",
     "collaborator_loyalty": 0.495,
     "bridge_score": 0.000164,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00476191,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7843,
@@ -20656,8 +20656,8 @@
     "acclaim_gap": 1.037,
     "hub_vs_loyal": -12.69,
     "collaborator_reach": 18,
-    "embed_x": -0.2277,
-    "embed_y": -2.9635
+    "embed_x": -0.228,
+    "embed_y": -2.9634
   },
   {
     "id": "nm0731340",
@@ -20777,8 +20777,8 @@
     "median_billing": 7,
     "minutes_credited": 3116,
     "medium_mix": {
-      "tvSeries": 0.027,
-      "movie": 0.973
+      "movie": 0.973,
+      "tvSeries": 0.027
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1958,
@@ -20840,7 +20840,7 @@
     "top_collaborator_id": "nm0852365",
     "collaborator_loyalty": 0.158,
     "bridge_score": 0.000152,
-    "community": 3,
+    "community": 16,
     "pagerank": 0.00690784,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7974,
@@ -20857,7 +20857,7 @@
     "acclaim_gap": 0.484,
     "hub_vs_loyal": 8.204,
     "collaborator_reach": 18,
-    "embed_x": -3.4531,
+    "embed_x": -3.453,
     "embed_y": 0.7739
   },
   {
@@ -20970,14 +20970,14 @@
     "genre_first": "Adventure",
     "genre_last": "Action",
     "genre_first_last_distance": 1,
-    "typecast_character": "Precy",
+    "typecast_character": "Victoria",
     "typecast_count": 1,
     "billing_trajectory": -0.0942,
     "median_billing": 2,
     "minutes_credited": 6293,
     "medium_mix": {
-      "tvSeries": 0.172,
       "movie": 0.818,
+      "tvSeries": 0.172,
       "tvMovie": 0.01
     },
     "short_to_feature_ratio": 0.0,
@@ -21043,7 +21043,7 @@
     "top_collaborator_id": "nm1216382",
     "collaborator_loyalty": 0.443,
     "bridge_score": 9.4e-05,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00407586,
     "eigen_centrality": 0.0,
     "clustering_local": 0.8235,
@@ -21060,7 +21060,7 @@
     "acclaim_gap": -0.394,
     "hub_vs_loyal": -10.466,
     "collaborator_reach": 17,
-    "embed_x": 1.2647,
+    "embed_x": 1.2639,
     "embed_y": -2.4105
   },
   {
@@ -21176,7 +21176,7 @@
     "genre_first": "Drama",
     "genre_last": "Documentary",
     "genre_first_last_distance": 1,
-    "typecast_character": "Jane Kenmore",
+    "typecast_character": "Lynne Gregory",
     "typecast_count": 1,
     "billing_trajectory": 0.0853,
     "median_billing": 3,
@@ -21246,7 +21246,7 @@
     "top_collaborator_id": "nm0000810",
     "collaborator_loyalty": 0.385,
     "bridge_score": 0.000239,
-    "community": 13,
+    "community": 16,
     "pagerank": 0.00616643,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7868,
@@ -21263,8 +21263,8 @@
     "acclaim_gap": 0.036,
     "hub_vs_loyal": -6.87,
     "collaborator_reach": 17,
-    "embed_x": 1.853,
-    "embed_y": -0.1372
+    "embed_x": 1.8548,
+    "embed_y": -0.137
   },
   {
     "id": "nm0254502",
@@ -21449,7 +21449,7 @@
     "top_collaborator_id": "nm0454559",
     "collaborator_loyalty": 0.103,
     "bridge_score": 0.000168,
-    "community": 13,
+    "community": 9,
     "pagerank": 0.00259711,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7574,
@@ -21467,7 +21467,7 @@
     "hub_vs_loyal": 10.614,
     "collaborator_reach": 17,
     "embed_x": -2.9654,
-    "embed_y": 2.8635
+    "embed_y": 2.8636
   },
   {
     "id": "nm0558617",
@@ -21652,7 +21652,7 @@
     "top_collaborator_id": "nm0156173",
     "collaborator_loyalty": 0.136,
     "bridge_score": 7.8e-05,
-    "community": 13,
+    "community": 16,
     "pagerank": 0.00323792,
     "eigen_centrality": 0.0,
     "clustering_local": 0.8529,
@@ -21670,7 +21670,7 @@
     "hub_vs_loyal": 8.568,
     "collaborator_reach": 17,
     "embed_x": -0.5937,
-    "embed_y": 3.1227
+    "embed_y": 3.1225
   },
   {
     "id": "nm1216694",
@@ -21789,8 +21789,8 @@
     "median_billing": 2,
     "minutes_credited": 1702,
     "medium_mix": {
-      "tvSeries": 0.438,
-      "movie": 0.562
+      "movie": 0.562,
+      "tvSeries": 0.438
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1999,
@@ -21828,7 +21828,7 @@
       }
     ],
     "same_director_repeat": 4,
-    "top_director": "nm1540978",
+    "top_director": "nm0721219",
     "regions": [
       "AE",
       "AU",
@@ -21853,7 +21853,7 @@
     "top_collaborator_id": "nm1137883",
     "collaborator_loyalty": 0.516,
     "bridge_score": 0.001132,
-    "community": 1,
+    "community": 7,
     "pagerank": 0.00415808,
     "eigen_centrality": 0.0,
     "clustering_local": 0.4485,
@@ -21870,8 +21870,8 @@
     "acclaim_gap": 1.504,
     "hub_vs_loyal": -14.992,
     "collaborator_reach": 17,
-    "embed_x": 2.116,
-    "embed_y": -2.1348
+    "embed_x": 2.1159,
+    "embed_y": -2.1349
   },
   {
     "id": "nm0571186",
@@ -21893,6 +21893,17 @@
     "rk_prominence": 237,
     "roles": [
       {
+        "title": "Roses of Yesterday",
+        "character": "John Ralston",
+        "characters": [
+          "John Ralston"
+        ],
+        "year": 1913,
+        "billing": 1,
+        "tconst": "tt0496132",
+        "votes": 0
+      },
+      {
         "title": "The Guardian's Dilemma",
         "character": "Old Man Cummings",
         "characters": [
@@ -21901,6 +21912,17 @@
         "year": 1915,
         "billing": 1,
         "tconst": "tt0460219",
+        "votes": 0
+      },
+      {
+        "title": "The Livid Flame",
+        "character": "R. Hayes Burkhardt",
+        "characters": [
+          "R. Hayes Burkhardt"
+        ],
+        "year": 1914,
+        "billing": 1,
+        "tconst": "tt0004245",
         "votes": 0
       },
       {
@@ -21915,14 +21937,14 @@
         "votes": 0
       },
       {
-        "title": "Roses of Yesterday",
-        "character": "John Ralston",
+        "title": "The Cipher Message",
+        "character": "Detective Donald Bryce",
         "characters": [
-          "John Ralston"
+          "Detective Donald Bryce"
         ],
         "year": 1913,
         "billing": 1,
-        "tconst": "tt0496132",
+        "tconst": "tt0425860",
         "votes": 0
       },
       {
@@ -21934,28 +21956,6 @@
         "year": 1915,
         "billing": 1,
         "tconst": "tt0486385",
-        "votes": 0
-      },
-      {
-        "title": "The Five Franc Piece",
-        "character": "Napoleon Bonaparte",
-        "characters": [
-          "Napoleon Bonaparte"
-        ],
-        "year": 1916,
-        "billing": 1,
-        "tconst": "tt0312696",
-        "votes": 0
-      },
-      {
-        "title": "The Cipher Message",
-        "character": "Detective Donald Bryce",
-        "characters": [
-          "Detective Donald Bryce"
-        ],
-        "year": 1913,
-        "billing": 1,
-        "tconst": "tt0425860",
         "votes": 0
       }
     ],
@@ -22055,7 +22055,7 @@
     "top_collaborator_id": "nm0924307",
     "collaborator_loyalty": 0.185,
     "bridge_score": 0.000149,
-    "community": 13,
+    "community": 9,
     "pagerank": 0.00252279,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7583,
@@ -22073,7 +22073,7 @@
     "hub_vs_loyal": 4.53,
     "collaborator_reach": 16,
     "embed_x": -2.6629,
-    "embed_y": -1.4204
+    "embed_y": -1.4274
   },
   {
     "id": "nm0696912",
@@ -22255,7 +22255,7 @@
     "top_collaborator_id": "nm0454559",
     "collaborator_loyalty": 0.165,
     "bridge_score": 4.5e-05,
-    "community": 13,
+    "community": 16,
     "pagerank": 0.00373437,
     "eigen_centrality": 0.0,
     "clustering_local": 0.9,
@@ -22273,7 +22273,7 @@
     "hub_vs_loyal": 5.77,
     "collaborator_reach": 16,
     "embed_x": -2.3171,
-    "embed_y": 3.3243
+    "embed_y": 3.3242
   },
   {
     "id": "nm1216382",
@@ -22339,17 +22339,6 @@
         "votes": 31
       },
       {
-        "title": "Legacy",
-        "character": "Diana Calcetas",
-        "characters": [
-          "Diana Calcetas"
-        ],
-        "year": 2012,
-        "billing": 1,
-        "tconst": "tt2187831",
-        "votes": 24
-      },
-      {
         "title": "Luna Mystika",
         "character": "Celestina (2008)",
         "characters": [
@@ -22358,6 +22347,17 @@
         "year": 2008,
         "billing": 1,
         "tconst": "tt1301884",
+        "votes": 24
+      },
+      {
+        "title": "Legacy",
+        "character": "Diana Calcetas",
+        "characters": [
+          "Diana Calcetas"
+        ],
+        "year": 2012,
+        "billing": 1,
+        "tconst": "tt2187831",
         "votes": 24
       }
     ],
@@ -22459,7 +22459,7 @@
     "top_collaborator_id": "nm0095007",
     "collaborator_loyalty": 0.284,
     "bridge_score": 0.000263,
-    "community": 1,
+    "community": 7,
     "pagerank": 0.00389224,
     "eigen_centrality": 0.0,
     "clustering_local": 0.65,
@@ -22476,8 +22476,8 @@
     "acclaim_gap": 0.757,
     "hub_vs_loyal": -1.608,
     "collaborator_reach": 16,
-    "embed_x": -1.7586,
-    "embed_y": -2.6103
+    "embed_x": -1.759,
+    "embed_y": -2.6104
   },
   {
     "id": "nm1698831",
@@ -22532,6 +22532,17 @@
         "votes": 7
       },
       {
+        "title": "Morgue",
+        "character": "Lance",
+        "characters": [
+          "Lance"
+        ],
+        "year": 2013,
+        "billing": 1,
+        "tconst": "tt3396172",
+        "votes": 0
+      },
+      {
         "title": "Time of My Life",
         "character": "Patrick",
         "characters": [
@@ -22551,17 +22562,6 @@
         "year": 2016,
         "billing": 1,
         "tconst": "tt5822920",
-        "votes": 0
-      },
-      {
-        "title": "Morgue",
-        "character": "Lance",
-        "characters": [
-          "Lance"
-        ],
-        "year": 2013,
-        "billing": 1,
-        "tconst": "tt3396172",
         "votes": 0
       }
     ],
@@ -22595,8 +22595,8 @@
     "median_billing": 4,
     "minutes_credited": 2315,
     "medium_mix": {
-      "tvSeries": 0.662,
       "movie": 0.292,
+      "tvSeries": 0.662,
       "tvMovie": 0.015,
       "tvMiniSeries": 0.031
     },
@@ -22661,7 +22661,7 @@
     "top_collaborator_id": "nm1717582",
     "collaborator_loyalty": 0.431,
     "bridge_score": 0.00027,
-    "community": 5,
+    "community": 1,
     "pagerank": 0.0030617,
     "eigen_centrality": 0.0,
     "clustering_local": 0.75,
@@ -22678,8 +22678,8 @@
     "acclaim_gap": 1.643,
     "hub_vs_loyal": -10.722,
     "collaborator_reach": 16,
-    "embed_x": 2.5753,
-    "embed_y": 1.3018
+    "embed_x": 2.5752,
+    "embed_y": 1.3021
   },
   {
     "id": "nm0641776",
@@ -22858,11 +22858,11 @@
       "1930s",
       "1940s"
     ],
-    "top_collaborator": "Lafe McKee",
-    "top_collaborator_id": "nm0571186",
+    "top_collaborator": "Buck Jones",
+    "top_collaborator_id": "nm0427659",
     "collaborator_loyalty": 0.25,
     "bridge_score": 8.8e-05,
-    "community": 13,
+    "community": 16,
     "pagerank": 0.00395416,
     "eigen_centrality": 0.0,
     "clustering_local": 0.8381,
@@ -22879,7 +22879,7 @@
     "acclaim_gap": -0.812,
     "hub_vs_loyal": -0.5,
     "collaborator_reach": 15,
-    "embed_x": -3.8995,
+    "embed_x": -3.8993,
     "embed_y": -0.2067
   },
   {
@@ -22993,14 +22993,14 @@
     "genre_first": "Drama",
     "genre_last": "Action",
     "genre_first_last_distance": 1,
-    "typecast_character": "Ana Dimasalang",
+    "typecast_character": "Pat",
     "typecast_count": 1,
     "billing_trajectory": 0.4555,
     "median_billing": 3,
     "minutes_credited": 1128,
     "medium_mix": {
-      "tvSeries": 0.643,
-      "movie": 0.357
+      "movie": 0.357,
+      "tvSeries": 0.643
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2011,
@@ -23063,7 +23063,7 @@
     "top_collaborator_id": "nm0544424",
     "collaborator_loyalty": 0.517,
     "bridge_score": 1.2e-05,
-    "community": 1,
+    "community": 7,
     "pagerank": 0.00379269,
     "eigen_centrality": 0.0,
     "clustering_local": 0.9619,
@@ -23080,8 +23080,8 @@
     "acclaim_gap": 1.375,
     "hub_vs_loyal": -17.054,
     "collaborator_reach": 15,
-    "embed_x": 2.9991,
-    "embed_y": -1.132
+    "embed_x": 2.9994,
+    "embed_y": -1.1324
   },
   {
     "id": "nm0727026",
@@ -23195,7 +23195,7 @@
     "genre_first": "Comedy",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Lois",
+    "typecast_character": "Cashier (Brown Derby)",
     "typecast_count": 1,
     "billing_trajectory": -0.0127,
     "median_billing": 4,
@@ -23260,11 +23260,11 @@
       "1940s",
       "1950s"
     ],
-    "top_collaborator": "Champion",
-    "top_collaborator_id": "nm11417613",
+    "top_collaborator": "Gene Autry",
+    "top_collaborator_id": "nm0000810",
     "collaborator_loyalty": 0.5,
     "bridge_score": 0.000153,
-    "community": 3,
+    "community": 16,
     "pagerank": 0.00476013,
     "eigen_centrality": 0.0,
     "clustering_local": 0.8132,
@@ -23282,7 +23282,7 @@
     "hub_vs_loyal": -17.0,
     "collaborator_reach": 14,
     "embed_x": -3.8008,
-    "embed_y": 1.2407
+    "embed_y": 1.2406
   },
   {
     "id": "nm0003706",
@@ -23404,8 +23404,8 @@
     "minutes_credited": 5739,
     "medium_mix": {
       "movie": 0.969,
-      "tvMovie": 0.01,
-      "tvSeries": 0.021
+      "tvSeries": 0.021,
+      "tvMovie": 0.01
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1952,
@@ -23471,7 +23471,7 @@
     "top_collaborator_id": "nm0352475",
     "collaborator_loyalty": 0.116,
     "bridge_score": 8.5e-05,
-    "community": 13,
+    "community": 16,
     "pagerank": 0.00221024,
     "eigen_centrality": 0.0,
     "clustering_local": 0.8077,
@@ -23488,7 +23488,7 @@
     "acclaim_gap": -4.347,
     "hub_vs_loyal": 5.808,
     "collaborator_reach": 13,
-    "embed_x": 0.2549,
+    "embed_x": 0.2534,
     "embed_y": 0.76
   },
   {
@@ -23533,17 +23533,6 @@
         "votes": 13
       },
       {
-        "title": "Makamandag si Adora",
-        "character": "The Psycho",
-        "characters": [
-          "The Psycho"
-        ],
-        "year": 1976,
-        "billing": 2,
-        "tconst": "tt2132382",
-        "votes": 0
-      },
-      {
         "title": "Ambush",
         "character": "Ka Dyago",
         "characters": [
@@ -23552,6 +23541,17 @@
         "year": 1988,
         "billing": 2,
         "tconst": "tt0497161",
+        "votes": 0
+      },
+      {
+        "title": "Makamandag si Adora",
+        "character": "The Psycho",
+        "characters": [
+          "The Psycho"
+        ],
+        "year": 1976,
+        "billing": 2,
+        "tconst": "tt2132382",
         "votes": 0
       },
       {
@@ -23604,7 +23604,7 @@
     "genre_first": "Drama",
     "genre_last": "Action",
     "genre_first_last_distance": 1,
-    "typecast_character": "Elias",
+    "typecast_character": "Jake",
     "typecast_count": 2,
     "billing_trajectory": 0.0037,
     "median_billing": 7,
@@ -23677,7 +23677,7 @@
     "top_collaborator_id": "nm0643590",
     "collaborator_loyalty": 0.466,
     "bridge_score": 0.000157,
-    "community": 1,
+    "community": 7,
     "pagerank": 0.00411331,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6667,
@@ -23694,8 +23694,8 @@
     "acclaim_gap": 0.586,
     "hub_vs_loyal": -15.892,
     "collaborator_reach": 13,
-    "embed_x": 1.9159,
-    "embed_y": -3.1516
+    "embed_x": 1.9158,
+    "embed_y": -3.1517
   },
   {
     "id": "nm0479017",
@@ -23882,7 +23882,7 @@
     "top_collaborator_id": "nm0820607",
     "collaborator_loyalty": 0.417,
     "bridge_score": 3.7e-05,
-    "community": 13,
+    "community": 16,
     "pagerank": 0.0022242,
     "eigen_centrality": 0.0,
     "clustering_local": 0.8718,
@@ -23899,8 +23899,8 @@
     "acclaim_gap": -1.296,
     "hub_vs_loyal": -12.854,
     "collaborator_reach": 13,
-    "embed_x": 0.9685,
-    "embed_y": -1.8225
+    "embed_x": 0.9684,
+    "embed_y": -1.8223
   },
   {
     "id": "nm0764156",
@@ -24013,7 +24013,7 @@
     "genre_first": "Drama",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Teresa",
+    "typecast_character": "Angie",
     "typecast_count": 2,
     "billing_trajectory": 0.0066,
     "median_billing": 1,
@@ -24085,7 +24085,7 @@
     "top_collaborator_id": "nm0013793",
     "collaborator_loyalty": 0.5,
     "bridge_score": 0.000176,
-    "community": 1,
+    "community": 7,
     "pagerank": 0.00418152,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6795,
@@ -24288,7 +24288,7 @@
     "top_collaborator_id": "nm0764156",
     "collaborator_loyalty": 0.752,
     "bridge_score": 0.000144,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00310429,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7051,
@@ -24305,7 +24305,7 @@
     "acclaim_gap": -1.083,
     "hub_vs_loyal": -33.624,
     "collaborator_reach": 13,
-    "embed_x": 3.3998,
+    "embed_x": 3.3999,
     "embed_y": 0.9943
   },
   {
@@ -24419,14 +24419,14 @@
     "genre_first": "Reality-TV",
     "genre_last": "Action",
     "genre_first_last_distance": 1,
-    "typecast_character": "Dolly",
+    "typecast_character": "Diane Sebastian",
     "typecast_count": 1,
     "billing_trajectory": 0.1171,
     "median_billing": 3,
     "minutes_credited": 1321,
     "medium_mix": {
-      "movie": 0.31,
       "tvSeries": 0.643,
+      "movie": 0.31,
       "tvMiniSeries": 0.048
     },
     "short_to_feature_ratio": 0.0,
@@ -24491,7 +24491,7 @@
     "top_collaborator_id": "nm1698831",
     "collaborator_loyalty": 0.263,
     "bridge_score": 0.000113,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00278647,
     "eigen_centrality": 0.0,
     "clustering_local": 0.859,
@@ -24508,8 +24508,8 @@
     "acclaim_gap": 1.681,
     "hub_vs_loyal": -3.306,
     "collaborator_reach": 13,
-    "embed_x": 2.5559,
-    "embed_y": 0.3483
+    "embed_x": 2.5563,
+    "embed_y": 0.3488
   },
   {
     "id": "nm0674741",
@@ -24693,7 +24693,7 @@
     "top_collaborator_id": "nm0163417",
     "collaborator_loyalty": 0.203,
     "bridge_score": 2.4e-05,
-    "community": 13,
+    "community": 16,
     "pagerank": 0.00296605,
     "eigen_centrality": 0.0,
     "clustering_local": 0.9091,
@@ -24711,7 +24711,7 @@
     "hub_vs_loyal": -0.586,
     "collaborator_reach": 12,
     "embed_x": -3.3454,
-    "embed_y": -0.8225
+    "embed_y": -0.8229
   },
   {
     "id": "nm0728811",
@@ -24832,8 +24832,8 @@
     "median_billing": 1,
     "minutes_credited": 4509,
     "medium_mix": {
-      "tvSeries": 0.091,
       "movie": 0.883,
+      "tvSeries": 0.091,
       "tvMovie": 0.026
     },
     "short_to_feature_ratio": 0.0,
@@ -24899,7 +24899,7 @@
     "top_collaborator_id": "nm0454559",
     "collaborator_loyalty": 0.253,
     "bridge_score": 5.4e-05,
-    "community": 3,
+    "community": 16,
     "pagerank": 0.00214704,
     "eigen_centrality": 0.0,
     "clustering_local": 0.8182,
@@ -25097,7 +25097,7 @@
     "top_collaborator_id": "nm0144185",
     "collaborator_loyalty": 0.175,
     "bridge_score": 2.6e-05,
-    "community": 13,
+    "community": 9,
     "pagerank": 0.0021058,
     "eigen_centrality": 0.0,
     "clustering_local": 0.8939,
@@ -25237,8 +25237,8 @@
     "minutes_credited": 6955,
     "medium_mix": {
       "tvMovie": 0.047,
-      "tvSeries": 0.038,
-      "movie": 0.915
+      "movie": 0.915,
+      "tvSeries": 0.038
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1950,
@@ -25304,7 +25304,7 @@
     "top_collaborator_id": "nm11417613",
     "collaborator_loyalty": 0.458,
     "bridge_score": 0.0001,
-    "community": 13,
+    "community": 9,
     "pagerank": 0.00336172,
     "eigen_centrality": 0.0,
     "clustering_local": 0.8,
@@ -25322,7 +25322,7 @@
     "hub_vs_loyal": -17.396,
     "collaborator_reach": 11,
     "embed_x": 1.2495,
-    "embed_y": 1.5444
+    "embed_y": 1.5441
   },
   {
     "id": "nm1302484",
@@ -25366,17 +25366,6 @@
         "votes": 51
       },
       {
-        "title": "Vampire ang daddy ko",
-        "character": "Vlad",
-        "characters": [
-          "Vlad"
-        ],
-        "year": 2013,
-        "billing": 2,
-        "tconst": "tt3278056",
-        "votes": 20
-      },
-      {
         "title": "Agawin mo man ang lahat",
         "character": "Nicolas",
         "characters": [
@@ -25388,6 +25377,28 @@
         "votes": 20
       },
       {
+        "title": "Vampire ang daddy ko",
+        "character": "Vlad",
+        "characters": [
+          "Vlad"
+        ],
+        "year": 2013,
+        "billing": 2,
+        "tconst": "tt3278056",
+        "votes": 20
+      },
+      {
+        "title": "Lumang piso para sa puso",
+        "character": "Dave",
+        "characters": [
+          "Dave"
+        ],
+        "year": 2010,
+        "billing": 2,
+        "tconst": "tt1900297",
+        "votes": 0
+      },
+      {
         "title": "Hay, bahay!",
         "character": "Yoyo",
         "characters": [
@@ -25396,17 +25407,6 @@
         "year": 2016,
         "billing": 2,
         "tconst": "tt5803450",
-        "votes": 0
-      },
-      {
-        "title": "Leya",
-        "character": "Emman",
-        "characters": [
-          "Emman"
-        ],
-        "year": 2004,
-        "billing": 2,
-        "tconst": "tt0448296",
         "votes": 0
       }
     ],
@@ -25513,8 +25513,8 @@
     "acclaim_gap": 1.429,
     "hub_vs_loyal": -39.592,
     "collaborator_reach": 11,
-    "embed_x": 0.3807,
-    "embed_y": -4.0631
+    "embed_x": 0.3805,
+    "embed_y": -4.0632
   },
   {
     "id": "nm0253781",
@@ -25580,14 +25580,14 @@
         "votes": 63
       },
       {
-        "title": "Bajas pasiones",
-        "character": "Orlando de la Garza",
+        "title": "El Amarrador II",
+        "character": "Don Andres",
         "characters": [
-          "Orlando de la Garza"
+          "Don Andres"
         ],
-        "year": 1999,
+        "year": 1993,
         "billing": 3,
-        "tconst": "tt0870897",
+        "tconst": "tt10696206",
         "votes": 0
       },
       {
@@ -25626,14 +25626,14 @@
     "genre_first": "Action",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Chava",
+    "typecast_character": "Comisario",
     "typecast_count": 2,
     "billing_trajectory": 0.1409,
     "median_billing": 7,
     "minutes_credited": 6594,
     "medium_mix": {
-      "movie": 0.905,
-      "tvSeries": 0.095
+      "tvSeries": 0.095,
+      "movie": 0.905
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1978,
@@ -25698,7 +25698,7 @@
     "top_collaborator_id": "nm0093841",
     "collaborator_loyalty": 0.398,
     "bridge_score": 0.000443,
-    "community": 10,
+    "community": 11,
     "pagerank": 0.00690922,
     "eigen_centrality": 0.0,
     "clustering_local": 0.5556,
@@ -25716,7 +25716,7 @@
     "hub_vs_loyal": -14.676,
     "collaborator_reach": 10,
     "embed_x": -2.3066,
-    "embed_y": -0.2956
+    "embed_y": -0.2962
   },
   {
     "id": "nm0273646",
@@ -25902,7 +25902,7 @@
     "top_collaborator_id": "nm0345324",
     "collaborator_loyalty": 0.329,
     "bridge_score": 0.000297,
-    "community": 10,
+    "community": 13,
     "pagerank": 0.00957091,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6,
@@ -25919,7 +25919,7 @@
     "acclaim_gap": -1.305,
     "hub_vs_loyal": -10.398,
     "collaborator_reach": 10,
-    "embed_x": 1.2971,
+    "embed_x": 1.2969,
     "embed_y": 3.5482
   },
   {
@@ -26105,7 +26105,7 @@
     "top_collaborator_id": "nm0345324",
     "collaborator_loyalty": 0.981,
     "bridge_score": 0.000174,
-    "community": 21,
+    "community": 13,
     "pagerank": 0.00933281,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6667,
@@ -26305,7 +26305,7 @@
     "top_collaborator_id": "nm0643590",
     "collaborator_loyalty": 0.738,
     "bridge_score": 4.2e-05,
-    "community": 1,
+    "community": 7,
     "pagerank": 0.00251527,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7778,
@@ -26323,7 +26323,7 @@
     "hub_vs_loyal": -36.756,
     "collaborator_reach": 9,
     "embed_x": -1.6226,
-    "embed_y": -4.2553
+    "embed_y": -4.2555
   },
   {
     "id": "nm1403112",
@@ -26502,11 +26502,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Mark Herras",
-    "top_collaborator_id": "nm1698831",
+    "top_collaborator": "Jennylyn Mercado",
+    "top_collaborator_id": "nm1717582",
     "collaborator_loyalty": 0.25,
     "bridge_score": 0.000269,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.0025735,
     "eigen_centrality": 0.0,
     "clustering_local": 0.4444,
@@ -26523,7 +26523,7 @@
     "acclaim_gap": 1.972,
     "hub_vs_loyal": -6.5,
     "collaborator_reach": 9,
-    "embed_x": -1.7759,
+    "embed_x": -1.7761,
     "embed_y": 3.041
   },
   {
@@ -26635,15 +26635,15 @@
     "genre_first": "Horror",
     "genre_last": "Romance",
     "genre_first_last_distance": 1,
-    "typecast_character": "Joyce",
+    "typecast_character": "Bella",
     "typecast_count": 2,
     "billing_trajectory": -0.0531,
     "median_billing": 3,
     "minutes_credited": 280,
     "medium_mix": {
       "tvMiniSeries": 0.791,
-      "tvSeries": 0.07,
       "movie": 0.116,
+      "tvSeries": 0.07,
       "tvMovie": 0.023
     },
     "short_to_feature_ratio": 0.0,
@@ -26724,7 +26724,7 @@
     "hub_vs_loyal": -7.554,
     "collaborator_reach": 9,
     "embed_x": 2.6582,
-    "embed_y": 1.8713
+    "embed_y": 1.8715
   },
   {
     "id": "nm0034183",
@@ -26779,14 +26779,14 @@
         "votes": 0
       },
       {
-        "title": "Vamos a Votos",
-        "character": "Várias Personagens",
+        "title": "Napoleão, Meu Amor!",
+        "character": "Napoleão Neto",
         "characters": [
-          "Várias Personagens"
+          "Napoleão Neto"
         ],
-        "year": 1992,
+        "year": 1990,
         "billing": 1,
-        "tconst": "tt1637734",
+        "tconst": "tt12286420",
         "votes": 0
       },
       {
@@ -26801,14 +26801,14 @@
         "votes": 0
       },
       {
-        "title": "Napoleão, Meu Amor!",
-        "character": "Napoleão Neto",
+        "title": "Vamos a Votos",
+        "character": "Várias Personagens",
         "characters": [
-          "Napoleão Neto"
+          "Várias Personagens"
         ],
-        "year": 1990,
+        "year": 1992,
         "billing": 1,
-        "tconst": "tt12286420",
+        "tconst": "tt1637734",
         "votes": 0
       }
     ],
@@ -26824,7 +26824,7 @@
     "age_at_peak": 60,
     "birth_year_suspect": false,
     "gap_years": 15,
-    "prominence_raw": 386.5,
+    "prominence_raw": 386.4,
     "genre_entropy": 2.39,
     "dominant_genre": "Comedy",
     "concentration": 0.552,
@@ -26837,14 +26837,14 @@
     "genre_first": "Comedy",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Various Roles",
+    "typecast_character": "Self",
     "typecast_count": 5,
     "billing_trajectory": -0.0126,
     "median_billing": 4,
     "minutes_credited": 1562,
     "medium_mix": {
-      "movie": 0.133,
       "tvSeries": 0.578,
+      "movie": 0.133,
       "tvMovie": 0.244,
       "tvMiniSeries": 0.044
     },
@@ -26911,7 +26911,7 @@
     "top_collaborator_id": "nm1434827",
     "collaborator_loyalty": 0.505,
     "bridge_score": 0.000316,
-    "community": 8,
+    "community": 14,
     "pagerank": 0.00598403,
     "eigen_centrality": 0.0,
     "clustering_local": 0.4643,
@@ -26928,8 +26928,8 @@
     "acclaim_gap": 0.106,
     "hub_vs_loyal": -23.31,
     "collaborator_reach": 8,
-    "embed_x": 1.5194,
-    "embed_y": 2.9698
+    "embed_x": 1.5192,
+    "embed_y": 2.9697
   },
   {
     "id": "nm0093841",
@@ -27047,9 +27047,9 @@
     "median_billing": 3,
     "minutes_credited": 2712,
     "medium_mix": {
+      "tvMovie": 0.191,
       "movie": 0.574,
-      "tvSeries": 0.234,
-      "tvMovie": 0.191
+      "tvSeries": 0.234
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1985,
@@ -27114,7 +27114,7 @@
     "top_collaborator_id": "nm0253781",
     "collaborator_loyalty": 0.569,
     "bridge_score": 6.9e-05,
-    "community": 10,
+    "community": 13,
     "pagerank": 0.00563857,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7857,
@@ -27131,7 +27131,7 @@
     "acclaim_gap": -0.151,
     "hub_vs_loyal": -27.278,
     "collaborator_reach": 8,
-    "embed_x": 4.1679,
+    "embed_x": 4.168,
     "embed_y": -0.4162
   },
   {
@@ -27292,7 +27292,7 @@
       }
     ],
     "same_director_repeat": 8,
-    "top_director": "nm0210258",
+    "top_director": "nm0961755",
     "regions": [
       "AR",
       "AU",
@@ -27319,7 +27319,7 @@
     "top_collaborator_id": "nm1513584",
     "collaborator_loyalty": 0.258,
     "bridge_score": 0.000334,
-    "community": 2,
+    "community": 4,
     "pagerank": 0.00712538,
     "eigen_centrality": 0.0,
     "clustering_local": 0.5357,
@@ -27522,7 +27522,7 @@
     "top_collaborator_id": "nm1333545",
     "collaborator_loyalty": 0.264,
     "bridge_score": 0.000358,
-    "community": 2,
+    "community": 4,
     "pagerank": 0.00729377,
     "eigen_centrality": 0.0,
     "clustering_local": 0.5357,
@@ -27721,7 +27721,7 @@
     "top_collaborator_id": "nm0273646",
     "collaborator_loyalty": 0.833,
     "bridge_score": 6.9e-05,
-    "community": 10,
+    "community": 11,
     "pagerank": 0.0077639,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7857,
@@ -27739,7 +27739,7 @@
     "hub_vs_loyal": -43.646,
     "collaborator_reach": 8,
     "embed_x": -0.1153,
-    "embed_y": -3.6276
+    "embed_y": -3.6275
   },
   {
     "id": "nm10611209",
@@ -27761,14 +27761,36 @@
     "rk_prominence": 286,
     "roles": [
       {
-        "title": "Pegasus 13",
-        "character": "Koda",
+        "title": "The Patron",
+        "character": "The Patron",
         "characters": [
-          "Koda"
+          "The Patron"
         ],
-        "year": 2026,
+        "year": 2021,
         "billing": 1,
-        "tconst": "tt42153597",
+        "tconst": "tt14063506",
+        "votes": 0
+      },
+      {
+        "title": "Baby Powder",
+        "character": "Jimmy",
+        "characters": [
+          "Jimmy"
+        ],
+        "year": 2022,
+        "billing": 1,
+        "tconst": "tt15684400",
+        "votes": 0
+      },
+      {
+        "title": "Night Hawkes",
+        "character": "Golden Boys 2",
+        "characters": [
+          "Golden Boys 2"
+        ],
+        "year": 2023,
+        "billing": 1,
+        "tconst": "tt21808802",
         "votes": 0
       },
       {
@@ -27783,36 +27805,14 @@
         "votes": 0
       },
       {
-        "title": "Ping Pong",
-        "character": "Tate",
+        "title": "Pegasus 13",
+        "character": "Koda",
         "characters": [
-          "Tate"
+          "Koda"
         ],
-        "year": 2021,
+        "year": 2026,
         "billing": 1,
-        "tconst": "tt16383328",
-        "votes": 0
-      },
-      {
-        "title": "Cloakers",
-        "character": "Gabe",
-        "characters": [
-          "Gabe"
-        ],
-        "year": null,
-        "billing": 1,
-        "tconst": "tt16342304",
-        "votes": 0
-      },
-      {
-        "title": "The Patron",
-        "character": "The Patron",
-        "characters": [
-          "The Patron"
-        ],
-        "year": 2021,
-        "billing": 1,
-        "tconst": "tt14063506",
+        "tconst": "tt42153597",
         "votes": 0
       },
       {
@@ -27917,7 +27917,7 @@
     "top_collaborator_id": "nm10691497",
     "collaborator_loyalty": 0.222,
     "bridge_score": 0.001061,
-    "community": 11,
+    "community": 15,
     "pagerank": 0.00987911,
     "eigen_centrality": 0.0,
     "clustering_local": 0.3929,
@@ -27990,28 +27990,6 @@
         "votes": 0
       },
       {
-        "title": "Suppression",
-        "character": "Billy",
-        "characters": [
-          "Billy"
-        ],
-        "year": 2018,
-        "billing": 1,
-        "tconst": "tt19042766",
-        "votes": 0
-      },
-      {
-        "title": "The Harrelson Effect",
-        "character": "Zachary Harrelson",
-        "characters": [
-          "Zachary Harrelson"
-        ],
-        "year": 2025,
-        "billing": 1,
-        "tconst": "tt43360424",
-        "votes": 0
-      },
-      {
         "title": "The Underground Consultant",
         "character": "Malik",
         "characters": [
@@ -28020,6 +27998,28 @@
         "year": null,
         "billing": 1,
         "tconst": "tt38427394",
+        "votes": 0
+      },
+      {
+        "title": "Twink Death",
+        "character": "Calvin",
+        "characters": [
+          "Calvin"
+        ],
+        "year": null,
+        "billing": 1,
+        "tconst": "tt38058074",
+        "votes": 0
+      },
+      {
+        "title": "The Starman",
+        "character": "The Astronaut",
+        "characters": [
+          "The Astronaut"
+        ],
+        "year": null,
+        "billing": 1,
+        "tconst": "tt37171374",
         "votes": 0
       }
     ],
@@ -28108,7 +28108,7 @@
     "top_collaborator_id": "nm8746509",
     "collaborator_loyalty": 0.752,
     "bridge_score": 0.000661,
-    "community": 11,
+    "community": 15,
     "pagerank": 0.00741893,
     "eigen_centrality": 0.0,
     "clustering_local": 0.4286,
@@ -28125,7 +28125,7 @@
     "acclaim_gap": 2.28,
     "hub_vs_loyal": -38.624,
     "collaborator_reach": 8,
-    "embed_x": 1.9408,
+    "embed_x": 1.9405,
     "embed_y": 2.3285
   },
   {
@@ -28310,7 +28310,7 @@
     "top_collaborator_id": "nm0651627",
     "collaborator_loyalty": 0.277,
     "bridge_score": 3e-06,
-    "community": 3,
+    "community": 9,
     "pagerank": 0.00148565,
     "eigen_centrality": 0.0,
     "clustering_local": 0.9524,
@@ -28447,8 +28447,8 @@
     "median_billing": 5,
     "minutes_credited": 1303,
     "medium_mix": {
-      "movie": 0.085,
       "tvSeries": 0.766,
+      "movie": 0.085,
       "tvMovie": 0.149
     },
     "short_to_feature_ratio": 0.0,
@@ -28514,7 +28514,7 @@
     "top_collaborator_id": "nm1513584",
     "collaborator_loyalty": 0.21,
     "bridge_score": 0.000236,
-    "community": 2,
+    "community": 4,
     "pagerank": 0.0049613,
     "eigen_centrality": 0.0,
     "clustering_local": 0.5714,
@@ -28531,7 +28531,7 @@
     "acclaim_gap": 1.04,
     "hub_vs_loyal": -6.02,
     "collaborator_reach": 7,
-    "embed_x": -2.1745,
+    "embed_x": -2.1744,
     "embed_y": 4.0238
   },
   {
@@ -28646,7 +28646,7 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Mang Selmo",
+    "typecast_character": "Ryu",
     "typecast_count": 1,
     "billing_trajectory": 0.2328,
     "median_billing": 7,
@@ -28716,7 +28716,7 @@
     "top_collaborator_id": "nm0042564",
     "collaborator_loyalty": 0.333,
     "bridge_score": 2e-05,
-    "community": 5,
+    "community": 1,
     "pagerank": 0.00217463,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7619,
@@ -28734,7 +28734,7 @@
     "hub_vs_loyal": -13.646,
     "collaborator_reach": 7,
     "embed_x": 3.9993,
-    "embed_y": 1.6169
+    "embed_y": 1.617
   },
   {
     "id": "nm10372415",
@@ -28778,6 +28778,17 @@
         "votes": 9
       },
       {
+        "title": "Skeletalk",
+        "character": "Sally Knight",
+        "characters": [
+          "Sally Knight"
+        ],
+        "year": 2022,
+        "billing": 1,
+        "tconst": "tt21878142",
+        "votes": 0
+      },
+      {
         "title": "Pool Party Paradise",
         "character": "Anna",
         "characters": [
@@ -28789,36 +28800,25 @@
         "votes": 0
       },
       {
-        "title": "Court Therapy",
-        "character": "Dr. Bass",
+        "title": "Chuckle with Russell",
+        "character": "Sandra",
         "characters": [
-          "Dr. Bass"
+          "Sandra"
         ],
-        "year": 2021,
+        "year": 2024,
         "billing": 1,
-        "tconst": "tt15469290",
+        "tconst": "tt29958846",
         "votes": 0
       },
       {
-        "title": "Never Too Late",
-        "character": "May",
+        "title": "Losing It",
+        "character": "Eleanor",
         "characters": [
-          "May"
+          "Eleanor"
         ],
         "year": 2023,
         "billing": 1,
-        "tconst": "tt30097603",
-        "votes": 0
-      },
-      {
-        "title": "Skeletalk",
-        "character": "Sally Knight",
-        "characters": [
-          "Sally Knight"
-        ],
-        "year": 2022,
-        "billing": 1,
-        "tconst": "tt21878142",
+        "tconst": "tt26690329",
         "votes": 0
       }
     ],
@@ -28910,7 +28910,7 @@
     "top_collaborator_id": "nm7507037",
     "collaborator_loyalty": 0.328,
     "bridge_score": 0.000988,
-    "community": 6,
+    "community": 15,
     "pagerank": 0.00653995,
     "eigen_centrality": 0.0,
     "clustering_local": 0.4762,
@@ -29047,9 +29047,9 @@
     "median_billing": 3,
     "minutes_credited": 2050,
     "medium_mix": {
+      "tvSeries": 0.286,
       "movie": 0.643,
-      "tvMovie": 0.071,
-      "tvSeries": 0.286
+      "tvMovie": 0.071
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1992,
@@ -29113,7 +29113,7 @@
     "top_collaborator_id": "nm0704269",
     "collaborator_loyalty": 0.438,
     "bridge_score": 0.000146,
-    "community": 5,
+    "community": 1,
     "pagerank": 0.00171435,
     "eigen_centrality": 0.0,
     "clustering_local": 0.5238,
@@ -29130,7 +29130,7 @@
     "acclaim_gap": 0.799,
     "hub_vs_loyal": -20.156,
     "collaborator_reach": 7,
-    "embed_x": -4.7166,
+    "embed_x": -4.717,
     "embed_y": 0.7132
   },
   {
@@ -29251,8 +29251,8 @@
     "minutes_credited": 1590,
     "medium_mix": {
       "tvSeries": 0.528,
-      "movie": 0.306,
       "tvMovie": 0.139,
+      "movie": 0.306,
       "tvMiniSeries": 0.028
     },
     "short_to_feature_ratio": 0.0,
@@ -29317,7 +29317,7 @@
     "top_collaborator_id": "nm0260778",
     "collaborator_loyalty": 0.34,
     "bridge_score": 0.00019,
-    "community": 2,
+    "community": 4,
     "pagerank": 0.00483192,
     "eigen_centrality": 0.0,
     "clustering_local": 0.619,
@@ -29335,7 +29335,7 @@
     "hub_vs_loyal": -14.08,
     "collaborator_reach": 7,
     "embed_x": -1.4401,
-    "embed_y": -3.6613
+    "embed_y": -3.6614
   },
   {
     "id": "nm1717582",
@@ -29448,14 +29448,14 @@
     "genre_first": "Talk-Show",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Self - Host (2011)",
+    "typecast_character": "Self - Host",
     "typecast_count": 6,
     "billing_trajectory": 0.2133,
     "median_billing": 2,
     "minutes_credited": 2785,
     "medium_mix": {
-      "tvSeries": 0.625,
       "movie": 0.328,
+      "tvSeries": 0.625,
       "tvMiniSeries": 0.031,
       "tvMovie": 0.016
     },
@@ -29520,7 +29520,7 @@
     "top_collaborator_id": "nm1698831",
     "collaborator_loyalty": 0.513,
     "bridge_score": 6.6e-05,
-    "community": 5,
+    "community": 1,
     "pagerank": 0.00175402,
     "eigen_centrality": 0.0,
     "clustering_local": 0.619,
@@ -29537,8 +29537,8 @@
     "acclaim_gap": 0.659,
     "hub_vs_loyal": -24.806,
     "collaborator_reach": 7,
-    "embed_x": -2.5811,
-    "embed_y": 2.7257
+    "embed_x": -2.5812,
+    "embed_y": 2.7254
   },
   {
     "id": "nm0209349",
@@ -29651,14 +29651,14 @@
     "genre_first": "Comedy",
     "genre_last": "Comedy",
     "genre_first_last_distance": 0,
-    "typecast_character": "Louie",
+    "typecast_character": "Chiquillingas",
     "typecast_count": 1,
     "billing_trajectory": 0.0997,
     "median_billing": 3,
     "minutes_credited": 6391,
     "medium_mix": {
-      "tvSeries": 0.038,
-      "movie": 0.962
+      "movie": 0.962,
+      "tvSeries": 0.038
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1970,
@@ -29696,7 +29696,7 @@
       }
     ],
     "same_director_repeat": 6,
-    "top_director": "nm0217035",
+    "top_director": "nm0209349",
     "regions": [
       "AU",
       "BR",
@@ -29725,7 +29725,7 @@
     "top_collaborator_id": "nm0273646",
     "collaborator_loyalty": 0.28,
     "bridge_score": 4.7e-05,
-    "community": 10,
+    "community": 13,
     "pagerank": 0.00454994,
     "eigen_centrality": 0.0,
     "clustering_local": 0.8,
@@ -29743,7 +29743,7 @@
     "hub_vs_loyal": -11.36,
     "collaborator_reach": 6,
     "embed_x": 4.5732,
-    "embed_y": 0.3183
+    "embed_y": 0.3184
   },
   {
     "id": "nm0410607",
@@ -29855,7 +29855,7 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Self (2012)",
+    "typecast_character": "Self",
     "typecast_count": 6,
     "billing_trajectory": -0.024,
     "median_billing": 6,
@@ -29902,7 +29902,7 @@
       }
     ],
     "same_director_repeat": 4,
-    "top_director": "nm0723330",
+    "top_director": "nm0297591",
     "regions": [
       "AU",
       "BR",
@@ -29930,7 +29930,7 @@
     "top_collaborator_id": "nm0260778",
     "collaborator_loyalty": 0.32,
     "bridge_score": 0.000173,
-    "community": 8,
+    "community": 4,
     "pagerank": 0.00532682,
     "eigen_centrality": 0.0,
     "clustering_local": 0.5333,
@@ -29948,7 +29948,7 @@
     "hub_vs_loyal": -13.84,
     "collaborator_reach": 6,
     "embed_x": 1.8837,
-    "embed_y": -3.7515
+    "embed_y": -3.7516
   },
   {
     "id": "nm0719278",
@@ -30060,7 +30060,7 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Regina",
+    "typecast_character": "Valeria Fernández",
     "typecast_count": 1,
     "billing_trajectory": 0.2844,
     "median_billing": 3,
@@ -30106,7 +30106,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm0604033",
+    "top_director": "nm7134940",
     "regions": [
       "AU",
       "BR",
@@ -30127,7 +30127,7 @@
       "2020s"
     ],
     "bridge_score": 0.0,
-    "community": 21,
+    "community": 11,
     "pagerank": 0.0039237,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -30200,25 +30200,14 @@
         "votes": 10
       },
       {
-        "title": "La loba",
-        "character": "La loba",
+        "title": "Boda fatal",
+        "character": "Noemi",
         "characters": [
-          "La loba"
+          "Noemi"
         ],
-        "year": 2004,
+        "year": 2001,
         "billing": 1,
-        "tconst": "tt0772901",
-        "votes": 0
-      },
-      {
-        "title": "Fuga al destino",
-        "character": "Eva",
-        "characters": [
-          "Eva"
-        ],
-        "year": 1987,
-        "billing": 1,
-        "tconst": "tt0377949",
+        "tconst": "tt0397932",
         "votes": 0
       },
       {
@@ -30230,6 +30219,17 @@
         "year": 1993,
         "billing": 1,
         "tconst": "tt0922583",
+        "votes": 0
+      },
+      {
+        "title": "Fuga al destino",
+        "character": "Eva",
+        "characters": [
+          "Eva"
+        ],
+        "year": 1987,
+        "billing": 1,
+        "tconst": "tt0377949",
         "votes": 0
       }
     ],
@@ -30323,7 +30323,7 @@
     "top_collaborator_id": "nm0273646",
     "collaborator_loyalty": 0.909,
     "bridge_score": 0.0,
-    "community": 10,
+    "community": 11,
     "pagerank": 0.00462551,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -30396,36 +30396,36 @@
         "votes": 30
       },
       {
-        "title": "Father Slaps TikTok Boyfriend",
-        "character": "Jim",
+        "title": "Solution",
+        "character": "The Zombie",
         "characters": [
-          "Jim"
+          "The Zombie"
         ],
         "year": 2021,
         "billing": 1,
-        "tconst": "tt32237474",
+        "tconst": "tt32580140",
         "votes": 0
       },
       {
-        "title": "Buddy",
-        "character": "Murphy Jones",
+        "title": "Father reaction to Daughter in Yoga Pants",
+        "character": "Dad",
         "characters": [
-          "Murphy Jones"
+          "Dad"
         ],
-        "year": null,
+        "year": 2021,
         "billing": 1,
-        "tconst": "tt26536281",
+        "tconst": "tt34816259",
         "votes": 0
       },
       {
-        "title": "Drown",
-        "character": "Andrew",
+        "title": "Peace and Vengeance",
+        "character": "Priest",
         "characters": [
-          "Andrew"
+          "Priest"
         ],
-        "year": 2024,
+        "year": 2020,
         "billing": 1,
-        "tconst": "tt32614219",
+        "tconst": "tt32580511",
         "votes": 0
       }
     ],
@@ -30456,8 +30456,8 @@
     "minutes_credited": 548,
     "medium_mix": {
       "tvMiniSeries": 0.761,
-      "tvSeries": 0.065,
       "movie": 0.152,
+      "tvSeries": 0.065,
       "tvMovie": 0.022
     },
     "short_to_feature_ratio": 0.0,
@@ -30496,7 +30496,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm14658992",
+    "top_director": "nm13572508",
     "regions": [
       "AU",
       "BR",
@@ -30515,11 +30515,11 @@
     "decades": [
       "2020s"
     ],
-    "top_collaborator": "Vanessa Bezrodnaya",
-    "top_collaborator_id": "nm16067614",
+    "top_collaborator": "Mark Pontarelli",
+    "top_collaborator_id": "nm11195528",
     "collaborator_loyalty": 0.136,
     "bridge_score": 0.000713,
-    "community": 11,
+    "community": 15,
     "pagerank": 0.00578373,
     "eigen_centrality": 0.0,
     "clustering_local": 0.3333,
@@ -30536,7 +30536,7 @@
     "acclaim_gap": 1.505,
     "hub_vs_loyal": -2.432,
     "collaborator_reach": 6,
-    "embed_x": -3.1829,
+    "embed_x": -3.1842,
     "embed_y": -1.8209
   },
   {
@@ -30649,7 +30649,7 @@
     "genre_first": "Reality-TV",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Self (2012)",
+    "typecast_character": "Self",
     "typecast_count": 6,
     "billing_trajectory": -0.0062,
     "median_billing": 5,
@@ -30720,7 +30720,7 @@
     "top_collaborator_id": "nm2384377",
     "collaborator_loyalty": 0.3,
     "bridge_score": 7.5e-05,
-    "community": 8,
+    "community": 4,
     "pagerank": 0.0066446,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6667,
@@ -30856,9 +30856,9 @@
     "median_billing": 5,
     "minutes_credited": 1048,
     "medium_mix": {
+      "tvMiniSeries": 0.136,
       "tvSeries": 0.682,
       "movie": 0.091,
-      "tvMiniSeries": 0.136,
       "tvMovie": 0.091
     },
     "short_to_feature_ratio": 0.0,
@@ -30922,7 +30922,7 @@
     "top_collaborator_id": "nm1513584",
     "collaborator_loyalty": 0.487,
     "bridge_score": 5.4e-05,
-    "community": 2,
+    "community": 4,
     "pagerank": 0.00556648,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7333,
@@ -30940,7 +30940,7 @@
     "hub_vs_loyal": -24.194,
     "collaborator_reach": 6,
     "embed_x": -4.5493,
-    "embed_y": -1.6158
+    "embed_y": -1.6157
   },
   {
     "id": "nm3208995",
@@ -31049,16 +31049,16 @@
     "genre_first": "Comedy",
     "genre_last": "Romance",
     "genre_first_last_distance": 1,
-    "typecast_character": "Store Manager",
+    "typecast_character": "Saleswoman",
     "typecast_count": 2,
     "billing_trajectory": 0.254,
     "median_billing": 4,
     "minutes_credited": 818,
     "medium_mix": {
-      "tvSeries": 0.271,
       "tvMiniSeries": 0.525,
-      "movie": 0.153,
-      "tvMovie": 0.051
+      "tvMovie": 0.051,
+      "tvSeries": 0.271,
+      "movie": 0.153
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2012,
@@ -31121,7 +31121,7 @@
     "top_collaborator_id": "nm5194705",
     "collaborator_loyalty": 0.6,
     "bridge_score": 0.000364,
-    "community": 11,
+    "community": 15,
     "pagerank": 0.00872982,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6,
@@ -31253,9 +31253,9 @@
     "minutes_credited": 443,
     "medium_mix": {
       "tvMiniSeries": 0.848,
+      "tvMovie": 0.065,
       "movie": 0.043,
-      "tvSeries": 0.043,
-      "tvMovie": 0.065
+      "tvSeries": 0.043
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2021,
@@ -31316,7 +31316,7 @@
     "top_collaborator_id": "nm5879789",
     "collaborator_loyalty": 0.336,
     "bridge_score": 0.000606,
-    "community": 11,
+    "community": 6,
     "pagerank": 0.00649257,
     "eigen_centrality": 0.0,
     "clustering_local": 0.3333,
@@ -31455,9 +31455,9 @@
     "median_billing": 4,
     "minutes_credited": 1068,
     "medium_mix": {
-      "movie": 0.077,
-      "tvSeries": 0.667,
       "tvMiniSeries": 0.103,
+      "tvSeries": 0.667,
+      "movie": 0.077,
       "tvMovie": 0.154
     },
     "short_to_feature_ratio": 0.0,
@@ -31518,7 +31518,7 @@
     "top_collaborator_id": "nm0623070",
     "collaborator_loyalty": 0.724,
     "bridge_score": 0.000144,
-    "community": 2,
+    "community": 14,
     "pagerank": 0.00462681,
     "eigen_centrality": 0.0,
     "clustering_local": 0.5,
@@ -31580,28 +31580,6 @@
         "votes": 25
       },
       {
-        "title": "Pandanggo",
-        "character": "Claire (segment: It Takes Two to Tango)",
-        "characters": [
-          "Claire (segment: It Takes Two to Tango)"
-        ],
-        "year": 2006,
-        "billing": 1,
-        "tconst": "tt0926218",
-        "votes": 0
-      },
-      {
-        "title": "Melinda",
-        "character": "Melinda",
-        "characters": [
-          "Melinda"
-        ],
-        "year": 1995,
-        "billing": 1,
-        "tconst": "tt31897671",
-        "votes": 0
-      },
-      {
         "title": "Bloo",
         "character": "Claire",
         "characters": [
@@ -31621,6 +31599,28 @@
         "year": 2009,
         "billing": 1,
         "tconst": "tt1473364",
+        "votes": 0
+      },
+      {
+        "title": "Melinda",
+        "character": "Melinda",
+        "characters": [
+          "Melinda"
+        ],
+        "year": 1995,
+        "billing": 1,
+        "tconst": "tt31897671",
+        "votes": 0
+      },
+      {
+        "title": "Pandanggo",
+        "character": "Claire (segment: It Takes Two to Tango)",
+        "characters": [
+          "Claire (segment: It Takes Two to Tango)"
+        ],
+        "year": 2006,
+        "billing": 1,
+        "tconst": "tt0926218",
         "votes": 0
       }
     ],
@@ -31710,11 +31710,11 @@
       "1990s",
       "2000s"
     ],
-    "top_collaborator": "Kristine Hermosa",
-    "top_collaborator_id": "nm1216694",
+    "top_collaborator": "Karylle",
+    "top_collaborator_id": "nm1403112",
     "collaborator_loyalty": 0.327,
     "bridge_score": 3.6e-05,
-    "community": 5,
+    "community": 1,
     "pagerank": 0.00201389,
     "eigen_centrality": 0.0,
     "clustering_local": 0.5,
@@ -31731,7 +31731,7 @@
     "acclaim_gap": 1.218,
     "hub_vs_loyal": -15.274,
     "collaborator_reach": 5,
-    "embed_x": 3.0657,
+    "embed_x": 3.0658,
     "embed_y": 3.0606
   },
   {
@@ -31919,7 +31919,7 @@
     "top_collaborator_id": "nm0253781",
     "collaborator_loyalty": 0.286,
     "bridge_score": 8e-05,
-    "community": 10,
+    "community": 13,
     "pagerank": 0.00279179,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6,
@@ -31936,7 +31936,7 @@
     "acclaim_gap": -2.896,
     "hub_vs_loyal": -12.732,
     "collaborator_reach": 5,
-    "embed_x": 2.5613,
+    "embed_x": 2.5612,
     "embed_y": 4.1319
   },
   {
@@ -32112,7 +32112,7 @@
     "top_collaborator_id": "nm0000810",
     "collaborator_loyalty": 0.617,
     "bridge_score": 0.0,
-    "community": 3,
+    "community": 9,
     "pagerank": 0.00178403,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -32185,28 +32185,6 @@
         "votes": 8
       },
       {
-        "title": "A Woman with a Camera",
-        "character": "Woman",
-        "characters": [
-          "Woman"
-        ],
-        "year": 2021,
-        "billing": 1,
-        "tconst": "tt13774694",
-        "votes": 0
-      },
-      {
-        "title": "Love Is in the Air",
-        "character": "Killer",
-        "characters": [
-          "Killer"
-        ],
-        "year": 2009,
-        "billing": 1,
-        "tconst": "tt1654052",
-        "votes": 0
-      },
-      {
         "title": "(Miss) understood",
         "character": "Girl",
         "characters": [
@@ -32215,6 +32193,28 @@
         "year": 2009,
         "billing": 1,
         "tconst": "tt1746130",
+        "votes": 0
+      },
+      {
+        "title": "Burning Room",
+        "character": "Wife",
+        "characters": [
+          "Wife"
+        ],
+        "year": 2009,
+        "billing": 1,
+        "tconst": "tt1746148",
+        "votes": 0
+      },
+      {
+        "title": "A Woman with a Camera",
+        "character": "Woman",
+        "characters": [
+          "Woman"
+        ],
+        "year": 2021,
+        "billing": 1,
+        "tconst": "tt13774694",
         "votes": 0
       }
     ],
@@ -32250,9 +32250,9 @@
     "minutes_credited": 1380,
     "medium_mix": {
       "tvSeries": 0.647,
-      "tvMovie": 0.029,
+      "tvMiniSeries": 0.118,
       "movie": 0.206,
-      "tvMiniSeries": 0.118
+      "tvMovie": 0.029
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2008,
@@ -32315,7 +32315,7 @@
     "top_collaborator_id": "nm0623070",
     "collaborator_loyalty": 0.357,
     "bridge_score": 0.000177,
-    "community": 2,
+    "community": 4,
     "pagerank": 0.00523852,
     "eigen_centrality": 0.0,
     "clustering_local": 0.4,
@@ -32333,7 +32333,7 @@
     "hub_vs_loyal": -17.134,
     "collaborator_reach": 5,
     "embed_x": 4.1459,
-    "embed_y": 2.9578
+    "embed_y": 2.9579
   },
   {
     "id": "nm16067614",
@@ -32509,7 +32509,7 @@
     "top_collaborator_id": "nm7507037",
     "collaborator_loyalty": 0.79,
     "bridge_score": 0.000171,
-    "community": 11,
+    "community": 15,
     "pagerank": 0.00302794,
     "eigen_centrality": 0.0,
     "clustering_local": 0.5,
@@ -32582,17 +32582,6 @@
         "votes": 30
       },
       {
-        "title": "Juntos esta navidad",
-        "character": "Isabel",
-        "characters": [
-          "Isabel"
-        ],
-        "year": 2023,
-        "billing": 1,
-        "tconst": "tt30134779",
-        "votes": 0
-      },
-      {
         "title": "Corazón de Marruecos",
         "character": "Yasmine",
         "characters": [
@@ -32601,6 +32590,17 @@
         "year": null,
         "billing": 1,
         "tconst": "tt42205744",
+        "votes": 0
+      },
+      {
+        "title": "Juntos esta navidad",
+        "character": "Isabel",
+        "characters": [
+          "Isabel"
+        ],
+        "year": 2023,
+        "billing": 1,
+        "tconst": "tt30134779",
         "votes": 0
       },
       {
@@ -32708,7 +32708,7 @@
     "top_collaborator_id": "nm0345324",
     "collaborator_loyalty": 0.628,
     "bridge_score": 9.3e-05,
-    "community": 10,
+    "community": 13,
     "pagerank": 0.00344126,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6,
@@ -32726,7 +32726,7 @@
     "hub_vs_loyal": -33.936,
     "collaborator_reach": 5,
     "embed_x": -2.9113,
-    "embed_y": -2.8537
+    "embed_y": -2.8539
   },
   {
     "id": "nm0092626",
@@ -32904,7 +32904,7 @@
     "top_collaborator_id": "nm0851645",
     "collaborator_loyalty": 0.912,
     "bridge_score": 4.6e-05,
-    "community": 8,
+    "community": 14,
     "pagerank": 0.00377159,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6667,
@@ -32922,7 +32922,7 @@
     "hub_vs_loyal": -52.544,
     "collaborator_reach": 4,
     "embed_x": 3.6306,
-    "embed_y": 4.8084
+    "embed_y": 4.8085
   },
   {
     "id": "nm0345324",
@@ -33080,7 +33080,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0616443",
+    "top_director": "nm0145713",
     "regions": [
       "AU",
       "BR",
@@ -33107,7 +33107,7 @@
     "top_collaborator_id": "nm2054326",
     "collaborator_loyalty": 0.454,
     "bridge_score": 1.3e-05,
-    "community": 21,
+    "community": 11,
     "pagerank": 0.00211715,
     "eigen_centrality": 0.0,
     "clustering_local": 0.8333,
@@ -33125,7 +33125,7 @@
     "hub_vs_loyal": -24.148,
     "collaborator_reach": 4,
     "embed_x": -2.5079,
-    "embed_y": -3.7403
+    "embed_y": -3.7404
   },
   {
     "id": "nm1296472",
@@ -33312,7 +33312,7 @@
     "top_collaborator_id": "nm1302484",
     "collaborator_loyalty": 0.824,
     "bridge_score": 0.0,
-    "community": 5,
+    "community": 1,
     "pagerank": 0.00129391,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -33329,7 +33329,7 @@
     "acclaim_gap": -2.944,
     "hub_vs_loyal": -47.088,
     "collaborator_reach": 4,
-    "embed_x": -3.6599,
+    "embed_x": -3.66,
     "embed_y": -4.3049
   },
   {
@@ -33506,7 +33506,7 @@
     "top_collaborator_id": "nm6820472",
     "collaborator_loyalty": 0.623,
     "bridge_score": 0.001523,
-    "community": 6,
+    "community": 15,
     "pagerank": 0.0043584,
     "eigen_centrality": 0.0,
     "clustering_local": 0.3333,
@@ -33524,7 +33524,7 @@
     "hub_vs_loyal": -34.626,
     "collaborator_reach": 4,
     "embed_x": 4.8056,
-    "embed_y": 0.918
+    "embed_y": 0.9181
   },
   {
     "id": "nm3093394",
@@ -33590,14 +33590,14 @@
         "votes": 0
       },
       {
-        "title": "Believe",
-        "character": "Mac",
+        "title": "The Recruiter",
+        "character": "First Sergeant Monroe",
         "characters": [
-          "Mac"
+          "First Sergeant Monroe"
         ],
         "year": null,
         "billing": 1,
-        "tconst": "tt8042372",
+        "tconst": "tt42157650",
         "votes": 0
       },
       {
@@ -33632,7 +33632,7 @@
     "genre_first": "Drama",
     "genre_last": "Romance",
     "genre_first_last_distance": 1,
-    "typecast_character": "Mark",
+    "typecast_character": "Police Officer",
     "typecast_count": 2,
     "billing_trajectory": -0.1098,
     "median_billing": 6,
@@ -33699,11 +33699,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Griffin Blazi",
-    "top_collaborator_id": "nm7507037",
+    "top_collaborator": "Douglas Jung",
+    "top_collaborator_id": "nm10691497",
     "collaborator_loyalty": 0.5,
     "bridge_score": 0.000235,
-    "community": 11,
+    "community": 6,
     "pagerank": 0.00501682,
     "eigen_centrality": 0.0,
     "clustering_local": 0.3333,
@@ -33721,7 +33721,7 @@
     "hub_vs_loyal": -27.0,
     "collaborator_reach": 4,
     "embed_x": -2.7952,
-    "embed_y": -1.1701
+    "embed_y": -1.1805
   },
   {
     "id": "nm5194705",
@@ -33765,17 +33765,6 @@
         "votes": 18
       },
       {
-        "title": "Wronger",
-        "character": "Reporter",
-        "characters": [
-          "Reporter"
-        ],
-        "year": 2018,
-        "billing": 1,
-        "tconst": "tt7979010",
-        "votes": 0
-      },
-      {
         "title": "Delta",
         "character": "Mrs. Pine",
         "characters": [
@@ -33784,6 +33773,17 @@
         "year": 2013,
         "billing": 1,
         "tconst": "tt2315726",
+        "votes": 0
+      },
+      {
+        "title": "Wronger",
+        "character": "Reporter",
+        "characters": [
+          "Reporter"
+        ],
+        "year": 2018,
+        "billing": 1,
+        "tconst": "tt7979010",
         "votes": 0
       },
       {
@@ -33835,9 +33835,9 @@
     "minutes_credited": 342,
     "medium_mix": {
       "tvMiniSeries": 0.632,
-      "tvSeries": 0.158,
+      "movie": 0.184,
       "tvMovie": 0.026,
-      "movie": 0.184
+      "tvSeries": 0.158
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2013,
@@ -33870,7 +33870,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm8060408",
+    "top_director": "nm14214070",
     "regions": [
       "AU",
       "CA",
@@ -33895,7 +33895,7 @@
     "top_collaborator_id": "nm3208995",
     "collaborator_loyalty": 0.474,
     "bridge_score": 0.000243,
-    "community": 6,
+    "community": 15,
     "pagerank": 0.00674657,
     "eigen_centrality": 0.0,
     "clustering_local": 0.3333,
@@ -33912,7 +33912,7 @@
     "acclaim_gap": 2.168,
     "hub_vs_loyal": -25.388,
     "collaborator_reach": 4,
-    "embed_x": -1.5624,
+    "embed_x": -1.562,
     "embed_y": -3.0429
   },
   {
@@ -34032,8 +34032,8 @@
     "median_billing": 4,
     "minutes_credited": 4458,
     "medium_mix": {
-      "movie": 0.595,
-      "tvSeries": 0.405
+      "tvSeries": 0.405,
+      "movie": 0.595
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1959,
@@ -34098,7 +34098,7 @@
       "2010s"
     ],
     "bridge_score": 3.6e-05,
-    "community": 10,
+    "community": 13,
     "pagerank": 0.00144704,
     "eigen_centrality": 0.0,
     "clustering_local": 0.3333,
@@ -34115,7 +34115,7 @@
     "acclaim_gap": 1.059,
     "hub_vs_loyal": 3.0,
     "collaborator_reach": 3,
-    "embed_x": 1.8978,
+    "embed_x": 1.8977,
     "embed_y": 3.8217
   },
   {
@@ -34237,8 +34237,8 @@
     "median_billing": 1,
     "minutes_credited": 9807,
     "medium_mix": {
-      "tvSeries": 0.018,
       "movie": 0.973,
+      "tvSeries": 0.018,
       "tvMovie": 0.009
     },
     "short_to_feature_ratio": 0.0,
@@ -34304,7 +34304,7 @@
     "top_collaborator_id": "nm0592654",
     "collaborator_loyalty": 0.373,
     "bridge_score": 0.0,
-    "community": 14,
+    "community": 23,
     "pagerank": 0.00544983,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -34321,7 +34321,7 @@
     "acclaim_gap": -3.405,
     "hub_vs_loyal": -20.126,
     "collaborator_reach": 3,
-    "embed_x": 3.1979,
+    "embed_x": 3.198,
     "embed_y": -3.9213
   },
   {
@@ -34505,11 +34505,11 @@
       "1980s",
       "1990s"
     ],
-    "top_collaborator": "Kiyoshi Atsumi",
-    "top_collaborator_id": "nm0040910",
+    "top_collaborator": "Chieko Misaki",
+    "top_collaborator_id": "nm0592654",
     "collaborator_loyalty": 0.366,
     "bridge_score": 0.0,
-    "community": 14,
+    "community": 21,
     "pagerank": 0.00530027,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -34527,7 +34527,7 @@
     "hub_vs_loyal": -19.692,
     "collaborator_reach": 3,
     "embed_x": 4.7978,
-    "embed_y": -3.2778
+    "embed_y": -3.2779
   },
   {
     "id": "nm0592654",
@@ -34646,8 +34646,8 @@
     "median_billing": 5,
     "minutes_credited": 6832,
     "medium_mix": {
-      "tvSeries": 0.014,
       "movie": 0.93,
+      "tvSeries": 0.014,
       "tvMovie": 0.056
     },
     "short_to_feature_ratio": 0.0,
@@ -34715,7 +34715,7 @@
     "top_collaborator_id": "nm0040910",
     "collaborator_loyalty": 0.373,
     "bridge_score": 0.0,
-    "community": 17,
+    "community": 21,
     "pagerank": 0.00551274,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -34732,8 +34732,8 @@
     "acclaim_gap": 0.633,
     "hub_vs_loyal": -20.126,
     "collaborator_reach": 3,
-    "embed_x": 0.5357,
-    "embed_y": -0.3072
+    "embed_x": 0.5366,
+    "embed_y": -0.3077
   },
   {
     "id": "nm0623070",
@@ -34852,10 +34852,10 @@
     "median_billing": 8,
     "minutes_credited": 1054,
     "medium_mix": {
-      "tvMiniSeries": 0.091,
-      "movie": 0.227,
       "tvSeries": 0.545,
-      "tvMovie": 0.136
+      "movie": 0.227,
+      "tvMovie": 0.136,
+      "tvMiniSeries": 0.091
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1994,
@@ -34893,7 +34893,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm2006142",
+    "top_director": "nm0854104",
     "regions": [
       "AU",
       "BR",
@@ -34919,7 +34919,7 @@
     "top_collaborator_id": "nm1434827",
     "collaborator_loyalty": 0.471,
     "bridge_score": 3e-05,
-    "community": 8,
+    "community": 14,
     "pagerank": 0.00370716,
     "eigen_centrality": 0.0,
     "clustering_local": 0.3333,
@@ -35003,17 +35003,6 @@
         "votes": 0
       },
       {
-        "title": "Tarde de teatro",
-        "character": "Elías",
-        "characters": [
-          "Elías"
-        ],
-        "year": 1986,
-        "billing": 2,
-        "tconst": "tt0460096",
-        "votes": 0
-      },
-      {
         "title": "Aventura en el laboratorio",
         "character": "Don Elías",
         "characters": [
@@ -35022,6 +35011,17 @@
         "year": 1967,
         "billing": 2,
         "tconst": "tt0061929",
+        "votes": 0
+      },
+      {
+        "title": "Tarde de teatro",
+        "character": "Elías",
+        "characters": [
+          "Elías"
+        ],
+        "year": 1986,
+        "billing": 2,
+        "tconst": "tt0460096",
         "votes": 0
       }
     ],
@@ -35052,15 +35052,15 @@
     "genre_first": "Comedy",
     "genre_last": "Comedy",
     "genre_first_last_distance": 0,
-    "typecast_character": "Ramón",
+    "typecast_character": "Don Antonio",
     "typecast_count": 2,
     "billing_trajectory": 0.0665,
     "median_billing": 7,
     "minutes_credited": 7085,
     "medium_mix": {
-      "tvSeries": 0.165,
+      "tvMovie": 0.055,
       "movie": 0.78,
-      "tvMovie": 0.055
+      "tvSeries": 0.165
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1964,
@@ -35124,7 +35124,7 @@
     "top_collaborator_id": "nm0147721",
     "collaborator_loyalty": 0.5,
     "bridge_score": 0.000102,
-    "community": 22,
+    "community": 12,
     "pagerank": 0.00839702,
     "eigen_centrality": 0.0,
     "clustering_local": 0.3333,
@@ -35142,7 +35142,7 @@
     "hub_vs_loyal": -28.0,
     "collaborator_reach": 3,
     "embed_x": 3.0934,
-    "embed_y": -2.5447
+    "embed_y": -2.5448
   },
   {
     "id": "nm0793726",
@@ -35262,8 +35262,8 @@
     "minutes_credited": 6712,
     "medium_mix": {
       "movie": 0.878,
-      "tvMovie": 0.068,
-      "tvSeries": 0.054
+      "tvSeries": 0.054,
+      "tvMovie": 0.068
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1953,
@@ -35326,11 +35326,11 @@
       "1990s",
       "2000s"
     ],
-    "top_collaborator": "Chieko Misaki",
-    "top_collaborator_id": "nm0592654",
+    "top_collaborator": "Kiyoshi Atsumi",
+    "top_collaborator_id": "nm0040910",
     "collaborator_loyalty": 0.336,
     "bridge_score": 0.0,
-    "community": 17,
+    "community": 21,
     "pagerank": 0.0044411,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -35663,10 +35663,10 @@
     "median_billing": 5,
     "minutes_credited": 649,
     "medium_mix": {
-      "tvSeries": 0.704,
-      "tvMiniSeries": 0.111,
       "movie": 0.074,
-      "tvMovie": 0.111
+      "tvMiniSeries": 0.111,
+      "tvMovie": 0.111,
+      "tvSeries": 0.704
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2012,
@@ -35704,7 +35704,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0272855",
+    "top_director": "nm2296721",
     "regions": [
       "AU",
       "CA",
@@ -35729,7 +35729,7 @@
     "top_collaborator_id": "nm1513584",
     "collaborator_loyalty": 0.302,
     "bridge_score": 0.0,
-    "community": 8,
+    "community": 14,
     "pagerank": 0.00220942,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -35746,8 +35746,8 @@
     "acclaim_gap": 1.402,
     "hub_vs_loyal": -15.724,
     "collaborator_reach": 3,
-    "embed_x": 4.4856,
-    "embed_y": -3.7801
+    "embed_x": 4.4857,
+    "embed_y": -3.7802
   },
   {
     "id": "nm7507037",
@@ -35901,7 +35901,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm4291191",
+    "top_director": "nm10834574",
     "regions": [
       "AE",
       "AU",
@@ -36057,9 +36057,9 @@
     "minutes_credited": 95,
     "medium_mix": {
       "tvMiniSeries": 0.884,
-      "tvSeries": 0.07,
+      "tvMovie": 0.023,
       "movie": 0.023,
-      "tvMovie": 0.023
+      "tvSeries": 0.07
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2026,
@@ -36097,7 +36097,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm9071587",
+    "top_director": "nm6645225",
     "regions": [
       "AU",
       "BR",
@@ -36121,7 +36121,7 @@
     "top_collaborator_id": "nm10691497",
     "collaborator_loyalty": 0.538,
     "bridge_score": 1.6e-05,
-    "community": 11,
+    "community": 15,
     "pagerank": 0.00209243,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6667,
@@ -36205,17 +36205,6 @@
         "votes": 18
       },
       {
-        "title": "Zwei Bayern in Bonn",
-        "character": "Bürgermeister Vinzenz Kreithuber",
-        "characters": [
-          "Bürgermeister Vinzenz Kreithuber"
-        ],
-        "year": 1962,
-        "billing": 1,
-        "tconst": "tt0140712",
-        "votes": 17
-      },
-      {
         "title": "II-A in Berlin",
         "character": "Michl",
         "characters": [
@@ -36224,6 +36213,17 @@
         "year": 1956,
         "billing": 1,
         "tconst": "tt0049354",
+        "votes": 17
+      },
+      {
+        "title": "Zwei Bayern in Bonn",
+        "character": "Bürgermeister Vinzenz Kreithuber",
+        "characters": [
+          "Bürgermeister Vinzenz Kreithuber"
+        ],
+        "year": 1962,
+        "billing": 1,
+        "tconst": "tt0140712",
         "votes": 17
       }
     ],
@@ -36254,15 +36254,15 @@
     "genre_first": "Comedy",
     "genre_last": "Family",
     "genre_first_last_distance": 1,
-    "typecast_character": "Franz Josef Wanninger",
+    "typecast_character": "Wegscheidbauer",
     "typecast_count": 2,
     "billing_trajectory": 0.0849,
     "median_billing": 6,
     "minutes_credited": 12634,
     "medium_mix": {
       "tvMovie": 0.186,
-      "tvSeries": 0.05,
-      "movie": 0.764
+      "movie": 0.764,
+      "tvSeries": 0.05
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1956,
@@ -36329,7 +36329,7 @@
     "top_collaborator_id": "nm0089862",
     "collaborator_loyalty": 0.6,
     "bridge_score": 0.0,
-    "community": 0,
+    "community": 3,
     "pagerank": 0.00081654,
     "eigen_centrality": 0.000289,
     "clustering_local": 1.0,
@@ -36347,7 +36347,7 @@
     "hub_vs_loyal": -35.2,
     "collaborator_reach": 2,
     "embed_x": -3.3832,
-    "embed_y": -0.3654
+    "embed_y": -0.3657
   },
   {
     "id": "nm0147721",
@@ -36460,15 +36460,15 @@
     "genre_first": "Comedy",
     "genre_last": "Comedy",
     "genre_first_last_distance": 0,
-    "typecast_character": "Fernando VII",
+    "typecast_character": "Leo",
     "typecast_count": 1,
     "billing_trajectory": 0.0151,
     "median_billing": 5,
     "minutes_credited": 2630,
     "medium_mix": {
-      "tvMiniSeries": 0.026,
       "movie": 0.737,
       "tvSeries": 0.184,
+      "tvMiniSeries": 0.026,
       "tvMovie": 0.053
     },
     "short_to_feature_ratio": 0.0,
@@ -36530,7 +36530,7 @@
     "top_collaborator_id": "nm0713999",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.0,
-    "community": 15,
+    "community": 12,
     "pagerank": 0.00417705,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -36625,14 +36625,14 @@
         "votes": 67
       },
       {
-        "title": "Tavaratalo Lapatossu & Vinski",
-        "character": "Lapatossu",
+        "title": "Yövartija vain...",
+        "character": "Yövartija Virtanen",
         "characters": [
-          "Lapatossu"
+          "Yövartija Virtanen"
         ],
         "year": 1940,
         "billing": 1,
-        "tconst": "tt0138861",
+        "tconst": "tt0139747",
         "votes": 66
       }
     ],
@@ -36734,7 +36734,7 @@
     "top_collaborator_id": "nm0658676",
     "collaborator_loyalty": 0.857,
     "bridge_score": 0.0,
-    "community": 12,
+    "community": 22,
     "pagerank": 0.00485849,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -36941,7 +36941,7 @@
     "top_collaborator_id": "nm0466247",
     "collaborator_loyalty": 0.632,
     "bridge_score": 0.0,
-    "community": 12,
+    "community": 25,
     "pagerank": 0.00685081,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -36959,7 +36959,7 @@
     "hub_vs_loyal": -37.184,
     "collaborator_reach": 2,
     "embed_x": 4.0342,
-    "embed_y": -2.128
+    "embed_y": -2.1281
   },
   {
     "id": "nm0715124",
@@ -37073,7 +37073,7 @@
     "genre_first": "Drama",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Abuela",
+    "typecast_character": "Self - Guest",
     "typecast_count": 2,
     "billing_trajectory": -0.0169,
     "median_billing": 5,
@@ -37147,7 +37147,7 @@
     "top_collaborator_id": "nm0713999",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.0,
-    "community": 15,
+    "community": 12,
     "pagerank": 0.00548248,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -37165,7 +37165,7 @@
     "hub_vs_loyal": -60.0,
     "collaborator_reach": 2,
     "embed_x": 2.9094,
-    "embed_y": 2.271
+    "embed_y": 2.2713
   },
   {
     "id": "nm0884788",
@@ -37350,7 +37350,7 @@
     "top_collaborator_id": "nm0658676",
     "collaborator_loyalty": 0.778,
     "bridge_score": 0.0,
-    "community": 12,
+    "community": 22,
     "pagerank": 0.00381866,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -37434,17 +37434,6 @@
         "votes": 0
       },
       {
-        "title": "Headwaters",
-        "character": "Tony",
-        "characters": [
-          "Tony"
-        ],
-        "year": 2021,
-        "billing": 1,
-        "tconst": "tt14188222",
-        "votes": 0
-      },
-      {
         "title": "Go with the Snow",
         "character": "Max Cladwell",
         "characters": [
@@ -37453,6 +37442,17 @@
         "year": 2019,
         "billing": 1,
         "tconst": "tt11427710",
+        "votes": 0
+      },
+      {
+        "title": "Headwaters",
+        "character": "Tony",
+        "characters": [
+          "Tony"
+        ],
+        "year": 2021,
+        "billing": 1,
+        "tconst": "tt14188222",
         "votes": 0
       }
     ],
@@ -37545,7 +37545,7 @@
     "top_collaborator_id": "nm7507037",
     "collaborator_loyalty": 0.655,
     "bridge_score": 0.0,
-    "community": 11,
+    "community": 6,
     "pagerank": 0.00258779,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -37736,7 +37736,7 @@
     "top_collaborator_id": "nm12227636",
     "collaborator_loyalty": 0.952,
     "bridge_score": 5.9e-05,
-    "community": 11,
+    "community": 15,
     "pagerank": 0.00201094,
     "eigen_centrality": 0.0,
     "clustering_local": 0.0,
@@ -37753,8 +37753,8 @@
     "acclaim_gap": 2.296,
     "hub_vs_loyal": -57.024,
     "collaborator_reach": 2,
-    "embed_x": 2.1453,
-    "embed_y": 1.0913
+    "embed_x": 2.1447,
+    "embed_y": 1.0915
   },
   {
     "id": "nm6820472",
@@ -37866,7 +37866,7 @@
     "genre_first": "Action",
     "genre_last": "Romance",
     "genre_first_last_distance": 1,
-    "typecast_character": "Nova Carter",
+    "typecast_character": "Lucian Blackmoor",
     "typecast_count": 1,
     "billing_trajectory": 0.3252,
     "median_billing": 2,
@@ -37930,7 +37930,7 @@
     "top_collaborator_id": "nm13572683",
     "collaborator_loyalty": 0.733,
     "bridge_score": 0.0,
-    "community": 11,
+    "community": 6,
     "pagerank": 0.00297088,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -37981,17 +37981,6 @@
         "votes": 27
       },
       {
-        "title": "Vacuum",
-        "character": "Twin",
-        "characters": [
-          "Twin"
-        ],
-        "year": 2021,
-        "billing": 1,
-        "tconst": "tt15237672",
-        "votes": 0
-      },
-      {
         "title": "Twisted: Adventures of the Inland Empire",
         "character": "Jing Tsang",
         "characters": [
@@ -38014,14 +38003,14 @@
         "votes": 0
       },
       {
-        "title": "Death on Air",
-        "character": "Mom",
+        "title": "Vacuum",
+        "character": "Twin",
         "characters": [
-          "Mom"
+          "Twin"
         ],
-        "year": 2025,
+        "year": 2021,
         "billing": 1,
-        "tconst": "tt37728613",
+        "tconst": "tt15237672",
         "votes": 0
       },
       {
@@ -38033,6 +38022,17 @@
         "year": 2021,
         "billing": 1,
         "tconst": "tt14913220",
+        "votes": 0
+      },
+      {
+        "title": "How Do You Find the Strength to Keep Going?",
+        "character": "Nurse 2",
+        "characters": [
+          "Nurse 2"
+        ],
+        "year": 2021,
+        "billing": 1,
+        "tconst": "tt14913196",
         "votes": 0
       }
     ],
@@ -38063,9 +38063,9 @@
     "median_billing": 6,
     "minutes_credited": 139,
     "medium_mix": {
-      "tvSeries": 0.08,
+      "movie": 0.08,
       "tvMiniSeries": 0.84,
-      "movie": 0.08
+      "tvSeries": 0.08
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2020,
@@ -38103,7 +38103,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm0440859",
+    "top_director": "nm6663398",
     "regions": [
       "AU",
       "BR",
@@ -38123,8 +38123,8 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Neela Jolene",
-    "top_collaborator_id": "nm12227636",
+    "top_collaborator": "Jeanne Carr",
+    "top_collaborator_id": "nm5194705",
     "collaborator_loyalty": 0.5,
     "bridge_score": 3.8e-05,
     "community": 6,
@@ -38265,8 +38265,8 @@
     "medium_mix": {
       "movie": 0.5,
       "tvSeries": 0.238,
-      "tvMovie": 0.19,
-      "tvMiniSeries": 0.071
+      "tvMiniSeries": 0.071,
+      "tvMovie": 0.19
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1986,
@@ -38331,7 +38331,7 @@
     "top_collaborator_id": "nm2127350",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.0,
-    "community": 7,
+    "community": 8,
     "pagerank": 0.00517598,
     "eigen_centrality": 0.0,
     "clustering_local": 0.0,
@@ -38348,8 +38348,8 @@
     "acclaim_gap": -0.024,
     "hub_vs_loyal": -61.0,
     "collaborator_reach": 1,
-    "embed_x": -0.1563,
-    "embed_y": 0.2076
+    "embed_x": -0.1457,
+    "embed_y": 0.2077
   },
   {
     "id": "nm0604839",
@@ -38404,17 +38404,6 @@
         "votes": 106
       },
       {
-        "title": "Fin de semana al desnudo",
-        "character": "Angustias",
-        "characters": [
-          "Angustias"
-        ],
-        "year": 1974,
-        "billing": 1,
-        "tconst": "tt0071499",
-        "votes": 105
-      },
-      {
         "title": "Unmarried and Mother in Life",
         "character": "Julita",
         "characters": [
@@ -38423,6 +38412,17 @@
         "year": 1969,
         "billing": 1,
         "tconst": "tt0079927",
+        "votes": 105
+      },
+      {
+        "title": "Fin de semana al desnudo",
+        "character": "Angustias",
+        "characters": [
+          "Angustias"
+        ],
+        "year": 1974,
+        "billing": 1,
+        "tconst": "tt0071499",
         "votes": 105
       },
       {
@@ -38464,15 +38464,15 @@
     "genre_first": "Comedy",
     "genre_last": "Comedy",
     "genre_first_last_distance": 0,
-    "typecast_character": "Self - Guest",
+    "typecast_character": "Susana",
     "typecast_count": 3,
     "billing_trajectory": -0.0168,
     "median_billing": 1,
     "minutes_credited": 3843,
     "medium_mix": {
-      "tvMovie": 0.212,
       "tvSeries": 0.269,
-      "movie": 0.519
+      "movie": 0.519,
+      "tvMovie": 0.212
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1968,
@@ -38537,7 +38537,7 @@
     "top_collaborator_id": "nm0713999",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.0,
-    "community": 15,
+    "community": 12,
     "pagerank": 0.00264738,
     "eigen_centrality": 0.0,
     "clustering_local": 0.0,
@@ -38577,14 +38577,14 @@
     "rk_prominence": 95,
     "roles": [
       {
-        "title": "Pietentube",
+        "title": "De Club van Sinterklaas: Live",
         "character": "Testpiet",
         "characters": [
           "Testpiet"
         ],
-        "year": 2023,
+        "year": 2016,
         "billing": 1,
-        "tconst": "tt29920342",
+        "tconst": "tt7858726",
         "votes": 0
       },
       {
@@ -38599,14 +38599,14 @@
         "votes": 0
       },
       {
-        "title": "De Club van Sinterklaas: Live",
+        "title": "Pietentube",
         "character": "Testpiet",
         "characters": [
           "Testpiet"
         ],
-        "year": 2016,
+        "year": 2023,
         "billing": 1,
-        "tconst": "tt7858726",
+        "tconst": "tt29920342",
         "votes": 0
       },
       {
@@ -38671,8 +38671,8 @@
     "minutes_credited": 1245,
     "medium_mix": {
       "movie": 0.5,
-      "tvSeries": 0.344,
       "tvMiniSeries": 0.094,
+      "tvSeries": 0.344,
       "tvMovie": 0.062
     },
     "short_to_feature_ratio": 0.0,
@@ -38732,7 +38732,7 @@
     "top_collaborator_id": "nm0317457",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.0,
-    "community": 7,
+    "community": 8,
     "pagerank": 0.00517598,
     "eigen_centrality": 0.0,
     "clustering_local": 0.0,
@@ -38869,9 +38869,9 @@
     "median_billing": 3,
     "minutes_credited": 1374,
     "medium_mix": {
-      "tvMiniSeries": 0.091,
+      "tvSeries": 0.788,
       "movie": 0.121,
-      "tvSeries": 0.788
+      "tvMiniSeries": 0.091
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2009,
@@ -39068,8 +39068,8 @@
     "median_billing": 2,
     "minutes_credited": 1798,
     "medium_mix": {
-      "tvMovie": 0.333,
       "tvSeries": 0.556,
+      "tvMovie": 0.333,
       "tvMiniSeries": 0.074,
       "movie": 0.037
     },
@@ -39109,7 +39109,7 @@
       }
     ],
     "same_director_repeat": 6,
-    "top_director": "nm0441472",
+    "top_director": "nm0195537",
     "regions": [
       "AU",
       "BE",
@@ -39132,7 +39132,7 @@
       "2020s"
     ],
     "bridge_score": 0.0,
-    "community": 25,
+    "community": 10,
     "pagerank": 0.0007764,
     "eigen_centrality": 0.0,
     "clustering_local": 0.0,
@@ -39338,7 +39338,7 @@
       "1990s"
     ],
     "bridge_score": 0.0,
-    "community": 9,
+    "community": 24,
     "pagerank": 0.0007764,
     "eigen_centrality": 0.0,
     "clustering_local": 0.0,
@@ -39355,7 +39355,7 @@
     "acclaim_gap": -3.049,
     "hub_vs_loyal": 0.0,
     "collaborator_reach": 0,
-    "embed_x": -0.0562,
+    "embed_x": -0.0537,
     "embed_y": -1.484
   },
   {
@@ -39475,10 +39475,10 @@
     "median_billing": 4,
     "minutes_credited": 3107,
     "medium_mix": {
-      "tvMovie": 0.676,
       "movie": 0.189,
-      "tvMiniSeries": 0.081,
-      "tvSeries": 0.054
+      "tvMovie": 0.676,
+      "tvSeries": 0.054,
+      "tvMiniSeries": 0.081
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1968,
@@ -39539,7 +39539,7 @@
       "2000s"
     ],
     "bridge_score": 0.0,
-    "community": 24,
+    "community": 18,
     "pagerank": 0.0007764,
     "eigen_centrality": 0.0,
     "clustering_local": 0.0,
@@ -39671,7 +39671,7 @@
     "genre_first": "Drama",
     "genre_last": "Crime",
     "genre_first_last_distance": 1,
-    "typecast_character": "Richards",
+    "typecast_character": "Morrie",
     "typecast_count": 1,
     "billing_trajectory": -0.0385,
     "median_billing": 7,
@@ -39739,7 +39739,7 @@
       "1970s"
     ],
     "bridge_score": 0.0,
-    "community": 23,
+    "community": 5,
     "pagerank": 0.0007764,
     "eigen_centrality": 0.0,
     "clustering_local": 0.0,
@@ -39875,8 +39875,8 @@
     "median_billing": 3,
     "minutes_credited": 2930,
     "medium_mix": {
-      "tvMovie": 0.587,
       "movie": 0.109,
+      "tvMovie": 0.587,
       "tvSeries": 0.304
     },
     "short_to_feature_ratio": 0.0,
@@ -39931,7 +39931,7 @@
       "2020s"
     ],
     "bridge_score": 0.0,
-    "community": 20,
+    "community": 0,
     "pagerank": 0.0007764,
     "eigen_centrality": 0.0,
     "clustering_local": 0.0,
@@ -40066,8 +40066,8 @@
     "median_billing": 2,
     "minutes_credited": 1069,
     "medium_mix": {
-      "tvSeries": 0.818,
       "tvMiniSeries": 0.136,
+      "tvSeries": 0.818,
       "movie": 0.045
     },
     "short_to_feature_ratio": 0.0,
@@ -40129,7 +40129,7 @@
       "2020s"
     ],
     "bridge_score": 0.0,
-    "community": 16,
+    "community": 17,
     "pagerank": 0.0007764,
     "eigen_centrality": 0.0,
     "clustering_local": 0.0,
@@ -40146,7 +40146,7 @@
     "acclaim_gap": 0.738,
     "hub_vs_loyal": 0.0,
     "collaborator_reach": 0,
-    "embed_x": -0.7772,
+    "embed_x": -0.7761,
     "embed_y": 0.3291
   },
   {
@@ -40266,10 +40266,10 @@
     "median_billing": 3,
     "minutes_credited": 441,
     "medium_mix": {
-      "tvMovie": 0.128,
       "tvMiniSeries": 0.769,
+      "tvSeries": 0.077,
       "movie": 0.026,
-      "tvSeries": 0.077
+      "tvMovie": 0.128
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2017,
@@ -40328,7 +40328,7 @@
       "2020s"
     ],
     "bridge_score": 0.0,
-    "community": 18,
+    "community": 20,
     "pagerank": 0.0007764,
     "eigen_centrality": 0.0,
     "clustering_local": 0.0,

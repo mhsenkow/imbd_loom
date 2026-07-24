@@ -19,7 +19,7 @@
     "pool_size": 600,
     "population_sql": 600
   },
-  "built_at": "2026-07-23T18:19:18.518394+00:00",
+  "built_at": "2026-07-24T18:43:59.905690+00:00",
   "clustering_coefficient": 0.5075,
   "community_count": 21,
   "correlations": {
@@ -156,22 +156,22 @@
     ],
     "assortativity": 0.1706,
     "community_sizes": [
-      35,
-      34,
-      27,
-      18,
+      50,
+      36,
+      24,
+      16,
       15,
-      11,
-      9,
-      8,
-      8,
+      13,
+      7,
+      7,
       6,
       6,
       5,
-      4,
-      4,
+      3,
       3,
       2,
+      1,
+      1,
       1,
       1,
       1,
@@ -270,8 +270,8 @@
       "nonbinary": 2
     },
     "giant_component_share": 0.93,
-    "largest_community_share": 0.175,
-    "modularity": 0.1732,
+    "largest_community_share": 0.25,
+    "modularity": 0.2031,
     "outliers": {
       "acclaim_gap": [
         "nm0000276",
@@ -822,6 +822,6 @@
     "top_name": "David Carradine"
   },
   "title": "Child Stars",
-  "tmdb_gender_rows": 3201,
+  "tmdb_gender_rows": 159778,
   "top_n": 200
 }

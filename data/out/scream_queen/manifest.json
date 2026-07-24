@@ -9,7 +9,7 @@
     "billing_null_fallback": 0,
     "cap_by": "blend",
     "collapse_episodes": true,
-    "credit_rows": 125889,
+    "credit_rows": 125828,
     "enrichment_mode": "imdb",
     "era_slices": 8,
     "fallback_used": false,
@@ -19,9 +19,9 @@
     "pool_size": 1000,
     "population_sql": 1000
   },
-  "built_at": "2026-07-23T18:22:03.315764+00:00",
+  "built_at": "2026-07-24T18:38:01.294016+00:00",
   "clustering_coefficient": 0.463,
-  "community_count": 11,
+  "community_count": 13,
   "correlations": {
     "acclaim_gap×prominence": {
       "n": 200,
@@ -102,7 +102,7 @@
   "metrics_version": "2",
   "min_shared": 2,
   "node_count": 200,
-  "stage_row_count": 112,
+  "stage_row_count": 113,
   "subtitle": "actress ↔ actress co-appearance in horror",
   "summary": {
     "acclaim_gap_hist": [
@@ -159,17 +159,19 @@
     ],
     "assortativity": 0.1682,
     "community_sizes": [
-      43,
-      35,
-      20,
+      34,
+      33,
       19,
-      18,
       17,
+      16,
       15,
-      15,
-      11,
-      6,
-      1
+      14,
+      13,
+      13,
+      12,
+      7,
+      5,
+      2
     ],
     "component_count": 1,
     "corr_degree×prominence": {
@@ -260,8 +262,8 @@
       "female": 200
     },
     "giant_component_share": 1.0,
-    "largest_community_share": 0.215,
-    "modularity": 0.14,
+    "largest_community_share": 0.17,
+    "modularity": 0.1311,
     "outliers": {
       "acclaim_gap": [
         "nm0000012",
@@ -818,6 +820,6 @@
     "top_name": "Bette Davis"
   },
   "title": "The Scream-Queen Web",
-  "tmdb_gender_rows": 3993,
+  "tmdb_gender_rows": 159392,
   "top_n": 200
 }

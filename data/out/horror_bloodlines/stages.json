@@ -2,9 +2,9 @@
   {
     "stageFrom": "gender",
     "stageTo": "era",
-    "categoryFrom": "male",
-    "categoryTo": "classic",
-    "value": 424
+    "categoryFrom": "female",
+    "categoryTo": "slasher era",
+    "value": 202
   },
   {
     "stageFrom": "gender",
@@ -16,16 +16,37 @@
   {
     "stageFrom": "gender",
     "stageTo": "era",
-    "categoryFrom": "female",
-    "categoryTo": "elevated",
-    "value": 693
+    "categoryFrom": "male",
+    "categoryTo": "classic",
+    "value": 424
   },
   {
     "stageFrom": "gender",
     "stageTo": "era",
     "categoryFrom": "female",
-    "categoryTo": "slasher era",
-    "value": 202
+    "categoryTo": "elevated",
+    "value": 690
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "nonbinary",
+    "categoryTo": "elevated",
+    "value": 3
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "female",
+    "categoryTo": "remake era",
+    "value": 560
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "male",
+    "categoryTo": "elevated",
+    "value": 1141
   },
   {
     "stageFrom": "gender",
@@ -37,16 +58,9 @@
   {
     "stageFrom": "gender",
     "stageTo": "era",
-    "categoryFrom": "female",
+    "categoryFrom": "nonbinary",
     "categoryTo": "remake era",
-    "value": 561
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "era",
-    "categoryFrom": "male",
-    "categoryTo": "elevated",
-    "value": 1141
+    "value": 1
   },
   {
     "stageFrom": "gender",

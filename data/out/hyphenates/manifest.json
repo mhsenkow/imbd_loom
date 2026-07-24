@@ -22,9 +22,9 @@
     "population_sql": 1602,
     "stages_source": "default_from_nodes"
   },
-  "built_at": "2026-07-23T18:40:31.389011+00:00",
+  "built_at": "2026-07-24T18:51:59.394668+00:00",
   "clustering_coefficient": 0.595,
-  "community_count": 13,
+  "community_count": 12,
   "correlations": {
     "acclaim_gap×prominence": {
       "n": 200,
@@ -80,8 +80,8 @@
       "label": "Martin Sheen"
     },
     {
-      "id": "nm0000285",
-      "label": "Alec Baldwin"
+      "id": "nm0041281",
+      "label": "Rene Auberjonois"
     },
     {
       "id": "nm0000151",
@@ -162,15 +162,14 @@
     ],
     "assortativity": 0.14,
     "community_sizes": [
-      38,
-      37,
-      31,
-      21,
-      19,
-      17,
-      13,
-      12,
-      8,
+      49,
+      40,
+      33,
+      27,
+      18,
+      16,
+      11,
+      2,
       1,
       1,
       1,
@@ -266,8 +265,8 @@
       "nonbinary": 1
     },
     "giant_component_share": 0.98,
-    "largest_community_share": 0.19,
-    "modularity": 0.1328,
+    "largest_community_share": 0.245,
+    "modularity": 0.1211,
     "outliers": {
       "acclaim_gap": [
         "nm0000151",
@@ -832,6 +831,6 @@
     "top_name": "Martin Sheen"
   },
   "title": "The Hyphenates",
-  "tmdb_gender_rows": 7588,
+  "tmdb_gender_rows": 160360,
   "top_n": 200
 }

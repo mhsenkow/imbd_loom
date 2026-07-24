@@ -1,7 +1,7 @@
 {
   "gender_mix": {
-    "male": 146,
-    "female": 54
+    "male": 145,
+    "female": 55
   },
   "era_histogram": {
     "1930s": 1,
@@ -23,29 +23,27 @@
   "strength_gini": 0.6073,
   "assortativity": 0.466,
   "density": 0.08,
-  "modularity": 0.2032,
+  "modularity": 0.2078,
   "community_sizes": [
-    24,
-    21,
-    21,
-    15,
-    13,
-    13,
-    9,
-    9,
+    23,
+    19,
+    18,
+    17,
+    16,
+    14,
+    12,
     8,
+    7,
+    6,
     5,
     5,
     5,
     5,
     5,
-    4,
-    4,
+    5,
     3,
     3,
     3,
-    2,
-    2,
     2,
     2,
     2,
@@ -62,7 +60,7 @@
     1,
     1
   ],
-  "largest_community_share": 0.12,
+  "largest_community_share": 0.115,
   "component_count": 12,
   "giant_component_share": 0.675,
   "diameter": 7,
@@ -275,7 +273,7 @@
       "count": 14
     }
   ],
-  "gender_homophily": 0.69,
+  "gender_homophily": 0.692,
   "era_homophily": 0.633,
   "scatter_strength_prominence": [
     {

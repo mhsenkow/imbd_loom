@@ -20,9 +20,9 @@
     "population_sql": 600,
     "stages_source": "default_from_nodes"
   },
-  "built_at": "2026-07-23T18:22:58.099732+00:00",
+  "built_at": "2026-07-24T18:50:13.186237+00:00",
   "clustering_coefficient": 0.516,
-  "community_count": 12,
+  "community_count": 13,
   "correlations": {
     "acclaim_gap×prominence": {
       "n": 200,
@@ -161,16 +161,17 @@
     ],
     "assortativity": 0.0796,
     "community_sizes": [
-      50,
-      44,
-      35,
-      20,
-      15,
-      14,
+      41,
+      32,
+      28,
+      26,
+      22,
+      22,
+      11,
       8,
-      5,
       4,
       3,
+      1,
       1,
       1
     ],
@@ -264,8 +265,8 @@
       "male": 173
     },
     "giant_component_share": 0.95,
-    "largest_community_share": 0.25,
-    "modularity": 0.1248,
+    "largest_community_share": 0.205,
+    "modularity": 0.1022,
     "outliers": {
       "acclaim_gap": [
         "nm0000367",
@@ -821,6 +822,6 @@
     "top_name": "Eric Roberts"
   },
   "title": "National Cinema Bridges",
-  "tmdb_gender_rows": 4193,
+  "tmdb_gender_rows": 160168,
   "top_n": 200
 }

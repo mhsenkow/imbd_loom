@@ -20,7 +20,7 @@
     "population_sql": 600,
     "stages_source": "default_from_nodes"
   },
-  "built_at": "2026-07-23T18:24:48.286971+00:00",
+  "built_at": "2026-07-24T18:43:10.861037+00:00",
   "clustering_coefficient": 0.7621,
   "community_count": 10,
   "correlations": {
@@ -78,8 +78,8 @@
       "label": "Frank Welker"
     },
     {
-      "id": "nm1315809",
-      "label": "Stephanie Sheh"
+      "id": "nm0228356",
+      "label": "Ben Diskin"
     },
     {
       "id": "nm1101677",
@@ -162,13 +162,13 @@
     "assortativity": 0.1614,
     "community_sizes": [
       64,
-      40,
-      31,
-      29,
+      49,
+      28,
+      20,
+      13,
       11,
       10,
-      9,
-      4,
+      3,
       1,
       1
     ],
@@ -264,7 +264,7 @@
     },
     "giant_component_share": 0.99,
     "largest_community_share": 0.32,
-    "modularity": 0.1938,
+    "modularity": 0.1969,
     "outliers": {
       "acclaim_gap": [
         "nm0000532",
@@ -823,6 +823,6 @@
     "top_name": "Brahmanandam"
   },
   "title": "The Repertory Companies",
-  "tmdb_gender_rows": 4593,
+  "tmdb_gender_rows": 159778,
   "top_n": 200
 }

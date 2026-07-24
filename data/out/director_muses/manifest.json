@@ -20,9 +20,9 @@
     "population_sql": 600,
     "stages_source": "default_from_nodes"
   },
-  "built_at": "2026-07-23T18:25:41.679726+00:00",
+  "built_at": "2026-07-24T18:44:59.783358+00:00",
   "clustering_coefficient": 0.7454,
-  "community_count": 36,
+  "community_count": 34,
   "correlations": {
     "acclaim_gap×prominence": {
       "n": 200,
@@ -157,27 +157,25 @@
     ],
     "assortativity": 0.466,
     "community_sizes": [
-      24,
-      21,
-      21,
-      15,
-      13,
-      13,
-      9,
-      9,
+      23,
+      19,
+      18,
+      17,
+      16,
+      14,
+      12,
       8,
+      7,
+      6,
       5,
       5,
       5,
       5,
       5,
-      4,
-      4,
+      5,
       3,
       3,
       3,
-      2,
-      2,
       2,
       2,
       2,
@@ -280,14 +278,14 @@
       "2010s": 32
     },
     "era_homophily": 0.633,
-    "gender_homophily": 0.69,
+    "gender_homophily": 0.692,
     "gender_mix": {
-      "female": 54,
-      "male": 146
+      "female": 55,
+      "male": 145
     },
     "giant_component_share": 0.675,
-    "largest_community_share": 0.12,
-    "modularity": 0.2032,
+    "largest_community_share": 0.115,
+    "modularity": 0.2078,
     "outliers": {
       "acclaim_gap": [
         "nm0000616",
@@ -844,6 +842,6 @@
     "top_name": "Mohanlal"
   },
   "title": "Director's Muses",
-  "tmdb_gender_rows": 4793,
+  "tmdb_gender_rows": 159778,
   "top_n": 200
 }

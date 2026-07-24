@@ -1,7 +1,7 @@
 /** Home gallery — tabbed grids of curated chart configurations. */
 
-import { useEffect, useMemo, useState } from "react";
-import { GalleryThumb } from "./GalleryThumb";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { GalleryThumb, type GalleryPreviewMeta } from "./GalleryThumb";
 import {
   GALLERY_COLLECTIONS,
   collectionById,
@@ -16,6 +16,85 @@ interface Props {
   onOpenMethodology?: () => void;
 }
 
+function StoryCard({
+  story,
+  onOpenStory,
+  base,
+  index,
+}: {
+  story: StoryPreset;
+  onOpenStory: (story: StoryPreset) => void;
+  base: string;
+  index: number;
+}) {
+  const full = resolveStorySpec(story);
+  const [preview, setPreview] = useState<GalleryPreviewMeta | null>(null);
+  const handlePreview = useCallback((next: GalleryPreviewMeta | null) => {
+    setPreview(next);
+  }, []);
+
+  return (
+    <article
+      className="gallery-card"
+      style={{ animationDelay: `${Math.min(index, 10) * 55}ms` }}
+    >
+      <a
+        className="gallery-card-link"
+        href={storyToHref(story, base)}
+        onClick={(e) => {
+          e.preventDefault();
+          onOpenStory(story);
+        }}
+      >
+        <div className="gallery-thumb-wrap">
+          <GalleryThumb spec={full} onPreviewMeta={handlePreview} />
+          {preview ? (
+            <span className="gallery-cut-count mono">
+              {preview.nodeCount} people · {preview.edgeCount.toLocaleString()} ties
+            </span>
+          ) : null}
+        </div>
+        <div className="gallery-card-body">
+          <p className="gallery-card-kicker mono">
+            {full.activeConstruct.replaceAll("_", " ")}
+          </p>
+          <h2>{story.concept}</h2>
+          <div className="gallery-hook">
+            <p>{story.hook}</p>
+          </div>
+          {preview ? (
+            <div className="gallery-evidence">
+              <p className="gallery-evidence-label mono">In this cut</p>
+              <p className="gallery-evidence-leaders">
+                {preview.leaders.join(" · ")}
+              </p>
+              {preview.strongestPair ? (
+                <p className="gallery-evidence-pair mono">
+                  Strongest tie · {preview.strongestPair}
+                  {preview.strongestMetric ? ` · ${preview.strongestMetric}` : ""}
+                  {preview.sharedTitle ? ` · e.g. ${preview.sharedTitle}` : ""}
+                </p>
+              ) : null}
+            </div>
+          ) : null}
+          <ul className="gallery-tags">
+            {story.tags.map((t) => (
+              <li key={t}>{t}</li>
+            ))}
+          </ul>
+          <p className="gallery-meta mono">
+            {full.heroForm}
+            {full.yearFrom > 1920 || full.yearTo < 2030
+              ? ` · ${full.yearFrom}–${full.yearTo}`
+              : ""}
+            {full.genderFilter !== "all" ? ` · ${full.genderFilter}` : ""}
+          </p>
+        </div>
+      </a>
+    </article>
+  );
+}
+
 function StoryGrid({
   stories,
   onOpenStory,
@@ -27,45 +106,15 @@ function StoryGrid({
 }) {
   return (
     <section className="gallery-grid" aria-label="Curated configurations">
-      {stories.map((story, i) => {
-        const full = resolveStorySpec(story);
-        return (
-          <article
-            key={story.id}
-            className="gallery-card"
-            style={{ animationDelay: `${Math.min(i, 10) * 55}ms` }}
-          >
-            <a
-              className="gallery-card-link"
-              href={storyToHref(story, base)}
-              onClick={(e) => {
-                e.preventDefault();
-                onOpenStory(story);
-              }}
-            >
-              <GalleryThumb spec={full} />
-              <div className="gallery-card-body">
-                <h2>{story.concept}</h2>
-                <div className="gallery-hook">
-                  <p>{story.hook}</p>
-                </div>
-                <ul className="gallery-tags">
-                  {story.tags.map((t) => (
-                    <li key={t}>{t}</li>
-                  ))}
-                </ul>
-                <p className="gallery-meta mono">
-                  {full.heroForm}
-                  {full.yearFrom > 1920 || full.yearTo < 2030
-                    ? ` · ${full.yearFrom}–${full.yearTo}`
-                    : ""}
-                  {full.genderFilter !== "all" ? ` · ${full.genderFilter}` : ""}
-                </p>
-              </div>
-            </a>
-          </article>
-        );
-      })}
+      {stories.map((story, i) => (
+        <StoryCard
+          key={story.id}
+          story={story}
+          onOpenStory={onOpenStory}
+          base={base}
+          index={i}
+        />
+      ))}
     </section>
   );
 }

@@ -25,14 +25,14 @@
     "stageTo": "balance",
     "categoryFrom": "nonbinary",
     "categoryTo": "balanced",
-    "value": 1
+    "value": 2
   },
   {
     "stageFrom": "gender",
     "stageTo": "balance",
     "categoryFrom": "female",
     "categoryTo": "balanced",
-    "value": 52
+    "value": 51
   },
   {
     "stageFrom": "gender",
@@ -86,13 +86,6 @@
   {
     "stageFrom": "balance",
     "stageTo": "volume",
-    "categoryFrom": "face-heavy",
-    "categoryTo": "20–39",
-    "value": 148
-  },
-  {
-    "stageFrom": "balance",
-    "stageTo": "volume",
     "categoryFrom": "balanced",
     "categoryTo": "40+ titles",
     "value": 68
@@ -103,5 +96,12 @@
     "categoryFrom": "voice-heavy",
     "categoryTo": "20–39",
     "value": 41
+  },
+  {
+    "stageFrom": "balance",
+    "stageTo": "volume",
+    "categoryFrom": "face-heavy",
+    "categoryTo": "20–39",
+    "value": 148
   }
 ]

@@ -20,9 +20,9 @@
     "pool_size": 1060,
     "population_sql": 1060
   },
-  "built_at": "2026-07-23T18:41:54.214043+00:00",
+  "built_at": "2026-07-24T18:35:35.867579+00:00",
   "clustering_coefficient": 0.7945,
-  "community_count": 7,
+  "community_count": 9,
   "correlations": {
     "acclaim_gap×prominence": {
       "n": 200,
@@ -160,12 +160,14 @@
     ],
     "assortativity": 0.2297,
     "community_sizes": [
-      65,
-      50,
-      48,
-      21,
-      12,
-      3,
+      76,
+      53,
+      32,
+      18,
+      13,
+      4,
+      2,
+      1,
       1
     ],
     "component_count": 2,
@@ -258,8 +260,8 @@
       "nonbinary": 1
     },
     "giant_component_share": 0.995,
-    "largest_community_share": 0.325,
-    "modularity": 0.1553,
+    "largest_community_share": 0.38,
+    "modularity": 0.1758,
     "outliers": {
       "acclaim_gap": [
         "nm0000158",
@@ -820,6 +822,6 @@
     "top_name": "Tom Hanks"
   },
   "title": "Voice Actors in Cartoons",
-  "tmdb_gender_rows": 7588,
+  "tmdb_gender_rows": 159201,
   "top_n": 200
 }

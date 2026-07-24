@@ -1,7 +1,7 @@
 {
   "gender_mix": {
-    "male": 125,
-    "female": 74,
+    "male": 124,
+    "female": 75,
     "nonbinary": 1
   },
   "era_histogram": {
@@ -22,14 +22,12 @@
   "strength_gini": 0.4792,
   "assortativity": 0.2909,
   "density": 0.261005,
-  "modularity": 0.1686,
+  "modularity": 0.1979,
   "community_sizes": [
+    67,
     61,
-    44,
-    41,
-    16,
-    12,
-    8,
+    37,
+    17,
     7,
     5,
     2,
@@ -37,7 +35,7 @@
     1,
     1
   ],
-  "largest_community_share": 0.305,
+  "largest_community_share": 0.335,
   "component_count": 1,
   "giant_component_share": 1.0,
   "diameter": 5,
@@ -250,7 +248,7 @@
       "count": 3
     }
   ],
-  "gender_homophily": 0.554,
+  "gender_homophily": 0.553,
   "era_homophily": 0.705,
   "scatter_strength_prominence": [
     {

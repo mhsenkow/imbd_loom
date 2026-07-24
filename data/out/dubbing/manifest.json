@@ -19,7 +19,7 @@
     "pool_size": 1000,
     "population_sql": 1000
   },
-  "built_at": "2026-07-23T18:38:39.258338+00:00",
+  "built_at": "2026-07-24T18:42:19.120318+00:00",
   "clustering_coefficient": 0.7971,
   "community_count": 9,
   "correlations": {
@@ -77,8 +77,8 @@
       "label": "Frank Welker"
     },
     {
-      "id": "nm0089707",
-      "label": "Steve Blum"
+      "id": "nm0228356",
+      "label": "Ben Diskin"
     },
     {
       "id": "nm1101677",
@@ -159,13 +159,13 @@
     ],
     "assortativity": 0.2544,
     "community_sizes": [
-      73,
+      79,
       53,
       35,
-      20,
       14,
+      13,
       2,
-      1,
+      2,
       1,
       1
     ],
@@ -260,8 +260,8 @@
       "nonbinary": 1
     },
     "giant_component_share": 0.99,
-    "largest_community_share": 0.365,
-    "modularity": 0.1739,
+    "largest_community_share": 0.395,
+    "modularity": 0.1793,
     "outliers": {
       "acclaim_gap": [
         "nm0000305",
@@ -826,6 +826,6 @@
     "top_name": "Frank Welker"
   },
   "title": "The Dubbing Multiverse",
-  "tmdb_gender_rows": 7588,
+  "tmdb_gender_rows": 159582,
   "top_n": 200
 }

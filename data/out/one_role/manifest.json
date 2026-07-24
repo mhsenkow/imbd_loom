@@ -9,9 +9,9 @@
     "per_genre_cap": 25,
     "population_sql": 30
   },
-  "built_at": "2026-07-23T18:28:18.426479+00:00",
+  "built_at": "2026-07-24T18:40:36.028475+00:00",
   "clustering_coefficient": 0.6978,
-  "community_count": 4,
+  "community_count": 6,
   "concentration_threshold": 0.9,
   "correlations": {
     "acclaim_gap×prominence": {
@@ -98,9 +98,11 @@
     "assortativity": 0.2695,
     "community_sizes": [
       10,
-      9,
-      6,
-      5
+      5,
+      5,
+      4,
+      4,
+      2
     ],
     "component_count": 2,
     "corr_degree×prominence": {
@@ -192,7 +194,7 @@
     },
     "giant_component_share": 0.5,
     "largest_community_share": 0.333,
-    "modularity": 0.1689,
+    "modularity": 0.1946,
     "outliers": {
       "pagerank": [
         "nm0758741"
@@ -470,6 +472,6 @@
     "top_name": "Carrie Aizley"
   },
   "title": "One-Role Wonders",
-  "tmdb_gender_rows": 5392,
+  "tmdb_gender_rows": 159582,
   "top_n": 200
 }

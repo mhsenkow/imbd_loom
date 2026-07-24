@@ -43,6 +43,28 @@
         "votes": 46
       },
       {
+        "title": "Divorce a la Mode",
+        "character": "Ed King",
+        "characters": [
+          "Ed King"
+        ],
+        "year": 1932,
+        "billing": 1,
+        "tconst": "tt0022823",
+        "votes": 0
+      },
+      {
+        "title": "Stung",
+        "character": "Dumb Juryman",
+        "characters": [
+          "Dumb Juryman"
+        ],
+        "year": 1931,
+        "billing": 1,
+        "tconst": "tt0830675",
+        "votes": 0
+      },
+      {
         "title": "Dear Vivian",
         "character": "Ray",
         "characters": [
@@ -62,28 +84,6 @@
         "year": 1922,
         "billing": 1,
         "tconst": "tt0013238",
-        "votes": 0
-      },
-      {
-        "title": "Divorce a la Mode",
-        "character": "Ed King",
-        "characters": [
-          "Ed King"
-        ],
-        "year": 1932,
-        "billing": 1,
-        "tconst": "tt0022823",
-        "votes": 0
-      },
-      {
-        "title": "When Caesar Ran a Newspaper",
-        "character": "Caesar",
-        "characters": [
-          "Caesar"
-        ],
-        "year": 1929,
-        "billing": 1,
-        "tconst": "tt0020578",
         "votes": 0
       }
     ],
@@ -120,9 +120,9 @@
     "median_billing": 4,
     "minutes_credited": 18750,
     "medium_mix": {
+      "tvSeries": 0.021,
       "movie": 0.976,
-      "tvMovie": 0.003,
-      "tvSeries": 0.021
+      "tvMovie": 0.003
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1951,
@@ -187,7 +187,7 @@
     "top_collaborator_id": "nm0001935",
     "collaborator_loyalty": 0.038,
     "bridge_score": 0.063318,
-    "community": 3,
+    "community": 6,
     "pagerank": 0.02593426,
     "eigen_centrality": 0.309274,
     "clustering_local": 0.2577,
@@ -204,8 +204,8 @@
     "acclaim_gap": -1.981,
     "hub_vs_loyal": 110.63,
     "collaborator_reach": 115,
-    "embed_x": 0.2542,
-    "embed_y": -0.4473
+    "embed_x": 0.2544,
+    "embed_y": -0.4497
   },
   {
     "id": "nm0163417",
@@ -229,17 +229,6 @@
     "rk_prominence": 13,
     "roles": [
       {
-        "title": "The Timber Wolf",
-        "character": "Kirk MacLean",
-        "characters": [
-          "Kirk MacLean"
-        ],
-        "year": 1920,
-        "billing": 1,
-        "tconst": "tt0011776",
-        "votes": 0
-      },
-      {
         "title": "The Scarlet Rider",
         "character": "The Scarlet Rider",
         "characters": [
@@ -248,6 +237,17 @@
         "year": 1920,
         "billing": 1,
         "tconst": "tt0011658",
+        "votes": 0
+      },
+      {
+        "title": "Big Stakes",
+        "character": "Sgt. Kirk McLean",
+        "characters": [
+          "Sgt. Kirk McLean"
+        ],
+        "year": 1920,
+        "billing": 1,
+        "tconst": "tt0010993",
         "votes": 0
       },
       {
@@ -262,25 +262,25 @@
         "votes": 0
       },
       {
-        "title": "The Forest Runners",
-        "character": "Kirk MacLean",
+        "title": "Not Guilty for Runnin'",
+        "character": "Lem Dodge",
         "characters": [
-          "Kirk MacLean"
+          "Lem Dodge"
         ],
-        "year": 1920,
+        "year": 1924,
         "billing": 1,
-        "tconst": "tt0011202",
+        "tconst": "tt0015183",
         "votes": 0
       },
       {
-        "title": "Big Stakes",
+        "title": "The Girl and the Law",
         "character": "Sgt. Kirk McLean",
         "characters": [
           "Sgt. Kirk McLean"
         ],
         "year": 1920,
         "billing": 1,
-        "tconst": "tt0010993",
+        "tconst": "tt0011227",
         "votes": 0
       },
       {
@@ -393,7 +393,7 @@
     "top_collaborator_id": "nm0651627",
     "collaborator_loyalty": 0.058,
     "bridge_score": 0.02121,
-    "community": 3,
+    "community": 6,
     "pagerank": 0.02031694,
     "eigen_centrality": 0.297768,
     "clustering_local": 0.3511,
@@ -446,28 +446,6 @@
         "votes": 0
       },
       {
-        "title": "The Mansard Mystery",
-        "character": "George Etherbridge",
-        "characters": [
-          "George Etherbridge"
-        ],
-        "year": 1916,
-        "billing": 1,
-        "tconst": "tt0325786",
-        "votes": 0
-      },
-      {
-        "title": "The End of the Bridge",
-        "character": "Detective David Dale",
-        "characters": [
-          "Detective David Dale"
-        ],
-        "year": 1914,
-        "billing": 1,
-        "tconst": "tt2184924",
-        "votes": 0
-      },
-      {
         "title": "Fate Takes a Hand",
         "character": "Jim Brant",
         "characters": [
@@ -479,25 +457,47 @@
         "votes": 0
       },
       {
-        "title": "Real Folks",
-        "character": "Jimmie Dugan",
+        "title": "Tony America",
+        "character": "Tony America",
         "characters": [
-          "Jimmie Dugan"
+          "Tony America"
         ],
         "year": 1918,
         "billing": 1,
-        "tconst": "tt0009535",
+        "tconst": "tt0009711",
         "votes": 0
       },
       {
-        "title": "The Fear",
-        "character": "Hugh Webster",
+        "title": "The Mansard Mystery",
+        "character": "George Etherbridge",
         "characters": [
-          "Hugh Webster"
+          "George Etherbridge"
         ],
-        "year": 1913,
+        "year": 1916,
         "billing": 1,
-        "tconst": "tt0362637",
+        "tconst": "tt0325786",
+        "votes": 0
+      },
+      {
+        "title": "The Vow",
+        "character": "Bernard",
+        "characters": [
+          "Bernard"
+        ],
+        "year": 1914,
+        "billing": 1,
+        "tconst": "tt3081500",
+        "votes": 0
+      },
+      {
+        "title": "The End of the Bridge",
+        "character": "Detective David Dale",
+        "characters": [
+          "Detective David Dale"
+        ],
+        "year": 1914,
+        "billing": 1,
+        "tconst": "tt2184924",
         "votes": 0
       }
     ],
@@ -599,7 +599,7 @@
     "top_collaborator_id": "nm0101955",
     "collaborator_loyalty": 0.061,
     "bridge_score": 0.024882,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.02431686,
     "eigen_centrality": 0.349558,
     "clustering_local": 0.352,
@@ -617,7 +617,7 @@
     "hub_vs_loyal": 79.985,
     "collaborator_reach": 87,
     "embed_x": 0.3888,
-    "embed_y": 0.1058
+    "embed_y": 0.1059
   },
   {
     "id": "nm0514707",
@@ -652,6 +652,17 @@
         "votes": 19
       },
       {
+        "title": "There Goes the Bride",
+        "character": "The Groom",
+        "characters": [
+          "The Groom"
+        ],
+        "year": 1925,
+        "billing": 1,
+        "tconst": "tt0467254",
+        "votes": 0
+      },
+      {
         "title": "Getting a Raise",
         "character": "Pa Potter",
         "characters": [
@@ -671,17 +682,6 @@
         "year": 1930,
         "billing": 1,
         "tconst": "tt2088703",
-        "votes": 0
-      },
-      {
-        "title": "There Goes the Bride",
-        "character": "The Groom",
-        "characters": [
-          "The Groom"
-        ],
-        "year": 1925,
-        "billing": 1,
-        "tconst": "tt0467254",
         "votes": 0
       },
       {
@@ -803,11 +803,11 @@
       "1940s",
       "1950s"
     ],
-    "top_collaborator": "Zasu Pitts",
-    "top_collaborator_id": "nm0686032",
+    "top_collaborator": "Tully Marshall",
+    "top_collaborator_id": "nm0551222",
     "collaborator_loyalty": 0.056,
     "bridge_score": 0.029915,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.01331649,
     "eigen_centrality": 0.154992,
     "clustering_local": 0.3353,
@@ -824,7 +824,7 @@
     "acclaim_gap": -0.046,
     "hub_vs_loyal": 77.56,
     "collaborator_reach": 84,
-    "embed_x": -0.7307,
+    "embed_x": -0.7306,
     "embed_y": -0.7835
   },
   {
@@ -1013,7 +1013,7 @@
     "top_collaborator_id": "nm0651627",
     "collaborator_loyalty": 0.071,
     "bridge_score": 0.013844,
-    "community": 3,
+    "community": 6,
     "pagerank": 0.01712664,
     "eigen_centrality": 0.254893,
     "clustering_local": 0.3964,
@@ -1031,7 +1031,7 @@
     "hub_vs_loyal": 66.835,
     "collaborator_reach": 75,
     "embed_x": 0.1719,
-    "embed_y": -0.928
+    "embed_y": -0.9103
   },
   {
     "id": "nm0641776",
@@ -1212,11 +1212,11 @@
       "1930s",
       "1940s"
     ],
-    "top_collaborator": "Robert Frazer",
-    "top_collaborator_id": "nm0292537",
+    "top_collaborator": "Noah Beery",
+    "top_collaborator_id": "nm0001935",
     "collaborator_loyalty": 0.062,
     "bridge_score": 0.013443,
-    "community": 3,
+    "community": 2,
     "pagerank": 0.01166019,
     "eigen_centrality": 0.147915,
     "clustering_local": 0.3978,
@@ -1233,8 +1233,8 @@
     "acclaim_gap": -0.283,
     "hub_vs_loyal": 67.87,
     "collaborator_reach": 75,
-    "embed_x": -0.4462,
-    "embed_y": -1.1963
+    "embed_x": -0.4396,
+    "embed_y": -1.1961
   },
   {
     "id": "nm0611804",
@@ -1357,8 +1357,8 @@
     "median_billing": 2,
     "minutes_credited": 11114,
     "medium_mix": {
-      "movie": 0.961,
-      "tvSeries": 0.039
+      "tvSeries": 0.039,
+      "movie": 0.961
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1950,
@@ -1423,7 +1423,7 @@
     "top_collaborator_id": "nm0380965",
     "collaborator_loyalty": 0.066,
     "bridge_score": 0.016042,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.01158753,
     "eigen_centrality": 0.131618,
     "clustering_local": 0.3836,
@@ -1440,7 +1440,7 @@
     "acclaim_gap": -1.424,
     "hub_vs_loyal": 66.41,
     "collaborator_reach": 74,
-    "embed_x": -0.585,
+    "embed_x": -0.5847,
     "embed_y": -0.3561
   },
   {
@@ -1558,7 +1558,7 @@
     "genre_first": "Comedy",
     "genre_last": "Horror",
     "genre_first_last_distance": 1,
-    "typecast_character": "Sheriff",
+    "typecast_character": "Henchman",
     "typecast_count": 13,
     "billing_trajectory": -0.1207,
     "median_billing": 7,
@@ -1630,7 +1630,7 @@
     "top_collaborator_id": "nm0163417",
     "collaborator_loyalty": 0.067,
     "bridge_score": 0.010809,
-    "community": 3,
+    "community": 6,
     "pagerank": 0.01690577,
     "eigen_centrality": 0.26694,
     "clustering_local": 0.4247,
@@ -1647,7 +1647,7 @@
     "acclaim_gap": -0.689,
     "hub_vs_loyal": 66.295,
     "collaborator_reach": 74,
-    "embed_x": -0.4392,
+    "embed_x": -0.4391,
     "embed_y": 0.1129
   },
   {
@@ -1765,7 +1765,7 @@
     "genre_first": "Adventure",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "The Governor",
+    "typecast_character": "Undetermined Secondary Role",
     "typecast_count": 2,
     "billing_trajectory": -0.1717,
     "median_billing": 6,
@@ -1837,7 +1837,7 @@
     "top_collaborator_id": "nm0290066",
     "collaborator_loyalty": 0.11,
     "bridge_score": 0.015334,
-    "community": 4,
+    "community": 5,
     "pagerank": 0.01272199,
     "eigen_centrality": 0.157771,
     "clustering_local": 0.4045,
@@ -1855,7 +1855,7 @@
     "hub_vs_loyal": 59.35,
     "collaborator_reach": 72,
     "embed_x": -0.1195,
-    "embed_y": -0.9563
+    "embed_y": -0.9571
   },
   {
     "id": "nm0035159",
@@ -2046,7 +2046,7 @@
     "top_collaborator_id": "nm0047720",
     "collaborator_loyalty": 0.096,
     "bridge_score": 0.020546,
-    "community": 4,
+    "community": 5,
     "pagerank": 0.01019772,
     "eigen_centrality": 0.090981,
     "clustering_local": 0.3362,
@@ -2064,7 +2064,7 @@
     "hub_vs_loyal": 58.96,
     "collaborator_reach": 70,
     "embed_x": 0.895,
-    "embed_y": 0.2367
+    "embed_y": 0.2369
   },
   {
     "id": "nm0000472",
@@ -2188,8 +2188,8 @@
     "minutes_credited": 13392,
     "medium_mix": {
       "tvSeries": 0.136,
-      "tvMovie": 0.04,
-      "movie": 0.824
+      "movie": 0.824,
+      "tvMovie": 0.04
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1948,
@@ -2256,7 +2256,7 @@
     "top_collaborator_id": "nm0000509",
     "collaborator_loyalty": 0.114,
     "bridge_score": 0.017095,
-    "community": 5,
+    "community": 2,
     "pagerank": 0.01318956,
     "eigen_centrality": 0.080968,
     "clustering_local": 0.374,
@@ -2273,8 +2273,8 @@
     "acclaim_gap": -3.092,
     "hub_vs_loyal": 54.89,
     "collaborator_reach": 68,
-    "embed_x": -0.8254,
-    "embed_y": 0.1765
+    "embed_x": -0.8251,
+    "embed_y": 0.1764
   },
   {
     "id": "nm0089524",
@@ -2481,7 +2481,7 @@
     "hub_vs_loyal": 57.835,
     "collaborator_reach": 66,
     "embed_x": -0.892,
-    "embed_y": -0.7089
+    "embed_y": -0.7084
   },
   {
     "id": "nm0801193",
@@ -2538,14 +2538,14 @@
         "votes": 9
       },
       {
-        "title": "Out of the Dust",
-        "character": "Captain John Evans, U.S.A.",
+        "title": "The Kingdom Within",
+        "character": "Caleb Deming",
         "characters": [
-          "Captain John Evans, U.S.A."
+          "Caleb Deming"
         ],
-        "year": 1920,
+        "year": 1922,
         "billing": 1,
-        "tconst": "tt0196818",
+        "tconst": "tt0013296",
         "votes": 0
       },
       {
@@ -2560,14 +2560,14 @@
         "votes": 0
       },
       {
-        "title": "The Kingdom Within",
-        "character": "Caleb Deming",
+        "title": "Out of the Dust",
+        "character": "Captain John Evans, U.S.A.",
         "characters": [
-          "Caleb Deming"
+          "Captain John Evans, U.S.A."
         ],
-        "year": 1922,
+        "year": 1920,
         "billing": 1,
-        "tconst": "tt0013296",
+        "tconst": "tt0196818",
         "votes": 0
       }
     ],
@@ -2685,7 +2685,7 @@
     "acclaim_gap": 0.879,
     "hub_vs_loyal": 60.02,
     "collaborator_reach": 66,
-    "embed_x": -0.0614,
+    "embed_x": -0.074,
     "embed_y": -0.4084
   },
   {
@@ -2808,8 +2808,8 @@
     "median_billing": 2,
     "minutes_credited": 9345,
     "medium_mix": {
-      "movie": 0.967,
       "tvSeries": 0.017,
+      "movie": 0.967,
       "tvMovie": 0.017
     },
     "short_to_feature_ratio": 0.0,
@@ -2876,7 +2876,7 @@
     "top_collaborator_id": "nm0007220",
     "collaborator_loyalty": 0.073,
     "bridge_score": 0.016,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.01346395,
     "eigen_centrality": 0.082574,
     "clustering_local": 0.3548,
@@ -3081,7 +3081,7 @@
     "top_collaborator_id": "nm0380965",
     "collaborator_loyalty": 0.047,
     "bridge_score": 0.020458,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.0072143,
     "eigen_centrality": 0.034429,
     "clustering_local": 0.2607,
@@ -3222,8 +3222,8 @@
     "median_billing": 4,
     "minutes_credited": 9149,
     "medium_mix": {
-      "movie": 0.96,
       "tvSeries": 0.032,
+      "movie": 0.96,
       "tvMovie": 0.008
     },
     "short_to_feature_ratio": 0.0,
@@ -3286,11 +3286,11 @@
       "1950s",
       "1960s"
     ],
-    "top_collaborator": "Wilson Benge",
-    "top_collaborator_id": "nm0071031",
+    "top_collaborator": "C. Aubrey Smith",
+    "top_collaborator_id": "nm0807580",
     "collaborator_loyalty": 0.068,
     "bridge_score": 0.01143,
-    "community": 4,
+    "community": 5,
     "pagerank": 0.00947721,
     "eigen_centrality": 0.067186,
     "clustering_local": 0.4016,
@@ -3308,7 +3308,7 @@
     "hub_vs_loyal": 53.18,
     "collaborator_reach": 61,
     "embed_x": 0.5277,
-    "embed_y": 0.9546
+    "embed_y": 0.954
   },
   {
     "id": "nm0398139",
@@ -3332,17 +3332,6 @@
     "rk_prominence": 42,
     "roles": [
       {
-        "title": "Crack o' Dawn",
-        "character": "Earle Thorpe Jr",
-        "characters": [
-          "Earle Thorpe Jr"
-        ],
-        "year": 1925,
-        "billing": 1,
-        "tconst": "tt0015713",
-        "votes": 24
-      },
-      {
         "title": "Super Speed",
         "character": "Pat O'Farrell",
         "characters": [
@@ -3351,6 +3340,17 @@
         "year": 1925,
         "billing": 1,
         "tconst": "tt0167426",
+        "votes": 24
+      },
+      {
+        "title": "Crack o' Dawn",
+        "character": "Earle Thorpe Jr",
+        "characters": [
+          "Earle Thorpe Jr"
+        ],
+        "year": 1925,
+        "billing": 1,
+        "tconst": "tt0015713",
         "votes": 24
       },
       {
@@ -3376,17 +3376,6 @@
         "votes": 21
       },
       {
-        "title": "Cyclone Cavalier",
-        "character": "Ted Clayton",
-        "characters": [
-          "Ted Clayton"
-        ],
-        "year": 1925,
-        "billing": 1,
-        "tconst": "tt0015720",
-        "votes": 18
-      },
-      {
         "title": "The Dangerous Dude",
         "character": "Bob Downs",
         "characters": [
@@ -3395,6 +3384,17 @@
         "year": 1926,
         "billing": 1,
         "tconst": "tt0016766",
+        "votes": 18
+      },
+      {
+        "title": "Cyclone Cavalier",
+        "character": "Ted Clayton",
+        "characters": [
+          "Ted Clayton"
+        ],
+        "year": 1925,
+        "billing": 1,
+        "tconst": "tt0015720",
         "votes": 18
       }
     ],
@@ -3430,8 +3430,8 @@
     "median_billing": 5,
     "minutes_credited": 6376,
     "medium_mix": {
-      "movie": 0.922,
-      "tvSeries": 0.078
+      "tvSeries": 0.078,
+      "movie": 0.922
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1955,
@@ -3593,14 +3593,14 @@
         "votes": 11
       },
       {
-        "title": "A Romantic Adventuress",
-        "character": "Capt. Maxwell",
+        "title": "Judy of Rogues' Harbor",
+        "character": "Lt. Teddy Kingsland",
         "characters": [
-          "Capt. Maxwell"
+          "Lt. Teddy Kingsland"
         ],
         "year": 1920,
         "billing": 2,
-        "tconst": "tt0197833",
+        "tconst": "tt0011356",
         "votes": 0
       }
     ],
@@ -3630,14 +3630,14 @@
     "genre_first": "Comedy",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Rev. Staley",
+    "typecast_character": "Secretary of Space Drake",
     "typecast_count": 1,
     "billing_trajectory": -0.1226,
     "median_billing": 5,
     "minutes_credited": 1872,
     "medium_mix": {
-      "movie": 0.879,
       "tvSeries": 0.091,
+      "movie": 0.879,
       "tvMovie": 0.03
     },
     "short_to_feature_ratio": 0.0,
@@ -3908,11 +3908,11 @@
       "1950s",
       "1960s"
     ],
-    "top_collaborator": "Jack Holt",
-    "top_collaborator_id": "nm0392442",
+    "top_collaborator": "Thurston Hall",
+    "top_collaborator_id": "nm0356159",
     "collaborator_loyalty": 0.037,
     "bridge_score": 0.012843,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00771809,
     "eigen_centrality": 0.083589,
     "clustering_local": 0.3404,
@@ -4121,7 +4121,7 @@
     "top_collaborator_id": "nm0603096",
     "collaborator_loyalty": 0.067,
     "bridge_score": 0.016364,
-    "community": 5,
+    "community": 2,
     "pagerank": 0.00801821,
     "eigen_centrality": 0.049542,
     "clustering_local": 0.3096,
@@ -4138,7 +4138,7 @@
     "acclaim_gap": -0.669,
     "hub_vs_loyal": 52.295,
     "collaborator_reach": 60,
-    "embed_x": 0.5801,
+    "embed_x": 0.5796,
     "embed_y": 0.4723
   },
   {
@@ -4328,7 +4328,7 @@
     "top_collaborator_id": "nm0878927",
     "collaborator_loyalty": 0.286,
     "bridge_score": 0.008492,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00932925,
     "eigen_centrality": 0.100536,
     "clustering_local": 0.4186,
@@ -4392,14 +4392,25 @@
         "votes": 16
       },
       {
-        "title": "The Other Woman",
-        "character": "Roxanne Paget",
+        "title": "God Bless Our Red, White and Blue",
+        "character": "The Wife",
         "characters": [
-          "Roxanne Paget"
+          "The Wife"
         ],
-        "year": 1931,
+        "year": 1918,
         "billing": 1,
-        "tconst": "tt0022237",
+        "tconst": "tt0009119",
+        "votes": 0
+      },
+      {
+        "title": "The Game of Life",
+        "character": "Alice Fletcher",
+        "characters": [
+          "Alice Fletcher"
+        ],
+        "year": 1922,
+        "billing": 1,
+        "tconst": "tt0013163",
         "votes": 0
       },
       {
@@ -4414,25 +4425,14 @@
         "votes": 0
       },
       {
-        "title": "The Man Who Won",
-        "character": "Milly Cooper",
+        "title": "Onward Christian Soldiers",
+        "character": "The Girl",
         "characters": [
-          "Milly Cooper"
+          "The Girl"
         ],
         "year": 1918,
         "billing": 1,
-        "tconst": "tt0009341",
-        "votes": 0
-      },
-      {
-        "title": "The Love Story of Aliette Brunton",
-        "character": "Aliette Brunton",
-        "characters": [
-          "Aliette Brunton"
-        ],
-        "year": 1924,
-        "billing": 1,
-        "tconst": "tt0015086",
+        "tconst": "tt0009451",
         "votes": 0
       }
     ],
@@ -4468,9 +4468,9 @@
     "median_billing": 4,
     "minutes_credited": 5019,
     "medium_mix": {
+      "tvMovie": 0.014,
       "movie": 0.929,
-      "tvSeries": 0.057,
-      "tvMovie": 0.014
+      "tvSeries": 0.057
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1939,
@@ -4551,7 +4551,7 @@
     "hub_vs_loyal": 58.0,
     "collaborator_reach": 58,
     "embed_x": 0.3151,
-    "embed_y": 0.7689
+    "embed_y": 0.7693
   },
   {
     "id": "nm0353790",
@@ -4630,14 +4630,14 @@
         "votes": 13
       },
       {
-        "title": "The Glorious Trail",
-        "character": "Gus Lynch",
+        "title": "The Dangerous Coward",
+        "character": "Wildcat Rex",
         "characters": [
-          "Gus Lynch"
+          "Wildcat Rex"
         ],
-        "year": 1928,
+        "year": 1924,
         "billing": 3,
-        "tconst": "tt0018946",
+        "tconst": "tt0014823",
         "votes": 0
       }
     ],
@@ -4668,7 +4668,7 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Henchman Saunders",
+    "typecast_character": "Sheriff",
     "typecast_count": 1,
     "billing_trajectory": -0.0611,
     "median_billing": 6,
@@ -4737,7 +4737,7 @@
     "top_collaborator_id": "nm0156173",
     "collaborator_loyalty": 0.067,
     "bridge_score": 0.007072,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00994098,
     "eigen_centrality": 0.139788,
     "clustering_local": 0.4471,
@@ -4790,14 +4790,14 @@
         "votes": 55
       },
       {
-        "title": "Persistency",
-        "character": "John Hallet",
+        "title": "The Midnight Patrol",
+        "character": "Officer Terrence Shannon",
         "characters": [
-          "John Hallet"
+          "Officer Terrence Shannon"
         ],
-        "year": 1916,
+        "year": 1918,
         "billing": 1,
-        "tconst": "tt0284392",
+        "tconst": "tt0187280",
         "votes": 0
       },
       {
@@ -4812,14 +4812,14 @@
         "votes": 0
       },
       {
-        "title": "In Spite of Him",
-        "character": "Nathan Biddle",
+        "title": "Persistency",
+        "character": "John Hallet",
         "characters": [
-          "Nathan Biddle"
+          "John Hallet"
         ],
-        "year": 1915,
+        "year": 1916,
         "billing": 1,
-        "tconst": "tt0482762",
+        "tconst": "tt0284392",
         "votes": 0
       },
       {
@@ -4834,14 +4834,14 @@
         "votes": 0
       },
       {
-        "title": "The Midnight Patrol",
-        "character": "Officer Terrence Shannon",
+        "title": "In Spite of Him",
+        "character": "Nathan Biddle",
         "characters": [
-          "Officer Terrence Shannon"
+          "Nathan Biddle"
         ],
-        "year": 1918,
+        "year": 1915,
         "billing": 1,
-        "tconst": "tt0187280",
+        "tconst": "tt0482762",
         "votes": 0
       }
     ],
@@ -4878,8 +4878,8 @@
     "median_billing": 6,
     "minutes_credited": 12212,
     "medium_mix": {
-      "movie": 0.96,
-      "tvSeries": 0.04
+      "tvSeries": 0.04,
+      "movie": 0.96
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1950,
@@ -4944,7 +4944,7 @@
     "top_collaborator_id": "nm0447043",
     "collaborator_loyalty": 0.079,
     "bridge_score": 0.004997,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00853248,
     "eigen_centrality": 0.103516,
     "clustering_local": 0.4881,
@@ -4962,7 +4962,7 @@
     "hub_vs_loyal": 47.915,
     "collaborator_reach": 57,
     "embed_x": 1.5737,
-    "embed_y": -0.1011
+    "embed_y": -0.101
   },
   {
     "id": "nm0445246",
@@ -5085,8 +5085,8 @@
     "median_billing": 4,
     "minutes_credited": 5597,
     "medium_mix": {
-      "movie": 0.912,
       "tvSeries": 0.025,
+      "movie": 0.912,
       "tvMovie": 0.062
     },
     "short_to_feature_ratio": 0.0,
@@ -5151,7 +5151,7 @@
     "top_collaborator_id": "nm0807580",
     "collaborator_loyalty": 0.087,
     "bridge_score": 0.011587,
-    "community": 5,
+    "community": 2,
     "pagerank": 0.00708062,
     "eigen_centrality": 0.053814,
     "clustering_local": 0.4091,
@@ -5286,15 +5286,15 @@
     "genre_first": "Drama",
     "genre_last": "Action",
     "genre_first_last_distance": 1,
-    "typecast_character": "Commissioner Gordon",
+    "typecast_character": "Self",
     "typecast_count": 2,
     "billing_trajectory": -0.0932,
     "median_billing": 3,
     "minutes_credited": 8261,
     "medium_mix": {
-      "movie": 0.939,
+      "tvMovie": 0.009,
       "tvSeries": 0.053,
-      "tvMovie": 0.009
+      "movie": 0.939
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1948,
@@ -5356,8 +5356,8 @@
       "1950s",
       "1960s"
     ],
-    "top_collaborator": "Roscoe Karns",
-    "top_collaborator_id": "nm0439850",
+    "top_collaborator": "Henry Kolker",
+    "top_collaborator_id": "nm0464137",
     "collaborator_loyalty": 0.062,
     "bridge_score": 0.009624,
     "community": 5,
@@ -5413,17 +5413,6 @@
         "votes": 20
       },
       {
-        "title": "The Ranger of Pikes Peak",
-        "character": "Jim Haley",
-        "characters": [
-          "Jim Haley"
-        ],
-        "year": 1919,
-        "billing": 1,
-        "tconst": "tt0347849",
-        "votes": 0
-      },
-      {
         "title": "Winning a Bride",
         "character": "Jack Crowley",
         "characters": [
@@ -5432,6 +5421,17 @@
         "year": 1919,
         "billing": 1,
         "tconst": "tt0348420",
+        "votes": 0
+      },
+      {
+        "title": "The Ranger of Pikes Peak",
+        "character": "Jim Haley",
+        "characters": [
+          "Jim Haley"
+        ],
+        "year": 1919,
+        "billing": 1,
+        "tconst": "tt0347849",
         "votes": 0
       },
       {
@@ -5563,7 +5563,7 @@
       "1950s"
     ],
     "bridge_score": 0.003717,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00802922,
     "eigen_centrality": 0.097355,
     "clustering_local": 0.526,
@@ -5580,7 +5580,7 @@
     "acclaim_gap": 2.003,
     "hub_vs_loyal": 56.0,
     "collaborator_reach": 56,
-    "embed_x": 1.4068,
+    "embed_x": 1.4069,
     "embed_y": 0.4585
   },
   {
@@ -5698,14 +5698,14 @@
     "genre_first": "Crime",
     "genre_last": "Crime",
     "genre_first_last_distance": 0,
-    "typecast_character": "Beatrice Moraski",
+    "typecast_character": "Mrs. Snapper",
     "typecast_count": 1,
     "billing_trajectory": -0.3014,
     "median_billing": 7,
     "minutes_credited": 5414,
     "medium_mix": {
-      "movie": 0.885,
       "tvSeries": 0.077,
+      "movie": 0.885,
       "tvMovie": 0.038
     },
     "short_to_feature_ratio": 0.0,
@@ -5771,7 +5771,7 @@
     "top_collaborator_id": "nm0807580",
     "collaborator_loyalty": 0.125,
     "bridge_score": 0.006026,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00836997,
     "eigen_centrality": 0.073587,
     "clustering_local": 0.4892,
@@ -5788,7 +5788,7 @@
     "acclaim_gap": 1.082,
     "hub_vs_loyal": 39.625,
     "collaborator_reach": 54,
-    "embed_x": 1.0411,
+    "embed_x": 1.0412,
     "embed_y": 0.6034
   },
   {
@@ -5906,15 +5906,15 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Alan O'Connor",
+    "typecast_character": "Self - Host",
     "typecast_count": 4,
     "billing_trajectory": -0.0337,
     "median_billing": 2,
     "minutes_credited": 8335,
     "medium_mix": {
+      "tvMovie": 0.008,
       "movie": 0.941,
-      "tvSeries": 0.051,
-      "tvMovie": 0.008
+      "tvSeries": 0.051
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1948,
@@ -5980,7 +5980,7 @@
     "top_collaborator_id": "nm0933773",
     "collaborator_loyalty": 0.068,
     "bridge_score": 0.016341,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00794988,
     "eigen_centrality": 0.049114,
     "clustering_local": 0.3494,
@@ -5997,7 +5997,7 @@
     "acclaim_gap": -2.203,
     "hub_vs_loyal": 46.18,
     "collaborator_reach": 54,
-    "embed_x": -0.7827,
+    "embed_x": -0.7832,
     "embed_y": 1.1354
   },
   {
@@ -6186,7 +6186,7 @@
     "top_collaborator_id": "nm0427659",
     "collaborator_loyalty": 0.088,
     "bridge_score": 0.005065,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00769535,
     "eigen_centrality": 0.11223,
     "clustering_local": 0.471,
@@ -6204,7 +6204,7 @@
     "hub_vs_loyal": 43.88,
     "collaborator_reach": 54,
     "embed_x": -0.8354,
-    "embed_y": -1.1906
+    "embed_y": -1.1979
   },
   {
     "id": "nm0238855",
@@ -6250,25 +6250,14 @@
         "votes": 38
       },
       {
-        "title": "The Drifter",
-        "character": "Dora Mason",
+        "title": "The Magic Eye",
+        "character": "Mrs. Bowman",
         "characters": [
-          "Dora Mason"
-        ],
-        "year": 1917,
-        "billing": 2,
-        "tconst": "tt0336328",
-        "votes": 0
-      },
-      {
-        "title": "Brace Up",
-        "character": "Ellen Miles",
-        "characters": [
-          "Ellen Miles"
+          "Mrs. Bowman"
         ],
         "year": 1918,
         "billing": 2,
-        "tconst": "tt0008917",
+        "tconst": "tt0009332",
         "votes": 0
       },
       {
@@ -6283,14 +6272,25 @@
         "votes": 0
       },
       {
-        "title": "The Magic Eye",
-        "character": "Mrs. Bowman",
+        "title": "The Honor of an Outlaw",
+        "character": "The Railroad President's Daughter",
         "characters": [
-          "Mrs. Bowman"
+          "The Railroad President's Daughter"
         ],
-        "year": 1918,
+        "year": 1917,
         "billing": 2,
-        "tconst": "tt0009332",
+        "tconst": "tt0008118",
+        "votes": 0
+      },
+      {
+        "title": "The Clash of Steel",
+        "character": "Princess Seraphina",
+        "characters": [
+          "Princess Seraphina"
+        ],
+        "year": 1917,
+        "billing": 2,
+        "tconst": "tt0427075",
         "votes": 0
       }
     ],
@@ -6321,14 +6321,14 @@
     "genre_first": "Comedy",
     "genre_last": "Comedy",
     "genre_first_last_distance": 0,
-    "typecast_character": "Princess Seraphina (Episode #2)",
+    "typecast_character": "Aunt Angela",
     "typecast_count": 1,
     "billing_trajectory": -0.1427,
     "median_billing": 6,
     "minutes_credited": 4584,
     "medium_mix": {
-      "movie": 0.988,
-      "tvSeries": 0.013
+      "tvSeries": 0.013,
+      "movie": 0.988
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1953,
@@ -6411,7 +6411,7 @@
     "hub_vs_loyal": 33.795,
     "collaborator_reach": 53,
     "embed_x": -0.0868,
-    "embed_y": -0.3061
+    "embed_y": -0.3076
   },
   {
     "id": "nm0001485",
@@ -6603,7 +6603,7 @@
     "top_collaborator_id": "nm0001635",
     "collaborator_loyalty": 0.144,
     "bridge_score": 0.012583,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00681594,
     "eigen_centrality": 0.02774,
     "clustering_local": 0.3012,
@@ -6620,8 +6620,8 @@
     "acclaim_gap": -0.511,
     "hub_vs_loyal": 33.44,
     "collaborator_reach": 50,
-    "embed_x": -0.4348,
-    "embed_y": -1.0125
+    "embed_x": -0.4355,
+    "embed_y": -1.017
   },
   {
     "id": "nm0571186",
@@ -6645,25 +6645,14 @@
     "rk_prominence": 66,
     "roles": [
       {
-        "title": "Young Love",
-        "character": "Professor Hunt",
+        "title": "The Five Franc Piece",
+        "character": "Napoleon Bonaparte",
         "characters": [
-          "Professor Hunt"
+          "Napoleon Bonaparte"
         ],
-        "year": 1915,
+        "year": 1916,
         "billing": 1,
-        "tconst": "tt1207087",
-        "votes": 0
-      },
-      {
-        "title": "The Livid Flame",
-        "character": "R. Hayes Burkhardt",
-        "characters": [
-          "R. Hayes Burkhardt"
-        ],
-        "year": 1914,
-        "billing": 1,
-        "tconst": "tt0004245",
+        "tconst": "tt0312696",
         "votes": 0
       },
       {
@@ -6678,17 +6667,6 @@
         "votes": 0
       },
       {
-        "title": "The Jungle Stockade",
-        "character": "Robert Barker - Missionary",
-        "characters": [
-          "Robert Barker - Missionary"
-        ],
-        "year": 1915,
-        "billing": 1,
-        "tconst": "tt0486385",
-        "votes": 0
-      },
-      {
         "title": "Roses of Yesterday",
         "character": "John Ralston",
         "characters": [
@@ -6697,6 +6675,28 @@
         "year": 1913,
         "billing": 1,
         "tconst": "tt0496132",
+        "votes": 0
+      },
+      {
+        "title": "Young Love",
+        "character": "Professor Hunt",
+        "characters": [
+          "Professor Hunt"
+        ],
+        "year": 1915,
+        "billing": 1,
+        "tconst": "tt1207087",
+        "votes": 0
+      },
+      {
+        "title": "The Jungle Stockade",
+        "character": "Robert Barker - Missionary",
+        "characters": [
+          "Robert Barker - Missionary"
+        ],
+        "year": 1915,
+        "billing": 1,
+        "tconst": "tt0486385",
         "votes": 0
       },
       {
@@ -6824,7 +6824,7 @@
     "acclaim_gap": -1.625,
     "hub_vs_loyal": 39.535,
     "collaborator_reach": 50,
-    "embed_x": 1.2422,
+    "embed_x": 1.242,
     "embed_y": -0.1513
   },
   {
@@ -6882,17 +6882,6 @@
         "votes": 0
       },
       {
-        "title": "The Boy Messenger",
-        "character": "Messenger",
-        "characters": [
-          "Messenger"
-        ],
-        "year": 1920,
-        "billing": 3,
-        "tconst": "tt0154250",
-        "votes": 0
-      },
-      {
         "title": "The Lambs of Dove Court",
         "character": "Doorman",
         "characters": [
@@ -6901,6 +6890,17 @@
         "year": 1920,
         "billing": 3,
         "tconst": "tt0154760",
+        "votes": 0
+      },
+      {
+        "title": "The Boy Messenger",
+        "character": "Messenger",
+        "characters": [
+          "Messenger"
+        ],
+        "year": 1920,
+        "billing": 3,
+        "tconst": "tt0154250",
         "votes": 0
       },
       {
@@ -6988,7 +6988,7 @@
       }
     ],
     "same_director_repeat": 4,
-    "top_director": "nm0385171",
+    "top_director": "nm0281808",
     "regions": [
       "AR",
       "AT",
@@ -7222,7 +7222,7 @@
     "top_collaborator_id": "nm0601698",
     "collaborator_loyalty": 0.311,
     "bridge_score": 0.007269,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00732484,
     "eigen_centrality": 0.086666,
     "clustering_local": 0.4592,
@@ -7286,17 +7286,6 @@
         "votes": 0
       },
       {
-        "title": "Der Sohn des Galeerensträftlings",
-        "character": "Der Dicke",
-        "characters": [
-          "Der Dicke"
-        ],
-        "year": 1923,
-        "billing": 4,
-        "tconst": "tt1626138",
-        "votes": 0
-      },
-      {
         "title": "Ihr tollster Trick",
         "character": "Tom Gibson, Maler",
         "characters": [
@@ -7305,6 +7294,17 @@
         "year": 1920,
         "billing": 4,
         "tconst": "tt0450785",
+        "votes": 0
+      },
+      {
+        "title": "Der Sohn des Galeerensträftlings",
+        "character": "Der Dicke",
+        "characters": [
+          "Der Dicke"
+        ],
+        "year": 1923,
+        "billing": 4,
+        "tconst": "tt1626138",
         "votes": 0
       },
       {
@@ -7356,7 +7356,7 @@
     "genre_first": "Crime",
     "genre_last": "Horror",
     "genre_first_last_distance": 1,
-    "typecast_character": "Horst",
+    "typecast_character": "Dr. Zoomer",
     "typecast_count": 1,
     "billing_trajectory": -0.1116,
     "median_billing": 6,
@@ -7569,9 +7569,9 @@
     "median_billing": 4,
     "minutes_credited": 4923,
     "medium_mix": {
+      "tvMovie": 0.101,
       "movie": 0.739,
       "tvSeries": 0.13,
-      "tvMovie": 0.101,
       "tvMiniSeries": 0.029
     },
     "short_to_feature_ratio": 0.0,
@@ -7636,8 +7636,8 @@
       "1970s",
       "1980s"
     ],
-    "top_collaborator": "Tom London",
-    "top_collaborator_id": "nm0163417",
+    "top_collaborator": "Bryant Washburn",
+    "top_collaborator_id": "nm0913341",
     "collaborator_loyalty": 0.25,
     "bridge_score": 0.002765,
     "community": 5,
@@ -7657,7 +7657,7 @@
     "acclaim_gap": 0.099,
     "hub_vs_loyal": 18.25,
     "collaborator_reach": 47,
-    "embed_x": 0.2921,
+    "embed_x": 0.2925,
     "embed_y": -1.9094
   },
   {
@@ -7726,14 +7726,14 @@
         "votes": 13
       },
       {
-        "title": "The Test",
-        "character": "Arthur Thome",
+        "title": "The Light Within",
+        "character": "Clinton Durand",
         "characters": [
-          "Arthur Thome"
+          "Clinton Durand"
         ],
-        "year": 1916,
+        "year": 1918,
         "billing": 2,
-        "tconst": "tt0007438",
+        "tconst": "tt0009300",
         "votes": 0
       },
       {
@@ -7847,7 +7847,7 @@
     "top_collaborator_id": "nm0572142",
     "collaborator_loyalty": 0.179,
     "bridge_score": 0.004631,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00648075,
     "eigen_centrality": 0.05255,
     "clustering_local": 0.5042,
@@ -7864,8 +7864,8 @@
     "acclaim_gap": 0.959,
     "hub_vs_loyal": 26.415,
     "collaborator_reach": 47,
-    "embed_x": -0.9933,
-    "embed_y": 0.4564
+    "embed_x": -0.9938,
+    "embed_y": 0.4563
   },
   {
     "id": "nm0495285",
@@ -7982,7 +7982,7 @@
     "genre_first": "Drama",
     "genre_last": "Adventure",
     "genre_first_last_distance": 1,
-    "typecast_character": "Bob Davis",
+    "typecast_character": "Mike Tanner",
     "typecast_count": 1,
     "billing_trajectory": -0.2736,
     "median_billing": 3,
@@ -8051,7 +8051,7 @@
     "top_collaborator_id": "nm0156173",
     "collaborator_loyalty": 0.087,
     "bridge_score": 0.00548,
-    "community": 3,
+    "community": 6,
     "pagerank": 0.00690215,
     "eigen_centrality": 0.093581,
     "clustering_local": 0.4579,
@@ -8192,8 +8192,8 @@
     "median_billing": 1,
     "minutes_credited": 9439,
     "medium_mix": {
-      "movie": 0.993,
-      "tvMovie": 0.007
+      "tvMovie": 0.007,
+      "movie": 0.993
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1953,
@@ -8257,7 +8257,7 @@
     "top_collaborator_id": "nm0201660",
     "collaborator_loyalty": 0.129,
     "bridge_score": 0.004884,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00881594,
     "eigen_centrality": 0.123922,
     "clustering_local": 0.4588,
@@ -8672,7 +8672,7 @@
     "top_collaborator_id": "nm0589494",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.001822,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00571511,
     "eigen_centrality": 0.057163,
     "clustering_local": 0.6174,
@@ -8747,36 +8747,36 @@
         "votes": 0
       },
       {
-        "title": "Fools for Luck",
-        "character": "Philander Jepson",
+        "title": "Upside Down",
+        "character": "Archibald Pim",
         "characters": [
-          "Philander Jepson"
+          "Archibald Pim"
         ],
-        "year": 1917,
+        "year": 1919,
         "billing": 1,
-        "tconst": "tt0007964",
+        "tconst": "tt0194495",
         "votes": 0
       },
       {
-        "title": "King Harold",
-        "character": "Henry",
+        "title": "Nothing But the Truth",
+        "character": "Robert Bennett",
         "characters": [
-          "Henry"
+          "Robert Bennett"
         ],
-        "year": 1927,
+        "year": 1920,
         "billing": 1,
-        "tconst": "tt0487659",
+        "tconst": "tt0196797",
         "votes": 0
       },
       {
-        "title": "Two-Bit Seats",
-        "character": "Jimmy Mason",
+        "title": "Taxi",
+        "character": "Robert Hervey Randolph",
         "characters": [
-          "Jimmy Mason"
+          "Robert Hervey Randolph"
         ],
-        "year": 1917,
+        "year": 1919,
         "billing": 1,
-        "tconst": "tt0183928",
+        "tconst": "tt0194434",
         "votes": 0
       }
     ],
@@ -8875,11 +8875,11 @@
       "1940s",
       "1950s"
     ],
-    "top_collaborator": "Billy Bletcher",
-    "top_collaborator_id": "nm0088285",
+    "top_collaborator": "Gertrude Astor",
+    "top_collaborator_id": "nm0040090",
     "collaborator_loyalty": 0.25,
     "bridge_score": 0.001762,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00660041,
     "eigen_centrality": 0.070783,
     "clustering_local": 0.6077,
@@ -8897,7 +8897,7 @@
     "hub_vs_loyal": 17.25,
     "collaborator_reach": 46,
     "embed_x": -0.8968,
-    "embed_y": -1.529
+    "embed_y": -1.5289
   },
   {
     "id": "nm0448195",
@@ -8965,25 +8965,25 @@
         "votes": 10
       },
       {
-        "title": "Daughter of Mine",
-        "character": "Rosie Mendelsohn",
+        "title": "Bad Company",
+        "character": "Gloria Waring",
         "characters": [
-          "Rosie Mendelsohn"
+          "Gloria Waring"
         ],
-        "year": 1919,
+        "year": 1925,
         "billing": 1,
-        "tconst": "tt0010051",
+        "tconst": "tt0015593",
         "votes": 0
       },
       {
-        "title": "Our Little Wife",
-        "character": "Dodo Warren",
+        "title": "Leave It to Susan",
+        "character": "Susan Burbridge",
         "characters": [
-          "Dodo Warren"
+          "Susan Burbridge"
         ],
-        "year": 1918,
+        "year": 1919,
         "billing": 1,
-        "tconst": "tt0008396",
+        "tconst": "tt0010346",
         "votes": 0
       }
     ],
@@ -9011,14 +9011,14 @@
     "genre_first": "Comedy",
     "genre_last": "Biography",
     "genre_first_last_distance": 1,
-    "typecast_character": "Tish's Grandmother",
+    "typecast_character": "Self - Stage Co-Star",
     "typecast_count": 1,
     "billing_trajectory": -0.1624,
     "median_billing": 1,
     "minutes_credited": 2609,
     "medium_mix": {
-      "movie": 0.95,
       "tvMovie": 0.025,
+      "movie": 0.95,
       "tvSeries": 0.025
     },
     "short_to_feature_ratio": 0.0,
@@ -9084,7 +9084,7 @@
     "top_collaborator_id": "nm0203527",
     "collaborator_loyalty": 0.5,
     "bridge_score": 0.002153,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00816955,
     "eigen_centrality": 0.089744,
     "clustering_local": 0.5884,
@@ -9102,7 +9102,7 @@
     "hub_vs_loyal": -11.5,
     "collaborator_reach": 46,
     "embed_x": 0.0384,
-    "embed_y": -1.2119
+    "embed_y": -1.2159
   },
   {
     "id": "nm0017578",
@@ -9126,17 +9126,6 @@
     "rk_prominence": 127,
     "roles": [
       {
-        "title": "It's Up to You",
-        "character": "Mr. Whitmore",
-        "characters": [
-          "Mr. Whitmore"
-        ],
-        "year": 1936,
-        "billing": 1,
-        "tconst": "tt1825825",
-        "votes": 0
-      },
-      {
         "title": "Eyes Aloft",
         "character": "Ray Harper",
         "characters": [
@@ -9145,6 +9134,17 @@
         "year": 1943,
         "billing": 1,
         "tconst": "tt9015170",
+        "votes": 0
+      },
+      {
+        "title": "It's Up to You",
+        "character": "Mr. Whitmore",
+        "characters": [
+          "Mr. Whitmore"
+        ],
+        "year": 1936,
+        "billing": 1,
+        "tconst": "tt1825825",
         "votes": 0
       },
       {
@@ -9219,7 +9219,7 @@
     "genre_first": "Drama",
     "genre_last": "Adventure",
     "genre_first_last_distance": 1,
-    "typecast_character": "Adam Stone",
+    "typecast_character": "Mike McGrath",
     "typecast_count": 1,
     "billing_trajectory": -0.1092,
     "median_billing": 9,
@@ -9289,7 +9289,7 @@
     "top_collaborator_id": "nm0010958",
     "collaborator_loyalty": 0.16,
     "bridge_score": 0.004046,
-    "community": 3,
+    "community": 6,
     "pagerank": 0.00397514,
     "eigen_centrality": 0.036953,
     "clustering_local": 0.5063,
@@ -9494,7 +9494,7 @@
     "top_collaborator_id": "nm0392442",
     "collaborator_loyalty": 0.088,
     "bridge_score": 0.004032,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00522357,
     "eigen_centrality": 0.065467,
     "clustering_local": 0.4535,
@@ -9547,17 +9547,6 @@
         "votes": 28
       },
       {
-        "title": "Oliver Twist, Jr.",
-        "character": "Oliver Twist Jr.",
-        "characters": [
-          "Oliver Twist Jr."
-        ],
-        "year": 1921,
-        "billing": 1,
-        "tconst": "tt0012522",
-        "votes": 0
-      },
-      {
         "title": "Officer of the Day",
         "character": "Keene",
         "characters": [
@@ -9588,6 +9577,17 @@
         "year": 1915,
         "billing": 1,
         "tconst": "tt0809181",
+        "votes": 0
+      },
+      {
+        "title": "Oliver Twist, Jr.",
+        "character": "Oliver Twist Jr.",
+        "characters": [
+          "Oliver Twist Jr."
+        ],
+        "year": 1921,
+        "billing": 1,
+        "tconst": "tt0012522",
         "votes": 0
       },
       {
@@ -9629,7 +9629,7 @@
     "genre_first": "Drama",
     "genre_last": "Horror",
     "genre_first_last_distance": 1,
-    "typecast_character": "Dave Starky",
+    "typecast_character": "Cameraman",
     "typecast_count": 1,
     "billing_trajectory": -0.1163,
     "median_billing": 6,
@@ -9674,7 +9674,7 @@
       }
     ],
     "same_director_repeat": 5,
-    "top_director": "nm0385227",
+    "top_director": "nm0166836",
     "regions": [
       "AR",
       "AT",
@@ -9702,7 +9702,7 @@
     "top_collaborator_id": "nm0000036",
     "collaborator_loyalty": 0.145,
     "bridge_score": 0.005062,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00607206,
     "eigen_centrality": 0.078178,
     "clustering_local": 0.4292,
@@ -9719,8 +9719,8 @@
     "acclaim_gap": 1.541,
     "hub_vs_loyal": 27.325,
     "collaborator_reach": 44,
-    "embed_x": 0.7108,
-    "embed_y": 0.8238
+    "embed_x": 0.7107,
+    "embed_y": 0.824
   },
   {
     "id": "nm0659427",
@@ -9909,7 +9909,7 @@
     "top_collaborator_id": "nm0448012",
     "collaborator_loyalty": 0.126,
     "bridge_score": 0.008694,
-    "community": 4,
+    "community": 5,
     "pagerank": 0.00599098,
     "eigen_centrality": 0.02586,
     "clustering_local": 0.3066,
@@ -10043,14 +10043,14 @@
     "genre_first": "Drama",
     "genre_last": "Animation",
     "genre_first_last_distance": 1,
-    "typecast_character": "Thomas Mallon",
+    "typecast_character": "Lt. Walsh",
     "typecast_count": 1,
     "billing_trajectory": -0.0478,
     "median_billing": 5,
     "minutes_credited": 7418,
     "medium_mix": {
-      "movie": 0.974,
-      "tvSeries": 0.026
+      "tvSeries": 0.026,
+      "movie": 0.974
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1952,
@@ -10115,7 +10115,7 @@
     "top_collaborator_id": "nm0394407",
     "collaborator_loyalty": 0.057,
     "bridge_score": 0.007112,
-    "community": 4,
+    "community": 5,
     "pagerank": 0.00578384,
     "eigen_centrality": 0.048512,
     "clustering_local": 0.3837,
@@ -10132,7 +10132,7 @@
     "acclaim_gap": -0.409,
     "hub_vs_loyal": 37.445,
     "collaborator_reach": 44,
-    "embed_x": -0.0439,
+    "embed_x": -0.0438,
     "embed_y": 0.8459
   },
   {
@@ -10321,7 +10321,7 @@
     "top_collaborator_id": "nm0163417",
     "collaborator_loyalty": 0.05,
     "bridge_score": 0.010118,
-    "community": 0,
+    "community": 6,
     "pagerank": 0.00475699,
     "eigen_centrality": 0.021771,
     "clustering_local": 0.2813,
@@ -10338,8 +10338,8 @@
     "acclaim_gap": 0.058,
     "hub_vs_loyal": 37.25,
     "collaborator_reach": 43,
-    "embed_x": -0.0794,
-    "embed_y": 1.6154
+    "embed_x": -0.0818,
+    "embed_y": 1.6176
   },
   {
     "id": "nm0401434",
@@ -10407,14 +10407,14 @@
         "votes": 21
       },
       {
-        "title": "The Hoosier Schoolmaster",
-        "character": "Ralph Hartsook",
+        "title": "Famous Scenes from Pagliacci",
+        "character": "Pagliacci",
         "characters": [
-          "Ralph Hartsook"
+          "Pagliacci"
         ],
-        "year": 1924,
+        "year": 1934,
         "billing": 1,
-        "tconst": "tt0015001",
+        "tconst": "tt13935962",
         "votes": 0
       },
       {
@@ -10456,14 +10456,14 @@
     "genre_first": "Biography",
     "genre_last": "Adventure",
     "genre_first_last_distance": 1,
-    "typecast_character": "Old Henry",
+    "typecast_character": "Lt. Col. Chandler",
     "typecast_count": 1,
     "billing_trajectory": -0.1441,
     "median_billing": 5,
     "minutes_credited": 5829,
     "medium_mix": {
-      "tvMovie": 0.014,
       "movie": 0.932,
+      "tvMovie": 0.014,
       "tvSeries": 0.055
     },
     "short_to_feature_ratio": 0.0,
@@ -10530,7 +10530,7 @@
     "top_collaborator_id": "nm0832011",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.003727,
-    "community": 5,
+    "community": 2,
     "pagerank": 0.00656349,
     "eigen_centrality": 0.050156,
     "clustering_local": 0.5116,
@@ -10548,7 +10548,7 @@
     "hub_vs_loyal": 4.705,
     "collaborator_reach": 43,
     "embed_x": -0.4719,
-    "embed_y": -1.5503
+    "embed_y": -1.5414
   },
   {
     "id": "nm0531759",
@@ -10605,17 +10605,6 @@
         "votes": 25
       },
       {
-        "title": "The Lineman",
-        "character": "The Lineman",
-        "characters": [
-          "The Lineman"
-        ],
-        "year": 1911,
-        "billing": 1,
-        "tconst": "tt1234682",
-        "votes": 0
-      },
-      {
         "title": "The Helping Hand",
         "character": "John Clinton",
         "characters": [
@@ -10635,6 +10624,17 @@
         "year": 1912,
         "billing": 1,
         "tconst": "tt1346705",
+        "votes": 0
+      },
+      {
+        "title": "The Lineman",
+        "character": "The Lineman",
+        "characters": [
+          "The Lineman"
+        ],
+        "year": 1911,
+        "billing": 1,
+        "tconst": "tt1234682",
         "votes": 0
       }
     ],
@@ -10788,6 +10788,28 @@
         "votes": 58
       },
       {
+        "title": "The Phantom Thief",
+        "character": "Kenneth Turner",
+        "characters": [
+          "Kenneth Turner"
+        ],
+        "year": 1915,
+        "billing": 1,
+        "tconst": "tt1198631",
+        "votes": 0
+      },
+      {
+        "title": "High Speed",
+        "character": "Billy Brice",
+        "characters": [
+          "Billy Brice"
+        ],
+        "year": 1920,
+        "billing": 1,
+        "tconst": "tt0195781",
+        "votes": 0
+      },
+      {
         "title": "The Hand of Horror",
         "character": "Frank Henley",
         "characters": [
@@ -10796,17 +10818,6 @@
         "year": 1914,
         "billing": 1,
         "tconst": "tt0148250",
-        "votes": 0
-      },
-      {
-        "title": "Mammon and the Archer",
-        "character": "Richard Rockwell",
-        "characters": [
-          "Richard Rockwell"
-        ],
-        "year": 1918,
-        "billing": 1,
-        "tconst": "tt0009338",
         "votes": 0
       },
       {
@@ -10821,25 +10832,14 @@
         "votes": 0
       },
       {
-        "title": "Roses of Memory",
-        "character": "Robert Townsend",
+        "title": "One Thousand Dollars",
+        "character": "Eddie Gillian",
         "characters": [
-          "Robert Townsend"
+          "Eddie Gillian"
         ],
-        "year": 1915,
+        "year": 1918,
         "billing": 1,
-        "tconst": "tt0496131",
-        "votes": 0
-      },
-      {
-        "title": "For France",
-        "character": "Edward Ackland",
-        "characters": [
-          "Edward Ackland"
-        ],
-        "year": 1917,
-        "billing": 1,
-        "tconst": "tt0007965",
+        "tconst": "tt0009448",
         "votes": 0
       }
     ],
@@ -10940,7 +10940,7 @@
     "top_collaborator_id": "nm0611804",
     "collaborator_loyalty": 0.082,
     "bridge_score": 0.003709,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.0053572,
     "eigen_centrality": 0.070207,
     "clustering_local": 0.5671,
@@ -10957,8 +10957,8 @@
     "acclaim_gap": 0.596,
     "hub_vs_loyal": 31.57,
     "collaborator_reach": 41,
-    "embed_x": 0.0838,
-    "embed_y": 1.061
+    "embed_x": 0.0839,
+    "embed_y": 1.0681
   },
   {
     "id": "nm0480156",
@@ -11074,7 +11074,7 @@
     "genre_first": "Drama",
     "genre_last": "Western",
     "genre_first_last_distance": 1,
-    "typecast_character": "Cherokee",
+    "typecast_character": "Piute",
     "typecast_count": 2,
     "billing_trajectory": -0.1309,
     "median_billing": 7,
@@ -11196,17 +11196,6 @@
         "votes": 414
       },
       {
-        "title": "The Land Just Over Yonder",
-        "character": "William King",
-        "characters": [
-          "William King"
-        ],
-        "year": 1916,
-        "billing": 1,
-        "tconst": "tt0163042",
-        "votes": 0
-      },
-      {
         "title": "Diamond Carlisle",
         "character": "'Diamond' Carlisle",
         "characters": [
@@ -11218,17 +11207,6 @@
         "votes": 0
       },
       {
-        "title": "Blind Circumstances",
-        "character": "Silent Morse",
-        "characters": [
-          "Silent Morse"
-        ],
-        "year": 1922,
-        "billing": 1,
-        "tconst": "tt0012950",
-        "votes": 0
-      },
-      {
         "title": "The Hate Trail",
         "character": "Sergeant Steve Bain",
         "characters": [
@@ -11237,6 +11215,28 @@
         "year": 1922,
         "billing": 1,
         "tconst": "tt0013220",
+        "votes": 0
+      },
+      {
+        "title": "The Land Just Over Yonder",
+        "character": "William King",
+        "characters": [
+          "William King"
+        ],
+        "year": 1916,
+        "billing": 1,
+        "tconst": "tt0163042",
+        "votes": 0
+      },
+      {
+        "title": "Blind Circumstances",
+        "character": "Silent Morse",
+        "characters": [
+          "Silent Morse"
+        ],
+        "year": 1922,
+        "billing": 1,
+        "tconst": "tt0012950",
         "votes": 0
       },
       {
@@ -11278,7 +11278,7 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Townsman",
+    "typecast_character": "Sheriff Jeff Clinton",
     "typecast_count": 2,
     "billing_trajectory": -0.1686,
     "median_billing": 7,
@@ -11348,7 +11348,7 @@
     "top_collaborator_id": "nm0041410",
     "collaborator_loyalty": 0.105,
     "bridge_score": 0.003255,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00666157,
     "eigen_centrality": 0.054393,
     "clustering_local": 0.4534,
@@ -11366,7 +11366,7 @@
     "hub_vs_loyal": 26.925,
     "collaborator_reach": 39,
     "embed_x": -1.0065,
-    "embed_y": 1.3502
+    "embed_y": 1.3504
   },
   {
     "id": "nm0263004",
@@ -11483,7 +11483,7 @@
     "genre_first": "Drama",
     "genre_last": "Adventure",
     "genre_first_last_distance": 1,
-    "typecast_character": "Child",
+    "typecast_character": "The Child",
     "typecast_count": 2,
     "billing_trajectory": 0.0959,
     "median_billing": 2,
@@ -11554,7 +11554,7 @@
     "top_collaborator_id": "nm0002311",
     "collaborator_loyalty": 0.089,
     "bridge_score": 0.006065,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.00482373,
     "eigen_centrality": 0.016153,
     "clustering_local": 0.3414,
@@ -11572,7 +11572,7 @@
     "hub_vs_loyal": 27.765,
     "collaborator_reach": 38,
     "embed_x": 2.4373,
-    "embed_y": -0.8388
+    "embed_y": -0.8391
   },
   {
     "id": "nm0572142",
@@ -11689,7 +11689,7 @@
     "genre_first": "Adventure",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Curley Davis",
+    "typecast_character": "Grimald",
     "typecast_count": 1,
     "billing_trajectory": -0.0244,
     "median_billing": 2,
@@ -11758,7 +11758,7 @@
     "top_collaborator_id": "nm0522926",
     "collaborator_loyalty": 0.214,
     "bridge_score": 0.003041,
-    "community": 4,
+    "community": 5,
     "pagerank": 0.00446753,
     "eigen_centrality": 0.035298,
     "clustering_local": 0.4737,
@@ -11775,7 +11775,7 @@
     "acclaim_gap": -1.474,
     "hub_vs_loyal": 13.39,
     "collaborator_reach": 38,
-    "embed_x": 0.6019,
+    "embed_x": 0.602,
     "embed_y": 1.3157
   },
   {
@@ -11977,8 +11977,8 @@
     "acclaim_gap": -0.688,
     "hub_vs_loyal": 29.03,
     "collaborator_reach": 38,
-    "embed_x": -1.9999,
-    "embed_y": -0.5335
+    "embed_x": -1.9996,
+    "embed_y": -0.5334
   },
   {
     "id": "nm0001935",
@@ -12057,14 +12057,14 @@
         "votes": 39
       },
       {
-        "title": "I Live Again",
-        "character": "Morton Meredith",
+        "title": "False Fathers",
+        "character": "Parson",
         "characters": [
-          "Morton Meredith"
+          "Parson"
         ],
-        "year": 1936,
+        "year": 1929,
         "billing": 1,
-        "tconst": "tt0027778",
+        "tconst": "tt0019866",
         "votes": 0
       }
     ],
@@ -12181,7 +12181,7 @@
     "acclaim_gap": -0.228,
     "hub_vs_loyal": 28.835,
     "collaborator_reach": 37,
-    "embed_x": -1.3854,
+    "embed_x": -1.3857,
     "embed_y": 0.0656
   },
   {
@@ -12228,14 +12228,14 @@
         "votes": 15
       },
       {
-        "title": "Stocks and Blondes",
-        "character": "Goldie",
+        "title": "A Startling Climax",
+        "character": "Margy Summers",
         "characters": [
-          "Goldie"
+          "Margy Summers"
         ],
-        "year": 1928,
+        "year": 1917,
         "billing": 1,
-        "tconst": "tt0019423",
+        "tconst": "tt0427895",
         "votes": 0
       },
       {
@@ -12250,14 +12250,14 @@
         "votes": 0
       },
       {
-        "title": "A Startling Climax",
-        "character": "Margy Summers",
+        "title": "Stocks and Blondes",
+        "character": "Goldie",
         "characters": [
-          "Margy Summers"
+          "Goldie"
         ],
-        "year": 1917,
+        "year": 1928,
         "billing": 1,
-        "tconst": "tt0427895",
+        "tconst": "tt0019423",
         "votes": 0
       },
       {
@@ -12366,11 +12366,11 @@
       "1950s",
       "1960s"
     ],
-    "top_collaborator": "Louise Fazenda",
-    "top_collaborator_id": "nm0269771",
+    "top_collaborator": "Kenneth Harlan",
+    "top_collaborator_id": "nm0363218",
     "collaborator_loyalty": 0.047,
     "bridge_score": 0.005262,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00329731,
     "eigen_centrality": 0.031134,
     "clustering_local": 0.4159,
@@ -12387,8 +12387,8 @@
     "acclaim_gap": 0.493,
     "hub_vs_loyal": 30.595,
     "collaborator_reach": 36,
-    "embed_x": -2.1505,
-    "embed_y": -0.1151
+    "embed_x": -2.1506,
+    "embed_y": -0.1152
   },
   {
     "id": "nm0218131",
@@ -12445,17 +12445,6 @@
         "votes": 0
       },
       {
-        "title": "Amateur Night",
-        "character": "Theatre Manager",
-        "characters": [
-          "Theatre Manager"
-        ],
-        "year": 1927,
-        "billing": 1,
-        "tconst": "tt0017625",
-        "votes": 0
-      },
-      {
         "title": "A Night at Coffee Dan's",
         "character": "M.C.",
         "characters": [
@@ -12464,6 +12453,17 @@
         "year": 1927,
         "billing": 1,
         "tconst": "tt0870175",
+        "votes": 0
+      },
+      {
+        "title": "Amateur Night",
+        "character": "Theatre Manager",
+        "characters": [
+          "Theatre Manager"
+        ],
+        "year": 1927,
+        "billing": 1,
+        "tconst": "tt0017625",
         "votes": 0
       },
       {
@@ -12511,8 +12511,8 @@
     "median_billing": 5,
     "minutes_credited": 9512,
     "medium_mix": {
-      "movie": 0.933,
       "tvMovie": 0.025,
+      "movie": 0.933,
       "tvSeries": 0.042
     },
     "short_to_feature_ratio": 0.0,
@@ -12579,7 +12579,7 @@
     "top_collaborator_id": "nm0659427",
     "collaborator_loyalty": 0.132,
     "bridge_score": 0.003244,
-    "community": 4,
+    "community": 5,
     "pagerank": 0.00709442,
     "eigen_centrality": 0.056151,
     "clustering_local": 0.4381,
@@ -12596,7 +12596,7 @@
     "acclaim_gap": 0.776,
     "hub_vs_loyal": 20.82,
     "collaborator_reach": 36,
-    "embed_x": -1.534,
+    "embed_x": -1.5344,
     "embed_y": 0.4916
   },
   {
@@ -12676,14 +12676,14 @@
         "votes": 15
       },
       {
-        "title": "Rough Going",
-        "character": "Franklyn Farnum",
+        "title": "The Raiders",
+        "character": "Pvt. Fitzgerald, RCMP",
         "characters": [
-          "Franklyn Farnum"
+          "Pvt. Fitzgerald, RCMP"
         ],
-        "year": 1925,
+        "year": 1921,
         "billing": 1,
-        "tconst": "tt0158170",
+        "tconst": "tt0012605",
         "votes": 0
       }
     ],
@@ -12800,7 +12800,7 @@
     "acclaim_gap": 0.639,
     "hub_vs_loyal": 16.795,
     "collaborator_reach": 36,
-    "embed_x": 0.1123,
+    "embed_x": 0.09,
     "embed_y": 1.5025
   },
   {
@@ -12880,14 +12880,14 @@
         "votes": 0
       },
       {
-        "title": "Bury the Hatchet",
-        "character": "Tom",
+        "title": "Fight is Right",
+        "character": "Tom Kennedy",
         "characters": [
-          "Tom"
+          "Tom Kennedy"
         ],
-        "year": 1937,
+        "year": 1936,
         "billing": 1,
-        "tconst": "tt0131991",
+        "tconst": "tt2106415",
         "votes": 0
       }
     ],
@@ -12987,11 +12987,11 @@
       "1940s",
       "1950s"
     ],
-    "top_collaborator": "Heinie Conklin",
-    "top_collaborator_id": "nm0174692",
+    "top_collaborator": "Edgar Kennedy",
+    "top_collaborator_id": "nm0448012",
     "collaborator_loyalty": 0.088,
     "bridge_score": 0.003707,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00397065,
     "eigen_centrality": 0.033098,
     "clustering_local": 0.4095,
@@ -13008,7 +13008,7 @@
     "acclaim_gap": 0.03,
     "hub_vs_loyal": 25.88,
     "collaborator_reach": 36,
-    "embed_x": -0.501,
+    "embed_x": -0.5016,
     "embed_y": 1.5163
   },
   {
@@ -13044,17 +13044,6 @@
         "votes": 20
       },
       {
-        "title": "When Danger Calls",
-        "character": "James Gwyn",
-        "characters": [
-          "James Gwyn"
-        ],
-        "year": 1927,
-        "billing": 3,
-        "tconst": "tt0018563",
-        "votes": 0
-      },
-      {
         "title": "The Silent Rider",
         "character": "Red Wender",
         "characters": [
@@ -13074,6 +13063,17 @@
         "year": 1929,
         "billing": 3,
         "tconst": "tt0019719",
+        "votes": 0
+      },
+      {
+        "title": "When Danger Calls",
+        "character": "James Gwyn",
+        "characters": [
+          "James Gwyn"
+        ],
+        "year": 1927,
+        "billing": 3,
+        "tconst": "tt0018563",
         "votes": 0
       },
       {
@@ -13125,14 +13125,14 @@
     "genre_first": "Action",
     "genre_last": "Western",
     "genre_first_last_distance": 1,
-    "typecast_character": "Silk Stevens",
+    "typecast_character": "Barfly",
     "typecast_count": 1,
     "billing_trajectory": -0.1014,
     "median_billing": 7,
     "minutes_credited": 3559,
     "medium_mix": {
-      "movie": 0.948,
-      "tvSeries": 0.052
+      "tvSeries": 0.052,
+      "movie": 0.948
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1955,
@@ -13330,7 +13330,7 @@
     "genre_first": "Drama",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "General Director Preysing",
+    "typecast_character": "Pancho Villa",
     "typecast_count": 2,
     "billing_trajectory": -0.0131,
     "median_billing": 3,
@@ -13401,7 +13401,7 @@
     "top_collaborator_id": "nm0832011",
     "collaborator_loyalty": 0.077,
     "bridge_score": 0.007122,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00470927,
     "eigen_centrality": 0.011155,
     "clustering_local": 0.2235,
@@ -13604,7 +13604,7 @@
     "top_collaborator_id": "nm0290066",
     "collaborator_loyalty": 0.087,
     "bridge_score": 0.006253,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00385519,
     "eigen_centrality": 0.014437,
     "clustering_local": 0.2874,
@@ -13621,8 +13621,8 @@
     "acclaim_gap": -1.274,
     "hub_vs_loyal": 24.995,
     "collaborator_reach": 35,
-    "embed_x": 1.5604,
-    "embed_y": 0.9587
+    "embed_x": 1.5603,
+    "embed_y": 0.9586
   },
   {
     "id": "nm0463264",
@@ -13679,17 +13679,6 @@
         "votes": 21
       },
       {
-        "title": "Three Who Paid",
-        "character": "Jim Quade",
-        "characters": [
-          "Jim Quade"
-        ],
-        "year": 1923,
-        "billing": 2,
-        "tconst": "tt0013673",
-        "votes": 0
-      },
-      {
         "title": "The Red Warning",
         "character": "Tom Jeffries",
         "characters": [
@@ -13698,6 +13687,17 @@
         "year": 1923,
         "billing": 2,
         "tconst": "tt0014400",
+        "votes": 0
+      },
+      {
+        "title": "Three Who Paid",
+        "character": "Jim Quade",
+        "characters": [
+          "Jim Quade"
+        ],
+        "year": 1923,
+        "billing": 2,
+        "tconst": "tt0013673",
         "votes": 0
       },
       {
@@ -13806,7 +13806,7 @@
     "top_collaborator_id": "nm0369058",
     "collaborator_loyalty": 0.048,
     "bridge_score": 0.008684,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00398075,
     "eigen_centrality": 0.010054,
     "clustering_local": 0.2521,
@@ -13823,8 +13823,8 @@
     "acclaim_gap": 0.205,
     "hub_vs_loyal": 29.48,
     "collaborator_reach": 35,
-    "embed_x": 0.879,
-    "embed_y": -0.7639
+    "embed_x": 0.8791,
+    "embed_y": -0.7644
   },
   {
     "id": "nm0510134",
@@ -13941,7 +13941,7 @@
     "genre_first": "Drama",
     "genre_last": "Action",
     "genre_first_last_distance": 1,
-    "typecast_character": "Capo Riccione",
+    "typecast_character": "Prof. Pierre Aronnax",
     "typecast_count": 1,
     "billing_trajectory": -0.0028,
     "median_billing": 3,
@@ -14012,8 +14012,8 @@
       "1960s",
       "1970s"
     ],
-    "top_collaborator": "Eugene Pallette",
-    "top_collaborator_id": "nm0657874",
+    "top_collaborator": "Richard Tucker",
+    "top_collaborator_id": "nm0875983",
     "collaborator_loyalty": 0.111,
     "bridge_score": 0.005063,
     "community": 5,
@@ -14033,7 +14033,7 @@
     "acclaim_gap": 0.131,
     "hub_vs_loyal": 22.235,
     "collaborator_reach": 35,
-    "embed_x": 2.2747,
+    "embed_x": 2.2746,
     "embed_y": 0.7968
   },
   {
@@ -14069,25 +14069,14 @@
         "votes": 0
       },
       {
-        "title": "Light Cavalry",
-        "character": "Graf Komaroff",
+        "title": "Venetian Lovers",
+        "character": "Chevalier Tomasso",
         "characters": [
-          "Graf Komaroff"
+          "Chevalier Tomasso"
         ],
-        "year": 1927,
+        "year": 1925,
         "billing": 3,
-        "tconst": "tt0133061",
-        "votes": 0
-      },
-      {
-        "title": "Wien, wie es weint und lacht",
-        "character": "Martin - sein Sohn",
-        "characters": [
-          "Martin - sein Sohn"
-        ],
-        "year": 1926,
-        "billing": 3,
-        "tconst": "tt0484080",
+        "tconst": "tt0016483",
         "votes": 0
       },
       {
@@ -14102,14 +14091,25 @@
         "votes": 0
       },
       {
-        "title": "Venetian Lovers",
-        "character": "Chevalier Tomasso",
+        "title": "Dein Begehren ist Sünde ...",
+        "character": "Felix Dubois",
         "characters": [
-          "Chevalier Tomasso"
+          "Felix Dubois"
         ],
         "year": 1925,
         "billing": 3,
-        "tconst": "tt0016483",
+        "tconst": "tt2018057",
+        "votes": 0
+      },
+      {
+        "title": "The False Prince",
+        "character": "Fritz Stein - sein Freund",
+        "characters": [
+          "Fritz Stein - sein Freund"
+        ],
+        "year": 1927,
+        "billing": 3,
+        "tconst": "tt0137511",
         "votes": 0
       },
       {
@@ -14223,7 +14223,7 @@
     "top_collaborator_id": "nm0519765",
     "collaborator_loyalty": 0.571,
     "bridge_score": 0.000577,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00524943,
     "eigen_centrality": 0.052133,
     "clustering_local": 0.6992,
@@ -14240,8 +14240,8 @@
     "acclaim_gap": 0.758,
     "hub_vs_loyal": -30.665,
     "collaborator_reach": 35,
-    "embed_x": 1.2709,
-    "embed_y": -1.8833
+    "embed_x": 1.271,
+    "embed_y": -1.8832
   },
   {
     "id": "nm0805790",
@@ -14364,9 +14364,9 @@
     "median_billing": 4,
     "minutes_credited": 5520,
     "medium_mix": {
-      "tvMovie": 0.108,
       "movie": 0.747,
-      "tvSeries": 0.145
+      "tvSeries": 0.145,
+      "tvMovie": 0.108
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1950,
@@ -14428,11 +14428,11 @@
       "1960s",
       "1970s"
     ],
-    "top_collaborator": "John Miljan",
-    "top_collaborator_id": "nm0587534",
+    "top_collaborator": "Kurt Katch",
+    "top_collaborator_id": "nm0441193",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.001242,
-    "community": 5,
+    "community": 2,
     "pagerank": 0.00514865,
     "eigen_centrality": 0.033249,
     "clustering_local": 0.6202,
@@ -14449,8 +14449,8 @@
     "acclaim_gap": 1.304,
     "hub_vs_loyal": -3.295,
     "collaborator_reach": 35,
-    "embed_x": -1.0316,
-    "embed_y": 0.682
+    "embed_x": -1.0313,
+    "embed_y": 0.6819
   },
   {
     "id": "nm0907404",
@@ -14566,7 +14566,7 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Oil Well Driller",
+    "typecast_character": "Frank Rodgers",
     "typecast_count": 1,
     "billing_trajectory": -0.3554,
     "median_billing": 6,
@@ -14634,7 +14634,7 @@
     "top_collaborator_id": "nm0924307",
     "collaborator_loyalty": 0.13,
     "bridge_score": 0.002284,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00400654,
     "eigen_centrality": 0.027299,
     "clustering_local": 0.484,
@@ -14698,17 +14698,6 @@
         "votes": 0
       },
       {
-        "title": "The Golden Trail",
-        "character": "Jim Healy",
-        "characters": [
-          "Jim Healy"
-        ],
-        "year": 1915,
-        "billing": 2,
-        "tconst": "tt0179194",
-        "votes": 0
-      },
-      {
         "title": "The Range Wolf",
         "character": "Bad Guy",
         "characters": [
@@ -14728,6 +14717,17 @@
         "year": 1917,
         "billing": 2,
         "tconst": "tt0442150",
+        "votes": 0
+      },
+      {
+        "title": "The Golden Trail",
+        "character": "Jim Healy",
+        "characters": [
+          "Jim Healy"
+        ],
+        "year": 1915,
+        "billing": 2,
+        "tconst": "tt0179194",
         "votes": 0
       },
       {
@@ -14812,7 +14812,7 @@
       }
     ],
     "same_director_repeat": 8,
-    "top_director": "nm0416258",
+    "top_director": "nm0385171",
     "regions": [
       "AR",
       "AT",
@@ -14838,7 +14838,7 @@
     "top_collaborator_id": "nm0427659",
     "collaborator_loyalty": 0.068,
     "bridge_score": 0.002187,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00341517,
     "eigen_centrality": 0.018279,
     "clustering_local": 0.4349,
@@ -14891,47 +14891,47 @@
         "votes": 27
       },
       {
-        "title": "Lash of the Law",
-        "character": "Jim Stanley",
+        "title": "Lightning Bill",
+        "character": "William W. Williams",
         "characters": [
-          "Jim Stanley"
+          "William W. Williams"
         ],
         "year": 1926,
         "billing": 1,
-        "tconst": "tt0017057",
+        "tconst": "tt0017066",
         "votes": 0
       },
       {
-        "title": "You're Fired",
-        "character": "Billy Hays posing as Jones",
+        "title": "Fightin' Jack",
+        "character": "Jack Rhodes",
         "characters": [
-          "Billy Hays posing as Jones"
+          "Jack Rhodes"
         ],
-        "year": 1925,
+        "year": 1926,
         "billing": 1,
-        "tconst": "tt0016555",
+        "tconst": "tt0016862",
         "votes": 0
       },
       {
-        "title": "The Love Lute of Romany",
-        "character": "Frank Rogers - the Farmer",
+        "title": "The Browns Have Visitors",
+        "character": "Mr. Brown",
         "characters": [
-          "Frank Rogers - the Farmer"
-        ],
-        "year": 1913,
-        "billing": 1,
-        "tconst": "tt0174883",
-        "votes": 0
-      },
-      {
-        "title": "The Snare",
-        "character": "Tom Ransom",
-        "characters": [
-          "Tom Ransom"
+          "Mr. Brown"
         ],
         "year": 1912,
         "billing": 1,
-        "tconst": "tt0003384",
+        "tconst": "tt0193027",
+        "votes": 0
+      },
+      {
+        "title": "Hilda Wakes",
+        "character": "John Woods",
+        "characters": [
+          "John Woods"
+        ],
+        "year": 1913,
+        "billing": 1,
+        "tconst": "tt0374712",
         "votes": 0
       },
       {
@@ -15043,7 +15043,7 @@
     "top_collaborator_id": "nm0066024",
     "collaborator_loyalty": 0.149,
     "bridge_score": 0.002405,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00388932,
     "eigen_centrality": 0.042638,
     "clustering_local": 0.5161,
@@ -15060,7 +15060,7 @@
     "acclaim_gap": 0.585,
     "hub_vs_loyal": 14.865,
     "collaborator_reach": 32,
-    "embed_x": 2.6063,
+    "embed_x": 2.6064,
     "embed_y": -0.1477
   },
   {
@@ -15177,15 +15177,15 @@
     "genre_first": "Drama",
     "genre_last": "Animation",
     "genre_first_last_distance": 1,
-    "typecast_character": "Pete",
+    "typecast_character": "Clown",
     "typecast_count": 2,
     "billing_trajectory": 0.0277,
     "median_billing": 8,
     "minutes_credited": 3119,
     "medium_mix": {
-      "tvSeries": 0.042,
       "tvMovie": 0.042,
-      "movie": 0.917
+      "movie": 0.917,
+      "tvSeries": 0.042
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1971,
@@ -15249,11 +15249,11 @@
       "1980s",
       "1990s"
     ],
-    "top_collaborator": "Edgar Kennedy",
-    "top_collaborator_id": "nm0448012",
+    "top_collaborator": "Ernie Adams",
+    "top_collaborator_id": "nm0010958",
     "collaborator_loyalty": 0.107,
     "bridge_score": 0.001785,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00385722,
     "eigen_centrality": 0.039114,
     "clustering_local": 0.5444,
@@ -15270,7 +15270,7 @@
     "acclaim_gap": 1.056,
     "hub_vs_loyal": 19.695,
     "collaborator_reach": 32,
-    "embed_x": -2.3055,
+    "embed_x": -2.3056,
     "embed_y": -1.071
   },
   {
@@ -15306,17 +15306,6 @@
         "votes": 18
       },
       {
-        "title": "The Desert Demon",
-        "character": "Jim Slade",
-        "characters": [
-          "Jim Slade"
-        ],
-        "year": 1925,
-        "billing": 3,
-        "tconst": "tt0015744",
-        "votes": 0
-      },
-      {
         "title": "The Road from Latigo",
         "character": "Cowboy",
         "characters": [
@@ -15325,6 +15314,17 @@
         "year": 1925,
         "billing": 3,
         "tconst": "tt0347885",
+        "votes": 0
+      },
+      {
+        "title": "The Desert Demon",
+        "character": "Jim Slade",
+        "characters": [
+          "Jim Slade"
+        ],
+        "year": 1925,
+        "billing": 3,
+        "tconst": "tt0015744",
         "votes": 0
       },
       {
@@ -15458,7 +15458,7 @@
     "top_collaborator_id": "nm0924307",
     "collaborator_loyalty": 0.125,
     "bridge_score": 0.001034,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00513464,
     "eigen_centrality": 0.074951,
     "clustering_local": 0.6169,
@@ -15475,8 +15475,8 @@
     "acclaim_gap": -0.056,
     "hub_vs_loyal": 17.625,
     "collaborator_reach": 32,
-    "embed_x": -1.4998,
-    "embed_y": -1.3224
+    "embed_x": -1.4997,
+    "embed_y": -1.3225
   },
   {
     "id": "nm0439850",
@@ -15599,8 +15599,8 @@
     "median_billing": 5,
     "minutes_credited": 8863,
     "medium_mix": {
-      "movie": 0.937,
-      "tvSeries": 0.063
+      "tvSeries": 0.063,
+      "movie": 0.937
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1950,
@@ -15666,7 +15666,7 @@
     "top_collaborator_id": "nm0000011",
     "collaborator_loyalty": 0.087,
     "bridge_score": 0.003646,
-    "community": 4,
+    "community": 5,
     "pagerank": 0.00493025,
     "eigen_centrality": 0.029532,
     "clustering_local": 0.4355,
@@ -15719,25 +15719,14 @@
         "votes": 124
       },
       {
-        "title": "Blind Youth",
-        "character": "Maurie Monnier",
+        "title": "A Service of Love",
+        "character": "Joe Larrabee",
         "characters": [
-          "Maurie Monnier"
+          "Joe Larrabee"
         ],
-        "year": 1920,
+        "year": 1917,
         "billing": 1,
-        "tconst": "tt0011003",
-        "votes": 0
-      },
-      {
-        "title": "The Old Code",
-        "character": "Pierre Belleu",
-        "characters": [
-          "Pierre Belleu"
-        ],
-        "year": 1928,
-        "billing": 1,
-        "tconst": "tt0019230",
+        "tconst": "tt0330878",
         "votes": 0
       },
       {
@@ -15763,14 +15752,25 @@
         "votes": 0
       },
       {
-        "title": "A Service of Love",
-        "character": "Joe Larrabee",
+        "title": "The Invisible Divorce",
+        "character": "Jimmy Ryder",
         "characters": [
-          "Joe Larrabee"
+          "Jimmy Ryder"
         ],
-        "year": 1917,
+        "year": 1920,
         "billing": 1,
-        "tconst": "tt0330878",
+        "tconst": "tt0011334",
+        "votes": 0
+      },
+      {
+        "title": "The Old Code",
+        "character": "Pierre Belleu",
+        "characters": [
+          "Pierre Belleu"
+        ],
+        "year": 1928,
+        "billing": 1,
+        "tconst": "tt0019230",
         "votes": 0
       }
     ],
@@ -15800,7 +15800,7 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Miller, the Banker",
+    "typecast_character": "Ralph Gordon",
     "typecast_count": 1,
     "billing_trajectory": -0.1712,
     "median_billing": 4,
@@ -15865,11 +15865,11 @@
       "1930s",
       "1940s"
     ],
-    "top_collaborator": "Raymond Hatton",
-    "top_collaborator_id": "nm0369058",
+    "top_collaborator": "George O'Brien",
+    "top_collaborator_id": "nm0639563",
     "collaborator_loyalty": 0.076,
     "bridge_score": 0.002403,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00351872,
     "eigen_centrality": 0.04093,
     "clustering_local": 0.4738,
@@ -16073,7 +16073,7 @@
     "top_collaborator_id": "nm0163417",
     "collaborator_loyalty": 0.124,
     "bridge_score": 0.001236,
-    "community": 3,
+    "community": 6,
     "pagerank": 0.00527943,
     "eigen_centrality": 0.091581,
     "clustering_local": 0.5968,
@@ -16091,7 +16091,7 @@
     "hub_vs_loyal": 17.74,
     "collaborator_reach": 32,
     "embed_x": -1.388,
-    "embed_y": 0.9714
+    "embed_y": 0.9713
   },
   {
     "id": "nm0679814",
@@ -16208,7 +16208,7 @@
     "genre_first": "Comedy",
     "genre_last": "Horror",
     "genre_first_last_distance": 1,
-    "typecast_character": "Sgt. Day",
+    "typecast_character": "City Engineer",
     "typecast_count": 1,
     "billing_trajectory": -0.0221,
     "median_billing": 7,
@@ -16278,7 +16278,7 @@
     "top_collaborator_id": "nm0167760",
     "collaborator_loyalty": 0.25,
     "bridge_score": 0.000469,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00593782,
     "eigen_centrality": 0.111965,
     "clustering_local": 0.7238,
@@ -16295,7 +16295,7 @@
     "acclaim_gap": 0.157,
     "hub_vs_loyal": 3.25,
     "collaborator_reach": 32,
-    "embed_x": -0.8793,
+    "embed_x": -0.8792,
     "embed_y": -2.3394
   },
   {
@@ -16419,10 +16419,10 @@
     "median_billing": 1,
     "minutes_credited": 8117,
     "medium_mix": {
-      "movie": 0.86,
-      "tvSeries": 0.06,
       "tvMovie": 0.07,
-      "tvMiniSeries": 0.01
+      "tvMiniSeries": 0.01,
+      "movie": 0.86,
+      "tvSeries": 0.06
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1953,
@@ -16488,7 +16488,7 @@
     "top_collaborator_id": "nm0587534",
     "collaborator_loyalty": 0.104,
     "bridge_score": 0.046286,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00556403,
     "eigen_centrality": 0.018538,
     "clustering_local": 0.3011,
@@ -16506,7 +16506,7 @@
     "hub_vs_loyal": 19.04,
     "collaborator_reach": 31,
     "embed_x": 1.9911,
-    "embed_y": -1.1916
+    "embed_y": -1.1914
   },
   {
     "id": "nm0589494",
@@ -16826,7 +16826,7 @@
     "genre_first": "Comedy",
     "genre_last": "Comedy",
     "genre_first_last_distance": 0,
-    "typecast_character": "Hank",
+    "typecast_character": "Prop Man",
     "typecast_count": 1,
     "billing_trajectory": -0.0335,
     "median_billing": 6,
@@ -16911,7 +16911,7 @@
     "acclaim_gap": 1.076,
     "hub_vs_loyal": 13.44,
     "collaborator_reach": 30,
-    "embed_x": 0.9658,
+    "embed_x": 0.9669,
     "embed_y": 0.9899
   },
   {
@@ -17098,7 +17098,7 @@
     "top_collaborator_id": "nm0651627",
     "collaborator_loyalty": 0.077,
     "bridge_score": 0.001879,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00345004,
     "eigen_centrality": 0.022702,
     "clustering_local": 0.4782,
@@ -17162,14 +17162,14 @@
         "votes": 23
       },
       {
-        "title": "Paid in Full",
-        "character": "Joe Brooks",
+        "title": "Deserted at the Altar",
+        "character": "Squire Simpson",
         "characters": [
-          "Joe Brooks"
+          "Squire Simpson"
         ],
-        "year": 1914,
+        "year": 1922,
         "billing": 1,
-        "tconst": "tt0004451",
+        "tconst": "tt0013062",
         "votes": 0
       },
       {
@@ -17184,14 +17184,14 @@
         "votes": 0
       },
       {
-        "title": "Deserted at the Altar",
-        "character": "Squire Simpson",
+        "title": "Paid in Full",
+        "character": "Joe Brooks",
         "characters": [
-          "Squire Simpson"
+          "Joe Brooks"
         ],
-        "year": 1922,
+        "year": 1914,
         "billing": 1,
-        "tconst": "tt0013062",
+        "tconst": "tt0004451",
         "votes": 0
       },
       {
@@ -17301,7 +17301,7 @@
     "top_collaborator_id": "nm0001935",
     "collaborator_loyalty": 0.052,
     "bridge_score": 0.003652,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00346464,
     "eigen_centrality": 0.01445,
     "clustering_local": 0.3126,
@@ -17508,7 +17508,7 @@
     "top_collaborator_id": "nm0002503",
     "collaborator_loyalty": 0.167,
     "bridge_score": 0.006381,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00610428,
     "eigen_centrality": 0.005993,
     "clustering_local": 0.2217,
@@ -17526,7 +17526,7 @@
     "hub_vs_loyal": 9.795,
     "collaborator_reach": 29,
     "embed_x": 1.7242,
-    "embed_y": -1.6262
+    "embed_y": -1.6261
   },
   {
     "id": "nm0657874",
@@ -17583,36 +17583,36 @@
         "votes": 9
       },
       {
-        "title": "The Beat of the Year",
-        "character": "John Joyce",
+        "title": "When Love Is Mocked",
+        "character": "The Fisherman",
         "characters": [
-          "John Joyce"
-        ],
-        "year": 1914,
-        "billing": 1,
-        "tconst": "tt0003667",
-        "votes": 0
-      },
-      {
-        "title": "The Death Dice",
-        "character": "Lafe Johnson",
-        "characters": [
-          "Lafe Johnson"
+          "The Fisherman"
         ],
         "year": 1915,
         "billing": 1,
-        "tconst": "tt0154384",
+        "tconst": "tt0155381",
         "votes": 0
       },
       {
-        "title": "The Stolen Ore",
-        "character": "Dick Raleigh",
+        "title": "The Only Clue",
+        "character": "Jim Broughton",
         "characters": [
-          "Dick Raleigh"
+          "Jim Broughton"
         ],
         "year": 1914,
         "billing": 1,
-        "tconst": "tt0155209",
+        "tconst": "tt0154976",
+        "votes": 0
+      },
+      {
+        "title": "The Lost Receipt",
+        "character": "John Powers",
+        "characters": [
+          "John Powers"
+        ],
+        "year": 1915,
+        "billing": 1,
+        "tconst": "tt0154791",
         "votes": 0
       }
     ],
@@ -17712,7 +17712,7 @@
     "top_collaborator_id": "nm0001635",
     "collaborator_loyalty": 0.05,
     "bridge_score": 0.004347,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00384293,
     "eigen_centrality": 0.005808,
     "clustering_local": 0.3005,
@@ -17729,7 +17729,7 @@
     "acclaim_gap": 0.164,
     "hub_vs_loyal": 23.25,
     "collaborator_reach": 29,
-    "embed_x": 2.8916,
+    "embed_x": 2.8915,
     "embed_y": 0.2029
   },
   {
@@ -17916,7 +17916,7 @@
     "top_collaborator_id": "nm0219666",
     "collaborator_loyalty": 0.066,
     "bridge_score": 0.003309,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00415702,
     "eigen_centrality": 0.009283,
     "clustering_local": 0.3103,
@@ -17933,7 +17933,7 @@
     "acclaim_gap": 1.27,
     "hub_vs_loyal": 21.41,
     "collaborator_reach": 29,
-    "embed_x": 0.8303,
+    "embed_x": 0.8305,
     "embed_y": -2.1482
   },
   {
@@ -18121,7 +18121,7 @@
     "top_collaborator_id": "nm0878927",
     "collaborator_loyalty": 0.078,
     "bridge_score": 0.001302,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00320165,
     "eigen_centrality": 0.018559,
     "clustering_local": 0.5344,
@@ -18138,8 +18138,8 @@
     "acclaim_gap": -0.385,
     "hub_vs_loyal": 19.03,
     "collaborator_reach": 28,
-    "embed_x": 1.7684,
-    "embed_y": -1.1601
+    "embed_x": 1.7685,
+    "embed_y": -1.16
   },
   {
     "id": "nm0380965",
@@ -18328,7 +18328,7 @@
     "top_collaborator_id": "nm0611804",
     "collaborator_loyalty": 0.078,
     "bridge_score": 0.004205,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00423355,
     "eigen_centrality": 0.006844,
     "clustering_local": 0.2698,
@@ -18346,7 +18346,7 @@
     "hub_vs_loyal": 19.03,
     "collaborator_reach": 28,
     "embed_x": -2.1058,
-    "embed_y": 0.1661
+    "embed_y": 0.1665
   },
   {
     "id": "nm0403636",
@@ -18370,14 +18370,14 @@
     "rk_prominence": 57,
     "roles": [
       {
-        "title": "The Bond Eternal",
-        "character": "Dan Sheppard - a Drunkard",
+        "title": "The Prison Stain",
+        "character": "Dick Kelsey",
         "characters": [
-          "Dan Sheppard - a Drunkard"
+          "Dick Kelsey"
         ],
         "year": 1914,
         "billing": 1,
-        "tconst": "tt0419540",
+        "tconst": "tt0903934",
         "votes": 0
       },
       {
@@ -18392,28 +18392,6 @@
         "votes": 0
       },
       {
-        "title": "The Circle of Fate",
-        "character": "The Husband",
-        "characters": [
-          "The Husband"
-        ],
-        "year": 1913,
-        "billing": 1,
-        "tconst": "tt0425861",
-        "votes": 0
-      },
-      {
-        "title": "The Prison Stain",
-        "character": "Dick Kelsey",
-        "characters": [
-          "Dick Kelsey"
-        ],
-        "year": 1914,
-        "billing": 1,
-        "tconst": "tt0903934",
-        "votes": 0
-      },
-      {
         "title": "De Woild's Champeen",
         "character": "The Contender",
         "characters": [
@@ -18425,6 +18403,17 @@
         "votes": 0
       },
       {
+        "title": "The Bond Eternal",
+        "character": "Dan Sheppard - a Drunkard",
+        "characters": [
+          "Dan Sheppard - a Drunkard"
+        ],
+        "year": 1914,
+        "billing": 1,
+        "tconst": "tt0419540",
+        "votes": 0
+      },
+      {
         "title": "The Tragedy of Bear Mountain",
         "character": "Steve Barty",
         "characters": [
@@ -18433,6 +18422,17 @@
         "year": 1915,
         "billing": 1,
         "tconst": "tt0006174",
+        "votes": 0
+      },
+      {
+        "title": "The Circle of Fate",
+        "character": "The Husband",
+        "characters": [
+          "The Husband"
+        ],
+        "year": 1913,
+        "billing": 1,
+        "tconst": "tt0425861",
         "votes": 0
       }
     ],
@@ -18533,7 +18533,7 @@
     "top_collaborator_id": "nm0562770",
     "collaborator_loyalty": 0.074,
     "bridge_score": 0.00392,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00286409,
     "eigen_centrality": 0.009667,
     "clustering_local": 0.2884,
@@ -18575,17 +18575,6 @@
     "rk_prominence": 69,
     "roles": [
       {
-        "title": "Dan Morgan's Way",
-        "character": "Dan Morgan",
-        "characters": [
-          "Dan Morgan"
-        ],
-        "year": 1914,
-        "billing": 1,
-        "tconst": "tt0430967",
-        "votes": 0
-      },
-      {
         "title": "The Saving of Young Anderson",
         "character": "The Detective",
         "characters": [
@@ -18605,6 +18594,17 @@
         "year": 1914,
         "billing": 1,
         "tconst": "tt0436198",
+        "votes": 0
+      },
+      {
+        "title": "Dan Morgan's Way",
+        "character": "Dan Morgan",
+        "characters": [
+          "Dan Morgan"
+        ],
+        "year": 1914,
+        "billing": 1,
+        "tconst": "tt0430967",
         "votes": 0
       },
       {
@@ -18674,8 +18674,8 @@
     "median_billing": 7,
     "minutes_credited": 5852,
     "medium_mix": {
-      "movie": 0.989,
-      "tvSeries": 0.011
+      "tvSeries": 0.011,
+      "movie": 0.989
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1953,
@@ -18740,7 +18740,7 @@
     "top_collaborator_id": "nm0610268",
     "collaborator_loyalty": 0.078,
     "bridge_score": 0.005359,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00352325,
     "eigen_centrality": 0.029315,
     "clustering_local": 0.373,
@@ -18944,7 +18944,7 @@
     "top_collaborator_id": "nm0571186",
     "collaborator_loyalty": 0.082,
     "bridge_score": 0.001587,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00322434,
     "eigen_centrality": 0.014976,
     "clustering_local": 0.4444,
@@ -18961,7 +18961,7 @@
     "acclaim_gap": -1.348,
     "hub_vs_loyal": 18.57,
     "collaborator_reach": 28,
-    "embed_x": -0.896,
+    "embed_x": -0.8961,
     "embed_y": -2.078
   },
   {
@@ -19030,17 +19030,6 @@
         "votes": 0
       },
       {
-        "title": "Tested by Fire",
-        "character": "Bill Burke, Packer",
-        "characters": [
-          "Bill Burke, Packer"
-        ],
-        "year": 1914,
-        "billing": 3,
-        "tconst": "tt0004683",
-        "votes": 0
-      },
-      {
         "title": "Tearin' Loose",
         "character": "Matt Harris",
         "characters": [
@@ -19049,6 +19038,17 @@
         "year": 1925,
         "billing": 3,
         "tconst": "tt0016412",
+        "votes": 0
+      },
+      {
+        "title": "Pioneer Trail",
+        "character": "Curley",
+        "characters": [
+          "Curley"
+        ],
+        "year": 1938,
+        "billing": 3,
+        "tconst": "tt0030588",
         "votes": 0
       }
     ],
@@ -19147,7 +19147,7 @@
     "top_collaborator_id": "nm0571186",
     "collaborator_loyalty": 0.121,
     "bridge_score": 0.001565,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00431392,
     "eigen_centrality": 0.023501,
     "clustering_local": 0.5159,
@@ -19164,7 +19164,7 @@
     "acclaim_gap": -0.297,
     "hub_vs_loyal": 14.085,
     "collaborator_reach": 28,
-    "embed_x": 1.0713,
+    "embed_x": 1.0714,
     "embed_y": -1.0819
   },
   {
@@ -19288,9 +19288,9 @@
     "median_billing": 1,
     "minutes_credited": 9509,
     "medium_mix": {
+      "tvMovie": 0.01,
       "tvSeries": 0.019,
-      "movie": 0.971,
-      "tvMovie": 0.01
+      "movie": 0.971
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1954,
@@ -19355,7 +19355,7 @@
     "top_collaborator_id": "nm0439850",
     "collaborator_loyalty": 0.085,
     "bridge_score": 0.003704,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00394118,
     "eigen_centrality": 0.007376,
     "clustering_local": 0.2678,
@@ -19372,8 +19372,8 @@
     "acclaim_gap": -2.438,
     "hub_vs_loyal": 17.225,
     "collaborator_reach": 27,
-    "embed_x": 1.9803,
-    "embed_y": 1.272
+    "embed_x": 1.9802,
+    "embed_y": 1.2721
   },
   {
     "id": "nm0000992",
@@ -19490,14 +19490,14 @@
     "genre_first": "Action",
     "genre_last": "Crime",
     "genre_first_last_distance": 1,
-    "typecast_character": "Mrs. Topper",
+    "typecast_character": "Doris Dunstan",
     "typecast_count": 2,
     "billing_trajectory": -0.1192,
     "median_billing": 4,
     "minutes_credited": 6082,
     "medium_mix": {
-      "tvSeries": 0.037,
-      "movie": 0.963
+      "movie": 0.963,
+      "tvSeries": 0.037
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1947,
@@ -19535,7 +19535,7 @@
       }
     ],
     "same_director_repeat": 4,
-    "top_director": "nm0572851",
+    "top_director": "nm0731910",
     "regions": [
       "AE",
       "AR",
@@ -19563,7 +19563,7 @@
     "top_collaborator_id": "nm0604656",
     "collaborator_loyalty": 0.132,
     "bridge_score": 0.002119,
-    "community": 5,
+    "community": 1,
     "pagerank": 0.00389709,
     "eigen_centrality": 0.014129,
     "clustering_local": 0.4815,
@@ -19580,7 +19580,7 @@
     "acclaim_gap": 0.783,
     "hub_vs_loyal": 11.82,
     "collaborator_reach": 27,
-    "embed_x": -0.7337,
+    "embed_x": -0.7338,
     "embed_y": 0.5548
   },
   {
@@ -19816,17 +19816,6 @@
     "rk_prominence": 154,
     "roles": [
       {
-        "title": "Code of the Cow Country",
-        "character": "Red Irwin",
-        "characters": [
-          "Red Irwin"
-        ],
-        "year": 1927,
-        "billing": 2,
-        "tconst": "tt0017763",
-        "votes": 0
-      },
-      {
         "title": "Saddle Mates",
         "character": "Tim Mannick",
         "characters": [
@@ -19835,6 +19824,17 @@
         "year": 1928,
         "billing": 2,
         "tconst": "tt0019343",
+        "votes": 0
+      },
+      {
+        "title": "Code of the Cow Country",
+        "character": "Red Irwin",
+        "characters": [
+          "Red Irwin"
+        ],
+        "year": 1927,
+        "billing": 2,
+        "tconst": "tt0017763",
         "votes": 0
       },
       {
@@ -19977,7 +19977,7 @@
     "top_collaborator_id": "nm0571186",
     "collaborator_loyalty": 0.077,
     "bridge_score": 0.001555,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00297372,
     "eigen_centrality": 0.015086,
     "clustering_local": 0.5442,
@@ -19994,8 +19994,8 @@
     "acclaim_gap": -0.062,
     "hub_vs_loyal": 18.145,
     "collaborator_reach": 27,
-    "embed_x": -0.8226,
-    "embed_y": 1.8889
+    "embed_x": -0.8225,
+    "embed_y": 1.889
   },
   {
     "id": "nm0090029",
@@ -20063,25 +20063,25 @@
         "votes": 22
       },
       {
-        "title": "Sinner or Saint",
-        "character": "Mademoiselle Iris",
+        "title": "Speed",
+        "character": "Mary Whipple",
         "characters": [
-          "Mademoiselle Iris"
+          "Mary Whipple"
         ],
-        "year": 1923,
+        "year": 1925,
         "billing": 1,
-        "tconst": "tt0014475",
+        "tconst": "tt0016380",
         "votes": 0
       },
       {
-        "title": "The Darling of the Rich",
-        "character": "Charmion Winship",
+        "title": "The Breath of Scandal",
+        "character": "Sybil Russell",
         "characters": [
-          "Charmion Winship"
+          "Sybil Russell"
         ],
-        "year": 1922,
+        "year": 1924,
         "billing": 1,
-        "tconst": "tt0013052",
+        "tconst": "tt0014739",
         "votes": 0
       }
     ],
@@ -20183,7 +20183,7 @@
     "top_collaborator_id": "nm0066024",
     "collaborator_loyalty": 0.111,
     "bridge_score": 0.001096,
-    "community": 5,
+    "community": 6,
     "pagerank": 0.00256461,
     "eigen_centrality": 0.022959,
     "clustering_local": 0.6211,
@@ -20200,8 +20200,8 @@
     "acclaim_gap": -0.145,
     "hub_vs_loyal": 14.235,
     "collaborator_reach": 27,
-    "embed_x": 2.389,
-    "embed_y": -1.4795
+    "embed_x": 2.3891,
+    "embed_y": -1.4798
   },
   {
     "id": "nm0269771",
@@ -20386,7 +20386,7 @@
     "top_collaborator_id": "nm0174682",
     "collaborator_loyalty": 0.096,
     "bridge_score": 0.003989,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00315084,
     "eigen_centrality": 0.004603,
     "clustering_local": 0.2849,
@@ -20404,7 +20404,7 @@
     "hub_vs_loyal": 15.96,
     "collaborator_reach": 27,
     "embed_x": 0.4091,
-    "embed_y": 2.0807
+    "embed_y": 2.0818
   },
   {
     "id": "nm0372487",
@@ -20428,14 +20428,14 @@
     "rk_prominence": 203,
     "roles": [
       {
-        "title": "The Face of the World",
-        "character": "Harold Mark",
+        "title": "A Recoiling Vengeance",
+        "character": "John Clifford",
         "characters": [
-          "Harold Mark"
+          "John Clifford"
         ],
-        "year": 1921,
+        "year": 1916,
         "billing": 1,
-        "tconst": "tt0012146",
+        "tconst": "tt0494440",
         "votes": 0
       },
       {
@@ -20450,14 +20450,14 @@
         "votes": 0
       },
       {
-        "title": "A Recoiling Vengeance",
-        "character": "John Clifford",
+        "title": "The Forbidden Game",
+        "character": "Frank Forsythe",
         "characters": [
-          "John Clifford"
+          "Frank Forsythe"
         ],
-        "year": 1916,
+        "year": 1917,
         "billing": 1,
-        "tconst": "tt0494440",
+        "tconst": "tt0366464",
         "votes": 0
       },
       {
@@ -20472,6 +20472,17 @@
         "votes": 0
       },
       {
+        "title": "The Face of the World",
+        "character": "Harold Mark",
+        "characters": [
+          "Harold Mark"
+        ],
+        "year": 1921,
+        "billing": 1,
+        "tconst": "tt0012146",
+        "votes": 0
+      },
+      {
         "title": "As No Man Has Loved",
         "character": "Lt. Philip Nolan",
         "characters": [
@@ -20480,17 +20491,6 @@
         "year": 1925,
         "billing": 1,
         "tconst": "tt0016078",
-        "votes": 0
-      },
-      {
-        "title": "The Forbidden Game",
-        "character": "Frank Forsythe",
-        "characters": [
-          "Frank Forsythe"
-        ],
-        "year": 1917,
-        "billing": 1,
-        "tconst": "tt0366464",
         "votes": 0
       }
     ],
@@ -20564,7 +20564,7 @@
       }
     ],
     "same_director_repeat": 6,
-    "top_director": "nm0247484",
+    "top_director": "nm0886754",
     "regions": [
       "AR",
       "AT",
@@ -20591,7 +20591,7 @@
     "top_collaborator_id": "nm0466773",
     "collaborator_loyalty": 0.057,
     "bridge_score": 0.001367,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00315437,
     "eigen_centrality": 0.020975,
     "clustering_local": 0.4729,
@@ -20796,7 +20796,7 @@
     "top_collaborator_id": "nm0571186",
     "collaborator_loyalty": 0.226,
     "bridge_score": 0.000392,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00493521,
     "eigen_centrality": 0.092395,
     "clustering_local": 0.7151,
@@ -20813,8 +20813,8 @@
     "acclaim_gap": -2.367,
     "hub_vs_loyal": 1.01,
     "collaborator_reach": 27,
-    "embed_x": -0.2005,
-    "embed_y": -1.7536
+    "embed_x": -0.2006,
+    "embed_y": -1.7537
   },
   {
     "id": "nm0047720",
@@ -20937,8 +20937,8 @@
     "median_billing": 2,
     "minutes_credited": 5465,
     "medium_mix": {
-      "movie": 0.987,
-      "tvSeries": 0.013
+      "tvSeries": 0.013,
+      "movie": 0.987
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1954,
@@ -21077,6 +21077,17 @@
         "votes": 0
       },
       {
+        "title": "The Film Spoilers",
+        "character": "An Extra Man",
+        "characters": [
+          "An Extra Man"
+        ],
+        "year": 1917,
+        "billing": 1,
+        "tconst": "tt0955256",
+        "votes": 0
+      },
+      {
         "title": "His Bomb Policy",
         "character": "C. Gull",
         "characters": [
@@ -21096,17 +21107,6 @@
         "year": 1916,
         "billing": 1,
         "tconst": "tt0006406",
-        "votes": 0
-      },
-      {
-        "title": "An All Around Cure",
-        "character": "Mr. Fussy",
-        "characters": [
-          "Mr. Fussy"
-        ],
-        "year": 1916,
-        "billing": 1,
-        "tconst": "tt0321128",
         "votes": 0
       }
     ],
@@ -21137,7 +21137,7 @@
     "genre_first": "Comedy",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Air Raid Warden",
+    "typecast_character": "Sennett Comic",
     "typecast_count": 1,
     "billing_trajectory": -0.1197,
     "median_billing": 6,
@@ -21207,7 +21207,7 @@
     "top_collaborator_id": "nm0603096",
     "collaborator_loyalty": 0.324,
     "bridge_score": 0.001852,
-    "community": 3,
+    "community": 6,
     "pagerank": 0.00309528,
     "eigen_centrality": 0.026843,
     "clustering_local": 0.4277,
@@ -21224,7 +21224,7 @@
     "acclaim_gap": -0.932,
     "hub_vs_loyal": -11.26,
     "collaborator_reach": 26,
-    "embed_x": -1.1549,
+    "embed_x": -1.155,
     "embed_y": -0.3683
   },
   {
@@ -21342,7 +21342,7 @@
     "genre_first": "Adventure",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "First Warden",
+    "typecast_character": "Donald Wales",
     "typecast_count": 1,
     "billing_trajectory": -0.2342,
     "median_billing": 3,
@@ -21407,11 +21407,11 @@
       "1930s",
       "1940s"
     ],
-    "top_collaborator": "William Boyd",
-    "top_collaborator_id": "nm0101955",
+    "top_collaborator": "Walter Long",
+    "top_collaborator_id": "nm0519227",
     "collaborator_loyalty": 0.048,
     "bridge_score": 0.002315,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00266301,
     "eigen_centrality": 0.010721,
     "clustering_local": 0.3385,
@@ -21464,17 +21464,6 @@
         "votes": 171
       },
       {
-        "title": "Mona Lisa",
-        "character": "Mona Lisa",
-        "characters": [
-          "Mona Lisa"
-        ],
-        "year": 1926,
-        "billing": 1,
-        "tconst": "tt0825297",
-        "votes": 0
-      },
-      {
         "title": "The Cruel Truth",
         "character": "Grace Sturdevant",
         "characters": [
@@ -21483,6 +21472,17 @@
         "year": 1927,
         "billing": 1,
         "tconst": "tt0017783",
+        "votes": 0
+      },
+      {
+        "title": "Mona Lisa",
+        "character": "Mona Lisa",
+        "characters": [
+          "Mona Lisa"
+        ],
+        "year": 1926,
+        "billing": 1,
+        "tconst": "tt0825297",
         "votes": 0
       },
       {
@@ -21508,14 +21508,14 @@
         "votes": 0
       },
       {
-        "title": "Heedless Moths",
-        "character": "His Wife",
+        "title": "Her Excellency, the Governor",
+        "character": "SylviaMarlowe",
         "characters": [
-          "His Wife"
+          "SylviaMarlowe"
         ],
-        "year": 1921,
+        "year": 1917,
         "billing": 2,
-        "tconst": "tt0012264",
+        "tconst": "tt0008104",
         "votes": 0
       }
     ],
@@ -21614,11 +21614,11 @@
       "1940s",
       "1960s"
     ],
-    "top_collaborator": "George Irving",
-    "top_collaborator_id": "nm0410271",
+    "top_collaborator": "Theodore von Eltz",
+    "top_collaborator_id": "nm0902226",
     "collaborator_loyalty": 0.049,
     "bridge_score": 0.003486,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.00336417,
     "eigen_centrality": 0.009574,
     "clustering_local": 0.3354,
@@ -21636,7 +21636,7 @@
     "hub_vs_loyal": 20.365,
     "collaborator_reach": 26,
     "embed_x": -1.7257,
-    "embed_y": -2.0378
+    "embed_y": -2.0377
   },
   {
     "id": "nm0448012",
@@ -21822,7 +21822,7 @@
     "top_collaborator_id": "nm0267638",
     "collaborator_loyalty": 0.293,
     "bridge_score": 0.003369,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00402006,
     "eigen_centrality": 0.00916,
     "clustering_local": 0.2923,
@@ -21839,8 +21839,8 @@
     "acclaim_gap": 0.414,
     "hub_vs_loyal": -7.695,
     "collaborator_reach": 26,
-    "embed_x": -1.7294,
-    "embed_y": 1.2387
+    "embed_x": -1.7295,
+    "embed_y": 1.2385
   },
   {
     "id": "nm0712660",
@@ -21897,17 +21897,6 @@
         "votes": 18
       },
       {
-        "title": "The Spy",
-        "character": "Harvey Birch",
-        "characters": [
-          "Harvey Birch"
-        ],
-        "year": 1914,
-        "billing": 1,
-        "tconst": "tt0004633",
-        "votes": 16
-      },
-      {
         "title": "The Carter Case",
         "character": "Craig Kennedy",
         "characters": [
@@ -21916,6 +21905,17 @@
         "year": 1919,
         "billing": 1,
         "tconst": "tt0009991",
+        "votes": 16
+      },
+      {
+        "title": "The Spy",
+        "character": "Harvey Birch",
+        "characters": [
+          "Harvey Birch"
+        ],
+        "year": 1914,
+        "billing": 1,
+        "tconst": "tt0004633",
         "votes": 16
       },
       {
@@ -22232,7 +22232,7 @@
     "top_collaborator_id": "nm0000891",
     "collaborator_loyalty": 0.107,
     "bridge_score": 0.003504,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00465956,
     "eigen_centrality": 0.006896,
     "clustering_local": 0.3108,
@@ -22367,7 +22367,7 @@
     "genre_first": "Crime",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "David Burton",
+    "typecast_character": "Phil Langdon, Attorney",
     "typecast_count": 1,
     "billing_trajectory": -0.2014,
     "median_billing": 3,
@@ -22435,7 +22435,7 @@
     "top_collaborator_id": "nm0000859",
     "collaborator_loyalty": 0.121,
     "bridge_score": 0.003862,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00458009,
     "eigen_centrality": 0.007463,
     "clustering_local": 0.2431,
@@ -22452,7 +22452,7 @@
     "acclaim_gap": 0.381,
     "hub_vs_loyal": 12.085,
     "collaborator_reach": 26,
-    "embed_x": -2.1581,
+    "embed_x": -2.1579,
     "embed_y": -2.0476
   },
   {
@@ -22575,8 +22575,8 @@
     "median_billing": 1,
     "minutes_credited": 8345,
     "medium_mix": {
-      "movie": 0.961,
       "tvSeries": 0.031,
+      "movie": 0.961,
       "tvMovie": 0.008
     },
     "short_to_feature_ratio": 0.0,
@@ -22850,7 +22850,7 @@
     "top_collaborator_id": "nm0568282",
     "collaborator_loyalty": 0.13,
     "bridge_score": 0.003086,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00374475,
     "eigen_centrality": 0.01058,
     "clustering_local": 0.31,
@@ -22985,7 +22985,7 @@
     "genre_first": "Drama",
     "genre_last": "Biography",
     "genre_first_last_distance": 1,
-    "typecast_character": "Count Igor Savin",
+    "typecast_character": "Luis Savarin",
     "typecast_count": 1,
     "billing_trajectory": -0.0164,
     "median_billing": 3,
@@ -23054,11 +23054,11 @@
       "1940s",
       "1950s"
     ],
-    "top_collaborator": "C. Aubrey Smith",
-    "top_collaborator_id": "nm0807580",
+    "top_collaborator": "Victor Varconi",
+    "top_collaborator_id": "nm0889511",
     "collaborator_loyalty": 0.125,
     "bridge_score": 0.000985,
-    "community": 5,
+    "community": 2,
     "pagerank": 0.00326093,
     "eigen_centrality": 0.014805,
     "clustering_local": 0.5667,
@@ -23075,7 +23075,7 @@
     "acclaim_gap": 1.78,
     "hub_vs_loyal": 10.625,
     "collaborator_reach": 25,
-    "embed_x": -0.3706,
+    "embed_x": -0.371,
     "embed_y": 2.0718
   },
   {
@@ -23199,8 +23199,8 @@
     "median_billing": 2,
     "minutes_credited": 5531,
     "medium_mix": {
-      "tvSeries": 0.012,
       "movie": 0.976,
+      "tvSeries": 0.012,
       "tvMovie": 0.012
     },
     "short_to_feature_ratio": 0.0,
@@ -23267,7 +23267,7 @@
     "top_collaborator_id": "nm0907404",
     "collaborator_loyalty": 0.092,
     "bridge_score": 0.004488,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00335251,
     "eigen_centrality": 0.009209,
     "clustering_local": 0.2935,
@@ -23284,7 +23284,7 @@
     "acclaim_gap": -0.198,
     "hub_vs_loyal": 13.42,
     "collaborator_reach": 24,
-    "embed_x": 0.618,
+    "embed_x": 0.6181,
     "embed_y": -2.8902
   },
   {
@@ -23570,14 +23570,14 @@
         "votes": 20
       },
       {
-        "title": "The Man from Town",
-        "character": "The City Boarder",
+        "title": "Martin Chuzzlewit",
+        "character": "Young Martin Chuzzlewit",
         "characters": [
-          "The City Boarder"
+          "Young Martin Chuzzlewit"
         ],
-        "year": 1915,
+        "year": 1914,
         "billing": 1,
-        "tconst": "tt0812298",
+        "tconst": "tt0812315",
         "votes": 0
       }
     ],
@@ -23608,7 +23608,7 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Gallagher",
+    "typecast_character": "Little John",
     "typecast_count": 2,
     "billing_trajectory": -0.0374,
     "median_billing": 4,
@@ -23678,7 +23678,7 @@
     "top_collaborator_id": "nm0568282",
     "collaborator_loyalty": 0.101,
     "bridge_score": 0.003867,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00338802,
     "eigen_centrality": 0.007685,
     "clustering_local": 0.221,
@@ -23882,7 +23882,7 @@
     "top_collaborator_id": "nm0156173",
     "collaborator_loyalty": 0.168,
     "bridge_score": 0.00163,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00356168,
     "eigen_centrality": 0.021784,
     "clustering_local": 0.529,
@@ -23900,7 +23900,7 @@
     "hub_vs_loyal": 4.68,
     "collaborator_reach": 24,
     "embed_x": -2.532,
-    "embed_y": 0.16
+    "embed_y": 0.1601
   },
   {
     "id": "nm0320681",
@@ -23935,6 +23935,17 @@
         "votes": 384
       },
       {
+        "title": "The Unconventional Girl",
+        "character": "Mr. Joy",
+        "characters": [
+          "Mr. Joy"
+        ],
+        "year": 1916,
+        "billing": 1,
+        "tconst": "tt0335506",
+        "votes": 0
+      },
+      {
         "title": "The Limousine Mystery",
         "character": "Mr. James Crosby",
         "characters": [
@@ -23957,17 +23968,6 @@
         "votes": 0
       },
       {
-        "title": "The Unconventional Girl",
-        "character": "Mr. Joy",
-        "characters": [
-          "Mr. Joy"
-        ],
-        "year": 1916,
-        "billing": 1,
-        "tconst": "tt0335506",
-        "votes": 0
-      },
-      {
         "title": "Laughing at Danger",
         "character": "Cyrus Remington",
         "characters": [
@@ -23979,14 +23979,14 @@
         "votes": 46
       },
       {
-        "title": "Saved by a Song",
-        "character": "Jed Perkins",
+        "title": "A Man's Temptation",
+        "character": "Colonel Girard",
         "characters": [
-          "Jed Perkins"
+          "Colonel Girard"
         ],
-        "year": 1916,
+        "year": 1915,
         "billing": 2,
-        "tconst": "tt0007298",
+        "tconst": "tt0328108",
         "votes": 0
       }
     ],
@@ -24183,14 +24183,14 @@
         "votes": 10
       },
       {
-        "title": "The Bells of Rheims",
-        "character": "Nurse",
+        "title": "Fine Feathers",
+        "character": "Meg Roberts",
         "characters": [
-          "Nurse"
+          "Meg Roberts"
         ],
-        "year": 1914,
+        "year": 1915,
         "billing": 1,
-        "tconst": "tt0003674",
+        "tconst": "tt0325379",
         "votes": 0
       }
     ],
@@ -24309,8 +24309,8 @@
     "acclaim_gap": 1.125,
     "hub_vs_loyal": -29.13,
     "collaborator_reach": 24,
-    "embed_x": 1.8292,
-    "embed_y": 1.5845
+    "embed_x": 1.8295,
+    "embed_y": 1.5844
   },
   {
     "id": "nm0875983",
@@ -24334,17 +24334,6 @@
     "rk_prominence": 107,
     "roles": [
       {
-        "title": "When Love Is King",
-        "character": "Felix, the King",
-        "characters": [
-          "Felix, the King"
-        ],
-        "year": 1916,
-        "billing": 1,
-        "tconst": "tt0159124",
-        "votes": 0
-      },
-      {
         "title": "Bread on the Waters",
         "character": "George Varick",
         "characters": [
@@ -24356,14 +24345,36 @@
         "votes": 0
       },
       {
-        "title": "Rorke's Drift",
-        "character": "Tommy Brandon",
+        "title": "A Wilful Colleen's Way",
+        "character": "Terence O'Flynn",
         "characters": [
-          "Tommy Brandon"
+          "Terence O'Flynn"
         ],
-        "year": 1914,
+        "year": 1913,
         "billing": 1,
-        "tconst": "tt1199693",
+        "tconst": "tt1118641",
+        "votes": 0
+      },
+      {
+        "title": "The Magistrate's Story",
+        "character": "Tom Weldon",
+        "characters": [
+          "Tom Weldon"
+        ],
+        "year": 1915,
+        "billing": 1,
+        "tconst": "tt0005687",
+        "votes": 0
+      },
+      {
+        "title": "A Mutual Understanding",
+        "character": "John Smith - the Bank Clerk",
+        "characters": [
+          "John Smith - the Bank Clerk"
+        ],
+        "year": 1913,
+        "billing": 1,
+        "tconst": "tt0003202",
         "votes": 0
       },
       {
@@ -24378,25 +24389,14 @@
         "votes": 0
       },
       {
-        "title": "His Comrade's Wife",
-        "character": "George Harcourt",
+        "title": "Waifs of the Sea",
+        "character": "Jack",
         "characters": [
-          "George Harcourt"
+          "Jack"
         ],
-        "year": 1914,
+        "year": 1915,
         "billing": 1,
-        "tconst": "tt1221881",
-        "votes": 0
-      },
-      {
-        "title": "A Mutual Understanding",
-        "character": "John Smith - the Bank Clerk",
-        "characters": [
-          "John Smith - the Bank Clerk"
-        ],
-        "year": 1913,
-        "billing": 1,
-        "tconst": "tt0003202",
+        "tconst": "tt0433150",
         "votes": 0
       }
     ],
@@ -24491,11 +24491,11 @@
       "1920s",
       "1930s"
     ],
-    "top_collaborator": "Alec B. Francis",
-    "top_collaborator_id": "nm0290066",
+    "top_collaborator": "Walter McGrail",
+    "top_collaborator_id": "nm0569747",
     "collaborator_loyalty": 0.038,
     "bridge_score": 0.002693,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00259338,
     "eigen_centrality": 0.003064,
     "clustering_local": 0.2681,
@@ -24512,8 +24512,8 @@
     "acclaim_gap": -0.363,
     "hub_vs_loyal": 19.63,
     "collaborator_reach": 24,
-    "embed_x": 0.1475,
-    "embed_y": 2.7752
+    "embed_x": 0.1474,
+    "embed_y": 2.7753
   },
   {
     "id": "nm0000909",
@@ -24703,7 +24703,7 @@
     "top_collaborator_id": "nm0000992",
     "collaborator_loyalty": 0.16,
     "bridge_score": 0.000819,
-    "community": 5,
+    "community": 2,
     "pagerank": 0.00269566,
     "eigen_centrality": 0.008939,
     "clustering_local": 0.664,
@@ -24720,7 +24720,7 @@
     "acclaim_gap": -0.338,
     "hub_vs_loyal": 4.6,
     "collaborator_reach": 23,
-    "embed_x": 0.9368,
+    "embed_x": 0.9377,
     "embed_y": -1.3218
   },
   {
@@ -24756,17 +24756,6 @@
         "votes": 0
       },
       {
-        "title": "Shackles of Fear",
-        "character": "Richard Dunbar",
-        "characters": [
-          "Richard Dunbar"
-        ],
-        "year": 1924,
-        "billing": 1,
-        "tconst": "tt0015317",
-        "votes": 0
-      },
-      {
         "title": "The Fighting Romeo",
         "character": "Dave Mathews",
         "characters": [
@@ -24775,6 +24764,17 @@
         "year": 1925,
         "billing": 1,
         "tconst": "tt0132949",
+        "votes": 0
+      },
+      {
+        "title": "Shackles of Fear",
+        "character": "Richard Dunbar",
+        "characters": [
+          "Richard Dunbar"
+        ],
+        "year": 1924,
+        "billing": 1,
+        "tconst": "tt0015317",
         "votes": 0
       },
       {
@@ -24908,7 +24908,7 @@
     "top_collaborator_id": "nm0651627",
     "collaborator_loyalty": 0.131,
     "bridge_score": 0.000551,
-    "community": 3,
+    "community": 6,
     "pagerank": 0.00310057,
     "eigen_centrality": 0.037199,
     "clustering_local": 0.6324,
@@ -25043,7 +25043,7 @@
     "genre_first": "Action",
     "genre_last": "Adventure",
     "genre_first_last_distance": 1,
-    "typecast_character": "Rawhide Morgan",
+    "typecast_character": "James Kerrigan",
     "typecast_count": 1,
     "billing_trajectory": 0.0101,
     "median_billing": 1,
@@ -25113,7 +25113,7 @@
     "top_collaborator_id": "nm0001935",
     "collaborator_loyalty": 0.087,
     "bridge_score": 0.001374,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00248944,
     "eigen_centrality": 0.011101,
     "clustering_local": 0.3794,
@@ -25131,7 +25131,7 @@
     "hub_vs_loyal": 12.995,
     "collaborator_reach": 23,
     "embed_x": -1.9927,
-    "embed_y": -0.7142
+    "embed_y": -0.7135
   },
   {
     "id": "nm0410271",
@@ -25177,17 +25177,6 @@
         "votes": 61
       },
       {
-        "title": "Her Market Value",
-        "character": "Harvey Dumont",
-        "characters": [
-          "Harvey Dumont"
-        ],
-        "year": 1925,
-        "billing": 2,
-        "tconst": "tt0016960",
-        "votes": 0
-      },
-      {
         "title": "The Lady of Victories",
         "character": "Talleyrand",
         "characters": [
@@ -25196,6 +25185,17 @@
         "year": 1928,
         "billing": 2,
         "tconst": "tt0019068",
+        "votes": 0
+      },
+      {
+        "title": "Her Market Value",
+        "character": "Harvey Dumont",
+        "characters": [
+          "Harvey Dumont"
+        ],
+        "year": 1925,
+        "billing": 2,
+        "tconst": "tt0016960",
         "votes": 0
       },
       {
@@ -25317,7 +25317,7 @@
     "top_collaborator_id": "nm0047720",
     "collaborator_loyalty": 0.075,
     "bridge_score": 0.002171,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00280332,
     "eigen_centrality": 0.0041,
     "clustering_local": 0.3557,
@@ -25335,7 +25335,7 @@
     "hub_vs_loyal": 14.375,
     "collaborator_reach": 23,
     "embed_x": 1.3056,
-    "embed_y": -1.2554
+    "embed_y": -1.2553
   },
   {
     "id": "nm0643048",
@@ -25370,58 +25370,58 @@
         "votes": 21
       },
       {
-        "title": "The Going of the White Swan",
-        "character": "John Bagot",
+        "title": "The Cherry Pickers",
+        "character": "Lt. John Nazare",
         "characters": [
-          "John Bagot"
+          "Lt. John Nazare"
         ],
         "year": 1914,
         "billing": 1,
-        "tconst": "tt0004025",
+        "tconst": "tt0407642",
         "votes": 0
       },
       {
-        "title": "When Helen Was Elected",
-        "character": "Beach Summers",
+        "title": "Slippy McGee",
+        "character": "Slippy McGee",
         "characters": [
-          "Beach Summers"
+          "Slippy McGee"
+        ],
+        "year": 1923,
+        "billing": 1,
+        "tconst": "tt0014485",
+        "votes": 0
+      },
+      {
+        "title": "The Private Banker",
+        "character": "Pietro",
+        "characters": [
+          "Pietro"
+        ],
+        "year": 1916,
+        "billing": 1,
+        "tconst": "tt0903935",
+        "votes": 0
+      },
+      {
+        "title": "'Neath Calvary's Shadows",
+        "character": "John Strong",
+        "characters": [
+          "John Strong"
+        ],
+        "year": 1915,
+        "billing": 1,
+        "tconst": "tt0842684",
+        "votes": 0
+      },
+      {
+        "title": "A Sad Devil",
+        "character": "Harry - 1st College Boy",
+        "characters": [
+          "Harry - 1st College Boy"
         ],
         "year": 1912,
         "billing": 1,
-        "tconst": "tt0419266",
-        "votes": 0
-      },
-      {
-        "title": "In Defiance of the Law",
-        "character": "Billy McVeigh",
-        "characters": [
-          "Billy McVeigh"
-        ],
-        "year": 1914,
-        "billing": 1,
-        "tconst": "tt0004144",
-        "votes": 0
-      },
-      {
-        "title": "The Half Breed",
-        "character": "Delmar Spavinaw - The Half-Breed",
-        "characters": [
-          "Delmar Spavinaw - The Half-Breed"
-        ],
-        "year": 1922,
-        "billing": 1,
-        "tconst": "tt0133833",
-        "votes": 0
-      },
-      {
-        "title": "Terrors of the Jungle",
-        "character": "Jack Milbank",
-        "characters": [
-          "Jack Milbank"
-        ],
-        "year": 1913,
-        "billing": 1,
-        "tconst": "tt0468914",
+        "tconst": "tt0759665",
         "votes": 0
       }
     ],
@@ -25523,7 +25523,7 @@
     "top_collaborator_id": "nm0098376",
     "collaborator_loyalty": 0.065,
     "bridge_score": 0.002949,
-    "community": 1,
+    "community": 0,
     "pagerank": 0.00258199,
     "eigen_centrality": 0.006674,
     "clustering_local": 0.336,
@@ -25540,7 +25540,7 @@
     "acclaim_gap": -1.284,
     "hub_vs_loyal": 15.525,
     "collaborator_reach": 23,
-    "embed_x": 1.5586,
+    "embed_x": 1.5587,
     "embed_y": 2.1084
   },
   {
@@ -25728,7 +25728,7 @@
     "top_collaborator_id": "nm0771584",
     "collaborator_loyalty": 0.188,
     "bridge_score": 0.000508,
-    "community": 5,
+    "community": 2,
     "pagerank": 0.0034882,
     "eigen_centrality": 0.018444,
     "clustering_local": 0.664,
@@ -25869,8 +25869,8 @@
     "median_billing": 2,
     "minutes_credited": 4348,
     "medium_mix": {
-      "tvSeries": 0.224,
       "movie": 0.701,
+      "tvSeries": 0.224,
       "tvMovie": 0.075
     },
     "short_to_feature_ratio": 0.0,
@@ -25954,7 +25954,7 @@
     "hub_vs_loyal": -38.03,
     "collaborator_reach": 22,
     "embed_x": -2.4071,
-    "embed_y": 0.5841
+    "embed_y": 0.584
   },
   {
     "id": "nm0002503",
@@ -26142,7 +26142,7 @@
     "top_collaborator_id": "nm0568282",
     "collaborator_loyalty": 0.217,
     "bridge_score": 0.001811,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00400346,
     "eigen_centrality": 0.012888,
     "clustering_local": 0.3896,
@@ -26160,7 +26160,7 @@
     "hub_vs_loyal": -2.955,
     "collaborator_reach": 22,
     "embed_x": 2.5597,
-    "embed_y": -2.1033
+    "embed_y": -2.1034
   },
   {
     "id": "nm0036324",
@@ -26217,17 +26217,6 @@
         "votes": 11
       },
       {
-        "title": "Um eine Nasenlänge",
-        "character": "Hans Dampf, ein Zeitungsfahrer",
-        "characters": [
-          "Hans Dampf, ein Zeitungsfahrer"
-        ],
-        "year": 1931,
-        "billing": 1,
-        "tconst": "tt0022516",
-        "votes": 0
-      },
-      {
         "title": "Der Storch streikt",
         "character": "Sebaldus Schlank",
         "characters": [
@@ -26236,6 +26225,17 @@
         "year": 1931,
         "billing": 1,
         "tconst": "tt0023515",
+        "votes": 0
+      },
+      {
+        "title": "Schatz, mach' Kasse",
+        "character": "Cäsar Glück",
+        "characters": [
+          "Cäsar Glück"
+        ],
+        "year": 1926,
+        "billing": 1,
+        "tconst": "tt0133193",
         "votes": 0
       },
       {
@@ -26350,7 +26350,7 @@
     "top_collaborator_id": "nm0617050",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.000201,
-    "community": 4,
+    "community": 5,
     "pagerank": 0.00290275,
     "eigen_centrality": 0.022453,
     "clustering_local": 0.7013,
@@ -26367,7 +26367,7 @@
     "acclaim_gap": 1.298,
     "hub_vs_loyal": -93.0,
     "collaborator_reach": 22,
-    "embed_x": 2.5447,
+    "embed_x": 2.5444,
     "embed_y": -0.5759
   },
   {
@@ -26414,14 +26414,14 @@
         "votes": 0
       },
       {
-        "title": "A Social Climber",
-        "character": "Jimmy Burke",
+        "title": "Family Troubles",
+        "character": "Gangster",
         "characters": [
-          "Jimmy Burke"
+          "Gangster"
         ],
-        "year": 1917,
+        "year": 1933,
         "billing": 2,
-        "tconst": "tt0951236",
+        "tconst": "tt0021849",
         "votes": 0
       },
       {
@@ -26436,14 +26436,14 @@
         "votes": 0
       },
       {
-        "title": "Family Troubles",
-        "character": "Gangster",
+        "title": "A Social Climber",
+        "character": "Jimmy Burke",
         "characters": [
-          "Gangster"
+          "Jimmy Burke"
         ],
-        "year": 1933,
+        "year": 1917,
         "billing": 2,
-        "tconst": "tt0021849",
+        "tconst": "tt0951236",
         "votes": 0
       },
       {
@@ -26485,7 +26485,7 @@
     "genre_first": "Adventure",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Trusty Smith",
+    "typecast_character": "Tony the Wop",
     "typecast_count": 1,
     "billing_trajectory": 0.032,
     "median_billing": 6,
@@ -26553,7 +26553,7 @@
     "top_collaborator_id": "nm0320681",
     "collaborator_loyalty": 0.085,
     "bridge_score": 0.00223,
-    "community": 3,
+    "community": 1,
     "pagerank": 0.00226942,
     "eigen_centrality": 0.005501,
     "clustering_local": 0.3377,
@@ -26570,7 +26570,7 @@
     "acclaim_gap": 0.464,
     "hub_vs_loyal": 12.225,
     "collaborator_reach": 22,
-    "embed_x": -0.0252,
+    "embed_x": -0.0261,
     "embed_y": 0.3535
   },
   {
@@ -26688,7 +26688,7 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Maria Sanchez Belmonte",
+    "typecast_character": "Sister Teresa",
     "typecast_count": 1,
     "billing_trajectory": -0.068,
     "median_billing": 2,
@@ -26758,7 +26758,7 @@
     "top_collaborator_id": "nm0111612",
     "collaborator_loyalty": 0.075,
     "bridge_score": 0.003508,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00304289,
     "eigen_centrality": 0.008929,
     "clustering_local": 0.329,
@@ -26775,7 +26775,7 @@
     "acclaim_gap": -0.545,
     "hub_vs_loyal": 13.375,
     "collaborator_reach": 22,
-    "embed_x": 3.0886,
+    "embed_x": 3.0885,
     "embed_y": -0.5925
   },
   {
@@ -26899,8 +26899,8 @@
     "median_billing": 1,
     "minutes_credited": 8705,
     "medium_mix": {
-      "movie": 0.976,
-      "tvSeries": 0.024
+      "tvSeries": 0.024,
+      "movie": 0.976
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1949,
@@ -26966,7 +26966,7 @@
     "top_collaborator_id": "nm0572142",
     "collaborator_loyalty": 0.164,
     "bridge_score": 0.00135,
-    "community": 5,
+    "community": 2,
     "pagerank": 0.00267734,
     "eigen_centrality": 0.014477,
     "clustering_local": 0.368,
@@ -26983,8 +26983,8 @@
     "acclaim_gap": -1.722,
     "hub_vs_loyal": 3.14,
     "collaborator_reach": 22,
-    "embed_x": 0.9324,
-    "embed_y": -2.5185
+    "embed_x": 0.9323,
+    "embed_y": -2.5186
   },
   {
     "id": "nm0568282",
@@ -27008,36 +27008,14 @@
     "rk_prominence": 74,
     "roles": [
       {
-        "title": "Avarice",
-        "character": "The Miserly Old Woman",
+        "title": "The Canceled Mortgage",
+        "character": "The Widowed Mother",
         "characters": [
-          "The Miserly Old Woman"
-        ],
-        "year": 1917,
-        "billing": 1,
-        "tconst": "tt0007660",
-        "votes": 0
-      },
-      {
-        "title": "The Storm Woman",
-        "character": "Maria Martelli",
-        "characters": [
-          "Maria Martelli"
-        ],
-        "year": 1917,
-        "billing": 1,
-        "tconst": "tt0427902",
-        "votes": 0
-      },
-      {
-        "title": "As It Happened",
-        "character": "The Ranchman's Daughter",
-        "characters": [
-          "The Ranchman's Daughter"
+          "The Widowed Mother"
         ],
         "year": 1915,
         "billing": 1,
-        "tconst": "tt0004914",
+        "tconst": "tt0421932",
         "votes": 0
       },
       {
@@ -27052,25 +27030,47 @@
         "votes": 0
       },
       {
-        "title": "The Sheriff's Dilemma",
-        "character": "Molly",
+        "title": "The Vengeance of Galora",
+        "character": "Galora",
         "characters": [
-          "Molly"
+          "Galora"
         ],
-        "year": 1915,
+        "year": 1913,
         "billing": 1,
-        "tconst": "tt0006035",
+        "tconst": "tt0003503",
         "votes": 0
       },
       {
-        "title": "The Way Out",
-        "character": "The Young School Teacher",
+        "title": "The Dole of Destiny",
+        "character": "Ruth - the Planter's Daugher",
         "characters": [
-          "The Young School Teacher"
+          "Ruth - the Planter's Daugher"
+        ],
+        "year": 1914,
+        "billing": 1,
+        "tconst": "tt0441227",
+        "votes": 0
+      },
+      {
+        "title": "The Stopped Clock",
+        "character": "The Antique Dealer's Daughter",
+        "characters": [
+          "The Antique Dealer's Daughter"
+        ],
+        "year": 1913,
+        "billing": 1,
+        "tconst": "tt0385254",
+        "votes": 0
+      },
+      {
+        "title": "Cupid Entangled",
+        "character": "The Actress",
+        "characters": [
+          "The Actress"
         ],
         "year": 1915,
         "billing": 1,
-        "tconst": "tt0006248",
+        "tconst": "tt0429900",
         "votes": 0
       }
     ],
@@ -27169,7 +27169,7 @@
     "top_collaborator_id": "nm0002503",
     "collaborator_loyalty": 0.206,
     "bridge_score": 0.002888,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00366073,
     "eigen_centrality": 0.003041,
     "clustering_local": 0.2381,
@@ -27186,7 +27186,7 @@
     "acclaim_gap": 0.501,
     "hub_vs_loyal": -1.69,
     "collaborator_reach": 22,
-    "embed_x": -1.467,
+    "embed_x": -1.4669,
     "embed_y": -2.5032
   },
   {
@@ -27375,7 +27375,7 @@
     "top_collaborator_id": "nm0587534",
     "collaborator_loyalty": 0.154,
     "bridge_score": 0.001041,
-    "community": 5,
+    "community": 2,
     "pagerank": 0.0028631,
     "eigen_centrality": 0.009618,
     "clustering_local": 0.5381,
@@ -27417,14 +27417,25 @@
     "rk_prominence": 218,
     "roles": [
       {
-        "title": "The White Light of Publicity",
-        "character": "Clyde Maury",
+        "title": "The Price",
+        "character": "John Wakefield",
         "characters": [
-          "Clyde Maury"
+          "John Wakefield"
         ],
-        "year": 1915,
+        "year": 1914,
         "billing": 1,
-        "tconst": "tt0436932",
+        "tconst": "tt1221931",
+        "votes": 0
+      },
+      {
+        "title": "At His Expense",
+        "character": "Joe Thorne",
+        "characters": [
+          "Joe Thorne"
+        ],
+        "year": 1914,
+        "billing": 1,
+        "tconst": "tt1232012",
         "votes": 0
       },
       {
@@ -27439,47 +27450,36 @@
         "votes": 0
       },
       {
-        "title": "His Brother's Blood",
-        "character": "Dr. Kenneth Myers",
+        "title": "The Klondike Bubble",
+        "character": "James Dawson",
         "characters": [
-          "Dr. Kenneth Myers"
+          "James Dawson"
         ],
         "year": 1914,
         "billing": 1,
-        "tconst": "tt1275653",
+        "tconst": "tt1232085",
         "votes": 0
       },
       {
-        "title": "A Slight Misunderstanding",
-        "character": "Fred",
+        "title": "The White Light of Publicity",
+        "character": "Clyde Maury",
         "characters": [
-          "Fred"
+          "Clyde Maury"
         ],
-        "year": 1913,
+        "year": 1915,
         "billing": 1,
-        "tconst": "tt0778096",
+        "tconst": "tt0436932",
         "votes": 0
       },
       {
-        "title": "The Price",
-        "character": "John Wakefield",
+        "title": "The Root of Evil",
+        "character": "Leonard Craig",
         "characters": [
-          "John Wakefield"
+          "Leonard Craig"
         ],
         "year": 1914,
         "billing": 1,
-        "tconst": "tt1221931",
-        "votes": 0
-      },
-      {
-        "title": "Through Flaming Paths",
-        "character": "Basil Conrad",
-        "characters": [
-          "Basil Conrad"
-        ],
-        "year": 1913,
-        "billing": 1,
-        "tconst": "tt1183314",
+        "tconst": "tt1176707",
         "votes": 0
       }
     ],
@@ -27578,7 +27578,7 @@
     "top_collaborator_id": "nm0571186",
     "collaborator_loyalty": 0.058,
     "bridge_score": 0.001447,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00232605,
     "eigen_centrality": 0.006748,
     "clustering_local": 0.4429,
@@ -27596,7 +27596,7 @@
     "hub_vs_loyal": 14.33,
     "collaborator_reach": 21,
     "embed_x": 1.6442,
-    "embed_y": -0.8421
+    "embed_y": -0.8419
   },
   {
     "id": "nm0172903",
@@ -27718,9 +27718,9 @@
     "median_billing": 1,
     "minutes_credited": 4857,
     "medium_mix": {
+      "tvSeries": 0.017,
       "movie": 0.966,
-      "tvMovie": 0.017,
-      "tvSeries": 0.017
+      "tvMovie": 0.017
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1954,
@@ -27786,7 +27786,7 @@
     "top_collaborator_id": "nm0002311",
     "collaborator_loyalty": 0.156,
     "bridge_score": 0.001742,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00270965,
     "eigen_centrality": 0.00619,
     "clustering_local": 0.3333,
@@ -27803,8 +27803,8 @@
     "acclaim_gap": 1.312,
     "hub_vs_loyal": 3.06,
     "collaborator_reach": 21,
-    "embed_x": -1.2635,
-    "embed_y": -2.913
+    "embed_x": -1.2636,
+    "embed_y": -2.9129
   },
   {
     "id": "nm0610268",
@@ -28009,7 +28009,7 @@
     "acclaim_gap": -0.451,
     "hub_vs_loyal": -3.84,
     "collaborator_reach": 21,
-    "embed_x": -0.4914,
+    "embed_x": -0.4917,
     "embed_y": -2.4637
   },
   {
@@ -28127,7 +28127,7 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Dr. Sidney Carter",
+    "typecast_character": "German Colonel",
     "typecast_count": 1,
     "billing_trajectory": -0.1206,
     "median_billing": 3,
@@ -28196,7 +28196,7 @@
     "top_collaborator_id": "nm0712660",
     "collaborator_loyalty": 0.258,
     "bridge_score": 0.002302,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00268872,
     "eigen_centrality": 0.008039,
     "clustering_local": 0.2316,
@@ -28260,14 +28260,25 @@
         "votes": 0
       },
       {
-        "title": "Potluck Pards",
-        "character": "Ben",
+        "title": "The Hen Punchers of Piperock",
+        "character": "Dirtyshirt Jones",
         "characters": [
-          "Ben"
+          "Dirtyshirt Jones"
         ],
-        "year": 1934,
+        "year": 1926,
         "billing": 1,
-        "tconst": "tt0197777",
+        "tconst": "tt0339138",
+        "votes": 0
+      },
+      {
+        "title": "Desperate Dan",
+        "character": "Dirtyshirt Jones",
+        "characters": [
+          "Dirtyshirt Jones"
+        ],
+        "year": 1926,
+        "billing": 1,
+        "tconst": "tt0338907",
         "votes": 0
       },
       {
@@ -28290,17 +28301,6 @@
         "year": 1926,
         "billing": 1,
         "tconst": "tt0340429",
-        "votes": 0
-      },
-      {
-        "title": "Too Much Progress for Piperock",
-        "character": "Dirtyshirt Jones",
-        "characters": [
-          "Dirtyshirt Jones"
-        ],
-        "year": 1927,
-        "billing": 1,
-        "tconst": "tt0340405",
         "votes": 0
       }
     ],
@@ -28397,11 +28397,11 @@
       "1940s",
       "1950s"
     ],
-    "top_collaborator": "Bud Osborne",
-    "top_collaborator_id": "nm0651627",
+    "top_collaborator": "George Chesebro",
+    "top_collaborator_id": "nm0156173",
     "collaborator_loyalty": 0.072,
     "bridge_score": 0.000343,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00250848,
     "eigen_centrality": 0.012523,
     "clustering_local": 0.6789,
@@ -28419,7 +28419,7 @@
     "hub_vs_loyal": 11.72,
     "collaborator_reach": 20,
     "embed_x": -1.5208,
-    "embed_y": 2.2783
+    "embed_y": 2.2782
   },
   {
     "id": "nm0912478",
@@ -28605,7 +28605,7 @@
     "top_collaborator_id": "nm0933773",
     "collaborator_loyalty": 0.077,
     "bridge_score": 0.002044,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00271262,
     "eigen_centrality": 0.003286,
     "clustering_local": 0.1684,
@@ -28702,14 +28702,14 @@
         "votes": 15
       },
       {
-        "title": "Something to Do",
-        "character": "Jack Merrill",
+        "title": "Skinner's Baby",
+        "character": "William Manning Skinner",
         "characters": [
-          "Jack Merrill"
+          "William Manning Skinner"
         ],
-        "year": 1919,
+        "year": 1917,
         "billing": 1,
-        "tconst": "tt0010719",
+        "tconst": "tt0008585",
         "votes": 14
       }
     ],
@@ -28826,8 +28826,8 @@
     "acclaim_gap": -1.035,
     "hub_vs_loyal": 13.215,
     "collaborator_reach": 20,
-    "embed_x": -0.3946,
-    "embed_y": 0.2394
+    "embed_x": -0.3956,
+    "embed_y": 0.2395
   },
   {
     "id": "nm0069373",
@@ -28895,17 +28895,6 @@
         "votes": 42
       },
       {
-        "title": "A Fool's Awakening",
-        "character": "Herbert Lorington",
-        "characters": [
-          "Herbert Lorington"
-        ],
-        "year": 1924,
-        "billing": 2,
-        "tconst": "tt0014918",
-        "votes": 0
-      },
-      {
         "title": "A Lady of Quality",
         "character": "Sir Geoffrey Wildairs",
         "characters": [
@@ -28914,6 +28903,17 @@
         "year": 1924,
         "billing": 2,
         "tconst": "tt0015050",
+        "votes": 0
+      },
+      {
+        "title": "A Fool's Awakening",
+        "character": "Herbert Lorington",
+        "characters": [
+          "Herbert Lorington"
+        ],
+        "year": 1924,
+        "billing": 2,
+        "tconst": "tt0014918",
         "votes": 0
       }
     ],
@@ -29012,7 +29012,7 @@
     "top_collaborator_id": "nm0290066",
     "collaborator_loyalty": 0.091,
     "bridge_score": 0.002439,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00232719,
     "eigen_centrality": 0.00448,
     "clustering_local": 0.2515,
@@ -29030,7 +29030,7 @@
     "hub_vs_loyal": 8.535,
     "collaborator_reach": 19,
     "embed_x": 2.3367,
-    "embed_y": 2.0027
+    "embed_y": 2.0026
   },
   {
     "id": "nm0134831",
@@ -29076,17 +29076,6 @@
         "votes": 34
       },
       {
-        "title": "Hell Hounds of the Plains",
-        "character": "Deputy Yak Hammond",
-        "characters": [
-          "Deputy Yak Hammond"
-        ],
-        "year": 1927,
-        "billing": 1,
-        "tconst": "tt0127583",
-        "votes": 22
-      },
-      {
         "title": "The Iron Rider",
         "character": "Yak Halliday",
         "characters": [
@@ -29095,6 +29084,17 @@
         "year": 1927,
         "billing": 1,
         "tconst": "tt0017000",
+        "votes": 22
+      },
+      {
+        "title": "Hell Hounds of the Plains",
+        "character": "Deputy Yak Hammond",
+        "characters": [
+          "Deputy Yak Hammond"
+        ],
+        "year": 1927,
+        "billing": 1,
+        "tconst": "tt0127583",
         "votes": 22
       },
       {
@@ -29153,8 +29153,8 @@
     "median_billing": 5,
     "minutes_credited": 6124,
     "medium_mix": {
-      "tvMovie": 0.01,
-      "movie": 0.99
+      "movie": 0.99,
+      "tvMovie": 0.01
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1981,
@@ -29219,7 +29219,7 @@
     "top_collaborator_id": "nm0571186",
     "collaborator_loyalty": 0.105,
     "bridge_score": 0.000265,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00238048,
     "eigen_centrality": 0.011261,
     "clustering_local": 0.6901,
@@ -29424,7 +29424,7 @@
     "top_collaborator_id": "nm0002503",
     "collaborator_loyalty": 0.138,
     "bridge_score": 0.000644,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00230679,
     "eigen_centrality": 0.006458,
     "clustering_local": 0.4503,
@@ -29477,25 +29477,14 @@
         "votes": 36
       },
       {
-        "title": "The Years of the Locust",
-        "character": "Aaron Roth",
+        "title": "Out of Bondage",
+        "character": "Clancy",
         "characters": [
-          "Aaron Roth"
+          "Clancy"
         ],
-        "year": 1916,
+        "year": 1915,
         "billing": 2,
-        "tconst": "tt0007597",
-        "votes": 0
-      },
-      {
-        "title": "The Fire Cat",
-        "character": "Gringo Burke",
-        "characters": [
-          "Gringo Burke"
-        ],
-        "year": 1921,
-        "billing": 2,
-        "tconst": "tt0012170",
+        "tconst": "tt0005846",
         "votes": 0
       },
       {
@@ -29510,6 +29499,28 @@
         "votes": 0
       },
       {
+        "title": "The Fire Cat",
+        "character": "Gringo Burke",
+        "characters": [
+          "Gringo Burke"
+        ],
+        "year": 1921,
+        "billing": 2,
+        "tconst": "tt0012170",
+        "votes": 0
+      },
+      {
+        "title": "The Years of the Locust",
+        "character": "Aaron Roth",
+        "characters": [
+          "Aaron Roth"
+        ],
+        "year": 1916,
+        "billing": 2,
+        "tconst": "tt0007597",
+        "votes": 0
+      },
+      {
         "title": "A Night's Adventure",
         "character": "Bland",
         "characters": [
@@ -29518,17 +29529,6 @@
         "year": 1915,
         "billing": 2,
         "tconst": "tt0842830",
-        "votes": 0
-      },
-      {
-        "title": "Out of Bondage",
-        "character": "Clancy",
-        "characters": [
-          "Clancy"
-        ],
-        "year": 1915,
-        "billing": 2,
-        "tconst": "tt0005846",
         "votes": 0
       }
     ],
@@ -29623,11 +29623,11 @@
       "1930s",
       "1940s"
     ],
-    "top_collaborator": "Tully Marshall",
-    "top_collaborator_id": "nm0551222",
+    "top_collaborator": "William Boyd",
+    "top_collaborator_id": "nm0101955",
     "collaborator_loyalty": 0.073,
     "bridge_score": 0.003715,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00244672,
     "eigen_centrality": 0.009778,
     "clustering_local": 0.2632,
@@ -29644,7 +29644,7 @@
     "acclaim_gap": 0.072,
     "hub_vs_loyal": 10.605,
     "collaborator_reach": 19,
-    "embed_x": -1.9003,
+    "embed_x": -1.9002,
     "embed_y": -2.8378
   },
   {
@@ -29691,17 +29691,6 @@
         "votes": 10
       },
       {
-        "title": "Sibyl's Scenario",
-        "character": "James Harper",
-        "characters": [
-          "James Harper"
-        ],
-        "year": 1916,
-        "billing": 2,
-        "tconst": "tt3439352",
-        "votes": 0
-      },
-      {
         "title": "Modern Love",
         "character": "Julian Lawrence",
         "characters": [
@@ -29710,6 +29699,17 @@
         "year": 1918,
         "billing": 2,
         "tconst": "tt0009384",
+        "votes": 0
+      },
+      {
+        "title": "A Woman's Wiles",
+        "character": "Arthur Templeton - an American Artist",
+        "characters": [
+          "Arthur Templeton - an American Artist"
+        ],
+        "year": 1915,
+        "billing": 2,
+        "tconst": "tt0438640",
         "votes": 0
       },
       {
@@ -29724,14 +29724,14 @@
         "votes": 0
       },
       {
-        "title": "A Woman's Wiles",
-        "character": "Arthur Templeton - an American Artist",
+        "title": "Fire and Steel",
+        "character": "Tom Welbourne",
         "characters": [
-          "Arthur Templeton - an American Artist"
+          "Tom Welbourne"
         ],
-        "year": 1915,
+        "year": 1927,
         "billing": 2,
-        "tconst": "tt0438640",
+        "tconst": "tt0132955",
         "votes": 0
       }
     ],
@@ -29830,7 +29830,7 @@
     "top_collaborator_id": "nm0571186",
     "collaborator_loyalty": 0.088,
     "bridge_score": 0.00037,
-    "community": 3,
+    "community": 6,
     "pagerank": 0.00213877,
     "eigen_centrality": 0.014447,
     "clustering_local": 0.5673,
@@ -29847,8 +29847,8 @@
     "acclaim_gap": -0.786,
     "hub_vs_loyal": 8.88,
     "collaborator_reach": 19,
-    "embed_x": -1.441,
-    "embed_y": -0.6376
+    "embed_x": -1.4414,
+    "embed_y": -0.638
   },
   {
     "id": "nm0579663",
@@ -30038,7 +30038,7 @@
     "top_collaborator_id": "nm0657874",
     "collaborator_loyalty": 0.056,
     "bridge_score": 0.000764,
-    "community": 2,
+    "community": 5,
     "pagerank": 0.0024385,
     "eigen_centrality": 0.009454,
     "clustering_local": 0.4152,
@@ -30055,8 +30055,8 @@
     "acclaim_gap": -1.004,
     "hub_vs_loyal": 12.56,
     "collaborator_reach": 19,
-    "embed_x": 0.7514,
-    "embed_y": -3.6145
+    "embed_x": 0.7513,
+    "embed_y": -3.6146
   },
   {
     "id": "nm0603096",
@@ -30113,17 +30113,6 @@
         "votes": 0
       },
       {
-        "title": "Hearts o' the Range",
-        "character": "Beldon",
-        "characters": [
-          "Beldon"
-        ],
-        "year": 1921,
-        "billing": 1,
-        "tconst": "tt0134711",
-        "votes": 0
-      },
-      {
         "title": "At the Beach Incognito",
         "character": "Mr. Reggie Astorbilt",
         "characters": [
@@ -30135,14 +30124,25 @@
         "votes": 0
       },
       {
-        "title": "A Bungalow Bungle",
-        "character": "The Henpecked Husband",
+        "title": "Kick",
+        "character": "Aleck Kazam",
         "characters": [
-          "The Henpecked Husband"
+          "Aleck Kazam"
         ],
         "year": 1920,
         "billing": 1,
-        "tconst": "tt3016252",
+        "tconst": "tt0386574",
+        "votes": 0
+      },
+      {
+        "title": "Hearts o' the Range",
+        "character": "Beldon",
+        "characters": [
+          "Beldon"
+        ],
+        "year": 1921,
+        "billing": 1,
+        "tconst": "tt0134711",
         "votes": 0
       }
     ],
@@ -30179,8 +30179,8 @@
     "median_billing": 6,
     "minutes_credited": 3478,
     "medium_mix": {
-      "movie": 0.987,
-      "tvMovie": 0.013
+      "tvMovie": 0.013,
+      "movie": 0.987
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1951,
@@ -30244,7 +30244,7 @@
     "top_collaborator_id": "nm0174692",
     "collaborator_loyalty": 0.387,
     "bridge_score": 0.000231,
-    "community": 1,
+    "community": 3,
     "pagerank": 0.00232162,
     "eigen_centrality": 0.027633,
     "clustering_local": 0.731,
@@ -30330,17 +30330,6 @@
         "votes": 26
       },
       {
-        "title": "Ransom",
-        "character": "Lois Brewster",
-        "characters": [
-          "Lois Brewster"
-        ],
-        "year": 1928,
-        "billing": 1,
-        "tconst": "tt0019307",
-        "votes": 25
-      },
-      {
         "title": "Public Opinion",
         "character": "Mona Trevor",
         "characters": [
@@ -30349,6 +30338,17 @@
         "year": 1935,
         "billing": 1,
         "tconst": "tt0026898",
+        "votes": 25
+      },
+      {
+        "title": "Ransom",
+        "character": "Lois Brewster",
+        "characters": [
+          "Lois Brewster"
+        ],
+        "year": 1928,
+        "billing": 1,
+        "tconst": "tt0019307",
         "votes": 25
       }
     ],
@@ -30450,7 +30450,7 @@
     "top_collaborator_id": "nm0103619",
     "collaborator_loyalty": 0.058,
     "bridge_score": 0.001757,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00227101,
     "eigen_centrality": 0.004091,
     "clustering_local": 0.2398,
@@ -30467,7 +30467,7 @@
     "acclaim_gap": -0.445,
     "hub_vs_loyal": 12.33,
     "collaborator_reach": 19,
-    "embed_x": 2.0563,
+    "embed_x": 2.0562,
     "embed_y": -0.0812
   },
   {
@@ -30654,7 +30654,7 @@
     "top_collaborator_id": "nm0410271",
     "collaborator_loyalty": 0.066,
     "bridge_score": 0.001736,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00226513,
     "eigen_centrality": 0.0042,
     "clustering_local": 0.2745,
@@ -30832,7 +30832,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0404431",
+    "top_director": "nm0869665",
     "regions": [
       "AR",
       "AT",
@@ -30991,7 +30991,7 @@
     "genre_first": "Comedy",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Old-Timer",
+    "typecast_character": "Various",
     "typecast_count": 1,
     "billing_trajectory": -0.0683,
     "median_billing": 6,
@@ -31064,7 +31064,7 @@
     "top_collaborator_id": "nm0269771",
     "collaborator_loyalty": 0.129,
     "bridge_score": 0.001,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00297871,
     "eigen_centrality": 0.005748,
     "clustering_local": 0.3922,
@@ -31081,7 +31081,7 @@
     "acclaim_gap": 0.854,
     "hub_vs_loyal": 3.165,
     "collaborator_reach": 18,
-    "embed_x": 0.7823,
+    "embed_x": 0.7832,
     "embed_y": 1.8366
   },
   {
@@ -31117,17 +31117,6 @@
         "votes": 196
       },
       {
-        "title": "Fool's Gold",
-        "character": "Marshall Strong",
-        "characters": [
-          "Marshall Strong"
-        ],
-        "year": 1919,
-        "billing": 1,
-        "tconst": "tt0010134",
-        "votes": 18
-      },
-      {
         "title": "The Death Ship",
         "character": "The Ship's Captain",
         "characters": [
@@ -31139,15 +31128,15 @@
         "votes": 18
       },
       {
-        "title": "The Sign Invisible",
-        "character": "Lone Deer",
+        "title": "Fool's Gold",
+        "character": "Marshall Strong",
         "characters": [
-          "Lone Deer"
+          "Marshall Strong"
         ],
-        "year": 1918,
+        "year": 1919,
         "billing": 1,
-        "tconst": "tt0009615",
-        "votes": 10
+        "tconst": "tt0010134",
+        "votes": 18
       },
       {
         "title": "The Last Lesson",
@@ -31161,14 +31150,25 @@
         "votes": 10
       },
       {
-        "title": "The Last of His People",
-        "character": "Lone Wolf - aka Wolf Briggs",
+        "title": "The Sign Invisible",
+        "character": "Lone Deer",
         "characters": [
-          "Lone Wolf - aka Wolf Briggs"
+          "Lone Deer"
         ],
-        "year": 1919,
+        "year": 1918,
         "billing": 1,
-        "tconst": "tt0010343",
+        "tconst": "tt0009615",
+        "votes": 10
+      },
+      {
+        "title": "King Spruce",
+        "character": "Dwight Wade",
+        "characters": [
+          "Dwight Wade"
+        ],
+        "year": 1920,
+        "billing": 1,
+        "tconst": "tt0195858",
         "votes": 0
       }
     ],
@@ -31198,7 +31198,7 @@
     "genre_first": "Adventure",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Gil Elson",
+    "typecast_character": "Sheriff Andy Redcliffe",
     "typecast_count": 1,
     "billing_trajectory": -0.2101,
     "median_billing": 5,
@@ -31264,11 +31264,11 @@
       "1940s",
       "1950s"
     ],
-    "top_collaborator": "Noah Beery",
-    "top_collaborator_id": "nm0001935",
+    "top_collaborator": "Conrad Nagel",
+    "top_collaborator_id": "nm0619261",
     "collaborator_loyalty": 0.071,
     "bridge_score": 0.001998,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00218992,
     "eigen_centrality": 0.005224,
     "clustering_local": 0.281,
@@ -31285,7 +31285,7 @@
     "acclaim_gap": -0.216,
     "hub_vs_loyal": 9.835,
     "collaborator_reach": 18,
-    "embed_x": 1.7727,
+    "embed_x": 1.7726,
     "embed_y": -3.1055
   },
   {
@@ -31472,7 +31472,7 @@
     "top_collaborator_id": "nm0531759",
     "collaborator_loyalty": 0.145,
     "bridge_score": 0.0009,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00236337,
     "eigen_centrality": 0.008707,
     "clustering_local": 0.4248,
@@ -31650,7 +31650,7 @@
       }
     ],
     "same_director_repeat": 5,
-    "top_director": "nm0532187",
+    "top_director": "nm0782707",
     "regions": [
       "AR",
       "AT",
@@ -31671,11 +31671,11 @@
       "1920s",
       "1930s"
     ],
-    "top_collaborator": "Ed Brady",
-    "top_collaborator_id": "nm0103619",
+    "top_collaborator": "John Miljan",
+    "top_collaborator_id": "nm0587534",
     "collaborator_loyalty": 0.061,
     "bridge_score": 0.001819,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00222239,
     "eigen_centrality": 0.005933,
     "clustering_local": 0.2418,
@@ -31855,7 +31855,7 @@
       }
     ],
     "same_director_repeat": 6,
-    "top_director": "nm0251456",
+    "top_director": "nm0223460",
     "regions": [
       "AL",
       "AR",
@@ -31901,7 +31901,7 @@
     "acclaim_gap": -2.741,
     "hub_vs_loyal": -8.53,
     "collaborator_reach": 17,
-    "embed_x": -1.222,
+    "embed_x": -1.2221,
     "embed_y": 2.7151
   },
   {
@@ -31970,25 +31970,25 @@
         "votes": 9
       },
       {
-        "title": "The Challenge",
-        "character": "Quarrier",
+        "title": "The Suicide Club",
+        "character": "Prince Florizel",
         "characters": [
-          "Quarrier"
+          "Prince Florizel"
         ],
-        "year": 1916,
+        "year": 1914,
         "billing": 1,
-        "tconst": "tt0006496",
+        "tconst": "tt0004656",
         "votes": 0
       },
       {
-        "title": "The Quickening Flame",
-        "character": "John Steele",
+        "title": "Vengeance",
+        "character": "Lorin Cuddlestone",
         "characters": [
-          "John Steele"
+          "Lorin Cuddlestone"
         ],
-        "year": 1919,
+        "year": 1918,
         "billing": 1,
-        "tconst": "tt0010607",
+        "tconst": "tt0009758",
         "votes": 0
       }
     ],
@@ -32019,7 +32019,7 @@
     "genre_first": "Drama",
     "genre_last": "Biography",
     "genre_first_last_distance": 1,
-    "typecast_character": "Rev. Brontë",
+    "typecast_character": "Baron Stefano",
     "typecast_count": 1,
     "billing_trajectory": -0.1772,
     "median_billing": 4,
@@ -32088,7 +32088,7 @@
     "top_collaborator_id": "nm0290066",
     "collaborator_loyalty": 0.095,
     "bridge_score": 0.001917,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.0025113,
     "eigen_centrality": 0.002384,
     "clustering_local": 0.2279,
@@ -32106,7 +32106,7 @@
     "hub_vs_loyal": 6.075,
     "collaborator_reach": 17,
     "embed_x": -0.9409,
-    "embed_y": 2.3019
+    "embed_y": 2.302
   },
   {
     "id": "nm0051628",
@@ -32222,14 +32222,14 @@
     "genre_first": "Drama",
     "genre_last": "Biography",
     "genre_first_last_distance": 1,
-    "typecast_character": "Sheriff Claude Stagg",
+    "typecast_character": "actor 'Stagecoach'",
     "typecast_count": 1,
     "billing_trajectory": -0.0626,
     "median_billing": 3,
     "minutes_credited": 4496,
     "medium_mix": {
-      "movie": 0.982,
-      "tvMovie": 0.018
+      "tvMovie": 0.018,
+      "movie": 0.982
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1971,
@@ -32289,11 +32289,11 @@
       "1940s",
       "1970s"
     ],
-    "top_collaborator": "Fred Kohler",
-    "top_collaborator_id": "nm0463264",
+    "top_collaborator": "Lucien Littlefield",
+    "top_collaborator_id": "nm0514707",
     "collaborator_loyalty": 0.102,
     "bridge_score": 0.001006,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00259764,
     "eigen_centrality": 0.005119,
     "clustering_local": 0.4559,
@@ -32311,7 +32311,7 @@
     "hub_vs_loyal": 5.27,
     "collaborator_reach": 17,
     "embed_x": -2.9592,
-    "embed_y": 0.8275
+    "embed_y": 0.8274
   },
   {
     "id": "nm0102718",
@@ -32335,25 +32335,14 @@
     "rk_prominence": 149,
     "roles": [
       {
-        "title": "The Miser's Reversion",
-        "character": "John Grisley - the Miser",
+        "title": "The Doctor of the Afternoon Arm",
+        "character": "Dr. Rolfe",
         "characters": [
-          "John Grisley - the Miser"
-        ],
-        "year": 1914,
-        "billing": 1,
-        "tconst": "tt0241733",
-        "votes": 0
-      },
-      {
-        "title": "Temptation and the Man",
-        "character": "Temple Vaughn",
-        "characters": [
-          "Temple Vaughn"
+          "Dr. Rolfe"
         ],
         "year": 1916,
         "billing": 1,
-        "tconst": "tt0007434",
+        "tconst": "tt0335052",
         "votes": 0
       },
       {
@@ -32368,6 +32357,28 @@
         "votes": 0
       },
       {
+        "title": "The Miser's Reversion",
+        "character": "John Grisley - the Miser",
+        "characters": [
+          "John Grisley - the Miser"
+        ],
+        "year": 1914,
+        "billing": 1,
+        "tconst": "tt0241733",
+        "votes": 0
+      },
+      {
+        "title": "An Hour of Youth",
+        "character": "Jack",
+        "characters": [
+          "Jack"
+        ],
+        "year": 1914,
+        "billing": 1,
+        "tconst": "tt0496743",
+        "votes": 0
+      },
+      {
         "title": "Sid Nee's Finish",
         "character": "Sid Nee",
         "characters": [
@@ -32379,25 +32390,14 @@
         "votes": 0
       },
       {
-        "title": "The Doctor of the Afternoon Arm",
-        "character": "Dr. Rolfe",
+        "title": "Lawyer, Dog and Baby",
+        "character": "The Lawyer",
         "characters": [
-          "Dr. Rolfe"
-        ],
-        "year": 1916,
-        "billing": 1,
-        "tconst": "tt0335052",
-        "votes": 0
-      },
-      {
-        "title": "An Amateur Animal Trainer",
-        "character": "Jack Crane - An Amateur Animal Trainer",
-        "characters": [
-          "Jack Crane - An Amateur Animal Trainer"
+          "The Lawyer"
         ],
         "year": 1913,
         "billing": 1,
-        "tconst": "tt0412352",
+        "tconst": "tt0489155",
         "votes": 0
       }
     ],
@@ -32496,7 +32496,7 @@
     "top_collaborator_id": "nm0587534",
     "collaborator_loyalty": 0.059,
     "bridge_score": 0.003152,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00250325,
     "eigen_centrality": 0.003444,
     "clustering_local": 0.2353,
@@ -32538,28 +32538,6 @@
     "rk_prominence": 183,
     "roles": [
       {
-        "title": "So Shall Ye Reap",
-        "character": "Francis Norton - the Father",
-        "characters": [
-          "Francis Norton - the Father"
-        ],
-        "year": 1916,
-        "billing": 1,
-        "tconst": "tt0978712",
-        "votes": 0
-      },
-      {
-        "title": "Mr. Miller's Economies",
-        "character": "Mr. Miller",
-        "characters": [
-          "Mr. Miller"
-        ],
-        "year": 1918,
-        "billing": 1,
-        "tconst": "tt0809199",
-        "votes": 0
-      },
-      {
         "title": "Won in the Stretch",
         "character": "Geoirge Hughes",
         "characters": [
@@ -32582,17 +32560,6 @@
         "votes": 0
       },
       {
-        "title": "Mr. Miller Muddles Through",
-        "character": "Mr. Miller",
-        "characters": [
-          "Mr. Miller"
-        ],
-        "year": 1918,
-        "billing": 1,
-        "tconst": "tt1441330",
-        "votes": 0
-      },
-      {
         "title": "The Yellow Streak",
         "character": "Ed Merritt",
         "characters": [
@@ -32601,6 +32568,39 @@
         "year": 1915,
         "billing": 1,
         "tconst": "tt1269600",
+        "votes": 0
+      },
+      {
+        "title": "So Shall Ye Reap",
+        "character": "Francis Norton - the Father",
+        "characters": [
+          "Francis Norton - the Father"
+        ],
+        "year": 1916,
+        "billing": 1,
+        "tconst": "tt0978712",
+        "votes": 0
+      },
+      {
+        "title": "Mr. Miller's Economies",
+        "character": "Mr. Miller",
+        "characters": [
+          "Mr. Miller"
+        ],
+        "year": 1918,
+        "billing": 1,
+        "tconst": "tt0809199",
+        "votes": 0
+      },
+      {
+        "title": "Mr. Miller Muddles Through",
+        "character": "Mr. Miller",
+        "characters": [
+          "Mr. Miller"
+        ],
+        "year": 1918,
+        "billing": 1,
+        "tconst": "tt1441330",
         "votes": 0
       }
     ],
@@ -32700,7 +32700,7 @@
     "top_collaborator_id": "nm0933773",
     "collaborator_loyalty": 0.087,
     "bridge_score": 0.00121,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00193022,
     "eigen_centrality": 0.007429,
     "clustering_local": 0.375,
@@ -33108,7 +33108,7 @@
     "top_collaborator_id": "nm0369058",
     "collaborator_loyalty": 0.053,
     "bridge_score": 0.002637,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00210404,
     "eigen_centrality": 0.005024,
     "clustering_local": 0.2353,
@@ -33126,7 +33126,7 @@
     "hub_vs_loyal": 10.905,
     "collaborator_reach": 17,
     "embed_x": -3.2884,
-    "embed_y": 0.467
+    "embed_y": 0.4669
   },
   {
     "id": "nm0269493",
@@ -33194,17 +33194,6 @@
         "votes": 13
       },
       {
-        "title": "The Corner",
-        "character": "David Waltham",
-        "characters": [
-          "David Waltham"
-        ],
-        "year": 1916,
-        "billing": 1,
-        "tconst": "tt0157486",
-        "votes": 0
-      },
-      {
         "title": "Two Can Play",
         "character": "John Hammis",
         "characters": [
@@ -33213,6 +33202,17 @@
         "year": 1926,
         "billing": 1,
         "tconst": "tt0017494",
+        "votes": 0
+      },
+      {
+        "title": "The Friendship of Beaupere",
+        "character": "Jules Beaupere",
+        "characters": [
+          "Jules Beaupere"
+        ],
+        "year": 1917,
+        "billing": 1,
+        "tconst": "tt0955259",
         "votes": 0
       }
     ],
@@ -33311,7 +33311,7 @@
     "top_collaborator_id": "nm0001273",
     "collaborator_loyalty": 0.062,
     "bridge_score": 0.002471,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00246825,
     "eigen_centrality": 0.001758,
     "clustering_local": 0.1985,
@@ -33329,7 +33329,7 @@
     "hub_vs_loyal": 9.87,
     "collaborator_reach": 17,
     "embed_x": 1.583,
-    "embed_y": 3.0868
+    "embed_y": 3.0869
   },
   {
     "id": "nm0464137",
@@ -33353,17 +33353,6 @@
     "rk_prominence": 90,
     "roles": [
       {
-        "title": "The Warning",
-        "character": "Robert Denman",
-        "characters": [
-          "Robert Denman"
-        ],
-        "year": 1915,
-        "billing": 1,
-        "tconst": "tt0006242",
-        "votes": 0
-      },
-      {
         "title": "The Bigger Man",
         "character": "John Stoddard",
         "characters": [
@@ -33372,6 +33361,17 @@
         "year": 1915,
         "billing": 1,
         "tconst": "tt0004965",
+        "votes": 0
+      },
+      {
+        "title": "The Warning",
+        "character": "Robert Denman",
+        "characters": [
+          "Robert Denman"
+        ],
+        "year": 1915,
+        "billing": 1,
+        "tconst": "tt0006242",
         "votes": 0
       },
       {
@@ -33446,7 +33446,7 @@
     "genre_first": "Drama",
     "genre_last": "Crime",
     "genre_first_last_distance": 1,
-    "typecast_character": "Deschamps",
+    "typecast_character": "Dr. Stephen Royce",
     "typecast_count": 1,
     "billing_trajectory": -0.1813,
     "median_billing": 7,
@@ -33515,7 +33515,7 @@
     "top_collaborator_id": "nm0358076",
     "collaborator_loyalty": 0.079,
     "bridge_score": 0.00128,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.00232645,
     "eigen_centrality": 0.005046,
     "clustering_local": 0.3088,
@@ -33532,7 +33532,7 @@
     "acclaim_gap": 0.635,
     "hub_vs_loyal": 7.915,
     "collaborator_reach": 17,
-    "embed_x": 0.8941,
+    "embed_x": 0.894,
     "embed_y": 3.1177
   },
   {
@@ -33720,7 +33720,7 @@
     "top_collaborator_id": "nm0174692",
     "collaborator_loyalty": 0.116,
     "bridge_score": 0.001469,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00225698,
     "eigen_centrality": 0.00445,
     "clustering_local": 0.2794,
@@ -33737,8 +33737,8 @@
     "acclaim_gap": 0.927,
     "hub_vs_loyal": 3.66,
     "collaborator_reach": 17,
-    "embed_x": 2.9633,
-    "embed_y": -1.0977
+    "embed_x": 2.9634,
+    "embed_y": -1.0976
   },
   {
     "id": "nm0003895",
@@ -33928,7 +33928,7 @@
     "top_collaborator_id": "nm0832011",
     "collaborator_loyalty": 0.188,
     "bridge_score": 0.000659,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.0024769,
     "eigen_centrality": 0.004214,
     "clustering_local": 0.3833,
@@ -34063,7 +34063,7 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Texas Ranger Major McNeil",
+    "typecast_character": "Lassiter",
     "typecast_count": 2,
     "billing_trajectory": -0.1934,
     "median_billing": 2,
@@ -34129,8 +34129,8 @@
       "1940s",
       "1950s"
     ],
-    "top_collaborator": "Robert Frazer",
-    "top_collaborator_id": "nm0292537",
+    "top_collaborator": "Russell Simpson",
+    "top_collaborator_id": "nm0801193",
     "collaborator_loyalty": 0.095,
     "bridge_score": 0.000695,
     "community": 3,
@@ -34150,7 +34150,7 @@
     "acclaim_gap": -0.433,
     "hub_vs_loyal": 5.075,
     "collaborator_reach": 16,
-    "embed_x": -1.8307,
+    "embed_x": -1.8308,
     "embed_y": 1.7136
   },
   {
@@ -34334,7 +34334,7 @@
     "top_collaborator_id": "nm0619261",
     "collaborator_loyalty": 0.08,
     "bridge_score": 0.001525,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00212071,
     "eigen_centrality": 0.002508,
     "clustering_local": 0.225,
@@ -34420,17 +34420,6 @@
         "votes": 15
       },
       {
-        "title": "Crooked Straight",
-        "character": "Spark Nelson",
-        "characters": [
-          "Spark Nelson"
-        ],
-        "year": 1919,
-        "billing": 2,
-        "tconst": "tt0189453",
-        "votes": 0
-      },
-      {
         "title": "While Satan Sleeps",
         "character": "Red Barton",
         "characters": [
@@ -34439,6 +34428,17 @@
         "year": 1922,
         "billing": 2,
         "tconst": "tt0013758",
+        "votes": 0
+      },
+      {
+        "title": "Crooked Straight",
+        "character": "Spark Nelson",
+        "characters": [
+          "Spark Nelson"
+        ],
+        "year": 1919,
+        "billing": 2,
+        "tconst": "tt0189453",
         "votes": 0
       }
     ],
@@ -34475,8 +34475,8 @@
     "median_billing": 7,
     "minutes_credited": 10524,
     "medium_mix": {
-      "tvSeries": 0.007,
-      "movie": 0.993
+      "movie": 0.993,
+      "tvSeries": 0.007
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1940,
@@ -34540,7 +34540,7 @@
     "top_collaborator_id": "nm0035159",
     "collaborator_loyalty": 0.041,
     "bridge_score": 0.001055,
-    "community": 3,
+    "community": 0,
     "pagerank": 0.00184189,
     "eigen_centrality": 0.004265,
     "clustering_local": 0.2857,
@@ -34680,8 +34680,8 @@
     "median_billing": 3,
     "minutes_credited": 6836,
     "medium_mix": {
-      "movie": 0.99,
-      "tvMovie": 0.01
+      "tvMovie": 0.01,
+      "movie": 0.99
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1990,
@@ -34741,8 +34741,8 @@
       "1930s",
       "1990s"
     ],
-    "top_collaborator": "Jean Hersholt",
-    "top_collaborator_id": "nm0380965",
+    "top_collaborator": "Bessie Love",
+    "top_collaborator_id": "nm0522281",
     "collaborator_loyalty": 0.069,
     "bridge_score": 0.00181,
     "community": 0,
@@ -34763,7 +34763,7 @@
     "hub_vs_loyal": 7.065,
     "collaborator_reach": 15,
     "embed_x": -1.9877,
-    "embed_y": -1.3748
+    "embed_y": -1.375
   },
   {
     "id": "nm0319257",
@@ -34879,7 +34879,7 @@
     "genre_first": "Drama",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Old Christopher West",
+    "typecast_character": "The Captain",
     "typecast_count": 1,
     "billing_trajectory": -0.1918,
     "median_billing": 5,
@@ -34947,7 +34947,7 @@
     "top_collaborator_id": "nm0587534",
     "collaborator_loyalty": 0.079,
     "bridge_score": 0.002347,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00188057,
     "eigen_centrality": 0.002083,
     "clustering_local": 0.219,
@@ -35154,7 +35154,7 @@
     "top_collaborator_id": "nm0000859",
     "collaborator_loyalty": 0.15,
     "bridge_score": 0.000725,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00262964,
     "eigen_centrality": 0.003639,
     "clustering_local": 0.3297,
@@ -35196,17 +35196,6 @@
     "rk_prominence": 137,
     "roles": [
       {
-        "title": "The Yellow Dog",
-        "character": "Albert Walker",
-        "characters": [
-          "Albert Walker"
-        ],
-        "year": 1918,
-        "billing": 1,
-        "tconst": "tt0009841",
-        "votes": 0
-      },
-      {
         "title": "Mr. Opp",
         "character": "Mr. D. Webster Opp",
         "characters": [
@@ -35215,6 +35204,17 @@
         "year": 1917,
         "billing": 1,
         "tconst": "tt0008333",
+        "votes": 0
+      },
+      {
+        "title": "The Yellow Dog",
+        "character": "Albert Walker",
+        "characters": [
+          "Albert Walker"
+        ],
+        "year": 1918,
+        "billing": 1,
+        "tconst": "tt0009841",
         "votes": 0
       },
       {
@@ -35251,14 +35251,14 @@
         "votes": 179
       },
       {
-        "title": "Ten Modern Commandments",
-        "character": "George Disbrow",
+        "title": "Restless Souls",
+        "character": "Edgar Swetson",
         "characters": [
-          "George Disbrow"
+          "Edgar Swetson"
         ],
-        "year": 1927,
+        "year": 1922,
         "billing": 3,
-        "tconst": "tt0018473",
+        "tconst": "tt0013548",
         "votes": 0
       }
     ],
@@ -35358,7 +35358,7 @@
     "top_collaborator_id": "nm0267916",
     "collaborator_loyalty": 0.056,
     "bridge_score": 0.001247,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00201968,
     "eigen_centrality": 0.001148,
     "clustering_local": 0.2088,
@@ -35375,8 +35375,8 @@
     "acclaim_gap": -0.191,
     "hub_vs_loyal": 7.56,
     "collaborator_reach": 14,
-    "embed_x": 0.7218,
-    "embed_y": 3.7484
+    "embed_x": 0.7219,
+    "embed_y": 3.7485
   },
   {
     "id": "nm0524306",
@@ -35562,7 +35562,7 @@
     "top_collaborator_id": "nm0568282",
     "collaborator_loyalty": 0.198,
     "bridge_score": 0.001104,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00213767,
     "eigen_centrality": 0.004088,
     "clustering_local": 0.2637,
@@ -35580,7 +35580,7 @@
     "hub_vs_loyal": -8.77,
     "collaborator_reach": 14,
     "embed_x": -3.9459,
-    "embed_y": -0.6981
+    "embed_y": -0.6982
   },
   {
     "id": "nm0378555",
@@ -35767,7 +35767,7 @@
     "top_collaborator_id": "nm0587534",
     "collaborator_loyalty": 0.1,
     "bridge_score": 0.000829,
-    "community": 4,
+    "community": 1,
     "pagerank": 0.00182363,
     "eigen_centrality": 0.002577,
     "clustering_local": 0.2436,
@@ -35785,7 +35785,7 @@
     "hub_vs_loyal": 1.5,
     "collaborator_reach": 13,
     "embed_x": -3.3442,
-    "embed_y": 1.7504
+    "embed_y": 1.7503
   },
   {
     "id": "nm0604656",
@@ -35902,7 +35902,7 @@
     "genre_first": "Drama",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Dr. Edmond Ozanne",
+    "typecast_character": "Fire Chief Duggan",
     "typecast_count": 1,
     "billing_trajectory": 0.0137,
     "median_billing": 3,
@@ -35968,11 +35968,11 @@
       "1940s",
       "1950s"
     ],
-    "top_collaborator": "William Powell",
-    "top_collaborator_id": "nm0001635",
+    "top_collaborator": "Billie Burke",
+    "top_collaborator_id": "nm0000992",
     "collaborator_loyalty": 0.114,
     "bridge_score": 0.000991,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00239631,
     "eigen_centrality": 0.00183,
     "clustering_local": 0.3333,
@@ -35989,7 +35989,7 @@
     "acclaim_gap": 0.196,
     "hub_vs_loyal": -0.11,
     "collaborator_reach": 13,
-    "embed_x": -1.4523,
+    "embed_x": -1.4524,
     "embed_y": 3.1637
   },
   {
@@ -36025,58 +36025,58 @@
         "votes": 323
       },
       {
-        "title": "C.O.D.",
-        "character": "C.O. Darlington",
-        "characters": [
-          "C.O. Darlington"
-        ],
-        "year": 1914,
-        "billing": 1,
-        "tconst": "tt0003736",
-        "votes": 0
-      },
-      {
-        "title": "Mr. Jarr Brings Home a Turkey",
+        "title": "Mr. Jarr's Big Vacation",
         "character": "Mr. Jarr",
         "characters": [
           "Mr. Jarr"
         ],
         "year": 1915,
         "billing": 1,
-        "tconst": "tt0828086",
+        "tconst": "tt0828097",
         "votes": 0
       },
       {
-        "title": "Mr. Jarr Takes a Night Off",
+        "title": "Mr. Jarr and the Captive Maiden",
         "character": "Mr. Jarr",
         "characters": [
           "Mr. Jarr"
         ],
         "year": 1915,
         "billing": 1,
-        "tconst": "tt0828087",
+        "tconst": "tt0828092",
         "votes": 0
       },
       {
-        "title": "Mr. Jarr Visits His Home Town",
+        "title": "Mrs. Jarr's Auction Bridge",
         "character": "Mr. Jarr",
         "characters": [
           "Mr. Jarr"
         ],
         "year": 1915,
         "billing": 1,
-        "tconst": "tt0828088",
+        "tconst": "tt1268892",
         "votes": 0
       },
       {
-        "title": "The Jarrs Visit Arcadia",
+        "title": "Mr. Jarr's Magnetic Friend",
         "character": "Mr. Jarr",
         "characters": [
           "Mr. Jarr"
         ],
         "year": 1915,
         "billing": 1,
-        "tconst": "tt0484642",
+        "tconst": "tt0829240",
+        "votes": 0
+      },
+      {
+        "title": "Mrs. Jarr and the Beauty Treatment",
+        "character": "Mr. Jarr",
+        "characters": [
+          "Mr. Jarr"
+        ],
+        "year": 1915,
+        "billing": 1,
+        "tconst": "tt0829239",
         "votes": 0
       }
     ],
@@ -36171,11 +36171,11 @@
       "1930s",
       "1940s"
     ],
-    "top_collaborator": "Herbert Rawlinson",
-    "top_collaborator_id": "nm0712660",
+    "top_collaborator": "Tom Kennedy",
+    "top_collaborator_id": "nm0448366",
     "collaborator_loyalty": 0.111,
     "bridge_score": 0.000811,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00185906,
     "eigen_centrality": 0.002573,
     "clustering_local": 0.2121,
@@ -36193,7 +36193,7 @@
     "hub_vs_loyal": -0.765,
     "collaborator_reach": 12,
     "embed_x": 2.0781,
-    "embed_y": -0.6172
+    "embed_y": -0.6173
   },
   {
     "id": "nm0071031",
@@ -36378,7 +36378,7 @@
     "top_collaborator_id": "nm0219666",
     "collaborator_loyalty": 0.139,
     "bridge_score": 0.000714,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00186256,
     "eigen_centrality": 0.001715,
     "clustering_local": 0.2273,
@@ -36431,58 +36431,58 @@
         "votes": 13
       },
       {
-        "title": "Her New Yob",
-        "character": "Lebia",
+        "title": "Do You Know This Woman?",
+        "character": "The wife",
         "characters": [
-          "Lebia"
+          "The wife"
         ],
-        "year": 1915,
+        "year": 1911,
         "billing": 1,
-        "tconst": "tt1348974",
+        "tconst": "tt1135013",
         "votes": 0
       },
       {
-        "title": "The Near Capture of Jessie James",
-        "character": "Jessie James",
+        "title": "False Pride Has a Fall",
+        "character": "Ellen Farley",
         "characters": [
-          "Jessie James"
-        ],
-        "year": 1915,
-        "billing": 1,
-        "tconst": "tt11749158",
-        "votes": 0
-      },
-      {
-        "title": "The Rube's Sleep Producer",
-        "character": "Nell",
-        "characters": [
-          "Nell"
-        ],
-        "year": 1915,
-        "billing": 1,
-        "tconst": "tt11758530",
-        "votes": 0
-      },
-      {
-        "title": "Miss Fairweather Out West",
-        "character": "Miss Fairweather",
-        "characters": [
-          "Miss Fairweather"
-        ],
-        "year": 1913,
-        "billing": 1,
-        "tconst": "tt0814734",
-        "votes": 0
-      },
-      {
-        "title": "The Toll of the War-Path",
-        "character": "Bess",
-        "characters": [
-          "Bess"
+          "Ellen Farley"
         ],
         "year": 1914,
         "billing": 1,
-        "tconst": "tt1488153",
+        "tconst": "tt1321379",
+        "votes": 0
+      },
+      {
+        "title": "Howling Lions and Circus Queens",
+        "character": "Salindy Simp",
+        "characters": [
+          "Salindy Simp"
+        ],
+        "year": 1919,
+        "billing": 1,
+        "tconst": "tt0340164",
+        "votes": 0
+      },
+      {
+        "title": "A Petticoat Ranch Boss",
+        "character": "Rose Stubbs",
+        "characters": [
+          "Rose Stubbs"
+        ],
+        "year": 1912,
+        "billing": 1,
+        "tconst": "tt1337376",
+        "votes": 0
+      },
+      {
+        "title": "The Shop Girl's Big Day",
+        "character": "Dora Thea Rankin - the Shop Girl",
+        "characters": [
+          "Dora Thea Rankin - the Shop Girl"
+        ],
+        "year": 1913,
+        "billing": 1,
+        "tconst": "tt0773034",
         "votes": 0
       }
     ],
@@ -36582,7 +36582,7 @@
     "top_collaborator_id": "nm0448012",
     "collaborator_loyalty": 0.387,
     "bridge_score": 0.000385,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00230523,
     "eigen_centrality": 0.005237,
     "clustering_local": 0.4394,
@@ -36679,14 +36679,14 @@
         "votes": 12
       },
       {
-        "title": "Wandering Footsteps",
-        "character": "Timothy Payne",
+        "title": "The Key",
+        "character": "Andrew Farley",
         "characters": [
-          "Timothy Payne"
+          "Andrew Farley"
         ],
-        "year": 1925,
+        "year": 1913,
         "billing": 1,
-        "tconst": "tt0016502",
+        "tconst": "tt0375894",
         "votes": 0
       }
     ],
@@ -36785,7 +36785,7 @@
     "top_collaborator_id": "nm0292537",
     "collaborator_loyalty": 0.097,
     "bridge_score": 0.000622,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00189474,
     "eigen_centrality": 0.002538,
     "clustering_local": 0.3636,
@@ -36920,7 +36920,7 @@
     "genre_first": "Biography",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Bromwell Jones",
+    "typecast_character": "Various",
     "typecast_count": 1,
     "billing_trajectory": -0.1001,
     "median_billing": 4,
@@ -36988,7 +36988,7 @@
     "top_collaborator_id": "nm0448012",
     "collaborator_loyalty": 0.193,
     "bridge_score": 0.000292,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00236845,
     "eigen_centrality": 0.005943,
     "clustering_local": 0.4394,
@@ -37005,7 +37005,7 @@
     "acclaim_gap": 0.62,
     "hub_vs_loyal": -10.195,
     "collaborator_reach": 12,
-    "embed_x": 3.88,
+    "embed_x": 3.8801,
     "embed_y": -0.0641
   },
   {
@@ -37128,9 +37128,9 @@
     "median_billing": 1,
     "minutes_credited": 4811,
     "medium_mix": {
+      "tvMovie": 0.083,
       "tvSeries": 0.167,
-      "movie": 0.75,
-      "tvMovie": 0.083
+      "movie": 0.75
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1948,
@@ -37198,7 +37198,7 @@
     "top_collaborator_id": "nm0000891",
     "collaborator_loyalty": 0.152,
     "bridge_score": 0.000568,
-    "community": 4,
+    "community": 2,
     "pagerank": 0.00247298,
     "eigen_centrality": 0.012832,
     "clustering_local": 0.4242,
@@ -37215,7 +37215,7 @@
     "acclaim_gap": 0.114,
     "hub_vs_loyal": -5.48,
     "collaborator_reach": 12,
-    "embed_x": 3.2068,
+    "embed_x": 3.2069,
     "embed_y": -2.2265
   },
   {
@@ -37339,8 +37339,8 @@
     "median_billing": 2,
     "minutes_credited": 6879,
     "medium_mix": {
-      "movie": 0.98,
       "tvMovie": 0.01,
+      "movie": 0.98,
       "tvSeries": 0.01
     },
     "short_to_feature_ratio": 0.0,
@@ -37407,7 +37407,7 @@
     "top_collaborator_id": "nm0000802",
     "collaborator_loyalty": 0.176,
     "bridge_score": 0.000512,
-    "community": 4,
+    "community": 5,
     "pagerank": 0.00181582,
     "eigen_centrality": 0.005793,
     "clustering_local": 0.4,
@@ -37542,7 +37542,7 @@
     "genre_first": "Drama",
     "genre_last": "Crime",
     "genre_first_last_distance": 1,
-    "typecast_character": "Steve Reynolds",
+    "typecast_character": "Lee Marvin",
     "typecast_count": 1,
     "billing_trajectory": 0.0238,
     "median_billing": 1,
@@ -37611,7 +37611,7 @@
     "top_collaborator_id": "nm0933773",
     "collaborator_loyalty": 0.091,
     "bridge_score": 0.000302,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00168774,
     "eigen_centrality": 0.00543,
     "clustering_local": 0.3636,
@@ -37686,17 +37686,6 @@
         "votes": 21
       },
       {
-        "title": "A Woman There Was",
-        "character": "Rev. Winthrop Stark",
-        "characters": [
-          "Rev. Winthrop Stark"
-        ],
-        "year": 1919,
-        "billing": 2,
-        "tconst": "tt0010912",
-        "votes": 19
-      },
-      {
         "title": "The White Raven",
         "character": "The Stranger",
         "characters": [
@@ -37708,14 +37697,25 @@
         "votes": 19
       },
       {
-        "title": "Partners of the Night",
-        "character": "Robert Clifford",
+        "title": "A Woman There Was",
+        "character": "Rev. Winthrop Stark",
         "characters": [
-          "Robert Clifford"
+          "Rev. Winthrop Stark"
         ],
-        "year": 1920,
+        "year": 1919,
         "billing": 2,
-        "tconst": "tt0011556",
+        "tconst": "tt0010912",
+        "votes": 19
+      },
+      {
+        "title": "Her Second Husband",
+        "character": "John Kirby",
+        "characters": [
+          "John Kirby"
+        ],
+        "year": 1917,
+        "billing": 2,
+        "tconst": "tt0175726",
         "votes": 0
       }
     ],
@@ -37814,7 +37814,7 @@
     "top_collaborator_id": "nm0269493",
     "collaborator_loyalty": 0.078,
     "bridge_score": 0.000394,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00152868,
     "eigen_centrality": 0.001182,
     "clustering_local": 0.2889,
@@ -37832,7 +37832,7 @@
     "hub_vs_loyal": 1.03,
     "collaborator_reach": 10,
     "embed_x": -1.594,
-    "embed_y": -1.0614
+    "embed_y": -1.0615
   },
   {
     "id": "nm0522281",
@@ -38025,7 +38025,7 @@
     "top_collaborator_id": "nm0098376",
     "collaborator_loyalty": 0.109,
     "bridge_score": 0.009473,
-    "community": 8,
+    "community": 9,
     "pagerank": 0.00369345,
     "eigen_centrality": 0.001805,
     "clustering_local": 0.2778,
@@ -38089,28 +38089,6 @@
         "votes": 20
       },
       {
-        "title": "Boy of Mine",
-        "character": "Bill Latimer",
-        "characters": [
-          "Bill Latimer"
-        ],
-        "year": 1923,
-        "billing": 1,
-        "tconst": "tt0013884",
-        "votes": 0
-      },
-      {
-        "title": "Party Time at Club Roma",
-        "character": "Host (1950-51)",
-        "characters": [
-          "Host (1950-51)"
-        ],
-        "year": 1950,
-        "billing": 1,
-        "tconst": "tt0042131",
-        "votes": 0
-      },
-      {
         "title": "Fighting for Fame",
         "character": "Danny Ryan",
         "characters": [
@@ -38119,6 +38097,28 @@
         "year": 1927,
         "billing": 1,
         "tconst": "tt0017880",
+        "votes": 0
+      },
+      {
+        "title": "People",
+        "character": "The reporter",
+        "characters": [
+          "The reporter"
+        ],
+        "year": 1957,
+        "billing": 1,
+        "tconst": "tt0440709",
+        "votes": 0
+      },
+      {
+        "title": "Boy of Mine",
+        "character": "Bill Latimer",
+        "characters": [
+          "Bill Latimer"
+        ],
+        "year": 1923,
+        "billing": 1,
+        "tconst": "tt0013884",
         "votes": 0
       },
       {
@@ -38369,7 +38369,7 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Casey Burke - Director",
+    "typecast_character": "The Count",
     "typecast_count": 1,
     "billing_trajectory": 0.0381,
     "median_billing": 2,
@@ -38437,7 +38437,7 @@
     "top_collaborator_id": "nm0456804",
     "collaborator_loyalty": 0.368,
     "bridge_score": 0.000181,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00199031,
     "eigen_centrality": 0.006977,
     "clustering_local": 0.381,
@@ -38501,14 +38501,14 @@
         "votes": 68
       },
       {
-        "title": "One Summer's Day",
-        "character": "Maisie",
+        "title": "Settled Out of Court",
+        "character": "The Woman",
         "characters": [
-          "Maisie"
+          "The Woman"
         ],
-        "year": 1917,
+        "year": 1925,
         "billing": 1,
-        "tconst": "tt0195114",
+        "tconst": "tt0016331",
         "votes": 0
       },
       {
@@ -38523,25 +38523,25 @@
         "votes": 0
       },
       {
-        "title": "This Freedom",
-        "character": "Rosalie Aubyn",
+        "title": "Song at Eventide",
+        "character": "Helen d'Alaste",
         "characters": [
-          "Rosalie Aubyn"
+          "Helen d'Alaste"
         ],
-        "year": 1923,
+        "year": 1934,
         "billing": 1,
-        "tconst": "tt0015401",
+        "tconst": "tt0025811",
         "votes": 0
       },
       {
-        "title": "The Happy Ending",
-        "character": "Mildred Craddock",
+        "title": "One Summer's Day",
+        "character": "Maisie",
         "characters": [
-          "Mildred Craddock"
+          "Maisie"
         ],
-        "year": 1925,
+        "year": 1917,
         "billing": 1,
-        "tconst": "tt0015892",
+        "tconst": "tt0195114",
         "votes": 0
       }
     ],
@@ -38744,14 +38744,14 @@
         "votes": 313
       },
       {
-        "title": "Registered Nurse",
-        "character": "Sylvia Benton",
+        "title": "Feel My Pulse",
+        "character": "Barbara Manning",
         "characters": [
-          "Sylvia Benton"
+          "Barbara Manning"
         ],
-        "year": 1934,
+        "year": 1928,
         "billing": 1,
-        "tconst": "tt0025709",
+        "tconst": "tt0018882",
         "votes": 270
       }
     ],
@@ -38788,8 +38788,8 @@
     "median_billing": 1,
     "minutes_credited": 5446,
     "medium_mix": {
-      "tvSeries": 0.062,
-      "movie": 0.938
+      "movie": 0.938,
+      "tvSeries": 0.062
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1936,
@@ -38908,17 +38908,6 @@
         "votes": 30
       },
       {
-        "title": "A Voice Said Goodnight",
-        "character": "Joan Creighton",
-        "characters": [
-          "Joan Creighton"
-        ],
-        "year": 1932,
-        "billing": 1,
-        "tconst": "tt0183985",
-        "votes": 0
-      },
-      {
         "title": "The Fortune of Christina McNab",
         "character": "Christina McNab",
         "characters": [
@@ -38941,25 +38930,36 @@
         "votes": 0
       },
       {
-        "title": "The Office Wife",
-        "character": "Anne",
+        "title": "Saved from the Sea",
+        "character": "Nancy Brooks",
         "characters": [
-          "Anne"
+          "Nancy Brooks"
         ],
-        "year": 1934,
+        "year": 1920,
         "billing": 1,
-        "tconst": "tt0025587",
+        "tconst": "tt0011655",
         "votes": 0
       },
       {
-        "title": "His Grace Gives Notice",
-        "character": "Cynthia Bannock",
+        "title": "The First Mrs. Fraser",
+        "character": "Janet Fraser",
         "characters": [
-          "Cynthia Bannock"
+          "Janet Fraser"
         ],
-        "year": 1924,
+        "year": 1957,
         "billing": 1,
-        "tconst": "tt0225940",
+        "tconst": "tt5289308",
+        "votes": 0
+      },
+      {
+        "title": "Lily of Laguna",
+        "character": "Gloria Grey",
+        "characters": [
+          "Gloria Grey"
+        ],
+        "year": 1938,
+        "billing": 1,
+        "tconst": "tt0160473",
         "votes": 0
       }
     ],
@@ -38989,7 +38989,7 @@
     "genre_first": "Crime",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Mary",
+    "typecast_character": "Mrs. Bertram",
     "typecast_count": 1,
     "billing_trajectory": -0.0716,
     "median_billing": 4,
@@ -39063,7 +39063,7 @@
     "top_collaborator_id": "nm0174029",
     "collaborator_loyalty": 0.667,
     "bridge_score": 0.002077,
-    "community": 8,
+    "community": 9,
     "pagerank": 0.00385732,
     "eigen_centrality": 5.5e-05,
     "clustering_local": 0.7,
@@ -39105,6 +39105,39 @@
     "rk_prominence": 198,
     "roles": [
       {
+        "title": "The Long Mirror",
+        "character": "Mrs. Tenbury",
+        "characters": [
+          "Mrs. Tenbury"
+        ],
+        "year": 1948,
+        "billing": 1,
+        "tconst": "tt4423896",
+        "votes": 0
+      },
+      {
+        "title": "Trouble with Junia",
+        "character": "Ada",
+        "characters": [
+          "Ada"
+        ],
+        "year": 1967,
+        "billing": 1,
+        "tconst": "tt6275858",
+        "votes": 0
+      },
+      {
+        "title": "Telefootlers",
+        "character": "Woman",
+        "characters": [
+          "Woman"
+        ],
+        "year": 1941,
+        "billing": 1,
+        "tconst": "tt0461851",
+        "votes": 0
+      },
+      {
         "title": "Will Shakespeare",
         "character": "Mrs. Hathaway",
         "characters": [
@@ -39124,39 +39157,6 @@
         "year": 1949,
         "billing": 1,
         "tconst": "tt4463870",
-        "votes": 0
-      },
-      {
-        "title": "Telefootlers",
-        "character": "Woman",
-        "characters": [
-          "Woman"
-        ],
-        "year": 1941,
-        "billing": 1,
-        "tconst": "tt0461851",
-        "votes": 0
-      },
-      {
-        "title": "Trouble with Junia",
-        "character": "Ada",
-        "characters": [
-          "Ada"
-        ],
-        "year": 1967,
-        "billing": 1,
-        "tconst": "tt6275858",
-        "votes": 0
-      },
-      {
-        "title": "The Long Mirror",
-        "character": "Mrs. Tenbury",
-        "characters": [
-          "Mrs. Tenbury"
-        ],
-        "year": 1948,
-        "billing": 1,
-        "tconst": "tt4423896",
         "votes": 0
       },
       {
@@ -39204,8 +39204,8 @@
     "minutes_credited": 5038,
     "medium_mix": {
       "movie": 0.602,
-      "tvMovie": 0.325,
-      "tvSeries": 0.072
+      "tvSeries": 0.072,
+      "tvMovie": 0.325
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1938,
@@ -39271,7 +39271,7 @@
     "top_collaborator_id": "nm0835738",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.0,
-    "community": 8,
+    "community": 11,
     "pagerank": 0.00363406,
     "eigen_centrality": 6.9e-05,
     "clustering_local": 1.0,
@@ -39412,8 +39412,8 @@
     "minutes_credited": 15145,
     "medium_mix": {
       "movie": 0.992,
-      "tvMovie": 0.004,
-      "tvSeries": 0.004
+      "tvSeries": 0.004,
+      "tvMovie": 0.004
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1956,
@@ -39479,7 +39479,7 @@
     "top_collaborator_id": "nm0757104",
     "collaborator_loyalty": 0.423,
     "bridge_score": 0.0,
-    "community": 7,
+    "community": 8,
     "pagerank": 0.00499895,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -39613,7 +39613,7 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Yamamoto",
+    "typecast_character": "Anzai",
     "typecast_count": 1,
     "billing_trajectory": -0.1137,
     "median_billing": 5,
@@ -39686,7 +39686,7 @@
     "top_collaborator_id": "nm0757104",
     "collaborator_loyalty": 0.483,
     "bridge_score": 0.0,
-    "community": 7,
+    "community": 12,
     "pagerank": 0.00542971,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -39892,7 +39892,7 @@
     "top_collaborator_id": "nm0756870",
     "collaborator_loyalty": 0.457,
     "bridge_score": 0.0,
-    "community": 7,
+    "community": 8,
     "pagerank": 0.00571215,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -40100,7 +40100,7 @@
     "top_collaborator_id": "nm0756870",
     "collaborator_loyalty": 0.369,
     "bridge_score": 0.0,
-    "community": 7,
+    "community": 8,
     "pagerank": 0.00394455,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -40235,7 +40235,7 @@
     "genre_first": "Crime",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Paul Körner",
+    "typecast_character": "Prince Metternich",
     "typecast_count": 2,
     "billing_trajectory": 0.0693,
     "median_billing": 2,
@@ -40304,7 +40304,7 @@
     "top_collaborator_id": "nm0519765",
     "collaborator_loyalty": 0.467,
     "bridge_score": 0.019491,
-    "community": 2,
+    "community": 10,
     "pagerank": 0.00419657,
     "eigen_centrality": 0.000156,
     "clustering_local": 0.3333,
@@ -40379,17 +40379,6 @@
         "votes": 56
       },
       {
-        "title": "Lady Windermeres Fächer",
-        "character": "Mrs. Erlynne",
-        "characters": [
-          "Mrs. Erlynne"
-        ],
-        "year": 1935,
-        "billing": 1,
-        "tconst": "tt0026596",
-        "votes": 42
-      },
-      {
         "title": "The Higher Command",
         "character": "Madame Martin",
         "characters": [
@@ -40398,6 +40387,17 @@
         "year": 1935,
         "billing": 1,
         "tconst": "tt0026504",
+        "votes": 42
+      },
+      {
+        "title": "Lady Windermeres Fächer",
+        "character": "Mrs. Erlynne",
+        "characters": [
+          "Mrs. Erlynne"
+        ],
+        "year": 1935,
+        "billing": 1,
+        "tconst": "tt0026596",
         "votes": 42
       },
       {
@@ -40444,9 +40444,9 @@
     "median_billing": 2,
     "minutes_credited": 8788,
     "medium_mix": {
-      "movie": 0.841,
       "tvMovie": 0.145,
-      "tvSeries": 0.014
+      "tvSeries": 0.014,
+      "movie": 0.841
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1955,
@@ -40514,7 +40514,7 @@
     "top_collaborator_id": "nm0891998",
     "collaborator_loyalty": 0.545,
     "bridge_score": 0.0,
-    "community": 2,
+    "community": 7,
     "pagerank": 0.00289411,
     "eigen_centrality": 2e-06,
     "clustering_local": 1.0,
@@ -40611,14 +40611,14 @@
         "votes": 15
       },
       {
-        "title": "Elbefahrt",
-        "character": "Narrator",
+        "title": "Der Letzte Gang",
+        "character": "Bildhauer Hell",
         "characters": [
-          "Narrator"
+          "Bildhauer Hell"
         ],
-        "year": 1939,
+        "year": 1919,
         "billing": 1,
-        "tconst": "tt1429038",
+        "tconst": "tt7358290",
         "votes": 0
       }
     ],
@@ -40719,7 +40719,7 @@
     "top_collaborator_id": "nm0891998",
     "collaborator_loyalty": 0.438,
     "bridge_score": 0.0,
-    "community": 2,
+    "community": 7,
     "pagerank": 0.00257392,
     "eigen_centrality": 2e-06,
     "clustering_local": 1.0,
@@ -40859,8 +40859,8 @@
     "minutes_credited": 6767,
     "medium_mix": {
       "movie": 0.824,
-      "tvMiniSeries": 0.032,
       "tvSeries": 0.056,
+      "tvMiniSeries": 0.032,
       "tvMovie": 0.088
     },
     "short_to_feature_ratio": 0.0,
@@ -40924,8 +40924,8 @@
       "1970s",
       "2000s"
     ],
-    "top_collaborator": "Fay Compton",
-    "top_collaborator_id": "nm0174029",
+    "top_collaborator": "Barbara Everest",
+    "top_collaborator_id": "nm0263481",
     "collaborator_loyalty": 0.3,
     "bridge_score": 0.0,
     "community": 9,
@@ -41135,7 +41135,7 @@
       "1980s"
     ],
     "bridge_score": 0.0,
-    "community": 6,
+    "community": 4,
     "pagerank": 0.0007532,
     "eigen_centrality": 0.0,
     "clustering_local": 0.0,

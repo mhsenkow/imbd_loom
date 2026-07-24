@@ -19,9 +19,9 @@
     "pool_size": 600,
     "population_sql": 600
   },
-  "built_at": "2026-07-23T18:26:30.750069+00:00",
+  "built_at": "2026-07-24T18:47:42.320304+00:00",
   "clustering_coefficient": 0.6193,
-  "community_count": 20,
+  "community_count": 21,
   "correlations": {
     "acclaim_gap×prominence": {
       "n": 200,
@@ -77,8 +77,8 @@
       "label": "Samuel L. Jackson"
     },
     {
-      "id": "nm0482851",
-      "label": "Phil LaMarr"
+      "id": "nm0384032",
+      "label": "Amy Hill"
     },
     {
       "id": "nm0001002",
@@ -161,21 +161,22 @@
     ],
     "assortativity": 0.4347,
     "community_sizes": [
-      34,
-      28,
-      23,
-      19,
-      15,
+      32,
+      30,
+      22,
+      21,
+      17,
+      17,
       13,
-      12,
-      11,
-      11,
       11,
       10,
-      3,
+      6,
+      6,
       2,
       2,
-      1,
+      2,
+      2,
+      2,
       1,
       1,
       1,
@@ -274,8 +275,8 @@
       "male": 151
     },
     "giant_component_share": 0.88,
-    "largest_community_share": 0.17,
-    "modularity": 0.1931,
+    "largest_community_share": 0.16,
+    "modularity": 0.1804,
     "outliers": {
       "acclaim_gap": [
         "nm0000151",
@@ -834,6 +835,6 @@
     "top_name": "Samuel L. Jackson"
   },
   "title": "The Comeback Trail",
-  "tmdb_gender_rows": 4993,
+  "tmdb_gender_rows": 159974,
   "top_n": 200
 }

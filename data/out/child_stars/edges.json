@@ -775,8 +775,8 @@
     "genres": [
       "Comedy",
       "Romance",
-      "Family",
-      "Drama"
+      "Drama",
+      "Family"
     ],
     "shared": [
       {
@@ -877,11 +877,11 @@
     "shared_votes_max": 109489,
     "genres": [
       "Western",
-      "Drama",
-      "Fantasy",
-      "Horror",
       "Crime",
-      "Mystery"
+      "Drama",
+      "Mystery",
+      "Fantasy",
+      "Horror"
     ],
     "shared": [],
     "loyalty_ab": 0.038,
@@ -1125,10 +1125,10 @@
     "genres": [
       "Comedy",
       "Drama",
-      "Fantasy",
-      "Horror",
       "Crime",
-      "Mystery"
+      "Mystery",
+      "Fantasy",
+      "Horror"
     ],
     "shared": [
       {
@@ -1341,8 +1341,8 @@
       "Comedy",
       "Romance",
       "Western",
-      "Family",
       "Drama",
+      "Family",
       "Adventure"
     ],
     "shared": [],
@@ -1901,11 +1901,11 @@
     "reunion_span": 0,
     "shared_votes_max": 12854,
     "genres": [
-      "Drama",
-      "Fantasy",
       "Comedy",
       "Music",
-      "Romance"
+      "Romance",
+      "Drama",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -2732,10 +2732,10 @@
     "reunion_span": 7,
     "shared_votes_max": 48992,
     "genres": [
+      "Action",
       "Adventure",
       "Animation",
-      "Comedy",
-      "Action"
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.029,
@@ -2766,11 +2766,11 @@
     "reunion_gap": 29,
     "shared_votes_max": 48992,
     "genres": [
+      "Action",
+      "Comedy",
+      "Drama",
       "Adventure",
       "Animation",
-      "Comedy",
-      "Action",
-      "Drama",
       "Family",
       "Biography",
       "Documentary"
@@ -3064,11 +3064,11 @@
     "reunion_span": 8,
     "shared_votes_max": 48992,
     "genres": [
-      "Adventure",
-      "Animation",
       "Comedy",
       "Drama",
-      "Family"
+      "Family",
+      "Adventure",
+      "Animation"
     ],
     "shared": [
       {
@@ -3580,8 +3580,8 @@
     "genres": [
       "Adventure",
       "Animation",
-      "Family",
-      "Comedy"
+      "Comedy",
+      "Family"
     ],
     "shared": [],
     "loyalty_ab": 0.029,
@@ -3696,10 +3696,10 @@
     "reunion_span": 3,
     "shared_votes_max": 48992,
     "genres": [
+      "Action",
       "Adventure",
       "Animation",
-      "Comedy",
-      "Action"
+      "Comedy"
     ],
     "shared": [
       {
@@ -3741,10 +3741,10 @@
     "reunion_span": 4,
     "shared_votes_max": 48992,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.016,
@@ -3773,10 +3773,10 @@
     "reunion_span": 19,
     "shared_votes_max": 48992,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
       "Comedy",
+      "Action",
       "Drama"
     ],
     "shared": [],
@@ -3921,9 +3921,9 @@
     "shared_votes_max": 390145,
     "genres": [
       "Adventure",
+      "Animation",
       "Comedy",
-      "Drama",
-      "Animation"
+      "Drama"
     ],
     "shared": [
       {
@@ -4257,15 +4257,15 @@
         "votes": 207
       },
       {
-        "title": "The Slump",
-        "year": 2013,
-        "tconst": "tt2586514",
-        "votes": 199
-      },
-      {
         "title": "Surprise!",
         "year": 2013,
         "tconst": "tt3151998",
+        "votes": 199
+      },
+      {
+        "title": "The Slump",
+        "year": 2013,
+        "tconst": "tt2586514",
         "votes": 199
       }
     ],
@@ -4334,15 +4334,15 @@
     ],
     "shared": [
       {
-        "title": "Christmas",
-        "year": 1996,
-        "tconst": "tt0670268",
-        "votes": 80
-      },
-      {
         "title": "Close to You",
         "year": 1996,
         "tconst": "tt0670269",
+        "votes": 80
+      },
+      {
+        "title": "Christmas",
+        "year": 1996,
+        "tconst": "tt0670268",
         "votes": 80
       }
     ],
@@ -4623,8 +4623,8 @@
       "Adventure",
       "Animation",
       "Family",
-      "Comedy",
       "Action",
+      "Comedy",
       "Fantasy",
       "Musical"
     ],
@@ -5024,10 +5024,10 @@
     "reunion_span": 7,
     "shared_votes_max": 15331,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [
       {
@@ -5109,10 +5109,10 @@
     "reunion_gap": 24,
     "shared_votes_max": 53022,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
       "Comedy",
+      "Action",
       "Drama",
       "Fantasy"
     ],
@@ -5671,11 +5671,11 @@
     "reunion_span": 6,
     "shared_votes_max": 146008,
     "genres": [
-      "Crime",
       "Drama",
-      "Mystery",
       "Fantasy",
-      "Horror"
+      "Horror",
+      "Crime",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.031,
@@ -5790,10 +5790,10 @@
     "reunion_gap": 30,
     "shared_votes_max": 146008,
     "genres": [
+      "Action",
       "Adventure",
       "Animation",
       "Comedy",
-      "Action",
       "Crime",
       "Drama",
       "Mystery"
@@ -5985,10 +5985,10 @@
       "Drama",
       "Fantasy",
       "Horror",
+      "Action",
       "Adventure",
       "Animation",
-      "Comedy",
-      "Action"
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.047,
@@ -6584,8 +6584,8 @@
       "Adventure",
       "Drama",
       "Family",
-      "Fantasy",
       "Comedy",
+      "Fantasy",
       "Animation",
       "Action"
     ],
@@ -7670,10 +7670,10 @@
     "reunion_span": 5,
     "shared_votes_max": 48992,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.015,
@@ -8778,8 +8778,8 @@
       "Comedy",
       "Drama",
       "Romance",
-      "Family",
       "Adventure",
+      "Family",
       "Fantasy"
     ],
     "shared": [],
@@ -9047,8 +9047,8 @@
     "genres": [
       "Drama",
       "Comedy",
-      "Romance",
       "History",
+      "Romance",
       "Family",
       "Sci-Fi"
     ],
@@ -9092,13 +9092,13 @@
     "reunion_span": 17,
     "shared_votes_max": 16148,
     "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy",
       "Crime",
       "Drama",
       "Mystery",
       "Comedy",
-      "Family",
-      "Adventure",
-      "Fantasy",
       "Romance"
     ],
     "shared": [],
@@ -9130,10 +9130,10 @@
     "reunion_gap": 21,
     "shared_votes_max": 15614,
     "genres": [
-      "Comedy",
-      "Family",
       "Adventure",
+      "Family",
       "Fantasy",
+      "Comedy",
       "Drama",
       "Romance"
     ],
@@ -9233,12 +9233,12 @@
     "reunion_span": 0,
     "shared_votes_max": 13122,
     "genres": [
-      "Crime",
-      "Drama",
-      "Mystery",
       "Adventure",
       "Family",
-      "Fantasy"
+      "Fantasy",
+      "Crime",
+      "Drama",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.02,
@@ -9367,9 +9367,9 @@
     "reunion_span": 15,
     "shared_votes_max": 20716,
     "genres": [
+      "Drama",
       "Comedy",
       "Family",
-      "Drama",
       "Crime",
       "Mystery"
     ],
@@ -9402,13 +9402,13 @@
     "reunion_gap": 21,
     "shared_votes_max": 13122,
     "genres": [
-      "Crime",
       "Drama",
+      "Crime",
       "Mystery",
-      "Adventure",
-      "Animation",
       "Comedy",
-      "Sci-Fi"
+      "Sci-Fi",
+      "Adventure",
+      "Animation"
     ],
     "shared": [],
     "loyalty_ab": 0.051,
@@ -9611,8 +9611,8 @@
     "reunion_span": 4,
     "shared_votes_max": 3580,
     "genres": [
-      "Action",
       "Drama",
+      "Action",
       "War",
       "Crime"
     ],
@@ -9719,8 +9719,8 @@
       "Horror",
       "Crime",
       "Mystery",
-      "Western",
       "Comedy",
+      "Western",
       "Family"
     ],
     "shared": [
@@ -9791,11 +9791,11 @@
     "reunion_gap": 39,
     "shared_votes_max": 144977,
     "genres": [
+      "Animation",
+      "Comedy",
       "Adventure",
       "Drama",
-      "Family",
-      "Animation",
-      "Comedy"
+      "Family"
     ],
     "shared": [],
     "loyalty_ab": 0.011,
@@ -10038,9 +10038,9 @@
     "shared_votes_max": 17407,
     "genres": [
       "Adventure",
+      "Animation",
       "Comedy",
-      "Drama",
-      "Animation"
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.011,
@@ -10650,9 +10650,9 @@
     "shared_votes_max": 10283,
     "genres": [
       "Western",
-      "Drama",
       "Comedy",
-      "Family"
+      "Family",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.017,
@@ -11449,9 +11449,9 @@
     "reunion_gap": 28,
     "shared_votes_max": 13122,
     "genres": [
-      "Drama",
       "Action",
       "Crime",
+      "Drama",
       "Mystery",
       "Western",
       "Adventure",
@@ -11868,11 +11868,11 @@
     "reunion_gap": 29,
     "shared_votes_max": 10883,
     "genres": [
-      "Crime",
       "Drama",
-      "Mystery",
       "Fantasy",
       "Horror",
+      "Crime",
+      "Mystery",
       "Action",
       "Adventure",
       "Comedy"
@@ -12007,11 +12007,11 @@
     "reunion_gap": 24,
     "shared_votes_max": 10901,
     "genres": [
-      "Action",
-      "Adventure",
       "Comedy",
       "Horror",
       "Western",
+      "Action",
+      "Adventure",
       "Crime"
     ],
     "shared": [
@@ -12087,9 +12087,9 @@
     "shared_votes_max": 99218,
     "genres": [
       "Drama",
+      "Family",
       "Fantasy",
-      "Mystery",
-      "Family"
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.037,
@@ -12435,9 +12435,9 @@
     "shared_votes_max": 146008,
     "genres": [
       "Adventure",
+      "Animation",
       "Comedy",
       "Drama",
-      "Animation",
       "Crime",
       "Mystery"
     ],
@@ -12613,8 +12613,8 @@
     "genres": [
       "Crime",
       "Drama",
-      "Animation",
       "Comedy",
+      "Animation",
       "Family"
     ],
     "shared": [],
@@ -12710,10 +12710,10 @@
     "shared_votes_max": 9335,
     "genres": [
       "Comedy",
+      "Action",
       "Crime",
       "Drama",
-      "Mystery",
-      "Action"
+      "Mystery"
     ],
     "shared": [
       {
@@ -12766,10 +12766,10 @@
       "Drama",
       "Horror",
       "Mystery",
-      "Comedy",
-      "Family",
+      "Action",
       "Crime",
-      "Action"
+      "Comedy",
+      "Family"
     ],
     "shared": [
       {
@@ -12839,8 +12839,8 @@
     "reunion_span": 13,
     "shared_votes_max": 20716,
     "genres": [
-      "Crime",
       "Drama",
+      "Crime",
       "Mystery",
       "Comedy",
       "Romance"
@@ -12936,11 +12936,11 @@
     "reunion_span": 17,
     "shared_votes_max": 20716,
     "genres": [
-      "Crime",
-      "Drama",
-      "Mystery",
       "Action",
       "War",
+      "Drama",
+      "Crime",
+      "Mystery",
       "Comedy",
       "Romance",
       "Horror"
@@ -12972,9 +12972,9 @@
     "reunion_span": 19,
     "shared_votes_max": 19094,
     "genres": [
+      "Drama",
       "Comedy",
       "Family",
-      "Drama",
       "Romance",
       "Crime"
     ],
@@ -13005,12 +13005,12 @@
     "reunion_span": 14,
     "shared_votes_max": 13506,
     "genres": [
-      "Crime",
-      "Drama",
-      "Mystery",
       "Action",
       "Adventure",
       "Western",
+      "Crime",
+      "Drama",
+      "Mystery",
       "Comedy",
       "Romance"
     ],
@@ -13116,9 +13116,9 @@
       "Crime",
       "War",
       "Drama",
+      "Mystery",
       "Thriller",
-      "Comedy",
-      "Mystery"
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.048,
@@ -13180,12 +13180,12 @@
     "reunion_gap": 20,
     "shared_votes_max": 7435,
     "genres": [
+      "Action",
       "Crime",
       "Drama",
-      "Mystery",
-      "Action",
       "Adventure",
       "Western",
+      "Mystery",
       "Horror",
       "Comedy"
     ],
@@ -13288,8 +13288,8 @@
       "Adventure",
       "Crime",
       "Drama",
-      "Mystery",
-      "War"
+      "War",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.06,
@@ -13437,8 +13437,8 @@
     "genres": [
       "Drama",
       "Fantasy",
-      "Family",
-      "Mystery"
+      "Mystery",
+      "Family"
     ],
     "shared": [
       {
@@ -14135,9 +14135,9 @@
     "reunion_span": 19,
     "shared_votes_max": 274498,
     "genres": [
+      "Drama",
       "Adventure",
       "Crime",
-      "Drama",
       "Mystery",
       "Comedy"
     ],
@@ -14931,10 +14931,10 @@
     "reunion_gap": 29,
     "shared_votes_max": 274498,
     "genres": [
+      "Action",
       "Adventure",
       "Animation",
       "Comedy",
-      "Action",
       "Crime",
       "Drama"
     ],
@@ -15157,13 +15157,13 @@
     "reunion_gap": 30,
     "shared_votes_max": 144977,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
       "Comedy",
+      "Short",
+      "Action",
       "Drama",
       "Family",
-      "Short",
       "Sci-Fi"
     ],
     "shared": [
@@ -15296,10 +15296,10 @@
     "reunion_gap": 25,
     "shared_votes_max": 175562,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
       "Comedy",
+      "Action",
       "Drama",
       "Mystery"
     ],
@@ -15389,8 +15389,8 @@
     "genres": [
       "Comedy",
       "Drama",
-      "Family",
-      "Fantasy"
+      "Fantasy",
+      "Family"
     ],
     "shared": [],
     "loyalty_ab": 0.011,
@@ -16093,11 +16093,11 @@
     "reunion_span": 11,
     "shared_votes_max": 64442,
     "genres": [
-      "Comedy",
-      "Romance",
       "Action",
       "Adventure",
-      "Animation"
+      "Animation",
+      "Comedy",
+      "Romance"
     ],
     "shared": [],
     "loyalty_ab": 0.011,
@@ -16651,11 +16651,11 @@
     "reunion_span": 10,
     "shared_votes_max": 39608,
     "genres": [
+      "Action",
+      "Crime",
       "Drama",
       "Mystery",
       "Thriller",
-      "Action",
-      "Crime",
       "Adventure",
       "Comedy"
     ],
@@ -17385,11 +17385,11 @@
     "reunion_gap": 35,
     "shared_votes_max": 109489,
     "genres": [
+      "Crime",
       "Drama",
+      "Mystery",
       "Fantasy",
       "Horror",
-      "Crime",
-      "Mystery",
       "Comedy",
       "Musical",
       "Action"
@@ -17573,8 +17573,8 @@
       "Adventure",
       "Family",
       "Fantasy",
-      "Drama",
       "Crime",
+      "Drama",
       "Mystery"
     ],
     "shared": [],
@@ -17646,9 +17646,9 @@
     "genres": [
       "Comedy",
       "Drama",
-      "History",
       "Crime",
       "Mystery",
+      "History",
       "Action",
       "Fantasy",
       "Horror"
@@ -17682,14 +17682,14 @@
     "reunion_gap": 33,
     "shared_votes_max": 33289,
     "genres": [
-      "Crime",
-      "Drama",
       "Comedy",
+      "Drama",
+      "Crime",
       "Adventure",
       "Family",
       "Fantasy",
-      "Action",
-      "Mystery"
+      "Mystery",
+      "Romance"
     ],
     "shared": [],
     "loyalty_ab": 0.066,
@@ -17718,12 +17718,12 @@
     "reunion_span": 5,
     "shared_votes_max": 6867,
     "genres": [
-      "Drama",
-      "Fantasy",
-      "Horror",
       "Adventure",
       "Comedy",
-      "Crime"
+      "Crime",
+      "Drama",
+      "Fantasy",
+      "Horror"
     ],
     "shared": [],
     "loyalty_ab": 0.01,
@@ -17997,10 +17997,10 @@
       "Biography",
       "Drama",
       "Adventure",
-      "Family",
-      "Fantasy",
       "Comedy",
       "Crime",
+      "Family",
+      "Fantasy",
       "Horror"
     ],
     "shared": [
@@ -18078,8 +18078,8 @@
       "Action",
       "Adventure",
       "Crime",
-      "Drama",
-      "Comedy"
+      "Comedy",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.03,
@@ -18298,10 +18298,10 @@
     "reunion_gap": 40,
     "shared_votes_max": 621,
     "genres": [
-      "Comedy",
-      "Drama",
       "Adventure",
-      "Family"
+      "Family",
+      "Comedy",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.015,
@@ -18665,9 +18665,9 @@
     "shared_votes_max": 1452,
     "genres": [
       "Adventure",
+      "Animation",
       "Comedy",
-      "Drama",
-      "Animation"
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.074,
@@ -18804,10 +18804,10 @@
     "reunion_gap": 20,
     "shared_votes_max": 9620,
     "genres": [
+      "Comedy",
       "Drama",
       "Family",
-      "Fantasy",
-      "Comedy"
+      "Fantasy"
     ],
     "shared": [
       {
@@ -18848,9 +18848,9 @@
       "Romance",
       "Adventure",
       "Crime",
+      "Short",
       "Drama",
-      "Animation",
-      "Short"
+      "Animation"
     ],
     "shared": [
       {
@@ -18878,8 +18878,7 @@
     "same_era": true,
     "age_gap": 0,
     "cross_generational": false,
-    "edge_genre_jaccard": 1.0,
-    "directorial_glue": true
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0001580",
@@ -19146,7 +19145,8 @@
     "same_era": true,
     "age_gap": 1,
     "cross_generational": false,
-    "edge_genre_jaccard": 1.0
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0001581",
@@ -19313,7 +19313,8 @@
     "same_era": true,
     "age_gap": 10,
     "cross_generational": false,
-    "edge_genre_jaccard": 1.0
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0001607",
@@ -19472,9 +19473,9 @@
         "votes": 108
       },
       {
-        "title": "Episode #1.9783",
+        "title": "Episode #1.9859",
         "year": 2008,
-        "tconst": "tt1187391",
+        "tconst": "tt1225925",
         "votes": 0
       }
     ],
@@ -19846,10 +19847,10 @@
       "Adventure",
       "Drama",
       "Family",
-      "Comedy",
-      "Fantasy",
       "Action",
-      "Crime"
+      "Crime",
+      "Comedy",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -19889,9 +19890,9 @@
       "Adventure",
       "Drama",
       "Family",
+      "Action",
       "Crime",
-      "Mystery",
-      "Action"
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.081,
@@ -20472,10 +20473,10 @@
     "reunion_span": 5,
     "shared_votes_max": 33289,
     "genres": [
+      "Action",
       "Crime",
       "Drama",
-      "Mystery",
-      "Action"
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.013,
@@ -20511,9 +20512,9 @@
       "Drama",
       "Action",
       "Adventure",
-      "Mystery",
       "Fantasy",
-      "Horror"
+      "Horror",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.045,
@@ -20546,11 +20547,11 @@
     "genres": [
       "Comedy",
       "Drama",
-      "Crime",
-      "Mystery",
-      "Action",
       "Fantasy",
-      "Horror"
+      "Horror",
+      "Action",
+      "Crime",
+      "Mystery"
     ],
     "shared": [
       {
@@ -20622,11 +20623,11 @@
     "reunion_span": 4,
     "shared_votes_max": 7799,
     "genres": [
+      "Action",
+      "Crime",
       "Drama",
       "Fantasy",
-      "Horror",
-      "Action",
-      "Crime"
+      "Horror"
     ],
     "shared": [],
     "loyalty_ab": 0.019,
@@ -20804,11 +20805,11 @@
     "reunion_span": 6,
     "shared_votes_max": 12650,
     "genres": [
+      "Action",
+      "Crime",
       "Drama",
       "Fantasy",
       "Horror",
-      "Action",
-      "Crime",
       "Western"
     ],
     "shared": [],
@@ -21891,12 +21892,12 @@
     "reunion_span": 18,
     "shared_votes_max": 177328,
     "genres": [
-      "Action",
-      "Crime",
-      "Drama",
       "Comedy",
       "Horror",
       "Sci-Fi",
+      "Action",
+      "Crime",
+      "Drama",
       "Romance"
     ],
     "shared": [
@@ -22116,7 +22117,8 @@
     "same_era": true,
     "age_gap": 3,
     "cross_generational": false,
-    "edge_genre_jaccard": 1.0
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0003115",
@@ -23050,8 +23052,8 @@
     "genres": [
       "Animation",
       "Comedy",
-      "Action",
-      "Adventure"
+      "Adventure",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.023,
@@ -23587,11 +23589,11 @@
     "reunion_span": 17,
     "shared_votes_max": 191591,
     "genres": [
+      "Comedy",
+      "Drama",
       "Adventure",
       "Animation",
-      "Comedy",
       "Action",
-      "Drama",
       "Crime",
       "Mystery"
     ],
@@ -23730,10 +23732,10 @@
     "reunion_span": 5,
     "shared_votes_max": 22967,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.031,
@@ -23870,10 +23872,10 @@
     "reunion_span": 17,
     "shared_votes_max": 48992,
     "genres": [
+      "Action",
       "Adventure",
       "Animation",
-      "Comedy",
-      "Action"
+      "Comedy"
     ],
     "shared": [
       {
@@ -23979,15 +23981,15 @@
         "votes": 129
       },
       {
-        "title": "The Rise of Tritannus",
-        "year": 2012,
-        "tconst": "tt2668362",
-        "votes": 125
-      },
-      {
         "title": "The Spill",
         "year": 2012,
         "tconst": "tt2668366",
+        "votes": 125
+      },
+      {
+        "title": "The Rise of Tritannus",
+        "year": 2012,
+        "tconst": "tt2668362",
         "votes": 125
       }
     ],
@@ -24319,10 +24321,10 @@
     "genres": [
       "Comedy",
       "Fantasy",
-      "Drama",
-      "Family",
       "Adventure",
-      "Animation"
+      "Animation",
+      "Drama",
+      "Family"
     ],
     "shared": [
       {
@@ -24648,11 +24650,11 @@
     "shared_votes_max": 48992,
     "genres": [
       "Comedy",
-      "Drama",
-      "Family",
+      "Romance",
       "Adventure",
       "Animation",
-      "Romance"
+      "Drama",
+      "Family"
     ],
     "shared": [
       {
@@ -24805,10 +24807,10 @@
     "reunion_gap": 27,
     "shared_votes_max": 48992,
     "genres": [
-      "Adventure",
-      "Animation",
       "Comedy",
       "Romance",
+      "Adventure",
+      "Animation",
       "Drama",
       "Family"
     ],
@@ -25026,11 +25028,11 @@
     "reunion_span": 19,
     "shared_votes_max": 1199032,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
       "Comedy",
-      "Romance"
+      "Romance",
+      "Action"
     ],
     "shared": [
       {
@@ -25432,11 +25434,11 @@
     "reunion_span": 3,
     "shared_votes_max": 17689,
     "genres": [
+      "Comedy",
+      "Family",
       "Drama",
       "Fantasy",
-      "Horror",
-      "Comedy",
-      "Family"
+      "Horror"
     ],
     "shared": [
       {
@@ -25857,10 +25859,10 @@
       "Crime",
       "Drama",
       "Mystery",
-      "Action",
       "Adventure",
       "Animation",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.042,
@@ -26234,7 +26236,7 @@
       "Adventure",
       "Crime",
       "Romance",
-      "Thriller"
+      "Western"
     ],
     "shared": [
       {
@@ -26292,7 +26294,7 @@
       "Crime",
       "Drama",
       "Romance",
-      "Thriller"
+      "Adventure"
     ],
     "shared": [
       {
@@ -26375,10 +26377,10 @@
     "reunion_span": 18,
     "shared_votes_max": 8971,
     "genres": [
-      "Comedy",
       "Drama",
       "Family",
-      "Fantasy"
+      "Fantasy",
+      "Comedy"
     ],
     "shared": [
       {
@@ -26481,10 +26483,10 @@
     "reunion_span": 5,
     "shared_votes_max": 5463,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
       "Comedy",
+      "Action",
       "Drama",
       "Family"
     ],
@@ -26547,10 +26549,10 @@
     "reunion_span": 3,
     "shared_votes_max": 6696,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [
       {
@@ -27402,10 +27404,10 @@
     "shared_votes_max": 127924,
     "genres": [
       "Comedy",
-      "Fantasy",
-      "Horror",
       "Music",
-      "Talk-Show"
+      "Talk-Show",
+      "Fantasy",
+      "Horror"
     ],
     "shared": [],
     "loyalty_ab": 0.043,
@@ -28535,15 +28537,15 @@
     ],
     "shared": [
       {
-        "title": "Love and Money",
-        "year": 1997,
-        "tconst": "tt0645694",
-        "votes": 0
-      },
-      {
         "title": "The Truth About Cars and Dogs",
         "year": 1997,
         "tconst": "tt0645700",
+        "votes": 0
+      },
+      {
+        "title": "Love and Money",
+        "year": 1997,
+        "tconst": "tt0645694",
         "votes": 0
       }
     ],
@@ -28644,9 +28646,9 @@
     "genres": [
       "Crime",
       "Thriller",
+      "Drama",
       "Comedy",
       "Romance",
-      "Drama",
       "Action",
       "Mystery"
     ],
@@ -28696,10 +28698,10 @@
     "reunion_span": 17,
     "shared_votes_max": 58801,
     "genres": [
+      "Action",
       "Adventure",
       "Animation",
       "Comedy",
-      "Action",
       "Drama"
     ],
     "shared": [
@@ -29316,10 +29318,10 @@
     "genres": [
       "Animation",
       "Comedy",
-      "Biography",
-      "Drama",
       "Music",
-      "Talk-Show"
+      "Talk-Show",
+      "Biography",
+      "Drama"
     ],
     "shared": [
       {
@@ -29451,11 +29453,11 @@
     "reunion_span": 7,
     "shared_votes_max": 127924,
     "genres": [
-      "Adventure",
-      "Animation",
       "Comedy",
       "Fantasy",
-      "Horror"
+      "Horror",
+      "Adventure",
+      "Animation"
     ],
     "shared": [],
     "loyalty_ab": 0.038,
@@ -29744,11 +29746,11 @@
     "reunion_span": 16,
     "shared_votes_max": 121013,
     "genres": [
+      "Crime",
       "Drama",
+      "Mystery",
       "Fantasy",
       "Horror",
-      "Crime",
-      "Mystery",
       "Comedy"
     ],
     "shared": [],
@@ -30043,9 +30045,9 @@
       "Action",
       "Animation",
       "Crime",
+      "Adventure",
       "Comedy",
-      "Romance",
-      "Adventure"
+      "Romance"
     ],
     "shared": [
       {
@@ -30096,10 +30098,10 @@
       "Animation",
       "Comedy",
       "Drama",
-      "Romance",
+      "Sport",
       "Action",
       "Adventure",
-      "Sport"
+      "Romance"
     ],
     "shared": [
       {
@@ -30190,9 +30192,9 @@
       "Action",
       "Adventure",
       "Animation",
+      "Fantasy",
       "Crime",
       "Drama",
-      "Fantasy",
       "Horror",
       "Sci-Fi"
     ],
@@ -30248,8 +30250,8 @@
       "Adventure",
       "Animation",
       "Comedy",
-      "Romance",
       "Fantasy",
+      "Romance",
       "Crime",
       "Drama"
     ],
@@ -30304,8 +30306,8 @@
       "Comedy",
       "Action",
       "Adventure",
-      "Drama",
-      "Crime"
+      "Crime",
+      "Drama"
     ],
     "shared": [
       {
@@ -30354,9 +30356,9 @@
     "shared_votes_max": 359712,
     "genres": [
       "Animation",
-      "Comedy",
       "Drama",
       "Horror",
+      "Comedy",
       "Action",
       "Fantasy",
       "Adventure"
@@ -30375,9 +30377,9 @@
         "votes": 37
       },
       {
-        "title": "Together with Russia",
+        "title": "Bring Them Together! Heart and Heart",
         "year": 2015,
-        "tconst": "tt12066224",
+        "tconst": "tt7740834",
         "votes": 0
       }
     ],
@@ -30501,9 +30503,9 @@
     "shared_votes_max": 359712,
     "genres": [
       "Animation",
-      "Comedy",
       "Drama",
       "Horror",
+      "Comedy",
       "Action",
       "Fantasy",
       "Sport",
@@ -30523,9 +30525,9 @@
         "votes": 53
       },
       {
-        "title": "Reach Them! My True Voice",
+        "title": "Bring Them Together! Heart and Heart",
         "year": 2015,
-        "tconst": "tt7740826",
+        "tconst": "tt7740834",
         "votes": 0
       }
     ],
@@ -30886,8 +30888,8 @@
     "genres": [
       "Comedy",
       "Family",
-      "Drama",
-      "Adventure"
+      "Adventure",
+      "Drama"
     ],
     "shared": [
       {
@@ -31178,9 +31180,9 @@
       "Family",
       "Animation",
       "Comedy",
+      "Action",
       "Crime",
-      "Mystery",
-      "Action"
+      "Mystery"
     ],
     "shared": [
       {
@@ -31265,10 +31267,10 @@
     "reunion_gap": 26,
     "shared_votes_max": 17516,
     "genres": [
+      "Action",
       "Adventure",
       "Animation",
       "Comedy",
-      "Action",
       "Family",
       "Drama"
     ],
@@ -31286,9 +31288,9 @@
         "votes": 173
       },
       {
-        "title": "A Blast from the Past",
+        "title": "Twinning Isn't Everything",
         "year": 2014,
-        "tconst": "tt4432532",
+        "tconst": "tt4412462",
         "votes": 161
       }
     ],
@@ -31319,9 +31321,9 @@
     "shared_votes_max": 17793,
     "genres": [
       "Animation",
+      "Action",
       "Adventure",
-      "Comedy",
-      "Action"
+      "Comedy"
     ],
     "shared": [
       {
@@ -31415,7 +31417,8 @@
     "same_era": true,
     "age_gap": 7,
     "cross_generational": false,
-    "edge_genre_jaccard": 1.0
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0072124",
@@ -31670,8 +31673,8 @@
     "shared_votes_max": 5230,
     "genres": [
       "Western",
-      "Drama",
       "Adventure",
+      "Drama",
       "Comedy",
       "Crime",
       "Family",
@@ -31933,10 +31936,10 @@
       "Action",
       "Crime",
       "Drama",
-      "Mystery",
       "Adventure",
       "Family",
       "Fantasy",
+      "Mystery",
       "Comedy"
     ],
     "shared": [],
@@ -32002,8 +32005,8 @@
     "reunion_gap": 25,
     "shared_votes_max": 33289,
     "genres": [
-      "Crime",
       "Drama",
+      "Crime",
       "Mystery"
     ],
     "shared": [],
@@ -32042,7 +32045,7 @@
       "Western",
       "Action",
       "Crime",
-      "Mystery"
+      "Adventure"
     ],
     "shared": [],
     "loyalty_ab": 0.101,
@@ -32416,12 +32419,12 @@
     "genres": [
       "Horror",
       "Thriller",
-      "Crime",
-      "Drama",
-      "Mystery",
       "Adventure",
       "Family",
-      "Fantasy"
+      "Fantasy",
+      "Drama",
+      "Crime",
+      "Mystery"
     ],
     "shared": [
       {
@@ -32687,8 +32690,8 @@
       "Romance",
       "Crime",
       "Mystery",
-      "Adventure",
       "Family",
+      "Adventure",
       "Fantasy"
     ],
     "shared": [],
@@ -32718,9 +32721,9 @@
     "reunion_span": 8,
     "shared_votes_max": 10283,
     "genres": [
+      "Western",
       "Comedy",
       "Romance",
-      "Western",
       "Adventure",
       "Crime",
       "Drama",
@@ -32861,8 +32864,8 @@
       "Comedy",
       "Family",
       "Romance",
-      "Action",
-      "Western"
+      "Western",
+      "Action"
     ],
     "shared": [
       {
@@ -32900,14 +32903,14 @@
     "reunion_gap": 23,
     "shared_votes_max": 109489,
     "genres": [
+      "Western",
       "Comedy",
       "Romance",
-      "Western",
       "Family",
-      "Adventure",
-      "Fantasy",
       "Drama",
-      "Horror"
+      "Fantasy",
+      "Horror",
+      "Adventure"
     ],
     "shared": [],
     "loyalty_ab": 0.052,
@@ -32941,11 +32944,11 @@
       "Comedy",
       "Drama",
       "Romance",
-      "Family",
       "Biography",
-      "Adventure",
+      "Family",
       "Fantasy",
-      "Horror"
+      "Horror",
+      "Adventure"
     ],
     "shared": [
       {
@@ -33185,9 +33188,9 @@
       "Drama",
       "Family",
       "Western",
+      "Comedy",
       "Action",
-      "Crime",
-      "Comedy"
+      "Crime"
     ],
     "shared": [],
     "loyalty_ab": 0.037,
@@ -33809,11 +33812,11 @@
     "shared_votes_max": 17803,
     "genres": [
       "Comedy",
-      "Adventure",
       "Drama",
-      "Family",
       "Fantasy",
-      "History"
+      "History",
+      "Adventure",
+      "Family"
     ],
     "shared": [
       {
@@ -35036,11 +35039,11 @@
     "reunion_span": 9,
     "shared_votes_max": 1452,
     "genres": [
-      "Action",
       "Adventure",
-      "Animation",
       "Comedy",
-      "Drama"
+      "Drama",
+      "Action",
+      "Animation"
     ],
     "shared": [],
     "loyalty_ab": 0.047,
@@ -35159,8 +35162,8 @@
       "Animation",
       "Comedy",
       "Family",
-      "Action",
-      "Adventure"
+      "Adventure",
+      "Action"
     ],
     "shared": [
       {
@@ -35386,11 +35389,11 @@
     "reunion_gap": 25,
     "shared_votes_max": 1663,
     "genres": [
-      "Drama",
-      "Crime",
-      "Mystery",
       "Comedy",
-      "History"
+      "Drama",
+      "History",
+      "Crime",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.073,
@@ -35456,9 +35459,9 @@
     "reunion_gap": 38,
     "shared_votes_max": 33289,
     "genres": [
+      "Drama",
       "Action",
       "Crime",
-      "Drama",
       "Mystery",
       "Comedy"
     ],
@@ -36134,10 +36137,10 @@
     "reunion_span": 17,
     "shared_votes_max": 29154,
     "genres": [
+      "Action",
       "Adventure",
       "Animation",
-      "Comedy",
-      "Action"
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.033,
@@ -36660,9 +36663,9 @@
     "reunion_gap": 29,
     "shared_votes_max": 48992,
     "genres": [
+      "Comedy",
       "Animation",
       "Family",
-      "Comedy",
       "Romance",
       "Adventure"
     ],
@@ -36716,10 +36719,10 @@
     "genres": [
       "Action",
       "Animation",
-      "Crime",
       "Drama",
-      "Fantasy",
       "Comedy",
+      "Crime",
+      "Fantasy",
       "Horror",
       "Adventure"
     ],
@@ -36776,9 +36779,9 @@
       "Action",
       "Adventure",
       "Drama",
-      "Sci-Fi",
       "Family",
-      "Mystery"
+      "Sci-Fi",
+      "Sport"
     ],
     "shared": [
       {
@@ -36834,8 +36837,8 @@
       "Sport",
       "Family",
       "Drama",
-      "Comedy",
-      "Fantasy"
+      "Fantasy",
+      "Comedy"
     ],
     "shared": [
       {
@@ -36918,8 +36921,8 @@
     "shared_votes_max": 274498,
     "genres": [
       "Animation",
-      "Comedy",
       "Family",
+      "Comedy",
       "Action",
       "Fantasy",
       "Adventure",
@@ -37064,8 +37067,7 @@
     "same_era": true,
     "age_gap": 3,
     "cross_generational": false,
-    "edge_genre_jaccard": 1.0,
-    "directorial_glue": true
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0229923",
@@ -37124,8 +37126,8 @@
       "Action",
       "Adventure",
       "Crime",
-      "Horror",
-      "Drama"
+      "Drama",
+      "Horror"
     ],
     "shared": [
       {
@@ -37298,8 +37300,7 @@
     "same_era": true,
     "age_gap": 22,
     "cross_generational": true,
-    "edge_genre_jaccard": 1.0,
-    "directorial_glue": true
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0229923",
@@ -37358,8 +37359,8 @@
     "genres": [
       "Adventure",
       "Animation",
-      "Family",
       "Comedy",
+      "Family",
       "Drama"
     ],
     "shared": [
@@ -37590,11 +37591,11 @@
     "genres": [
       "Comedy",
       "Western",
-      "Crime",
-      "Drama",
       "Action",
       "Adventure",
       "Sci-Fi",
+      "Crime",
+      "Drama",
       "Family"
     ],
     "shared": [],
@@ -37626,12 +37627,12 @@
     "reunion_gap": 25,
     "shared_votes_max": 101356,
     "genres": [
-      "Action",
-      "Crime",
-      "Drama",
       "Adventure",
       "Family",
       "Fantasy",
+      "Action",
+      "Crime",
+      "Drama",
       "Mystery",
       "Western"
     ],
@@ -38126,11 +38127,11 @@
     "reunion_gap": 72,
     "shared_votes_max": 267,
     "genres": [
-      "Crime",
-      "Drama",
       "Comedy",
+      "Drama",
       "Fantasy",
-      "War"
+      "War",
+      "Crime"
     ],
     "shared": [
       {
@@ -38178,12 +38179,12 @@
     "reunion_span": 2,
     "shared_votes_max": 3597,
     "genres": [
-      "Action",
-      "Animation",
-      "Sci-Fi",
       "Adventure",
       "Family",
-      "Mystery"
+      "Mystery",
+      "Action",
+      "Animation",
+      "Sci-Fi"
     ],
     "shared": [],
     "loyalty_ab": 0.061,
@@ -38541,10 +38542,10 @@
     "reunion_gap": 26,
     "shared_votes_max": 17516,
     "genres": [
+      "Action",
       "Adventure",
       "Animation",
       "Comedy",
-      "Action",
       "Drama"
     ],
     "shared": [
@@ -38855,8 +38856,8 @@
       "Crime",
       "Mystery",
       "Action",
-      "Comedy",
-      "Romance"
+      "Western",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.058,
@@ -39278,10 +39279,10 @@
     "reunion_gap": 29,
     "shared_votes_max": 543487,
     "genres": [
+      "Action",
       "Adventure",
       "Animation",
       "Comedy",
-      "Action",
       "Sport",
       "Family",
       "Fantasy",
@@ -39341,8 +39342,8 @@
       "Fantasy",
       "Horror",
       "Action",
-      "Sport",
-      "Adventure"
+      "Adventure",
+      "Sport"
     ],
     "shared": [
       {
@@ -39480,8 +39481,8 @@
     "shared_votes_max": 26289,
     "genres": [
       "Animation",
-      "Family",
       "Comedy",
+      "Family",
       "Fantasy",
       "Adventure",
       "Action",
@@ -39658,7 +39659,8 @@
     "same_era": true,
     "age_gap": 16,
     "cross_generational": false,
-    "edge_genre_jaccard": 1.0
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0290075",
@@ -39735,10 +39737,10 @@
     "reunion_span": 16,
     "shared_votes_max": 3048,
     "genres": [
-      "Action",
       "Animation",
+      "Comedy",
       "Drama",
-      "Comedy"
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.009,
@@ -39775,8 +39777,8 @@
       "Comedy",
       "Crime",
       "Mystery",
-      "Fantasy",
-      "Drama"
+      "Drama",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -39828,8 +39830,8 @@
       "Action",
       "Adventure",
       "Animation",
-      "Family",
       "Comedy",
+      "Family",
       "Sport",
       "Drama",
       "Sci-Fi"
@@ -39860,7 +39862,8 @@
     "same_era": true,
     "age_gap": 3,
     "cross_generational": false,
-    "edge_genre_jaccard": 1.0
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0290075",
@@ -39923,11 +39926,11 @@
     "reunion_span": 19,
     "shared_votes_max": 543487,
     "genres": [
+      "Action",
       "Adventure",
       "Animation",
-      "Family",
       "Comedy",
-      "Action",
+      "Family",
       "Drama",
       "Fantasy",
       "Horror"
@@ -40248,8 +40251,8 @@
     "reunion_span": 6,
     "shared_votes_max": 146008,
     "genres": [
-      "Drama",
       "Crime",
+      "Drama",
       "Mystery"
     ],
     "shared": [],
@@ -40294,15 +40297,15 @@
         "votes": 251
       },
       {
-        "title": "Episódio6",
+        "title": "Episódio5",
         "year": 2006,
-        "tconst": "tt0839494",
+        "tconst": "tt0839493",
         "votes": 0
       },
       {
-        "title": "Episódio3",
+        "title": "Episódio 35",
         "year": 2006,
-        "tconst": "tt0839491",
+        "tconst": "tt0839523",
         "votes": 0
       }
     ],
@@ -40342,12 +40345,6 @@
     ],
     "shared": [
       {
-        "title": "Episode dated 4 October 2005",
-        "year": 2005,
-        "tconst": "tt1310701",
-        "votes": 0
-      },
-      {
         "title": "Episode dated 9 September 2005",
         "year": 2005,
         "tconst": "tt1299675",
@@ -40357,6 +40354,12 @@
         "title": "Episode dated 30 July 2005",
         "year": 2005,
         "tconst": "tt1280752",
+        "votes": 0
+      },
+      {
+        "title": "Episode dated 4 October 2005",
+        "year": 2005,
+        "tconst": "tt1310701",
         "votes": 0
       }
     ],
@@ -40386,12 +40389,12 @@
     "reunion_span": 10,
     "shared_votes_max": 28501,
     "genres": [
-      "Action",
-      "Adventure",
-      "Animation",
       "Comedy",
       "Drama",
-      "Family"
+      "Family",
+      "Action",
+      "Adventure",
+      "Animation"
     ],
     "shared": [
       {
@@ -40816,9 +40819,9 @@
       "Fantasy",
       "Horror",
       "Action",
+      "Adventure",
       "Animation",
       "Sport",
-      "Adventure",
       "Comedy"
     ],
     "shared": [
@@ -40943,13 +40946,13 @@
     "shared_votes_max": 26289,
     "genres": [
       "Action",
-      "Animation",
-      "Family",
       "Adventure",
+      "Animation",
       "Comedy",
+      "Family",
       "Fantasy",
-      "Crime",
-      "Short"
+      "Short",
+      "Crime"
     ],
     "shared": [
       {
@@ -41123,9 +41126,9 @@
         "votes": 0
       },
       {
-        "title": "Everybody Was Tofu Fighting/Journey to the Centre of the TV",
+        "title": "Change of Heart/Door Stop in the Name of Love",
         "year": 2007,
-        "tconst": "tt1094743",
+        "tconst": "tt1094741",
         "votes": 0
       }
     ],
@@ -41247,10 +41250,10 @@
       "Comedy",
       "Family",
       "History",
-      "Action",
       "Adventure",
-      "Fantasy",
-      "Mystery"
+      "Action",
+      "Mystery",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -41301,10 +41304,10 @@
     "shared_votes_max": 178591,
     "genres": [
       "Action",
+      "Adventure",
       "Animation",
       "Family",
       "Fantasy",
-      "Adventure",
       "Comedy",
       "Sport",
       "Drama"
@@ -41362,8 +41365,8 @@
       "Action",
       "Adventure",
       "Drama",
-      "Comedy",
       "Family",
+      "Comedy",
       "Fantasy",
       "Horror"
     ],
@@ -41419,9 +41422,9 @@
       "Animation",
       "Comedy",
       "Short",
+      "Adventure",
       "Family",
       "Mystery",
-      "Adventure",
       "Sport"
     ],
     "shared": [
@@ -41475,10 +41478,10 @@
       "Drama",
       "Fantasy",
       "Horror",
+      "Sci-Fi",
       "Action",
       "Adventure",
       "Animation",
-      "Sci-Fi",
       "Crime"
     ],
     "shared": [
@@ -41489,15 +41492,15 @@
         "votes": 53
       },
       {
-        "title": "Nina Misses Mami and Papi",
-        "year": 2018,
-        "tconst": "tt8194972",
-        "votes": 0
-      },
-      {
         "title": "Nina Finds a Kitten",
         "year": 2018,
         "tconst": "tt8617300",
+        "votes": 0
+      },
+      {
+        "title": "Nina Misses Mami and Papi",
+        "year": 2018,
+        "tconst": "tt8194972",
         "votes": 0
       }
     ],
@@ -41872,11 +41875,11 @@
     "reunion_gap": 29,
     "shared_votes_max": 20716,
     "genres": [
+      "Comedy",
+      "Romance",
       "Action",
       "Adventure",
       "Animation",
-      "Comedy",
-      "Romance",
       "Drama",
       "Crime",
       "Mystery"
@@ -41895,9 +41898,9 @@
         "votes": 16
       },
       {
-        "title": "The Super-Pac Bowl/Journey Into the Pac-Past",
+        "title": "The Genie of Pacdad/Computer Packy",
         "year": 1983,
-        "tconst": "tt0960898",
+        "tconst": "tt0960540",
         "votes": 15
       }
     ],
@@ -42072,8 +42075,8 @@
     "reunion_span": 1,
     "shared_votes_max": 20716,
     "genres": [
-      "Drama",
       "Crime",
+      "Drama",
       "Mystery"
     ],
     "shared": [],
@@ -42141,9 +42144,9 @@
     "reunion_span": 9,
     "shared_votes_max": 466,
     "genres": [
-      "Western",
       "Comedy",
-      "Drama"
+      "Drama",
+      "Western"
     ],
     "shared": [
       {
@@ -42255,10 +42258,10 @@
     "reunion_span": 0,
     "shared_votes_max": 964,
     "genres": [
+      "Comedy",
       "Drama",
       "Film-Noir",
-      "Mystery",
-      "Comedy"
+      "Mystery"
     ],
     "shared": [
       {
@@ -42356,8 +42359,8 @@
     "shared_votes_max": 20716,
     "genres": [
       "Western",
-      "Drama",
       "Crime",
+      "Drama",
       "Mystery"
     ],
     "shared": [],
@@ -42594,8 +42597,8 @@
       "Drama",
       "Comedy",
       "Family",
-      "Romance",
-      "Western"
+      "Western",
+      "Romance"
     ],
     "shared": [],
     "loyalty_ab": 0.058,
@@ -42662,8 +42665,8 @@
       "Drama",
       "Action",
       "Crime",
-      "Western",
       "Comedy",
+      "Western",
       "Adventure"
     ],
     "shared": [],
@@ -43119,9 +43122,9 @@
     "reunion_span": 11,
     "shared_votes_max": 10283,
     "genres": [
-      "Western",
       "Comedy",
       "Romance",
+      "Western",
       "Drama",
       "Crime",
       "Adventure",
@@ -43154,10 +43157,10 @@
     "reunion_span": 18,
     "shared_votes_max": 13506,
     "genres": [
-      "Drama",
-      "Western",
       "Adventure",
+      "Drama",
       "Family",
+      "Western",
       "Comedy",
       "Crime",
       "Mystery",
@@ -43256,11 +43259,11 @@
     "reunion_span": 11,
     "shared_votes_max": 13506,
     "genres": [
+      "Crime",
+      "Drama",
+      "Mystery",
       "Action",
       "War",
-      "Drama",
-      "Crime",
-      "Mystery",
       "Comedy"
     ],
     "shared": [],
@@ -43324,8 +43327,8 @@
     "reunion_span": 9,
     "shared_votes_max": 20716,
     "genres": [
-      "Drama",
       "Crime",
+      "Drama",
       "Mystery",
       "Comedy",
       "Adventure",
@@ -43391,12 +43394,12 @@
     "shared_votes_max": 20716,
     "genres": [
       "Western",
-      "Action",
-      "War",
       "Drama",
       "Crime",
       "Mystery",
-      "Adventure"
+      "Action",
+      "Adventure",
+      "War"
     ],
     "shared": [
       {
@@ -43819,10 +43822,10 @@
       "Adventure",
       "Drama",
       "Family",
-      "Fantasy",
-      "Mystery",
       "Action",
       "Comedy",
+      "Fantasy",
+      "Mystery",
       "Animation"
     ],
     "shared": [
@@ -43924,8 +43927,8 @@
       "Comedy",
       "Crime",
       "Action",
-      "Western",
-      "Sci-Fi"
+      "Sci-Fi",
+      "Western"
     ],
     "shared": [],
     "loyalty_ab": 0.051,
@@ -44054,11 +44057,11 @@
     "reunion_gap": 57,
     "shared_votes_max": 23228,
     "genres": [
+      "Drama",
+      "Romance",
       "Comedy",
       "Family",
       "Music",
-      "Drama",
-      "Romance",
       "Crime",
       "Mystery",
       "Adventure"
@@ -44129,9 +44132,9 @@
     "reunion_span": 11,
     "shared_votes_max": 5256,
     "genres": [
+      "Drama",
       "Adventure",
       "Crime",
-      "Drama",
       "Western",
       "Family",
       "Comedy"
@@ -44630,11 +44633,11 @@
     "genres": [
       "Comedy",
       "Drama",
-      "Western",
       "Romance",
+      "Western",
+      "Family",
       "Crime",
-      "Mystery",
-      "Family"
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.028,
@@ -44775,9 +44778,9 @@
       "Adventure",
       "Comedy",
       "Drama",
+      "Action",
       "Crime",
       "Mystery",
-      "Action",
       "Family"
     ],
     "shared": [
@@ -44909,7 +44912,7 @@
       "Family",
       "Drama",
       "Mystery",
-      "War"
+      "Western"
     ],
     "shared": [],
     "loyalty_ab": 0.044,
@@ -45415,15 +45418,15 @@
         "votes": 265
       },
       {
-        "title": "My Little Tony",
+        "title": "Just a Family of Doolans Sittin' Around Talkin'",
         "year": 1994,
-        "tconst": "tt1207427",
+        "tconst": "tt1207425",
         "votes": 0
       },
       {
-        "title": "Strictly Lunchroom",
+        "title": "Dianne's Young Buck",
         "year": 1994,
-        "tconst": "tt1207429",
+        "tconst": "tt1207423",
         "votes": 0
       }
     ],
@@ -45539,9 +45542,9 @@
       "Drama",
       "Family",
       "Fantasy",
-      "Action",
       "Adventure",
-      "Animation"
+      "Animation",
+      "Action"
     ],
     "shared": [
       {
@@ -45776,9 +45779,9 @@
     "reunion_span": 4,
     "shared_votes_max": 5093,
     "genres": [
-      "Drama",
       "Comedy",
-      "Family"
+      "Family",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.015,
@@ -45923,11 +45926,11 @@
     "reunion_span": 17,
     "shared_votes_max": 227500,
     "genres": [
-      "Adventure",
-      "Animation",
-      "Drama",
       "Action",
+      "Animation",
       "Comedy",
+      "Adventure",
+      "Drama",
       "Crime"
     ],
     "shared": [
@@ -45968,11 +45971,11 @@
     "genres": [
       "Animation",
       "Drama",
-      "Family",
       "Fantasy",
+      "Family",
       "Comedy",
-      "Adventure",
       "Action",
+      "Adventure",
       "Sci-Fi"
     ],
     "shared": [
@@ -46195,11 +46198,11 @@
     "reunion_gap": 20,
     "shared_votes_max": 93625,
     "genres": [
+      "Action",
+      "Adventure",
       "Animation",
       "Drama",
       "Romance",
-      "Action",
-      "Adventure",
       "Comedy",
       "Fantasy",
       "Family"
@@ -46264,15 +46267,15 @@
         "votes": 20
       },
       {
-        "title": "The Wolf and the Sun",
-        "year": 2025,
-        "tconst": "tt38366146",
-        "votes": 18
-      },
-      {
         "title": "Light and Dark",
         "year": 2025,
         "tconst": "tt33382885",
+        "votes": 18
+      },
+      {
+        "title": "The Wolf and the Sun",
+        "year": 2025,
+        "tconst": "tt38366146",
         "votes": 18
       }
     ],
@@ -46398,9 +46401,9 @@
       "Animation",
       "Fantasy",
       "Mystery",
+      "Drama",
       "Sport",
       "Thriller",
-      "Drama",
       "Comedy",
       "Action"
     ],
@@ -46456,9 +46459,9 @@
       "Comedy",
       "Drama",
       "Horror",
-      "Music",
       "Fantasy",
       "Mystery",
+      "Music",
       "Action"
     ],
     "shared": [
@@ -46563,15 +46566,15 @@
         "votes": 14
       },
       {
-        "title": "Ai fômêshon",
+        "title": "Reisei to jônetsu no tatakai",
         "year": 2003,
-        "tconst": "tt0984740",
+        "tconst": "tt0984831",
         "votes": 14
       },
       {
-        "title": "Puritendâ senpô",
+        "title": "Seigaku tai jyôsei shônan",
         "year": 2003,
-        "tconst": "tt0984827",
+        "tconst": "tt0984859",
         "votes": 14
       }
     ],
@@ -46973,14 +46976,14 @@
     "reunion_span": 13,
     "shared_votes_max": 13506,
     "genres": [
-      "Crime",
       "Drama",
+      "Crime",
       "Mystery",
       "Action",
       "War",
-      "Comedy",
       "Family",
-      "Western"
+      "Western",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.071,
@@ -47044,12 +47047,12 @@
     "reunion_span": 17,
     "shared_votes_max": 35193,
     "genres": [
-      "Action",
-      "Adventure",
       "Animation",
-      "Crime",
       "Drama",
       "Romance",
+      "Action",
+      "Adventure",
+      "Crime",
       "Comedy"
     ],
     "shared": [
@@ -47094,8 +47097,8 @@
     "genres": [
       "Action",
       "Animation",
-      "Comedy",
       "Fantasy",
+      "Comedy",
       "Adventure"
     ],
     "shared": [
@@ -47256,7 +47259,7 @@
       "Fantasy",
       "Action",
       "Crime",
-      "Adventure"
+      "Romance"
     ],
     "shared": [
       {
@@ -47413,9 +47416,9 @@
       "Animation",
       "Comedy",
       "Action",
+      "Drama",
       "Crime",
       "Romance",
-      "Drama",
       "Adventure",
       "Fantasy"
     ],
@@ -47615,8 +47618,8 @@
       "Fantasy",
       "Action",
       "Drama",
-      "Sport",
-      "Adventure"
+      "Adventure",
+      "Sport"
     ],
     "shared": [
       {
@@ -47990,8 +47993,8 @@
       "Adventure",
       "Animation",
       "Short",
-      "Action",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [
       {
@@ -48201,12 +48204,12 @@
     "reunion_gap": 33,
     "shared_votes_max": 20534,
     "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Thriller",
       "Adventure",
+      "Drama",
       "Western",
+      "Thriller",
+      "Comedy",
+      "Romance",
       "Animation",
       "Family"
     ],
@@ -48516,8 +48519,8 @@
       "Animation",
       "Family",
       "Musical",
-      "Drama",
       "Comedy",
+      "Drama",
       "Adventure",
       "Fantasy",
       "Action"
@@ -48570,10 +48573,10 @@
     "reunion_gap": 23,
     "shared_votes_max": 26289,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
       "Comedy",
+      "Action",
       "Family"
     ],
     "shared": [
@@ -48627,9 +48630,9 @@
       "Animation",
       "Comedy",
       "Short",
+      "Adventure",
       "Action",
       "Family",
-      "Adventure",
       "Fantasy",
       "Musical"
     ],
@@ -48738,8 +48741,8 @@
       "Comedy",
       "Action",
       "Family",
-      "Drama",
       "Short",
+      "Drama",
       "Musical"
     ],
     "shared": [
@@ -48872,11 +48875,11 @@
     "reunion_span": 1,
     "shared_votes_max": 64734,
     "genres": [
+      "Comedy",
+      "Drama",
       "Action",
       "Adventure",
-      "Animation",
-      "Comedy",
-      "Drama"
+      "Animation"
     ],
     "shared": [],
     "loyalty_ab": 0.034,
@@ -49029,10 +49032,10 @@
     "reunion_span": 11,
     "shared_votes_max": 48992,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.034,
@@ -49061,11 +49064,11 @@
     "reunion_span": 1,
     "shared_votes_max": 64734,
     "genres": [
+      "Comedy",
+      "Drama",
       "Action",
       "Adventure",
-      "Animation",
-      "Comedy",
-      "Drama"
+      "Animation"
     ],
     "shared": [],
     "loyalty_ab": 0.034,
@@ -49254,9 +49257,9 @@
       "Action",
       "Adventure",
       "Animation",
+      "Comedy",
       "Drama",
-      "Fantasy",
-      "Comedy"
+      "Fantasy"
     ],
     "shared": [
       {
@@ -49304,11 +49307,11 @@
     "reunion_span": 13,
     "shared_votes_max": 177328,
     "genres": [
-      "Comedy",
-      "Crime",
       "Drama",
       "Family",
       "Fantasy",
+      "Comedy",
+      "Crime",
       "Action",
       "Adventure",
       "Animation"
@@ -49497,21 +49500,21 @@
     ],
     "shared": [
       {
-        "title": "Episode dated 11 November 1999",
-        "year": 1999,
-        "tconst": "tt1678059",
-        "votes": 0
-      },
-      {
         "title": "Episode dated 21 July 1999",
         "year": 1999,
         "tconst": "tt1662752",
         "votes": 0
       },
       {
-        "title": "Episode dated 5 October 1998",
+        "title": "Episode dated 11 November 1999",
+        "year": 1999,
+        "tconst": "tt1678059",
+        "votes": 0
+      },
+      {
+        "title": "Episode dated 8 July 1998",
         "year": 1998,
-        "tconst": "tt1621217",
+        "tconst": "tt1149408",
         "votes": 0
       }
     ],
@@ -49546,10 +49549,10 @@
       "Crime",
       "Drama",
       "Romance",
-      "Mystery",
       "Adventure",
       "Family",
-      "Fantasy"
+      "Fantasy",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.087,
@@ -49618,8 +49621,8 @@
       "Animation",
       "Comedy",
       "Family",
-      "Drama",
       "Action",
+      "Drama",
       "Adventure"
     ],
     "shared": [
@@ -49908,9 +49911,9 @@
     "shared_votes_max": 4263,
     "genres": [
       "Drama",
+      "Western",
       "Adventure",
-      "Family",
-      "Western"
+      "Family"
     ],
     "shared": [],
     "loyalty_ab": 0.026,
@@ -49991,10 +49994,10 @@
     "reunion_span": 15,
     "shared_votes_max": 26289,
     "genres": [
+      "Action",
       "Adventure",
       "Animation",
       "Comedy",
-      "Action",
       "Family"
     ],
     "shared": [
@@ -50039,8 +50042,8 @@
       "Drama",
       "Fantasy",
       "Horror",
-      "Adventure",
-      "Comedy"
+      "Action",
+      "Adventure"
     ],
     "shared": [
       {
@@ -50142,8 +50145,8 @@
     "shared_votes_max": 26289,
     "genres": [
       "Animation",
-      "Family",
       "Drama",
+      "Family",
       "Adventure",
       "Comedy",
       "Action"
@@ -50295,9 +50298,9 @@
       "Comedy",
       "Crime",
       "Romance",
+      "Thriller",
       "Drama",
-      "Family",
-      "Thriller"
+      "Family"
     ],
     "shared": [
       {
@@ -50333,11 +50336,11 @@
     "reunion_span": 3,
     "shared_votes_max": 19304,
     "genres": [
-      "Comedy",
-      "Family",
-      "Fantasy",
       "Adventure",
-      "Drama"
+      "Drama",
+      "Family",
+      "Comedy",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -50560,10 +50563,10 @@
     "reunion_span": 8,
     "shared_votes_max": 17516,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
       "Comedy",
+      "Action",
       "Family"
     ],
     "shared": [],
@@ -50612,9 +50615,9 @@
         "votes": 19
       },
       {
-        "title": "Franklin's Good Deeds/Franklin's Submarine",
+        "title": "Mr. Fix-It Franklin/Franklin Has the Hiccups",
         "year": 2000,
-        "tconst": "tt0582306",
+        "tconst": "tt0760686",
         "votes": 16
       }
     ],
@@ -50788,10 +50791,10 @@
       "Crime",
       "Drama",
       "Mystery",
-      "Action",
       "Adventure",
       "Animation",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.064,
@@ -51378,10 +51381,10 @@
     "reunion_span": 11,
     "shared_votes_max": 2556,
     "genres": [
+      "Action",
       "Adventure",
       "Animation",
-      "Comedy",
-      "Action"
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.25,
@@ -51410,11 +51413,11 @@
     "reunion_span": 2,
     "shared_votes_max": 64734,
     "genres": [
-      "Comedy",
-      "Drama",
       "Action",
       "Adventure",
-      "Animation"
+      "Animation",
+      "Comedy",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.25,
@@ -51914,15 +51917,15 @@
         "votes": 151
       },
       {
-        "title": "Out of Sync",
-        "year": 2000,
-        "tconst": "tt0593373",
-        "votes": 0
-      },
-      {
         "title": "Housesitter",
         "year": 2000,
         "tconst": "tt0593365",
+        "votes": 0
+      },
+      {
+        "title": "Instant Karma",
+        "year": 2000,
+        "tconst": "tt0593366",
         "votes": 0
       }
     ],
@@ -52005,10 +52008,10 @@
     "reunion_span": 13,
     "shared_votes_max": 33492,
     "genres": [
+      "Comedy",
       "Drama",
       "Family",
       "Fantasy",
-      "Comedy",
       "Action",
       "Adventure",
       "Animation"
@@ -52358,11 +52361,11 @@
     "reunion_span": 3,
     "shared_votes_max": 1199032,
     "genres": [
+      "Comedy",
+      "Romance",
       "Action",
       "Adventure",
-      "Animation",
-      "Comedy",
-      "Romance"
+      "Animation"
     ],
     "shared": [],
     "loyalty_ab": 0.061,
@@ -52542,10 +52545,10 @@
     "genres": [
       "Drama",
       "Romance",
-      "Crime",
-      "Mystery",
       "Fantasy",
-      "Horror"
+      "Horror",
+      "Crime",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.138,
@@ -52574,10 +52577,10 @@
     "reunion_span": 9,
     "shared_votes_max": 43248,
     "genres": [
-      "Comedy",
-      "Family",
       "Adventure",
+      "Comedy",
       "Crime",
+      "Family",
       "Fantasy",
       "Action",
       "Drama"
@@ -52803,8 +52806,7 @@
     "same_era": true,
     "age_gap": 6,
     "cross_generational": false,
-    "edge_genre_jaccard": 1.0,
-    "directorial_glue": true
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0814259",
@@ -53394,11 +53396,11 @@
     "reunion_span": 12,
     "shared_votes_max": 21284,
     "genres": [
+      "Adventure",
       "Animation",
+      "Crime",
       "Comedy",
       "Romance",
-      "Adventure",
-      "Crime",
       "Action",
       "Drama"
     ],
@@ -53463,9 +53465,9 @@
         "votes": 9
       },
       {
-        "title": "Iron Mask Has Arrived",
+        "title": "The Iron Ogre",
         "year": 2016,
-        "tconst": "tt5724290",
+        "tconst": "tt5760336",
         "votes": 7
       }
     ],
@@ -53641,10 +53643,10 @@
     "shared_votes_max": 13716,
     "genres": [
       "Family",
+      "Action",
       "Adventure",
       "Animation",
-      "Comedy",
-      "Action"
+      "Comedy"
     ],
     "shared": [
       {
@@ -53672,7 +53674,8 @@
     "same_era": true,
     "age_gap": 12,
     "cross_generational": false,
-    "edge_genre_jaccard": 1.0
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0865064",
@@ -53697,8 +53700,8 @@
       "Animation",
       "Comedy",
       "Family",
-      "Fantasy",
-      "Mystery"
+      "Mystery",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -53909,8 +53912,8 @@
       "Animation",
       "Horror",
       "Adventure",
-      "Comedy",
       "Family",
+      "Comedy",
       "Sci-Fi"
     ],
     "shared": [
@@ -53964,8 +53967,8 @@
       "Family",
       "Short",
       "Adventure",
-      "Fantasy",
       "Action",
+      "Fantasy",
       "Sport"
     ],
     "shared": [
@@ -54015,11 +54018,11 @@
     "shared_votes_max": 15023,
     "genres": [
       "Animation",
-      "Action",
-      "Crime",
       "Drama",
       "Fantasy",
       "Horror",
+      "Action",
+      "Crime",
       "Adventure"
     ],
     "shared": [
@@ -54139,10 +54142,10 @@
     "reunion_span": 5,
     "shared_votes_max": 48992,
     "genres": [
-      "Adventure",
-      "Animation",
       "Comedy",
-      "History"
+      "History",
+      "Adventure",
+      "Animation"
     ],
     "shared": [],
     "loyalty_ab": 0.016,
@@ -54860,15 +54863,15 @@
         "votes": 1538
       },
       {
-        "title": "The Wings of Tomorrow",
+        "title": "Freezing Mitama",
         "year": 2006,
-        "tconst": "tt0982653",
+        "tconst": "tt0982645",
         "votes": 12
       },
       {
-        "title": "Feather King Chaos",
+        "title": "The Wings of Tomorrow",
         "year": 2006,
-        "tconst": "tt0982644",
+        "tconst": "tt0982653",
         "votes": 12
       }
     ],
@@ -54932,22 +54935,22 @@
     "genres": [
       "Adventure",
       "Animation",
-      "Family",
-      "Action",
       "Comedy",
+      "Action",
+      "Family",
       "Drama"
     ],
     "shared": [
       {
-        "title": "The Temple of Madness",
-        "year": 2020,
-        "tconst": "tt12059736",
-        "votes": 355
-      },
-      {
         "title": "Racer Seven",
         "year": 2020,
         "tconst": "tt11930212",
+        "votes": 355
+      },
+      {
+        "title": "The Temple of Madness",
+        "year": 2020,
+        "tconst": "tt12059736",
         "votes": 355
       },
       {
@@ -54963,7 +54966,8 @@
     "same_era": true,
     "age_gap": 7,
     "cross_generational": false,
-    "edge_genre_jaccard": 1.0
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm1027678",
@@ -55288,10 +55292,10 @@
       "Drama",
       "Fantasy",
       "Mystery",
-      "Action",
       "Adventure",
       "Animation",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [
       {
@@ -55373,9 +55377,9 @@
     "shared_votes_max": 56640,
     "genres": [
       "Animation",
-      "Action",
       "Adventure",
       "Fantasy",
+      "Action",
       "Comedy"
     ],
     "shared": [
@@ -55641,9 +55645,9 @@
     "genres": [
       "Action",
       "Animation",
+      "Comedy",
       "Crime",
       "Drama",
-      "Comedy",
       "Adventure"
     ],
     "shared": [
@@ -56064,10 +56068,10 @@
     "reunion_span": 8,
     "shared_votes_max": 4749,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
       "Comedy",
+      "Action",
       "Fantasy",
       "Drama"
     ],
@@ -56102,8 +56106,8 @@
       "Drama",
       "Fantasy",
       "Comedy",
-      "Action",
-      "Adventure"
+      "Adventure",
+      "Action"
     ],
     "shared": [
       {
@@ -56154,9 +56158,9 @@
       "Animation",
       "Fantasy",
       "Mystery",
-      "Comedy",
       "Drama",
       "Sport",
+      "Comedy",
       "Sci-Fi",
       "Action"
     ],
@@ -56206,12 +56210,12 @@
     "reunion_span": 17,
     "shared_votes_max": 359712,
     "genres": [
-      "Animation",
-      "Crime",
-      "Drama",
-      "Comedy",
       "Action",
+      "Animation",
       "Fantasy",
+      "Comedy",
+      "Drama",
+      "Crime",
       "Adventure",
       "Music"
     ],
@@ -56264,10 +56268,10 @@
       "Animation",
       "Adventure",
       "Romance",
-      "Action",
-      "History",
       "Drama",
       "Fantasy",
+      "Action",
+      "History",
       "Comedy"
     ],
     "shared": [
@@ -56316,12 +56320,12 @@
     "reunion_span": 12,
     "shared_votes_max": 16616,
     "genres": [
-      "Action",
       "Adventure",
       "Animation",
+      "Fantasy",
+      "Action",
       "Comedy",
       "Romance",
-      "Fantasy",
       "Drama",
       "Horror"
     ],
@@ -56411,9 +56415,9 @@
     "reunion_span": 6,
     "shared_votes_max": 596387,
     "genres": [
+      "Drama",
       "Comedy",
-      "Family",
-      "Drama"
+      "Family"
     ],
     "shared": [],
     "loyalty_ab": 0.08,
@@ -57115,12 +57119,12 @@
     "reunion_gap": 28,
     "shared_votes_max": 359712,
     "genres": [
-      "Action",
       "Animation",
+      "Crime",
       "Drama",
+      "Action",
       "Comedy",
       "Fantasy",
-      "Crime",
       "Adventure",
       "Mystery"
     ],
@@ -57172,14 +57176,14 @@
     "reunion_gap": 27,
     "shared_votes_max": 359712,
     "genres": [
+      "Action",
       "Animation",
       "Comedy",
-      "Drama",
-      "Action",
-      "Music",
       "Crime",
+      "Drama",
+      "Music",
       "Fantasy",
-      "Mystery"
+      "Adventure"
     ],
     "shared": [
       {
@@ -57693,10 +57697,10 @@
       "Drama",
       "Fantasy",
       "Mystery",
-      "Sport",
-      "Comedy",
       "Crime",
-      "Horror"
+      "Horror",
+      "Sport",
+      "Comedy"
     ],
     "shared": [
       {
@@ -57750,7 +57754,7 @@
       "Comedy",
       "Action",
       "Fantasy",
-      "Mystery",
+      "Adventure",
       "Romance"
     ],
     "shared": [
@@ -57804,10 +57808,10 @@
       "Action",
       "Adventure",
       "Animation",
-      "Drama",
-      "Mystery",
       "Comedy",
       "Fantasy",
+      "Drama",
+      "Mystery",
       "Horror"
     ],
     "shared": [

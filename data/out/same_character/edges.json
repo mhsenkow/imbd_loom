@@ -64,13 +64,6 @@
   },
   {
     "source": "nm0000110",
-    "target": "nm0001538",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Victor Frankenstein"
-  },
-  {
-    "source": "nm0000110",
     "target": "nm0016141",
     "weight": 1,
     "construct": "same_character",
@@ -282,13 +275,6 @@
   {
     "source": "nm0000134",
     "target": "nm0000489",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "The Creature"
-  },
-  {
-    "source": "nm0000134",
-    "target": "nm0001538",
     "weight": 1,
     "construct": "same_character",
     "character": "The Creature"
@@ -722,6 +708,13 @@
   },
   {
     "source": "nm0000201",
+    "target": "nm0259708",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Elvira"
+  },
+  {
+    "source": "nm0000201",
     "target": "nm0367762",
     "weight": 1,
     "construct": "same_character",
@@ -1135,13 +1128,6 @@
   },
   {
     "source": "nm0000323",
-    "target": "nm0001538",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Sherlock Holmes"
-  },
-  {
-    "source": "nm0000323",
     "target": "nm0001626",
     "weight": 1,
     "construct": "same_character",
@@ -1153,13 +1139,6 @@
     "weight": 1,
     "construct": "same_character",
     "character": "Sherlock Holmes"
-  },
-  {
-    "source": "nm0000323",
-    "target": "nm0491777",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Alfred"
   },
   {
     "source": "nm0000323",
@@ -1307,6 +1286,13 @@
     "weight": 1,
     "construct": "same_character",
     "character": "Santa Claus"
+  },
+  {
+    "source": "nm0000422",
+    "target": "nm0004879",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Rodney"
   },
   {
     "source": "nm0000422",
@@ -1464,13 +1450,6 @@
   },
   {
     "source": "nm0000448",
-    "target": "nm0001864",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Buck"
-  },
-  {
-    "source": "nm0000448",
     "target": "nm0005008",
     "weight": 1,
     "construct": "same_character",
@@ -1545,13 +1524,6 @@
     "weight": 1,
     "construct": "same_character",
     "character": "Count Dracula"
-  },
-  {
-    "source": "nm0000489",
-    "target": "nm0001538",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Sherlock Holmes"
   },
   {
     "source": "nm0000489",
@@ -1730,13 +1702,6 @@
   },
   {
     "source": "nm0000509",
-    "target": "nm0001864",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Emil"
-  },
-  {
-    "source": "nm0000509",
     "target": "nm0048389",
     "weight": 1,
     "construct": "same_character",
@@ -1755,13 +1720,6 @@
     "weight": 1,
     "construct": "same_character",
     "character": "Dracula"
-  },
-  {
-    "source": "nm0000509",
-    "target": "nm0491777",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Emil"
   },
   {
     "source": "nm0000509",
@@ -1849,13 +1807,6 @@
   },
   {
     "source": "nm0000549",
-    "target": "nm0001538",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Sherlock Holmes"
-  },
-  {
-    "source": "nm0000549",
     "target": "nm0001626",
     "weight": 1,
     "construct": "same_character",
@@ -1930,13 +1881,6 @@
     "weight": 1,
     "construct": "same_character",
     "character": "The master"
-  },
-  {
-    "source": "nm0000616",
-    "target": "nm0001864",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Buck"
   },
   {
     "source": "nm0000616",
@@ -2140,6 +2084,13 @@
     "weight": 1,
     "construct": "same_character",
     "character": "Ramona"
+  },
+  {
+    "source": "nm0000707",
+    "target": "nm0259708",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Therapist"
   },
   {
     "source": "nm0000707",
@@ -2612,13 +2563,6 @@
   },
   {
     "source": "nm0001088",
-    "target": "nm0001538",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Sherlock Holmes"
-  },
-  {
-    "source": "nm0001088",
     "target": "nm0001626",
     "weight": 1,
     "construct": "same_character",
@@ -2892,6 +2836,13 @@
   },
   {
     "source": "nm0001406",
+    "target": "nm0259708",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Helga"
+  },
+  {
+    "source": "nm0001406",
     "target": "nm0367762",
     "weight": 1,
     "construct": "same_character",
@@ -2975,6 +2926,13 @@
     "character": "Klaus"
   },
   {
+    "source": "nm0001424",
+    "target": "nm0799777",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Klaus"
+  },
+  {
     "source": "nm0001461",
     "target": "nm0167467",
     "weight": 1,
@@ -3017,55 +2975,6 @@
     "character": "Johanna"
   },
   {
-    "source": "nm0001538",
-    "target": "nm0001626",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Sherlock Holmes"
-  },
-  {
-    "source": "nm0001538",
-    "target": "nm0012121",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "The Creature"
-  },
-  {
-    "source": "nm0001538",
-    "target": "nm0147147",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Sherlock Holmes"
-  },
-  {
-    "source": "nm0001538",
-    "target": "nm0564215",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Victor Frankenstein"
-  },
-  {
-    "source": "nm0001538",
-    "target": "nm0851317",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "The Creature"
-  },
-  {
-    "source": "nm0001538",
-    "target": "nm1209966",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Victor Frankenstein"
-  },
-  {
-    "source": "nm0001538",
-    "target": "nm2181128",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "The Creature"
-  },
-  {
     "source": "nm0001593",
     "target": "nm0001625",
     "weight": 1,
@@ -3092,6 +3001,13 @@
     "weight": 1,
     "construct": "same_character",
     "character": "Laurie"
+  },
+  {
+    "source": "nm0001625",
+    "target": "nm0259708",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Helga"
   },
   {
     "source": "nm0001625",
@@ -3367,41 +3283,6 @@
     "character": "Slim"
   },
   {
-    "source": "nm0001864",
-    "target": "nm0420765",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Buck"
-  },
-  {
-    "source": "nm0001864",
-    "target": "nm0491777",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Emil"
-  },
-  {
-    "source": "nm0001864",
-    "target": "nm0492908",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Buck"
-  },
-  {
-    "source": "nm0001864",
-    "target": "nm0512934",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Leonard"
-  },
-  {
-    "source": "nm0001864",
-    "target": "nm0542558",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Buck"
-  },
-  {
     "source": "nm0001971",
     "target": "nm0075359",
     "weight": 1,
@@ -3413,7 +3294,7 @@
     "target": "nm0451918",
     "weight": 2,
     "construct": "same_character",
-    "character": "Lloyd"
+    "character": "Archie"
   },
   {
     "source": "nm0001971",
@@ -3598,6 +3479,13 @@
     "character": "The Batman"
   },
   {
+    "source": "nm0004879",
+    "target": "nm0492908",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Rodney"
+  },
+  {
     "source": "nm0005008",
     "target": "nm0006795",
     "weight": 1,
@@ -3775,6 +3663,13 @@
   {
     "source": "nm0005351",
     "target": "nm0726223",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Wade"
+  },
+  {
+    "source": "nm0005351",
+    "target": "nm0799777",
     "weight": 1,
     "construct": "same_character",
     "character": "Wade"
@@ -4271,6 +4166,13 @@
   },
   {
     "source": "nm0048389",
+    "target": "nm0799777",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Klaus"
+  },
+  {
+    "source": "nm0048389",
     "target": "nm0919798",
     "weight": 2,
     "construct": "same_character",
@@ -4747,6 +4649,13 @@
   },
   {
     "source": "nm0127373",
+    "target": "nm0259708",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Therapist"
+  },
+  {
+    "source": "nm0127373",
     "target": "nm0420765",
     "weight": 1,
     "construct": "same_character",
@@ -4991,6 +4900,13 @@
     "character": "Klaus"
   },
   {
+    "source": "nm0215281",
+    "target": "nm0799777",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Klaus"
+  },
+  {
     "source": "nm0217221",
     "target": "nm0319308",
     "weight": 1,
@@ -5143,6 +5059,13 @@
     "weight": 1,
     "construct": "same_character",
     "character": "Hélène"
+  },
+  {
+    "source": "nm0259708",
+    "target": "nm0666788",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "Sonja"
   },
   {
     "source": "nm0261413",
@@ -5796,20 +5719,6 @@
     "character": "Celia"
   },
   {
-    "source": "nm0491777",
-    "target": "nm0851317",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Alfred"
-  },
-  {
-    "source": "nm0491777",
-    "target": "nm1253936",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "André"
-  },
-  {
     "source": "nm0492908",
     "target": "nm0542558",
     "weight": 1,
@@ -6168,6 +6077,13 @@
   },
   {
     "source": "nm0724656",
+    "target": "nm0799777",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Klaus"
+  },
+  {
+    "source": "nm0724656",
     "target": "nm1312566",
     "weight": 1,
     "construct": "same_character",
@@ -6200,6 +6116,13 @@
     "weight": 2,
     "construct": "same_character",
     "character": "The Homeless Man"
+  },
+  {
+    "source": "nm0726223",
+    "target": "nm0799777",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Wade"
   },
   {
     "source": "nm0738951",
@@ -6242,6 +6165,13 @@
     "weight": 1,
     "construct": "same_character",
     "character": "The Scientist"
+  },
+  {
+    "source": "nm0799777",
+    "target": "nm1706767",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Franklin"
   },
   {
     "source": "nm0815718",
@@ -6354,13 +6284,6 @@
     "weight": 1,
     "construct": "same_character",
     "character": "Xavier"
-  },
-  {
-    "source": "nm0869088",
-    "target": "nm2837894",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Rafa"
   },
   {
     "source": "nm0884313",

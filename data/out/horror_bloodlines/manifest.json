@@ -19,7 +19,7 @@
     "pool_size": 600,
     "population_sql": 600
   },
-  "built_at": "2026-07-23T18:29:11.154129+00:00",
+  "built_at": "2026-07-24T18:56:09.109374+00:00",
   "clustering_coefficient": 0.4842,
   "community_count": 12,
   "correlations": {
@@ -103,7 +103,7 @@
   "min_horror_titles": 4,
   "min_shared": 2,
   "node_count": 200,
-  "stage_row_count": 20,
+  "stage_row_count": 22,
   "subtitle": "horror regulars (men + women, ≥4 titles — co-appearance, not genealogy)",
   "summary": {
     "acclaim_gap_hist": [
@@ -160,17 +160,17 @@
     ],
     "assortativity": 0.0139,
     "community_sizes": [
-      34,
-      32,
-      31,
-      31,
-      21,
+      39,
+      29,
+      24,
+      23,
       18,
+      18,
+      14,
       13,
-      10,
+      9,
+      8,
       4,
-      3,
-      2,
       1
     ],
     "component_count": 1,
@@ -263,8 +263,8 @@
       "male": 154
     },
     "giant_component_share": 1.0,
-    "largest_community_share": 0.17,
-    "modularity": 0.132,
+    "largest_community_share": 0.195,
+    "modularity": 0.1341,
     "outliers": {
       "acclaim_gap": [
         "nm0000246",
@@ -830,6 +830,6 @@
     "top_name": "Christopher Lee"
   },
   "title": "Horror Royalty Bloodlines",
-  "tmdb_gender_rows": 5592,
+  "tmdb_gender_rows": 160552,
   "top_n": 200
 }

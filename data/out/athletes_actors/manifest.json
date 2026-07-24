@@ -8,7 +8,7 @@
     "fallback_used": false,
     "population_sql": 0
   },
-  "built_at": "2026-07-23T18:28:18.650086+00:00",
+  "built_at": "2026-07-24T18:56:09.304312+00:00",
   "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
   "edge_count": 0,
   "gender_method": "tmdb+imdb_fallback",
@@ -29,6 +29,6 @@
   "stage_row_count": 0,
   "subtitle": "wrestlers, martial artists, athletes who crossed over",
   "title": "Athletes to Actors",
-  "tmdb_gender_rows": 5392,
+  "tmdb_gender_rows": 160552,
   "top_n": 200
 }

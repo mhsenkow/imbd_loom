@@ -20,7 +20,7 @@
     "population_sql": 600,
     "stages_source": "default_from_nodes"
   },
-  "built_at": "2026-07-23T18:23:53.556947+00:00",
+  "built_at": "2026-07-24T18:52:50.546265+00:00",
   "clustering_coefficient": 0.7533,
   "community_count": 9,
   "correlations": {
@@ -78,8 +78,8 @@
       "label": "Frank Welker"
     },
     {
-      "id": "nm1312566",
-      "label": "Kari Wahlgren"
+      "id": "nm0228356",
+      "label": "Ben Diskin"
     },
     {
       "id": "nm1101677",
@@ -162,10 +162,10 @@
     "assortativity": 0.1047,
     "community_sizes": [
       63,
-      51,
-      25,
-      23,
-      13,
+      52,
+      27,
+      21,
+      12,
       11,
       10,
       3,
@@ -263,7 +263,7 @@
     },
     "giant_component_share": 0.995,
     "largest_community_share": 0.315,
-    "modularity": 0.1771,
+    "modularity": 0.1906,
     "outliers": {
       "acclaim_gap": [
         "nm0000532",
@@ -822,6 +822,6 @@
     "top_name": "Brahmanandam"
   },
   "title": "Franchise Nomads",
-  "tmdb_gender_rows": 4393,
+  "tmdb_gender_rows": 160360,
   "top_n": 200
 }

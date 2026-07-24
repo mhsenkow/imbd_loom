@@ -20,9 +20,9 @@
     "pool_size": 1000,
     "population_sql": 1000
   },
-  "built_at": "2026-07-23T18:39:33.665020+00:00",
+  "built_at": "2026-07-24T18:51:05.852478+00:00",
   "clustering_coefficient": 0.7227,
-  "community_count": 11,
+  "community_count": 13,
   "correlations": {
     "acclaim_gap×prominence": {
       "n": 200,
@@ -78,8 +78,8 @@
       "label": "Tom Hanks"
     },
     {
-      "id": "nm0144657",
-      "label": "Dan Castellaneta"
+      "id": "nm0733427",
+      "label": "Harry Shearer"
     },
     {
       "id": "nm0000305",
@@ -161,16 +161,18 @@
     ],
     "assortativity": 0.0451,
     "community_sizes": [
-      49,
-      33,
-      30,
-      26,
-      18,
-      13,
-      13,
-      12,
-      3,
-      2,
+      48,
+      37,
+      34,
+      20,
+      16,
+      15,
+      8,
+      8,
+      7,
+      4,
+      1,
+      1,
       1
     ],
     "component_count": 2,
@@ -262,8 +264,8 @@
       "male": 142
     },
     "giant_component_share": 0.995,
-    "largest_community_share": 0.245,
-    "modularity": 0.0787,
+    "largest_community_share": 0.24,
+    "modularity": 0.0789,
     "outliers": {
       "acclaim_gap": [
         "nm0000158",
@@ -829,6 +831,6 @@
     "top_name": "Tom Hanks"
   },
   "title": "Voice ↔ Face",
-  "tmdb_gender_rows": 7588,
+  "tmdb_gender_rows": 160168,
   "top_n": 200
 }

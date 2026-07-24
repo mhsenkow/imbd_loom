@@ -2438,6 +2438,27 @@ body.print-mode .poster-frame svg.poster {
   flex-shrink: 0;
 }
 
+.gallery-thumb-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.gallery-cut-count {
+  position: absolute;
+  right: 10px;
+  bottom: 9px;
+  padding: 4px 7px;
+  border: 1px solid color-mix(in srgb, var(--trim) 80%, transparent);
+  border-radius: var(--radius-stamp);
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  box-shadow: 0 1px 4px #00000018;
+  color: var(--ink-soft);
+  font-size: 8px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  backdrop-filter: blur(3px);
+}
+
 .gallery-thumb svg {
   display: block;
   width: 100%;
@@ -2459,9 +2480,17 @@ body.print-mode .poster-frame svg.poster {
   display: flex;
   flex-direction: column;
   flex: 1;
-  min-height: 11.5rem;
+  min-height: 17.5rem;
   padding: 16px 16px 18px;
   background: var(--paper);
+}
+
+.gallery-card-kicker {
+  margin: 0 0 5px;
+  color: var(--accent);
+  font-size: 8px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
 }
 
 .gallery-card-body h2 {
@@ -2478,9 +2507,8 @@ body.print-mode .poster-frame svg.poster {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
-  min-height: 3.75rem;
-  margin: 0 0 10px;
+  min-height: 2.75rem;
+  margin: 0 0 12px;
 }
 
 .gallery-hook p {
@@ -2492,6 +2520,51 @@ body.print-mode .poster-frame svg.poster {
   letter-spacing: 0.01em;
   color: var(--ink-soft);
   text-wrap: pretty;
+}
+
+.gallery-evidence {
+  margin: 0 0 12px;
+  padding: 10px 11px;
+  border-top: 1px solid var(--trim);
+  border-bottom: 1px solid var(--trim);
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--accent) 5%, transparent), transparent),
+    var(--paper-wash);
+}
+
+.gallery-evidence p {
+  margin: 0;
+}
+
+.gallery-evidence-label {
+  margin-bottom: 4px !important;
+  color: var(--accent);
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.gallery-evidence-leaders {
+  overflow: hidden;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.gallery-evidence-pair {
+  margin-top: 5px !important;
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--ink-soft);
+  font-size: 8px;
+  letter-spacing: 0.02em;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .gallery-tags {

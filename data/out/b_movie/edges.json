@@ -34,9 +34,9 @@
         "votes": 22
       },
       {
-        "title": "The Lost Chance",
+        "title": "The Devil's Brand",
         "year": 1950,
-        "tconst": "tt0586084",
+        "tconst": "tt0586076",
         "votes": 21
       }
     ],
@@ -228,9 +228,9 @@
         "votes": 117
       },
       {
-        "title": "Outlaw Stage",
+        "title": "Border Justice",
         "year": 1953,
-        "tconst": "tt0586052",
+        "tconst": "tt0586019",
         "votes": 14
       }
     ],
@@ -508,9 +508,9 @@
     "reunion_span": 5,
     "shared_votes_max": 287,
     "genres": [
+      "Western",
       "Drama",
-      "Music",
-      "Western"
+      "Music"
     ],
     "shared": [
       {
@@ -1345,9 +1345,9 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Thriller",
+      "Comedy",
       "Drama",
-      "Comedy"
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.016,
@@ -1490,8 +1490,8 @@
       "Drama",
       "Romance",
       "Crime",
-      "Thriller",
-      "Comedy"
+      "Comedy",
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.012,
@@ -1527,8 +1527,8 @@
       "Drama",
       "Action",
       "Comedy",
-      "Family",
-      "Romance"
+      "Romance",
+      "Family"
     ],
     "shared": [
       {
@@ -1612,11 +1612,11 @@
     "reunion_gap": 39,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama",
       "Thriller",
+      "Drama",
       "Family",
+      "Comedy",
       "Romance"
     ],
     "shared": [
@@ -1655,9 +1655,9 @@
     "reunion_gap": 32,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
+      "Comedy",
       "Romance"
     ],
     "shared": [],
@@ -2084,10 +2084,10 @@
     "reunion_gap": 35,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
       "Thriller",
+      "Comedy",
       "Romance"
     ],
     "shared": [
@@ -2128,8 +2128,8 @@
     "genres": [
       "Crime",
       "Drama",
-      "Family",
       "Thriller",
+      "Family",
       "Action",
       "Comedy"
     ],
@@ -2347,10 +2347,10 @@
     "reunion_gap": 24,
     "shared_votes_max": 3475,
     "genres": [
+      "Action",
       "Crime",
       "Drama",
-      "Thriller",
-      "Action"
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.006,
@@ -2451,10 +2451,10 @@
     "reunion_gap": 32,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
       "Thriller",
+      "Comedy",
       "Romance"
     ],
     "shared": [],
@@ -2486,11 +2486,11 @@
     "reunion_gap": 34,
     "shared_votes_max": 3475,
     "genres": [
-      "Action",
       "Crime",
+      "Thriller",
       "Drama",
       "Family",
-      "Thriller",
+      "Action",
       "Comedy"
     ],
     "shared": [
@@ -2533,8 +2533,8 @@
       "Thriller",
       "Drama",
       "Action",
-      "Comedy",
-      "Romance"
+      "Romance",
+      "Comedy"
     ],
     "shared": [
       {
@@ -2619,9 +2619,9 @@
     "genres": [
       "Comedy",
       "Crime",
-      "Family",
       "Drama",
       "Romance",
+      "Family",
       "Thriller"
     ],
     "shared": [
@@ -2793,9 +2793,9 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
+      "Comedy",
       "Drama",
       "Romance",
-      "Comedy",
       "Thriller"
     ],
     "shared": [
@@ -2877,10 +2877,10 @@
     "reunion_gap": 35,
     "shared_votes_max": 6298,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
       "Thriller",
+      "Action",
       "Comedy"
     ],
     "shared": [],
@@ -3049,8 +3049,8 @@
     "genres": [
       "Crime",
       "Drama",
-      "Comedy",
-      "Romance"
+      "Romance",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.012,
@@ -3149,10 +3149,10 @@
     "reunion_gap": 39,
     "shared_votes_max": 6298,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama",
       "Thriller",
+      "Drama",
+      "Comedy",
       "Action",
       "Romance"
     ],
@@ -3323,8 +3323,8 @@
     "reunion_gap": 35,
     "shared_votes_max": 3475,
     "genres": [
-      "Crime",
       "Drama",
+      "Crime",
       "Family",
       "Romance",
       "Comedy"
@@ -3369,9 +3369,9 @@
       "Drama",
       "Thriller",
       "Action",
+      "Romance",
       "Comedy",
-      "Mystery",
-      "Romance"
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.021,
@@ -3469,10 +3469,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
-      "Crime"
+      "Crime",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [
       {
@@ -3482,15 +3482,15 @@
         "votes": 0
       },
       {
-        "title": "Episode #1.464",
-        "year": 1998,
-        "tconst": "tt9200468",
-        "votes": 0
-      },
-      {
         "title": "Episode #1.463",
         "year": 1998,
         "tconst": "tt9200464",
+        "votes": 0
+      },
+      {
+        "title": "Episode #1.464",
+        "year": 1998,
+        "tconst": "tt9200468",
         "votes": 0
       }
     ],
@@ -3778,10 +3778,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
-      "Crime"
+      "Crime",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.032,
@@ -3810,10 +3810,10 @@
     "reunion_gap": 30,
     "shared_votes_max": 266,
     "genres": [
+      "Comedy",
       "Action",
       "Biography",
-      "Crime",
-      "Comedy"
+      "Crime"
     ],
     "shared": [
       {
@@ -3971,10 +3971,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Biography",
-      "Crime",
       "Adventure",
-      "Comedy"
+      "Comedy",
+      "Biography",
+      "Crime"
     ],
     "shared": [],
     "loyalty_ab": 0.032,
@@ -4087,9 +4087,9 @@
         "votes": 0
       },
       {
-        "title": "Episode #1.465",
+        "title": "Episode #1.464",
         "year": 1998,
-        "tconst": "tt9200472",
+        "tconst": "tt9200468",
         "votes": 0
       }
     ],
@@ -4210,11 +4210,11 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
+      "Adventure",
+      "Comedy",
       "Biography",
       "Crime",
-      "Comedy",
-      "Romance",
-      "Adventure"
+      "Romance"
     ],
     "shared": [
       {
@@ -4310,15 +4310,15 @@
         "votes": 63
       },
       {
-        "title": "Finding a Husband",
+        "title": "Pilot",
         "year": 2021,
-        "tconst": "tt15348810",
+        "tconst": "tt15121136",
         "votes": 0
       },
       {
-        "title": "Pagsisikreto",
+        "title": "Kahati sa asawa",
         "year": 2021,
-        "tconst": "tt15683746",
+        "tconst": "tt15519728",
         "votes": 0
       }
     ],
@@ -4349,9 +4349,9 @@
     "shared_votes_max": 577,
     "genres": [
       "Action",
-      "Comedy",
+      "Biography",
       "Crime",
-      "Biography"
+      "Comedy"
     ],
     "shared": [
       {
@@ -4453,8 +4453,8 @@
       "Action",
       "Biography",
       "Crime",
-      "Comedy",
-      "Adventure"
+      "Adventure",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.048,
@@ -4484,10 +4484,10 @@
     "shared_votes_max": 577,
     "genres": [
       "Action",
-      "Biography",
-      "Crime",
+      "Adventure",
       "Comedy",
-      "Adventure"
+      "Crime",
+      "Biography"
     ],
     "shared": [],
     "loyalty_ab": 0.048,
@@ -4659,10 +4659,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
-      "Crime"
+      "Crime",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [
       {
@@ -4706,11 +4706,11 @@
     "reunion_gap": 21,
     "shared_votes_max": 266,
     "genres": [
-      "Drama",
-      "Family",
       "Action",
       "Biography",
-      "Crime"
+      "Crime",
+      "Drama",
+      "Family"
     ],
     "shared": [
       {
@@ -4816,15 +4816,15 @@
         "votes": 0
       },
       {
-        "title": "Episode #1.24",
+        "title": "Ang Hiwaga ng Gintong Piseta",
         "year": 1997,
-        "tconst": "tt9133626",
+        "tconst": "tt15322130",
         "votes": 0
       },
       {
-        "title": "Episode #1.16",
+        "title": "Episode #1.26",
         "year": 1997,
-        "tconst": "tt9133608",
+        "tconst": "tt9133630",
         "votes": 0
       }
     ],
@@ -4911,11 +4911,11 @@
     "reunion_gap": 21,
     "shared_votes_max": 266,
     "genres": [
-      "Drama",
-      "Family",
       "Action",
       "Biography",
       "Crime",
+      "Drama",
+      "Family",
       "Romance"
     ],
     "shared": [
@@ -4961,12 +4961,12 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
       "Crime",
       "Drama",
-      "Thriller"
+      "Thriller",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.034,
@@ -5105,9 +5105,9 @@
         "votes": 11
       },
       {
-        "title": "Episode #1.172",
+        "title": "Episode #1.249",
         "year": 2001,
-        "tconst": "tt9102060",
+        "tconst": "tt9112316",
         "votes": 0
       }
     ],
@@ -5142,9 +5142,9 @@
       "Action",
       "Adventure",
       "Comedy",
+      "Fantasy",
       "Drama",
       "Romance",
-      "Fantasy",
       "Biography",
       "Crime"
     ],
@@ -5253,10 +5253,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Biography",
-      "Crime",
       "Adventure",
-      "Comedy"
+      "Comedy",
+      "Biography",
+      "Crime"
     ],
     "shared": [],
     "loyalty_ab": 0.023,
@@ -5360,9 +5360,9 @@
         "votes": 11
       },
       {
-        "title": "Secret",
+        "title": "Proof",
         "year": 2019,
-        "tconst": "tt10013032",
+        "tconst": "tt10024730",
         "votes": 0
       }
     ],
@@ -5567,9 +5567,9 @@
         "votes": 22
       },
       {
-        "title": "Ang Tanging Secret",
+        "title": "Ang Tanging Hula",
         "year": 2003,
-        "tconst": "tt16221180",
+        "tconst": "tt39722568",
         "votes": 0
       }
     ],
@@ -5728,15 +5728,15 @@
         "votes": 113
       },
       {
-        "title": "Episode #1.368",
-        "year": 1998,
-        "tconst": "tt9183708",
-        "votes": 0
-      },
-      {
         "title": "Episode #1.369",
         "year": 1998,
         "tconst": "tt9183710",
+        "votes": 0
+      },
+      {
+        "title": "Episode #1.368",
+        "year": 1998,
+        "tconst": "tt9183708",
         "votes": 0
       }
     ],
@@ -5817,12 +5817,12 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
+      "Adventure",
+      "Comedy",
       "Biography",
       "Crime",
       "Drama",
-      "Thriller",
-      "Adventure",
-      "Comedy"
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.034,
@@ -5931,21 +5931,21 @@
     ],
     "shared": [
       {
-        "title": "Jonas Teaches Lorenzo How to Court Women",
+        "title": "Enzo Refuses to Give in to His Aunt's Order",
         "year": 2012,
-        "tconst": "tt2275128",
-        "votes": 0
-      },
-      {
-        "title": "Bel Forbids Enzo from Seeing Katkat",
-        "year": 2012,
-        "tconst": "tt2277994",
+        "tconst": "tt2324006",
         "votes": 0
       },
       {
         "title": "Mildred Tries to Sway Enzo to Her Side",
         "year": 2012,
         "tconst": "tt2322144",
+        "votes": 0
+      },
+      {
+        "title": "Jonas Teaches Lorenzo How to Court Women",
+        "year": 2012,
+        "tconst": "tt2275128",
         "votes": 0
       }
     ],
@@ -6065,10 +6065,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
-      "Crime"
+      "Crime",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [
       {
@@ -6116,15 +6116,15 @@
         "votes": 436
       },
       {
-        "title": "Thanksgiving",
+        "title": "Salamat Joanna",
         "year": 2017,
-        "tconst": "tt6386694",
+        "tconst": "tt6385628",
         "votes": 0
       },
       {
-        "title": "Finale",
+        "title": "Huling habilin",
         "year": 2017,
-        "tconst": "tt6396340",
+        "tconst": "tt6393088",
         "votes": 0
       }
     ],
@@ -6153,12 +6153,12 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
       "Crime",
       "Drama",
-      "Thriller"
+      "Thriller",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.048,
@@ -6255,9 +6255,9 @@
       "Action",
       "Crime",
       "Drama",
-      "Biography",
       "Adventure",
-      "Comedy"
+      "Comedy",
+      "Biography"
     ],
     "shared": [],
     "loyalty_ab": 0.036,
@@ -6319,10 +6319,10 @@
       "Action",
       "Crime",
       "Drama",
-      "Biography",
-      "Thriller",
       "Adventure",
-      "Comedy"
+      "Comedy",
+      "Biography",
+      "Thriller"
     ],
     "shared": [
       {
@@ -6357,10 +6357,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
       "Crime",
+      "Adventure",
+      "Comedy",
       "Drama"
     ],
     "shared": [],
@@ -6403,15 +6403,15 @@
         "votes": 50
       },
       {
-        "title": "Threat",
+        "title": "Six Years After",
         "year": 2023,
-        "tconst": "tt29797438",
+        "tconst": "tt30060071",
         "votes": 0
       },
       {
-        "title": "When It Rains",
+        "title": "Hell Hath No Fury",
         "year": 2023,
-        "tconst": "tt30280783",
+        "tconst": "tt30493694",
         "votes": 0
       }
     ],
@@ -6439,10 +6439,10 @@
     "reunion_span": 14,
     "shared_votes_max": 266,
     "genres": [
+      "Comedy",
       "Action",
       "Biography",
-      "Crime",
-      "Comedy"
+      "Crime"
     ],
     "shared": [
       {
@@ -6530,9 +6530,9 @@
         "votes": 0
       },
       {
-        "title": "Father, Daughter Moment",
+        "title": "Walang personalan",
         "year": 2022,
-        "tconst": "tt17351788",
+        "tconst": "tt16925304",
         "votes": 0
       }
     ],
@@ -6737,10 +6737,10 @@
       "Drama",
       "Romance",
       "Action",
-      "Adventure",
       "Biography",
       "Crime",
-      "Thriller"
+      "Thriller",
+      "Adventure"
     ],
     "shared": [
       {
@@ -6750,15 +6750,15 @@
         "votes": 65
       },
       {
-        "title": "Maria Draws Attention at the Party",
+        "title": "Luis' Guilt Haunts Him",
         "year": 2011,
-        "tconst": "tt2044352",
+        "tconst": "tt2050112",
         "votes": 0
       },
       {
-        "title": "Victoria Is Shocked with Maria's Connection to Sandra",
+        "title": "Victoria Fears That She Might Lose Everything She Worked For",
         "year": 2011,
-        "tconst": "tt2048451",
+        "tconst": "tt2049183",
         "votes": 0
       }
     ],
@@ -6959,10 +6959,10 @@
     "genres": [
       "Drama",
       "Action",
-      "Biography",
-      "Crime",
       "Adventure",
-      "Comedy"
+      "Comedy",
+      "Biography",
+      "Crime"
     ],
     "shared": [
       {
@@ -7265,10 +7265,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
-      "Crime"
+      "Crime",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [
       {
@@ -7332,9 +7332,9 @@
         "votes": 0
       },
       {
-        "title": "The Wonderful World of Music",
+        "title": "I Love Mama, I Love Papa",
         "year": 1971,
-        "tconst": "tt0434439",
+        "tconst": "tt1192406",
         "votes": 0
       }
     ],
@@ -7457,10 +7457,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Biography",
-      "Crime",
       "Adventure",
       "Comedy",
+      "Biography",
+      "Crime",
       "Horror",
       "Music"
     ],
@@ -7542,10 +7542,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
-      "Crime"
+      "Crime",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [
       {
@@ -7842,10 +7842,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
-      "Crime"
+      "Crime",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.029,
@@ -7978,9 +7978,9 @@
         "votes": 0
       },
       {
-        "title": "Episode #1.57",
+        "title": "Episode #1.45",
         "year": 1990,
-        "tconst": "tt8327970",
+        "tconst": "tt8277348",
         "votes": 0
       }
     ],
@@ -8011,9 +8011,9 @@
     "shared_votes_max": 1562,
     "genres": [
       "Comedy",
-      "Fantasy",
       "Drama",
-      "Music"
+      "Music",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -8063,8 +8063,8 @@
     "genres": [
       "Comedy",
       "Drama",
-      "Music",
-      "Romance"
+      "Romance",
+      "Music"
     ],
     "shared": [
       {
@@ -8109,9 +8109,9 @@
     "shared_votes_max": 77,
     "genres": [
       "Comedy",
+      "Fantasy",
       "Drama",
-      "Thriller",
-      "Fantasy"
+      "Thriller"
     ],
     "shared": [
       {
@@ -8159,15 +8159,15 @@
         "votes": 6
       },
       {
-        "title": "Episode #2.325",
+        "title": "Episode #2.305",
         "year": 2005,
-        "tconst": "tt1005385",
+        "tconst": "tt1005365",
         "votes": 0
       },
       {
-        "title": "Episode #2.310",
+        "title": "Episode #2.74",
         "year": 2005,
-        "tconst": "tt1005370",
+        "tconst": "tt0897897",
         "votes": 0
       }
     ],
@@ -8199,8 +8199,8 @@
     "genres": [
       "Comedy",
       "Drama",
-      "Romance",
-      "Music"
+      "Music",
+      "Romance"
     ],
     "shared": [
       {
@@ -8210,15 +8210,15 @@
         "votes": 0
       },
       {
-        "title": "Episode #2.144",
+        "title": "Episode #2.132",
         "year": 2004,
-        "tconst": "tt1005204",
+        "tconst": "tt1005192",
         "votes": 0
       },
       {
-        "title": "Episode #2.136",
+        "title": "Episode #2.143",
         "year": 2004,
-        "tconst": "tt1005196",
+        "tconst": "tt1005203",
         "votes": 0
       }
     ],
@@ -8478,9 +8478,9 @@
         "votes": 68
       },
       {
-        "title": "Pilot",
+        "title": "Episode #1.2",
         "year": 2004,
-        "tconst": "tt6948778",
+        "tconst": "tt7116070",
         "votes": 0
       },
       {
@@ -8857,15 +8857,15 @@
         "votes": 29
       },
       {
-        "title": "Mookies Fever",
+        "title": "Bisita",
         "year": 2025,
-        "tconst": "tt36130063",
+        "tconst": "tt36363405",
         "votes": 0
       },
       {
-        "title": "Himas rehas",
+        "title": "Kilig si Mookie",
         "year": 2025,
-        "tconst": "tt36857370",
+        "tconst": "tt35933732",
         "votes": 0
       }
     ],
@@ -9057,9 +9057,9 @@
         "votes": 0
       },
       {
-        "title": "Episode #1.180",
+        "title": "Episode #1.189",
         "year": null,
-        "tconst": "tt35386786",
+        "tconst": "tt35386969",
         "votes": 0
       }
     ],
@@ -9177,8 +9177,8 @@
       "Action",
       "Biography",
       "Crime",
-      "Drama",
       "Comedy",
+      "Drama",
       "Romance"
     ],
     "shared": [
@@ -9330,15 +9330,15 @@
         "votes": 29
       },
       {
-        "title": "Unang laban",
+        "title": "Secret Love",
         "year": 2026,
-        "tconst": "tt43333421",
+        "tconst": "tt43672551",
         "votes": 0
       },
       {
-        "title": "Viral Tatay",
+        "title": "Batumbacal",
         "year": 2026,
-        "tconst": "tt43632371",
+        "tconst": "tt43659763",
         "votes": 0
       }
     ],
@@ -9454,8 +9454,8 @@
       "Crime",
       "Drama",
       "Mystery",
-      "Thriller",
-      "Comedy"
+      "Comedy",
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.016,
@@ -9556,8 +9556,8 @@
       "Comedy",
       "Crime",
       "Drama",
-      "Thriller",
-      "Mystery"
+      "Mystery",
+      "Thriller"
     ],
     "shared": [
       {
@@ -9633,9 +9633,9 @@
     "genres": [
       "Adventure",
       "Crime",
+      "Comedy",
       "Drama",
-      "Thriller",
-      "Comedy"
+      "Thriller"
     ],
     "shared": [
       {
@@ -9688,10 +9688,10 @@
       "Crime",
       "Thriller",
       "Drama",
-      "Mystery",
-      "Action",
       "Comedy",
-      "Romance"
+      "Romance",
+      "Mystery",
+      "Action"
     ],
     "shared": [
       {
@@ -9744,9 +9744,9 @@
       "Crime",
       "Drama",
       "Mystery",
+      "Comedy",
       "Thriller",
-      "Family",
-      "Comedy"
+      "Family"
     ],
     "shared": [
       {
@@ -9829,9 +9829,9 @@
       "Comedy",
       "Crime",
       "Drama",
-      "Thriller",
       "Mystery",
-      "Action"
+      "Action",
+      "Thriller"
     ],
     "shared": [
       {
@@ -9910,9 +9910,9 @@
       "Drama",
       "Mystery",
       "Action",
+      "Comedy",
       "Thriller",
-      "Family",
-      "Comedy"
+      "Family"
     ],
     "shared": [
       {
@@ -10146,8 +10146,8 @@
       "Crime",
       "Drama",
       "Thriller",
-      "Mystery",
-      "Comedy"
+      "Comedy",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.023,
@@ -10597,9 +10597,9 @@
     "reunion_gap": 27,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.013,
@@ -10675,9 +10675,9 @@
       "Crime",
       "Drama",
       "Thriller",
+      "Comedy",
       "Mystery",
-      "Action",
-      "Comedy"
+      "Action"
     ],
     "shared": [
       {
@@ -10748,10 +10748,10 @@
     "reunion_gap": 27,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
-      "Thriller"
+      "Thriller",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.016,
@@ -10821,8 +10821,8 @@
       "Drama",
       "Mystery",
       "Action",
-      "Thriller",
-      "Comedy"
+      "Comedy",
+      "Thriller"
     ],
     "shared": [
       {
@@ -10875,10 +10875,10 @@
       "Crime",
       "Drama",
       "Thriller",
-      "Mystery",
-      "Action",
       "Comedy",
-      "Romance"
+      "Romance",
+      "Mystery",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.029,
@@ -11384,9 +11384,9 @@
     "reunion_gap": 29,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "shared": [
       {
@@ -11557,9 +11557,9 @@
     "reunion_gap": 25,
     "shared_votes_max": 3475,
     "genres": [
+      "Crime",
       "Drama",
       "Family",
-      "Crime",
       "Comedy"
     ],
     "shared": [],
@@ -11592,8 +11592,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Thriller"
+      "Thriller",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.014,
@@ -11656,10 +11656,10 @@
     "reunion_gap": 25,
     "shared_votes_max": 6902,
     "genres": [
-      "Comedy",
-      "Crime",
       "Action",
-      "Drama"
+      "Crime",
+      "Drama",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.018,
@@ -11762,8 +11762,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Thriller"
+      "Thriller",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.014,
@@ -11830,8 +11830,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
       "Thriller",
+      "Drama",
       "Comedy",
       "Family"
     ],
@@ -11962,8 +11962,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
       "Thriller",
+      "Drama",
       "Comedy",
       "Action"
     ],
@@ -11996,9 +11996,9 @@
     "reunion_gap": 25,
     "shared_votes_max": 3475,
     "genres": [
+      "Crime",
       "Drama",
       "Family",
-      "Crime",
       "Comedy"
     ],
     "shared": [],
@@ -12159,10 +12159,10 @@
     "reunion_gap": 29,
     "shared_votes_max": 3475,
     "genres": [
-      "Drama",
-      "Family",
       "Crime",
-      "Thriller"
+      "Thriller",
+      "Drama",
+      "Family"
     ],
     "shared": [],
     "loyalty_ab": 0.023,
@@ -12194,8 +12194,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Thriller"
+      "Thriller",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.009,
@@ -12226,9 +12226,9 @@
     "reunion_gap": 36,
     "shared_votes_max": 3475,
     "genres": [
+      "Drama",
       "Comedy",
-      "Crime",
-      "Drama"
+      "Crime"
     ],
     "shared": [],
     "loyalty_ab": 0.023,
@@ -12292,8 +12292,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Documentary"
+      "Documentary",
+      "Drama"
     ],
     "shared": [
       {
@@ -12368,8 +12368,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Thriller"
+      "Thriller",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.014,
@@ -12644,8 +12644,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
       "Thriller",
+      "Drama",
       "Comedy",
       "Action"
     ],
@@ -12711,8 +12711,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Thriller"
+      "Thriller",
+      "Drama"
     ],
     "shared": [
       {
@@ -12751,8 +12751,8 @@
     "shared_votes_max": 6902,
     "genres": [
       "Crime",
-      "Drama",
       "Thriller",
+      "Drama",
       "Action",
       "Family"
     ],
@@ -12828,8 +12828,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Thriller"
+      "Thriller",
+      "Drama"
     ],
     "shared": [
       {
@@ -12908,8 +12908,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Thriller"
+      "Thriller",
+      "Drama"
     ],
     "shared": [
       {
@@ -13161,8 +13161,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Thriller"
+      "Thriller",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.018,
@@ -13194,8 +13194,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Thriller"
+      "Thriller",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.018,
@@ -14987,9 +14987,9 @@
       "Drama",
       "Family",
       "Romance",
-      "Comedy",
       "Crime",
-      "Mystery"
+      "Mystery",
+      "Comedy"
     ],
     "shared": [
       {
@@ -15089,10 +15089,10 @@
     "reunion_span": 19,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
       "Mystery",
+      "Comedy",
       "Thriller"
     ],
     "shared": [],
@@ -15194,9 +15194,9 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Comedy",
       "Drama",
       "Mystery",
+      "Comedy",
       "Thriller"
     ],
     "shared": [
@@ -15374,8 +15374,8 @@
       "Crime",
       "Drama",
       "Thriller",
-      "Comedy",
-      "Mystery"
+      "Mystery",
+      "Comedy"
     ],
     "shared": [
       {
@@ -15615,8 +15615,8 @@
       "Crime",
       "Drama",
       "Thriller",
-      "Comedy",
-      "Mystery"
+      "Mystery",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.017,
@@ -15647,10 +15647,10 @@
     "reunion_gap": 25,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
       "Mystery",
+      "Comedy",
       "Thriller"
     ],
     "shared": [
@@ -15802,8 +15802,8 @@
       "Crime",
       "Drama",
       "Thriller",
-      "Comedy",
-      "Mystery"
+      "Mystery",
+      "Comedy"
     ],
     "shared": [
       {
@@ -15949,10 +15949,10 @@
     "reunion_gap": 23,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
-      "Thriller"
+      "Thriller",
+      "Comedy"
     ],
     "shared": [
       {
@@ -16281,10 +16281,10 @@
     "reunion_gap": 21,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
       "Mystery",
+      "Comedy",
       "Thriller"
     ],
     "shared": [],
@@ -16387,8 +16387,8 @@
       "Crime",
       "Drama",
       "Thriller",
-      "Comedy",
-      "Mystery"
+      "Mystery",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.029,
@@ -16555,8 +16555,8 @@
       "Crime",
       "Drama",
       "Mystery",
-      "Family",
-      "Fantasy"
+      "Fantasy",
+      "Family"
     ],
     "shared": [
       {
@@ -16624,10 +16624,10 @@
     "reunion_span": 11,
     "shared_votes_max": 3475,
     "genres": [
+      "Comedy",
       "Crime",
       "Drama",
-      "Thriller",
-      "Comedy"
+      "Thriller"
     ],
     "shared": [
       {
@@ -16700,8 +16700,8 @@
       "Romance",
       "Crime",
       "Mystery",
-      "Thriller",
-      "Comedy"
+      "Comedy",
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.032,
@@ -16730,9 +16730,9 @@
     "reunion_span": 13,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
+      "Comedy",
       "Mystery"
     ],
     "shared": [
@@ -16832,10 +16832,10 @@
     "reunion_span": 17,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
       "Thriller",
+      "Comedy",
       "Mystery"
     ],
     "shared": [],
@@ -16937,8 +16937,8 @@
       "Crime",
       "Drama",
       "Mystery",
-      "Thriller",
-      "Comedy"
+      "Comedy",
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.025,
@@ -17080,8 +17080,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Comedy"
+      "Comedy",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.018,
@@ -17523,9 +17523,9 @@
     "reunion_span": 17,
     "shared_votes_max": 3475,
     "genres": [
+      "Crime",
       "Drama",
       "Romance",
-      "Crime",
       "Mystery",
       "Thriller"
     ],
@@ -18241,10 +18241,10 @@
     "shared_votes_max": 465,
     "genres": [
       "Romance",
-      "Crime",
+      "Comedy",
       "Drama",
-      "Horror",
-      "Comedy"
+      "Crime",
+      "Horror"
     ],
     "shared": [
       {
@@ -18298,21 +18298,21 @@
     ],
     "shared": [
       {
-        "title": "Episode #1.2",
-        "year": 2015,
-        "tconst": "tt5180336",
-        "votes": 0
-      },
-      {
         "title": "Episode #1.5",
         "year": 2015,
         "tconst": "tt5180342",
         "votes": 0
       },
       {
-        "title": "Arturo pone un ultimátum",
+        "title": "Episode #1.2",
+        "year": 2015,
+        "tconst": "tt5180336",
+        "votes": 0
+      },
+      {
+        "title": "La maldad está en riego",
         "year": 2014,
-        "tconst": "tt3424836",
+        "tconst": "tt3428660",
         "votes": 0
       }
     ],
@@ -18513,10 +18513,10 @@
     "reunion_span": 8,
     "shared_votes_max": 250,
     "genres": [
-      "Thriller",
       "Comedy",
       "Music",
-      "Talk-Show"
+      "Talk-Show",
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.069,
@@ -18617,9 +18617,9 @@
         "votes": 15
       },
       {
-        "title": "Broken Ginalyn",
+        "title": "Pag-amin",
         "year": 2021,
-        "tconst": "tt14177536",
+        "tconst": "tt14028052",
         "votes": 0
       }
     ],
@@ -18649,13 +18649,13 @@
     "reunion_gap": 31,
     "shared_votes_max": 266,
     "genres": [
-      "Drama",
-      "Family",
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
       "Crime",
+      "Drama",
+      "Family",
+      "Adventure",
+      "Comedy",
       "Romance"
     ],
     "shared": [
@@ -18919,10 +18919,10 @@
     "reunion_gap": 26,
     "shared_votes_max": 266,
     "genres": [
-      "Comedy",
       "Action",
       "Biography",
-      "Crime"
+      "Crime",
+      "Comedy"
     ],
     "shared": [
       {
@@ -18960,11 +18960,11 @@
     "reunion_gap": 26,
     "shared_votes_max": 266,
     "genres": [
+      "Drama",
+      "Family",
       "Action",
       "Biography",
-      "Crime",
-      "Drama",
-      "Family"
+      "Crime"
     ],
     "shared": [
       {
@@ -19153,9 +19153,9 @@
         "votes": 41
       },
       {
-        "title": "Episode #1.1",
+        "title": "Episode #2.21",
         "year": 2018,
-        "tconst": "tt8998782",
+        "tconst": "tt9022190",
         "votes": 0
       }
     ],
@@ -20176,9 +20176,9 @@
     "reunion_gap": 22,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
+      "Comedy",
       "Mystery"
     ],
     "shared": [],
@@ -20208,9 +20208,9 @@
     "reunion_span": 14,
     "shared_votes_max": 3475,
     "genres": [
+      "Comedy",
       "Crime",
-      "Drama",
-      "Comedy"
+      "Drama"
     ],
     "shared": [
       {
@@ -20327,9 +20327,9 @@
     "reunion_span": 7,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
+      "Comedy",
       "Mystery"
     ],
     "shared": [],
@@ -21024,8 +21024,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Comedy"
+      "Comedy",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.014,
@@ -21507,9 +21507,9 @@
     "reunion_span": 15,
     "shared_votes_max": 271,
     "genres": [
-      "Crime",
       "Drama",
-      "Romance"
+      "Romance",
+      "Crime"
     ],
     "shared": [],
     "loyalty_ab": 0.017,
@@ -21771,8 +21771,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Comedy"
+      "Comedy",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.01,
@@ -21961,9 +21961,9 @@
     "reunion_span": 13,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.014,
@@ -22299,10 +22299,10 @@
     "reunion_span": 15,
     "shared_votes_max": 3475,
     "genres": [
+      "Comedy",
       "Crime",
       "Drama",
       "Mystery",
-      "Comedy",
       "Thriller"
     ],
     "shared": [
@@ -23307,9 +23307,9 @@
     "reunion_span": 12,
     "shared_votes_max": 3275,
     "genres": [
+      "Family",
       "Western",
       "Action",
-      "Family",
       "Drama"
     ],
     "shared": [
@@ -23360,8 +23360,8 @@
     "genres": [
       "Drama",
       "Western",
-      "Action",
-      "Music"
+      "Music",
+      "Action"
     ],
     "shared": [
       {
@@ -23546,8 +23546,8 @@
     "reunion_span": 8,
     "shared_votes_max": 3275,
     "genres": [
-      "Western",
       "Action",
+      "Western",
       "Drama"
     ],
     "shared": [
@@ -23840,8 +23840,8 @@
     "reunion_span": 16,
     "shared_votes_max": 4163,
     "genres": [
-      "Western",
       "Family",
+      "Western",
       "Action",
       "Drama"
     ],
@@ -23893,11 +23893,11 @@
     "genres": [
       "Comedy",
       "Short",
-      "Crime",
-      "Drama",
-      "Western",
       "Action",
-      "Family"
+      "Western",
+      "Family",
+      "Crime",
+      "Drama"
     ],
     "shared": [
       {
@@ -24180,11 +24180,11 @@
     "reunion_span": 12,
     "shared_votes_max": 3275,
     "genres": [
-      "Western",
-      "Crime",
-      "Drama",
       "Action",
-      "Family"
+      "Western",
+      "Family",
+      "Crime",
+      "Drama"
     ],
     "shared": [
       {
@@ -24343,9 +24343,9 @@
         "votes": 22
       },
       {
-        "title": "The Devil's Brand",
+        "title": "The Lost Chance",
         "year": 1950,
-        "tconst": "tt0586076",
+        "tconst": "tt0586084",
         "votes": 21
       }
     ],
@@ -24373,10 +24373,10 @@
     "reunion_span": 18,
     "shared_votes_max": 3275,
     "genres": [
-      "Action",
-      "Crime",
       "Drama",
-      "Western"
+      "Western",
+      "Action",
+      "Crime"
     ],
     "shared": [
       {
@@ -25453,9 +25453,9 @@
     "shared_votes_max": 190,
     "genres": [
       "Comedy",
+      "Drama",
       "Family",
-      "Game-Show",
-      "Drama"
+      "Game-Show"
     ],
     "shared": [
       {
@@ -25543,9 +25543,9 @@
     "shared_votes_max": 3275,
     "genres": [
       "Drama",
-      "Music",
+      "Action",
       "Western",
-      "Action"
+      "Music"
     ],
     "shared": [
       {
@@ -25595,8 +25595,8 @@
     "genres": [
       "Drama",
       "Western",
-      "Action",
       "Music",
+      "Action",
       "Crime"
     ],
     "shared": [
@@ -25645,10 +25645,10 @@
     "reunion_span": 4,
     "shared_votes_max": 3275,
     "genres": [
-      "Action",
-      "Western",
       "Drama",
-      "Music"
+      "Music",
+      "Western",
+      "Action"
     ],
     "shared": [
       {
@@ -25698,8 +25698,8 @@
     "genres": [
       "Drama",
       "Western",
-      "Action",
-      "Music"
+      "Music",
+      "Action"
     ],
     "shared": [
       {
@@ -26553,12 +26553,12 @@
     "shared_votes_max": 649,
     "genres": [
       "Comedy",
-      "Drama",
-      "Thriller",
       "Crime",
+      "Drama",
       "Mystery",
       "Family",
-      "Fantasy"
+      "Fantasy",
+      "Thriller"
     ],
     "shared": [
       {
@@ -26796,15 +26796,15 @@
         "votes": 20
       },
       {
-        "title": "Ein linkes Ding",
-        "year": 1994,
-        "tconst": "tt2178903",
-        "votes": 0
-      },
-      {
         "title": "Goldfieber",
         "year": 1994,
         "tconst": "tt0755324",
+        "votes": 0
+      },
+      {
+        "title": "Ein linkes Ding",
+        "year": 1994,
+        "tconst": "tt2178903",
         "votes": 0
       }
     ],
@@ -26869,9 +26869,9 @@
     "genres": [
       "Crime",
       "Drama",
-      "Mystery",
       "Comedy",
-      "Thriller"
+      "Thriller",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.021,
@@ -27347,8 +27347,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Comedy",
-      "Drama",
       "Romance",
+      "Drama",
       "Crime",
       "Mystery"
     ],
@@ -27435,9 +27435,9 @@
     "genres": [
       "Crime",
       "Drama",
-      "Mystery",
       "Comedy",
       "Romance",
+      "Mystery",
       "Animation",
       "Family"
     ],
@@ -28074,9 +28074,9 @@
     "reunion_gap": 23,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
+      "Comedy",
       "Mystery"
     ],
     "shared": [],
@@ -28255,10 +28255,10 @@
       "Drama",
       "Crime",
       "Mystery",
-      "Western",
-      "Adventure",
       "Family",
-      "Action"
+      "Western",
+      "Action",
+      "Adventure"
     ],
     "shared": [
       {
@@ -28308,8 +28308,8 @@
     "genres": [
       "Drama",
       "Western",
-      "Action",
-      "Music"
+      "Music",
+      "Action"
     ],
     "shared": [
       {
@@ -28713,8 +28713,8 @@
     "reunion_span": 16,
     "shared_votes_max": 5081,
     "genres": [
-      "Western",
       "Family",
+      "Western",
       "Action",
       "Adventure",
       "Crime",
@@ -28802,10 +28802,10 @@
     "genres": [
       "Drama",
       "Western",
-      "Family",
-      "Action",
+      "Adventure",
       "Comedy",
-      "Adventure"
+      "Family",
+      "Action"
     ],
     "shared": [
       {
@@ -28990,11 +28990,11 @@
     "shared_votes_max": 4355,
     "genres": [
       "Western",
+      "Adventure",
       "Drama",
+      "Family",
       "Crime",
       "Mystery",
-      "Adventure",
-      "Family",
       "Action"
     ],
     "shared": [
@@ -30404,10 +30404,10 @@
     "reunion_span": 5,
     "shared_votes_max": 86,
     "genres": [
-      "Drama",
-      "Western",
       "Comedy",
-      "Romance"
+      "Romance",
+      "Western",
+      "Drama"
     ],
     "shared": [
       {
@@ -30547,9 +30547,9 @@
     "genres": [
       "Drama",
       "Western",
+      "Adventure",
       "Action",
-      "Family",
-      "Adventure"
+      "Family"
     ],
     "shared": [
       {
@@ -30697,10 +30697,10 @@
     "genres": [
       "Action",
       "Western",
+      "Crime",
       "Drama",
       "Family",
-      "Adventure",
-      "Crime"
+      "Adventure"
     ],
     "shared": [],
     "loyalty_ab": 0.059,
@@ -30779,12 +30779,12 @@
     "shared_votes_max": 4355,
     "genres": [
       "Western",
-      "Crime",
-      "Drama",
-      "Mystery",
-      "Action",
       "Adventure",
-      "Family"
+      "Drama",
+      "Family",
+      "Crime",
+      "Mystery",
+      "Action"
     ],
     "shared": [
       {
@@ -30973,11 +30973,11 @@
     "reunion_gap": 26,
     "shared_votes_max": 396,
     "genres": [
+      "Drama",
+      "History",
       "Action",
       "Comedy",
       "Crime",
-      "Drama",
-      "History",
       "Mystery"
     ],
     "shared": [
@@ -30994,9 +30994,9 @@
         "votes": 174
       },
       {
-        "title": "A Ferro e Fogo",
+        "title": "Zangas em Família",
         "year": 2013,
-        "tconst": "tt2801610",
+        "tconst": "tt2727762",
         "votes": 0
       }
     ],
@@ -31026,11 +31026,17 @@
     "reunion_span": 4,
     "shared_votes_max": 174,
     "genres": [
-      "Crime",
       "Drama",
+      "Crime",
       "Mystery"
     ],
     "shared": [
+      {
+        "title": "Episode #1.23",
+        "year": 2011,
+        "tconst": "tt1985513",
+        "votes": 0
+      },
       {
         "title": "Episode #1.21",
         "year": 2011,
@@ -31041,12 +31047,6 @@
         "title": "Episode #1.22",
         "year": 2011,
         "tconst": "tt1974743",
-        "votes": 0
-      },
-      {
-        "title": "Episode #1.24",
-        "year": 2011,
-        "tconst": "tt1995801",
         "votes": 0
       }
     ],
@@ -31144,8 +31144,8 @@
     "reunion_span": 2,
     "shared_votes_max": 3275,
     "genres": [
-      "Western",
-      "Action"
+      "Action",
+      "Western"
     ],
     "shared": [
       {
@@ -31881,12 +31881,12 @@
     "reunion_gap": 28,
     "shared_votes_max": 649,
     "genres": [
-      "Crime",
-      "Drama",
-      "Mystery",
-      "Action",
       "Comedy",
-      "Thriller"
+      "Drama",
+      "Thriller",
+      "Crime",
+      "Mystery",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.046,
@@ -31917,14 +31917,14 @@
     "reunion_gap": 30,
     "shared_votes_max": 649,
     "genres": [
-      "Crime",
-      "Drama",
-      "Mystery",
-      "Romance",
-      "Action",
       "Comedy",
+      "Drama",
       "Thriller",
-      "Family"
+      "Family",
+      "Fantasy",
+      "Mystery",
+      "Crime",
+      "Romance"
     ],
     "shared": [
       {
@@ -32055,11 +32055,11 @@
     "reunion_gap": 27,
     "shared_votes_max": 897,
     "genres": [
-      "Comedy",
-      "Drama",
-      "Thriller",
       "Crime",
-      "Mystery"
+      "Drama",
+      "Mystery",
+      "Comedy",
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.046,
@@ -32633,8 +32633,8 @@
     "genres": [
       "Action",
       "Drama",
-      "Adventure",
       "Crime",
+      "Adventure",
       "Thriller"
     ],
     "shared": [
@@ -33142,11 +33142,11 @@
     "reunion_span": 15,
     "shared_votes_max": 256,
     "genres": [
+      "Mystery",
+      "Comedy",
+      "Western",
       "Drama",
       "Music",
-      "Western",
-      "Comedy",
-      "Mystery",
       "Thriller"
     ],
     "shared": [
@@ -34047,9 +34047,9 @@
     "genres": [
       "Comedy",
       "Drama",
-      "Music",
       "Crime",
-      "Mystery"
+      "Mystery",
+      "Music"
     ],
     "shared": [
       {
@@ -34097,8 +34097,8 @@
     "reunion_span": 16,
     "shared_votes_max": 1562,
     "genres": [
-      "Comedy",
       "Drama",
+      "Comedy",
       "Music"
     ],
     "shared": [
@@ -34200,9 +34200,9 @@
     "reunion_span": 15,
     "shared_votes_max": 1562,
     "genres": [
-      "Comedy",
       "Drama",
       "Romance",
+      "Comedy",
       "Music"
     ],
     "shared": [
@@ -34231,7 +34231,8 @@
     "same_era": true,
     "age_gap": 21,
     "cross_generational": true,
-    "edge_genre_jaccard": 1.0
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0260778",
@@ -34271,9 +34272,9 @@
         "votes": 0
       },
       {
-        "title": "Episode #1.101",
+        "title": "Episode #1.138",
         "year": 2008,
-        "tconst": "tt1165021",
+        "tconst": "tt1183767",
         "votes": 0
       }
     ],
@@ -34312,21 +34313,21 @@
     ],
     "shared": [
       {
-        "title": "Episode #1.254",
+        "title": "Episode #1.298",
         "year": 2011,
-        "tconst": "tt1831053",
+        "tconst": "tt1879350",
         "votes": 0
       },
       {
-        "title": "Episode #1.216",
+        "title": "Episode #1.335",
         "year": 2011,
-        "tconst": "tt1799786",
+        "tconst": "tt1914799",
         "votes": 0
       },
       {
-        "title": "Episode #1.251",
+        "title": "Episode #1.327",
         "year": 2011,
-        "tconst": "tt1831050",
+        "tconst": "tt1914791",
         "votes": 0
       }
     ],
@@ -34411,15 +34412,15 @@
         "votes": 25
       },
       {
-        "title": "Ang pagbabalik",
+        "title": "Kapatiran",
         "year": 2017,
-        "tconst": "tt7254496",
+        "tconst": "tt7408740",
         "votes": 0
       },
       {
-        "title": "Selosan Blues",
+        "title": "Sino si Emilio",
         "year": 2017,
-        "tconst": "tt7434500",
+        "tconst": "tt7272116",
         "votes": 0
       }
     ],
@@ -34625,9 +34626,9 @@
       "Action",
       "Adventure",
       "Drama",
-      "Comedy",
       "Biography",
-      "Crime"
+      "Crime",
+      "Comedy"
     ],
     "shared": [
       {
@@ -34784,9 +34785,9 @@
         "votes": 0
       },
       {
-        "title": "Episode #1.161",
+        "title": "Episode #1.199",
         "year": null,
-        "tconst": "tt35386331",
+        "tconst": "tt35387118",
         "votes": 0
       }
     ],
@@ -34992,8 +34993,8 @@
       "Action",
       "Crime",
       "Drama",
-      "Biography",
-      "Comedy"
+      "Comedy",
+      "Biography"
     ],
     "shared": [
       {
@@ -35003,15 +35004,15 @@
         "votes": 18
       },
       {
-        "title": "Patigasan",
+        "title": "Attack",
         "year": 2024,
-        "tconst": "tt31629623",
+        "tconst": "tt31816064",
         "votes": 0
       },
       {
-        "title": "Nimfa Kiss",
+        "title": "Matinding desisyon",
         "year": 2024,
-        "tconst": "tt32178988",
+        "tconst": "tt30886276",
         "votes": 0
       }
     ],
@@ -35162,8 +35163,8 @@
     "genres": [
       "Drama",
       "Romance",
-      "Crime",
-      "Comedy"
+      "Comedy",
+      "Crime"
     ],
     "shared": [
       {
@@ -36095,8 +36096,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Thriller"
+      "Thriller",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.02,
@@ -36312,9 +36313,9 @@
     "reunion_gap": 38,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "shared": [
       {
@@ -36352,9 +36353,9 @@
     "reunion_gap": 38,
     "shared_votes_max": 3475,
     "genres": [
+      "Comedy",
       "Crime",
-      "Drama",
-      "Comedy"
+      "Drama"
     ],
     "shared": [
       {
@@ -36424,7 +36425,8 @@
     "same_era": true,
     "age_gap": 6,
     "cross_generational": false,
-    "edge_genre_jaccard": 1.0
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0273646",
@@ -36683,9 +36685,9 @@
         "votes": 5
       },
       {
-        "title": "Esteban cae en coma",
+        "title": "Felipe le confiesa su amor a Hilda",
         "year": 2015,
-        "tconst": "tt4653064",
+        "tconst": "tt4900610",
         "votes": 0
       }
     ],
@@ -36720,8 +36722,8 @@
       "Drama",
       "Romance",
       "Crime",
-      "Mystery",
       "Comedy",
+      "Mystery",
       "Thriller"
     ],
     "shared": [
@@ -36848,9 +36850,9 @@
         "votes": 0
       },
       {
-        "title": "Die Entscheidung",
+        "title": "Die Heimkehr",
         "year": 2011,
-        "tconst": "tt1888878",
+        "tconst": "tt1890863",
         "votes": 0
       }
     ],
@@ -36885,8 +36887,8 @@
       "Action",
       "Crime",
       "Drama",
-      "Mystery",
       "Comedy",
+      "Mystery",
       "Thriller"
     ],
     "shared": [],
@@ -36955,8 +36957,8 @@
     "shared_votes_max": 897,
     "genres": [
       "Crime",
-      "Drama",
-      "Thriller"
+      "Thriller",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.006,
@@ -37056,8 +37058,8 @@
     "genres": [
       "Drama",
       "Romance",
-      "Action",
       "Crime",
+      "Action",
       "Mystery",
       "Comedy",
       "Thriller"
@@ -37199,8 +37201,7 @@
     "same_era": true,
     "age_gap": 2,
     "cross_generational": false,
-    "edge_genre_jaccard": 1.0,
-    "directorial_glue": true
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm0280117",
@@ -37222,11 +37223,11 @@
     "reunion_gap": 31,
     "shared_votes_max": 6298,
     "genres": [
-      "Comedy",
       "Crime",
-      "Mystery",
       "Drama",
       "Thriller",
+      "Comedy",
+      "Mystery",
       "Action"
     ],
     "shared": [],
@@ -37296,9 +37297,9 @@
       "Crime",
       "Action",
       "Drama",
-      "Thriller",
       "Comedy",
-      "Romance"
+      "Romance",
+      "Thriller"
     ],
     "shared": [
       {
@@ -37554,9 +37555,9 @@
       "Comedy",
       "Drama",
       "Romance",
-      "Action",
       "Crime",
       "Thriller",
+      "Action",
       "Mystery"
     ],
     "shared": [
@@ -37612,8 +37613,8 @@
       "Thriller",
       "Romance",
       "Action",
-      "Mystery",
-      "Comedy"
+      "Comedy",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.044,
@@ -37732,10 +37733,10 @@
     "reunion_gap": 27,
     "shared_votes_max": 6298,
     "genres": [
-      "Action",
       "Crime",
       "Thriller",
       "Drama",
+      "Action",
       "Romance"
     ],
     "shared": [
@@ -37787,10 +37788,10 @@
     "shared_votes_max": 6298,
     "genres": [
       "Crime",
-      "Action",
       "Drama",
-      "Mystery",
+      "Action",
       "Comedy",
+      "Mystery",
       "Romance",
       "Thriller"
     ],
@@ -37882,8 +37883,8 @@
     "genres": [
       "Crime",
       "Drama",
-      "Mystery",
-      "Comedy"
+      "Comedy",
+      "Mystery"
     ],
     "shared": [
       {
@@ -38006,8 +38007,8 @@
     "reunion_gap": 30,
     "shared_votes_max": 897,
     "genres": [
-      "Action",
       "Crime",
+      "Action",
       "Drama",
       "Romance",
       "Comedy",
@@ -38275,8 +38276,8 @@
     "shared_votes_max": 6298,
     "genres": [
       "Crime",
-      "Drama",
       "Thriller",
+      "Drama",
       "Romance",
       "Action"
     ],
@@ -38351,9 +38352,9 @@
     "reunion_gap": 27,
     "shared_votes_max": 6298,
     "genres": [
+      "Crime",
       "Drama",
       "Romance",
-      "Crime",
       "Action",
       "Mystery",
       "Comedy"
@@ -38948,15 +38949,15 @@
         "votes": 37
       },
       {
-        "title": "Zweiter Teil",
-        "year": 1977,
-        "tconst": "tt1277301",
-        "votes": 0
-      },
-      {
         "title": "Erster Teil",
         "year": 1977,
         "tconst": "tt1277300",
+        "votes": 0
+      },
+      {
+        "title": "Zweiter Teil",
+        "year": 1977,
+        "tconst": "tt1277301",
         "votes": 0
       }
     ],
@@ -39395,8 +39396,8 @@
       "Comedy",
       "Crime",
       "Drama",
-      "Mystery",
-      "Romance"
+      "Romance",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.014,
@@ -39427,9 +39428,9 @@
     "reunion_gap": 29,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
+      "Comedy",
       "Mystery"
     ],
     "shared": [
@@ -39470,8 +39471,8 @@
     "genres": [
       "Crime",
       "Drama",
-      "Mystery",
-      "Romance"
+      "Romance",
+      "Mystery"
     ],
     "shared": [
       {
@@ -39641,8 +39642,8 @@
     "genres": [
       "Crime",
       "Drama",
-      "Mystery",
-      "Romance"
+      "Romance",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.019,
@@ -39673,12 +39674,12 @@
     "reunion_gap": 29,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama",
       "Thriller",
-      "Mystery",
-      "Romance"
+      "Drama",
+      "Comedy",
+      "Romance",
+      "Mystery"
     ],
     "shared": [
       {
@@ -39728,10 +39729,10 @@
     "reunion_gap": 31,
     "shared_votes_max": 3475,
     "genres": [
-      "Drama",
-      "Family",
       "Crime",
       "Thriller",
+      "Drama",
+      "Family",
       "Mystery"
     ],
     "shared": [],
@@ -39798,8 +39799,8 @@
     "genres": [
       "Crime",
       "Drama",
-      "Comedy",
       "Romance",
+      "Comedy",
       "Mystery"
     ],
     "shared": [
@@ -39851,10 +39852,10 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Family",
       "Comedy",
-      "Mystery"
+      "Drama",
+      "Mystery",
+      "Family"
     ],
     "shared": [],
     "loyalty_ab": 0.019,
@@ -40103,11 +40104,11 @@
     "reunion_gap": 27,
     "shared_votes_max": 897,
     "genres": [
-      "Comedy",
       "Crime",
-      "Mystery",
       "Thriller",
       "Drama",
+      "Comedy",
+      "Mystery",
       "Romance"
     ],
     "shared": [
@@ -40186,9 +40187,9 @@
     "reunion_gap": 38,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
+      "Comedy",
       "Romance"
     ],
     "shared": [
@@ -40263,8 +40264,8 @@
       "Crime",
       "Thriller",
       "Drama",
-      "Comedy",
       "Romance",
+      "Comedy",
       "Mystery"
     ],
     "shared": [
@@ -40350,8 +40351,8 @@
     "genres": [
       "Drama",
       "Romance",
-      "Comedy",
       "Crime",
+      "Comedy",
       "Thriller"
     ],
     "shared": [
@@ -40393,8 +40394,8 @@
       "Drama",
       "Romance",
       "Crime",
-      "Thriller",
-      "Family"
+      "Family",
+      "Thriller"
     ],
     "shared": [
       {
@@ -40517,8 +40518,8 @@
     "genres": [
       "Crime",
       "Drama",
-      "Mystery",
-      "Romance"
+      "Romance",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.014,
@@ -40586,8 +40587,8 @@
     "genres": [
       "Comedy",
       "Crime",
-      "Drama",
-      "Mystery"
+      "Mystery",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.022,
@@ -40684,10 +40685,10 @@
     "reunion_gap": 23,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Mystery",
-      "Drama"
+      "Drama",
+      "Comedy",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.017,
@@ -40857,8 +40858,8 @@
     "genres": [
       "Crime",
       "Thriller",
-      "Drama",
-      "Family"
+      "Family",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.01,
@@ -40889,10 +40890,10 @@
     "reunion_gap": 32,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama",
       "Thriller",
+      "Drama",
+      "Comedy",
       "Romance"
     ],
     "shared": [],
@@ -40924,11 +40925,11 @@
     "reunion_gap": 32,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
-      "Mystery",
-      "Romance"
+      "Comedy",
+      "Romance",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.026,
@@ -41099,9 +41100,9 @@
     "reunion_gap": 27,
     "shared_votes_max": 371,
     "genres": [
+      "Crime",
       "Drama",
-      "Romance",
-      "Crime"
+      "Romance"
     ],
     "shared": [],
     "loyalty_ab": 0.01,
@@ -41257,15 +41258,15 @@
         "votes": 113
       },
       {
-        "title": "Episode #1.96",
+        "title": "Episode #1.86",
         "year": 2001,
-        "tconst": "tt7311234",
+        "tconst": "tt7306792",
         "votes": 0
       },
       {
-        "title": "Episode #1.58",
+        "title": "Episode #1.51",
         "year": 2001,
-        "tconst": "tt7302574",
+        "tconst": "tt7302550",
         "votes": 0
       }
     ],
@@ -41351,9 +41352,9 @@
       "Comedy",
       "Crime",
       "Drama",
-      "Thriller",
+      "Action",
       "Mystery",
-      "Action"
+      "Thriller"
     ],
     "shared": [
       {
@@ -41433,9 +41434,9 @@
       "Comedy",
       "Crime",
       "Drama",
-      "Thriller",
+      "Action",
       "Mystery",
-      "Action"
+      "Thriller"
     ],
     "shared": [
       {
@@ -41600,9 +41601,9 @@
     "genres": [
       "Drama",
       "Crime",
+      "Action",
       "Mystery",
       "Romance",
-      "Action",
       "Comedy"
     ],
     "shared": [
@@ -41803,10 +41804,10 @@
     "reunion_gap": 36,
     "shared_votes_max": 649,
     "genres": [
+      "Action",
       "Crime",
       "Drama",
-      "Mystery",
-      "Action"
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.01,
@@ -41839,8 +41840,8 @@
     "genres": [
       "Crime",
       "Drama",
-      "Mystery",
-      "Action"
+      "Action",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.019,
@@ -41904,8 +41905,8 @@
     "genres": [
       "Crime",
       "Drama",
-      "Mystery",
-      "Action"
+      "Action",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.024,
@@ -41970,8 +41971,8 @@
     "genres": [
       "Crime",
       "Drama",
-      "Mystery",
-      "Action"
+      "Action",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.029,
@@ -42002,13 +42003,13 @@
     "reunion_gap": 36,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
-      "Drama",
-      "Thriller",
       "Crime",
+      "Action",
+      "Drama",
       "Mystery",
       "Romance",
-      "Action"
+      "Comedy",
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.029,
@@ -42090,9 +42091,9 @@
     "reunion_span": 4,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
+      "Comedy",
       "Romance"
     ],
     "shared": [],
@@ -42158,9 +42159,9 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
+      "Action",
       "Drama",
       "Mystery",
-      "Action",
       "Adventure"
     ],
     "shared": [
@@ -42362,8 +42363,8 @@
     "reunion_span": 19,
     "shared_votes_max": 3475,
     "genres": [
-      "Crime",
       "Action",
+      "Crime",
       "Drama"
     ],
     "shared": [],
@@ -42413,9 +42414,9 @@
         "votes": 27
       },
       {
-        "title": "Die Nacht, in der ein Toter stirbt",
+        "title": "Der süße Tod",
         "year": 1998,
-        "tconst": "tt0631106",
+        "tconst": "tt0631095",
         "votes": 24
       }
     ],
@@ -42517,11 +42518,11 @@
     "reunion_gap": 36,
     "shared_votes_max": 3475,
     "genres": [
-      "Action",
-      "Adventure",
       "Crime",
       "Drama",
-      "Mystery"
+      "Mystery",
+      "Action",
+      "Adventure"
     ],
     "shared": [],
     "loyalty_ab": 0.015,
@@ -42939,9 +42940,9 @@
         "votes": 13
       },
       {
-        "title": "Miguel Desperately Looks for Ella",
+        "title": "Tessa Learns That Ella Is Her Long Lost Daughter",
         "year": 2010,
-        "tconst": "tt1855640",
+        "tconst": "tt1858907",
         "votes": 0
       }
     ],
@@ -42989,9 +42990,9 @@
         "votes": 13
       },
       {
-        "title": "Tessa and Miguel Battle in Court",
+        "title": "Patricia Kills Red",
         "year": 2010,
-        "tconst": "tt1856212",
+        "tconst": "tt1858905",
         "votes": 0
       }
     ],
@@ -43039,9 +43040,9 @@
         "votes": 13
       },
       {
-        "title": "Daniel and Tessa Discover Red's So Called Killer",
+        "title": "Patricia Kills Red",
         "year": 2010,
-        "tconst": "tt1858902",
+        "tconst": "tt1858905",
         "votes": 0
       }
     ],
@@ -43566,10 +43567,10 @@
     "reunion_span": 16,
     "shared_votes_max": 649,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
-      "Mystery"
+      "Mystery",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.012,
@@ -43781,8 +43782,8 @@
       "Crime",
       "Drama",
       "Action",
-      "Comedy",
-      "Mystery"
+      "Mystery",
+      "Comedy"
     ],
     "shared": [
       {
@@ -43818,11 +43819,11 @@
     "reunion_span": 17,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
-      "Drama",
-      "Thriller",
       "Crime",
-      "Mystery"
+      "Drama",
+      "Mystery",
+      "Comedy",
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.028,
@@ -43881,9 +43882,9 @@
     "reunion_span": 14,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
+      "Comedy",
       "Romance"
     ],
     "shared": [
@@ -43922,9 +43923,9 @@
     "genres": [
       "Crime",
       "Drama",
-      "Romance",
       "Comedy",
-      "Thriller"
+      "Thriller",
+      "Romance"
     ],
     "shared": [],
     "loyalty_ab": 0.016,
@@ -44079,9 +44080,9 @@
     "reunion_span": 9,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.012,
@@ -44149,8 +44150,8 @@
     "reunion_span": 15,
     "shared_votes_max": 3475,
     "genres": [
-      "Crime",
       "Action",
+      "Crime",
       "Drama",
       "Mystery",
       "Comedy",
@@ -44223,8 +44224,8 @@
     "genres": [
       "Crime",
       "Drama",
-      "Action",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.016,
@@ -44287,8 +44288,8 @@
       "Crime",
       "Action",
       "Drama",
-      "Comedy",
-      "Mystery"
+      "Mystery",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.04,
@@ -44673,9 +44674,9 @@
     "reunion_span": 9,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.008,
@@ -44798,9 +44799,9 @@
     "reunion_span": 9,
     "shared_votes_max": 3475,
     "genres": [
+      "Comedy",
       "Crime",
-      "Drama",
-      "Comedy"
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.008,
@@ -45017,8 +45018,8 @@
     "genres": [
       "Drama",
       "Romance",
-      "Action",
-      "Crime"
+      "Crime",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.018,
@@ -45221,8 +45222,8 @@
     "shared_votes_max": 246,
     "genres": [
       "Crime",
-      "Comedy",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "shared": [
       {
@@ -45515,9 +45516,9 @@
     "reunion_span": 17,
     "shared_votes_max": 6902,
     "genres": [
-      "Action",
       "Crime",
-      "Drama"
+      "Drama",
+      "Action"
     ],
     "shared": [
       {
@@ -45591,9 +45592,9 @@
     "reunion_span": 13,
     "shared_votes_max": 649,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
+      "Action",
       "Mystery"
     ],
     "shared": [],
@@ -46181,10 +46182,10 @@
     "reunion_gap": 22,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
       "Thriller",
+      "Comedy",
       "Mystery",
       "Action"
     ],
@@ -46380,10 +46381,10 @@
     "reunion_gap": 25,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Drama",
-      "Thriller",
       "Romance",
+      "Comedy",
+      "Thriller",
       "Crime"
     ],
     "shared": [],
@@ -46628,11 +46629,11 @@
     "reunion_gap": 25,
     "shared_votes_max": 3475,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
       "Family",
       "Thriller",
+      "Action",
       "Mystery"
     ],
     "shared": [
@@ -46744,8 +46745,8 @@
       "Comedy",
       "Drama",
       "Thriller",
-      "Action",
       "Crime",
+      "Action",
       "Mystery"
     ],
     "shared": [],
@@ -47025,10 +47026,10 @@
     "reunion_gap": 25,
     "shared_votes_max": 3475,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
       "Thriller",
+      "Action",
       "Mystery"
     ],
     "shared": [
@@ -47163,15 +47164,15 @@
         "votes": 95
       },
       {
-        "title": "Episode #1.1",
-        "year": 2000,
-        "tconst": "tt2413270",
-        "votes": 0
-      },
-      {
         "title": "Episode #1.3",
         "year": 2000,
         "tconst": "tt2413274",
+        "votes": 0
+      },
+      {
+        "title": "Episode #1.4",
+        "year": 2000,
+        "tconst": "tt2413280",
         "votes": 0
       }
     ],
@@ -47414,8 +47415,8 @@
       "Crime",
       "Drama",
       "Mystery",
-      "Comedy",
-      "Action"
+      "Action",
+      "Comedy"
     ],
     "shared": [
       {
@@ -47687,10 +47688,10 @@
     "reunion_gap": 27,
     "shared_votes_max": 6298,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
       "Thriller",
+      "Comedy",
       "Action"
     ],
     "shared": [],
@@ -47792,9 +47793,9 @@
       "Action",
       "Adventure",
       "Crime",
-      "Comedy",
       "Drama",
-      "Thriller"
+      "Thriller",
+      "Comedy"
     ],
     "shared": [
       {
@@ -47841,8 +47842,8 @@
       "Crime",
       "Action",
       "Drama",
-      "Thriller",
-      "Comedy"
+      "Comedy",
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.018,
@@ -47980,8 +47981,8 @@
     "reunion_gap": 23,
     "shared_votes_max": 6298,
     "genres": [
-      "Crime",
       "Action",
+      "Crime",
       "Drama",
       "Thriller"
     ],
@@ -48127,9 +48128,9 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
+      "Comedy",
       "Drama",
-      "Thriller",
-      "Comedy"
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.016,
@@ -48204,8 +48205,8 @@
       "Crime",
       "Drama",
       "Thriller",
-      "Action",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.027,
@@ -48306,9 +48307,9 @@
     "genres": [
       "Drama",
       "Family",
+      "Crime",
       "Action",
-      "Adventure",
-      "Crime"
+      "Adventure"
     ],
     "shared": [],
     "loyalty_ab": 0.025,
@@ -48341,9 +48342,9 @@
     "genres": [
       "Action",
       "Crime",
-      "Adventure",
       "Comedy",
       "Drama",
+      "Adventure",
       "Thriller"
     ],
     "shared": [
@@ -48610,8 +48611,8 @@
       "Crime",
       "Drama",
       "Thriller",
-      "Action",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.025,
@@ -48643,8 +48644,8 @@
     "shared_votes_max": 298,
     "genres": [
       "Crime",
-      "Drama",
-      "Action"
+      "Action",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.011,
@@ -48709,9 +48710,9 @@
     "reunion_gap": 25,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.023,
@@ -48810,9 +48811,9 @@
     "reunion_gap": 25,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "shared": [
       {
@@ -48850,10 +48851,10 @@
     "reunion_gap": 23,
     "shared_votes_max": 6298,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
       "Thriller",
+      "Comedy",
       "Action"
     ],
     "shared": [],
@@ -49480,15 +49481,15 @@
         "votes": 18
       },
       {
-        "title": "Episode #1.45",
+        "title": "Episode #1.168",
         "year": 2008,
-        "tconst": "tt1174230",
+        "tconst": "tt1241092",
         "votes": 0
       },
       {
-        "title": "Episode #1.140",
+        "title": "Episode #2.71",
         "year": 2008,
-        "tconst": "tt1226964",
+        "tconst": "tt1295440",
         "votes": 0
       }
     ],
@@ -49532,15 +49533,15 @@
         "votes": 59
       },
       {
-        "title": "Episode #1.223",
+        "title": "Episode #1.234",
         "year": 2024,
-        "tconst": "tt30698014",
+        "tconst": "tt30856957",
         "votes": 0
       },
       {
-        "title": "Episode #1.249",
+        "title": "Episode #1.243",
         "year": 2024,
-        "tconst": "tt31235954",
+        "tconst": "tt31068186",
         "votes": 0
       }
     ],
@@ -49618,21 +49619,21 @@
     ],
     "shared": [
       {
-        "title": "Episode #1.2",
+        "title": "Episode #1.40",
         "year": 2007,
-        "tconst": "tt43618728",
+        "tconst": "tt43616862",
         "votes": 0
       },
       {
-        "title": "Episode #1.4",
+        "title": "Episode #1.7",
         "year": 2007,
-        "tconst": "tt43618732",
+        "tconst": "tt43618736",
         "votes": 0
       },
       {
-        "title": "Episode #1.5",
+        "title": "Episode #1.13",
         "year": 2007,
-        "tconst": "tt43618733",
+        "tconst": "tt43618744",
         "votes": 0
       }
     ],
@@ -49819,10 +49820,10 @@
     "reunion_span": 12,
     "shared_votes_max": 266,
     "genres": [
+      "Comedy",
       "Action",
       "Biography",
-      "Crime",
-      "Comedy"
+      "Crime"
     ],
     "shared": [
       {
@@ -50603,10 +50604,10 @@
     "reunion_span": 17,
     "shared_votes_max": 200,
     "genres": [
-      "Drama",
-      "Music",
+      "Comedy",
       "Western",
-      "Comedy"
+      "Drama",
+      "Music"
     ],
     "shared": [
       {
@@ -50920,8 +50921,8 @@
     "reunion_gap": 20,
     "shared_votes_max": 6902,
     "genres": [
-      "Action",
       "Crime",
+      "Action",
       "Drama"
     ],
     "shared": [],
@@ -51424,8 +51425,8 @@
     "shared_votes_max": 68,
     "genres": [
       "Comedy",
-      "Music",
-      "Romance"
+      "Romance",
+      "Music"
     ],
     "shared": [
       {
@@ -51470,10 +51471,10 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Comedy",
       "Drama",
       "Romance",
       "Mystery",
+      "Comedy",
       "Thriller"
     ],
     "shared": [
@@ -51600,9 +51601,9 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Comedy",
       "Drama",
       "Romance",
+      "Comedy",
       "Thriller"
     ],
     "shared": [],
@@ -51862,9 +51863,9 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Comedy",
       "Drama",
       "Mystery",
+      "Comedy",
       "Thriller"
     ],
     "shared": [],
@@ -52128,9 +52129,9 @@
     "genres": [
       "Action",
       "Crime",
-      "Comedy",
       "Drama",
       "Mystery",
+      "Comedy",
       "Thriller"
     ],
     "shared": [
@@ -52172,8 +52173,8 @@
       "Crime",
       "Drama",
       "Romance",
-      "Comedy",
-      "Mystery"
+      "Mystery",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.032,
@@ -52205,8 +52206,8 @@
       "Crime",
       "Drama",
       "Thriller",
-      "Comedy",
-      "Mystery"
+      "Mystery",
+      "Comedy"
     ],
     "shared": [
       {
@@ -52253,9 +52254,9 @@
       "Crime",
       "Drama",
       "Thriller",
-      "Comedy",
       "Romance",
       "Mystery",
+      "Comedy",
       "Action"
     ],
     "shared": [],
@@ -52389,9 +52390,9 @@
     "reunion_span": 14,
     "shared_votes_max": 3475,
     "genres": [
+      "Action",
       "Crime",
-      "Drama",
-      "Action"
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.011,
@@ -52491,9 +52492,9 @@
     "reunion_span": 11,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
+      "Comedy",
       "Mystery"
     ],
     "shared": [
@@ -52630,8 +52631,8 @@
     "genres": [
       "Crime",
       "Drama",
-      "Romance",
-      "Mystery"
+      "Mystery",
+      "Romance"
     ],
     "shared": [],
     "loyalty_ab": 0.028,
@@ -52665,8 +52666,8 @@
       "Crime",
       "Drama",
       "Romance",
-      "Comedy",
       "Mystery",
+      "Comedy",
       "Thriller"
     ],
     "shared": [
@@ -53024,10 +53025,10 @@
     "reunion_gap": 26,
     "shared_votes_max": 6298,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
       "Thriller",
+      "Comedy",
       "Action"
     ],
     "shared": [],
@@ -53420,9 +53421,9 @@
         "votes": 8
       },
       {
-        "title": "Wie man ein Geheimnis hütet",
+        "title": "Wie man einen Drachen tötet",
         "year": 2019,
-        "tconst": "tt9898288",
+        "tconst": "tt9898290",
         "votes": 7
       }
     ],
@@ -53514,8 +53515,8 @@
       "Thriller",
       "Action",
       "Mystery",
-      "Romance",
-      "Comedy"
+      "Comedy",
+      "Romance"
     ],
     "shared": [
       {
@@ -53763,10 +53764,10 @@
     "reunion_span": 19,
     "shared_votes_max": 3475,
     "genres": [
+      "Comedy",
       "Crime",
       "Drama",
       "Mystery",
-      "Comedy",
       "Thriller"
     ],
     "shared": [
@@ -53820,8 +53821,8 @@
       "Crime",
       "Drama",
       "Thriller",
-      "Comedy",
       "Mystery",
+      "Comedy",
       "Romance"
     ],
     "shared": [
@@ -54276,8 +54277,8 @@
       "Crime",
       "Drama",
       "Action",
-      "Comedy",
       "Mystery",
+      "Comedy",
       "Romance",
       "Thriller"
     ],
@@ -54417,8 +54418,8 @@
       "Drama",
       "Thriller",
       "Action",
-      "Romance",
-      "Comedy"
+      "Comedy",
+      "Romance"
     ],
     "shared": [],
     "loyalty_ab": 0.017,
@@ -54616,10 +54617,10 @@
     "reunion_gap": 24,
     "shared_votes_max": 3475,
     "genres": [
+      "Crime",
       "Comedy",
       "Drama",
-      "Thriller",
-      "Crime"
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.011,
@@ -55433,8 +55434,8 @@
     "shared_votes_max": 298,
     "genres": [
       "Crime",
-      "Drama",
-      "Comedy"
+      "Comedy",
+      "Drama"
     ],
     "shared": [
       {
@@ -55718,15 +55719,15 @@
         "votes": 13
       },
       {
-        "title": "Hast du Pech beim Denken, oder was?!",
-        "year": 2019,
-        "tconst": "tt9109572",
-        "votes": 12
-      },
-      {
         "title": "Einfach mal Klartext geredet...",
         "year": 2019,
         "tconst": "tt9109552",
+        "votes": 12
+      },
+      {
+        "title": "Hast du Pech beim Denken, oder was?!",
+        "year": 2019,
+        "tconst": "tt9109572",
         "votes": 12
       }
     ],
@@ -56636,10 +56637,10 @@
     "reunion_gap": 22,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Thriller",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "shared": [
       {
@@ -57185,10 +57186,10 @@
     "reunion_span": 17,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Mystery",
-      "Drama"
+      "Drama",
+      "Comedy",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.013,
@@ -57365,11 +57366,11 @@
     "reunion_gap": 27,
     "shared_votes_max": 884,
     "genres": [
-      "Comedy",
       "Crime",
-      "Mystery",
       "Drama",
       "Thriller",
+      "Comedy",
+      "Mystery",
       "Romance"
     ],
     "shared": [
@@ -57421,15 +57422,15 @@
         "votes": 10
       },
       {
-        "title": "Mutterfreuden",
-        "year": 2000,
-        "tconst": "tt0605589",
-        "votes": 0
-      },
-      {
         "title": "Streithähne",
         "year": 2000,
         "tconst": "tt0605592",
+        "votes": 0
+      },
+      {
+        "title": "Amors Pfeile",
+        "year": 2000,
+        "tconst": "tt0605583",
         "votes": 0
       }
     ],
@@ -57661,9 +57662,9 @@
     "genres": [
       "Crime",
       "Drama",
-      "Romance",
       "Action",
-      "Adventure"
+      "Adventure",
+      "Romance"
     ],
     "shared": [
       {
@@ -57709,9 +57710,9 @@
     "genres": [
       "Comedy",
       "Crime",
+      "Mystery",
       "Drama",
       "Thriller",
-      "Mystery",
       "Action",
       "Adventure"
     ],
@@ -57858,9 +57859,9 @@
     "genres": [
       "Crime",
       "Comedy",
+      "Mystery",
       "Drama",
-      "Thriller",
-      "Mystery"
+      "Thriller"
     ],
     "shared": [
       {
@@ -58301,9 +58302,9 @@
     "reunion_span": 19,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "shared": [
       {
@@ -58578,11 +58579,11 @@
     "reunion_gap": 26,
     "shared_votes_max": 266,
     "genres": [
+      "Action",
+      "Biography",
       "Crime",
       "Drama",
-      "Thriller",
-      "Action",
-      "Biography"
+      "Thriller"
     ],
     "shared": [
       {
@@ -58598,9 +58599,9 @@
         "votes": 13
       },
       {
-        "title": "Parents",
+        "title": "Baby",
         "year": 2022,
-        "tconst": "tt17009642",
+        "tconst": "tt16985822",
         "votes": 0
       }
     ],
@@ -58630,11 +58631,11 @@
     "reunion_gap": 26,
     "shared_votes_max": 266,
     "genres": [
+      "Action",
+      "Biography",
       "Crime",
       "Drama",
-      "Thriller",
-      "Action",
-      "Biography"
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.039,
@@ -58669,12 +58670,6 @@
     ],
     "shared": [
       {
-        "title": "Forevermore Part 2",
-        "year": 1996,
-        "tconst": "tt42453449",
-        "votes": 0
-      },
-      {
         "title": "Forevermore",
         "year": 1996,
         "tconst": "tt42451073",
@@ -58684,6 +58679,12 @@
         "title": "Forevermore Part 5",
         "year": 1996,
         "tconst": "tt42454461",
+        "votes": 0
+      },
+      {
+        "title": "Forevermore Part 3",
+        "year": 1996,
+        "tconst": "tt42453459",
         "votes": 0
       }
     ],
@@ -58855,9 +58856,9 @@
         "votes": 9
       },
       {
-        "title": "Atake",
+        "title": "DNA Result",
         "year": 2021,
-        "tconst": "tt14217360",
+        "tconst": "tt14130794",
         "votes": 0
       }
     ],
@@ -58929,10 +58930,10 @@
       "Comedy",
       "Drama",
       "Romance",
-      "Crime",
-      "Thriller",
       "Action",
-      "Biography"
+      "Biography",
+      "Crime",
+      "Thriller"
     ],
     "shared": [
       {
@@ -58974,11 +58975,11 @@
     "reunion_gap": 26,
     "shared_votes_max": 266,
     "genres": [
+      "Action",
+      "Biography",
       "Crime",
       "Drama",
       "Thriller",
-      "Action",
-      "Biography",
       "Romance"
     ],
     "shared": [
@@ -59198,11 +59199,11 @@
     "reunion_gap": 26,
     "shared_votes_max": 266,
     "genres": [
+      "Action",
+      "Biography",
       "Crime",
       "Drama",
-      "Thriller",
-      "Action",
-      "Biography"
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.026,
@@ -59229,9 +59230,9 @@
     "reunion_span": 13,
     "shared_votes_max": 3475,
     "genres": [
+      "Crime",
       "Drama",
-      "Romance",
-      "Crime"
+      "Romance"
     ],
     "shared": [],
     "loyalty_ab": 0.011,
@@ -59466,10 +59467,10 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
+      "Comedy",
       "Drama",
-      "Family",
       "Animation",
-      "Comedy"
+      "Family"
     ],
     "shared": [],
     "loyalty_ab": 0.019,
@@ -59574,10 +59575,10 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
       "Animation",
       "Comedy",
-      "Family"
+      "Family",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.011,
@@ -59716,10 +59717,10 @@
     "reunion_gap": 25,
     "shared_votes_max": 6298,
     "genres": [
-      "Comedy",
       "Crime",
-      "Mystery",
       "Drama",
+      "Comedy",
+      "Mystery",
       "Action"
     ],
     "shared": [],
@@ -59815,14 +59816,14 @@
     "reunion_gap": 25,
     "shared_votes_max": 6298,
     "genres": [
-      "Comedy",
       "Crime",
-      "Mystery",
+      "Drama",
+      "Thriller",
+      "Comedy",
+      "Action",
       "Animation",
       "Family",
-      "Action",
-      "Drama",
-      "Thriller"
+      "Mystery"
     ],
     "shared": [
       {
@@ -59973,11 +59974,11 @@
     "reunion_span": 14,
     "shared_votes_max": 3475,
     "genres": [
-      "Crime",
-      "Drama",
       "Animation",
       "Comedy",
-      "Family"
+      "Family",
+      "Crime",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.008,
@@ -60009,9 +60010,9 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
       "Comedy",
-      "Mystery"
+      "Mystery",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.023,
@@ -60108,8 +60109,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Comedy"
+      "Comedy",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.023,
@@ -60181,10 +60182,10 @@
     "reunion_gap": 24,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
-      "Family"
+      "Family",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.015,
@@ -60215,11 +60216,11 @@
     "reunion_gap": 22,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Mystery",
       "Drama",
-      "Family"
+      "Family",
+      "Comedy",
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.023,
@@ -60370,10 +60371,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
-      "Crime"
+      "Crime",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.028,
@@ -60512,10 +60513,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Biography",
-      "Crime",
       "Adventure",
-      "Comedy"
+      "Comedy",
+      "Biography",
+      "Crime"
     ],
     "shared": [
       {
@@ -60531,9 +60532,9 @@
         "votes": 11
       },
       {
-        "title": "Episode #1.186",
+        "title": "Episode #1.333",
         "year": 2001,
-        "tconst": "tt9106544",
+        "tconst": "tt9013020",
         "votes": 0
       }
     ],
@@ -60586,9 +60587,9 @@
         "votes": 18
       },
       {
-        "title": "Episode #1.12",
+        "title": "Episode #1.1",
         "year": 2000,
-        "tconst": "tt11495632",
+        "tconst": "tt11492028",
         "votes": 0
       }
     ],
@@ -60624,9 +60625,9 @@
       "Drama",
       "Romance",
       "Action",
-      "Adventure",
       "Biography",
-      "Crime"
+      "Crime",
+      "Adventure"
     ],
     "shared": [
       {
@@ -60671,7 +60672,7 @@
       "Biography",
       "Crime",
       "Comedy",
-      "Family"
+      "Romance"
     ],
     "shared": [
       {
@@ -60722,10 +60723,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
-      "Crime"
+      "Crime",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.028,
@@ -60946,10 +60947,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Biography",
-      "Crime",
       "Drama",
-      "Thriller"
+      "Thriller",
+      "Biography",
+      "Crime"
     ],
     "shared": [
       {
@@ -60959,15 +60960,15 @@
         "votes": 7
       },
       {
-        "title": "New Iris",
+        "title": "Lav-Ender",
         "year": 2025,
-        "tconst": "tt35252589",
+        "tconst": "tt35295473",
         "votes": 0
       },
       {
-        "title": "The Breakout",
+        "title": "A Mother's Dream",
         "year": 2025,
-        "tconst": "tt35295469",
+        "tconst": "tt35295464",
         "votes": 0
       }
     ],
@@ -61043,10 +61044,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
-      "Crime"
+      "Crime",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.028,
@@ -61190,9 +61191,9 @@
         "votes": 51
       },
       {
-        "title": "Episode #1.31",
+        "title": "Episode #1.3",
         "year": 2006,
-        "tconst": "tt9315650",
+        "tconst": "tt9312504",
         "votes": 0
       }
     ],
@@ -61312,9 +61313,9 @@
         "votes": 37
       },
       {
-        "title": "Baby",
+        "title": "Merrily Ever After",
         "year": 2022,
-        "tconst": "tt16985822",
+        "tconst": "tt17074914",
         "votes": 0
       }
     ],
@@ -61626,9 +61627,9 @@
       "Action",
       "Crime",
       "Drama",
-      "Biography",
       "Thriller",
-      "Family"
+      "Family",
+      "Biography"
     ],
     "shared": [
       {
@@ -61717,10 +61718,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Biography",
-      "Crime",
       "Adventure",
-      "Family"
+      "Family",
+      "Biography",
+      "Crime"
     ],
     "shared": [
       {
@@ -61770,21 +61771,21 @@
     ],
     "shared": [
       {
-        "title": "The Chase",
+        "title": "Huli sa akto",
         "year": 2017,
-        "tconst": "tt7605830",
+        "tconst": "tt7557116",
         "votes": 0
       },
       {
-        "title": "Full Force",
+        "title": "Lupit ni Pepe",
         "year": 2017,
-        "tconst": "tt7655068",
+        "tconst": "tt7582252",
         "votes": 0
       },
       {
-        "title": "Operation Submarine",
+        "title": "Tunay na ama",
         "year": 2017,
-        "tconst": "tt7591182",
+        "tconst": "tt7602996",
         "votes": 0
       }
     ],
@@ -61815,10 +61816,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
-      "Crime"
+      "Crime",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [
       {
@@ -61828,15 +61829,15 @@
         "votes": 66
       },
       {
-        "title": "Episode #1.18",
-        "year": 2013,
-        "tconst": "tt9017804",
-        "votes": 0
-      },
-      {
         "title": "Episode #1.31",
         "year": 2013,
         "tconst": "tt9021666",
+        "votes": 0
+      },
+      {
+        "title": "Episode #1.18",
+        "year": 2013,
+        "tconst": "tt9017804",
         "votes": 0
       }
     ],
@@ -61889,9 +61890,9 @@
         "votes": 30
       },
       {
-        "title": "Stakeout",
+        "title": "Bagong Trabaho",
         "year": 2026,
-        "tconst": "tt43649637",
+        "tconst": "tt43620746",
         "votes": 0
       }
     ],
@@ -62501,9 +62502,9 @@
     "shared_votes_max": 3275,
     "genres": [
       "Action",
+      "Western",
       "Drama",
-      "Romance",
-      "Western"
+      "Romance"
     ],
     "shared": [
       {
@@ -62791,8 +62792,8 @@
     "reunion_span": 16,
     "shared_votes_max": 3275,
     "genres": [
-      "Western",
       "Action",
+      "Western",
       "Family",
       "Drama"
     ],
@@ -63082,8 +63083,8 @@
     "shared_votes_max": 114,
     "genres": [
       "Drama",
-      "Family",
-      "Western"
+      "Western",
+      "Family"
     ],
     "shared": [
       {
@@ -63431,8 +63432,8 @@
     "reunion_span": 10,
     "shared_votes_max": 3275,
     "genres": [
-      "Western",
       "Family",
+      "Western",
       "Action",
       "Drama"
     ],
@@ -63620,8 +63621,8 @@
     "reunion_span": 11,
     "shared_votes_max": 152,
     "genres": [
-      "Western",
       "Comedy",
+      "Western",
       "Drama"
     ],
     "shared": [
@@ -64042,8 +64043,8 @@
     "genres": [
       "Action",
       "Crime",
-      "Comedy",
       "Drama",
+      "Comedy",
       "Thriller"
     ],
     "shared": [],
@@ -64114,9 +64115,9 @@
     "shared_votes_max": 897,
     "genres": [
       "Crime",
+      "Action",
       "Drama",
-      "Thriller",
-      "Action"
+      "Thriller"
     ],
     "shared": [
       {
@@ -64156,8 +64157,8 @@
     "genres": [
       "Action",
       "Crime",
-      "Comedy",
       "Drama",
+      "Comedy",
       "Thriller"
     ],
     "shared": [
@@ -64313,9 +64314,9 @@
     "genres": [
       "Family",
       "Crime",
-      "Comedy",
       "Action",
       "Drama",
+      "Comedy",
       "Thriller"
     ],
     "shared": [],
@@ -64345,10 +64346,10 @@
     "reunion_span": 18,
     "shared_votes_max": 6298,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
       "Thriller",
+      "Action",
       "Comedy"
     ],
     "shared": [
@@ -64442,9 +64443,9 @@
     "genres": [
       "Action",
       "Crime",
-      "Comedy",
       "Drama",
-      "Thriller"
+      "Thriller",
+      "Comedy"
     ],
     "shared": [
       {
@@ -64488,10 +64489,10 @@
     "reunion_gap": 27,
     "shared_votes_max": 6298,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
       "Thriller",
+      "Action",
       "Comedy"
     ],
     "shared": [
@@ -64686,9 +64687,9 @@
     "shared_votes_max": 6298,
     "genres": [
       "Crime",
-      "Comedy",
       "Action",
       "Drama",
+      "Comedy",
       "Thriller"
     ],
     "shared": [],
@@ -64759,9 +64760,9 @@
     "shared_votes_max": 6298,
     "genres": [
       "Crime",
-      "Comedy",
       "Action",
       "Drama",
+      "Comedy",
       "Thriller"
     ],
     "shared": [],
@@ -64858,8 +64859,8 @@
       "Crime",
       "Drama",
       "Mystery",
-      "Comedy",
       "Action",
+      "Comedy",
       "Thriller"
     ],
     "shared": [],
@@ -65118,8 +65119,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Thriller"
+      "Thriller",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.024,
@@ -65150,10 +65151,10 @@
     "reunion_gap": 25,
     "shared_votes_max": 6298,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
-      "Thriller"
+      "Thriller",
+      "Action"
     ],
     "shared": [
       {
@@ -65220,8 +65221,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Thriller"
+      "Thriller",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.016,
@@ -65253,9 +65254,9 @@
     "shared_votes_max": 6298,
     "genres": [
       "Crime",
-      "Action",
       "Drama",
       "Mystery",
+      "Action",
       "Thriller"
     ],
     "shared": [],
@@ -65285,10 +65286,10 @@
     "reunion_span": 19,
     "shared_votes_max": 6298,
     "genres": [
-      "Comedy",
       "Crime",
-      "Thriller",
       "Drama",
+      "Thriller",
+      "Comedy",
       "Action"
     ],
     "shared": [],
@@ -65419,8 +65420,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Thriller"
+      "Thriller",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.016,
@@ -65481,8 +65482,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Thriller",
-      "Drama"
+      "Drama",
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.024,
@@ -65511,9 +65512,9 @@
     "reunion_span": 19,
     "shared_votes_max": 6298,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
+      "Comedy",
       "Action"
     ],
     "shared": [
@@ -65627,8 +65628,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Thriller",
-      "Drama"
+      "Drama",
+      "Thriller"
     ],
     "shared": [
       {
@@ -65672,9 +65673,9 @@
     "reunion_gap": 25,
     "shared_votes_max": 6298,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
+      "Action",
       "Thriller"
     ],
     "shared": [],
@@ -65842,9 +65843,9 @@
     "shared_votes_max": 6298,
     "genres": [
       "Crime",
-      "Action",
       "Drama",
-      "Mystery"
+      "Mystery",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.02,
@@ -66047,13 +66048,13 @@
     "reunion_gap": 34,
     "shared_votes_max": 266,
     "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Biography",
       "Crime",
       "Drama",
-      "Thriller"
+      "Thriller",
+      "Action",
+      "Biography",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [
       {
@@ -66131,11 +66132,11 @@
     "reunion_gap": 34,
     "shared_votes_max": 266,
     "genres": [
+      "Action",
+      "Biography",
       "Crime",
       "Drama",
-      "Thriller",
-      "Action",
-      "Biography"
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.04,
@@ -66165,9 +66166,9 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
+      "Comedy",
       "Biography",
       "Crime",
-      "Comedy",
       "Drama",
       "History"
     ],
@@ -66219,13 +66220,13 @@
     "reunion_gap": 29,
     "shared_votes_max": 266,
     "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
       "Crime",
       "Drama",
       "Thriller",
-      "Action",
-      "Biography",
-      "Adventure",
-      "Comedy"
+      "Biography"
     ],
     "shared": [],
     "loyalty_ab": 0.04,
@@ -66298,13 +66299,13 @@
     "reunion_gap": 34,
     "shared_votes_max": 266,
     "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Biography",
       "Crime",
       "Drama",
-      "Thriller"
+      "Thriller",
+      "Action",
+      "Biography",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [
       {
@@ -67368,15 +67369,15 @@
         "votes": 62
       },
       {
-        "title": "Episode #1.311",
+        "title": "Episode #1.332",
         "year": 2023,
-        "tconst": "tt26423790",
+        "tconst": "tt26759949",
         "votes": 0
       },
       {
-        "title": "Episode #1.385",
+        "title": "Episode #1.402",
         "year": 2023,
-        "tconst": "tt27690380",
+        "tconst": "tt27867686",
         "votes": 0
       }
     ],
@@ -67610,9 +67611,9 @@
       "Action",
       "Biography",
       "Crime",
+      "Drama",
       "Adventure",
       "Fantasy",
-      "Drama",
       "Thriller"
     ],
     "shared": [
@@ -67709,15 +67710,15 @@
         "votes": 26
       },
       {
-        "title": "Matira matibay",
+        "title": "Huli ka",
         "year": 2020,
-        "tconst": "tt11640758",
+        "tconst": "tt11655678",
         "votes": 0
       },
       {
-        "title": "Red Lotus",
+        "title": "Brie vs Kitkat",
         "year": 2020,
-        "tconst": "tt11604942",
+        "tconst": "tt11560026",
         "votes": 0
       }
     ],
@@ -67890,11 +67891,11 @@
     "reunion_span": 4,
     "shared_votes_max": 1562,
     "genres": [
-      "Comedy",
-      "Drama",
-      "Music",
       "Crime",
-      "Fantasy"
+      "Drama",
+      "Fantasy",
+      "Comedy",
+      "Music"
     ],
     "shared": [
       {
@@ -67904,9 +67905,9 @@
         "votes": 55
       },
       {
-        "title": "Episode #1.2",
+        "title": "Episode #1.3",
         "year": 2008,
-        "tconst": "tt1305416",
+        "tconst": "tt1305417",
         "votes": 0
       },
       {
@@ -67942,12 +67943,12 @@
     "reunion_span": 12,
     "shared_votes_max": 127,
     "genres": [
-      "Drama",
-      "Crime",
-      "Mystery",
       "Comedy",
+      "Drama",
       "Romance",
-      "Fantasy"
+      "Crime",
+      "Fantasy",
+      "Mystery"
     ],
     "shared": [
       {
@@ -67997,8 +67998,8 @@
     "genres": [
       "Comedy",
       "Drama",
-      "Music",
-      "Romance"
+      "Romance",
+      "Music"
     ],
     "shared": [
       {
@@ -68014,9 +68015,9 @@
         "votes": 8
       },
       {
-        "title": "Episode #1.165",
+        "title": "Episode #1.182",
         "year": 2018,
-        "tconst": "tt8644392",
+        "tconst": "tt8728942",
         "votes": 0
       }
     ],
@@ -68059,15 +68060,15 @@
         "votes": 53
       },
       {
-        "title": "Episode #1.346",
+        "title": "Episode #1.361",
         "year": 2013,
-        "tconst": "tt2674634",
+        "tconst": "tt2762986",
         "votes": 0
       },
       {
-        "title": "Episode #1.344",
+        "title": "Episode #1.303",
         "year": 2013,
-        "tconst": "tt2674624",
+        "tconst": "tt2613614",
         "votes": 0
       }
     ],
@@ -68564,12 +68565,12 @@
     "reunion_gap": 25,
     "shared_votes_max": 6298,
     "genres": [
-      "Animation",
-      "Comedy",
-      "Family",
       "Crime",
       "Drama",
       "Thriller",
+      "Animation",
+      "Comedy",
+      "Family",
       "Action"
     ],
     "shared": [],
@@ -68605,10 +68606,10 @@
       "Animation",
       "Comedy",
       "Family",
-      "Fantasy",
       "Action",
       "Crime",
-      "Drama"
+      "Drama",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -69108,9 +69109,9 @@
     "shared_votes_max": 3275,
     "genres": [
       "Drama",
+      "Action",
       "Western",
-      "Comedy",
-      "Action"
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.147,
@@ -69172,8 +69173,8 @@
     "genres": [
       "Action",
       "Western",
-      "Drama",
-      "Crime"
+      "Crime",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.059,
@@ -69375,8 +69376,8 @@
       "Comedy",
       "Drama",
       "Family",
-      "Music",
-      "Romance"
+      "Romance",
+      "Music"
     ],
     "shared": [
       {
@@ -69648,13 +69649,13 @@
     "reunion_span": 18,
     "shared_votes_max": 266,
     "genres": [
-      "Comedy",
       "Drama",
+      "Comedy",
       "Music",
-      "Action",
-      "Biography",
       "Crime",
-      "Horror"
+      "Horror",
+      "Action",
+      "Biography"
     ],
     "shared": [
       {
@@ -69702,10 +69703,10 @@
     "reunion_span": 18,
     "shared_votes_max": 266,
     "genres": [
-      "Romance",
       "Comedy",
       "Drama",
       "Music",
+      "Romance",
       "Action",
       "Biography",
       "Crime"
@@ -69750,8 +69751,8 @@
     "reunion_span": 18,
     "shared_votes_max": 266,
     "genres": [
-      "Comedy",
       "Drama",
+      "Comedy",
       "Music",
       "Action",
       "Biography",
@@ -70018,10 +70019,10 @@
     "reunion_gap": 34,
     "shared_votes_max": 3475,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
-      "Thriller"
+      "Thriller",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.042,
@@ -70052,9 +70053,9 @@
     "reunion_gap": 33,
     "shared_votes_max": 3475,
     "genres": [
-      "Action",
       "Crime",
-      "Drama"
+      "Drama",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.025,
@@ -70088,8 +70089,8 @@
       "Crime",
       "Drama",
       "Thriller",
-      "Action",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.05,
@@ -70219,9 +70220,9 @@
     "reunion_gap": 35,
     "shared_votes_max": 3475,
     "genres": [
-      "Action",
       "Crime",
-      "Drama"
+      "Drama",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.025,
@@ -70512,8 +70513,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Action"
+      "Action",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.025,
@@ -70671,8 +70672,8 @@
     "shared_votes_max": 3275,
     "genres": [
       "Drama",
-      "Western",
-      "Action"
+      "Action",
+      "Western"
     ],
     "shared": [
       {
@@ -70762,8 +70763,8 @@
       "Western",
       "Action",
       "Adventure",
-      "Crime",
-      "Drama"
+      "Drama",
+      "Crime"
     ],
     "shared": [
       {
@@ -71099,10 +71100,10 @@
     "genres": [
       "Drama",
       "Action",
-      "Biography",
-      "Crime",
       "Adventure",
-      "Comedy"
+      "Comedy",
+      "Biography",
+      "Crime"
     ],
     "shared": [
       {
@@ -71249,10 +71250,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
-      "Crime"
+      "Crime",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.049,
@@ -71284,10 +71285,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
       "Crime",
+      "Adventure",
+      "Comedy",
       "Drama",
       "Romance"
     ],
@@ -71685,15 +71686,15 @@
         "votes": 24
       },
       {
-        "title": "Ausbruch",
+        "title": "Geiselnahme",
         "year": 2014,
-        "tconst": "tt3719508",
+        "tconst": "tt3663044",
         "votes": 0
       },
       {
-        "title": "Sterbehilfe",
+        "title": "Verräter",
         "year": 2014,
-        "tconst": "tt3644014",
+        "tconst": "tt3649592",
         "votes": 0
       }
     ],
@@ -71861,12 +71862,12 @@
     "reunion_gap": 27,
     "shared_votes_max": 884,
     "genres": [
-      "Crime",
       "Drama",
+      "Crime",
       "Comedy",
+      "Mystery",
       "Romance",
-      "Thriller",
-      "Mystery"
+      "Thriller"
     ],
     "shared": [
       {
@@ -72060,11 +72061,11 @@
     "reunion_gap": 27,
     "shared_votes_max": 406,
     "genres": [
-      "Comedy",
       "Crime",
-      "Mystery",
       "Drama",
-      "Thriller"
+      "Thriller",
+      "Comedy",
+      "Mystery"
     ],
     "shared": [
       {
@@ -72106,9 +72107,9 @@
     "reunion_span": 18,
     "shared_votes_max": 897,
     "genres": [
-      "Crime",
       "Drama",
       "Romance",
+      "Crime",
       "Thriller"
     ],
     "shared": [],
@@ -72181,8 +72182,8 @@
       "Drama",
       "Romance",
       "Crime",
-      "Thriller",
-      "Comedy"
+      "Comedy",
+      "Thriller"
     ],
     "shared": [
       {
@@ -72395,7 +72396,8 @@
     "loyalty_ba": 0.038,
     "tenure_overlap": 0.558,
     "same_era": true,
-    "edge_genre_jaccard": 1.0
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm0695395",
@@ -72632,9 +72634,9 @@
         "votes": 29
       },
       {
-        "title": "Recovery",
+        "title": "Bisita",
         "year": 2025,
-        "tconst": "tt36999057",
+        "tconst": "tt36363405",
         "votes": 0
       }
     ],
@@ -72899,8 +72901,8 @@
     "reunion_gap": 25,
     "shared_votes_max": 6298,
     "genres": [
-      "Crime",
       "Action",
+      "Crime",
       "Drama",
       "Mystery",
       "Thriller"
@@ -73000,11 +73002,11 @@
     "reunion_gap": 25,
     "shared_votes_max": 6298,
     "genres": [
-      "Action",
       "Crime",
       "Family",
       "Drama",
-      "Thriller"
+      "Thriller",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.023,
@@ -73422,8 +73424,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Family",
       "Drama",
+      "Family",
       "Thriller",
       "Comedy"
     ],
@@ -73691,8 +73693,8 @@
     "reunion_span": 13,
     "shared_votes_max": 6298,
     "genres": [
-      "Crime",
       "Action",
+      "Crime",
       "Drama",
       "Thriller"
     ],
@@ -73792,9 +73794,9 @@
       "Action",
       "Crime",
       "Drama",
-      "Biography",
       "Adventure",
-      "Comedy"
+      "Comedy",
+      "Biography"
     ],
     "shared": [
       {
@@ -74076,9 +74078,9 @@
       "Action",
       "Adventure",
       "Comedy",
+      "Crime",
       "Drama",
       "Romance",
-      "Crime",
       "Biography",
       "Thriller"
     ],
@@ -74185,21 +74187,21 @@
     ],
     "shared": [
       {
-        "title": "Ghosted: Truth and Lies",
-        "year": 2023,
-        "tconst": "tt30607846",
-        "votes": 0
-      },
-      {
         "title": "Ghosted: Pilot",
         "year": 2023,
         "tconst": "tt30195062",
         "votes": 0
       },
       {
-        "title": "Ghosted: Finale",
+        "title": "Ghosted: Secrets",
         "year": 2023,
-        "tconst": "tt30750339",
+        "tconst": "tt30472723",
+        "votes": 0
+      },
+      {
+        "title": "Ghosted: Hottie and Nottie",
+        "year": 2023,
+        "tconst": "tt30274231",
         "votes": 0
       }
     ],
@@ -74234,6 +74236,12 @@
     ],
     "shared": [
       {
+        "title": "Bubble Gang's Extra Challenge Episode",
+        "year": 2005,
+        "tconst": "tt0533026",
+        "votes": 0
+      },
+      {
         "title": "Alfred, Alicia, Bearwin",
         "year": 2005,
         "tconst": "tt0533023",
@@ -74243,12 +74251,6 @@
         "title": "Bubble Gang's Musical Special",
         "year": 2005,
         "tconst": "tt0533027",
-        "votes": 0
-      },
-      {
-        "title": "Episode dated 24 June 2005",
-        "year": 2005,
-        "tconst": "tt0533021",
         "votes": 0
       }
     ],
@@ -74313,8 +74315,8 @@
       "Action",
       "Crime",
       "Drama",
-      "Biography",
       "Comedy",
+      "Biography",
       "Romance"
     ],
     "shared": [
@@ -74331,9 +74333,9 @@
         "votes": 47
       },
       {
-        "title": "Beauty and the Beast",
+        "title": "Rent",
         "year": 2010,
-        "tconst": "tt1629472",
+        "tconst": "tt1646462",
         "votes": 0
       }
     ],
@@ -74364,10 +74366,10 @@
     "shared_votes_max": 247,
     "genres": [
       "Action",
-      "Biography",
-      "Crime",
       "Drama",
-      "Fantasy"
+      "Fantasy",
+      "Biography",
+      "Crime"
     ],
     "shared": [
       {
@@ -74377,15 +74379,15 @@
         "votes": 31
       },
       {
-        "title": "Eduardo",
+        "title": "Elektra",
         "year": 2010,
-        "tconst": "tt1574037",
+        "tconst": "tt1584210",
         "votes": 0
       },
       {
-        "title": "Serpentina",
+        "title": "Apollo",
         "year": 2010,
-        "tconst": "tt1580930",
+        "tconst": "tt1586815",
         "votes": 0
       }
     ],
@@ -74448,12 +74450,12 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
       "Crime",
       "Drama",
-      "Thriller"
+      "Thriller",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.028,
@@ -74483,10 +74485,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Biography",
-      "Crime",
       "Adventure",
-      "Comedy"
+      "Comedy",
+      "Biography",
+      "Crime"
     ],
     "shared": [],
     "loyalty_ab": 0.019,
@@ -74691,11 +74693,11 @@
     "reunion_gap": 21,
     "shared_votes_max": 3475,
     "genres": [
+      "Crime",
+      "Drama",
       "Animation",
       "Comedy",
-      "Family",
-      "Crime",
-      "Drama"
+      "Family"
     ],
     "shared": [],
     "loyalty_ab": 0.012,
@@ -74826,8 +74828,8 @@
     "reunion_gap": 31,
     "shared_votes_max": 3475,
     "genres": [
-      "Drama",
-      "Crime"
+      "Crime",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.021,
@@ -75174,9 +75176,9 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
+      "Comedy",
       "Drama",
-      "Thriller",
-      "Comedy"
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.017,
@@ -75207,9 +75209,9 @@
     "reunion_gap": 43,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
+      "Comedy",
       "Romance"
     ],
     "shared": [],
@@ -75274,10 +75276,10 @@
     "reunion_gap": 28,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
-      "Family"
+      "Family",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.012,
@@ -75309,8 +75311,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Family",
       "Drama",
+      "Family",
       "Comedy"
     ],
     "shared": [],
@@ -75438,10 +75440,10 @@
     "reunion_gap": 24,
     "shared_votes_max": 3475,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
       "Thriller",
+      "Action",
       "Comedy",
       "Mystery"
     ],
@@ -75594,9 +75596,9 @@
     "genres": [
       "Comedy",
       "Crime",
+      "Action",
       "Drama",
       "Mystery",
-      "Action",
       "Thriller"
     ],
     "shared": [
@@ -75638,8 +75640,8 @@
       "Crime",
       "Drama",
       "Mystery",
-      "Thriller",
-      "Action"
+      "Action",
+      "Thriller"
     ],
     "shared": [
       {
@@ -75752,10 +75754,10 @@
     "reunion_gap": 22,
     "shared_votes_max": 3475,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
       "Thriller",
+      "Action",
       "Comedy"
     ],
     "shared": [
@@ -76520,8 +76522,8 @@
     "shared_votes_max": 4355,
     "genres": [
       "Drama",
-      "Western",
       "Family",
+      "Western",
       "Adventure"
     ],
     "shared": [
@@ -76706,8 +76708,8 @@
       "Crime",
       "Drama",
       "Thriller",
-      "Action",
       "Comedy",
+      "Action",
       "Mystery"
     ],
     "shared": [],
@@ -76875,10 +76877,10 @@
     "reunion_gap": 35,
     "shared_votes_max": 6298,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
       "Thriller",
+      "Action",
       "Comedy"
     ],
     "shared": [],
@@ -77244,11 +77246,11 @@
     "reunion_gap": 40,
     "shared_votes_max": 3475,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
-      "Romance",
-      "Mystery"
+      "Action",
+      "Mystery",
+      "Romance"
     ],
     "shared": [],
     "loyalty_ab": 0.017,
@@ -77279,10 +77281,10 @@
     "reunion_gap": 39,
     "shared_votes_max": 6298,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
       "Thriller",
+      "Comedy",
       "Action",
       "Romance",
       "Mystery"
@@ -77673,11 +77675,11 @@
     "reunion_gap": 24,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
       "Crime",
-      "Mystery"
+      "Drama",
+      "Mystery",
+      "Comedy",
+      "Romance"
     ],
     "shared": [],
     "loyalty_ab": 0.028,
@@ -77739,10 +77741,10 @@
     "reunion_gap": 22,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
       "Animation",
+      "Comedy",
       "Family"
     ],
     "shared": [],
@@ -77772,11 +77774,11 @@
     "reunion_span": 5,
     "shared_votes_max": 3475,
     "genres": [
+      "Crime",
+      "Drama",
       "Animation",
       "Comedy",
-      "Family",
-      "Crime",
-      "Drama"
+      "Family"
     ],
     "shared": [],
     "loyalty_ab": 0.014,
@@ -78064,10 +78066,10 @@
     "reunion_gap": 24,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
       "Thriller",
+      "Comedy",
       "Mystery"
     ],
     "shared": [],
@@ -78097,9 +78099,9 @@
     "reunion_span": 6,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.009,
@@ -78294,8 +78296,8 @@
       "Crime",
       "Thriller",
       "Drama",
-      "Comedy",
-      "Action"
+      "Action",
+      "Comedy"
     ],
     "shared": [
       {
@@ -78473,8 +78475,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Thriller",
       "Drama",
+      "Thriller",
       "Romance"
     ],
     "shared": [],
@@ -78541,8 +78543,8 @@
     "reunion_span": 9,
     "shared_votes_max": 3475,
     "genres": [
-      "Crime",
       "Comedy",
+      "Crime",
       "Drama"
     ],
     "shared": [],
@@ -78753,10 +78755,10 @@
     "reunion_gap": 22,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama",
       "Thriller",
+      "Drama",
+      "Comedy",
       "Romance"
     ],
     "shared": [],
@@ -78885,9 +78887,9 @@
     "reunion_gap": 20,
     "shared_votes_max": 3475,
     "genres": [
+      "Comedy",
       "Crime",
-      "Drama",
-      "Comedy"
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.014,
@@ -78918,8 +78920,8 @@
     "genres": [
       "Drama",
       "Romance",
-      "Crime",
-      "Comedy"
+      "Comedy",
+      "Crime"
     ],
     "shared": [],
     "loyalty_ab": 0.014,
@@ -78978,9 +78980,9 @@
     "reunion_span": 17,
     "shared_votes_max": 266,
     "genres": [
-      "Crime",
       "Drama",
       "Romance",
+      "Crime",
       "Action",
       "Biography",
       "Comedy",
@@ -79189,9 +79191,9 @@
       "Drama",
       "Music",
       "Action",
+      "Adventure",
       "Biography",
-      "Crime",
-      "Adventure"
+      "Crime"
     ],
     "shared": [
       {
@@ -79305,13 +79307,13 @@
     "reunion_gap": 27,
     "shared_votes_max": 6298,
     "genres": [
-      "Action",
-      "Crime",
       "Comedy",
       "Romance",
+      "Crime",
       "Drama",
       "Family",
-      "Thriller"
+      "Thriller",
+      "Action"
     ],
     "shared": [
       {
@@ -79327,9 +79329,9 @@
         "votes": 52
       },
       {
-        "title": "Soko Townhouse",
+        "title": "Machtspiele",
         "year": 2007,
-        "tconst": "tt1444733",
+        "tconst": "tt1438734",
         "votes": 0
       }
     ],
@@ -79363,9 +79365,9 @@
     "genres": [
       "Crime",
       "Drama",
-      "Action",
       "Comedy",
-      "Romance"
+      "Romance",
+      "Action"
     ],
     "shared": [
       {
@@ -79403,10 +79405,10 @@
     "reunion_gap": 26,
     "shared_votes_max": 3475,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
       "Thriller",
+      "Action",
       "Romance"
     ],
     "shared": [],
@@ -79715,8 +79717,8 @@
     "genres": [
       "Crime",
       "Drama",
-      "Thriller",
-      "Family"
+      "Family",
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.01,
@@ -79798,9 +79800,9 @@
     "reunion_span": 17,
     "shared_votes_max": 3475,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
+      "Action",
       "Romance"
     ],
     "shared": [],
@@ -79961,8 +79963,8 @@
     "genres": [
       "Crime",
       "Drama",
-      "Comedy",
-      "Family"
+      "Family",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.015,
@@ -79993,13 +79995,13 @@
     "reunion_gap": 42,
     "shared_votes_max": 6298,
     "genres": [
-      "Action",
       "Crime",
+      "Action",
       "Drama",
       "Comedy",
       "Mystery",
-      "Thriller",
-      "Family"
+      "Family",
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.033,
@@ -80066,10 +80068,10 @@
     "reunion_gap": 41,
     "shared_votes_max": 3475,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
       "Thriller",
+      "Action",
       "Mystery",
       "Comedy"
     ],
@@ -80124,8 +80126,8 @@
       "Crime",
       "Drama",
       "Thriller",
-      "Comedy",
       "Action",
+      "Comedy",
       "Mystery"
     ],
     "shared": [
@@ -80438,10 +80440,10 @@
     "reunion_gap": 34,
     "shared_votes_max": 6298,
     "genres": [
+      "Family",
       "Action",
       "Comedy",
       "Crime",
-      "Family",
       "Drama",
       "Thriller"
     ],
@@ -80509,8 +80511,8 @@
     "genres": [
       "Drama",
       "Romance",
-      "Action",
       "Crime",
+      "Action",
       "Mystery",
       "Comedy",
       "Thriller"
@@ -80777,10 +80779,10 @@
     "reunion_gap": 20,
     "shared_votes_max": 3475,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
       "Thriller",
+      "Action",
       "Romance",
       "Mystery",
       "Comedy"
@@ -80821,11 +80823,11 @@
     "reunion_gap": 24,
     "shared_votes_max": 6298,
     "genres": [
-      "Action",
       "Crime",
+      "Drama",
+      "Action",
       "Comedy",
-      "Mystery",
-      "Drama"
+      "Mystery"
     ],
     "shared": [],
     "loyalty_ab": 0.022,
@@ -80966,8 +80968,8 @@
     "genres": [
       "Drama",
       "Romance",
-      "Thriller",
-      "Crime"
+      "Crime",
+      "Thriller"
     ],
     "shared": [
       {
@@ -81120,13 +81122,13 @@
     "reunion_gap": 21,
     "shared_votes_max": 6298,
     "genres": [
+      "Comedy",
+      "Crime",
+      "Action",
       "Drama",
       "Romance",
-      "Action",
-      "Crime",
-      "Comedy",
-      "Thriller",
-      "Family"
+      "Family",
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.02,
@@ -81208,8 +81210,8 @@
       "Romance",
       "Crime",
       "Mystery",
-      "Action",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [
       {
@@ -81583,8 +81585,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Action"
+      "Action",
+      "Drama"
     ],
     "shared": [
       {
@@ -82127,9 +82129,9 @@
         "votes": 9
       },
       {
-        "title": "Disgrasya",
+        "title": "Exposé",
         "year": 2026,
-        "tconst": "tt40416166",
+        "tconst": "tt41600647",
         "votes": 0
       }
     ],
@@ -82202,9 +82204,9 @@
       "Action",
       "Crime",
       "Drama",
-      "Biography",
       "Adventure",
-      "Comedy"
+      "Comedy",
+      "Biography"
     ],
     "shared": [],
     "loyalty_ab": 0.06,
@@ -82406,10 +82408,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
-      "Crime"
+      "Crime",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.03,
@@ -82540,27 +82542,27 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
+      "Action",
       "Drama",
-      "Thriller",
-      "Action"
+      "Thriller"
     ],
     "shared": [
-      {
-        "title": "Schlagende Beweise",
-        "year": 1995,
-        "tconst": "tt0841676",
-        "votes": 0
-      },
-      {
-        "title": "Saison in Wildow",
-        "year": 1995,
-        "tconst": "tt0841675",
-        "votes": 0
-      },
       {
         "title": "Jung und dynamisch",
         "year": 1995,
         "tconst": "tt0841672",
+        "votes": 0
+      },
+      {
+        "title": "Zur Kasse gebeten",
+        "year": 1995,
+        "tconst": "tt0841678",
+        "votes": 0
+      },
+      {
+        "title": "Kanzlei Bürger",
+        "year": 1995,
+        "tconst": "tt0112030",
         "votes": 0
       }
     ],
@@ -82757,9 +82759,9 @@
     "reunion_gap": 30,
     "shared_votes_max": 3475,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
+      "Action",
       "Mystery"
     ],
     "shared": [],
@@ -82931,10 +82933,10 @@
     "reunion_gap": 25,
     "shared_votes_max": 884,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
       "Thriller",
+      "Action",
       "Romance"
     ],
     "shared": [],
@@ -83140,21 +83142,21 @@
     ],
     "shared": [
       {
-        "title": "Episode #1.38",
+        "title": "Episode #2.64",
         "year": 2019,
-        "tconst": "tt9522390",
+        "tconst": "tt10334490",
         "votes": 0
       },
       {
-        "title": "Episode #2.22",
+        "title": "Episode #2.21",
         "year": 2019,
-        "tconst": "tt10101208",
+        "tconst": "tt10101206",
         "votes": 0
       },
       {
-        "title": "Episode #2.79",
+        "title": "Episode #2.33",
         "year": 2019,
-        "tconst": "tt10443840",
+        "tconst": "tt10142598",
         "votes": 0
       }
     ],
@@ -83206,9 +83208,9 @@
         "votes": 56
       },
       {
-        "title": "Episode #1.294",
+        "title": "Episode #1.454",
         "year": 2023,
-        "tconst": "tt24973144",
+        "tconst": "tt28636260",
         "votes": 0
       }
     ],
@@ -83310,9 +83312,9 @@
         "votes": 79
       },
       {
-        "title": "Episode #1.209",
+        "title": "Episode #1.268",
         "year": 2012,
-        "tconst": "tt2164637",
+        "tconst": "tt2289229",
         "votes": 0
       }
     ],
@@ -83577,8 +83579,8 @@
       "Crime",
       "Action",
       "Drama",
-      "Thriller",
-      "Mystery"
+      "Mystery",
+      "Thriller"
     ],
     "shared": [
       {
@@ -83614,9 +83616,9 @@
     "reunion_span": 17,
     "shared_votes_max": 298,
     "genres": [
-      "Action",
       "Crime",
       "Drama",
+      "Action",
       "Comedy"
     ],
     "shared": [],
@@ -83646,11 +83648,11 @@
     "reunion_span": 11,
     "shared_votes_max": 3475,
     "genres": [
-      "Crime",
-      "Drama",
       "Animation",
       "Comedy",
-      "Family"
+      "Family",
+      "Crime",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.005,
@@ -83680,8 +83682,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
       "Comedy",
+      "Drama",
       "Mystery"
     ],
     "shared": [],
@@ -83712,8 +83714,8 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
-      "Comedy"
+      "Comedy",
+      "Drama"
     ],
     "shared": [
       {
@@ -83783,9 +83785,9 @@
     "reunion_span": 15,
     "shared_votes_max": 3475,
     "genres": [
-      "Action",
       "Crime",
-      "Drama"
+      "Drama",
+      "Action"
     ],
     "shared": [],
     "loyalty_ab": 0.015,
@@ -83819,8 +83821,8 @@
       "Crime",
       "Drama",
       "Thriller",
-      "Action",
-      "Comedy"
+      "Comedy",
+      "Action"
     ],
     "shared": [
       {
@@ -83938,9 +83940,9 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
-      "Drama",
       "Comedy",
-      "Mystery"
+      "Mystery",
+      "Drama"
     ],
     "shared": [],
     "loyalty_ab": 0.01,
@@ -83971,10 +83973,10 @@
     "reunion_gap": 20,
     "shared_votes_max": 6298,
     "genres": [
-      "Action",
       "Crime",
-      "Drama",
       "Comedy",
+      "Action",
+      "Drama",
       "Thriller"
     ],
     "shared": [],
@@ -84225,9 +84227,9 @@
     "shared_votes_max": 3475,
     "genres": [
       "Crime",
+      "Comedy",
       "Action",
       "Drama",
-      "Comedy",
       "Thriller"
     ],
     "shared": [],
@@ -84299,11 +84301,11 @@
     "reunion_gap": 46,
     "shared_votes_max": 3475,
     "genres": [
+      "Crime",
+      "Drama",
       "Animation",
       "Comedy",
-      "Family",
-      "Crime",
-      "Drama"
+      "Family"
     ],
     "shared": [],
     "loyalty_ab": 0.007,
@@ -84516,9 +84518,9 @@
         "votes": 16
       },
       {
-        "title": "Der Heiner kommt",
+        "title": "Aus Vertrauen zubereitet",
         "year": 2018,
-        "tconst": "tt9551324",
+        "tconst": "tt9551346",
         "votes": 15
       }
     ],
@@ -85203,8 +85205,8 @@
     "genres": [
       "Crime",
       "Drama",
-      "Comedy",
-      "Action"
+      "Action",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.022,
@@ -85268,9 +85270,9 @@
     "shared_votes_max": 6298,
     "genres": [
       "Crime",
-      "Comedy",
       "Action",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.019,
@@ -86304,9 +86306,9 @@
     "reunion_span": 18,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.038,
@@ -86519,12 +86521,12 @@
     "reunion_span": 3,
     "shared_votes_max": 266,
     "genres": [
-      "Action",
-      "Biography",
-      "Crime",
       "Comedy",
       "Drama",
-      "Family"
+      "Family",
+      "Action",
+      "Biography",
+      "Crime"
     ],
     "shared": [
       {
@@ -86562,9 +86564,9 @@
     "reunion_gap": 20,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.022,
@@ -86803,11 +86805,11 @@
     "reunion_gap": 22,
     "shared_votes_max": 266,
     "genres": [
+      "Action",
+      "Biography",
       "Crime",
       "Drama",
-      "Thriller",
-      "Action",
-      "Biography"
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.026,
@@ -86903,9 +86905,9 @@
         "votes": 24
       },
       {
-        "title": "Ang pagtatagpo nina Diana at Natasha",
+        "title": "Bernadette, lalong lumakas ang loob",
         "year": 2012,
-        "tconst": "tt2200405",
+        "tconst": "tt2153866",
         "votes": 0
       }
     ],
@@ -87083,21 +87085,21 @@
     ],
     "shared": [
       {
-        "title": "Love Lost",
+        "title": "Possessive",
         "year": 2016,
-        "tconst": "tt5378576",
+        "tconst": "tt5370812",
         "votes": 0
       },
       {
-        "title": "I'm Sorry",
+        "title": "Finale",
         "year": 2016,
-        "tconst": "tt5337352",
+        "tconst": "tt5396786",
         "votes": 0
       },
       {
-        "title": "Rivalry",
+        "title": "Amore",
         "year": 2016,
-        "tconst": "tt5373006",
+        "tconst": "tt5338350",
         "votes": 0
       }
     ],
@@ -87164,11 +87166,11 @@
     "reunion_gap": 22,
     "shared_votes_max": 266,
     "genres": [
+      "Action",
+      "Biography",
       "Crime",
       "Drama",
-      "Thriller",
-      "Action",
-      "Biography"
+      "Thriller"
     ],
     "shared": [],
     "loyalty_ab": 0.026,
@@ -87403,15 +87405,15 @@
         "votes": 177
       },
       {
-        "title": "Episode #1.8",
-        "year": 2023,
-        "tconst": "tt38177137",
-        "votes": 0
-      },
-      {
         "title": "Episode #1.54",
         "year": 2023,
         "tconst": "tt38177261",
+        "votes": 0
+      },
+      {
+        "title": "Episode #1.27",
+        "year": 2023,
+        "tconst": "tt38177228",
         "votes": 0
       }
     ],
@@ -87458,9 +87460,9 @@
         "votes": 177
       },
       {
-        "title": "Episode #1.3",
+        "title": "Episode #1.28",
         "year": 2023,
-        "tconst": "tt38177070",
+        "tconst": "tt38177229",
         "votes": 0
       }
     ],
@@ -87501,15 +87503,15 @@
         "votes": 177
       },
       {
-        "title": "Episode #1.26",
+        "title": "Episode #1.32",
         "year": 2023,
-        "tconst": "tt38177227",
+        "tconst": "tt38177234",
         "votes": 0
       },
       {
-        "title": "Episode #1.21",
+        "title": "Episode #1.55",
         "year": 2023,
-        "tconst": "tt38177216",
+        "tconst": "tt38177262",
         "votes": 0
       }
     ],
@@ -87549,15 +87551,15 @@
         "votes": 61
       },
       {
-        "title": "Rich Teen Paid $10,000 Every \"A\" He Recieves",
-        "year": 2024,
-        "tconst": "tt33399908",
-        "votes": 0
-      },
-      {
         "title": "Middle-Aged Man Poses as a Highschooler",
         "year": 2024,
         "tconst": "tt31712625",
+        "votes": 0
+      },
+      {
+        "title": "Rich Teen Paid $10,000 Every \"A\" He Recieves",
+        "year": 2024,
+        "tconst": "tt33399908",
         "votes": 0
       }
     ],
@@ -87849,7 +87851,8 @@
     "loyalty_ba": 0.154,
     "tenure_overlap": 0.6,
     "same_era": true,
-    "edge_genre_jaccard": 1.0
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm10691497",
@@ -88130,11 +88133,11 @@
     "reunion_span": 13,
     "shared_votes_max": 266,
     "genres": [
+      "Drama",
+      "History",
       "Action",
       "Biography",
-      "Crime",
-      "Drama",
-      "History"
+      "Crime"
     ],
     "shared": [
       {
@@ -88285,21 +88288,21 @@
     ],
     "shared": [
       {
-        "title": "Episode #2.36",
+        "title": "Piyansa",
         "year": 2021,
-        "tconst": "tt15360528",
+        "tconst": "tt15350016",
         "votes": 0
       },
       {
-        "title": "Dusa",
+        "title": "Kakampi",
         "year": 2021,
-        "tconst": "tt15353014",
+        "tconst": "tt15360324",
         "votes": 0
       },
       {
-        "title": "Lost and Found",
+        "title": "Comeback",
         "year": 2021,
-        "tconst": "tt15368158",
+        "tconst": "tt15368076",
         "votes": 0
       }
     ],
@@ -88464,15 +88467,15 @@
         "votes": 86
       },
       {
-        "title": "Annika Pintasera: Part 12",
-        "year": 2017,
-        "tconst": "tt7035708",
-        "votes": 0
-      },
-      {
         "title": "Annika Pintasera: Part 4",
         "year": 2017,
         "tconst": "tt6821704",
+        "votes": 0
+      },
+      {
+        "title": "Annika Pintasera: Part 11",
+        "year": 2017,
+        "tconst": "tt7003562",
         "votes": 0
       }
     ],
@@ -88502,10 +88505,10 @@
     "reunion_span": 0,
     "shared_votes_max": 206,
     "genres": [
-      "Fantasy",
-      "Romance",
       "Comedy",
-      "Drama"
+      "Drama",
+      "Romance",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -88521,9 +88524,9 @@
         "votes": 65
       },
       {
-        "title": "Episode #1.33",
+        "title": "Episode #1.46",
         "year": 2025,
-        "tconst": "tt38094957",
+        "tconst": "tt38094975",
         "votes": 0
       }
     ],
@@ -89049,10 +89052,10 @@
     "reunion_span": 6,
     "shared_votes_max": 266,
     "genres": [
-      "Romance",
       "Comedy",
       "Drama",
       "Music",
+      "Romance",
       "Action",
       "Biography",
       "Crime"
@@ -89083,8 +89086,7 @@
     "same_era": true,
     "age_gap": 2,
     "cross_generational": false,
-    "edge_genre_jaccard": 1.0,
-    "directorial_glue": true
+    "edge_genre_jaccard": 1.0
   },
   {
     "source": "nm1216382",
@@ -89147,15 +89149,15 @@
     ],
     "shared": [
       {
-        "title": "Muntik na kitang minahal",
+        "title": "Episode #1.2",
         "year": 2008,
-        "tconst": "tt1913782",
+        "tconst": "tt1920111",
         "votes": 0
       },
       {
-        "title": "Pilot",
+        "title": "Finale",
         "year": 2008,
-        "tconst": "tt1920114",
+        "tconst": "tt1920113",
         "votes": 0
       },
       {
@@ -89194,9 +89196,9 @@
       "Action",
       "Comedy",
       "Family",
+      "Adventure",
       "Biography",
       "Crime",
-      "Adventure",
       "Fantasy"
     ],
     "shared": [
@@ -89304,7 +89306,8 @@
     "same_era": true,
     "age_gap": 14,
     "cross_generational": false,
-    "edge_genre_jaccard": 0.833
+    "edge_genre_jaccard": 0.833,
+    "directorial_glue": true
   },
   {
     "source": "nm1216694",
@@ -89356,7 +89359,8 @@
     "same_era": true,
     "age_gap": 29,
     "cross_generational": true,
-    "edge_genre_jaccard": 0.833
+    "edge_genre_jaccard": 0.833,
+    "directorial_glue": true
   },
   {
     "source": "nm1216694",
@@ -89380,10 +89384,10 @@
       "Biography",
       "Crime",
       "Comedy",
-      "Drama",
-      "Music",
       "Family",
-      "Fantasy"
+      "Fantasy",
+      "Drama",
+      "Music"
     ],
     "shared": [
       {
@@ -89411,7 +89415,8 @@
     "same_era": true,
     "age_gap": 1,
     "cross_generational": false,
-    "edge_genre_jaccard": 1.0
+    "edge_genre_jaccard": 1.0,
+    "directorial_glue": true
   },
   {
     "source": "nm1216694",
@@ -89451,9 +89456,9 @@
         "votes": 13
       },
       {
-        "title": "Ella Faces All the Charges for a Crime She Didn't Commit",
+        "title": "Patricia Kills Red",
         "year": 2010,
-        "tconst": "tt1858903",
+        "tconst": "tt1858905",
         "votes": 0
       }
     ],
@@ -89517,8 +89522,8 @@
     "reunion_span": 1,
     "shared_votes_max": 136,
     "genres": [
-      "Romance",
-      "Drama"
+      "Drama",
+      "Romance"
     ],
     "shared": [
       {
@@ -89727,10 +89732,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
-      "Crime"
+      "Crime",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [
       {
@@ -89770,10 +89775,10 @@
     "reunion_span": 7,
     "shared_votes_max": 144,
     "genres": [
-      "Action",
       "Comedy",
       "Family",
       "Fantasy",
+      "Action",
       "Adventure"
     ],
     "shared": [
@@ -89827,9 +89832,9 @@
       "Crime",
       "Comedy",
       "Family",
+      "Fantasy",
       "Drama",
-      "Horror",
-      "Mystery"
+      "Horror"
     ],
     "shared": [
       {
@@ -89964,13 +89969,13 @@
     "reunion_gap": 26,
     "shared_votes_max": 266,
     "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
       "Crime",
       "Drama",
       "Thriller",
-      "Biography"
+      "Action",
+      "Biography",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.03,
@@ -90000,10 +90005,10 @@
     "shared_votes_max": 266,
     "genres": [
       "Action",
-      "Adventure",
-      "Comedy",
       "Biography",
-      "Crime"
+      "Crime",
+      "Adventure",
+      "Comedy"
     ],
     "shared": [
       {
@@ -90013,15 +90018,15 @@
         "votes": 18
       },
       {
-        "title": "Yamishita's Treasures: Part 8",
-        "year": 2015,
-        "tconst": "tt4675082",
-        "votes": 0
-      },
-      {
         "title": "Yamishita's Treasures: Part 10",
         "year": 2015,
         "tconst": "tt4706538",
+        "votes": 0
+      },
+      {
+        "title": "Yamishita's Treasures: Part 13",
+        "year": 2015,
+        "tconst": "tt4773868",
         "votes": 0
       }
     ],
@@ -90224,12 +90229,12 @@
     "reunion_gap": 24,
     "shared_votes_max": 577,
     "genres": [
+      "Action",
+      "Comedy",
       "Crime",
       "Drama",
       "Thriller",
-      "Action",
-      "Biography",
-      "Comedy"
+      "Biography"
     ],
     "shared": [],
     "loyalty_ab": 0.041,
@@ -90259,9 +90264,9 @@
     "shared_votes_max": 577,
     "genres": [
       "Action",
-      "Biography",
+      "Comedy",
       "Crime",
-      "Comedy"
+      "Biography"
     ],
     "shared": [],
     "loyalty_ab": 0.027,
@@ -90383,10 +90388,10 @@
     "reunion_gap": 31,
     "shared_votes_max": 266,
     "genres": [
-      "Comedy",
       "Action",
       "Biography",
-      "Crime"
+      "Crime",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.133,
@@ -90484,10 +90489,10 @@
     "reunion_span": 6,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
       "Drama",
-      "History"
+      "History",
+      "Comedy"
     ],
     "shared": [
       {
@@ -90774,9 +90779,9 @@
         "votes": 0
       },
       {
-        "title": "Episode #1.101",
+        "title": "Episode #1.181",
         "year": 2008,
-        "tconst": "tt1165021",
+        "tconst": "tt1211496",
         "votes": 0
       }
     ],
@@ -90819,15 +90824,15 @@
         "votes": 53
       },
       {
-        "title": "Episode #1.334",
+        "title": "Episode #1.350",
         "year": 2013,
-        "tconst": "tt2674598",
+        "tconst": "tt2674638",
         "votes": 0
       },
       {
-        "title": "Episode #1.335",
+        "title": "Episode #1.358",
         "year": 2013,
-        "tconst": "tt2674600",
+        "tconst": "tt2749586",
         "votes": 0
       }
     ],
@@ -90892,9 +90897,9 @@
     "reunion_gap": 20,
     "shared_votes_max": 3475,
     "genres": [
-      "Comedy",
       "Crime",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "shared": [],
     "loyalty_ab": 0.013,
@@ -90958,9 +90963,9 @@
     "genres": [
       "Crime",
       "Comedy",
-      "Action",
       "Drama",
       "Romance",
+      "Action",
       "Thriller"
     ],
     "shared": [],
@@ -91064,9 +91069,9 @@
     "reunion_span": 1,
     "shared_votes_max": 177,
     "genres": [
+      "Romance",
       "Comedy",
-      "Drama",
-      "Romance"
+      "Drama"
     ],
     "shared": [
       {
@@ -91106,8 +91111,8 @@
     "reunion_span": 2,
     "shared_votes_max": 154,
     "genres": [
-      "Romance",
-      "Fantasy"
+      "Fantasy",
+      "Romance"
     ],
     "shared": [
       {
@@ -91258,15 +91263,15 @@
         "votes": 228
       },
       {
-        "title": "Ang lunas ni Pirena",
+        "title": "Episode #1.5",
         "year": 2005,
-        "tconst": "tt9200588",
+        "tconst": "tt9172492",
         "votes": 0
       },
       {
-        "title": "Ang poot ng brilyante",
+        "title": "Episode #1.6",
         "year": 2005,
-        "tconst": "tt9200594",
+        "tconst": "tt9172496",
         "votes": 0
       }
     ],
@@ -91310,15 +91315,15 @@
         "votes": 228
       },
       {
-        "title": "Ang sumpa ni Pirena",
+        "title": "Episode #1.15",
         "year": 2005,
-        "tconst": "tt9200576",
+        "tconst": "tt9172516",
         "votes": 0
       },
       {
-        "title": "Ang pagluluksa",
+        "title": "Episode #1.6",
         "year": 2005,
-        "tconst": "tt9200578",
+        "tconst": "tt9172496",
         "votes": 0
       }
     ],
@@ -91351,16 +91356,10 @@
     "genres": [
       "Comedy",
       "Drama",
-      "Music",
-      "Romance"
+      "Romance",
+      "Music"
     ],
     "shared": [
-      {
-        "title": "Episode #1.93",
-        "year": 2009,
-        "tconst": "tt1350888",
-        "votes": 0
-      },
       {
         "title": "Episode #1.97",
         "year": 2009,
@@ -91371,6 +91370,12 @@
         "title": "Episode #1.98",
         "year": 2009,
         "tconst": "tt1350893",
+        "votes": 0
+      },
+      {
+        "title": "Episode #1.93",
+        "year": 2009,
+        "tconst": "tt1350888",
         "votes": 0
       }
     ],
@@ -91463,9 +91468,9 @@
     "reunion_span": 18,
     "shared_votes_max": 1562,
     "genres": [
+      "Comedy",
       "Drama",
       "Romance",
-      "Comedy",
       "Music"
     ],
     "shared": [
@@ -91714,9 +91719,9 @@
       "Drama",
       "Comedy",
       "Romance",
-      "Horror",
       "Biography",
-      "Crime"
+      "Crime",
+      "Horror"
     ],
     "shared": [
       {
@@ -91787,9 +91792,9 @@
         "votes": 11
       },
       {
-        "title": "Save Liberty",
+        "title": "Laptop",
         "year": 2026,
-        "tconst": "tt39310677",
+        "tconst": "tt39384014",
         "votes": 0
       }
     ],
@@ -91958,11 +91963,11 @@
     "reunion_span": 8,
     "shared_votes_max": 1646,
     "genres": [
-      "Crime",
-      "Documentary",
       "Comedy",
       "Drama",
-      "Family"
+      "Family",
+      "Crime",
+      "Documentary"
     ],
     "shared": [
       {
@@ -91996,11 +92001,11 @@
     "reunion_span": 8,
     "shared_votes_max": 1646,
     "genres": [
-      "Crime",
-      "Documentary",
       "Comedy",
       "Drama",
-      "Family"
+      "Family",
+      "Crime",
+      "Documentary"
     ],
     "shared": [
       {
@@ -92054,9 +92059,9 @@
         "votes": 0
       },
       {
-        "title": "Teen Secretly Live Streams in School",
+        "title": "Fake Friends Bully Girl for Labubus Featuring Hannah Lea",
         "year": 2025,
-        "tconst": "tt37533651",
+        "tconst": "tt38457053",
         "votes": 0
       }
     ],
@@ -92241,9 +92246,9 @@
         "votes": 112
       },
       {
-        "title": "Episode #1.27",
+        "title": "Episode #1.37",
         "year": 2025,
-        "tconst": "tt38201093",
+        "tconst": "tt38201128",
         "votes": 0
       }
     ],
@@ -92321,10 +92326,10 @@
     "reunion_span": 1,
     "shared_votes_max": 177,
     "genres": [
-      "Fantasy",
       "Comedy",
       "Drama",
-      "Romance"
+      "Romance",
+      "Fantasy"
     ],
     "shared": [
       {
@@ -92340,9 +92345,9 @@
         "votes": 79
       },
       {
-        "title": "Episode #1.13",
+        "title": "Episode #1.5",
         "year": 2023,
-        "tconst": "tt38177203",
+        "tconst": "tt38177074",
         "votes": 0
       }
     ],

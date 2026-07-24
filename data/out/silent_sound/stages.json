@@ -4,14 +4,14 @@
     "stageTo": "bridge",
     "categoryFrom": "male",
     "categoryTo": "deep both sides",
-    "value": 739
+    "value": 740
   },
   {
     "stageFrom": "gender",
     "stageTo": "bridge",
     "categoryFrom": "female",
     "categoryTo": "deep both sides",
-    "value": 260
+    "value": 259
   },
   {
     "stageFrom": "gender",
@@ -19,13 +19,6 @@
     "categoryFrom": "male",
     "categoryTo": "sound-dominant",
     "value": 1
-  },
-  {
-    "stageFrom": "bridge",
-    "stageTo": "span",
-    "categoryFrom": "deep both sides",
-    "categoryTo": "30+ year span",
-    "value": 473
   },
   {
     "stageFrom": "bridge",
@@ -47,5 +40,12 @@
     "categoryFrom": "sound-dominant",
     "categoryTo": "30+ year span",
     "value": 1
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "span",
+    "categoryFrom": "deep both sides",
+    "categoryTo": "30+ year span",
+    "value": 473
   }
 ]

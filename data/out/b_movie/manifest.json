@@ -19,7 +19,7 @@
     "pool_size": 1000,
     "population_sql": 1000
   },
-  "built_at": "2026-07-23T18:28:14.249547+00:00",
+  "built_at": "2026-07-24T18:49:21.694730+00:00",
   "clustering_coefficient": 0.7521,
   "community_count": 26,
   "correlations": {
@@ -77,8 +77,8 @@
       "label": "Gene Autry"
     },
     {
-      "id": "nm0163417",
-      "label": "Tom London"
+      "id": "nm0454559",
+      "label": "Charles King"
     },
     {
       "id": "nm0427659",
@@ -161,23 +161,23 @@
     ],
     "assortativity": 0.7747,
     "community_sizes": [
-      43,
-      28,
-      24,
-      21,
-      12,
-      11,
-      9,
+      44,
+      32,
+      22,
+      20,
+      10,
+      10,
+      8,
+      8,
       8,
       7,
-      7,
-      6,
-      3,
-      3,
+      5,
+      5,
+      4,
       3,
       2,
       2,
-      2,
+      1,
       1,
       1,
       1,
@@ -281,8 +281,8 @@
       "male": 122
     },
     "giant_component_share": 0.32,
-    "largest_community_share": 0.215,
-    "modularity": 0.1599,
+    "largest_community_share": 0.22,
+    "modularity": 0.1744,
     "outliers": {
       "acclaim_gap": [
         "nm0000810",
@@ -837,6 +837,6 @@
     "top_name": "Gene Autry"
   },
   "title": "The B-Movie Loyalists",
-  "tmdb_gender_rows": 5392,
+  "tmdb_gender_rows": 160168,
   "top_n": 200
 }
