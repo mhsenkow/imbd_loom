@@ -7,6 +7,7 @@ import duckdb
 from loom.constructs import gender_expr
 from loom.constructs.emit import coappearance_edges, finalize_payload
 from loom.filters import adult_exclusion_sql, title_type_sql, vote_floor_sql
+from loom.membership import empty_payload_stats
 
 
 def _has_table(con: duckdb.DuckDBPyConnection, name: str) -> bool:
@@ -24,48 +25,23 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     votes = vote_floor_sql("r", min_votes=50)
 
     if not _has_table(con, "title_crew"):
-        # Fallback: prolific actors (no director data)
-        person_sql = f"""
-            SELECT
-              p.nconst,
-              n.primaryName AS label,
-              {ge} AS gender,
-              COUNT(DISTINCT p.tconst) AS title_count,
-              SUM(COALESCE(r.numVotes, 0)) AS prominence,
-              NULL AS top_director,
-              NULL AS muse_titles
-            FROM title_principals p
-            JOIN title_basics t ON t.tconst = p.tconst
-            JOIN name_basics n ON n.nconst = p.nconst
-            LEFT JOIN title_ratings r ON r.tconst = p.tconst
-            LEFT JOIN gender_enrich ge ON ge.nconst = p.nconst
-            WHERE p.category IN ('actor', 'actress')
-              AND {types} AND {adult} AND {votes}
-            GROUP BY p.nconst, n.primaryName, ge.tmdb_gender, p.category
-            HAVING COUNT(DISTINCT p.tconst) >= 20
-            ORDER BY SUM(COALESCE(r.numVotes, 0)) DESC
-            LIMIT {int(top_n * 3)}
-        """
-        nodes, edges, stats = coappearance_edges(
-            con, person_sql, construct="director_muses", top_n=top_n, min_shared=2
-        )
-        stats["fallback"] = "title_crew_missing"
-        method = (
-            "Fallback (title_crew missing): prolific actors with ≥20 credits. "
-            "Install title.crew.parquet for muse detection."
-        )
         return finalize_payload(
             con,
             construct_id="director_muses",
             title="Director's Muses",
             subtitle="actors with ≥4 titles under the same director",
             key_variable="top_director",
-            method_note=method,
-            nodes=nodes,
-            edges=edges,
+            method_note=(
+                "EMPTY: title_crew missing — muse detection requires director credits. "
+                "Install title.crew.parquet. No prolific-actor proxy."
+            ),
+            nodes=[],
+            edges=[],
             stages=[],
-            build_stats=stats,
-            extra={"top_n": top_n, "min_shared": 2, "fallback": True},
+            build_stats=empty_payload_stats(
+                reason="title_crew_missing", enrichment_mode="empty"
+            ),
+            extra={"top_n": top_n, "min_shared": 2},
         )
 
     person_sql = f"""
@@ -74,7 +50,8 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             p.nconst,
             UNNEST(string_split(c.directors, ',')) AS dconst,
             p.tconst,
-            COALESCE(r.numVotes, 0) AS votes
+            COALESCE(r.numVotes, 0) AS votes,
+            LN(COALESCE(r.numVotes, 0) + 1) AS vote_w
           FROM title_principals p
           JOIN title_crew c ON c.tconst = p.tconst
           JOIN title_basics t ON t.tconst = p.tconst
@@ -84,8 +61,11 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             AND {types} AND {adult} AND {votes}
         ),
         per_dir AS (
-          SELECT nconst, dconst, COUNT(DISTINCT tconst) AS muse_titles,
-                 SUM(votes) AS prominence
+          SELECT
+            nconst,
+            dconst,
+            COUNT(DISTINCT tconst) AS muse_titles,
+            SUM(vote_w) AS prominence
           FROM exploded
           WHERE dconst IS NOT NULL AND dconst != ''
           GROUP BY 1, 2
@@ -93,8 +73,10 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         ),
         best AS (
           SELECT *,
+            muse_titles * prominence AS muse_score,
             ROW_NUMBER() OVER (
-              PARTITION BY nconst ORDER BY muse_titles DESC, prominence DESC
+              PARTITION BY nconst
+              ORDER BY muse_titles * prominence DESC, muse_titles DESC, prominence DESC
             ) AS rk
           FROM per_dir
         ),
@@ -117,6 +99,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
           COALESCE(gp.gender, 'unknown') AS gender,
           b.muse_titles,
           b.prominence,
+          b.muse_score,
           dn.primaryName AS top_director,
           b.dconst AS top_director_id
         FROM best b
@@ -124,18 +107,24 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         LEFT JOIN name_basics dn ON dn.nconst = b.dconst
         LEFT JOIN gender_pick gp ON gp.nconst = b.nconst AND gp.rk = 1
         WHERE b.rk = 1
-        ORDER BY b.muse_titles DESC, b.prominence DESC
+        ORDER BY b.muse_score DESC, b.muse_titles DESC, b.prominence DESC
         LIMIT {int(top_n * 3)}
     """
     nodes, edges, stats = coappearance_edges(
-        con, person_sql, construct="director_muses", top_n=top_n, min_shared=2
+        con,
+        person_sql,
+        construct="director_muses",
+        top_n=top_n,
+        min_shared=2,
+        cap_by="blend",
+        enrichment_mode="title_crew",
     )
 
     method = (
         "Population: actors with ≥4 titles under the same director "
-        "(via title_crew; Adult excluded, numVotes ≥50). "
-        "Node.top_director is their most-repeated director. "
-        "Hero = co-appearance among muse actors."
+        "(via title_crew; Adult excluded, numVotes ≥50 on muse titles). "
+        "Ranked by muse_titles × prominence. No prolific fallback when crew missing. "
+        "Hero = co-appearance among muse actors. Cap by blend."
     )
     return finalize_payload(
         con,

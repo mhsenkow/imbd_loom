@@ -3,28 +3,98 @@
     "stageFrom": "gender",
     "stageTo": "span_band",
     "categoryFrom": "male",
+    "categoryTo": "40–49",
+    "value": 228
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "span_band",
+    "categoryFrom": "female",
+    "categoryTo": "40–49",
+    "value": 36
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "span_band",
+    "categoryFrom": "male",
     "categoryTo": "50+ years",
-    "value": 318
+    "value": 182
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "span_band",
+    "categoryFrom": "female",
+    "categoryTo": "35–39",
+    "value": 19
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "span_band",
+    "categoryFrom": "male",
+    "categoryTo": "35–39",
+    "value": 102
   },
   {
     "stageFrom": "gender",
     "stageTo": "span_band",
     "categoryFrom": "female",
     "categoryTo": "50+ years",
-    "value": 282
-  },
-  {
-    "stageFrom": "span_band",
-    "stageTo": "cohort",
-    "categoryFrom": "50+ years",
-    "categoryTo": "started 1960–79",
-    "value": 182
+    "value": 33
   },
   {
     "stageFrom": "span_band",
     "stageTo": "cohort",
     "categoryFrom": "50+ years",
     "categoryTo": "started pre-1960",
-    "value": 418
+    "value": 88
+  },
+  {
+    "stageFrom": "span_band",
+    "stageTo": "cohort",
+    "categoryFrom": "40–49",
+    "categoryTo": "started 1980–99",
+    "value": 139
+  },
+  {
+    "stageFrom": "span_band",
+    "stageTo": "cohort",
+    "categoryFrom": "35–39",
+    "categoryTo": "started 1960–79",
+    "value": 5
+  },
+  {
+    "stageFrom": "span_band",
+    "stageTo": "cohort",
+    "categoryFrom": "40–49",
+    "categoryTo": "started pre-1960",
+    "value": 33
+  },
+  {
+    "stageFrom": "span_band",
+    "stageTo": "cohort",
+    "categoryFrom": "40–49",
+    "categoryTo": "started 1960–79",
+    "value": 92
+  },
+  {
+    "stageFrom": "span_band",
+    "stageTo": "cohort",
+    "categoryFrom": "35–39",
+    "categoryTo": "started 1980–99",
+    "value": 102
+  },
+  {
+    "stageFrom": "span_band",
+    "stageTo": "cohort",
+    "categoryFrom": "50+ years",
+    "categoryTo": "started 1960–79",
+    "value": 127
+  },
+  {
+    "stageFrom": "span_band",
+    "stageTo": "cohort",
+    "categoryFrom": "35–39",
+    "categoryTo": "started pre-1960",
+    "value": 14
   }
 ]

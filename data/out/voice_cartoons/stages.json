@@ -2,141 +2,162 @@
   {
     "stageFrom": "gender",
     "stageTo": "era",
-    "categoryFrom": "male",
+    "categoryFrom": "female",
     "categoryTo": "1980–1999",
-    "value": 1271
+    "value": 12202
   },
   {
     "stageFrom": "gender",
     "stageTo": "era",
-    "categoryFrom": "female",
+    "categoryFrom": "nonbinary",
     "categoryTo": "1980–1999",
-    "value": 412
+    "value": 5
   },
   {
     "stageFrom": "gender",
     "stageTo": "era",
     "categoryFrom": "female",
     "categoryTo": "pre-1980",
-    "value": 154
+    "value": 7165
   },
   {
     "stageFrom": "gender",
     "stageTo": "era",
     "categoryFrom": "female",
     "categoryTo": "2000–2014",
-    "value": 905
+    "value": 26026
   },
   {
     "stageFrom": "gender",
     "stageTo": "era",
     "categoryFrom": "male",
     "categoryTo": "2015+",
-    "value": 1529
+    "value": 40281
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "nonbinary",
+    "categoryTo": "2000–2014",
+    "value": 125
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "male",
+    "categoryTo": "1980–1999",
+    "value": 23156
   },
   {
     "stageFrom": "gender",
     "stageTo": "era",
     "categoryFrom": "male",
     "categoryTo": "pre-1980",
-    "value": 1013
+    "value": 21456
   },
   {
     "stageFrom": "gender",
     "stageTo": "era",
     "categoryFrom": "male",
     "categoryTo": "2000–2014",
-    "value": 1958
+    "value": 40103
   },
   {
     "stageFrom": "gender",
     "stageTo": "era",
     "categoryFrom": "female",
     "categoryTo": "2015+",
-    "value": 960
+    "value": 30193
   },
   {
-    "stageFrom": "era",
-    "stageTo": "prominence",
-    "categoryFrom": "pre-1980",
-    "categoryTo": "lead",
-    "value": 381
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "nonbinary",
+    "categoryTo": "2015+",
+    "value": 206
   },
   {
     "stageFrom": "era",
     "stageTo": "prominence",
     "categoryFrom": "1980–1999",
     "categoryTo": "lead",
-    "value": 506
+    "value": 9116
   },
   {
     "stageFrom": "era",
     "stageTo": "prominence",
     "categoryFrom": "2000–2014",
     "categoryTo": "lead",
-    "value": 595
+    "value": 16921
   },
   {
     "stageFrom": "era",
     "stageTo": "prominence",
     "categoryFrom": "2015+",
     "categoryTo": "lead",
-    "value": 570
+    "value": 17849
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "prominence",
+    "categoryFrom": "pre-1980",
+    "categoryTo": "lead",
+    "value": 12332
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "prominence",
+    "categoryFrom": "pre-1980",
+    "categoryTo": "supporting",
+    "value": 10954
   },
   {
     "stageFrom": "era",
     "stageTo": "prominence",
     "categoryFrom": "pre-1980",
     "categoryTo": "ensemble",
-    "value": 282
-  },
-  {
-    "stageFrom": "era",
-    "stageTo": "prominence",
-    "categoryFrom": "pre-1980",
-    "categoryTo": "supporting",
-    "value": 504
-  },
-  {
-    "stageFrom": "era",
-    "stageTo": "prominence",
-    "categoryFrom": "1980–1999",
-    "categoryTo": "ensemble",
-    "value": 605
+    "value": 5335
   },
   {
     "stageFrom": "era",
     "stageTo": "prominence",
     "categoryFrom": "1980–1999",
     "categoryTo": "supporting",
-    "value": 572
+    "value": 13090
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "prominence",
+    "categoryFrom": "1980–1999",
+    "categoryTo": "ensemble",
+    "value": 13157
   },
   {
     "stageFrom": "era",
     "stageTo": "prominence",
     "categoryFrom": "2000–2014",
     "categoryTo": "supporting",
-    "value": 1032
+    "value": 23995
   },
   {
     "stageFrom": "era",
     "stageTo": "prominence",
     "categoryFrom": "2000–2014",
     "categoryTo": "ensemble",
-    "value": 1236
+    "value": 25338
   },
   {
     "stageFrom": "era",
     "stageTo": "prominence",
     "categoryFrom": "2015+",
     "categoryTo": "supporting",
-    "value": 864
+    "value": 25538
   },
   {
     "stageFrom": "era",
     "stageTo": "prominence",
     "categoryFrom": "2015+",
     "categoryTo": "ensemble",
-    "value": 1055
+    "value": 27293
   }
 ]

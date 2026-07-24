@@ -11,6 +11,12 @@ from loom.constructs.emit import (
     recompute_degree_strength,
 )
 from loom.filters import adult_exclusion_sql, title_type_sql, vote_floor_sql
+from loom.membership import (
+    character_blocklist_sql,
+    character_norm_sql,
+    empty_payload_stats,
+    same_character_seed_sql,
+)
 from loom.textnorm import ascii_fold
 
 
@@ -20,6 +26,11 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     types = title_type_sql("t")
     # Stricter vote floor — character matching is expensive; stay in popular titles
     votes = vote_floor_sql("r", min_votes=500)
+    char_norm = character_norm_sql(
+        "regexp_extract(COALESCE(p.characters, ''), '\"([^\"]+)\"', 1)"
+    )
+    blocklist = character_blocklist_sql("char_norm")
+    seed_match = same_character_seed_sql("char_norm")
 
     # First character only (not full array explode) on high-vote titles
     con.execute(
@@ -31,15 +42,8 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             n.primaryName AS label,
             {ge} AS gender,
             COALESCE(r.numVotes, 0) AS votes,
-            LOWER(TRIM(
-              REGEXP_REPLACE(
-                REGEXP_REPLACE(
-                  regexp_extract(COALESCE(p.characters, ''), '"([^"]+)"', 1),
-                  '\\s*\\([^)]*\\)\\s*', ' '
-                ),
-                '\\s+', ' '
-              )
-            )) AS char_norm,
+            LN(COALESCE(r.numVotes, 0) + 1) AS vote_w,
+            {char_norm} AS char_norm,
             TRIM(REGEXP_REPLACE(
               regexp_extract(COALESCE(p.characters, ''), '"([^"]+)"', 1),
               '\\s*\\(voice\\)\\s*', '', 'i'
@@ -55,47 +59,67 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             AND t.titleType IN ('movie', 'tvMovie', 'tvMiniSeries', 'tvSeries')
         )
         SELECT
-          nconst, label, gender, votes, char_display,
-          CASE WHEN char_norm LIKE 'the %' THEN SUBSTRING(char_norm, 5) ELSE char_norm END AS char_norm
+          nconst, label, gender, votes, vote_w, char_display,
+          CASE WHEN char_norm LIKE 'the %' THEN SUBSTRING(char_norm, 5) ELSE char_norm END
+            AS char_norm
         FROM raw
         WHERE LENGTH(char_norm) BETWEEN 3 AND 40
-          AND char_norm NOT IN (
-            'himself', 'herself', 'themselves', 'self', 'narrator',
-            'host', 'announcer', 'additional voices', 'various', 'extra',
-            'uncredited', 'voice', 'voices', 'dad', 'mom', 'mother', 'father',
-            'man', 'woman', 'boy', 'girl', 'doctor', 'nurse', 'cop', 'officer',
-            'waiter', 'waitress', 'bartender', 'reporter', 'journalist',
-            'singer', 'dancer', 'soldier', 'police officer', 'detective'
+          AND (
+            {blocklist}
+            OR {seed_match}
           )
         """
     )
 
+    # Recompute seed match after "the " strip
+    seed_match_clean = same_character_seed_sql("char_norm")
     con.execute(
-        """
+        f"""
         CREATE OR REPLACE TEMP TABLE _multi AS
-        SELECT char_norm, COUNT(DISTINCT nconst) AS actor_count,
-               MAX(char_display) AS sample_display
-        FROM _char_clean
-        GROUP BY 1
-        HAVING COUNT(DISTINCT nconst) BETWEEN 3 AND 80
-        ORDER BY COUNT(DISTINCT nconst) DESC
+        WITH counts AS (
+          SELECT
+            char_norm,
+            COUNT(DISTINCT nconst) AS actor_count,
+            MAX(char_display) AS sample_display,
+            MAX(CASE WHEN {seed_match_clean} THEN 1 ELSE 0 END) AS is_seed
+          FROM _char_clean
+          GROUP BY 1
+        )
+        SELECT char_norm, actor_count, sample_display, is_seed
+        FROM counts
+        WHERE (actor_count BETWEEN 3 AND 80)
+           OR (is_seed = 1 AND actor_count >= 2)
+        ORDER BY is_seed DESC, actor_count DESC
         LIMIT 400
         """
     )
 
     person_rows = con.execute(
         f"""
+        WITH scored AS (
+          SELECT
+            c.nconst,
+            ANY_VALUE(c.label) AS label,
+            ANY_VALUE(c.gender) AS gender,
+            COUNT(DISTINCT c.char_norm) AS shared_character_count,
+            SUM(c.vote_w) AS prominence,
+            ARG_MAX(m.sample_display, m.actor_count + 1000 * m.is_seed)
+              AS top_shared_character
+          FROM _char_clean c
+          JOIN _multi m ON m.char_norm = c.char_norm
+          GROUP BY c.nconst
+        ),
+        ranked AS (
+          SELECT *,
+            RANK() OVER (ORDER BY shared_character_count DESC) AS rk_chars,
+            RANK() OVER (ORDER BY prominence DESC) AS rk_prom
+          FROM scored
+        )
         SELECT
-          c.nconst,
-          ANY_VALUE(c.label) AS label,
-          ANY_VALUE(c.gender) AS gender,
-          COUNT(DISTINCT c.char_norm) AS shared_character_count,
-          SUM(c.votes) AS prominence,
-          ARG_MAX(m.sample_display, m.actor_count) AS top_shared_character
-        FROM _char_clean c
-        JOIN _multi m ON m.char_norm = c.char_norm
-        GROUP BY c.nconst
-        ORDER BY COUNT(DISTINCT c.char_norm) DESC, SUM(c.votes) DESC
+          nconst, label, gender, shared_character_count, prominence,
+          top_shared_character, (rk_chars + rk_prom) AS blend_rank
+        FROM ranked
+        ORDER BY (rk_chars + rk_prom) ASC, prominence DESC
         LIMIT {int(top_n * 3)}
         """
     ).fetchall()
@@ -111,11 +135,14 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             nodes=[],
             edges=[],
             stages=[],
-            build_stats={"multi_cast_characters": 0},
+            build_stats=empty_payload_stats(
+                reason="no_multi_cast_characters", enrichment_mode="empty"
+            ),
             extra={"top_n": top_n},
         )
 
-    ranked = sorted(person_rows, key=lambda r: (-r[3], -(r[4] or 0)))[:top_n]
+    # Cap by blend: already ordered by blend_rank
+    ranked = person_rows[:top_n]
     keep = {r[0] for r in ranked}
     con.execute(
         "CREATE OR REPLACE TEMP TABLE _keep AS SELECT * FROM UNNEST(?::VARCHAR[]) AS t(nconst)",
@@ -128,7 +155,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
           LEAST(a.nconst, b.nconst) AS source,
           GREATEST(a.nconst, b.nconst) AS target,
           COUNT(*) AS weight,
-          ARG_MAX(m.sample_display, m.actor_count) AS character
+          ARG_MAX(m.sample_display, m.actor_count + 1000 * m.is_seed) AS character
         FROM (
           SELECT DISTINCT c.nconst, c.char_norm
           FROM _char_clean c
@@ -159,7 +186,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         )
 
     nodes = []
-    for nconst, label, gender, scount, prominence, top_char in ranked:
+    for nconst, label, gender, scount, prominence, top_char, _blend in ranked:
         nodes.append(
             {
                 "id": nconst,
@@ -188,7 +215,8 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         method_note=(
             "Population: actors who share a normalized primary character name played by "
             "3–80 distinct people on titles with ≥500 votes (Adult excluded). "
-            "Edges link people who share such characters."
+            "Uses shared character_norm / blocklist; franchise seeds (Batman, Bond…) survive. "
+            "Top_n capped by blend of shared-character count + prominence ranks."
         ),
         nodes=nodes,
         edges=edges,
@@ -197,6 +225,9 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             "multi_cast_characters": int(multi_n),
             "population_sql": len(person_rows),
             "after_degree_cap": len(nodes),
+            "cap_by": "blend",
+            "enrichment_mode": "character_norm",
+            "fallback_used": False,
         },
         extra={"top_n": top_n, "min_actors_per_character": 3},
     )

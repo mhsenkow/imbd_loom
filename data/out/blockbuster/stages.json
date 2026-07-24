@@ -3,15 +3,15 @@
     "stageFrom": "gender",
     "stageTo": "share_band",
     "categoryFrom": "female",
-    "categoryTo": "≥80% blockbuster",
-    "value": 159
+    "categoryTo": "65–79%",
+    "value": 80
   },
   {
     "stageFrom": "gender",
     "stageTo": "share_band",
-    "categoryFrom": "male",
+    "categoryFrom": "nonbinary",
     "categoryTo": "≥80% blockbuster",
-    "value": 249
+    "value": 3
   },
   {
     "stageFrom": "gender",
@@ -23,23 +23,23 @@
   {
     "stageFrom": "gender",
     "stageTo": "share_band",
-    "categoryFrom": "female",
+    "categoryFrom": "male",
+    "categoryTo": "≥80% blockbuster",
+    "value": 249
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "share_band",
+    "categoryFrom": "nonbinary",
     "categoryTo": "65–79%",
-    "value": 82
+    "value": 2
   },
   {
-    "stageFrom": "share_band",
-    "stageTo": "volume",
-    "categoryFrom": "≥80% blockbuster",
-    "categoryTo": "15–29",
-    "value": 125
-  },
-  {
-    "stageFrom": "share_band",
-    "stageTo": "volume",
-    "categoryFrom": "65–79%",
-    "categoryTo": "8–14",
-    "value": 53
+    "stageFrom": "gender",
+    "stageTo": "share_band",
+    "categoryFrom": "female",
+    "categoryTo": "≥80% blockbuster",
+    "value": 156
   },
   {
     "stageFrom": "share_band",
@@ -54,6 +54,20 @@
     "categoryFrom": "65–79%",
     "categoryTo": "15–29",
     "value": 69
+  },
+  {
+    "stageFrom": "share_band",
+    "stageTo": "volume",
+    "categoryFrom": "≥80% blockbuster",
+    "categoryTo": "15–29",
+    "value": 125
+  },
+  {
+    "stageFrom": "share_band",
+    "stageTo": "volume",
+    "categoryFrom": "65–79%",
+    "categoryTo": "8–14",
+    "value": 53
   },
   {
     "stageFrom": "share_band",

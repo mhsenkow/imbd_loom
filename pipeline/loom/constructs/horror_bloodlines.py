@@ -93,7 +93,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         con,
         construct_id="horror_bloodlines",
         title="Horror Royalty Bloodlines",
-        subtitle="horror regulars (men + women, ≥4 titles)",
+        subtitle="horror regulars (men + women, ≥4 titles — co-appearance, not genealogy)",
         key_variable="gender",
         method_note=method,
         nodes=nodes,

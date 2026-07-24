@@ -2,36 +2,43 @@
   {
     "stageFrom": "gender",
     "stageTo": "share_band",
-    "categoryFrom": "male",
+    "categoryFrom": "female",
     "categoryTo": "≥90% below median",
-    "value": 387
+    "value": 357
   },
   {
     "stageFrom": "gender",
     "stageTo": "share_band",
-    "categoryFrom": "female",
+    "categoryFrom": "nonbinary",
     "categoryTo": "≥90% below median",
-    "value": 213
+    "value": 1
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "share_band",
+    "categoryFrom": "male",
+    "categoryTo": "≥90% below median",
+    "value": 642
   },
   {
     "stageFrom": "share_band",
     "stageTo": "volume",
     "categoryFrom": "≥90% below median",
     "categoryTo": "20–39",
-    "value": 120
+    "value": 200
   },
   {
     "stageFrom": "share_band",
     "stageTo": "volume",
     "categoryFrom": "≥90% below median",
     "categoryTo": "10–19",
-    "value": 455
+    "value": 761
   },
   {
     "stageFrom": "share_band",
     "stageTo": "volume",
     "categoryFrom": "≥90% below median",
     "categoryTo": "40+ titles",
-    "value": 25
+    "value": 39
   }
 ]

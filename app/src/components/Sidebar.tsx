@@ -1,6 +1,7 @@
 /** Authoring sidebar — collapsible, touch-friendly controls. */
 
-import { useState, type ReactNode } from "react";
+import { useMemo, useState, type ReactNode } from "react";
+import type { PersonIndexEntry } from "../lib/bridges";
 import type { Manifest, PosterSpec } from "../lib/types";
 import { PAGE_SIZES } from "../lib/geometry";
 import type { SearchMatch } from "../lib/search";
@@ -29,6 +30,8 @@ interface Props {
   poolSize?: number;
   /** Adaptive max for min-edge-weight slider */
   weightMax?: number;
+  /** Cross-construct people index for Find fallbacks */
+  peopleIndex?: PersonIndexEntry[];
 }
 
 type Section = "find" | "construct" | "form" | "connect" | "encode" | "stats" | "density" | "page";
@@ -101,12 +104,24 @@ export function Sidebar({
   filteredCounts,
   poolSize,
   weightMax = 10,
+  peopleIndex = [],
 }: Props) {
   const [section, setSection] = useState<Section | null>("find");
   const { themePreference, setTheme, setPalette } = useTheme();
   const openSec = (k: Section) => setSection((s) => (s === k ? null : k));
   const isTimeline = spec.heroForm === "timeline";
   const clampedWeight = Math.min(spec.minWeight, weightMax);
+  const peopleHits = useMemo(() => {
+    const q = spec.searchQuery.trim().toLowerCase();
+    if (q.length < 2 || !peopleIndex.length) return [];
+    return peopleIndex
+      .filter(
+        (p) =>
+          p.label.toLowerCase().includes(q) &&
+          p.constructs.some((c) => c !== spec.activeConstruct),
+      )
+      .slice(0, 8);
+  }, [peopleIndex, spec.searchQuery, spec.activeConstruct]);
   if (!open) {
     return (
       <aside className="panel-rail left">
@@ -203,7 +218,39 @@ export function Sidebar({
           {searchMatch ? (
             <p className="search-hit mono">{searchSummary(searchMatch)}</p>
           ) : spec.searchQuery.trim().length >= 2 ? (
-            <p className="search-miss">No matches in this construct.</p>
+            <>
+              <p className="search-miss">No matches in this construct.</p>
+              {peopleHits.length > 0 ? (
+                <div className="search-global">
+                  <p className="search-hint">Found in other constructs:</p>
+                  <ul className="search-global-list">
+                    {peopleHits.map((p) => (
+                      <li key={p.id}>
+                        <span className="search-global-name">{p.label}</span>
+                        <span className="search-global-jumps">
+                          {p.constructs.slice(0, 4).map((cid) => (
+                            <button
+                              key={cid}
+                              type="button"
+                              className="ghost search-jump"
+                              onClick={() =>
+                                onChange({
+                                  activeConstruct: cid,
+                                  searchQuery: p.label,
+                                  searchMode: "highlight",
+                                })
+                              }
+                            >
+                              {index.find((m) => m.id === cid)?.title ?? cid}
+                            </button>
+                          ))}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+            </>
           ) : (
             <p className="search-hint">
               Highlight dims everything else. Isolate keeps only the matched series /

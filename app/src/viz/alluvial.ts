@@ -3,6 +3,7 @@
 import { sankey, sankeyLinkHorizontal, type SankeyGraph, type SankeyNode, type SankeyLink } from "d3-sankey";
 import type { StageRow } from "../lib/types";
 import { categoricalScale, colorForGender } from "../lib/colors";
+import type { Theme } from "../lib/theme/tokens";
 
 export interface AlluvialNode {
   id: string;
@@ -39,10 +40,11 @@ export function layoutAlluvial(
   width: number,
   height: number,
   paletteName: string,
-  opts?: { colorBy?: import("../lib/types").ColorBy },
+  opts?: { colorBy?: import("../lib/types").ColorBy; theme?: Theme },
 ): AlluvialLayout {
   if (!stages.length) return { nodes: [], links: [], stages: [] };
   const colorBy = opts?.colorBy ?? "strength";
+  const theme = opts?.theme ?? "light";
 
   // Determine stage order from edges
   const stageOrder: string[] = [];
@@ -120,7 +122,7 @@ export function layoutAlluvial(
         name === "nonbinary" ||
         name === "unknown")
     ) {
-      return colorForGender(name, "light", paletteName);
+      return colorForGender(name, theme, paletteName);
     }
     return color(name);
   };

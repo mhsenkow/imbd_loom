@@ -4,7 +4,7 @@ import type { Edge, Manifest, Node, SortBy, StatMarkId } from "./types";
 import { DEFAULT_STAT_MARKS } from "./types";
 import { edgeKey } from "./search";
 import { compareNodesBySort } from "./filter";
-import { token } from "./theme/tokens";
+import { token, type Theme } from "./theme/tokens";
 import { nodeStrength } from "./metrics";
 
 export type { StatMarkId };
@@ -270,21 +270,26 @@ export const STAT_PRESETS: Record<string, StatMarkId[]> = {
  * Values resolve from semantic `stat.*` tokens so charts stay shareable and
  * reading guides don't collide with genre/degree encoding.
  */
-export const STAT_COLORS = {
-  guide: token("stat.guide", "light"),
-  halo: token("stat.halo", "light"),
-  warm: token("stat.warm", "light"),
-  bridge: token("stat.bridge", "light"),
-  path: token("stat.path", "light"),
-  densest: token("stat.densest", "light"),
-  insight: token("stat.insight", "light"),
-  ghost: token("stat.ghost", "light"),
-  rising: token("stat.rising", "light"),
-  fading: token("stat.fading", "light"),
-  community: token("stat.community", "light"),
-  reunion: token("stat.reunion", "light"),
-  zglow: token("stat.zglow", "light"),
-} as const;
+export function statColors(theme: Theme = "light") {
+  return {
+    guide: token("stat.guide", theme),
+    halo: token("stat.halo", theme),
+    warm: token("stat.warm", theme),
+    bridge: token("stat.bridge", theme),
+    path: token("stat.path", theme),
+    densest: token("stat.densest", theme),
+    insight: token("stat.insight", theme),
+    ghost: token("stat.ghost", theme),
+    rising: token("stat.rising", theme),
+    fading: token("stat.fading", theme),
+    community: token("stat.community", theme),
+    reunion: token("stat.reunion", theme),
+    zglow: token("stat.zglow", theme),
+  } as const;
+}
+
+/** @deprecated Prefer statColors(theme) — light-locked for print/legacy. */
+export const STAT_COLORS = statColors("light");
 
 function num(v: unknown): number | undefined {
   if (v == null) return undefined;
@@ -964,28 +969,30 @@ export function nodeOpacityMod(stats: ViewStatMarks | null | undefined, id: stri
 export function nodeStatStroke(
   stats: ViewStatMarks | null | undefined,
   id: string,
+  theme: Theme = "light",
 ): { stroke: string; strokeWidth: number; dashed?: boolean } | null {
   if (!stats) return null;
+  const c = statColors(theme);
   if (isInsightFocus(stats, id)) {
-    return { stroke: STAT_COLORS.insight, strokeWidth: 2.2, dashed: true };
+    return { stroke: c.insight, strokeWidth: 2.2, dashed: true };
   }
   if (isLoyaltyNode(stats, id)) {
-    return { stroke: STAT_COLORS.path, strokeWidth: 2, dashed: true };
+    return { stroke: c.path, strokeWidth: 2, dashed: true };
   }
   if (isTop5Degree(stats, id)) {
-    return { stroke: STAT_COLORS.halo, strokeWidth: 2 };
+    return { stroke: c.halo, strokeWidth: 2 };
   }
   if (isTop5Prominence(stats, id)) {
-    return { stroke: STAT_COLORS.warm, strokeWidth: 1.8 };
+    return { stroke: c.warm, strokeWidth: 1.8 };
   }
   if (hasStat(stats, "gini_callout") && stats.top10DegreeIds.has(id)) {
-    return { stroke: STAT_COLORS.halo, strokeWidth: 1.4, dashed: true };
+    return { stroke: c.halo, strokeWidth: 1.4, dashed: true };
   }
   if (isFeaturedNode(stats, id)) {
-    return { stroke: STAT_COLORS.path, strokeWidth: 1.6 };
+    return { stroke: c.path, strokeWidth: 1.6 };
   }
   if (isSpanOutlier(stats, id)) {
-    return { stroke: STAT_COLORS.guide, strokeWidth: 1.8 };
+    return { stroke: c.guide, strokeWidth: 1.8 };
   }
   return null;
 }
@@ -994,9 +1001,10 @@ export function nodeFillOverride(
   stats: ViewStatMarks | null | undefined,
   id: string,
   base: string,
+  theme: Theme = "light",
 ): string {
   if (!stats) return base;
-  if (isTop5Prominence(stats, id)) return STAT_COLORS.warm;
+  if (isTop5Prominence(stats, id)) return statColors(theme).warm;
   return base;
 }
 
@@ -1045,6 +1053,7 @@ export function linkStatStyle(
   source: string,
   target: string,
   weight?: number,
+  theme: Theme = "light",
 ): {
   stroke?: string;
   strokeWidthBoost: number;
@@ -1053,15 +1062,16 @@ export function linkStatStyle(
   thin?: boolean;
 } | null {
   if (!stats) return null;
+  const c = statColors(theme);
   if (isDensestPair(stats, source, target)) {
-    return { stroke: STAT_COLORS.densest, strokeWidthBoost: 1.8, strokeOpacity: 0.95 };
+    return { stroke: c.densest, strokeWidthBoost: 1.8, strokeOpacity: 0.95 };
   }
   if (isLongestCollab(stats, source, target)) {
-    return { stroke: STAT_COLORS.path, strokeWidthBoost: 1.5, strokeOpacity: 0.92, dash: "6 3" };
+    return { stroke: c.path, strokeWidthBoost: 1.5, strokeOpacity: 0.92, dash: "6 3" };
   }
   if (isFeaturedEdge(stats, source, target)) {
     return {
-      stroke: STAT_COLORS.path,
+      stroke: c.path,
       strokeWidthBoost: 1.2,
       strokeOpacity: 0.9,
       dash: "5 3",
@@ -1069,18 +1079,18 @@ export function linkStatStyle(
   }
   if (isReunionEdge(stats, source, target)) {
     return {
-      stroke: STAT_COLORS.reunion,
+      stroke: c.reunion,
       strokeWidthBoost: 1.1,
       strokeOpacity: 0.9,
       dash: "2 4",
     };
   }
   if (isZHotEdge(stats, source, target)) {
-    return { stroke: STAT_COLORS.zglow, strokeWidthBoost: 1.4, strokeOpacity: 0.95 };
+    return { stroke: c.zglow, strokeWidthBoost: 1.4, strokeOpacity: 0.95 };
   }
   if (isCutEdge(stats, source, target)) {
     return {
-      stroke: STAT_COLORS.community,
+      stroke: c.community,
       strokeWidthBoost: 0.8,
       strokeOpacity: 0.85,
       dash: "1 2",

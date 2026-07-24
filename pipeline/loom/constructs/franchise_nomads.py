@@ -7,6 +7,7 @@ import duckdb
 from loom.constructs import gender_expr
 from loom.constructs.emit import coappearance_edges, finalize_payload
 from loom.filters import adult_exclusion_sql, title_type_sql, vote_floor_sql
+from loom.membership import rank_prominence_sql
 
 
 def _has_table(con: duckdb.DuckDBPyConnection, name: str) -> bool:
@@ -22,6 +23,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     adult = adult_exclusion_sql("t")
     types = title_type_sql("t")
     votes = vote_floor_sql("r", min_votes=50)
+    prom = rank_prominence_sql("r")
 
     if _has_table(con, "title_episode"):
         person_sql = f"""
@@ -77,7 +79,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
               MAX({ge}) AS gender,
               c.franchise_count,
               COUNT(DISTINCT p.tconst) AS title_count,
-              SUM(COALESCE(r.numVotes, 0)) AS prominence
+              {prom} AS prominence
             FROM counted c
             JOIN title_principals p ON p.nconst = c.nconst
               AND p.category IN ('actor', 'actress')
@@ -87,11 +89,11 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             LEFT JOIN gender_enrich ge ON ge.nconst = c.nconst
             WHERE {types} AND {adult} AND {votes}
             GROUP BY c.nconst, n.primaryName, c.franchise_count
-            ORDER BY c.franchise_count DESC, SUM(COALESCE(r.numVotes, 0)) DESC
+            ORDER BY {prom} DESC, c.franchise_count DESC
             LIMIT {int(top_n * 3)}
         """
     else:
-        # Prefix-only fallback
+        # Prefix-only when episode table missing
         person_sql = f"""
             WITH prefix_hits AS (
               SELECT
@@ -123,7 +125,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
               MAX({ge}) AS gender,
               c.franchise_count,
               COUNT(DISTINCT p.tconst) AS title_count,
-              SUM(COALESCE(r.numVotes, 0)) AS prominence
+              {prom} AS prominence
             FROM counted c
             JOIN title_principals p ON p.nconst = c.nconst
               AND p.category IN ('actor', 'actress')
@@ -133,20 +135,29 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             LEFT JOIN gender_enrich ge ON ge.nconst = c.nconst
             WHERE {types} AND {adult} AND {votes}
             GROUP BY c.nconst, n.primaryName, c.franchise_count
-            ORDER BY c.franchise_count DESC, SUM(COALESCE(r.numVotes, 0)) DESC
+            ORDER BY {prom} DESC, c.franchise_count DESC
             LIMIT {int(top_n * 3)}
         """
 
     nodes, edges, stats = coappearance_edges(
-        con, person_sql, construct="franchise_nomads", top_n=top_n, min_shared=2
+        con,
+        person_sql,
+        construct="franchise_nomads",
+        top_n=top_n,
+        min_shared=2,
+        cap_by="blend",
+        enrichment_mode=(
+            "episode_parent_and_prefix"
+            if _has_table(con, "title_episode")
+            else "prefix_only"
+        ),
+        fallback_used=not _has_table(con, "title_episode"),
     )
-    if not _has_table(con, "title_episode"):
-        stats["fallback"] = "title_episode_missing_prefix_only"
 
     method = (
         "Population: actors in ≥3 distinct franchises — parent series via "
         "title_episode and/or shared title-name prefixes (Adult excluded, "
-        "numVotes ≥50). Hero = co-appearance among franchise hoppers."
+        "numVotes ≥50). Ranked by prominence. Cap by blend."
     )
     return finalize_payload(
         con,

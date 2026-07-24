@@ -4,14 +4,7 @@
     "target": "nm0000496",
     "weight": 1,
     "construct": "same_character",
-    "character": "Heidi (segment: Valkyrie's Bunker)"
-  },
-  {
-    "source": "nm0000103",
-    "target": "nm0098378",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Heidi (segment: Valkyrie's Bunker)"
+    "character": "Heidi"
   },
   {
     "source": "nm0000103",
@@ -28,74 +21,312 @@
     "character": "Sonya"
   },
   {
-    "source": "nm0000104",
-    "target": "nm0000491",
+    "source": "nm0000103",
+    "target": "nm2443438",
     "weight": 1,
     "construct": "same_character",
-    "character": "Rodrigo"
+    "character": "Sonya"
   },
   {
-    "source": "nm0000104",
-    "target": "nm0004879",
+    "source": "nm0000110",
+    "target": "nm0000151",
     "weight": 1,
     "construct": "same_character",
-    "character": "Blue (qv)"
+    "character": "Stuart"
   },
   {
-    "source": "nm0000104",
-    "target": "nm0022764",
+    "source": "nm0000110",
+    "target": "nm0000154",
     "weight": 1,
     "construct": "same_character",
-    "character": "Rodrigo"
+    "character": "Hamlet"
   },
   {
-    "source": "nm0000104",
-    "target": "nm0526019",
+    "source": "nm0000110",
+    "target": "nm0000168",
     "weight": 1,
     "construct": "same_character",
-    "character": "Rodrigo"
+    "character": "Narration"
   },
   {
-    "source": "nm0000104",
-    "target": "nm0768614",
+    "source": "nm0000110",
+    "target": "nm0000276",
     "weight": 1,
     "construct": "same_character",
-    "character": "Marcos (aka War)"
+    "character": "Stuart"
   },
   {
-    "source": "nm0000104",
-    "target": "nm0792911",
+    "source": "nm0000110",
+    "target": "nm0001088",
     "weight": 1,
     "construct": "same_character",
-    "character": "Marcos (aka War)"
+    "character": "Victor Frankenstein"
   },
   {
-    "source": "nm0000104",
-    "target": "nm0869088",
+    "source": "nm0000110",
+    "target": "nm0016141",
     "weight": 1,
     "construct": "same_character",
-    "character": "Rafa"
+    "character": "Stuart"
   },
   {
-    "source": "nm0000104",
-    "target": "nm2837894",
+    "source": "nm0000110",
+    "target": "nm0075359",
     "weight": 1,
     "construct": "same_character",
-    "character": "Rafa"
+    "character": "Stuart"
+  },
+  {
+    "source": "nm0000110",
+    "target": "nm0564215",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Victor Frankenstein"
+  },
+  {
+    "source": "nm0000110",
+    "target": "nm1209966",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Victor Frankenstein"
+  },
+  {
+    "source": "nm0000115",
+    "target": "nm0000489",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dracula"
+  },
+  {
+    "source": "nm0000115",
+    "target": "nm0000509",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dracula"
+  },
+  {
+    "source": "nm0000115",
+    "target": "nm0001667",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dracula"
+  },
+  {
+    "source": "nm0000115",
+    "target": "nm0001705",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Bud"
+  },
+  {
+    "source": "nm0000115",
+    "target": "nm0001765",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Bud"
+  },
+  {
+    "source": "nm0000115",
+    "target": "nm0083109",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Janitor"
+  },
+  {
+    "source": "nm0000115",
+    "target": "nm0482851",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dracula"
+  },
+  {
+    "source": "nm0000115",
+    "target": "nm0542706",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Bud"
+  },
+  {
+    "source": "nm0000115",
+    "target": "nm0574615",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dracula"
+  },
+  {
+    "source": "nm0000115",
+    "target": "nm0724995",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Janitor"
+  },
+  {
+    "source": "nm0000115",
+    "target": "nm0851317",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dracula"
+  },
+  {
+    "source": "nm0000115",
+    "target": "nm0884313",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dracula"
+  },
+  {
+    "source": "nm0000115",
+    "target": "nm0910145",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Janitor"
+  },
+  {
+    "source": "nm0000115",
+    "target": "nm5085683",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Spider"
+  },
+  {
+    "source": "nm0000123",
+    "target": "nm0000174",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000123",
+    "target": "nm0000288",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000123",
+    "target": "nm0001293",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000123",
+    "target": "nm0004715",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000123",
+    "target": "nm0005561",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000123",
+    "target": "nm0045870",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000123",
+    "target": "nm0071818",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Ace"
+  },
+  {
+    "source": "nm0000123",
+    "target": "nm0339304",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000123",
+    "target": "nm0512934",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000123",
+    "target": "nm0738951",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000123",
+    "target": "nm0815814",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000123",
+    "target": "nm1584992",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000134",
+    "target": "nm0000489",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Creature"
+  },
+  {
+    "source": "nm0000134",
+    "target": "nm0012121",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Creature"
+  },
+  {
+    "source": "nm0000134",
+    "target": "nm0724656",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "prisoner"
+  },
+  {
+    "source": "nm0000134",
+    "target": "nm0851317",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Creature"
+  },
+  {
+    "source": "nm0000134",
+    "target": "nm0864997",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Ned"
+  },
+  {
+    "source": "nm0000134",
+    "target": "nm2181128",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Creature"
+  },
+  {
+    "source": "nm0000151",
+    "target": "nm0000174",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The God"
   },
   {
     "source": "nm0000151",
     "target": "nm0000276",
     "weight": 1,
     "construct": "same_character",
-    "character": "Stuart (B Team)"
-  },
-  {
-    "source": "nm0000151",
-    "target": "nm0000286",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Stuart (B Team)"
+    "character": "Stuart"
   },
   {
     "source": "nm0000151",
@@ -103,6 +334,20 @@
     "weight": 1,
     "construct": "same_character",
     "character": "The God"
+  },
+  {
+    "source": "nm0000151",
+    "target": "nm0000489",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Count Dracula"
+  },
+  {
+    "source": "nm0000151",
+    "target": "nm0000509",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Count Dracula"
   },
   {
     "source": "nm0000151",
@@ -134,6 +379,13 @@
   },
   {
     "source": "nm0000151",
+    "target": "nm0001424",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Count Dracula"
+  },
+  {
+    "source": "nm0000151",
     "target": "nm0001971",
     "weight": 1,
     "construct": "same_character",
@@ -141,24 +393,17 @@
   },
   {
     "source": "nm0000151",
-    "target": "nm0006669",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Stuart (B Team)"
-  },
-  {
-    "source": "nm0000151",
     "target": "nm0016141",
     "weight": 1,
     "construct": "same_character",
-    "character": "Stuart (B Team)"
+    "character": "Stuart"
   },
   {
     "source": "nm0000151",
     "target": "nm0075359",
     "weight": 1,
     "construct": "same_character",
-    "character": "Stuart (B Team)"
+    "character": "Stuart"
   },
   {
     "source": "nm0000151",
@@ -169,66 +414,87 @@
   },
   {
     "source": "nm0000151",
+    "target": "nm0444786",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Count Dracula"
+  },
+  {
+    "source": "nm0000151",
+    "target": "nm0451918",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Archie"
+  },
+  {
+    "source": "nm0000151",
+    "target": "nm0884313",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Archie"
+  },
+  {
+    "source": "nm0000151",
     "target": "nm0919798",
     "weight": 1,
     "construct": "same_character",
     "character": "Archie"
   },
   {
-    "source": "nm0000153",
-    "target": "nm0051469",
+    "source": "nm0000151",
+    "target": "nm0929489",
     "weight": 1,
     "construct": "same_character",
-    "character": "Ginger"
+    "character": "Archie"
   },
   {
-    "source": "nm0000153",
-    "target": "nm0098378",
+    "source": "nm0000154",
+    "target": "nm0000276",
     "weight": 1,
     "construct": "same_character",
-    "character": "Billie"
+    "character": "The Porter"
   },
   {
-    "source": "nm0000153",
-    "target": "nm0217221",
+    "source": "nm0000154",
+    "target": "nm0000321",
     "weight": 1,
     "construct": "same_character",
-    "character": "Ginger"
+    "character": "Gene"
   },
   {
-    "source": "nm0000153",
-    "target": "nm0319308",
+    "source": "nm0000154",
+    "target": "nm0001136",
     "weight": 1,
     "construct": "same_character",
-    "character": "Ginger"
+    "character": "Gene"
   },
   {
-    "source": "nm0000153",
-    "target": "nm0587900",
+    "source": "nm0000154",
+    "target": "nm0261413",
     "weight": 1,
     "construct": "same_character",
-    "character": "Ginger"
+    "character": "The Porter"
   },
   {
-    "source": "nm0000153",
-    "target": "nm0838588",
+    "source": "nm0000154",
+    "target": "nm0444786",
     "weight": 1,
     "construct": "same_character",
-    "character": "Cleo (US)"
+    "character": "Gene"
   },
   {
-    "source": "nm0000153",
-    "target": "nm1102577",
-    "weight": 2,
+    "source": "nm0000154",
+    "target": "nm0925966",
+    "weight": 1,
     "construct": "same_character",
-    "character": "Ginger"
+    "character": "Gene"
   },
   {
     "source": "nm0000158",
-    "target": "nm0001445",
+    "target": "nm0000489",
     "weight": 1,
     "construct": "same_character",
-    "character": "Hotel manager"
+    "character": "Bailey"
   },
   {
     "source": "nm0000158",
@@ -238,32 +504,123 @@
     "character": "conductor"
   },
   {
-    "source": "nm0000168",
-    "target": "nm0146146",
+    "source": "nm0000158",
+    "target": "nm0815814",
     "weight": 1,
     "construct": "same_character",
-    "character": "Narration"
-  },
-  {
-    "source": "nm0000168",
-    "target": "nm0762560",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Richie"
+    "character": "conductor"
   },
   {
     "source": "nm0000168",
     "target": "nm0910145",
     "weight": 1,
     "construct": "same_character",
-    "character": "Arnold (Vincent's son)"
+    "character": "Arnold"
   },
   {
-    "source": "nm0000168",
-    "target": "nm2095800",
+    "source": "nm0000174",
+    "target": "nm0000288",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000174",
+    "target": "nm0000448",
     "weight": 1,
     "construct": "same_character",
-    "character": "Narration"
+    "character": "The God"
+  },
+  {
+    "source": "nm0000174",
+    "target": "nm0000649",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The God"
+  },
+  {
+    "source": "nm0000174",
+    "target": "nm0000821",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The God"
+  },
+  {
+    "source": "nm0000174",
+    "target": "nm0001086",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The God"
+  },
+  {
+    "source": "nm0000174",
+    "target": "nm0001293",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000174",
+    "target": "nm0004715",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000174",
+    "target": "nm0005561",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000174",
+    "target": "nm0045870",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000174",
+    "target": "nm0339304",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000174",
+    "target": "nm0438501",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The God"
+  },
+  {
+    "source": "nm0000174",
+    "target": "nm0512934",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000174",
+    "target": "nm0738951",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000174",
+    "target": "nm0815814",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000174",
+    "target": "nm1584992",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
   },
   {
     "source": "nm0000193",
@@ -274,17 +631,31 @@
   },
   {
     "source": "nm0000193",
-    "target": "nm0000700",
+    "target": "nm0000496",
     "weight": 1,
     "construct": "same_character",
-    "character": "Alexandra (segment: Il nuovo mondo)"
+    "character": "Maureen"
   },
   {
     "source": "nm0000193",
     "target": "nm0001721",
     "weight": 1,
     "construct": "same_character",
-    "character": "Alexandra (segment: Il nuovo mondo)"
+    "character": "Alexandra"
+  },
+  {
+    "source": "nm0000193",
+    "target": "nm0025483",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Maureen"
+  },
+  {
+    "source": "nm0000193",
+    "target": "nm0050210",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Elisabeth"
   },
   {
     "source": "nm0000193",
@@ -295,14 +666,28 @@
   },
   {
     "source": "nm0000193",
-    "target": "nm1980957",
+    "target": "nm0553269",
     "weight": 1,
     "construct": "same_character",
-    "character": "Lea"
+    "character": "Maureen"
   },
   {
     "source": "nm0000193",
-    "target": "nm6949652",
+    "target": "nm0829576",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Maureen"
+  },
+  {
+    "source": "nm0000193",
+    "target": "nm1754366",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Maureen"
+  },
+  {
+    "source": "nm0000193",
+    "target": "nm1980957",
     "weight": 1,
     "construct": "same_character",
     "character": "Lea"
@@ -310,13 +695,6 @@
   {
     "source": "nm0000201",
     "target": "nm0001406",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Lillian"
-  },
-  {
-    "source": "nm0000201",
-    "target": "nm0005216",
     "weight": 1,
     "construct": "same_character",
     "character": "Lillian"
@@ -333,7 +711,14 @@
     "target": "nm0259708",
     "weight": 1,
     "construct": "same_character",
-    "character": "Elvira (segment: Born in East L.A.)"
+    "character": "Elvira"
+  },
+  {
+    "source": "nm0000201",
+    "target": "nm0367762",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Lillian"
   },
   {
     "source": "nm0000201",
@@ -357,193 +742,39 @@
     "character": "Lea"
   },
   {
-    "source": "nm0000201",
-    "target": "nm6949652",
+    "source": "nm0000241",
+    "target": "nm0001424",
     "weight": 1,
     "construct": "same_character",
-    "character": "Lea"
+    "character": "Luc"
   },
   {
-    "source": "nm0000272",
-    "target": "nm0000366",
+    "source": "nm0000241",
+    "target": "nm0001667",
     "weight": 1,
     "construct": "same_character",
-    "character": "La mère"
+    "character": "Phillip"
   },
   {
-    "source": "nm0000272",
-    "target": "nm0000435",
+    "source": "nm0000241",
+    "target": "nm0509264",
     "weight": 1,
     "construct": "same_character",
-    "character": "Adriana"
-  },
-  {
-    "source": "nm0000272",
-    "target": "nm0000708",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "the producer"
-  },
-  {
-    "source": "nm0000272",
-    "target": "nm0243175",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "La mère"
-  },
-  {
-    "source": "nm0000272",
-    "target": "nm0356625",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Fanny (segment: Pigalle)"
-  },
-  {
-    "source": "nm0000272",
-    "target": "nm0951456",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "La mère"
-  },
-  {
-    "source": "nm0000274",
-    "target": "nm0000285",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Murphy"
-  },
-  {
-    "source": "nm0000274",
-    "target": "nm0000286",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Murphy"
-  },
-  {
-    "source": "nm0000274",
-    "target": "nm0000321",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Murphy"
-  },
-  {
-    "source": "nm0000274",
-    "target": "nm0000434",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Murphy"
-  },
-  {
-    "source": "nm0000274",
-    "target": "nm0000598",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Harvey"
-  },
-  {
-    "source": "nm0000274",
-    "target": "nm0000649",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Harvey"
-  },
-  {
-    "source": "nm0000274",
-    "target": "nm0000708",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Douglas"
-  },
-  {
-    "source": "nm0000274",
-    "target": "nm0000767",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Harvey"
-  },
-  {
-    "source": "nm0000274",
-    "target": "nm0001164",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Murphy"
-  },
-  {
-    "source": "nm0000274",
-    "target": "nm0001293",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Douglas"
-  },
-  {
-    "source": "nm0000274",
-    "target": "nm0001557",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Murphy"
-  },
-  {
-    "source": "nm0000274",
-    "target": "nm0001765",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Harvey"
-  },
-  {
-    "source": "nm0000274",
-    "target": "nm0016141",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Harvey"
-  },
-  {
-    "source": "nm0000274",
-    "target": "nm1456471",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "The Ash"
-  },
-  {
-    "source": "nm0000276",
-    "target": "nm0000286",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Stuart (B Team)"
-  },
-  {
-    "source": "nm0000276",
-    "target": "nm0001557",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Chester (segment: Street of Pain)"
-  },
-  {
-    "source": "nm0000276",
-    "target": "nm0001644",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "The Porter"
-  },
-  {
-    "source": "nm0000276",
-    "target": "nm0006669",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Stuart (B Team)"
+    "character": "Phillip"
   },
   {
     "source": "nm0000276",
     "target": "nm0016141",
     "weight": 1,
     "construct": "same_character",
-    "character": "Stuart (B Team)"
+    "character": "Stuart"
   },
   {
     "source": "nm0000276",
     "target": "nm0075359",
     "weight": 1,
     "construct": "same_character",
-    "character": "Stuart (B Team)"
+    "character": "Stuart"
   },
   {
     "source": "nm0000276",
@@ -561,34 +792,6 @@
   },
   {
     "source": "nm0000276",
-    "target": "nm0444786",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Chester (segment: Street of Pain)"
-  },
-  {
-    "source": "nm0000276",
-    "target": "nm0542706",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Chester (segment: Street of Pain)"
-  },
-  {
-    "source": "nm0000276",
-    "target": "nm0728085",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "The Porter"
-  },
-  {
-    "source": "nm0000276",
-    "target": "nm2400045",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Izzy"
-  },
-  {
-    "source": "nm0000276",
     "target": "nm4496875",
     "weight": 1,
     "construct": "same_character",
@@ -600,20 +803,6 @@
     "weight": 1,
     "construct": "same_character",
     "character": "Izzy"
-  },
-  {
-    "source": "nm0000276",
-    "target": "nm5857152",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Chester (segment: Street of Pain)"
-  },
-  {
-    "source": "nm0000285",
-    "target": "nm0000286",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Murphy"
   },
   {
     "source": "nm0000285",
@@ -645,24 +834,10 @@
   },
   {
     "source": "nm0000285",
-    "target": "nm0000708",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Quinn"
-  },
-  {
-    "source": "nm0000285",
-    "target": "nm0001018",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Clarence"
-  },
-  {
-    "source": "nm0000285",
     "target": "nm0001136",
     "weight": 1,
     "construct": "same_character",
-    "character": "Hal (segment: Equilibrium)"
+    "character": "Hal"
   },
   {
     "source": "nm0000285",
@@ -680,7 +855,14 @@
   },
   {
     "source": "nm0000285",
-    "target": "nm0001557",
+    "target": "nm0001626",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hal"
+  },
+  {
+    "source": "nm0000285",
+    "target": "nm0001667",
     "weight": 1,
     "construct": "same_character",
     "character": "Murphy"
@@ -690,14 +872,7 @@
     "target": "nm0001765",
     "weight": 1,
     "construct": "same_character",
-    "character": "Hal (segment: Equilibrium)"
-  },
-  {
-    "source": "nm0000285",
-    "target": "nm0006669",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Quinn"
+    "character": "Hal"
   },
   {
     "source": "nm0000285",
@@ -711,21 +886,21 @@
     "target": "nm0444786",
     "weight": 1,
     "construct": "same_character",
-    "character": "Hal (segment: Equilibrium)"
+    "character": "Hal"
+  },
+  {
+    "source": "nm0000285",
+    "target": "nm0564215",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hal"
   },
   {
     "source": "nm0000285",
     "target": "nm0611889",
     "weight": 1,
     "construct": "same_character",
-    "character": "Hal (segment: Equilibrium)"
-  },
-  {
-    "source": "nm0000285",
-    "target": "nm0762560",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Quinn"
+    "character": "Hal"
   },
   {
     "source": "nm0000285",
@@ -743,185 +918,129 @@
   },
   {
     "source": "nm0000285",
-    "target": "nm3425377",
+    "target": "nm1754366",
     "weight": 1,
     "construct": "same_character",
-    "character": "Marshall"
+    "character": "Quinn"
   },
   {
-    "source": "nm0000286",
-    "target": "nm0000321",
+    "source": "nm0000288",
+    "target": "nm0001293",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0000288",
+    "target": "nm0001593",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Laurie"
+  },
+  {
+    "source": "nm0000288",
+    "target": "nm0001625",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Laurie"
+  },
+  {
+    "source": "nm0000288",
+    "target": "nm0004715",
     "weight": 2,
     "construct": "same_character",
-    "character": "mechanic"
+    "character": "The Batman"
   },
   {
-    "source": "nm0000286",
-    "target": "nm0000434",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Murphy"
-  },
-  {
-    "source": "nm0000286",
-    "target": "nm0001164",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Murphy"
-  },
-  {
-    "source": "nm0000286",
-    "target": "nm0001557",
+    "source": "nm0000288",
+    "target": "nm0005561",
     "weight": 2,
     "construct": "same_character",
-    "character": "Murphy"
+    "character": "The Batman"
   },
   {
-    "source": "nm0000286",
-    "target": "nm0006669",
+    "source": "nm0000288",
+    "target": "nm0045870",
     "weight": 1,
     "construct": "same_character",
-    "character": "Stuart (B Team)"
+    "character": "The Batman"
   },
   {
-    "source": "nm0000286",
-    "target": "nm0016141",
+    "source": "nm0000288",
+    "target": "nm0206257",
     "weight": 1,
     "construct": "same_character",
-    "character": "Stuart (B Team)"
+    "character": "Laurie"
   },
   {
-    "source": "nm0000286",
-    "target": "nm0075359",
-    "weight": 1,
+    "source": "nm0000288",
+    "target": "nm0339304",
+    "weight": 2,
     "construct": "same_character",
-    "character": "Stuart (B Team)"
+    "character": "The Batman"
   },
   {
-    "source": "nm0000286",
-    "target": "nm0444786",
-    "weight": 1,
+    "source": "nm0000288",
+    "target": "nm0512934",
+    "weight": 2,
     "construct": "same_character",
-    "character": "Chester (segment: Street of Pain)"
+    "character": "The Batman"
   },
   {
-    "source": "nm0000286",
-    "target": "nm0542706",
-    "weight": 1,
+    "source": "nm0000288",
+    "target": "nm0738951",
+    "weight": 2,
     "construct": "same_character",
-    "character": "Chester (segment: Street of Pain)"
+    "character": "The Batman"
   },
   {
-    "source": "nm0000286",
-    "target": "nm0919798",
-    "weight": 1,
+    "source": "nm0000288",
+    "target": "nm0815814",
+    "weight": 2,
     "construct": "same_character",
-    "character": "mechanic"
+    "character": "The Batman"
   },
   {
-    "source": "nm0000286",
-    "target": "nm5857152",
+    "source": "nm0000288",
+    "target": "nm1584992",
     "weight": 1,
     "construct": "same_character",
-    "character": "Chester (segment: Street of Pain)"
+    "character": "The Batman"
   },
   {
-    "source": "nm0000317",
-    "target": "nm0000554",
+    "source": "nm0000300",
+    "target": "nm0000721",
     "weight": 1,
     "construct": "same_character",
-    "character": "Smith (segment: The Weird Tailor)"
+    "character": "Juliette"
   },
   {
-    "source": "nm0000317",
-    "target": "nm0000579",
+    "source": "nm0000300",
+    "target": "nm0050210",
     "weight": 1,
     "construct": "same_character",
-    "character": "Gunnar"
+    "character": "Juliette"
   },
   {
-    "source": "nm0000317",
-    "target": "nm0001765",
+    "source": "nm0000300",
+    "target": "nm0367762",
     "weight": 1,
     "construct": "same_character",
-    "character": "Smith (segment: The Weird Tailor)"
+    "character": "Penelope"
   },
   {
-    "source": "nm0000317",
-    "target": "nm0071818",
+    "source": "nm0000300",
+    "target": "nm0543383",
     "weight": 1,
     "construct": "same_character",
-    "character": "Newscaster"
+    "character": "Penelope"
   },
   {
-    "source": "nm0000317",
-    "target": "nm0187764",
+    "source": "nm0000300",
+    "target": "nm2169779",
     "weight": 1,
     "construct": "same_character",
-    "character": "Newscaster"
-  },
-  {
-    "source": "nm0000317",
-    "target": "nm0191906",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Clyde"
-  },
-  {
-    "source": "nm0000317",
-    "target": "nm0215281",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Smith (segment: The Weird Tailor)"
-  },
-  {
-    "source": "nm0000317",
-    "target": "nm0217221",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Newscaster"
-  },
-  {
-    "source": "nm0000317",
-    "target": "nm0542706",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Clyde"
-  },
-  {
-    "source": "nm0000317",
-    "target": "nm0654110",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Smith (segment: The Weird Tailor)"
-  },
-  {
-    "source": "nm0000317",
-    "target": "nm0724656",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Newscaster"
-  },
-  {
-    "source": "nm0000317",
-    "target": "nm0785227",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Newscaster"
-  },
-  {
-    "source": "nm0000317",
-    "target": "nm0815718",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Newscaster"
-  },
-  {
-    "source": "nm0000317",
-    "target": "nm0925966",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Clyde"
+    "character": "Mila"
   },
   {
     "source": "nm0000321",
@@ -946,10 +1065,17 @@
   },
   {
     "source": "nm0000321",
-    "target": "nm0001557",
+    "target": "nm0001667",
     "weight": 1,
     "construct": "same_character",
     "character": "Murphy"
+  },
+  {
+    "source": "nm0000321",
+    "target": "nm0428765",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Donald"
   },
   {
     "source": "nm0000321",
@@ -974,10 +1100,24 @@
   },
   {
     "source": "nm0000323",
-    "target": "nm0001018",
+    "target": "nm0000489",
     "weight": 1,
     "construct": "same_character",
-    "character": "Clarence"
+    "character": "Sherlock Holmes"
+  },
+  {
+    "source": "nm0000323",
+    "target": "nm0000549",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "Sherlock Holmes"
+  },
+  {
+    "source": "nm0000323",
+    "target": "nm0001088",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Sherlock Holmes"
   },
   {
     "source": "nm0000323",
@@ -988,38 +1128,24 @@
   },
   {
     "source": "nm0000323",
-    "target": "nm0001644",
+    "target": "nm0001626",
     "weight": 1,
     "construct": "same_character",
-    "character": "Alfred (Andrei's Mother)"
+    "character": "Sherlock Holmes"
   },
   {
     "source": "nm0000323",
-    "target": "nm0001722",
+    "target": "nm0147147",
     "weight": 1,
     "construct": "same_character",
-    "character": "Jasper (Sentai redub)"
-  },
-  {
-    "source": "nm0000323",
-    "target": "nm0491777",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Alfred (Andrei's Mother)"
-  },
-  {
-    "source": "nm0000323",
-    "target": "nm0785227",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Alfred (Andrei's Mother)"
+    "character": "Sherlock Holmes"
   },
   {
     "source": "nm0000323",
     "target": "nm0851317",
     "weight": 1,
     "construct": "same_character",
-    "character": "Alfred (Andrei's Mother)"
+    "character": "Alfred"
   },
   {
     "source": "nm0000323",
@@ -1033,21 +1159,14 @@
     "target": "nm1253936",
     "weight": 1,
     "construct": "same_character",
-    "character": "Alfred (Andrei's Mother)"
-  },
-  {
-    "source": "nm0000323",
-    "target": "nm1456471",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Jasper (Sentai redub)"
+    "character": "Alfred"
   },
   {
     "source": "nm0000323",
     "target": "nm2181128",
     "weight": 1,
     "construct": "same_character",
-    "character": "Jasper (Sentai redub)"
+    "character": "Jasper"
   },
   {
     "source": "nm0000366",
@@ -1058,10 +1177,24 @@
   },
   {
     "source": "nm0000366",
+    "target": "nm0000882",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "La mère"
+  },
+  {
+    "source": "nm0000366",
     "target": "nm0001461",
     "weight": 1,
     "construct": "same_character",
     "character": "Françoise"
+  },
+  {
+    "source": "nm0000366",
+    "target": "nm0050210",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hélène"
   },
   {
     "source": "nm0000366",
@@ -1075,7 +1208,7 @@
     "target": "nm0206257",
     "weight": 1,
     "construct": "same_character",
-    "character": "Martine (segment: My Twin, The Worm)"
+    "character": "Martine"
   },
   {
     "source": "nm0000366",
@@ -1086,10 +1219,31 @@
   },
   {
     "source": "nm0000366",
+    "target": "nm0264554",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "Monique"
+  },
+  {
+    "source": "nm0000366",
     "target": "nm0416524",
     "weight": 1,
     "construct": "same_character",
     "character": "Monique"
+  },
+  {
+    "source": "nm0000366",
+    "target": "nm0829576",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Martine"
+  },
+  {
+    "source": "nm0000366",
+    "target": "nm0884313",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Martine"
   },
   {
     "source": "nm0000366",
@@ -1099,25 +1253,39 @@
     "character": "La mère"
   },
   {
+    "source": "nm0000366",
+    "target": "nm1139628",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hélène"
+  },
+  {
+    "source": "nm0000366",
+    "target": "nm2169779",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hélène"
+  },
+  {
+    "source": "nm0000422",
+    "target": "nm0000621",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Santa Claus"
+  },
+  {
     "source": "nm0000422",
     "target": "nm0000649",
     "weight": 1,
     "construct": "same_character",
-    "character": "Santa Claus (segment: The Messiah on Mott Street)"
-  },
-  {
-    "source": "nm0000422",
-    "target": "nm0000708",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Marshall"
+    "character": "Santa Claus"
   },
   {
     "source": "nm0000422",
     "target": "nm0001164",
     "weight": 1,
     "construct": "same_character",
-    "character": "Santa Claus (segment: The Messiah on Mott Street)"
+    "character": "Santa Claus"
   },
   {
     "source": "nm0000422",
@@ -1138,26 +1306,19 @@
     "target": "nm0532235",
     "weight": 1,
     "construct": "same_character",
-    "character": "Santa Claus (segment: The Messiah on Mott Street)"
+    "character": "Santa Claus"
   },
   {
     "source": "nm0000422",
     "target": "nm0919798",
     "weight": 1,
     "construct": "same_character",
-    "character": "Santa Claus (segment: The Messiah on Mott Street)"
+    "character": "Santa Claus"
   },
   {
     "source": "nm0000422",
     "target": "nm0925966",
     "weight": 1,
-    "construct": "same_character",
-    "character": "Marshall"
-  },
-  {
-    "source": "nm0000422",
-    "target": "nm3425377",
-    "weight": 2,
     "construct": "same_character",
     "character": "Marshall"
   },
@@ -1177,7 +1338,7 @@
   },
   {
     "source": "nm0000434",
-    "target": "nm0001557",
+    "target": "nm0001667",
     "weight": 1,
     "construct": "same_character",
     "character": "Murphy"
@@ -1191,10 +1352,24 @@
   },
   {
     "source": "nm0000434",
-    "target": "nm0728085",
+    "target": "nm0071818",
     "weight": 1,
     "construct": "same_character",
-    "character": "Kane (Cult member)"
+    "character": "The Joker"
+  },
+  {
+    "source": "nm0000434",
+    "target": "nm0724656",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Joker"
+  },
+  {
+    "source": "nm0000434",
+    "target": "nm1209966",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Kane"
   },
   {
     "source": "nm0000434",
@@ -1229,21 +1404,21 @@
     "target": "nm0815718",
     "weight": 1,
     "construct": "same_character",
-    "character": "Madison (Dutch)"
+    "character": "Madison"
   },
   {
     "source": "nm0000435",
     "target": "nm2837894",
     "weight": 1,
     "construct": "same_character",
-    "character": "Madison (Dutch)"
+    "character": "Madison"
   },
   {
     "source": "nm0000448",
     "target": "nm0000616",
     "weight": 1,
     "construct": "same_character",
-    "character": "Buck (segment: Disco Inferno)"
+    "character": "Buck"
   },
   {
     "source": "nm0000448",
@@ -1264,14 +1439,21 @@
     "target": "nm0001086",
     "weight": 2,
     "construct": "same_character",
-    "character": "The God"
+    "character": "The Devil"
   },
   {
     "source": "nm0000448",
-    "target": "nm0001864",
+    "target": "nm0001667",
     "weight": 1,
     "construct": "same_character",
-    "character": "Buck (segment: Disco Inferno)"
+    "character": "The father"
+  },
+  {
+    "source": "nm0000448",
+    "target": "nm0005008",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Devil"
   },
   {
     "source": "nm0000448",
@@ -1282,6 +1464,13 @@
   },
   {
     "source": "nm0000448",
+    "target": "nm0420765",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Buck"
+  },
+  {
+    "source": "nm0000448",
     "target": "nm0438501",
     "weight": 1,
     "construct": "same_character",
@@ -1289,108 +1478,122 @@
   },
   {
     "source": "nm0000448",
+    "target": "nm0451234",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The father"
+  },
+  {
+    "source": "nm0000448",
     "target": "nm0492908",
     "weight": 1,
     "construct": "same_character",
-    "character": "Buck (segment: Disco Inferno)"
+    "character": "Buck"
   },
   {
     "source": "nm0000448",
     "target": "nm0542558",
     "weight": 1,
     "construct": "same_character",
-    "character": "Buck (segment: Disco Inferno)"
+    "character": "Buck"
   },
   {
-    "source": "nm0000491",
-    "target": "nm0001086",
-    "weight": 1,
+    "source": "nm0000489",
+    "target": "nm0000509",
+    "weight": 2,
     "construct": "same_character",
-    "character": "Dante (segment: Disco Inferno)"
+    "character": "Dracula"
   },
   {
-    "source": "nm0000491",
-    "target": "nm0022764",
+    "source": "nm0000489",
+    "target": "nm0000549",
     "weight": 1,
     "construct": "same_character",
-    "character": "Rodrigo"
+    "character": "Sherlock Holmes"
   },
   {
-    "source": "nm0000491",
-    "target": "nm0526019",
+    "source": "nm0000489",
+    "target": "nm0001088",
     "weight": 1,
     "construct": "same_character",
-    "character": "Rodrigo"
+    "character": "Sherlock Holmes"
   },
   {
-    "source": "nm0000491",
-    "target": "nm0724656",
+    "source": "nm0000489",
+    "target": "nm0001424",
     "weight": 1,
     "construct": "same_character",
-    "character": "Glenn"
+    "character": "Count Dracula"
   },
   {
-    "source": "nm0000491",
-    "target": "nm0768614",
+    "source": "nm0000489",
+    "target": "nm0001626",
     "weight": 1,
     "construct": "same_character",
-    "character": "Santiago"
+    "character": "Sherlock Holmes"
   },
   {
-    "source": "nm0000492",
-    "target": "nm0000579",
+    "source": "nm0000489",
+    "target": "nm0001667",
     "weight": 1,
     "construct": "same_character",
-    "character": "Stevie"
+    "character": "Dracula"
   },
   {
-    "source": "nm0000492",
-    "target": "nm0000593",
+    "source": "nm0000489",
+    "target": "nm0012121",
     "weight": 1,
     "construct": "same_character",
-    "character": "Marilyn (The Hustle)"
+    "character": "The Creature"
   },
   {
-    "source": "nm0000492",
-    "target": "nm0000700",
+    "source": "nm0000489",
+    "target": "nm0147147",
     "weight": 1,
     "construct": "same_character",
-    "character": "Marilyn (The Hustle)"
+    "character": "Sherlock Holmes"
   },
   {
-    "source": "nm0000492",
-    "target": "nm0001036",
+    "source": "nm0000489",
+    "target": "nm0444786",
     "weight": 1,
     "construct": "same_character",
-    "character": "Marilyn (The Hustle)"
+    "character": "Count Dracula"
   },
   {
-    "source": "nm0000492",
-    "target": "nm0001625",
+    "source": "nm0000489",
+    "target": "nm0482851",
     "weight": 1,
     "construct": "same_character",
-    "character": "Bridget"
+    "character": "Dracula"
   },
   {
-    "source": "nm0000492",
-    "target": "nm0263759",
+    "source": "nm0000489",
+    "target": "nm0574615",
     "weight": 1,
     "construct": "same_character",
-    "character": "Marilyn (The Hustle)"
+    "character": "Dracula"
   },
   {
-    "source": "nm0000492",
-    "target": "nm0571537",
-    "weight": 1,
+    "source": "nm0000489",
+    "target": "nm0851317",
+    "weight": 2,
     "construct": "same_character",
-    "character": "Bridget"
+    "character": "Dracula"
   },
   {
-    "source": "nm0000492",
-    "target": "nm3425377",
+    "source": "nm0000489",
+    "target": "nm0884313",
     "weight": 1,
     "construct": "same_character",
-    "character": "Stevie"
+    "character": "Dracula"
+  },
+  {
+    "source": "nm0000489",
+    "target": "nm2181128",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Creature"
   },
   {
     "source": "nm0000496",
@@ -1401,17 +1604,17 @@
   },
   {
     "source": "nm0000496",
-    "target": "nm0005028",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Erica (segment: The 100 Candles Game)"
-  },
-  {
-    "source": "nm0000496",
     "target": "nm0005316",
     "weight": 1,
     "construct": "same_character",
     "character": "Joanne"
+  },
+  {
+    "source": "nm0000496",
+    "target": "nm0025483",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Maureen"
   },
   {
     "source": "nm0000496",
@@ -1422,10 +1625,17 @@
   },
   {
     "source": "nm0000496",
-    "target": "nm0098378",
+    "target": "nm0244630",
     "weight": 1,
     "construct": "same_character",
-    "character": "Heidi (segment: Valkyrie's Bunker)"
+    "character": "Erica"
+  },
+  {
+    "source": "nm0000496",
+    "target": "nm0553269",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Maureen"
   },
   {
     "source": "nm0000496",
@@ -1436,164 +1646,185 @@
   },
   {
     "source": "nm0000496",
-    "target": "nm0908914",
+    "target": "nm0829576",
     "weight": 1,
     "construct": "same_character",
-    "character": "Joanne"
+    "character": "Maureen"
   },
   {
     "source": "nm0000496",
     "target": "nm1102891",
     "weight": 1,
     "construct": "same_character",
-    "character": "Harper (bank robber)"
+    "character": "Harper"
   },
   {
     "source": "nm0000496",
     "target": "nm1312566",
     "weight": 1,
     "construct": "same_character",
-    "character": "Harper (bank robber)"
+    "character": "Harper"
+  },
+  {
+    "source": "nm0000496",
+    "target": "nm1754366",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Maureen"
+  },
+  {
+    "source": "nm0000496",
+    "target": "nm2976580",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Harper"
   },
   {
     "source": "nm0000496",
     "target": "nm4496875",
     "weight": 1,
     "construct": "same_character",
-    "character": "Harper (bank robber)"
+    "character": "Harper"
   },
   {
-    "source": "nm0000554",
-    "target": "nm0001136",
+    "source": "nm0000509",
+    "target": "nm0001424",
     "weight": 1,
     "construct": "same_character",
-    "character": "Cliff (segment: The Campfire)"
+    "character": "Count Dracula"
   },
   {
-    "source": "nm0000554",
-    "target": "nm0001385",
+    "source": "nm0000509",
+    "target": "nm0001667",
     "weight": 1,
     "construct": "same_character",
-    "character": "Merlin"
+    "character": "Dracula"
   },
   {
-    "source": "nm0000554",
-    "target": "nm0001426",
+    "source": "nm0000509",
+    "target": "nm0048389",
     "weight": 1,
     "construct": "same_character",
-    "character": "Merlin"
+    "character": "The monster"
   },
   {
-    "source": "nm0000554",
-    "target": "nm0001765",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Smith (segment: The Weird Tailor)"
-  },
-  {
-    "source": "nm0000554",
-    "target": "nm0002076",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Damien (segment: Listen)"
-  },
-  {
-    "source": "nm0000554",
-    "target": "nm0043875",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Merlin"
-  },
-  {
-    "source": "nm0000554",
-    "target": "nm0045870",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Damien (segment: Listen)"
-  },
-  {
-    "source": "nm0000554",
-    "target": "nm0215281",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Smith (segment: The Weird Tailor)"
-  },
-  {
-    "source": "nm0000554",
+    "source": "nm0000509",
     "target": "nm0444786",
     "weight": 1,
     "construct": "same_character",
-    "character": "Cliff (segment: The Campfire)"
+    "character": "Count Dracula"
   },
   {
-    "source": "nm0000554",
-    "target": "nm0542558",
+    "source": "nm0000509",
+    "target": "nm0482851",
     "weight": 1,
     "construct": "same_character",
-    "character": "Cliff (segment: The Campfire)"
+    "character": "Dracula"
   },
   {
-    "source": "nm0000554",
-    "target": "nm0654110",
+    "source": "nm0000509",
+    "target": "nm0574615",
     "weight": 1,
     "construct": "same_character",
-    "character": "Smith (segment: The Weird Tailor)"
+    "character": "Dracula"
   },
   {
-    "source": "nm0000554",
-    "target": "nm2837894",
+    "source": "nm0000509",
+    "target": "nm0636046",
     "weight": 1,
     "construct": "same_character",
-    "character": "Merlin"
+    "character": "The monster"
   },
   {
-    "source": "nm0000554",
-    "target": "nm2847812",
+    "source": "nm0000509",
+    "target": "nm0784818",
     "weight": 1,
     "construct": "same_character",
-    "character": "Damien (segment: Listen)"
+    "character": "The Scientist"
   },
   {
-    "source": "nm0000579",
-    "target": "nm3425377",
-    "weight": 1,
+    "source": "nm0000509",
+    "target": "nm0851317",
+    "weight": 2,
     "construct": "same_character",
-    "character": "Stevie"
+    "character": "Dracula"
   },
   {
-    "source": "nm0000593",
-    "target": "nm0000700",
+    "source": "nm0000509",
+    "target": "nm0884313",
     "weight": 1,
     "construct": "same_character",
-    "character": "Marilyn (The Hustle)"
+    "character": "Dracula"
   },
   {
-    "source": "nm0000593",
-    "target": "nm0001036",
+    "source": "nm0000509",
+    "target": "nm0919798",
     "weight": 1,
     "construct": "same_character",
-    "character": "Marilyn (The Hustle)"
+    "character": "The monster"
   },
   {
-    "source": "nm0000593",
-    "target": "nm0263759",
+    "source": "nm0000514",
+    "target": "nm0002076",
     "weight": 1,
     "construct": "same_character",
-    "character": "Marilyn (The Hustle)"
+    "character": "Glen"
   },
   {
-    "source": "nm0000593",
-    "target": "nm0571537",
+    "source": "nm0000514",
+    "target": "nm0005227",
     "weight": 1,
     "construct": "same_character",
-    "character": "Sherry"
+    "character": "Glenn"
   },
   {
-    "source": "nm0000593",
-    "target": "nm2400045",
+    "source": "nm0000514",
+    "target": "nm0127373",
     "weight": 1,
     "construct": "same_character",
-    "character": "Josie"
+    "character": "Glen"
+  },
+  {
+    "source": "nm0000514",
+    "target": "nm0724656",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Glenn"
+  },
+  {
+    "source": "nm0000514",
+    "target": "nm0726223",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Glen"
+  },
+  {
+    "source": "nm0000549",
+    "target": "nm0001088",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Sherlock Holmes"
+  },
+  {
+    "source": "nm0000549",
+    "target": "nm0001626",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Sherlock Holmes"
+  },
+  {
+    "source": "nm0000549",
+    "target": "nm0147147",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Sherlock Holmes"
+  },
+  {
+    "source": "nm0000549",
+    "target": "nm2181128",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Jasper"
   },
   {
     "source": "nm0000598",
@@ -1605,13 +1836,6 @@
   {
     "source": "nm0000598",
     "target": "nm0000649",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Harvey"
-  },
-  {
-    "source": "nm0000598",
-    "target": "nm0000767",
     "weight": 1,
     "construct": "same_character",
     "character": "Harvey"
@@ -1653,10 +1877,10 @@
   },
   {
     "source": "nm0000616",
-    "target": "nm0001864",
+    "target": "nm0001016",
     "weight": 1,
     "construct": "same_character",
-    "character": "Buck (segment: Disco Inferno)"
+    "character": "The master"
   },
   {
     "source": "nm0000616",
@@ -1667,17 +1891,31 @@
   },
   {
     "source": "nm0000616",
+    "target": "nm0420765",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Buck"
+  },
+  {
+    "source": "nm0000616",
     "target": "nm0492908",
     "weight": 1,
     "construct": "same_character",
-    "character": "Buck (segment: Disco Inferno)"
+    "character": "Buck"
   },
   {
     "source": "nm0000616",
     "target": "nm0542558",
     "weight": 3,
     "construct": "same_character",
-    "character": "Buck (segment: Disco Inferno)"
+    "character": "The Police Chief"
+  },
+  {
+    "source": "nm0000616",
+    "target": "nm0574615",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Lieutenant"
   },
   {
     "source": "nm0000616",
@@ -1687,11 +1925,67 @@
     "character": "Hugh"
   },
   {
-    "source": "nm0000649",
-    "target": "nm0000767",
+    "source": "nm0000621",
+    "target": "nm0000649",
     "weight": 1,
     "construct": "same_character",
-    "character": "Harvey"
+    "character": "Santa Claus"
+  },
+  {
+    "source": "nm0000621",
+    "target": "nm0001164",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Santa Claus"
+  },
+  {
+    "source": "nm0000621",
+    "target": "nm0001368",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The commander"
+  },
+  {
+    "source": "nm0000621",
+    "target": "nm0001705",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Bart"
+  },
+  {
+    "source": "nm0000621",
+    "target": "nm0401264",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Bart"
+  },
+  {
+    "source": "nm0000621",
+    "target": "nm0532235",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Santa Claus"
+  },
+  {
+    "source": "nm0000621",
+    "target": "nm0574534",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Bart"
+  },
+  {
+    "source": "nm0000621",
+    "target": "nm0667326",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The commander"
+  },
+  {
+    "source": "nm0000621",
+    "target": "nm0919798",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Santa Claus"
   },
   {
     "source": "nm0000649",
@@ -1712,7 +2006,7 @@
     "target": "nm0001164",
     "weight": 1,
     "construct": "same_character",
-    "character": "Santa Claus (segment: The Messiah on Mott Street)"
+    "character": "Santa Claus"
   },
   {
     "source": "nm0000649",
@@ -1730,17 +2024,10 @@
   },
   {
     "source": "nm0000649",
-    "target": "nm0016422",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Giovanni"
-  },
-  {
-    "source": "nm0000649",
     "target": "nm0261413",
     "weight": 1,
     "construct": "same_character",
-    "character": "Wally (American Dairy Association ad)"
+    "character": "Wally"
   },
   {
     "source": "nm0000649",
@@ -1754,63 +2041,42 @@
     "target": "nm0444786",
     "weight": 1,
     "construct": "same_character",
-    "character": "Wally (American Dairy Association ad)"
+    "character": "Wally"
   },
   {
     "source": "nm0000649",
     "target": "nm0532235",
     "weight": 1,
     "construct": "same_character",
-    "character": "Santa Claus (segment: The Messiah on Mott Street)"
+    "character": "Santa Claus"
   },
   {
     "source": "nm0000649",
     "target": "nm0726223",
     "weight": 1,
     "construct": "same_character",
-    "character": "Wally (American Dairy Association ad)"
-  },
-  {
-    "source": "nm0000649",
-    "target": "nm0892891",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Giovanni"
+    "character": "Wally"
   },
   {
     "source": "nm0000649",
     "target": "nm0919798",
     "weight": 1,
     "construct": "same_character",
-    "character": "Santa Claus (segment: The Messiah on Mott Street)"
+    "character": "Santa Claus"
   },
   {
-    "source": "nm0000700",
-    "target": "nm0001036",
+    "source": "nm0000707",
+    "target": "nm0000721",
     "weight": 1,
     "construct": "same_character",
-    "character": "Marilyn (The Hustle)"
+    "character": "Ramona"
   },
   {
-    "source": "nm0000700",
-    "target": "nm0001721",
+    "source": "nm0000707",
+    "target": "nm0127373",
     "weight": 1,
     "construct": "same_character",
-    "character": "Alexandra (segment: Il nuovo mondo)"
-  },
-  {
-    "source": "nm0000700",
-    "target": "nm0263759",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Marilyn (The Hustle)"
-  },
-  {
-    "source": "nm0000700",
-    "target": "nm6949652",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Kit (Ken's right-hand man)"
+    "character": "Therapist"
   },
   {
     "source": "nm0000707",
@@ -1824,7 +2090,7 @@
     "target": "nm0259708",
     "weight": 1,
     "construct": "same_character",
-    "character": "Therapist (Graham)"
+    "character": "Therapist"
   },
   {
     "source": "nm0000707",
@@ -1838,7 +2104,7 @@
     "target": "nm0319308",
     "weight": 1,
     "construct": "same_character",
-    "character": "Phoebe (segment: The Girl with Golden Breasts)"
+    "character": "Phoebe"
   },
   {
     "source": "nm0000707",
@@ -1852,7 +2118,7 @@
     "target": "nm0590430",
     "weight": 1,
     "construct": "same_character",
-    "character": "Phoebe (segment: The Girl with Golden Breasts)"
+    "character": "Phoebe"
   },
   {
     "source": "nm0000707",
@@ -1860,13 +2126,6 @@
     "weight": 1,
     "construct": "same_character",
     "character": "Mercedes"
-  },
-  {
-    "source": "nm0000707",
-    "target": "nm1428821",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Phoebe (segment: The Girl with Golden Breasts)"
   },
   {
     "source": "nm0000707",
@@ -1880,105 +2139,49 @@
     "target": "nm4911194",
     "weight": 1,
     "construct": "same_character",
-    "character": "Phoebe (segment: The Girl with Golden Breasts)"
+    "character": "Phoebe"
   },
   {
     "source": "nm0000707",
     "target": "nm5085683",
     "weight": 1,
     "construct": "same_character",
-    "character": "Phoebe (segment: The Girl with Golden Breasts)"
+    "character": "Phoebe"
   },
   {
-    "source": "nm0000708",
-    "target": "nm0001293",
+    "source": "nm0000721",
+    "target": "nm0050210",
     "weight": 1,
     "construct": "same_character",
-    "character": "Douglas"
+    "character": "Juliette"
   },
   {
-    "source": "nm0000708",
-    "target": "nm0006669",
+    "source": "nm0000721",
+    "target": "nm0051469",
     "weight": 1,
     "construct": "same_character",
-    "character": "Quinn"
+    "character": "Pilar"
   },
   {
-    "source": "nm0000708",
-    "target": "nm0762560",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Quinn"
-  },
-  {
-    "source": "nm0000708",
-    "target": "nm0925966",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Marshall"
-  },
-  {
-    "source": "nm0000708",
-    "target": "nm3425377",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Marshall"
-  },
-  {
-    "source": "nm0000767",
-    "target": "nm0001765",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Harvey"
-  },
-  {
-    "source": "nm0000767",
-    "target": "nm0016141",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Harvey"
-  },
-  {
-    "source": "nm0000767",
-    "target": "nm0045870",
+    "source": "nm0000721",
+    "target": "nm0217221",
     "weight": 2,
     "construct": "same_character",
-    "character": "Henri (10)"
+    "character": "Pilar"
   },
   {
-    "source": "nm0000767",
-    "target": "nm0056532",
+    "source": "nm0000721",
+    "target": "nm0483942",
     "weight": 1,
     "construct": "same_character",
-    "character": "Henri (10)"
+    "character": "Pilar"
   },
   {
-    "source": "nm0000767",
-    "target": "nm0066080",
+    "source": "nm0000721",
+    "target": "nm0543383",
     "weight": 1,
     "construct": "same_character",
-    "character": "Georges"
-  },
-  {
-    "source": "nm0000767",
-    "target": "nm0869088",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Xavier (Teddy Bear)"
-  },
-  {
-    "source": "nm0000767",
-    "target": "nm0892891",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Henri (10)"
-  },
-  {
-    "source": "nm0000767",
-    "target": "nm1253936",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Henri (10)"
+    "character": "Ramona"
   },
   {
     "source": "nm0000804",
@@ -1996,24 +2199,17 @@
   },
   {
     "source": "nm0000804",
-    "target": "nm0067367",
-    "weight": 1,
+    "target": "nm0050210",
+    "weight": 2,
     "construct": "same_character",
-    "character": "The mother (segment: La Muette)"
-  },
-  {
-    "source": "nm0000804",
-    "target": "nm0098378",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Gigi"
+    "character": "Hélène"
   },
   {
     "source": "nm0000804",
     "target": "nm0126284",
     "weight": 1,
     "construct": "same_character",
-    "character": "Edith (Jocelyne's mother)"
+    "character": "Edith"
   },
   {
     "source": "nm0000804",
@@ -2031,6 +2227,13 @@
   },
   {
     "source": "nm0000804",
+    "target": "nm0264554",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Françoise"
+  },
+  {
+    "source": "nm0000804",
     "target": "nm0815718",
     "weight": 1,
     "construct": "same_character",
@@ -2041,7 +2244,14 @@
     "target": "nm1102891",
     "weight": 1,
     "construct": "same_character",
-    "character": "Edith (Jocelyne's mother)"
+    "character": "Edith"
+  },
+  {
+    "source": "nm0000804",
+    "target": "nm1139628",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hélène"
   },
   {
     "source": "nm0000804",
@@ -2049,6 +2259,13 @@
     "weight": 1,
     "construct": "same_character",
     "character": "Gigi"
+  },
+  {
+    "source": "nm0000804",
+    "target": "nm2169779",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hélène"
   },
   {
     "source": "nm0000821",
@@ -2062,77 +2279,91 @@
     "target": "nm0006795",
     "weight": 2,
     "construct": "same_character",
-    "character": "Raju (the guide)"
-  },
-  {
-    "source": "nm0000821",
-    "target": "nm0007123",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Vijay(cook)"
+    "character": "Raju"
   },
   {
     "source": "nm0000821",
     "target": "nm0222426",
     "weight": 1,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0000821",
     "target": "nm0332871",
     "weight": 2,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0000821",
     "target": "nm0438463",
     "weight": 2,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0000821",
     "target": "nm0438501",
     "weight": 2,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0000821",
     "target": "nm0451307",
     "weight": 1,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0000821",
     "target": "nm0474774",
     "weight": 2,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0000821",
-    "target": "nm0542492",
+    "target": "nm3602118",
     "weight": 1,
     "construct": "same_character",
-    "character": "Vijay(cook)"
+    "character": "Raju"
   },
   {
-    "source": "nm0000821",
-    "target": "nm0792911",
+    "source": "nm0000882",
+    "target": "nm0067367",
     "weight": 1,
     "construct": "same_character",
-    "character": "Vijay(cook)"
+    "character": "Carole"
   },
   {
-    "source": "nm0000821",
-    "target": "nm3981484",
+    "source": "nm0000882",
+    "target": "nm0167467",
     "weight": 1,
     "construct": "same_character",
-    "character": "Vijay(cook)"
+    "character": "Carole"
+  },
+  {
+    "source": "nm0000882",
+    "target": "nm0243175",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "La mère"
+  },
+  {
+    "source": "nm0000882",
+    "target": "nm0356625",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Fanny"
+  },
+  {
+    "source": "nm0000882",
+    "target": "nm0951456",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "La mère"
   },
   {
     "source": "nm0000947",
@@ -2171,22 +2402,15 @@
   },
   {
     "source": "nm0000947",
-    "target": "nm0748973",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Joanne"
-  },
-  {
-    "source": "nm0000947",
-    "target": "nm0820053",
+    "target": "nm0553269",
     "weight": 1,
     "construct": "same_character",
     "character": "Eleanor"
   },
   {
     "source": "nm0000947",
-    "target": "nm0908914",
-    "weight": 1,
+    "target": "nm0748973",
+    "weight": 2,
     "construct": "same_character",
     "character": "Joanne"
   },
@@ -2199,108 +2423,66 @@
   },
   {
     "source": "nm0000947",
-    "target": "nm2400045",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Justine"
-  },
-  {
-    "source": "nm0000947",
     "target": "nm3255459",
     "weight": 1,
     "construct": "same_character",
     "character": "Eleanor"
   },
   {
-    "source": "nm0001018",
-    "target": "nm0001368",
+    "source": "nm0001016",
+    "target": "nm0001721",
     "weight": 1,
     "construct": "same_character",
-    "character": "Clarence"
+    "character": "Pearl"
   },
   {
-    "source": "nm0001018",
-    "target": "nm0087109",
+    "source": "nm0001016",
+    "target": "nm0005316",
     "weight": 1,
     "construct": "same_character",
-    "character": "Jojo (Adult)"
+    "character": "Pearl"
   },
   {
-    "source": "nm0001018",
-    "target": "nm0611889",
+    "source": "nm0001016",
+    "target": "nm0191906",
     "weight": 1,
     "construct": "same_character",
-    "character": "Johnson (Soldier #1)"
+    "character": "Frankenstein"
   },
   {
-    "source": "nm0001018",
-    "target": "nm0910145",
+    "source": "nm0001016",
+    "target": "nm0244630",
     "weight": 1,
     "construct": "same_character",
-    "character": "Clarence"
+    "character": "Pearl"
   },
   {
-    "source": "nm0001018",
-    "target": "nm1102891",
+    "source": "nm0001016",
+    "target": "nm0815814",
     "weight": 1,
     "construct": "same_character",
-    "character": "Jojo (Adult)"
+    "character": "Harris"
   },
   {
-    "source": "nm0001018",
-    "target": "nm2810287",
+    "source": "nm0001016",
+    "target": "nm0860233",
     "weight": 1,
     "construct": "same_character",
-    "character": "Johnson (Soldier #1)"
-  },
-  {
-    "source": "nm0001036",
-    "target": "nm0067367",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Elisa (Romano's Wife)"
-  },
-  {
-    "source": "nm0001036",
-    "target": "nm0263759",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Marilyn (The Hustle)"
-  },
-  {
-    "source": "nm0001036",
-    "target": "nm0285120",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Cecilia"
-  },
-  {
-    "source": "nm0001036",
-    "target": "nm0416524",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Cecilia"
-  },
-  {
-    "source": "nm0001036",
-    "target": "nm0820053",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Irma (segment: Sketcher)"
+    "character": "Harris"
   },
   {
     "source": "nm0001086",
     "target": "nm0001765",
     "weight": 1,
     "construct": "same_character",
-    "character": "Brett (2006)"
+    "character": "Brett"
   },
   {
     "source": "nm0001086",
-    "target": "nm0005028",
+    "target": "nm0005008",
     "weight": 1,
     "construct": "same_character",
-    "character": "Alexis (segment: No Such Thing as a Vampire)"
+    "character": "The Devil"
   },
   {
     "source": "nm0001086",
@@ -2321,14 +2503,21 @@
     "target": "nm0215281",
     "weight": 1,
     "construct": "same_character",
-    "character": "Brett (2006)"
+    "character": "Brett"
   },
   {
     "source": "nm0001086",
     "target": "nm0319308",
-    "weight": 2,
+    "weight": 1,
     "construct": "same_character",
-    "character": "Alexis (segment: No Such Thing as a Vampire)"
+    "character": "Alexis"
+  },
+  {
+    "source": "nm0001086",
+    "target": "nm0420765",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dick"
   },
   {
     "source": "nm0001086",
@@ -2346,38 +2535,108 @@
   },
   {
     "source": "nm0001086",
+    "target": "nm0574615",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dante"
+  },
+  {
+    "source": "nm0001086",
     "target": "nm0860233",
     "weight": 1,
     "construct": "same_character",
-    "character": "Dick (Scott's Dad)"
+    "character": "Dick"
+  },
+  {
+    "source": "nm0001086",
+    "target": "nm1209966",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dante"
+  },
+  {
+    "source": "nm0001088",
+    "target": "nm0001424",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Baron Frankenstein"
+  },
+  {
+    "source": "nm0001088",
+    "target": "nm0001626",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Sherlock Holmes"
+  },
+  {
+    "source": "nm0001088",
+    "target": "nm0147147",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Sherlock Holmes"
+  },
+  {
+    "source": "nm0001088",
+    "target": "nm0564215",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Victor Frankenstein"
+  },
+  {
+    "source": "nm0001088",
+    "target": "nm1209966",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Victor Frankenstein"
+  },
+  {
+    "source": "nm0001136",
+    "target": "nm0001626",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hal"
   },
   {
     "source": "nm0001136",
     "target": "nm0001765",
     "weight": 2,
     "construct": "same_character",
-    "character": "Hal (segment: Equilibrium)"
+    "character": "Hal"
+  },
+  {
+    "source": "nm0001136",
+    "target": "nm0428765",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Cliff"
   },
   {
     "source": "nm0001136",
     "target": "nm0444786",
     "weight": 3,
     "construct": "same_character",
-    "character": "Cliff (segment: The Campfire)"
+    "character": "Cliff"
   },
   {
     "source": "nm0001136",
     "target": "nm0542558",
     "weight": 1,
     "construct": "same_character",
-    "character": "Cliff (segment: The Campfire)"
+    "character": "Cliff"
+  },
+  {
+    "source": "nm0001136",
+    "target": "nm0564215",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hal"
   },
   {
     "source": "nm0001136",
     "target": "nm0611889",
     "weight": 1,
     "construct": "same_character",
-    "character": "Hal (segment: Equilibrium)"
+    "character": "Hal"
   },
   {
     "source": "nm0001136",
@@ -2388,17 +2647,10 @@
   },
   {
     "source": "nm0001164",
-    "target": "nm0001557",
+    "target": "nm0001667",
     "weight": 1,
     "construct": "same_character",
     "character": "Murphy"
-  },
-  {
-    "source": "nm0001164",
-    "target": "nm0001722",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Ross"
   },
   {
     "source": "nm0001164",
@@ -2409,10 +2661,17 @@
   },
   {
     "source": "nm0001164",
+    "target": "nm0355024",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Ross"
+  },
+  {
+    "source": "nm0001164",
     "target": "nm0532235",
     "weight": 1,
     "construct": "same_character",
-    "character": "Santa Claus (segment: The Messiah on Mott Street)"
+    "character": "Santa Claus"
   },
   {
     "source": "nm0001164",
@@ -2440,21 +2699,63 @@
     "target": "nm0919798",
     "weight": 1,
     "construct": "same_character",
-    "character": "Santa Claus (segment: The Messiah on Mott Street)"
+    "character": "Santa Claus"
+  },
+  {
+    "source": "nm0001293",
+    "target": "nm0004715",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0001293",
+    "target": "nm0005561",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0001293",
+    "target": "nm0045870",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0001293",
+    "target": "nm0339304",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
   },
   {
     "source": "nm0001293",
     "target": "nm0512934",
     "weight": 1,
     "construct": "same_character",
-    "character": "Lyle"
+    "character": "The Batman"
   },
   {
     "source": "nm0001293",
-    "target": "nm0762560",
+    "target": "nm0667326",
     "weight": 1,
     "construct": "same_character",
-    "character": "Lyle"
+    "character": "Milo"
+  },
+  {
+    "source": "nm0001293",
+    "target": "nm0738951",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0001293",
+    "target": "nm0815814",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
   },
   {
     "source": "nm0001293",
@@ -2462,6 +2763,20 @@
     "weight": 1,
     "construct": "same_character",
     "character": "Mick"
+  },
+  {
+    "source": "nm0001293",
+    "target": "nm0919798",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Milo"
+  },
+  {
+    "source": "nm0001293",
+    "target": "nm1584992",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
   },
   {
     "source": "nm0001368",
@@ -2472,38 +2787,24 @@
   },
   {
     "source": "nm0001368",
-    "target": "nm0071818",
+    "target": "nm0451918",
     "weight": 1,
     "construct": "same_character",
-    "character": "Percy (US)"
-  },
-  {
-    "source": "nm0001368",
-    "target": "nm0075359",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Percy (US)"
-  },
-  {
-    "source": "nm0001368",
-    "target": "nm0542706",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Percy (US)"
+    "character": "Archie"
   },
   {
     "source": "nm0001368",
     "target": "nm0667326",
-    "weight": 2,
+    "weight": 1,
     "construct": "same_character",
     "character": "The commander"
   },
   {
     "source": "nm0001368",
-    "target": "nm0724995",
+    "target": "nm0884313",
     "weight": 1,
     "construct": "same_character",
-    "character": "Percy (US)"
+    "character": "Archie"
   },
   {
     "source": "nm0001368",
@@ -2520,46 +2821,11 @@
     "character": "Archie"
   },
   {
-    "source": "nm0001385",
-    "target": "nm0001426",
+    "source": "nm0001368",
+    "target": "nm0929489",
     "weight": 1,
     "construct": "same_character",
-    "character": "Merlin"
-  },
-  {
-    "source": "nm0001385",
-    "target": "nm0004879",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Devon (segment: M.I.L.F. $)"
-  },
-  {
-    "source": "nm0001385",
-    "target": "nm0043875",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "prosecutor"
-  },
-  {
-    "source": "nm0001385",
-    "target": "nm0261413",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "prosecutor"
-  },
-  {
-    "source": "nm0001385",
-    "target": "nm0925966",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "prosecutor"
-  },
-  {
-    "source": "nm0001385",
-    "target": "nm2837894",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Merlin"
+    "character": "Archie"
   },
   {
     "source": "nm0001406",
@@ -2570,27 +2836,6 @@
   },
   {
     "source": "nm0001406",
-    "target": "nm0005216",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Lillian"
-  },
-  {
-    "source": "nm0001406",
-    "target": "nm0006970",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "landlady"
-  },
-  {
-    "source": "nm0001406",
-    "target": "nm0098378",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Gigi"
-  },
-  {
-    "source": "nm0001406",
     "target": "nm0259708",
     "weight": 1,
     "construct": "same_character",
@@ -2598,10 +2843,10 @@
   },
   {
     "source": "nm0001406",
-    "target": "nm0489837",
+    "target": "nm0367762",
     "weight": 1,
     "construct": "same_character",
-    "character": "landlady"
+    "character": "Lillian"
   },
   {
     "source": "nm0001406",
@@ -2634,16 +2879,9 @@
   {
     "source": "nm0001406",
     "target": "nm0818055",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "landlady"
-  },
-  {
-    "source": "nm0001406",
-    "target": "nm0908914",
     "weight": 1,
     "construct": "same_character",
-    "character": "landlady"
+    "character": "Roberta"
   },
   {
     "source": "nm0001406",
@@ -2660,60 +2898,39 @@
     "character": "Gigi"
   },
   {
-    "source": "nm0001426",
-    "target": "nm0001625",
+    "source": "nm0001424",
+    "target": "nm0048389",
     "weight": 1,
     "construct": "same_character",
-    "character": "nun"
+    "character": "Klaus"
   },
   {
-    "source": "nm0001426",
-    "target": "nm0043875",
+    "source": "nm0001424",
+    "target": "nm0215281",
     "weight": 1,
     "construct": "same_character",
-    "character": "Merlin"
+    "character": "Klaus"
   },
   {
-    "source": "nm0001426",
-    "target": "nm1625479",
+    "source": "nm0001424",
+    "target": "nm0444786",
     "weight": 1,
     "construct": "same_character",
-    "character": "Selim"
+    "character": "Count Dracula"
   },
   {
-    "source": "nm0001426",
-    "target": "nm1758682",
+    "source": "nm0001424",
+    "target": "nm0724656",
     "weight": 1,
     "construct": "same_character",
-    "character": "Selim"
+    "character": "Klaus"
   },
   {
-    "source": "nm0001426",
-    "target": "nm2837894",
+    "source": "nm0001424",
+    "target": "nm0799777",
     "weight": 1,
     "construct": "same_character",
-    "character": "Merlin"
-  },
-  {
-    "source": "nm0001445",
-    "target": "nm0001864",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Leonard"
-  },
-  {
-    "source": "nm0001445",
-    "target": "nm0006669",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Abe"
-  },
-  {
-    "source": "nm0001445",
-    "target": "nm0512934",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Leonard"
+    "character": "Klaus"
   },
   {
     "source": "nm0001461",
@@ -2731,150 +2948,59 @@
   },
   {
     "source": "nm0001461",
+    "target": "nm0264554",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Françoise"
+  },
+  {
+    "source": "nm0001461",
     "target": "nm0587900",
     "weight": 1,
     "construct": "same_character",
-    "character": "Coco (UK)"
+    "character": "Coco"
   },
   {
     "source": "nm0001461",
     "target": "nm0590430",
     "weight": 1,
     "construct": "same_character",
-    "character": "Coco (UK)"
+    "character": "Coco"
   },
   {
     "source": "nm0001461",
     "target": "nm0818055",
     "weight": 1,
     "construct": "same_character",
-    "character": "Johanna (Kind)"
+    "character": "Johanna"
   },
   {
-    "source": "nm0001461",
-    "target": "nm2810287",
+    "source": "nm0001593",
+    "target": "nm0001625",
     "weight": 1,
     "construct": "same_character",
-    "character": "Coco (UK)"
+    "character": "Laurie"
   },
   {
-    "source": "nm0001474",
-    "target": "nm0004286",
-    "weight": 1,
+    "source": "nm0001593",
+    "target": "nm0206257",
+    "weight": 2,
     "construct": "same_character",
-    "character": "Winston (aged 7)"
+    "character": "Laurie"
   },
   {
-    "source": "nm0001474",
-    "target": "nm0012121",
+    "source": "nm0001593",
+    "target": "nm0285120",
     "weight": 1,
     "construct": "same_character",
-    "character": "Louie"
-  },
-  {
-    "source": "nm0001474",
-    "target": "nm0048389",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Louie"
-  },
-  {
-    "source": "nm0001474",
-    "target": "nm0191906",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Louie"
-  },
-  {
-    "source": "nm0001474",
-    "target": "nm0492908",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Louie"
-  },
-  {
-    "source": "nm0001474",
-    "target": "nm0574534",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Winston (aged 7)"
-  },
-  {
-    "source": "nm0001474",
-    "target": "nm0667326",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Louie"
-  },
-  {
-    "source": "nm0001474",
-    "target": "nm0919798",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Louie"
-  },
-  {
-    "source": "nm0001507",
-    "target": "nm0194572",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Julio (cab driver)"
-  },
-  {
-    "source": "nm0001507",
-    "target": "nm0526019",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Julio (cab driver)"
-  },
-  {
-    "source": "nm0001507",
-    "target": "nm0590430",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Tito (4 yrs.)"
-  },
-  {
-    "source": "nm0001507",
-    "target": "nm0869088",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "The Padre"
-  },
-  {
-    "source": "nm0001507",
-    "target": "nm0896573",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Tito (4 yrs.)"
-  },
-  {
-    "source": "nm0001557",
-    "target": "nm0444786",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Chester (segment: Street of Pain)"
-  },
-  {
-    "source": "nm0001557",
-    "target": "nm0542706",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Chester (segment: Street of Pain)"
-  },
-  {
-    "source": "nm0001557",
-    "target": "nm5857152",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Chester (segment: Street of Pain)"
+    "character": "Lili"
   },
   {
     "source": "nm0001625",
     "target": "nm0206257",
     "weight": 1,
     "construct": "same_character",
-    "character": "Laurie (engineer)"
+    "character": "Laurie"
   },
   {
     "source": "nm0001625",
@@ -2912,60 +3038,102 @@
     "character": "Roberta"
   },
   {
-    "source": "nm0001625",
-    "target": "nm9608958",
+    "source": "nm0001626",
+    "target": "nm0001765",
     "weight": 1,
     "construct": "same_character",
-    "character": "Celeste (segment: Celeste)"
+    "character": "Hal"
   },
   {
-    "source": "nm0001644",
-    "target": "nm0016422",
+    "source": "nm0001626",
+    "target": "nm0045870",
     "weight": 1,
     "construct": "same_character",
-    "character": "Felipe"
+    "character": "Henri"
   },
   {
-    "source": "nm0001644",
-    "target": "nm0261413",
+    "source": "nm0001626",
+    "target": "nm0056532",
     "weight": 1,
     "construct": "same_character",
-    "character": "The Porter"
+    "character": "Henri"
   },
   {
-    "source": "nm0001644",
-    "target": "nm0491777",
+    "source": "nm0001626",
+    "target": "nm0147147",
     "weight": 1,
     "construct": "same_character",
-    "character": "Alfred (Andrei's Mother)"
+    "character": "Sherlock Holmes"
   },
   {
-    "source": "nm0001644",
-    "target": "nm0728085",
+    "source": "nm0001626",
+    "target": "nm0444786",
     "weight": 1,
     "construct": "same_character",
-    "character": "The Porter"
+    "character": "Hal"
   },
   {
-    "source": "nm0001644",
-    "target": "nm0785227",
+    "source": "nm0001626",
+    "target": "nm0564215",
     "weight": 1,
     "construct": "same_character",
-    "character": "Alfred (Andrei's Mother)"
+    "character": "Hal"
   },
   {
-    "source": "nm0001644",
-    "target": "nm0851317",
+    "source": "nm0001626",
+    "target": "nm0611889",
     "weight": 1,
     "construct": "same_character",
-    "character": "Alfred (Andrei's Mother)"
+    "character": "Hal"
   },
   {
-    "source": "nm0001644",
+    "source": "nm0001626",
     "target": "nm1253936",
     "weight": 1,
     "construct": "same_character",
-    "character": "Alfred (Andrei's Mother)"
+    "character": "Henri"
+  },
+  {
+    "source": "nm0001667",
+    "target": "nm0451234",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The father"
+  },
+  {
+    "source": "nm0001667",
+    "target": "nm0482851",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dracula"
+  },
+  {
+    "source": "nm0001667",
+    "target": "nm0509264",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Phillip"
+  },
+  {
+    "source": "nm0001667",
+    "target": "nm0574615",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dracula"
+  },
+  {
+    "source": "nm0001667",
+    "target": "nm0851317",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dracula"
+  },
+  {
+    "source": "nm0001667",
+    "target": "nm0884313",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dracula"
   },
   {
     "source": "nm0001705",
@@ -2976,10 +3144,10 @@
   },
   {
     "source": "nm0001705",
-    "target": "nm0022764",
+    "target": "nm0401264",
     "weight": 1,
     "construct": "same_character",
-    "character": "Ernesto"
+    "character": "Bart"
   },
   {
     "source": "nm0001705",
@@ -2993,7 +3161,14 @@
     "target": "nm0574534",
     "weight": 1,
     "construct": "same_character",
-    "character": "Bart (young)"
+    "character": "Bart"
+  },
+  {
+    "source": "nm0001705",
+    "target": "nm2690647",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Salim"
   },
   {
     "source": "nm0001705",
@@ -3007,7 +3182,7 @@
     "target": "nm0005316",
     "weight": 1,
     "construct": "same_character",
-    "character": "Pearl (1932-1942)"
+    "character": "Pearl"
   },
   {
     "source": "nm0001721",
@@ -3018,52 +3193,31 @@
   },
   {
     "source": "nm0001721",
+    "target": "nm0244630",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Pearl"
+  },
+  {
+    "source": "nm0001721",
     "target": "nm0416524",
     "weight": 1,
     "construct": "same_character",
     "character": "Edna"
   },
   {
-    "source": "nm0001721",
-    "target": "nm5301405",
+    "source": "nm0001745",
+    "target": "nm0611889",
     "weight": 1,
     "construct": "same_character",
-    "character": "Pearl (1932-1942)"
+    "character": "Tomas"
   },
   {
-    "source": "nm0001722",
-    "target": "nm0004286",
+    "source": "nm0001745",
+    "target": "nm0919798",
     "weight": 1,
     "construct": "same_character",
-    "character": "Ross"
-  },
-  {
-    "source": "nm0001722",
-    "target": "nm0784818",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Ross"
-  },
-  {
-    "source": "nm0001722",
-    "target": "nm1456471",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Jasper (Sentai redub)"
-  },
-  {
-    "source": "nm0001722",
-    "target": "nm2181128",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Jasper (Sentai redub)"
-  },
-  {
-    "source": "nm0001722",
-    "target": "nm5857152",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Gerald"
+    "character": "Sven"
   },
   {
     "source": "nm0001765",
@@ -3084,21 +3238,14 @@
     "target": "nm0215281",
     "weight": 2,
     "construct": "same_character",
-    "character": "Brett (2006)"
-  },
-  {
-    "source": "nm0001765",
-    "target": "nm0319308",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Brett (2006)"
+    "character": "Brett"
   },
   {
     "source": "nm0001765",
     "target": "nm0444786",
     "weight": 1,
     "construct": "same_character",
-    "character": "Hal (segment: Equilibrium)"
+    "character": "Hal"
   },
   {
     "source": "nm0001765",
@@ -3109,59 +3256,52 @@
   },
   {
     "source": "nm0001765",
+    "target": "nm0564215",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hal"
+  },
+  {
+    "source": "nm0001765",
     "target": "nm0611889",
     "weight": 1,
     "construct": "same_character",
-    "character": "Hal (segment: Equilibrium)"
+    "character": "Hal"
   },
   {
     "source": "nm0001765",
     "target": "nm0654110",
     "weight": 1,
     "construct": "same_character",
-    "character": "Smith (segment: The Weird Tailor)"
+    "character": "Smith"
   },
   {
-    "source": "nm0001864",
-    "target": "nm0491777",
+    "source": "nm0001765",
+    "target": "nm0852517",
     "weight": 1,
     "construct": "same_character",
-    "character": "Emil"
-  },
-  {
-    "source": "nm0001864",
-    "target": "nm0492908",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Buck (segment: Disco Inferno)"
-  },
-  {
-    "source": "nm0001864",
-    "target": "nm0512934",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Leonard"
-  },
-  {
-    "source": "nm0001864",
-    "target": "nm0542558",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Buck (segment: Disco Inferno)"
+    "character": "Slim"
   },
   {
     "source": "nm0001971",
     "target": "nm0075359",
     "weight": 1,
     "construct": "same_character",
-    "character": "Lloyd (gutterpunk #2)"
+    "character": "Lloyd"
   },
   {
     "source": "nm0001971",
-    "target": "nm0762560",
+    "target": "nm0451918",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "Archie"
+  },
+  {
+    "source": "nm0001971",
+    "target": "nm0884313",
     "weight": 1,
     "construct": "same_character",
-    "character": "Nelson"
+    "character": "Archie"
   },
   {
     "source": "nm0001971",
@@ -3172,24 +3312,45 @@
   },
   {
     "source": "nm0001971",
+    "target": "nm0929489",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Archie"
+  },
+  {
+    "source": "nm0001971",
     "target": "nm1724747",
     "weight": 1,
     "construct": "same_character",
-    "character": "Lloyd (gutterpunk #2)"
+    "character": "Lloyd"
+  },
+  {
+    "source": "nm0002076",
+    "target": "nm0004715",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Vlad"
   },
   {
     "source": "nm0002076",
     "target": "nm0045870",
     "weight": 1,
     "construct": "same_character",
-    "character": "Damien (segment: Listen)"
+    "character": "Damien"
+  },
+  {
+    "source": "nm0002076",
+    "target": "nm0127373",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Glen"
   },
   {
     "source": "nm0002076",
     "target": "nm0726223",
     "weight": 1,
     "construct": "same_character",
-    "character": "Glen (segment: Case File No. 1)"
+    "character": "Glen"
   },
   {
     "source": "nm0002076",
@@ -3206,13 +3367,6 @@
     "character": "Hugh"
   },
   {
-    "source": "nm0002076",
-    "target": "nm2847812",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Dimitri"
-  },
-  {
     "source": "nm0004286",
     "target": "nm0071818",
     "weight": 1,
@@ -3221,24 +3375,31 @@
   },
   {
     "source": "nm0004286",
+    "target": "nm0355024",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Ross"
+  },
+  {
+    "source": "nm0004286",
     "target": "nm0438463",
     "weight": 1,
     "construct": "same_character",
-    "character": "Romeo (1967 footage)"
+    "character": "Romeo"
   },
   {
     "source": "nm0004286",
     "target": "nm0451307",
     "weight": 1,
     "construct": "same_character",
-    "character": "Romeo (1967 footage)"
+    "character": "Romeo"
   },
   {
     "source": "nm0004286",
     "target": "nm0574534",
     "weight": 1,
     "construct": "same_character",
-    "character": "Winston (aged 7)"
+    "character": "Winston"
   },
   {
     "source": "nm0004286",
@@ -3269,11 +3430,53 @@
     "character": "The Bus Driver"
   },
   {
-    "source": "nm0004286",
-    "target": "nm3425377",
+    "source": "nm0004715",
+    "target": "nm0005561",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0004715",
+    "target": "nm0045870",
     "weight": 1,
     "construct": "same_character",
-    "character": "Romeo (1967 footage)"
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0004715",
+    "target": "nm0339304",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0004715",
+    "target": "nm0512934",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0004715",
+    "target": "nm0738951",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0004715",
+    "target": "nm0815814",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0004715",
+    "target": "nm1584992",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
   },
   {
     "source": "nm0004879",
@@ -3283,88 +3486,88 @@
     "character": "Rodney"
   },
   {
-    "source": "nm0004879",
-    "target": "nm3425377",
+    "source": "nm0005008",
+    "target": "nm0006795",
     "weight": 1,
     "construct": "same_character",
-    "character": "Rodney"
+    "character": "The Devil"
   },
   {
-    "source": "nm0005028",
-    "target": "nm0098378",
+    "source": "nm0005008",
+    "target": "nm0083109",
     "weight": 1,
     "construct": "same_character",
-    "character": "Liv"
+    "character": "dog"
   },
   {
-    "source": "nm0005028",
-    "target": "nm0319308",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Alexis (segment: No Such Thing as a Vampire)"
-  },
-  {
-    "source": "nm0005028",
-    "target": "nm0356625",
+    "source": "nm0005008",
+    "target": "nm0191906",
     "weight": 1,
     "construct": "same_character",
-    "character": "Liv"
+    "character": "dog"
   },
   {
-    "source": "nm0005028",
-    "target": "nm0838588",
+    "source": "nm0005008",
+    "target": "nm0444786",
     "weight": 1,
     "construct": "same_character",
-    "character": "Rhonda (segment: Celeste)"
+    "character": "dog"
   },
   {
-    "source": "nm0005216",
-    "target": "nm0502425",
+    "source": "nm0005008",
+    "target": "nm0482851",
     "weight": 1,
     "construct": "same_character",
-    "character": "Lillian"
+    "character": "dog"
   },
   {
-    "source": "nm0005216",
-    "target": "nm0574534",
+    "source": "nm0005008",
+    "target": "nm0532235",
     "weight": 1,
     "construct": "same_character",
-    "character": "Meredith"
+    "character": "dog"
   },
   {
-    "source": "nm0005216",
-    "target": "nm0748973",
+    "source": "nm0005008",
+    "target": "nm0724995",
     "weight": 1,
     "construct": "same_character",
-    "character": "Lillian"
+    "character": "Nigel"
   },
   {
-    "source": "nm0005216",
-    "target": "nm0940362",
+    "source": "nm0005008",
+    "target": "nm0784818",
     "weight": 1,
     "construct": "same_character",
-    "character": "Hazel"
+    "character": "Nigel"
   },
   {
-    "source": "nm0005216",
-    "target": "nm2254074",
+    "source": "nm0005227",
+    "target": "nm0147147",
     "weight": 1,
     "construct": "same_character",
-    "character": "Hazel"
+    "character": "Superman"
   },
   {
-    "source": "nm0005216",
-    "target": "nm2584600",
+    "source": "nm0005227",
+    "target": "nm0388382",
     "weight": 1,
     "construct": "same_character",
-    "character": "Meredith"
+    "character": "Superman"
   },
   {
-    "source": "nm0005316",
-    "target": "nm0006970",
+    "source": "nm0005227",
+    "target": "nm0724656",
     "weight": 1,
     "construct": "same_character",
-    "character": "Millie"
+    "character": "Glenn"
+  },
+  {
+    "source": "nm0005227",
+    "target": "nm1024677",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Superman"
   },
   {
     "source": "nm0005316",
@@ -3396,14 +3599,14 @@
   },
   {
     "source": "nm0005316",
-    "target": "nm0748973",
+    "target": "nm0244630",
     "weight": 1,
     "construct": "same_character",
-    "character": "Joanne"
+    "character": "Pearl"
   },
   {
     "source": "nm0005316",
-    "target": "nm0908914",
+    "target": "nm0748973",
     "weight": 1,
     "construct": "same_character",
     "character": "Joanne"
@@ -3430,291 +3633,158 @@
     "character": "Lorraine"
   },
   {
-    "source": "nm0005316",
-    "target": "nm5301405",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Pearl (1932-1942)"
-  },
-  {
-    "source": "nm0005316",
-    "target": "nm6949652",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Millie"
-  },
-  {
     "source": "nm0005351",
     "target": "nm0048389",
     "weight": 1,
     "construct": "same_character",
-    "character": "Monty (segment: Kenya Be My Friend?)"
-  },
-  {
-    "source": "nm0005351",
-    "target": "nm0066080",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Curtis"
+    "character": "Monty"
   },
   {
     "source": "nm0005351",
     "target": "nm0083109",
     "weight": 1,
     "construct": "same_character",
-    "character": "Monty (segment: Kenya Be My Friend?)"
+    "character": "Monty"
   },
   {
     "source": "nm0005351",
     "target": "nm0438501",
     "weight": 1,
     "construct": "same_character",
-    "character": "Monty (segment: Kenya Be My Friend?)"
+    "character": "Monty"
+  },
+  {
+    "source": "nm0005351",
+    "target": "nm0451234",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Monty"
   },
   {
     "source": "nm0005351",
     "target": "nm0726223",
     "weight": 1,
     "construct": "same_character",
-    "character": "Wade (The Kid)"
+    "character": "Wade"
   },
   {
-    "source": "nm0006669",
-    "target": "nm0016141",
+    "source": "nm0005351",
+    "target": "nm0799777",
     "weight": 1,
     "construct": "same_character",
-    "character": "Stuart (B Team)"
+    "character": "Wade"
   },
   {
-    "source": "nm0006669",
-    "target": "nm0075359",
+    "source": "nm0005351",
+    "target": "nm2690647",
     "weight": 1,
     "construct": "same_character",
-    "character": "Stuart (B Team)"
+    "character": "Monty"
   },
   {
-    "source": "nm0006669",
-    "target": "nm0762560",
+    "source": "nm0005561",
+    "target": "nm0045870",
     "weight": 1,
     "construct": "same_character",
-    "character": "Quinn"
+    "character": "The Batman"
   },
   {
-    "source": "nm0006795",
-    "target": "nm0007123",
+    "source": "nm0005561",
+    "target": "nm0339304",
     "weight": 2,
     "construct": "same_character",
-    "character": "Raja (young)"
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0005561",
+    "target": "nm0512934",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0005561",
+    "target": "nm0571537",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Jude"
+  },
+  {
+    "source": "nm0005561",
+    "target": "nm0738951",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0005561",
+    "target": "nm0815814",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0005561",
+    "target": "nm1584992",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
   },
   {
     "source": "nm0006795",
     "target": "nm0071818",
     "weight": 1,
     "construct": "same_character",
-    "character": "Raj (Reena's boyfriend)"
+    "character": "Raj"
   },
   {
     "source": "nm0006795",
     "target": "nm0222426",
     "weight": 3,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0006795",
     "target": "nm0332871",
     "weight": 4,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0006795",
     "target": "nm0438463",
     "weight": 4,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0006795",
     "target": "nm0438501",
     "weight": 3,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0006795",
     "target": "nm0451307",
     "weight": 3,
     "construct": "same_character",
-    "character": "Raju (the guide)"
-  },
-  {
-    "source": "nm0006795",
-    "target": "nm0451321",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Raj (Reena's boyfriend)"
+    "character": "Raju"
   },
   {
     "source": "nm0006795",
     "target": "nm0474774",
     "weight": 5,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0006795",
-    "target": "nm0542492",
+    "target": "nm3602118",
     "weight": 1,
     "construct": "same_character",
-    "character": "Vijay(cook)"
-  },
-  {
-    "source": "nm0006795",
-    "target": "nm0792911",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Vijay(cook)"
-  },
-  {
-    "source": "nm0006795",
-    "target": "nm3981484",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Vijay(cook)"
-  },
-  {
-    "source": "nm0006970",
-    "target": "nm0056532",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Millie"
-  },
-  {
-    "source": "nm0006970",
-    "target": "nm0217221",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Millie"
-  },
-  {
-    "source": "nm0006970",
-    "target": "nm0489837",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "landlady"
-  },
-  {
-    "source": "nm0006970",
-    "target": "nm0728085",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "the landlord"
-  },
-  {
-    "source": "nm0006970",
-    "target": "nm0818055",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "landlady"
-  },
-  {
-    "source": "nm0006970",
-    "target": "nm0908914",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "landlady"
-  },
-  {
-    "source": "nm0006970",
-    "target": "nm0910145",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "the landlord"
-  },
-  {
-    "source": "nm0006970",
-    "target": "nm4496875",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Millie"
-  },
-  {
-    "source": "nm0006970",
-    "target": "nm6949652",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Millie"
-  },
-  {
-    "source": "nm0007123",
-    "target": "nm0222426",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Raja (young)"
-  },
-  {
-    "source": "nm0007123",
-    "target": "nm0332871",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Raja (young)"
-  },
-  {
-    "source": "nm0007123",
-    "target": "nm0438463",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Raja (young)"
-  },
-  {
-    "source": "nm0007123",
-    "target": "nm0438501",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Raja (young)"
-  },
-  {
-    "source": "nm0007123",
-    "target": "nm0451307",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Raja (young)"
-  },
-  {
-    "source": "nm0007123",
-    "target": "nm0451321",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Hari (flashback scene)"
-  },
-  {
-    "source": "nm0007123",
-    "target": "nm0474774",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Raja (young)"
-  },
-  {
-    "source": "nm0007123",
-    "target": "nm0542492",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Vijay(cook)"
-  },
-  {
-    "source": "nm0007123",
-    "target": "nm0792911",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Vijay(cook)"
-  },
-  {
-    "source": "nm0007123",
-    "target": "nm3981484",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Vijay(cook)"
+    "character": "Raju"
   },
   {
     "source": "nm0012121",
@@ -3735,7 +3805,14 @@
     "target": "nm0083109",
     "weight": 1,
     "construct": "same_character",
-    "character": "Spike (Timmy)"
+    "character": "Spike"
+  },
+  {
+    "source": "nm0012121",
+    "target": "nm0127373",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Louie"
   },
   {
     "source": "nm0012121",
@@ -3749,7 +3826,14 @@
     "target": "nm0319308",
     "weight": 1,
     "construct": "same_character",
-    "character": "Spike (Timmy)"
+    "character": "Spike"
+  },
+  {
+    "source": "nm0012121",
+    "target": "nm0420765",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Louie"
   },
   {
     "source": "nm0012121",
@@ -3763,7 +3847,7 @@
     "target": "nm0654110",
     "weight": 1,
     "construct": "same_character",
-    "character": "Spike (Timmy)"
+    "character": "Spike"
   },
   {
     "source": "nm0012121",
@@ -3774,17 +3858,17 @@
   },
   {
     "source": "nm0012121",
-    "target": "nm0785227",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Spike (Timmy)"
-  },
-  {
-    "source": "nm0012121",
     "target": "nm0851317",
     "weight": 1,
     "construct": "same_character",
-    "character": "The Creature (in the film's finale)"
+    "character": "The Creature"
+  },
+  {
+    "source": "nm0012121",
+    "target": "nm0852517",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Slim"
   },
   {
     "source": "nm0012121",
@@ -3805,14 +3889,14 @@
     "target": "nm2181128",
     "weight": 1,
     "construct": "same_character",
-    "character": "The Creature (in the film's finale)"
+    "character": "The Creature"
   },
   {
     "source": "nm0016141",
     "target": "nm0075359",
     "weight": 1,
     "construct": "same_character",
-    "character": "Stuart (B Team)"
+    "character": "Stuart"
   },
   {
     "source": "nm0016141",
@@ -3836,88 +3920,123 @@
     "character": "The Cashier"
   },
   {
-    "source": "nm0016422",
-    "target": "nm0491777",
+    "source": "nm0025483",
+    "target": "nm0051469",
     "weight": 1,
     "construct": "same_character",
-    "character": "barman"
+    "character": "Ginger"
   },
   {
-    "source": "nm0016422",
-    "target": "nm0892891",
+    "source": "nm0025483",
+    "target": "nm0126284",
     "weight": 1,
     "construct": "same_character",
-    "character": "Giovanni"
+    "character": "Sabrina"
   },
   {
-    "source": "nm0022764",
-    "target": "nm0526019",
+    "source": "nm0025483",
+    "target": "nm0217221",
     "weight": 1,
     "construct": "same_character",
-    "character": "Rodrigo"
+    "character": "Ginger"
   },
   {
-    "source": "nm0022764",
-    "target": "nm0724656",
+    "source": "nm0025483",
+    "target": "nm0285120",
     "weight": 1,
     "construct": "same_character",
-    "character": "prisoner"
+    "character": "Sabrina"
   },
   {
-    "source": "nm0022764",
-    "target": "nm0768614",
+    "source": "nm0025483",
+    "target": "nm0319308",
     "weight": 1,
     "construct": "same_character",
-    "character": "Emilio"
+    "character": "Ginger"
   },
   {
-    "source": "nm0022764",
-    "target": "nm0892891",
+    "source": "nm0025483",
+    "target": "nm0521723",
     "weight": 1,
     "construct": "same_character",
-    "character": "Emilio"
+    "character": "Sabrina"
   },
   {
-    "source": "nm0043875",
-    "target": "nm0261413",
+    "source": "nm0025483",
+    "target": "nm0543383",
     "weight": 1,
     "construct": "same_character",
-    "character": "prosecutor"
+    "character": "Cassandra"
   },
   {
-    "source": "nm0043875",
-    "target": "nm0419273",
+    "source": "nm0025483",
+    "target": "nm0553269",
     "weight": 1,
     "construct": "same_character",
-    "character": "The Coroner"
+    "character": "Maureen"
   },
   {
-    "source": "nm0043875",
-    "target": "nm0925966",
+    "source": "nm0025483",
+    "target": "nm0587900",
     "weight": 1,
     "construct": "same_character",
-    "character": "prosecutor"
+    "character": "Ginger"
   },
   {
-    "source": "nm0043875",
-    "target": "nm2837894",
+    "source": "nm0025483",
+    "target": "nm0829576",
     "weight": 1,
     "construct": "same_character",
-    "character": "Merlin"
+    "character": "Maureen"
+  },
+  {
+    "source": "nm0025483",
+    "target": "nm1102577",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Ginger"
+  },
+  {
+    "source": "nm0025483",
+    "target": "nm1102891",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Sabrina"
+  },
+  {
+    "source": "nm0025483",
+    "target": "nm1754366",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Maureen"
+  },
+  {
+    "source": "nm0025483",
+    "target": "nm2319871",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Sabrina"
   },
   {
     "source": "nm0045870",
     "target": "nm0056532",
     "weight": 1,
     "construct": "same_character",
-    "character": "Henri (10)"
+    "character": "Henri"
   },
   {
     "source": "nm0045870",
-    "target": "nm0066080",
+    "target": "nm0339304",
     "weight": 1,
     "construct": "same_character",
-    "character": "Georges"
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0045870",
+    "target": "nm0512934",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
   },
   {
     "source": "nm0045870",
@@ -3928,24 +4047,31 @@
   },
   {
     "source": "nm0045870",
-    "target": "nm0892891",
+    "target": "nm0738951",
     "weight": 1,
     "construct": "same_character",
-    "character": "Henri (10)"
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0045870",
+    "target": "nm0815814",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
   },
   {
     "source": "nm0045870",
     "target": "nm1253936",
     "weight": 1,
     "construct": "same_character",
-    "character": "Henri (10)"
+    "character": "Henri"
   },
   {
     "source": "nm0045870",
-    "target": "nm2847812",
-    "weight": 2,
+    "target": "nm1584992",
+    "weight": 1,
     "construct": "same_character",
-    "character": "Nicolas (1st)"
+    "character": "The Batman"
   },
   {
     "source": "nm0048389",
@@ -3959,7 +4085,14 @@
     "target": "nm0083109",
     "weight": 1,
     "construct": "same_character",
-    "character": "Monty (segment: Kenya Be My Friend?)"
+    "character": "Monty"
+  },
+  {
+    "source": "nm0048389",
+    "target": "nm0127373",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Louie"
   },
   {
     "source": "nm0048389",
@@ -3977,10 +4110,24 @@
   },
   {
     "source": "nm0048389",
+    "target": "nm0420765",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Louie"
+  },
+  {
+    "source": "nm0048389",
     "target": "nm0438501",
     "weight": 1,
     "construct": "same_character",
-    "character": "Monty (segment: Kenya Be My Friend?)"
+    "character": "Monty"
+  },
+  {
+    "source": "nm0048389",
+    "target": "nm0451234",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Monty"
   },
   {
     "source": "nm0048389",
@@ -4019,6 +4166,13 @@
   },
   {
     "source": "nm0048389",
+    "target": "nm0799777",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Klaus"
+  },
+  {
+    "source": "nm0048389",
     "target": "nm0919798",
     "weight": 2,
     "construct": "same_character",
@@ -4033,17 +4187,59 @@
   },
   {
     "source": "nm0048389",
+    "target": "nm2690647",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Monty"
+  },
+  {
+    "source": "nm0048389",
     "target": "nm2837894",
     "weight": 1,
     "construct": "same_character",
     "character": "Perry"
   },
   {
+    "source": "nm0050210",
+    "target": "nm0126284",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Edith"
+  },
+  {
+    "source": "nm0050210",
+    "target": "nm0243175",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hélène"
+  },
+  {
+    "source": "nm0050210",
+    "target": "nm1102891",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Edith"
+  },
+  {
+    "source": "nm0050210",
+    "target": "nm1139628",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hélène"
+  },
+  {
+    "source": "nm0050210",
+    "target": "nm2169779",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hélène"
+  },
+  {
     "source": "nm0051469",
     "target": "nm0068338",
     "weight": 1,
     "construct": "same_character",
-    "character": "Kiki (20 & 30 years old)"
+    "character": "Kiki"
   },
   {
     "source": "nm0051469",
@@ -4058,6 +4254,13 @@
     "weight": 1,
     "construct": "same_character",
     "character": "Ginger"
+  },
+  {
+    "source": "nm0051469",
+    "target": "nm0483942",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Pilar"
   },
   {
     "source": "nm0051469",
@@ -4085,21 +4288,14 @@
     "target": "nm1980957",
     "weight": 1,
     "construct": "same_character",
-    "character": "Kiki (20 & 30 years old)"
+    "character": "Kiki"
   },
   {
     "source": "nm0051469",
     "target": "nm2319871",
     "weight": 1,
     "construct": "same_character",
-    "character": "Kiki (20 & 30 years old)"
-  },
-  {
-    "source": "nm0051469",
-    "target": "nm9608958",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Pilar"
+    "character": "Kiki"
   },
   {
     "source": "nm0056532",
@@ -4117,35 +4313,14 @@
   },
   {
     "source": "nm0056532",
-    "target": "nm0892891",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Henri (10)"
-  },
-  {
-    "source": "nm0056532",
     "target": "nm1253936",
     "weight": 1,
     "construct": "same_character",
-    "character": "Henri (10)"
-  },
-  {
-    "source": "nm0056532",
-    "target": "nm2570245",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Anu (Venu's niece and Archana's student)"
+    "character": "Henri"
   },
   {
     "source": "nm0056532",
     "target": "nm4496875",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Millie"
-  },
-  {
-    "source": "nm0056532",
-    "target": "nm6949652",
     "weight": 1,
     "construct": "same_character",
     "character": "Millie"
@@ -4179,13 +4354,6 @@
     "character": "Lea"
   },
   {
-    "source": "nm0067367",
-    "target": "nm6949652",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Lea"
-  },
-  {
     "source": "nm0068338",
     "target": "nm0167467",
     "weight": 1,
@@ -4201,17 +4369,17 @@
   },
   {
     "source": "nm0068338",
-    "target": "nm0908914",
+    "target": "nm0829576",
     "weight": 1,
     "construct": "same_character",
-    "character": "Joanne"
+    "character": "The girl"
   },
   {
     "source": "nm0068338",
     "target": "nm1980957",
     "weight": 1,
     "construct": "same_character",
-    "character": "Kiki (20 & 30 years old)"
+    "character": "Kiki"
   },
   {
     "source": "nm0068338",
@@ -4225,112 +4393,49 @@
     "target": "nm2319871",
     "weight": 2,
     "construct": "same_character",
-    "character": "Kiki (20 & 30 years old)"
-  },
-  {
-    "source": "nm0071818",
-    "target": "nm0075359",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Percy (US)"
-  },
-  {
-    "source": "nm0071818",
-    "target": "nm0187764",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Newscaster"
-  },
-  {
-    "source": "nm0071818",
-    "target": "nm0217221",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Newscaster"
+    "character": "Kiki"
   },
   {
     "source": "nm0071818",
     "target": "nm0332871",
     "weight": 1,
     "construct": "same_character",
-    "character": "Raj (Reena's boyfriend)"
+    "character": "Raj"
   },
   {
     "source": "nm0071818",
     "target": "nm0438463",
     "weight": 1,
     "construct": "same_character",
-    "character": "Raj (Reena's boyfriend)"
+    "character": "Raj"
   },
   {
     "source": "nm0071818",
     "target": "nm0438501",
     "weight": 1,
     "construct": "same_character",
-    "character": "Raj (Reena's boyfriend)"
-  },
-  {
-    "source": "nm0071818",
-    "target": "nm0451321",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Raj (Reena's boyfriend)"
+    "character": "Raj"
   },
   {
     "source": "nm0071818",
     "target": "nm0474774",
     "weight": 1,
     "construct": "same_character",
-    "character": "Raj (Reena's boyfriend)"
-  },
-  {
-    "source": "nm0071818",
-    "target": "nm0542706",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Percy (US)"
-  },
-  {
-    "source": "nm0071818",
-    "target": "nm0667326",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Percy (US)"
+    "character": "Raj"
   },
   {
     "source": "nm0071818",
     "target": "nm0724656",
     "weight": 2,
     "construct": "same_character",
-    "character": "Newscaster"
-  },
-  {
-    "source": "nm0071818",
-    "target": "nm0724995",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Percy (US)"
-  },
-  {
-    "source": "nm0071818",
-    "target": "nm0785227",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Newscaster"
+    "character": "The Joker"
   },
   {
     "source": "nm0071818",
     "target": "nm0815718",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Newscaster"
-  },
-  {
-    "source": "nm0071818",
-    "target": "nm0838588",
     "weight": 1,
     "construct": "same_character",
-    "character": "Ace"
+    "character": "Paramedic"
   },
   {
     "source": "nm0071818",
@@ -4355,31 +4460,31 @@
   },
   {
     "source": "nm0075359",
-    "target": "nm0542706",
+    "target": "nm0451918",
     "weight": 1,
     "construct": "same_character",
-    "character": "Percy (US)"
-  },
-  {
-    "source": "nm0075359",
-    "target": "nm0667326",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Percy (US)"
-  },
-  {
-    "source": "nm0075359",
-    "target": "nm0724995",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Percy (US)"
+    "character": "Lloyd"
   },
   {
     "source": "nm0075359",
     "target": "nm1724747",
     "weight": 1,
     "construct": "same_character",
-    "character": "Lloyd (gutterpunk #2)"
+    "character": "Lloyd"
+  },
+  {
+    "source": "nm0077944",
+    "target": "nm0509264",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "Herman"
+  },
+  {
+    "source": "nm0077944",
+    "target": "nm0726223",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Herman"
   },
   {
     "source": "nm0083109",
@@ -4393,18 +4498,32 @@
     "target": "nm0319308",
     "weight": 1,
     "construct": "same_character",
-    "character": "Spike (Timmy)"
+    "character": "Spike"
   },
   {
     "source": "nm0083109",
     "target": "nm0438501",
     "weight": 1,
     "construct": "same_character",
-    "character": "Monty (segment: Kenya Be My Friend?)"
+    "character": "Monty"
   },
   {
     "source": "nm0083109",
     "target": "nm0444786",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "dog"
+  },
+  {
+    "source": "nm0083109",
+    "target": "nm0451234",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Monty"
+  },
+  {
+    "source": "nm0083109",
+    "target": "nm0482851",
     "weight": 1,
     "construct": "same_character",
     "character": "dog"
@@ -4421,14 +4540,14 @@
     "target": "nm0654110",
     "weight": 1,
     "construct": "same_character",
-    "character": "Spike (Timmy)"
+    "character": "Spike"
   },
   {
     "source": "nm0083109",
     "target": "nm0667326",
     "weight": 1,
     "construct": "same_character",
-    "character": "Spike (Timmy)"
+    "character": "Spike"
   },
   {
     "source": "nm0083109",
@@ -4436,13 +4555,6 @@
     "weight": 1,
     "construct": "same_character",
     "character": "The Janitor"
-  },
-  {
-    "source": "nm0083109",
-    "target": "nm0785227",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Spike (Timmy)"
   },
   {
     "source": "nm0083109",
@@ -4456,21 +4568,14 @@
     "target": "nm0919798",
     "weight": 1,
     "construct": "same_character",
-    "character": "Spike (Timmy)"
+    "character": "Spike"
   },
   {
-    "source": "nm0087109",
-    "target": "nm1102891",
+    "source": "nm0083109",
+    "target": "nm2690647",
     "weight": 1,
     "construct": "same_character",
-    "character": "Jojo (Adult)"
-  },
-  {
-    "source": "nm0087109",
-    "target": "nm2400045",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Izzy"
+    "character": "Monty"
   },
   {
     "source": "nm0087109",
@@ -4501,100 +4606,121 @@
     "character": "Izzy"
   },
   {
-    "source": "nm0098378",
-    "target": "nm0356625",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Liv"
-  },
-  {
-    "source": "nm0098378",
-    "target": "nm0815718",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Gigi"
-  },
-  {
-    "source": "nm0098378",
-    "target": "nm1253936",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Gigi"
-  },
-  {
     "source": "nm0126284",
     "target": "nm0285120",
     "weight": 1,
     "construct": "same_character",
-    "character": "Sabrina (Mara)"
+    "character": "Sabrina"
   },
   {
     "source": "nm0126284",
     "target": "nm0521723",
     "weight": 1,
     "construct": "same_character",
-    "character": "Sabrina (Mara)"
+    "character": "Sabrina"
   },
   {
     "source": "nm0126284",
     "target": "nm0815718",
     "weight": 1,
     "construct": "same_character",
-    "character": "Bea (segment: The Red Book Ritual)"
+    "character": "Bea"
   },
   {
     "source": "nm0126284",
     "target": "nm1102891",
     "weight": 2,
     "construct": "same_character",
-    "character": "Sabrina (Mara)"
+    "character": "Sabrina"
   },
   {
     "source": "nm0126284",
     "target": "nm2319871",
     "weight": 1,
     "construct": "same_character",
-    "character": "Sabrina (Mara)"
+    "character": "Sabrina"
   },
   {
-    "source": "nm0126284",
-    "target": "nm2400045",
+    "source": "nm0127373",
+    "target": "nm0191906",
     "weight": 1,
     "construct": "same_character",
-    "character": "Justine"
+    "character": "Louie"
   },
   {
-    "source": "nm0146146",
-    "target": "nm0611889",
+    "source": "nm0127373",
+    "target": "nm0259708",
     "weight": 1,
     "construct": "same_character",
-    "character": "Jones"
+    "character": "Therapist"
   },
   {
-    "source": "nm0146146",
-    "target": "nm0654110",
+    "source": "nm0127373",
+    "target": "nm0420765",
     "weight": 1,
     "construct": "same_character",
-    "character": "Walt (Man #2)"
+    "character": "Louie"
   },
   {
-    "source": "nm0146146",
+    "source": "nm0127373",
+    "target": "nm0492908",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Louie"
+  },
+  {
+    "source": "nm0127373",
+    "target": "nm0667326",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Louie"
+  },
+  {
+    "source": "nm0127373",
     "target": "nm0726223",
     "weight": 1,
     "construct": "same_character",
-    "character": "Walt (Man #2)"
+    "character": "Glen"
   },
   {
-    "source": "nm0146146",
-    "target": "nm2095800",
+    "source": "nm0127373",
+    "target": "nm0919798",
     "weight": 1,
     "construct": "same_character",
-    "character": "Narration"
+    "character": "Louie"
+  },
+  {
+    "source": "nm0147147",
+    "target": "nm0388382",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "Superman"
+  },
+  {
+    "source": "nm0147147",
+    "target": "nm0636046",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Clark Kent"
+  },
+  {
+    "source": "nm0147147",
+    "target": "nm1024677",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "Superman"
   },
   {
     "source": "nm0167467",
     "target": "nm0243175",
     "weight": 2,
+    "construct": "same_character",
+    "character": "Françoise"
+  },
+  {
+    "source": "nm0167467",
+    "target": "nm0264554",
+    "weight": 1,
     "construct": "same_character",
     "character": "Françoise"
   },
@@ -4621,57 +4747,36 @@
   },
   {
     "source": "nm0174021",
-    "target": "nm0263759",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Ivy (segment: The Red Lipped Moon)"
-  },
-  {
-    "source": "nm0174021",
-    "target": "nm0489837",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Maddy"
-  },
-  {
-    "source": "nm0174021",
     "target": "nm0543383",
     "weight": 1,
     "construct": "same_character",
     "character": "Maddy"
   },
   {
-    "source": "nm0187764",
-    "target": "nm0217221",
+    "source": "nm0174021",
+    "target": "nm0829576",
     "weight": 1,
     "construct": "same_character",
-    "character": "Newscaster"
+    "character": "Maddy"
   },
   {
-    "source": "nm0187764",
-    "target": "nm0724656",
+    "source": "nm0191906",
+    "target": "nm0420765",
     "weight": 1,
     "construct": "same_character",
-    "character": "Newscaster"
-  },
-  {
-    "source": "nm0187764",
-    "target": "nm0785227",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Newscaster"
-  },
-  {
-    "source": "nm0187764",
-    "target": "nm0815718",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Newscaster"
+    "character": "Louie"
   },
   {
     "source": "nm0191906",
     "target": "nm0444786",
     "weight": 2,
+    "construct": "same_character",
+    "character": "Zeke"
+  },
+  {
+    "source": "nm0191906",
+    "target": "nm0482851",
+    "weight": 1,
     "construct": "same_character",
     "character": "dog"
   },
@@ -4726,24 +4831,10 @@
   },
   {
     "source": "nm0194572",
-    "target": "nm0526019",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Julio (cab driver)"
-  },
-  {
-    "source": "nm0194572",
     "target": "nm0587900",
     "weight": 1,
     "construct": "same_character",
-    "character": "Pepe (José Pedro)"
-  },
-  {
-    "source": "nm0194572",
-    "target": "nm0728085",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Pepe (José Pedro)"
+    "character": "Pepe"
   },
   {
     "source": "nm0194572",
@@ -4753,18 +4844,25 @@
     "character": "Tomás"
   },
   {
-    "source": "nm0194572",
-    "target": "nm0892891",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Alfredo (segment: Traviata)"
-  },
-  {
     "source": "nm0206257",
     "target": "nm0285120",
     "weight": 1,
     "construct": "same_character",
-    "character": "Lili (2002)"
+    "character": "Lili"
+  },
+  {
+    "source": "nm0206257",
+    "target": "nm0829576",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Martine"
+  },
+  {
+    "source": "nm0206257",
+    "target": "nm0884313",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Martine"
   },
   {
     "source": "nm0206257",
@@ -4778,25 +4876,32 @@
     "target": "nm0951456",
     "weight": 1,
     "construct": "same_character",
-    "character": "Martine (segment: My Twin, The Worm)"
+    "character": "Martine"
   },
   {
     "source": "nm0215281",
-    "target": "nm0319308",
+    "target": "nm0355024",
     "weight": 1,
     "construct": "same_character",
-    "character": "Brett (2006)"
+    "character": "Bradley"
   },
   {
     "source": "nm0215281",
     "target": "nm0654110",
     "weight": 1,
     "construct": "same_character",
-    "character": "Smith (segment: The Weird Tailor)"
+    "character": "Smith"
   },
   {
     "source": "nm0215281",
     "target": "nm0724656",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Klaus"
+  },
+  {
+    "source": "nm0215281",
+    "target": "nm0799777",
     "weight": 1,
     "construct": "same_character",
     "character": "Klaus"
@@ -4810,10 +4915,24 @@
   },
   {
     "source": "nm0217221",
+    "target": "nm0483942",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Pilar"
+  },
+  {
+    "source": "nm0217221",
     "target": "nm0543383",
     "weight": 1,
     "construct": "same_character",
     "character": "Ramona"
+  },
+  {
+    "source": "nm0217221",
+    "target": "nm0553269",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Betsy"
   },
   {
     "source": "nm0217221",
@@ -4828,27 +4947,6 @@
     "weight": 1,
     "construct": "same_character",
     "character": "The Old Lady"
-  },
-  {
-    "source": "nm0217221",
-    "target": "nm0724656",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Newscaster"
-  },
-  {
-    "source": "nm0217221",
-    "target": "nm0785227",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Newscaster"
-  },
-  {
-    "source": "nm0217221",
-    "target": "nm0815718",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Newscaster"
   },
   {
     "source": "nm0217221",
@@ -4893,67 +4991,53 @@
     "character": "Millie"
   },
   {
-    "source": "nm0217221",
-    "target": "nm6949652",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Millie"
-  },
-  {
-    "source": "nm0217221",
-    "target": "nm9608958",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Daphne"
-  },
-  {
     "source": "nm0222426",
     "target": "nm0332871",
     "weight": 3,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0222426",
     "target": "nm0438463",
     "weight": 3,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0222426",
     "target": "nm0438501",
     "weight": 2,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0222426",
     "target": "nm0451307",
     "weight": 3,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0222426",
     "target": "nm0474774",
     "weight": 3,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0222426",
-    "target": "nm0792911",
+    "target": "nm3602118",
     "weight": 1,
     "construct": "same_character",
-    "character": "Karan (special appearance)"
+    "character": "Raju"
   },
   {
-    "source": "nm0222426",
-    "target": "nm3981484",
+    "source": "nm0243175",
+    "target": "nm0264554",
     "weight": 1,
     "construct": "same_character",
-    "character": "Ajay (Vijay's Brother)"
+    "character": "Françoise"
   },
   {
     "source": "nm0243175",
@@ -4961,6 +5045,20 @@
     "weight": 2,
     "construct": "same_character",
     "character": "La mère"
+  },
+  {
+    "source": "nm0243175",
+    "target": "nm1139628",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hélène"
+  },
+  {
+    "source": "nm0243175",
+    "target": "nm2169779",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hélène"
   },
   {
     "source": "nm0259708",
@@ -4974,21 +5072,14 @@
     "target": "nm0444786",
     "weight": 1,
     "construct": "same_character",
-    "character": "Wally (American Dairy Association ad)"
+    "character": "Wally"
   },
   {
     "source": "nm0261413",
     "target": "nm0726223",
     "weight": 1,
     "construct": "same_character",
-    "character": "Wally (American Dairy Association ad)"
-  },
-  {
-    "source": "nm0261413",
-    "target": "nm0728085",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "The Porter"
+    "character": "Wally"
   },
   {
     "source": "nm0261413",
@@ -5005,18 +5096,18 @@
     "character": "Bryan"
   },
   {
-    "source": "nm0263759",
-    "target": "nm0543383",
+    "source": "nm0264554",
+    "target": "nm0416524",
     "weight": 1,
     "construct": "same_character",
-    "character": "Penelope (segment: I)"
+    "character": "Monique"
   },
   {
-    "source": "nm0263759",
-    "target": "nm2254074",
+    "source": "nm0264554",
+    "target": "nm2976580",
     "weight": 1,
     "construct": "same_character",
-    "character": "Annette (segment: Paulette - Funeral Procession)"
+    "character": "Ida"
   },
   {
     "source": "nm0285120",
@@ -5030,7 +5121,7 @@
     "target": "nm0521723",
     "weight": 1,
     "construct": "same_character",
-    "character": "Sabrina (Mara)"
+    "character": "Sabrina"
   },
   {
     "source": "nm0285120",
@@ -5044,14 +5135,14 @@
     "target": "nm1102891",
     "weight": 1,
     "construct": "same_character",
-    "character": "Sabrina (Mara)"
+    "character": "Sabrina"
   },
   {
     "source": "nm0285120",
     "target": "nm2319871",
     "weight": 1,
     "construct": "same_character",
-    "character": "Sabrina (Mara)"
+    "character": "Sabrina"
   },
   {
     "source": "nm0285120",
@@ -5079,42 +5170,28 @@
     "target": "nm0590430",
     "weight": 1,
     "construct": "same_character",
-    "character": "Phoebe (segment: The Girl with Golden Breasts)"
+    "character": "Phoebe"
   },
   {
     "source": "nm0319308",
     "target": "nm0654110",
     "weight": 1,
     "construct": "same_character",
-    "character": "Spike (Timmy)"
+    "character": "Spike"
   },
   {
     "source": "nm0319308",
     "target": "nm0667326",
     "weight": 1,
     "construct": "same_character",
-    "character": "Spike (Timmy)"
-  },
-  {
-    "source": "nm0319308",
-    "target": "nm0785227",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Spike (Timmy)"
-  },
-  {
-    "source": "nm0319308",
-    "target": "nm0838588",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Rhonda (segment: Celeste)"
+    "character": "Spike"
   },
   {
     "source": "nm0319308",
     "target": "nm0919798",
     "weight": 1,
     "construct": "same_character",
-    "character": "Spike (Timmy)"
+    "character": "Spike"
   },
   {
     "source": "nm0319308",
@@ -5125,115 +5202,101 @@
   },
   {
     "source": "nm0319308",
-    "target": "nm1428821",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "The Princess (The King's Sister)"
-  },
-  {
-    "source": "nm0319308",
-    "target": "nm2095800",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "The Princess (The King's Sister)"
-  },
-  {
-    "source": "nm0319308",
     "target": "nm4911194",
     "weight": 1,
     "construct": "same_character",
-    "character": "Phoebe (segment: The Girl with Golden Breasts)"
+    "character": "Phoebe"
   },
   {
     "source": "nm0319308",
     "target": "nm5085683",
     "weight": 1,
     "construct": "same_character",
-    "character": "Phoebe (segment: The Girl with Golden Breasts)"
-  },
-  {
-    "source": "nm0332709",
-    "target": "nm0491777",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "André (young)"
-  },
-  {
-    "source": "nm0332709",
-    "target": "nm1253936",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "André (young)"
-  },
-  {
-    "source": "nm0332709",
-    "target": "nm2847812",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Stéphane"
-  },
-  {
-    "source": "nm0332709",
-    "target": "nm3024530",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Franck"
+    "character": "Phoebe"
   },
   {
     "source": "nm0332871",
     "target": "nm0438463",
     "weight": 5,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0332871",
     "target": "nm0438501",
     "weight": 3,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0332871",
     "target": "nm0451307",
     "weight": 2,
     "construct": "same_character",
-    "character": "Raju (the guide)"
-  },
-  {
-    "source": "nm0332871",
-    "target": "nm0451321",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Raj (Reena's boyfriend)"
+    "character": "Raju"
   },
   {
     "source": "nm0332871",
     "target": "nm0474774",
     "weight": 4,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0332871",
-    "target": "nm0542492",
+    "target": "nm3602118",
     "weight": 1,
     "construct": "same_character",
-    "character": "Vijay(cook)"
+    "character": "Raju"
   },
   {
-    "source": "nm0332871",
-    "target": "nm0792911",
+    "source": "nm0339304",
+    "target": "nm0512934",
     "weight": 2,
     "construct": "same_character",
-    "character": "Vijay(cook)"
+    "character": "The Batman"
   },
   {
-    "source": "nm0332871",
-    "target": "nm3981484",
+    "source": "nm0339304",
+    "target": "nm0738951",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0339304",
+    "target": "nm0815814",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0339304",
+    "target": "nm0929489",
     "weight": 1,
     "construct": "same_character",
-    "character": "Vijay(cook)"
+    "character": "Gerald"
+  },
+  {
+    "source": "nm0339304",
+    "target": "nm1584992",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0355024",
+    "target": "nm0532235",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Businessman"
+  },
+  {
+    "source": "nm0355024",
+    "target": "nm0784818",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Ross"
   },
   {
     "source": "nm0356625",
@@ -5244,108 +5307,213 @@
   },
   {
     "source": "nm0356625",
+    "target": "nm1139628",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Astrid"
+  },
+  {
+    "source": "nm0356625",
     "target": "nm4911194",
     "weight": 1,
     "construct": "same_character",
     "character": "Astrid"
   },
   {
-    "source": "nm0419273",
-    "target": "nm0444786",
+    "source": "nm0367762",
+    "target": "nm0502425",
     "weight": 1,
     "construct": "same_character",
-    "character": "Warden"
+    "character": "Lillian"
   },
   {
-    "source": "nm0419273",
-    "target": "nm0541908",
+    "source": "nm0367762",
+    "target": "nm0543383",
     "weight": 1,
     "construct": "same_character",
-    "character": "Warden"
+    "character": "Penelope"
   },
   {
-    "source": "nm0419273",
+    "source": "nm0367762",
+    "target": "nm0748973",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Lillian"
+  },
+  {
+    "source": "nm0388382",
+    "target": "nm0428765",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Gerry"
+  },
+  {
+    "source": "nm0388382",
+    "target": "nm0636046",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Clark Kent"
+  },
+  {
+    "source": "nm0388382",
+    "target": "nm1024677",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "Superman"
+  },
+  {
+    "source": "nm0401264",
+    "target": "nm0574534",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Bart"
+  },
+  {
+    "source": "nm0401264",
+    "target": "nm1625479",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Ismail"
+  },
+  {
+    "source": "nm0401264",
+    "target": "nm1758682",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Ismail"
+  },
+  {
+    "source": "nm0416524",
+    "target": "nm0483942",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Celia"
+  },
+  {
+    "source": "nm0416524",
+    "target": "nm2254074",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Celia"
+  },
+  {
+    "source": "nm0420765",
+    "target": "nm0492908",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "Buck"
+  },
+  {
+    "source": "nm0420765",
+    "target": "nm0542558",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Buck"
+  },
+  {
+    "source": "nm0420765",
+    "target": "nm0667326",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Louie"
+  },
+  {
+    "source": "nm0420765",
     "target": "nm0860233",
     "weight": 1,
     "construct": "same_character",
-    "character": "Warden"
+    "character": "Dick"
+  },
+  {
+    "source": "nm0420765",
+    "target": "nm0919798",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Louie"
+  },
+  {
+    "source": "nm0428765",
+    "target": "nm0444786",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Cliff"
+  },
+  {
+    "source": "nm0428765",
+    "target": "nm0542558",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Cliff"
   },
   {
     "source": "nm0438463",
     "target": "nm0438501",
     "weight": 3,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0438463",
     "target": "nm0451307",
     "weight": 3,
     "construct": "same_character",
-    "character": "Raju (the guide)"
-  },
-  {
-    "source": "nm0438463",
-    "target": "nm0451321",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Raj (Reena's boyfriend)"
+    "character": "Romeo"
   },
   {
     "source": "nm0438463",
     "target": "nm0474774",
     "weight": 4,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0438463",
-    "target": "nm0542492",
+    "target": "nm3602118",
     "weight": 1,
     "construct": "same_character",
-    "character": "Vijay(cook)"
+    "character": "Raju"
   },
   {
-    "source": "nm0438463",
-    "target": "nm0792911",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Vijay(cook)"
-  },
-  {
-    "source": "nm0438463",
-    "target": "nm3425377",
+    "source": "nm0438501",
+    "target": "nm0451234",
     "weight": 1,
     "construct": "same_character",
-    "character": "Romeo (1967 footage)"
-  },
-  {
-    "source": "nm0438463",
-    "target": "nm3981484",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Vijay(cook)"
+    "character": "Monty"
   },
   {
     "source": "nm0438501",
     "target": "nm0451307",
     "weight": 2,
     "construct": "same_character",
-    "character": "Raju (the guide)"
-  },
-  {
-    "source": "nm0438501",
-    "target": "nm0451321",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Raj (Reena's boyfriend)"
+    "character": "Raju"
   },
   {
     "source": "nm0438501",
     "target": "nm0474774",
     "weight": 3,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
+  },
+  {
+    "source": "nm0438501",
+    "target": "nm2690647",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Monty"
+  },
+  {
+    "source": "nm0438501",
+    "target": "nm3602118",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Raju"
+  },
+  {
+    "source": "nm0444786",
+    "target": "nm0482851",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "dog"
   },
   {
     "source": "nm0444786",
@@ -5356,38 +5524,31 @@
   },
   {
     "source": "nm0444786",
-    "target": "nm0541908",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Warden"
-  },
-  {
-    "source": "nm0444786",
     "target": "nm0542558",
     "weight": 1,
     "construct": "same_character",
-    "character": "Cliff (segment: The Campfire)"
+    "character": "Cliff"
   },
   {
     "source": "nm0444786",
-    "target": "nm0542706",
+    "target": "nm0564215",
     "weight": 1,
     "construct": "same_character",
-    "character": "Chester (segment: Street of Pain)"
+    "character": "Hal"
   },
   {
     "source": "nm0444786",
     "target": "nm0611889",
     "weight": 1,
     "construct": "same_character",
-    "character": "Hal (segment: Equilibrium)"
+    "character": "Hal"
   },
   {
     "source": "nm0444786",
     "target": "nm0726223",
     "weight": 1,
     "construct": "same_character",
-    "character": "Wally (American Dairy Association ad)"
+    "character": "Wally"
   },
   {
     "source": "nm0444786",
@@ -5395,13 +5556,6 @@
     "weight": 1,
     "construct": "same_character",
     "character": "Eduardo"
-  },
-  {
-    "source": "nm0444786",
-    "target": "nm0860233",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Warden"
   },
   {
     "source": "nm0444786",
@@ -5418,165 +5572,165 @@
     "character": "Cab driver"
   },
   {
-    "source": "nm0444786",
-    "target": "nm5857152",
+    "source": "nm0451234",
+    "target": "nm0451307",
     "weight": 1,
     "construct": "same_character",
-    "character": "Chester (segment: Street of Pain)"
+    "character": "Vikram"
   },
   {
-    "source": "nm0451307",
-    "target": "nm0451321",
+    "source": "nm0451234",
+    "target": "nm2690647",
     "weight": 1,
     "construct": "same_character",
-    "character": "Vikram (Student 5)"
+    "character": "Monty"
+  },
+  {
+    "source": "nm0451234",
+    "target": "nm3602118",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Vikram"
   },
   {
     "source": "nm0451307",
     "target": "nm0474774",
     "weight": 3,
     "construct": "same_character",
-    "character": "Raju (the guide)"
+    "character": "Raju"
   },
   {
     "source": "nm0451307",
-    "target": "nm0792911",
-    "weight": 1,
+    "target": "nm3602118",
+    "weight": 2,
     "construct": "same_character",
-    "character": "Vikram (Student 5)"
+    "character": "Raju"
   },
   {
-    "source": "nm0451307",
-    "target": "nm3425377",
+    "source": "nm0451918",
+    "target": "nm0738951",
     "weight": 1,
     "construct": "same_character",
-    "character": "Romeo (1967 footage)"
+    "character": "Peter Parker"
   },
   {
-    "source": "nm0451307",
-    "target": "nm3981484",
+    "source": "nm0451918",
+    "target": "nm0884313",
     "weight": 1,
     "construct": "same_character",
-    "character": "Ajay (Vijay's Brother)"
+    "character": "Archie"
   },
   {
-    "source": "nm0451321",
-    "target": "nm0474774",
+    "source": "nm0451918",
+    "target": "nm0919798",
     "weight": 1,
     "construct": "same_character",
-    "character": "Raj (Reena's boyfriend)"
+    "character": "Archie"
   },
   {
-    "source": "nm0451321",
-    "target": "nm0784818",
+    "source": "nm0451918",
+    "target": "nm0929489",
     "weight": 1,
     "construct": "same_character",
-    "character": "The Scientist"
+    "character": "Archie"
   },
   {
-    "source": "nm0451321",
-    "target": "nm0792911",
+    "source": "nm0451918",
+    "target": "nm1724747",
     "weight": 1,
     "construct": "same_character",
-    "character": "Vikram (Student 5)"
+    "character": "Lloyd"
   },
   {
-    "source": "nm0451321",
+    "source": "nm0451918",
+    "target": "nm1940449",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Peter Parker"
+  },
+  {
+    "source": "nm0451918",
+    "target": "nm2837894",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Peter Parker"
+  },
+  {
+    "source": "nm0474774",
+    "target": "nm3602118",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Raju"
+  },
+  {
+    "source": "nm0482851",
+    "target": "nm0532235",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "dog"
+  },
+  {
+    "source": "nm0482851",
+    "target": "nm0574615",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dracula"
+  },
+  {
+    "source": "nm0482851",
     "target": "nm0851317",
     "weight": 1,
     "construct": "same_character",
-    "character": "The Scientist"
+    "character": "Dracula"
   },
   {
-    "source": "nm0451321",
-    "target": "nm0896573",
+    "source": "nm0482851",
+    "target": "nm0884313",
     "weight": 1,
     "construct": "same_character",
-    "character": "The Scientist"
+    "character": "Dracula"
   },
   {
-    "source": "nm0474774",
-    "target": "nm0542492",
+    "source": "nm0482851",
+    "target": "nm1928515",
     "weight": 1,
     "construct": "same_character",
-    "character": "Vijay(cook)"
+    "character": "Rico"
   },
   {
-    "source": "nm0474774",
-    "target": "nm0792911",
+    "source": "nm0483942",
+    "target": "nm0666788",
     "weight": 1,
     "construct": "same_character",
-    "character": "Vijay(cook)"
+    "character": "Emilia"
   },
   {
-    "source": "nm0474774",
-    "target": "nm3981484",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Vijay(cook)"
-  },
-  {
-    "source": "nm0489837",
-    "target": "nm0543383",
+    "source": "nm0483942",
+    "target": "nm0893941",
     "weight": 1,
     "construct": "same_character",
-    "character": "Maddy"
+    "character": "Emilia"
   },
   {
-    "source": "nm0489837",
-    "target": "nm0818055",
+    "source": "nm0483942",
+    "target": "nm2254074",
     "weight": 1,
     "construct": "same_character",
-    "character": "landlady"
-  },
-  {
-    "source": "nm0489837",
-    "target": "nm0908914",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "landlady"
-  },
-  {
-    "source": "nm0491777",
-    "target": "nm0785227",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Alfred (Andrei's Mother)"
-  },
-  {
-    "source": "nm0491777",
-    "target": "nm0851317",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Alfred (Andrei's Mother)"
-  },
-  {
-    "source": "nm0491777",
-    "target": "nm1253936",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "André (young)"
-  },
-  {
-    "source": "nm0491777",
-    "target": "nm2847812",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Stéphane"
+    "character": "Celia"
   },
   {
     "source": "nm0492908",
     "target": "nm0542558",
     "weight": 1,
     "construct": "same_character",
-    "character": "Buck (segment: Disco Inferno)"
+    "character": "Buck"
   },
   {
     "source": "nm0492908",
     "target": "nm0542706",
     "weight": 1,
     "construct": "same_character",
-    "character": "Luigi (segment: Montaggio alternato)"
+    "character": "Luigi"
   },
   {
     "source": "nm0492908",
@@ -5597,14 +5751,7 @@
     "target": "nm1925154",
     "weight": 1,
     "construct": "same_character",
-    "character": "Luigi (segment: Montaggio alternato)"
-  },
-  {
-    "source": "nm0492908",
-    "target": "nm3425377",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Rodney"
+    "character": "Luigi"
   },
   {
     "source": "nm0502425",
@@ -5621,15 +5768,43 @@
     "character": "Maddie"
   },
   {
-    "source": "nm0512934",
-    "target": "nm0762560",
+    "source": "nm0502425",
+    "target": "nm1754366",
     "weight": 1,
     "construct": "same_character",
-    "character": "Lyle"
+    "character": "Maddie"
+  },
+  {
+    "source": "nm0509264",
+    "target": "nm0726223",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Herman"
+  },
+  {
+    "source": "nm0512934",
+    "target": "nm0738951",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0512934",
+    "target": "nm0815814",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0512934",
+    "target": "nm1584992",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
   },
   {
     "source": "nm0521723",
-    "target": "nm0820053",
+    "target": "nm0553269",
     "weight": 1,
     "construct": "same_character",
     "character": "Eleanor"
@@ -5646,14 +5821,21 @@
     "target": "nm1102891",
     "weight": 1,
     "construct": "same_character",
-    "character": "Sabrina (Mara)"
+    "character": "Sabrina"
   },
   {
     "source": "nm0521723",
     "target": "nm2319871",
     "weight": 1,
     "construct": "same_character",
-    "character": "Sabrina (Mara)"
+    "character": "Sabrina"
+  },
+  {
+    "source": "nm0521723",
+    "target": "nm2443438",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Sonya"
   },
   {
     "source": "nm0521723",
@@ -5670,67 +5852,11 @@
     "character": "Eleanor"
   },
   {
-    "source": "nm0526019",
-    "target": "nm1706767",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Jonah (The Trainer)"
-  },
-  {
     "source": "nm0532235",
     "target": "nm0919798",
     "weight": 1,
     "construct": "same_character",
-    "character": "Santa Claus (segment: The Messiah on Mott Street)"
-  },
-  {
-    "source": "nm0541908",
-    "target": "nm0860233",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Warden"
-  },
-  {
-    "source": "nm0542492",
-    "target": "nm0792911",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Vijay(cook)"
-  },
-  {
-    "source": "nm0542492",
-    "target": "nm1758682",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Aziz(Zizoo)"
-  },
-  {
-    "source": "nm0542492",
-    "target": "nm3981484",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Vijay(cook)"
-  },
-  {
-    "source": "nm0542492",
-    "target": "nm4245240",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Aziz(Zizoo)"
-  },
-  {
-    "source": "nm0542706",
-    "target": "nm0667326",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Percy (US)"
-  },
-  {
-    "source": "nm0542706",
-    "target": "nm0724995",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Percy (US)"
+    "character": "Santa Claus"
   },
   {
     "source": "nm0542706",
@@ -5744,28 +5870,77 @@
     "target": "nm1925154",
     "weight": 1,
     "construct": "same_character",
-    "character": "Luigi (segment: Montaggio alternato)"
+    "character": "Luigi"
   },
   {
-    "source": "nm0542706",
-    "target": "nm5857152",
+    "source": "nm0543383",
+    "target": "nm0829576",
     "weight": 1,
     "construct": "same_character",
-    "character": "Chester (segment: Street of Pain)"
+    "character": "Maddy"
   },
   {
-    "source": "nm0571537",
-    "target": "nm0820053",
+    "source": "nm0553269",
+    "target": "nm0829576",
     "weight": 1,
     "construct": "same_character",
-    "character": "Jude"
+    "character": "Maureen"
   },
   {
-    "source": "nm0571537",
-    "target": "nm2810287",
+    "source": "nm0553269",
+    "target": "nm0940362",
     "weight": 1,
     "construct": "same_character",
-    "character": "Jude"
+    "character": "Eleanor"
+  },
+  {
+    "source": "nm0553269",
+    "target": "nm1754366",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Maureen"
+  },
+  {
+    "source": "nm0553269",
+    "target": "nm2319871",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Betsy"
+  },
+  {
+    "source": "nm0553269",
+    "target": "nm3255459",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Eleanor"
+  },
+  {
+    "source": "nm0564215",
+    "target": "nm0611889",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hal"
+  },
+  {
+    "source": "nm0564215",
+    "target": "nm0940362",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hazel"
+  },
+  {
+    "source": "nm0564215",
+    "target": "nm1209966",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Victor Frankenstein"
+  },
+  {
+    "source": "nm0564215",
+    "target": "nm2254074",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hazel"
   },
   {
     "source": "nm0574534",
@@ -5775,25 +5950,39 @@
     "character": "Meredith"
   },
   {
+    "source": "nm0574615",
+    "target": "nm0851317",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dracula"
+  },
+  {
+    "source": "nm0574615",
+    "target": "nm0884313",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dracula"
+  },
+  {
+    "source": "nm0574615",
+    "target": "nm1209966",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Dante"
+  },
+  {
     "source": "nm0587900",
     "target": "nm0590430",
     "weight": 1,
     "construct": "same_character",
-    "character": "Coco (UK)"
+    "character": "Coco"
   },
   {
     "source": "nm0587900",
-    "target": "nm0728085",
+    "target": "nm0852517",
     "weight": 1,
     "construct": "same_character",
-    "character": "Pepe (José Pedro)"
-  },
-  {
-    "source": "nm0587900",
-    "target": "nm0820053",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Hilda (segment: Make a Wish)"
+    "character": "Hilda"
   },
   {
     "source": "nm0587900",
@@ -5803,60 +5992,25 @@
     "character": "Ginger"
   },
   {
-    "source": "nm0587900",
-    "target": "nm2810287",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Coco (UK)"
-  },
-  {
-    "source": "nm0590430",
-    "target": "nm0896573",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Tito (4 yrs.)"
-  },
-  {
-    "source": "nm0590430",
-    "target": "nm0908914",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Francine"
-  },
-  {
-    "source": "nm0590430",
-    "target": "nm1428821",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Phoebe (segment: The Girl with Golden Breasts)"
-  },
-  {
-    "source": "nm0590430",
-    "target": "nm2810287",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Coco (UK)"
-  },
-  {
     "source": "nm0590430",
     "target": "nm4911194",
     "weight": 1,
     "construct": "same_character",
-    "character": "Phoebe (segment: The Girl with Golden Breasts)"
+    "character": "Phoebe"
   },
   {
     "source": "nm0590430",
     "target": "nm5085683",
     "weight": 1,
     "construct": "same_character",
-    "character": "Phoebe (segment: The Girl with Golden Breasts)"
+    "character": "Phoebe"
   },
   {
-    "source": "nm0611889",
-    "target": "nm2810287",
+    "source": "nm0636046",
+    "target": "nm0815814",
     "weight": 1,
     "construct": "same_character",
-    "character": "Johnson (Soldier #1)"
+    "character": "conductor"
   },
   {
     "source": "nm0636046",
@@ -5864,6 +6018,13 @@
     "weight": 1,
     "construct": "same_character",
     "character": "The monster"
+  },
+  {
+    "source": "nm0636046",
+    "target": "nm1024677",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Clark Kent"
   },
   {
     "source": "nm0636046",
@@ -5884,77 +6045,42 @@
     "target": "nm0667326",
     "weight": 1,
     "construct": "same_character",
-    "character": "Spike (Timmy)"
+    "character": "Spike"
   },
   {
     "source": "nm0654110",
     "target": "nm0726223",
     "weight": 1,
     "construct": "same_character",
-    "character": "Walt (Man #2)"
-  },
-  {
-    "source": "nm0654110",
-    "target": "nm0785227",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Spike (Timmy)"
+    "character": "Walt"
   },
   {
     "source": "nm0654110",
     "target": "nm0919798",
     "weight": 1,
     "construct": "same_character",
-    "character": "Spike (Timmy)"
+    "character": "Spike"
   },
   {
     "source": "nm0666788",
     "target": "nm0893941",
     "weight": 1,
     "construct": "same_character",
-    "character": "Emilia (spanish)"
-  },
-  {
-    "source": "nm0666788",
-    "target": "nm2095800",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Mira (segment: Sketcher)"
-  },
-  {
-    "source": "nm0667326",
-    "target": "nm0724995",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Percy (US)"
-  },
-  {
-    "source": "nm0667326",
-    "target": "nm0785227",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Spike (Timmy)"
+    "character": "Emilia"
   },
   {
     "source": "nm0667326",
     "target": "nm0919798",
-    "weight": 2,
+    "weight": 3,
     "construct": "same_character",
-    "character": "Louie"
+    "character": "Milo"
   },
   {
     "source": "nm0724656",
-    "target": "nm0785227",
+    "target": "nm0799777",
     "weight": 1,
     "construct": "same_character",
-    "character": "Newscaster"
-  },
-  {
-    "source": "nm0724656",
-    "target": "nm0815718",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Newscaster"
+    "character": "Klaus"
   },
   {
     "source": "nm0724656",
@@ -5992,39 +6118,46 @@
     "character": "The Homeless Man"
   },
   {
-    "source": "nm0724995",
-    "target": "nm5857152",
+    "source": "nm0726223",
+    "target": "nm0799777",
     "weight": 1,
     "construct": "same_character",
-    "character": "Nigel"
+    "character": "Wade"
   },
   {
-    "source": "nm0728085",
-    "target": "nm0910145",
-    "weight": 1,
+    "source": "nm0738951",
+    "target": "nm0815814",
+    "weight": 2,
     "construct": "same_character",
-    "character": "the landlord"
+    "character": "The Batman"
   },
   {
-    "source": "nm0748973",
-    "target": "nm0908914",
+    "source": "nm0738951",
+    "target": "nm1584992",
     "weight": 1,
     "construct": "same_character",
-    "character": "Joanne"
+    "character": "The Batman"
+  },
+  {
+    "source": "nm0738951",
+    "target": "nm1940449",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "Spider-Man"
+  },
+  {
+    "source": "nm0738951",
+    "target": "nm2837894",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "Spider-Man"
   },
   {
     "source": "nm0768614",
-    "target": "nm0792911",
-    "weight": 1,
+    "target": "nm1928515",
+    "weight": 2,
     "construct": "same_character",
-    "character": "Marcos (aka War)"
-  },
-  {
-    "source": "nm0768614",
-    "target": "nm0892891",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Emilio"
+    "character": "Marcos"
   },
   {
     "source": "nm0784818",
@@ -6034,53 +6167,11 @@
     "character": "The Scientist"
   },
   {
-    "source": "nm0784818",
-    "target": "nm0896573",
+    "source": "nm0799777",
+    "target": "nm1706767",
     "weight": 1,
     "construct": "same_character",
-    "character": "The Scientist"
-  },
-  {
-    "source": "nm0784818",
-    "target": "nm5857152",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Nigel"
-  },
-  {
-    "source": "nm0785227",
-    "target": "nm0815718",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Newscaster"
-  },
-  {
-    "source": "nm0785227",
-    "target": "nm0851317",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Alfred (Andrei's Mother)"
-  },
-  {
-    "source": "nm0785227",
-    "target": "nm0919798",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Spike (Timmy)"
-  },
-  {
-    "source": "nm0785227",
-    "target": "nm1253936",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Alfred (Andrei's Mother)"
-  },
-  {
-    "source": "nm0792911",
-    "target": "nm3981484",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Vijay(cook)"
+    "character": "The Franklin"
   },
   {
     "source": "nm0815718",
@@ -6091,17 +6182,31 @@
   },
   {
     "source": "nm0815718",
+    "target": "nm1754366",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Maddie"
+  },
+  {
+    "source": "nm0815718",
     "target": "nm2837894",
     "weight": 1,
     "construct": "same_character",
-    "character": "Madison (Dutch)"
+    "character": "Madison"
   },
   {
-    "source": "nm0818055",
-    "target": "nm0908914",
+    "source": "nm0815814",
+    "target": "nm0860233",
     "weight": 1,
     "construct": "same_character",
-    "character": "landlady"
+    "character": "Harris"
+  },
+  {
+    "source": "nm0815814",
+    "target": "nm1584992",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "The Batman"
   },
   {
     "source": "nm0818055",
@@ -6111,46 +6216,32 @@
     "character": "Roberta"
   },
   {
-    "source": "nm0820053",
-    "target": "nm0940362",
+    "source": "nm0829576",
+    "target": "nm0884313",
     "weight": 1,
     "construct": "same_character",
-    "character": "Eleanor"
+    "character": "Martine"
   },
   {
-    "source": "nm0820053",
-    "target": "nm2810287",
+    "source": "nm0829576",
+    "target": "nm0951456",
     "weight": 1,
     "construct": "same_character",
-    "character": "Jude"
+    "character": "Martine"
   },
   {
-    "source": "nm0820053",
-    "target": "nm3255459",
+    "source": "nm0829576",
+    "target": "nm1754366",
     "weight": 1,
     "construct": "same_character",
-    "character": "Eleanor"
-  },
-  {
-    "source": "nm0838588",
-    "target": "nm1102577",
-    "weight": 2,
-    "construct": "same_character",
-    "character": "Aurora"
-  },
-  {
-    "source": "nm0838588",
-    "target": "nm1724747",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Aurora"
+    "character": "Maureen"
   },
   {
     "source": "nm0851317",
-    "target": "nm0896573",
+    "target": "nm0884313",
     "weight": 1,
     "construct": "same_character",
-    "character": "The Scientist"
+    "character": "Dracula"
   },
   {
     "source": "nm0851317",
@@ -6164,14 +6255,14 @@
     "target": "nm1253936",
     "weight": 1,
     "construct": "same_character",
-    "character": "Alfred (Andrei's Mother)"
+    "character": "Alfred"
   },
   {
     "source": "nm0851317",
     "target": "nm2181128",
     "weight": 1,
     "construct": "same_character",
-    "character": "The Creature (in the film's finale)"
+    "character": "The Creature"
   },
   {
     "source": "nm0860233",
@@ -6185,21 +6276,35 @@
     "target": "nm1584992",
     "weight": 1,
     "construct": "same_character",
-    "character": "Barney (segment: Final Frame)"
+    "character": "Barney"
   },
   {
     "source": "nm0869088",
-    "target": "nm2837894",
+    "target": "nm0929489",
     "weight": 1,
     "construct": "same_character",
-    "character": "Rafa"
+    "character": "Xavier"
   },
   {
-    "source": "nm0892891",
-    "target": "nm1253936",
+    "source": "nm0884313",
+    "target": "nm0919798",
     "weight": 1,
     "construct": "same_character",
-    "character": "Henri (10)"
+    "character": "Archie"
+  },
+  {
+    "source": "nm0884313",
+    "target": "nm0929489",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Archie"
+  },
+  {
+    "source": "nm0884313",
+    "target": "nm0951456",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Martine"
   },
   {
     "source": "nm0893941",
@@ -6216,25 +6321,11 @@
     "character": "Mercedes"
   },
   {
-    "source": "nm0896573",
-    "target": "nm3981484",
+    "source": "nm0919798",
+    "target": "nm0929489",
     "weight": 1,
     "construct": "same_character",
-    "character": "Ramesh (segment: Lalitham Hiranmayam)"
-  },
-  {
-    "source": "nm0908914",
-    "target": "nm2584600",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Georgia"
-  },
-  {
-    "source": "nm0925966",
-    "target": "nm3425377",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Marshall"
+    "character": "Archie"
   },
   {
     "source": "nm0940362",
@@ -6251,11 +6342,11 @@
     "character": "Eleanor"
   },
   {
-    "source": "nm0940362",
-    "target": "nm9608958",
+    "source": "nm0951456",
+    "target": "nm1139628",
     "weight": 1,
     "construct": "same_character",
-    "character": "Daphne"
+    "character": "Astrid"
   },
   {
     "source": "nm0951456",
@@ -6263,13 +6354,6 @@
     "weight": 1,
     "construct": "same_character",
     "character": "Astrid"
-  },
-  {
-    "source": "nm1102577",
-    "target": "nm1428821",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Tessa"
   },
   {
     "source": "nm1102577",
@@ -6283,35 +6367,42 @@
     "target": "nm1312566",
     "weight": 1,
     "construct": "same_character",
-    "character": "Harper (bank robber)"
+    "character": "Harper"
   },
   {
     "source": "nm1102891",
     "target": "nm2319871",
     "weight": 1,
     "construct": "same_character",
-    "character": "Sabrina (Mara)"
+    "character": "Sabrina"
+  },
+  {
+    "source": "nm1102891",
+    "target": "nm2976580",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Harper"
   },
   {
     "source": "nm1102891",
     "target": "nm4496875",
     "weight": 1,
     "construct": "same_character",
-    "character": "Harper (bank robber)"
+    "character": "Harper"
   },
   {
-    "source": "nm1102891",
+    "source": "nm1139628",
+    "target": "nm2169779",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Hélène"
+  },
+  {
+    "source": "nm1139628",
     "target": "nm4911194",
     "weight": 1,
     "construct": "same_character",
-    "character": "Mabel (segment: I)"
-  },
-  {
-    "source": "nm1102891",
-    "target": "nm5301405",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Mabel (segment: I)"
+    "character": "Astrid"
   },
   {
     "source": "nm1312566",
@@ -6322,59 +6413,17 @@
   },
   {
     "source": "nm1312566",
+    "target": "nm2976580",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Harper"
+  },
+  {
+    "source": "nm1312566",
     "target": "nm4496875",
     "weight": 1,
     "construct": "same_character",
-    "character": "Harper (bank robber)"
-  },
-  {
-    "source": "nm1428821",
-    "target": "nm2095800",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "The Princess (The King's Sister)"
-  },
-  {
-    "source": "nm1428821",
-    "target": "nm4911194",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Phoebe (segment: The Girl with Golden Breasts)"
-  },
-  {
-    "source": "nm1428821",
-    "target": "nm5085683",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Phoebe (segment: The Girl with Golden Breasts)"
-  },
-  {
-    "source": "nm1456471",
-    "target": "nm1925154",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "News reporter"
-  },
-  {
-    "source": "nm1456471",
-    "target": "nm2181128",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Jasper (Sentai redub)"
-  },
-  {
-    "source": "nm1456471",
-    "target": "nm3255459",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Brittany"
-  },
-  {
-    "source": "nm1456471",
-    "target": "nm6949652",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Brittany"
+    "character": "Harper"
   },
   {
     "source": "nm1625479",
@@ -6395,28 +6444,28 @@
     "target": "nm1925154",
     "weight": 1,
     "construct": "same_character",
-    "character": "Eugene (segment: The Occupant)"
+    "character": "Eugene"
   },
   {
     "source": "nm1758682",
     "target": "nm4245240",
     "weight": 1,
     "construct": "same_character",
-    "character": "Aziz(Zizoo)"
+    "character": "Aziz"
+  },
+  {
+    "source": "nm1940449",
+    "target": "nm2837894",
+    "weight": 2,
+    "construct": "same_character",
+    "character": "Spider-Man"
   },
   {
     "source": "nm1980957",
     "target": "nm2319871",
     "weight": 1,
     "construct": "same_character",
-    "character": "Kiki (20 & 30 years old)"
-  },
-  {
-    "source": "nm1980957",
-    "target": "nm6949652",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Lea"
+    "character": "Kiki"
   },
   {
     "source": "nm2254074",
@@ -6426,18 +6475,32 @@
     "character": "Cora"
   },
   {
-    "source": "nm2400045",
+    "source": "nm2443438",
     "target": "nm4496875",
     "weight": 1,
     "construct": "same_character",
-    "character": "Izzy"
+    "character": "Chelsea"
   },
   {
-    "source": "nm2400045",
+    "source": "nm2690647",
+    "target": "nm4245240",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Salim"
+  },
+  {
+    "source": "nm2976580",
+    "target": "nm4496875",
+    "weight": 1,
+    "construct": "same_character",
+    "character": "Harper"
+  },
+  {
+    "source": "nm2976580",
     "target": "nm5085683",
     "weight": 1,
     "construct": "same_character",
-    "character": "Izzy"
+    "character": "Juliet"
   },
   {
     "source": "nm3255459",
@@ -6447,13 +6510,6 @@
     "character": "Lorraine"
   },
   {
-    "source": "nm3255459",
-    "target": "nm6949652",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Brittany"
-  },
-  {
     "source": "nm4496875",
     "target": "nm5085683",
     "weight": 1,
@@ -6461,31 +6517,10 @@
     "character": "Izzy"
   },
   {
-    "source": "nm4496875",
-    "target": "nm6949652",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Millie"
-  },
-  {
     "source": "nm4911194",
     "target": "nm5085683",
     "weight": 1,
     "construct": "same_character",
-    "character": "Phoebe (segment: The Girl with Golden Breasts)"
-  },
-  {
-    "source": "nm4911194",
-    "target": "nm5301405",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Mabel (segment: I)"
-  },
-  {
-    "source": "nm5301405",
-    "target": "nm9608958",
-    "weight": 1,
-    "construct": "same_character",
-    "character": "Maxine (segment: Valentine's Day)"
+    "character": "Phoebe"
   }
 ]

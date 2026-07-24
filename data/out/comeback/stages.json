@@ -3,35 +3,84 @@
     "stageFrom": "gender",
     "stageTo": "gap_band",
     "categoryFrom": "male",
+    "categoryTo": "12–19",
+    "value": 129
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "gap_band",
+    "categoryFrom": "female",
+    "categoryTo": "12–19",
+    "value": 54
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "gap_band",
+    "categoryFrom": "male",
     "categoryTo": "20+ years",
-    "value": 328
+    "value": 31
   },
   {
     "stageFrom": "gender",
     "stageTo": "gap_band",
     "categoryFrom": "female",
     "categoryTo": "20+ years",
-    "value": 272
+    "value": 16
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "gap_band",
+    "categoryFrom": "male",
+    "categoryTo": "8–11",
+    "value": 285
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "gap_band",
+    "categoryFrom": "female",
+    "categoryTo": "8–11",
+    "value": 85
+  },
+  {
+    "stageFrom": "gap_band",
+    "stageTo": "return",
+    "categoryFrom": "12–19",
+    "categoryTo": "strong return (15+)",
+    "value": 167
   },
   {
     "stageFrom": "gap_band",
     "stageTo": "return",
     "categoryFrom": "20+ years",
     "categoryTo": "solid return",
-    "value": 187
+    "value": 7
   },
   {
     "stageFrom": "gap_band",
     "stageTo": "return",
-    "categoryFrom": "20+ years",
-    "categoryTo": "modest return (5–7)",
-    "value": 355
+    "categoryFrom": "8–11",
+    "categoryTo": "solid return",
+    "value": 36
+  },
+  {
+    "stageFrom": "gap_band",
+    "stageTo": "return",
+    "categoryFrom": "8–11",
+    "categoryTo": "strong return (15+)",
+    "value": 334
   },
   {
     "stageFrom": "gap_band",
     "stageTo": "return",
     "categoryFrom": "20+ years",
     "categoryTo": "strong return (15+)",
-    "value": 58
+    "value": 40
+  },
+  {
+    "stageFrom": "gap_band",
+    "stageTo": "return",
+    "categoryFrom": "12–19",
+    "categoryTo": "solid return",
+    "value": 16
   }
 ]

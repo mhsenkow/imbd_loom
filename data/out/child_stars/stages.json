@@ -4,69 +4,76 @@
     "stageTo": "worked_past_25",
     "categoryFrom": "female",
     "categoryTo": "worked past 25",
-    "value": 159
+    "value": 255
   },
   {
     "stageFrom": "gender",
     "stageTo": "worked_past_25",
     "categoryFrom": "male",
     "categoryTo": "worked past 25",
-    "value": 211
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "worked_past_25",
-    "categoryFrom": "female",
-    "categoryTo": "stopped by 25",
-    "value": 100
+    "value": 280
   },
   {
     "stageFrom": "gender",
     "stageTo": "worked_past_25",
     "categoryFrom": "male",
     "categoryTo": "stopped by 25",
-    "value": 130
+    "value": 31
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "worked_past_25",
+    "categoryFrom": "nonbinary",
+    "categoryTo": "worked past 25",
+    "value": 4
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "worked_past_25",
+    "categoryFrom": "female",
+    "categoryTo": "stopped by 25",
+    "value": 30
   },
   {
     "stageFrom": "worked_past_25",
     "stageTo": "debut_band",
     "categoryFrom": "worked past 25",
     "categoryTo": "infant–5",
-    "value": 48
-  },
-  {
-    "stageFrom": "worked_past_25",
-    "stageTo": "debut_band",
-    "categoryFrom": "stopped by 25",
-    "categoryTo": "9–11",
-    "value": 120
-  },
-  {
-    "stageFrom": "worked_past_25",
-    "stageTo": "debut_band",
-    "categoryFrom": "stopped by 25",
-    "categoryTo": "6–8",
-    "value": 92
+    "value": 64
   },
   {
     "stageFrom": "worked_past_25",
     "stageTo": "debut_band",
     "categoryFrom": "stopped by 25",
     "categoryTo": "infant–5",
-    "value": 18
+    "value": 6
   },
   {
     "stageFrom": "worked_past_25",
     "stageTo": "debut_band",
     "categoryFrom": "worked past 25",
     "categoryTo": "9–11",
-    "value": 208
+    "value": 322
   },
   {
     "stageFrom": "worked_past_25",
     "stageTo": "debut_band",
     "categoryFrom": "worked past 25",
     "categoryTo": "6–8",
-    "value": 114
+    "value": 153
+  },
+  {
+    "stageFrom": "worked_past_25",
+    "stageTo": "debut_band",
+    "categoryFrom": "stopped by 25",
+    "categoryTo": "9–11",
+    "value": 33
+  },
+  {
+    "stageFrom": "worked_past_25",
+    "stageTo": "debut_band",
+    "categoryFrom": "stopped by 25",
+    "categoryTo": "6–8",
+    "value": 22
   }
 ]

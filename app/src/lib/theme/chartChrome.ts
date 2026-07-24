@@ -14,10 +14,15 @@ export interface ChartChrome {
   rule: string;
   trim: string;
   accent: string;
+  /** Hot stroke accent — mid on dark for readability */
+  accentMid: string;
   focusWash: string;
   decadeGrid: string;
   modeDecade: string;
   filmLabel: string;
+  linkBase: string;
+  linkHot: string;
+  linkSkim: string;
 }
 
 export function chartChrome(theme: Theme = "light"): ChartChrome {
@@ -30,9 +35,13 @@ export function chartChrome(theme: Theme = "light"): ChartChrome {
     rule: token("line.rule", theme),
     trim: token("line.trim", theme),
     accent: token("accent.base", theme),
+    accentMid: token("accent.mid", theme),
     focusWash: token("mark.focusWash", theme),
     decadeGrid: token("grid.decade", theme),
     modeDecade: token("grid.modeDecade", theme),
     filmLabel: token("line.filmLabel", theme),
+    linkBase: token("link.base", theme),
+    linkHot: token("link.hot", theme),
+    linkSkim: token("link.skim", theme),
   };
 }

@@ -24,9 +24,9 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     ge = gender_expr("p")
     adult = adult_exclusion_sql("t")
     types = title_type_sql("t")
-    votes = vote_floor_sql("r", min_votes=50)
+    votes = vote_floor_sql("r", min_votes=100)
     low = ", ".join(f"'{g}'" for g in sorted(LOW_SIGNAL_GENRES))
-    per_genre_cap = max(int(top_n // 10), 6)
+    per_genre_cap = max(int(top_n // 8), 8)
     min_genre_people = 3
 
 

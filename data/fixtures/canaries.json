@@ -1,0 +1,75 @@
+{
+  "people": [
+    {
+      "label": "Robin Williams",
+      "nconst": "nm0000245",
+      "constructs": ["voice_cartoons", "voice_face"]
+    },
+    {
+      "label": "Mel Blanc",
+      "nconst": "nm0000305",
+      "constructs": ["voice_cartoons", "dubbing"]
+    },
+    {
+      "label": "Frank Welker",
+      "nconst": "nm0919798",
+      "constructs": ["voice_cartoons", "dubbing"]
+    },
+    {
+      "label": "Tara Strong",
+      "nconst": "nm0152839",
+      "constructs": ["voice_cartoons", "dubbing"]
+    },
+    {
+      "label": "Tom Hanks",
+      "nconst": "nm0000158",
+      "constructs": ["voice_cartoons", "voice_face"]
+    },
+    {
+      "label": "Mark Hamill",
+      "nconst": "nm0000434",
+      "constructs": ["voice_cartoons"]
+    },
+    {
+      "label": "Nancy Cartwright",
+      "nconst": "nm0004813",
+      "constructs": ["dubbing"]
+    },
+    {
+      "label": "Eddie Murphy",
+      "nconst": "nm0000552",
+      "constructs": ["voice_face"]
+    },
+    {
+      "label": "Clint Eastwood",
+      "nconst": "nm0000142",
+      "constructs": ["hyphenates"]
+    },
+    {
+      "label": "Orson Welles",
+      "nconst": "nm0000080",
+      "constructs": ["hyphenates"]
+    },
+    {
+      "label": "Greta Gerwig",
+      "nconst": "nm1950086",
+      "constructs": ["hyphenates"]
+    },
+    {
+      "label": "Jordan Peele",
+      "nconst": "nm1443502",
+      "constructs": ["hyphenates"]
+    },
+    {
+      "label": "Christian Bale",
+      "nconst": "nm0000288",
+      "constructs": ["same_character"]
+    },
+    {
+      "label": "Christopher Lee",
+      "nconst": "nm0000489",
+      "constructs": ["same_character"]
+    }
+  ],
+  "same_character_roles": ["batman", "dracula", "sherlock holmes"]
+}

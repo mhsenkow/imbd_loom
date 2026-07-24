@@ -7,9 +7,9 @@ import { colorLegendLabel } from "../lib/encode";
 import type { ColorBy } from "../lib/types";
 import { useTheme } from "../lib/theme/ThemeContext";
 import {
-  STAT_COLORS,
   STAT_MARK_META,
   hasStat,
+  statColors,
   type StatMarkId,
   type ViewStatMarks,
 } from "../lib/statsMarks";
@@ -35,21 +35,22 @@ function activeMarkIds(stats: ViewStatMarks | null | undefined, form: Props["for
   return out;
 }
 
-function swatchColor(id: StatMarkId): string {
+function swatchColor(id: StatMarkId, theme: "light" | "dark" = "light"): string {
+  const c = statColors(theme);
   switch (id) {
     case "top5_degree":
     case "gini_callout":
     case "rank_ladder":
-      return STAT_COLORS.halo;
+      return c.halo;
     case "bridge_outliers":
     case "community_cuts":
     case "genre_entropy":
-      return STAT_COLORS.bridge;
+      return c.bridge;
     case "featured_path":
     case "longest_collab":
     case "loyalty_pair":
     case "billing_glyphs":
-      return STAT_COLORS.path;
+      return c.path;
     case "median_peak":
     case "gap_spikes":
     case "mode_decade":
@@ -58,15 +59,15 @@ function swatchColor(id: StatMarkId): string {
     case "peak_extremes":
     case "retention_meter":
     case "votes_centroid":
-      return STAT_COLORS.guide;
+      return c.guide;
     case "reunion_edges":
-      return STAT_COLORS.reunion;
+      return c.reunion;
     case "top5_prominence":
     case "densest_pair":
     case "insight_sync":
-      return STAT_COLORS.warm;
+      return c.warm;
     default:
-      return STAT_COLORS.ghost;
+      return c.ghost;
   }
 }
 
@@ -222,7 +223,7 @@ export function ChartLegend({ form, flipped = false, colorBy, palette = "loom", 
               <span className="legend-val legend-stats">
                 {shown.map((id) => (
                   <span key={id} className="legend-stat-line">
-                    <MarkIcon id={id} color={swatchColor(id)} />
+                    <MarkIcon id={id} color={swatchColor(id, theme)} />
                     {STAT_MARK_META[id].hint}
                   </span>
                 ))}

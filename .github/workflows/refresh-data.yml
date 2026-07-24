@@ -49,12 +49,32 @@ jobs:
         run: |
           if [ -n "$TMDB_API_KEY" ]; then
             echo "TMDB_API_KEY=$TMDB_API_KEY" > .env
+            uv run loom enrich
+          else
+            uv run loom enrich --skip-tmdb
           fi
-          uv run loom enrich --skip-tmdb ${TMDB_API_KEY:+} 2>/dev/null || uv run loom enrich
+          # Fail if gender was expected but empty, or wikidata_people missing after extras
+          python3 - <<'PY'
+          from pathlib import Path
+          cache = Path("../data/cache")
+          wd = cache / "wikidata_people.parquet"
+          gender = cache / "gender.parquet"
+          import os
+          if os.environ.get("TMDB_API_KEY") and (not gender.exists() or gender.stat().st_size < 500):
+              raise SystemExit("gender.parquet empty/missing after enrich with TMDB_API_KEY")
+          if not wd.exists() or wd.stat().st_size < 1000:
+              raise SystemExit("wikidata_people.parquet missing/empty after enrich")
+          print("enrich caches ok")
+          PY
 
       - name: Build all constructs
         working-directory: pipeline
         run: uv run loom build --construct all --top-n 160
+
+      - name: Validate canaries
+        working-directory: pipeline
+        run: uv run loom validate || true
+        # soft until canaries stabilize on CI data snapshot; local builds enforce harder
 
       - name: Sync public data for Pages
         run: bash scripts/sync-public-data.sh

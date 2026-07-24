@@ -185,7 +185,7 @@ const LOOK_COOL: StoryPreset[] = [
     spec: {
       activeConstruct: "voice_cartoons",
       heroForm: "timeline",
-      topN: 120,
+      topN: 160,
       minWeight: 2,
       minTitles: 3,
       sortBy: "year_peak",

@@ -2,44 +2,65 @@
   {
     "stageFrom": "gender",
     "stageTo": "prominence",
+    "categoryFrom": "female",
+    "categoryTo": "supporting",
+    "value": 32601
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "prominence",
     "categoryFrom": "male",
     "categoryTo": "bit",
-    "value": 50461
+    "value": 50424
   },
   {
     "stageFrom": "gender",
     "stageTo": "prominence",
     "categoryFrom": "male",
     "categoryTo": "lead",
-    "value": 23273
+    "value": 23244
   },
   {
     "stageFrom": "gender",
     "stageTo": "prominence",
-    "categoryFrom": "female",
+    "categoryFrom": "nonbinary",
     "categoryTo": "supporting",
-    "value": 32608
+    "value": 63
   },
   {
     "stageFrom": "gender",
     "stageTo": "prominence",
     "categoryFrom": "male",
     "categoryTo": "supporting",
-    "value": 48912
+    "value": 48856
   },
   {
     "stageFrom": "gender",
     "stageTo": "prominence",
     "categoryFrom": "female",
     "categoryTo": "lead",
-    "value": 18538
+    "value": 18518
   },
   {
     "stageFrom": "gender",
     "stageTo": "prominence",
     "categoryFrom": "female",
     "categoryTo": "bit",
-    "value": 29958
+    "value": 29949
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "prominence",
+    "categoryFrom": "nonbinary",
+    "categoryTo": "lead",
+    "value": 49
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "prominence",
+    "categoryFrom": "nonbinary",
+    "categoryTo": "bit",
+    "value": 46
   },
   {
     "stageFrom": "prominence",

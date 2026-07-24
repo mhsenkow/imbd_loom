@@ -7,6 +7,7 @@ import duckdb
 from loom.constructs import gender_expr
 from loom.constructs.emit import coappearance_edges, finalize_payload, rows_to_stages
 from loom.filters import adult_exclusion_sql, title_type_sql, vote_floor_sql
+from loom.membership import rank_prominence_sql
 
 
 def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
@@ -14,6 +15,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     adult = adult_exclusion_sql("t")
     types = title_type_sql("t")
     votes = vote_floor_sql("r", min_votes=50)
+    prom = rank_prominence_sql("r")
 
     person_sql = f"""
         SELECT
@@ -23,7 +25,9 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
           COUNT(DISTINCT p.tconst) AS title_count,
           MIN(t.startYear) AS year_min,
           MAX(t.startYear) AS year_max,
-          MAX(t.startYear) - MIN(t.startYear) AS career_span
+          MAX(t.startYear) - MIN(t.startYear) AS career_span,
+          COUNT(DISTINCT CAST(t.startYear / 10 AS INTEGER)) AS decade_count,
+          {prom} AS prominence
         FROM title_principals p
         JOIN title_basics t ON t.tconst = p.tconst
         JOIN name_basics n ON n.nconst = p.nconst
@@ -38,12 +42,19 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         GROUP BY p.nconst, n.primaryName, ge.tmdb_gender, p.category
         HAVING COUNT(DISTINCT p.tconst) >= 15
            AND MAX(t.startYear) - MIN(t.startYear) >= 35
-        ORDER BY (MAX(t.startYear) - MIN(t.startYear)) DESC, COUNT(DISTINCT p.tconst) DESC
+           AND COUNT(DISTINCT CAST(t.startYear / 10 AS INTEGER)) >= 4
+        ORDER BY {prom} DESC, (MAX(t.startYear) - MIN(t.startYear)) DESC
         LIMIT {int(top_n * 3)}
     """
 
     nodes, edges, stats = coappearance_edges(
-        con, person_sql, construct="long_careers", top_n=top_n, min_shared=2
+        con,
+        person_sql,
+        construct="long_careers",
+        top_n=top_n,
+        min_shared=2,
+        cap_by="blend",
+        enrichment_mode="imdb",
     )
 
     stage_rows = con.execute(
@@ -86,19 +97,25 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
 
     method = (
         "Population: actors/actresses with ≥15 credits whose earliest and latest "
-        "title years span ≥35 years (Adult excluded, numVotes ≥50). "
-        "Hero = co-appearance among long-career peers."
+        "title years span ≥35 years and who appear in ≥4 distinct decades "
+        "(Adult excluded, numVotes ≥50). Cap by blend."
     )
     return finalize_payload(
         con,
         construct_id="long_careers",
         title="Long Careers",
-        subtitle="35+ year credited spans",
+        subtitle="35+ year credited spans across ≥4 decades",
         key_variable="career_span",
         method_note=method,
         nodes=nodes,
         edges=edges,
         stages=stages,
         build_stats=stats,
-        extra={"min_span_years": 35, "min_titles": 15, "top_n": top_n, "min_shared": 2},
+        extra={
+            "min_span_years": 35,
+            "min_titles": 15,
+            "min_decades": 4,
+            "top_n": top_n,
+            "min_shared": 2,
+        },
     )

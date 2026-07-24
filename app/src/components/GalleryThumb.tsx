@@ -20,9 +20,19 @@ const H = 220;
 
 interface Props {
   spec: PosterSpec;
+  onPreviewMeta?: (meta: GalleryPreviewMeta | null) => void;
 }
 
-export function GalleryThumb({ spec }: Props) {
+export interface GalleryPreviewMeta {
+  nodeCount: number;
+  edgeCount: number;
+  leaders: string[];
+  strongestPair: string | null;
+  strongestMetric: string | null;
+  sharedTitle: string | null;
+}
+
+export function GalleryThumb({ spec, onPreviewMeta }: Props) {
   const hostRef = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
   const [data, setData] = useState<ConstructData | null>(null);
@@ -99,6 +109,41 @@ export function GalleryThumb({ spec }: Props) {
     previewSpec,
     data?.manifest.key_variable || "degree",
   );
+
+  const previewMeta = useMemo((): GalleryPreviewMeta | null => {
+    if (!data || nodes.length < 3) return null;
+    const byId = new Map(nodes.map((node) => [node.id, node]));
+    const leaders = [...nodes]
+      .sort(
+        (a, b) =>
+          Number(b.strength ?? b.degree ?? 0) - Number(a.strength ?? a.degree ?? 0),
+      )
+      .slice(0, 3)
+      .map((node) => node.label);
+    const strongest = [...edges].sort((a, b) => b.weight - a.weight)[0];
+    const source = strongest ? byId.get(strongest.source)?.label : null;
+    const target = strongest ? byId.get(strongest.target)?.label : null;
+    const sharedTitle = strongest?.shared?.find((title) => title.title)?.title ?? null;
+    const sharedCount = Number(strongest?.shared_count ?? strongest?.collab_count);
+    const strongestMetric = strongest
+      ? Number.isFinite(sharedCount)
+        ? `${sharedCount.toLocaleString()} shared title${sharedCount === 1 ? "" : "s"}`
+        : `tie score ${strongest.weight.toLocaleString()}`
+      : null;
+
+    return {
+      nodeCount: nodes.length,
+      edgeCount: edges.length,
+      leaders,
+      strongestPair: source && target ? `${source} ↔ ${target}` : null,
+      strongestMetric,
+      sharedTitle,
+    };
+  }, [data, edges, nodes]);
+
+  useEffect(() => {
+    onPreviewMeta?.(previewMeta);
+  }, [onPreviewMeta, previewMeta]);
 
   if (failed) {
     return (

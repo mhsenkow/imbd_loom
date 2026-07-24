@@ -767,6 +767,7 @@ export default function App() {
           filteredCounts={{ people: nodes.length, links: edges.length }}
           poolSize={poolSize}
           weightMax={weightMax}
+          peopleIndex={peopleIndex}
         />
       )}
       <main className="stage">

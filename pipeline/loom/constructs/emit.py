@@ -289,24 +289,48 @@ def coappearance_edges(
     attach_facets: bool = True,
     attach_graph_analytics: bool = True,
     collapse_episodes: bool = True,
+    cap_by: str = "blend",
+    enrichment_mode: str = "imdb",
+    fallback_used: bool = False,
+    force_ids: list[str] | None = None,
 ) -> tuple[list[dict], list[dict], dict]:
     """
     Build undirected co-appearance edges among people matching person_filter_sql.
 
+    cap_by: 'strength' | 'prominence' | 'blend' — how the final top_n keep-set is chosen.
+    force_ids: nconsts that must survive the final cap when present in the pool.
     Returns (nodes, edges, build_stats).
     """
-    build_stats: dict[str, Any] = {"min_votes": min_votes, "min_shared": min_shared}
+    if cap_by not in ("strength", "prominence", "blend"):
+        raise ValueError(f"cap_by must be strength|prominence|blend, got {cap_by!r}")
+
+    build_stats: dict[str, Any] = {
+        "min_votes": min_votes,
+        "min_shared": min_shared,
+        "cap_by": cap_by,
+        "enrichment_mode": enrichment_mode,
+        "fallback_used": bool(fallback_used),
+    }
 
     con.execute(f"CREATE OR REPLACE TEMP TABLE _people AS {person_filter_sql}")
     pop0 = con.execute("SELECT COUNT(*) FROM _people").fetchone()[0]
     build_stats["population_sql"] = int(pop0)
+    build_stats["pool_size"] = int(pop0)
 
     adult = adult_exclusion_sql("t")
-    types = title_type_sql("t")
+    # When collapsing episodes, include tvEpisode so parent rollup actually fires.
+    if collapse_episodes and _has_table(con, "title_episode"):
+        types = title_type_sql(
+            "t",
+            types=("movie", "tvSeries", "tvMovie", "tvMiniSeries", "tvEpisode", "short", "video"),
+        )
+    else:
+        types = title_type_sql("t")
     votes = vote_floor_sql("r", min_votes=min_votes)
 
     # Credit grain: collapse episodes → parent series when episode table exists
     has_ep = collapse_episodes and _has_table(con, "title_episode")
+    build_stats["collapse_episodes"] = bool(has_ep)
     if has_ep:
         credit_sql = f"""
         CREATE OR REPLACE TEMP TABLE _credits AS
@@ -413,20 +437,81 @@ def coappearance_edges(
         ) GROUP BY 1
         """
     )
-    top_rows = con.execute(
-        f"""
-        SELECT pe.*, COALESCE(d.strength, 0) AS strength, COALESCE(d.degree, 0) AS degree,
-               y.year_min, y.year_max, y.year_peak
+    # Person prominence from credit vote mass (independent of graph strength).
+    con.execute(
+        """
+        CREATE OR REPLACE TEMP TABLE _prom AS
+        SELECT nconst, SUM(vote_w) AS prominence
+        FROM _credits
+        GROUP BY 1
+        """
+    )
+    con.execute(
+        """
+        CREATE OR REPLACE TEMP TABLE _ranked AS
+        SELECT
+          pe.*,
+          COALESCE(d.strength, 0) AS strength,
+          COALESCE(d.degree, 0) AS degree,
+          y.year_min,
+          y.year_max,
+          y.year_peak,
+          COALESCE(pr.prominence, 0) AS _cap_prominence,
+          RANK() OVER (ORDER BY COALESCE(d.strength, 0) DESC) AS rk_strength,
+          RANK() OVER (ORDER BY COALESCE(pr.prominence, 0) DESC) AS rk_prominence
         FROM _people pe
         LEFT JOIN _deg d ON d.nconst = pe.nconst
         LEFT JOIN _years y ON y.nconst = pe.nconst
-        ORDER BY COALESCE(d.strength, 0) DESC, pe.nconst
+        LEFT JOIN _prom pr ON pr.nconst = pe.nconst
+        """
+    )
+    if cap_by == "strength":
+        order_sql = "strength DESC, nconst"
+    elif cap_by == "prominence":
+        order_sql = "_cap_prominence DESC, strength DESC, nconst"
+    else:
+        order_sql = "(rk_strength + rk_prominence) ASC, strength DESC, nconst"
+    top_rows = con.execute(
+        f"""
+        SELECT * FROM _ranked
+        ORDER BY {order_sql}
         LIMIT {int(top_n)}
         """
     ).fetchall()
     top_cols = [d[0] for d in con.description]
     keep = {r[top_cols.index("nconst")] for r in top_rows}
+    # Force-seed canaries / reserved ids that are in the pool but fell out of the cap
+    if force_ids:
+        forced = [fid for fid in force_ids if fid]
+        if forced:
+            in_pool = {
+                r[0]
+                for r in con.execute(
+                    "SELECT nconst FROM _people WHERE nconst IN (SELECT * FROM UNNEST(?::VARCHAR[]))",
+                    [forced],
+                ).fetchall()
+            }
+            missing = [fid for fid in forced if fid in in_pool and fid not in keep]
+            if missing:
+                # Drop lowest-ranked keep members to make room
+                ordered = [r[top_cols.index("nconst")] for r in top_rows]
+                for fid in missing:
+                    if len(keep) >= top_n and ordered:
+                        drop = ordered.pop()
+                        keep.discard(drop)
+                    keep.add(fid)
+                # Rebuild top_rows from keep
+                top_rows = con.execute(
+                    """
+                    SELECT * FROM _ranked
+                    WHERE nconst IN (SELECT * FROM UNNEST(?::VARCHAR[]))
+                    """,
+                    [list(keep)],
+                ).fetchall()
+                top_cols = [d[0] for d in con.description]
+                build_stats["force_ids_applied"] = len(missing)
     build_stats["after_degree_cap"] = len(keep)
+    build_stats["after_cap"] = len(keep)
 
     from datetime import datetime as _dt
 
@@ -557,12 +642,19 @@ def finalize_payload(
     extra: dict | None = None,
 ) -> dict:
     """Package construct with analytics / quality / era slices."""
+    stats = dict(build_stats or {})
+    note = method_note
+    if stats.get("fallback_used"):
+        if not note.startswith("PROXY:"):
+            note = f"PROXY: {note}"
+        warnings = list(stats.get("validation_warnings") or [])
+        warnings.append("fallback_used: construct population is a proxy — not the semantic ideal")
+        stats["validation_warnings"] = warnings
     if not stages and nodes:
         stages = stages_from_nodes(nodes)
-        if build_stats is not None:
-            build_stats["stages_source"] = "default_from_nodes"
+        stats["stages_source"] = "default_from_nodes"
 
-    analytics = (build_stats or {}).pop("analytics", None) or {}
+    analytics = stats.pop("analytics", None) or {}
     if not analytics and nodes and edges:
         analytics = attach_analytics(nodes, edges)
         simple_layout_2d(nodes, edges, seed=BUILD_SEED)
@@ -573,17 +665,17 @@ def finalize_payload(
         title=title,
         subtitle=subtitle,
         key_variable=key_variable,
-        method_note=method_note,
+        method_note=note,
         nodes=nodes,
         edges=edges,
         stages=stages,
         extra=extra,
-        build_stats={k: v for k, v in (build_stats or {}).items() if k != "analytics"},
+        build_stats={k: v for k, v in stats.items() if k != "analytics"},
         analytics=analytics,
     )
     snap_files = manifest.get("imdb_snapshot_files") or {}
     oldest_snap = min(snap_files.values()) if snap_files else None
-    warnings = list((build_stats or {}).get("validation_warnings") or [])
+    warnings = list(stats.get("validation_warnings") or [])
     quality = quality_report(
         nodes,
         edges,
@@ -593,6 +685,10 @@ def finalize_payload(
         imdb_snapshot_as_of=oldest_snap,
         construct_id=construct_id,
     )
+    if stats.get("fallback_used"):
+        quality["fallback_used"] = True
+    if stats.get("enrichment_mode"):
+        quality["enrichment_mode"] = stats["enrichment_mode"]
     payload = {
         "nodes": nodes,
         "edges": edges,

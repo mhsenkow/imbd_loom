@@ -7,6 +7,7 @@ import duckdb
 from loom.constructs import gender_expr
 from loom.constructs.emit import coappearance_edges, finalize_payload
 from loom.filters import adult_exclusion_sql, title_type_sql, vote_floor_sql
+from loom.membership import rank_prominence_sql
 
 
 def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
@@ -14,6 +15,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     adult = adult_exclusion_sql("t")
     types = title_type_sql("t")
     votes = vote_floor_sql("r", min_votes=50)
+    prom = rank_prominence_sql("r")
 
     # People with ≥3 partners who share ≥3 titles each
     person_sql = f"""
@@ -53,7 +55,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
           {ge} AS gender,
           COUNT(DISTINCT p.tconst) AS title_count,
           MAX(pr.troupe_partners) AS troupe_partners,
-          SUM(COALESCE(r.numVotes, 0)) AS prominence
+          {prom} AS prominence
         FROM title_principals p
         JOIN partners pr ON pr.nconst = p.nconst
         JOIN title_basics t ON t.tconst = p.tconst
@@ -65,18 +67,24 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
           AND {adult}
           AND {votes}
         GROUP BY p.nconst, n.primaryName, ge.tmdb_gender, p.category
-        ORDER BY MAX(pr.troupe_partners) DESC, SUM(COALESCE(r.numVotes, 0)) DESC
+        ORDER BY {prom} DESC, MAX(pr.troupe_partners) DESC
         LIMIT {int(top_n * 3)}
     """
 
     nodes, edges, stats = coappearance_edges(
-        con, person_sql, construct="repertory", top_n=top_n, min_shared=3
+        con,
+        person_sql,
+        construct="repertory",
+        top_n=top_n,
+        min_shared=3,
+        cap_by="blend",
+        enrichment_mode="imdb",
     )
 
     method = (
         "Population: actors with ≥3 co-appearance partners who each share ≥3 titles "
         "(Adult excluded, numVotes ≥50) — repertory / troupe careers. "
-        "Edges require ≥3 shared titles."
+        "Edges require ≥3 shared titles. Cap by blend."
     )
     return finalize_payload(
         con,

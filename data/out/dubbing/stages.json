@@ -1,737 +1,79 @@
 [
   {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Kenjiro Tsuda",
-    "categoryTo": "television",
-    "value": 103
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "male",
+    "categoryTo": "pre-1980",
+    "value": 21452
   },
   {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Colleen Clinkenbeard",
-    "categoryTo": "film",
-    "value": 9
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "nonbinary",
+    "categoryTo": "2015+",
+    "value": 205
   },
   {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Takehito Koyasu",
-    "categoryTo": "film",
-    "value": 52
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "nonbinary",
+    "categoryTo": "2000–2014",
+    "value": 125
   },
   {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Takehito Koyasu",
-    "categoryTo": "short",
-    "value": 3
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "female",
+    "categoryTo": "pre-1980",
+    "value": 6867
   },
   {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Kotono Mitsuishi",
-    "categoryTo": "film",
-    "value": 49
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Kotono Mitsuishi",
-    "categoryTo": "short",
-    "value": 7
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Debra Wilson",
-    "categoryTo": "television",
-    "value": 69
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Sergey A.",
-    "categoryTo": "short",
-    "value": 129
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Sergey A.",
-    "categoryTo": "film",
-    "value": 82
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Cam Clarke",
-    "categoryTo": "film",
-    "value": 73
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Michael Donovan",
-    "categoryTo": "television",
-    "value": 82
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Toshio Furukawa",
-    "categoryTo": "film",
-    "value": 64
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Toshio Furukawa",
-    "categoryTo": "short",
-    "value": 1
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Nicole Oliver",
-    "categoryTo": "television",
-    "value": 95
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Michelle Ruff",
-    "categoryTo": "television",
-    "value": 108
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Bill Thompson",
-    "categoryTo": "short",
-    "value": 96
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Bill Thompson",
-    "categoryTo": "film",
-    "value": 10
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Cristina Valenzuela",
-    "categoryTo": "film",
-    "value": 20
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Cristina Valenzuela",
-    "categoryTo": "short",
-    "value": 2
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Brian Cox",
-    "categoryTo": "television",
-    "value": 37
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Charlie Adler",
-    "categoryTo": "television",
-    "value": 156
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Cam Clarke",
-    "categoryTo": "short",
-    "value": 6
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Orson Welles",
-    "categoryTo": "film",
-    "value": 74
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Joss Ackland",
-    "categoryTo": "film",
-    "value": 60
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Orson Welles",
-    "categoryTo": "short",
-    "value": 18
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Kenta Miyake",
-    "categoryTo": "television",
-    "value": 56
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Sandra Ng",
-    "categoryTo": "film",
-    "value": 93
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Marvin Miller",
-    "categoryTo": "television",
-    "value": 33
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Clarence Nash",
-    "categoryTo": "short",
-    "value": 485
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Anthony Chau-Sang Wong",
-    "categoryTo": "television",
-    "value": 4
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Cecil Roy",
-    "categoryTo": "short",
-    "value": 100
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Cecil Roy",
-    "categoryTo": "film",
-    "value": 4
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Stan Freberg",
-    "categoryTo": "television",
-    "value": 18
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Clarence Nash",
-    "categoryTo": "film",
-    "value": 17
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Masako Nozawa",
-    "categoryTo": "television",
-    "value": 75
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Monica Rial",
-    "categoryTo": "television",
-    "value": 224
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Hal Smith",
-    "categoryTo": "short",
-    "value": 28
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Hal Smith",
-    "categoryTo": "film",
-    "value": 26
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Kirk Thornton",
-    "categoryTo": "television",
-    "value": 120
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Robbie Daymond",
-    "categoryTo": "television",
-    "value": 88
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Mikako Komatsu",
-    "categoryTo": "television",
-    "value": 92
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Todd Haberkorn",
-    "categoryTo": "film",
-    "value": 11
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Boris Karloff",
-    "categoryTo": "film",
-    "value": 104
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Mark Hamill",
-    "categoryTo": "short",
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "nonbinary",
+    "categoryTo": "1980–1999",
     "value": 5
   },
   {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Vincent Price",
-    "categoryTo": "television",
-    "value": 20
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "male",
+    "categoryTo": "2000–2014",
+    "value": 39591
   },
   {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Mark Hamill",
-    "categoryTo": "film",
-    "value": 82
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "male",
+    "categoryTo": "2015+",
+    "value": 39933
   },
   {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Ryan Reynolds",
-    "categoryTo": "film",
-    "value": 97
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "female",
+    "categoryTo": "1980–1999",
+    "value": 11624
   },
   {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Boris Karloff",
-    "categoryTo": "short",
-    "value": 3
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "female",
+    "categoryTo": "2000–2014",
+    "value": 25335
   },
   {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Ryan Reynolds",
-    "categoryTo": "short",
-    "value": 2
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "female",
+    "categoryTo": "2015+",
+    "value": 29764
   },
   {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Kenjiro Tsuda",
-    "categoryTo": "film",
-    "value": 25
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Colleen Clinkenbeard",
-    "categoryTo": "television",
-    "value": 90
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Takehito Koyasu",
-    "categoryTo": "television",
-    "value": 130
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Kotono Mitsuishi",
-    "categoryTo": "television",
-    "value": 52
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Debra Wilson",
-    "categoryTo": "film",
-    "value": 29
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Debra Wilson",
-    "categoryTo": "short",
-    "value": 1
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Sergey A.",
-    "categoryTo": "television",
-    "value": 1
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Cam Clarke",
-    "categoryTo": "television",
-    "value": 91
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Michael Donovan",
-    "categoryTo": "film",
-    "value": 33
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Michael Donovan",
-    "categoryTo": "short",
-    "value": 1
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Toshio Furukawa",
-    "categoryTo": "television",
-    "value": 43
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Nicole Oliver",
-    "categoryTo": "film",
-    "value": 35
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Nicole Oliver",
-    "categoryTo": "short",
-    "value": 3
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Michelle Ruff",
-    "categoryTo": "film",
-    "value": 13
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Bill Thompson",
-    "categoryTo": "television",
-    "value": 3
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Cristina Valenzuela",
-    "categoryTo": "television",
-    "value": 82
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Brian Cox",
-    "categoryTo": "film",
-    "value": 98
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Brian Cox",
-    "categoryTo": "short",
-    "value": 5
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Charlie Adler",
-    "categoryTo": "film",
-    "value": 43
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Joss Ackland",
-    "categoryTo": "television",
-    "value": 34
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Orson Welles",
-    "categoryTo": "television",
-    "value": 8
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Charlie Adler",
-    "categoryTo": "short",
-    "value": 7
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Kenta Miyake",
-    "categoryTo": "film",
-    "value": 33
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Kenta Miyake",
-    "categoryTo": "short",
-    "value": 4
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Marvin Miller",
-    "categoryTo": "short",
-    "value": 62
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Marvin Miller",
-    "categoryTo": "film",
-    "value": 28
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Anthony Chau-Sang Wong",
-    "categoryTo": "film",
-    "value": 138
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Stan Freberg",
-    "categoryTo": "short",
-    "value": 91
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Stan Freberg",
-    "categoryTo": "film",
-    "value": 11
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Clarence Nash",
-    "categoryTo": "television",
-    "value": 11
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Masako Nozawa",
-    "categoryTo": "film",
-    "value": 75
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Masako Nozawa",
-    "categoryTo": "short",
-    "value": 3
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Monica Rial",
-    "categoryTo": "short",
-    "value": 2
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Monica Rial",
-    "categoryTo": "film",
-    "value": 5
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Hal Smith",
-    "categoryTo": "television",
-    "value": 151
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Kirk Thornton",
-    "categoryTo": "film",
-    "value": 16
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Robbie Daymond",
-    "categoryTo": "film",
-    "value": 37
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Mikako Komatsu",
-    "categoryTo": "film",
-    "value": 27
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Todd Haberkorn",
-    "categoryTo": "television",
-    "value": 104
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Mark Hamill",
-    "categoryTo": "television",
-    "value": 89
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Vincent Price",
-    "categoryTo": "film",
-    "value": 104
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Boris Karloff",
-    "categoryTo": "television",
-    "value": 13
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Ryan Reynolds",
-    "categoryTo": "television",
-    "value": 13
-  },
-  {
-    "stageFrom": "actor",
-    "stageTo": "medium",
-    "categoryFrom": "Vincent Price",
-    "categoryTo": "short",
-    "value": 4
-  },
-  {
-    "stageFrom": "medium",
-    "stageTo": "role_band",
-    "categoryFrom": "film",
-    "categoryTo": "40+ roles",
-    "value": 3009
-  },
-  {
-    "stageFrom": "medium",
-    "stageTo": "role_band",
-    "categoryFrom": "television",
-    "categoryTo": "40+ roles",
-    "value": 4730
-  },
-  {
-    "stageFrom": "medium",
-    "stageTo": "role_band",
-    "categoryFrom": "short",
-    "categoryTo": "20–39",
-    "value": 72
-  },
-  {
-    "stageFrom": "medium",
-    "stageTo": "role_band",
-    "categoryFrom": "short",
-    "categoryTo": "40+ roles",
-    "value": 1176
-  },
-  {
-    "stageFrom": "medium",
-    "stageTo": "role_band",
-    "categoryFrom": "film",
-    "categoryTo": "20–39",
-    "value": 677
-  },
-  {
-    "stageFrom": "medium",
-    "stageTo": "role_band",
-    "categoryFrom": "television",
-    "categoryTo": "20–39",
-    "value": 916
-  },
-  {
-    "stageFrom": "medium",
-    "stageTo": "role_band",
-    "categoryFrom": "television",
-    "categoryTo": "5–9",
-    "value": 272
-  },
-  {
-    "stageFrom": "medium",
-    "stageTo": "role_band",
-    "categoryFrom": "film",
-    "categoryTo": "5–9",
-    "value": 235
-  },
-  {
-    "stageFrom": "medium",
-    "stageTo": "role_band",
-    "categoryFrom": "short",
-    "categoryTo": "10–19",
-    "value": 55
-  },
-  {
-    "stageFrom": "medium",
-    "stageTo": "role_band",
-    "categoryFrom": "television",
-    "categoryTo": "10–19",
-    "value": 552
-  },
-  {
-    "stageFrom": "medium",
-    "stageTo": "role_band",
-    "categoryFrom": "film",
-    "categoryTo": "10–19",
-    "value": 476
-  },
-  {
-    "stageFrom": "medium",
-    "stageTo": "role_band",
-    "categoryFrom": "short",
-    "categoryTo": "5–9",
-    "value": 38
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "male",
+    "categoryTo": "1980–1999",
+    "value": 22169
   }
 ]

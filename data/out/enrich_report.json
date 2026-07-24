@@ -1,0 +1,15 @@
+{
+  "started_at": "2026-07-23T18:14:35.732437+00:00",
+  "skips": [
+    "tmdb",
+    "wikidata_voice",
+    "bechdel"
+  ],
+  "rows": {
+    "wikidata_people": 0,
+    "voice_true_flags": 773
+  },
+  "errors": [],
+  "candidate_count": 400,
+  "finished_at": "2026-07-23T18:14:43.406281+00:00"
+}

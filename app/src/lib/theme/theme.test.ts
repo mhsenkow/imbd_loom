@@ -10,6 +10,7 @@ import {
   PALETTE_NAMES,
   cssVars,
   mark,
+  opacity,
   token,
   type Theme,
 } from "./tokens";
@@ -20,6 +21,7 @@ import {
   degreeColor,
   sequentialScale,
 } from "./scales";
+import { gridLineStyle, linkOpacity, warpLineStyle } from "./lineStyle";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -129,5 +131,30 @@ describe("scales", () => {
 
   it("token resolution is stable across themes for palette hues", () => {
     expect(PALETTES.loom[0].toLowerCase()).toBe(token("mark.hub", "light").toLowerCase());
+  });
+});
+
+describe("lineStyle", () => {
+  it("dark ambient / warp / grid opacities sit above light floors", () => {
+    expect(linkOpacity("ambient", "dark")).toBeGreaterThan(linkOpacity("ambient", "light"));
+    expect(linkOpacity("dim", "dark")).toBeGreaterThan(linkOpacity("dim", "light"));
+    expect(linkOpacity("skim", "dark")).toBeGreaterThan(linkOpacity("skim", "light"));
+
+    const warpL = warpLineStyle({ full: true, spanRatio: 1, state: "ambient", theme: "light" });
+    const warpD = warpLineStyle({ full: true, spanRatio: 1, state: "ambient", theme: "dark" });
+    expect(warpD.strokeOpacity).toBeGreaterThan(warpL.strokeOpacity);
+    expect(warpD.strokeOpacity).toBeGreaterThanOrEqual(opacity.warpAmbient);
+
+    const gridL = gridLineStyle({ kind: "decade", theme: "light" });
+    const gridD = gridLineStyle({ kind: "decade", theme: "dark" });
+    expect(gridD.strokeOpacity).toBeGreaterThan(gridL.strokeOpacity);
+  });
+
+  it("hot warps use full linkHot opacity in both themes", () => {
+    for (const theme of ["light", "dark"] as Theme[]) {
+      const hot = warpLineStyle({ full: true, spanRatio: 1, state: "hot", theme });
+      expect(hot.strokeOpacity).toBe(opacity.linkHot);
+      expect(hot.className).toContain("is-hot");
+    }
   });
 });

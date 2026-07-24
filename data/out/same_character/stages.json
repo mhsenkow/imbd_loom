@@ -4,14 +4,14 @@
     "stageTo": "era",
     "categoryFrom": "male",
     "categoryTo": "unknown era",
-    "value": 121
+    "value": 128
   },
   {
     "stageFrom": "gender",
     "stageTo": "era",
     "categoryFrom": "female",
     "categoryTo": "unknown era",
-    "value": 79
+    "value": 72
   },
   {
     "stageFrom": "era",
@@ -25,13 +25,13 @@
     "stageTo": "degree",
     "categoryFrom": "unknown era",
     "categoryTo": "linked",
-    "value": 156
+    "value": 146
   },
   {
     "stageFrom": "era",
     "stageTo": "degree",
     "categoryFrom": "unknown era",
     "categoryTo": "sparse",
-    "value": 19
+    "value": 29
   }
 ]

@@ -3,57 +3,99 @@
     "stageFrom": "gender",
     "stageTo": "bechdel_band",
     "categoryFrom": "male",
-    "categoryTo": "fail (0)",
-    "value": 6150
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bechdel_band",
-    "categoryFrom": "male",
     "categoryTo": "pass (3)",
-    "value": 27192
+    "value": 27172
   },
   {
     "stageFrom": "gender",
     "stageTo": "bechdel_band",
     "categoryFrom": "male",
-    "categoryTo": "talk about men (2)",
-    "value": 5928
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bechdel_band",
-    "categoryFrom": "male",
-    "categoryTo": "no talk (1)",
-    "value": 14092
+    "categoryTo": "fail (0)",
+    "value": 6147
   },
   {
     "stageFrom": "gender",
     "stageTo": "bechdel_band",
     "categoryFrom": "female",
     "categoryTo": "pass (3)",
-    "value": 21908
+    "value": 21857
   },
   {
     "stageFrom": "gender",
     "stageTo": "bechdel_band",
     "categoryFrom": "female",
     "categoryTo": "fail (0)",
-    "value": 1281
+    "value": 1283
   },
   {
     "stageFrom": "gender",
     "stageTo": "bechdel_band",
-    "categoryFrom": "female",
+    "categoryFrom": "nonbinary",
+    "categoryTo": "pass (3)",
+    "value": 71
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bechdel_band",
+    "categoryFrom": "nonbinary",
+    "categoryTo": "fail (0)",
+    "value": 1
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bechdel_band",
+    "categoryFrom": "male",
+    "categoryTo": "no talk (1)",
+    "value": 14079
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bechdel_band",
+    "categoryFrom": "male",
     "categoryTo": "talk about men (2)",
-    "value": 2890
+    "value": 5925
   },
   {
     "stageFrom": "gender",
     "stageTo": "bechdel_band",
     "categoryFrom": "female",
     "categoryTo": "no talk (1)",
-    "value": 5234
+    "value": 5228
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bechdel_band",
+    "categoryFrom": "female",
+    "categoryTo": "talk about men (2)",
+    "value": 2884
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bechdel_band",
+    "categoryFrom": "nonbinary",
+    "categoryTo": "no talk (1)",
+    "value": 19
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bechdel_band",
+    "categoryFrom": "nonbinary",
+    "categoryTo": "talk about men (2)",
+    "value": 9
+  },
+  {
+    "stageFrom": "bechdel_band",
+    "stageTo": "era",
+    "categoryFrom": "no talk (1)",
+    "categoryTo": "pre-1980",
+    "value": 3715
+  },
+  {
+    "stageFrom": "bechdel_band",
+    "stageTo": "era",
+    "categoryFrom": "pass (3)",
+    "categoryTo": "1980–1999",
+    "value": 9239
   },
   {
     "stageFrom": "bechdel_band",
@@ -79,58 +121,9 @@
   {
     "stageFrom": "bechdel_band",
     "stageTo": "era",
-    "categoryFrom": "no talk (1)",
-    "categoryTo": "pre-1980",
-    "value": 3715
-  },
-  {
-    "stageFrom": "bechdel_band",
-    "stageTo": "era",
     "categoryFrom": "talk about men (2)",
     "categoryTo": "pre-1980",
     "value": 2262
-  },
-  {
-    "stageFrom": "bechdel_band",
-    "stageTo": "era",
-    "categoryFrom": "pass (3)",
-    "categoryTo": "1980–1999",
-    "value": 9239
-  },
-  {
-    "stageFrom": "bechdel_band",
-    "stageTo": "era",
-    "categoryFrom": "fail (0)",
-    "categoryTo": "2000–2014",
-    "value": 2682
-  },
-  {
-    "stageFrom": "bechdel_band",
-    "stageTo": "era",
-    "categoryFrom": "no talk (1)",
-    "categoryTo": "2015+",
-    "value": 2633
-  },
-  {
-    "stageFrom": "bechdel_band",
-    "stageTo": "era",
-    "categoryFrom": "talk about men (2)",
-    "categoryTo": "2015+",
-    "value": 1273
-  },
-  {
-    "stageFrom": "bechdel_band",
-    "stageTo": "era",
-    "categoryFrom": "fail (0)",
-    "categoryTo": "pre-1980",
-    "value": 2385
-  },
-  {
-    "stageFrom": "bechdel_band",
-    "stageTo": "era",
-    "categoryFrom": "pass (3)",
-    "categoryTo": "2000–2014",
-    "value": 23535
   },
   {
     "stageFrom": "bechdel_band",
@@ -157,8 +150,8 @@
     "stageFrom": "bechdel_band",
     "stageTo": "era",
     "categoryFrom": "pass (3)",
-    "categoryTo": "2015+",
-    "value": 9198
+    "categoryTo": "2000–2014",
+    "value": 23535
   },
   {
     "stageFrom": "bechdel_band",
@@ -166,5 +159,40 @@
     "categoryFrom": "fail (0)",
     "categoryTo": "1980–1999",
     "value": 1508
+  },
+  {
+    "stageFrom": "bechdel_band",
+    "stageTo": "era",
+    "categoryFrom": "pass (3)",
+    "categoryTo": "2015+",
+    "value": 9198
+  },
+  {
+    "stageFrom": "bechdel_band",
+    "stageTo": "era",
+    "categoryFrom": "fail (0)",
+    "categoryTo": "pre-1980",
+    "value": 2385
+  },
+  {
+    "stageFrom": "bechdel_band",
+    "stageTo": "era",
+    "categoryFrom": "fail (0)",
+    "categoryTo": "2000–2014",
+    "value": 2682
+  },
+  {
+    "stageFrom": "bechdel_band",
+    "stageTo": "era",
+    "categoryFrom": "talk about men (2)",
+    "categoryTo": "2015+",
+    "value": 1273
+  },
+  {
+    "stageFrom": "bechdel_band",
+    "stageTo": "era",
+    "categoryFrom": "no talk (1)",
+    "categoryTo": "2015+",
+    "value": 2633
   }
 ]
