@@ -7,6 +7,7 @@ import {
   edgeEvidenceLabel,
   edgeSharedCount,
   edgeYearExtents,
+  isGenreMembershipEdge,
   isSameCharacterEdge,
   linkStrokeWidth,
   nodeColor,
@@ -144,9 +145,11 @@ export function layoutBundle(
         ? `${src.label} ↔ ${(b.data.node as Node).label}: ${edgeEvidenceLabel(e)}${
             edgeSharedCount(e) > 1 ? ` · ${edgeSharedCount(e)} shared character names` : ""
           }`
-        : `${src.label} ↔ ${(b.data.node as Node).label}: ${edgeSharedCount(e)} shared title(s) · weighted tie score ${e.weight}${
-            sharedLabel(e.shared) ? `\n${sharedLabel(e.shared)}` : ""
-          }`,
+        : isGenreMembershipEdge(e)
+          ? `${src.label} ↔ ${(b.data.node as Node).label}: ${edgeEvidenceLabel(e)}`
+          : `${src.label} ↔ ${(b.data.node as Node).label}: ${edgeSharedCount(e)} shared title(s) · weighted tie score ${e.weight}${
+              sharedLabel(e.shared) ? `\n${sharedLabel(e.shared)}` : ""
+            }`,
       sourceId: src.id,
       targetId: (b.data.node as Node).id,
       edge: e,

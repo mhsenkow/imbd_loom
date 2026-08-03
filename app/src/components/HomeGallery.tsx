@@ -9,6 +9,7 @@ import {
   storyToHref,
   type StoryPreset,
 } from "../lib/gallery";
+import { emptyConstructBadge } from "../lib/constructMeta";
 
 interface Props {
   onOpenStory: (story: StoryPreset) => void;
@@ -29,13 +30,14 @@ function StoryCard({
 }) {
   const full = resolveStorySpec(story);
   const [preview, setPreview] = useState<GalleryPreviewMeta | null>(null);
+  const emptyBadge = preview?.emptyBadge ?? emptyConstructBadge(full.activeConstruct);
   const handlePreview = useCallback((next: GalleryPreviewMeta | null) => {
     setPreview(next);
   }, []);
 
   return (
     <article
-      className="gallery-card"
+      className={`gallery-card${preview?.isEmptyConstruct ? " is-empty-construct" : ""}`}
       style={{ animationDelay: `${Math.min(index, 10) * 55}ms` }}
     >
       <a
@@ -48,7 +50,10 @@ function StoryCard({
       >
         <div className="gallery-thumb-wrap">
           <GalleryThumb spec={full} onPreviewMeta={handlePreview} />
-          {preview ? (
+          {emptyBadge ? (
+            <span className="gallery-empty-badge gallery-empty-badge-card">{emptyBadge}</span>
+          ) : null}
+          {preview && !preview.isEmptyConstruct ? (
             <span className="gallery-cut-count mono">
               {preview.nodeCount} people · {preview.edgeCount.toLocaleString()} ties
             </span>
@@ -62,7 +67,11 @@ function StoryCard({
           <div className="gallery-hook">
             <p>{story.hook}</p>
           </div>
-          {preview ? (
+          {preview?.isEmptyConstruct ? (
+            <p className="gallery-evidence-empty mono">
+              Construct ships empty until Wikidata people data is warm.
+            </p>
+          ) : preview ? (
             <div className="gallery-evidence">
               <p className="gallery-evidence-label mono">In this cut</p>
               <p className="gallery-evidence-leaders">
@@ -70,7 +79,8 @@ function StoryCard({
               </p>
               {preview.strongestPair ? (
                 <p className="gallery-evidence-pair mono">
-                  Most shared · {preview.strongestPair}
+                  {full.activeConstruct === "one_role" ? "Strongest lane" : "Most shared"} ·{" "}
+                  {preview.strongestPair}
                   {preview.strongestMetric ? ` · ${preview.strongestMetric}` : ""}
                   {preview.sharedTitle ? ` · e.g. ${preview.sharedTitle}` : ""}
                 </p>

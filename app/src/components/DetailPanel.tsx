@@ -9,7 +9,7 @@ import { filmLine, uniqueShared } from "../lib/sharedTitles";
 import type { Insight } from "../lib/insights";
 import { describeNodeStats, hasStat, type ViewStatMarks } from "../lib/statsMarks";
 import { nodeDegree, nodeStrength } from "../lib/metrics";
-import { edgeEvidenceLabel, edgeSharedCount, isSameCharacterEdge } from "../lib/encode";
+import { edgeEvidenceLabel, edgeSharedCount, edgeTieScore, isGenreMembershipEdge, isSameCharacterEdge } from "../lib/encode";
 import { InsightCard } from "./InsightCard";
 
 interface Props {
@@ -158,6 +158,17 @@ export function DetailPanel({
                 </div>
               ) : null}
             </>
+          ) : isGenreMembershipEdge(edge) ? (
+            <>
+              <div title="Same dominant genre lane (not shared films)">
+                <div className="stat-label">Genre lane</div>
+                <div className="stat-value">{edge.genre ?? "—"}</div>
+              </div>
+              <div title="min(prominence_a, prominence_b) on vote-weighted genre credits">
+                <div className="stat-label">Lane tie score</div>
+                <div className="stat-value mono">{edgeTieScore(edge)}</div>
+              </div>
+            </>
           ) : (
             <>
               <div>
@@ -203,10 +214,16 @@ export function DetailPanel({
             ) : null}
             , not necessarily the same franchise identity.
           </p>
-        ) : edge.construct === "one_role" ? (
+        ) : isGenreMembershipEdge(edge) ? (
           <p className="hint">
-            These links are <strong>genre co-membership</strong> (same dominant genre), not
-            shared titles on the same film.
+            Link means both actors sit in the same <strong>dominant genre lane</strong>
+            {edge.genre ? (
+              <>
+                {" "}
+                (here: <em>{edge.genre}</em>)
+              </>
+            ) : null}
+            . They are <strong>not</strong> linked by shared film credits.
           </p>
         ) : (
           <p className="hint">
@@ -240,6 +257,11 @@ export function DetailPanel({
               <strong>Links mean shared character names</strong> — both people credited under
               the same role string (franchise seeds + multi-word names). Hover a curved link to
               see which role connects them.
+            </>
+          ) : edges.some((e) => isGenreMembershipEdge(e)) ? (
+            <>
+              <strong>Links mean genre co-membership</strong> — specialists who share a dominant
+              genre lane. Tie scores are vote-weighted prominence, not shared-title counts.
             </>
           ) : (
             <>
@@ -409,12 +431,15 @@ export function DetailPanel({
           <h3>
             {neighbors.some(({ edge: e }) => isSameCharacterEdge(e))
               ? "Connected via shared characters"
-              : "Connected via shared titles"}
+              : neighbors.some(({ edge: e }) => isGenreMembershipEdge(e))
+                ? "Connected via genre lane"
+                : "Connected via shared titles"}
           </h3>
           <ul>
             {neighbors.map(({ node: n, weight, edge: neighborEdge }) => {
               const shared = uniqueShared(neighborEdge.shared);
               const characterLink = isSameCharacterEdge(neighborEdge);
+              const genreLink = isGenreMembershipEdge(neighborEdge);
               return (
                 <li key={n.id}>
                   <button
@@ -426,6 +451,8 @@ export function DetailPanel({
                       <span className="neighbor-name">{n.label}</span>
                       {characterLink && neighborEdge.character ? (
                         <span className="neighbor-via">{neighborEdge.character}</span>
+                      ) : genreLink && neighborEdge.genre ? (
+                        <span className="neighbor-via">{neighborEdge.genre} lane</span>
                       ) : shared[0] ? (
                         <span className="neighbor-via">{filmLine(shared[0])}</span>
                       ) : null}
@@ -435,10 +462,12 @@ export function DetailPanel({
                       title={
                         characterLink
                           ? `${edgeSharedCount(neighborEdge)} shared character name(s)`
-                          : `Weighted tie score ${weight}`
+                          : genreLink
+                            ? `Lane tie score ${edgeTieScore(neighborEdge)}`
+                            : `Weighted tie score ${weight}`
                       }
                     >
-                      {characterLink
+                      {characterLink || genreLink
                         ? edgeEvidenceLabel(neighborEdge)
                         : `${edgeSharedCount(neighborEdge)} title${
                             edgeSharedCount(neighborEdge) === 1 ? "" : "s"

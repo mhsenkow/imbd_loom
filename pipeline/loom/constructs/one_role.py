@@ -198,6 +198,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
                     "target": b["id"],
                     "weight": weight,
                     "construct": "one_role",
+                    "edge_kind": "genre_membership",
                     "genre": genre,
                 }
                 if year:

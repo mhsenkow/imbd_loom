@@ -133,6 +133,9 @@ export interface Edge {
   shared?: SharedTitle[];
   /** Shared character-name evidence (same_character construct) */
   character?: string | null;
+  /** Synthetic one_role genre-lane membership */
+  genre?: string | null;
+  edge_kind?: "coappearance" | "genre_membership" | "character_name" | string | null;
   [key: string]: unknown;
 }
 

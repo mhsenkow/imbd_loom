@@ -6,6 +6,13 @@ import { TimelineStatic } from "./TimelineStatic";
 import { ScatterHero } from "./ScatterHero";
 import { loadConstruct } from "../lib/data";
 import {
+  edgeEvidenceLabel,
+  edgeSharedCount,
+  edgeTieScore,
+  isGenreMembershipEdge,
+} from "../lib/encode";
+import { isConstructEmpty } from "../lib/constructMeta";
+import {
   dropIsolates,
   filterEdges,
   filterNodes,
@@ -30,6 +37,8 @@ export interface GalleryPreviewMeta {
   strongestPair: string | null;
   strongestMetric: string | null;
   sharedTitle: string | null;
+  isEmptyConstruct?: boolean;
+  emptyBadge?: string | null;
 }
 
 export function GalleryThumb({ spec, onPreviewMeta }: Props) {
@@ -111,7 +120,20 @@ export function GalleryThumb({ spec, onPreviewMeta }: Props) {
   );
 
   const previewMeta = useMemo((): GalleryPreviewMeta | null => {
-    if (!data || nodes.length < 3) return null;
+    if (!data) return null;
+    if (isConstructEmpty(data.manifest)) {
+      return {
+        nodeCount: 0,
+        edgeCount: 0,
+        leaders: [],
+        strongestPair: null,
+        strongestMetric: null,
+        sharedTitle: null,
+        isEmptyConstruct: true,
+        emptyBadge: "Wikidata cold",
+      };
+    }
+    if (nodes.length < 3) return null;
     const byId = new Map(nodes.map((node) => [node.id, node]));
     const leaders = [...nodes]
       .sort(
@@ -121,8 +143,11 @@ export function GalleryThumb({ spec, onPreviewMeta }: Props) {
       .slice(0, 3)
       .map((node) => node.label);
     const strongest = [...edges].sort((a, b) => {
-      const aShared = Number(a.shared_count ?? a.collab_count ?? a.weight);
-      const bShared = Number(b.shared_count ?? b.collab_count ?? b.weight);
+      if (isGenreMembershipEdge(a) || isGenreMembershipEdge(b)) {
+        return b.weight - a.weight;
+      }
+      const aShared = Number(a.shared_count ?? a.collab_count ?? 0);
+      const bShared = Number(b.shared_count ?? b.collab_count ?? 0);
       return bShared - aShared || b.weight - a.weight;
     })[0];
     const source = strongest ? byId.get(strongest.source)?.label : null;
@@ -130,9 +155,11 @@ export function GalleryThumb({ spec, onPreviewMeta }: Props) {
     const sharedTitle = strongest?.shared?.find((title) => title.title)?.title ?? null;
     const sharedCount = Number(strongest?.shared_count ?? strongest?.collab_count);
     const strongestMetric = strongest
-      ? Number.isFinite(sharedCount)
-        ? `${sharedCount.toLocaleString()} shared title${sharedCount === 1 ? "" : "s"}`
-        : `tie score ${strongest.weight.toLocaleString()}`
+      ? isGenreMembershipEdge(strongest)
+        ? `${strongest.genre ?? "genre"} lane · score ${edgeTieScore(strongest).toLocaleString()}`
+        : Number.isFinite(sharedCount)
+          ? `${sharedCount.toLocaleString()} shared title${sharedCount === 1 ? "" : "s"}`
+          : `tie score ${strongest.weight.toLocaleString()}`
       : null;
 
     return {
@@ -142,6 +169,8 @@ export function GalleryThumb({ spec, onPreviewMeta }: Props) {
       strongestPair: source && target ? `${source} ↔ ${target}` : null,
       strongestMetric,
       sharedTitle,
+      isEmptyConstruct: false,
+      emptyBadge: null,
     };
   }, [data, edges, nodes]);
 
@@ -161,6 +190,15 @@ export function GalleryThumb({ spec, onPreviewMeta }: Props) {
     return (
       <div ref={hostRef} className="gallery-thumb empty-thumb">
         Weaving…
+      </div>
+    );
+  }
+
+  if (isConstructEmpty(data.manifest)) {
+    return (
+      <div ref={hostRef} className="gallery-thumb empty-thumb gallery-thumb-empty-construct">
+        <span className="gallery-empty-badge">Wikidata cold</span>
+        <span className="gallery-empty-copy">No people yet — needs Wikidata enrichment</span>
       </div>
     );
   }

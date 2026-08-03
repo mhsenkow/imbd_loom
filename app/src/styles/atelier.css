@@ -2490,12 +2490,57 @@ body.print-mode .poster-frame svg.poster {
 .gallery-thumb.empty-thumb {
   display: grid;
   place-items: center;
+  gap: 8px;
+  padding: 16px;
+  text-align: center;
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-faint);
   background: var(--paper-grain);
+}
+
+.gallery-thumb-empty-construct {
+  border: 1px dashed var(--atelier-border);
+}
+
+.gallery-empty-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  background: color-mix(in srgb, var(--paper) 88%, var(--accent) 12%);
+  border: 1px solid var(--atelier-border);
+}
+
+.gallery-empty-badge-card {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.gallery-empty-copy {
+  font-size: 10px;
+  line-height: 1.4;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+.gallery-card.is-empty-construct {
+  opacity: 0.92;
+}
+
+.gallery-evidence-empty {
+  margin: 10px 0 0;
+  font-size: 11px;
+  color: var(--atelier-muted);
+  line-height: 1.45;
 }
 
 .gallery-card-body {

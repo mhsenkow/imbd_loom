@@ -9,9 +9,9 @@
     "per_genre_cap": 25,
     "population_sql": 30
   },
-  "built_at": "2026-08-03T17:10:49.842971+00:00",
+  "built_at": "2026-08-03T18:23:59.732658+00:00",
   "clustering_coefficient": 0.6978,
-  "community_count": 6,
+  "community_count": 7,
   "concentration_threshold": 0.9,
   "correlations": {
     "acclaim_gap×prominence": {
@@ -97,10 +97,11 @@
     "acclaim_gap_hist": [],
     "assortativity": 0.2695,
     "community_sizes": [
-      8,
-      8,
-      7,
-      3,
+      11,
+      5,
+      4,
+      4,
+      2,
       2,
       2
     ],
@@ -193,8 +194,8 @@
       "male": 14
     },
     "giant_component_share": 0.5,
-    "largest_community_share": 0.267,
-    "modularity": 0.1386,
+    "largest_community_share": 0.367,
+    "modularity": 0.1561,
     "outliers": {
       "pagerank": [
         "nm0758741"

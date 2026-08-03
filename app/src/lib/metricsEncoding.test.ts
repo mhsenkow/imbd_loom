@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Edge, Node, PosterSpec } from "./types";
-import { edgeSharedCount, linkStrokeWidth } from "./encode";
+import { edgeEvidenceLabel, edgeSharedCount, linkStrokeWidth } from "./encode";
 import { deriveInsights } from "./insights";
 import { computeViewStatMarks } from "./statsMarks";
 
@@ -96,5 +96,19 @@ describe("literal counts vs weighted scores", () => {
 
     expect(focusInsight?.detail).toContain("8 shared · score 100");
     expect(focusInsight?.detail).not.toMatch(/\(\d+ titles\)/);
+  });
+
+  it("does not treat one_role lane scores as shared-title counts", () => {
+    const genreEdge: Edge = {
+      source: "a",
+      target: "b",
+      construct: "one_role",
+      edge_kind: "genre_membership",
+      genre: "Comedy",
+      weight: 7096,
+    };
+    expect(edgeSharedCount(genreEdge)).toBe(0);
+    expect(edgeEvidenceLabel(genreEdge)).toContain("Comedy");
+    expect(edgeEvidenceLabel(genreEdge)).toContain("7096");
   });
 });

@@ -8,6 +8,7 @@ import {
   edgeSharedCount,
   edgeThicknessValue,
   edgeYearExtents,
+  isGenreMembershipEdge,
   isSameCharacterEdge,
   nodeColor,
   nodeExtents,
@@ -126,7 +127,9 @@ export function layoutChord(
       edge,
       sharedLabel: isSameCharacterEdge(edge)
         ? edgeEvidenceLabel(edge)
-        : sharedLabel(edge?.shared),
+        : isGenreMembershipEdge(edge)
+          ? edgeEvidenceLabel(edge)
+          : sharedLabel(edge?.shared),
     };
   });
 

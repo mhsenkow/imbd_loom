@@ -121,15 +121,30 @@ export function edgeYearExtents(edges: Edge[]): { yearMin: number; yearMax: numb
   return { yearMin, yearMax };
 }
 
-/** Literal co-appearance count, distinct from the popularity-weighted edge score. */
-export function edgeSharedCount(e: Edge): number {
-  const count = Number(e.shared_count ?? e.collab_count);
-  return Number.isFinite(count) ? count : Number(e.weight) || 0;
+/** One-role wonders: synthetic genre-lane ties, not co-appearances. */
+export function isGenreMembershipEdge(e: Edge | null | undefined): boolean {
+  return (
+    !!e &&
+    (e.construct === "one_role" || e.edge_kind === "genre_membership")
+  );
 }
 
 /** Same-character club edges encode shared role names, not co-appearance titles. */
 export function isSameCharacterEdge(e: Edge | null | undefined): boolean {
   return !!e && (e.construct === "same_character" || !!e.character);
+}
+
+/** Literal shared-title count when the pipeline attached one. */
+export function edgeSharedCount(e: Edge): number {
+  const count = Number(e.shared_count ?? e.collab_count);
+  if (Number.isFinite(count)) return count;
+  if (isGenreMembershipEdge(e) || isSameCharacterEdge(e)) return 0;
+  return Number(e.weight) || 0;
+}
+
+/** Popularity / prominence tie score (always edge.weight). */
+export function edgeTieScore(e: Edge | null | undefined): number {
+  return e ? Number(e.weight) || 0 : 0;
 }
 
 /** Short evidence line for tooltips / neighbor lists. */
@@ -139,6 +154,10 @@ export function edgeEvidenceLabel(e: Edge | null | undefined): string {
     const n = edgeSharedCount(e);
     const role = String(e.character ?? "shared role");
     return n > 1 ? `${role} (+${n - 1} more)` : role;
+  }
+  if (isGenreMembershipEdge(e)) {
+    const genre = String(e.genre ?? "same genre");
+    return `${genre} · score ${edgeTieScore(e)}`;
   }
   const n = edgeSharedCount(e);
   return `${n} shared title${n === 1 ? "" : "s"}`;
