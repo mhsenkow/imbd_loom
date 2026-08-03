@@ -15,6 +15,7 @@ from loom.membership import (
     character_blocklist_sql,
     character_norm_sql,
     empty_payload_stats,
+    same_character_keep_sql,
     same_character_seed_sql,
 )
 from loom.textnorm import ascii_fold
@@ -31,6 +32,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
     )
     blocklist = character_blocklist_sql("char_norm")
     seed_match = same_character_seed_sql("char_norm")
+    keep_name = same_character_keep_sql("char_norm")
 
     # First character only (not full array explode) on high-vote titles
     con.execute(
@@ -57,17 +59,22 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             AND p.characters IS NOT NULL AND p.characters LIKE '%"%'
             AND {types} AND {adult} AND {votes}
             AND t.titleType IN ('movie', 'tvMovie', 'tvMiniSeries', 'tvSeries')
+        ),
+        stripped AS (
+          SELECT
+            nconst, label, gender, votes, vote_w, char_display,
+            CASE WHEN char_norm LIKE 'the %' THEN SUBSTRING(char_norm, 5) ELSE char_norm END
+              AS char_norm
+          FROM raw
+          WHERE LENGTH(char_norm) BETWEEN 3 AND 40
+            AND (
+              {blocklist}
+              OR {seed_match}
+            )
         )
-        SELECT
-          nconst, label, gender, votes, vote_w, char_display,
-          CASE WHEN char_norm LIKE 'the %' THEN SUBSTRING(char_norm, 5) ELSE char_norm END
-            AS char_norm
-        FROM raw
-        WHERE LENGTH(char_norm) BETWEEN 3 AND 40
-          AND (
-            {blocklist}
-            OR {seed_match}
-          )
+        SELECT *
+        FROM stripped
+        WHERE {keep_name}
         """
     )
 
@@ -129,7 +136,7 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
             con,
             construct_id="same_character",
             title="The Same Character Club",
-            subtitle="Batmans, Bonds, Draculas — roles with 3+ faces",
+            subtitle="Franchise roles & multi-word names worn by 3+ faces",
             key_variable="top_shared_character",
             method_note="No multi-cast characters found under filters.",
             nodes=[],
@@ -175,11 +182,14 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
 
     edges = []
     for s, t, w, character in edge_rows:
+        shared_names = max(int(w or 1), 1)
         edges.append(
             {
                 "source": s,
                 "target": t,
-                "weight": max(int(w or 1), 1),
+                # Weight = count of distinct shared character_norms (not log-vote score).
+                "weight": shared_names,
+                "shared_count": shared_names,
                 "construct": "same_character",
                 "character": character or "shared role",
             }
@@ -210,12 +220,15 @@ def build(con: duckdb.DuckDBPyConnection, top_n: int = 200) -> dict:
         con,
         construct_id="same_character",
         title="The Same Character Club",
-        subtitle="Batmans, Bonds, Draculas — roles with 3+ faces",
+        subtitle="Franchise roles & multi-word names worn by 3+ faces",
         key_variable="top_shared_character",
         method_note=(
             "Population: actors who share a normalized primary character name played by "
             "3–80 distinct people on titles with ≥500 votes (Adult excluded). "
-            "Uses shared character_norm / blocklist; franchise seeds (Batman, Bond…) survive. "
+            "Keeps curated franchise seeds (Batman, Bond, Holmes…) and multi-word names "
+            "(Sherlock Holmes, Santa Claus…); drops single common given-name collisions "
+            "(Ginger, Louie…). Matching is still string identity, not a canonical character graph. "
+            "Edge weight = number of shared character_norms. "
             "Top_n capped by blend of shared-character count + prominence ranks."
         ),
         nodes=nodes,

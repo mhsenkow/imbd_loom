@@ -19,9 +19,9 @@
     "pool_size": 600,
     "population_sql": 600
   },
-  "built_at": "2026-07-24T18:48:32.238354+00:00",
+  "built_at": "2026-08-03T17:20:27.857553+00:00",
   "clustering_coefficient": 0.3073,
-  "community_count": 10,
+  "community_count": 9,
   "correlations": {
     "acclaim_gap×prominence": {
       "n": 200,
@@ -77,8 +77,8 @@
       "label": "Nicolas Cage"
     },
     {
-      "id": "nm0000658",
-      "label": "Meryl Streep"
+      "id": "nm0000168",
+      "label": "Samuel L. Jackson"
     },
     {
       "id": "nm0000134",
@@ -160,16 +160,15 @@
     ],
     "assortativity": 0.0254,
     "community_sizes": [
-      30,
-      27,
-      27,
-      22,
-      20,
-      20,
-      18,
-      13,
-      12,
-      11
+      35,
+      33,
+      29,
+      26,
+      26,
+      16,
+      16,
+      11,
+      8
     ],
     "component_count": 1,
     "corr_degree×prominence": {
@@ -258,8 +257,8 @@
       "male": 131
     },
     "giant_component_share": 1.0,
-    "largest_community_share": 0.15,
-    "modularity": 0.1105,
+    "largest_community_share": 0.175,
+    "modularity": 0.1259,
     "outliers": {
       "acclaim_gap": [
         "nm0000115",
@@ -823,6 +822,6 @@
     "top_name": "Nicolas Cage"
   },
   "title": "The Blockbuster Ensemble",
-  "tmdb_gender_rows": 159974,
+  "tmdb_gender_rows": 477619,
   "top_n": 200
 }

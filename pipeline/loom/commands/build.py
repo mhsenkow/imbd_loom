@@ -40,7 +40,34 @@ def build_one(construct_id: str, *, top_n: int = 200) -> dict:
         f"[green]✓[/green] {c.id}: {len(payload['nodes'])} nodes, "
         f"{len(payload['edges'])} edges, {len(payload['stages'])} stage rows"
     )
+    _upsert_index_entry(construct_id, payload)
     return payload
+
+
+def _upsert_index_entry(construct_id: str, payload: dict) -> None:
+    """Keep index.json in sync after a single-construct rebuild."""
+    manifest_path = OUT / construct_id / "manifest.json"
+    index_path = OUT / "index.json"
+    with open(manifest_path, encoding="utf-8") as f:
+        manifest = json.load(f)
+    entry = _index_entry(manifest, payload)
+    index: list[dict] = []
+    if index_path.exists():
+        with open(index_path, encoding="utf-8") as f:
+            raw = json.load(f)
+            if isinstance(raw, list):
+                index = raw
+    replaced = False
+    for i, row in enumerate(index):
+        if row.get("id") == construct_id:
+            index[i] = entry
+            replaced = True
+            break
+    if not replaced:
+        index.append(entry)
+    with open(index_path, "w", encoding="utf-8") as f:
+        json.dump(index, f, indent=2)
+    console.print(f"[green]✓[/green] Updated index entry for {construct_id}")
 
 
 def _index_entry(manifest: dict, payload: dict | None = None) -> dict:

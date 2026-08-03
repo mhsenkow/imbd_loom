@@ -3,84 +3,91 @@
     "stageFrom": "gender",
     "stageTo": "drift",
     "categoryFrom": "male",
-    "categoryTo": "Drama → Comedy",
-    "value": 83
+    "categoryTo": "Comedy → Drama",
+    "value": 80
   },
   {
     "stageFrom": "gender",
     "stageTo": "drift",
     "categoryFrom": "male",
-    "categoryTo": "Comedy → Drama",
-    "value": 83
+    "categoryTo": "Drama → Comedy",
+    "value": 77
   },
   {
     "stageFrom": "gender",
     "stageTo": "drift",
     "categoryFrom": "male",
     "categoryTo": "Drama → Action",
-    "value": 65
+    "value": 66
   },
   {
     "stageFrom": "gender",
     "stageTo": "drift",
     "categoryFrom": "female",
     "categoryTo": "Drama → Comedy",
-    "value": 52
+    "value": 53
   },
   {
     "stageFrom": "gender",
     "stageTo": "drift",
     "categoryFrom": "female",
     "categoryTo": "Comedy → Drama",
-    "value": 37
+    "value": 38
   },
   {
     "stageFrom": "gender",
     "stageTo": "drift",
     "categoryFrom": "male",
     "categoryTo": "Drama → Thriller",
-    "value": 20
+    "value": 23
   },
   {
     "stageFrom": "gender",
     "stageTo": "drift",
     "categoryFrom": "male",
     "categoryTo": "Drama → Adventure",
-    "value": 16
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "drift",
-    "categoryFrom": "male",
-    "categoryTo": "Drama → Crime",
-    "value": 13
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "drift",
-    "categoryFrom": "female",
-    "categoryTo": "Drama → Adventure",
-    "value": 11
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "drift",
-    "categoryFrom": "male",
-    "categoryTo": "Comedy → Animation",
-    "value": 11
+    "value": 21
   },
   {
     "stageFrom": "gender",
     "stageTo": "drift",
     "categoryFrom": "female",
     "categoryTo": "Drama → Action",
-    "value": 10
+    "value": 15
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "drift",
+    "categoryFrom": "male",
+    "categoryTo": "Comedy → Adventure",
+    "value": 13
   },
   {
     "stageFrom": "gender",
     "stageTo": "drift",
     "categoryFrom": "male",
     "categoryTo": "Action → Drama",
+    "value": 10
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "drift",
+    "categoryFrom": "male",
+    "categoryTo": "Crime → Drama",
+    "value": 10
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "drift",
+    "categoryFrom": "male",
+    "categoryTo": "Drama → Crime",
+    "value": 10
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "drift",
+    "categoryFrom": "female",
+    "categoryTo": "Drama → Adventure",
     "value": 9
   },
   {
@@ -88,28 +95,35 @@
     "stageTo": "drift",
     "categoryFrom": "female",
     "categoryTo": "Drama → Thriller",
-    "value": 8
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "drift",
-    "categoryFrom": "male",
-    "categoryTo": "Comedy → Adventure",
-    "value": 8
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "drift",
-    "categoryFrom": "male",
-    "categoryTo": "Crime → Drama",
-    "value": 8
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "drift",
-    "categoryFrom": "male",
-    "categoryTo": "Drama → Horror",
     "value": 7
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "drift",
+    "categoryFrom": "male",
+    "categoryTo": "Comedy → Animation",
+    "value": 7
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "drift",
+    "categoryFrom": "male",
+    "categoryTo": "Comedy → Action",
+    "value": 6
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "drift",
+    "categoryFrom": "female",
+    "categoryTo": "Thriller → Drama",
+    "value": 6
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "drift",
+    "categoryFrom": "male",
+    "categoryTo": "Thriller → Drama",
+    "value": 6
   },
   {
     "stageFrom": "gender",
@@ -126,123 +140,116 @@
     "value": 6
   },
   {
-    "stageFrom": "gender",
-    "stageTo": "drift",
-    "categoryFrom": "male",
-    "categoryTo": "Adventure → Drama",
-    "value": 5
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "drift",
-    "categoryFrom": "male",
-    "categoryTo": "Action → Animation",
-    "value": 5
-  },
-  {
     "stageFrom": "drift",
     "stageTo": "band",
     "categoryFrom": "Drama → Comedy",
     "categoryTo": "changed",
-    "value": 135
+    "value": 130
   },
   {
     "stageFrom": "drift",
     "stageTo": "band",
     "categoryFrom": "Comedy → Drama",
     "categoryTo": "changed",
-    "value": 120
+    "value": 118
   },
   {
     "stageFrom": "drift",
     "stageTo": "band",
     "categoryFrom": "Drama → Action",
     "categoryTo": "changed",
-    "value": 75
-  },
-  {
-    "stageFrom": "drift",
-    "stageTo": "band",
-    "categoryFrom": "Drama → Thriller",
-    "categoryTo": "changed",
-    "value": 28
+    "value": 81
   },
   {
     "stageFrom": "drift",
     "stageTo": "band",
     "categoryFrom": "Drama → Adventure",
     "categoryTo": "changed",
-    "value": 27
+    "value": 30
   },
   {
     "stageFrom": "drift",
     "stageTo": "band",
-    "categoryFrom": "Drama → Crime",
+    "categoryFrom": "Drama → Thriller",
     "categoryTo": "changed",
-    "value": 15
+    "value": 30
   },
   {
     "stageFrom": "drift",
     "stageTo": "band",
     "categoryFrom": "Action → Drama",
     "categoryTo": "changed",
-    "value": 15
-  },
-  {
-    "stageFrom": "drift",
-    "stageTo": "band",
-    "categoryFrom": "Comedy → Animation",
-    "categoryTo": "changed",
-    "value": 12
-  },
-  {
-    "stageFrom": "drift",
-    "stageTo": "band",
-    "categoryFrom": "Drama → Horror",
-    "categoryTo": "changed",
-    "value": 10
+    "value": 16
   },
   {
     "stageFrom": "drift",
     "stageTo": "band",
     "categoryFrom": "Comedy → Adventure",
     "categoryTo": "changed",
-    "value": 10
-  },
-  {
-    "stageFrom": "drift",
-    "stageTo": "band",
-    "categoryFrom": "Crime → Drama",
-    "categoryTo": "changed",
-    "value": 10
+    "value": 14
   },
   {
     "stageFrom": "drift",
     "stageTo": "band",
     "categoryFrom": "Thriller → Drama",
     "categoryTo": "changed",
-    "value": 9
+    "value": 12
   },
   {
     "stageFrom": "drift",
     "stageTo": "band",
-    "categoryFrom": "Romance → Drama",
+    "categoryFrom": "Drama → Crime",
+    "categoryTo": "changed",
+    "value": 12
+  },
+  {
+    "stageFrom": "drift",
+    "stageTo": "band",
+    "categoryFrom": "Crime → Drama",
+    "categoryTo": "changed",
+    "value": 12
+  },
+  {
+    "stageFrom": "drift",
+    "stageTo": "band",
+    "categoryFrom": "Comedy → Animation",
     "categoryTo": "changed",
     "value": 8
   },
   {
     "stageFrom": "drift",
     "stageTo": "band",
-    "categoryFrom": "Adventure → Drama",
+    "categoryFrom": "Family → Comedy",
     "categoryTo": "changed",
     "value": 7
   },
   {
     "stageFrom": "drift",
     "stageTo": "band",
-    "categoryFrom": "Family → Drama",
+    "categoryFrom": "Drama → Horror",
     "categoryTo": "changed",
-    "value": 6
+    "value": 7
+  },
+  {
+    "stageFrom": "drift",
+    "stageTo": "band",
+    "categoryFrom": "Romance → Drama",
+    "categoryTo": "changed",
+    "value": 7
+  },
+  {
+    "stageFrom": "drift",
+    "stageTo": "band",
+    "categoryFrom": "Action → Animation",
+    "categoryTo": "changed",
+    "value": 7
+  },
+  {
+    "stageFrom": "drift",
+    "stageTo": "band",
+    "categoryFrom": "Comedy → Action",
+    "categoryTo": "changed",
+    "value": 7
   },
   {
     "stageFrom": "drift",
@@ -254,21 +261,7 @@
   {
     "stageFrom": "drift",
     "stageTo": "band",
-    "categoryFrom": "Action → Comedy",
-    "categoryTo": "changed",
-    "value": 6
-  },
-  {
-    "stageFrom": "drift",
-    "stageTo": "band",
-    "categoryFrom": "Family → Comedy",
-    "categoryTo": "changed",
-    "value": 6
-  },
-  {
-    "stageFrom": "drift",
-    "stageTo": "band",
-    "categoryFrom": "Comedy → Action",
+    "categoryFrom": "Adventure → Drama",
     "categoryTo": "changed",
     "value": 6
   },
@@ -276,6 +269,13 @@
     "stageFrom": "drift",
     "stageTo": "band",
     "categoryFrom": "Drama → Animation",
+    "categoryTo": "changed",
+    "value": 5
+  },
+  {
+    "stageFrom": "drift",
+    "stageTo": "band",
+    "categoryFrom": "Adventure → Comedy",
     "categoryTo": "changed",
     "value": 5
   }

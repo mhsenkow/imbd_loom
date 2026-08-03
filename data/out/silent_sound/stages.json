@@ -24,6 +24,13 @@
     "stageFrom": "bridge",
     "stageTo": "span",
     "categoryFrom": "deep both sides",
+    "categoryTo": "30+ year span",
+    "value": 473
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "span",
+    "categoryFrom": "deep both sides",
     "categoryTo": "15–29",
     "value": 421
   },
@@ -40,12 +47,5 @@
     "categoryFrom": "sound-dominant",
     "categoryTo": "30+ year span",
     "value": 1
-  },
-  {
-    "stageFrom": "bridge",
-    "stageTo": "span",
-    "categoryFrom": "deep both sides",
-    "categoryTo": "30+ year span",
-    "value": 473
   }
 ]

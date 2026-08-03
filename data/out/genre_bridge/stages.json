@@ -2,373 +2,219 @@
   {
     "stageFrom": "gender",
     "stageTo": "bridge",
-    "categoryFrom": "female",
+    "categoryFrom": "male",
     "categoryTo": "Drama ↔ Crime",
-    "value": 494
+    "value": 1186
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "female",
+    "categoryTo": "Drama ↔ Thriller",
+    "value": 399
   },
   {
     "stageFrom": "gender",
     "stageTo": "bridge",
     "categoryFrom": "male",
-    "categoryTo": "Drama ↔ Thriller",
-    "value": 625
+    "categoryTo": "Thriller ↔ Drama",
+    "value": 231
   },
   {
     "stageFrom": "gender",
     "stageTo": "bridge",
-    "categoryFrom": "female",
+    "categoryFrom": "male",
     "categoryTo": "Animation ↔ Adventure",
-    "value": 254
+    "value": 339
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "male",
+    "categoryTo": "Action ↔ Drama",
+    "value": 665
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "male",
+    "categoryTo": "Animation ↔ Action",
+    "value": 339
   },
   {
     "stageFrom": "gender",
     "stageTo": "bridge",
     "categoryFrom": "female",
-    "categoryTo": "Action ↔ Drama",
-    "value": 146
+    "categoryTo": "Drama ↔ Crime",
+    "value": 480
   },
   {
     "stageFrom": "gender",
     "stageTo": "bridge",
     "categoryFrom": "female",
     "categoryTo": "Animation ↔ Action",
-    "value": 162
+    "value": 171
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "male",
+    "categoryTo": "Drama ↔ Thriller",
+    "value": 623
   },
   {
     "stageFrom": "gender",
     "stageTo": "bridge",
     "categoryFrom": "female",
-    "categoryTo": "Thriller ↔ Drama",
+    "categoryTo": "Animation ↔ Adventure",
+    "value": 239
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "female",
+    "categoryTo": "Action ↔ Drama",
     "value": 160
   },
   {
     "stageFrom": "gender",
     "stageTo": "bridge",
-    "categoryFrom": "male",
+    "categoryFrom": "female",
     "categoryTo": "Thriller ↔ Drama",
-    "value": 222
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "female",
-    "categoryTo": "Drama ↔ Thriller",
-    "value": 392
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "male",
-    "categoryTo": "Action ↔ Drama",
-    "value": 664
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "male",
-    "categoryTo": "Animation ↔ Adventure",
-    "value": 341
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "male",
-    "categoryTo": "Drama ↔ Crime",
-    "value": 1187
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "male",
-    "categoryTo": "Animation ↔ Action",
-    "value": 335
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "male",
-    "categoryTo": "Drama ↔ Comedy",
-    "value": 4575
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "male",
-    "categoryTo": "Drama ↔ Action",
-    "value": 877
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "male",
-    "categoryTo": "Romance ↔ Drama",
-    "value": 380
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "male",
-    "categoryTo": "Comedy ↔ Drama",
-    "value": 3406
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "male",
-    "categoryTo": "Drama ↔ Western",
-    "value": 457
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "female",
-    "categoryTo": "Drama ↔ Romance",
-    "value": 1559
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "male",
-    "categoryTo": "Animation ↔ Comedy",
-    "value": 236
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "male",
-    "categoryTo": "Comedy ↔ Romance",
-    "value": 370
+    "value": 161
   },
   {
     "stageFrom": "gender",
     "stageTo": "bridge",
     "categoryFrom": "female",
     "categoryTo": "Comedy ↔ Drama",
-    "value": 2496
+    "value": 2500
   },
   {
     "stageFrom": "gender",
     "stageTo": "bridge",
     "categoryFrom": "female",
     "categoryTo": "Drama ↔ Comedy",
-    "value": 3988
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "male",
-    "categoryTo": "Drama ↔ Romance",
-    "value": 1546
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "female",
-    "categoryTo": "Romance ↔ Drama",
-    "value": 388
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "female",
-    "categoryTo": "Animation ↔ Comedy",
-    "value": 332
+    "value": 3974
   },
   {
     "stageFrom": "gender",
     "stageTo": "bridge",
     "categoryFrom": "female",
     "categoryTo": "Drama ↔ Action",
-    "value": 332
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "bridge",
-    "categoryFrom": "female",
-    "categoryTo": "Drama ↔ Western",
-    "value": 86
+    "value": 326
   },
   {
     "stageFrom": "gender",
     "stageTo": "bridge",
     "categoryFrom": "female",
     "categoryTo": "Comedy ↔ Romance",
-    "value": 374
+    "value": 366
   },
   {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Drama ↔ Comedy",
-    "categoryTo": "leaning bridge",
-    "value": 4862
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "male",
+    "categoryTo": "Drama ↔ Romance",
+    "value": 1532
   },
   {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Drama ↔ Comedy",
-    "categoryTo": "strong second",
-    "value": 3512
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "female",
+    "categoryTo": "Animation ↔ Comedy",
+    "value": 334
   },
   {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Animation ↔ Comedy",
-    "categoryTo": "strong second",
-    "value": 247
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "female",
+    "categoryTo": "Romance ↔ Drama",
+    "value": 361
   },
   {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Action ↔ Drama",
-    "categoryTo": "strong second",
-    "value": 348
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "female",
+    "categoryTo": "Drama ↔ Western",
+    "value": 90
   },
   {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Action ↔ Drama",
-    "categoryTo": "leaning bridge",
-    "value": 428
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "male",
+    "categoryTo": "Drama ↔ Comedy",
+    "value": 4570
   },
   {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Animation ↔ Comedy",
-    "categoryTo": "leaning bridge",
-    "value": 317
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "male",
+    "categoryTo": "Drama ↔ Action",
+    "value": 876
   },
   {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Comedy ↔ Romance",
-    "categoryTo": "leaning bridge",
-    "value": 423
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "female",
+    "categoryTo": "Drama ↔ Romance",
+    "value": 1572
   },
   {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Comedy ↔ Romance",
-    "categoryTo": "strong second",
-    "value": 301
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "male",
+    "categoryTo": "Comedy ↔ Drama",
+    "value": 3415
   },
   {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Drama ↔ Action",
-    "categoryTo": "even split",
-    "value": 10
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "male",
+    "categoryTo": "Drama ↔ Western",
+    "value": 450
   },
   {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Drama ↔ Thriller",
-    "categoryTo": "even split",
-    "value": 1
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "male",
+    "categoryTo": "Romance ↔ Drama",
+    "value": 362
   },
   {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Drama ↔ Action",
-    "categoryTo": "leaning bridge",
-    "value": 820
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "male",
+    "categoryTo": "Comedy ↔ Romance",
+    "value": 358
   },
   {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Drama ↔ Thriller",
-    "categoryTo": "leaning bridge",
-    "value": 718
-  },
-  {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Drama ↔ Action",
-    "categoryTo": "strong second",
-    "value": 379
-  },
-  {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Drama ↔ Thriller",
-    "categoryTo": "strong second",
-    "value": 300
-  },
-  {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Drama ↔ Comedy",
-    "categoryTo": "even split",
-    "value": 198
-  },
-  {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Comedy ↔ Romance",
-    "categoryTo": "even split",
-    "value": 20
-  },
-  {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Action ↔ Drama",
-    "categoryTo": "even split",
-    "value": 34
-  },
-  {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Animation ↔ Comedy",
-    "categoryTo": "even split",
-    "value": 6
-  },
-  {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Comedy ↔ Drama",
-    "categoryTo": "strong second",
-    "value": 2837
+    "stageFrom": "gender",
+    "stageTo": "bridge",
+    "categoryFrom": "male",
+    "categoryTo": "Animation ↔ Comedy",
+    "value": 246
   },
   {
     "stageFrom": "bridge",
     "stageTo": "balance",
     "categoryFrom": "Comedy ↔ Drama",
     "categoryTo": "leaning bridge",
-    "value": 2838
-  },
-  {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Drama ↔ Western",
-    "categoryTo": "strong second",
-    "value": 220
-  },
-  {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Animation ↔ Adventure",
-    "categoryTo": "leaning bridge",
-    "value": 317
+    "value": 2823
   },
   {
     "stageFrom": "bridge",
     "stageTo": "balance",
     "categoryFrom": "Drama ↔ Crime",
     "categoryTo": "leaning bridge",
-    "value": 1178
+    "value": 1175
   },
   {
     "stageFrom": "bridge",
     "stageTo": "balance",
-    "categoryFrom": "Drama ↔ Western",
-    "categoryTo": "leaning bridge",
-    "value": 204
-  },
-  {
-    "stageFrom": "bridge",
-    "stageTo": "balance",
-    "categoryFrom": "Drama ↔ Crime",
+    "categoryFrom": "Comedy ↔ Drama",
     "categoryTo": "strong second",
-    "value": 488
+    "value": 2868
   },
   {
     "stageFrom": "bridge",
@@ -381,64 +227,218 @@
     "stageFrom": "bridge",
     "stageTo": "balance",
     "categoryFrom": "Animation ↔ Adventure",
+    "categoryTo": "leaning bridge",
+    "value": 317
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Drama ↔ Western",
+    "categoryTo": "leaning bridge",
+    "value": 199
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Drama ↔ Western",
     "categoryTo": "strong second",
-    "value": 277
+    "value": 222
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Drama ↔ Crime",
+    "categoryTo": "strong second",
+    "value": 477
   },
   {
     "stageFrom": "bridge",
     "stageTo": "balance",
     "categoryFrom": "Animation ↔ Action",
     "categoryTo": "strong second",
-    "value": 189
+    "value": 202
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Animation ↔ Adventure",
+    "categoryTo": "strong second",
+    "value": 260
   },
   {
     "stageFrom": "bridge",
     "stageTo": "balance",
     "categoryFrom": "Drama ↔ Romance",
     "categoryTo": "even split",
-    "value": 116
+    "value": 124
   },
   {
     "stageFrom": "bridge",
     "stageTo": "balance",
     "categoryFrom": "Romance ↔ Drama",
     "categoryTo": "even split",
-    "value": 63
+    "value": 55
   },
   {
     "stageFrom": "bridge",
     "stageTo": "balance",
-    "categoryFrom": "Romance ↔ Drama",
+    "categoryFrom": "Drama ↔ Comedy",
+    "categoryTo": "leaning bridge",
+    "value": 4858
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Comedy ↔ Romance",
+    "categoryTo": "leaning bridge",
+    "value": 415
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Drama ↔ Comedy",
     "categoryTo": "strong second",
-    "value": 434
+    "value": 3492
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Comedy ↔ Romance",
+    "categoryTo": "strong second",
+    "value": 290
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Animation ↔ Comedy",
+    "categoryTo": "leaning bridge",
+    "value": 318
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Action ↔ Drama",
+    "categoryTo": "strong second",
+    "value": 357
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Action ↔ Drama",
+    "categoryTo": "leaning bridge",
+    "value": 436
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Animation ↔ Comedy",
+    "categoryTo": "strong second",
+    "value": 256
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Drama ↔ Action",
+    "categoryTo": "even split",
+    "value": 12
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Drama ↔ Thriller",
+    "categoryTo": "even split",
+    "value": 1
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Drama ↔ Action",
+    "categoryTo": "strong second",
+    "value": 375
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Drama ↔ Action",
+    "categoryTo": "leaning bridge",
+    "value": 815
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Drama ↔ Thriller",
+    "categoryTo": "leaning bridge",
+    "value": 733
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Drama ↔ Comedy",
+    "categoryTo": "even split",
+    "value": 201
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Drama ↔ Thriller",
+    "categoryTo": "strong second",
+    "value": 291
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Action ↔ Drama",
+    "categoryTo": "even split",
+    "value": 32
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Comedy ↔ Romance",
+    "categoryTo": "even split",
+    "value": 19
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Animation ↔ Comedy",
+    "categoryTo": "even split",
+    "value": 8
   },
   {
     "stageFrom": "bridge",
     "stageTo": "balance",
     "categoryFrom": "Drama ↔ Romance",
     "categoryTo": "leaning bridge",
-    "value": 1687
+    "value": 1670
   },
   {
     "stageFrom": "bridge",
     "stageTo": "balance",
     "categoryFrom": "Drama ↔ Romance",
     "categoryTo": "strong second",
-    "value": 1303
+    "value": 1311
   },
   {
     "stageFrom": "bridge",
     "stageTo": "balance",
     "categoryFrom": "Romance ↔ Drama",
     "categoryTo": "leaning bridge",
-    "value": 272
+    "value": 252
   },
   {
     "stageFrom": "bridge",
     "stageTo": "balance",
     "categoryFrom": "Comedy ↔ Drama",
     "categoryTo": "even split",
-    "value": 232
+    "value": 229
+  },
+  {
+    "stageFrom": "bridge",
+    "stageTo": "balance",
+    "categoryFrom": "Romance ↔ Drama",
+    "categoryTo": "strong second",
+    "value": 417
   },
   {
     "stageFrom": "bridge",
@@ -452,7 +452,7 @@
     "stageTo": "balance",
     "categoryFrom": "Drama ↔ Crime",
     "categoryTo": "even split",
-    "value": 16
+    "value": 15
   },
   {
     "stageFrom": "bridge",

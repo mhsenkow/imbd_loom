@@ -3,6 +3,34 @@
     "stageFrom": "gender",
     "stageTo": "era",
     "categoryFrom": "female",
+    "categoryTo": "pre-1980",
+    "value": 7162
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "female",
+    "categoryTo": "2000–2014",
+    "value": 26040
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "nonbinary",
+    "categoryTo": "2000–2014",
+    "value": 129
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "male",
+    "categoryTo": "2015+",
+    "value": 40250
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "era",
+    "categoryFrom": "female",
     "categoryTo": "1980–1999",
     "value": 12202
   },
@@ -16,34 +44,6 @@
   {
     "stageFrom": "gender",
     "stageTo": "era",
-    "categoryFrom": "female",
-    "categoryTo": "pre-1980",
-    "value": 7165
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "era",
-    "categoryFrom": "female",
-    "categoryTo": "2000–2014",
-    "value": 26026
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "era",
-    "categoryFrom": "male",
-    "categoryTo": "2015+",
-    "value": 40281
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "era",
-    "categoryFrom": "nonbinary",
-    "categoryTo": "2000–2014",
-    "value": 125
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "era",
     "categoryFrom": "male",
     "categoryTo": "1980–1999",
     "value": 23156
@@ -53,49 +53,28 @@
     "stageTo": "era",
     "categoryFrom": "male",
     "categoryTo": "pre-1980",
-    "value": 21456
+    "value": 21459
   },
   {
     "stageFrom": "gender",
     "stageTo": "era",
     "categoryFrom": "male",
     "categoryTo": "2000–2014",
-    "value": 40103
+    "value": 40085
   },
   {
     "stageFrom": "gender",
     "stageTo": "era",
     "categoryFrom": "female",
     "categoryTo": "2015+",
-    "value": 30193
+    "value": 30205
   },
   {
     "stageFrom": "gender",
     "stageTo": "era",
     "categoryFrom": "nonbinary",
     "categoryTo": "2015+",
-    "value": 206
-  },
-  {
-    "stageFrom": "era",
-    "stageTo": "prominence",
-    "categoryFrom": "1980–1999",
-    "categoryTo": "lead",
-    "value": 9116
-  },
-  {
-    "stageFrom": "era",
-    "stageTo": "prominence",
-    "categoryFrom": "2000–2014",
-    "categoryTo": "lead",
-    "value": 16921
-  },
-  {
-    "stageFrom": "era",
-    "stageTo": "prominence",
-    "categoryFrom": "2015+",
-    "categoryTo": "lead",
-    "value": 17849
+    "value": 225
   },
   {
     "stageFrom": "era",
@@ -107,23 +86,23 @@
   {
     "stageFrom": "era",
     "stageTo": "prominence",
-    "categoryFrom": "pre-1980",
-    "categoryTo": "supporting",
-    "value": 10954
-  },
-  {
-    "stageFrom": "era",
-    "stageTo": "prominence",
-    "categoryFrom": "pre-1980",
-    "categoryTo": "ensemble",
-    "value": 5335
-  },
-  {
-    "stageFrom": "era",
-    "stageTo": "prominence",
     "categoryFrom": "1980–1999",
-    "categoryTo": "supporting",
-    "value": 13090
+    "categoryTo": "lead",
+    "value": 9116
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "prominence",
+    "categoryFrom": "2015+",
+    "categoryTo": "lead",
+    "value": 17849
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "prominence",
+    "categoryFrom": "2000–2014",
+    "categoryTo": "lead",
+    "value": 16921
   },
   {
     "stageFrom": "era",
@@ -131,6 +110,13 @@
     "categoryFrom": "1980–1999",
     "categoryTo": "ensemble",
     "value": 13157
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "prominence",
+    "categoryFrom": "1980–1999",
+    "categoryTo": "supporting",
+    "value": 13090
   },
   {
     "stageFrom": "era",
@@ -159,5 +145,19 @@
     "categoryFrom": "2015+",
     "categoryTo": "ensemble",
     "value": 27293
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "prominence",
+    "categoryFrom": "pre-1980",
+    "categoryTo": "supporting",
+    "value": 10954
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "prominence",
+    "categoryFrom": "pre-1980",
+    "categoryTo": "ensemble",
+    "value": 5335
   }
 ]

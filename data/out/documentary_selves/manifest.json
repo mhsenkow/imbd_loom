@@ -19,7 +19,7 @@
     "pool_size": 600,
     "population_sql": 600
   },
-  "built_at": "2026-07-24T18:53:40.591059+00:00",
+  "built_at": "2026-08-03T17:25:56.198165+00:00",
   "clustering_coefficient": 0.4957,
   "community_count": 9,
   "correlations": {
@@ -77,8 +77,8 @@
       "label": "Robert De Niro"
     },
     {
-      "id": "nm0000151",
-      "label": "Morgan Freeman"
+      "id": "nm0000168",
+      "label": "Samuel L. Jackson"
     },
     {
       "id": "nm0000323",
@@ -160,15 +160,15 @@
     ],
     "assortativity": -0.0388,
     "community_sizes": [
-      32,
-      28,
-      26,
-      26,
+      34,
+      29,
+      24,
       23,
+      22,
+      22,
       21,
-      17,
-      14,
-      13
+      20,
+      5
     ],
     "component_count": 1,
     "corr_degree×prominence": {
@@ -260,8 +260,8 @@
       "nonbinary": 1
     },
     "giant_component_share": 1.0,
-    "largest_community_share": 0.16,
-    "modularity": 0.0747,
+    "largest_community_share": 0.17,
+    "modularity": 0.0704,
     "outliers": {
       "acclaim_gap": [
         "nm0000134",
@@ -816,6 +816,6 @@
     "top_name": "Robert De Niro"
   },
   "title": "Documentary Selves",
-  "tmdb_gender_rows": 160360,
+  "tmdb_gender_rows": 477619,
   "top_n": 200
 }

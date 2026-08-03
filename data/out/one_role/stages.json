@@ -52,13 +52,6 @@
     "stageFrom": "dominant_genre",
     "stageTo": "band",
     "categoryFrom": "Drama",
-    "categoryTo": "near-pure",
-    "value": 1
-  },
-  {
-    "stageFrom": "dominant_genre",
-    "stageTo": "band",
-    "categoryFrom": "Drama",
     "categoryTo": "concentrated (90–93%)",
     "value": 9
   },
@@ -68,5 +61,12 @@
     "categoryFrom": "Drama",
     "categoryTo": "pure (≥97%)",
     "value": 5
+  },
+  {
+    "stageFrom": "dominant_genre",
+    "stageTo": "band",
+    "categoryFrom": "Drama",
+    "categoryTo": "near-pure",
+    "value": 1
   }
 ]

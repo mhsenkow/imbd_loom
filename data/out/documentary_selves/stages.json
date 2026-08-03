@@ -2,20 +2,6 @@
   {
     "stageFrom": "gender",
     "stageTo": "lane",
-    "categoryFrom": "nonbinary",
-    "categoryTo": "self + doc",
-    "value": 1
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "lane",
-    "categoryFrom": "nonbinary",
-    "categoryTo": "self",
-    "value": 1
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "lane",
     "categoryFrom": "male",
     "categoryTo": "documentary",
     "value": 2
@@ -23,44 +9,58 @@
   {
     "stageFrom": "gender",
     "stageTo": "lane",
+    "categoryFrom": "nonbinary",
+    "categoryTo": "self + doc",
+    "value": 1
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "lane",
+    "categoryFrom": "nonbinary",
+    "categoryTo": "self",
+    "value": 1
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "lane",
     "categoryFrom": "female",
     "categoryTo": "self",
-    "value": 25
+    "value": 28
   },
   {
     "stageFrom": "gender",
     "stageTo": "lane",
     "categoryFrom": "female",
     "categoryTo": "self + doc",
-    "value": 93
+    "value": 100
   },
   {
     "stageFrom": "gender",
     "stageTo": "lane",
     "categoryFrom": "unknown",
     "categoryTo": "self",
-    "value": 27
+    "value": 14
   },
   {
     "stageFrom": "gender",
     "stageTo": "lane",
     "categoryFrom": "male",
     "categoryTo": "self + doc",
-    "value": 328
+    "value": 371
   },
   {
     "stageFrom": "gender",
     "stageTo": "lane",
     "categoryFrom": "male",
     "categoryTo": "self",
-    "value": 45
+    "value": 55
   },
   {
     "stageFrom": "gender",
     "stageTo": "lane",
     "categoryFrom": "unknown",
     "categoryTo": "self + doc",
-    "value": 78
+    "value": 28
   },
   {
     "stageFrom": "lane",
@@ -80,15 +80,15 @@
     "stageFrom": "lane",
     "stageTo": "volume",
     "categoryFrom": "self + doc",
-    "categoryTo": "40+ credits",
-    "value": 342
+    "categoryTo": "20–39",
+    "value": 158
   },
   {
     "stageFrom": "lane",
     "stageTo": "volume",
     "categoryFrom": "self + doc",
-    "categoryTo": "20–39",
-    "value": 158
+    "categoryTo": "40+ credits",
+    "value": 342
   },
   {
     "stageFrom": "lane",

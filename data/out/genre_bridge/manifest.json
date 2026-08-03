@@ -1,5 +1,5 @@
 {
-  "avg_path_length": 2.098,
+  "avg_path_length": 2.102,
   "avg_path_length_sampled": false,
   "avg_path_sample_n": 200,
   "build_seed": 42,
@@ -9,7 +9,7 @@
     "billing_null_fallback": 0,
     "cap_by": "blend",
     "collapse_episodes": true,
-    "credit_rows": 252409,
+    "credit_rows": 252437,
     "enrichment_mode": "imdb",
     "era_slices": 9,
     "fallback_used": false,
@@ -19,66 +19,66 @@
     "pool_size": 600,
     "population_sql": 600
   },
-  "built_at": "2026-07-24T18:40:31.817975+00:00",
-  "clustering_coefficient": 0.7589,
+  "built_at": "2026-08-03T17:10:45.462930+00:00",
+  "clustering_coefficient": 0.758,
   "community_count": 14,
   "correlations": {
     "acclaim_gap×prominence": {
       "n": 200,
-      "r": -0.7815,
-      "rho": -0.6588
+      "r": -0.7742,
+      "rho": -0.6482
     },
     "degree×collaborator_loyalty": {
       "n": 200,
-      "r": -0.3258,
-      "rho": -0.5452
+      "r": -0.3327,
+      "rho": -0.5475
     },
     "degree×prominence": {
       "n": 200,
-      "r": -0.2702,
-      "rho": -0.1427
+      "r": -0.2631,
+      "rho": -0.1279
     },
     "degree×strength": {
       "n": 200,
-      "r": 0.5567,
-      "rho": 0.8289
+      "r": 0.5511,
+      "rho": 0.8276
     },
     "genre_entropy×degree": {
       "n": 200,
-      "r": -0.062,
-      "rho": -0.1072
+      "r": -0.056,
+      "rho": -0.1029
     },
     "genre_entropy×strength": {
       "n": 200,
-      "r": -0.4061,
-      "rho": -0.4344
+      "r": -0.4062,
+      "rho": -0.4321
     },
     "pagerank×prominence": {
       "n": 200,
-      "r": 0.2104,
-      "rho": 0.1666
+      "r": 0.214,
+      "rho": 0.1686
     },
     "strength×prominence": {
       "n": 200,
-      "r": 0.1021,
-      "rho": -0.0986
+      "r": 0.1121,
+      "rho": -0.0823
     },
     "title_rating_median×prominence": {
       "n": 200,
-      "r": -0.2214,
-      "rho": -0.1333
+      "r": -0.1987,
+      "rho": -0.1148
     }
   },
   "data_credit": "IMDb Non-Commercial Datasets (datasets.imdbws.com); gender enrichment via TMDB where available; voice flags via Wikidata + IMDb character heuristics; Bechdel ratings where matched.",
-  "edge_count": 4076,
+  "edge_count": 4101,
   "featured_path": [
     {
       "id": "nm0000821",
       "label": "Amitabh Bachchan"
     },
     {
-      "id": "nm0695177",
-      "label": "Prakash Raj"
+      "id": "nm0621937",
+      "label": "Nassar"
     },
     {
       "id": "nm0103977",
@@ -96,7 +96,7 @@
     "title.principals.tsv.gz": "2026-07-22T04:05:19.219699+00:00",
     "title.ratings.tsv.gz": "2026-07-22T04:05:19.382570+00:00"
   },
-  "insight": "In this cut, acclaim_gap and prominence track with r=-0.7815.",
+  "insight": "In this cut, acclaim_gap and prominence track with r=-0.7742.",
   "key_variable": "bridge",
   "method_note": "Population: actors/actresses with ≥12 title-genre credits (Adult excluded, numVotes ≥50) whose largest genre is <70% and second genre is ≥20% — careers that meaningfully span genres. Hero = co-appearance; node.bridge shows top two genres.",
   "metrics_version": "2",
@@ -108,112 +108,112 @@
     "acclaim_gap_hist": [
       {
         "count": 2,
-        "hi": -5.908,
-        "lo": -6.902
+        "hi": -5.998,
+        "lo": -7.004
       },
       {
         "count": 1,
-        "hi": -4.914,
-        "lo": -5.908
+        "hi": -4.992,
+        "lo": -5.998
       },
       {
-        "count": 2,
-        "hi": -3.921,
-        "lo": -4.914
+        "count": 1,
+        "hi": -3.987,
+        "lo": -4.992
       },
       {
-        "count": 6,
-        "hi": -2.927,
-        "lo": -3.921
+        "count": 7,
+        "hi": -2.981,
+        "lo": -3.987
       },
       {
         "count": 11,
-        "hi": -1.933,
-        "lo": -2.927
+        "hi": -1.975,
+        "lo": -2.981
       },
       {
-        "count": 13,
-        "hi": -0.939,
-        "lo": -1.933
+        "count": 12,
+        "hi": -0.969,
+        "lo": -1.975
       },
       {
         "count": 52,
-        "hi": 0.055,
-        "lo": -0.939
+        "hi": 0.037,
+        "lo": -0.969
       },
       {
-        "count": 55,
-        "hi": 1.048,
-        "lo": 0.055
+        "count": 56,
+        "hi": 1.042,
+        "lo": 0.037
       },
       {
         "count": 57,
-        "hi": 2.042,
-        "lo": 1.048
+        "hi": 2.048,
+        "lo": 1.042
       },
       {
         "count": 1,
-        "hi": 3.036,
-        "lo": 2.042
+        "hi": 3.054,
+        "lo": 2.048
       }
     ],
-    "assortativity": 0.2761,
+    "assortativity": 0.2626,
     "community_sizes": [
-      61,
-      41,
-      31,
-      19,
-      8,
+      40,
+      38,
+      37,
+      28,
+      13,
+      10,
+      9,
       7,
-      7,
-      7,
-      6,
       5,
-      5,
-      1,
-      1,
+      4,
+      3,
+      3,
+      2,
       1
     ],
     "component_count": 2,
     "corr_degree×prominence": {
       "n": 200,
-      "r": -0.2702,
-      "rho": -0.1427
+      "r": -0.2631,
+      "rho": -0.1279
     },
     "corr_degree×strength": {
       "n": 200,
-      "r": 0.5567,
-      "rho": 0.8289
+      "r": 0.5511,
+      "rho": 0.8276
     },
     "corr_strength×prominence": {
       "n": 200,
-      "r": 0.1021,
-      "rho": -0.0986
+      "r": 0.1121,
+      "rho": -0.0823
     },
-    "degree_gini": 0.2539,
+    "degree_gini": 0.2519,
     "degree_hist": [
       {
-        "count": 23,
+        "count": 25,
         "hi": 13.1,
         "lo": 5.0
       },
       {
-        "count": 12,
+        "count": 9,
         "hi": 21.2,
         "lo": 13.1
       },
       {
-        "count": 20,
+        "count": 18,
         "hi": 29.3,
         "lo": 21.2
       },
       {
-        "count": 31,
+        "count": 30,
         "hi": 37.4,
         "lo": 29.3
       },
       {
-        "count": 26,
+        "count": 30,
         "hi": 45.5,
         "lo": 37.4
       },
@@ -244,35 +244,34 @@
       }
     ],
     "degree_max": 86,
-    "degree_median": 41,
-    "density": 0.204824,
+    "degree_median": 42,
+    "density": 0.20608,
     "diameter": 4,
     "effective_diameter": 3.0,
     "era_histogram": {
-      "1940s": 4,
+      "1940s": 5,
       "1950s": 17,
       "1960s": 13,
       "1970s": 11,
       "1980s": 19,
       "1990s": 20,
-      "2000s": 63,
+      "2000s": 62,
       "2010s": 50,
       "2020s": 3
     },
-    "era_homophily": 0.592,
-    "gender_homophily": 0.612,
+    "era_homophily": 0.589,
+    "gender_homophily": 0.613,
     "gender_mix": {
       "female": 52,
       "male": 148
     },
-    "giant_component_share": 0.86,
-    "largest_community_share": 0.305,
-    "modularity": 0.2216,
+    "giant_component_share": 0.865,
+    "largest_community_share": 0.2,
+    "modularity": 0.1879,
     "outliers": {
       "acclaim_gap": [
         "nm0000821",
         "nm0004109",
-        "nm0006763",
         "nm0007106",
         "nm0019382",
         "nm0103977",
@@ -296,8 +295,8 @@
         "nm0919798"
       ],
       "prominence": [
+        "nm0000305",
         "nm0000821",
-        "nm0006763",
         "nm0103977",
         "nm0419688",
         "nm0438463",
@@ -322,7 +321,7 @@
     },
     "prominence_hist": [
       {
-        "count": 97,
+        "count": 98,
         "hi": 188.386,
         "lo": 59.168
       },
@@ -342,7 +341,7 @@
         "lo": 446.822
       },
       {
-        "count": 8,
+        "count": 7,
         "hi": 705.258,
         "lo": 576.04
       },
@@ -385,12 +384,12 @@
       },
       {
         "id": "nm0000890",
-        "x": 3863.0,
+        "x": 3923.0,
         "y": 172.389
       },
       {
         "id": "nm0000910",
-        "x": 532.0,
+        "x": 549.0,
         "y": 263.185
       },
       {
@@ -405,7 +404,7 @@
       },
       {
         "id": "nm0001181",
-        "x": 6543.0,
+        "x": 6584.0,
         "y": 162.751
       },
       {
@@ -415,7 +414,7 @@
       },
       {
         "id": "nm0001458",
-        "x": 5713.0,
+        "x": 5776.0,
         "y": 305.562
       },
       {
@@ -430,27 +429,27 @@
       },
       {
         "id": "nm0001682",
-        "x": 2581.0,
+        "x": 2604.0,
         "y": 622.19
       },
       {
         "id": "nm0001766",
-        "x": 1351.0,
+        "x": 1425.0,
         "y": 572.449
       },
       {
         "id": "nm0001981",
-        "x": 849.0,
+        "x": 938.0,
         "y": 131.839
       },
       {
         "id": "nm0003224",
-        "x": 4502.0,
+        "x": 4589.0,
         "y": 75.191
       },
       {
         "id": "nm0004109",
-        "x": 1131.0,
+        "x": 976.0,
         "y": 394.83
       },
       {
@@ -464,19 +463,19 @@
         "y": 268.835
       },
       {
-        "id": "nm0007106",
-        "x": 1553.0,
-        "y": 452.55
+        "id": "nm0012121",
+        "x": 18294.0,
+        "y": 336.242
       },
       {
-        "id": "nm0016141",
-        "x": 31755.0,
-        "y": 306.603
+        "id": "nm0019382",
+        "x": 1400.0,
+        "y": 605.042
       },
       {
-        "id": "nm0031844",
-        "x": 8988.0,
-        "y": 181.36
+        "id": "nm0045784",
+        "x": 1944.0,
+        "y": 93.462
       },
       {
         "id": "nm0048389",
@@ -510,7 +509,7 @@
       },
       {
         "id": "nm0159159",
-        "x": 886.0,
+        "x": 853.0,
         "y": 323.252
       },
       {
@@ -530,7 +529,7 @@
       },
       {
         "id": "nm0191950",
-        "x": 1501.0,
+        "x": 1539.0,
         "y": 221.557
       },
       {
@@ -550,7 +549,7 @@
       },
       {
         "id": "nm0260020",
-        "x": 2752.0,
+        "x": 2774.0,
         "y": 183.597
       },
       {
@@ -590,12 +589,12 @@
       },
       {
         "id": "nm0372271",
-        "x": 9417.0,
+        "x": 9514.0,
         "y": 93.088
       },
       {
         "id": "nm0388232",
-        "x": 4817.0,
+        "x": 4899.0,
         "y": 59.168
       },
       {
@@ -625,17 +624,17 @@
       },
       {
         "id": "nm0427157",
-        "x": 6834.0,
+        "x": 6900.0,
         "y": 78.957
       },
       {
         "id": "nm0434318",
-        "x": 1281.0,
+        "x": 1228.0,
         "y": 272.515
       },
       {
         "id": "nm0438463",
-        "x": 611.0,
+        "x": 526.0,
         "y": 660.095
       },
       {
@@ -655,7 +654,7 @@
       },
       {
         "id": "nm0474774",
-        "x": 818.0,
+        "x": 749.0,
         "y": 1206.831
       },
       {
@@ -665,7 +664,7 @@
       },
       {
         "id": "nm0505323",
-        "x": 956.0,
+        "x": 914.0,
         "y": 233.035
       },
       {
@@ -675,7 +674,7 @@
       },
       {
         "id": "nm0567756",
-        "x": 6057.0,
+        "x": 6139.0,
         "y": 79.258
       },
       {
@@ -690,7 +689,7 @@
       },
       {
         "id": "nm0592799",
-        "x": 206.0,
+        "x": 182.0,
         "y": 276.185
       },
       {
@@ -725,7 +724,7 @@
       },
       {
         "id": "nm0701500",
-        "x": 9715.0,
+        "x": 9806.0,
         "y": 89.501
       },
       {
@@ -750,7 +749,7 @@
       },
       {
         "id": "nm0808401",
-        "x": 10885.0,
+        "x": 10916.0,
         "y": 189.636
       },
       {
@@ -760,7 +759,7 @@
       },
       {
         "id": "nm0827267",
-        "x": 9263.0,
+        "x": 9352.0,
         "y": 161.361
       },
       {
@@ -774,57 +773,57 @@
         "y": 152.082
       }
     ],
-    "strength_gini": 0.5711,
+    "strength_gini": 0.5701,
     "strength_hist": [
       {
         "count": 125,
-        "hi": 6480.9,
-        "lo": 206.0
+        "hi": 6459.3,
+        "lo": 182.0
       },
       {
         "count": 46,
-        "hi": 12755.8,
-        "lo": 6480.9
+        "hi": 12736.6,
+        "lo": 6459.3
       },
       {
         "count": 6,
-        "hi": 19030.7,
-        "lo": 12755.8
+        "hi": 19013.9,
+        "lo": 12736.6
       },
       {
         "count": 4,
-        "hi": 25305.6,
-        "lo": 19030.7
+        "hi": 25291.2,
+        "lo": 19013.9
       },
       {
         "count": 6,
-        "hi": 31580.5,
-        "lo": 25305.6
+        "hi": 31568.5,
+        "lo": 25291.2
       },
       {
         "count": 6,
-        "hi": 37855.4,
-        "lo": 31580.5
+        "hi": 37845.8,
+        "lo": 31568.5
       },
       {
         "count": 3,
-        "hi": 44130.3,
-        "lo": 37855.4
+        "hi": 44123.1,
+        "lo": 37845.8
       },
       {
         "count": 0,
-        "hi": 50405.2,
-        "lo": 44130.3
+        "hi": 50400.4,
+        "lo": 44123.1
       },
       {
         "count": 2,
-        "hi": 56680.1,
-        "lo": 50405.2
+        "hi": 56677.7,
+        "lo": 50400.4
       },
       {
         "count": 2,
         "hi": 62955.0,
-        "lo": 56680.1
+        "lo": 56677.7
       }
     ],
     "strength_max": 62955,
@@ -832,6 +831,6 @@
     "top_name": "Amitabh Bachchan"
   },
   "title": "Genre Bridges",
-  "tmdb_gender_rows": 159582,
+  "tmdb_gender_rows": 477619,
   "top_n": 200
 }

@@ -20,9 +20,9 @@
     "population_sql": 600,
     "stages_source": "default_from_nodes"
   },
-  "built_at": "2026-07-24T18:54:32.333396+00:00",
+  "built_at": "2026-08-03T17:26:50.051686+00:00",
   "clustering_coefficient": 0.7128,
-  "community_count": 10,
+  "community_count": 12,
   "correlations": {
     "acclaim_gap×prominence": {
       "n": 200,
@@ -157,15 +157,17 @@
     ],
     "assortativity": 0.2909,
     "community_sizes": [
-      67,
-      61,
-      37,
-      17,
-      7,
+      71,
+      52,
+      31,
+      10,
+      10,
+      10,
       5,
+      4,
       2,
       2,
-      1,
+      2,
       1
     ],
     "component_count": 1,
@@ -259,8 +261,8 @@
       "nonbinary": 1
     },
     "giant_component_share": 1.0,
-    "largest_community_share": 0.335,
-    "modularity": 0.1979,
+    "largest_community_share": 0.355,
+    "modularity": 0.1986,
     "outliers": {
       "acclaim_gap": [
         "nm0000305",
@@ -830,6 +832,6 @@
     "top_name": "Frank Welker"
   },
   "title": "The Typecast Index",
-  "tmdb_gender_rows": 160552,
+  "tmdb_gender_rows": 477619,
   "top_n": 200
 }

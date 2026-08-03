@@ -131,6 +131,8 @@ export interface Edge {
   shared_votes_max?: number;
   /** Example titles both people appear in */
   shared?: SharedTitle[];
+  /** Shared character-name evidence (same_character construct) */
+  character?: string | null;
   [key: string]: unknown;
 }
 

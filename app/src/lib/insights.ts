@@ -2,7 +2,7 @@
 
 import type { Edge, Node, PosterSpec } from "./types";
 import type { SearchMatch } from "./search";
-import { edgeSharedCount } from "./encode";
+import { edgeSharedCount, isSameCharacterEdge } from "./encode";
 import { uniqueShared } from "./sharedTitles";
 
 export interface Insight {
@@ -157,14 +157,23 @@ export function deriveInsights(opts: {
     const b = byId.get(bestEdge.target);
     const shared = edgeSharedCount(bestEdge);
     const film = filmHint(bestEdge);
+    const characterLink = isSameCharacterEdge(bestEdge);
     candidates.push({
       kind: "Pair",
-      headline: `${a?.label ?? "?"} ↔ ${b?.label ?? "?"} share ${shared} title${
-        shared === 1 ? "" : "s"
-      } — densest co-appearance here.`,
-      detail: film
-        ? `Sample: ${film}. Weighted tie score ${bestEdge.weight}.`
-        : `Weighted tie score ${bestEdge.weight}.`,
+      headline: characterLink
+        ? `${a?.label ?? "?"} ↔ ${b?.label ?? "?"} share ${shared} character name${
+            shared === 1 ? "" : "s"
+          }${bestEdge.character ? ` (e.g. ${bestEdge.character})` : ""} — densest role overlap here.`
+        : `${a?.label ?? "?"} ↔ ${b?.label ?? "?"} share ${shared} title${
+            shared === 1 ? "" : "s"
+          } — densest co-appearance here.`,
+      detail: characterLink
+        ? bestEdge.character
+          ? `Matching role string: ${bestEdge.character}.`
+          : undefined
+        : film
+          ? `Sample: ${film}. Weighted tie score ${bestEdge.weight}.`
+          : `Weighted tie score ${bestEdge.weight}.`,
       focusId: bestEdge.source,
       score: 7 + Math.min(5, shared / 2),
     });
@@ -386,14 +395,19 @@ export function deriveInsights(opts: {
         : null;
       const film = top ? filmHint(top) : undefined;
       const shared = top ? edgeSharedCount(top) : 0;
+      const characterLink = top ? isSameCharacterEdge(top) : false;
       candidates.push({
         kind: "Focus",
         headline: `${n.label} is pinned with ${d} partners in this cut.`,
         detail:
           other && top
-            ? `Strongest tie: ${other.label} (${shared} shared · score ${top.weight})${
-                film ? ` · ${film}` : ""
-              }.`
+            ? characterLink
+              ? `Strongest tie: ${other.label}${
+                  top.character ? ` via “${top.character}”` : ""
+                } (${shared} shared character name${shared === 1 ? "" : "s"}).`
+              : `Strongest tie: ${other.label} (${shared} shared · score ${top.weight})${
+                  film ? ` · ${film}` : ""
+                }.`
             : undefined,
         focusId: n.id,
         score: 15,

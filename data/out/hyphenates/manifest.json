@@ -22,9 +22,9 @@
     "population_sql": 1602,
     "stages_source": "default_from_nodes"
   },
-  "built_at": "2026-07-24T18:51:59.394668+00:00",
+  "built_at": "2026-08-03T17:24:07.367795+00:00",
   "clustering_coefficient": 0.595,
-  "community_count": 12,
+  "community_count": 14,
   "correlations": {
     "acclaim_gap×prominence": {
       "n": 200,
@@ -80,8 +80,8 @@
       "label": "Martin Sheen"
     },
     {
-      "id": "nm0041281",
-      "label": "Rene Auberjonois"
+      "id": "nm0000098",
+      "label": "Jennifer Aniston"
     },
     {
       "id": "nm0000151",
@@ -162,13 +162,15 @@
     ],
     "assortativity": 0.14,
     "community_sizes": [
-      49,
-      40,
+      45,
       33,
-      27,
-      18,
-      16,
+      32,
+      24,
+      19,
+      13,
       11,
+      9,
+      8,
       2,
       1,
       1,
@@ -265,8 +267,8 @@
       "nonbinary": 1
     },
     "giant_component_share": 0.98,
-    "largest_community_share": 0.245,
-    "modularity": 0.1211,
+    "largest_community_share": 0.225,
+    "modularity": 0.1233,
     "outliers": {
       "acclaim_gap": [
         "nm0000151",
@@ -831,6 +833,6 @@
     "top_name": "Martin Sheen"
   },
   "title": "The Hyphenates",
-  "tmdb_gender_rows": 160360,
+  "tmdb_gender_rows": 477619,
   "top_n": 200
 }

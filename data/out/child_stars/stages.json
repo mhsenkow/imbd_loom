@@ -16,13 +16,6 @@
   {
     "stageFrom": "gender",
     "stageTo": "worked_past_25",
-    "categoryFrom": "male",
-    "categoryTo": "stopped by 25",
-    "value": 31
-  },
-  {
-    "stageFrom": "gender",
-    "stageTo": "worked_past_25",
     "categoryFrom": "nonbinary",
     "categoryTo": "worked past 25",
     "value": 4
@@ -33,6 +26,13 @@
     "categoryFrom": "female",
     "categoryTo": "stopped by 25",
     "value": 30
+  },
+  {
+    "stageFrom": "gender",
+    "stageTo": "worked_past_25",
+    "categoryFrom": "male",
+    "categoryTo": "stopped by 25",
+    "value": 31
   },
   {
     "stageFrom": "worked_past_25",

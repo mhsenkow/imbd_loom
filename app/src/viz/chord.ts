@@ -4,9 +4,11 @@ import * as d3 from "d3";
 import type { ColorBy, Edge, Node, SortBy, ThicknessBy } from "../lib/types";
 import {
   buildGenreColor,
+  edgeEvidenceLabel,
   edgeSharedCount,
   edgeThicknessValue,
   edgeYearExtents,
+  isSameCharacterEdge,
   nodeColor,
   nodeExtents,
 } from "../lib/encode";
@@ -122,7 +124,9 @@ export function layoutChord(
       fill: nodeColor(src, opts.colorBy, extents, genreColor, palette, theme),
       targetFill: nodeColor(tgt, opts.colorBy, extents, genreColor, palette, theme),
       edge,
-      sharedLabel: sharedLabel(edge?.shared),
+      sharedLabel: isSameCharacterEdge(edge)
+        ? edgeEvidenceLabel(edge)
+        : sharedLabel(edge?.shared),
     };
   });
 

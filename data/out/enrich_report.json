@@ -1,15 +1,14 @@
 {
-  "started_at": "2026-07-23T18:14:35.732437+00:00",
-  "skips": [
-    "tmdb",
-    "wikidata_voice",
-    "bechdel"
-  ],
+  "started_at": "2026-08-01T02:17:34.802536+00:00",
+  "skips": [],
   "rows": {
+    "gender": 516770,
+    "voice": 516763,
+    "bechdel": 8839,
     "wikidata_people": 0,
-    "voice_true_flags": 773
+    "voice_true_flags": 55687
   },
   "errors": [],
-  "candidate_count": 400,
-  "finished_at": "2026-07-23T18:14:43.406281+00:00"
+  "candidate_count": 516763,
+  "finished_at": "2026-08-01T02:20:57.757509+00:00"
 }

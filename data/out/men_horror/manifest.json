@@ -19,7 +19,7 @@
     "pool_size": 600,
     "population_sql": 600
   },
-  "built_at": "2026-07-24T18:36:24.784565+00:00",
+  "built_at": "2026-08-03T17:06:25.340577+00:00",
   "clustering_coefficient": 0.5202,
   "community_count": 10,
   "correlations": {
@@ -159,15 +159,15 @@
     ],
     "assortativity": 0.0079,
     "community_sizes": [
-      36,
-      34,
-      33,
-      26,
-      26,
-      17,
-      12,
+      44,
+      44,
+      40,
+      21,
+      20,
+      11,
       8,
-      6,
+      5,
+      5,
       2
     ],
     "component_count": 1,
@@ -259,8 +259,8 @@
       "male": 200
     },
     "giant_component_share": 1.0,
-    "largest_community_share": 0.18,
-    "modularity": 0.1418,
+    "largest_community_share": 0.22,
+    "modularity": 0.14,
     "outliers": {
       "acclaim_gap": [
         "nm0000246",
@@ -819,6 +819,6 @@
     "top_name": "Michael Madsen"
   },
   "title": "Men in Horror",
-  "tmdb_gender_rows": 159201,
+  "tmdb_gender_rows": 477619,
   "top_n": 200
 }

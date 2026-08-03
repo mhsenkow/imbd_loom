@@ -83,7 +83,7 @@
       }
     ],
     "bridge_score": 0.031281,
-    "community": 0,
+    "community": 3,
     "pagerank": 0.03300023,
     "eigen_centrality": 0.112363,
     "clustering_local": 0.6,
@@ -186,7 +186,7 @@
       }
     ],
     "bridge_score": 0.026437,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.02578904,
     "eigen_centrality": 0.000271,
     "clustering_local": 0.6,
@@ -289,7 +289,7 @@
       }
     ],
     "bridge_score": 0.026273,
-    "community": 2,
+    "community": 4,
     "pagerank": 0.04427367,
     "eigen_centrality": 0.289361,
     "clustering_local": 0.6,
@@ -392,7 +392,7 @@
       }
     ],
     "bridge_score": 0.031281,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.02270851,
     "eigen_centrality": 0.002703,
     "clustering_local": 0.6,
@@ -495,7 +495,7 @@
       }
     ],
     "bridge_score": 0.026273,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.02464595,
     "eigen_centrality": 0.001092,
     "clustering_local": 0.6,
@@ -598,7 +598,7 @@
       }
     ],
     "bridge_score": 0.037069,
-    "community": 2,
+    "community": 3,
     "pagerank": 0.02693312,
     "eigen_centrality": 0.011159,
     "clustering_local": 0.6,
@@ -804,7 +804,7 @@
       }
     ],
     "bridge_score": 0.037069,
-    "community": 1,
+    "community": 0,
     "pagerank": 0.0362179,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6,
@@ -907,7 +907,7 @@
       }
     ],
     "bridge_score": 0.037069,
-    "community": 1,
+    "community": 0,
     "pagerank": 0.03766516,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6,
@@ -1010,7 +1010,7 @@
       }
     ],
     "bridge_score": 0.026437,
-    "community": 5,
+    "community": 1,
     "pagerank": 0.03127966,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6,
@@ -1113,7 +1113,7 @@
       }
     ],
     "bridge_score": 0.026273,
-    "community": 5,
+    "community": 1,
     "pagerank": 0.03407045,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6,
@@ -1182,17 +1182,6 @@
         "votes": 156
       },
       {
-        "title": "Araro 1",
-        "character": "Rosalia",
-        "characters": [
-          "Rosalia"
-        ],
-        "year": 2023,
-        "billing": 1,
-        "tconst": "tt39301902",
-        "votes": 0
-      },
-      {
         "title": "Thrust (Araro 2)",
         "character": "Rosalia",
         "characters": [
@@ -1201,6 +1190,17 @@
         "year": 2023,
         "billing": 1,
         "tconst": "tt40590761",
+        "votes": 0
+      },
+      {
+        "title": "Araro 1",
+        "character": "Rosalia",
+        "characters": [
+          "Rosalia"
+        ],
+        "year": 2023,
+        "billing": 1,
+        "tconst": "tt39301902",
         "votes": 0
       },
       {
@@ -1216,7 +1216,7 @@
       }
     ],
     "bridge_score": 0.026437,
-    "community": 1,
+    "community": 0,
     "pagerank": 0.04555337,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6,
@@ -1319,7 +1319,7 @@
       }
     ],
     "bridge_score": 0.031281,
-    "community": 5,
+    "community": 1,
     "pagerank": 0.03853415,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6,
@@ -1525,7 +1525,7 @@
       }
     ],
     "bridge_score": 0.034483,
-    "community": 1,
+    "community": 0,
     "pagerank": 0.03713187,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6,
@@ -1628,7 +1628,7 @@
       }
     ],
     "bridge_score": 0.031281,
-    "community": 1,
+    "community": 0,
     "pagerank": 0.03427143,
     "eigen_centrality": 0.0,
     "clustering_local": 0.6,
@@ -1731,7 +1731,7 @@
       }
     ],
     "bridge_score": 0.037069,
-    "community": 0,
+    "community": 3,
     "pagerank": 0.03218965,
     "eigen_centrality": 0.071694,
     "clustering_local": 0.6,
@@ -1834,7 +1834,7 @@
       }
     ],
     "bridge_score": 0.034483,
-    "community": 0,
+    "community": 5,
     "pagerank": 0.03184049,
     "eigen_centrality": 0.038059,
     "clustering_local": 0.6,
@@ -2017,17 +2017,6 @@
         "votes": 0
       },
       {
-        "title": "Tarde de teatro",
-        "character": "Elías",
-        "characters": [
-          "Elías"
-        ],
-        "year": 1986,
-        "billing": 2,
-        "tconst": "tt0460096",
-        "votes": 0
-      },
-      {
         "title": "Sumarísimo",
         "character": "Fiscal",
         "characters": [
@@ -2037,10 +2026,21 @@
         "billing": 2,
         "tconst": "tt0366101",
         "votes": 0
+      },
+      {
+        "title": "Tarde de teatro",
+        "character": "Elías",
+        "characters": [
+          "Elías"
+        ],
+        "year": 1986,
+        "billing": 2,
+        "tconst": "tt0460096",
+        "votes": 0
       }
     ],
     "bridge_score": 0.007841,
-    "community": 3,
+    "community": 5,
     "pagerank": 0.02300284,
     "eigen_centrality": 6.9e-05,
     "clustering_local": 0.7,
@@ -2143,7 +2143,7 @@
       }
     ],
     "bridge_score": 0.007841,
-    "community": 1,
+    "community": 0,
     "pagerank": 0.03992127,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7,
@@ -2246,7 +2246,7 @@
       }
     ],
     "bridge_score": 0.007841,
-    "community": 5,
+    "community": 1,
     "pagerank": 0.02537238,
     "eigen_centrality": 0.0,
     "clustering_local": 0.7,
@@ -2349,7 +2349,7 @@
       }
     ],
     "bridge_score": 0.001642,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.01942865,
     "eigen_centrality": 2.3e-05,
     "clustering_local": 0.8333,
@@ -2555,7 +2555,7 @@
       }
     ],
     "bridge_score": 0.001642,
-    "community": 5,
+    "community": 1,
     "pagerank": 0.02061585,
     "eigen_centrality": 0.0,
     "clustering_local": 0.8333,
@@ -2761,7 +2761,7 @@
       }
     ],
     "bridge_score": 0.0,
-    "community": 0,
+    "community": 4,
     "pagerank": 0.04165205,
     "eigen_centrality": 0.453016,
     "clustering_local": 1.0,
@@ -2967,7 +2967,7 @@
       }
     ],
     "bridge_score": 0.0,
-    "community": 1,
+    "community": 0,
     "pagerank": 0.01534808,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,
@@ -3070,7 +3070,7 @@
       }
     ],
     "bridge_score": 0.0,
-    "community": 1,
+    "community": 0,
     "pagerank": 0.02667003,
     "eigen_centrality": 0.0,
     "clustering_local": 1.0,

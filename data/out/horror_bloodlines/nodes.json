@@ -186,7 +186,7 @@
     "top_collaborator_id": "nm0000317",
     "collaborator_loyalty": 0.111,
     "bridge_score": 0.061118,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.02098315,
     "eigen_centrality": 0.268286,
     "clustering_local": 0.2647,
@@ -203,8 +203,8 @@
     "acclaim_gap": -1.768,
     "hub_vs_loyal": 100.457,
     "collaborator_reach": 113,
-    "embed_x": 0.2263,
-    "embed_y": -0.0569
+    "embed_x": 0.0263,
+    "embed_y": -0.2749
   },
   {
     "id": "nm0170550",
@@ -318,16 +318,16 @@
     "genre_first": "Drama",
     "genre_last": "Documentary",
     "genre_first_last_distance": 1,
-    "typecast_character": "Mike Brady",
+    "typecast_character": "Self",
     "typecast_count": 3,
     "billing_trajectory": -0.1117,
     "median_billing": 4,
     "minutes_credited": 8173,
     "medium_mix": {
-      "tvMovie": 0.271,
       "movie": 0.449,
       "tvSeries": 0.243,
-      "tvMiniSeries": 0.037
+      "tvMiniSeries": 0.037,
+      "tvMovie": 0.271
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1993,
@@ -392,7 +392,7 @@
     "top_collaborator_id": "nm0932112",
     "collaborator_loyalty": 0.229,
     "bridge_score": 0.051151,
-    "community": 0,
+    "community": 4,
     "pagerank": 0.02042281,
     "eigen_centrality": 0.217463,
     "clustering_local": 0.2904,
@@ -531,8 +531,8 @@
     "minutes_credited": 11058,
     "medium_mix": {
       "movie": 0.789,
-      "tvMovie": 0.12,
       "tvSeries": 0.056,
+      "tvMovie": 0.12,
       "tvMiniSeries": 0.035
     },
     "short_to_feature_ratio": 0.0,
@@ -599,7 +599,7 @@
     "top_collaborator_id": "nm1910255",
     "collaborator_loyalty": 0.222,
     "bridge_score": 0.034182,
-    "community": 7,
+    "community": 0,
     "pagerank": 0.01129527,
     "eigen_centrality": 0.109476,
     "clustering_local": 0.3426,
@@ -616,7 +616,7 @@
     "acclaim_gap": -0.785,
     "hub_vs_loyal": 71.914,
     "collaborator_reach": 97,
-    "embed_x": -0.5457,
+    "embed_x": -0.3376,
     "embed_y": -0.2798
   },
   {
@@ -740,9 +740,9 @@
     "minutes_credited": 11412,
     "medium_mix": {
       "movie": 0.851,
-      "tvSeries": 0.028,
       "tvMovie": 0.099,
-      "tvMiniSeries": 0.021
+      "tvMiniSeries": 0.021,
+      "tvSeries": 0.028
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1990,
@@ -807,7 +807,7 @@
     "top_collaborator_id": "nm0001062",
     "collaborator_loyalty": 0.184,
     "bridge_score": 0.026415,
-    "community": 7,
+    "community": 0,
     "pagerank": 0.01196746,
     "eigen_centrality": 0.107413,
     "clustering_local": 0.343,
@@ -824,8 +824,8 @@
     "acclaim_gap": -3.883,
     "hub_vs_loyal": 71.208,
     "collaborator_reach": 92,
-    "embed_x": -0.291,
-    "embed_y": 0.5583
+    "embed_x": -0.3001,
+    "embed_y": 0.581
   },
   {
     "id": "nm0000317",
@@ -1013,7 +1013,7 @@
     "top_collaborator_id": "nm0000397",
     "collaborator_loyalty": 0.172,
     "bridge_score": 0.029532,
-    "community": 0,
+    "community": 6,
     "pagerank": 0.02478581,
     "eigen_centrality": 0.329058,
     "clustering_local": 0.3014,
@@ -1030,8 +1030,8 @@
     "acclaim_gap": 0.08,
     "hub_vs_loyal": 70.564,
     "collaborator_reach": 90,
-    "embed_x": 0.4248,
-    "embed_y": -0.304
+    "embed_x": 0.4247,
+    "embed_y": -0.517
   },
   {
     "id": "nm0740535",
@@ -1141,7 +1141,7 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Frank",
+    "typecast_character": "Additional Voices",
     "typecast_count": 3,
     "billing_trajectory": -0.076,
     "median_billing": 6,
@@ -1215,7 +1215,7 @@
     "top_collaborator_id": "nm0403947",
     "collaborator_loyalty": 0.544,
     "bridge_score": 0.033639,
-    "community": 0,
+    "community": 4,
     "pagerank": 0.01742751,
     "eigen_centrality": 0.209895,
     "clustering_local": 0.2966,
@@ -1233,7 +1233,7 @@
     "hub_vs_loyal": 28.528,
     "collaborator_reach": 90,
     "embed_x": -0.2781,
-    "embed_y": 0.3985
+    "embed_y": 0.4415
   },
   {
     "id": "nm0936403",
@@ -1347,7 +1347,7 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Mongo the Magnificent (segment: Mongo's Magik Mirror)",
+    "typecast_character": "Mongo the Magnificent",
     "typecast_count": 2,
     "billing_trajectory": 0.0118,
     "median_billing": 4,
@@ -1423,7 +1423,7 @@
     "top_collaborator_id": "nm0479527",
     "collaborator_loyalty": 0.623,
     "bridge_score": 0.019072,
-    "community": 7,
+    "community": 3,
     "pagerank": 0.01111898,
     "eigen_centrality": 0.116609,
     "clustering_local": 0.3728,
@@ -1440,8 +1440,8 @@
     "acclaim_gap": -1.304,
     "hub_vs_loyal": 14.601,
     "collaborator_reach": 85,
-    "embed_x": -0.6149,
-    "embed_y": 0.3991
+    "embed_x": -0.6096,
+    "embed_y": 0.3943
   },
   {
     "id": "nm0006669",
@@ -1562,8 +1562,8 @@
     "minutes_credited": 7445,
     "medium_mix": {
       "movie": 0.588,
-      "tvMovie": 0.245,
-      "tvSeries": 0.167
+      "tvSeries": 0.167,
+      "tvMovie": 0.245
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1990,
@@ -1629,7 +1629,7 @@
     "top_collaborator_id": "nm0000982",
     "collaborator_loyalty": 0.295,
     "bridge_score": 0.018066,
-    "community": 2,
+    "community": 3,
     "pagerank": 0.00897668,
     "eigen_centrality": 0.071623,
     "clustering_local": 0.3491,
@@ -1646,8 +1646,8 @@
     "acclaim_gap": -0.186,
     "hub_vs_loyal": 46.665,
     "collaborator_reach": 80,
-    "embed_x": -0.5007,
-    "embed_y": 1.0858
+    "embed_x": -0.5055,
+    "embed_y": 0.8858
   },
   {
     "id": "nm0001208",
@@ -1771,8 +1771,8 @@
     "medium_mix": {
       "tvSeries": 0.225,
       "movie": 0.352,
-      "tvMiniSeries": 0.07,
-      "tvMovie": 0.352
+      "tvMovie": 0.352,
+      "tvMiniSeries": 0.07
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1987,
@@ -1836,7 +1836,7 @@
     "top_collaborator_id": "nm0004753",
     "collaborator_loyalty": 0.182,
     "bridge_score": 0.016005,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.01286465,
     "eigen_centrality": 0.166922,
     "clustering_local": 0.3512,
@@ -1853,8 +1853,8 @@
     "acclaim_gap": 0.53,
     "hub_vs_loyal": 58.434,
     "collaborator_reach": 79,
-    "embed_x": -0.6169,
-    "embed_y": -0.1807
+    "embed_x": -0.6256,
+    "embed_y": -0.0838
   },
   {
     "id": "nm0001679",
@@ -1888,36 +1888,14 @@
         "votes": 22
       },
       {
-        "title": "Garrison 7: War Is Coming",
-        "character": "Gage Rainer",
+        "title": "Chasing José",
+        "character": "Senator Daniel Cameron",
         "characters": [
-          "Gage Rainer"
+          "Senator Daniel Cameron"
         ],
         "year": null,
         "billing": 1,
-        "tconst": "tt3339320",
-        "votes": 0
-      },
-      {
-        "title": "Garrison 7: The Fallen",
-        "character": "Gage Rainer",
-        "characters": [
-          "Gage Rainer"
-        ],
-        "year": null,
-        "billing": 1,
-        "tconst": "tt4533698",
-        "votes": 0
-      },
-      {
-        "title": "The Hard Ride",
-        "character": "Laughing Sam",
-        "characters": [
-          "Laughing Sam"
-        ],
-        "year": null,
-        "billing": 1,
-        "tconst": "tt0490138",
+        "tconst": "tt2330765",
         "votes": 0
       },
       {
@@ -1932,14 +1910,36 @@
         "votes": 0
       },
       {
-        "title": "Mr. Stout's Unfinished Masterpiece",
-        "character": "Cyrus Stout",
+        "title": "The Hard Ride",
+        "character": "Laughing Sam",
         "characters": [
-          "Cyrus Stout"
+          "Laughing Sam"
         ],
-        "year": 2025,
+        "year": null,
         "billing": 1,
-        "tconst": "tt32174255",
+        "tconst": "tt0490138",
+        "votes": 0
+      },
+      {
+        "title": "The Dead City",
+        "character": "Ron",
+        "characters": [
+          "Ron"
+        ],
+        "year": null,
+        "billing": 1,
+        "tconst": "tt20758064",
+        "votes": 0
+      },
+      {
+        "title": "Garrison 7: War Is Coming",
+        "character": "Gage Rainer",
+        "characters": [
+          "Gage Rainer"
+        ],
+        "year": null,
+        "billing": 1,
+        "tconst": "tt3339320",
         "votes": 0
       }
     ],
@@ -1976,8 +1976,8 @@
     "medium_mix": {
       "movie": 0.631,
       "tvMovie": 0.2,
-      "tvSeries": 0.138,
-      "tvMiniSeries": 0.031
+      "tvMiniSeries": 0.031,
+      "tvSeries": 0.138
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1986,
@@ -2015,7 +2015,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0359386",
+    "top_director": "nm0006853",
     "regions": [
       "AE",
       "AR",
@@ -2042,7 +2042,7 @@
     "top_collaborator_id": "nm0479527",
     "collaborator_loyalty": 0.273,
     "bridge_score": 0.011229,
-    "community": 7,
+    "community": 3,
     "pagerank": 0.01192611,
     "eigen_centrality": 0.126861,
     "clustering_local": 0.4175,
@@ -2059,8 +2059,8 @@
     "acclaim_gap": 0.484,
     "hub_vs_loyal": 45.151,
     "collaborator_reach": 76,
-    "embed_x": 0.6051,
-    "embed_y": 0.9058
+    "embed_x": 0.7268,
+    "embed_y": 0.8101
   },
   {
     "id": "nm0000532",
@@ -2250,7 +2250,7 @@
     "top_collaborator_id": "nm0000749",
     "collaborator_loyalty": 0.184,
     "bridge_score": 0.018815,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.01019848,
     "eigen_centrality": 0.113263,
     "clustering_local": 0.3596,
@@ -2268,7 +2268,7 @@
     "hub_vs_loyal": 54.208,
     "collaborator_reach": 75,
     "embed_x": -0.0555,
-    "embed_y": 0.4433
+    "embed_y": 0.4527
   },
   {
     "id": "nm0001520",
@@ -2425,7 +2425,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0311435",
+    "top_director": "nm0642135",
     "regions": [
       "AE",
       "AR",
@@ -2452,7 +2452,7 @@
     "top_collaborator_id": "nm0001664",
     "collaborator_loyalty": 0.219,
     "bridge_score": 0.012475,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00877016,
     "eigen_centrality": 0.095947,
     "clustering_local": 0.3895,
@@ -2469,7 +2469,7 @@
     "acclaim_gap": -1.076,
     "hub_vs_loyal": 49.253,
     "collaborator_reach": 74,
-    "embed_x": 1.0037,
+    "embed_x": 1.0737,
     "embed_y": -0.548
   },
   {
@@ -2591,9 +2591,9 @@
     "minutes_credited": 13014,
     "medium_mix": {
       "movie": 0.718,
+      "tvMiniSeries": 0.022,
       "tvSeries": 0.155,
-      "tvMovie": 0.105,
-      "tvMiniSeries": 0.022
+      "tvMovie": 0.105
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1981,
@@ -2658,7 +2658,7 @@
     "top_collaborator_id": "nm0167649",
     "collaborator_loyalty": 0.229,
     "bridge_score": 0.018098,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.01305434,
     "eigen_centrality": 0.192394,
     "clustering_local": 0.3421,
@@ -2675,7 +2675,7 @@
     "acclaim_gap": -1.598,
     "hub_vs_loyal": 47.123,
     "collaborator_reach": 73,
-    "embed_x": 0.0262,
+    "embed_x": -0.2229,
     "embed_y": -1.0728
   },
   {
@@ -2790,15 +2790,15 @@
     "genre_first": "Drama",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Stathis Borans",
+    "typecast_character": "Les MacDowell",
     "typecast_count": 2,
     "billing_trajectory": -0.117,
     "median_billing": 5,
     "minutes_credited": 4619,
     "medium_mix": {
       "movie": 0.455,
-      "tvSeries": 0.255,
       "tvMovie": 0.273,
+      "tvSeries": 0.255,
       "tvMiniSeries": 0.018
     },
     "short_to_feature_ratio": 0.0,
@@ -2837,7 +2837,7 @@
       }
     ],
     "same_director_repeat": 5,
-    "top_director": "nm0850862",
+    "top_director": "nm0296945",
     "regions": [
       "AE",
       "AR",
@@ -2882,8 +2882,8 @@
     "acclaim_gap": 0.687,
     "hub_vs_loyal": 40.151,
     "collaborator_reach": 71,
-    "embed_x": 0.6839,
-    "embed_y": -0.6611
+    "embed_x": 0.4464,
+    "embed_y": -0.7552
   },
   {
     "id": "nm0048414",
@@ -3004,8 +3004,8 @@
     "minutes_credited": 6170,
     "medium_mix": {
       "movie": 0.654,
-      "tvSeries": 0.103,
       "tvMovie": 0.192,
+      "tvSeries": 0.103,
       "tvMiniSeries": 0.051
     },
     "short_to_feature_ratio": 0.0,
@@ -3071,7 +3071,7 @@
     "top_collaborator_id": "nm0126284",
     "collaborator_loyalty": 0.22,
     "bridge_score": 0.015944,
-    "community": 4,
+    "community": 1,
     "pagerank": 0.00840567,
     "eigen_centrality": 0.060339,
     "clustering_local": 0.3602,
@@ -3210,8 +3210,8 @@
     "minutes_credited": 8612,
     "medium_mix": {
       "tvSeries": 0.075,
-      "tvMovie": 0.226,
       "movie": 0.688,
+      "tvMovie": 0.226,
       "tvMiniSeries": 0.011
     },
     "short_to_feature_ratio": 0.0,
@@ -3274,11 +3274,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Christopher McDonald",
-    "top_collaborator_id": "nm0001520",
+    "top_collaborator": "Mark Pellegrino",
+    "top_collaborator_id": "nm0671032",
     "collaborator_loyalty": 0.14,
     "bridge_score": 0.00988,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00972977,
     "eigen_centrality": 0.118071,
     "clustering_local": 0.4101,
@@ -3295,8 +3295,8 @@
     "acclaim_gap": -0.693,
     "hub_vs_loyal": 53.18,
     "collaborator_reach": 69,
-    "embed_x": -1.2481,
-    "embed_y": -0.4829
+    "embed_x": -1.0516,
+    "embed_y": -0.4705
   },
   {
     "id": "nm0431451",
@@ -3416,10 +3416,10 @@
     "median_billing": 4,
     "minutes_credited": 5449,
     "medium_mix": {
-      "tvSeries": 0.159,
       "tvMovie": 0.302,
-      "movie": 0.476,
-      "tvMiniSeries": 0.063
+      "tvSeries": 0.159,
+      "tvMiniSeries": 0.063,
+      "movie": 0.476
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1974,
@@ -3485,7 +3485,7 @@
     "top_collaborator_id": "nm0891275",
     "collaborator_loyalty": 0.389,
     "bridge_score": 0.012227,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.00753023,
     "eigen_centrality": 0.052693,
     "clustering_local": 0.3863,
@@ -3502,8 +3502,8 @@
     "acclaim_gap": 1.322,
     "hub_vs_loyal": 23.043,
     "collaborator_reach": 67,
-    "embed_x": 0.0783,
-    "embed_y": 1.0973
+    "embed_x": 0.218,
+    "embed_y": 0.897
   },
   {
     "id": "nm0613147",
@@ -3623,8 +3623,8 @@
     "median_billing": 5,
     "minutes_credited": 13053,
     "medium_mix": {
-      "tvMovie": 0.318,
       "movie": 0.612,
+      "tvMovie": 0.318,
       "tvSeries": 0.071
     },
     "short_to_feature_ratio": 0.0,
@@ -3689,7 +3689,7 @@
     "top_collaborator_id": "nm0000246",
     "collaborator_loyalty": 0.156,
     "bridge_score": 0.010391,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.00827504,
     "eigen_centrality": 0.058113,
     "clustering_local": 0.4033,
@@ -3706,7 +3706,7 @@
     "acclaim_gap": -2.245,
     "hub_vs_loyal": 48.372,
     "collaborator_reach": 66,
-    "embed_x": 0.4775,
+    "embed_x": 0.365,
     "embed_y": -0.0415
   },
   {
@@ -3896,7 +3896,7 @@
     "top_collaborator_id": "nm0000317",
     "collaborator_loyalty": 0.25,
     "bridge_score": 0.015403,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00722967,
     "eigen_centrality": 0.100029,
     "clustering_local": 0.3918,
@@ -3913,8 +3913,8 @@
     "acclaim_gap": -1.118,
     "hub_vs_loyal": 36.75,
     "collaborator_reach": 65,
-    "embed_x": -1.5006,
-    "embed_y": 0.0741
+    "embed_x": -1.5794,
+    "embed_y": 0.0797
   },
   {
     "id": "nm0000374",
@@ -4028,15 +4028,15 @@
     "genre_first": "Drama",
     "genre_last": "Horror",
     "genre_first_last_distance": 1,
-    "typecast_character": "Self",
+    "typecast_character": "Chucky",
     "typecast_count": 7,
     "billing_trajectory": -0.0344,
     "median_billing": 4,
     "minutes_credited": 11088,
     "medium_mix": {
       "movie": 0.773,
-      "tvMovie": 0.143,
       "tvSeries": 0.067,
+      "tvMovie": 0.143,
       "tvMiniSeries": 0.017
     },
     "short_to_feature_ratio": 0.0,
@@ -4103,7 +4103,7 @@
     "top_collaborator_id": "nm0000448",
     "collaborator_loyalty": 0.273,
     "bridge_score": 0.006929,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.005845,
     "eigen_centrality": 0.051206,
     "clustering_local": 0.446,
@@ -4120,8 +4120,8 @@
     "acclaim_gap": -1.292,
     "hub_vs_loyal": 32.151,
     "collaborator_reach": 63,
-    "embed_x": 0.0762,
-    "embed_y": -0.5872
+    "embed_x": 0.2762,
+    "embed_y": -0.5691
   },
   {
     "id": "nm0001021",
@@ -4243,8 +4243,8 @@
     "medium_mix": {
       "movie": 0.561,
       "tvMovie": 0.329,
-      "tvSeries": 0.085,
-      "tvMiniSeries": 0.024
+      "tvMiniSeries": 0.024,
+      "tvSeries": 0.085
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1961,
@@ -4312,7 +4312,7 @@
     "top_collaborator_id": "nm0001236",
     "collaborator_loyalty": 0.136,
     "bridge_score": 0.017488,
-    "community": 8,
+    "community": 9,
     "pagerank": 0.00616978,
     "eigen_centrality": 0.067163,
     "clustering_local": 0.3464,
@@ -4329,8 +4329,8 @@
     "acclaim_gap": 0.722,
     "hub_vs_loyal": 45.632,
     "collaborator_reach": 61,
-    "embed_x": 0.7239,
-    "embed_y": 0.5908
+    "embed_x": 0.7283,
+    "embed_y": 0.5626
   },
   {
     "id": "nm0736263",
@@ -4444,16 +4444,16 @@
     "genre_first": "Comedy",
     "genre_last": "Horror",
     "genre_first_last_distance": 1,
-    "typecast_character": "Self (2022)",
+    "typecast_character": "Self",
     "typecast_count": 15,
     "billing_trajectory": 0.0587,
     "median_billing": 4,
     "minutes_credited": 10800,
     "medium_mix": {
       "movie": 0.733,
-      "tvMiniSeries": 0.012,
       "tvMovie": 0.145,
-      "tvSeries": 0.109
+      "tvSeries": 0.109,
+      "tvMiniSeries": 0.012
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1986,
@@ -4518,7 +4518,7 @@
     "top_collaborator_id": "nm0865302",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.005347,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.00715793,
     "eigen_centrality": 0.070102,
     "clustering_local": 0.4695,
@@ -4535,8 +4535,8 @@
     "acclaim_gap": -1.211,
     "hub_vs_loyal": 22.371,
     "collaborator_reach": 60,
-    "embed_x": 0.8581,
-    "embed_y": 0.0664
+    "embed_x": 0.8483,
+    "embed_y": 0.0658
   },
   {
     "id": "nm0671032",
@@ -4592,14 +4592,14 @@
         "votes": 117
       },
       {
-        "title": "Emerald Ties",
-        "character": "Seamus",
+        "title": "The Last Days of Limbo",
+        "character": "Cardinal Reynolds",
         "characters": [
-          "Seamus"
+          "Cardinal Reynolds"
         ],
-        "year": 2024,
+        "year": 2008,
         "billing": 1,
-        "tconst": "tt30274661",
+        "tconst": "tt1204921",
         "votes": 0
       },
       {
@@ -4614,14 +4614,14 @@
         "votes": 0
       },
       {
-        "title": "The Last Days of Limbo",
-        "character": "Cardinal Reynolds",
+        "title": "Emerald Ties",
+        "character": "Seamus",
         "characters": [
-          "Cardinal Reynolds"
+          "Seamus"
         ],
-        "year": 2008,
+        "year": 2024,
         "billing": 1,
-        "tconst": "tt1204921",
+        "tconst": "tt30274661",
         "votes": 0
       }
     ],
@@ -4656,9 +4656,9 @@
     "median_billing": 5,
     "minutes_credited": 3525,
     "medium_mix": {
+      "tvSeries": 0.193,
       "movie": 0.702,
-      "tvMovie": 0.105,
-      "tvSeries": 0.193
+      "tvMovie": 0.105
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1994,
@@ -4696,7 +4696,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm1305849",
+    "top_director": "nm0066218",
     "regions": [
       "AE",
       "AR",
@@ -4723,7 +4723,7 @@
     "top_collaborator_id": "nm0655585",
     "collaborator_loyalty": 0.302,
     "bridge_score": 0.005562,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.00934201,
     "eigen_centrality": 0.066775,
     "clustering_local": 0.4302,
@@ -4741,7 +4741,7 @@
     "hub_vs_loyal": 24.874,
     "collaborator_reach": 59,
     "embed_x": 1.2291,
-    "embed_y": -0.2548
+    "embed_y": -0.2724
   },
   {
     "id": "nm0908914",
@@ -4926,11 +4926,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Tony Todd",
-    "top_collaborator_id": "nm0865302",
+    "top_collaborator": "Jeffrey Combs",
+    "top_collaborator_id": "nm0001062",
     "collaborator_loyalty": 0.154,
     "bridge_score": 0.008889,
-    "community": 7,
+    "community": 3,
     "pagerank": 0.00755874,
     "eigen_centrality": 0.079203,
     "clustering_local": 0.4223,
@@ -4947,8 +4947,8 @@
     "acclaim_gap": -1.962,
     "hub_vs_loyal": 39.598,
     "collaborator_reach": 57,
-    "embed_x": -0.6006,
-    "embed_y": 1.6485
+    "embed_x": -0.4784,
+    "embed_y": 1.7122
   },
   {
     "id": "nm0070810",
@@ -5064,8 +5064,8 @@
     "median_billing": 5,
     "minutes_credited": 1442,
     "medium_mix": {
-      "movie": 0.4,
       "tvSeries": 0.533,
+      "movie": 0.4,
       "tvMovie": 0.067
     },
     "short_to_feature_ratio": 0.0,
@@ -5130,7 +5130,7 @@
     "top_collaborator_id": "nm0655585",
     "collaborator_loyalty": 0.22,
     "bridge_score": 0.007236,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00885409,
     "eigen_centrality": 0.067165,
     "clustering_local": 0.4397,
@@ -5147,8 +5147,8 @@
     "acclaim_gap": 2.68,
     "hub_vs_loyal": 30.14,
     "collaborator_reach": 55,
-    "embed_x": -0.9401,
-    "embed_y": 1.5361
+    "embed_x": -0.8794,
+    "embed_y": 1.3361
   },
   {
     "id": "nm0621008",
@@ -5264,14 +5264,14 @@
     "genre_first": "Drama",
     "genre_last": "Documentary",
     "genre_first_last_distance": 1,
-    "typecast_character": "Harry",
+    "typecast_character": "Self",
     "typecast_count": 2,
     "billing_trajectory": -0.0877,
     "median_billing": 5,
     "minutes_credited": 8135,
     "medium_mix": {
-      "tvSeries": 0.156,
       "movie": 0.744,
+      "tvSeries": 0.156,
       "tvMovie": 0.1
     },
     "short_to_feature_ratio": 0.0,
@@ -5310,7 +5310,7 @@
       }
     ],
     "same_director_repeat": 5,
-    "top_director": "nm0505420",
+    "top_director": "nm0179709",
     "regions": [
       "AE",
       "AR",
@@ -5338,7 +5338,7 @@
     "top_collaborator_id": "nm0001831",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.006788,
-    "community": 1,
+    "community": 2,
     "pagerank": 0.00663814,
     "eigen_centrality": 0.102915,
     "clustering_local": 0.4843,
@@ -5355,8 +5355,8 @@
     "acclaim_gap": -1.269,
     "hub_vs_loyal": 16.371,
     "collaborator_reach": 54,
-    "embed_x": -0.6727,
-    "embed_y": -0.6992
+    "embed_x": -0.567,
+    "embed_y": -0.6983
   },
   {
     "id": "nm0920564",
@@ -5479,9 +5479,9 @@
     "minutes_credited": 13227,
     "medium_mix": {
       "tvSeries": 0.041,
-      "tvMovie": 0.503,
+      "tvMiniSeries": 0.041,
       "movie": 0.414,
-      "tvMiniSeries": 0.041
+      "tvMovie": 0.503
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1980,
@@ -5548,7 +5548,7 @@
     "top_collaborator_id": "nm0272173",
     "collaborator_loyalty": 0.138,
     "bridge_score": 0.013575,
-    "community": 7,
+    "community": 0,
     "pagerank": 0.00636422,
     "eigen_centrality": 0.029693,
     "clustering_local": 0.3487,
@@ -5565,8 +5565,8 @@
     "acclaim_gap": -0.246,
     "hub_vs_loyal": 38.406,
     "collaborator_reach": 54,
-    "embed_x": 0.0522,
-    "embed_y": -2.0017
+    "embed_x": 0.017,
+    "embed_y": -2.0018
   },
   {
     "id": "nm0000448",
@@ -5755,7 +5755,7 @@
     "top_collaborator_id": "nm0202966",
     "collaborator_loyalty": 0.101,
     "bridge_score": 0.00893,
-    "community": 4,
+    "community": 6,
     "pagerank": 0.00647909,
     "eigen_centrality": 0.080049,
     "clustering_local": 0.4688,
@@ -5773,7 +5773,7 @@
     "hub_vs_loyal": 41.587,
     "collaborator_reach": 53,
     "embed_x": 1.1849,
-    "embed_y": 0.2054
+    "embed_y": 0.2053
   },
   {
     "id": "nm0002142",
@@ -5892,10 +5892,10 @@
     "median_billing": 4,
     "minutes_credited": 2701,
     "medium_mix": {
-      "tvMovie": 0.256,
-      "tvSeries": 0.154,
       "movie": 0.538,
-      "tvMiniSeries": 0.051
+      "tvMiniSeries": 0.051,
+      "tvMovie": 0.256,
+      "tvSeries": 0.154
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1994,
@@ -5955,11 +5955,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Jeremy Sisto",
-    "top_collaborator_id": "nm0005438",
+    "top_collaborator": "Julian Richings",
+    "top_collaborator_id": "nm0724995",
     "collaborator_loyalty": 0.164,
     "bridge_score": 0.006589,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.00581537,
     "eigen_centrality": 0.036589,
     "clustering_local": 0.4623,
@@ -5976,8 +5976,8 @@
     "acclaim_gap": 0.796,
     "hub_vs_loyal": 33.468,
     "collaborator_reach": 52,
-    "embed_x": -0.9397,
-    "embed_y": -1.5617
+    "embed_x": -0.9368,
+    "embed_y": -1.5568
   },
   {
     "id": "nm0791968",
@@ -6091,14 +6091,14 @@
     "genre_first": "Comedy",
     "genre_last": "Horror",
     "genre_first_last_distance": 1,
-    "typecast_character": "Fang",
+    "typecast_character": "Hagan",
     "typecast_count": 1,
     "billing_trajectory": 0.0175,
     "median_billing": 5,
     "minutes_credited": 1623,
     "medium_mix": {
-      "movie": 0.583,
       "tvSeries": 0.292,
+      "movie": 0.583,
       "tvMovie": 0.125
     },
     "short_to_feature_ratio": 0.0,
@@ -6137,7 +6137,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm1959563",
+    "top_director": "nm0362738",
     "regions": [
       "AE",
       "AR",
@@ -6163,7 +6163,7 @@
     "top_collaborator_id": "nm0655585",
     "collaborator_loyalty": 0.422,
     "bridge_score": 0.004536,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00784533,
     "eigen_centrality": 0.060073,
     "clustering_local": 0.4894,
@@ -6180,7 +6180,7 @@
     "acclaim_gap": 0.488,
     "hub_vs_loyal": 4.314,
     "collaborator_reach": 52,
-    "embed_x": 1.7341,
+    "embed_x": 1.7296,
     "embed_y": 0.2344
   },
   {
@@ -6302,8 +6302,8 @@
     "medium_mix": {
       "movie": 0.691,
       "tvMovie": 0.176,
-      "tvSeries": 0.074,
-      "tvMiniSeries": 0.059
+      "tvMiniSeries": 0.059,
+      "tvSeries": 0.074
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1972,
@@ -6369,7 +6369,7 @@
     "top_collaborator_id": "nm0001021",
     "collaborator_loyalty": 0.176,
     "bridge_score": 0.0076,
-    "community": 6,
+    "community": 2,
     "pagerank": 0.00595335,
     "eigen_centrality": 0.084121,
     "clustering_local": 0.491,
@@ -6386,7 +6386,7 @@
     "acclaim_gap": -0.863,
     "hub_vs_loyal": 31.112,
     "collaborator_reach": 51,
-    "embed_x": 0.0301,
+    "embed_x": 0.034,
     "embed_y": 0.8445
   },
   {
@@ -6508,9 +6508,9 @@
     "minutes_credited": 7454,
     "medium_mix": {
       "movie": 0.757,
-      "tvMiniSeries": 0.019,
+      "tvMovie": 0.107,
       "tvSeries": 0.117,
-      "tvMovie": 0.107
+      "tvMiniSeries": 0.019
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1966,
@@ -6573,11 +6573,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Vera Miles",
-    "top_collaborator_id": "nm0587256",
+    "top_collaborator": "Malcolm McDowell",
+    "top_collaborator_id": "nm0000532",
     "collaborator_loyalty": 0.5,
     "bridge_score": 0.009229,
-    "community": 6,
+    "community": 9,
     "pagerank": 0.00578753,
     "eigen_centrality": 0.088584,
     "clustering_local": 0.4463,
@@ -6595,7 +6595,7 @@
     "hub_vs_loyal": -5.5,
     "collaborator_reach": 51,
     "embed_x": -1.3977,
-    "embed_y": -0.2174
+    "embed_y": -0.0108
   },
   {
     "id": "nm0751762",
@@ -6709,15 +6709,15 @@
     "genre_first": "Drama",
     "genre_last": "Adventure",
     "genre_first_last_distance": 1,
-    "typecast_character": "Doctor Merman",
+    "typecast_character": "Waylon",
     "typecast_count": 1,
     "billing_trajectory": -0.0557,
     "median_billing": 6,
     "minutes_credited": 2833,
     "medium_mix": {
+      "tvSeries": 0.121,
       "movie": 0.455,
-      "tvMovie": 0.424,
-      "tvSeries": 0.121
+      "tvMovie": 0.424
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1988,
@@ -6755,7 +6755,7 @@
       }
     ],
     "same_director_repeat": 1,
-    "top_director": "nm4097598",
+    "top_director": "nm0002814",
     "regions": [
       "AE",
       "AR",
@@ -6783,7 +6783,7 @@
     "top_collaborator_id": "nm0700712",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.007182,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00608982,
     "eigen_centrality": 0.052751,
     "clustering_local": 0.4165,
@@ -6800,8 +6800,8 @@
     "acclaim_gap": 0.468,
     "hub_vs_loyal": -62.0,
     "collaborator_reach": 51,
-    "embed_x": -1.4607,
-    "embed_y": 0.5519
+    "embed_x": -1.2668,
+    "embed_y": 0.552
   },
   {
     "id": "nm0001831",
@@ -6923,10 +6923,10 @@
     "median_billing": 4,
     "minutes_credited": 13839,
     "medium_mix": {
-      "movie": 0.58,
       "tvMiniSeries": 0.133,
       "tvSeries": 0.07,
-      "tvMovie": 0.217
+      "tvMovie": 0.217,
+      "movie": 0.58
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1965,
@@ -6993,7 +6993,7 @@
     "top_collaborator_id": "nm0621008",
     "collaborator_loyalty": 0.205,
     "bridge_score": 0.020713,
-    "community": 9,
+    "community": 8,
     "pagerank": 0.00747306,
     "eigen_centrality": 0.078303,
     "clustering_local": 0.3804,
@@ -7011,7 +7011,7 @@
     "hub_vs_loyal": 26.835,
     "collaborator_reach": 50,
     "embed_x": 0.4946,
-    "embed_y": -1.2657
+    "embed_y": -1.244
   },
   {
     "id": "nm0167649",
@@ -7131,9 +7131,9 @@
     "median_billing": 4,
     "minutes_credited": 7754,
     "medium_mix": {
-      "tvSeries": 0.117,
       "movie": 0.67,
       "tvMovie": 0.181,
+      "tvSeries": 0.117,
       "tvMiniSeries": 0.032
     },
     "short_to_feature_ratio": 0.0,
@@ -7199,7 +7199,7 @@
     "top_collaborator_id": "nm0000579",
     "collaborator_loyalty": 0.426,
     "bridge_score": 0.009221,
-    "community": 3,
+    "community": 0,
     "pagerank": 0.00580863,
     "eigen_centrality": 0.035676,
     "clustering_local": 0.369,
@@ -7216,8 +7216,8 @@
     "acclaim_gap": -0.898,
     "hub_vs_loyal": 1.862,
     "collaborator_reach": 50,
-    "embed_x": -1.2934,
-    "embed_y": 0.4493
+    "embed_x": -1.2895,
+    "embed_y": 0.3284
   },
   {
     "id": "nm0419273",
@@ -7262,6 +7262,17 @@
         "votes": 12
       },
       {
+        "title": "Nose Deep",
+        "character": "Nathaniel Basset",
+        "characters": [
+          "Nathaniel Basset"
+        ],
+        "year": null,
+        "billing": 1,
+        "tconst": "tt13878716",
+        "votes": 0
+      },
+      {
         "title": "Barney & Herb",
         "character": "Herb",
         "characters": [
@@ -7273,6 +7284,17 @@
         "votes": 0
       },
       {
+        "title": "Passport",
+        "character": "Whip Blackstone",
+        "characters": [
+          "Whip Blackstone"
+        ],
+        "year": 2014,
+        "billing": 1,
+        "tconst": "tt3810896",
+        "votes": 0
+      },
+      {
         "title": "Hellcats Highway!",
         "character": "Det. Earl Peterson",
         "characters": [
@@ -7281,28 +7303,6 @@
         "year": null,
         "billing": 1,
         "tconst": "tt9617282",
-        "votes": 0
-      },
-      {
-        "title": "Tiger, Tiger",
-        "character": "Don MacMasters",
-        "characters": [
-          "Don MacMasters"
-        ],
-        "year": 1969,
-        "billing": 1,
-        "tconst": "tt0455218",
-        "votes": 0
-      },
-      {
-        "title": "Nose Deep",
-        "character": "Nathaniel Basset",
-        "characters": [
-          "Nathaniel Basset"
-        ],
-        "year": null,
-        "billing": 1,
-        "tconst": "tt13878716",
         "votes": 0
       }
     ],
@@ -7408,7 +7408,7 @@
     "top_collaborator_id": "nm0202966",
     "collaborator_loyalty": 0.429,
     "bridge_score": 0.005477,
-    "community": 8,
+    "community": 2,
     "pagerank": 0.00575593,
     "eigen_centrality": 0.084918,
     "clustering_local": 0.4857,
@@ -7425,7 +7425,7 @@
     "acclaim_gap": -0.015,
     "hub_vs_loyal": 1.523,
     "collaborator_reach": 50,
-    "embed_x": -1.1385,
+    "embed_x": -1.1541,
     "embed_y": 1.3899
   },
   {
@@ -7609,7 +7609,7 @@
     "top_collaborator_id": "nm0005524",
     "collaborator_loyalty": 0.5,
     "bridge_score": 0.006399,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.00589148,
     "eigen_centrality": 0.032611,
     "clustering_local": 0.4082,
@@ -7626,8 +7626,8 @@
     "acclaim_gap": 0.654,
     "hub_vs_loyal": -6.5,
     "collaborator_reach": 50,
-    "embed_x": 0.81,
-    "embed_y": 1.7522
+    "embed_x": 0.7852,
+    "embed_y": 1.5352
   },
   {
     "id": "nm0719678",
@@ -7744,9 +7744,9 @@
     "minutes_credited": 5885,
     "medium_mix": {
       "movie": 0.571,
-      "tvSeries": 0.171,
       "tvMiniSeries": 0.043,
-      "tvMovie": 0.214
+      "tvMovie": 0.214,
+      "tvSeries": 0.171
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1994,
@@ -7784,7 +7784,7 @@
       }
     ],
     "same_director_repeat": 4,
-    "top_director": "nm0001726",
+    "top_director": "nm0804556",
     "regions": [
       "AE",
       "AL",
@@ -7809,7 +7809,7 @@
     "top_collaborator_id": "nm0755267",
     "collaborator_loyalty": 0.189,
     "bridge_score": 0.011642,
-    "community": 7,
+    "community": 0,
     "pagerank": 0.00738144,
     "eigen_centrality": 0.033826,
     "clustering_local": 0.3363,
@@ -7826,8 +7826,8 @@
     "acclaim_gap": 1.068,
     "hub_vs_loyal": 28.643,
     "collaborator_reach": 50,
-    "embed_x": 0.7892,
-    "embed_y": 1.2485
+    "embed_x": 0.7933,
+    "embed_y": 1.2642
   },
   {
     "id": "nm0000347",
@@ -7948,8 +7948,8 @@
     "minutes_credited": 8752,
     "medium_mix": {
       "movie": 0.4,
-      "tvSeries": 0.362,
       "tvMovie": 0.185,
+      "tvSeries": 0.362,
       "tvMiniSeries": 0.054
     },
     "short_to_feature_ratio": 0.0,
@@ -8016,7 +8016,7 @@
     "top_collaborator_id": "nm0000317",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.011334,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00696748,
     "eigen_centrality": 0.097524,
     "clustering_local": 0.4532,
@@ -8033,8 +8033,8 @@
     "acclaim_gap": 0.612,
     "hub_vs_loyal": 11.371,
     "collaborator_reach": 49,
-    "embed_x": 0.3745,
-    "embed_y": -1.7368
+    "embed_x": 0.3743,
+    "embed_y": -1.738
   },
   {
     "id": "nm0000643",
@@ -8153,10 +8153,10 @@
     "median_billing": 3,
     "minutes_credited": 10485,
     "medium_mix": {
-      "tvMovie": 0.383,
       "movie": 0.542,
-      "tvSeries": 0.028,
-      "tvMiniSeries": 0.047
+      "tvMovie": 0.383,
+      "tvMiniSeries": 0.047,
+      "tvSeries": 0.028
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1971,
@@ -8194,7 +8194,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm0198991",
+    "top_director": "nm0006395",
     "regions": [
       "AE",
       "AL",
@@ -8223,7 +8223,7 @@
     "top_collaborator_id": "nm0541908",
     "collaborator_loyalty": 0.84,
     "bridge_score": 0.009034,
-    "community": 6,
+    "community": 2,
     "pagerank": 0.00793895,
     "eigen_centrality": 0.122878,
     "clustering_local": 0.4149,
@@ -8240,8 +8240,8 @@
     "acclaim_gap": -0.621,
     "hub_vs_loyal": -46.92,
     "collaborator_reach": 48,
-    "embed_x": -0.7801,
-    "embed_y": -0.9375
+    "embed_x": -0.9293,
+    "embed_y": -0.9663
   },
   {
     "id": "nm0000997",
@@ -8362,8 +8362,8 @@
     "minutes_credited": 12893,
     "medium_mix": {
       "movie": 0.662,
-      "tvMovie": 0.146,
       "tvSeries": 0.172,
+      "tvMovie": 0.146,
       "tvMiniSeries": 0.019
     },
     "short_to_feature_ratio": 0.0,
@@ -8430,7 +8430,7 @@
     "top_collaborator_id": "nm0001194",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.008537,
-    "community": 8,
+    "community": 2,
     "pagerank": 0.00422762,
     "eigen_centrality": 0.047395,
     "clustering_local": 0.375,
@@ -8447,8 +8447,8 @@
     "acclaim_gap": -1.633,
     "hub_vs_loyal": 10.371,
     "collaborator_reach": 48,
-    "embed_x": -0.8012,
-    "embed_y": -0.5721
+    "embed_x": -0.8147,
+    "embed_y": -0.3685
   },
   {
     "id": "nm0001634",
@@ -8569,8 +8569,8 @@
     "minutes_credited": 6182,
     "medium_mix": {
       "tvSeries": 0.23,
-      "movie": 0.338,
       "tvMovie": 0.365,
+      "movie": 0.338,
       "tvMiniSeries": 0.068
     },
     "short_to_feature_ratio": 0.0,
@@ -8633,11 +8633,11 @@
       "2020s",
       "2030s"
     ],
-    "top_collaborator": "Stephen Lang",
-    "top_collaborator_id": "nm0002332",
+    "top_collaborator": "Clancy Brown",
+    "top_collaborator_id": "nm0000317",
     "collaborator_loyalty": 0.15,
     "bridge_score": 0.00495,
-    "community": 5,
+    "community": 3,
     "pagerank": 0.00607393,
     "eigen_centrality": 0.072735,
     "clustering_local": 0.4043,
@@ -8654,8 +8654,8 @@
     "acclaim_gap": 1.896,
     "hub_vs_loyal": 31.05,
     "collaborator_reach": 48,
-    "embed_x": 1.0496,
-    "embed_y": 0.4989
+    "embed_x": 1.0374,
+    "embed_y": 0.4766
   },
   {
     "id": "nm0001803",
@@ -8775,8 +8775,8 @@
     "median_billing": 3,
     "minutes_credited": 16889,
     "medium_mix": {
-      "movie": 0.827,
       "tvSeries": 0.13,
+      "movie": 0.827,
       "tvMovie": 0.035,
       "tvMiniSeries": 0.008
     },
@@ -8842,7 +8842,7 @@
     "top_collaborator_id": "nm0740535",
     "collaborator_loyalty": 0.14,
     "bridge_score": 0.005438,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.0066137,
     "eigen_centrality": 0.092229,
     "clustering_local": 0.4149,
@@ -8977,8 +8977,8 @@
     "median_billing": 2,
     "minutes_credited": 4767,
     "medium_mix": {
-      "tvMovie": 0.414,
       "movie": 0.431,
+      "tvMovie": 0.414,
       "tvSeries": 0.155
     },
     "short_to_feature_ratio": 0.0,
@@ -9043,7 +9043,7 @@
     "top_collaborator_id": "nm0431451",
     "collaborator_loyalty": 0.75,
     "bridge_score": 0.004185,
-    "community": 7,
+    "community": 3,
     "pagerank": 0.00816557,
     "eigen_centrality": 0.053224,
     "clustering_local": 0.4965,
@@ -9061,7 +9061,7 @@
     "hub_vs_loyal": -36.75,
     "collaborator_reach": 48,
     "embed_x": 0.3213,
-    "embed_y": 0.4979
+    "embed_y": 0.5203
   },
   {
     "id": "nm0000418",
@@ -9181,8 +9181,8 @@
     "median_billing": 3,
     "minutes_credited": 16636,
     "medium_mix": {
-      "movie": 0.742,
       "tvMovie": 0.15,
+      "movie": 0.742,
       "tvSeries": 0.094,
       "tvMiniSeries": 0.014
     },
@@ -9250,7 +9250,7 @@
     "top_collaborator_id": "nm0000662",
     "collaborator_loyalty": 0.231,
     "bridge_score": 0.004144,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00466857,
     "eigen_centrality": 0.045594,
     "clustering_local": 0.4533,
@@ -9267,8 +9267,8 @@
     "acclaim_gap": -1.616,
     "hub_vs_loyal": 20.897,
     "collaborator_reach": 47,
-    "embed_x": 0.3279,
-    "embed_y": 0.928
+    "embed_x": 0.5279,
+    "embed_y": 0.5334
   },
   {
     "id": "nm0000498",
@@ -9388,9 +9388,9 @@
     "median_billing": 4,
     "minutes_credited": 5133,
     "medium_mix": {
-      "tvMovie": 0.147,
       "tvSeries": 0.305,
       "movie": 0.537,
+      "tvMovie": 0.147,
       "tvMiniSeries": 0.011
     },
     "short_to_feature_ratio": 0.0,
@@ -9455,7 +9455,7 @@
     "top_collaborator_id": "nm0001272",
     "collaborator_loyalty": 0.238,
     "bridge_score": 0.008504,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00772943,
     "eigen_centrality": 0.087232,
     "clustering_local": 0.4107,
@@ -9472,8 +9472,8 @@
     "acclaim_gap": -0.248,
     "hub_vs_loyal": 20.106,
     "collaborator_reach": 47,
-    "embed_x": -0.5336,
-    "embed_y": -1.6449
+    "embed_x": -0.5322,
+    "embed_y": -1.6466
   },
   {
     "id": "nm0001062",
@@ -9661,7 +9661,7 @@
     "top_collaborator_id": "nm0000317",
     "collaborator_loyalty": 0.279,
     "bridge_score": 0.005821,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00765777,
     "eigen_centrality": 0.131536,
     "clustering_local": 0.519,
@@ -9678,8 +9678,8 @@
     "acclaim_gap": -0.902,
     "hub_vs_loyal": 15.473,
     "collaborator_reach": 47,
-    "embed_x": 1.4913,
-    "embed_y": -0.4833
+    "embed_x": 1.6249,
+    "embed_y": -0.5018
   },
   {
     "id": "nm0001780",
@@ -9840,7 +9840,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm0001780",
+    "top_director": "nm0240995",
     "regions": [
       "AE",
       "AL",
@@ -9868,7 +9868,7 @@
     "top_collaborator_id": "nm0700712",
     "collaborator_loyalty": 0.316,
     "bridge_score": 0.008054,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00552949,
     "eigen_centrality": 0.060444,
     "clustering_local": 0.4477,
@@ -9885,8 +9885,8 @@
     "acclaim_gap": -0.737,
     "hub_vs_loyal": 11.292,
     "collaborator_reach": 47,
-    "embed_x": -0.1573,
-    "embed_y": 1.8108
+    "embed_x": 0.0674,
+    "embed_y": 1.7263
   },
   {
     "id": "nm0410622",
@@ -10006,9 +10006,9 @@
     "minutes_credited": 6386,
     "medium_mix": {
       "movie": 0.603,
-      "tvSeries": 0.068,
       "tvMovie": 0.315,
-      "tvMiniSeries": 0.014
+      "tvMiniSeries": 0.014,
+      "tvSeries": 0.068
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1989,
@@ -10091,7 +10091,7 @@
     "hub_vs_loyal": 15.812,
     "collaborator_reach": 47,
     "embed_x": -0.1606,
-    "embed_y": -1.3693
+    "embed_y": -1.3696
   },
   {
     "id": "nm0932112",
@@ -10212,8 +10212,8 @@
     "minutes_credited": 5965,
     "medium_mix": {
       "movie": 0.577,
-      "tvSeries": 0.211,
-      "tvMovie": 0.211
+      "tvMovie": 0.211,
+      "tvSeries": 0.211
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1986,
@@ -10251,7 +10251,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0000816",
+    "top_director": "nm0227781",
     "regions": [
       "AE",
       "AL",
@@ -10278,7 +10278,7 @@
     "top_collaborator_id": "nm0170550",
     "collaborator_loyalty": 0.327,
     "bridge_score": 0.003616,
-    "community": 0,
+    "community": 6,
     "pagerank": 0.00498118,
     "eigen_centrality": 0.040002,
     "clustering_local": 0.4866,
@@ -10295,8 +10295,8 @@
     "acclaim_gap": 0.982,
     "hub_vs_loyal": 10.049,
     "collaborator_reach": 47,
-    "embed_x": 1.0385,
-    "embed_y": 1.0269
+    "embed_x": 1.1726,
+    "embed_y": 0.9747
   },
   {
     "id": "nm0462712",
@@ -10353,14 +10353,25 @@
         "votes": 27
       },
       {
-        "title": "Burt and Hathaway",
-        "character": "Burt",
+        "title": "Champ Kind vs. Dorothy Mantooth",
+        "character": "Champ Kind",
         "characters": [
-          "Burt"
+          "Champ Kind"
         ],
-        "year": null,
+        "year": 2014,
         "billing": 1,
-        "tconst": "tt29668919",
+        "tconst": "tt4478306",
+        "votes": 0
+      },
+      {
+        "title": "Full on Koechner",
+        "character": "Various",
+        "characters": [
+          "Various"
+        ],
+        "year": 2013,
+        "billing": 1,
+        "tconst": "tt3065836",
         "votes": 0
       },
       {
@@ -10372,17 +10383,6 @@
         "year": 1995,
         "billing": 1,
         "tconst": "tt20237718",
-        "votes": 0
-      },
-      {
-        "title": "Champ Kind vs. Dorothy Mantooth",
-        "character": "Champ Kind",
-        "characters": [
-          "Champ Kind"
-        ],
-        "year": 2014,
-        "billing": 1,
-        "tconst": "tt4478306",
         "votes": 0
       }
     ],
@@ -10457,7 +10457,7 @@
       }
     ],
     "same_director_repeat": 6,
-    "top_director": "nm0669475",
+    "top_director": "nm2813596",
     "regions": [
       "AE",
       "AL",
@@ -10483,7 +10483,7 @@
     "top_collaborator_id": "nm0671032",
     "collaborator_loyalty": 0.259,
     "bridge_score": 0.004711,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00715683,
     "eigen_centrality": 0.095136,
     "clustering_local": 0.4444,
@@ -10500,8 +10500,8 @@
     "acclaim_gap": -0.057,
     "hub_vs_loyal": 16.733,
     "collaborator_reach": 46,
-    "embed_x": -1.6218,
-    "embed_y": -1.6392
+    "embed_x": -1.6847,
+    "embed_y": -1.6852
   },
   {
     "id": "nm0356251",
@@ -10616,14 +10616,14 @@
     "genre_first": "Drama",
     "genre_last": "Action",
     "genre_first_last_distance": 1,
-    "typecast_character": "Sheriff Carter",
+    "typecast_character": "Sgt. Beatty",
     "typecast_count": 1,
     "billing_trajectory": 0.0018,
     "median_billing": 7,
     "minutes_credited": 3260,
     "medium_mix": {
-      "movie": 0.514,
       "tvMovie": 0.429,
+      "movie": 0.514,
       "tvSeries": 0.057
     },
     "short_to_feature_ratio": 0.0,
@@ -10662,7 +10662,7 @@
       }
     ],
     "same_director_repeat": 1,
-    "top_director": "nm0518579",
+    "top_director": "nm0001077",
     "regions": [
       "AE",
       "AR",
@@ -10687,7 +10687,7 @@
     "top_collaborator_id": "nm0202966",
     "collaborator_loyalty": 0.5,
     "bridge_score": 0.004011,
-    "community": 2,
+    "community": 3,
     "pagerank": 0.00467561,
     "eigen_centrality": 0.056002,
     "clustering_local": 0.5051,
@@ -10704,8 +10704,8 @@
     "acclaim_gap": 0.632,
     "hub_vs_loyal": -11.5,
     "collaborator_reach": 45,
-    "embed_x": 0.3467,
-    "embed_y": 1.534
+    "embed_x": 0.3986,
+    "embed_y": 1.308
   },
   {
     "id": "nm0001217",
@@ -10895,7 +10895,7 @@
     "top_collaborator_id": "nm0001272",
     "collaborator_loyalty": 0.426,
     "bridge_score": 0.004095,
-    "community": 6,
+    "community": 9,
     "pagerank": 0.00631321,
     "eigen_centrality": 0.090578,
     "clustering_local": 0.5581,
@@ -10912,8 +10912,8 @@
     "acclaim_gap": 0.76,
     "hub_vs_loyal": -4.138,
     "collaborator_reach": 44,
-    "embed_x": -2.0304,
-    "embed_y": 0.7544
+    "embed_x": -1.9274,
+    "embed_y": 0.7731
   },
   {
     "id": "nm0035866",
@@ -11034,8 +11034,8 @@
     "median_billing": 6,
     "minutes_credited": 7177,
     "medium_mix": {
-      "tvMovie": 0.165,
       "movie": 0.772,
+      "tvMovie": 0.165,
       "tvSeries": 0.063
     },
     "short_to_feature_ratio": 0.0,
@@ -11104,7 +11104,7 @@
     "top_collaborator_id": "nm0000448",
     "collaborator_loyalty": 0.429,
     "bridge_score": 0.004574,
-    "community": 6,
+    "community": 9,
     "pagerank": 0.01006937,
     "eigen_centrality": 0.170162,
     "clustering_local": 0.5539,
@@ -11121,8 +11121,8 @@
     "acclaim_gap": 1.058,
     "hub_vs_loyal": -4.477,
     "collaborator_reach": 44,
-    "embed_x": -2.1351,
-    "embed_y": 0.1466
+    "embed_x": -2.1352,
+    "embed_y": 0.1779
   },
   {
     "id": "nm0000144",
@@ -11236,15 +11236,15 @@
     "genre_first": "Biography",
     "genre_last": "Crime",
     "genre_first_last_distance": 1,
-    "typecast_character": "Sir Handsome",
+    "typecast_character": "Jonah's Father",
     "typecast_count": 2,
     "billing_trajectory": -0.0073,
     "median_billing": 4,
     "minutes_credited": 8123,
     "medium_mix": {
-      "tvSeries": 0.075,
       "movie": 0.774,
-      "tvMovie": 0.151
+      "tvMovie": 0.151,
+      "tvSeries": 0.075
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1998,
@@ -11309,7 +11309,7 @@
     "top_collaborator_id": "nm0002142",
     "collaborator_loyalty": 0.444,
     "bridge_score": 0.003536,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00624414,
     "eigen_centrality": 0.065616,
     "clustering_local": 0.5083,
@@ -11326,7 +11326,7 @@
     "acclaim_gap": -0.84,
     "hub_vs_loyal": -7.172,
     "collaborator_reach": 43,
-    "embed_x": 1.6991,
+    "embed_x": 1.7058,
     "embed_y": 0.5602
   },
   {
@@ -11443,8 +11443,8 @@
     "median_billing": 3,
     "minutes_credited": 4540,
     "medium_mix": {
-      "movie": 0.518,
       "tvMovie": 0.357,
+      "movie": 0.518,
       "tvSeries": 0.125
     },
     "short_to_feature_ratio": 0.0,
@@ -11509,7 +11509,7 @@
     "top_collaborator_id": "nm0541908",
     "collaborator_loyalty": 0.464,
     "bridge_score": 0.003376,
-    "community": 7,
+    "community": 0,
     "pagerank": 0.00508731,
     "eigen_centrality": 0.038465,
     "clustering_local": 0.5559,
@@ -11526,8 +11526,8 @@
     "acclaim_gap": -1.765,
     "hub_vs_loyal": -9.432,
     "collaborator_reach": 43,
-    "embed_x": 1.4386,
-    "embed_y": 0.8522
+    "embed_x": 1.3602,
+    "embed_y": 0.8572
   },
   {
     "id": "nm0001282",
@@ -11648,9 +11648,9 @@
     "minutes_credited": 4903,
     "medium_mix": {
       "movie": 0.654,
-      "tvMiniSeries": 0.058,
+      "tvSeries": 0.077,
       "tvMovie": 0.212,
-      "tvSeries": 0.077
+      "tvMiniSeries": 0.058
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1988,
@@ -11715,7 +11715,7 @@
     "top_collaborator_id": "nm0048414",
     "collaborator_loyalty": 0.636,
     "bridge_score": 0.004239,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00534056,
     "eigen_centrality": 0.037503,
     "clustering_local": 0.4618,
@@ -11732,8 +11732,8 @@
     "acclaim_gap": 1.057,
     "hub_vs_loyal": -28.868,
     "collaborator_reach": 43,
-    "embed_x": 0.9597,
-    "embed_y": 0.2924
+    "embed_x": 0.7577,
+    "embed_y": 0.1648
   },
   {
     "id": "nm0152452",
@@ -11848,16 +11848,16 @@
     "genre_first": "Family",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Frank Brannen",
+    "typecast_character": "Old Watchman",
     "typecast_count": 1,
     "billing_trajectory": 0.0855,
     "median_billing": 6,
     "minutes_credited": 4045,
     "medium_mix": {
-      "tvMovie": 0.404,
       "movie": 0.383,
-      "tvMiniSeries": 0.021,
-      "tvSeries": 0.191
+      "tvMovie": 0.404,
+      "tvSeries": 0.191,
+      "tvMiniSeries": 0.021
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1954,
@@ -11922,7 +11922,7 @@
     "top_collaborator_id": "nm0567599",
     "collaborator_loyalty": 0.167,
     "bridge_score": 0.00397,
-    "community": 6,
+    "community": 9,
     "pagerank": 0.01092443,
     "eigen_centrality": 0.1775,
     "clustering_local": 0.5858,
@@ -11940,7 +11940,7 @@
     "hub_vs_loyal": 24.129,
     "collaborator_reach": 43,
     "embed_x": -0.6682,
-    "embed_y": -1.2946
+    "embed_y": -1.2948
   },
   {
     "id": "nm0166359",
@@ -12059,9 +12059,9 @@
     "median_billing": 6,
     "minutes_credited": 5050,
     "medium_mix": {
-      "tvMovie": 0.273,
       "movie": 0.636,
-      "tvSeries": 0.091
+      "tvSeries": 0.091,
+      "tvMovie": 0.273
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1974,
@@ -12127,7 +12127,7 @@
     "top_collaborator_id": "nm0001599",
     "collaborator_loyalty": 0.807,
     "bridge_score": 0.005354,
-    "community": 5,
+    "community": 3,
     "pagerank": 0.00484472,
     "eigen_centrality": 0.040485,
     "clustering_local": 0.402,
@@ -12144,7 +12144,7 @@
     "acclaim_gap": 1.957,
     "hub_vs_loyal": -48.191,
     "collaborator_reach": 43,
-    "embed_x": -0.7933,
+    "embed_x": -0.7934,
     "embed_y": 0.4097
   },
   {
@@ -12265,9 +12265,9 @@
     "median_billing": 3,
     "minutes_credited": 5839,
     "medium_mix": {
+      "tvSeries": 0.127,
       "movie": 0.46,
       "tvMovie": 0.397,
-      "tvSeries": 0.127,
       "tvMiniSeries": 0.016
     },
     "short_to_feature_ratio": 0.0,
@@ -12306,7 +12306,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm0334353",
+    "top_director": "nm0733476",
     "regions": [
       "AE",
       "AR",
@@ -12331,11 +12331,11 @@
       "2000s",
       "2010s"
     ],
-    "top_collaborator": "Veronica Cartwright",
-    "top_collaborator_id": "nm0001021",
+    "top_collaborator": "Lonny Chapman",
+    "top_collaborator_id": "nm0152452",
     "collaborator_loyalty": 0.25,
     "bridge_score": 0.005844,
-    "community": 6,
+    "community": 9,
     "pagerank": 0.00829305,
     "eigen_centrality": 0.131335,
     "clustering_local": 0.5145,
@@ -12352,8 +12352,8 @@
     "acclaim_gap": 1.134,
     "hub_vs_loyal": 13.75,
     "collaborator_reach": 42,
-    "embed_x": 0.1715,
-    "embed_y": -1.0975
+    "embed_x": 0.1548,
+    "embed_y": -1.0979
   },
   {
     "id": "nm0768334",
@@ -12475,9 +12475,9 @@
     "median_billing": 3,
     "minutes_credited": 10467,
     "medium_mix": {
-      "tvSeries": 0.043,
       "movie": 0.795,
-      "tvMovie": 0.162
+      "tvMovie": 0.162,
+      "tvSeries": 0.043
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1964,
@@ -12544,7 +12544,7 @@
     "top_collaborator_id": "nm0000842",
     "collaborator_loyalty": 0.5,
     "bridge_score": 0.004021,
-    "community": 6,
+    "community": 2,
     "pagerank": 0.00737714,
     "eigen_centrality": 0.114659,
     "clustering_local": 0.5714,
@@ -12561,8 +12561,8 @@
     "acclaim_gap": -1.355,
     "hub_vs_loyal": -14.5,
     "collaborator_reach": 42,
-    "embed_x": -0.631,
-    "embed_y": -2.1729
+    "embed_x": -0.6311,
+    "embed_y": -2.1653
   },
   {
     "id": "nm0004912",
@@ -12675,16 +12675,16 @@
     "genre_first": "Action",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Self",
+    "typecast_character": "Ardeth Bay",
     "typecast_count": 2,
     "billing_trajectory": -0.0787,
     "median_billing": 5,
     "minutes_credited": 2470,
     "medium_mix": {
-      "tvSeries": 0.361,
-      "movie": 0.5,
+      "tvMiniSeries": 0.028,
       "tvMovie": 0.111,
-      "tvMiniSeries": 0.028
+      "movie": 0.5,
+      "tvSeries": 0.361
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2001,
@@ -12748,7 +12748,7 @@
     "top_collaborator_id": "nm0427964",
     "collaborator_loyalty": 0.426,
     "bridge_score": 0.002099,
-    "community": 0,
+    "community": 4,
     "pagerank": 0.00588672,
     "eigen_centrality": 0.077755,
     "clustering_local": 0.5573,
@@ -12765,8 +12765,8 @@
     "acclaim_gap": 1.49,
     "hub_vs_loyal": -7.138,
     "collaborator_reach": 41,
-    "embed_x": 1.0363,
-    "embed_y": -1.0618
+    "embed_x": 1.0579,
+    "embed_y": -1.0638
   },
   {
     "id": "nm0595567",
@@ -12881,16 +12881,16 @@
     "genre_first": "History",
     "genre_last": "Biography",
     "genre_first_last_distance": 1,
-    "typecast_character": "Joseph Rauh",
+    "typecast_character": "Slim",
     "typecast_count": 1,
     "billing_trajectory": -0.0552,
     "median_billing": 5,
     "minutes_credited": 6526,
     "medium_mix": {
-      "movie": 0.46,
       "tvMovie": 0.46,
-      "tvSeries": 0.048,
-      "tvMiniSeries": 0.032
+      "movie": 0.46,
+      "tvMiniSeries": 0.032,
+      "tvSeries": 0.048
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1967,
@@ -12928,7 +12928,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0852676",
+    "top_director": "nm0000265",
     "regions": [
       "AE",
       "AR",
@@ -12955,7 +12955,7 @@
     "top_collaborator_id": "nm0035866",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.006482,
-    "community": 6,
+    "community": 9,
     "pagerank": 0.00522959,
     "eigen_centrality": 0.077281,
     "clustering_local": 0.5073,
@@ -12972,8 +12972,8 @@
     "acclaim_gap": 1.417,
     "hub_vs_loyal": 3.371,
     "collaborator_reach": 41,
-    "embed_x": -1.8397,
-    "embed_y": -1.4403
+    "embed_x": -1.8363,
+    "embed_y": -1.4147
   },
   {
     "id": "nm0000515",
@@ -13093,10 +13093,10 @@
     "median_billing": 3,
     "minutes_credited": 9576,
     "medium_mix": {
-      "movie": 0.604,
       "tvSeries": 0.132,
-      "tvMovie": 0.236,
-      "tvMiniSeries": 0.028
+      "movie": 0.604,
+      "tvMiniSeries": 0.028,
+      "tvMovie": 0.236
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1983,
@@ -13178,8 +13178,8 @@
     "acclaim_gap": -1.312,
     "hub_vs_loyal": 9.829,
     "collaborator_reach": 40,
-    "embed_x": -0.2312,
-    "embed_y": -0.7962
+    "embed_x": -0.2327,
+    "embed_y": -0.7942
   },
   {
     "id": "nm0020739",
@@ -13295,9 +13295,9 @@
     "median_billing": 3,
     "minutes_credited": 3554,
     "medium_mix": {
-      "tvMovie": 0.264,
       "tvSeries": 0.17,
       "movie": 0.547,
+      "tvMovie": 0.264,
       "tvMiniSeries": 0.019
     },
     "short_to_feature_ratio": 0.0,
@@ -13336,7 +13336,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0002973",
+    "top_director": "nm0213983",
     "regions": [
       "AE",
       "AR",
@@ -13362,7 +13362,7 @@
     "top_collaborator_id": "nm0205127",
     "collaborator_loyalty": 0.579,
     "bridge_score": 0.004799,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.00436414,
     "eigen_centrality": 0.030767,
     "clustering_local": 0.4936,
@@ -13379,7 +13379,7 @@
     "acclaim_gap": -1.683,
     "hub_vs_loyal": -25.427,
     "collaborator_reach": 40,
-    "embed_x": -0.8251,
+    "embed_x": -0.9099,
     "embed_y": -0.1507
   },
   {
@@ -13500,10 +13500,10 @@
     "median_billing": 3,
     "minutes_credited": 6137,
     "medium_mix": {
-      "tvMovie": 0.181,
-      "tvSeries": 0.234,
+      "tvMiniSeries": 0.032,
       "movie": 0.553,
-      "tvMiniSeries": 0.032
+      "tvSeries": 0.234,
+      "tvMovie": 0.181
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1980,
@@ -13569,7 +13569,7 @@
     "top_collaborator_id": "nm0001646",
     "collaborator_loyalty": 0.54,
     "bridge_score": 0.002067,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00619363,
     "eigen_centrality": 0.073424,
     "clustering_local": 0.5321,
@@ -13586,7 +13586,7 @@
     "acclaim_gap": 0.199,
     "hub_vs_loyal": -21.02,
     "collaborator_reach": 40,
-    "embed_x": 1.4592,
+    "embed_x": 1.5201,
     "embed_y": -0.1755
   },
   {
@@ -13708,8 +13708,8 @@
     "minutes_credited": 3143,
     "medium_mix": {
       "tvMovie": 0.409,
-      "tvSeries": 0.25,
-      "movie": 0.341
+      "movie": 0.341,
+      "tvSeries": 0.25
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1990,
@@ -13773,7 +13773,7 @@
     "top_collaborator_id": "nm0000532",
     "collaborator_loyalty": 0.255,
     "bridge_score": 0.008721,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.00391136,
     "eigen_centrality": 0.025412,
     "clustering_local": 0.4602,
@@ -13791,7 +13791,7 @@
     "hub_vs_loyal": 10.185,
     "collaborator_reach": 39,
     "embed_x": 0.0775,
-    "embed_y": -1.3991
+    "embed_y": -1.4351
   },
   {
     "id": "nm0024593",
@@ -13901,15 +13901,15 @@
     "genre_first": "Crime",
     "genre_last": "Action",
     "genre_first_last_distance": 1,
-    "typecast_character": "Geppetto",
+    "typecast_character": "Father Perez",
     "typecast_count": 2,
     "billing_trajectory": 0.007,
     "median_billing": 6,
     "minutes_credited": 2306,
     "medium_mix": {
       "movie": 0.452,
-      "tvMiniSeries": 0.065,
-      "tvMovie": 0.484
+      "tvMovie": 0.484,
+      "tvMiniSeries": 0.065
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1991,
@@ -13974,7 +13974,7 @@
     "top_collaborator_id": "nm0431451",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.001923,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.00542879,
     "eigen_centrality": 0.045833,
     "clustering_local": 0.5655,
@@ -13991,8 +13991,8 @@
     "acclaim_gap": -0.263,
     "hub_vs_loyal": 1.371,
     "collaborator_reach": 39,
-    "embed_x": -1.5748,
-    "embed_y": -0.4503
+    "embed_x": -1.5733,
+    "embed_y": -0.5925
   },
   {
     "id": "nm0000156",
@@ -14113,9 +14113,9 @@
     "minutes_credited": 8803,
     "medium_mix": {
       "tvMovie": 0.16,
-      "tvMiniSeries": 0.034,
       "movie": 0.546,
-      "tvSeries": 0.261
+      "tvSeries": 0.261,
+      "tvMiniSeries": 0.034
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1980,
@@ -14181,7 +14181,7 @@
     "top_collaborator_id": "nm0000554",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.007841,
-    "community": 0,
+    "community": 6,
     "pagerank": 0.00511227,
     "eigen_centrality": 0.026343,
     "clustering_local": 0.3243,
@@ -14198,8 +14198,8 @@
     "acclaim_gap": -0.426,
     "hub_vs_loyal": 0.371,
     "collaborator_reach": 38,
-    "embed_x": -1.6949,
-    "embed_y": 0.9083
+    "embed_x": -1.6846,
+    "embed_y": 0.9095
   },
   {
     "id": "nm0000397",
@@ -14316,9 +14316,9 @@
     "minutes_credited": 6533,
     "medium_mix": {
       "movie": 0.589,
+      "tvMovie": 0.159,
       "tvSeries": 0.224,
-      "tvMiniSeries": 0.028,
-      "tvMovie": 0.159
+      "tvMiniSeries": 0.028
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1984,
@@ -14384,7 +14384,7 @@
     "top_collaborator_id": "nm0000317",
     "collaborator_loyalty": 0.726,
     "bridge_score": 0.002463,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00418221,
     "eigen_centrality": 0.059153,
     "clustering_local": 0.5306,
@@ -14401,8 +14401,8 @@
     "acclaim_gap": -0.657,
     "hub_vs_loyal": -44.038,
     "collaborator_reach": 38,
-    "embed_x": 1.2658,
-    "embed_y": 1.4527
+    "embed_x": 1.2557,
+    "embed_y": 1.4496
   },
   {
     "id": "nm0000401",
@@ -14523,9 +14523,9 @@
     "minutes_credited": 10462,
     "medium_mix": {
       "movie": 0.635,
+      "tvMiniSeries": 0.071,
       "tvMovie": 0.135,
-      "tvSeries": 0.159,
-      "tvMiniSeries": 0.071
+      "tvSeries": 0.159
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1979,
@@ -14608,8 +14608,8 @@
     "acclaim_gap": 0.423,
     "hub_vs_loyal": -6.053,
     "collaborator_reach": 37,
-    "embed_x": 0.4714,
-    "embed_y": -0.8699
+    "embed_x": 0.6714,
+    "embed_y": -0.6793
   },
   {
     "id": "nm0002332",
@@ -14730,8 +14730,8 @@
     "minutes_credited": 10089,
     "medium_mix": {
       "movie": 0.722,
-      "tvSeries": 0.056,
       "tvMovie": 0.213,
+      "tvSeries": 0.056,
       "tvMiniSeries": 0.009
     },
     "short_to_feature_ratio": 0.0,
@@ -14798,7 +14798,7 @@
     "top_collaborator_id": "nm0932112",
     "collaborator_loyalty": 0.348,
     "bridge_score": 0.00406,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00356054,
     "eigen_centrality": 0.029053,
     "clustering_local": 0.4474,
@@ -14815,8 +14815,8 @@
     "acclaim_gap": -0.793,
     "hub_vs_loyal": -2.324,
     "collaborator_reach": 37,
-    "embed_x": 0.2508,
-    "embed_y": 1.827
+    "embed_x": 0.5375,
+    "embed_y": 1.7588
   },
   {
     "id": "nm0100068",
@@ -14933,8 +14933,8 @@
     "minutes_credited": 3396,
     "medium_mix": {
       "movie": 0.675,
-      "tvMovie": 0.25,
       "tvSeries": 0.05,
+      "tvMovie": 0.25,
       "tvMiniSeries": 0.025
     },
     "short_to_feature_ratio": 0.0,
@@ -14973,7 +14973,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm0385726",
+    "top_director": "nm0611683",
     "regions": [
       "AE",
       "AR",
@@ -14999,7 +14999,7 @@
     "top_collaborator_id": "nm0891275",
     "collaborator_loyalty": 0.444,
     "bridge_score": 0.002807,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00572729,
     "eigen_centrality": 0.03477,
     "clustering_local": 0.5571,
@@ -15017,7 +15017,7 @@
     "hub_vs_loyal": -13.172,
     "collaborator_reach": 37,
     "embed_x": 1.1624,
-    "embed_y": -1.2899
+    "embed_y": -1.2903
   },
   {
     "id": "nm0005438",
@@ -15137,10 +15137,10 @@
     "median_billing": 3,
     "minutes_credited": 5522,
     "medium_mix": {
-      "movie": 0.662,
       "tvSeries": 0.225,
-      "tvMovie": 0.056,
-      "tvMiniSeries": 0.056
+      "movie": 0.662,
+      "tvMiniSeries": 0.056,
+      "tvMovie": 0.056
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1992,
@@ -15204,7 +15204,7 @@
     "top_collaborator_id": "nm0175814",
     "collaborator_loyalty": 0.274,
     "bridge_score": 0.002215,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00460352,
     "eigen_centrality": 0.036798,
     "clustering_local": 0.446,
@@ -15221,8 +15221,8 @@
     "acclaim_gap": 0.34,
     "hub_vs_loyal": 5.038,
     "collaborator_reach": 36,
-    "embed_x": -1.9705,
-    "embed_y": -0.1743
+    "embed_x": -1.8907,
+    "embed_y": -0.366
   },
   {
     "id": "nm0502425",
@@ -15344,8 +15344,8 @@
     "medium_mix": {
       "movie": 0.789,
       "tvSeries": 0.088,
-      "tvMovie": 0.096,
-      "tvMiniSeries": 0.026
+      "tvMiniSeries": 0.026,
+      "tvMovie": 0.096
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1985,
@@ -15410,7 +15410,7 @@
     "top_collaborator_id": "nm0001433",
     "collaborator_loyalty": 0.497,
     "bridge_score": 0.001863,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00404846,
     "eigen_centrality": 0.027662,
     "clustering_local": 0.481,
@@ -15427,8 +15427,8 @@
     "acclaim_gap": -0.431,
     "hub_vs_loyal": -20.161,
     "collaborator_reach": 36,
-    "embed_x": 1.4444,
-    "embed_y": -0.8166
+    "embed_x": 1.4632,
+    "embed_y": -0.9277
   },
   {
     "id": "nm0525601",
@@ -15549,9 +15549,9 @@
     "median_billing": 5,
     "minutes_credited": 6625,
     "medium_mix": {
-      "tvMovie": 0.078,
       "tvSeries": 0.289,
-      "movie": 0.633
+      "movie": 0.633,
+      "tvMovie": 0.078
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1940,
@@ -15615,7 +15615,7 @@
       "2010s"
     ],
     "bridge_score": 0.002372,
-    "community": 6,
+    "community": 9,
     "pagerank": 0.00556694,
     "eigen_centrality": 0.088619,
     "clustering_local": 0.6571,
@@ -15633,7 +15633,7 @@
     "hub_vs_loyal": 36.0,
     "collaborator_reach": 36,
     "embed_x": -1.0553,
-    "embed_y": -1.9591
+    "embed_y": -1.9472
   },
   {
     "id": "nm0541908",
@@ -15819,7 +15819,7 @@
     "top_collaborator_id": "nm0000643",
     "collaborator_loyalty": 0.767,
     "bridge_score": 0.001488,
-    "community": 7,
+    "community": 0,
     "pagerank": 0.00394768,
     "eigen_centrality": 0.039519,
     "clustering_local": 0.5984,
@@ -15837,7 +15837,7 @@
     "hub_vs_loyal": -50.671,
     "collaborator_reach": 36,
     "embed_x": 0.5901,
-    "embed_y": 1.2221
+    "embed_y": 1.2201
   },
   {
     "id": "nm0557956",
@@ -15882,17 +15882,6 @@
         "votes": 0
       },
       {
-        "title": "ALZ to PHL",
-        "character": "Abe",
-        "characters": [
-          "Abe"
-        ],
-        "year": null,
-        "billing": 1,
-        "tconst": "tt39128794",
-        "votes": 0
-      },
-      {
         "title": "Bumpers",
         "character": "Joey Webber",
         "characters": [
@@ -15901,6 +15890,17 @@
         "year": 1977,
         "billing": 1,
         "tconst": "tt2338562",
+        "votes": 0
+      },
+      {
+        "title": "ALZ to PHL",
+        "character": "Abe",
+        "characters": [
+          "Abe"
+        ],
+        "year": null,
+        "billing": 1,
+        "tconst": "tt39128794",
         "votes": 0
       },
       {
@@ -15959,8 +15959,8 @@
     "medium_mix": {
       "movie": 0.46,
       "tvMovie": 0.448,
-      "tvMiniSeries": 0.034,
-      "tvSeries": 0.057
+      "tvSeries": 0.057,
+      "tvMiniSeries": 0.034
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1975,
@@ -15998,7 +15998,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0006854",
+    "top_director": "nm0404014",
     "regions": [
       "AE",
       "AL",
@@ -16026,7 +16026,7 @@
     "top_collaborator_id": "nm0000347",
     "collaborator_loyalty": 0.231,
     "bridge_score": 0.003158,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00388171,
     "eigen_centrality": 0.042168,
     "clustering_local": 0.4317,
@@ -16043,8 +16043,8 @@
     "acclaim_gap": 0.776,
     "hub_vs_loyal": 9.897,
     "collaborator_reach": 36,
-    "embed_x": -0.5292,
-    "embed_y": -1.2104
+    "embed_x": -0.4171,
+    "embed_y": -1.2105
   },
   {
     "id": "nm0587256",
@@ -16158,7 +16158,7 @@
     "genre_first": "Comedy",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Kassia Paine",
+    "typecast_character": "June Wiley (episode 'Matakitas Is Coming'",
     "typecast_count": 1,
     "billing_trajectory": -0.0468,
     "median_billing": 2,
@@ -16231,7 +16231,7 @@
     "top_collaborator_id": "nm0358069",
     "collaborator_loyalty": 0.625,
     "bridge_score": 0.00182,
-    "community": 8,
+    "community": 9,
     "pagerank": 0.01038803,
     "eigen_centrality": 0.175923,
     "clustering_local": 0.6825,
@@ -16248,7 +16248,7 @@
     "acclaim_gap": 0.469,
     "hub_vs_loyal": -34.625,
     "collaborator_reach": 36,
-    "embed_x": 0.9477,
+    "embed_x": 0.9399,
     "embed_y": -1.8944
   },
   {
@@ -16369,8 +16369,8 @@
     "median_billing": 3,
     "minutes_credited": 11144,
     "medium_mix": {
-      "tvMovie": 0.315,
       "movie": 0.613,
+      "tvMovie": 0.315,
       "tvSeries": 0.054,
       "tvMiniSeries": 0.018
     },
@@ -16410,7 +16410,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0001486",
+    "top_director": "nm0935382",
     "regions": [
       "AE",
       "AL",
@@ -16439,7 +16439,7 @@
     "top_collaborator_id": "nm0000897",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.002356,
-    "community": 6,
+    "community": 2,
     "pagerank": 0.00619134,
     "eigen_centrality": 0.10149,
     "clustering_local": 0.6542,
@@ -16456,8 +16456,8 @@
     "acclaim_gap": 0.6,
     "hub_vs_loyal": -3.629,
     "collaborator_reach": 34,
-    "embed_x": -0.3101,
-    "embed_y": -2.5882
+    "embed_x": -0.3117,
+    "embed_y": -2.5716
   },
   {
     "id": "nm0358069",
@@ -16645,7 +16645,7 @@
     "top_collaborator_id": "nm0587256",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.001523,
-    "community": 6,
+    "community": 9,
     "pagerank": 0.00853555,
     "eigen_centrality": 0.144989,
     "clustering_local": 0.7094,
@@ -16663,7 +16663,7 @@
     "hub_vs_loyal": -79.0,
     "collaborator_reach": 34,
     "embed_x": -0.1858,
-    "embed_y": -0.4494
+    "embed_y": -0.5385
   },
   {
     "id": "nm0000215",
@@ -16783,10 +16783,10 @@
     "median_billing": 3,
     "minutes_credited": 14572,
     "medium_mix": {
-      "tvSeries": 0.145,
       "movie": 0.7,
+      "tvMiniSeries": 0.04,
       "tvMovie": 0.115,
-      "tvMiniSeries": 0.04
+      "tvSeries": 0.145
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1970,
@@ -16852,7 +16852,7 @@
     "top_collaborator_id": "nm0000630",
     "collaborator_loyalty": 0.406,
     "bridge_score": 0.005705,
-    "community": 0,
+    "community": 4,
     "pagerank": 0.00505365,
     "eigen_centrality": 0.039437,
     "clustering_local": 0.3409,
@@ -16869,8 +16869,8 @@
     "acclaim_gap": -1.667,
     "hub_vs_loyal": -12.878,
     "collaborator_reach": 33,
-    "embed_x": 0.6214,
-    "embed_y": -2.0062
+    "embed_x": 0.6206,
+    "embed_y": -2.0125
   },
   {
     "id": "nm0004801",
@@ -16991,8 +16991,8 @@
     "minutes_credited": 2599,
     "medium_mix": {
       "movie": 0.415,
-      "tvMovie": 0.244,
-      "tvSeries": 0.341
+      "tvSeries": 0.341,
+      "tvMovie": 0.244
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2000,
@@ -17056,7 +17056,7 @@
     "top_collaborator_id": "nm0001264",
     "collaborator_loyalty": 0.277,
     "bridge_score": 0.002455,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00424649,
     "eigen_centrality": 0.053558,
     "clustering_local": 0.4943,
@@ -17073,8 +17073,8 @@
     "acclaim_gap": 1.701,
     "hub_vs_loyal": 1.699,
     "collaborator_reach": 33,
-    "embed_x": -1.3053,
-    "embed_y": -2.0217
+    "embed_x": -1.3007,
+    "embed_y": -2.0122
   },
   {
     "id": "nm0342029",
@@ -17190,8 +17190,8 @@
     "median_billing": 2,
     "minutes_credited": 6079,
     "medium_mix": {
-      "tvSeries": 0.16,
       "movie": 0.773,
+      "tvSeries": 0.16,
       "tvMovie": 0.067
     },
     "short_to_feature_ratio": 0.0,
@@ -17256,7 +17256,7 @@
     "top_collaborator_id": "nm0006958",
     "collaborator_loyalty": 0.526,
     "bridge_score": 0.003106,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00420196,
     "eigen_centrality": 0.024486,
     "clustering_local": 0.3674,
@@ -17273,8 +17273,8 @@
     "acclaim_gap": -1.135,
     "hub_vs_loyal": -26.438,
     "collaborator_reach": 33,
-    "embed_x": -0.2423,
-    "embed_y": 2.3389
+    "embed_x": -0.2408,
+    "embed_y": 2.4046
   },
   {
     "id": "nm0641729",
@@ -17396,9 +17396,9 @@
     "median_billing": 7,
     "minutes_credited": 3515,
     "medium_mix": {
+      "tvMovie": 0.197,
       "tvSeries": 0.455,
-      "movie": 0.348,
-      "tvMovie": 0.197
+      "movie": 0.348
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1946,
@@ -17463,7 +17463,7 @@
     "top_collaborator_id": "nm0580565",
     "collaborator_loyalty": 0.5,
     "bridge_score": 0.001093,
-    "community": 6,
+    "community": 2,
     "pagerank": 0.01016978,
     "eigen_centrality": 0.169442,
     "clustering_local": 0.7159,
@@ -17481,7 +17481,7 @@
     "hub_vs_loyal": -23.5,
     "collaborator_reach": 33,
     "embed_x": 1.8429,
-    "embed_y": -0.6477
+    "embed_y": -0.6279
   },
   {
     "id": "nm0000168",
@@ -17670,7 +17670,7 @@
     "top_collaborator_id": "nm0342029",
     "collaborator_loyalty": 0.12,
     "bridge_score": 0.005134,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00448554,
     "eigen_centrality": 0.020672,
     "clustering_local": 0.3065,
@@ -17687,8 +17687,8 @@
     "acclaim_gap": -2.205,
     "hub_vs_loyal": 18.44,
     "collaborator_reach": 32,
-    "embed_x": -1.5616,
-    "embed_y": 1.4206
+    "embed_x": -1.6465,
+    "embed_y": 1.4106
   },
   {
     "id": "nm0001194",
@@ -17802,7 +17802,7 @@
     "genre_first": "Crime",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Ellis",
+    "typecast_character": "Jack",
     "typecast_count": 2,
     "billing_trajectory": -0.0671,
     "median_billing": 2,
@@ -17876,7 +17876,7 @@
     "top_collaborator_id": "nm0004801",
     "collaborator_loyalty": 0.356,
     "bridge_score": 0.001931,
-    "community": 3,
+    "community": 4,
     "pagerank": 0.00308084,
     "eigen_centrality": 0.022527,
     "clustering_local": 0.4556,
@@ -17893,8 +17893,8 @@
     "acclaim_gap": -3.993,
     "hub_vs_loyal": -8.228,
     "collaborator_reach": 32,
-    "embed_x": 0.3136,
-    "embed_y": 0.1218
+    "embed_x": 0.2465,
+    "embed_y": 0.1056
   },
   {
     "id": "nm0172557",
@@ -18015,8 +18015,8 @@
     "minutes_credited": 887,
     "medium_mix": {
       "tvSeries": 0.474,
-      "movie": 0.368,
-      "tvMovie": 0.158
+      "tvMovie": 0.158,
+      "movie": 0.368
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2005,
@@ -18079,7 +18079,7 @@
     "top_collaborator_id": "nm0655585",
     "collaborator_loyalty": 0.551,
     "bridge_score": 0.002011,
-    "community": 7,
+    "community": 0,
     "pagerank": 0.00610759,
     "eigen_centrality": 0.044008,
     "clustering_local": 0.5746,
@@ -18096,8 +18096,8 @@
     "acclaim_gap": 2.907,
     "hub_vs_loyal": -30.263,
     "collaborator_reach": 32,
-    "embed_x": -1.1374,
-    "embed_y": -0.8717
+    "embed_x": -0.9156,
+    "embed_y": -0.8096
   },
   {
     "id": "nm0175814",
@@ -18217,8 +18217,8 @@
     "median_billing": 6,
     "minutes_credited": 3390,
     "medium_mix": {
-      "movie": 0.533,
       "tvSeries": 0.156,
+      "movie": 0.533,
       "tvMovie": 0.289,
       "tvMiniSeries": 0.022
     },
@@ -18286,7 +18286,7 @@
     "top_collaborator_id": "nm1404239",
     "collaborator_loyalty": 0.27,
     "bridge_score": 0.002746,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.005706,
     "eigen_centrality": 0.041447,
     "clustering_local": 0.4315,
@@ -18304,7 +18304,7 @@
     "hub_vs_loyal": 1.49,
     "collaborator_reach": 32,
     "embed_x": -2.1119,
-    "embed_y": -0.4785
+    "embed_y": -0.4786
   },
   {
     "id": "nm0233027",
@@ -18414,16 +18414,16 @@
     "genre_first": "Crime",
     "genre_last": "Biography",
     "genre_first_last_distance": 1,
-    "typecast_character": "Brian",
+    "typecast_character": "Fred Trump",
     "typecast_count": 1,
     "billing_trajectory": -0.0847,
     "median_billing": 4,
     "minutes_credited": 6812,
     "medium_mix": {
       "movie": 0.658,
-      "tvMovie": 0.178,
       "tvSeries": 0.137,
-      "tvMiniSeries": 0.027
+      "tvMiniSeries": 0.027,
+      "tvMovie": 0.178
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1987,
@@ -18488,7 +18488,7 @@
     "top_collaborator_id": "nm0719678",
     "collaborator_loyalty": 0.323,
     "bridge_score": 0.004116,
-    "community": 3,
+    "community": 0,
     "pagerank": 0.00360502,
     "eigen_centrality": 0.019169,
     "clustering_local": 0.375,
@@ -18505,8 +18505,8 @@
     "acclaim_gap": 0.579,
     "hub_vs_loyal": -4.499,
     "collaborator_reach": 32,
-    "embed_x": -2.1856,
-    "embed_y": 0.0196
+    "embed_x": -2.1939,
+    "embed_y": 0.0174
   },
   {
     "id": "nm0354085",
@@ -18697,7 +18697,7 @@
     "top_collaborator_id": "nm0103722",
     "collaborator_loyalty": 0.5,
     "bridge_score": 0.001081,
-    "community": 6,
+    "community": 9,
     "pagerank": 0.00447665,
     "eigen_centrality": 0.070449,
     "clustering_local": 0.7601,
@@ -18714,8 +18714,8 @@
     "acclaim_gap": -1.656,
     "hub_vs_loyal": -24.5,
     "collaborator_reach": 32,
-    "embed_x": -2.5969,
-    "embed_y": -1.4842
+    "embed_x": -2.5665,
+    "embed_y": -1.4784
   },
   {
     "id": "nm0446672",
@@ -18835,10 +18835,10 @@
     "median_billing": 5,
     "minutes_credited": 2645,
     "medium_mix": {
-      "tvSeries": 0.206,
       "movie": 0.588,
-      "tvMovie": 0.118,
-      "tvMiniSeries": 0.088
+      "tvSeries": 0.206,
+      "tvMiniSeries": 0.088,
+      "tvMovie": 0.118
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2000,
@@ -18876,7 +18876,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0008971",
+    "top_director": "nm0076997",
     "regions": [
       "AE",
       "AR",
@@ -18902,7 +18902,7 @@
     "top_collaborator_id": "nm0000117",
     "collaborator_loyalty": 0.676,
     "bridge_score": 0.001862,
-    "community": 2,
+    "community": 3,
     "pagerank": 0.00432845,
     "eigen_centrality": 0.03218,
     "clustering_local": 0.5444,
@@ -18919,8 +18919,8 @@
     "acclaim_gap": 1.425,
     "hub_vs_loyal": -44.388,
     "collaborator_reach": 32,
-    "embed_x": -1.2737,
-    "embed_y": 0.747
+    "embed_x": -1.2924,
+    "embed_y": 0.9886
   },
   {
     "id": "nm0001433",
@@ -19036,15 +19036,15 @@
     "genre_first": "Drama",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Pete Sr.",
+    "typecast_character": "Captain Rick Sands",
     "typecast_count": 1,
     "billing_trajectory": -0.0257,
     "median_billing": 4,
     "minutes_credited": 6559,
     "medium_mix": {
+      "tvMovie": 0.303,
       "tvSeries": 0.076,
-      "movie": 0.621,
-      "tvMovie": 0.303
+      "movie": 0.621
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1967,
@@ -19109,7 +19109,7 @@
     "top_collaborator_id": "nm0502425",
     "collaborator_loyalty": 0.839,
     "bridge_score": 0.001322,
-    "community": 6,
+    "community": 9,
     "pagerank": 0.00423127,
     "eigen_centrality": 0.059896,
     "clustering_local": 0.6753,
@@ -19126,8 +19126,8 @@
     "acclaim_gap": 0.413,
     "hub_vs_loyal": -63.807,
     "collaborator_reach": 31,
-    "embed_x": -0.5639,
-    "embed_y": 1.2408
+    "embed_x": -0.5469,
+    "embed_y": 1.6217
   },
   {
     "id": "nm0004051",
@@ -19317,7 +19317,7 @@
     "top_collaborator_id": "nm0313534",
     "collaborator_loyalty": 0.209,
     "bridge_score": 0.012117,
-    "community": 9,
+    "community": 5,
     "pagerank": 0.00384346,
     "eigen_centrality": 0.017984,
     "clustering_local": 0.3355,
@@ -19334,8 +19334,8 @@
     "acclaim_gap": -0.877,
     "hub_vs_loyal": 7.383,
     "collaborator_reach": 31,
-    "embed_x": -0.7962,
-    "embed_y": 0.6827
+    "embed_x": -0.8168,
+    "embed_y": 0.6987
   },
   {
     "id": "nm0103722",
@@ -19457,10 +19457,10 @@
     "median_billing": 3,
     "minutes_credited": 7710,
     "medium_mix": {
-      "tvMovie": 0.163,
-      "tvSeries": 0.128,
       "movie": 0.698,
-      "tvMiniSeries": 0.012
+      "tvMovie": 0.163,
+      "tvMiniSeries": 0.012,
+      "tvSeries": 0.128
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1950,
@@ -19525,7 +19525,7 @@
     "top_collaborator_id": "nm0354085",
     "collaborator_loyalty": 0.25,
     "bridge_score": 0.001061,
-    "community": 6,
+    "community": 9,
     "pagerank": 0.00587631,
     "eigen_centrality": 0.098272,
     "clustering_local": 0.7634,
@@ -19543,7 +19543,7 @@
     "hub_vs_loyal": 2.75,
     "collaborator_reach": 31,
     "embed_x": -2.6491,
-    "embed_y": -0.1778
+    "embed_y": -0.1777
   },
   {
     "id": "nm0176879",
@@ -19659,7 +19659,7 @@
     "genre_first": "Drama",
     "genre_last": "Biography",
     "genre_first_last_distance": 1,
-    "typecast_character": "Eddie Forbes",
+    "typecast_character": "Joe",
     "typecast_count": 2,
     "billing_trajectory": 0.0195,
     "median_billing": 7,
@@ -19734,7 +19734,7 @@
     "top_collaborator_id": "nm0001637",
     "collaborator_loyalty": 0.6,
     "bridge_score": 0.001202,
-    "community": 6,
+    "community": 9,
     "pagerank": 0.0074477,
     "eigen_centrality": 0.129478,
     "clustering_local": 0.7699,
@@ -19751,8 +19751,8 @@
     "acclaim_gap": 1.42,
     "hub_vs_loyal": -36.8,
     "collaborator_reach": 31,
-    "embed_x": -0.1714,
-    "embed_y": 0.8199
+    "embed_x": -0.158,
+    "embed_y": 1.2199
   },
   {
     "id": "nm0532461",
@@ -19912,7 +19912,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm0579318",
+    "top_director": "nm0257554",
     "regions": [
       "AE",
       "AR",
@@ -19938,7 +19938,7 @@
     "top_collaborator_id": "nm0175814",
     "collaborator_loyalty": 0.405,
     "bridge_score": 0.001727,
-    "community": 5,
+    "community": 3,
     "pagerank": 0.00381918,
     "eigen_centrality": 0.022528,
     "clustering_local": 0.471,
@@ -19955,8 +19955,8 @@
     "acclaim_gap": 1.423,
     "hub_vs_loyal": -14.765,
     "collaborator_reach": 31,
-    "embed_x": -1.8945,
-    "embed_y": 1.2052
+    "embed_x": -1.8947,
+    "embed_y": 1.2047
   },
   {
     "id": "nm0000587",
@@ -20078,10 +20078,10 @@
     "median_billing": 4,
     "minutes_credited": 16869,
     "medium_mix": {
+      "tvMiniSeries": 0.016,
       "tvMovie": 0.198,
-      "movie": 0.646,
       "tvSeries": 0.141,
-      "tvMiniSeries": 0.016
+      "movie": 0.646
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1954,
@@ -20164,8 +20164,8 @@
     "acclaim_gap": -1.233,
     "hub_vs_loyal": -26.5,
     "collaborator_reach": 30,
-    "embed_x": 0.2639,
-    "embed_y": -2.5819
+    "embed_x": 0.2659,
+    "embed_y": -2.5908
   },
   {
     "id": "nm0005042",
@@ -20286,9 +20286,9 @@
     "minutes_credited": 7661,
     "medium_mix": {
       "movie": 0.615,
+      "tvMovie": 0.154,
       "tvSeries": 0.154,
-      "tvMiniSeries": 0.077,
-      "tvMovie": 0.154
+      "tvMiniSeries": 0.077
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1995,
@@ -20353,7 +20353,7 @@
     "top_collaborator_id": "nm0001272",
     "collaborator_loyalty": 0.234,
     "bridge_score": 0.006804,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00449886,
     "eigen_centrality": 0.041013,
     "clustering_local": 0.3931,
@@ -20370,8 +20370,8 @@
     "acclaim_gap": 0.456,
     "hub_vs_loyal": 3.558,
     "collaborator_reach": 30,
-    "embed_x": 1.9273,
-    "embed_y": 0.6908
+    "embed_x": 1.8969,
+    "embed_y": 0.6901
   },
   {
     "id": "nm0006958",
@@ -20491,10 +20491,10 @@
     "median_billing": 3,
     "minutes_credited": 2566,
     "medium_mix": {
-      "tvSeries": 0.235,
+      "movie": 0.647,
       "tvMiniSeries": 0.059,
-      "tvMovie": 0.059,
-      "movie": 0.647
+      "tvSeries": 0.235,
+      "tvMovie": 0.059
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1999,
@@ -20558,7 +20558,7 @@
     "top_collaborator_id": "nm0342029",
     "collaborator_loyalty": 0.732,
     "bridge_score": 0.002542,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00333851,
     "eigen_centrality": 0.018749,
     "clustering_local": 0.4713,
@@ -20575,7 +20575,7 @@
     "acclaim_gap": 0.433,
     "hub_vs_loyal": -52.716,
     "collaborator_reach": 30,
-    "embed_x": 0.0928,
+    "embed_x": 0.1418,
     "embed_y": 1.5813
   },
   {
@@ -20693,9 +20693,9 @@
     "minutes_credited": 2809,
     "medium_mix": {
       "tvMovie": 0.375,
-      "tvSeries": 0.225,
       "movie": 0.375,
-      "tvMiniSeries": 0.025
+      "tvMiniSeries": 0.025,
+      "tvSeries": 0.225
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1999,
@@ -20759,7 +20759,7 @@
     "top_collaborator_id": "nm0000117",
     "collaborator_loyalty": 0.36,
     "bridge_score": 0.003657,
-    "community": 7,
+    "community": 3,
     "pagerank": 0.00337115,
     "eigen_centrality": 0.01717,
     "clustering_local": 0.4506,
@@ -20776,8 +20776,8 @@
     "acclaim_gap": 0.626,
     "hub_vs_loyal": -10.68,
     "collaborator_reach": 30,
-    "embed_x": -1.7191,
-    "embed_y": 0.3254
+    "embed_x": -1.7329,
+    "embed_y": 0.5167
   },
   {
     "id": "nm0000102",
@@ -20966,7 +20966,7 @@
     "top_collaborator_id": "nm0039162",
     "collaborator_loyalty": 0.73,
     "bridge_score": 0.00237,
-    "community": 0,
+    "community": 6,
     "pagerank": 0.00310724,
     "eigen_centrality": 0.020412,
     "clustering_local": 0.4458,
@@ -20984,7 +20984,7 @@
     "hub_vs_loyal": -53.49,
     "collaborator_reach": 29,
     "embed_x": -2.1901,
-    "embed_y": -1.7412
+    "embed_y": -1.72
   },
   {
     "id": "nm0000225",
@@ -21104,10 +21104,10 @@
     "median_billing": 2,
     "minutes_credited": 9459,
     "medium_mix": {
-      "tvSeries": 0.175,
       "tvMiniSeries": 0.026,
-      "tvMovie": 0.096,
-      "movie": 0.702
+      "movie": 0.702,
+      "tvSeries": 0.175,
+      "tvMovie": 0.096
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1985,
@@ -21172,7 +21172,7 @@
     "top_collaborator_id": "nm0001264",
     "collaborator_loyalty": 0.256,
     "bridge_score": 0.002314,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00492237,
     "eigen_centrality": 0.056724,
     "clustering_local": 0.4163,
@@ -21189,7 +21189,7 @@
     "acclaim_gap": -1.7,
     "hub_vs_loyal": 0.072,
     "collaborator_reach": 29,
-    "embed_x": 2.2171,
+    "embed_x": 2.2172,
     "embed_y": 1.1494
   },
   {
@@ -21312,8 +21312,8 @@
     "medium_mix": {
       "movie": 0.553,
       "tvMovie": 0.316,
-      "tvSeries": 0.079,
-      "tvMiniSeries": 0.053
+      "tvMiniSeries": 0.053,
+      "tvSeries": 0.079
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1988,
@@ -21351,7 +21351,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0001133",
+    "top_director": "nm0001165",
     "regions": [
       "AE",
       "AR",
@@ -21377,7 +21377,7 @@
     "top_collaborator_id": "nm0070810",
     "collaborator_loyalty": 0.292,
     "bridge_score": 0.004333,
-    "community": 2,
+    "community": 7,
     "pagerank": 0.00315545,
     "eigen_centrality": 0.014701,
     "clustering_local": 0.3889,
@@ -21394,8 +21394,8 @@
     "acclaim_gap": 0.646,
     "hub_vs_loyal": -4.996,
     "collaborator_reach": 28,
-    "embed_x": -1.5094,
-    "embed_y": 2.2975
+    "embed_x": -1.4809,
+    "embed_y": 2.2442
   },
   {
     "id": "nm0001235",
@@ -21516,8 +21516,8 @@
     "minutes_credited": 10862,
     "medium_mix": {
       "movie": 0.803,
-      "tvSeries": 0.043,
       "tvMovie": 0.137,
+      "tvSeries": 0.043,
       "tvMiniSeries": 0.017
     },
     "short_to_feature_ratio": 0.0,
@@ -21583,7 +21583,7 @@
     "top_collaborator_id": "nm0700712",
     "collaborator_loyalty": 0.314,
     "bridge_score": 0.001106,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00241356,
     "eigen_centrality": 0.017357,
     "clustering_local": 0.582,
@@ -21600,8 +21600,8 @@
     "acclaim_gap": -2.271,
     "hub_vs_loyal": -7.482,
     "collaborator_reach": 28,
-    "embed_x": -0.9672,
-    "embed_y": 1.0856
+    "embed_x": -1.0307,
+    "embed_y": 1.1677
   },
   {
     "id": "nm0006610",
@@ -21721,9 +21721,9 @@
     "median_billing": 4,
     "minutes_credited": 5326,
     "medium_mix": {
+      "tvSeries": 0.25,
       "movie": 0.609,
-      "tvMovie": 0.141,
-      "tvSeries": 0.25
+      "tvMovie": 0.141
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1994,
@@ -21761,7 +21761,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0490792",
+    "top_director": "nm0444709",
     "regions": [
       "AE",
       "AR",
@@ -21787,7 +21787,7 @@
     "top_collaborator_id": "nm0675730",
     "collaborator_loyalty": 0.862,
     "bridge_score": 0.001944,
-    "community": 2,
+    "community": 3,
     "pagerank": 0.00311876,
     "eigen_centrality": 0.024959,
     "clustering_local": 0.4021,
@@ -21805,7 +21805,7 @@
     "hub_vs_loyal": -69.406,
     "collaborator_reach": 28,
     "embed_x": 0.5443,
-    "embed_y": 0.2616
+    "embed_y": 0.1346
   },
   {
     "id": "nm0000449",
@@ -21927,8 +21927,8 @@
     "medium_mix": {
       "movie": 0.608,
       "tvMovie": 0.189,
-      "tvMiniSeries": 0.041,
-      "tvSeries": 0.162
+      "tvSeries": 0.162,
+      "tvMiniSeries": 0.041
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1999,
@@ -21992,7 +21992,7 @@
     "top_collaborator_id": "nm0001538",
     "collaborator_loyalty": 0.551,
     "bridge_score": 0.000796,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00268732,
     "eigen_centrality": 0.016798,
     "clustering_local": 0.6638,
@@ -22009,8 +22009,8 @@
     "acclaim_gap": -2.263,
     "hub_vs_loyal": -35.263,
     "collaborator_reach": 27,
-    "embed_x": -0.7175,
-    "embed_y": 2.2383
+    "embed_x": -0.7345,
+    "embed_y": 2.1177
   },
   {
     "id": "nm1002664",
@@ -22088,14 +22088,14 @@
         "votes": 11
       },
       {
-        "title": "Klatsassin",
-        "character": "The Thief",
+        "title": "The Final Experiment",
+        "character": "Spanner",
         "characters": [
-          "The Thief"
+          "Spanner"
         ],
-        "year": 2006,
+        "year": 2005,
         "billing": 1,
-        "tconst": "tt1080719",
+        "tconst": "tt0450421",
         "votes": 0
       }
     ],
@@ -22120,7 +22120,7 @@
     "genre_first": "Sci-Fi",
     "genre_last": "Thriller",
     "genre_first_last_distance": 1,
-    "typecast_character": "Winna",
+    "typecast_character": "Martin",
     "typecast_count": 2,
     "billing_trajectory": 0.068,
     "median_billing": 5,
@@ -22191,7 +22191,7 @@
     "top_collaborator_id": "nm0719678",
     "collaborator_loyalty": 0.303,
     "bridge_score": 0.002238,
-    "community": 3,
+    "community": 0,
     "pagerank": 0.00417116,
     "eigen_centrality": 0.020596,
     "clustering_local": 0.4615,
@@ -22208,8 +22208,8 @@
     "acclaim_gap": -0.411,
     "hub_vs_loyal": -7.239,
     "collaborator_reach": 27,
-    "embed_x": -1.6505,
-    "embed_y": 1.8309
+    "embed_x": -1.6158,
+    "embed_y": 1.8384
   },
   {
     "id": "nm0001264",
@@ -22329,9 +22329,9 @@
     "median_billing": 2,
     "minutes_credited": 3233,
     "medium_mix": {
-      "tvSeries": 0.423,
-      "movie": 0.423,
       "tvMovie": 0.115,
+      "movie": 0.423,
+      "tvSeries": 0.423,
       "tvMiniSeries": 0.038
     },
     "short_to_feature_ratio": 0.0,
@@ -22397,7 +22397,7 @@
     "top_collaborator_id": "nm0004801",
     "collaborator_loyalty": 0.324,
     "bridge_score": 0.003589,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00628349,
     "eigen_centrality": 0.05255,
     "clustering_local": 0.4769,
@@ -22414,8 +22414,8 @@
     "acclaim_gap": -0.897,
     "hub_vs_loyal": -10.612,
     "collaborator_reach": 26,
-    "embed_x": 1.6343,
-    "embed_y": 1.0448
+    "embed_x": 1.6771,
+    "embed_y": 1.0457
   },
   {
     "id": "nm0252961",
@@ -22536,8 +22536,8 @@
     "minutes_credited": 7291,
     "medium_mix": {
       "tvMovie": 0.106,
-      "movie": 0.635,
       "tvSeries": 0.183,
+      "movie": 0.635,
       "tvMiniSeries": 0.077
     },
     "short_to_feature_ratio": 0.0,
@@ -22603,7 +22603,7 @@
     "top_collaborator_id": "nm0001524",
     "collaborator_loyalty": 0.474,
     "bridge_score": 0.004571,
-    "community": 5,
+    "community": 1,
     "pagerank": 0.00344629,
     "eigen_centrality": 0.012505,
     "clustering_local": 0.3169,
@@ -22620,8 +22620,8 @@
     "acclaim_gap": -0.303,
     "hub_vs_loyal": -27.562,
     "collaborator_reach": 26,
-    "embed_x": -2.9902,
-    "embed_y": 0.726
+    "embed_x": -3.012,
+    "embed_y": 0.7363
   },
   {
     "id": "nm0580565",
@@ -22813,7 +22813,7 @@
     "top_collaborator_id": "nm0641729",
     "collaborator_loyalty": 0.667,
     "bridge_score": 0.000446,
-    "community": 6,
+    "community": 9,
     "pagerank": 0.00589288,
     "eigen_centrality": 0.09861,
     "clustering_local": 0.8369,
@@ -22830,8 +22830,8 @@
     "acclaim_gap": 0.647,
     "hub_vs_loyal": -49.371,
     "collaborator_reach": 26,
-    "embed_x": -2.9732,
-    "embed_y": -1.2827
+    "embed_x": -2.9997,
+    "embed_y": -1.2793
   },
   {
     "id": "nm0933988",
@@ -22952,8 +22952,8 @@
     "minutes_credited": 3686,
     "medium_mix": {
       "tvSeries": 0.371,
-      "movie": 0.565,
       "tvMovie": 0.048,
+      "movie": 0.565,
       "tvMiniSeries": 0.016
     },
     "short_to_feature_ratio": 0.0,
@@ -22992,7 +22992,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm0933988",
+    "top_director": "nm2527641",
     "regions": [
       "AE",
       "AR",
@@ -23018,7 +23018,7 @@
     "top_collaborator_id": "nm0462712",
     "collaborator_loyalty": 0.25,
     "bridge_score": 0.001205,
-    "community": 0,
+    "community": 4,
     "pagerank": 0.00355166,
     "eigen_centrality": 0.042232,
     "clustering_local": 0.5815,
@@ -23035,8 +23035,8 @@
     "acclaim_gap": 1.179,
     "hub_vs_loyal": -2.25,
     "collaborator_reach": 26,
-    "embed_x": -2.3299,
-    "embed_y": 0.5817
+    "embed_x": -2.3577,
+    "embed_y": 0.5528
   },
   {
     "id": "nm0000897",
@@ -23159,8 +23159,8 @@
     "minutes_credited": 11709,
     "medium_mix": {
       "tvMovie": 0.159,
-      "tvSeries": 0.116,
       "movie": 0.696,
+      "tvSeries": 0.116,
       "tvMiniSeries": 0.029
     },
     "short_to_feature_ratio": 0.0,
@@ -23228,7 +23228,7 @@
     "top_collaborator_id": "nm0000842",
     "collaborator_loyalty": 0.417,
     "bridge_score": 0.000291,
-    "community": 6,
+    "community": 9,
     "pagerank": 0.00550325,
     "eigen_centrality": 0.095066,
     "clustering_local": 0.8933,
@@ -23245,8 +23245,8 @@
     "acclaim_gap": -0.376,
     "hub_vs_loyal": -22.121,
     "collaborator_reach": 25,
-    "embed_x": -1.378,
-    "embed_y": -3.0246
+    "embed_x": -1.3797,
+    "embed_y": -3.0073
   },
   {
     "id": "nm0001616",
@@ -23366,8 +23366,8 @@
     "median_billing": 3,
     "minutes_credited": 4518,
     "medium_mix": {
-      "tvSeries": 0.232,
       "movie": 0.643,
+      "tvSeries": 0.232,
       "tvMovie": 0.125
     },
     "short_to_feature_ratio": 0.0,
@@ -23432,7 +23432,7 @@
     "top_collaborator_id": "nm0000491",
     "collaborator_loyalty": 0.257,
     "bridge_score": 0.000532,
-    "community": 5,
+    "community": 3,
     "pagerank": 0.00338091,
     "eigen_centrality": 0.030325,
     "clustering_local": 0.5967,
@@ -23449,8 +23449,8 @@
     "acclaim_gap": 0.382,
     "hub_vs_loyal": -4.041,
     "collaborator_reach": 25,
-    "embed_x": -1.1818,
-    "embed_y": -1.4865
+    "embed_x": -1.2495,
+    "embed_y": -1.4934
   },
   {
     "id": "nm0218810",
@@ -23570,9 +23570,9 @@
     "minutes_credited": 7204,
     "medium_mix": {
       "tvSeries": 0.091,
-      "movie": 0.409,
       "tvMovie": 0.424,
-      "tvMiniSeries": 0.076
+      "tvMiniSeries": 0.076,
+      "movie": 0.409
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1980,
@@ -23610,7 +23610,7 @@
       }
     ],
     "same_director_repeat": 4,
-    "top_director": "nm0001104",
+    "top_director": "nm0001915",
     "regions": [
       "AE",
       "AR",
@@ -23638,7 +23638,7 @@
     "top_collaborator_id": "nm0005342",
     "collaborator_loyalty": 0.378,
     "bridge_score": 0.000868,
-    "community": 2,
+    "community": 0,
     "pagerank": 0.00300861,
     "eigen_centrality": 0.026863,
     "clustering_local": 0.52,
@@ -23655,8 +23655,8 @@
     "acclaim_gap": 1.427,
     "hub_vs_loyal": -17.714,
     "collaborator_reach": 25,
-    "embed_x": -3.1488,
-    "embed_y": 0.209
+    "embed_x": -3.1422,
+    "embed_y": 0.2031
   },
   {
     "id": "nm1536605",
@@ -23712,17 +23712,6 @@
         "votes": 125
       },
       {
-        "title": "Where Darkness Lies",
-        "character": "Jamie",
-        "characters": [
-          "Jamie"
-        ],
-        "year": 2019,
-        "billing": 1,
-        "tconst": "tt10519022",
-        "votes": 0
-      },
-      {
         "title": "Rocketship Misfits",
         "character": "Lee Brandon",
         "characters": [
@@ -23731,6 +23720,17 @@
         "year": 2013,
         "billing": 1,
         "tconst": "tt3887974",
+        "votes": 0
+      },
+      {
+        "title": "Where Darkness Lies",
+        "character": "Jamie",
+        "characters": [
+          "Jamie"
+        ],
+        "year": 2019,
+        "billing": 1,
+        "tconst": "tt10519022",
         "votes": 0
       },
       {
@@ -23859,7 +23859,7 @@
     "acclaim_gap": 0.89,
     "hub_vs_loyal": -21.556,
     "collaborator_reach": 25,
-    "embed_x": -2.5497,
+    "embed_x": -2.5498,
     "embed_y": -0.3583
   },
   {
@@ -23981,8 +23981,8 @@
     "minutes_credited": 4042,
     "medium_mix": {
       "movie": 0.557,
-      "tvSeries": 0.343,
       "tvMiniSeries": 0.071,
+      "tvSeries": 0.343,
       "tvMovie": 0.029
     },
     "short_to_feature_ratio": 0.0,
@@ -24046,7 +24046,7 @@
     "top_collaborator_id": "nm0202966",
     "collaborator_loyalty": 0.467,
     "bridge_score": 0.001288,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00457488,
     "eigen_centrality": 0.069425,
     "clustering_local": 0.5133,
@@ -24063,8 +24063,8 @@
     "acclaim_gap": 0.605,
     "hub_vs_loyal": -27.771,
     "collaborator_reach": 25,
-    "embed_x": 2.1963,
-    "embed_y": -0.2766
+    "embed_x": 2.2032,
+    "embed_y": -0.251
   },
   {
     "id": "nm0000099",
@@ -24184,10 +24184,10 @@
     "median_billing": 2,
     "minutes_credited": 6403,
     "medium_mix": {
-      "tvMiniSeries": 0.041,
       "movie": 0.712,
-      "tvSeries": 0.137,
-      "tvMovie": 0.11
+      "tvMovie": 0.11,
+      "tvMiniSeries": 0.041,
+      "tvSeries": 0.137
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1987,
@@ -24252,7 +24252,7 @@
     "top_collaborator_id": "nm0916617",
     "collaborator_loyalty": 0.787,
     "bridge_score": 0.001445,
-    "community": 1,
+    "community": 0,
     "pagerank": 0.00378825,
     "eigen_centrality": 0.028839,
     "clustering_local": 0.4203,
@@ -24269,8 +24269,8 @@
     "acclaim_gap": -0.139,
     "hub_vs_loyal": -64.931,
     "collaborator_reach": 24,
-    "embed_x": 2.8463,
-    "embed_y": -0.0664
+    "embed_x": 2.8334,
+    "embed_y": -0.0763
   },
   {
     "id": "nm0001637",
@@ -24393,8 +24393,8 @@
     "medium_mix": {
       "tvSeries": 0.342,
       "tvMovie": 0.147,
-      "tvMiniSeries": 0.009,
-      "movie": 0.502
+      "movie": 0.502,
+      "tvMiniSeries": 0.009
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1947,
@@ -24462,7 +24462,7 @@
     "top_collaborator_id": "nm0000489",
     "collaborator_loyalty": 0.357,
     "bridge_score": 0.000355,
-    "community": 6,
+    "community": 9,
     "pagerank": 0.00454997,
     "eigen_centrality": 0.067787,
     "clustering_local": 0.8406,
@@ -24480,7 +24480,7 @@
     "hub_vs_loyal": -16.341,
     "collaborator_reach": 24,
     "embed_x": 2.1725,
-    "embed_y": 0.4628
+    "embed_y": 0.4491
   },
   {
     "id": "nm0004395",
@@ -24667,7 +24667,7 @@
     "top_collaborator_id": "nm0000099",
     "collaborator_loyalty": 0.229,
     "bridge_score": 0.00125,
-    "community": 0,
+    "community": 6,
     "pagerank": 0.00299355,
     "eigen_centrality": 0.022727,
     "clustering_local": 0.4674,
@@ -24685,7 +24685,7 @@
     "hub_vs_loyal": -1.877,
     "collaborator_reach": 24,
     "embed_x": -2.2322,
-    "embed_y": 1.6076
+    "embed_y": 1.6079
   },
   {
     "id": "nm0272173",
@@ -24805,10 +24805,10 @@
     "median_billing": 4,
     "minutes_credited": 11680,
     "medium_mix": {
-      "tvSeries": 0.073,
-      "movie": 0.526,
+      "tvMiniSeries": 0.058,
       "tvMovie": 0.343,
-      "tvMiniSeries": 0.058
+      "movie": 0.526,
+      "tvSeries": 0.073
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1988,
@@ -24873,7 +24873,7 @@
     "top_collaborator_id": "nm0000662",
     "collaborator_loyalty": 0.31,
     "bridge_score": 0.002614,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00386946,
     "eigen_centrality": 0.010361,
     "clustering_local": 0.4058,
@@ -24890,8 +24890,8 @@
     "acclaim_gap": 0.497,
     "hub_vs_loyal": -11.03,
     "collaborator_reach": 24,
-    "embed_x": 0.7741,
-    "embed_y": 1.952
+    "embed_x": 0.9741,
+    "embed_y": 2.0069
   },
   {
     "id": "nm0403947",
@@ -24947,36 +24947,36 @@
         "votes": 10
       },
       {
-        "title": "Satisfaction",
-        "character": "The Offended",
+        "title": "The Adventures of Pete & Pete: The Artie Workout",
+        "character": "Artie",
         "characters": [
-          "The Offended"
+          "Artie"
         ],
-        "year": 2009,
+        "year": 1994,
         "billing": 1,
-        "tconst": "tt1361884",
+        "tconst": "tt11724898",
         "votes": 0
       },
       {
-        "title": "Audi A7: Night Watchman",
-        "character": "Night Watchman",
+        "title": "The Adventures of Pete & Pete: Revenge of the Petes",
+        "character": "Artie",
         "characters": [
-          "Night Watchman"
+          "Artie"
         ],
-        "year": 2018,
+        "year": 1991,
         "billing": 1,
-        "tconst": "tt14661260",
+        "tconst": "tt11724872",
         "votes": 0
       },
       {
-        "title": "Alfalfa",
-        "character": "Whip",
+        "title": "The Adventures of Pete & Pete: Artie, the Strongest Man... in the World",
+        "character": "Artie",
         "characters": [
-          "Whip"
+          "Artie"
         ],
-        "year": null,
+        "year": 1995,
         "billing": 1,
-        "tconst": "tt36958049",
+        "tconst": "tt11717266",
         "votes": 0
       }
     ],
@@ -25013,8 +25013,8 @@
     "medium_mix": {
       "movie": 0.552,
       "tvSeries": 0.31,
-      "tvMiniSeries": 0.052,
-      "tvMovie": 0.086
+      "tvMovie": 0.086,
+      "tvMiniSeries": 0.052
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1996,
@@ -25078,7 +25078,7 @@
     "top_collaborator_id": "nm0740535",
     "collaborator_loyalty": 0.707,
     "bridge_score": 0.001913,
-    "community": 0,
+    "community": 4,
     "pagerank": 0.00583312,
     "eigen_centrality": 0.089459,
     "clustering_local": 0.4964,
@@ -25095,8 +25095,8 @@
     "acclaim_gap": 1.466,
     "hub_vs_loyal": -55.891,
     "collaborator_reach": 24,
-    "embed_x": 1.7243,
-    "embed_y": 2.2315
+    "embed_x": 1.7004,
+    "embed_y": 2.247
   },
   {
     "id": "nm0567599",
@@ -25212,15 +25212,15 @@
     "genre_first": "Drama",
     "genre_last": "Mystery",
     "genre_first_last_distance": 1,
-    "typecast_character": "Elderly Woman",
+    "typecast_character": "Grandma",
     "typecast_count": 2,
     "billing_trajectory": 0.2816,
     "median_billing": 7,
     "minutes_credited": 2170,
     "medium_mix": {
-      "tvMovie": 0.312,
       "tvSeries": 0.406,
-      "movie": 0.281
+      "movie": 0.281,
+      "tvMovie": 0.312
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1951,
@@ -25258,7 +25258,7 @@
       }
     ],
     "same_director_repeat": 4,
-    "top_director": "nm0381638",
+    "top_director": "nm0666777",
     "regions": [
       "AE",
       "AL",
@@ -25284,7 +25284,7 @@
     "top_collaborator_id": "nm0152452",
     "collaborator_loyalty": 0.25,
     "bridge_score": 0.000175,
-    "community": 6,
+    "community": 2,
     "pagerank": 0.00469077,
     "eigen_centrality": 0.078442,
     "clustering_local": 0.8986,
@@ -25301,8 +25301,8 @@
     "acclaim_gap": 3.423,
     "hub_vs_loyal": -4.25,
     "collaborator_reach": 24,
-    "embed_x": 1.1535,
-    "embed_y": -2.43
+    "embed_x": 1.1683,
+    "embed_y": -2.4272
   },
   {
     "id": "nm0000630",
@@ -25423,8 +25423,8 @@
     "minutes_credited": 9143,
     "medium_mix": {
       "movie": 0.432,
-      "tvSeries": 0.223,
       "tvMiniSeries": 0.094,
+      "tvSeries": 0.223,
       "tvMovie": 0.252
     },
     "short_to_feature_ratio": 0.0,
@@ -25491,7 +25491,7 @@
     "top_collaborator_id": "nm0000215",
     "collaborator_loyalty": 0.684,
     "bridge_score": 0.002127,
-    "community": 0,
+    "community": 6,
     "pagerank": 0.00307747,
     "eigen_centrality": 0.022359,
     "clustering_local": 0.419,
@@ -25508,8 +25508,8 @@
     "acclaim_gap": 1.068,
     "hub_vs_loyal": -54.292,
     "collaborator_reach": 23,
-    "embed_x": -0.9491,
-    "embed_y": -2.7873
+    "embed_x": -0.9562,
+    "embed_y": -2.7878
   },
   {
     "id": "nm0000661",
@@ -25631,10 +25631,10 @@
     "median_billing": 2,
     "minutes_credited": 17783,
     "medium_mix": {
-      "movie": 0.71,
-      "tvSeries": 0.082,
+      "tvMiniSeries": 0.055,
       "tvMovie": 0.153,
-      "tvMiniSeries": 0.055
+      "movie": 0.71,
+      "tvSeries": 0.082
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1964,
@@ -25672,7 +25672,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0406349",
+    "top_director": "nm0240995",
     "regions": [
       "AE",
       "AL",
@@ -25701,7 +25701,7 @@
     "top_collaborator_id": "nm0000449",
     "collaborator_loyalty": 0.156,
     "bridge_score": 0.00456,
-    "community": 9,
+    "community": 2,
     "pagerank": 0.00260519,
     "eigen_centrality": 0.008044,
     "clustering_local": 0.2451,
@@ -25718,8 +25718,8 @@
     "acclaim_gap": -2.365,
     "hub_vs_loyal": 5.372,
     "collaborator_reach": 23,
-    "embed_x": 2.3059,
-    "embed_y": -1.3874
+    "embed_x": 2.3182,
+    "embed_y": -1.3799
   },
   {
     "id": "nm0001290",
@@ -25839,10 +25839,10 @@
     "median_billing": 3,
     "minutes_credited": 13611,
     "medium_mix": {
-      "tvSeries": 0.266,
       "movie": 0.429,
-      "tvMiniSeries": 0.102,
-      "tvMovie": 0.203
+      "tvSeries": 0.266,
+      "tvMovie": 0.203,
+      "tvMiniSeries": 0.102
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1988,
@@ -25907,7 +25907,7 @@
     "top_collaborator_id": "nm0005042",
     "collaborator_loyalty": 0.255,
     "bridge_score": 0.00382,
-    "community": 11,
+    "community": 8,
     "pagerank": 0.0040621,
     "eigen_centrality": 0.005893,
     "clustering_local": 0.419,
@@ -25924,8 +25924,8 @@
     "acclaim_gap": 0.307,
     "hub_vs_loyal": -5.815,
     "collaborator_reach": 23,
-    "embed_x": 0.1574,
-    "embed_y": 2.5524
+    "embed_x": 0.1519,
+    "embed_y": 2.5379
   },
   {
     "id": "nm0121605",
@@ -26113,7 +26113,7 @@
     "top_collaborator_id": "nm0001194",
     "collaborator_loyalty": 0.263,
     "bridge_score": 0.000855,
-    "community": 5,
+    "community": 1,
     "pagerank": 0.00288654,
     "eigen_centrality": 0.015007,
     "clustering_local": 0.4585,
@@ -26131,7 +26131,7 @@
     "hub_vs_loyal": -6.719,
     "collaborator_reach": 23,
     "embed_x": 0.7706,
-    "embed_y": 2.6069
+    "embed_y": 2.6088
   },
   {
     "id": "nm0339304",
@@ -26252,8 +26252,8 @@
     "minutes_credited": 10091,
     "medium_mix": {
       "movie": 0.458,
-      "tvMovie": 0.356,
       "tvSeries": 0.153,
+      "tvMovie": 0.356,
       "tvMiniSeries": 0.034
     },
     "short_to_feature_ratio": 0.0,
@@ -26292,7 +26292,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0614682",
+    "top_director": "nm0926215",
     "regions": [
       "AE",
       "AL",
@@ -26319,7 +26319,7 @@
     "top_collaborator_id": "nm0001556",
     "collaborator_loyalty": 0.24,
     "bridge_score": 0.001843,
-    "community": 0,
+    "community": 4,
     "pagerank": 0.00289535,
     "eigen_centrality": 0.029988,
     "clustering_local": 0.4308,
@@ -26336,8 +26336,8 @@
     "acclaim_gap": -0.452,
     "hub_vs_loyal": -4.12,
     "collaborator_reach": 23,
-    "embed_x": -2.6047,
-    "embed_y": 1.1238
+    "embed_x": -2.5781,
+    "embed_y": 1.1207
   },
   {
     "id": "nm0755267",
@@ -26455,8 +26455,8 @@
     "medium_mix": {
       "tvSeries": 0.316,
       "movie": 0.421,
-      "tvMovie": 0.184,
-      "tvMiniSeries": 0.079
+      "tvMiniSeries": 0.079,
+      "tvMovie": 0.184
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2002,
@@ -26520,7 +26520,7 @@
     "top_collaborator_id": "nm0000662",
     "collaborator_loyalty": 0.256,
     "bridge_score": 0.001501,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00368759,
     "eigen_centrality": 0.0331,
     "clustering_local": 0.4071,
@@ -26537,8 +26537,8 @@
     "acclaim_gap": 0.798,
     "hub_vs_loyal": -5.928,
     "collaborator_reach": 23,
-    "embed_x": 2.0072,
-    "embed_y": -1.05
+    "embed_x": 2.0321,
+    "embed_y": -1.0403
   },
   {
     "id": "nm0001556",
@@ -26658,10 +26658,10 @@
     "median_billing": 3,
     "minutes_credited": 7674,
     "medium_mix": {
-      "tvSeries": 0.072,
-      "movie": 0.639,
       "tvMovie": 0.217,
-      "tvMiniSeries": 0.072
+      "movie": 0.639,
+      "tvMiniSeries": 0.072,
+      "tvSeries": 0.072
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1981,
@@ -26726,7 +26726,7 @@
     "top_collaborator_id": "nm0502425",
     "collaborator_loyalty": 0.386,
     "bridge_score": 0.003438,
-    "community": 0,
+    "community": 6,
     "pagerank": 0.00254171,
     "eigen_centrality": 0.017783,
     "clustering_local": 0.4026,
@@ -26743,8 +26743,8 @@
     "acclaim_gap": 0.242,
     "hub_vs_loyal": -21.618,
     "collaborator_reach": 22,
-    "embed_x": 2.8756,
-    "embed_y": 1.0139
+    "embed_x": 2.8676,
+    "embed_y": 1.0131
   },
   {
     "id": "nm0916617",
@@ -26858,7 +26858,7 @@
     "genre_first": "Crime",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Terry",
+    "typecast_character": "Dr. Bill",
     "typecast_count": 1,
     "billing_trajectory": 0.0714,
     "median_billing": 5,
@@ -26948,8 +26948,8 @@
     "acclaim_gap": 1.085,
     "hub_vs_loyal": -65.349,
     "collaborator_reach": 22,
-    "embed_x": 2.88,
-    "embed_y": 0.4954
+    "embed_x": 2.8738,
+    "embed_y": 0.4773
   },
   {
     "id": "nm0000457",
@@ -27072,8 +27072,8 @@
     "minutes_credited": 16308,
     "medium_mix": {
       "tvMiniSeries": 0.052,
-      "movie": 0.684,
       "tvMovie": 0.187,
+      "movie": 0.684,
       "tvSeries": 0.078
     },
     "short_to_feature_ratio": 0.0,
@@ -27112,7 +27112,7 @@
       }
     ],
     "same_director_repeat": 3,
-    "top_director": "nm0001994",
+    "top_director": "nm0000464",
     "regions": [
       "AE",
       "AL",
@@ -27141,7 +27141,7 @@
     "top_collaborator_id": "nm0000662",
     "collaborator_loyalty": 0.308,
     "bridge_score": 0.003256,
-    "community": 11,
+    "community": 8,
     "pagerank": 0.0042628,
     "eigen_centrality": 0.009633,
     "clustering_local": 0.4286,
@@ -27158,8 +27158,8 @@
     "acclaim_gap": -1.312,
     "hub_vs_loyal": -13.804,
     "collaborator_reach": 21,
-    "embed_x": 1.7892,
-    "embed_y": 1.3203
+    "embed_x": 1.8265,
+    "embed_y": 1.3119
   },
   {
     "id": "nm0000492",
@@ -27279,9 +27279,9 @@
     "median_billing": 3,
     "minutes_credited": 8439,
     "medium_mix": {
-      "tvMovie": 0.223,
-      "movie": 0.691,
       "tvMiniSeries": 0.043,
+      "movie": 0.691,
+      "tvMovie": 0.223,
       "tvSeries": 0.043
     },
     "short_to_feature_ratio": 0.0,
@@ -27320,7 +27320,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm0000233",
+    "top_director": "nm0000876",
     "regions": [
       "AE",
       "AL",
@@ -27347,7 +27347,7 @@
     "top_collaborator_id": "nm0505971",
     "collaborator_loyalty": 0.37,
     "bridge_score": 0.000907,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00207071,
     "eigen_centrality": 0.025025,
     "clustering_local": 0.481,
@@ -27364,8 +27364,8 @@
     "acclaim_gap": -0.028,
     "hub_vs_loyal": -20.81,
     "collaborator_reach": 21,
-    "embed_x": 0.5704,
-    "embed_y": 2.4242
+    "embed_x": 0.5814,
+    "embed_y": 2.3961
   },
   {
     "id": "nm0000551",
@@ -27486,9 +27486,9 @@
     "minutes_credited": 11275,
     "medium_mix": {
       "tvSeries": 0.084,
+      "tvMiniSeries": 0.023,
       "movie": 0.763,
-      "tvMovie": 0.13,
-      "tvMiniSeries": 0.023
+      "tvMovie": 0.13
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1988,
@@ -27553,7 +27553,7 @@
     "top_collaborator_id": "nm0005299",
     "collaborator_loyalty": 0.098,
     "bridge_score": 0.001915,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.0025097,
     "eigen_centrality": 0.021227,
     "clustering_local": 0.3095,
@@ -27570,8 +27570,8 @@
     "acclaim_gap": -1.627,
     "hub_vs_loyal": 9.926,
     "collaborator_reach": 21,
-    "embed_x": 2.4048,
-    "embed_y": 1.3769
+    "embed_x": 2.4055,
+    "embed_y": 1.378
   },
   {
     "id": "nm0004753",
@@ -27691,8 +27691,8 @@
     "median_billing": 3,
     "minutes_credited": 3076,
     "medium_mix": {
-      "movie": 0.551,
       "tvSeries": 0.286,
+      "movie": 0.551,
       "tvMovie": 0.163
     },
     "short_to_feature_ratio": 0.0,
@@ -27757,7 +27757,7 @@
     "top_collaborator_id": "nm0001208",
     "collaborator_loyalty": 0.389,
     "bridge_score": 0.001461,
-    "community": 0,
+    "community": 1,
     "pagerank": 0.00336729,
     "eigen_centrality": 0.021576,
     "clustering_local": 0.4524,
@@ -27774,8 +27774,8 @@
     "acclaim_gap": 0.275,
     "hub_vs_loyal": -22.957,
     "collaborator_reach": 21,
-    "embed_x": 0.6193,
-    "embed_y": -2.6177
+    "embed_x": 0.6204,
+    "embed_y": -2.6057
   },
   {
     "id": "nm0005253",
@@ -27962,7 +27962,7 @@
     "top_collaborator_id": "nm0364813",
     "collaborator_loyalty": 0.788,
     "bridge_score": 0.001383,
-    "community": 2,
+    "community": 6,
     "pagerank": 0.00233099,
     "eigen_centrality": 0.014154,
     "clustering_local": 0.3905,
@@ -27979,8 +27979,8 @@
     "acclaim_gap": 0.055,
     "hub_vs_loyal": -68.044,
     "collaborator_reach": 21,
-    "embed_x": -2.0639,
-    "embed_y": -2.3437
+    "embed_x": -2.0836,
+    "embed_y": -2.3411
   },
   {
     "id": "nm0505971",
@@ -28100,9 +28100,9 @@
     "median_billing": 4,
     "minutes_credited": 5575,
     "medium_mix": {
+      "movie": 0.651,
       "tvSeries": 0.127,
       "tvMovie": 0.175,
-      "movie": 0.651,
       "tvMiniSeries": 0.048
     },
     "short_to_feature_ratio": 0.0,
@@ -28168,7 +28168,7 @@
     "top_collaborator_id": "nm0000498",
     "collaborator_loyalty": 0.252,
     "bridge_score": 0.002653,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00347441,
     "eigen_centrality": 0.041601,
     "clustering_local": 0.6381,
@@ -28185,8 +28185,8 @@
     "acclaim_gap": 0.992,
     "hub_vs_loyal": -7.476,
     "collaborator_reach": 21,
-    "embed_x": -0.3172,
-    "embed_y": -2.0379
+    "embed_x": -0.3021,
+    "embed_y": -2.0
   },
   {
     "id": "nm0000291",
@@ -28307,8 +28307,8 @@
     "minutes_credited": 8540,
     "medium_mix": {
       "tvMiniSeries": 0.065,
-      "tvMovie": 0.217,
       "movie": 0.587,
+      "tvMovie": 0.217,
       "tvSeries": 0.13
     },
     "short_to_feature_ratio": 0.0,
@@ -28370,11 +28370,11 @@
       "2010s",
       "2020s"
     ],
-    "top_collaborator": "Sarah Paulson",
-    "top_collaborator_id": "nm0005299",
+    "top_collaborator": "Evan Peters",
+    "top_collaborator_id": "nm1404239",
     "collaborator_loyalty": 0.331,
     "bridge_score": 0.000794,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.0035736,
     "eigen_centrality": 0.018172,
     "clustering_local": 0.4211,
@@ -28391,8 +28391,8 @@
     "acclaim_gap": 0.866,
     "hub_vs_loyal": -17.403,
     "collaborator_reach": 20,
-    "embed_x": -2.5971,
-    "embed_y": 1.8437
+    "embed_x": -2.5998,
+    "embed_y": 1.8307
   },
   {
     "id": "nm0001272",
@@ -28513,8 +28513,8 @@
     "medium_mix": {
       "movie": 0.522,
       "tvMovie": 0.313,
-      "tvSeries": 0.09,
-      "tvMiniSeries": 0.075
+      "tvMiniSeries": 0.075,
+      "tvSeries": 0.09
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1989,
@@ -28579,7 +28579,7 @@
     "top_collaborator_id": "nm0005042",
     "collaborator_loyalty": 0.189,
     "bridge_score": 0.001088,
-    "community": 7,
+    "community": 3,
     "pagerank": 0.00299988,
     "eigen_centrality": 0.023412,
     "clustering_local": 0.4947,
@@ -28596,8 +28596,8 @@
     "acclaim_gap": 0.211,
     "hub_vs_loyal": -1.357,
     "collaborator_reach": 20,
-    "embed_x": -2.8599,
-    "embed_y": -0.7096
+    "embed_x": -2.8535,
+    "embed_y": -0.7054
   },
   {
     "id": "nm0001626",
@@ -28789,7 +28789,7 @@
     "top_collaborator_id": "nm0000897",
     "collaborator_loyalty": 0.192,
     "bridge_score": 0.003204,
-    "community": 6,
+    "community": 9,
     "pagerank": 0.00224582,
     "eigen_centrality": 0.016038,
     "clustering_local": 0.4474,
@@ -28806,8 +28806,8 @@
     "acclaim_gap": -1.22,
     "hub_vs_loyal": -1.696,
     "collaborator_reach": 20,
-    "embed_x": 1.1922,
-    "embed_y": -2.7922
+    "embed_x": 1.1939,
+    "embed_y": -2.7927
   },
   {
     "id": "nm0005342",
@@ -28923,10 +28923,10 @@
     "median_billing": 3,
     "minutes_credited": 4406,
     "medium_mix": {
-      "movie": 0.712,
       "tvSeries": 0.254,
-      "tvMovie": 0.017,
-      "tvMiniSeries": 0.017
+      "movie": 0.712,
+      "tvMiniSeries": 0.017,
+      "tvMovie": 0.017
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2005,
@@ -28990,7 +28990,7 @@
     "top_collaborator_id": "nm0218810",
     "collaborator_loyalty": 0.895,
     "bridge_score": 0.000289,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00272794,
     "eigen_centrality": 0.02873,
     "clustering_local": 0.6947,
@@ -29007,8 +29007,8 @@
     "acclaim_gap": 0.18,
     "hub_vs_loyal": -81.135,
     "collaborator_reach": 20,
-    "embed_x": -1.6392,
-    "embed_y": -2.5745
+    "embed_x": -1.6175,
+    "embed_y": -2.5688
   },
   {
     "id": "nm0005524",
@@ -29122,15 +29122,15 @@
     "genre_first": "Action",
     "genre_last": "Comedy",
     "genre_first_last_distance": 1,
-    "typecast_character": "Officer James Halloran",
+    "typecast_character": "Narrator",
     "typecast_count": 2,
     "billing_trajectory": 0.0118,
     "median_billing": 4,
     "minutes_credited": 4546,
     "medium_mix": {
+      "tvSeries": 0.185,
       "movie": 0.463,
       "tvMovie": 0.333,
-      "tvSeries": 0.185,
       "tvMiniSeries": 0.019
     },
     "short_to_feature_ratio": 0.0,
@@ -29195,7 +29195,7 @@
     "top_collaborator_id": "nm0564697",
     "collaborator_loyalty": 0.225,
     "bridge_score": 0.000851,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00317382,
     "eigen_centrality": 0.018305,
     "clustering_local": 0.3632,
@@ -29212,8 +29212,8 @@
     "acclaim_gap": 1.169,
     "hub_vs_loyal": -5.425,
     "collaborator_reach": 20,
-    "embed_x": -2.3437,
-    "embed_y": -1.187
+    "embed_x": -2.3518,
+    "embed_y": -1.1758
   },
   {
     "id": "nm0333410",
@@ -29400,7 +29400,7 @@
     "top_collaborator_id": "nm0000215",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.000941,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.0028414,
     "eigen_centrality": 0.02008,
     "clustering_local": 0.5211,
@@ -29603,7 +29603,7 @@
     "top_collaborator_id": "nm0005042",
     "collaborator_loyalty": 0.778,
     "bridge_score": 0.000756,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00367027,
     "eigen_centrality": 0.024307,
     "clustering_local": 0.6211,
@@ -29620,8 +29620,8 @@
     "acclaim_gap": 3.118,
     "hub_vs_loyal": -67.914,
     "collaborator_reach": 20,
-    "embed_x": -0.5182,
-    "embed_y": 2.5565
+    "embed_x": -0.4982,
+    "embed_y": 2.559
   },
   {
     "id": "nm0000164",
@@ -29741,9 +29741,9 @@
     "median_billing": 2,
     "minutes_credited": 16759,
     "medium_mix": {
+      "tvMovie": 0.192,
       "movie": 0.61,
       "tvSeries": 0.163,
-      "tvMovie": 0.192,
       "tvMiniSeries": 0.035
     },
     "short_to_feature_ratio": 0.0,
@@ -29811,7 +29811,7 @@
     "top_collaborator_id": "nm0000215",
     "collaborator_loyalty": 0.417,
     "bridge_score": 0.002579,
-    "community": 9,
+    "community": 5,
     "pagerank": 0.00231895,
     "eigen_centrality": 0.004369,
     "clustering_local": 0.345,
@@ -29828,7 +29828,7 @@
     "acclaim_gap": -2.032,
     "hub_vs_loyal": -28.121,
     "collaborator_reach": 19,
-    "embed_x": 0.8752,
+    "embed_x": 0.8751,
     "embed_y": -1.1865
   },
   {
@@ -29951,8 +29951,8 @@
     "medium_mix": {
       "tvSeries": 0.245,
       "movie": 0.604,
-      "tvMiniSeries": 0.113,
-      "tvMovie": 0.038
+      "tvMovie": 0.038,
+      "tvMiniSeries": 0.113
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1995,
@@ -30016,7 +30016,7 @@
     "top_collaborator_id": "nm0431451",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.000842,
-    "community": 3,
+    "community": 0,
     "pagerank": 0.00270251,
     "eigen_centrality": 0.013788,
     "clustering_local": 0.5205,
@@ -30033,8 +30033,8 @@
     "acclaim_gap": 1.363,
     "hub_vs_loyal": -18.629,
     "collaborator_reach": 19,
-    "embed_x": 2.42,
-    "embed_y": 1.8991
+    "embed_x": 2.4352,
+    "embed_y": 1.8979
   },
   {
     "id": "nm0000472",
@@ -30225,7 +30225,7 @@
     "top_collaborator_id": "nm0001637",
     "collaborator_loyalty": 0.4,
     "bridge_score": 0.000141,
-    "community": 6,
+    "community": 2,
     "pagerank": 0.00331543,
     "eigen_centrality": 0.043836,
     "clustering_local": 0.8889,
@@ -30242,8 +30242,8 @@
     "acclaim_gap": -1.775,
     "hub_vs_loyal": -27.2,
     "collaborator_reach": 18,
-    "embed_x": 1.6121,
-    "embed_y": -2.5159
+    "embed_x": 1.6198,
+    "embed_y": -2.5192
   },
   {
     "id": "nm0103195",
@@ -30365,8 +30365,8 @@
     "medium_mix": {
       "tvMiniSeries": 0.143,
       "movie": 0.49,
-      "tvMovie": 0.245,
-      "tvSeries": 0.122
+      "tvSeries": 0.122,
+      "tvMovie": 0.245
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1998,
@@ -30431,7 +30431,7 @@
     "top_collaborator_id": "nm0243806",
     "collaborator_loyalty": 0.595,
     "bridge_score": 0.001176,
-    "community": 11,
+    "community": 8,
     "pagerank": 0.00349797,
     "eigen_centrality": 0.009436,
     "clustering_local": 0.5817,
@@ -30449,7 +30449,7 @@
     "hub_vs_loyal": -49.235,
     "collaborator_reach": 18,
     "embed_x": 1.6709,
-    "embed_y": 1.9794
+    "embed_y": 1.885
   },
   {
     "id": "nm0000117",
@@ -30569,10 +30569,10 @@
     "median_billing": 2,
     "minutes_credited": 5308,
     "medium_mix": {
-      "tvMovie": 0.183,
       "movie": 0.563,
-      "tvSeries": 0.169,
-      "tvMiniSeries": 0.085
+      "tvMiniSeries": 0.085,
+      "tvMovie": 0.183,
+      "tvSeries": 0.169
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1994,
@@ -30636,7 +30636,7 @@
     "top_collaborator_id": "nm0446672",
     "collaborator_loyalty": 0.368,
     "bridge_score": 0.0024,
-    "community": 5,
+    "community": 4,
     "pagerank": 0.00270856,
     "eigen_centrality": 0.00885,
     "clustering_local": 0.2353,
@@ -30653,8 +30653,8 @@
     "acclaim_gap": 0.409,
     "hub_vs_loyal": -24.584,
     "collaborator_reach": 17,
-    "embed_x": -0.707,
-    "embed_y": -3.3889
+    "embed_x": -0.7058,
+    "embed_y": -3.3771
   },
   {
     "id": "nm0001073",
@@ -30842,7 +30842,7 @@
     "top_collaborator_id": "nm0000274",
     "collaborator_loyalty": 0.314,
     "bridge_score": 0.001252,
-    "community": 5,
+    "community": 4,
     "pagerank": 0.00246231,
     "eigen_centrality": 0.008988,
     "clustering_local": 0.2868,
@@ -30859,8 +30859,8 @@
     "acclaim_gap": -0.281,
     "hub_vs_loyal": -18.482,
     "collaborator_reach": 17,
-    "embed_x": -2.9532,
-    "embed_y": -2.2119
+    "embed_x": -2.9542,
+    "embed_y": -2.2161
   },
   {
     "id": "nm0001097",
@@ -30980,10 +30980,10 @@
     "median_billing": 3,
     "minutes_credited": 10483,
     "medium_mix": {
+      "tvSeries": 0.145,
       "tvMiniSeries": 0.121,
       "movie": 0.532,
-      "tvMovie": 0.202,
-      "tvSeries": 0.145
+      "tvMovie": 0.202
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1985,
@@ -31021,7 +31021,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm4824763",
+    "top_director": "nm4754058",
     "regions": [
       "AE",
       "AL",
@@ -31048,7 +31048,7 @@
     "top_collaborator_id": "nm0372176",
     "collaborator_loyalty": 0.393,
     "bridge_score": 0.001711,
-    "community": 11,
+    "community": 5,
     "pagerank": 0.00390893,
     "eigen_centrality": 0.002438,
     "clustering_local": 0.5294,
@@ -31066,7 +31066,7 @@
     "hub_vs_loyal": -27.409,
     "collaborator_reach": 17,
     "embed_x": 1.4593,
-    "embed_y": -3.2714
+    "embed_y": -3.2641
   },
   {
     "id": "nm0005351",
@@ -31186,10 +31186,10 @@
     "median_billing": 2,
     "minutes_credited": 7833,
     "medium_mix": {
-      "tvMiniSeries": 0.058,
       "movie": 0.661,
       "tvSeries": 0.223,
-      "tvMovie": 0.058
+      "tvMovie": 0.058,
+      "tvMiniSeries": 0.058
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1993,
@@ -31270,8 +31270,8 @@
     "acclaim_gap": -1.502,
     "hub_vs_loyal": -20.629,
     "collaborator_reach": 17,
-    "embed_x": 1.8621,
-    "embed_y": -1.5142
+    "embed_x": 1.8734,
+    "embed_y": -1.5201
   },
   {
     "id": "nm0364813",
@@ -31388,8 +31388,8 @@
     "minutes_credited": 5015,
     "medium_mix": {
       "movie": 0.804,
-      "tvSeries": 0.071,
       "tvMovie": 0.089,
+      "tvSeries": 0.071,
       "tvMiniSeries": 0.036
     },
     "short_to_feature_ratio": 0.0,
@@ -31428,7 +31428,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm0364578",
+    "top_director": "nm0005363",
     "regions": [
       "AE",
       "AL",
@@ -31472,8 +31472,8 @@
     "acclaim_gap": 0.907,
     "hub_vs_loyal": -87.977,
     "collaborator_reach": 17,
-    "embed_x": -0.2427,
-    "embed_y": -0.7096
+    "embed_x": -0.4427,
+    "embed_y": -0.7527
   },
   {
     "id": "nm0675730",
@@ -31594,9 +31594,9 @@
     "minutes_credited": 5992,
     "medium_mix": {
       "tvMovie": 0.281,
+      "movie": 0.344,
       "tvSeries": 0.271,
-      "tvMiniSeries": 0.104,
-      "movie": 0.344
+      "tvMiniSeries": 0.104
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1993,
@@ -31661,7 +31661,7 @@
     "top_collaborator_id": "nm0006610",
     "collaborator_loyalty": 0.917,
     "bridge_score": 0.003044,
-    "community": 11,
+    "community": 8,
     "pagerank": 0.00342764,
     "eigen_centrality": 0.003221,
     "clustering_local": 0.5,
@@ -31799,10 +31799,10 @@
     "median_billing": 3,
     "minutes_credited": 7432,
     "medium_mix": {
-      "tvMiniSeries": 0.052,
       "movie": 0.701,
       "tvSeries": 0.169,
-      "tvMovie": 0.078
+      "tvMovie": 0.078,
+      "tvMiniSeries": 0.052
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1987,
@@ -31867,7 +31867,7 @@
     "top_collaborator_id": "nm0502425",
     "collaborator_loyalty": 0.418,
     "bridge_score": 0.00063,
-    "community": 5,
+    "community": 3,
     "pagerank": 0.00246758,
     "eigen_centrality": 0.007996,
     "clustering_local": 0.4083,
@@ -31884,8 +31884,8 @@
     "acclaim_gap": 0.777,
     "hub_vs_loyal": -31.234,
     "collaborator_reach": 16,
-    "embed_x": 0.3906,
-    "embed_y": 3.359
+    "embed_x": 0.3936,
+    "embed_y": 3.363
   },
   {
     "id": "nm0243806",
@@ -32007,8 +32007,8 @@
     "medium_mix": {
       "tvSeries": 0.182,
       "movie": 0.75,
-      "tvMovie": 0.045,
-      "tvMiniSeries": 0.023
+      "tvMiniSeries": 0.023,
+      "tvMovie": 0.045
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2002,
@@ -32071,7 +32071,7 @@
     "top_collaborator_id": "nm0103195",
     "collaborator_loyalty": 0.553,
     "bridge_score": 0.000462,
-    "community": 3,
+    "community": 0,
     "pagerank": 0.00240813,
     "eigen_centrality": 0.011023,
     "clustering_local": 0.5167,
@@ -32088,8 +32088,8 @@
     "acclaim_gap": 0.948,
     "hub_vs_loyal": -46.489,
     "collaborator_reach": 16,
-    "embed_x": 1.1958,
-    "embed_y": 3.3807
+    "embed_x": 1.1591,
+    "embed_y": 3.3781
   },
   {
     "id": "nm0479527",
@@ -32209,9 +32209,9 @@
     "median_billing": 3,
     "minutes_credited": 3355,
     "medium_mix": {
+      "tvMovie": 0.137,
       "movie": 0.569,
-      "tvSeries": 0.294,
-      "tvMovie": 0.137
+      "tvSeries": 0.294
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1999,
@@ -32275,7 +32275,7 @@
     "top_collaborator_id": "nm0936403",
     "collaborator_loyalty": 0.375,
     "bridge_score": 0.001081,
-    "community": 3,
+    "community": 0,
     "pagerank": 0.00238538,
     "eigen_centrality": 0.00868,
     "clustering_local": 0.4583,
@@ -32292,8 +32292,8 @@
     "acclaim_gap": 0.865,
     "hub_vs_loyal": -26.375,
     "collaborator_reach": 16,
-    "embed_x": 2.8326,
-    "embed_y": -0.7782
+    "embed_x": 2.8395,
+    "embed_y": -0.7847
   },
   {
     "id": "nm1263939",
@@ -32475,7 +32475,7 @@
     "top_collaborator_id": "nm0755267",
     "collaborator_loyalty": 0.353,
     "bridge_score": 0.000183,
-    "community": 0,
+    "community": 4,
     "pagerank": 0.00308948,
     "eigen_centrality": 0.04135,
     "clustering_local": 0.7167,
@@ -32492,7 +32492,7 @@
     "acclaim_gap": 1.211,
     "hub_vs_loyal": -23.889,
     "collaborator_reach": 16,
-    "embed_x": 0.6563,
+    "embed_x": 0.6552,
     "embed_y": -0.0898
   },
   {
@@ -32613,8 +32613,8 @@
     "median_billing": 2,
     "minutes_credited": 11484,
     "medium_mix": {
-      "movie": 0.847,
       "tvSeries": 0.097,
+      "movie": 0.847,
       "tvMovie": 0.056
     },
     "short_to_feature_ratio": 0.0,
@@ -32680,7 +32680,7 @@
     "top_collaborator_id": "nm0000347",
     "collaborator_loyalty": 0.233,
     "bridge_score": 0.000317,
-    "community": 3,
+    "community": 0,
     "pagerank": 0.00220317,
     "eigen_centrality": 0.013195,
     "clustering_local": 0.5048,
@@ -32697,8 +32697,8 @@
     "acclaim_gap": -3.906,
     "hub_vs_loyal": -11.329,
     "collaborator_reach": 15,
-    "embed_x": 1.1125,
-    "embed_y": 2.9281
+    "embed_x": 1.194,
+    "embed_y": 2.9046
   },
   {
     "id": "nm0000662",
@@ -32819,9 +32819,9 @@
     "minutes_credited": 8411,
     "medium_mix": {
       "movie": 0.696,
-      "tvMiniSeries": 0.059,
       "tvMovie": 0.127,
-      "tvSeries": 0.118
+      "tvSeries": 0.118,
+      "tvMiniSeries": 0.059
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1986,
@@ -32903,8 +32903,8 @@
     "acclaim_gap": -0.789,
     "hub_vs_loyal": -5.566,
     "collaborator_reach": 15,
-    "embed_x": 3.3211,
-    "embed_y": 0.5564
+    "embed_x": 3.3261,
+    "embed_y": 0.5563
   },
   {
     "id": "nm0001599",
@@ -33093,7 +33093,7 @@
     "top_collaborator_id": "nm0166359",
     "collaborator_loyalty": 0.535,
     "bridge_score": 0.000552,
-    "community": 5,
+    "community": 3,
     "pagerank": 0.00189099,
     "eigen_centrality": 0.010605,
     "clustering_local": 0.4,
@@ -33111,7 +33111,7 @@
     "hub_vs_loyal": -45.455,
     "collaborator_reach": 15,
     "embed_x": 0.9756,
-    "embed_y": -0.4334
+    "embed_y": -0.4335
   },
   {
     "id": "nm0519043",
@@ -33233,8 +33233,8 @@
     "medium_mix": {
       "movie": 0.767,
       "tvSeries": 0.186,
-      "tvMiniSeries": 0.012,
-      "tvMovie": 0.035
+      "tvMovie": 0.035,
+      "tvMiniSeries": 0.012
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2001,
@@ -33297,7 +33297,7 @@
     "top_collaborator_id": "nm0170550",
     "collaborator_loyalty": 0.143,
     "bridge_score": 0.000399,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00311652,
     "eigen_centrality": 0.029183,
     "clustering_local": 0.5524,
@@ -33314,8 +33314,8 @@
     "acclaim_gap": -1.192,
     "hub_vs_loyal": -1.159,
     "collaborator_reach": 15,
-    "embed_x": -0.6959,
-    "embed_y": 0.9476
+    "embed_x": -0.7505,
+    "embed_y": 0.9417
   },
   {
     "id": "nm0733500",
@@ -33437,9 +33437,9 @@
     "median_billing": 7,
     "minutes_credited": 4371,
     "medium_mix": {
-      "tvSeries": 0.262,
-      "movie": 0.385,
       "tvMovie": 0.338,
+      "movie": 0.385,
+      "tvSeries": 0.262,
       "tvMiniSeries": 0.015
     },
     "short_to_feature_ratio": 0.0,
@@ -33503,7 +33503,7 @@
     "top_collaborator_id": "nm0724995",
     "collaborator_loyalty": 0.333,
     "bridge_score": 0.000848,
-    "community": 7,
+    "community": 0,
     "pagerank": 0.00218322,
     "eigen_centrality": 0.006361,
     "clustering_local": 0.4286,
@@ -33520,8 +33520,8 @@
     "acclaim_gap": 1.47,
     "hub_vs_loyal": -22.629,
     "collaborator_reach": 15,
-    "embed_x": -2.4032,
-    "embed_y": -2.8771
+    "embed_x": -2.3983,
+    "embed_y": -2.8767
   },
   {
     "id": "nm0000677",
@@ -33642,8 +33642,8 @@
     "minutes_credited": 3661,
     "medium_mix": {
       "movie": 0.714,
-      "tvMovie": 0.143,
       "tvSeries": 0.119,
+      "tvMovie": 0.143,
       "tvMiniSeries": 0.024
     },
     "short_to_feature_ratio": 0.0,
@@ -33682,7 +33682,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm0650304",
+    "top_director": "nm0957198",
     "regions": [
       "AE",
       "AL",
@@ -33708,7 +33708,7 @@
     "top_collaborator_id": "nm0700712",
     "collaborator_loyalty": 0.469,
     "bridge_score": 0.00104,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00249662,
     "eigen_centrality": 0.013623,
     "clustering_local": 0.2088,
@@ -33725,8 +33725,8 @@
     "acclaim_gap": 0.477,
     "hub_vs_loyal": -38.997,
     "collaborator_reach": 14,
-    "embed_x": 3.8534,
-    "embed_y": -0.2531
+    "embed_x": 3.8568,
+    "embed_y": -0.2534
   },
   {
     "id": "nm0001524",
@@ -33846,10 +33846,10 @@
     "median_billing": 1,
     "minutes_credited": 8749,
     "medium_mix": {
-      "tvMovie": 0.289,
+      "tvMiniSeries": 0.183,
       "tvSeries": 0.303,
-      "movie": 0.225,
-      "tvMiniSeries": 0.183
+      "tvMovie": 0.289,
+      "movie": 0.225
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1987,
@@ -33914,7 +33914,7 @@
     "top_collaborator_id": "nm0252961",
     "collaborator_loyalty": 0.429,
     "bridge_score": 0.000503,
-    "community": 11,
+    "community": 8,
     "pagerank": 0.00319619,
     "eigen_centrality": 0.003573,
     "clustering_local": 0.6813,
@@ -33931,8 +33931,8 @@
     "acclaim_gap": 1.518,
     "hub_vs_loyal": -34.477,
     "collaborator_reach": 14,
-    "embed_x": 3.4548,
-    "embed_y": -0.74
+    "embed_x": 3.4579,
+    "embed_y": -0.739
   },
   {
     "id": "nm0724995",
@@ -34053,9 +34053,9 @@
     "minutes_credited": 7134,
     "medium_mix": {
       "movie": 0.696,
-      "tvMiniSeries": 0.033,
+      "tvSeries": 0.163,
       "tvMovie": 0.109,
-      "tvSeries": 0.163
+      "tvMiniSeries": 0.033
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1989,
@@ -34093,7 +34093,7 @@
       }
     ],
     "same_director_repeat": 4,
-    "top_director": "nm1473037",
+    "top_director": "nm0567680",
     "regions": [
       "AE",
       "AL",
@@ -34120,7 +34120,7 @@
     "top_collaborator_id": "nm0002142",
     "collaborator_loyalty": 0.196,
     "bridge_score": 0.000337,
-    "community": 7,
+    "community": 3,
     "pagerank": 0.0026377,
     "eigen_centrality": 0.006227,
     "clustering_local": 0.6044,
@@ -34137,8 +34137,8 @@
     "acclaim_gap": -0.114,
     "hub_vs_loyal": -8.148,
     "collaborator_reach": 14,
-    "embed_x": 2.0614,
-    "embed_y": -2.1141
+    "embed_x": 2.0674,
+    "embed_y": -2.1069
   },
   {
     "id": "nm0758760",
@@ -34324,7 +34324,7 @@
     "top_collaborator_id": "nm0000448",
     "collaborator_loyalty": 1.0,
     "bridge_score": 0.001642,
-    "community": 11,
+    "community": 8,
     "pagerank": 0.00368301,
     "eigen_centrality": 0.006259,
     "clustering_local": 0.5934,
@@ -34342,7 +34342,7 @@
     "hub_vs_loyal": -99.0,
     "collaborator_reach": 14,
     "embed_x": 0.1669,
-    "embed_y": -3.4938
+    "embed_y": -3.4904
   },
   {
     "id": "nm0913587",
@@ -34398,17 +34398,6 @@
         "votes": 1947
       },
       {
-        "title": "Fallen: The Destiny",
-        "character": "Aaron Corbett",
-        "characters": [
-          "Aaron Corbett"
-        ],
-        "year": 2007,
-        "billing": 1,
-        "tconst": "tt41847620",
-        "votes": 0
-      },
-      {
         "title": "Aliens",
         "character": "Narrator",
         "characters": [
@@ -34417,6 +34406,17 @@
         "year": 2018,
         "billing": 1,
         "tconst": "tt11257658",
+        "votes": 0
+      },
+      {
+        "title": "Fallen: The Destiny",
+        "character": "Aaron Corbett",
+        "characters": [
+          "Aaron Corbett"
+        ],
+        "year": 2007,
+        "billing": 1,
+        "tconst": "tt41847620",
         "votes": 0
       },
       {
@@ -34458,9 +34458,9 @@
     "median_billing": 4,
     "minutes_credited": 1767,
     "medium_mix": {
+      "tvSeries": 0.333,
       "movie": 0.467,
       "tvMovie": 0.167,
-      "tvSeries": 0.333,
       "tvMiniSeries": 0.033
     },
     "short_to_feature_ratio": 0.0,
@@ -34524,7 +34524,7 @@
     "top_collaborator_id": "nm2400045",
     "collaborator_loyalty": 0.529,
     "bridge_score": 0.002544,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00311631,
     "eigen_centrality": 0.004545,
     "clustering_local": 0.2857,
@@ -34541,8 +34541,8 @@
     "acclaim_gap": 1.536,
     "hub_vs_loyal": -45.777,
     "collaborator_reach": 14,
-    "embed_x": -1.815,
-    "embed_y": 3.1704
+    "embed_x": -1.814,
+    "embed_y": 3.1654
   },
   {
     "id": "nm1404239",
@@ -34662,8 +34662,8 @@
     "median_billing": 6,
     "minutes_credited": 2239,
     "medium_mix": {
-      "tvSeries": 0.286,
-      "movie": 0.714
+      "movie": 0.714,
+      "tvSeries": 0.286
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2004,
@@ -34726,7 +34726,7 @@
     "top_collaborator_id": "nm0005299",
     "collaborator_loyalty": 0.398,
     "bridge_score": 0.000112,
-    "community": 5,
+    "community": 7,
     "pagerank": 0.00198826,
     "eigen_centrality": 0.009686,
     "clustering_local": 0.7473,
@@ -34743,8 +34743,8 @@
     "acclaim_gap": 1.918,
     "hub_vs_loyal": -30.974,
     "collaborator_reach": 14,
-    "embed_x": 2.3878,
-    "embed_y": 2.4847
+    "embed_x": 2.3714,
+    "embed_y": 2.4837
   },
   {
     "id": "nm0000491",
@@ -34864,10 +34864,10 @@
     "median_billing": 3,
     "minutes_credited": 10121,
     "medium_mix": {
-      "tvSeries": 0.203,
       "movie": 0.62,
+      "tvMiniSeries": 0.025,
       "tvMovie": 0.152,
-      "tvMiniSeries": 0.025
+      "tvSeries": 0.203
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1989,
@@ -34932,7 +34932,7 @@
     "top_collaborator_id": "nm0005531",
     "collaborator_loyalty": 0.355,
     "bridge_score": 0.000674,
-    "community": 2,
+    "community": 7,
     "pagerank": 0.00194721,
     "eigen_centrality": 0.008699,
     "clustering_local": 0.3974,
@@ -34950,7 +34950,7 @@
     "hub_vs_loyal": -27.115,
     "collaborator_reach": 13,
     "embed_x": 2.5136,
-    "embed_y": 0.1828
+    "embed_y": 0.2229
   },
   {
     "id": "nm0000613",
@@ -35072,8 +35072,8 @@
     "medium_mix": {
       "movie": 0.746,
       "tvSeries": 0.111,
-      "tvMovie": 0.079,
-      "tvMiniSeries": 0.063
+      "tvMiniSeries": 0.063,
+      "tvMovie": 0.079
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1987,
@@ -35138,7 +35138,7 @@
     "top_collaborator_id": "nm0001290",
     "collaborator_loyalty": 0.36,
     "bridge_score": 0.000872,
-    "community": 9,
+    "community": 8,
     "pagerank": 0.00210067,
     "eigen_centrality": 0.001648,
     "clustering_local": 0.5385,
@@ -35155,8 +35155,8 @@
     "acclaim_gap": 0.152,
     "hub_vs_loyal": -27.68,
     "collaborator_reach": 13,
-    "embed_x": 2.7998,
-    "embed_y": -2.0753
+    "embed_x": 2.7997,
+    "embed_y": -2.0808
   },
   {
     "id": "nm0322513",
@@ -35344,7 +35344,7 @@
     "top_collaborator_id": "nm0372176",
     "collaborator_loyalty": 0.548,
     "bridge_score": 0.000543,
-    "community": 11,
+    "community": 8,
     "pagerank": 0.0036938,
     "eigen_centrality": 0.002054,
     "clustering_local": 0.6923,
@@ -35362,7 +35362,7 @@
     "hub_vs_loyal": -48.924,
     "collaborator_reach": 13,
     "embed_x": -0.5778,
-    "embed_y": 3.1517
+    "embed_y": 3.1497
   },
   {
     "id": "nm0382110",
@@ -35476,7 +35476,7 @@
     "genre_first": "Crime",
     "genre_last": "Biography",
     "genre_first_last_distance": 1,
-    "typecast_character": "Narrator",
+    "typecast_character": "Self",
     "typecast_count": 4,
     "billing_trajectory": -0.0055,
     "median_billing": 5,
@@ -35549,7 +35549,7 @@
     "top_collaborator_id": "nm0001626",
     "collaborator_loyalty": 0.3,
     "bridge_score": 0.000685,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.00263825,
     "eigen_centrality": 0.005786,
     "clustering_local": 0.5256,
@@ -35567,7 +35567,7 @@
     "hub_vs_loyal": -20.9,
     "collaborator_reach": 13,
     "embed_x": -1.4183,
-    "embed_y": -1.1925
+    "embed_y": -1.1539
   },
   {
     "id": "nm0000489",
@@ -35759,7 +35759,7 @@
     "top_collaborator_id": "nm0001637",
     "collaborator_loyalty": 0.192,
     "bridge_score": 0.001309,
-    "community": 6,
+    "community": 2,
     "pagerank": 0.00161279,
     "eigen_centrality": 0.007976,
     "clustering_local": 0.3182,
@@ -35777,7 +35777,7 @@
     "hub_vs_loyal": -9.696,
     "collaborator_reach": 12,
     "embed_x": -1.1872,
-    "embed_y": 2.5385
+    "embed_y": 2.5437
   },
   {
     "id": "nm0134922",
@@ -35897,8 +35897,8 @@
     "median_billing": 4,
     "minutes_credited": 6093,
     "medium_mix": {
-      "tvSeries": 0.376,
       "tvMovie": 0.257,
+      "tvSeries": 0.376,
       "tvMiniSeries": 0.168,
       "movie": 0.198
     },
@@ -35938,7 +35938,7 @@
       }
     ],
     "same_director_repeat": 4,
-    "top_director": "nm2928255",
+    "top_director": "nm0238621",
     "regions": [
       "AE",
       "AR",
@@ -35965,7 +35965,7 @@
     "top_collaborator_id": "nm0001097",
     "collaborator_loyalty": 0.6,
     "bridge_score": 0.000852,
-    "community": 9,
+    "community": 5,
     "pagerank": 0.00331114,
     "eigen_centrality": 0.003234,
     "clustering_local": 0.7576,
@@ -35982,8 +35982,8 @@
     "acclaim_gap": 2.194,
     "hub_vs_loyal": -55.8,
     "collaborator_reach": 12,
-    "embed_x": 2.3171,
-    "embed_y": -2.8037
+    "embed_x": 2.3204,
+    "embed_y": -2.8031
   },
   {
     "id": "nm0313534",
@@ -36105,8 +36105,8 @@
     "medium_mix": {
       "tvSeries": 0.234,
       "tvMovie": 0.255,
-      "movie": 0.404,
-      "tvMiniSeries": 0.106
+      "tvMiniSeries": 0.106,
+      "movie": 0.404
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1999,
@@ -36170,7 +36170,7 @@
     "top_collaborator_id": "nm0004051",
     "collaborator_loyalty": 0.429,
     "bridge_score": 8.6e-05,
-    "community": 4,
+    "community": 6,
     "pagerank": 0.00197814,
     "eigen_centrality": 0.013081,
     "clustering_local": 0.7576,
@@ -36187,8 +36187,8 @@
     "acclaim_gap": 1.454,
     "hub_vs_loyal": -36.477,
     "collaborator_reach": 12,
-    "embed_x": -0.0797,
-    "embed_y": 3.9315
+    "embed_x": -0.0849,
+    "embed_y": 3.9343
   },
   {
     "id": "nm0427964",
@@ -36308,8 +36308,8 @@
     "median_billing": 5,
     "minutes_credited": 6651,
     "medium_mix": {
-      "tvSeries": 0.31,
       "movie": 0.603,
+      "tvSeries": 0.31,
       "tvMiniSeries": 0.04,
       "tvMovie": 0.048
     },
@@ -36375,7 +36375,7 @@
     "top_collaborator_id": "nm0004912",
     "collaborator_loyalty": 0.278,
     "bridge_score": 0.000227,
-    "community": 4,
+    "community": 6,
     "pagerank": 0.00213014,
     "eigen_centrality": 0.014959,
     "clustering_local": 0.6212,
@@ -36392,8 +36392,8 @@
     "acclaim_gap": -0.121,
     "hub_vs_loyal": -19.414,
     "collaborator_reach": 12,
-    "embed_x": 0.5929,
-    "embed_y": -3.2835
+    "embed_x": 0.5958,
+    "embed_y": -3.2837
   },
   {
     "id": "nm0848554",
@@ -36514,9 +36514,9 @@
     "minutes_credited": 2761,
     "medium_mix": {
       "movie": 0.537,
-      "tvSeries": 0.293,
       "tvMiniSeries": 0.024,
-      "tvMovie": 0.146
+      "tvMovie": 0.146,
+      "tvSeries": 0.293
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2002,
@@ -36580,7 +36580,7 @@
     "top_collaborator_id": "nm0674782",
     "collaborator_loyalty": 0.611,
     "bridge_score": 0.000672,
-    "community": 0,
+    "community": 6,
     "pagerank": 0.00214824,
     "eigen_centrality": 0.008537,
     "clustering_local": 0.3788,
@@ -36597,8 +36597,8 @@
     "acclaim_gap": 0.536,
     "hub_vs_loyal": -57.043,
     "collaborator_reach": 12,
-    "embed_x": -1.9071,
-    "embed_y": -1.0283
+    "embed_x": -1.8927,
+    "embed_y": -1.0302
   },
   {
     "id": "nm0000274",
@@ -36719,9 +36719,9 @@
     "minutes_credited": 8497,
     "medium_mix": {
       "tvMovie": 0.124,
-      "movie": 0.686,
       "tvSeries": 0.165,
-      "tvMiniSeries": 0.025
+      "tvMiniSeries": 0.025,
+      "movie": 0.686
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1992,
@@ -36785,7 +36785,7 @@
     "top_collaborator_id": "nm0001073",
     "collaborator_loyalty": 0.44,
     "bridge_score": 0.000424,
-    "community": 10,
+    "community": 4,
     "pagerank": 0.0022261,
     "eigen_centrality": 0.005926,
     "clustering_local": 0.3273,
@@ -36802,8 +36802,8 @@
     "acclaim_gap": -1.827,
     "hub_vs_loyal": -38.72,
     "collaborator_reach": 11,
-    "embed_x": 0.9145,
-    "embed_y": -3.9426
+    "embed_x": 0.9252,
+    "embed_y": -3.9417
   },
   {
     "id": "nm0005299",
@@ -36923,8 +36923,8 @@
     "median_billing": 3,
     "minutes_credited": 3931,
     "medium_mix": {
-      "tvSeries": 0.35,
       "movie": 0.483,
+      "tvSeries": 0.35,
       "tvMovie": 0.15,
       "tvMiniSeries": 0.017
     },
@@ -36990,7 +36990,7 @@
     "top_collaborator_id": "nm1404239",
     "collaborator_loyalty": 0.359,
     "bridge_score": 0.000271,
-    "community": 2,
+    "community": 1,
     "pagerank": 0.00196439,
     "eigen_centrality": 0.00796,
     "clustering_local": 0.3636,
@@ -37007,8 +37007,8 @@
     "acclaim_gap": 1.667,
     "hub_vs_loyal": -29.567,
     "collaborator_reach": 11,
-    "embed_x": 0.7884,
-    "embed_y": -1.5872
+    "embed_x": 0.7646,
+    "embed_y": -1.5767
   },
   {
     "id": "nm0372176",
@@ -37129,8 +37129,8 @@
     "minutes_credited": 5495,
     "medium_mix": {
       "movie": 0.62,
-      "tvSeries": 0.183,
       "tvMiniSeries": 0.085,
+      "tvSeries": 0.183,
       "tvMovie": 0.113
     },
     "short_to_feature_ratio": 0.0,
@@ -37195,7 +37195,7 @@
     "top_collaborator_id": "nm0001097",
     "collaborator_loyalty": 0.202,
     "bridge_score": 0.001155,
-    "community": 11,
+    "community": 5,
     "pagerank": 0.00234997,
     "eigen_centrality": 0.010056,
     "clustering_local": 0.4909,
@@ -37212,8 +37212,8 @@
     "acclaim_gap": 0.333,
     "hub_vs_loyal": -11.826,
     "collaborator_reach": 11,
-    "embed_x": 3.4006,
-    "embed_y": -1.5556
+    "embed_x": 3.4042,
+    "embed_y": -1.5579
   },
   {
     "id": "nm0809938",
@@ -37334,9 +37334,9 @@
     "minutes_credited": 4079,
     "medium_mix": {
       "movie": 0.54,
-      "tvMiniSeries": 0.04,
       "tvSeries": 0.2,
-      "tvMovie": 0.22
+      "tvMovie": 0.22,
+      "tvMiniSeries": 0.04
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1987,
@@ -37374,7 +37374,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm1135423",
+    "top_director": "nm0123273",
     "regions": [
       "AE",
       "AR",
@@ -37401,7 +37401,7 @@
     "top_collaborator_id": "nm0000539",
     "collaborator_loyalty": 0.273,
     "bridge_score": 0.000332,
-    "community": 7,
+    "community": 3,
     "pagerank": 0.00180981,
     "eigen_centrality": 0.009295,
     "clustering_local": 0.5455,
@@ -37418,8 +37418,8 @@
     "acclaim_gap": 0.351,
     "hub_vs_loyal": -19.849,
     "collaborator_reach": 11,
-    "embed_x": 2.0834,
-    "embed_y": 3.2885
+    "embed_x": 2.0969,
+    "embed_y": 3.2841
   },
   {
     "id": "nm1472917",
@@ -37533,16 +37533,16 @@
     "genre_first": "Drama",
     "genre_last": "Horror",
     "genre_first_last_distance": 1,
-    "typecast_character": "Ben Walker",
+    "typecast_character": "Danny Warren",
     "typecast_count": 1,
     "billing_trajectory": 0.0016,
     "median_billing": 3,
     "minutes_credited": 1681,
     "medium_mix": {
       "tvSeries": 0.387,
+      "tvMiniSeries": 0.065,
       "movie": 0.484,
-      "tvMovie": 0.065,
-      "tvMiniSeries": 0.065
+      "tvMovie": 0.065
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2006,
@@ -37605,7 +37605,7 @@
     "top_collaborator_id": "nm0001235",
     "collaborator_loyalty": 0.286,
     "bridge_score": 6.7e-05,
-    "community": 5,
+    "community": 1,
     "pagerank": 0.00186062,
     "eigen_centrality": 0.006968,
     "clustering_local": 0.6909,
@@ -37622,8 +37622,8 @@
     "acclaim_gap": 1.008,
     "hub_vs_loyal": -21.318,
     "collaborator_reach": 11,
-    "embed_x": -0.5424,
-    "embed_y": 3.6616
+    "embed_x": -0.5395,
+    "embed_y": 3.6601
   },
   {
     "id": "nm0000162",
@@ -37812,7 +37812,7 @@
     "top_collaborator_id": "nm0001290",
     "collaborator_loyalty": 0.344,
     "bridge_score": 0.000599,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00165631,
     "eigen_centrality": 0.018152,
     "clustering_local": 0.5778,
@@ -37829,8 +37829,8 @@
     "acclaim_gap": -0.665,
     "hub_vs_loyal": -28.872,
     "collaborator_reach": 10,
-    "embed_x": -3.776,
-    "embed_y": 0.586
+    "embed_x": -3.7722,
+    "embed_y": 0.5862
   },
   {
     "id": "nm0001303",
@@ -37944,7 +37944,7 @@
     "genre_first": "Adventure",
     "genre_last": "Drama",
     "genre_first_last_distance": 1,
-    "typecast_character": "Ingrid Cortez",
+    "typecast_character": "Self",
     "typecast_count": 3,
     "billing_trajectory": 0.0631,
     "median_billing": 3,
@@ -37952,8 +37952,8 @@
     "medium_mix": {
       "tvSeries": 0.1,
       "movie": 0.7,
-      "tvMovie": 0.1,
-      "tvMiniSeries": 0.1
+      "tvMiniSeries": 0.1,
+      "tvMovie": 0.1
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1992,
@@ -38018,7 +38018,7 @@
     "top_collaborator_id": "nm0070810",
     "collaborator_loyalty": 0.208,
     "bridge_score": 0.000207,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00162464,
     "eigen_centrality": 0.009127,
     "clustering_local": 0.2889,
@@ -38035,8 +38035,8 @@
     "acclaim_gap": -0.618,
     "hub_vs_loyal": -13.504,
     "collaborator_reach": 10,
-    "embed_x": -4.2929,
-    "embed_y": 1.3042
+    "embed_x": -4.2943,
+    "embed_y": 1.3043
   },
   {
     "id": "nm0001646",
@@ -38156,10 +38156,10 @@
     "median_billing": 7,
     "minutes_credited": 4320,
     "medium_mix": {
-      "movie": 0.691,
       "tvSeries": 0.218,
-      "tvMovie": 0.055,
-      "tvMiniSeries": 0.036
+      "movie": 0.691,
+      "tvMiniSeries": 0.036,
+      "tvMovie": 0.055
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1989,
@@ -38225,7 +38225,7 @@
     "top_collaborator_id": "nm0132257",
     "collaborator_loyalty": 0.931,
     "bridge_score": 6.8e-05,
-    "community": 0,
+    "community": 4,
     "pagerank": 0.00200688,
     "eigen_centrality": 0.014659,
     "clustering_local": 0.6667,
@@ -38242,8 +38242,8 @@
     "acclaim_gap": 0.351,
     "hub_vs_loyal": -95.203,
     "collaborator_reach": 10,
-    "embed_x": -2.327,
-    "embed_y": -0.9205
+    "embed_x": -2.3256,
+    "embed_y": -0.9153
   },
   {
     "id": "nm0039162",
@@ -38365,8 +38365,8 @@
     "medium_mix": {
       "movie": 0.451,
       "tvSeries": 0.216,
-      "tvMovie": 0.275,
-      "tvMiniSeries": 0.059
+      "tvMiniSeries": 0.059,
+      "tvMovie": 0.275
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2001,
@@ -38430,7 +38430,7 @@
     "top_collaborator_id": "nm0000102",
     "collaborator_loyalty": 0.78,
     "bridge_score": 0.000203,
-    "community": 3,
+    "community": 1,
     "pagerank": 0.00192995,
     "eigen_centrality": 0.004394,
     "clustering_local": 0.6889,
@@ -38447,8 +38447,8 @@
     "acclaim_gap": 0.412,
     "hub_vs_loyal": -78.14,
     "collaborator_reach": 10,
-    "embed_x": 1.7318,
-    "embed_y": -3.7852
+    "embed_x": 1.7414,
+    "embed_y": -3.7884
   },
   {
     "id": "nm2400045",
@@ -38569,8 +38569,8 @@
     "minutes_credited": 2683,
     "medium_mix": {
       "movie": 0.564,
-      "tvMovie": 0.128,
       "tvSeries": 0.231,
+      "tvMovie": 0.128,
       "tvMiniSeries": 0.077
     },
     "short_to_feature_ratio": 0.0,
@@ -38634,7 +38634,7 @@
     "top_collaborator_id": "nm0913587",
     "collaborator_loyalty": 0.597,
     "bridge_score": 0.002027,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00384026,
     "eigen_centrality": 0.032647,
     "clustering_local": 0.4667,
@@ -38651,8 +38651,8 @@
     "acclaim_gap": 0.707,
     "hub_vs_loyal": -57.461,
     "collaborator_reach": 10,
-    "embed_x": -2.6463,
-    "embed_y": 3.4584
+    "embed_x": -2.6474,
+    "embed_y": 3.4562
   },
   {
     "id": "nm0000554",
@@ -38776,8 +38776,8 @@
     "medium_mix": {
       "movie": 0.555,
       "tvMiniSeries": 0.174,
-      "tvMovie": 0.155,
-      "tvSeries": 0.116
+      "tvSeries": 0.116,
+      "tvMovie": 0.155
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1975,
@@ -38843,7 +38843,7 @@
     "top_collaborator_id": "nm0175814",
     "collaborator_loyalty": 0.296,
     "bridge_score": 0.00065,
-    "community": 1,
+    "community": 4,
     "pagerank": 0.00193054,
     "eigen_centrality": 0.004029,
     "clustering_local": 0.4444,
@@ -38860,8 +38860,8 @@
     "acclaim_gap": -0.659,
     "hub_vs_loyal": -24.448,
     "collaborator_reach": 9,
-    "embed_x": 2.6066,
-    "embed_y": -3.2956
+    "embed_x": 2.6082,
+    "embed_y": -3.3074
   },
   {
     "id": "nm0126284",
@@ -39048,7 +39048,7 @@
     "top_collaborator_id": "nm0048414",
     "collaborator_loyalty": 0.458,
     "bridge_score": 0.000277,
-    "community": 0,
+    "community": 6,
     "pagerank": 0.00146712,
     "eigen_centrality": 0.00622,
     "clustering_local": 0.6389,
@@ -39065,8 +39065,8 @@
     "acclaim_gap": 0.806,
     "hub_vs_loyal": -42.754,
     "collaborator_reach": 9,
-    "embed_x": -1.3815,
-    "embed_y": 3.6963
+    "embed_x": -1.3832,
+    "embed_y": 3.6872
   },
   {
     "id": "nm0707816",
@@ -39182,9 +39182,9 @@
     "minutes_credited": 3681,
     "medium_mix": {
       "movie": 0.375,
+      "tvMovie": 0.417,
       "tvMiniSeries": 0.021,
-      "tvSeries": 0.188,
-      "tvMovie": 0.417
+      "tvSeries": 0.188
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2000,
@@ -39248,7 +39248,7 @@
     "top_collaborator_id": "nm0920564",
     "collaborator_loyalty": 0.429,
     "bridge_score": 3.3e-05,
-    "community": 7,
+    "community": 3,
     "pagerank": 0.00156708,
     "eigen_centrality": 0.001661,
     "clustering_local": 0.8333,
@@ -39265,8 +39265,8 @@
     "acclaim_gap": -0.076,
     "hub_vs_loyal": -39.477,
     "collaborator_reach": 9,
-    "embed_x": -0.6184,
-    "embed_y": -4.3278
+    "embed_x": -0.6168,
+    "embed_y": -4.3242
   },
   {
     "id": "nm1564963",
@@ -39300,17 +39300,6 @@
         "votes": 4545
       },
       {
-        "title": "Demon Motel",
-        "character": "Blake Woodhouse",
-        "characters": [
-          "Blake Woodhouse"
-        ],
-        "year": null,
-        "billing": 1,
-        "tconst": "tt37898809",
-        "votes": 0
-      },
-      {
         "title": "Two Knots",
         "character": "Devon",
         "characters": [
@@ -39319,6 +39308,17 @@
         "year": 2011,
         "billing": 1,
         "tconst": "tt2049582",
+        "votes": 0
+      },
+      {
+        "title": "Demon Motel",
+        "character": "Blake Woodhouse",
+        "characters": [
+          "Blake Woodhouse"
+        ],
+        "year": null,
+        "billing": 1,
+        "tconst": "tt37898809",
         "votes": 0
       },
       {
@@ -39380,15 +39380,15 @@
     "genre_first": "Drama",
     "genre_last": "Drama",
     "genre_first_last_distance": 0,
-    "typecast_character": "Dave",
+    "typecast_character": "Jakes",
     "typecast_count": 1,
     "billing_trajectory": 0.0127,
     "median_billing": 6,
     "minutes_credited": 1890,
     "medium_mix": {
-      "tvMovie": 0.382,
       "tvSeries": 0.353,
       "movie": 0.235,
+      "tvMovie": 0.382,
       "tvMiniSeries": 0.029
     },
     "short_to_feature_ratio": 0.0,
@@ -39452,7 +39452,7 @@
     "top_collaborator_id": "nm0039162",
     "collaborator_loyalty": 0.308,
     "bridge_score": 0.000158,
-    "community": 4,
+    "community": 1,
     "pagerank": 0.00198812,
     "eigen_centrality": 0.00209,
     "clustering_local": 0.4722,
@@ -39469,8 +39469,8 @@
     "acclaim_gap": 0.807,
     "hub_vs_loyal": -25.804,
     "collaborator_reach": 9,
-    "embed_x": 3.1329,
-    "embed_y": -3.394
+    "embed_x": 3.1383,
+    "embed_y": -3.3938
   },
   {
     "id": "nm0700712",
@@ -39590,10 +39590,10 @@
     "median_billing": 2,
     "minutes_credited": 3575,
     "medium_mix": {
-      "movie": 0.705,
-      "tvSeries": 0.182,
       "tvMiniSeries": 0.045,
-      "tvMovie": 0.068
+      "movie": 0.705,
+      "tvMovie": 0.068,
+      "tvSeries": 0.182
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2000,
@@ -39657,7 +39657,7 @@
     "top_collaborator_id": "nm0000677",
     "collaborator_loyalty": 0.232,
     "bridge_score": 0.000172,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.00171916,
     "eigen_centrality": 0.006862,
     "clustering_local": 0.3929,
@@ -39674,7 +39674,7 @@
     "acclaim_gap": -1.197,
     "hub_vs_loyal": -18.216,
     "collaborator_reach": 8,
-    "embed_x": 4.1111,
+    "embed_x": 4.1212,
     "embed_y": -1.5488
   },
   {
@@ -39796,9 +39796,9 @@
     "minutes_credited": 3089,
     "medium_mix": {
       "tvSeries": 0.154,
+      "tvMiniSeries": 0.154,
       "movie": 0.615,
-      "tvMovie": 0.077,
-      "tvMiniSeries": 0.154
+      "tvMovie": 0.077
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1995,
@@ -39862,7 +39862,7 @@
     "top_collaborator_id": "nm0000449",
     "collaborator_loyalty": 0.562,
     "bridge_score": 2e-05,
-    "community": 9,
+    "community": 5,
     "pagerank": 0.00177268,
     "eigen_centrality": 0.000293,
     "clustering_local": 0.8,
@@ -39879,8 +39879,8 @@
     "acclaim_gap": 2.628,
     "hub_vs_loyal": -58.506,
     "collaborator_reach": 5,
-    "embed_x": 3.728,
-    "embed_y": 2.8671
+    "embed_x": 3.7279,
+    "embed_y": 2.8725
   },
   {
     "id": "nm0005531",
@@ -40001,9 +40001,9 @@
     "minutes_credited": 3162,
     "medium_mix": {
       "tvSeries": 0.4,
-      "tvMovie": 0.14,
+      "tvMiniSeries": 0.04,
       "movie": 0.42,
-      "tvMiniSeries": 0.04
+      "tvMovie": 0.14
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 1998,
@@ -40067,7 +40067,7 @@
     "top_collaborator_id": "nm0932112",
     "collaborator_loyalty": 0.521,
     "bridge_score": 0.000105,
-    "community": 4,
+    "community": 3,
     "pagerank": 0.00114766,
     "eigen_centrality": 0.0017,
     "clustering_local": 0.4,
@@ -40199,14 +40199,14 @@
     "genre_first": "Comedy",
     "genre_last": "Documentary",
     "genre_first_last_distance": 1,
-    "typecast_character": "Self",
+    "typecast_character": "Seth Cohen",
     "typecast_count": 3,
     "billing_trajectory": -0.0865,
     "median_billing": 3,
     "minutes_credited": 4189,
     "medium_mix": {
-      "movie": 0.678,
       "tvSeries": 0.102,
+      "movie": 0.678,
       "tvMiniSeries": 0.051,
       "tvMovie": 0.169
     },
@@ -40272,7 +40272,7 @@
     "top_collaborator_id": "nm0000579",
     "collaborator_loyalty": 0.583,
     "bridge_score": 0.00024,
-    "community": 0,
+    "community": 4,
     "pagerank": 0.00147863,
     "eigen_centrality": 0.002945,
     "clustering_local": 0.2,
@@ -40289,8 +40289,8 @@
     "acclaim_gap": 0.293,
     "hub_vs_loyal": -60.879,
     "collaborator_reach": 5,
-    "embed_x": 4.6367,
-    "embed_y": 2.0229
+    "embed_x": 4.6369,
+    "embed_y": 2.0213
   },
   {
     "id": "nm0108287",
@@ -40410,8 +40410,8 @@
     "median_billing": 3,
     "minutes_credited": 2884,
     "medium_mix": {
-      "movie": 0.571,
       "tvSeries": 0.286,
+      "movie": 0.571,
       "tvMovie": 0.095,
       "tvMiniSeries": 0.048
     },
@@ -40477,7 +40477,7 @@
     "top_collaborator_id": "nm0505971",
     "collaborator_loyalty": 0.5,
     "bridge_score": 2.9e-05,
-    "community": 0,
+    "community": 4,
     "pagerank": 0.00136451,
     "eigen_centrality": 0.002988,
     "clustering_local": 0.1667,
@@ -40494,8 +40494,8 @@
     "acclaim_gap": -0.316,
     "hub_vs_loyal": -52.5,
     "collaborator_reach": 4,
-    "embed_x": -0.3139,
-    "embed_y": 1.5486
+    "embed_x": -0.3828,
+    "embed_y": 1.5803
   },
   {
     "id": "nm0655585",
@@ -40615,10 +40615,10 @@
     "median_billing": 2,
     "minutes_credited": 1453,
     "medium_mix": {
-      "tvSeries": 0.462,
       "movie": 0.385,
-      "tvMovie": 0.115,
-      "tvMiniSeries": 0.038
+      "tvSeries": 0.462,
+      "tvMiniSeries": 0.038,
+      "tvMovie": 0.115
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2003,
@@ -40682,7 +40682,7 @@
     "top_collaborator_id": "nm0172557",
     "collaborator_loyalty": 0.505,
     "bridge_score": 0.0,
-    "community": 7,
+    "community": 3,
     "pagerank": 0.00168504,
     "eigen_centrality": 0.007438,
     "clustering_local": 1.0,
@@ -40699,8 +40699,8 @@
     "acclaim_gap": 3.249,
     "hub_vs_loyal": -53.065,
     "collaborator_reach": 4,
-    "embed_x": 1.9134,
-    "embed_y": 4.7458
+    "embed_x": 1.9216,
+    "embed_y": 4.7467
   },
   {
     "id": "nm0186225",
@@ -40856,7 +40856,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm0691061",
+    "top_director": "nm0003332",
     "regions": [
       "AE",
       "AR",
@@ -40883,7 +40883,7 @@
     "top_collaborator_id": "nm0001062",
     "collaborator_loyalty": 0.818,
     "bridge_score": 1.1e-05,
-    "community": 4,
+    "community": 0,
     "pagerank": 0.00116993,
     "eigen_centrality": 0.004294,
     "clustering_local": 0.3333,
@@ -40901,7 +40901,7 @@
     "hub_vs_loyal": -89.434,
     "collaborator_reach": 3,
     "embed_x": 3.4624,
-    "embed_y": -2.9321
+    "embed_y": -2.9299
   },
   {
     "id": "nm0205127",
@@ -41020,9 +41020,9 @@
     "median_billing": 3,
     "minutes_credited": 1964,
     "medium_mix": {
-      "tvSeries": 0.231,
+      "tvMovie": 0.115,
       "movie": 0.654,
-      "tvMovie": 0.115
+      "tvSeries": 0.231
     },
     "short_to_feature_ratio": 0.0,
     "tv_movie_crossover_year": 2006,
@@ -41060,7 +41060,7 @@
       }
     ],
     "same_director_repeat": 2,
-    "top_director": "nm0402493",
+    "top_director": "nm0295107",
     "regions": [
       "AE",
       "AR",
@@ -41085,7 +41085,7 @@
     "top_collaborator_id": "nm0913587",
     "collaborator_loyalty": 0.557,
     "bridge_score": 2.1e-05,
-    "community": 1,
+    "community": 6,
     "pagerank": 0.00185048,
     "eigen_centrality": 0.001772,
     "clustering_local": 0.3333,

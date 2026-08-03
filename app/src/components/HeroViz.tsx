@@ -17,7 +17,7 @@ import { activeEdge, activeId, neighborIds, type SelectionState } from "../lib/s
 import { edgeKey, type SearchMatch } from "../lib/search";
 import { FONT_MONO, FONT_SANS } from "../lib/fonts";
 import { ChartDefs } from "./ChartDefs";
-import { edgeSharedCount } from "../lib/encode";
+import { edgeEvidenceLabel, edgeSharedCount, isSameCharacterEdge } from "../lib/encode";
 import { weaveGradient } from "../lib/theme/scales";
 import { chartChrome } from "../lib/theme/chartChrome";
 import {
@@ -179,7 +179,11 @@ export function HeroViz({
       </text>
       <text x={0} y={26} fontFamily={FONT_MONO} fontSize={6} fill={INK_FAINT}>
         {subtitle}
-        {interactive ? " · links = shared titles · hover / click a link" : ""}
+        {interactive
+          ? manifest?.id === "same_character"
+            ? " · links = shared character names · hover / click a link"
+            : " · links = shared titles · hover / click a link"
+          : ""}
       </text>
 
       <g transform={`translate(${cx}, ${cy})`}>
@@ -272,9 +276,17 @@ export function HeroViz({
                     }}
                   >
                     <title>
-                      {`${r.sourceLabel} ↔ ${r.targetLabel}: ${r.edge ? edgeSharedCount(r.edge) : r.value} shared title(s) · weighted tie score ${r.edge?.weight ?? r.value}${
-                        r.sharedLabel ? `\n${r.sharedLabel}` : ""
-                      }`}
+                      {r.edge && isSameCharacterEdge(r.edge)
+                        ? `${r.sourceLabel} ↔ ${r.targetLabel}: ${edgeEvidenceLabel(r.edge)}${
+                            edgeSharedCount(r.edge) > 1
+                              ? ` · ${edgeSharedCount(r.edge)} shared character names`
+                              : ""
+                          }`
+                        : `${r.sourceLabel} ↔ ${r.targetLabel}: ${
+                            r.edge ? edgeSharedCount(r.edge) : r.value
+                          } shared title(s) · weighted tie score ${r.edge?.weight ?? r.value}${
+                            r.sharedLabel ? `\n${r.sharedLabel}` : ""
+                          }`}
                     </title>
                   </path>
                 );

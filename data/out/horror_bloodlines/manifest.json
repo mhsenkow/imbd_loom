@@ -19,9 +19,9 @@
     "pool_size": 600,
     "population_sql": 600
   },
-  "built_at": "2026-07-24T18:56:09.109374+00:00",
+  "built_at": "2026-08-03T17:28:38.216467+00:00",
   "clustering_coefficient": 0.4842,
-  "community_count": 12,
+  "community_count": 10,
   "correlations": {
     "acclaim_gap×prominence": {
       "n": 200,
@@ -161,17 +161,15 @@
     "assortativity": 0.0139,
     "community_sizes": [
       39,
-      29,
-      24,
+      37,
+      32,
       23,
-      18,
-      18,
-      14,
-      13,
+      19,
+      19,
+      12,
       9,
-      8,
-      4,
-      1
+      6,
+      4
     ],
     "component_count": 1,
     "corr_degree×prominence": {
@@ -264,7 +262,7 @@
     },
     "giant_component_share": 1.0,
     "largest_community_share": 0.195,
-    "modularity": 0.1341,
+    "modularity": 0.1265,
     "outliers": {
       "acclaim_gap": [
         "nm0000246",
@@ -830,6 +828,6 @@
     "top_name": "Christopher Lee"
   },
   "title": "Horror Royalty Bloodlines",
-  "tmdb_gender_rows": 160552,
+  "tmdb_gender_rows": 477619,
   "top_n": 200
 }

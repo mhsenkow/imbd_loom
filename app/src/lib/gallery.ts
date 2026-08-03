@@ -958,7 +958,7 @@ const NEW_LENSES: StoryPreset[] = [
   {
     id: "lens-same-character",
     concept: "Same character club",
-    hook: "Batmans, Bonds, Wardens — roles worn by many faces (Kenny’s SpongeBob lane).",
+    hook: "Franchise seeds + multi-word roles worn by many faces (not common first-name collisions).",
     tags: ["Characters", "Bundle"],
     spec: {
       activeConstruct: "same_character",
@@ -976,7 +976,7 @@ const NEW_LENSES: StoryPreset[] = [
   {
     id: "lens-same-char-chord",
     concept: "Character inheritance",
-    hook: "Shared character names as a circle — legacy casting as a weave.",
+    hook: "Shared character names as a circle — franchise casting as a weave.",
     tags: ["Characters", "Chord"],
     spec: {
       activeConstruct: "same_character",

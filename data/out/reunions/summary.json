@@ -16,24 +16,21 @@
   "strength_max": 10495,
   "strength_median": 215,
   "top_name": "Robert De Niro",
-  "degree_gini": 0.4673,
-  "strength_gini": 0.7034,
-  "assortativity": 0.0185,
-  "density": 0.020352,
-  "modularity": 0.1793,
+  "degree_gini": 0.4671,
+  "strength_gini": 0.7028,
+  "assortativity": 0.0168,
+  "density": 0.020452,
+  "modularity": 0.2275,
   "community_sizes": [
-    30,
-    23,
-    21,
-    20,
-    15,
-    13,
+    42,
+    35,
+    28,
+    17,
+    17,
+    17,
     12,
-    11,
-    11,
-    11,
-    9,
-    9,
+    10,
+    7,
     3,
     2,
     2,
@@ -42,7 +39,7 @@
     2,
     2
   ],
-  "largest_community_share": 0.15,
+  "largest_community_share": 0.21,
   "component_count": 7,
   "giant_component_share": 0.935,
   "diameter": 9,
@@ -51,12 +48,12 @@
     {
       "lo": 1.0,
       "hi": 4.0,
-      "count": 123
+      "count": 121
     },
     {
       "lo": 4.0,
       "hi": 7.0,
-      "count": 37
+      "count": 39
     },
     {
       "lo": 7.0,
@@ -255,8 +252,8 @@
       "count": 3
     }
   ],
-  "gender_homophily": 0.684,
-  "era_homophily": 0.509,
+  "gender_homophily": 0.683,
+  "era_homophily": 0.506,
   "scatter_strength_prominence": [
     {
       "id": "nm0000092",
@@ -290,7 +287,7 @@
     },
     {
       "id": "nm0000172",
-      "x": 134.0,
+      "x": 165.0,
       "y": 566.71
     },
     {
@@ -425,7 +422,7 @@
     },
     {
       "id": "nm0000995",
-      "x": 647.0,
+      "x": 678.0,
       "y": 390.077
     },
     {
@@ -709,18 +706,18 @@
     ]
   },
   "corr_degree×prominence": {
-    "r": 0.1996,
-    "rho": 0.2762,
+    "r": 0.2022,
+    "rho": 0.2792,
     "n": 200
   },
   "corr_strength×prominence": {
-    "r": 0.0505,
-    "rho": 0.0176,
+    "r": 0.0508,
+    "rho": 0.02,
     "n": 200
   },
   "corr_degree×strength": {
-    "r": 0.3624,
-    "rho": 0.7463,
+    "r": 0.3609,
+    "rho": 0.7461,
     "n": 200
   }
 }

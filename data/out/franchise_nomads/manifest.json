@@ -20,7 +20,7 @@
     "population_sql": 600,
     "stages_source": "default_from_nodes"
   },
-  "built_at": "2026-07-24T18:52:50.546265+00:00",
+  "built_at": "2026-08-03T17:25:02.153493+00:00",
   "clustering_coefficient": 0.7533,
   "community_count": 9,
   "correlations": {
@@ -78,8 +78,8 @@
       "label": "Frank Welker"
     },
     {
-      "id": "nm0228356",
-      "label": "Ben Diskin"
+      "id": "nm0443286",
+      "label": "David Kaye"
     },
     {
       "id": "nm1101677",
@@ -161,14 +161,14 @@
     ],
     "assortativity": 0.1047,
     "community_sizes": [
-      63,
-      52,
-      27,
-      21,
-      12,
+      51,
+      49,
+      24,
+      23,
+      23,
+      16,
       11,
-      10,
-      3,
+      2,
       1
     ],
     "component_count": 2,
@@ -262,8 +262,8 @@
       "nonbinary": 1
     },
     "giant_component_share": 0.995,
-    "largest_community_share": 0.315,
-    "modularity": 0.1906,
+    "largest_community_share": 0.255,
+    "modularity": 0.1625,
     "outliers": {
       "acclaim_gap": [
         "nm0000532",
@@ -822,6 +822,6 @@
     "top_name": "Brahmanandam"
   },
   "title": "Franchise Nomads",
-  "tmdb_gender_rows": 160360,
+  "tmdb_gender_rows": 477619,
   "top_n": 200
 }

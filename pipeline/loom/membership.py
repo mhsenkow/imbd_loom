@@ -55,6 +55,21 @@ CHARACTER_BLOCKLIST: frozenset[str] = frozenset(
         "queen",
         "prince",
         "princess",
+        # Ultra-generic labels that survive length filters but create false clubs
+        "dog",
+        "god",
+        "narration",
+        "unknown",
+        "unnamed",
+        # Multi-word job / placeholder roles (still not franchise identities)
+        "police commissioner",
+        "bus driver",
+        "cab driver",
+        "taxi driver",
+        "tv announcer",
+        "john smith",
+        "jane doe",
+        "john doe",
     }
 )
 
@@ -162,6 +177,18 @@ def same_character_seed_sql(norm_expr: str = "char_norm") -> str:
         parts.append(f"{norm_expr} = '{seed}'")
         parts.append(f"{norm_expr} LIKE '%{seed}%'")
     return "(" + " OR ".join(parts) + ")"
+
+
+def same_character_keep_sql(norm_expr: str = "char_norm") -> str:
+    """
+    Keep franchise seeds and multi-word names.
+
+    Single common given names (Ginger, Louie, Raju…) create false “same character”
+    clubs from unrelated films; requiring a space or a curated seed preserves
+    Batman / Bond / Holmes without that noise.
+    """
+    seed = same_character_seed_sql(norm_expr)
+    return f"(({seed}) OR (position(' ' IN {norm_expr}) > 0))"
 
 
 def drama_school_match_sql(educated_expr: str = "w.educated_at") -> str:

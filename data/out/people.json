@@ -5,6 +5,7 @@
     "constructs": [
       "voice_cartoons",
       "men_horror",
+      "bechdel",
       "comedy_horror",
       "genre_bridge",
       "long_careers",
@@ -25,6 +26,7 @@
       "bechdel",
       "comedy_horror",
       "long_careers",
+      "dubbing",
       "repertory",
       "reunions",
       "genre_drift",
@@ -40,6 +42,7 @@
     "label": "Mark Hamill",
     "constructs": [
       "voice_cartoons",
+      "comedy_horror",
       "long_careers",
       "dubbing",
       "repertory",
@@ -50,6 +53,24 @@
       "voice_face",
       "franchise_nomads",
       "documentary_selves",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm0123553",
+    "label": "Corey Burton",
+    "constructs": [
+      "voice_cartoons",
+      "genre_bridge",
+      "long_careers",
+      "dubbing",
+      "repertory",
+      "same_character",
+      "reunions",
+      "genre_drift",
+      "comeback",
+      "hyphenates",
+      "franchise_nomads",
       "typecast"
     ]
   },
@@ -72,42 +93,6 @@
     ]
   },
   {
-    "id": "nm0001293",
-    "label": "Seth Green",
-    "constructs": [
-      "voice_cartoons",
-      "comedy_horror",
-      "long_careers",
-      "dubbing",
-      "repertory",
-      "child_stars",
-      "same_character",
-      "reunions",
-      "voice_face",
-      "hyphenates",
-      "franchise_nomads",
-      "documentary_selves"
-    ]
-  },
-  {
-    "id": "nm0319308",
-    "label": "Tabitha St. Germain",
-    "constructs": [
-      "voice_cartoons",
-      "bechdel",
-      "long_careers",
-      "dubbing",
-      "repertory",
-      "child_stars",
-      "same_character",
-      "director_muses",
-      "comeback",
-      "hyphenates",
-      "franchise_nomads",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0000317",
     "label": "Clancy Brown",
     "constructs": [
@@ -125,33 +110,67 @@
     ]
   },
   {
-    "id": "nm0123553",
-    "label": "Corey Burton",
+    "id": "nm0000532",
+    "label": "Malcolm McDowell",
+    "constructs": [
+      "men_horror",
+      "bechdel",
+      "comedy_horror",
+      "long_careers",
+      "repertory",
+      "same_character",
+      "reunions",
+      "national_bridges",
+      "hyphenates",
+      "franchise_nomads",
+      "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm0000305",
+    "label": "Mel Blanc",
     "constructs": [
       "voice_cartoons",
       "genre_bridge",
       "long_careers",
       "dubbing",
       "repertory",
-      "reunions",
-      "genre_drift",
+      "same_character",
+      "director_muses",
       "comeback",
+      "voice_face",
+      "franchise_nomads",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm0293659",
+    "label": "Paul Frees",
+    "constructs": [
+      "voice_cartoons",
+      "comedy_horror",
+      "long_careers",
+      "dubbing",
+      "repertory",
+      "same_character",
+      "director_muses",
+      "voice_face",
       "hyphenates",
       "franchise_nomads",
       "typecast"
     ]
   },
   {
-    "id": "nm0000276",
-    "label": "Sean Astin",
+    "id": "nm0001293",
+    "label": "Seth Green",
     "constructs": [
+      "voice_cartoons",
       "comedy_horror",
       "long_careers",
+      "dubbing",
       "repertory",
       "child_stars",
-      "same_character",
-      "genre_drift",
-      "national_bridges",
+      "reunions",
       "voice_face",
       "hyphenates",
       "franchise_nomads",
@@ -176,19 +195,54 @@
     ]
   },
   {
-    "id": "nm0016141",
-    "label": "Carlos Alazraqui",
+    "id": "nm0319308",
+    "label": "Tabitha St. Germain",
     "constructs": [
       "voice_cartoons",
-      "comedy_horror",
+      "bechdel",
+      "long_careers",
+      "dubbing",
+      "repertory",
+      "child_stars",
+      "director_muses",
+      "comeback",
+      "hyphenates",
+      "franchise_nomads",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm0152839",
+    "label": "Tara Strong",
+    "constructs": [
+      "voice_cartoons",
+      "bechdel",
       "genre_bridge",
+      "long_careers",
       "dubbing",
       "repertory",
       "same_character",
-      "genre_drift",
+      "director_muses",
       "voice_face",
-      "hyphenates",
-      "franchise_nomads"
+      "franchise_nomads",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm0000347",
+    "label": "Tim Curry",
+    "constructs": [
+      "men_horror",
+      "bechdel",
+      "comedy_horror",
+      "long_careers",
+      "dubbing",
+      "repertory",
+      "genre_drift",
+      "national_bridges",
+      "voice_face",
+      "franchise_nomads",
+      "horror_bloodlines"
     ]
   },
   {
@@ -240,8 +294,8 @@
     ]
   },
   {
-    "id": "nm0191906",
-    "label": "Jim Cummings",
+    "id": "nm0808401",
+    "label": "Hal Smith",
     "constructs": [
       "voice_cartoons",
       "genre_bridge",
@@ -250,40 +304,24 @@
       "repertory",
       "same_character",
       "director_muses",
-      "reunions",
-      "franchise_nomads",
-      "typecast"
+      "voice_face",
+      "hyphenates",
+      "franchise_nomads"
     ]
   },
   {
-    "id": "nm0000532",
-    "label": "Malcolm McDowell",
+    "id": "nm0000640",
+    "label": "Martin Sheen",
     "constructs": [
-      "men_horror",
       "bechdel",
-      "comedy_horror",
       "long_careers",
       "repertory",
+      "same_character",
       "reunions",
       "national_bridges",
       "hyphenates",
       "franchise_nomads",
-      "horror_bloodlines"
-    ]
-  },
-  {
-    "id": "nm0000305",
-    "label": "Mel Blanc",
-    "constructs": [
-      "voice_cartoons",
-      "genre_bridge",
-      "long_careers",
-      "dubbing",
-      "repertory",
-      "director_muses",
-      "comeback",
-      "voice_face",
-      "franchise_nomads",
+      "documentary_selves",
       "typecast"
     ]
   },
@@ -300,22 +338,6 @@
       "hyphenates",
       "franchise_nomads",
       "documentary_selves",
-      "typecast"
-    ]
-  },
-  {
-    "id": "nm0293659",
-    "label": "Paul Frees",
-    "constructs": [
-      "voice_cartoons",
-      "comedy_horror",
-      "long_careers",
-      "dubbing",
-      "repertory",
-      "director_muses",
-      "voice_face",
-      "hyphenates",
-      "franchise_nomads",
       "typecast"
     ]
   },
@@ -352,35 +374,19 @@
     ]
   },
   {
-    "id": "nm0152839",
-    "label": "Tara Strong",
+    "id": "nm0000276",
+    "label": "Sean Astin",
     "constructs": [
-      "voice_cartoons",
-      "bechdel",
-      "genre_bridge",
-      "long_careers",
-      "dubbing",
-      "repertory",
-      "director_muses",
-      "voice_face",
-      "franchise_nomads",
-      "typecast"
-    ]
-  },
-  {
-    "id": "nm0000347",
-    "label": "Tim Curry",
-    "constructs": [
-      "men_horror",
-      "bechdel",
       "comedy_horror",
       "long_careers",
       "repertory",
+      "child_stars",
       "genre_drift",
       "national_bridges",
       "voice_face",
+      "hyphenates",
       "franchise_nomads",
-      "horror_bloodlines"
+      "documentary_selves"
     ]
   },
   {
@@ -415,18 +421,18 @@
     ]
   },
   {
-    "id": "nm0012121",
-    "label": "Charlie Adler",
+    "id": "nm0016141",
+    "label": "Carlos Alazraqui",
     "constructs": [
       "voice_cartoons",
+      "comedy_horror",
       "genre_bridge",
-      "long_careers",
       "dubbing",
       "repertory",
-      "same_character",
+      "genre_drift",
+      "voice_face",
       "hyphenates",
-      "franchise_nomads",
-      "typecast"
+      "franchise_nomads"
     ]
   },
   {
@@ -460,8 +466,38 @@
     ]
   },
   {
-    "id": "nm0808401",
-    "label": "Hal Smith",
+    "id": "nm0046033",
+    "label": "Diedrich Bader",
+    "constructs": [
+      "voice_cartoons",
+      "comedy_horror",
+      "long_careers",
+      "dubbing",
+      "repertory",
+      "same_character",
+      "reunions",
+      "voice_face",
+      "franchise_nomads"
+    ]
+  },
+  {
+    "id": "nm0000799",
+    "label": "Edward Asner",
+    "constructs": [
+      "comedy_horror",
+      "long_careers",
+      "dubbing",
+      "repertory",
+      "genre_drift",
+      "national_bridges",
+      "voice_face",
+      "franchise_nomads",
+      "documentary_selves"
+    ]
+  },
+  {
+    "id": "nm0191906",
+    "label": "Jim Cummings",
     "constructs": [
       "voice_cartoons",
       "genre_bridge",
@@ -469,39 +505,9 @@
       "dubbing",
       "repertory",
       "director_muses",
-      "voice_face",
-      "hyphenates",
-      "franchise_nomads"
-    ]
-  },
-  {
-    "id": "nm0071818",
-    "label": "Jeff Bennett",
-    "constructs": [
-      "voice_cartoons",
-      "comedy_horror",
-      "genre_bridge",
-      "dubbing",
-      "repertory",
-      "same_character",
-      "director_muses",
+      "reunions",
       "franchise_nomads",
       "typecast"
-    ]
-  },
-  {
-    "id": "nm0000422",
-    "label": "John Goodman",
-    "constructs": [
-      "men_horror",
-      "bechdel",
-      "comedy_horror",
-      "long_careers",
-      "repertory",
-      "same_character",
-      "genre_drift",
-      "voice_face",
-      "franchise_nomads"
     ]
   },
   {
@@ -520,21 +526,6 @@
     ]
   },
   {
-    "id": "nm0000327",
-    "label": "Lacey Chabert",
-    "constructs": [
-      "scream_queen",
-      "bechdel",
-      "comedy_horror",
-      "long_careers",
-      "repertory",
-      "child_stars",
-      "voice_face",
-      "hyphenates",
-      "franchise_nomads"
-    ]
-  },
-  {
     "id": "nm0865064",
     "label": "Lee Tockar",
     "constructs": [
@@ -547,21 +538,6 @@
       "comeback",
       "hyphenates",
       "franchise_nomads"
-    ]
-  },
-  {
-    "id": "nm0000640",
-    "label": "Martin Sheen",
-    "constructs": [
-      "bechdel",
-      "long_careers",
-      "repertory",
-      "reunions",
-      "national_bridges",
-      "hyphenates",
-      "franchise_nomads",
-      "documentary_selves",
-      "typecast"
     ]
   },
   {
@@ -610,21 +586,6 @@
     ]
   },
   {
-    "id": "nm0667326",
-    "label": "Rob Paulsen",
-    "constructs": [
-      "voice_cartoons",
-      "genre_bridge",
-      "long_careers",
-      "dubbing",
-      "repertory",
-      "same_character",
-      "director_muses",
-      "voice_face",
-      "franchise_nomads"
-    ]
-  },
-  {
     "id": "nm0000114",
     "label": "Steve Buscemi",
     "constructs": [
@@ -637,6 +598,21 @@
       "genre_drift",
       "franchise_nomads",
       "documentary_selves"
+    ]
+  },
+  {
+    "id": "nm0534134",
+    "label": "Tress MacNeille",
+    "constructs": [
+      "voice_cartoons",
+      "genre_bridge",
+      "long_careers",
+      "dubbing",
+      "repertory",
+      "same_character",
+      "reunions",
+      "franchise_nomads",
+      "typecast"
     ]
   },
   {
@@ -655,6 +631,34 @@
     ]
   },
   {
+    "id": "nm0004051",
+    "label": "Brian Cox",
+    "constructs": [
+      "men_horror",
+      "bechdel",
+      "comedy_horror",
+      "long_careers",
+      "same_character",
+      "reunions",
+      "documentary_selves",
+      "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm0012121",
+    "label": "Charlie Adler",
+    "constructs": [
+      "voice_cartoons",
+      "genre_bridge",
+      "long_careers",
+      "dubbing",
+      "repertory",
+      "hyphenates",
+      "franchise_nomads",
+      "typecast"
+    ]
+  },
+  {
     "id": "nm0001831",
     "label": "David Warner",
     "constructs": [
@@ -666,20 +670,6 @@
       "national_bridges",
       "franchise_nomads",
       "horror_bloodlines"
-    ]
-  },
-  {
-    "id": "nm0046033",
-    "label": "Diedrich Bader",
-    "constructs": [
-      "voice_cartoons",
-      "comedy_horror",
-      "long_careers",
-      "dubbing",
-      "repertory",
-      "reunions",
-      "voice_face",
-      "franchise_nomads"
     ]
   },
   {
@@ -711,16 +701,16 @@
     ]
   },
   {
-    "id": "nm0000799",
-    "label": "Edward Asner",
+    "id": "nm0035488",
+    "label": "Fred Armisen",
     "constructs": [
       "comedy_horror",
-      "long_careers",
-      "repertory",
+      "dubbing",
+      "child_stars",
       "genre_drift",
-      "national_bridges",
+      "comeback",
       "voice_face",
-      "franchise_nomads",
+      "hyphenates",
       "documentary_selves"
     ]
   },
@@ -781,6 +771,62 @@
     ]
   },
   {
+    "id": "nm0071818",
+    "label": "Jeff Bennett",
+    "constructs": [
+      "voice_cartoons",
+      "comedy_horror",
+      "genre_bridge",
+      "dubbing",
+      "repertory",
+      "director_muses",
+      "franchise_nomads",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm0363641",
+    "label": "Jess Harnell",
+    "constructs": [
+      "voice_cartoons",
+      "genre_bridge",
+      "long_careers",
+      "dubbing",
+      "repertory",
+      "same_character",
+      "franchise_nomads",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm0000422",
+    "label": "John Goodman",
+    "constructs": [
+      "men_horror",
+      "bechdel",
+      "comedy_horror",
+      "long_careers",
+      "repertory",
+      "genre_drift",
+      "voice_face",
+      "franchise_nomads"
+    ]
+  },
+  {
+    "id": "nm0827267",
+    "label": "John Stephenson",
+    "constructs": [
+      "genre_bridge",
+      "long_careers",
+      "dubbing",
+      "repertory",
+      "director_muses",
+      "voice_face",
+      "franchise_nomads",
+      "typecast"
+    ]
+  },
+  {
     "id": "nm0465160",
     "label": "Katsuyuki Konishi",
     "constructs": [
@@ -806,6 +852,20 @@
       "voice_face",
       "franchise_nomads",
       "typecast"
+    ]
+  },
+  {
+    "id": "nm0000327",
+    "label": "Lacey Chabert",
+    "constructs": [
+      "scream_queen",
+      "comedy_horror",
+      "long_careers",
+      "repertory",
+      "child_stars",
+      "voice_face",
+      "hyphenates",
+      "franchise_nomads"
     ]
   },
   {
@@ -865,31 +925,17 @@
     ]
   },
   {
-    "id": "nm0451918",
-    "label": "Sam Vincent",
+    "id": "nm0667326",
+    "label": "Rob Paulsen",
     "constructs": [
       "voice_cartoons",
       "genre_bridge",
       "long_careers",
       "dubbing",
       "repertory",
-      "same_character",
       "director_muses",
+      "voice_face",
       "franchise_nomads"
-    ]
-  },
-  {
-    "id": "nm0000168",
-    "label": "Samuel L. Jackson",
-    "constructs": [
-      "men_horror",
-      "bechdel",
-      "same_character",
-      "genre_drift",
-      "comeback",
-      "blockbuster",
-      "documentary_selves",
-      "horror_bloodlines"
     ]
   },
   {
@@ -903,20 +949,6 @@
       "repertory",
       "director_muses",
       "voice_face",
-      "franchise_nomads"
-    ]
-  },
-  {
-    "id": "nm0864997",
-    "label": "Stephen Tobolowsky",
-    "constructs": [
-      "comedy_horror",
-      "genre_bridge",
-      "long_careers",
-      "repertory",
-      "same_character",
-      "genre_drift",
-      "national_bridges",
       "franchise_nomads"
     ]
   },
@@ -935,20 +967,6 @@
     ]
   },
   {
-    "id": "nm0534134",
-    "label": "Tress MacNeille",
-    "constructs": [
-      "voice_cartoons",
-      "genre_bridge",
-      "long_careers",
-      "dubbing",
-      "repertory",
-      "reunions",
-      "franchise_nomads",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0394679",
     "label": "Yui Horie",
     "constructs": [
@@ -963,19 +981,6 @@
     ]
   },
   {
-    "id": "nm0001086",
-    "label": "Alan Cumming",
-    "constructs": [
-      "bechdel",
-      "comedy_horror",
-      "genre_bridge",
-      "long_careers",
-      "same_character",
-      "national_bridges",
-      "documentary_selves"
-    ]
-  },
-  {
     "id": "nm0649178",
     "label": "Alan Oppenheimer",
     "constructs": [
@@ -986,19 +991,6 @@
       "director_muses",
       "voice_face",
       "franchise_nomads"
-    ]
-  },
-  {
-    "id": "nm0000285",
-    "label": "Alec Baldwin",
-    "constructs": [
-      "bechdel",
-      "long_careers",
-      "repertory",
-      "same_character",
-      "hyphenates",
-      "franchise_nomads",
-      "documentary_selves"
     ]
   },
   {
@@ -1025,19 +1017,6 @@
       "child_stars",
       "voice_face",
       "franchise_nomads"
-    ]
-  },
-  {
-    "id": "nm0000291",
-    "label": "Angela Bassett",
-    "constructs": [
-      "women_horror",
-      "scream_queen",
-      "bechdel",
-      "reunions",
-      "genre_drift",
-      "documentary_selves",
-      "horror_bloodlines"
     ]
   },
   {
@@ -1080,16 +1059,16 @@
     ]
   },
   {
-    "id": "nm0004051",
-    "label": "Brian Cox",
+    "id": "nm0103977",
+    "label": "Brahmanandam",
     "constructs": [
-      "men_horror",
-      "bechdel",
       "comedy_horror",
+      "genre_bridge",
       "long_careers",
-      "reunions",
-      "documentary_selves",
-      "horror_bloodlines"
+      "repertory",
+      "same_character",
+      "director_muses",
+      "franchise_nomads"
     ]
   },
   {
@@ -1210,26 +1189,13 @@
     ]
   },
   {
-    "id": "nm0001368",
-    "label": "Ernie Hudson",
+    "id": "nm0000279",
+    "label": "Hank Azaria",
     "constructs": [
-      "comedy_horror",
-      "long_careers",
-      "repertory",
-      "same_character",
-      "reunions",
-      "hyphenates",
-      "franchise_nomads"
-    ]
-  },
-  {
-    "id": "nm0035488",
-    "label": "Fred Armisen",
-    "constructs": [
-      "comedy_horror",
-      "child_stars",
+      "voice_cartoons",
+      "bechdel",
+      "dubbing",
       "genre_drift",
-      "comeback",
       "voice_face",
       "hyphenates",
       "documentary_selves"
@@ -1288,19 +1254,6 @@
     ]
   },
   {
-    "id": "nm0799777",
-    "label": "J.K. Simmons",
-    "constructs": [
-      "bechdel",
-      "comedy_horror",
-      "repertory",
-      "same_character",
-      "voice_face",
-      "franchise_nomads",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0001664",
     "label": "James Remar",
     "constructs": [
@@ -1314,6 +1267,19 @@
     ]
   },
   {
+    "id": "nm0888717",
+    "label": "Jean Vander Pyl",
+    "constructs": [
+      "genre_bridge",
+      "long_careers",
+      "repertory",
+      "same_character",
+      "director_muses",
+      "franchise_nomads",
+      "typecast"
+    ]
+  },
+  {
     "id": "nm0001787",
     "label": "Jeffrey Tambor",
     "constructs": [
@@ -1324,19 +1290,6 @@
       "reunions",
       "voice_face",
       "franchise_nomads"
-    ]
-  },
-  {
-    "id": "nm0363641",
-    "label": "Jess Harnell",
-    "constructs": [
-      "voice_cartoons",
-      "genre_bridge",
-      "long_careers",
-      "dubbing",
-      "repertory",
-      "franchise_nomads",
-      "typecast"
     ]
   },
   {
@@ -1379,19 +1332,6 @@
     ]
   },
   {
-    "id": "nm0827267",
-    "label": "John Stephenson",
-    "constructs": [
-      "genre_bridge",
-      "long_careers",
-      "repertory",
-      "director_muses",
-      "voice_face",
-      "franchise_nomads",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0339460",
     "label": "Judy Greer",
     "constructs": [
@@ -1401,32 +1341,6 @@
       "repertory",
       "voice_face",
       "hyphenates",
-      "franchise_nomads"
-    ]
-  },
-  {
-    "id": "nm1312566",
-    "label": "Kari Wahlgren",
-    "constructs": [
-      "voice_cartoons",
-      "genre_bridge",
-      "dubbing",
-      "repertory",
-      "same_character",
-      "franchise_nomads",
-      "typecast"
-    ]
-  },
-  {
-    "id": "nm0815718",
-    "label": "Kath Soucie",
-    "constructs": [
-      "voice_cartoons",
-      "genre_bridge",
-      "long_careers",
-      "dubbing",
-      "repertory",
-      "same_character",
       "franchise_nomads"
     ]
   },
@@ -1441,19 +1355,6 @@
       "voice_face",
       "hyphenates",
       "franchise_nomads"
-    ]
-  },
-  {
-    "id": "nm0000448",
-    "label": "Lance Henriksen",
-    "constructs": [
-      "men_horror",
-      "bechdel",
-      "comedy_horror",
-      "long_careers",
-      "same_character",
-      "reunions",
-      "horror_bloodlines"
     ]
   },
   {
@@ -1501,7 +1402,7 @@
     "constructs": [
       "bechdel",
       "long_careers",
-      "same_character",
+      "dubbing",
       "reunions",
       "comeback",
       "hyphenates",
@@ -1522,6 +1423,32 @@
     ]
   },
   {
+    "id": "nm0451918",
+    "label": "Sam Vincent",
+    "constructs": [
+      "voice_cartoons",
+      "genre_bridge",
+      "long_careers",
+      "dubbing",
+      "repertory",
+      "director_muses",
+      "franchise_nomads"
+    ]
+  },
+  {
+    "id": "nm0000168",
+    "label": "Samuel L. Jackson",
+    "constructs": [
+      "men_horror",
+      "bechdel",
+      "genre_drift",
+      "comeback",
+      "blockbuster",
+      "documentary_selves",
+      "horror_bloodlines"
+    ]
+  },
+  {
     "id": "nm0573926",
     "label": "Scott McNeil",
     "constructs": [
@@ -1532,19 +1459,6 @@
       "director_muses",
       "voice_face",
       "franchise_nomads"
-    ]
-  },
-  {
-    "id": "nm0532235",
-    "label": "Seth MacFarlane",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "same_character",
-      "blockbuster",
-      "voice_face",
-      "hyphenates",
-      "documentary_selves"
     ]
   },
   {
@@ -1570,6 +1484,19 @@
       "national_bridges",
       "voice_face",
       "hyphenates",
+      "franchise_nomads"
+    ]
+  },
+  {
+    "id": "nm0864997",
+    "label": "Stephen Tobolowsky",
+    "constructs": [
+      "comedy_horror",
+      "genre_bridge",
+      "long_careers",
+      "repertory",
+      "genre_drift",
+      "national_bridges",
       "franchise_nomads"
     ]
   },
@@ -1717,6 +1644,30 @@
     ]
   },
   {
+    "id": "nm0960033",
+    "label": "Akio Ôtsuka",
+    "constructs": [
+      "comedy_horror",
+      "long_careers",
+      "dubbing",
+      "repertory",
+      "franchise_nomads",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm0001086",
+    "label": "Alan Cumming",
+    "constructs": [
+      "bechdel",
+      "comedy_horror",
+      "genre_bridge",
+      "long_careers",
+      "national_bridges",
+      "documentary_selves"
+    ]
+  },
+  {
     "id": "nm0876138",
     "label": "Alan Tudyk",
     "constructs": [
@@ -1726,6 +1677,30 @@
       "voice_face",
       "hyphenates",
       "franchise_nomads"
+    ]
+  },
+  {
+    "id": "nm0000285",
+    "label": "Alec Baldwin",
+    "constructs": [
+      "bechdel",
+      "long_careers",
+      "repertory",
+      "hyphenates",
+      "franchise_nomads",
+      "documentary_selves"
+    ]
+  },
+  {
+    "id": "nm0000291",
+    "label": "Angela Bassett",
+    "constructs": [
+      "women_horror",
+      "scream_queen",
+      "bechdel",
+      "reunions",
+      "documentary_selves",
+      "horror_bloodlines"
     ]
   },
   {
@@ -1753,51 +1728,27 @@
     ]
   },
   {
-    "id": "nm0004951",
-    "label": "Brad Garrett",
+    "id": "nm1931870",
+    "label": "Brittney Karbowski",
+    "constructs": [
+      "comedy_horror",
+      "dubbing",
+      "repertory",
+      "voice_face",
+      "franchise_nomads",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm0663177",
+    "label": "Chris Parnell",
     "constructs": [
       "voice_cartoons",
-      "genre_bridge",
+      "comedy_horror",
       "dubbing",
-      "genre_drift",
+      "reunions",
       "voice_face",
       "hyphenates"
-    ]
-  },
-  {
-    "id": "nm0103977",
-    "label": "Brahmanandam",
-    "constructs": [
-      "comedy_horror",
-      "genre_bridge",
-      "long_careers",
-      "repertory",
-      "director_muses",
-      "franchise_nomads"
-    ]
-  },
-  {
-    "id": "nm0001406",
-    "label": "Carol Kane",
-    "constructs": [
-      "scream_queen",
-      "bechdel",
-      "comedy_horror",
-      "genre_bridge",
-      "long_careers",
-      "same_character"
-    ]
-  },
-  {
-    "id": "nm0611889",
-    "label": "Chris Mulkey",
-    "constructs": [
-      "men_horror",
-      "comedy_horror",
-      "long_careers",
-      "same_character",
-      "reunions",
-      "horror_bloodlines"
     ]
   },
   {
@@ -1810,18 +1761,6 @@
       "reunions",
       "national_bridges",
       "franchise_nomads"
-    ]
-  },
-  {
-    "id": "nm0001626",
-    "label": "Christopher Plummer",
-    "constructs": [
-      "men_horror",
-      "bechdel",
-      "same_character",
-      "reunions",
-      "national_bridges",
-      "horror_bloodlines"
     ]
   },
   {
@@ -1897,15 +1836,15 @@
     ]
   },
   {
-    "id": "nm0000279",
-    "label": "Hank Azaria",
+    "id": "nm0001368",
+    "label": "Ernie Hudson",
     "constructs": [
-      "voice_cartoons",
-      "bechdel",
-      "genre_drift",
-      "voice_face",
+      "comedy_horror",
+      "long_careers",
+      "repertory",
+      "reunions",
       "hyphenates",
-      "documentary_selves"
+      "franchise_nomads"
     ]
   },
   {
@@ -1921,25 +1860,13 @@
     ]
   },
   {
-    "id": "nm0000469",
-    "label": "James Earl Jones",
+    "id": "nm0799777",
+    "label": "J.K. Simmons",
     "constructs": [
-      "long_careers",
+      "bechdel",
+      "comedy_horror",
       "repertory",
-      "reunions",
-      "genre_drift",
-      "franchise_nomads",
-      "documentary_selves"
-    ]
-  },
-  {
-    "id": "nm0888717",
-    "label": "Jean Vander Pyl",
-    "constructs": [
-      "genre_bridge",
-      "long_careers",
-      "repertory",
-      "director_muses",
+      "voice_face",
       "franchise_nomads",
       "typecast"
     ]
@@ -1981,18 +1908,6 @@
     ]
   },
   {
-    "id": "nm5211370",
-    "label": "Justin Briner",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "child_stars",
-      "comeback",
-      "hyphenates",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm2573928",
     "label": "Kana Hanazawa",
     "constructs": [
@@ -2017,6 +1932,18 @@
     ]
   },
   {
+    "id": "nm1312566",
+    "label": "Kari Wahlgren",
+    "constructs": [
+      "voice_cartoons",
+      "genre_bridge",
+      "dubbing",
+      "repertory",
+      "franchise_nomads",
+      "typecast"
+    ]
+  },
+  {
     "id": "nm1512156",
     "label": "Kate Higgins",
     "constructs": [
@@ -2029,14 +1956,14 @@
     ]
   },
   {
-    "id": "nm0056532",
-    "label": "Kathleen Barr",
+    "id": "nm0815718",
+    "label": "Kath Soucie",
     "constructs": [
       "voice_cartoons",
+      "genre_bridge",
       "long_careers",
       "dubbing",
       "repertory",
-      "same_character",
       "franchise_nomads"
     ]
   },
@@ -2062,18 +1989,6 @@
       "repertory",
       "franchise_nomads",
       "typecast"
-    ]
-  },
-  {
-    "id": "nm0068338",
-    "label": "Kristen Bell",
-    "constructs": [
-      "women_horror",
-      "scream_queen",
-      "bechdel",
-      "same_character",
-      "genre_drift",
-      "documentary_selves"
     ]
   },
   {
@@ -2161,15 +2076,15 @@
     ]
   },
   {
-    "id": "nm0258268",
-    "label": "Richard Epcar",
+    "id": "nm0652663",
+    "label": "Patton Oswalt",
     "constructs": [
-      "voice_cartoons",
+      "men_horror",
+      "comedy_horror",
       "dubbing",
-      "comeback",
       "voice_face",
       "hyphenates",
-      "typecast"
+      "documentary_selves"
     ]
   },
   {
@@ -2209,15 +2124,15 @@
     ]
   },
   {
-    "id": "nm0001264",
-    "label": "Sarah Michelle Gellar",
+    "id": "nm1886746",
+    "label": "Roger Craig Smith",
     "constructs": [
-      "women_horror",
-      "scream_queen",
-      "bechdel",
-      "genre_drift",
-      "blockbuster",
-      "horror_bloodlines"
+      "voice_cartoons",
+      "dubbing",
+      "repertory",
+      "same_character",
+      "franchise_nomads",
+      "typecast"
     ]
   },
   {
@@ -2245,6 +2160,18 @@
     ]
   },
   {
+    "id": "nm0000155",
+    "label": "Whoopi Goldberg",
+    "constructs": [
+      "bechdel",
+      "long_careers",
+      "repertory",
+      "genre_drift",
+      "franchise_nomads",
+      "documentary_selves"
+    ]
+  },
+  {
     "id": "nm0004395",
     "label": "Adam Scott",
     "constructs": [
@@ -2253,17 +2180,6 @@
       "comedy_horror",
       "genre_drift",
       "horror_bloodlines"
-    ]
-  },
-  {
-    "id": "nm0960033",
-    "label": "Akio Ôtsuka",
-    "constructs": [
-      "comedy_horror",
-      "long_careers",
-      "repertory",
-      "franchise_nomads",
-      "typecast"
     ]
   },
   {
@@ -2289,17 +2205,6 @@
     ]
   },
   {
-    "id": "nm4515899",
-    "label": "Amber Lee Connors",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "child_stars",
-      "comeback",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0688132",
     "label": "Amy Poehler",
     "constructs": [
@@ -2308,6 +2213,17 @@
       "voice_face",
       "hyphenates",
       "documentary_selves"
+    ]
+  },
+  {
+    "id": "nm0508877",
+    "label": "Andrea Libman",
+    "constructs": [
+      "dubbing",
+      "child_stars",
+      "director_muses",
+      "hyphenates",
+      "typecast"
     ]
   },
   {
@@ -2322,13 +2238,24 @@
     ]
   },
   {
-    "id": "nm0925966",
-    "label": "Bradley Whitford",
+    "id": "nm0000374",
+    "label": "Brad Dourif",
     "constructs": [
       "men_horror",
       "bechdel",
-      "same_character",
-      "reunions",
+      "comedy_horror",
+      "genre_drift",
+      "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm0004951",
+    "label": "Brad Garrett",
+    "constructs": [
+      "genre_bridge",
+      "dubbing",
+      "genre_drift",
+      "voice_face",
       "hyphenates"
     ]
   },
@@ -2341,17 +2268,6 @@
       "dubbing",
       "repertory",
       "franchise_nomads"
-    ]
-  },
-  {
-    "id": "nm1931870",
-    "label": "Brittney Karbowski",
-    "constructs": [
-      "comedy_horror",
-      "repertory",
-      "voice_face",
-      "franchise_nomads",
-      "typecast"
     ]
   },
   {
@@ -2377,17 +2293,6 @@
     ]
   },
   {
-    "id": "nm0001136",
-    "label": "Bruce Dern",
-    "constructs": [
-      "bechdel",
-      "comedy_horror",
-      "long_careers",
-      "same_character",
-      "reunions"
-    ]
-  },
-  {
     "id": "nm0186505",
     "label": "Bryan Cranston",
     "constructs": [
@@ -2396,6 +2301,17 @@
       "voice_face",
       "hyphenates",
       "documentary_selves"
+    ]
+  },
+  {
+    "id": "nm0001406",
+    "label": "Carol Kane",
+    "constructs": [
+      "scream_queen",
+      "bechdel",
+      "comedy_horror",
+      "genre_bridge",
+      "long_careers"
     ]
   },
   {
@@ -2410,14 +2326,25 @@
     ]
   },
   {
-    "id": "nm0663177",
-    "label": "Chris Parnell",
+    "id": "nm0611889",
+    "label": "Chris Mulkey",
     "constructs": [
-      "voice_cartoons",
+      "men_horror",
       "comedy_horror",
+      "long_careers",
       "reunions",
-      "voice_face",
-      "hyphenates"
+      "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm0001626",
+    "label": "Christopher Plummer",
+    "constructs": [
+      "men_horror",
+      "bechdel",
+      "reunions",
+      "national_bridges",
+      "horror_bloodlines"
     ]
   },
   {
@@ -2509,6 +2436,17 @@
     ]
   },
   {
+    "id": "nm0001002",
+    "label": "Dean Cain",
+    "constructs": [
+      "comedy_horror",
+      "same_character",
+      "director_muses",
+      "comeback",
+      "national_bridges"
+    ]
+  },
+  {
     "id": "nm0001777",
     "label": "Dean Stockwell",
     "constructs": [
@@ -2575,6 +2513,17 @@
     ]
   },
   {
+    "id": "nm1843026",
+    "label": "Gillian Jacobs",
+    "constructs": [
+      "women_horror",
+      "scream_queen",
+      "comedy_horror",
+      "genre_drift",
+      "horror_bloodlines"
+    ]
+  },
+  {
     "id": "nm0000335",
     "label": "Glenn Close",
     "constructs": [
@@ -2597,17 +2546,6 @@
     ]
   },
   {
-    "id": "nm0996651",
-    "label": "Greg Cipes",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "voice_face",
-      "hyphenates",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0619077",
     "label": "Ichirô Nagai",
     "constructs": [
@@ -2619,14 +2557,14 @@
     ]
   },
   {
-    "id": "nm0649026",
-    "label": "Ikue Ôtani",
+    "id": "nm0000469",
+    "label": "James Earl Jones",
     "constructs": [
-      "voice_cartoons",
-      "genre_bridge",
-      "dubbing",
-      "director_muses",
-      "typecast"
+      "long_careers",
+      "repertory",
+      "reunions",
+      "franchise_nomads",
+      "documentary_selves"
     ]
   },
   {
@@ -2652,6 +2590,17 @@
     ]
   },
   {
+    "id": "nm0354937",
+    "label": "Jennifer Hale",
+    "constructs": [
+      "voice_cartoons",
+      "dubbing",
+      "repertory",
+      "same_character",
+      "franchise_nomads"
+    ]
+  },
+  {
     "id": "nm0223740",
     "label": "Jessica DiCicco",
     "constructs": [
@@ -2660,6 +2609,17 @@
       "child_stars",
       "comeback",
       "hyphenates"
+    ]
+  },
+  {
+    "id": "nm0001017",
+    "label": "John Carradine",
+    "constructs": [
+      "comedy_horror",
+      "long_careers",
+      "repertory",
+      "same_character",
+      "franchise_nomads"
     ]
   },
   {
@@ -2696,14 +2656,25 @@
     ]
   },
   {
-    "id": "nm0454049",
-    "label": "Kaneta Kimotsuki",
+    "id": "nm5211370",
+    "label": "Justin Briner",
     "constructs": [
       "voice_cartoons",
-      "genre_bridge",
-      "dubbing",
-      "director_muses",
+      "child_stars",
+      "comeback",
+      "hyphenates",
       "typecast"
+    ]
+  },
+  {
+    "id": "nm0056532",
+    "label": "Kathleen Barr",
+    "constructs": [
+      "voice_cartoons",
+      "long_careers",
+      "dubbing",
+      "repertory",
+      "franchise_nomads"
     ]
   },
   {
@@ -2729,17 +2700,6 @@
     ]
   },
   {
-    "id": "nm1146051",
-    "label": "Khary Payton",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "genre_drift",
-      "voice_face",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0409291",
     "label": "Kikuko Inoue",
     "constructs": [
@@ -2751,6 +2711,17 @@
     ]
   },
   {
+    "id": "nm0068338",
+    "label": "Kristen Bell",
+    "constructs": [
+      "women_horror",
+      "scream_queen",
+      "bechdel",
+      "genre_drift",
+      "documentary_selves"
+    ]
+  },
+  {
     "id": "nm0945290",
     "label": "Kôichi Yamadera",
     "constructs": [
@@ -2759,6 +2730,17 @@
       "repertory",
       "franchise_nomads",
       "typecast"
+    ]
+  },
+  {
+    "id": "nm0000448",
+    "label": "Lance Henriksen",
+    "constructs": [
+      "men_horror",
+      "comedy_horror",
+      "long_careers",
+      "reunions",
+      "horror_bloodlines"
     ]
   },
   {
@@ -2817,6 +2799,17 @@
     ]
   },
   {
+    "id": "nm0051469",
+    "label": "Maria Bamford",
+    "constructs": [
+      "dubbing",
+      "same_character",
+      "voice_face",
+      "hyphenates",
+      "documentary_selves"
+    ]
+  },
+  {
     "id": "nm0000842",
     "label": "Martin Balsam",
     "constructs": [
@@ -2832,21 +2825,10 @@
     "label": "Maya Rudolph",
     "constructs": [
       "bechdel",
-      "same_character",
       "reunions",
+      "genre_drift",
       "voice_face",
       "hyphenates"
-    ]
-  },
-  {
-    "id": "nm0502425",
-    "label": "Melissa Leo",
-    "constructs": [
-      "women_horror",
-      "scream_queen",
-      "bechdel",
-      "same_character",
-      "horror_bloodlines"
     ]
   },
   {
@@ -2883,36 +2865,14 @@
     ]
   },
   {
-    "id": "nm0636046",
-    "label": "Nolan North",
+    "id": "nm0911320",
+    "label": "Patrick Warburton",
     "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "same_character",
-      "genre_drift",
-      "comeback"
-    ]
-  },
-  {
-    "id": "nm0644947",
-    "label": "Noriko Ohara",
-    "constructs": [
-      "voice_cartoons",
-      "genre_bridge",
-      "dubbing",
-      "director_muses",
-      "typecast"
-    ]
-  },
-  {
-    "id": "nm0652663",
-    "label": "Patton Oswalt",
-    "constructs": [
-      "men_horror",
       "comedy_horror",
-      "voice_face",
-      "hyphenates",
-      "documentary_selves"
+      "long_careers",
+      "dubbing",
+      "national_bridges",
+      "voice_face"
     ]
   },
   {
@@ -2935,6 +2895,17 @@
       "reunions",
       "genre_drift",
       "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm0258268",
+    "label": "Richard Epcar",
+    "constructs": [
+      "voice_cartoons",
+      "comeback",
+      "voice_face",
+      "hyphenates",
+      "typecast"
     ]
   },
   {
@@ -2971,39 +2942,6 @@
     ]
   },
   {
-    "id": "nm1886746",
-    "label": "Roger Craig Smith",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "repertory",
-      "franchise_nomads",
-      "typecast"
-    ]
-  },
-  {
-    "id": "nm0126284",
-    "label": "Rose Byrne",
-    "constructs": [
-      "women_horror",
-      "bechdel",
-      "same_character",
-      "genre_drift",
-      "horror_bloodlines"
-    ]
-  },
-  {
-    "id": "nm0005351",
-    "label": "Ryan Reynolds",
-    "constructs": [
-      "men_horror",
-      "bechdel",
-      "same_character",
-      "blockbuster",
-      "horror_bloodlines"
-    ]
-  },
-  {
     "id": "nm2977461",
     "label": "Saori Hayami",
     "constructs": [
@@ -3015,6 +2953,28 @@
     ]
   },
   {
+    "id": "nm0001264",
+    "label": "Sarah Michelle Gellar",
+    "constructs": [
+      "women_horror",
+      "scream_queen",
+      "bechdel",
+      "blockbuster",
+      "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm0532235",
+    "label": "Seth MacFarlane",
+    "constructs": [
+      "voice_cartoons",
+      "blockbuster",
+      "voice_face",
+      "hyphenates",
+      "documentary_selves"
+    ]
+  },
+  {
     "id": "nm0565569",
     "label": "Stephen McHattie",
     "constructs": [
@@ -3023,17 +2983,6 @@
       "comedy_horror",
       "long_careers",
       "national_bridges"
-    ]
-  },
-  {
-    "id": "nm1878161",
-    "label": "Subaru Kimura",
-    "constructs": [
-      "voice_cartoons",
-      "genre_bridge",
-      "dubbing",
-      "voice_face",
-      "typecast"
     ]
   },
   {
@@ -3066,17 +3015,6 @@
       "dubbing",
       "repertory",
       "voice_face",
-      "franchise_nomads"
-    ]
-  },
-  {
-    "id": "nm0355024",
-    "label": "Tony Hale",
-    "constructs": [
-      "repertory",
-      "same_character",
-      "voice_face",
-      "hyphenates",
       "franchise_nomads"
     ]
   },
@@ -3125,17 +3063,6 @@
     ]
   },
   {
-    "id": "nm1925154",
-    "label": "Vincent Tong",
-    "constructs": [
-      "genre_bridge",
-      "repertory",
-      "same_character",
-      "hyphenates",
-      "franchise_nomads"
-    ]
-  },
-  {
     "id": "nm0000407",
     "label": "Vivica A. Fox",
     "constructs": [
@@ -3144,17 +3071,6 @@
       "comedy_horror",
       "director_muses",
       "genre_drift"
-    ]
-  },
-  {
-    "id": "nm0000155",
-    "label": "Whoopi Goldberg",
-    "constructs": [
-      "bechdel",
-      "long_careers",
-      "repertory",
-      "franchise_nomads",
-      "documentary_selves"
     ]
   },
   {
@@ -3211,16 +3127,6 @@
     ]
   },
   {
-    "id": "nm0944985",
-    "label": "Akiko Yajima",
-    "constructs": [
-      "comedy_horror",
-      "genre_bridge",
-      "hyphenates",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0410907",
     "label": "Akira Ishida",
     "constructs": [
@@ -3241,12 +3147,12 @@
     ]
   },
   {
-    "id": "nm0508877",
-    "label": "Andrea Libman",
+    "id": "nm4515899",
+    "label": "Amber Lee Connors",
     "constructs": [
+      "voice_cartoons",
       "child_stars",
-      "director_muses",
-      "hyphenates",
+      "comeback",
       "typecast"
     ]
   },
@@ -3288,6 +3194,16 @@
       "long_careers",
       "repertory",
       "director_muses"
+    ]
+  },
+  {
+    "id": "nm2976492",
+    "label": "Aoi Yûki",
+    "constructs": [
+      "comedy_horror",
+      "dubbing",
+      "repertory",
+      "franchise_nomads"
     ]
   },
   {
@@ -3361,23 +3277,23 @@
     ]
   },
   {
-    "id": "nm0000374",
-    "label": "Brad Dourif",
+    "id": "nm0925966",
+    "label": "Bradley Whitford",
     "constructs": [
       "men_horror",
       "bechdel",
-      "genre_drift",
-      "horror_bloodlines"
+      "reunions",
+      "hyphenates"
     ]
   },
   {
-    "id": "nm0339304",
-    "label": "Bruce Greenwood",
+    "id": "nm0001136",
+    "label": "Bruce Dern",
     "constructs": [
-      "men_horror",
       "bechdel",
-      "same_character",
-      "horror_bloodlines"
+      "comedy_horror",
+      "long_careers",
+      "reunions"
     ]
   },
   {
@@ -3421,13 +3337,13 @@
     ]
   },
   {
-    "id": "nm0001164",
-    "label": "Charles Durning",
+    "id": "nm0000949",
+    "label": "Cate Blanchett",
     "constructs": [
-      "comedy_horror",
-      "long_careers",
+      "bechdel",
       "same_character",
-      "national_bridges"
+      "blockbuster",
+      "documentary_selves"
     ]
   },
   {
@@ -3501,36 +3417,6 @@
     ]
   },
   {
-    "id": "nm0379114",
-    "label": "David Herman",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "genre_drift",
-      "voice_face"
-    ]
-  },
-  {
-    "id": "nm0001556",
-    "label": "David Morse",
-    "constructs": [
-      "men_horror",
-      "bechdel",
-      "national_bridges",
-      "horror_bloodlines"
-    ]
-  },
-  {
-    "id": "nm0001002",
-    "label": "Dean Cain",
-    "constructs": [
-      "comedy_horror",
-      "director_muses",
-      "comeback",
-      "national_bridges"
-    ]
-  },
-  {
     "id": "nm0000454",
     "label": "Dennis Hopper",
     "constructs": [
@@ -3538,16 +3424,6 @@
       "reunions",
       "national_bridges",
       "documentary_selves"
-    ]
-  },
-  {
-    "id": "nm0000551",
-    "label": "Dermot Mulroney",
-    "constructs": [
-      "men_horror",
-      "bechdel",
-      "comedy_horror",
-      "horror_bloodlines"
     ]
   },
   {
@@ -3561,16 +3437,6 @@
     ]
   },
   {
-    "id": "nm0557968",
-    "label": "Eiko Masuyama",
-    "constructs": [
-      "voice_cartoons",
-      "genre_bridge",
-      "dubbing",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0000704",
     "label": "Elijah Wood",
     "constructs": [
@@ -3578,16 +3444,6 @@
       "child_stars",
       "genre_drift",
       "documentary_selves"
-    ]
-  },
-  {
-    "id": "nm0835688",
-    "label": "Eric Stuart",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "director_muses",
-      "typecast"
     ]
   },
   {
@@ -3611,23 +3467,13 @@
     ]
   },
   {
-    "id": "nm1843026",
-    "label": "Gillian Jacobs",
-    "constructs": [
-      "women_horror",
-      "scream_queen",
-      "comedy_horror",
-      "horror_bloodlines"
-    ]
-  },
-  {
-    "id": "nm0071304",
-    "label": "H. Jon Benjamin",
+    "id": "nm0996651",
+    "label": "Greg Cipes",
     "constructs": [
       "voice_cartoons",
-      "dubbing",
       "voice_face",
-      "hyphenates"
+      "hyphenates",
+      "typecast"
     ]
   },
   {
@@ -3661,16 +3507,6 @@
     ]
   },
   {
-    "id": "nm0386286",
-    "label": "Hiroaki Hirata",
-    "constructs": [
-      "voice_cartoons",
-      "genre_bridge",
-      "dubbing",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0875442",
     "label": "Hiromi Tsuru",
     "constructs": [
@@ -3681,31 +3517,21 @@
     ]
   },
   {
-    "id": "nm0574534",
-    "label": "Ian McShane",
+    "id": "nm0491402",
+    "label": "Hugh Laurie",
     "constructs": [
-      "long_careers",
-      "same_character",
       "reunions",
-      "genre_drift"
-    ]
-  },
-  {
-    "id": "nm0279545",
-    "label": "Isla Fisher",
-    "constructs": [
-      "bechdel",
       "genre_drift",
-      "comeback",
-      "blockbuster"
+      "voice_face",
+      "hyphenates"
     ]
   },
   {
-    "id": "nm0146097",
-    "label": "James Carter Cathcart",
+    "id": "nm0649026",
+    "label": "Ikue Ôtani",
     "constructs": [
       "voice_cartoons",
-      "dubbing",
+      "genre_bridge",
       "director_muses",
       "typecast"
     ]
@@ -3718,16 +3544,6 @@
       "reunions",
       "national_bridges",
       "documentary_selves"
-    ]
-  },
-  {
-    "id": "nm0000342",
-    "label": "James Cromwell",
-    "constructs": [
-      "bechdel",
-      "long_careers",
-      "reunions",
-      "genre_drift"
     ]
   },
   {
@@ -3751,16 +3567,6 @@
     ]
   },
   {
-    "id": "nm0354937",
-    "label": "Jennifer Hale",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "repertory",
-      "franchise_nomads"
-    ]
-  },
-  {
     "id": "nm0000492",
     "label": "Jennifer Jason Leigh",
     "constructs": [
@@ -3771,13 +3577,13 @@
     ]
   },
   {
-    "id": "nm0001017",
-    "label": "John Carradine",
+    "id": "nm0010075",
+    "label": "Jensen Ackles",
     "constructs": [
-      "comedy_horror",
-      "long_careers",
-      "repertory",
-      "franchise_nomads"
+      "men_horror",
+      "same_character",
+      "genre_drift",
+      "typecast"
     ]
   },
   {
@@ -3788,6 +3594,16 @@
       "long_careers",
       "reunions",
       "national_bridges"
+    ]
+  },
+  {
+    "id": "nm0001652",
+    "label": "John Ratzenberger",
+    "constructs": [
+      "reunions",
+      "genre_drift",
+      "hyphenates",
+      "typecast"
     ]
   },
   {
@@ -3841,22 +3657,32 @@
     ]
   },
   {
-    "id": "nm0847594",
-    "label": "Junko Takeuchi",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "genre_drift",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0519043",
     "label": "Justin Long",
     "constructs": [
       "men_horror",
       "bechdel",
       "comedy_horror",
+      "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm0454049",
+    "label": "Kaneta Kimotsuki",
+    "constructs": [
+      "voice_cartoons",
+      "genre_bridge",
+      "director_muses",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm0755267",
+    "label": "Katee Sackhoff",
+    "constructs": [
+      "women_horror",
+      "scream_queen",
+      "genre_drift",
       "horror_bloodlines"
     ]
   },
@@ -3871,6 +3697,16 @@
     ]
   },
   {
+    "id": "nm0000870",
+    "label": "Kathy Bates",
+    "constructs": [
+      "bechdel",
+      "comedy_horror",
+      "reunions",
+      "documentary_selves"
+    ]
+  },
+  {
     "id": "nm0943978",
     "label": "Keenan Wynn",
     "constructs": [
@@ -3881,13 +3717,43 @@
     ]
   },
   {
-    "id": "nm0394723",
-    "label": "Ken'yû Horiuchi",
+    "id": "nm0297873",
+    "label": "Keiji Fujiwara",
     "constructs": [
       "voice_cartoons",
-      "genre_bridge",
       "dubbing",
-      "comeback"
+      "same_character",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm0001288",
+    "label": "Kelsey Grammer",
+    "constructs": [
+      "long_careers",
+      "dubbing",
+      "reunions",
+      "voice_face"
+    ]
+  },
+  {
+    "id": "nm0840720",
+    "label": "Ken'ichi Suzumura",
+    "constructs": [
+      "dubbing",
+      "child_stars",
+      "comeback",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm1146051",
+    "label": "Khary Payton",
+    "constructs": [
+      "voice_cartoons",
+      "genre_drift",
+      "voice_face",
+      "typecast"
     ]
   },
   {
@@ -4011,13 +3877,13 @@
     ]
   },
   {
-    "id": "nm0051469",
-    "label": "Maria Bamford",
+    "id": "nm0926165",
+    "label": "Mae Whitman",
     "constructs": [
+      "child_stars",
       "same_character",
-      "voice_face",
-      "hyphenates",
-      "documentary_selves"
+      "genre_drift",
+      "voice_face"
     ]
   },
   {
@@ -4027,6 +3893,16 @@
       "men_horror",
       "comedy_horror",
       "genre_drift",
+      "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm0502425",
+    "label": "Melissa Leo",
+    "constructs": [
+      "women_horror",
+      "scream_queen",
+      "bechdel",
       "horror_bloodlines"
     ]
   },
@@ -4061,6 +3937,16 @@
     ]
   },
   {
+    "id": "nm0571106",
+    "label": "Michael McKean",
+    "constructs": [
+      "long_careers",
+      "same_character",
+      "voice_face",
+      "hyphenates"
+    ]
+  },
+  {
     "id": "nm0741398",
     "label": "Michelle Ruff",
     "constructs": [
@@ -4078,6 +3964,16 @@
       "dubbing",
       "repertory",
       "franchise_nomads"
+    ]
+  },
+  {
+    "id": "nm0847439",
+    "label": "Minami Takayama",
+    "constructs": [
+      "genre_bridge",
+      "dubbing",
+      "director_muses",
+      "typecast"
     ]
   },
   {
@@ -4151,6 +4047,26 @@
     ]
   },
   {
+    "id": "nm0636046",
+    "label": "Nolan North",
+    "constructs": [
+      "voice_cartoons",
+      "dubbing",
+      "genre_drift",
+      "comeback"
+    ]
+  },
+  {
+    "id": "nm0644947",
+    "label": "Noriko Ohara",
+    "constructs": [
+      "voice_cartoons",
+      "genre_bridge",
+      "director_muses",
+      "typecast"
+    ]
+  },
+  {
     "id": "nm0000099",
     "label": "Patricia Arquette",
     "constructs": [
@@ -4161,13 +4077,13 @@
     ]
   },
   {
-    "id": "nm0911320",
-    "label": "Patrick Warburton",
+    "id": "nm0280707",
+    "label": "Paul Fix",
     "constructs": [
-      "comedy_horror",
       "long_careers",
-      "national_bridges",
-      "voice_face"
+      "repertory",
+      "same_character",
+      "franchise_nomads"
     ]
   },
   {
@@ -4211,6 +4127,16 @@
     ]
   },
   {
+    "id": "nm0041281",
+    "label": "Rene Auberjonois",
+    "constructs": [
+      "dubbing",
+      "genre_drift",
+      "voice_face",
+      "hyphenates"
+    ]
+  },
+  {
     "id": "nm1069584",
     "label": "Rie Kugimiya",
     "constructs": [
@@ -4231,8 +4157,8 @@
     ]
   },
   {
-    "id": "nm0000134",
-    "label": "Robert De Niro",
+    "id": "nm0000375",
+    "label": "Robert Downey Jr.",
     "constructs": [
       "same_character",
       "reunions",
@@ -4241,23 +4167,33 @@
     ]
   },
   {
-    "id": "nm0394690",
-    "label": "Ryô Horikawa",
+    "id": "nm0126284",
+    "label": "Rose Byrne",
     "constructs": [
-      "voice_cartoons",
-      "genre_bridge",
-      "dubbing",
-      "typecast"
+      "women_horror",
+      "bechdel",
+      "genre_drift",
+      "horror_bloodlines"
     ]
   },
   {
-    "id": "nm0726184",
-    "label": "Sam Riegel",
+    "id": "nm0005351",
+    "label": "Ryan Reynolds",
     "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "hyphenates",
-      "typecast"
+      "men_horror",
+      "bechdel",
+      "blockbuster",
+      "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm0000554",
+    "label": "Sam Neill",
+    "constructs": [
+      "bechdel",
+      "same_character",
+      "national_bridges",
+      "horror_bloodlines"
     ]
   },
   {
@@ -4271,16 +4207,6 @@
     ]
   },
   {
-    "id": "nm2516299",
-    "label": "Sarah Natochenny",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "director_muses",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0005299",
     "label": "Sarah Paulson",
     "constructs": [
@@ -4288,6 +4214,16 @@
       "scream_queen",
       "bechdel",
       "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm1360441",
+    "label": "Sayaka Ôhara",
+    "constructs": [
+      "comedy_horror",
+      "dubbing",
+      "repertory",
+      "franchise_nomads"
     ]
   },
   {
@@ -4331,6 +4267,26 @@
     ]
   },
   {
+    "id": "nm1878161",
+    "label": "Subaru Kimura",
+    "constructs": [
+      "voice_cartoons",
+      "genre_bridge",
+      "voice_face",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm0355024",
+    "label": "Tony Hale",
+    "constructs": [
+      "repertory",
+      "voice_face",
+      "hyphenates",
+      "franchise_nomads"
+    ]
+  },
+  {
     "id": "nm0333410",
     "label": "Topher Grace",
     "constructs": [
@@ -4341,16 +4297,6 @@
     ]
   },
   {
-    "id": "nm0992184",
-    "label": "Travis Willingham",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "hyphenates",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0001255",
     "label": "Victor Garber",
     "constructs": [
@@ -4358,6 +4304,26 @@
       "reunions",
       "comeback",
       "national_bridges"
+    ]
+  },
+  {
+    "id": "nm1925154",
+    "label": "Vincent Tong",
+    "constructs": [
+      "genre_bridge",
+      "repertory",
+      "hyphenates",
+      "franchise_nomads"
+    ]
+  },
+  {
+    "id": "nm0283253",
+    "label": "Wendee Lee",
+    "constructs": [
+      "long_careers",
+      "dubbing",
+      "repertory",
+      "franchise_nomads"
     ]
   },
   {
@@ -4420,6 +4386,33 @@
     ]
   },
   {
+    "id": "nm0944985",
+    "label": "Akiko Yajima",
+    "constructs": [
+      "genre_bridge",
+      "hyphenates",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm0005569",
+    "label": "Alfre Woodard",
+    "constructs": [
+      "women_horror",
+      "same_character",
+      "reunions"
+    ]
+  },
+  {
+    "id": "nm0578510",
+    "label": "Allan Melvin",
+    "constructs": [
+      "same_character",
+      "director_muses",
+      "hyphenates"
+    ]
+  },
+  {
     "id": "nm0005049",
     "label": "Allison Janney",
     "constructs": [
@@ -4447,15 +4440,6 @@
     ]
   },
   {
-    "id": "nm0001593",
-    "label": "Anna Paquin",
-    "constructs": [
-      "women_horror",
-      "same_character",
-      "blockbuster"
-    ]
-  },
-  {
     "id": "nm0001272",
     "label": "Annabeth Gish",
     "constructs": [
@@ -4465,30 +4449,12 @@
     ]
   },
   {
-    "id": "nm2976492",
-    "label": "Aoi Yûki",
-    "constructs": [
-      "comedy_horror",
-      "repertory",
-      "franchise_nomads"
-    ]
-  },
-  {
     "id": "nm0424534",
     "label": "Ashley Johnson",
     "constructs": [
       "voice_cartoons",
       "child_stars",
       "voice_face"
-    ]
-  },
-  {
-    "id": "nm2201555",
-    "label": "Aubrey Plaza",
-    "constructs": [
-      "women_horror",
-      "scream_queen",
-      "comedy_horror"
     ]
   },
   {
@@ -4546,6 +4512,24 @@
     ]
   },
   {
+    "id": "nm0000653",
+    "label": "Brent Spiner",
+    "constructs": [
+      "bechdel",
+      "genre_drift",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm0339304",
+    "label": "Bruce Greenwood",
+    "constructs": [
+      "men_horror",
+      "same_character",
+      "horror_bloodlines"
+    ]
+  },
+  {
     "id": "nm0580565",
     "label": "Burgess Meredith",
     "constructs": [
@@ -4561,15 +4545,6 @@
       "long_careers",
       "repertory",
       "franchise_nomads"
-    ]
-  },
-  {
-    "id": "nm1708798",
-    "label": "Caitlin Glass",
-    "constructs": [
-      "voice_cartoons",
-      "genre_bridge",
-      "dubbing"
     ]
   },
   {
@@ -4600,15 +4575,6 @@
     ]
   },
   {
-    "id": "nm0000949",
-    "label": "Cate Blanchett",
-    "constructs": [
-      "bechdel",
-      "blockbuster",
-      "documentary_selves"
-    ]
-  },
-  {
     "id": "nm0228324",
     "label": "Catherine Disher",
     "constructs": [
@@ -4618,30 +4584,12 @@
     ]
   },
   {
-    "id": "nm0564277",
-    "label": "Chi McBride",
+    "id": "nm0001164",
+    "label": "Charles Durning",
     "constructs": [
-      "genre_drift",
-      "voice_face",
-      "hyphenates"
-    ]
-  },
-  {
-    "id": "nm0001721",
-    "label": "Chloë Sevigny",
-    "constructs": [
-      "women_horror",
-      "bechdel",
-      "same_character"
-    ]
-  },
-  {
-    "id": "nm0619200",
-    "label": "Chô",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "typecast"
+      "comedy_horror",
+      "long_careers",
+      "national_bridges"
     ]
   },
   {
@@ -4708,6 +4656,15 @@
     ]
   },
   {
+    "id": "nm0358460",
+    "label": "Daran Norris",
+    "constructs": [
+      "dubbing",
+      "voice_face",
+      "typecast"
+    ]
+  },
+  {
     "id": "nm0004929",
     "label": "Dave Foley",
     "constructs": [
@@ -4744,11 +4701,38 @@
     ]
   },
   {
+    "id": "nm1092086",
+    "label": "David Harbour",
+    "constructs": [
+      "same_character",
+      "reunions",
+      "genre_drift"
+    ]
+  },
+  {
+    "id": "nm0379114",
+    "label": "David Herman",
+    "constructs": [
+      "voice_cartoons",
+      "genre_drift",
+      "voice_face"
+    ]
+  },
+  {
     "id": "nm0462712",
     "label": "David Koechner",
     "constructs": [
       "men_horror",
       "comedy_horror",
+      "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm0001556",
+    "label": "David Morse",
+    "constructs": [
+      "men_horror",
+      "national_bridges",
       "horror_bloodlines"
     ]
   },
@@ -4780,12 +4764,30 @@
     ]
   },
   {
+    "id": "nm0220635",
+    "label": "Debi Derryberry",
+    "constructs": [
+      "long_careers",
+      "dubbing",
+      "typecast"
+    ]
+  },
+  {
     "id": "nm0001394",
     "label": "Derek Jacobi",
     "constructs": [
       "reunions",
       "national_bridges",
       "documentary_selves"
+    ]
+  },
+  {
+    "id": "nm0000551",
+    "label": "Dermot Mulroney",
+    "constructs": [
+      "men_horror",
+      "bechdel",
+      "horror_bloodlines"
     ]
   },
   {
@@ -4879,12 +4881,21 @@
     ]
   },
   {
-    "id": "nm0244630",
-    "label": "Eliza Dushku",
+    "id": "nm0956544",
+    "label": "Efrem Zimbalist Jr.",
     "constructs": [
-      "women_horror",
-      "scream_queen",
-      "same_character"
+      "same_character",
+      "comeback",
+      "voice_face"
+    ]
+  },
+  {
+    "id": "nm0557968",
+    "label": "Eiko Masuyama",
+    "constructs": [
+      "voice_cartoons",
+      "genre_bridge",
+      "typecast"
     ]
   },
   {
@@ -4903,6 +4914,15 @@
       "women_horror",
       "scream_queen",
       "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm0835688",
+    "label": "Eric Stuart",
+    "constructs": [
+      "voice_cartoons",
+      "director_muses",
+      "typecast"
     ]
   },
   {
@@ -4969,6 +4989,15 @@
     ]
   },
   {
+    "id": "nm0000198",
+    "label": "Gary Oldman",
+    "constructs": [
+      "same_character",
+      "reunions",
+      "blockbuster"
+    ]
+  },
+  {
     "id": "nm0507212",
     "label": "Geoffrey Lewis",
     "constructs": [
@@ -4987,12 +5016,12 @@
     ]
   },
   {
-    "id": "nm0574615",
-    "label": "Graham McTavish",
+    "id": "nm0071304",
+    "label": "H. Jon Benjamin",
     "constructs": [
-      "same_character",
-      "genre_drift",
-      "comeback"
+      "voice_cartoons",
+      "voice_face",
+      "hyphenates"
     ]
   },
   {
@@ -5014,6 +5043,15 @@
     ]
   },
   {
+    "id": "nm0386286",
+    "label": "Hiroaki Hirata",
+    "constructs": [
+      "voice_cartoons",
+      "genre_bridge",
+      "typecast"
+    ]
+  },
+  {
     "id": "nm0852466",
     "label": "Holland Taylor",
     "constructs": [
@@ -5032,12 +5070,21 @@
     ]
   },
   {
-    "id": "nm0491402",
-    "label": "Hugh Laurie",
+    "id": "nm0413168",
+    "label": "Hugh Jackman",
     "constructs": [
+      "same_character",
+      "blockbuster",
+      "documentary_selves"
+    ]
+  },
+  {
+    "id": "nm0574534",
+    "label": "Ian McShane",
+    "constructs": [
+      "long_careers",
       "reunions",
-      "voice_face",
-      "hyphenates"
+      "genre_drift"
     ]
   },
   {
@@ -5050,12 +5097,12 @@
     ]
   },
   {
-    "id": "nm0299401",
-    "label": "Issei Futamata",
+    "id": "nm0279545",
+    "label": "Isla Fisher",
     "constructs": [
-      "voice_cartoons",
-      "genre_bridge",
-      "dubbing"
+      "bechdel",
+      "comeback",
+      "blockbuster"
     ]
   },
   {
@@ -5086,21 +5133,30 @@
     ]
   },
   {
-    "id": "nm0852517",
-    "label": "James Arnold Taylor",
-    "constructs": [
-      "same_character",
-      "hyphenates",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0000981",
     "label": "James Brolin",
     "constructs": [
       "long_careers",
       "national_bridges",
       "hyphenates"
+    ]
+  },
+  {
+    "id": "nm0146097",
+    "label": "James Carter Cathcart",
+    "constructs": [
+      "voice_cartoons",
+      "director_muses",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm0000342",
+    "label": "James Cromwell",
+    "constructs": [
+      "bechdel",
+      "long_careers",
+      "reunions"
     ]
   },
   {
@@ -5158,30 +5214,12 @@
     ]
   },
   {
-    "id": "nm4911194",
-    "label": "Jenna Ortega",
-    "constructs": [
-      "women_horror",
-      "child_stars",
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0641266",
     "label": "Jenny O'Hara",
     "constructs": [
       "women_horror",
       "scream_queen",
       "comeback"
-    ]
-  },
-  {
-    "id": "nm0010075",
-    "label": "Jensen Ackles",
-    "constructs": [
-      "men_horror",
-      "genre_drift",
-      "typecast"
     ]
   },
   {
@@ -5200,6 +5238,15 @@
       "men_horror",
       "hyphenates",
       "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm0625456",
+    "label": "Jerry Nelson",
+    "constructs": [
+      "dubbing",
+      "director_muses",
+      "voice_face"
     ]
   },
   {
@@ -5230,11 +5277,11 @@
     ]
   },
   {
-    "id": "nm1078479",
-    "label": "John Cena",
+    "id": "nm0000092",
+    "label": "John Cleese",
     "constructs": [
-      "genre_drift",
-      "blockbuster",
+      "same_character",
+      "reunions",
       "documentary_selves"
     ]
   },
@@ -5257,15 +5304,6 @@
     ]
   },
   {
-    "id": "nm0001652",
-    "label": "John Ratzenberger",
-    "constructs": [
-      "reunions",
-      "hyphenates",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0000615",
     "label": "John Ritter",
     "constructs": [
@@ -5281,6 +5319,15 @@
       "comedy_horror",
       "long_careers",
       "hyphenates"
+    ]
+  },
+  {
+    "id": "nm0006893",
+    "label": "John Vernon",
+    "constructs": [
+      "same_character",
+      "comeback",
+      "national_bridges"
     ]
   },
   {
@@ -5338,47 +5385,11 @@
     ]
   },
   {
-    "id": "nm0000947",
-    "label": "Karen Black",
-    "constructs": [
-      "women_horror",
-      "scream_queen",
-      "same_character"
-    ]
-  },
-  {
-    "id": "nm0755267",
-    "label": "Katee Sackhoff",
-    "constructs": [
-      "women_horror",
-      "scream_queen",
-      "horror_bloodlines"
-    ]
-  },
-  {
-    "id": "nm0000870",
-    "label": "Kathy Bates",
-    "constructs": [
-      "bechdel",
-      "reunions",
-      "documentary_selves"
-    ]
-  },
-  {
     "id": "nm0851218",
     "label": "Kazuya Tatekabe",
     "constructs": [
       "voice_cartoons",
       "director_muses",
-      "typecast"
-    ]
-  },
-  {
-    "id": "nm0297873",
-    "label": "Keiji Fujiwara",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing",
       "typecast"
     ]
   },
@@ -5392,21 +5403,12 @@
     ]
   },
   {
-    "id": "nm0001288",
-    "label": "Kelsey Grammer",
+    "id": "nm0394723",
+    "label": "Ken'yû Horiuchi",
     "constructs": [
-      "long_careers",
-      "reunions",
-      "voice_face"
-    ]
-  },
-  {
-    "id": "nm0840720",
-    "label": "Ken'ichi Suzumura",
-    "constructs": [
-      "child_stars",
-      "comeback",
-      "typecast"
+      "genre_bridge",
+      "dubbing",
+      "comeback"
     ]
   },
   {
@@ -5419,29 +5421,20 @@
     ]
   },
   {
-    "id": "nm1399925",
-    "label": "Kenta Miyake",
-    "constructs": [
-      "voice_cartoons",
-      "genre_bridge",
-      "dubbing"
-    ]
-  },
-  {
-    "id": "nm0913488",
-    "label": "Kerry Washington",
-    "constructs": [
-      "bechdel",
-      "reunions",
-      "blockbuster"
-    ]
-  },
-  {
     "id": "nm0165159",
     "label": "Kevin Clash",
     "constructs": [
       "child_stars",
       "voice_face",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm0175834",
+    "label": "Kevin Conroy",
+    "constructs": [
+      "same_character",
+      "director_muses",
       "typecast"
     ]
   },
@@ -5473,6 +5466,15 @@
     ]
   },
   {
+    "id": "nm1456471",
+    "label": "Kimberly Brooks",
+    "constructs": [
+      "voice_cartoons",
+      "dubbing",
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0594074",
     "label": "Kotono Mitsuishi",
     "constructs": [
@@ -5491,30 +5493,12 @@
     ]
   },
   {
-    "id": "nm1102891",
-    "label": "Kristen Schaal",
-    "constructs": [
-      "same_character",
-      "voice_face",
-      "hyphenates"
-    ]
-  },
-  {
     "id": "nm0000621",
     "label": "Kurt Russell",
     "constructs": [
       "men_horror",
       "same_character",
       "reunions"
-    ]
-  },
-  {
-    "id": "nm1799368",
-    "label": "Leah Clark",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "hyphenates"
     ]
   },
   {
@@ -5563,15 +5547,6 @@
     ]
   },
   {
-    "id": "nm0926165",
-    "label": "Mae Whitman",
-    "constructs": [
-      "child_stars",
-      "genre_drift",
-      "voice_face"
-    ]
-  },
-  {
     "id": "nm0452288",
     "label": "Margot Kidder",
     "constructs": [
@@ -5599,6 +5574,15 @@
     ]
   },
   {
+    "id": "nm0671032",
+    "label": "Mark Pellegrino",
+    "constructs": [
+      "men_horror",
+      "genre_drift",
+      "horror_bloodlines"
+    ]
+  },
+  {
     "id": "nm0001679",
     "label": "Mark Rolston",
     "constructs": [
@@ -5608,12 +5592,12 @@
     ]
   },
   {
-    "id": "nm0005316",
-    "label": "Mary Kay Place",
+    "id": "nm0005460",
+    "label": "Mary Steenburgen",
     "constructs": [
       "bechdel",
-      "same_character",
-      "hyphenates"
+      "reunions",
+      "genre_drift"
     ]
   },
   {
@@ -5671,21 +5655,12 @@
     ]
   },
   {
-    "id": "nm0000514",
-    "label": "Michael Madsen",
+    "id": "nm0000474",
+    "label": "Michael Keaton",
     "constructs": [
-      "men_horror",
       "same_character",
-      "national_bridges"
-    ]
-  },
-  {
-    "id": "nm0571106",
-    "label": "Michael McKean",
-    "constructs": [
-      "long_careers",
-      "voice_face",
-      "hyphenates"
+      "reunions",
+      "blockbuster"
     ]
   },
   {
@@ -5713,15 +5688,6 @@
       "bechdel",
       "blockbuster",
       "voice_face"
-    ]
-  },
-  {
-    "id": "nm0847439",
-    "label": "Minami Takayama",
-    "constructs": [
-      "genre_bridge",
-      "director_muses",
-      "typecast"
     ]
   },
   {
@@ -5788,6 +5754,15 @@
     ]
   },
   {
+    "id": "nm0645219",
+    "label": "Nobuyo Ôyama",
+    "constructs": [
+      "voice_cartoons",
+      "director_muses",
+      "typecast"
+    ]
+  },
+  {
     "id": "nm0005342",
     "label": "Norman Reedus",
     "constructs": [
@@ -5815,15 +5790,6 @@
     ]
   },
   {
-    "id": "nm0280707",
-    "label": "Paul Fix",
-    "constructs": [
-      "long_careers",
-      "repertory",
-      "franchise_nomads"
-    ]
-  },
-  {
     "id": "nm0001075",
     "label": "Peter Coyote",
     "constructs": [
@@ -5839,6 +5805,15 @@
       "genre_bridge",
       "long_careers",
       "national_bridges"
+    ]
+  },
+  {
+    "id": "nm0000112",
+    "label": "Pierce Brosnan",
+    "constructs": [
+      "same_character",
+      "reunions",
+      "documentary_selves"
     ]
   },
   {
@@ -5878,15 +5853,6 @@
     ]
   },
   {
-    "id": "nm0041281",
-    "label": "Rene Auberjonois",
-    "constructs": [
-      "genre_drift",
-      "voice_face",
-      "hyphenates"
-    ]
-  },
-  {
     "id": "nm0454236",
     "label": "Richard Kind",
     "constructs": [
@@ -5914,8 +5880,17 @@
     ]
   },
   {
-    "id": "nm0000375",
-    "label": "Robert Downey Jr.",
+    "id": "nm0001549",
+    "label": "Rita Moreno",
+    "constructs": [
+      "genre_bridge",
+      "dubbing",
+      "voice_face"
+    ]
+  },
+  {
+    "id": "nm0000134",
+    "label": "Robert De Niro",
     "constructs": [
       "reunions",
       "blockbuster",
@@ -5941,6 +5916,15 @@
     ]
   },
   {
+    "id": "nm0394690",
+    "label": "Ryô Horikawa",
+    "constructs": [
+      "voice_cartoons",
+      "genre_bridge",
+      "typecast"
+    ]
+  },
+  {
     "id": "nm0157385",
     "label": "Sachiko Chijimatsu",
     "constructs": [
@@ -5950,12 +5934,12 @@
     ]
   },
   {
-    "id": "nm0000554",
-    "label": "Sam Neill",
+    "id": "nm0726184",
+    "label": "Sam Riegel",
     "constructs": [
-      "bechdel",
-      "national_bridges",
-      "horror_bloodlines"
+      "voice_cartoons",
+      "hyphenates",
+      "typecast"
     ]
   },
   {
@@ -5968,12 +5952,12 @@
     ]
   },
   {
-    "id": "nm1360441",
-    "label": "Sayaka Ôhara",
+    "id": "nm2516299",
+    "label": "Sarah Natochenny",
     "constructs": [
-      "comedy_horror",
-      "repertory",
-      "franchise_nomads"
+      "voice_cartoons",
+      "director_muses",
+      "typecast"
     ]
   },
   {
@@ -6004,12 +5988,30 @@
     ]
   },
   {
+    "id": "nm0675730",
+    "label": "Sean Pertwee",
+    "constructs": [
+      "men_horror",
+      "same_character",
+      "horror_bloodlines"
+    ]
+  },
+  {
     "id": "nm0809938",
     "label": "Shawnee Smith",
     "constructs": [
       "women_horror",
       "scream_queen",
       "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm3340306",
+    "label": "Shin'ya Takahashi",
+    "constructs": [
+      "repertory",
+      "same_character",
+      "franchise_nomads"
     ]
   },
   {
@@ -6067,12 +6069,30 @@
     ]
   },
   {
+    "id": "nm1132505",
+    "label": "Tetsu Inada",
+    "constructs": [
+      "genre_bridge",
+      "dubbing",
+      "voice_face"
+    ]
+  },
+  {
     "id": "nm0000741",
     "label": "Tim Allen",
     "constructs": [
       "blockbuster",
       "voice_face",
       "documentary_selves"
+    ]
+  },
+  {
+    "id": "nm0004857",
+    "label": "Tim Daly",
+    "constructs": [
+      "same_character",
+      "voice_face",
+      "hyphenates"
     ]
   },
   {
@@ -6121,12 +6141,21 @@
     ]
   },
   {
-    "id": "nm0001852",
-    "label": "Treat Williams",
+    "id": "nm0992184",
+    "label": "Travis Willingham",
     "constructs": [
-      "bechdel",
-      "long_careers",
-      "national_bridges"
+      "voice_cartoons",
+      "hyphenates",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm1684869",
+    "label": "Troy Baker",
+    "constructs": [
+      "dubbing",
+      "same_character",
+      "voice_face"
     ]
   },
   {
@@ -6175,15 +6204,6 @@
     ]
   },
   {
-    "id": "nm0283253",
-    "label": "Wendee Lee",
-    "constructs": [
-      "long_careers",
-      "repertory",
-      "franchise_nomads"
-    ]
-  },
-  {
     "id": "nm0287182",
     "label": "Will Forte",
     "constructs": [
@@ -6211,21 +6231,12 @@
     ]
   },
   {
-    "id": "nm0435358",
-    "label": "Yumi Kakazu",
+    "id": "nm0302108",
+    "label": "Zach Galifianakis",
     "constructs": [
-      "voice_cartoons",
-      "dubbing",
-      "typecast"
-    ]
-  },
-  {
-    "id": "nm0297785",
-    "label": "Yuzuru Fujimoto",
-    "constructs": [
-      "voice_cartoons",
-      "genre_bridge",
-      "dubbing"
+      "bechdel",
+      "genre_drift",
+      "blockbuster"
     ]
   },
   {
@@ -6253,14 +6264,6 @@
     ]
   },
   {
-    "id": "nm0474774",
-    "label": "Akshay Kumar",
-    "constructs": [
-      "genre_bridge",
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0820607",
     "label": "Al St. John",
     "constructs": [
@@ -6269,19 +6272,19 @@
     ]
   },
   {
-    "id": "nm0000257",
-    "label": "Alan Alda",
-    "constructs": [
-      "genre_drift",
-      "documentary_selves"
-    ]
-  },
-  {
     "id": "nm0000983",
     "label": "Albert Brooks",
     "constructs": [
       "reunions",
       "blockbuster"
+    ]
+  },
+  {
+    "id": "nm0097504",
+    "label": "Alex Borstein",
+    "constructs": [
+      "same_character",
+      "voice_face"
     ]
   },
   {
@@ -6301,35 +6304,11 @@
     ]
   },
   {
-    "id": "nm0005569",
-    "label": "Alfre Woodard",
-    "constructs": [
-      "women_horror",
-      "reunions"
-    ]
-  },
-  {
     "id": "nm1555340",
     "label": "Alison Brie",
     "constructs": [
       "women_horror",
       "bechdel"
-    ]
-  },
-  {
-    "id": "nm0578510",
-    "label": "Allan Melvin",
-    "constructs": [
-      "director_muses",
-      "hyphenates"
-    ]
-  },
-  {
-    "id": "nm0420765",
-    "label": "Allen Jenkins",
-    "constructs": [
-      "same_character",
-      "director_muses"
     ]
   },
   {
@@ -6341,27 +6320,11 @@
     ]
   },
   {
-    "id": "nm0000821",
-    "label": "Amitabh Bachchan",
-    "constructs": [
-      "genre_bridge",
-      "same_character"
-    ]
-  },
-  {
-    "id": "nm0009918",
-    "label": "Amy Acker",
+    "id": "nm0001593",
+    "label": "Anna Paquin",
     "constructs": [
       "women_horror",
-      "genre_drift"
-    ]
-  },
-  {
-    "id": "nm0438463",
-    "label": "Anil Kapoor",
-    "constructs": [
-      "genre_bridge",
-      "same_character"
+      "blockbuster"
     ]
   },
   {
@@ -6389,14 +6352,6 @@
     ]
   },
   {
-    "id": "nm1891168",
-    "label": "Anthony Bowling",
-    "constructs": [
-      "dubbing",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0045119",
     "label": "Aruna Irani",
     "constructs": [
@@ -6405,11 +6360,35 @@
     ]
   },
   {
+    "id": "nm2201555",
+    "label": "Aubrey Plaza",
+    "constructs": [
+      "women_horror",
+      "scream_queen"
+    ]
+  },
+  {
+    "id": "nm0318622",
+    "label": "Avtar Gill",
+    "constructs": [
+      "same_character",
+      "director_muses"
+    ]
+  },
+  {
     "id": "nm1933128",
     "label": "Bailee Madison",
     "constructs": [
       "women_horror",
       "child_stars"
+    ]
+  },
+  {
+    "id": "nm0319980",
+    "label": "Banjô Ginga",
+    "constructs": [
+      "genre_bridge",
+      "dubbing"
     ]
   },
   {
@@ -6437,11 +6416,27 @@
     ]
   },
   {
+    "id": "nm0001651",
+    "label": "Basil Rathbone",
+    "constructs": [
+      "same_character",
+      "director_muses"
+    ]
+  },
+  {
     "id": "nm0000509",
     "label": "Bela Lugosi",
     "constructs": [
       "same_character",
       "silent_sound"
+    ]
+  },
+  {
+    "id": "nm0000255",
+    "label": "Ben Affleck",
+    "constructs": [
+      "same_character",
+      "blockbuster"
     ]
   },
   {
@@ -6533,14 +6528,6 @@
     ]
   },
   {
-    "id": "nm0542558",
-    "label": "Blu Mankuma",
-    "constructs": [
-      "same_character",
-      "comeback"
-    ]
-  },
-  {
     "id": "nm0001100",
     "label": "Blythe Danner",
     "constructs": [
@@ -6581,14 +6568,6 @@
     ]
   },
   {
-    "id": "nm0000653",
-    "label": "Brent Spiner",
-    "constructs": [
-      "genre_drift",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0005261",
     "label": "Brittany Murphy",
     "constructs": [
@@ -6613,14 +6592,6 @@
     ]
   },
   {
-    "id": "nm6548466",
-    "label": "Bryn Apprill",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing"
-    ]
-  },
-  {
     "id": "nm0427659",
     "label": "Buck Jones",
     "constructs": [
@@ -6642,6 +6613,14 @@
     "constructs": [
       "comedy_horror",
       "national_bridges"
+    ]
+  },
+  {
+    "id": "nm1708798",
+    "label": "Caitlin Glass",
+    "constructs": [
+      "voice_cartoons",
+      "genre_bridge"
     ]
   },
   {
@@ -6717,11 +6696,11 @@
     ]
   },
   {
-    "id": "nm0408309",
-    "label": "Celia Imrie",
+    "id": "nm0003110",
+    "label": "Cesar Romero",
     "constructs": [
-      "women_horror",
-      "bechdel"
+      "comedy_horror",
+      "same_character"
     ]
   },
   {
@@ -6789,6 +6768,22 @@
     ]
   },
   {
+    "id": "nm0564277",
+    "label": "Chi McBride",
+    "constructs": [
+      "voice_face",
+      "hyphenates"
+    ]
+  },
+  {
+    "id": "nm0001721",
+    "label": "Chloë Sevigny",
+    "constructs": [
+      "women_horror",
+      "bechdel"
+    ]
+  },
+  {
     "id": "nm0224565",
     "label": "Chris Diamantopoulos",
     "constructs": [
@@ -6845,6 +6840,14 @@
     ]
   },
   {
+    "id": "nm0619200",
+    "label": "Chô",
+    "constructs": [
+      "voice_cartoons",
+      "typecast"
+    ]
+  },
+  {
     "id": "nm0245112",
     "label": "Clea DuVall",
     "constructs": [
@@ -6893,14 +6896,6 @@
     ]
   },
   {
-    "id": "nm0337751",
-    "label": "Dan Green",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing"
-    ]
-  },
-  {
     "id": "nm0705356",
     "label": "Daniel Radcliffe",
     "constructs": [
@@ -6922,22 +6917,6 @@
     "constructs": [
       "child_stars",
       "genre_drift"
-    ]
-  },
-  {
-    "id": "nm0542706",
-    "label": "Danny Mann",
-    "constructs": [
-      "same_character",
-      "comeback"
-    ]
-  },
-  {
-    "id": "nm0358460",
-    "label": "Daran Norris",
-    "constructs": [
-      "voice_face",
-      "typecast"
     ]
   },
   {
@@ -6973,14 +6952,6 @@
     ]
   },
   {
-    "id": "nm1092086",
-    "label": "David Harbour",
-    "constructs": [
-      "reunions",
-      "genre_drift"
-    ]
-  },
-  {
     "id": "nm0382110",
     "label": "David Hewlett",
     "constructs": [
@@ -6997,27 +6968,11 @@
     ]
   },
   {
-    "id": "nm0220635",
-    "label": "Debi Derryberry",
-    "constructs": [
-      "long_careers",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0933281",
     "label": "Debra Wilson",
     "constructs": [
-      "comedy_horror",
+      "same_character",
       "hyphenates"
-    ]
-  },
-  {
-    "id": "nm0000193",
-    "label": "Demi Moore",
-    "constructs": [
-      "women_horror",
-      "same_character"
     ]
   },
   {
@@ -7026,14 +6981,6 @@
     "constructs": [
       "women_horror",
       "scream_queen"
-    ]
-  },
-  {
-    "id": "nm0000598",
-    "label": "Dennis Quaid",
-    "constructs": [
-      "same_character",
-      "blockbuster"
     ]
   },
   {
@@ -7077,19 +7024,11 @@
     ]
   },
   {
-    "id": "nm0253528",
-    "label": "Dorothy Elias-Fahn",
+    "id": "nm0068166",
+    "label": "Drake Bell",
     "constructs": [
-      "dubbing",
-      "voice_face"
-    ]
-  },
-  {
-    "id": "nm3766090",
-    "label": "Doug Walker",
-    "constructs": [
-      "dubbing",
-      "typecast"
+      "child_stars",
+      "same_character"
     ]
   },
   {
@@ -7157,22 +7096,6 @@
     ]
   },
   {
-    "id": "nm0956544",
-    "label": "Efrem Zimbalist Jr.",
-    "constructs": [
-      "comeback",
-      "voice_face"
-    ]
-  },
-  {
-    "id": "nm0945208",
-    "label": "Eiko Yamada",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing"
-    ]
-  },
-  {
     "id": "nm0176879",
     "label": "Elisha Cook Jr.",
     "constructs": [
@@ -7181,11 +7104,11 @@
     ]
   },
   {
-    "id": "nm1102577",
-    "label": "Elle Fanning",
+    "id": "nm0244630",
+    "label": "Eliza Dushku",
     "constructs": [
-      "same_character",
-      "blockbuster"
+      "women_horror",
+      "scream_queen"
     ]
   },
   {
@@ -7253,27 +7176,11 @@
     ]
   },
   {
-    "id": "nm0000198",
-    "label": "Gary Oldman",
-    "constructs": [
-      "reunions",
-      "blockbuster"
-    ]
-  },
-  {
     "id": "nm0000810",
     "label": "Gene Autry",
     "constructs": [
       "director_muses",
       "b_movie"
-    ]
-  },
-  {
-    "id": "nm0682762",
-    "label": "Geoff Pierson",
-    "constructs": [
-      "reunions",
-      "genre_drift"
     ]
   },
   {
@@ -7325,8 +7232,8 @@
     ]
   },
   {
-    "id": "nm0332871",
-    "label": "Govinda",
+    "id": "nm2147526",
+    "label": "Govardhan Asrani",
     "constructs": [
       "same_character",
       "director_muses"
@@ -7338,6 +7245,14 @@
     "constructs": [
       "reunions",
       "national_bridges"
+    ]
+  },
+  {
+    "id": "nm0574615",
+    "label": "Graham McTavish",
+    "constructs": [
+      "genre_drift",
+      "comeback"
     ]
   },
   {
@@ -7389,19 +7304,19 @@
     ]
   },
   {
-    "id": "nm0001765",
-    "label": "Harry Dean Stanton",
-    "constructs": [
-      "same_character",
-      "reunions"
-    ]
-  },
-  {
     "id": "nm0733427",
     "label": "Harry Shearer",
     "constructs": [
       "reunions",
       "voice_face"
+    ]
+  },
+  {
+    "id": "nm2955927",
+    "label": "Haruka Tomatsu",
+    "constructs": [
+      "comedy_horror",
+      "dubbing"
     ]
   },
   {
@@ -7437,32 +7352,8 @@
     ]
   },
   {
-    "id": "nm0585640",
-    "label": "Hikaru Midorikawa",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing"
-    ]
-  },
-  {
     "id": "nm0476678",
     "label": "Houko Kuwashima",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing"
-    ]
-  },
-  {
-    "id": "nm0413168",
-    "label": "Hugh Jackman",
-    "constructs": [
-      "blockbuster",
-      "documentary_selves"
-    ]
-  },
-  {
-    "id": "nm0906945",
-    "label": "Hynden Walch",
     "constructs": [
       "voice_cartoons",
       "dubbing"
@@ -7482,6 +7373,14 @@
     "constructs": [
       "reunions",
       "documentary_selves"
+    ]
+  },
+  {
+    "id": "nm0007183",
+    "label": "Ian Richardson",
+    "constructs": [
+      "same_character",
+      "national_bridges"
     ]
   },
   {
@@ -7509,11 +7408,35 @@
     ]
   },
   {
+    "id": "nm0045784",
+    "label": "Irving Bacon",
+    "constructs": [
+      "genre_bridge",
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0255695",
     "label": "Isobel Elsom",
     "constructs": [
       "comeback",
       "silent_sound"
+    ]
+  },
+  {
+    "id": "nm0299401",
+    "label": "Issei Futamata",
+    "constructs": [
+      "voice_cartoons",
+      "genre_bridge"
+    ]
+  },
+  {
+    "id": "nm1072611",
+    "label": "JB Blanc",
+    "constructs": [
+      "same_character",
+      "genre_drift"
     ]
   },
   {
@@ -7554,6 +7477,14 @@
     "constructs": [
       "men_horror",
       "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm0852517",
+    "label": "James Arnold Taylor",
+    "constructs": [
+      "hyphenates",
+      "typecast"
     ]
   },
   {
@@ -7629,6 +7560,14 @@
     ]
   },
   {
+    "id": "nm0914327",
+    "label": "Jason Watkins",
+    "constructs": [
+      "same_character",
+      "comeback"
+    ]
+  },
+  {
     "id": "nm0419688",
     "label": "Jayaram",
     "constructs": [
@@ -7645,11 +7584,19 @@
     ]
   },
   {
+    "id": "nm4911194",
+    "label": "Jenna Ortega",
+    "constructs": [
+      "women_horror",
+      "child_stars"
+    ]
+  },
+  {
     "id": "nm0004950",
     "label": "Jennifer Garner",
     "constructs": [
-      "reunions",
-      "genre_drift"
+      "bechdel",
+      "reunions"
     ]
   },
   {
@@ -7669,11 +7616,11 @@
     ]
   },
   {
-    "id": "nm0625456",
-    "label": "Jerry Nelson",
+    "id": "nm0184578",
+    "label": "Jerome Cowan",
     "constructs": [
-      "director_muses",
-      "voice_face"
+      "comedy_horror",
+      "genre_bridge"
     ]
   },
   {
@@ -7805,10 +7752,10 @@
     ]
   },
   {
-    "id": "nm0000092",
-    "label": "John Cleese",
+    "id": "nm1078479",
+    "label": "John Cena",
     "constructs": [
-      "reunions",
+      "blockbuster",
       "documentary_selves"
     ]
   },
@@ -7853,11 +7800,11 @@
     ]
   },
   {
-    "id": "nm0006893",
-    "label": "John Vernon",
+    "id": "nm0587534",
+    "label": "John Miljan",
     "constructs": [
-      "comeback",
-      "national_bridges"
+      "same_character",
+      "silent_sound"
     ]
   },
   {
@@ -7877,11 +7824,11 @@
     ]
   },
   {
-    "id": "nm1706767",
-    "label": "Jonah Hill",
+    "id": "nm0340973",
+    "label": "Jon Gries",
     "constructs": [
-      "same_character",
-      "blockbuster"
+      "comedy_horror",
+      "genre_drift"
     ]
   },
   {
@@ -7889,6 +7836,14 @@
     "label": "Jonathan Tucker",
     "constructs": [
       "men_horror",
+      "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm0001538",
+    "label": "Jonny Lee Miller",
+    "constructs": [
+      "same_character",
       "horror_bloodlines"
     ]
   },
@@ -7901,19 +7856,19 @@
     ]
   },
   {
-    "id": "nm0724995",
-    "label": "Julian Richings",
-    "constructs": [
-      "same_character",
-      "horror_bloodlines"
-    ]
-  },
-  {
     "id": "nm0501306",
     "label": "Julie Lemieux",
     "constructs": [
       "voice_cartoons",
       "dubbing"
+    ]
+  },
+  {
+    "id": "nm0847594",
+    "label": "Junko Takeuchi",
+    "constructs": [
+      "voice_cartoons",
+      "typecast"
     ]
   },
   {
@@ -7933,11 +7888,11 @@
     ]
   },
   {
-    "id": "nm0571952",
-    "label": "Kate McKinnon",
+    "id": "nm0000947",
+    "label": "Karen Black",
     "constructs": [
-      "genre_drift",
-      "comeback"
+      "women_horror",
+      "scream_queen"
     ]
   },
   {
@@ -7997,6 +7952,14 @@
     ]
   },
   {
+    "id": "nm1221047",
+    "label": "Keegan-Michael Key",
+    "constructs": [
+      "comedy_horror",
+      "blockbuster"
+    ]
+  },
+  {
     "id": "nm0547800",
     "label": "Ken Marino",
     "constructs": [
@@ -8013,6 +7976,14 @@
     ]
   },
   {
+    "id": "nm1399925",
+    "label": "Kenta Miyake",
+    "constructs": [
+      "genre_bridge",
+      "dubbing"
+    ]
+  },
+  {
     "id": "nm0562771",
     "label": "Kermit Maynard",
     "constructs": [
@@ -8021,11 +7992,11 @@
     ]
   },
   {
-    "id": "nm0175834",
-    "label": "Kevin Conroy",
+    "id": "nm0913488",
+    "label": "Kerry Washington",
     "constructs": [
-      "director_muses",
-      "typecast"
+      "reunions",
+      "blockbuster"
     ]
   },
   {
@@ -8045,14 +8016,6 @@
     ]
   },
   {
-    "id": "nm1456471",
-    "label": "Kimberly Brooks",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing"
-    ]
-  },
-  {
     "id": "nm0462017",
     "label": "Kiyoshi Kobayashi",
     "constructs": [
@@ -8066,6 +8029,14 @@
     "constructs": [
       "genre_bridge",
       "director_muses"
+    ]
+  },
+  {
+    "id": "nm1102891",
+    "label": "Kristen Schaal",
+    "constructs": [
+      "voice_face",
+      "hyphenates"
     ]
   },
   {
@@ -8109,6 +8080,22 @@
     ]
   },
   {
+    "id": "nm1128572",
+    "label": "Lake Bell",
+    "constructs": [
+      "bechdel",
+      "genre_drift"
+    ]
+  },
+  {
+    "id": "nm0628170",
+    "label": "Laraine Newman",
+    "constructs": [
+      "same_character",
+      "voice_face"
+    ]
+  },
+  {
     "id": "nm0000368",
     "label": "Laura Dern",
     "constructs": [
@@ -8138,6 +8125,14 @@
     "constructs": [
       "genre_drift",
       "voice_face"
+    ]
+  },
+  {
+    "id": "nm1799368",
+    "label": "Leah Clark",
+    "constructs": [
+      "voice_cartoons",
+      "hyphenates"
     ]
   },
   {
@@ -8189,6 +8184,14 @@
     ]
   },
   {
+    "id": "nm0069373",
+    "label": "Lionel Belmore",
+    "constructs": [
+      "same_character",
+      "silent_sound"
+    ]
+  },
+  {
     "id": "nm0135221",
     "label": "Lizzy Caplan",
     "constructs": [
@@ -8213,14 +8216,6 @@
     ]
   },
   {
-    "id": "nm0127373",
-    "label": "Louis C.K.",
-    "constructs": [
-      "same_character",
-      "documentary_selves"
-    ]
-  },
-  {
     "id": "nm0001283",
     "label": "Louis Gossett Jr.",
     "constructs": [
@@ -8234,6 +8229,14 @@
     "constructs": [
       "women_horror",
       "scream_queen"
+    ]
+  },
+  {
+    "id": "nm4987686",
+    "label": "Maaya Uchida",
+    "constructs": [
+      "comedy_horror",
+      "dubbing"
     ]
   },
   {
@@ -8309,11 +8312,11 @@
     ]
   },
   {
-    "id": "nm0553269",
-    "label": "Margo Martindale",
+    "id": "nm3053338",
+    "label": "Margot Robbie",
     "constructs": [
-      "bechdel",
-      "same_character"
+      "same_character",
+      "blockbuster"
     ]
   },
   {
@@ -8338,22 +8341,6 @@
     "constructs": [
       "voice_cartoons",
       "dubbing"
-    ]
-  },
-  {
-    "id": "nm0428765",
-    "label": "Mark Lewis Jones",
-    "constructs": [
-      "same_character",
-      "comeback"
-    ]
-  },
-  {
-    "id": "nm0671032",
-    "label": "Mark Pellegrino",
-    "constructs": [
-      "men_horror",
-      "horror_bloodlines"
     ]
   },
   {
@@ -8389,11 +8376,11 @@
     ]
   },
   {
-    "id": "nm0005460",
-    "label": "Mary Steenburgen",
+    "id": "nm0005316",
+    "label": "Mary Kay Place",
     "constructs": [
-      "reunions",
-      "genre_drift"
+      "bechdel",
+      "hyphenates"
     ]
   },
   {
@@ -8426,14 +8413,6 @@
     "constructs": [
       "voice_face",
       "hyphenates"
-    ]
-  },
-  {
-    "id": "nm4751364",
-    "label": "Megumi Han",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing"
     ]
   },
   {
@@ -8525,19 +8504,19 @@
     ]
   },
   {
-    "id": "nm0000474",
-    "label": "Michael Keaton",
-    "constructs": [
-      "reunions",
-      "blockbuster"
-    ]
-  },
-  {
     "id": "nm0446672",
     "label": "Michael Kelly",
     "constructs": [
       "men_horror",
       "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm0000514",
+    "label": "Michael Madsen",
+    "constructs": [
+      "men_horror",
+      "national_bridges"
     ]
   },
   {
@@ -8549,11 +8528,11 @@
     ]
   },
   {
-    "id": "nm0000201",
-    "label": "Michelle Pfeiffer",
+    "id": "nm0001650",
+    "label": "Michael Rapaport",
     "constructs": [
-      "same_character",
-      "blockbuster"
+      "genre_bridge",
+      "genre_drift"
     ]
   },
   {
@@ -8589,6 +8568,14 @@
     ]
   },
   {
+    "id": "nm0997115",
+    "label": "Miyu Irino",
+    "constructs": [
+      "dubbing",
+      "child_stars"
+    ]
+  },
+  {
     "id": "nm0482320",
     "label": "Mohanlal",
     "constructs": [
@@ -8618,6 +8605,14 @@
     "constructs": [
       "men_horror",
       "horror_bloodlines"
+    ]
+  },
+  {
+    "id": "nm0866697",
+    "label": "Mîna Tominaga",
+    "constructs": [
+      "voice_cartoons",
+      "child_stars"
     ]
   },
   {
@@ -8701,27 +8696,11 @@
     ]
   },
   {
-    "id": "nm0645219",
-    "label": "Nobuyo Ôyama",
-    "constructs": [
-      "director_muses",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0906696",
     "label": "Norio Wakamoto",
     "constructs": [
       "genre_bridge",
       "comeback"
-    ]
-  },
-  {
-    "id": "nm0818055",
-    "label": "Octavia Spencer",
-    "constructs": [
-      "women_horror",
-      "same_character"
     ]
   },
   {
@@ -8737,14 +8716,6 @@
     "label": "Oliver Platt",
     "constructs": [
       "bechdel",
-      "blockbuster"
-    ]
-  },
-  {
-    "id": "nm1209966",
-    "label": "Oscar Isaac",
-    "constructs": [
-      "same_character",
       "blockbuster"
     ]
   },
@@ -8789,14 +8760,6 @@
     ]
   },
   {
-    "id": "nm0000649",
-    "label": "Paul Sorvino",
-    "constructs": [
-      "same_character",
-      "national_bridges"
-    ]
-  },
-  {
     "id": "nm0913587",
     "label": "Paul Wesley",
     "constructs": [
@@ -8826,14 +8789,6 @@
     "constructs": [
       "men_horror",
       "horror_bloodlines"
-    ]
-  },
-  {
-    "id": "nm0000112",
-    "label": "Pierce Brosnan",
-    "constructs": [
-      "reunions",
-      "documentary_selves"
     ]
   },
   {
@@ -8885,14 +8840,6 @@
     ]
   },
   {
-    "id": "nm0726223",
-    "label": "Richard Riehle",
-    "constructs": [
-      "comedy_horror",
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0429114",
     "label": "Richard T. Jones",
     "constructs": [
@@ -8906,14 +8853,6 @@
     "constructs": [
       "child_stars",
       "comeback"
-    ]
-  },
-  {
-    "id": "nm0001549",
-    "label": "Rita Moreno",
-    "constructs": [
-      "genre_bridge",
-      "voice_face"
     ]
   },
   {
@@ -9149,22 +9088,6 @@
     ]
   },
   {
-    "id": "nm0675730",
-    "label": "Sean Pertwee",
-    "constructs": [
-      "men_horror",
-      "horror_bloodlines"
-    ]
-  },
-  {
-    "id": "nm0940362",
-    "label": "Shailene Woodley",
-    "constructs": [
-      "same_character",
-      "blockbuster"
-    ]
-  },
-  {
     "id": "nm0007106",
     "label": "Shakti Kapoor",
     "constructs": [
@@ -9181,11 +9104,11 @@
     ]
   },
   {
-    "id": "nm3340306",
-    "label": "Shin'ya Takahashi",
+    "id": "nm0370582",
+    "label": "Show Hayami",
     "constructs": [
-      "repertory",
-      "franchise_nomads"
+      "genre_bridge",
+      "dubbing"
     ]
   },
   {
@@ -9221,35 +9144,11 @@
     ]
   },
   {
-    "id": "nm0004879",
-    "label": "Snoop Dogg",
-    "constructs": [
-      "same_character",
-      "documentary_selves"
-    ]
-  },
-  {
-    "id": "nm0005527",
-    "label": "Sofía Vergara",
-    "constructs": [
-      "genre_drift",
-      "blockbuster"
-    ]
-  },
-  {
     "id": "nm0004941",
     "label": "Soleil Moon Frye",
     "constructs": [
       "scream_queen",
       "child_stars"
-    ]
-  },
-  {
-    "id": "nm0001745",
-    "label": "Stellan Skarsgård",
-    "constructs": [
-      "same_character",
-      "national_bridges"
     ]
   },
   {
@@ -9277,19 +9176,19 @@
     ]
   },
   {
-    "id": "nm0395950",
-    "label": "Sôichirô Hoshi",
-    "constructs": [
-      "dubbing",
-      "typecast"
-    ]
-  },
-  {
     "id": "nm0476223",
     "label": "Takeshi Kusao",
     "constructs": [
       "genre_bridge",
       "typecast"
+    ]
+  },
+  {
+    "id": "nm0080238",
+    "label": "Tanikella Bharani",
+    "constructs": [
+      "comedy_horror",
+      "same_character"
     ]
   },
   {
@@ -9309,50 +9208,10 @@
     ]
   },
   {
-    "id": "nm1132505",
-    "label": "Tetsu Inada",
-    "constructs": [
-      "genre_bridge",
-      "voice_face"
-    ]
-  },
-  {
-    "id": "nm2132616",
-    "label": "Tetsuya Kakihara",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing"
-    ]
-  },
-  {
-    "id": "nm0215281",
-    "label": "Thomas Dekker",
-    "constructs": [
-      "child_stars",
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0502073",
     "label": "Thomas Lennon",
     "constructs": [
       "comedy_horror",
-      "hyphenates"
-    ]
-  },
-  {
-    "id": "nm3631965",
-    "label": "Tia Lynn Ballard",
-    "constructs": [
-      "voice_cartoons",
-      "dubbing"
-    ]
-  },
-  {
-    "id": "nm0004857",
-    "label": "Tim Daly",
-    "constructs": [
-      "voice_face",
       "hyphenates"
     ]
   },
@@ -9413,11 +9272,11 @@
     ]
   },
   {
-    "id": "nm1139632",
-    "label": "Tracie Thoms",
+    "id": "nm0001852",
+    "label": "Treat Williams",
     "constructs": [
-      "women_horror",
-      "genre_drift"
+      "long_careers",
+      "national_bridges"
     ]
   },
   {
@@ -9557,6 +9416,14 @@
     ]
   },
   {
+    "id": "nm0218131",
+    "label": "William Demarest",
+    "constructs": [
+      "same_character",
+      "silent_sound"
+    ]
+  },
+  {
     "id": "nm0001137",
     "label": "William Devane",
     "constructs": [
@@ -9570,14 +9437,6 @@
     "constructs": [
       "women_horror",
       "blockbuster"
-    ]
-  },
-  {
-    "id": "nm0075359",
-    "label": "Xander Berkeley",
-    "constructs": [
-      "long_careers",
-      "same_character"
     ]
   },
   {
@@ -9597,11 +9456,19 @@
     ]
   },
   {
-    "id": "nm0302108",
-    "label": "Zach Galifianakis",
+    "id": "nm0435358",
+    "label": "Yumi Kakazu",
     "constructs": [
-      "bechdel",
-      "blockbuster"
+      "voice_cartoons",
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm0297785",
+    "label": "Yuzuru Fujimoto",
+    "constructs": [
+      "voice_cartoons",
+      "genre_bridge"
     ]
   },
   {
@@ -9663,6 +9530,27 @@
     ]
   },
   {
+    "id": "nm0477209",
+    "label": "Aaron Kwok",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
+    "id": "nm0666739",
+    "label": "Aaron Paul",
+    "constructs": [
+      "bechdel"
+    ]
+  },
+  {
+    "id": "nm0072344",
+    "label": "Abraham Benrubi",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0111013",
     "label": "Adam Brody",
     "constructs": [
@@ -9691,6 +9579,13 @@
     ]
   },
   {
+    "id": "nm0001842",
+    "label": "Adam West",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0943766",
     "label": "Adam Wylie",
     "constructs": [
@@ -9709,6 +9604,13 @@
     "label": "Adolphe Menjou",
     "constructs": [
       "silent_sound"
+    ]
+  },
+  {
+    "id": "nm0664499",
+    "label": "Adrian Pasdar",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -9761,13 +9663,6 @@
     ]
   },
   {
-    "id": "nm0222426",
-    "label": "Ajay Devgn",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0645500",
     "label": "Akemi Okamura",
     "constructs": [
@@ -9789,6 +9684,13 @@
     ]
   },
   {
+    "id": "nm0474774",
+    "label": "Akshay Kumar",
+    "constructs": [
+      "genre_bridge"
+    ]
+  },
+  {
     "id": "nm0466247",
     "label": "Aku Korhonen",
     "constructs": [
@@ -9800,6 +9702,13 @@
     "label": "Al Ferguson",
     "constructs": [
       "silent_sound"
+    ]
+  },
+  {
+    "id": "nm0000257",
+    "label": "Alan Alda",
+    "constructs": [
+      "documentary_selves"
     ]
   },
   {
@@ -9821,6 +9730,13 @@
     "label": "Alan Thicke",
     "constructs": [
       "comeback"
+    ]
+  },
+  {
+    "id": "nm0001215",
+    "label": "Albert Finney",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -9856,13 +9772,6 @@
     "label": "Alena Penz",
     "constructs": [
       "one_role"
-    ]
-  },
-  {
-    "id": "nm0097504",
-    "label": "Alex Borstein",
-    "constructs": [
-      "voice_face"
     ]
   },
   {
@@ -9943,6 +9852,20 @@
     ]
   },
   {
+    "id": "nm0420765",
+    "label": "Allen Jenkins",
+    "constructs": [
+      "director_muses"
+    ]
+  },
+  {
+    "id": "nm0842563",
+    "label": "Allen Swift",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm1351987",
     "label": "Alyson Stoner",
     "constructs": [
@@ -9971,17 +9894,17 @@
     ]
   },
   {
-    "id": "nm0001625",
-    "label": "Amanda Plummer",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm1065229",
     "label": "America Ferrera",
     "constructs": [
-      "bechdel"
+      "genre_drift"
+    ]
+  },
+  {
+    "id": "nm0000821",
+    "label": "Amitabh Bachchan",
+    "constructs": [
+      "genre_bridge"
     ]
   },
   {
@@ -9989,6 +9912,13 @@
     "label": "Amrish Puri",
     "constructs": [
       "genre_bridge"
+    ]
+  },
+  {
+    "id": "nm0009918",
+    "label": "Amy Acker",
+    "constructs": [
+      "women_horror"
     ]
   },
   {
@@ -10066,20 +9996,6 @@
     "label": "Ana Nave",
     "constructs": [
       "b_movie"
-    ]
-  },
-  {
-    "id": "nm0509264",
-    "label": "Anders Danielsen Lie",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
-    "id": "nm0077944",
-    "label": "Anders W. Berthelsen",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -10209,6 +10125,13 @@
     ]
   },
   {
+    "id": "nm0438463",
+    "label": "Anil Kapoor",
+    "constructs": [
+      "genre_bridge"
+    ]
+  },
+  {
     "id": "nm0001378",
     "label": "Anjelica Huston",
     "constructs": [
@@ -10237,24 +10160,10 @@
     ]
   },
   {
-    "id": "nm0587900",
-    "label": "Ann Miller",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0469455",
     "label": "Ann-Kathrin Kramer",
     "constructs": [
       "b_movie"
-    ]
-  },
-  {
-    "id": "nm2319871",
-    "label": "Anna Camp",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -10307,17 +10216,17 @@
     ]
   },
   {
-    "id": "nm1139628",
-    "label": "Anne Suarez",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0551926",
     "label": "Anne-Marie Martin",
     "constructs": [
       "scream_queen"
+    ]
+  },
+  {
+    "id": "nm0188950",
+    "label": "Annette Crosbie",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -10335,17 +10244,10 @@
     ]
   },
   {
-    "id": "nm0356625",
-    "label": "Annika Hallin",
+    "id": "nm1891168",
+    "label": "Anthony Bowling",
     "constructs": [
-      "same_character"
-    ]
-  },
-  {
-    "id": "nm0243175",
-    "label": "Anny Duperey",
-    "constructs": [
-      "same_character"
+      "typecast"
     ]
   },
   {
@@ -10496,6 +10398,13 @@
     ]
   },
   {
+    "id": "nm1951127",
+    "label": "Arya",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0896573",
     "label": "Ashish Vidyarthi",
     "constructs": [
@@ -10545,6 +10454,13 @@
     ]
   },
   {
+    "id": "nm6662487",
+    "label": "Atsumi Tanezaki",
+    "constructs": [
+      "dubbing"
+    ]
+  },
+  {
     "id": "nm0254712",
     "label": "Aunjanue Ellis-Taylor",
     "constructs": [
@@ -10556,20 +10472,6 @@
     "label": "Aurora Redondo",
     "constructs": [
       "b_movie"
-    ]
-  },
-  {
-    "id": "nm0167467",
-    "label": "Aurore Clément",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
-    "id": "nm0318622",
-    "label": "Avtar Gill",
-    "constructs": [
-      "director_muses"
     ]
   },
   {
@@ -10587,17 +10489,17 @@
     ]
   },
   {
+    "id": "nm4986852",
+    "label": "Ayumu Murase",
+    "constructs": [
+      "dubbing"
+    ]
+  },
+  {
     "id": "nm0000703",
     "label": "BD Wong",
     "constructs": [
       "genre_drift"
-    ]
-  },
-  {
-    "id": "nm0319980",
-    "label": "Banjô Ginga",
-    "constructs": [
-      "genre_bridge"
     ]
   },
   {
@@ -10671,13 +10573,6 @@
     ]
   },
   {
-    "id": "nm0001651",
-    "label": "Basil Rathbone",
-    "constructs": [
-      "director_muses"
-    ]
-  },
-  {
     "id": "nm5848246",
     "label": "Bayoumi Fouad",
     "constructs": [
@@ -10713,20 +10608,6 @@
     ]
   },
   {
-    "id": "nm2254074",
-    "label": "Bella Thorne",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
-    "id": "nm0000255",
-    "label": "Ben Affleck",
-    "constructs": [
-      "blockbuster"
-    ]
-  },
-  {
     "id": "nm0018273",
     "label": "Ben Alexander",
     "constructs": [
@@ -10748,6 +10629,13 @@
     ]
   },
   {
+    "id": "nm8050090",
+    "label": "Ben Pelletier",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0005399",
     "label": "Ben Savage",
     "constructs": [
@@ -10759,6 +10647,13 @@
     "label": "Ben Schwartz",
     "constructs": [
       "hyphenates"
+    ]
+  },
+  {
+    "id": "nm1212722",
+    "label": "Benedict Cumberbatch",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -10818,13 +10713,6 @@
     ]
   },
   {
-    "id": "nm1336827",
-    "label": "Betsy Brandt",
-    "constructs": [
-      "genre_drift"
-    ]
-  },
-  {
     "id": "nm0000012",
     "label": "Bette Davis",
     "constructs": [
@@ -10864,6 +10752,13 @@
     "label": "Bill Burr",
     "constructs": [
       "documentary_selves"
+    ]
+  },
+  {
+    "id": "nm0004966",
+    "label": "Bill Goldberg",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -10937,6 +10832,13 @@
     ]
   },
   {
+    "id": "nm0793554",
+    "label": "Bin Shimada",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm1228132",
     "label": "Bing Loyzaga",
     "constructs": [
@@ -10951,10 +10853,24 @@
     ]
   },
   {
+    "id": "nm0542558",
+    "label": "Blu Mankuma",
+    "constructs": [
+      "comeback"
+    ]
+  },
+  {
     "id": "nm0000837",
     "label": "Bob Balaban",
     "constructs": [
       "bechdel"
+    ]
+  },
+  {
+    "id": "nm0368561",
+    "label": "Bob Hastings",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -10979,10 +10895,24 @@
     ]
   },
   {
+    "id": "nm0237985",
+    "label": "Bobby Driscoll",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0496899",
     "label": "Bobby Lee",
     "constructs": [
       "comeback"
+    ]
+  },
+  {
+    "id": "nm1224082",
+    "label": "Boman Irani",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -11000,13 +10930,6 @@
     ]
   },
   {
-    "id": "nm1121649",
-    "label": "Brad Jones",
-    "constructs": [
-      "dubbing"
-    ]
-  },
-  {
     "id": "nm0000093",
     "label": "Brad Pitt",
     "constructs": [
@@ -11018,6 +10941,13 @@
     "label": "Bradley Cooper",
     "constructs": [
       "blockbuster"
+    ]
+  },
+  {
+    "id": "nm0746125",
+    "label": "Brandon Routh",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -11067,13 +10997,6 @@
     "label": "Brian George",
     "constructs": [
       "voice_face"
-    ]
-  },
-  {
-    "id": "nm0005008",
-    "label": "Brian Henson",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -11154,6 +11077,13 @@
     ]
   },
   {
+    "id": "nm0004486",
+    "label": "Bruno Ganz",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0913341",
     "label": "Bryant Washburn",
     "constructs": [
@@ -11168,10 +11098,24 @@
     ]
   },
   {
+    "id": "nm6548466",
+    "label": "Bryn Apprill",
+    "constructs": [
+      "voice_cartoons"
+    ]
+  },
+  {
     "id": "nm0564167",
     "label": "Bryn McAuley",
     "constructs": [
       "child_stars"
+    ]
+  },
+  {
+    "id": "nm0172872",
+    "label": "Bud Collyer",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -11214,13 +11158,6 @@
     "label": "Butch Patrick",
     "constructs": [
       "child_stars"
-    ]
-  },
-  {
-    "id": "nm0067367",
-    "label": "Bérénice Bejo",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -11392,13 +11329,6 @@
     ]
   },
   {
-    "id": "nm0000366",
-    "label": "Catherine Deneuve",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0382819",
     "label": "Catherine Hicks",
     "constructs": [
@@ -11406,17 +11336,10 @@
     ]
   },
   {
-    "id": "nm0521723",
-    "label": "Catherine Lough Haggquist",
+    "id": "nm0408309",
+    "label": "Celia Imrie",
     "constructs": [
-      "same_character"
-    ]
-  },
-  {
-    "id": "nm0003110",
-    "label": "Cesar Romero",
-    "constructs": [
-      "comedy_horror"
+      "women_horror"
     ]
   },
   {
@@ -11480,6 +11403,13 @@
     "label": "Charles Vanel",
     "constructs": [
       "silent_sound"
+    ]
+  },
+  {
+    "id": "nm0335788",
+    "label": "Charley Grapewin",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -11637,20 +11567,6 @@
     ]
   },
   {
-    "id": "nm0666788",
-    "label": "Christiane Paul",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
-    "id": "nm0681943",
-    "label": "Christina Pickles",
-    "constructs": [
-      "genre_drift"
-    ]
-  },
-  {
     "id": "nm0000207",
     "label": "Christina Ricci",
     "constructs": [
@@ -11686,6 +11602,20 @@
     ]
   },
   {
+    "id": "nm0055549",
+    "label": "Christopher Daniel Barnes",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
+    "id": "nm0001659",
+    "label": "Christopher Reeve",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0754526",
     "label": "Christopher Sabat",
     "constructs": [
@@ -11693,17 +11623,17 @@
     ]
   },
   {
+    "id": "nm1555145",
+    "label": "Christopher Sommers",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0168035",
     "label": "Chuck Connors",
     "constructs": [
       "national_bridges"
-    ]
-  },
-  {
-    "id": "nm0483942",
-    "label": "Chus Lampreave",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -11725,6 +11655,13 @@
     "label": "Cindy Robinson",
     "constructs": [
       "typecast"
+    ]
+  },
+  {
+    "id": "nm0051903",
+    "label": "Claes Bang",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -11805,13 +11742,6 @@
     ]
   },
   {
-    "id": "nm0285120",
-    "label": "Claudia Fontán",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0765638",
     "label": "Clelia Sarto",
     "constructs": [
@@ -11833,13 +11763,6 @@
     ]
   },
   {
-    "id": "nm0004286",
-    "label": "Clifton Collins Jr.",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0111612",
     "label": "Clive Brook",
     "constructs": [
@@ -11847,17 +11770,17 @@
     ]
   },
   {
-    "id": "nm0654110",
-    "label": "Clive Owen",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0751085",
     "label": "Clive Russell",
     "constructs": [
       "comeback"
+    ]
+  },
+  {
+    "id": "nm1130627",
+    "label": "Cobie Smulders",
+    "constructs": [
+      "genre_drift"
     ]
   },
   {
@@ -12022,6 +11945,13 @@
     ]
   },
   {
+    "id": "nm0337751",
+    "label": "Dan Green",
+    "constructs": [
+      "voice_cartoons"
+    ]
+  },
+  {
     "id": "nm0001022",
     "label": "Dana Carvey",
     "constructs": [
@@ -12057,17 +11987,24 @@
     ]
   },
   {
+    "id": "nm0943079",
+    "label": "Daniel Wu",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
+    "id": "nm0542706",
+    "label": "Danny Mann",
+    "constructs": [
+      "comeback"
+    ]
+  },
+  {
     "id": "nm1104131",
     "label": "Danny McBride",
     "constructs": [
       "blockbuster"
-    ]
-  },
-  {
-    "id": "nm0002364",
-    "label": "Dante Basco",
-    "constructs": [
-      "genre_drift"
     ]
   },
   {
@@ -12092,17 +12029,17 @@
     ]
   },
   {
+    "id": "nm2023050",
+    "label": "Darren Criss",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0382718",
     "label": "Darryl Hickman",
     "constructs": [
       "child_stars"
-    ]
-  },
-  {
-    "id": "nm0000435",
-    "label": "Daryl Hannah",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -12117,6 +12054,13 @@
     "label": "Dave Bautista",
     "constructs": [
       "blockbuster"
+    ]
+  },
+  {
+    "id": "nm0004979",
+    "label": "David Alan Grier",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -12183,6 +12127,13 @@
     ]
   },
   {
+    "id": "nm3458761",
+    "label": "David Mazouz",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0708981",
     "label": "David Ramsey",
     "constructs": [
@@ -12218,6 +12169,13 @@
     ]
   },
   {
+    "id": "nm0000193",
+    "label": "Demi Moore",
+    "constructs": [
+      "women_horror"
+    ]
+  },
+  {
     "id": "nm0641354",
     "label": "Denis O'Hare",
     "constructs": [
@@ -12246,10 +12204,24 @@
     ]
   },
   {
+    "id": "nm0000598",
+    "label": "Dennis Quaid",
+    "constructs": [
+      "blockbuster"
+    ]
+  },
+  {
     "id": "nm0834479",
     "label": "Devid Striesow",
     "constructs": [
       "comeback"
+    ]
+  },
+  {
+    "id": "nm0223506",
+    "label": "Dharmavarapu Subramanyam",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -12323,13 +12295,6 @@
     ]
   },
   {
-    "id": "nm0116623",
-    "label": "Dominic Brunt",
-    "constructs": [
-      "dubbing"
-    ]
-  },
-  {
     "id": "nm1002641",
     "label": "Dominic Cooper",
     "constructs": [
@@ -12379,10 +12344,24 @@
     ]
   },
   {
+    "id": "nm0253528",
+    "label": "Dorothy Elias-Fahn",
+    "constructs": [
+      "voice_face"
+    ]
+  },
+  {
     "id": "nm0267638",
     "label": "Dot Farley",
     "constructs": [
       "silent_sound"
+    ]
+  },
+  {
+    "id": "nm3766090",
+    "label": "Doug Walker",
+    "constructs": [
+      "typecast"
     ]
   },
   {
@@ -12404,13 +12383,6 @@
     "label": "Douglass Dumbrille",
     "constructs": [
       "comeback"
-    ]
-  },
-  {
-    "id": "nm0068166",
-    "label": "Drake Bell",
-    "constructs": [
-      "child_stars"
     ]
   },
   {
@@ -12491,10 +12463,24 @@
     ]
   },
   {
+    "id": "nm0000438",
+    "label": "Ed Harris",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0412850",
     "label": "Eddie Izzard",
     "constructs": [
       "documentary_selves"
+    ]
+  },
+  {
+    "id": "nm0550371",
+    "label": "Eddie Marsan",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -12568,6 +12554,13 @@
     ]
   },
   {
+    "id": "nm0945208",
+    "label": "Eiko Yamada",
+    "constructs": [
+      "voice_cartoons"
+    ]
+  },
+  {
     "id": "nm8270941",
     "label": "Elaine Auburn",
     "constructs": [
@@ -12638,6 +12631,13 @@
     ]
   },
   {
+    "id": "nm1102577",
+    "label": "Elle Fanning",
+    "constructs": [
+      "blockbuster"
+    ]
+  },
+  {
     "id": "nm0169351",
     "label": "Ellen David",
     "constructs": [
@@ -12659,17 +12659,17 @@
     ]
   },
   {
-    "id": "nm0367762",
-    "label": "Ellie Harvie",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm2422305",
     "label": "Emilie Ullerup",
     "constructs": [
       "scream_queen"
+    ]
+  },
+  {
+    "id": "nm1289434",
+    "label": "Emily Blunt",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -12722,6 +12722,13 @@
     ]
   },
   {
+    "id": "nm0000668",
+    "label": "Emma Thompson",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0051509",
     "label": "Eric Bana",
     "constructs": [
@@ -12743,10 +12750,24 @@
     ]
   },
   {
+    "id": "nm0519680",
+    "label": "Eric Loomis",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0005202",
     "label": "Eric McCormack",
     "constructs": [
       "hyphenates"
+    ]
+  },
+  {
+    "id": "nm0688384",
+    "label": "Eric Pohlmann",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -12761,13 +12782,6 @@
     "label": "Erica Cerra",
     "constructs": [
       "scream_queen"
-    ]
-  },
-  {
-    "id": "nm1724747",
-    "label": "Erica Schroeder",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -12862,13 +12876,6 @@
     ]
   },
   {
-    "id": "nm0025483",
-    "label": "Eva Amurri",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0381277",
     "label": "Eva Herzig",
     "constructs": [
@@ -12887,6 +12894,13 @@
     "label": "Evan Rachel Wood",
     "constructs": [
       "child_stars"
+    ]
+  },
+  {
+    "id": "nm1963091",
+    "label": "Evan Ross",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -12911,31 +12925,10 @@
     ]
   },
   {
-    "id": "nm0001971",
-    "label": "Ewen Bremner",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
-    "id": "nm0000103",
-    "label": "Fairuza Balk",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0000463",
     "label": "Famke Janssen",
     "constructs": [
       "women_horror"
-    ]
-  },
-  {
-    "id": "nm4245240",
-    "label": "Fatih Artman",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -12964,6 +12957,13 @@
     "label": "Flea",
     "constructs": [
       "documentary_selves"
+    ]
+  },
+  {
+    "id": "nm0733460",
+    "label": "Flora Robson",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -13072,8 +13072,8 @@
     ]
   },
   {
-    "id": "nm0264554",
-    "label": "Françoise Fabian",
+    "id": "nm0673749",
+    "label": "François Périer",
     "constructs": [
       "same_character"
     ]
@@ -13142,13 +13142,6 @@
     ]
   },
   {
-    "id": "nm0000321",
-    "label": "Gabriel Byrne",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0204625",
     "label": "Gail Davis",
     "constructs": [
@@ -13198,6 +13191,20 @@
     ]
   },
   {
+    "id": "nm0000432",
+    "label": "Gene Hackman",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
+    "id": "nm0682762",
+    "label": "Geoff Pierson",
+    "constructs": [
+      "reunions"
+    ]
+  },
+  {
     "id": "nm0658244",
     "label": "Geoffrey Palmer",
     "constructs": [
@@ -13223,6 +13230,13 @@
     "label": "George Carlin",
     "constructs": [
       "documentary_selves"
+    ]
+  },
+  {
+    "id": "nm0225191",
+    "label": "George DiCenzo",
+    "constructs": [
+      "genre_drift"
     ]
   },
   {
@@ -13261,10 +13275,24 @@
     ]
   },
   {
+    "id": "nm0627624",
+    "label": "George Newbern",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0639563",
     "label": "George O'Brien",
     "constructs": [
       "silent_sound"
+    ]
+  },
+  {
+    "id": "nm0001660",
+    "label": "George Reeves",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -13289,8 +13317,8 @@
     ]
   },
   {
-    "id": "nm0416524",
-    "label": "Geraldine James",
+    "id": "nm0596056",
+    "label": "Gerald Mohr",
     "constructs": [
       "same_character"
     ]
@@ -13401,8 +13429,8 @@
     ]
   },
   {
-    "id": "nm2147526",
-    "label": "Govardhan Asrani",
+    "id": "nm0332871",
+    "label": "Govinda",
     "constructs": [
       "director_muses"
     ]
@@ -13412,6 +13440,13 @@
     "label": "Grace Zabriskie",
     "constructs": [
       "women_horror"
+    ]
+  },
+  {
+    "id": "nm0593372",
+    "label": "Grant Mitchell",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -13440,6 +13475,20 @@
     "label": "Greg Kinnear",
     "constructs": [
       "blockbuster"
+    ]
+  },
+  {
+    "id": "nm0074185",
+    "label": "Gregg Berger",
+    "constructs": [
+      "dubbing"
+    ]
+  },
+  {
+    "id": "nm0969153",
+    "label": "Gregory Abbey",
+    "constructs": [
+      "voice_cartoons"
     ]
   },
   {
@@ -13569,13 +13618,6 @@
     ]
   },
   {
-    "id": "nm2443438",
-    "label": "Hana Mae Lee",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0068235",
     "label": "Hank Bell",
     "constructs": [
@@ -13646,6 +13688,13 @@
     ]
   },
   {
+    "id": "nm0001765",
+    "label": "Harry Dean Stanton",
+    "constructs": [
+      "reunions"
+    ]
+  },
+  {
     "id": "nm0491591",
     "label": "Harry Lauter",
     "constructs": [
@@ -13671,13 +13720,6 @@
     "label": "Harry Woods",
     "constructs": [
       "silent_sound"
-    ]
-  },
-  {
-    "id": "nm2955927",
-    "label": "Haruka Tomatsu",
-    "constructs": [
-      "comedy_horror"
     ]
   },
   {
@@ -13716,6 +13758,13 @@
     ]
   },
   {
+    "id": "nm0000307",
+    "label": "Helena Bonham Carter",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0410607",
     "label": "Helena Isabel",
     "constructs": [
@@ -13732,6 +13781,13 @@
   {
     "id": "nm0147147",
     "label": "Henry Cavill",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
+    "id": "nm0000020",
+    "label": "Henry Fonda",
     "constructs": [
       "same_character"
     ]
@@ -13786,6 +13842,13 @@
     ]
   },
   {
+    "id": "nm0585640",
+    "label": "Hikaru Midorikawa",
+    "constructs": [
+      "dubbing"
+    ]
+  },
+  {
     "id": "nm0794510",
     "label": "Himani Shivpuri",
     "constructs": [
@@ -13835,6 +13898,13 @@
     ]
   },
   {
+    "id": "nm1229640",
+    "label": "Hoon Lee",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0316995",
     "label": "Hoot Gibson",
     "constructs": [
@@ -13846,6 +13916,13 @@
     "label": "Howie Mandel",
     "constructs": [
       "documentary_selves"
+    ]
+  },
+  {
+    "id": "nm1997794",
+    "label": "Hudson Thames",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -13884,6 +13961,13 @@
     ]
   },
   {
+    "id": "nm0906945",
+    "label": "Hynden Walch",
+    "constructs": [
+      "voice_cartoons"
+    ]
+  },
+  {
     "id": "nm0960037",
     "label": "Hôchû Ôtsuka",
     "constructs": [
@@ -13916,13 +14000,6 @@
     "label": "Ian Keith",
     "constructs": [
       "silent_sound"
-    ]
-  },
-  {
-    "id": "nm0007183",
-    "label": "Ian Richardson",
-    "constructs": [
-      "national_bridges"
     ]
   },
   {
@@ -13961,6 +14038,13 @@
     ]
   },
   {
+    "id": "nm5667822",
+    "label": "Inori Minase",
+    "constructs": [
+      "comedy_horror"
+    ]
+  },
+  {
     "id": "nm0409465",
     "label": "Inuko Inuyama",
     "constructs": [
@@ -13972,13 +14056,6 @@
     "label": "Inês Castel-Branco",
     "constructs": [
       "b_movie"
-    ]
-  },
-  {
-    "id": "nm0451234",
-    "label": "Irrfan Khan",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -14000,20 +14077,6 @@
     "label": "J. Farrell MacDonald",
     "constructs": [
       "silent_sound"
-    ]
-  },
-  {
-    "id": "nm1928515",
-    "label": "J.J. Soria",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
-    "id": "nm1072611",
-    "label": "JB Blanc",
-    "constructs": [
-      "genre_drift"
     ]
   },
   {
@@ -14073,13 +14136,6 @@
     ]
   },
   {
-    "id": "nm0860233",
-    "label": "Jack Thompson",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0912001",
     "label": "Jack Warden",
     "constructs": [
@@ -14101,13 +14157,6 @@
     ]
   },
   {
-    "id": "nm0006763",
-    "label": "Jackie Shroff",
-    "constructs": [
-      "genre_bridge"
-    ]
-  },
-  {
     "id": "nm0364068",
     "label": "Jackée Harry",
     "constructs": [
@@ -14122,8 +14171,8 @@
     ]
   },
   {
-    "id": "nm0571537",
-    "label": "Jacqueline McKenzie",
+    "id": "nm0782593",
+    "label": "Jacques Seiler",
     "constructs": [
       "same_character"
     ]
@@ -14206,6 +14255,13 @@
     ]
   },
   {
+    "id": "nm0005077",
+    "label": "James Keach",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0456804",
     "label": "James Kirkwood",
     "constructs": [
@@ -14213,17 +14269,17 @@
     ]
   },
   {
+    "id": "nm0531763",
+    "label": "James MacDonald",
+    "constructs": [
+      "dubbing"
+    ]
+  },
+  {
     "id": "nm0000051",
     "label": "James Mason",
     "constructs": [
       "national_bridges"
-    ]
-  },
-  {
-    "id": "nm0564215",
-    "label": "James McAvoy",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -14339,13 +14395,6 @@
     ]
   },
   {
-    "id": "nm0002076",
-    "label": "Jason Flemyng",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0337020",
     "label": "Jason Gray-Stanford",
     "constructs": [
@@ -14402,20 +14451,6 @@
     ]
   },
   {
-    "id": "nm0914327",
-    "label": "Jason Watkins",
-    "constructs": [
-      "comeback"
-    ]
-  },
-  {
-    "id": "nm0194572",
-    "label": "Javier Cámara",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0005143",
     "label": "Jay Leno",
     "constructs": [
@@ -14423,10 +14458,24 @@
     ]
   },
   {
+    "id": "nm0761587",
+    "label": "Jay O. Sanders",
+    "constructs": [
+      "genre_drift"
+    ]
+  },
+  {
     "id": "nm1724323",
     "label": "Jayma Mays",
     "constructs": [
       "blockbuster"
+    ]
+  },
+  {
+    "id": "nm0247720",
+    "label": "Jayne Eastwood",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -14451,22 +14500,8 @@
     ]
   },
   {
-    "id": "nm0000241",
-    "label": "Jean-Claude Van Damme",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
-    "id": "nm0045870",
-    "label": "Jean-Pierre Bacri",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
-    "id": "nm0050210",
-    "label": "Jeanne Balibar",
+    "id": "nm0093088",
+    "label": "Jean-Claude Bolle-Reddat",
     "constructs": [
       "same_character"
     ]
@@ -14483,6 +14518,13 @@
     "label": "Jeanne Carr",
     "constructs": [
       "b_movie"
+    ]
+  },
+  {
+    "id": "nm0420091",
+    "label": "Jeeva",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -14542,10 +14584,24 @@
     ]
   },
   {
+    "id": "nm2809577",
+    "label": "Jenny Slate",
+    "constructs": [
+      "genre_drift"
+    ]
+  },
+  {
     "id": "nm1717582",
     "label": "Jennylyn Mercado",
     "constructs": [
       "b_movie"
+    ]
+  },
+  {
+    "id": "nm1559446",
+    "label": "Jeong In-gi",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -14560,13 +14616,6 @@
     "label": "Jericho Rosales",
     "constructs": [
       "b_movie"
-    ]
-  },
-  {
-    "id": "nm0184578",
-    "label": "Jerome Cowan",
-    "constructs": [
-      "genre_bridge"
     ]
   },
   {
@@ -14626,13 +14675,6 @@
     ]
   },
   {
-    "id": "nm3255459",
-    "label": "Jillian Bell",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0064769",
     "label": "Jim Beaver",
     "constructs": [
@@ -14651,6 +14693,13 @@
     "label": "Jim Carrey",
     "constructs": [
       "blockbuster"
+    ]
+  },
+  {
+    "id": "nm0300712",
+    "label": "Jim Gaffigan",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -14759,6 +14808,13 @@
     ]
   },
   {
+    "id": "nm0005281",
+    "label": "Jodi Lyn O'Keefe",
+    "constructs": [
+      "genre_drift"
+    ]
+  },
+  {
     "id": "nm0000149",
     "label": "Jodie Foster",
     "constructs": [
@@ -14787,8 +14843,15 @@
     ]
   },
   {
-    "id": "nm2181128",
-    "label": "Joel Fry",
+    "id": "nm1099085",
+    "label": "Joe Nunez",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
+    "id": "nm0001297",
+    "label": "Joel Grey",
     "constructs": [
       "same_character"
     ]
@@ -14850,10 +14913,24 @@
     ]
   },
   {
+    "id": "nm0121423",
+    "label": "John Burgmeier",
+    "constructs": [
+      "voice_cartoons"
+    ]
+  },
+  {
     "id": "nm0143806",
     "label": "John Cason",
     "constructs": [
       "b_movie"
+    ]
+  },
+  {
+    "id": "nm0231283",
+    "label": "John Doman",
+    "constructs": [
+      "genre_drift"
     ]
   },
   {
@@ -14934,13 +15011,6 @@
     ]
   },
   {
-    "id": "nm0587534",
-    "label": "John Miljan",
-    "constructs": [
-      "silent_sound"
-    ]
-  },
-  {
     "id": "nm0617050",
     "label": "John Mylong",
     "constructs": [
@@ -14997,6 +15067,13 @@
     ]
   },
   {
+    "id": "nm0936762",
+    "label": "John Witherspoon",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0301959",
     "label": "Johnny Galecki",
     "constructs": [
@@ -15032,17 +15109,17 @@
     ]
   },
   {
-    "id": "nm0340973",
-    "label": "Jon Gries",
-    "constructs": [
-      "comedy_horror"
-    ]
-  },
-  {
     "id": "nm0000685",
     "label": "Jon Voight",
     "constructs": [
       "reunions"
+    ]
+  },
+  {
+    "id": "nm1706767",
+    "label": "Jonah Hill",
+    "constructs": [
+      "blockbuster"
     ]
   },
   {
@@ -15064,13 +15141,6 @@
     "label": "Jonathan Scarfe",
     "constructs": [
       "national_bridges"
-    ]
-  },
-  {
-    "id": "nm0001538",
-    "label": "Jonny Lee Miller",
-    "constructs": [
-      "horror_bloodlines"
     ]
   },
   {
@@ -15113,6 +15183,13 @@
     "label": "Josh Hutcherson",
     "constructs": [
       "blockbuster"
+    ]
+  },
+  {
+    "id": "nm0005079",
+    "label": "Josh Keaton",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -15214,17 +15291,17 @@
     ]
   },
   {
+    "id": "nm0724995",
+    "label": "Julian Richings",
+    "constructs": [
+      "horror_bloodlines"
+    ]
+  },
+  {
     "id": "nm0001696",
     "label": "Julian Sands",
     "constructs": [
       "national_bridges"
-    ]
-  },
-  {
-    "id": "nm2584600",
-    "label": "Julianne Hough",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -15249,24 +15326,17 @@
     ]
   },
   {
+    "id": "nm0668372",
+    "label": "Julie Payne",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm5598720",
     "label": "Julie Tejwani",
     "constructs": [
       "director_muses"
-    ]
-  },
-  {
-    "id": "nm0000300",
-    "label": "Juliette Binoche",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
-    "id": "nm0000496",
-    "label": "Juliette Lewis",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -15361,17 +15431,17 @@
     ]
   },
   {
-    "id": "nm0259708",
-    "label": "Kajsa Ernst",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm2571848",
     "label": "Kana Asumi",
     "constructs": [
       "genre_bridge"
+    ]
+  },
+  {
+    "id": "nm0387987",
+    "label": "Kane Hodder",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -15449,6 +15519,13 @@
     "label": "Kate Mara",
     "constructs": [
       "blockbuster"
+    ]
+  },
+  {
+    "id": "nm0571952",
+    "label": "Kate McKinnon",
+    "constructs": [
+      "comeback"
     ]
   },
   {
@@ -15550,6 +15627,13 @@
     ]
   },
   {
+    "id": "nm0000206",
+    "label": "Keanu Reeves",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0870535",
     "label": "Keegan Connor Tracy",
     "constructs": [
@@ -15557,24 +15641,10 @@
     ]
   },
   {
-    "id": "nm1221047",
-    "label": "Keegan-Michael Key",
-    "constructs": [
-      "blockbuster"
-    ]
-  },
-  {
     "id": "nm0001018",
     "label": "Keith Carradine",
     "constructs": [
       "national_bridges"
-    ]
-  },
-  {
-    "id": "nm1584992",
-    "label": "Keith Ferguson",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -15680,6 +15750,13 @@
     "label": "Kenneth Williams",
     "constructs": [
       "director_muses"
+    ]
+  },
+  {
+    "id": "nm2770525",
+    "label": "Kenshô Ono",
+    "constructs": [
+      "dubbing"
     ]
   },
   {
@@ -15795,6 +15872,13 @@
     ]
   },
   {
+    "id": "nm1120335",
+    "label": "Kim Jeong-hak",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0001668",
     "label": "Kim Richards",
     "constructs": [
@@ -15830,6 +15914,34 @@
     ]
   },
   {
+    "id": "nm0009716",
+    "label": "Kirk Acevedo",
+    "constructs": [
+      "genre_drift"
+    ]
+  },
+  {
+    "id": "nm0001906",
+    "label": "Kirk Alyn",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
+    "id": "nm0000018",
+    "label": "Kirk Douglas",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
+    "id": "nm0000379",
+    "label": "Kirsten Dunst",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0000263",
     "label": "Kirstie Alley",
     "constructs": [
@@ -15844,6 +15956,13 @@
     ]
   },
   {
+    "id": "nm0692586",
+    "label": "Krishna Murali Posani",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm1393354",
     "label": "Kristen Connolly",
     "constructs": [
@@ -15855,13 +15974,6 @@
     "label": "Kristen Hager",
     "constructs": [
       "women_horror"
-    ]
-  },
-  {
-    "id": "nm0829576",
-    "label": "Kristen Stewart",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -15956,17 +16068,17 @@
     ]
   },
   {
+    "id": "nm2146022",
+    "label": "Kôki Uchiyama",
+    "constructs": [
+      "dubbing"
+    ]
+  },
+  {
     "id": "nm0005112",
     "label": "LL Cool J",
     "constructs": [
       "documentary_selves"
-    ]
-  },
-  {
-    "id": "nm1128572",
-    "label": "Lake Bell",
-    "constructs": [
-      "genre_drift"
     ]
   },
   {
@@ -15984,17 +16096,24 @@
     ]
   },
   {
-    "id": "nm0628170",
-    "label": "Laraine Newman",
-    "constructs": [
-      "voice_face"
-    ]
-  },
-  {
     "id": "nm0202970",
     "label": "Larry David",
     "constructs": [
       "documentary_selves"
+    ]
+  },
+  {
+    "id": "nm0086627",
+    "label": "Larry J. Blake",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
+    "id": "nm0832415",
+    "label": "Larry Storch",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -16054,6 +16173,13 @@
     ]
   },
   {
+    "id": "nm3613279",
+    "label": "Lee Nicholas Harris",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm1195855",
     "label": "Lee Pace",
     "constructs": [
@@ -16103,8 +16229,15 @@
     ]
   },
   {
-    "id": "nm0768614",
-    "label": "Leonardo Sbaraglia",
+    "id": "nm0023007",
+    "label": "Leon Alton",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
+    "id": "nm0000138",
+    "label": "Leonardo DiCaprio",
     "constructs": [
       "same_character"
     ]
@@ -16208,13 +16341,6 @@
     ]
   },
   {
-    "id": "nm0069373",
-    "label": "Lionel Belmore",
-    "constructs": [
-      "silent_sound"
-    ]
-  },
-  {
     "id": "nm0001957",
     "label": "Lloyd Bochner",
     "constructs": [
@@ -16226,13 +16352,6 @@
     "label": "Lloyd Corrigan",
     "constructs": [
       "comeback"
-    ]
-  },
-  {
-    "id": "nm6774388",
-    "label": "Logan Thirtyacre",
-    "constructs": [
-      "dubbing"
     ]
   },
   {
@@ -16275,6 +16394,13 @@
     "label": "Lou Scheimer",
     "constructs": [
       "director_muses"
+    ]
+  },
+  {
+    "id": "nm0127373",
+    "label": "Louis C.K.",
+    "constructs": [
+      "documentary_selves"
     ]
   },
   {
@@ -16334,13 +16460,6 @@
     ]
   },
   {
-    "id": "nm0869088",
-    "label": "Luis Tosar",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0456186",
     "label": "Luke Kirby",
     "constructs": [
@@ -16397,10 +16516,10 @@
     ]
   },
   {
-    "id": "nm4987686",
-    "label": "Maaya Uchida",
+    "id": "nm2132667",
+    "label": "M.S. Bhaskar",
     "constructs": [
-      "comedy_horror"
+      "same_character"
     ]
   },
   {
@@ -16408,13 +16527,6 @@
     "label": "Mackenzie Astin",
     "constructs": [
       "child_stars"
-    ]
-  },
-  {
-    "id": "nm4496875",
-    "label": "Mackenzie Davis",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -16446,13 +16558,6 @@
     ]
   },
   {
-    "id": "nm2322250",
-    "label": "Makoto Furukawa",
-    "constructs": [
-      "dubbing"
-    ]
-  },
-  {
     "id": "nm0468708",
     "label": "Mami Koyama",
     "constructs": [
@@ -16471,13 +16576,6 @@
     "label": "Manoj Joshi",
     "constructs": [
       "director_muses"
-    ]
-  },
-  {
-    "id": "nm0492908",
-    "label": "Marc Lawrence",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -16509,10 +16607,10 @@
     ]
   },
   {
-    "id": "nm3053338",
-    "label": "Margot Robbie",
+    "id": "nm0553269",
+    "label": "Margo Martindale",
     "constructs": [
-      "blockbuster"
+      "bechdel"
     ]
   },
   {
@@ -16541,13 +16639,6 @@
     "label": "Maribel Guardia",
     "constructs": [
       "b_movie"
-    ]
-  },
-  {
-    "id": "nm0893941",
-    "label": "Maribel Verdú",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -16583,6 +16674,13 @@
     "label": "Marissa Lenti",
     "constructs": [
       "child_stars"
+    ]
+  },
+  {
+    "id": "nm0142529",
+    "label": "Marium Carvell",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -16632,6 +16730,13 @@
     "label": "Mark Hildreth",
     "constructs": [
       "child_stars"
+    ]
+  },
+  {
+    "id": "nm0428765",
+    "label": "Mark Lewis Jones",
+    "constructs": [
+      "comeback"
     ]
   },
   {
@@ -16719,10 +16824,24 @@
     ]
   },
   {
+    "id": "nm0212878",
+    "label": "Mary Dean",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0935541",
     "label": "Mary Elizabeth Winstead",
     "constructs": [
       "women_horror"
+    ]
+  },
+  {
+    "id": "nm0330435",
+    "label": "Mary Gordon",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -16810,13 +16929,6 @@
     ]
   },
   {
-    "id": "nm5085683",
-    "label": "Mckenna Grace",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0000212",
     "label": "Meg Ryan",
     "constructs": [
@@ -16838,6 +16950,13 @@
     ]
   },
   {
+    "id": "nm4751364",
+    "label": "Megumi Han",
+    "constructs": [
+      "voice_cartoons"
+    ]
+  },
+  {
     "id": "nm1874163",
     "label": "Megumi Ôhara",
     "constructs": [
@@ -16856,13 +16975,6 @@
     "label": "Mel Ferrer",
     "constructs": [
       "national_bridges"
-    ]
-  },
-  {
-    "id": "nm0000154",
-    "label": "Mel Gibson",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -17020,13 +17132,6 @@
     ]
   },
   {
-    "id": "nm0001650",
-    "label": "Michael Rapaport",
-    "constructs": [
-      "genre_bridge"
-    ]
-  },
-  {
     "id": "nm0738286",
     "label": "Michael Roll",
     "constructs": [
@@ -17041,6 +17146,13 @@
     ]
   },
   {
+    "id": "nm0742146",
+    "label": "Michael Rosenbaum",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0780817",
     "label": "Michael Seater",
     "constructs": [
@@ -17052,6 +17164,13 @@
     "label": "Michael Sinterniklaas",
     "constructs": [
       "comeback"
+    ]
+  },
+  {
+    "id": "nm0815040",
+    "label": "Michael Sorich",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -17104,6 +17223,13 @@
     ]
   },
   {
+    "id": "nm0000201",
+    "label": "Michelle Pfeiffer",
+    "constructs": [
+      "blockbuster"
+    ]
+  },
+  {
     "id": "nm0719278",
     "label": "Michelle Renaud",
     "constructs": [
@@ -17122,13 +17248,6 @@
     "label": "Michelle Williams",
     "constructs": [
       "blockbuster"
-    ]
-  },
-  {
-    "id": "nm0401264",
-    "label": "Michiel Huisman",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -17227,13 +17346,6 @@
     "label": "Mitsuki Saiga",
     "constructs": [
       "comeback"
-    ]
-  },
-  {
-    "id": "nm0997115",
-    "label": "Miyu Irino",
-    "constructs": [
-      "child_stars"
     ]
   },
   {
@@ -17377,13 +17489,6 @@
     ]
   },
   {
-    "id": "nm0866697",
-    "label": "Mîna Tominaga",
-    "constructs": [
-      "child_stars"
-    ]
-  },
-  {
     "id": "nm1229204",
     "label": "Nadine Velazquez",
     "constructs": [
@@ -17391,10 +17496,10 @@
     ]
   },
   {
-    "id": "nm3602118",
-    "label": "Naga Chaitanya Akkineni",
+    "id": "nm1679934",
+    "label": "Nana Mizuki",
     "constructs": [
-      "same_character"
+      "dubbing"
     ]
   },
   {
@@ -17409,6 +17514,13 @@
     "label": "Nancy Travis",
     "constructs": [
       "scream_queen"
+    ]
+  },
+  {
+    "id": "nm1883210",
+    "label": "Nao Tôyama",
+    "constructs": [
+      "dubbing"
     ]
   },
   {
@@ -17437,13 +17549,6 @@
     "label": "Natalie Portman",
     "constructs": [
       "blockbuster"
-    ]
-  },
-  {
-    "id": "nm1980957",
-    "label": "Nataša Janjić Medančić",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -17496,13 +17601,6 @@
     ]
   },
   {
-    "id": "nm1625479",
-    "label": "Nejat Isler",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm3511513",
     "label": "Nic Westaway",
     "constructs": [
@@ -17531,8 +17629,8 @@
     ]
   },
   {
-    "id": "nm3538718",
-    "label": "Nick Robinson",
+    "id": "nm0932116",
+    "label": "Nicol Williamson",
     "constructs": [
       "same_character"
     ]
@@ -17615,6 +17713,20 @@
     ]
   },
   {
+    "id": "nm0495396",
+    "label": "Norman Leavitt",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
+    "id": "nm0818055",
+    "label": "Octavia Spencer",
+    "constructs": [
+      "women_horror"
+    ]
+  },
+  {
     "id": "nm0951148",
     "label": "Odette Annable",
     "constructs": [
@@ -17671,6 +17783,13 @@
     ]
   },
   {
+    "id": "nm0332709",
+    "label": "Olivier Gourmet",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0001156",
     "label": "Olympia Dukakis",
     "constructs": [
@@ -17696,6 +17815,13 @@
     "label": "Orson Welles",
     "constructs": [
       "hyphenates"
+    ]
+  },
+  {
+    "id": "nm1209966",
+    "label": "Oscar Isaac",
+    "constructs": [
+      "blockbuster"
     ]
   },
   {
@@ -17762,13 +17888,6 @@
     ]
   },
   {
-    "id": "nm2690647",
-    "label": "Pankaj Tripathi",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0176444",
     "label": "Paolo Contis",
     "constructs": [
@@ -17783,10 +17902,10 @@
     ]
   },
   {
-    "id": "nm0001552",
-    "label": "Pat Morita",
+    "id": "nm0385757",
+    "label": "Pat Hingle",
     "constructs": [
-      "comedy_horror"
+      "same_character"
     ]
   },
   {
@@ -17794,6 +17913,13 @@
     "label": "Patrick Bauchau",
     "constructs": [
       "national_bridges"
+    ]
+  },
+  {
+    "id": "nm0000920",
+    "label": "Patrick Bergin",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -17815,13 +17941,6 @@
     "label": "Patrick Seitz",
     "constructs": [
       "genre_bridge"
-    ]
-  },
-  {
-    "id": "nm1253936",
-    "label": "Patrick d'Assumçao",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -17860,13 +17979,6 @@
     ]
   },
   {
-    "id": "nm0261413",
-    "label": "Paul Essiembre",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0006670",
     "label": "Paul F. Tompkins",
     "constructs": [
@@ -17878,13 +17990,6 @@
     "label": "Paul Freeman",
     "constructs": [
       "national_bridges"
-    ]
-  },
-  {
-    "id": "nm0002117",
-    "label": "Paul Guilfoyle",
-    "constructs": [
-      "genre_drift"
     ]
   },
   {
@@ -17906,6 +18011,13 @@
     "label": "Paul Reiser",
     "constructs": [
       "reunions"
+    ]
+  },
+  {
+    "id": "nm0000649",
+    "label": "Paul Sorvino",
+    "constructs": [
+      "national_bridges"
     ]
   },
   {
@@ -18056,13 +18168,6 @@
     ]
   },
   {
-    "id": "nm0784818",
-    "label": "Peter Serafinowicz",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0891092",
     "label": "Peter Vaughan",
     "constructs": [
@@ -18095,6 +18200,13 @@
     "label": "Philip Bosco",
     "constructs": [
       "comeback"
+    ]
+  },
+  {
+    "id": "nm0674229",
+    "label": "Philip Perlman",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -18151,6 +18263,13 @@
     "label": "Poul Reichhardt",
     "constructs": [
       "director_muses"
+    ]
+  },
+  {
+    "id": "nm0222150",
+    "label": "Prabhu Deva",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -18231,13 +18350,6 @@
     ]
   },
   {
-    "id": "nm1320827",
-    "label": "Randall Park",
-    "constructs": [
-      "comedy_horror"
-    ]
-  },
-  {
     "id": "nm1727356",
     "label": "Rasmus Hardiker",
     "constructs": [
@@ -18291,13 +18403,6 @@
     "label": "Rebecca Shoichet",
     "constructs": [
       "director_muses"
-    ]
-  },
-  {
-    "id": "nm3024530",
-    "label": "Reda Kateb",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -18420,13 +18525,6 @@
     ]
   },
   {
-    "id": "nm0083109",
-    "label": "Richard Binsley",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0109175",
     "label": "Richard Bright",
     "constructs": [
@@ -18485,6 +18583,13 @@
   {
     "id": "nm0596959",
     "label": "Richard Moll",
+    "constructs": [
+      "comedy_horror"
+    ]
+  },
+  {
+    "id": "nm0726223",
+    "label": "Richard Riehle",
     "constructs": [
       "comedy_horror"
     ]
@@ -18581,8 +18686,8 @@
     ]
   },
   {
-    "id": "nm0438501",
-    "label": "Rishi Kapoor",
+    "id": "nm0117339",
+    "label": "Rob Brydon",
     "constructs": [
       "same_character"
     ]
@@ -18606,13 +18711,6 @@
     "label": "Rob Reiner",
     "constructs": [
       "documentary_selves"
-    ]
-  },
-  {
-    "id": "nm0001705",
-    "label": "Rob Schneider",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -18665,10 +18763,24 @@
     ]
   },
   {
+    "id": "nm1500155",
+    "label": "Robert Pattinson",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0000585",
     "label": "Robert Picardo",
     "constructs": [
       "hyphenates"
+    ]
+  },
+  {
+    "id": "nm0001727",
+    "label": "Robert Shaw",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -18711,6 +18823,13 @@
     "label": "Rochelle Aytes",
     "constructs": [
       "women_horror"
+    ]
+  },
+  {
+    "id": "nm0241870",
+    "label": "Rockmond Dunbar",
+    "constructs": [
+      "genre_drift"
     ]
   },
   {
@@ -18896,13 +19015,6 @@
     ]
   },
   {
-    "id": "nm0451307",
-    "label": "Saif Ali Khan",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0756533",
     "label": "Saikumar",
     "constructs": [
@@ -18914,13 +19026,6 @@
     "label": "Sally Field",
     "constructs": [
       "reunions"
-    ]
-  },
-  {
-    "id": "nm0006795",
-    "label": "Salman Khan",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -19043,6 +19148,13 @@
     ]
   },
   {
+    "id": "nm0000572",
+    "label": "Sarah Jessica Parker",
+    "constructs": [
+      "bechdel"
+    ]
+  },
+  {
     "id": "nm0798971",
     "label": "Sarah Silverman",
     "constructs": [
@@ -19071,8 +19183,8 @@
     ]
   },
   {
-    "id": "nm0174021",
-    "label": "Scout Taylor-Compton",
+    "id": "nm0000125",
+    "label": "Sean Connery",
     "constructs": [
       "same_character"
     ]
@@ -19096,13 +19208,6 @@
     "label": "Sean Penn",
     "constructs": [
       "blockbuster"
-    ]
-  },
-  {
-    "id": "nm0000707",
-    "label": "Sean Young",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -19131,6 +19236,13 @@
     "label": "Seymour Cassel",
     "constructs": [
       "national_bridges"
+    ]
+  },
+  {
+    "id": "nm0940362",
+    "label": "Shailene Woodley",
+    "constructs": [
+      "blockbuster"
     ]
   },
   {
@@ -19208,13 +19320,6 @@
     "label": "Shirley Knight",
     "constructs": [
       "scream_queen"
-    ]
-  },
-  {
-    "id": "nm0370582",
-    "label": "Show Hayami",
-    "constructs": [
-      "genre_bridge"
     ]
   },
   {
@@ -19344,10 +19449,31 @@
     ]
   },
   {
+    "id": "nm0004879",
+    "label": "Snoop Dogg",
+    "constructs": [
+      "documentary_selves"
+    ]
+  },
+  {
+    "id": "nm0005527",
+    "label": "Sofía Vergara",
+    "constructs": [
+      "blockbuster"
+    ]
+  },
+  {
     "id": "nm0050468",
     "label": "Sonja Ball",
     "constructs": [
       "comeback"
+    ]
+  },
+  {
+    "id": "nm0645683",
+    "label": "Sophie Okonedo",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -19421,6 +19547,13 @@
     ]
   },
   {
+    "id": "nm0001745",
+    "label": "Stellan Skarsgård",
+    "constructs": [
+      "national_bridges"
+    ]
+  },
+  {
     "id": "nm0084346",
     "label": "Stephan Bissmeier",
     "constructs": [
@@ -19439,6 +19572,13 @@
     "label": "Stephanie Lemelin",
     "constructs": [
       "women_horror"
+    ]
+  },
+  {
+    "id": "nm0159507",
+    "label": "Stephen Chow",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -19540,13 +19680,6 @@
     ]
   },
   {
-    "id": "nm0000804",
-    "label": "Stéphane Audran",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0482695",
     "label": "Suet Lam",
     "constructs": [
@@ -19624,6 +19757,20 @@
     ]
   },
   {
+    "id": "nm0395950",
+    "label": "Sôichirô Hoshi",
+    "constructs": [
+      "typecast"
+    ]
+  },
+  {
+    "id": "nm2554352",
+    "label": "T.J. Miller",
+    "constructs": [
+      "bechdel"
+    ]
+  },
+  {
     "id": "nm0005254",
     "label": "Tahj Mowry",
     "constructs": [
@@ -19659,13 +19806,6 @@
     ]
   },
   {
-    "id": "nm0087109",
-    "label": "Tammy Blanchard",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0491079",
     "label": "Tammy Lauren",
     "constructs": [
@@ -19680,24 +19820,10 @@
     ]
   },
   {
-    "id": "nm0080238",
-    "label": "Tanikella Bharani",
-    "constructs": [
-      "comedy_horror"
-    ]
-  },
-  {
     "id": "nm0917193",
     "label": "Tanja Wedhorn",
     "constructs": [
       "b_movie"
-    ]
-  },
-  {
-    "id": "nm1758682",
-    "label": "Tansu Biçer",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -19719,13 +19845,6 @@
     "label": "Taraji P. Henson",
     "constructs": [
       "bechdel"
-    ]
-  },
-  {
-    "id": "nm0543383",
-    "label": "Taryn Manning",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -19855,6 +19974,13 @@
     ]
   },
   {
+    "id": "nm2132616",
+    "label": "Tetsuya Kakihara",
+    "constructs": [
+      "voice_cartoons"
+    ]
+  },
+  {
     "id": "nm0728811",
     "label": "Tex Ritter",
     "constructs": [
@@ -19890,10 +20016,24 @@
     ]
   },
   {
+    "id": "nm0215281",
+    "label": "Thomas Dekker",
+    "constructs": [
+      "child_stars"
+    ]
+  },
+  {
     "id": "nm0399411",
     "label": "Thomas Huber",
     "constructs": [
       "b_movie"
+    ]
+  },
+  {
+    "id": "nm0470981",
+    "label": "Thomas Kretschmann",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -19915,6 +20055,13 @@
     "label": "Thurston Hall",
     "constructs": [
       "silent_sound"
+    ]
+  },
+  {
+    "id": "nm3631965",
+    "label": "Tia Lynn Ballard",
+    "constructs": [
+      "voice_cartoons"
     ]
   },
   {
@@ -19946,13 +20093,6 @@
     ]
   },
   {
-    "id": "nm1754366",
-    "label": "Tika Sumpter",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0699596",
     "label": "Tilo Prückner",
     "constructs": [
@@ -19981,6 +20121,13 @@
     ]
   },
   {
+    "id": "nm2423358",
+    "label": "Tim Minchin",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0000209",
     "label": "Tim Robbins",
     "constructs": [
@@ -19999,6 +20146,13 @@
     "label": "Tim Thomerson",
     "constructs": [
       "comedy_horror"
+    ]
+  },
+  {
+    "id": "nm0001096",
+    "label": "Timothy Dalton",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -20037,6 +20191,13 @@
     ]
   },
   {
+    "id": "nm0001497",
+    "label": "Tobey Maguire",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0098014",
     "label": "Tom Bosley",
     "constructs": [
@@ -20058,6 +20219,13 @@
     ]
   },
   {
+    "id": "nm4043618",
+    "label": "Tom Holland",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0448366",
     "label": "Tom Kennedy",
     "constructs": [
@@ -20076,13 +20244,6 @@
     "label": "Tom Tyler",
     "constructs": [
       "silent_sound"
-    ]
-  },
-  {
-    "id": "nm0929489",
-    "label": "Tom Wilkinson",
-    "constructs": [
-      "same_character"
     ]
   },
   {
@@ -20135,6 +20296,13 @@
     ]
   },
   {
+    "id": "nm0782841",
+    "label": "Toshihiko Seki",
+    "constructs": [
+      "dubbing"
+    ]
+  },
+  {
     "id": "nm0001536",
     "label": "Toshirō Mifune",
     "constructs": [
@@ -20146,6 +20314,13 @@
     "label": "Tracey Gold",
     "constructs": [
       "child_stars"
+    ]
+  },
+  {
+    "id": "nm1139632",
+    "label": "Tracie Thoms",
+    "constructs": [
+      "women_horror"
     ]
   },
   {
@@ -20174,13 +20349,6 @@
     "label": "Trigger",
     "constructs": [
       "director_muses"
-    ]
-  },
-  {
-    "id": "nm1684869",
-    "label": "Troy Baker",
-    "constructs": [
-      "voice_face"
     ]
   },
   {
@@ -20324,15 +20492,8 @@
     ]
   },
   {
-    "id": "nm0000721",
-    "label": "Victoria Abril",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
-    "id": "nm2169779",
-    "label": "Vimala Pons",
+    "id": "nm0897206",
+    "label": "Vijayakumar",
     "constructs": [
       "same_character"
     ]
@@ -20359,13 +20520,6 @@
     ]
   },
   {
-    "id": "nm0001461",
-    "label": "Virginie Ledoyen",
-    "constructs": [
-      "same_character"
-    ]
-  },
-  {
     "id": "nm0098424",
     "label": "Wade Boteler",
     "constructs": [
@@ -20380,6 +20534,13 @@
     ]
   },
   {
+    "id": "nm0404158",
+    "label": "Walter Huston",
+    "constructs": [
+      "same_character"
+    ]
+  },
+  {
     "id": "nm0471115",
     "label": "Walter Kreye",
     "constructs": [
@@ -20391,6 +20552,13 @@
     "label": "Walter Long",
     "constructs": [
       "silent_sound"
+    ]
+  },
+  {
+    "id": "nm0000527",
+    "label": "Walter Matthau",
+    "constructs": [
+      "same_character"
     ]
   },
   {
@@ -20569,13 +20737,6 @@
     ]
   },
   {
-    "id": "nm0218131",
-    "label": "William Demarest",
-    "constructs": [
-      "silent_sound"
-    ]
-  },
-  {
     "id": "nm0267912",
     "label": "William Farnum",
     "constructs": [
@@ -20653,6 +20814,13 @@
     ]
   },
   {
+    "id": "nm0075359",
+    "label": "Xander Berkeley",
+    "constructs": [
+      "long_careers"
+    ]
+  },
+  {
     "id": "nm3125992",
     "label": "Xanthe Huynh",
     "constructs": [
@@ -20692,6 +20860,13 @@
     "label": "Yukana",
     "constructs": [
       "genre_bridge"
+    ]
+  },
+  {
+    "id": "nm6793636",
+    "label": "Yuma Uchida",
+    "constructs": [
+      "dubbing"
     ]
   },
   {
@@ -20741,13 +20916,6 @@
     "label": "Yûko Miyamura",
     "constructs": [
       "director_muses"
-    ]
-  },
-  {
-    "id": "nm0951456",
-    "label": "Zabou Breitman",
-    "constructs": [
-      "same_character"
     ]
   },
   {

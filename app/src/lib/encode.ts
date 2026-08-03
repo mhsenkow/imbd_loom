@@ -127,6 +127,23 @@ export function edgeSharedCount(e: Edge): number {
   return Number.isFinite(count) ? count : Number(e.weight) || 0;
 }
 
+/** Same-character club edges encode shared role names, not co-appearance titles. */
+export function isSameCharacterEdge(e: Edge | null | undefined): boolean {
+  return !!e && (e.construct === "same_character" || !!e.character);
+}
+
+/** Short evidence line for tooltips / neighbor lists. */
+export function edgeEvidenceLabel(e: Edge | null | undefined): string {
+  if (!e) return "";
+  if (isSameCharacterEdge(e)) {
+    const n = edgeSharedCount(e);
+    const role = String(e.character ?? "shared role");
+    return n > 1 ? `${role} (+${n - 1} more)` : role;
+  }
+  const n = edgeSharedCount(e);
+  return `${n} shared title${n === 1 ? "" : "s"}`;
+}
+
 /** Matrix / stroke magnitude for a link under Thickness encoding. */
 export function edgeThicknessValue(
   e: Edge,

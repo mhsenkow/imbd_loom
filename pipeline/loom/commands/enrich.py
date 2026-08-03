@@ -252,7 +252,10 @@ def _enrich_tmdb(con, candidates: list[tuple]) -> int:
         return len(existing)
 
     console.print(f"  TMDB lookup for {len(todo):,} people (rate-limited)…")
-    results = list(existing.values())
+    # Keep a dict for O(1) upserts; rewrite Parquet from values() on flush.
+    cache = dict(existing)
+    flush_every = 500
+    transient_errors = 0
 
     with httpx.Client(
         base_url="https://api.themoviedb.org/3",
@@ -269,24 +272,26 @@ def _enrich_tmdb(con, candidates: list[tuple]) -> int:
                 progress.update(task, description=f"TMDB {name[:40]}", advance=1)
                 try:
                     row = _tmdb_find_person(client, nconst, name)
-                    results.append(row)
+                    cache[nconst] = row
                 except Exception as exc:  # noqa: BLE001
-                    results.append(
-                        {
-                            "nconst": nconst,
-                            "tmdb_gender": None,
-                            "tmdb_id": None,
-                            "source": f"error:{type(exc).__name__}",
-                            "primaryName": name,
-                        }
-                    )
+                    # Do not persist transient failures — resume will retry.
+                    transient_errors += 1
+                    if transient_errors <= 5 or transient_errors % 50 == 0:
+                        console.print(
+                            f"  [yellow]transient[/yellow] {type(exc).__name__} on {nconst} "
+                            f"({transient_errors} so far)"
+                        )
                 if i % 10 == 9:
-                    time.sleep(0.25)
-                if i > 0 and i % 200 == 0:
-                    _save_gender(results)
+                    time.sleep(0.2)
+                if i > 0 and i % flush_every == 0:
+                    _save_gender(list(cache.values()))
 
-    _save_gender(results)
-    return len(results)
+    _save_gender(list(cache.values()))
+    if transient_errors:
+        console.print(
+            f"  [yellow]{transient_errors} transient API errors not cached — will retry on next run[/yellow]"
+        )
+    return len(cache)
 
 
 def _tmdb_find_person(client: httpx.Client, nconst: str, name: str) -> dict[str, Any]:
@@ -351,47 +356,43 @@ def _tmdb_find_person(client: httpx.Client, nconst: str, name: str) -> dict[str,
     return row
 
 
+_GENDER_COLUMNS = [
+    "nconst",
+    "tmdb_gender",
+    "tmdb_id",
+    "source",
+    "primaryName",
+    "place_of_birth",
+    "birth_country",
+    "popularity",
+    "biography_len",
+    "also_known_as",
+]
+
+
 def _save_gender(rows: list[dict[str, Any]]) -> None:
+    """Fast Parquet rewrite via PyArrow (DuckDB executemany was OOM/killing long runs)."""
+    import pyarrow as pa
+    import pyarrow.parquet as pq
+
     path = parquet_path("gender_cache")
     CACHE.mkdir(parents=True, exist_ok=True)
-    con = connect()
-    con.execute(
-        """
-        CREATE TEMP TABLE g (
-          nconst VARCHAR,
-          tmdb_gender INTEGER,
-          tmdb_id INTEGER,
-          source VARCHAR,
-          primaryName VARCHAR,
-          place_of_birth VARCHAR,
-          birth_country VARCHAR,
-          popularity DOUBLE,
-          biography_len INTEGER,
-          also_known_as VARCHAR
-        )
-        """
+    # Drop transient API failures so the next resume retries them.
+    persistable = [
+        r
+        for r in rows
+        if not str(r.get("source") or "").startswith("error:")
+    ]
+    table = pa.table(
+        {
+            col: [r.get(col) if col != "source" else r.get(col, "tmdb") for r in persistable]
+            for col in _GENDER_COLUMNS
+        }
     )
-    if rows:
-        con.executemany(
-            "INSERT INTO g VALUES (?,?,?,?,?,?,?,?,?,?)",
-            [
-                (
-                    r["nconst"],
-                    r.get("tmdb_gender"),
-                    r.get("tmdb_id"),
-                    r.get("source", "tmdb"),
-                    r.get("primaryName"),
-                    r.get("place_of_birth"),
-                    r.get("birth_country"),
-                    r.get("popularity"),
-                    r.get("biography_len"),
-                    r.get("also_known_as"),
-                )
-                for r in rows
-            ],
-        )
-    con.execute(f"COPY g TO '{path}' (FORMAT PARQUET, COMPRESSION ZSTD)")
-    console.print(f"  cached {len(rows):,} gender rows → {path.name}")
+    tmp = path.with_suffix(".parquet.tmp")
+    pq.write_table(table, tmp, compression="zstd")
+    tmp.replace(path)
+    console.print(f"  cached {len(persistable):,} gender rows → {path.name}")
 
 
 def _load_existing_voice() -> dict[str, dict[str, Any]]:

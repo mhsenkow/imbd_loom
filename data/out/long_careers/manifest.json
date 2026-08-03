@@ -19,9 +19,9 @@
     "pool_size": 600,
     "population_sql": 600
   },
-  "built_at": "2026-07-24T18:41:25.607642+00:00",
+  "built_at": "2026-08-03T17:11:42.324885+00:00",
   "clustering_coefficient": 0.6755,
-  "community_count": 14,
+  "community_count": 12,
   "correlations": {
     "acclaim_gap×prominence": {
       "n": 200,
@@ -77,8 +77,8 @@
       "label": "Eric Roberts"
     },
     {
-      "id": "nm0075359",
-      "label": "Xander Berkeley"
+      "id": "nm0393222",
+      "label": "James Hong"
     },
     {
       "id": "nm0919798",
@@ -163,18 +163,16 @@
     "assortativity": 0.1315,
     "community_sizes": [
       45,
-      28,
-      26,
-      24,
+      43,
+      22,
       21,
-      19,
+      20,
+      15,
       12,
       9,
-      6,
-      3,
+      7,
       3,
       2,
-      1,
       1
     ],
     "component_count": 3,
@@ -268,7 +266,7 @@
     },
     "giant_component_share": 0.985,
     "largest_community_share": 0.225,
-    "modularity": 0.1418,
+    "modularity": 0.1493,
     "outliers": {
       "acclaim_gap": [
         "nm0000448",
@@ -826,6 +824,6 @@
     "top_name": "Eric Roberts"
   },
   "title": "Long Careers",
-  "tmdb_gender_rows": 159582,
+  "tmdb_gender_rows": 477619,
   "top_n": 200
 }

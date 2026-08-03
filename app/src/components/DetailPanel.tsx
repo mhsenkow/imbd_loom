@@ -9,7 +9,7 @@ import { filmLine, uniqueShared } from "../lib/sharedTitles";
 import type { Insight } from "../lib/insights";
 import { describeNodeStats, hasStat, type ViewStatMarks } from "../lib/statsMarks";
 import { nodeDegree, nodeStrength } from "../lib/metrics";
-import { edgeSharedCount } from "../lib/encode";
+import { edgeEvidenceLabel, edgeSharedCount, isSameCharacterEdge } from "../lib/encode";
 import { InsightCard } from "./InsightCard";
 
 interface Props {
@@ -145,14 +145,31 @@ export function DetailPanel({
           </button>
         </div>
         <div className="stats">
-          <div>
-            <div className="stat-label">Shared titles</div>
-            <div className="stat-value mono">{edgeSharedCount(edge)}</div>
-          </div>
-          <div title="Σ ln(title votes + 1); popular shared titles contribute more">
-            <div className="stat-label">Weighted tie score</div>
-            <div className="stat-value mono">{edge.weight}</div>
-          </div>
+          {isSameCharacterEdge(edge) ? (
+            <>
+              <div title="Distinct shared character-name matches">
+                <div className="stat-label">Shared character names</div>
+                <div className="stat-value mono">{edgeSharedCount(edge)}</div>
+              </div>
+              {edge.character ? (
+                <div className="wide" title="Top matching role name on this link">
+                  <div className="stat-label">Example role</div>
+                  <div className="stat-value">{edge.character}</div>
+                </div>
+              ) : null}
+            </>
+          ) : (
+            <>
+              <div>
+                <div className="stat-label">Shared titles</div>
+                <div className="stat-value mono">{edgeSharedCount(edge)}</div>
+              </div>
+              <div title="Σ ln(title votes + 1); popular shared titles contribute more">
+                <div className="stat-label">Weighted tie score</div>
+                <div className="stat-value mono">{edge.weight}</div>
+              </div>
+            </>
+          )}
           {edge.year != null && (
             <div>
               <div className="stat-label">Around</div>
@@ -175,6 +192,17 @@ export function DetailPanel({
               ))}
             </ul>
           </div>
+        ) : isSameCharacterEdge(edge) ? (
+          <p className="hint">
+            Link means a shared <strong>character-name string</strong>
+            {edge.character ? (
+              <>
+                {" "}
+                (here: <em>{edge.character}</em>)
+              </>
+            ) : null}
+            , not necessarily the same franchise identity.
+          </p>
         ) : edge.construct === "one_role" ? (
           <p className="hint">
             These links are <strong>genre co-membership</strong> (same dominant genre), not
@@ -207,9 +235,19 @@ export function DetailPanel({
         </div>
         {insightBlock}
         <p className="hint">
-          <strong>Links mean co-appearances</strong> — both people credited on the same film or
-          show. Hover a curved link to see which titles connect them. Tap a person for their roles
-          and partners.
+          {edges.some((e) => isSameCharacterEdge(e)) ? (
+            <>
+              <strong>Links mean shared character names</strong> — both people credited under
+              the same role string (franchise seeds + multi-word names). Hover a curved link to
+              see which role connects them.
+            </>
+          ) : (
+            <>
+              <strong>Links mean co-appearances</strong> — both people credited on the same film or
+              show. Hover a curved link to see which titles connect them. Tap a person for their roles
+              and partners.
+            </>
+          )}
           {onOpenMethodology ? (
             <>
               {" "}
@@ -368,10 +406,15 @@ export function DetailPanel({
 
       {neighbors.length > 0 && (
         <div className="neighbors">
-          <h3>Connected via shared titles</h3>
+          <h3>
+            {neighbors.some(({ edge: e }) => isSameCharacterEdge(e))
+              ? "Connected via shared characters"
+              : "Connected via shared titles"}
+          </h3>
           <ul>
-            {neighbors.map(({ node: n, weight, edge }) => {
-              const shared = uniqueShared(edge.shared);
+            {neighbors.map(({ node: n, weight, edge: neighborEdge }) => {
+              const shared = uniqueShared(neighborEdge.shared);
+              const characterLink = isSameCharacterEdge(neighborEdge);
               return (
                 <li key={n.id}>
                   <button
@@ -381,15 +424,25 @@ export function DetailPanel({
                   >
                     <span className="neighbor-main">
                       <span className="neighbor-name">{n.label}</span>
-                      {shared[0] && (
+                      {characterLink && neighborEdge.character ? (
+                        <span className="neighbor-via">{neighborEdge.character}</span>
+                      ) : shared[0] ? (
                         <span className="neighbor-via">{filmLine(shared[0])}</span>
-                      )}
+                      ) : null}
                     </span>
                     <span
                       className="mono wt"
-                      title={`Weighted tie score ${weight}`}
+                      title={
+                        characterLink
+                          ? `${edgeSharedCount(neighborEdge)} shared character name(s)`
+                          : `Weighted tie score ${weight}`
+                      }
                     >
-                      {edgeSharedCount(edge)} title{edgeSharedCount(edge) === 1 ? "" : "s"}
+                      {characterLink
+                        ? edgeEvidenceLabel(neighborEdge)
+                        : `${edgeSharedCount(neighborEdge)} title${
+                            edgeSharedCount(neighborEdge) === 1 ? "" : "s"
+                          }`}
                     </span>
                   </button>
                 </li>

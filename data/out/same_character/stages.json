@@ -2,36 +2,36 @@
   {
     "stageFrom": "gender",
     "stageTo": "era",
-    "categoryFrom": "male",
+    "categoryFrom": "female",
     "categoryTo": "unknown era",
-    "value": 128
+    "value": 30
   },
   {
     "stageFrom": "gender",
     "stageTo": "era",
-    "categoryFrom": "female",
+    "categoryFrom": "male",
     "categoryTo": "unknown era",
-    "value": 72
-  },
-  {
-    "stageFrom": "era",
-    "stageTo": "degree",
-    "categoryFrom": "unknown era",
-    "categoryTo": "connected",
-    "value": 25
+    "value": 170
   },
   {
     "stageFrom": "era",
     "stageTo": "degree",
     "categoryFrom": "unknown era",
     "categoryTo": "linked",
-    "value": 146
+    "value": 85
+  },
+  {
+    "stageFrom": "era",
+    "stageTo": "degree",
+    "categoryFrom": "unknown era",
+    "categoryTo": "connected",
+    "value": 37
   },
   {
     "stageFrom": "era",
     "stageTo": "degree",
     "categoryFrom": "unknown era",
     "categoryTo": "sparse",
-    "value": 29
+    "value": 78
   }
 ]

@@ -4,8 +4,10 @@ import * as d3 from "d3";
 import type { ColorBy, Edge, Node, SortBy, ThicknessBy } from "../lib/types";
 import {
   buildGenreColor,
+  edgeEvidenceLabel,
   edgeSharedCount,
   edgeYearExtents,
+  isSameCharacterEdge,
   linkStrokeWidth,
   nodeColor,
   nodeExtents,
@@ -138,9 +140,13 @@ export function layoutBundle(
       fill: nodeColor(src, opts.colorBy, extents, genreColor, palette, theme),
       weight: e.weight,
       strokeWidth: linkStrokeWidth(e, thicknessBy, maxWeight, years),
-      title: `${src.label} ↔ ${(b.data.node as Node).label}: ${edgeSharedCount(e)} shared title(s) · weighted tie score ${e.weight}${
-        sharedLabel(e.shared) ? `\n${sharedLabel(e.shared)}` : ""
-      }`,
+      title: isSameCharacterEdge(e)
+        ? `${src.label} ↔ ${(b.data.node as Node).label}: ${edgeEvidenceLabel(e)}${
+            edgeSharedCount(e) > 1 ? ` · ${edgeSharedCount(e)} shared character names` : ""
+          }`
+        : `${src.label} ↔ ${(b.data.node as Node).label}: ${edgeSharedCount(e)} shared title(s) · weighted tie score ${e.weight}${
+            sharedLabel(e.shared) ? `\n${sharedLabel(e.shared)}` : ""
+          }`,
       sourceId: src.id,
       targetId: (b.data.node as Node).id,
       edge: e,

@@ -19,9 +19,9 @@
     "pool_size": 1000,
     "population_sql": 1000
   },
-  "built_at": "2026-07-24T18:38:01.294016+00:00",
+  "built_at": "2026-08-03T17:08:05.327828+00:00",
   "clustering_coefficient": 0.463,
-  "community_count": 13,
+  "community_count": 12,
   "correlations": {
     "acclaim_gap×prominence": {
       "n": 200,
@@ -77,8 +77,8 @@
       "label": "Bette Davis"
     },
     {
-      "id": "nm0120401",
-      "label": "Brooke Bundy"
+      "id": "nm0268331",
+      "label": "Sharon Farrell"
     },
     {
       "id": "nm0000407",
@@ -102,7 +102,7 @@
   "metrics_version": "2",
   "min_shared": 2,
   "node_count": 200,
-  "stage_row_count": 113,
+  "stage_row_count": 114,
   "subtitle": "actress ↔ actress co-appearance in horror",
   "summary": {
     "acclaim_gap_hist": [
@@ -159,18 +159,17 @@
     ],
     "assortativity": 0.1682,
     "community_sizes": [
-      34,
-      33,
-      19,
+      42,
+      40,
+      35,
+      18,
       17,
       16,
-      15,
-      14,
-      13,
-      13,
-      12,
+      10,
       7,
       5,
+      4,
+      4,
       2
     ],
     "component_count": 1,
@@ -262,8 +261,8 @@
       "female": 200
     },
     "giant_component_share": 1.0,
-    "largest_community_share": 0.17,
-    "modularity": 0.1311,
+    "largest_community_share": 0.21,
+    "modularity": 0.1437,
     "outliers": {
       "acclaim_gap": [
         "nm0000012",
@@ -820,6 +819,6 @@
     "top_name": "Bette Davis"
   },
   "title": "The Scream-Queen Web",
-  "tmdb_gender_rows": 159392,
+  "tmdb_gender_rows": 477619,
   "top_n": 200
 }
